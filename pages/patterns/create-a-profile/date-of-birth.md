@@ -6,6 +6,8 @@ layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: Date of birth, and other memorable dates, can be an essential piece of information used to validate identity or eligibility for services or benefits. This pattern allows users to enter their date of birth or another memorable date (such as, birth of child, death of loved one) without friction. 
+changelog:
+  key: pattern-user-profile-date-of-birth
 ---
 
 {:.site-component-section-title}
@@ -106,6 +108,7 @@ Mobile device users in particular may benefit from being able to type a year rat
 - <strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
@@ -115,13 +118,12 @@ Mobile device users in particular may benefit from being able to type a year rat
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 
+{:.site-component-section-title}
 ## References
 - Asking for a date of birth. (December 5, 2013) Retrieved on July 20, 2022, from <a href="https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/">https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/</a>
 - Dates. (n.d.) Retrieved on July 20, 2022, from <a href="https://design-system.service.gov.uk/patterns/dates/">https://design-system.service.gov.uk/patterns/dates/</a>
 - Why the GOV.UK Design System team changed the input type for numbers. (February 24, 2020) Retrieved on July 20, 2022, from <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/</a>
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

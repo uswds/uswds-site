@@ -6,6 +6,8 @@ layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: The race and ethnicity pattern allows users to provide race and ethnicity information in the most accurate and respectful manner possible. Race and ethnicity are often integral to an individual’s sense of self, but they are complex topics; there is no generally accepted agreement that race is a real, biological attribute. Race and ethnicity can, however, be helpful information in assessing the civil rights impact of programs and services, and this data is sometimes a required reporting element. 
+changelog:
+  key: pattern-user-profile-race-and-ethnicity
 ---
 
 {:.site-component-section-title}
@@ -130,12 +132,14 @@ Allow selection of more than one race and acknowledge people with multiple racia
 - <strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 
+{:.site-component-section-title}
 ## References
 - 2010 Census Race and Hispanic Origin Alternative Questionnaire experiment. (February 28, 2013) Retrieved on July 15, 2022, from [https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html](https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html)
 - 2015 National Content Test Race and Ethnicity Analysis report. (February 28, 2017) Retrieve on July 15, 2022, from [https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf](https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf)
@@ -149,8 +153,6 @@ Allow selection of more than one race and acknowledge people with multiple racia
 - Standards for maintaining, collecting, and presenting federal data on race and ethnicity. (September 30, 2016) Retrieved July 15, 2022, from [https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity](https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity)
 - Who is Hispanic? (September 15, 2022) Retrieved November 4, 2022, from [https://www.pewresearch.org/fact-tank/2022/09/15/who-is-hispanic/](https://www.pewresearch.org/fact-tank/2022/09/15/who-is-hispanic/)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

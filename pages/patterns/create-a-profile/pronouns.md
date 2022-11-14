@@ -6,6 +6,8 @@ layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: The pronouns pattern helps users to provide information that will allow them to feel confident they will be addressed with the pronouns they use.
+changelog:
+  key: pattern-user-profile-pronouns
 ---
 
 {:.site-component-section-title}
@@ -99,6 +101,7 @@ Provide a text entry field that supports a rich array of special characters and 
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
@@ -106,6 +109,7 @@ Provide a text entry field that supports a rich array of special characters and 
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/biological-sex-or-gender/">Biological sex or gender</a> pattern
 
+{:.site-component-section-title}
 ## References
 - Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
 - Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from [http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms](http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)
@@ -120,8 +124,6 @@ Provide a text entry field that supports a rich array of special characters and 
 - Pronoun use in email signatures. (June 29, 2020) Retrieved on November 1, 2022, from [https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/](https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/)
 - They, their. (April 10, 2019). Retrieved on July 19, 2022, from [https://design.va.gov/content-style-guide/they-their](https://design.va.gov/content-style-guide/they-their) 
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

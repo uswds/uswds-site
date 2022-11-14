@@ -6,6 +6,8 @@ layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: This pattern helps users to provide gender identity and sex information in an accurate and respectful manner. Gender identity and sex are often integral to an individual’s sense of self, and several federal agencies and working groups are striving to define a meaningful, inclusive way to collect gender identity and sex information when it is needed.
+changelog:
+  key: pattern-user-profile-gender-identity-and-sex
 ---
 
 {:.site-component-section-title}
@@ -197,7 +199,8 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 
-#### Related components, patterns, and templates
+{:.site-component-section-title}
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
@@ -205,6 +208,7 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Pronouns</a> pattern
 
+{:.site-component-section-title}
 ## References
 - Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on July 20, 2022, from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)
 - Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 4, 2022, from [https://nces.ed.gov/FCSM/pdf/buda5.pdf](https://nces.ed.gov/FCSM/pdf/buda5.pdf)
@@ -222,8 +226,6 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
 - Updates on terminology of sexual orientation and gender identity survey measures. (August 2020) Retrieved on October 24, 2022, from [https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf](https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf)
 - X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from [https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/](https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer 
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

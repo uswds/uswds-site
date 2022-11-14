@@ -9,8 +9,6 @@
 {% assign col4Classes = 'tablet:grid-col site-changelog--hide-tablet' %}
 {% assign col5Title = 'Description' %}
 {% assign col5Classes = 'tablet:grid-col-6' %}
-{% assign col6Title = 'More information' %}
-{% assign col6Classes = 'tablet:grid-col site-changelog--hide-tablet' %}
 
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
@@ -26,7 +24,6 @@
         <th scope="col" class="{{ col4Classes }}">{{ col4Title }}</th>
       {% endif %}
       <th scope="col" class="{{ col5Classes }}">{{ col5Title }}</th>
-      <th scope="col" class="{{ col6Classes }}">{{ col6Title }}</th>
     </tr>
   </thead>
   <tbody class="font-lang-3xs">
@@ -92,20 +89,11 @@
                 {{ item.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
               {% endif %}
               {% if item.githubPr%}
-              <span class="site-changelog--show-tablet">
                 More information: <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">
                   {{ item.githubRepo }}#{{ item.githubPr }}
                 </a>
-              </span>
               {% endif %}
             </p>
-          {% endif %}
-        </td>
-        <td data-title="{{ col6Title }}" class="{{ col6Classes }}">
-          {% if item.githubPr%}
-            <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">
-              {{ item.githubRepo }}#{{ item.githubPr }}
-            </a>
           {% endif %}
         </td>
       </tr>

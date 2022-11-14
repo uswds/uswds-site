@@ -19,6 +19,8 @@ subnav:
   href: '#input-mask-guidance'
 - text: Package
   href: '#input-mask-package'
+- text: Latest updates
+  href: '#input-mask-changelog'
 tags:
   - input
   - form

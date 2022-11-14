@@ -34,6 +34,8 @@ subnav:
     href: '#language-selector-with-three-or-more-languages'
   - text: Unstyled example
     href: '#language-selector-unstyled'
+  - text: Latest updates
+    href: '#language-selector-changelog'
 title: Language selector
 type: component
 ---

@@ -33,6 +33,8 @@ subnav:
   href: '#in-page-navigation-package'
 - text: References
   href: '#references'
+- text: Latest updates
+  href: '#in-page-navigation-changelog'
 tags:
   - in-page
   - nav

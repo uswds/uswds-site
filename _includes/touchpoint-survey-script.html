@@ -14,8 +14,11 @@
   {% endif %}
   {% if site.env == 'dev' %}
     This is dev!
-  {% endif %}
-  {% if site.env == 'preview' %}
+  {% elsif site.env == 'preview' %}
     This is preview!
+  {% elsif site.env == 'production' %}
+    This is production!
+  {% else %}
+    This isn't!
   {% endif %}
 </section>

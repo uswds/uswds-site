@@ -5,7 +5,9 @@ permalink: /patterns/complex-form/establish-trust/
 layout: pattern
 category: Patterns
 sub-category: Complete a complex form
-lead: Help users understand the purpose of a form and the time commitment needed to complete it, feel confident they have what they need, and trust that the information they provide will be safeguarded and used responsibly.  
+lead: Help users understand the purpose of a form and the time commitment needed to complete it, feel confident they have what they need, and trust that the information they provide will be safeguarded and used responsibly.
+changelog:
+  key: pattern-complex-form-establish-trust
 ---
 
 {:.site-component-section-title}
@@ -98,6 +100,7 @@ Provide clear information on why it is necessary to complete the form, what info
 - <strong>Practice transparency and integrity.</strong> Don’t hide information from your users. Clearly explain what you are collecting and why. By setting the expectations with your user early, users can feel more inclined to trust the process. 
 - <strong>Be reliable, consistent, and honest.</strong> Reduce the impact of failure with solid design and engineering. Be a good steward of your audience’s data, resources, and time.
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
@@ -107,6 +110,7 @@ Provide clear information on why it is necessary to complete the form, what info
 - <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
 
 
+{:.site-component-section-title}
 ## References
 - Build trust with these UX guidelines (March 16, 2019) Retrieved on July 19, 2022, from [https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014.](https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014)
 - Building trust with users through open communication and feedback, (June 13, 2019) Retrieved on July 19, 2022, from [https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/.](https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/)  
@@ -116,8 +120,6 @@ Provide clear information on why it is necessary to complete the form, what info
 - Trauma-informed computing: towards safer technology experiences for all. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475.](https://doi.org/10.1145/3491102.3517475)
 - Trust or bust: communicating trustworthiness in web design. (March 6, 1999) Retrieved on July 28, 2022, from [https://www.nngroup.com/articles/communicating-trustworthiness/.](https://www.nngroup.com/articles/communicating-trustworthiness/)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
  Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

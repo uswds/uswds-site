@@ -6,6 +6,8 @@ layout: pattern
 category: Patterns
 sub-category: Complete a complex form
 lead: Help users feel confident in their form submission by providing a record to download or print. A printed or downloaded record of their answers provides a reference for future use, and helps users confirm their successful form submission.
+changelog:
+  key: pattern-complex-form-keep-a-record
 ---
 
 {:.site-component-section-title}
@@ -118,12 +120,14 @@ Provide the user with a printable record of their answers using a print style sh
   <li><strong>Use semantic structures.</strong> While digital teams cannot control how individual users print to PDF because of the wide variety of built-in and add-on tools used for PDF production, good semantic structures will help ensure that PDFs are as usable as possible with screen readers. Test printing on braille printers is also recommended.</li>
 </ul>
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
 - <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
+{:.site-component-section-title}
 ## References
 - A guide to the state of print stylesheets in 2018. (May 1, 2018) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
 - Designing for print with CSS. (January 7, 2015) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/](https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
@@ -131,9 +135,7 @@ Provide the user with a printable record of their answers using a print style sh
 - SVG on the web - a practical guide. (n.d.) Retrieved on August 23, 2022, from [https://svgontheweb.com/](https://svgontheweb.com/)
 - What is a printer-friendly web page? (November 21, 2018) Retrieved on July 29, 2022, from [https://www.thoughtco.com/printer-friendly-web-page-3469219](https://www.thoughtco.com/printer-friendly-web-page-3469219)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
 

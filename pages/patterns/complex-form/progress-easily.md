@@ -6,6 +6,8 @@ layout: pattern
 category: Patterns
 sub-category: Complete a complex form
 lead: Empower users to successfully complete complex forms by reducing cognitive load and guiding them through the process in a way that is humane and respectful.
+changelog:
+  key: pattern-complex-form-progress-easily
 ---
 
 {:.site-component-section-title}
@@ -80,6 +82,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
   <li><strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.</li>
 </ul>
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
@@ -89,6 +92,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
 - <a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
 - <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
+{:.site-component-section-title}
 ## References
 
 ### Trauma-informed design
@@ -114,8 +118,6 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
 - Progressive disclosure: simplifying the complexity. (August 5, 2019) Retrieved on July 26, 2022, from [https://www.shopify.com/nz/partners/blog/progressive-disclosure](https://www.shopify.com/nz/partners/blog/progressive-disclosure)
 - Training wheels in a user interface. Journal article, Association for Computing Machinery by John M. Carroll and Caroline Carrithers Vol. 8 (August 1, 1984). Retrieved on July 27, 2022, from  [https://doi.org/10.1145/358198.358218](https://doi.org/10.1145/358198.358218)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

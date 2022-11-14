@@ -14,7 +14,7 @@ changelog:
 ## About this pattern
 
 ### What problem does this solve?
-A name or biological sex are not indicative of the pronouns a person uses. Allowing users to specify their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
+A person's name or sex are not indicative of the pronouns they use. Allowing users to specify their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
  
 ### When to use this pattern 
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
@@ -107,7 +107,7 @@ Provide a text entry field that supports a rich array of special characters and 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/biological-sex-or-gender/">Biological sex or gender</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/gender-identity-and-sex/">Gender identity and sex</a> pattern
 
 {:.site-component-section-title}
 ## References

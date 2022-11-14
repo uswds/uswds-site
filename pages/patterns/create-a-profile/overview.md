@@ -1,5 +1,5 @@
 ---
-title: User profile
+title: Create a user profile
 permalink: /patterns/create-a-user-profile/
 layout: styleguide
 category: Patterns
@@ -9,7 +9,7 @@ subnav:
   - href: /patterns/create-a-user-profile/contact-preferences/
   - href: /patterns/create-a-user-profile/date-of-birth/
   - href: /patterns/create-a-user-profile/email-address/
-  - href: /patterns/create-a-user-profile/gender-and-sex/
+  - href: /patterns/create-a-user-profile/gender-identity-and-sex/
   - href: /patterns/create-a-user-profile/name/
   - href: /patterns/create-a-user-profile/phone-number/
   - href: /patterns/create-a-user-profile/pronouns/
@@ -90,7 +90,7 @@ User profiles are central to a person’s identity. A user profile may be integr
   data-meta="Visit gender identity and sex pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-user-profile/gender-and-sex/">Select their <strong>gender identity and sex</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-user-profile/gender-identity-and-sex/">Select their <strong>gender identity and sex</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to select their gender identity and sex.</p>

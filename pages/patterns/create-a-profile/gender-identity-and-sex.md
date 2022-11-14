@@ -1,7 +1,7 @@
 ---
 title: Gender identity and sex
 story: Help a user select their gender identity and sex
-permalink: /patterns/create-a-user-profile/gender-and-sex/
+permalink: /patterns/create-a-user-profile/gender-identity-and-sex/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
@@ -15,9 +15,9 @@ changelog:
 
 ### Background
 
-Sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual’s biological sex is not unambiguously male or female.
-
 Gender is a social construct. Gender identity is an expression of a user’s identity and is integral to their sense of self. Gendered experiences are complex and vary widely.
+
+Sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual’s biological sex is not unambiguously male or female.
 
 Historically, the federal government has asked people to choose between male and female based on the sex they were assigned at birth. Recently, agencies and programs have been moving toward providing more options, reflecting the fact that biological sex is not always unambiguously male or female, and that an individual’s gender identity may not reflect the sex they were assigned at birth.
 

@@ -1,5 +1,5 @@
 ---
-title: Complex forms
+title: Complete a complex form
 permalink: /patterns/complete-a-complex-form/
 layout: styleguide
 category: Patterns

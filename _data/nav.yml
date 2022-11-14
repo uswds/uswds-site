@@ -85,11 +85,11 @@ Patterns:
   - text: Introducing patterns
     href: /patterns/intro/
   - text: Create a user profile
-    href: /patterns/create-a-profile/
+    href: /patterns/create-a-user-profile/
   - text: Complete a complex form
-    href: /patterns/complex-form/
+    href: /patterns/complete-a-complex-form/
   - text: Select a language
-    href: /patterns/language-selector/
+    href: /patterns/select-a-language/
 
 How to use USWDS:
   - href: /how-to-use-uswds/

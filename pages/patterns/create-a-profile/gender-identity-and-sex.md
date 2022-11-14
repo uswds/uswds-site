@@ -1,11 +1,13 @@
 ---
 title: Gender identity and sex
 story: Help a user select their gender identity and sex
-permalink: /patterns/create-a-profile/biological-sex-or-gender/
+permalink: /patterns/create-a-user-profile/gender-identity-and-sex/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: This pattern helps users to provide gender identity and sex information in an accurate and respectful manner. Gender identity and sex are often integral to an individual’s sense of self, and several federal agencies and working groups are striving to define a meaningful, inclusive way to collect gender identity and sex information when it is needed.
+changelog:
+  key: pattern-user-profile-gender-identity-and-sex
 ---
 
 {:.site-component-section-title}
@@ -13,9 +15,9 @@ lead: This pattern helps users to provide gender identity and sex information in
 
 ### Background
 
-Sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual’s biological sex is not unambiguously male or female.
-
 Gender is a social construct. Gender identity is an expression of a user’s identity and is integral to their sense of self. Gendered experiences are complex and vary widely.
+
+Sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual’s biological sex is not unambiguously male or female.
 
 Historically, the federal government has asked people to choose between male and female based on the sex they were assigned at birth. Recently, agencies and programs have been moving toward providing more options, reflecting the fact that biological sex is not always unambiguously male or female, and that an individual’s gender identity may not reflect the sex they were assigned at birth.
 
@@ -28,7 +30,7 @@ This is an evolving space, and language recommendations are also evolving. In th
 ### What problems do these patterns solve?
 Gender and sex are often used synonymously. Many users struggle to provide gender information that best represents them. An overwhelming number of choices for gender identity can be as alienating as too limited a set of provided options.
 
-{:.site-component-name}
+{:.site-component-name#gender-identity-section}
 ## Gender identity 
 
 ### When to use this pattern 
@@ -197,17 +199,18 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 
-#### Related components, patterns, and templates
+{:.site-component-section-title}
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Pronouns</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/pronouns/">Pronouns</a> pattern
 
+{:.site-component-section-title}
 ## References
 - Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on July 20, 2022, from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)
-- Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 4, 2022, from [https://nces.ed.gov/FCSM/pdf/buda5.pdf](https://nces.ed.gov/FCSM/pdf/buda5.pdf)
 - Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Current Measures of Sexual Orientation and Gender Identity in Federal Surveys - 2016a. (August 2016) Retrieved on October 31, 2022, from [https://www.fcsm.gov/assets/files/docs/current_measures_20160812.pdf](https://www.fcsm.gov/assets/files/docs/current_measures_20160812.pdf)
 - Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Evaluations of Sexual Orientation and Gender Identity Survey Measures: What Have We Learned? - 2016b. (September 23, 2016) Retrieved on October 31, 2022, from [https://www.fcsm.gov/assets/files/docs/Evaluations_of_SOGI_Questions_20160923.pdf](https://www.fcsm.gov/assets/files/docs/Evaluations_of_SOGI_Questions_20160923.pdf)
 - Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Toward a Research Agenda for Measuring Sexual Orientation and Gender Identity in Federal Surveys: Findings, Recommendations, and Next Steps - 2016c. (October 20, 2016) Retrieved on October 31, 2022, from [https://www.fcsm.gov/assets/files/docs/SOGI_Research_Agenda_Final_Report_20161020.pdf](https://www.fcsm.gov/assets/files/docs/SOGI_Research_Agenda_Final_Report_20161020.pdf)
@@ -222,8 +225,6 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
 - Updates on terminology of sexual orientation and gender identity survey measures. (August 2020) Retrieved on October 24, 2022, from [https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf](https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf)
 - X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from [https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/](https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer 
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

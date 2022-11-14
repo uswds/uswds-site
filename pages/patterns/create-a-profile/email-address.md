@@ -1,11 +1,13 @@
 ---
 title: Email address
 story: Help users to enter their email address
-permalink: /patterns/create-a-profile/email-address/
+permalink: /patterns/create-a-user-profile/email-address/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: The email address pattern allows users to confidently and accurately enter their email address and ensures that it is properly formatted.
+changelog:
+  key: pattern-user-profile-email-address
 ---
 
 {:.site-component-section-title}
@@ -106,21 +108,21 @@ A text input field with validation and robust error messaging to guide users in 
 - <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/phone-number/">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/social-security-number/">Social Security Number</a> pattern
 
+{:.site-component-section-title}
 ## References
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
 - RFC 822. (August 13, 1982) Retrieved on July 20, 2022, from [https://datatracker.ietf.org/doc/html/rfc822](https://datatracker.ietf.org/doc/html/rfc822). See also [RFC Editor Errata](https://www.rfc-editor.org/errata_search.php?rfc=822).
 - Validate email addresses (Regular Expressions Cookbook). (n.d). Retrieved on July 20, 2022, from [https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

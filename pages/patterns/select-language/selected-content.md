@@ -1,11 +1,13 @@
 ---
 title: Selected multilingual content
 story: Help a user find content in their preferred language when only selected content has been translated
-permalink: /patterns/language-selector/selected-content/
+permalink: /patterns/select-a-language/selected-content/
 layout: pattern
 category: Patterns
 sub-category: Select a language
 lead: This pattern helps users, especially those with limited English proficiency, find content in their preferred language when only selected pieces of content have been translated. For example, the site may be available in several languages, but specific information — fact sheets, overviews, videos, instructions — might be available in additional languages. 
+changelog:
+  key: pattern-select-language-selected-content
 ---
 
 {:.site-component-section-title}
@@ -18,7 +20,7 @@ Inconsistent placement of language selection components prevent users, especiall
 Use this pattern if your site offers a select set of content available in additional languages. Note: while this situation could apply to a single language or two language site, this pattern specifically describes a site with three or more languages as well as a small subset of content that is available in additional languages. 
 
 ### When to consider something else
-If your site is available in two or more languages and all content is available in each language, see related patterns <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> or <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a>.
+If your site is available in two or more languages and all content is available in each language, see related patterns <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages/">Select from two languages</a> or <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a>.
 
 ### What's the solution?
 Place the language selector button at the top right of the screen above site navigation to allow the user to access a dropdown with links to content in other languages.
@@ -115,14 +117,16 @@ Use this pattern when your site supports three or more languages, but offers a l
 - <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 - All logically related items/links must be presented as an <strong>HTML unordered list</strong>.
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
 - <a href="{{ site.baseurl }}/components/language-selector/">Language selector</a> component
-- <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages">Select from three or more languages</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages">Select from three or more languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages">Select from two languages</a> pattern
 
+{:.site-component-section-title}
 ## References
 - Community research explores ways to improve access to multilingual content. (August 9, 2022) Retrieved on August 24, 2022, from [https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/](https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/)
 - Designing a perfect language selector UX. (May 4, 2022) Retrieved on July 21, 2022, from [https://www.smashingmagazine.com/2022/05/designing-better-language-selector/](https://www.smashingmagazine.com/2022/05/designing-better-language-selector/)
@@ -130,8 +134,6 @@ Use this pattern when your site supports three or more languages, but offers a l
 - Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from [https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)
 - White paper on best practices for multilingual access to digital libraries. (June 23, 2016) Retrieved on July 21, 2022, from [https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf](https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

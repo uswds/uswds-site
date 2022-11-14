@@ -73,6 +73,11 @@ items:
   affectsGuidance: true
   githubPr: 1225
   githubRepo: uswds-site
+- date: 2021-03-18
+  summary: Added documentation for the `usa-link--external` variant.
+  affectsGuidance: true
+  githubPr: 1186
+  githubRepo: uswds-site
 - date: 2021-03-17
   summary: Updated and improved our guidance around links.
   summaryAdditional: Removed suggestion to use external link icon as it is often interpreted as share or open in a new tab.

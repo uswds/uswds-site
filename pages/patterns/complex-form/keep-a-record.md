@@ -73,7 +73,7 @@ Provide the user with a printable record of their answers using a print style sh
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
   <div id="accordion-preview" class="usa-accordion__content">
-    <img src="{{ site.baseurl }}/img/patterns/keep-a-record.png" alt="Image example of helping a user keep a record of submitted information" class="width-full maxw-mobile-lg"/>
+    <img src="{{ site.baseurl }}/img/patterns/keep-a-record.png" alt="Screenshot of collected information shows save and print buttons, date of submission, response estimate, and a collection of the user's responses to the form questions." class="width-full maxw-mobile-lg"/>
   </div>
 </div>
 

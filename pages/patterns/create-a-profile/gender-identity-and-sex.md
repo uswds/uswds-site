@@ -30,7 +30,7 @@ This is an evolving space, and language recommendations are also evolving. In th
 ### What problems do these patterns solve?
 Gender and sex are often used synonymously. Many users struggle to provide gender information that best represents them. An overwhelming number of choices for gender identity can be as alienating as too limited a set of provided options.
 
-{:.site-component-name}
+{:.site-component-name#gender-identity-section}
 ## Gender identity 
 
 ### When to use this pattern 

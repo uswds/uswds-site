@@ -18,6 +18,8 @@ subnav:
   href: '#character-count-guidance'
 - text: Package
   href: '#character-count-package'
+- text: Latest updates
+  href: '#character-count-changelog'
 tags:
   - form
   - forms

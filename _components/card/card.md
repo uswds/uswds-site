@@ -22,6 +22,8 @@ subnav:
   href: '#card-guidance'
 - text: Package
   href: '#card-package'
+- text: Latest updates
+  href: '#card-changelog'
 type: component
 variants:
   - variant: "`.usa-card--flag`"

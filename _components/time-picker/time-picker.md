@@ -44,6 +44,8 @@ subnav:
   href: '#time-picker-guidance'
 - text: Package
   href: '#time-picker-package'
+- text: Latest updates
+  href: '#time-picker-changelog'
 tags:
   - input
   - box

@@ -1712,6 +1712,22 @@ strong {
   @include u-bg("error");
 }
 
+.output-warning {
+  @extend %output-true;
+  @include u-bg("warning");
+  @include u-text("ink");
+}
+
+.output-neutral {
+  @extend %output-true;
+  @include u-bg("base-lighter");
+  @include u-text("ink");
+}
+
+li + li .output-neutral {
+  margin-top: units(0.5);
+}
+
 // Ensure that inline lists do not have a bottom margin
 li {
   &.display-inline-block {
@@ -3493,4 +3509,21 @@ $do-dont-top-bar-width: 1;
 .site-story {
   @include typeset("lang", "xl", 2);
   @include u-text("normal");
+}
+.site-changelog--show-tablet {
+  @include at-media-max("tablet") {
+    display: none;
+  }
+  @include at-media("widescreen") {
+    display: none;
+  }
+}
+
+.site-changelog--hide-tablet {
+  @include at-media("tablet") {
+    display: none;
+  }
+  @include at-media("widescreen") {
+    display: block;
+  }
 }

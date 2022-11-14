@@ -2,6 +2,11 @@ title: Footer
 type: component
 changelogURL:
 items:
+  - date: 2022-08-29
+    summary: Added documentation for `$theme-footer-max-width`.
+    affectsGuidance: true
+    githubPr: 1719
+    githubRepo: uswds-site
   - date: 2022-08-05
     summary: Added unmodified social media icons.
     summaryAdditional: We now provide simpler social media icons, and removed any decoration not in the original icon. This means that the new icons are not in an enclosing circle unless the original icon is enclosed in a circle.
@@ -45,3 +50,8 @@ items:
     githubPr: 4211
     githubRepo: uswds
     versionUswds: 2.13.0
+  - date: 2021-03-16
+    summary: Added documentation for `usa-footer--big` and `usa-footer--slim` variants.
+    affectsGuidance: true
+    githubPr: 1179
+    githubRepo: uswds-site

@@ -18,6 +18,17 @@ items:
     githubPr: 4770
     githubRepo: uswds
     versionUswds: 3.0.2
+  - date: 2022-06-17
+    summary: Updated the documentation for initialization properties.
+    summaryAdditional: Changed the initialization element from `select` to `input`.
+    affectsGuidance: true
+    githubPr: 1605
+    githubRepo: uswds-site
+  - date: 2022-04-28
+    summary: Added reference to the `usa-date-picker` package.
+    affectsGuidance: true
+    githubPr: 1528
+    githubRepo: uswds-site
   - date: 2022-04-28
     summary: Released USWDS 3.0.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.

@@ -53,7 +53,7 @@ title: Combo box
 type: component
 alert: true
 alert-class: info
-alert-heading: Accessibility
-alert-content: Testing with people who use screen readers, alternative input devices, and keyboard-only users revealed <a href="#accessibility-combo-box">assistive technology issues</a> that require more investigation.
+alert-heading: Recent accessibility issues
+alert-content: In late 2022, we found some combo box <a href="#accessibility-combo-box">usability issues</a> when we were testing with people who use screen readers and alternative input devices. For more information, see <a href="https://github.com/uswds/uswds-site/issues/1898">the issue on GitHub</a>.
 ---
 

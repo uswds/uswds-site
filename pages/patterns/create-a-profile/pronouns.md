@@ -93,7 +93,7 @@ Provide a text entry field that supports a rich array of special characters and 
 ### Usability guidance
 
 {:.usa-content-list}
-- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze." Do allow users to opt out with a "Prefer not to answer" option.
+- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze, he/they." Do allow users to opt out with a "Prefer not to answer" option.
 
 ### Accessibility
 

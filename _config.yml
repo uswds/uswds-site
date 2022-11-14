@@ -9,7 +9,6 @@ federalist_component_preview: "iframe.html?id="
 federalist_release_prefix: "release-"
 touchpoints:
   active: true
-  hosted: false
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/
 

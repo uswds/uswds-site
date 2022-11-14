@@ -10,9 +10,7 @@ items:
     isBreaking: true
     affectsAccessibility: true
     affectsAssets: true
-    affectsGuidance: true
     affectsJavascript: true
-    affectsMarkup: true
     affectsStyles: true
     githubPr: 4656
     githubRepo: uswds

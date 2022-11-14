@@ -6,11 +6,8 @@ items:
   summary: Styled aria-disabled to match disabled.
   summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
   isBreaking: false
-  affectsAccessibility: true
-  affectsAssets: false
-  affectsGuidance: false
-  affectsJavascript: false
-  affectsMarkup: false
+  affectsAssets: true
+  affectsJavascript: true
   affectsStyles: true
   githubPr: 4783
   githubRepo: uswds

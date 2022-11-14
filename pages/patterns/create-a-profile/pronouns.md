@@ -1,7 +1,7 @@
 ---
 title: Pronouns
 story: Help users to provide their pronouns to ensure they are addressed in the manner they prefer
-permalink: /patterns/create-a-profile/pronouns/
+permalink: /patterns/create-a-user-profile/pronouns/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
@@ -107,7 +107,7 @@ Provide a text entry field that supports a rich array of special characters and 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/biological-sex-or-gender/">Biological sex or gender</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/biological-sex-or-gender/">Biological sex or gender</a> pattern
 
 {:.site-component-section-title}
 ## References

@@ -1,13 +1,13 @@
 ---
 title: Establish trust
 story: Help a user to understand expectations in completing a complex form and establish trust
-permalink: /patterns/complex-form/establish-trust/
+permalink: /patterns/complete-a-complex-form/establish-trust/
 layout: pattern
 category: Patterns
 sub-category: Complete a complex form
 lead: Help users understand the purpose of a form and the time commitment needed to complete it, feel confident they have what they need, and trust that the information they provide will be safeguarded and used responsibly.
 changelog:
-  key: pattern-complex-form-establish-trust
+  key: pattern-complete-a-complex-form-establish-trust
 ---
 
 {:.site-component-section-title}
@@ -95,7 +95,7 @@ Provide clear information on why it is necessary to complete the form, what info
 ### Usability guidance
 
 {:.usa-content-list}
-- <strong>Design to support people in difficult times.</strong> People under stress may have poor recall, make frequent errors completing forms, and may not notice the errors they make. They likely have a hard time staying focused, cannot easily categorize objects, and are easily frustrated. Consider <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">simple form pages and helpful, no-blame error messaging</a>. Use care when surfacing content that appears based on previous answers. People under stress may already feel exposed and vulnerable. Use calm, straightforward language.
+- <strong>Design to support people in difficult times.</strong> People under stress may have poor recall, make frequent errors completing forms, and may not notice the errors they make. They likely have a hard time staying focused, cannot easily categorize objects, and are easily frustrated. Consider <a href="{{ site.baseurl }}/patterns/complete-a-complex-form/progress-easily/">simple form pages and helpful, no-blame error messaging</a>. Use care when surfacing content that appears based on previous answers. People under stress may already feel exposed and vulnerable. Use calm, straightforward language.
 - Whenever possible, <strong>allow users to save and resume</strong> long and potentially stress-inducing forms rather than assuming a form will be completed in a single session. Users may be accessing the form on a mobile device, or in a shared public space like a shelter or library where privacy is not guaranteed. They may be distracted by the environment or family members, or discover that additional records are needed. Some users simply need time to work up to answering difficult, potentially painful questions.
 - <strong>Practice transparency and integrity.</strong> Don’t hide information from your users. Clearly explain what you are collecting and why. By setting the expectations with your user early, users can feel more inclined to trust the process. 
 - <strong>Be reliable, consistent, and honest.</strong> Reduce the impact of failure with solid design and engineering. Be a good steward of your audience’s data, resources, and time.
@@ -106,8 +106,8 @@ Provide clear information on why it is necessary to complete the form, what info
 {:.usa-content-list}
 
 - <a href="{{ site.baseurl }}/components/icon-list/">Icon list</a> component
-- <a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
-- <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complete-a-complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complete-a-complex-form/progress-easily/">Progress easily through a form</a> pattern
 
 
 {:.site-component-section-title}

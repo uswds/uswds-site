@@ -1,7 +1,7 @@
 ---
 title: Address
 story: Help a user input their physical or mailing addresses for successful communication
-permalink: /patterns/create-a-profile/address/
+permalink: /patterns/create-a-user-profile/address/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
@@ -216,7 +216,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 - <a href="{{ site.baseurl }}/components/input-mask/">Input mask</a> component
 - <a href="{{ site.baseurl }}/components/select/">Select</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Name</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/name/">Name</a> pattern
 - <a href="{{ site.baseurl }}/templates/form-templates/address-form/">Address form</a> template
 
 {:.site-component-section-title}

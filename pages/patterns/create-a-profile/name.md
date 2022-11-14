@@ -1,7 +1,7 @@
 ---
 title: Name
 story: Help users to enter their name accurately and confidently regardless of format
-permalink: /patterns/create-a-profile/name/
+permalink: /patterns/create-a-user-profile/name/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile

@@ -1,13 +1,13 @@
 ---
 title: Keep a record
 story: Help a user to keep a record of submitted information
-permalink: /patterns/complex-form/keep-a-record/
+permalink: /patterns/complete-a-complex-form/keep-a-record/
 layout: pattern
 category: Patterns
 sub-category: Complete a complex form
 lead: Help users feel confident in their form submission by providing a record to download or print. A printed or downloaded record of their answers provides a reference for future use, and helps users confirm their successful form submission.
 changelog:
-  key: pattern-complex-form-keep-a-record
+  key: pattern-complete-a-complex-form-keep-a-record
 ---
 
 {:.site-component-section-title}
@@ -124,8 +124,8 @@ Provide the user with a printable record of their answers using a print style sh
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
-- <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
-- <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complete-a-complex-form/progress-easily/">Progress easily through a form</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complete-a-complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
 {:.site-component-section-title}
 ## References

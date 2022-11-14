@@ -1,7 +1,7 @@
 ---
 title: Phone number
 story: Help users to enter their phone number or numbers to ensure effective communication
-permalink: /patterns/create-a-profile/phone-number/
+permalink: /patterns/create-a-user-profile/phone-number/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
@@ -115,8 +115,8 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Email address</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/email-address/">Email address</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/social-security-number/">Social Security Number</a> pattern
 
 {:.site-component-section-title}
 ## References

@@ -1,7 +1,7 @@
 ---
 title: Social Security Number
 story: Help a user enter their Social Security Number
-permalink: /patterns/create-a-profile/social-security-number/
+permalink: /patterns/create-a-user-profile/social-security-number/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
@@ -109,8 +109,8 @@ Provide a single text field to enter the Social Security Number.
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/input-mask">Input masking</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Email address</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/email-address/">Email address</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/phone-number/">Phone number</a> pattern
 
 {:.site-component-section-title}
 ## References

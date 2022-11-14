@@ -1,7 +1,7 @@
 ---
 title: Two languages
 story: Help a user select between two languages
-permalink: /patterns/language-selector/two-languages/
+permalink: /patterns/select-a-language/two-languages/
 layout: pattern
 category: Patterns
 sub-category: Select a language
@@ -26,8 +26,8 @@ Use this pattern when the content is available in two languages.
 ### When to consider something else
 
 {:.usa-content-list}
-When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected multilingual content is available in some languages, see the 
- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
+When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected multilingual content is available in some languages, see the 
+ <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Selected content available</a> pattern.
 
 ### What's the solution?
 
@@ -121,8 +121,8 @@ Place the language selector button at the top of the screen above site navigatio
 - <a href="{{ site.baseurl }}/components/button/">Button</a> component
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
 - <a href="{{ site.baseurl }}/components/language-selector/">Language selector</a> component
-- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Find selected multilingual content</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a> pattern
 
 {:.site-component-section-title}
 ## References

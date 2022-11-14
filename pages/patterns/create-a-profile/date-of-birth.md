@@ -1,7 +1,7 @@
 ---
 title: Date of birth
 story: Help a user enter their birth date or other memorable date
-permalink: /patterns/create-a-profile/date-of-birth/
+permalink: /patterns/create-a-user-profile/date-of-birth/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
@@ -115,8 +115,8 @@ Mobile device users in particular may benefit from being able to type a year rat
 - <a href="{{ site.baseurl }}/components/memorable-date/">Memorable date</a> component
 - <a href="{{ site.baseurl }}/components/select/">Select</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/phone-number/">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/social-security-number/">Social Security Number</a> pattern
 
 {:.site-component-section-title}
 ## References

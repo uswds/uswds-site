@@ -1,1 +1,1 @@
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Name</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/name/">Name</a> pattern

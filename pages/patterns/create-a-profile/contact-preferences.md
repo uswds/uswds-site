@@ -1,7 +1,7 @@
 ---
 title: Contact preferences
 story: Help users indicate their contact preferences
-permalink: /patterns/create-a-profile/contact-preferences/
+permalink: /patterns/create-a-user-profile/contact-preferences/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
@@ -106,9 +106,9 @@ Allow the user to select from available options, and to include a brief message 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/address">Address</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address">Email address</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/address">Address</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/email-address">Email address</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/phone-number">Phone number</a> pattern
 - <a href="{{ site.baseurl }}/templates/form-templates/address-form/">Address form</a> template
 
 {:.site-component-section-title}

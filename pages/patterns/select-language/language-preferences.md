@@ -1,7 +1,7 @@
 ---
 title: Preferred language
 story: Help a user to choose the languages they prefer for communication
-permalink: /patterns/language-selector/language-preferences/
+permalink: /patterns/select-a-language/language-preferences/
 layout: pattern
 category: Patterns
 sub-category: Select a language
@@ -109,10 +109,10 @@ The pattern allows users to select their language preferences for both written a
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Contact preferences</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/more-than-three-languages/">Select from three or more languages</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/contact-preferences/">Contact preferences</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Find selected multilingual content</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/more-than-three-languages/">Select from three or more languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages/">Select from two languages</a> pattern
 
 {:.site-component-section-title}
 ## References

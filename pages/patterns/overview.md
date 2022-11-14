@@ -21,7 +21,7 @@ Interested in what the USWDS team learned speaking with digital teams throughout
   data-meta="Complex form">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/">Complex forms</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/">Complex forms</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users enter form information by easing their cognitive load and providing peace of mind.</p>
@@ -36,7 +36,7 @@ Interested in what the USWDS team learned speaking with digital teams throughout
   data-meta="Language selector">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/language-selector/">Language preferences</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-a-language/">Language preferences</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to easily identify and access content in whatever language they prefer.</p>
@@ -51,7 +51,7 @@ Interested in what the USWDS team learned speaking with digital teams throughout
   data-meta="User profile">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-profile/">User profile</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-user-profile/">User profile</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to provide information that is key to their identity.</p>

@@ -1,7 +1,7 @@
 ---
 title: Three or more languages
 story: Help a user choose from multiple available languages
-permalink: /patterns/language-selector/three-or-more-languages/
+permalink: /patterns/select-a-language/three-or-more-languages/
 layout: pattern
 category: Patterns
 sub-category: Select a language
@@ -20,7 +20,7 @@ Inconsistent placement and treatment of language selection interface components 
 Use this pattern when the content is available in three or more languages and all content is available in each language. 
 
 ### When to consider something else
-When content is available in only two languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern. When only selected multilingual content is available in some languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
+When content is available in only two languages, see the <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages/">Select from two languages</a> pattern. When only selected multilingual content is available in some languages, see the <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Selected content available</a> pattern.
 
 ### What's the solution?
 Place the language selector menu at the top of the screen above site navigation, allowing site visitors to use a dropdown menu to select their language of choice. Place the language selector on the top right for left-to-right languages and on the top left for right-to-left languages if possible.
@@ -121,8 +121,8 @@ Place the language selector menu at the top of the screen above site navigation,
 - <a href="{{ site.baseurl }}/components/button/">Button</a> component
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
 - <a href="{{ site.baseurl }}/components/language-selector/">Language selector</a> component
-- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Find selected multilingual content</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages">Select from two languages</a> pattern
 
 {:.site-component-section-title}
 ## References

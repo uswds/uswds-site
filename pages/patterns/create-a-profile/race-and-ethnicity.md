@@ -1,7 +1,7 @@
 ---
 title: Race and ethnicity
 story: Help users to provide the race and ethnicity that reflects their lived experience
-permalink: /patterns/create-a-profile/race-and-ethnicity/
+permalink: /patterns/create-a-user-profile/race-and-ethnicity/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile

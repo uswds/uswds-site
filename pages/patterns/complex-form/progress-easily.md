@@ -1,13 +1,13 @@
 ---
 title: Progress easily
 story: Help a user to progress easily through form questions 
-permalink: /patterns/complex-form/progress-easily/
+permalink: /patterns/complete-a-complex-form/progress-easily/
 layout: pattern
 category: Patterns
 sub-category: Complete a complex form
 lead: Empower users to successfully complete complex forms by reducing cognitive load and guiding them through the process in a way that is humane and respectful.
 changelog:
-  key: pattern-complex-form-progress-easily
+  key: pattern-complete-a-complex-form-progress-easily
 ---
 
 {:.site-component-section-title}
@@ -39,7 +39,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
         </h3>
         <div class="do-dont__content">
           <ul>
-            <li>Make sure you’re helping users to understand expectations as you are <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Establishing trust</a>. Be transparent in why specific information is being collected, how it will be used, and how that information will be safeguarded.</li>
+            <li>Make sure you’re helping users to understand expectations as you are <a href="{{ site.baseurl }}/patterns/complete-a-complex-form/establish-trust/">Establishing trust</a>. Be transparent in why specific information is being collected, how it will be used, and how that information will be safeguarded.</li>
             <li>Design with mobile in mind. Consider the touch screen experience and how forms can be delivered in bandwidth-challenged environments.</li>
             <li>Progressively disclose information, guiding the user from simple to more difficult questions.</li>
             <li>Break questions into small, meaningful chunks. Only show questions on one micro-topic at a time.</li>
@@ -89,8 +89,8 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
 
 - <a href="{{ site.baseurl }}/components/modal/">Modal</a> component
 - <a href="{{ site.baseurl }}/components/step-indicator/">Step indicator</a> component
-- <a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
-- <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complete-a-complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complete-a-complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
 {:.site-component-section-title}
 ## References

@@ -1,7 +1,7 @@
 ---
 title: Selected multilingual content
 story: Help a user find content in their preferred language when only selected content has been translated
-permalink: /patterns/language-selector/selected-content/
+permalink: /patterns/select-a-language/selected-content/
 layout: pattern
 category: Patterns
 sub-category: Select a language
@@ -20,7 +20,7 @@ Inconsistent placement of language selection components prevent users, especiall
 Use this pattern if your site offers a select set of content available in additional languages. Note: while this situation could apply to a single language or two language site, this pattern specifically describes a site with three or more languages as well as a small subset of content that is available in additional languages. 
 
 ### When to consider something else
-If your site is available in two or more languages and all content is available in each language, see related patterns <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> or <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a>.
+If your site is available in two or more languages and all content is available in each language, see related patterns <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages/">Select from two languages</a> or <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a>.
 
 ### What's the solution?
 Place the language selector button at the top right of the screen above site navigation to allow the user to access a dropdown with links to content in other languages.
@@ -123,8 +123,8 @@ Use this pattern when your site supports three or more languages, but offers a l
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
 - <a href="{{ site.baseurl }}/components/language-selector/">Language selector</a> component
-- <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages">Select from three or more languages</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages">Select from three or more languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages">Select from two languages</a> pattern
 
 {:.site-component-section-title}
 ## References

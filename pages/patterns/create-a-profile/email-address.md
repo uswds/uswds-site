@@ -1,7 +1,7 @@
 ---
 title: Email address
 story: Help users to enter their email address
-permalink: /patterns/create-a-profile/email-address/
+permalink: /patterns/create-a-user-profile/email-address/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
@@ -114,8 +114,8 @@ A text input field with validation and robust error messaging to guide users in 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/phone-number/">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/social-security-number/">Social Security Number</a> pattern
 
 {:.site-component-section-title}
 ## References

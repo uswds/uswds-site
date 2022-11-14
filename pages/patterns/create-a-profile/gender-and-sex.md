@@ -1,7 +1,7 @@
 ---
 title: Gender identity and sex
 story: Help a user select their gender identity and sex
-permalink: /patterns/create-a-profile/gender-and-sex/
+permalink: /patterns/create-a-user-profile/gender-and-sex/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
@@ -206,7 +206,7 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Pronouns</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/pronouns/">Pronouns</a> pattern
 
 {:.site-component-section-title}
 ## References

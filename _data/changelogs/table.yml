@@ -31,6 +31,16 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
+  - date: 2021-05-19
+    summary: Added guidance for making scrollable tables more accessible with `tabindex`.
+    affectsGuidance: true
+    githubPr: 1227
+    githubRepo: uswds-site
+  - date: 2021-05-19
+    summary: Added guidance for sortable tables.
+    affectsGuidance: true
+    githubPr: 1227
+    githubRepo: uswds-site
   # 2.11.0 release
   - date: 2021-03-17
     summary: Released sortable table.

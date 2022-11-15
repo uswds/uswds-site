@@ -2,6 +2,11 @@ title: Site alert
 type: component
 changelogURL:
 items:
+  - date: 2022-09-26
+    summary: Added guidance for using ARIA roles and ARIA labels.
+    affectsGuidance: true
+    githubPr: 1774
+    githubRepo: uswds-site
   # 3.2.0 release
   - date: 2022-10-19
     summary: Updated the alignment of site alert content to visually match banner content.

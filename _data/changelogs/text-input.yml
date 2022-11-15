@@ -19,6 +19,11 @@ items:
     githubPr: 4751
     githubRepo: uswds
     versionUswds: 3.0.2
+  - date: 2022-04-28
+    summary: Added documentation for the `usa-input` package.
+    affectsGuidance: true
+    githubPr: 1528
+    githubRepo: uswds-site
   # 3.0 release
   - date: 2022-04-28
     summary: Updated to Sass module syntax and new package structure.

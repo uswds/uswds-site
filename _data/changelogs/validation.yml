@@ -19,7 +19,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-04-28
-    summary: Added documentation for the `usa-validation` package.
+    summary: Updated documentation to reflect the updated `usa-validation` package name.
     affectsGuidance: true
     githubPr: 1528
     githubRepo: uswds-site

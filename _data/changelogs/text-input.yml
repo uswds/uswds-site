@@ -20,7 +20,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-04-28
-    summary: Added documentation for the `usa-input` package.
+    summary: Updated documentation to reflect the updated `usa-input` package name.
     affectsGuidance: true
     githubPr: 1528
     githubRepo: uswds-site

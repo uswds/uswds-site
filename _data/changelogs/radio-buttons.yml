@@ -16,7 +16,7 @@ items:
   githubRepo: uswds
   versionUswds: 3.1.0
 - date: 2022-04-28
-  summary: Added documentation for the `usa-radio` package.
+  summary: Updated documentation to reflect the updated `usa-radio` package name.
   affectsGuidance: true
   githubPr: 1528
   githubRepo: uswds-site

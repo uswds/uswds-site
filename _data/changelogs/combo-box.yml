@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-04-28
-    summary: Added documentation for the `usa-combo-box` package.
+    summary: Updated documentation to reflect the updated `usa-combo-box` package name.
     affectsGuidance: true
     githubPr: 1528
     githubRepo: uswds-site

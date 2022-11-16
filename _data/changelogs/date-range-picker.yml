@@ -31,7 +31,7 @@ items:
     githubPr: 1605
     githubRepo: uswds-site
   - date: 2022-04-28
-    summary: Added documentation for the `usa-date-range-picker` package.
+    summary: Updated documentation to reflect the updated `usa-date-range-picker` package name.
     affectsGuidance: true
     githubPr: 1528
     githubRepo: uswds-site

@@ -3528,3 +3528,7 @@ $do-dont-top-bar-width: 1;
     display: block;
   }
 }
+
+.usa-in-page-nav {
+  @include u-z(100);
+}

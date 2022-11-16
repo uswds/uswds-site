@@ -23,3 +23,8 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
+  - date: 2021-03-17
+    summary: Added identifier guidance and documentation.
+    affectsGuidance: true
+    githubPr: 1180
+    githubRepo: uswds-site

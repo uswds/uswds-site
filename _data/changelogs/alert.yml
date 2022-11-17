@@ -10,7 +10,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-09-26
-    summary: Updated accessibility documentation to give clearer instructions for adding the appropriate ARIA role.
+    summary: Updated documentation to give clearer instructions for adding the ARIA role attribute.
+    affectsAccessibility: true
     affectsGuidance: true
     githubPr: 1770
     githubRepo: uswds-site

@@ -3,14 +3,19 @@ type: component
 changelogURL:
 items:
 - date: 2022-04-28
-  summary: Updated documentation to reflect the updated `usa-memorable-date` package name.
+  summary: Updated documentation with guidance for adding labels and using text boxes in place of select elements.
   affectsGuidance: true
-  githubPr: 1528
+  githubPr: 1538
+  githubRepo: uswds-site
+- date: 2022-04-28
+  summary: Updated package name to `usa-memorable-date`.
+  affectsGuidance: true
+  githubPr: 1538
   githubRepo: uswds-site
 - date: 2022-04-28
   summary: Renamed date input component to memorable date.
   affectsGuidance: true
-  githubPr: 1493
+  githubPr: 1538
   githubRepo: uswds-site
 - date: 2022-04-28
   summary: Updated to Sass module syntax and new package structure.
@@ -21,3 +26,8 @@ items:
   githubPr: 4656
   githubRepo: uswds
   versionUswds: 3.0.0
+- date: 2022-04-13
+  summary: Updated package name to `form-controls`.
+  affectsGuidance: true
+  githubPr: 1497
+  githubRepo: uswds-site

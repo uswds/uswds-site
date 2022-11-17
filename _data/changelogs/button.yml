@@ -20,7 +20,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-06-03
-    summary: Updated button component page to include guidance on button `type` attribute.
+    summary: Updated documentation to include guidance on button `type` attribute.
     affectsGuidance: true
     githubPr: 1608
     githubRepo: uswds-site

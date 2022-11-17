@@ -17,7 +17,7 @@ changelog:
 
 While there isn’t a generally accepted definition for race, the Census Bureau describes the [race categories included in census questionnaires](https://www.census.gov/topics/population/race/about.html) as reflecting “a social definition ... not an attempt to define race biologically, anthropologically, or genetically.” 
 
-The Office of Management and Budget (OMB) requires that five minimum categories of race and ethnicity are tracked when the data will be used for statistical, administrative, or compliance purposes: White, Black or African American, American Indian or Alaska Native, Asian, and Native Hawaiian or Other Pacific Islander.
+The Office of Management and Budget (OMB) requires that five minimum categories of race and ethnicity are tracked when the data will be used for statistical, administrative, or compliance purposes: American Indian or Alaska Native, Asian, Black or African American, Native Hawaiian or Other Pacific Islander, and White.
 
 OMB requires only two categories for data on ethnicity: Hispanic or Latino, and Not Hispanic or Latino.
 
@@ -46,11 +46,11 @@ Allow selection of more than one race and acknowledge people with multiple racia
         <div class="do-dont__content">
           <ul>
             <li>Do explain why race and ethnicity information is being collected, and how this information will be used.</li>
+            <li>Do ask for race and ethnicity as a [two-part question as currently required by OMB](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf).</li>
             <li>Do allow users to select more than one race and ethnicity.</li>
             <li>Do allow an open-ended text entry field when ethnicity information is requested and use hint text to communicate that more than one ethnicity can be provided.</li>
             <li>Do include the ability to opt out of providing this information.</li>
-            <li>Do consider gender-neutral options when listing ethnicities. As an example, Latino encompasses both Hispanic and Latin-American ethnicities but has an implied masculine gender. Consider using <code>Hispanic</code> or <code>Latin American</code> choices instead. Gender-neutral options like <code>Latinx</code> have grown in use and adoption within the federal government, so we've chosen to use <code>Latinx</code> in our pattern preview. This recommendation may change over time.</li>
-            <li>Do consider whether the information you are collecting is best collected via <a href="https://www.federalregister.gov/d/2016-23672/p-18">separate questions vs. a combined race/ethnicity question.</a></li>
+            <li>Do consider gender-neutral options when listing ethnicities. As an example, Latino encompasses both Hispanic and Latin-American ethnicities but has an implied masculine gender. Consider using <code>Hispanic</code> or <code>Latin American</code> instead. Gender-neutral options like <code>Latinx</code> have grown in use and adoption within the federal government, but this recommendation may change over time.</li>
           </ul> 
         </div>
       </div>
@@ -66,6 +66,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
         <div class="do-dont__content">
           <ul>
             <li>Do not restrict choices to a single race or ethnicity.</li>
+            <li>Do not use a single question to capture both race and ethnicity information. While the questions should be asked together, they should not be combined.</li>
             <li>Do not require the user to answer. Provide an option like “Prefer not to say.”</li>
             <li>Do not capture race or ethnicity information for operational or generalization purposes. For example, understanding that a majority of your webinar attendees self-identify as Hispanic does not mean that Hispanic people enjoy webinars.</li>
           </ul>
@@ -112,16 +113,6 @@ Allow selection of more than one race and acknowledge people with multiple racia
     - Black or African American
     - Native Hawaiian or Other Pacific Islander
     - White
-- <strong>Expanded categories tested in the 2020 Census:</strong>
-    - American Indian or Alaska Native
-    - Asian
-    - Black or African American
-    - Hispanic, Latino, or Spanish
-    - Middle Eastern or North African
-    - Native Hawaiian or other Pacific Islander
-    - White
-    - Some other race
-    - Prefer not to answer
 
 ### Accessibility
 
@@ -141,8 +132,8 @@ Allow selection of more than one race and acknowledge people with multiple racia
 
 {:.site-component-section-title}
 ## References
-- 2010 Census Race and Hispanic Origin Alternative Questionnaire experiment. (February 28, 2013) Retrieved on July 15, 2022, from [https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html](https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html)
-- 2015 National Content Test Race and Ethnicity Analysis report. (February 28, 2017) Retrieve on July 15, 2022, from [https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf](https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf)
+- 2010 Census race and Hispanic origin alternative questionnaire experiment. (February 28, 2013) Retrieved on July 15, 2022, from [https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html](https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html)
+- 2015 National content test race and ethnicity analysis report. (February 28, 2017) Retrieved on July 15, 2022, from [https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf](https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf)
 - About the topic of race. (n.d.) Retrieved on July 15, 2022, from [https://www.census.gov/topics/population/race/about.html](https://www.census.gov/topics/population/race/about.html)
 - Collecting and tabulating ethnicity and race response in the 2020 Census. (February 2020) Retrieved on July 16, 2022, from [https://www2.census.gov/about/training-workshops/2020/2020-02-19-pop-presentation.pdf](https://www2.census.gov/about/training-workshops/2020/2020-02-19-pop-presentation.pdf)
 - Content research. (n.d.) Retrieved on July 15, 2022, from [https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/content-research.html](https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/content-research.html)

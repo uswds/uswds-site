@@ -2,6 +2,13 @@ title: Race and ethnicity
 type: pattern
 changelogURL:
 items:
+  - date: 2022-11-16
+    summary: Updated to clarify race and ethnicity question format.
+    summaryAdditional: Added additional detail to clarify the two-part nature of requesting race and ethnicity information, delivered together. Updated preview and reference to preview to reflect guidance.
+    affectsGuidance: true
+    githubPr: ####
+    githubRepo: uswds-site
+    versionUswds: 3.3.0
   - date: 2022-11-14
     summary: Pattern published.
     affectsGuidance: true

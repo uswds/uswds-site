@@ -2,6 +2,17 @@
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
 
+{% if page.alert == true %}
+<div class="usa-alert margin-bottom-3 usa-alert--{{ page.alert-class }}">
+  <div class="usa-alert__body">
+    <h2 class="usa-alert__heading">{{ page.alert-heading }}</h2>
+    <p class="usa-alert__text">
+      {{ page.alert-content }}
+    </p>
+  </div>
+</div>
+{% endif %}
+
 {% if page.parent == null and content.size > 1 %}
 <h2 class="site-component-section-title">About the {{ componentName }} {{ page.type }}</h2>
 <div class="font-lang-md measure-5 margin-top-3 margin-bottom-6">

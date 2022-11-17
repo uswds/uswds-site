@@ -6,8 +6,11 @@ items:
   summary: Styled aria-disabled to match disabled.
   summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
   isBreaking: false
-  affectsAssets: true
-  affectsJavascript: true
+  affectsAccessibility: true
+  affectsAssets: false
+  affectsGuidance: false
+  affectsJavascript: false
+  affectsMarkup: false
   affectsStyles: true
   githubPr: 4783
   githubRepo: uswds
@@ -33,7 +36,7 @@ items:
   githubRepo: uswds
   versionUswds: 3.0.0
 - date: 2022-06-16
-  summary: Added guidance for using external links.
+  summary: Added guidance for handling external links.
   affectsGuidance: true
   githubPr: 1225
   githubRepo: uswds-site
@@ -43,8 +46,8 @@ items:
   githubPr: 1180
   githubRepo: uswds-site
 - date: 2021-03-17
-  summary: Created modal component.
-  summaryAdditional:  A modal disables page content and focuses the user’s attention on a single task or message.
+  summary: Added modal component.
+  summaryAdditional: A modal disables page content and focuses the user’s attention on a single task or message.
   isBreaking: false
   affectsAccessibility: false
   affectsAssets: false

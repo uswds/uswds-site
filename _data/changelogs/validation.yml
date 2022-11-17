@@ -33,3 +33,8 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
+  - date: 2021-06-07
+    summary: Updated package name to `validation`.
+    affectsGuidance: true
+    githubPr: 1219
+    githubRepo: uswds-site

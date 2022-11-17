@@ -22,7 +22,7 @@ items:
     githubPr: 1497
     githubRepo: uswds-site
   - date: 2021-03-18
-    summary: Updated documentation with guidance that the input cannot include units.
+    summary: Updated guidance to clarify that the input cannot include units.
     affectsGuidance: true
     githubPr: 1186
     githubRepo: uswds-site

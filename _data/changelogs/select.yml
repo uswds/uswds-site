@@ -27,5 +27,5 @@ items:
 - date: 2022-04-28
   summary: Renamed component from "dropdown" to "select".
   affectsGuidance: true
-  githubPr: 1493
+  githubPr: 1538
   githubRepo: uswds-site

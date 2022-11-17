@@ -48,3 +48,8 @@ items:
     affectsGuidance: true
     githubPr: 1269
     githubRepo: uswds-site
+  - date: 2021-06-07
+    summary: Updated package name to `usa-form-controls`.
+    affectsGuidance: true
+    githubPr: 1219
+    githubRepo: uswds-site

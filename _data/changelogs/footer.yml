@@ -60,7 +60,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.0
   - date: 2021-03-17
-    summary: Added documentation for `usa-footer--big` and `usa-footer--slim` variants.
+    summary: Updated and improved our guidance for footer.
     affectsGuidance: true
     githubPr: 1180
     githubRepo: uswds-site

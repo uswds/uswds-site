@@ -2,12 +2,6 @@ title: Gender identity and sex
 type: pattern
 changelogURL:
 items:
-  - date: 2022-11-16
-    summary: Removed duplicate reference.
-    affectsGuidance: true
-    githubPr: 1906
-    githubRepo: uswds-site
-    versionUswds: 3.3.0
   - date: 2022-11-14
     summary: Pattern published.
     affectsGuidance: true

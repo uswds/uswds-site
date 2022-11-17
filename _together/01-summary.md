@@ -150,10 +150,6 @@ With help from digital leaders across the federal space, we've developed pattern
   </p>
 
   <p>
-    While we may never reach the aspirational goal of a totally inclusive experience, the process of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. 
-  </p>
-
-  <p>
     Part of that process includes thinking through practical applications of what it means to apply DEIA principles, including:
   </p>
 </div>

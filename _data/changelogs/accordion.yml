@@ -11,7 +11,7 @@ items:
     githubPr: 4695
     githubRepo: uswds
     versionUswds: 3.1.0
-  - date: 2022-07-20
+  - date: 2022-08-01
     summary: Updated documentation to reference the correct multi-select attribute.
     summaryAdditional: The attribute was updated from `aria-multiselectable="true"` to `data-allow-multiple`.
     affectsGuidance: true

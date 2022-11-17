@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-29
-    summary: Updated guidance for using aspect ratio.
+    summary: Updated guidance for using aspect ratio utility classes.
     summaryAdditional: Added instructions for using the updated aspect ratio utility classes and removed reference to `.usa-card__media--set-aspect`.
     affectsGuidance: true
     githubPr: 1729

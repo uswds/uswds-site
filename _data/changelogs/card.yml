@@ -3,8 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-29
-    summary: Updated guidance for using aspect ratio utility classes.
-    summaryAdditional: Added instructions for using the updated aspect ratio utility classes and removed reference to `.usa-card__media--set-aspect`.
+    summary: Added guidance for using aspect ratio utility classes.
     affectsGuidance: true
     githubPr: 1729
     githubRepo: uswds-site
@@ -33,7 +32,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.0
   - date: 2021-03-17
-    summary: Updated and improved our guidance around cards.
+    summary: Updated and improved guidance around cards.
     affectsGuidance: true
     githubPr: 1180
     githubRepo: uswds-site

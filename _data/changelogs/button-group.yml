@@ -27,7 +27,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-04-28
-    summary: Updated package name to `usa-button-group`.
+    summary: Updated package name to usa-button-group.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site

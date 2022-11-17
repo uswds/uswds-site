@@ -33,7 +33,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-04-28
-    summary: Updated package name to `usa-header`.
+    summary: Updated package name to usa-header.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site

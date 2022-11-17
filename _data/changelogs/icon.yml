@@ -61,7 +61,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-03-10
-    summary: Updated documentation to replace `uswds-gulp` with `uswds-compile`.
+    summary: Updated documentation to replace uswds-gulp with uswds-compile.
     affectsGuidance: true
     githubPr: 1424
     githubRepo: uswds-site
@@ -106,7 +106,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.2
   - date: 2021-03-17
-    summary: Updated and improved our guidance for icons.
+    summary: Updated and improved guidance for icons.
     affectsGuidance: true
     githubPr: 1180
     githubRepo: uswds-site

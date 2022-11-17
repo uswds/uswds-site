@@ -29,7 +29,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-05-19
-    summary: Added guidance for making scrollable tables more accessible with `tabindex`.
+    summary: Added guidance for making scrollable tables more accessible with tabindex.
     affectsGuidance: true
     githubPr: 1227
     githubRepo: uswds-site

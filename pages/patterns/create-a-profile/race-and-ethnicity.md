@@ -21,7 +21,7 @@ The Office of Management and Budget (OMB) requires that five minimum categories 
 
 OMB requires only two categories for data on ethnicity: Hispanic or Latino, and Not Hispanic or Latino.
 
- [OMB’s Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)](https://www.federalregister.gov/d/2016-23672/p-27) actually encourage the collection of detailed race and ethnicity information provided it can be aggregated into their minimum categories. The challenge comes in ensuring that the people answering race and ethnicity questions see themselves in the provided choices. Increasingly, Americans do not. This has led the U.S. Census Bureau to conduct extensive research into alternative ways to collect information on race and ethnicity. This research suggests that a combined race and ethnicity question with detailed checkboxes and the ability to provide additional detail is the optimal way to improve the collection of race and ethnicity data.
+[OMB’s Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)](https://www.federalregister.gov/d/2016-23672/p-27) actually encourage the collection of detailed race and ethnicity information provided it can be aggregated into their minimum categories. The challenge comes in ensuring that the people answering race and ethnicity questions see themselves in the provided choices. Increasingly, Americans do not. This has led the U.S. Census Bureau to conduct extensive research into alternative ways to collect information on race and ethnicity. This research suggests that a combined race and ethnicity question with detailed checkboxes and the ability to provide additional detail is the optimal way to improve the collection of race and ethnicity data.
 
 ### What problem does this solve?
 Race and ethnicity can be challenging information for a user to provide, especially when choices are limited or do not align with how an individual self-identifies. Collecting race and ethnicity information can help illuminate issues of equity and disparities in incarceration rates, income, housing, employment, health care, education, and more. Respect for individual dignity should guide the methods for collecting data on race and ethnicity. 
@@ -46,7 +46,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
         <div class="do-dont__content">
           <ul>
             <li>Do explain why race and ethnicity information is being collected, and how this information will be used.</li>
-            <li>Do ask for race and ethnicity as a [two-part question as currently required by OMB](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf).</li>
+            <li>Do ask for race and ethnicity as a <a href="https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf">two-part question as currently required by OMB</a>.</li>
             <li>Do allow users to select more than one race and ethnicity.</li>
             <li>Do allow an open-ended text entry field when ethnicity information is requested and use hint text to communicate that more than one ethnicity can be provided.</li>
             <li>Do include the ability to opt out of providing this information.</li>

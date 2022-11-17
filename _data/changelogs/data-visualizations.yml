@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-10-31
-    summary: Fixed invalid `aria-describedby` value in the bar chart example.
+    summary: Fixed invalid value for aria-describedby in the bar chart example.
     affectsGuidance: true
     githubPr: 1861
     githubRepo: uswds-site

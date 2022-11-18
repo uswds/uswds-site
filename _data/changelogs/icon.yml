@@ -61,7 +61,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-03-10
-    summary: Replaced uswds-gulp with uswds-compile.
+    summary: Replaced `uswds-gulp` with `uswds-compile`.
     affectsGuidance: true
     githubPr: 1424
     githubRepo: uswds-site

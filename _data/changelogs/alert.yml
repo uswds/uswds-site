@@ -10,7 +10,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-09-26
-    summary: Updated instructions for using the ARIA role attribute.
+    summary: Updated instructions for using the ARIA `role` attribute.
     affectsAccessibility: true
     affectsGuidance: true
     githubPr: 1770

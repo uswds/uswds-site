@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-29
-    summary: Added documentation for $theme-footer-max-width.
+    summary: Added documentation for `$theme-footer-max-width`.
     affectsGuidance: true
     githubPr: 1719
     githubRepo: uswds-site

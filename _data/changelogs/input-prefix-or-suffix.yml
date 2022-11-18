@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-04-28
-    summary: Updated package name to usa-input-prefix-suffix.
+    summary: Updated package name to `usa-input-prefix-suffix`.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site
@@ -17,7 +17,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-13
-    summary: Updated package name to form-controls.
+    summary: Updated package name to `form-controls`.
     affectsGuidance: true
     githubPr: 1497
     githubRepo: uswds-site

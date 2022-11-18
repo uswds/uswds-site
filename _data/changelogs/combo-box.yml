@@ -9,7 +9,7 @@ items:
     githubPr: 1898
     githubRepo: uswds-site
   - date: 2022-04-28
-    summary: Updated package name to usa-combo-box.
+    summary: Updated package name to `usa-combo-box`.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site
@@ -23,7 +23,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-13
-    summary: Updated package name to form-controls.
+    summary: Updated package name to `form-controls`.
     affectsGuidance: true
     githubPr: 1497
     githubRepo: uswds-site
@@ -36,7 +36,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-03-07
-    summary: Added proper aria-controls to combo box.
+    summary: Added proper `aria-controls` to combo box.
     summaryAdditional: Now the combo box input gets the expected `aria-controls` property when it's initialized.
     affectsAccessibility: true
     affectsJavascript: true

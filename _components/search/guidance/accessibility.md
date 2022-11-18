@@ -1,2 +1,2 @@
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls]({{ site.baseurl }}/components/form).
-- **Include the word “Search” in the button.** Always include the word “search” inside the `<button type="button">` element for screen readers. You can visually hide this text using the CSS class `usa-sr-only` or Sass mixin `@include sr-only`.
+- **Include the word “Search” in the button.** Always include the word “search” inside the `<button>` element for screen readers. You can visually hide this text using the CSS class `usa-sr-only` or Sass mixin `@include sr-only`.

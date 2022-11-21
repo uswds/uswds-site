@@ -1,0 +1,16 @@
+title: 404 page
+type: template
+items:
+  - date: 2021-06-04
+    summary: Added documentation for the Spanish template variant.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1223
+    githubRepo: uswds-site
+    versionUswds:

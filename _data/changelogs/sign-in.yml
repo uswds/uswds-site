@@ -1,0 +1,16 @@
+title: Sign-in
+type: template
+items:
+  - date: 2021-06-007
+    summary: Added documentation for the Spanish template variant.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1235
+    githubRepo: uswds-site
+    versionUswds:

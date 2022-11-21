@@ -27,6 +27,8 @@ subnav:
     href: '#multiple-sign-in-options-code'
   - text: Guidance
     href: '#multiple-sign-in-options-guidance'
+  - text: Latest updates
+    href: '#multiple-sign-in-options-changelog'
 title: Multiple sign-in options
 type: template
 ---

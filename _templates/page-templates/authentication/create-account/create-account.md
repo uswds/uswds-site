@@ -29,6 +29,8 @@ subnav:
     href: '#create-account-code'
   - text: Guidance
     href: '#create-account-guidance'
+  - text: Latest updates
+    href: '#create-account-changelog'
 title: Create account
 type: template
 ---

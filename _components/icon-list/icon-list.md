@@ -16,7 +16,10 @@ subnav:
   href: '#icon-list-guidance'
 - text: Package
   href: '#icon-list-package'
+- text: Latest updates
+  href: '#icon-list-changelog'
 title: Icon list
+type: component
 variants:
   - variant: "`.usa-icon-list--[color]`"
     description: Change the color of all the list's icons by updating [color] to any one of the theme colors listed on the [color utilities](/utilities/color) page.

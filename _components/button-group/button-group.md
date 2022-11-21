@@ -14,6 +14,8 @@ subnav:
   href: '#default-button-group'
 - text: Segmented button group
   href: '#segmented-button-group'
+- text: Latest updates
+  href: '#button-group-changelog'
 title: Button group
 type: component
 ---

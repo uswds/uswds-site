@@ -1,0 +1,1 @@
+- **Incomplete content translations.** If your site includes content in three or more languages but the majority of content is not available in each language.

@@ -17,6 +17,8 @@ subnav:
   href: '#radio-buttons-guidance'
 - text: Package
   href: '#radio-buttons-package'
+- text: Latest updates
+  href: '#radio-buttons-changelog'
 title: Radio buttons
 type: component
 variants:

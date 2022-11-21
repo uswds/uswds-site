@@ -34,10 +34,14 @@ subnav:
     href: '#link-code'
   - text: Guidance
     href: '#link-guidance'
+  - text: What you should do
+    href: '#what-you-should-do'
   - text: Package
     href: '#link-package'
   - text: Research findings
     href: '#research-findings'
+  - text: Latest updates
+    href: '#link-changelog'
 title: Link
 variants:
   - variant: "`usa-link--external`"

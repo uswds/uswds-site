@@ -20,6 +20,8 @@ subnav:
   href: '#tag-guidance'
 - text: Package
   href: '#tag-package'
+- text: Latest updates
+  href: '#tag-changelog'
 tags:
   - label
   - lable
@@ -28,4 +30,3 @@ variants:
   - variant: "`usa-tag--big`"
     description: A tag with increased padding and font size.
 ---
-

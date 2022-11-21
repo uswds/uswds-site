@@ -16,6 +16,8 @@ subnav:
   href: '#line-charts'
 - text: Bar charts
   href: '#bar-charts'
+- text: Latest updates
+  href: '#data-visualizations-changelog'
 tags:
   - dataviz
   - infographics
@@ -405,7 +407,7 @@ tags:
       </g>
     </g>
     </svg>
-    <table class="usa-sr-only" aria-describedby="source">
+    <table class="usa-sr-only" aria-describedby="source_bar">
       <caption>Top 5 most visited Nation Parks</caption>
       <thead>
         <tr>

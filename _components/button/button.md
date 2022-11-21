@@ -38,4 +38,6 @@ subnav:
   href: '#button-guidance'
 - text: Package
   href: '#button-package'
+- text: Latest updates
+  href: '#button-changelog'
 ---

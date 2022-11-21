@@ -43,6 +43,8 @@ subnav:
   href: '#date-range-picker-guidance'
 - text: Package
   href: '#date-range-picker-package'
+- text: Latest updates
+  href: '#date-range-picker-changelog'
 tags:
   - calendar
   - form

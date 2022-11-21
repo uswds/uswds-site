@@ -23,6 +23,8 @@ subnav:
   href: '#table-guidance'
 - text: Package
   href: '#table-package'
+- text: Latest updates
+  href: '#table-changelog'
 tags:
   - table
   - zebra stripes

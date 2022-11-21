@@ -23,6 +23,8 @@ subnav:
   href: '#range-slider-guidance'
 - text: Package
   href: '#range-slider-package'
+- text: Latest updates
+  href: '#range-slider-changelog'
 tags:
   - form
   - forms

@@ -13,7 +13,9 @@
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
-      <th scope="col" class="{{ col1Classes }}">{{ col1Title }}</th>
+      <th scope="col" class="{% if changelog.type: == 'documentation' %}tablet:grid-col-3{% else %}{{ col1Classes }}{% endif %}">
+        {{ col1Title }}
+      </th>
       {% if
         changelog.type: == "component"
         or changelog.type: == "pattern"
@@ -23,13 +25,15 @@
         <th scope="col" class="{{ col3Classes }}">{{ col3Title }}</th>
         <th scope="col" class="{{ col4Classes }}">{{ col4Title }}</th>
       {% endif %}
-      <th scope="col" class="{{ col5Classes }}">{{ col5Title }}</th>
+      <th scope="col" class="{% unless changelog.type: == 'documentation' %}{{ col5Classes }}{% endunless %}">
+        {{ col5Title }}
+      </th>
     </tr>
   </thead>
   <tbody class="font-lang-3xs">
     {% for item in changelogItems %}
       <tr class="{% if item.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
-        <td data-title="{{ col1Title }}" class="{{ col1Classes }}">
+        <td data-title="{{ col1Title }}" class="{% if changelog.type: == 'documentation' %}tablet:grid-col-3{% else %}{{ col1Classes }}{% endif %}">
           {% if item.date %}
             <span class="font-mono-3xs">{{ item.date }}</span>
           {% endif %}
@@ -76,7 +80,7 @@
             {% endif %}
           </td>
         {% endif %}
-        <td data-title="{{ col5Title }}" class="{{ col5Classes }}">
+        <td data-title="{{ col5Title }}" class="{% unless changelog.type: == 'documentation' %}{{ col5Classes }}{% endunless %}" >
           {% if item.summary%}
             <p class="measure-6">
               {% if item.isBreaking %}

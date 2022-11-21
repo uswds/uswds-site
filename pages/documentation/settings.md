@@ -19,6 +19,8 @@ subnav:
   href: '#typography-settings'
 - text: Utilities settings
   href: '#utilities-settings'
+- text: Latest updates
+  href: '#settings-changelog'
 ---
 
 ## Introducing USWDS settings

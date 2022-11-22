@@ -1,6 +1,7 @@
 
 {% assign col1Title = 'Date' %}
 {% assign col1Classes = 'tablet:grid-col' %}
+{% assign col1ClassesMinimal = 'tablet:grid-col-3 desktop:grid-col-2' %}
 {% assign col2Title = 'USWDS version' %}
 {% assign col2Classes = 'tablet:grid-col tablet:padding-left-0' %}
 {% assign col3Title = 'Affects' %}
@@ -13,7 +14,7 @@
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
-      <th scope="col" class="{% if changelog.type: == 'documentation' %}tablet:grid-col-3{% else %}{{ col1Classes }}{% endif %}">
+      <th scope="col" class="{% if changelog.type: == 'documentation' %}{{ col1ClassesMinimal }}{% else %}{{ col1Classes }}{% endif %}">
         {{ col1Title }}
       </th>
       {% if
@@ -33,7 +34,7 @@
   <tbody class="font-lang-3xs">
     {% for item in changelogItems %}
       <tr class="{% if item.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
-        <td data-title="{{ col1Title }}" class="{% if changelog.type: == 'documentation' %}tablet:grid-col-3{% else %}{{ col1Classes }}{% endif %}">
+        <td data-title="{{ col1Title }}" class="{% if changelog.type: == 'documentation' %}{{ col1ClassesMinimal }}{% else %}{{ col1Classes }}{% endif %}">
           {% if item.date %}
             <span class="font-mono-3xs">{{ item.date }}</span>
           {% endif %}

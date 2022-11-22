@@ -20,7 +20,7 @@ subnav:
 - text: Package
   href: '#memorable-date-package'
 - text: Latest updates
-  href: '#memorable-date-changelog'
+  href: '#changelog'
 tags:
   - form
   - forms
@@ -30,4 +30,6 @@ tags:
   - memorable date
 title: Memorable date
 type: component
+changelog:
+  key: component-memorable-date
 ---

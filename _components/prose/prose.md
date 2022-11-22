@@ -19,7 +19,7 @@ subnav:
   - text: Package
     href: '#prose-package'
   - text: Latest updates
-    href: '#prose-changelog'
+    href: '#changelog'
 title: Prose
 type: component
 tags:
@@ -32,4 +32,6 @@ tags:
   - text
   - writing
   - body
+changelog:
+  key: component-prose
 ---

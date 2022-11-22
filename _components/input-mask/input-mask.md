@@ -25,4 +25,6 @@ tags:
   - input
   - form
   - input mask
+changelog:
+  key: component-input-mask
 ---

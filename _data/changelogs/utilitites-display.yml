@@ -1,9 +1,9 @@
-title: Shadow tokens
+title: Display utility
 type: documentation
 changelogURL:
 items:
-  - date: 2022-03-11
-    summary: Updated token value from `0` to `none`.
+  - date: 2022-06-08
+    summary: Updated demonstration of `display:none`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -11,7 +11,7 @@ items:
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
-    affectsStyles: true
-    githubPr: 1215
+    affectsStyles:
+    githubPr: 1630
     githubRepo: uswds-site
     versionUswds:

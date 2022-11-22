@@ -1,7 +1,20 @@
-title: Layout grid tokens
+title: Layout grid utility
 type: documentation
 changelogURL:
 items:
+  - date: 2022-06-08
+    summary: Updated 'desktop' value from `1040px` to `1024px`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1361
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2022-03-11
     summary: Updated `tablet-lg` breakpoint value from `800px` to `880px`.
     summaryAdditional:

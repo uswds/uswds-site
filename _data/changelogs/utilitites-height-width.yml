@@ -1,0 +1,17 @@
+title: Height and width utility
+type: documentation
+changelogURL:
+items:
+  - date: 2021-10-20
+    summary: Updated documentation to reflect the fact that width styles ship with responsive variants by default.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1265
+    githubRepo: uswds-site
+    versionUswds:

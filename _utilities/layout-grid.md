@@ -31,7 +31,7 @@ subnav:
 - text: Latest updates
   href: '#changelog'
 changelog:
-  key: guidance-tokens-layout-grid
+  key: utilities-layout-grid
 ---
 
 <h2 id="how-it-works">How it works</h2>

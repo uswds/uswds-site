@@ -1,0 +1,30 @@
+title: Spacing tokens
+type: documentation
+changelogURL:
+items:
+  - date: 2022-03-11
+    summary: Reverted `tablet-lg` breakpoint value back to `800px`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1474
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2022-02-24
+    summary: Updated `tablet-lg` breakpoint value from `800px` to `880px`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1455
+    githubRepo: uswds-site
+    versionUswds:

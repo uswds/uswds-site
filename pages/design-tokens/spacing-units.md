@@ -10,6 +10,10 @@ subnav:
   href: '#spacing-unit-tokens'
 - text: Using spacing unit tokens
   href: '#using-spacing-unit-tokens'
+- text: Latest update
+  href: '#changelog'
+changelog:
+  key: guidance-tokens-spacing
 ---
 
 {% assign tokens = site.data.tokens.spacing %}

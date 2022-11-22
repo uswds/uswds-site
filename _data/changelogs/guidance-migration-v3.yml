@@ -1,0 +1,56 @@
+title: Migrating to 3.0
+type: documentation
+changelogURL:
+items:
+  - date: 2022-07-17
+    summary: Added note about possible error related to ``@use "uswds-core" with ()`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1698
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2022-08-29
+    summary: Added clarity for users migrating from USWDS 1.x.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1739
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2022-05-04
+    summary: Added clarity to migration guide.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1583
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2022-04-28
+    summary: Added "Migrating to USWDS 3.0" guide.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1538
+    githubRepo: uswds-site
+    versionUswds:

@@ -1,0 +1,81 @@
+title: Settings
+type: documentation
+changelogURL:
+items:
+  - date: 2022-09-26
+    summary: Fixed typos for `$theme-color-primary-vivid` and `$theme-color-secondary-vivid`.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1767
+    githubRepo: uswds-site
+  - date: 2022-09-26
+    summary: Clarified instructions for configuring settings.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1755
+    githubRepo: uswds-site
+  - date: 2022-08-29
+    summary: Added `$theme-footer-max-width`.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1719
+    githubRepo: uswds-site
+  - date: 2022-07-17
+    summary: Added a note describing the error related to configuring `uswds-core`.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1698
+    githubRepo: uswds-site
+  - date: 2022-04-28
+    summary: Updated the settings page to use the new USWDS 3.0 conventions.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1564
+    githubRepo: uswds-site
+  - date: 2022-04-28
+    summary: Updated the settings page to use the new USWDS 3.0 conventions.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1564
+    githubRepo: uswds-site
+  - date: 2022-03-11
+    summary: Updated value of `$theme-modal-lg-max-width` from `800px` to `880px`.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1474
+    githubRepo: uswds-site

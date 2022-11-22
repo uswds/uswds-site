@@ -23,7 +23,9 @@ subnav:
   - text: Tools
     href: '#tools'
   - text: Latest updates
-    href: '#color-changelog'
+    href: '#changelog'
+changelog:
+  key: guidance-tokens-color
 ---
 
 ## Introduction

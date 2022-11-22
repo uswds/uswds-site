@@ -1,0 +1,17 @@
+title: Layout grid tokens
+type: documentation
+changelogURL:
+items:
+  - date: 2022-03-11
+    summary: Updated `tablet-lg` breakpoint value from `800px` to `880px`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1474
+    githubRepo: uswds-site
+    versionUswds:

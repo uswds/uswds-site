@@ -20,7 +20,9 @@ subnav:
 - text: Utilities settings
   href: '#utilities-settings'
 - text: Latest updates
-  href: '#settings-changelog'
+  href: '#changelog'
+changelog:
+  key: guidance-settings
 ---
 
 ## Introducing USWDS settings

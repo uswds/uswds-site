@@ -20,7 +20,7 @@ subnav:
 - text: Package
   href: '#input-mask-package'
 - text: Latest updates
-  href: '#input-mask-changelog'
+  href: '#changelog'
 tags:
   - input
   - form

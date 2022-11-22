@@ -28,7 +28,7 @@ tags:
   - indentifier
   - logo
 changelog:
-  key: changelog-identifier
+  key: component-identifier
 ---
 
 {:.site-note}

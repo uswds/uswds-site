@@ -13,7 +13,9 @@ subnav:
   - text: "Step 3: Install USWDS"
     href: "#step-3-install-uswds"
   - text: Latest updates
-    href: '#phase-1-install-changelog'
+    href: "#changelog"
+changelog:
+  key: getting-started-devs-phase-1
 ---
 
 The U.S. Web Design System distributes our source code through npm, a package manager that uses a flavor of JavaScript called Node.js. The best way to add the Design System to your project is with npm via a Terminal window (check out some tips for using Terminal on a [Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) or [Windows](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)).

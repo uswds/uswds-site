@@ -3,5 +3,5 @@
 - Set the banner background color with `$theme-banner-background-color`. Banner text will update automatically.
 
 {:.site-note}
-**Note:** We recommend using `uswds-init` when using `banner` to assist in preventing flashes of unstyled content as well as cumulative layout shift (CLS). This small JavaScript file (less than 1 KB minified) helps the browser know if the USWDS JavaScript library is loading properly.
+**Note:** We recommend using `uswds-init` when using `banner` to assist in preventing flashes of unstyled content (FOUC) as well as cumulative layout shift (CLS). This small JavaScript file (less than 1 KB minified) helps the browser know if the USWDS JavaScript library is loading properly.
 <br>Simply reference `uswds-init.min.js` in the `<head>` of your page, or inline its contents directly into the `<script>` tag.

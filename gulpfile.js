@@ -37,8 +37,6 @@ exports.watchSass = uswds.watch;
  */
 exports.cleanAssets = build.cleanAssets;
 exports.copyDocImages = images.default;
-// Convert all png/jpg files to WebP format
-exports.convertImages = images.convert;
 
 exports.js = gulp.series(js.lint, js.build);
 exports.lintJS = js.lint;

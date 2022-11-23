@@ -20,6 +20,8 @@ subnav:
   href: '#site-alert-guidance'
 - text: Package
   href: '#site-alert-package'
+- text: Latest updates
+  href: '#site-alert-changelog'
 tags:
   - warning
   - bar

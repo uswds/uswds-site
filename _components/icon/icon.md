@@ -34,6 +34,8 @@ subnav:
   href: '#icon-guidance'
 - text: Package
   href: '#icon-package'
+- text: Latest updates
+  href: '#icon-changelog'
 tags:
   - image
   - graphic

@@ -15,6 +15,8 @@ subnav:
   href: '#summary-box-guidance'
 - text: Package
   href: '#summary-box-package'
+- text: Latest updates
+  href: '#summary-box-changelog'
 tags:
   - tldr
   - tl;dr

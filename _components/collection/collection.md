@@ -19,6 +19,8 @@ subnav:
   href: '#collection-guidance'
 - text: Package
   href: '#collection-package'
+- text: Latest updates
+  href: '#collection-changelog'
 title: Collection
 type: component
 variants:

@@ -1,1 +1,1 @@
-- **Appropriate for most dates.** Appropriate for most dates.
+- **Appropriate for most dates.** This component is appropriate for most dates.

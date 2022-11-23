@@ -1,9 +1,9 @@
-title: Layout grid utility
+title: Utilities
 type: documentation
 changelogURL:
 items:
-  - date: 2022-06-08
-    summary: Updated 'desktop' value from `1040px` to `1024px`.
+  - date: 2022-05-04
+    summary: Added documentation for `margin-horizontal` and `margin-vertical` utility modules.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -12,11 +12,11 @@ items:
     affectsJavascript:
     affectsMarkup:
     affectsStyles:
-    githubPr: 1361
+    githubPr: 1583
     githubRepo: uswds-site
     versionUswds:
-  - date: 2022-03-11
-    summary: Updated `tablet-lg` breakpoint value from `800px` to `880px`.
+  - date: 2022-04-28
+    summary: Added documentation for the using the `uswds-utilities` package, customizing utilities settings, and understanding modules.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -24,7 +24,7 @@ items:
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
-    affectsStyles: true
-    githubPr: 1474
+    affectsStyles:
+    githubPr: 1538
     githubRepo: uswds-site
     versionUswds:

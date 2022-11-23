@@ -7,6 +7,11 @@ layout: styleguide
 title: Website policies and notices
 category: About
 lead: Accessibility, linking, open source, privacy, and more
+subnav:
+- text: Latest updates
+  href: '#changelog'
+- changelog:
+  key: guidance-policies
 ---
 
 Read the U.S. Web Design System (USWDS) policies on accessibility, linking, open source, privacy, and more. These policies and notices apply only to our websites --- [designsystem.digital.gov](https://designsystem.digital.gov) and [public-sans.digital.gov](https://public-sans.digital.gov) --- and not any other government websites.

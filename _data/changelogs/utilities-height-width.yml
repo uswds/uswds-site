@@ -3,8 +3,8 @@ type: documentation
 changelogURL:
 items:
   - date: 2021-10-20
-    summary: Updated documentation to reflect the fact that width styles ship with responsive variants by default.
-    summaryAdditional:
+    summary: Added the `responsive` tag to the width utility.
+    summaryAdditional: Clarified that width utilities ship responsive styles by default.
     isBreaking:
     affectsAccessibility:
     affectsAssets:

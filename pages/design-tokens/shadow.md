@@ -13,7 +13,7 @@ subnav:
 - text: Latest updates
   href: '#changelog'
 changelog:
-  key: guidance-tokens-shadow
+  key: tokens-shadow
 ---
 
 {% assign tokens = site.data.tokens %}

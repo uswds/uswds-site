@@ -25,7 +25,7 @@ subnav:
   - text: Latest updates
     href: '#changelog'
 changelog:
-  key: guidance-tokens-color
+  key: tokens-color
 ---
 
 ## Introduction

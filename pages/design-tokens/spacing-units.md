@@ -13,7 +13,7 @@ subnav:
 - text: Latest update
   href: '#changelog'
 changelog:
-  key: guidance-tokens-spacing
+  key: tokens-spacing
 ---
 
 {% assign tokens = site.data.tokens.spacing %}

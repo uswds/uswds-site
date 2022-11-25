@@ -6,7 +6,11 @@ redirect_from:
 layout: styleguide
 category: About
 lead: Your contribution helps make the Design System better for the next team that uses it.
-
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: about-contribute
 ---
 
 ## What's on this page

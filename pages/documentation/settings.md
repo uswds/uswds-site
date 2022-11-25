@@ -22,7 +22,7 @@ subnav:
 - text: Latest updates
   href: '#changelog'
 changelog:
-  key: guidance-settings
+  key: docs-settings
 ---
 
 ## Introducing USWDS settings

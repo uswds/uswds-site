@@ -11,7 +11,7 @@ subnav:
   - text: Latest updates
     href: '#changelog'
 changelog:
-  key: guidance-key-benefits
+  key: about-key-benefits
 ---
 The U.S. Web Design System (USWDS) is a toolkit of principles, guidance, and code that makes it easier to build accessible, mobile-friendly government websites. We use human-centered design to support human-centered design teams.
 

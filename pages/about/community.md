@@ -7,6 +7,11 @@ redirect_from:
 layout: styleguide
 category: About
 lead: We have an active open source community of content specialists, designers, engineers, and other technologists. Contributors support dozens of agencies and hundreds of websites across the federal government.
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: about-community
 ---
 
 ## Join the community

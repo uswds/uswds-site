@@ -59,3 +59,17 @@ items:
     githubPr:
     githubRepo:
     versionUswds:
+
+<!-- Link to latest updates section. Add to markdown front matter. -->
+subnav:
+- text: Latest updates
+  href: '#changelog'
+
+<!--
+  Add custom changelog key to match the corresponding changelog .yml file name (If needed). Add to markdown front matter.
+  Example:
+  changelog:
+    key: docs-migration-v2
+-->
+changelog:
+  key:

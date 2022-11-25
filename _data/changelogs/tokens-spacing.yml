@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-03-11
-    summary: Reverted `tablet-lg` breakpoint value back to `800px`.
+    summary: Reverted value of `tablet-lg` back to `880px`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -16,7 +16,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-02-24
-    summary: Updated `tablet-lg` breakpoint value from `800px` to `880px`.
+    summary: Updated value of `tablet-lg` from `880px` to `800px`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

@@ -30,7 +30,7 @@ subnav:
   href: '#advanced-settings'
 - text: Latest updates
   href: '#changelog'
-- changelog:
+changelog:
   key: utilities-text-styles
 utilities:
 - base:         text

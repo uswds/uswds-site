@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-06-17
-    summary: Updated `_theme-settings.scss` reference to `_uswds-theme.scss`.
+    summary: Replaced `_theme-settings.scss` with `_uswds-theme.scss`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -51,7 +51,7 @@ items:
     githubPr: 1422
     githubRepo: uswds-site
   - date: 2021-12-14
-    summary: Added clarity to guidance.
+    summary: Added guidance for `uswds-gulp`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -63,7 +63,7 @@ items:
     githubPr: 1370
     githubRepo: uswds-site
   - date: 2021-12-06
-    summary: Added "Getting started for Developers" guide.
+    summary: Added "Getting started for developers" guide.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

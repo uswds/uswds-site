@@ -14,6 +14,19 @@ items:
     affectsStyles:
     githubPr: 1538
     githubRepo: uswds-site
+  - date: 2022-01-27
+    summary: Moved "Before getting started" content to "How to use USWDS".
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1411
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2021-12-06
     summary: Added "Getting started for developers" guide.
     summaryAdditional:

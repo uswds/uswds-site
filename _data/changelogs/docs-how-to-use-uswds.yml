@@ -1,9 +1,9 @@
-title: Migrating to 2.0
+title: How to use USWDS
 type: documentation
 changelogURL:
 items:
-  - date:
-    summary:
+  - date: 2022-01-27
+    summary: Brought in "Before getting started" content from "Getting started for developers".
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -12,6 +12,6 @@ items:
     affectsJavascript:
     affectsMarkup:
     affectsStyles:
-    githubPr:
+    githubPr: 1411
     githubRepo: uswds-site
     versionUswds:

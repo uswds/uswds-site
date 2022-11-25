@@ -13,6 +13,10 @@ subnav:
   href: '#level-3-use-uswds-code'
 - text: Maturity assessment resources
   href: '#maturity-assessment-resources'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: docs-maturity-model
 ---
 
 <div class="margin-top-6 border-top-05 border-primary padding-top-2">

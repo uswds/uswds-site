@@ -2,8 +2,8 @@ title: Settings
 type: documentation
 changelogURL:
 items:
-  - date: 2022-09-26
-    summary: Fixed typos for `$theme-color-primary-vivid` and `$theme-color-secondary-vivid`.
+  - date: 2022-09-16
+    summary: Fixed typos in `primary-vivid` and `secondary-vivid` variable names.
     summaryAdditional:
     affectsAccessibility:
     affectsAssets:
@@ -14,7 +14,7 @@ items:
     githubPr: 1767
     githubRepo: uswds-site
   - date: 2022-09-26
-    summary: Clarified instructions for configuring settings.
+    summary: Clarified instructions for settings configuration.
     summaryAdditional:
     affectsAccessibility:
     affectsAssets:
@@ -25,7 +25,7 @@ items:
     githubPr: 1755
     githubRepo: uswds-site
   - date: 2022-08-29
-    summary: Added `$theme-footer-max-width`.
+    summary: Added documentation for `$theme-footer-max-width`.
     summaryAdditional:
     affectsAccessibility:
     affectsAssets:
@@ -36,7 +36,7 @@ items:
     githubPr: 1719
     githubRepo: uswds-site
   - date: 2022-07-17
-    summary: Added a note describing the error related to configuring `uswds-core`.
+    summary: Added note about error handling for `@use "uswds-core" with ()`.
     summaryAdditional:
     affectsAccessibility:
     affectsAssets:
@@ -55,18 +55,7 @@ items:
     affectsJavascript:
     affectsMarkup:
     affectsStyles: true
-    githubPr: 1564
-    githubRepo: uswds-site
-  - date: 2022-04-28
-    summary: Updated the settings page to use the new USWDS 3.0 conventions.
-    summaryAdditional:
-    affectsAccessibility:
-    affectsAssets:
-    affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles: true
-    githubPr: 1564
+    githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-03-11
     summary: Updated value of `$theme-modal-lg-max-width` from `800px` to `880px`.

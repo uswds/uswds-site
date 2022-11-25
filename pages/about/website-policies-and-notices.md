@@ -10,7 +10,7 @@ lead: Accessibility, linking, open source, privacy, and more
 subnav:
 - text: Latest updates
   href: '#changelog'
-- changelog:
+changelog:
   key: about-policies
 ---
 

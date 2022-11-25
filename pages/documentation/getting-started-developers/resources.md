@@ -17,7 +17,7 @@ subnav:
   - text: Latest updates
     href: '#changelog'
 changelog:
-  key: getting-started-devs-resources
+  key: docs-getting-started-devs-resources
 ---
 
 ## Need installation help?

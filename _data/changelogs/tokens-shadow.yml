@@ -2,8 +2,8 @@ title: Shadow tokens
 type: documentation
 changelogURL:
 items:
-  - date: 2022-03-11
-    summary: Updated token value from `0` to `none`.
+  - date: 2021-05-25
+    summary: Updated token `0` to `none`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

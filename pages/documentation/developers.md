@@ -29,6 +29,10 @@ subnav:
   href: '#need-installation-help'
 - text: Contributing
   href: '#contributing-to-the-code-base'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key:
 ---
 
 {% assign content = site.data.install-readme.decoded | markdownify | absolutify_links: 'https://github.com/uswds/uswds/blob/release-2.0/' | split: '<h2 id="installing-the-design-system">Installing the design system</h2>' | last | split: '<h2 id="reuse-of-open-source-style-guides">' | first %}

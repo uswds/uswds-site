@@ -18,10 +18,6 @@ subnav:
   href: '#variables'
 - text: Migration by component
   href: '#migration-by-component'
-- text: Latest updates
-  href: '#changelog'
-changelog:
-  key: guidance-migration-v2
 ---
 {:.site-text-intro}
 USWDS 2 is a major rewrite of the entire codebase and migration can be complicated. We’ve outlined the high-level changes any project will need to implement, followed by more specific component changes and complete release notes from each related release.

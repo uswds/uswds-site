@@ -10,8 +10,6 @@ subnav:
   href: '#utility-mixins'
 - text: Advanced settings
   href: '#advanced-settings'
-- text: Latest updates
-  href: '#changelog'
 utilities:
 - base:         shadow
   var:          box-shadow
@@ -21,8 +19,6 @@ utilities:
   focus:        false
   hover:        true
   visited:      false
-changelog:
-  key: guidance-tokens-shadow
 ---
 
 <div class="utilities-properties">

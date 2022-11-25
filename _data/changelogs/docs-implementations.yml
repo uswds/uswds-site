@@ -2,8 +2,8 @@ title: Implementations
 type: documentation
 changelogURL:
 items:
-  - date: 2022-07-06
-    summary: Added "USWDS Components" for Rails.
+  - date: 2022-10-11
+    summary: Added "ngx-uswds" for Angular.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -12,11 +12,11 @@ items:
     affectsJavascript:
     affectsMarkup:
     affectsStyles:
-    githubPr: 1508
+    githubPr: 1715
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-07-06
-    summary: Added "ngx-uswds" for Angular.
+    summary: Added "USWDS Components" for Rails.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -42,20 +42,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-07-27
-    summary: Added "USWDS CKEditor Integration" for Drupal.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
-    affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
-    githubPr: 1233
-    githubRepo: uswds-site
-    versionUswds:
-  - date: 2021-07-27
-    summary: Added "USWDS Paragraph Components" for Drupal.
+    summary: Added "USWDS CKEditor Integration" and "USWDS Paragraph Components" for Drupal.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -90,10 +77,10 @@ items:
     affectsJavascript:
     affectsMarkup:
     affectsStyles:
-    githubPr: 1277
+    githubPr: 1227
     githubRepo: uswds-site
     versionUswds:
-  - date: 2020-09-09
+  - date: 2020-09-11
     summary: Added "uswds-sf-lightning-community".
     summaryAdditional:
     isBreaking:
@@ -106,7 +93,7 @@ items:
     githubPr: 1040
     githubRepo: uswds-site
     versionUswds:
-  - date: 2020-08-10
+  - date: 2020-08-12
     summary: Added "tailwindcss-uswds".
     summaryAdditional:
     isBreaking:
@@ -119,7 +106,7 @@ items:
     githubPr: 1024
     githubRepo: uswds-site
     versionUswds:
-  - date: 2020-07-14
+  - date: 2020-07-28
     summary: Added "react-uswds".
     summaryAdditional:
     isBreaking:

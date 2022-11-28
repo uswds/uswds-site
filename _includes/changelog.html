@@ -1,5 +1,5 @@
-{% assign pageKey = page.changelog.key | default: page.title | downcase %}
-{% assign pageSlug = pageKey | slugify %}
+{% assign pageName = page.changelog.key | default: page.title | downcase %}
+{% assign pageSlug = pageName | slugify %}
 {% assign changelog = site.data.changelogs[pageSlug] %}
 {% assign changelogItems = changelog.items %}
 

@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: 2021-10-20
     summary: Added the `responsive` tag to the width utility.
-    summaryAdditional: Clarified that width utilities ship with responsive styles by default.
+    summaryAdditional: This update clarified that width utilities ship with responsive styles by default.
     isBreaking:
     affectsAccessibility:
     affectsAssets:

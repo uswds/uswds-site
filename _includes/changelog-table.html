@@ -94,8 +94,7 @@
             {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}
           </strong>
           {% if item.summaryAdditional %}
-          {{ item.summaryAdditional | markdownify | remove: '
-        <p>' | remove: '</p>' }}
+          {{ item.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
         {% endif %}
         {% if item.githubPr%}
         More information: <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">

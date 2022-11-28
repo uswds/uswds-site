@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2021-04-14
-    summary: Added "Key benefits" page.
+    summary: Added key benefits page.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

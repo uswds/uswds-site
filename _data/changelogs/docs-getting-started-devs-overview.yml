@@ -15,7 +15,7 @@ items:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-01-27
-    summary: Moved "Before getting started" content to "How to use USWDS".
+    summary: Moved "Before getting started" content to "How to use USWDS" page.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

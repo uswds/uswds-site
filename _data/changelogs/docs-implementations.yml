@@ -55,7 +55,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-07-27
-    summary: Added implementation status.
+    summary: Added column for implementation status.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

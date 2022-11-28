@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2021-05-25
-    summary: Updated token `0` to `none`.
+    summary: Replaced token `0` with `none`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

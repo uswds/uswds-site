@@ -47,7 +47,7 @@ items:
     githubPr: 1698
     githubRepo: uswds-site
   - date: 2022-04-28
-    summary: Updated the settings page to use the new USWDS 3.0 conventions.
+    summary: Updated the settings page to use USWDS 3.0 conventions.
     summaryAdditional:
     affectsAccessibility:
     affectsAssets:

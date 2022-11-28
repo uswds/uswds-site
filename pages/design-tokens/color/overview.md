@@ -1,7 +1,7 @@
 ---
 permalink: /design-tokens/color/overview/
 layout: styleguide
-title: Color
+title: Using color
 category: Design tokens
 lead: Color is a practical and emotional tool. It conveys personality, sets a tone, attracts attention, and indicates importance.
 type: docs

@@ -16,7 +16,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-04-28
-    summary: Added documentation for the using the `uswds-utilities` package, customizing utilities settings, and understanding modules.
+    summary: Added documentation for using the `uswds-utilities` package, customizing utilities settings, and understanding utility modules.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

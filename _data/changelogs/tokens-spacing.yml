@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-03-11
-    summary: Reverted value of `tablet-lg` back to `880px`.
+    summary: Reverted value of `tablet-lg` to `880px`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

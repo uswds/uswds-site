@@ -3500,6 +3500,11 @@ ignore:
         reason: No available upgrade or patch
         expires: 2022-12-18T14:18:47.166Z
         created: 2022-11-18T14:18:47.221Z
+  SNYK-JS-DECODEURICOMPONENT-3149970:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2022-12-28T19:04:33.799Z
+        created: 2022-11-28T19:04:33.852Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

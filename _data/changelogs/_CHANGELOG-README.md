@@ -1,47 +1,45 @@
-<!--
-  This is a guide for adding data to the "Latest Updates" section.
-  There are some important things to remember:
-  - Tab spacing matters in .yml files.
-    Incorrect spacing can cause errors, so make sure your items line up.
-  - All comments here are instructional only and should be deleted if copied into the changelog .yml file.
-  - The name of the changelog .yml file must match the `title` declared in the corresponding page's front matter.
--->
-title: [Add the page title from the corresponding page. Ex: Accordion, Accessibility.]
-type: [Add page type. Standard values: component, documentation, pattern, template, token, utility]
-<!-- At this time, we do not have any packages with their own changelog files, so this item can be ignored. -->
-changelogURL:[Provide url for the package CHANGELOG.md.]
-<!-- Add a list of changelog items in reverse chronological order -->
-items:
-  <!-- Start new data item -->
-  - date: [Add item release date in YYYY-MM-DD format.]
-    <!--
-    - Add a concise summary of the change.
-      This summary can often be pulled from the related release notes or pull request summary.
-      If needed, they should be adjusted to fit the following format:
-        - Changelog summaries should be written in the past tense, use plain language, and begin with a consistent set of verbs whenever possible:
-          Examples: "Fixed", "Added", "Improved", "Optimized", "Updated", "Introduced", "Styled"
-    - If a single release item accomplished multiple tasks, break the tasks up into separate data items.
-      The goal is to itemize and highlight user benefits and actions required.
-    - If a change item necessitates user action, make sure that the related pull request clearly states a summary of the action required.
-    -->
-    summary: [Add a short, clear sentence that summarizes the change.]
-    summaryAdditional: [If needed, add more detail in 1-2 short sentences.]
-    isBreaking: [Indicate if additional user action is required to prevent the system from breaking. Standard values: bool]
-   <!-- Indicate what type of change it is -->
-    affectsAccessibility: [Indicate if the change affects accessibility. Standard values: bool]
-    affectsAssets: [Indicate if the change affects non-JavaScript, non-Sass assets. Standard values: bool]
-    affectsGuidance: [Indicate if the change affects guidance/documentation. Standard values: bool]
-    affectsJavascript: [Indicate if the change affects JavaScript. Standard values: bool]
-    affectsMarkup: [Indicate if the change affects markup that a user would need to incorporate. Standard values: bool]
-    affectsStyles: [Indicate if the change affects stylesheets or visual appearance. Standard values: bool]
-   <!-- Indicate where users can find more information -->
-    githubPr: [Add related pull request (PR) number. Ex: 4695]
-    githubRepo: [Declare the GitHub repo that houses the related PR. Standard values: uswds, uswds-site]
-    versionUswds: [Add related USWDS or package release number. Ex: 3.1.0. Guidance-related updates will likely not have a related release.]
-  <!-- End new data item -->
+# Creating changelogs
+
+## Available data keys
+| Key                  | Description                                               | Optional | Value type | Standard values                                             | Displayed |
+| :------------------- | --------------------------------------------------------- | -------- | ---------- | ----------------------------------------------------------- | --------- |
+| title                | Page title                                                | yes      | string     | N/A                                                         | No        |
+| type                 | Identify page type                                        | no       | string     | component, documentation, pattern, template, token, utility | No        |
+| changelogURL         | url for CHANGELOG.MD                                      | yes      | string     | N/A                                                         | Yes       |
+| date                 | Merge date (YYYY-MM-DD)                                   | no       | date       | N/A                                                         | Yes       |
+| summary              | Short description of change                               | no       | string     | N/A                                                         | Yes       |
+| summaryAdditional    | Additional description                                    | yes      | string     | N/A                                                         | Yes       |
+| isBreaking           | Breaking change                                           | no       | boolean    | true, false                                                 | Yes       |
+| affectsAccessibility | Change affects accessibility                              | yes      | boolean    | true, false                                                 | yes       |
+| affectsMarkup        | Change affects component markup                           | yes      | boolean    | true, false                                                 | yes       |
+| affectsJavascript    | Change affects component JS                               | yes      | boolean    | true, false                                                 | yes       |
+| affectsStyles        | Change affects component styles, appearance, or settings  | yes      | boolean    | true, false                                                 | yes       |
+| affectsContent       | Change affects content in the component itself            | yes      | boolean    | true, false                                                 | yes       |
+| affectsGuidance      | Change affects component guidance                         | yes      | boolean    | true, false                                                 | yes       |
+| affectsAssets        | Change affects assets related to a component, like images | yes      | boolean    | true, false                                                 | yes       |
+| githubPr             | Pull request number                                       | no       | number     | N/A                                                         | Yes       |
+| githubRepo           | Pull request repo name                                    | no       | string     | uswds, uswds-site                                           | Yes       |
+| versionUswds         | USWDS Version Number                                      | no       | number     | N/A                                                         | Yes       |
 
 
-<!-- Empty data template -->
+## Using .yml files
+  - Tab spacing matters. Incorrect spacing can cause errors, so make sure your items line up.
+  - The name of the changelog .yml file must match either:
+      - the `title` declared in the corresponding page's front matter OR
+      - the `changelog.key` that can be added to the corresponding page's front matter.
+
+## Writing a good summary
+  - Changelog summaries should be written in the past tense, use plain language, and begin with a consistent set of verbs whenever possible:
+    - Examples: "Fixed", "Added", "Improved", "Optimized", "Updated", "Introduced", "Styled"
+  - Often, a summary can be pulled from the related release notes or pull request. If needed, these summaries should be adjusted to fit the changelog format.
+  - If a single release item accomplished multiple tasks, break the tasks up into separate data items. The goal is to itemize and highlight user benefits and actions required.
+  - If a change item necessitates user action, make sure that the related pull request clearly states a summary of the action required.
+
+## Creating a new changelog
+### Step 1
+Create a new .yml file in the _data/changelogs directory and name it using the appropriate prefix. Then, copy the following template into the file. Fill it in with content according to the guides above.
+
+```yaml
 title:
 type:
 changelogURL:
@@ -59,17 +57,27 @@ items:
     githubPr:
     githubRepo:
     versionUswds:
+```
 
-<!-- Link to latest updates section. Add to markdown front matter. -->
+### Step 2:
+Add a link to "Latest updates" section on the related page by copying the following code into the front matter of the related page's markdown (.md) file.
+
+```markdown
 subnav:
 - text: Latest updates
   href: '#changelog'
+```
 
-<!--
-  Add custom changelog key to match the corresponding changelog .yml file name (If needed). Add to markdown front matter.
-  Example:
-  changelog:
-    key: docs-migration-v2
--->
+### Step 3 (Optional):
+Add a custom changelog key to match the corresponding changelog `.yml` file name. Then, copy the following code into the front matter of the related page's markdown (.md) file.
+
+```markdown
 changelog:
   key:
+```
+
+#### Example
+```markdown
+changelog:
+  key: about-community
+```

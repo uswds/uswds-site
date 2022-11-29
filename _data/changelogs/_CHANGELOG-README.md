@@ -5,11 +5,11 @@
 | :------------------- | --------------------------------------------------------- | -------- | ---------- | ----------------------------------------------------------- | --------- |
 | title                | Page title                                                | yes      | string     | N/A                                                         | No        |
 | type                 | Identify page type                                        | no       | string     | component, documentation, pattern, template, token, utility | No        |
-| changelogURL         | url for CHANGELOG.MD                                      | yes      | string     | N/A                                                         | Yes       |
-| date                 | Merge date (YYYY-MM-DD)                                   | no       | date       | N/A                                                         | Yes       |
-| summary              | Short description of change                               | no       | string     | N/A                                                         | Yes       |
-| summaryAdditional    | Additional description                                    | yes      | string     | N/A                                                         | Yes       |
-| isBreaking           | Breaking change                                           | no       | boolean    | true, false                                                 | Yes       |
+| changelogURL         | url for CHANGELOG.MD                                      | yes      | string     | N/A                                                         | yes       |
+| date                 | Merge date (YYYY-MM-DD)                                   | no       | date       | N/A                                                         | yes       |
+| summary              | Short description of change                               | no       | string     | N/A                                                         | yes       |
+| summaryAdditional    | Additional description                                    | yes      | string     | N/A                                                         | yes       |
+| isBreaking           | Breaking change                                           | no       | boolean    | true, false                                                 | yes       |
 | affectsAccessibility | Change affects accessibility                              | yes      | boolean    | true, false                                                 | yes       |
 | affectsMarkup        | Change affects component markup                           | yes      | boolean    | true, false                                                 | yes       |
 | affectsJavascript    | Change affects component JS                               | yes      | boolean    | true, false                                                 | yes       |
@@ -17,16 +17,16 @@
 | affectsContent       | Change affects content in the component itself            | yes      | boolean    | true, false                                                 | yes       |
 | affectsGuidance      | Change affects component guidance                         | yes      | boolean    | true, false                                                 | yes       |
 | affectsAssets        | Change affects assets related to a component, like images | yes      | boolean    | true, false                                                 | yes       |
-| githubPr             | Pull request number                                       | no       | number     | N/A                                                         | Yes       |
-| githubRepo           | Pull request repo name                                    | no       | string     | uswds, uswds-site                                           | Yes       |
-| versionUswds         | USWDS Version Number                                      | no       | number     | N/A                                                         | Yes       |
+| githubPr             | Pull request number                                       | no       | number     | N/A                                                         | yes       |
+| githubRepo           | Pull request repo name                                    | no       | string     | uswds, uswds-site                                           | yes       |
+| versionUswds         | USWDS Version Number                                      | no       | number     | N/A                                                         | yes       |
 
 
 ## Using .yml files
   - Tab spacing matters. Incorrect spacing can cause errors, so make sure your items line up.
   - The name of the changelog .yml file must match either:
       - the `title` declared in the corresponding page's front matter OR
-      - the `changelog.key` that can be added to the corresponding page's front matter.
+      - the `changelog.key` that can be added to the corresponding page's front matter (Instructions for adding this key is outlined in Step 3 below).
 
 ## Writing a good summary
   - Changelog summaries should be written in the past tense, use plain language, and begin with a consistent set of verbs whenever possible:

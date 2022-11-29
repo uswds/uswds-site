@@ -35,4 +35,3 @@ variants:
 changelog:
   key: component-footer
 ---
-

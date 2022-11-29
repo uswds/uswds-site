@@ -41,22 +41,22 @@
       <td data-title="{{ col3Title }}" class="{{ col3Classes }}">
         <ul class="add-list-reset">
           {% if item.affectsAccessibility %}
-          <li><span class="output-warning">Accessibility</span></li>
+            <li><span class="output-warning">Accessibility</span></li>
           {% endif %}
           {% if item.affectsAssets %}
-          <li><span class="output-neutral">Assets</span></li>
+            <li><span class="output-neutral">Assets</span></li>
           {% endif %}
           {% if item.affectsGuidance %}
-          <li><span class="output-neutral">Guidance</span></li>
+            <li><span class="output-neutral">Guidance</span></li>
           {% endif %}
           {% if item.affectsJavascript %}
-          <li><span class="output-neutral">JavaScript</span></li>
+            <li><span class="output-neutral">JavaScript</span></li>
           {% endif %}
           {% if item.affectsMarkup %}
-          <li><span class="output-neutral">Markup</span></li>
+            <li><span class="output-neutral">Markup</span></li>
           {% endif %}
           {% if item.affectsStyles %}
-          <li><span class="output-neutral">Styles</span></li>
+            <li><span class="output-neutral">Styles</span></li>
           {% endif %}
         </ul>
       </td>
@@ -68,7 +68,7 @@
         {% endif %}
       </td>
       <td data-title="{{ col5Title }}" class="{{ col5Classes }}">
-        {% if item.summary%}
+        {% if item.summary %}
         <p class="measure-6">
           {% if item.isBreaking %}
             <span class="site-changelog--show-tablet output-false">Breaking</span>
@@ -79,12 +79,12 @@
           {% if item.summaryAdditional %}
             {{ item.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
           {% endif %}
-        {% if item.githubPr %}
-          More information:
-          <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">
-            {{ item.githubRepo }}#{{ item.githubPr }}
-          </a>
-        {% endif %}
+          {% if item.githubPr %}
+            More information:
+            <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">
+              {{ item.githubRepo }}#{{ item.githubPr }}
+            </a>
+          {% endif %}
         </p>
         {% endif %}
       </td>

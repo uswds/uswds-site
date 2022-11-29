@@ -19,7 +19,7 @@
         {% endif %}
       </td>
       <td data-title="{{ col2Title }}" class="{{ col2Classes }}">
-        {% if item.summary%}
+        {% if item.summary %}
           <p class="measure-6">
             <strong>
               {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}

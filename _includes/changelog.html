@@ -13,5 +13,9 @@
 
 {%- if changelog.items -%}
   <p>Meaningful code and guidance updates are listed in the following table:</p>
-  {% include changelog-table.html %}
+  {% if changelog.type == "documentation" %}
+    {% include changelog-table-simple.html %}
+  {% else %}
+    {% include changelog-table.html %}
+  {% endif %}
 {%- endif -%}

@@ -1,0 +1,18 @@
+title: Margin and padding utilities
+type: utility
+changelogURL:
+items:
+  - date: 2021-06-16
+    summary: Added more negative margin tokens to margin utilities.
+    summaryAdditional: Now you can use utilities like `margin-neg-4` and `margin-neg-5`.
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4212
+    githubRepo: uswds
+    versionUswds: 2.12.0
+

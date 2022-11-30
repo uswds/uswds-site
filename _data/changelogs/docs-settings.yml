@@ -1,5 +1,5 @@
 title: Settings
-type: documentation
+type: utility
 changelogURL:
 items:
   - date: 2022-09-16
@@ -10,7 +10,7 @@ items:
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
-    affectsStyles: true
+    affectsStyles:
     githubPr: 1767
     githubRepo: uswds-site
   - date: 2022-09-26
@@ -32,9 +32,22 @@ items:
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
-    affectsStyles: true
+    affectsStyles:
     githubPr: 1719
     githubRepo: uswds-site
+  - date: 2022-08-05
+    summary: Updated the value of `$theme-hero-image`.
+    summaryAdditional: We replaced our default hero image (PNG) with an optimized image (JPG).
+    isBreaking: true
+    affectsAccessibility:
+    affectsAssets: true
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4885
+    githubRepo: uswds
+    versionUswds: 3.1.0
   - date: 2022-07-17
     summary: Added note about error handling for `@use "uswds-core" with ()`.
     summaryAdditional:
@@ -43,9 +56,58 @@ items:
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
-    affectsStyles: true
+    affectsStyles:
     githubPr: 1698
     githubRepo: uswds-site
+  - date: 2022-06-17
+    summary: Updated value of `$theme-table-border-color` from `default` to `ink`.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4712
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-06-17
+    summary: Fixed errors related to `$theme-body-background-color`.
+    summaryAdditional:  Updated icons so that custom background colors no longer cause compile failures.
+    affectsAccessibility:
+    affectsAssets: true
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4686
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-06-17
+    summary: Fixed precedence issue related to `$theme-global-content-styles` and `$theme-global-paragraph-styles`.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4726
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-04-28
+    summary: Replaced `$output-all-utilities` with `$output-these-utilities`.
+    summaryAdditional: This setting allows users to create a list of the utility modules they want to include in the project.
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4631
+    githubRepo: uswds
+    versionUswds: 3.0.0
   - date: 2022-04-28
     summary: Updated the settings page to use USWDS 3.0 conventions.
     summaryAdditional:
@@ -54,7 +116,7 @@ items:
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
-    affectsStyles: true
+    affectsStyles:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-03-11
@@ -65,6 +127,170 @@ items:
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
-    affectsStyles: true
+    affectsStyles:
     githubPr: 1474
     githubRepo: uswds-site
+  - date: 2021-06-16
+    summary: Updated input settings.
+    summaryAdditional: Added `$theme-input-background-color`; removed `$theme-input-tile-background-color-selected`, `$theme-input-tile-border-color`, and `$theme-input-tile-border-color-selected`.
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4199
+    githubRepo: uswds
+    versionUswds: 2.12.0
+  - date: 2021-06-16
+    summary: Added pagination settings.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4175
+    githubRepo: uswds
+    versionUswds: 2.12.0
+  - date: 2021-06-16
+    summary: Updated values for `$theme-color-success-dark` and `$theme-color-success-darker`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4183
+    githubRepo: uswds
+    versionUswds: 2.12.0
+  - date: 2021-04-28
+    summary: Updated our docs and settings to remove `$theme-site-max-width`.
+    summaryAdditional: In its place, use `$theme-grid-container-max-width`.
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1198
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2021-03-17
+    summary: Added `$theme-prefix-separator`.
+    summaryAdditional: This setting allows you to output any character or string for the separator between the prefix and main class.
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4085
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Added `$theme-alert-padding-y`.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4079
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Added sortable table settings and updated values of other table settings.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Added modal settings.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 3981
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Added icon list settings.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 3876
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-03
+    summary: Improved use of `$theme-text-` and `$theme-link-` settings in components and variants like `usa-dark-background` and `usa-section--dark`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4059
+    githubRepo: uswds
+    versionUswds: 2.10.2
+  - date: 2021-02-19
+    summary: Added new settings and updated settings values to repair color contrast issues.
+    summaryAdditional: Added `$theme-body-background-color`, `$theme identifier-primary-link-color`, `$theme-text-` settings, and `$theme-alert-` settings; changed the value of `$theme-breadcrumb-background-color`.
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 3966
+    githubRepo: uswds
+    versionUswds: 2.10.1
+  - date: 2021-02-19
+    summary: Replaced hard-coded value for alert component icon size with `$theme-alert-icon-size`.
+    summaryAdditional: This update also changes the default value of the `$theme-alert-icon-size` from `4` to `5`.
+    isBreaking: true
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 3942
+    githubRepo: uswds
+    versionUswds: 2.10.1
+  - date: 2020-12-17
+    summary: Added support for custom bold font weight by defining theme bold styles with `$theme-font-weight-bold`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 3811
+    githubRepo: uswds
+    versionUswds: 2.10.0

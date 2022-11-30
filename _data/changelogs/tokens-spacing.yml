@@ -11,7 +11,7 @@ items:
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
-    affectsStyles: true
+    affectsStyles:
     githubPr: 1474
     githubRepo: uswds-site
     versionUswds:
@@ -24,7 +24,7 @@ items:
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
-    affectsStyles: true
+    affectsStyles:
     githubPr: 1455
     githubRepo: uswds-site
     versionUswds:

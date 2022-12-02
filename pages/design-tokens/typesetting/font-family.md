@@ -272,7 +272,7 @@ If you’re importing a new font from an open source font web directory,often yo
     font-family: "Lato Web", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
     ```
 
-For more information on how USWDS Typography works,  [Typography settings]({{ site.baseurl }}/design-tokens/typesetting){:.text-ink.text-bold}.
+For more information on how USWDS Typography works, see [Typography settings]({{ site.baseurl }}/design-tokens/typesetting){:.text-ink.text-bold}.
 
 ### Option 2: Change default font settings
 

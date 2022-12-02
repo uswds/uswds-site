@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-10-11
-    summary: Added "ngx-uswds" for Angular.
+    summary: Added entry for "ngx-uswds".
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -16,7 +16,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-07-06
-    summary: Added "USWDS Components" for Rails.
+    summary: Added entry for "USWDS Components".
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -29,7 +29,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-10-04
-    summary: Added "USWDS Drupal base theme".
+    summary: Added entry for "USWDS Drupal base theme".
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -42,7 +42,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-07-27
-    summary: Added "USWDS CKEditor Integration" and "USWDS Paragraph Components" for Drupal.
+    summary: Added entry for "USWDS CKEditor Integration" and "USWDS Paragraph Components".
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -68,7 +68,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-05-19
-    summary: Removed "us_web_design_standards gem".
+    summary: Removed entry for "us_web_design_standards gem".
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -81,7 +81,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2020-09-11
-    summary: Added "uswds-sf-lightning-community".
+    summary: Added entry for "uswds-sf-lightning-community".
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -94,7 +94,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2020-08-12
-    summary: Added "tailwindcss-uswds".
+    summary: Added entry for "tailwindcss-uswds".
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -107,7 +107,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2020-07-28
-    summary: Added "react-uswds".
+    summary: Added entry for "react-uswds".
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -119,4 +119,3 @@ items:
     githubPr: 1003
     githubRepo: uswds-site
     versionUswds:
-

@@ -242,7 +242,7 @@ Your context and coding style determine how you access USWDS family tokens in co
 
 ## Setting custom fonts
 
-If you want to use fonts outside of the ones mentioned in USWDS Available Fonts, you have a few options. The complexity of importing and setting other fonts depends on how you’re including that font.
+If you want to use fonts outside of the ones mentioned in [USWDS Available Fonts](#available-fonts), you have a few options. The complexity of importing and setting other fonts depends on how you’re including that font.
 
 ### Option 1: Import a font from the web
 

@@ -3,7 +3,8 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-03-10
-    summary: Replaced `uswds-gulp` with `uswds-compile`.
+    summary: |
+      Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

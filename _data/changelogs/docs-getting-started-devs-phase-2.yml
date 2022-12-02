@@ -63,7 +63,8 @@ items:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-03-10
-    summary: Replaced `paths.dist.sass` with `paths.dist.theme`.
+    summary: |
+      Replaced the outdated text: `paths.dist.sass` with updated: `paths.dist.theme`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -75,7 +76,8 @@ items:
     githubPr: 1473
     githubRepo: uswds-site
   - date: 2022-03-10
-    summary: Replaced `uswds-gulp` with `uswds-compile`.
+    summary: |
+      Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

@@ -3,7 +3,8 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-06-17
-    summary: Replaced `_theme-settings.scss` with `_uswds-theme.scss`.
+    summary: |
+      Replaced the outdated text: `_theme-settings.scss` with updated: `_uswds-theme.scss`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:
@@ -27,7 +28,8 @@ items:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-03-10
-    summary: Replaced `uswds-gulp` with `uswds-compile`.
+    summary: |
+      Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

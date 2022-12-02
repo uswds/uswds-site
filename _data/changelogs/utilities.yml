@@ -16,7 +16,8 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-04-28
-    summary: Replaced `$output-all-utilities` with `$output-these-utilities`.
+    summary: |
+      Replaced the outdated text: `$output-all-utilities` with updated: `$output-these-utilities`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

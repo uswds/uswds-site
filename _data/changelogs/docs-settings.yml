@@ -96,7 +96,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-04-28
-    summary: Replaced `$output-all-utilities` with `$output-these-utilities`.
+    summary: |
+      Replaced the outdated text: `$output-all-utilities` with updated: `$output-these-utilities`.
     summaryAdditional: This setting allows users to create a list of the utility modules they want to include in the project.
     isBreaking:
     affectsAccessibility:

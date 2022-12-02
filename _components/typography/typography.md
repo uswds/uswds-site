@@ -15,6 +15,8 @@ subnav:
     href: '#typesetting-with-uswds'
   - text: Included typefaces
     href: '#included-typefaces'
+  - text: Latest updates
+    href: '#typography-changelog'
 tags:
   - type
   - typesetting

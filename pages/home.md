@@ -22,6 +22,16 @@ graphic_list:
       link:
         text: Browse components
         url: components
+    - topic: Patterns
+      description: Use our guidance to craft effective and inclusive user experiences.
+      image:
+        src: img/home/page-templates.svg
+        alt:
+        width: 72
+        height: 72
+      link:
+        text: Explore pattern guidance
+        url: patterns
     - topic: Design tokens
       description: Learn how to get started using design tokens, the building blocks of USWDS component design.
       image:
@@ -42,16 +52,6 @@ graphic_list:
       link:
         text: Build with utilities
         url: utilities
-    - topic: Page templates
-      description: Use our basic page templates as a starting point for your design and development process.
-      image:
-        src: img/home/page-templates.svg
-        alt:
-        width: 72
-        height: 72
-      link:
-        text: Start from a template
-        url: page-templates
 ---
 
 <section class="usa-section bg-base-lightest showcase" aria-label="Sites using USWDS">

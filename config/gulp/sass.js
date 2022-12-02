@@ -16,6 +16,7 @@ const entrypoints = {
     fonts: "./assets/css/uswds-fonts.css",
     utilities: "./assets/css/uswds-utilities.css",
     next: "./assets/css/uswds-next.css",
+    together: "./assets/css/uswds-together.css",
   },
 };
 

@@ -3,9 +3,10 @@ category: Components
 component:
   status: ready
   package: usa-memorable-date
+  related: true
   dependencies:
 layout: component
-lead: Three text fields are the easiest way for users to enter most dates.
+lead: A select for month followed by two text fields is the easiest way for users to enter most dates.
 permalink: /components/memorable-date/
 redirect_from:
 - /form-controls/04-memorable-date/
@@ -18,6 +19,8 @@ subnav:
   href: '#memorable-date-guidance'
 - text: Package
   href: '#memorable-date-package'
+- text: Latest updates
+  href: '#memorable-date-changelog'
 tags:
   - form
   - forms

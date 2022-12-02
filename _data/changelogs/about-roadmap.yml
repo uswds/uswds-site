@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-06-16
-    summary: Simplified content and added link to the roadmap on GitHub.
+    summary: Simplified content and added link to the public roadmap on GitHub.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

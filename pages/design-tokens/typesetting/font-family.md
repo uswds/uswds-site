@@ -276,4 +276,4 @@ For more information on how USWDS Typography works, see [Typography settings]({{
 
 ### Option 2: Change default font settings
 
-USWDS settings variables tell the design system how to build. If you want to change the default font settins in uswds-core, see the instructions in [Configuring custom USWDS settings]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings)
+USWDS settings variables tell the design system how to build. If you want to change which fonts apply by default in `uswds-core`, see the instructions in [Configuring custom USWDS settings]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings).

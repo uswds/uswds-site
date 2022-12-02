@@ -248,7 +248,7 @@ If you want to use fonts outside of the ones mentioned in [USWDS Available Fonts
 
 If you’re importing a new font from an open source font web directory, often you’ll be including JavaScript at the top of your file that loads the font and associates it with a display name. In addition to adding this Javascript, you’ll need to make a typeface token that uses that display name and associates a fallback font stack with it. Here’s how to make the customizations to your code:
 
-1. Define: Tell USWDS about the font you’re using by defining a new typeface token in your settings. In the code example, we are using the font Lato.
+1. Define: Tell USWDS about the font you’re using by defining a new typeface token in your [settings configuration]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings). In the code example, we are using the font Lato.
 
     ```sass
     $theme-typeface-tokens: (

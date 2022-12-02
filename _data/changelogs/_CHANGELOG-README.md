@@ -78,4 +78,3 @@ Add a custom changelog key to match the corresponding changelog `.yml` file name
 changelog:
   key:
 ```
-

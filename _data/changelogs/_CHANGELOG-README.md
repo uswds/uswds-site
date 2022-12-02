@@ -33,7 +33,7 @@
     - Examples: "Fixed", "Added", "Improved", "Optimized", "Updated", "Introduced", "Styled"
   - Often, a summary can be pulled from the related release notes or pull request. If needed, these summaries should be adjusted to fit the changelog format.
   - If a single release item accomplished multiple tasks, break the tasks up into separate data items. The goal is to itemize and highlight user benefits and actions required.
-  - If a change item necessitates user action, make sure that the related pull request clearly states a summary of the action required.
+  - If a change item requires user action, make sure that the related pull request clearly states a summary of the action required.
 
 ## Creating a new changelog
 ### Step 1

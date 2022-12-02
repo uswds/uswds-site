@@ -266,7 +266,7 @@ If you’re importing a new font from an open source font web directory, often y
     $theme-font-type-sans: "lato",
     ```
 
-3. It works! Now everything that uses the "sans" token will use Lato. The CSS will now include something like:
+3. It works! Now everything that uses the "sans" token will use the custom Lato font stack. The CSS will now include something like:
 
     ```sass
     font-family: "Lato Web", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif

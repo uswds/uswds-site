@@ -16,8 +16,8 @@ subnav:
   href: '#customizing-family-tokens'
 - text: Using family tokens
   href: '#using-family-tokens'
-- text: Setting custom fonts
-  href: '#setting-custom-fonts'
+- text: Creating a custom font token
+  href: '#creating-a-custom-font-token'
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}
@@ -239,9 +239,9 @@ Your context and coding style determine how you access USWDS family tokens in co
   </div>
 </div>
 
-## Creating a custom font token
+## Creating a custom typeface token
 
-Add fonts outside of the ones mentioned in [USWDS Available Fonts](#available-fonts) by creating a custom font token.
+Add fonts outside of the ones mentioned in [USWDS Available Fonts](#available-fonts) by creating a custom typeface token.
 
 If you’re importing a new font from an open source font web directory, often you’ll be including JavaScript at the top of your file that loads the font and associates it with a display name. In addition to adding this Javascript, you’ll need to make a typeface token that uses that display name and associates a fallback font stack with it. Here’s how to make the customizations to your code:
 

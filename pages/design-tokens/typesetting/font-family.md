@@ -16,8 +16,8 @@ subnav:
   href: '#customizing-family-tokens'
 - text: Using family tokens
   href: '#using-family-tokens'
-- text: Creating a custom font token
-  href: '#creating-a-custom-font-token'
+- text: Creating a custom typeface token
+  href: '#creating-a-custom-typeface-token'
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}

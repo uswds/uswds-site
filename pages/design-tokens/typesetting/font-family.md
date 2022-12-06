@@ -245,26 +245,26 @@ Add fonts outside of the ones mentioned in [USWDS Available Fonts](#available-fo
 
 If you’re importing a new font from an open source font web directory, often you’ll be including JavaScript at the top of your file that loads the font and associates it with a display name. In addition to adding this Javascript, you’ll need to make a typeface token that uses that display name and associates a fallback font stack with it. Here’s how to make the customizations to your code:
 
-1. Define: Tell USWDS about the font you’re using by defining a new typeface token in your [settings configuration]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings). In the code example, we are using the font Lato.
+1. Tell USWDS about the font you’re using by defining a new typeface token in your [settings configuration]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings). In the code example, we are using the font Lato.
 
     ```sass
     $theme-typeface-tokens: (
       'lato': (
         'display-name': 'Lato Web', // or other font
         'cap-height': 364px,        // the default, leave it for now
-        'stack': 'Helvetica Neue, Helvetica, Roboto, Arial, sans-serif', // or whatever stack you want
+        'stack': 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif', // or whatever stack you want
       ),
     ),
     ```
 
-2. Associate new token with type: Then associate your new "lato" token with the "sans" font type:
+2. Then associate your new typeface token with the desired [type](#type-based-tokens){:.token} settings variable. In this example, we are associating "Lato" with the "sans" font type.
 
     ```sass
     $theme-font-type-sans: 'lato',
     ```
 
-3. It works! Now everything that uses the 'sans' token will use the custom Lato font stack. The CSS will now include something like:
+3. It works! Now everything that uses the "sans" token will use the custom Lato font stack. The CSS will now include something like:
 
     ```sass
-  font-family: 'Lato Web', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif
+    font-family: 'Lato Web', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif
     ```

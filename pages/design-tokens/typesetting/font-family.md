@@ -16,8 +16,8 @@ subnav:
   href: '#customizing-family-tokens'
 - text: Using family tokens
   href: '#using-family-tokens'
-- text: Setting custom fonts
-  href: '#setting-custom-fonts'
+- text: Creating a custom typeface token
+  href: '#creating-a-custom-typeface-token'
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}
@@ -161,9 +161,9 @@ Role-based tokens set the font family value based on the _role_ the face plays i
 **Note:** It is possible to add **custom font metadata**, **custom font stacks**, and **custom font source files** in your USWDS settings. This documentation is coming soon. See the inline documentation in `_uswds-theme-typography` for more details.
 
 ## Customizing family tokens
-Customize [type](#type-based-tokens){:.token} and [role](#role-based-tokens){:.token} family tokens in your project's theme settings with available [font](#available-fonts){:.token} tokens. All typography-related settings are in `_uswds-theme-typography.scss`.
+Customize the values of [type](#type-based-tokens){:.token} and [role](#role-based-tokens){:.token} family tokens with available [font](#available-fonts){:.token} tokens in your project's [settings configuration]({{ site.baseurl }}/documentation/settings/).
 
-**First, use [font](#available-fonts){:.token} tokens to set the [type](#type-based-tokens){:.token} family tokens.** Set any unused types to `false`.
+**First, use [font](#available-fonts){:.token} tokens to define the [$theme-font-type-]({{ site.baseurl }}/documentation/settings/#typography-settings) settings variables.**  These settings define the value of the [type](#type-based-tokens){:.token} family tokens. Set any unused types to `false`.
 
 {:.margin-bottom-4}
 ```sass
@@ -175,19 +175,18 @@ $theme-font-type-sans:   'source-sans-pro';
 $theme-font-type-serif:  'merriweather';
 ```
 
-**Then use the type variables you just set to set the [role](#role-based-tokens){:.token} family tokens.** Set any unused types to `false`.
+**Then use the [type](#type-based-tokens){:.token} tokens you just set to define the [$theme-font-role-]({{ site.baseurl }}/documentation/settings/#typography-settings) settings variables.** These settings define the value of the [role](#role-based-tokens){:.token} family tokens. Set any unused types to `false`.
 
 ```sass
-$theme-font-role-ui:       $theme-font-sans;
-$theme-font-role-heading:  $theme-font-serif;
-$theme-font-role-body:     $theme-font-sans;
-$theme-font-role-code:     $theme-font-mono;
-$theme-font-role-alt:      $theme-font-serif;
+$theme-font-role-ui:       'sans';
+$theme-font-role-heading:  'serif';
+$theme-font-role-body:     'sans';
+$theme-font-role-code:     'mono';
+$theme-font-role-alt:      'serif';
 ```
 
 ## Using family tokens
 Your context and coding style determine how you access USWDS family tokens in code.
-
 
 <div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
   <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px text-bold">
@@ -240,40 +239,32 @@ Your context and coding style determine how you access USWDS family tokens in co
   </div>
 </div>
 
-## Setting custom fonts
+## Creating a custom typeface token
 
-If you want to use fonts outside of the ones mentioned in [USWDS Available Fonts](#available-fonts), you have a few options. The complexity of importing and setting other fonts depends on how you’re including that font.
-
-### Option 1: Import a font from the web
+Add fonts outside of the ones mentioned in [USWDS Available Fonts](#available-fonts) by creating a custom typeface token.
 
 If you’re importing a new font from an open source font web directory, often you’ll be including JavaScript at the top of your file that loads the font and associates it with a display name. In addition to adding this Javascript, you’ll need to make a typeface token that uses that display name and associates a fallback font stack with it. Here’s how to make the customizations to your code:
 
-1. Define: Tell USWDS about the font you’re using by defining a new typeface token in your [settings configuration]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings). In the code example, we are using the font Lato.
+1. Tell USWDS about the font you’re using by defining a new typeface token in your [settings configuration]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings). In the code example, we are using the font Lato.
 
     ```sass
     $theme-typeface-tokens: (
-      "lato": (
-        "display-name": "Lato Web", // or other font
-        "cap-height": 364px,        // the default, leave it for now
-        "stack": "Helvetica Neue, Helvetica, Roboto, Arial, sans-serif", // or whatever stack you want
+      'lato': (
+        'display-name': 'Lato Web', // or other font
+        'cap-height': 364px,        // the default, leave it for now
+        'stack': 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif', // or whatever stack you want
       ),
     ),
     ```
 
-2. Associate new token with type: Then associate your new "lato" token with the "sans" font type:
+2. Then associate your new typeface token with the desired [type](#type-based-tokens){:.token} settings variable. In this example, we are associating "Lato" with the "sans" font type.
 
     ```sass
-    $theme-font-type-sans: "lato",
+    $theme-font-type-sans: 'lato',
     ```
 
 3. It works! Now everything that uses the "sans" token will use the custom Lato font stack. The CSS will now include something like:
 
     ```sass
-    font-family: "Lato Web", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
+    font-family: 'Lato Web', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif
     ```
-
-For more information on how USWDS Typography works, see [Typography settings]({{ site.baseurl }}/design-tokens/typesetting){:.text-ink.text-bold}.
-
-### Option 2: Change default font settings
-
-USWDS settings variables tell the design system how to build. If you want to change which fonts apply by default in `uswds-core`, see the instructions in [Configuring custom USWDS settings]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings).

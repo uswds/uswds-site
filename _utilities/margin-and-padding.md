@@ -45,6 +45,10 @@ vals_positive:
     value: 64px
   - token: 9
     value: 72px
+  - token: 10
+    value: 80px
+  - token: 15
+    value: 120px
 vals_negative:
   - token: neg-1px
     value: -1px
@@ -70,6 +74,30 @@ vals_negative:
   - token: neg-3
     value: -24px
     equiv: 3
+  - token: neg-4
+    value: -32px
+    equiv: 4
+  - token: neg-5
+    value: -40px
+    equiv: 5
+  - token: neg-6
+    value: -48px
+    equiv: 6
+  - token: neg-7
+    value: -56px
+    equiv: 7
+  - token: neg-8
+    value: -64px
+    equiv: 8
+  - token: neg-9
+    value: -72px
+    equiv: 9
+  - token: neg-10
+    value: -80px
+    equiv: 10
+  - token: neg-15
+    value: -120px
+    equiv: 15
 
 utilities:
   - base:         margin
@@ -137,7 +165,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-          <div class="position-relative square-4 border-1px bg-white">
+          <div class="position-relative height-15 width-4 border-1px bg-white">
             <div class="bg-secondary-light pin-bottom pin-x height-{{ item.equiv }}"></div>
           </div>
         {% endcapture %}
@@ -175,7 +203,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-          <div class="position-relative square-4 border-1px bg-white">
+          <div class="position-relative height-15 width-4 border-1px bg-white">
             <div class="bg-secondary-light pin-top width-full height-{{ item.equiv }}"></div>
           </div>
         {% endcapture %}
@@ -214,7 +242,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-          <div class="position-relative square-4 border-1px bg-white">
+          <div class="position-relative height-4 width-15 border-1px bg-white">
             <div class="bg-secondary-light pin-left height-full width-{{ item.equiv }}"></div>
           </div>
         {% endcapture %}
@@ -270,7 +298,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-          <div class="position-relative square-4 border-1px bg-white">
+          <div class="position-relative height-4 width-15 border-1px bg-white">
             <div class="bg-secondary-light pin-right height-full width-{{ item.equiv }}"></div>
           </div>
         {% endcapture %}
@@ -306,7 +334,7 @@ utilities:
       {% endcapture %}
       {% capture this_example %}
         <div class="bg-secondary-light width-full">
-          <div class="square-4 border-1px bg-white margin-right-auto"></div>
+          <div class="height-4 width-15 border-1px bg-white margin-right-auto"></div>
         </div>
       {% endcapture %}
       {% include utilities/utility-example.html
@@ -326,7 +354,7 @@ utilities:
             {{ item.value }}
           {% endcapture %}
           {% capture this_example %}
-          <div class="position-relative height-4 width-9 border-1px bg-white">
+          <div class="position-relative height-4 width-15 border-1px bg-white">
             <div class="bg-secondary-light pin-right height-full width-{{ item.equiv }}"></div>
             <div class="bg-secondary-light pin-left height-full width-{{ item.equiv }}"></div>
           </div>
@@ -383,7 +411,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative height-9 width-4 border-1px bg-white">
+        <div class="position-relative height-15 width-4 border-1px bg-white">
           <div class="bg-secondary-light pin-top width-full height-{{ item.equiv }}"></div>
           <div class="bg-secondary-light pin-bottom width-full height-{{ item.equiv }}"></div>
         </div>
@@ -449,7 +477,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative square-9 border-1px margin-0 bg-white">
+        <div class="position-relative square-15 border-1px margin-0 bg-white">
           <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
         </div>
         {% endcapture %}
@@ -469,7 +497,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative square-9 border-1px margin-0 bg-white">
+        <div class="position-relative square-15 border-1px margin-0 bg-white">
           <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
         </div>
         {% endcapture %}
@@ -489,7 +517,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative square-9 border-1px margin-0 bg-white">
+        <div class="position-relative square-15 border-1px margin-0 bg-white">
           <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
         </div>
         {% endcapture %}
@@ -509,7 +537,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative square-9 border-1px margin-0 bg-white">
+        <div class="position-relative square-15 border-1px margin-0 bg-white">
           <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
         </div>
         {% endcapture %}
@@ -529,7 +557,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative width-card height-9 border-1px margin-0 bg-white">
+        <div class="position-relative width-card height-15 border-1px margin-0 bg-white">
           <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
           <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
         </div>
@@ -550,7 +578,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative height-card width-9 border-1px margin-0 bg-white">
+        <div class="position-relative height-card width-15 border-1px margin-0 bg-white">
           <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
           <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
         </div>

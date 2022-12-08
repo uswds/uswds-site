@@ -211,7 +211,7 @@ contents:
     subsection: theme color token
     description: Use grades 60-90.
     var: $theme-color-accent-warm-darker
-    default: '"orange-60v"'
+    default: '"orange-60"'
     type: color
   - name: accent-warm-lightest
     subsection: theme color token

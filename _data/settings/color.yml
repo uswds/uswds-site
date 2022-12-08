@@ -370,13 +370,13 @@ contents:
     subsection: state color token
     description: Use grades 60-70.
     var: $theme-color-success-dark
-    default: '"green-cool-50v"'
+    default: '"green-cool-50"'
     type: color
   - name: success-darker
     subsection: state color token
     description: Use grades 70-80.
     var: $theme-color-success-darker
-    default: '"green-cool-60v"'
+    default: '"green-cool-60"'
     type: color
 
   - name: Info color family

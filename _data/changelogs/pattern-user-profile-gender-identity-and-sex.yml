@@ -9,31 +9,31 @@ items:
     githubPr: ?
     githubRepo: uswds-site
     - date: 2022-12-20
-    summary: Updated background section with additional detail about Department of State collection of gender identity information
+    summary: Updated background section.
     summaryAdditional: Added more detail about how the Department of State collects gender information on Form DS-11 and displays this information on passports.
     affectsGuidance: true
     githubPr: ?
     githubRepo: uswds-site
     - date: 2022-12-20
-    summary: Updated background section with focus on use cases for requesting gender identity and sex information
+    summary: Updated background section.
     summaryAdditional: Updated our background section to focus on documented use cases for collecting gender identity and sex data.
     affectsGuidance: true
     githubPr: ?
     githubRepo: uswds-site
     - date: 2022-12-20
-    summary: Updated guidance to include details on state collection of sex data
+    summary: Updated guidance to include details on state collection of sex data.
     summaryAdditional: Added information on how some states collect sex data on birth certificates and a reference link.
     affectsGuidance: true
     githubPr: ?
     githubRepo: uswds-site
     - date: 2022-12-20
-    summary: Updated guidance for consistency
+    summary: Updated guidance for consistency.
     summaryAdditional: Updated our use of "gender identity" and "sex" to be more consistent throughout. 
     affectsGuidance: true
     githubPr: ?
     githubRepo: uswds-site
     - date: 2022-12-20
-    summary: Updated guidance on sex
+    summary: Updated guidance on sex.
     summaryAdditional: Updated our use of "sex assigned at birth" to refer to original birth certificate information specifically.
     affectsGuidance: true
     githubPr: ?

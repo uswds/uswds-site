@@ -2,8 +2,46 @@ title: Gender identity and sex
 type: pattern
 changelogURL:
 items:
+  - date: 2022-12-20
+    summary: Updated preview for sex to add three potential use cases for asking user for sex.
+    summaryAdditional: Updated sex pattern preview to show three specific use cases - identity proofing by sex marker on a legal document like a driver's license, identity proofing based on sex marker on original birth certificate in a clinical setting, and identify proofing based on sex marker on original birth certificate for special circumstances like Selective Service registration.
+    affectsGuidance: true
+    githubPr: ?
+    githubRepo: uswds-site
+    - date: 2022-12-20
+    summary: Updated background section with additional detail about Department of State collection of gender identity information
+    summaryAdditional: Added more detail about how the Department of State collects gender information on Form DS-11 and displays this information on passports.
+    affectsGuidance: true
+    githubPr: ?
+    githubRepo: uswds-site
+    - date: 2022-12-20
+    summary: Updated background section with focus on use cases for requesting gender identity and sex information
+    summaryAdditional: Updated our background section to focus on documented use cases for collecting gender identity and sex data.
+    affectsGuidance: true
+    githubPr: ?
+    githubRepo: uswds-site
+    - date: 2022-12-20
+    summary: Updated guidance to include details on state collection of sex data
+    summaryAdditional: Added information on how some states collect sex data on birth certificates and a reference link.
+    affectsGuidance: true
+    githubPr: ?
+    githubRepo: uswds-site
+    - date: 2022-12-20
+    summary: Updated guidance for consistency
+    summaryAdditional: Updated our use of "gender identity" and "sex" to be more consistent throughout. 
+    affectsGuidance: true
+    githubPr: ?
+    githubRepo: uswds-site
+    - date: 2022-12-20
+    summary: Updated guidance on sex
+    summaryAdditional: Updated our use of "sex assigned at birth" to refer to original birth certificate information specifically.
+    affectsGuidance: true
+    githubPr: ?
+    githubRepo: uswds-site
   - date: 2022-11-14
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site
     versionUswds: 3.3.0
+
+

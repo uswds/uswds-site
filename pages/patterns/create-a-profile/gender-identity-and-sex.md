@@ -27,16 +27,16 @@ As one example, in April 2022, the U.S. Department of State updated [Form DS-11]
 
 The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way CDC's [HIV Nexus Clinician Resources](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) articulates the importance of asking two separate questions to ensure healthcare providers can provide patient-centered, high quality care: `current gender identity`, and `sex listed at birth`.
 
-This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex` vs. `biological sex`. In very specific clinical or legal use cases a more specific label may be correct. This languge, in particular, should be evaluated for your specific program needs.
+This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex` vs. `biological sex`. In very specific clinical or legal use cases a more specific label may be correct. This language, in particular, should be evaluated for your specific program needs.
 
 ### What problems do these patterns solve?
-Gender and sex are often used synonymously. Many users struggle to provide gender information that best represents them. An overwhelming number of choices for gender identity can be as alienating as too limited a set of provided options.
+Gender and sex are often used synonymously. Many users struggle to provide gender identity information that best represents them. An overwhelming number of choices for gender identity can be as alienating as too limited a set of provided options.
 
 {:.site-component-name#gender-identity-section}
 ## Gender identity 
 
 ### When to use this pattern 
-Follow this pattern when you are collecting gender identity for your service or program. Only ask for gender if you need it. Sometimes it’s more prudent to skip collecting this information altogether.
+Follow this pattern when you are collecting gender identity for your service or program. Only ask for gender identity if you need it. Sometimes it’s more prudent to skip collecting this information altogether.
 
 ### What's the solution?
 Present the user with the tools to accurately depict their gender identity. 
@@ -60,6 +60,7 @@ Present the user with the tools to accurately depict their gender identity.
             <li>Do be transparent about what you are asking for (for example, gender identity or sex).</li>
             <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
             <li>Do use clear hint text to help users understand what type of information should be provided.</li>
+            <li>When collecting both gender identity and sex, gender identity should precede sex.</li>
           </ul> 
         </div>
       </div>
@@ -76,7 +77,8 @@ Present the user with the tools to accurately depict their gender identity.
           <ul>
             <li>Do not assume gender identity based on sex.</li>
             <li>Do not use <code>other</code> as a gender option. Instead use an open-ended text field.</li>
-            <li>Do not limit the user's choice of gender. Not everyone will fit into a specific classification determined by the form designer.</li>
+            <li>Do not limit the user's choice of gender identity. Not everyone will fit into a specific classification determined by the form designer.</li>
+            <li>Do not combine gender identity and sex into a single question.</li>
           </ul>
         </div>
       </div>
@@ -104,7 +106,7 @@ Present the user with the tools to accurately depict their gender identity.
 
 {:.usa-content-list}
 - <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
-- <strong>Avoid using a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
+- <strong>Avoid using a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender identity options, strongly consider letting the user self-identify using a single text field.
 
 #### Usability guidance
 
@@ -127,7 +129,7 @@ Present the user with the tools to accurately depict their gender identity.
 Follow this pattern when you are collecting sex as part of your service. Only ask for this information if you need it. Sometimes it’s more prudent to skip collecting this information altogether. 
 
 ### What's the solution?
-Present the user with a controlled vocabulary to accurately depict sex listed at birth. 
+Present the user with a controlled vocabulary to accurately depict sex as required by your program or service. 
 
 {:.site-component-section-title}
 ### Guidance
@@ -147,6 +149,7 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
             <li>Do be clear about why you are asking for the information.</li>
             <li>Do be transparent about what you are asking for. To some people gender and sex are synonymous, so ensure you use clear language.</li>
             <li>Do use fieldset and legend to group related radio buttons together, and clear labels and attributes on these form elements.</li>
+            <li>When collecting both gender identity and sex, gender identity should precede sex.</li>
           </ul> 
         </div>
       </div>

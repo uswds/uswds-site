@@ -3,6 +3,12 @@ type: pattern
 changelogURL:
 items:
   - date: 2022-12-20
+    summary: Updated preview for gender identity.
+    summaryAdditional: Updated gender identity pattern preview label for `prefer not to answer` to include the word identity.
+    affectsGuidance: true
+    githubPr: 2000
+    githubRepo: uswds-site
+    - date: 2022-12-20
     summary: Updated preview for sex.
     summaryAdditional: Updated sex pattern preview to show two specific use cases - identity proofing by sex marker on a legal document like a driver's license or identify proofing based on sex marker on original birth certificate for special circumstances like Selective Service registration, and sex marker on original birth certificate for sharing in a clinical setting.
     affectsGuidance: true

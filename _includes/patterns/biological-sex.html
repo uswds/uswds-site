@@ -1,18 +1,41 @@
+<h3 class="site-preview-heading">Sex Marker Listed at Birth</h3>
+
 <form class="usa-form usa-form--large">
   <fieldset class="usa-fieldset">
     <legend class="usa-legend usa-legend">Sex listed at birth</legend>
-    <span class="usa-hint" id="sexHint">Please enter the sex that appears on your original birth certificate. Use `X` for a sex listed on your birth certificate that is neither male nor female. <a href="#">Why do we ask for sex information?</a></span>
+    <span class="usa-hint" id="slabHint">Please enter the sex that appears on your original birth certificate. Use `X` for a sex listed on your birth certificate that is neither male nor female. <a href="#">Why do we ask for sex information?</a></span>
     <div class="usa-radio">
-      <input class="usa-radio__input" id="male" type="radio" name="biological-sex" value="male" />
-      <label class="usa-radio__label" for="male">Male</label>
+      <input class="usa-radio__input" id="slab-male" type="radio" name="sex-listed-at-birth" value="male" />
+      <label class="usa-radio__label" for="slab-male">Male</label>
     </div>
     <div class="usa-radio">
-      <input class="usa-radio__input" id="female" type="radio" name="biological-sex" value="female" />
-      <label class="usa-radio__label" for="female">Female</label>
+      <input class="usa-radio__input" id="slab-female" type="radio" name="sex-listed-at-birth" value="female" />
+      <label class="usa-radio__label" for="slab-female">Female</label>
     </div>
     <div class="usa-radio">
-      <input class="usa-radio__input" id="x" type="radio" name="biological-sex" value="x" />
-      <label class="usa-radio__label" for="x">X</label>
+      <input class="usa-radio__input" id="slab-x" type="radio" name="sex-listed-at-birth" value="x" />
+      <label class="usa-radio__label" for="slab-x">X</label>
+    </div>
+  </fieldset>
+</form>
+
+<h3 class="site-preview-heading">Sex Marker Listed on Legal ID</h3>
+
+<form class="usa-form usa-form--large">
+  <fieldset class="usa-fieldset">
+    <legend class="usa-legend usa-legend">Sex marker on Driver's License</legend>
+    <span class="usa-hint" id="slidHint">Please enter the sex that appears on your Driver's License or State-Issued ID. Use `X` for a sex listed on your ID that is neither male nor female. <a href="#">Why do we ask for sex information?</a></span>
+    <div class="usa-radio">
+      <input class="usa-radio__input" id="slid-male" type="radio" name="sex-marker-id" value="male" />
+      <label class="usa-radio__label" for="slid-male">Male</label>
+    </div>
+    <div class="usa-radio">
+      <input class="usa-radio__input" id="slid-female" type="radio" name="sex-marker-id" value="female" />
+      <label class="usa-radio__label" for="slid-female">Female</label>
+    </div>
+    <div class="usa-radio">
+      <input class="usa-radio__input" id="slid-x" type="radio" name="sex-marker-id" value="x" />
+      <label class="usa-radio__label" for="slid-x">X</label>
     </div>
   </fieldset>
 </form>

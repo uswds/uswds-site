@@ -17,12 +17,14 @@ subnav:
 - text: Package
   href: '#modal-package'
 - text: Latest updates
-  href: '#modal-changelog'
+  href: '#changelog'
 title: Modal
 type: component
 variants:
   - variant: "`.usa-modal--lg`"
     description: Add `.usa-modal--lg` to `.usa-modal` for a larger window and larger heading size on wider screens.
+changelog:
+  key: component-modal
 ---
 A modal prevents interaction with page content until the user completes an action or dismisses the modal. This intentionally interrupts the user’s workflow. **Use modals sparingly to minimize unnecessary disruptions.**
 

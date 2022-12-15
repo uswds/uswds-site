@@ -19,7 +19,7 @@ subnav:
 - text: Package
   href: '#file-input-package'
 - text: Latest updates
-  href: '#file-input-changelog'
+  href: '#changelog'
 tags:
   - document
   - upload
@@ -28,4 +28,6 @@ tags:
   - form controls
   - input
 title: File input
+changelog:
+  key: component-file-input
 ---

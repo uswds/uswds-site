@@ -12,9 +12,13 @@ subnav:
     href: "#step-2-initialize-your-project-in-node"
   - text: "Step 3: Install USWDS"
     href: "#step-3-install-uswds"
+  - text: Latest updates
+    href: "#changelog"
+changelog:
+  key: docs-getting-started-devs-phase-1
 ---
 
-The U.S. Web Design System distributes our source code through npm, a package manager that uses a flavor of JavaScript called Node.js. The best way to add the Design System to your project is with npm via a Terminal window (check out some tips for using Terminal on a [Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) or [Windows](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)). 
+The U.S. Web Design System distributes our source code through npm, a package manager that uses a flavor of JavaScript called Node.js. The best way to add the Design System to your project is with npm via a Terminal window (check out some tips for using Terminal on a [Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) or [Windows](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)).
 
 Installing the Design System with Node and npm not only allows you to install all the code the Design System needs to compile with just a couple commands, but will version any installed packages, like USWDS, as well — meaning your project code is tied to a specific version of the Design System. Confirming what version you’re using and updating to a newer (or older) version is straightforward.
 

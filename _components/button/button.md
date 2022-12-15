@@ -39,5 +39,7 @@ subnav:
 - text: Package
   href: '#button-package'
 - text: Latest updates
-  href: '#button-changelog'
+  href: '#changelog'
+changelog:
+  key: component-button
 ---

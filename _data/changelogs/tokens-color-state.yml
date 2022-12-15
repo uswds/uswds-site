@@ -1,0 +1,17 @@
+title: State color tokens
+type: token
+changelogURL:
+items:
+  - date: 2021-06-16
+    summary: Updated values for `success-dark` and `success-darker`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4183
+    githubRepo: uswds
+    versionUswds: 2.12.0

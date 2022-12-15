@@ -16,11 +16,13 @@ subnav:
 - text: Package
   href: '#summary-box-package'
 - text: Latest updates
-  href: '#summary-box-changelog'
+  href: '#changelog'
 tags:
   - tldr
   - tl;dr
   - callout
 title: Summary box
 type: component
+changelog:
+  key: component-summary-box
 ---

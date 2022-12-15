@@ -1,5 +1,5 @@
-{% assign pageKey = page.changelog.key | default: page.title | downcase %}
-{% assign pageSlug = pageKey | slugify %}
+{% assign pageName = page.changelog.key | default: page.title | downcase %}
+{% assign pageSlug = pageName | slugify %}
 {% assign changelog = site.data.changelogs[pageSlug] %}
 {% assign changelogItems = changelog.items %}
 
@@ -13,5 +13,9 @@
 
 {%- if changelog.items -%}
   <p>Meaningful code and guidance updates are listed in the following table:</p>
-  {% include changelog-table.html %}
+  {% if changelog.type == "documentation" %}
+    {% include changelog-table-simple.html %}
+  {% else %}
+    {% include changelog-table.html %}
+  {% endif %}
 {%- endif -%}

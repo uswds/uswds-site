@@ -16,7 +16,7 @@ subnav:
   - text: Included typefaces
     href: '#included-typefaces'
   - text: Latest updates
-    href: '#typography-changelog'
+    href: '#changelog'
 tags:
   - type
   - typesetting
@@ -25,6 +25,8 @@ tags:
   - roboto mono
   - leading
   - measure
+changelog:
+  key: component-typography
 ---
 
 <h2 id="typesetting-with-uswds">Typesetting with USWDS</h2>

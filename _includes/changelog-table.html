@@ -1,4 +1,3 @@
-
 {% assign col1Title = 'Date' %}
 {% assign col1Classes = 'tablet:grid-col' %}
 {% assign col2Title = 'USWDS version' %}
@@ -14,89 +13,82 @@
   <thead>
     <tr>
       <th scope="col" class="{{ col1Classes }}">{{ col1Title }}</th>
-      {% if
-        changelog.type: == "component"
-        or changelog.type: == "pattern"
-        or changelog.type: == "template"
-      %}
-        <th scope="col" class="{{ col2Classes }}">{{ col2Title }}</th>
-        <th scope="col" class="{{ col3Classes }}">{{ col3Title }}</th>
-        <th scope="col" class="{{ col4Classes }}">{{ col4Title }}</th>
-      {% endif %}
+      <th scope="col" class="{{ col2Classes }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Classes }}">{{ col3Title }}</th>
+      <th scope="col" class="{{ col4Classes }}">{{ col4Title }}</th>
       <th scope="col" class="{{ col5Classes }}">{{ col5Title }}</th>
     </tr>
   </thead>
   <tbody class="font-lang-3xs">
     {% for item in changelogItems %}
-      <tr class="{% if item.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
-        <td data-title="{{ col1Title }}" class="{{ col1Classes }}">
-          {% if item.date %}
-            <span class="font-mono-3xs">{{ item.date }}</span>
-          {% endif %}
-        </td>
-        {% if
-          changelog.type: == "component"
-          or changelog.type: == "pattern"
-          or changelog.type: == "template"
-        %}
-          <td data-title="{{ col2Title }}" class="{{ col2Classes }}">
-            {% if item.versionUswds %}
-              <span class="font-mono-3xs"><a href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionUswds }}">{{ item.versionUswds }}</a></span>
-            {% else %}
-              N/A
-            {% endif %}
-          </td>
-          <td data-title="{{ col3Title }}" class="{{ col3Classes }}">
-            <ul class="add-list-reset">
-              {% if item.affectsAccessibility %}
-                <li><span class="output-warning">Accessibility</span></li>
-              {% endif %}
-              {% if item.affectsAssets %}
-                <li><span class="output-neutral">Assets</span></li>
-              {% endif %}
-              {% if item.affectsGuidance %}
-                <li><span class="output-neutral">Guidance</span></li>
-              {% endif %}
-              {% if item.affectsJavascript %}
-                <li><span class="output-neutral">JavaScript</span></li>
-              {% endif %}
-              {% if item.affectsMarkup %}
-                <li><span class="output-neutral">Markup</span></li>
-              {% endif %}
-              {% if item.affectsStyles %}
-                <li><span class="output-neutral">Styles</span></li>
-              {% endif %}
-            </ul>
-          </td>
-          <td data-title="{{ col4Title }}" class="{{ col4Classes }}">
-            {% if item.isBreaking %}
-              <span class="output-false">Breaking</span>
-            {% else %}
-              No
-            {% endif %}
-          </td>
+    <tr>
+      <td data-title="{{ col1Title }}" class="{{ col1Classes }}">
+        {% if item.date %}
+          <span class="font-mono-3xs">{{ item.date }}</span>
         {% endif %}
-        <td data-title="{{ col5Title }}" class="{{ col5Classes }}">
-          {% if item.summary%}
-            <p class="measure-6">
-              {% if item.isBreaking %}
-                <span class="site-changelog--show-tablet output-false">Breaking</span>
-              {% endif %}
-              <strong>
-                {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}
-              </strong>
-              {% if item.summaryAdditional %}
-                {{ item.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
-              {% endif %}
-              {% if item.githubPr%}
-                More information: <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">
-                  {{ item.githubRepo }}#{{ item.githubPr }}
-                </a>
-              {% endif %}
-            </p>
+      </td>
+      <td data-title="{{ col2Title }}" class="{{ col2Classes }}">
+        {% if item.versionUswds %}
+        <span class="font-mono-3xs">
+          <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionUswds }}">
+            {{ item.versionUswds }}
+          </a>
+        </span>
+        {% else %}
+        N/A
+        {% endif %}
+      </td>
+      <td data-title="{{ col3Title }}" class="{{ col3Classes }}">
+        <ul class="add-list-reset">
+          {% if item.affectsAccessibility %}
+            <li><span class="output-warning">Accessibility</span></li>
           {% endif %}
-        </td>
-      </tr>
+          {% if item.affectsAssets %}
+            <li><span class="output-neutral">Assets</span></li>
+          {% endif %}
+          {% if item.affectsGuidance %}
+            <li><span class="output-neutral">Guidance</span></li>
+          {% endif %}
+          {% if item.affectsJavascript %}
+            <li><span class="output-neutral">JavaScript</span></li>
+          {% endif %}
+          {% if item.affectsMarkup %}
+            <li><span class="output-neutral">Markup</span></li>
+          {% endif %}
+          {% if item.affectsStyles %}
+            <li><span class="output-neutral">Styles</span></li>
+          {% endif %}
+        </ul>
+      </td>
+      <td data-title="{{ col4Title }}" class="{{ col4Classes }}">
+        {% if item.isBreaking %}
+          <span class="output-false">Breaking</span>
+        {% else %}
+          No
+        {% endif %}
+      </td>
+      <td data-title="{{ col5Title }}" class="{{ col5Classes }}">
+        {% if item.summary %}
+        <p class="measure-6">
+          {% if item.isBreaking %}
+            <span class="site-changelog--show-tablet output-false">Breaking</span>
+          {% endif %}
+          <strong>
+            {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+          </strong>
+          {% if item.summaryAdditional %}
+            {{ item.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
+          {% endif %}
+          {% if item.githubPr %}
+            More information:
+            <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">
+              {{ item.githubRepo }}#{{ item.githubPr }}
+            </a>
+          {% endif %}
+        </p>
+        {% endif %}
+      </td>
+    </tr>
     {% endfor %}
   </tbody>
 </table>

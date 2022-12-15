@@ -19,6 +19,10 @@ subnav:
   href: '#typography-settings'
 - text: Utilities settings
   href: '#utilities-settings'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: docs-settings
 ---
 
 ## Introducing USWDS settings

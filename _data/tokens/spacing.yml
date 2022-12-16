@@ -7,14 +7,17 @@ positive:
   small:
     - token: '05'
       value: 4px
+      converted: true
     - token: '1'
       value: 8px
     - token: '105'
       value: 12px
+      converted: true
     - token: '2'
       value: 16px
     - token: '205'
       value: 20px
+      converted: true
     - token: '3'
       value: 24px
   medium:

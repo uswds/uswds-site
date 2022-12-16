@@ -7,17 +7,17 @@ positive:
   small:
     - token: '05'
       value: 4px
-      converted: true
+      converted: 0.5
     - token: '1'
       value: 8px
     - token: '105'
       value: 12px
-      converted: true
+      converted: 1.5
     - token: '2'
       value: 16px
     - token: '205'
       value: 20px
-      converted: true
+      converted: 2.5
     - token: '3'
       value: 24px
   medium:
@@ -67,14 +67,17 @@ negative:
   small:
     - token: 'neg-05'
       value: -4px
+      converted: -0.5
     - token: 'neg-1'
       value: -8px
     - token: 'neg-105'
       value: -12px
+      converted: -1.5
     - token: 'neg-2'
       value: -16px
     - token: 'neg-205'
       value: -20px
+      converted: -2.5
     - token: 'neg-3'
       value: -24px
   medium:

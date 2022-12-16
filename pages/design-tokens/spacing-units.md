@@ -54,8 +54,8 @@ Any spacing value in utilities or component CSS should use the following spacing
         <tr>
           <th scope="row" data-title="Token" class="tablet:width-10">
             <span class="text-no-wrap padding-right-4">
-              {% if converted %}
-                <code>{{ converted }}</code>,
+              {% if item.converted %}
+                <code>{{ item.converted }}</code>,
               {% endif %}
               {% if is_number %}
                 <code>{{ item.token }}</code>

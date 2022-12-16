@@ -16,5 +16,3 @@ pa11y-results.json
 # Ignore VS code directories
 *.code-workspace
 .vscode/
-
-Gemfile.lock

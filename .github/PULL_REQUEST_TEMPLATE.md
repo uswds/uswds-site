@@ -20,8 +20,8 @@ Please keep in mind:
 
 <!---
 Step 1 - Title this PR with the following format:
-USWDS - [Package]: [Brief statement describing what this pull request solves]
-eg: "USWDS - Button: Increase font size"
+USWDS-Site - [Page]: [Brief statement describing what this pull request solves]
+eg: "USWDS-Site - Settings: Add theme settings"
  -->
 
 ## Summary
@@ -32,24 +32,12 @@ A successful summary is written in the past tense and includes:
 See [USWDS release notes](https://github.com/uswds/uswds/releases) for examples.
 -->
 
-## Breaking change
-_Indicate if this update is a breaking change._
-<!--
-Use clear language to:
-1. Indicate if this update is a breaking change.
-2. Explain what actions are required for the user to remediate the break.
-   For clarity, include a statement here even if there is no breaking change:
-   "This is not a breaking change."
-   ":warning: This is potentially a breaking change."
-   ":warning: This is a breaking change."
--->
-
 ## Related issue
 Closes #_[issue_no]_
 <!--
 Every pull request should resolve an open issue.
 If no open issue exists, you can open one here:
-https://github.com/uswds/uswds/issues/new/choose.
+https://github.com/uswds/uswds-site/issues/new/choose.
 -->
 
 ## Preview link
@@ -103,7 +91,7 @@ include a list of the changed dependencies and version numbers.
 <!--
 Before opening this PR, make sure you’ve done whichever of these applies to you:
 - [ ] Confirm that this code follows the [18F Front End Coding Style Guide](https://pages.18f.gov/frontend/) and [Accessibility Guide](https://pages.18f.gov/accessibility/checklist/).
-- [ ] Run `git pull origin [base branch]` to pull in the most recent updates from your base and check for merge conflicts. (Often, the base branch is `develop`).
+- [ ] Run `git pull origin [base branch]` to pull in the most recent updates from your base and check for merge conflicts. (Often, the base branch is `main`).
 - [ ] Run `npm run prettier:scss` to format any Sass updates.
 - [ ] Run `npm test` and confirm that all tests pass.
 - [ ] Run your code through [HTML_CodeSniffer](http://squizlabs.github.io/HTML_CodeSniffer/) and make sure it’s error free.

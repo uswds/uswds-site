@@ -1,3 +1,5 @@
+{% assign footer = site.data.footer %}
+
 {% if site.touchpoints.active and page.touchpoints_survey | default: false %}
   {% include touchpoint-survey-script.html %}
 {% endif %}
@@ -5,83 +7,38 @@
 <footer class="usa-footer site-footer">
   <div class="usa-footer__secondary-section">
     <div class="grid-container footer-content">
-      <h2>Become part of the community</h2>
+      <h2>{{ footer.title }}</h2>
       <p>
-        USWDS is an active open source community of government engineers,
-        content specialists, and designers. Our contributors both in and out of
-        government support dozens of agencies and nearly 200 sites.
+        {{ footer.description }}
       </p>
       <div class="grid-row footer-contact-links">
-        <div class="tablet:grid-col">
-          <div class="usa-media-block">
-            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
-              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#help"></use>
-              </svg>
-            </div>
-            <div class="usa-media-block__body">
-              <h3>Have an idea or an issue?</h3>
-              <a href="{{ site.repos[0].url }}/issues/new/choose">
-                Reach out in GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="tablet:grid-col">
-          <div class="usa-media-block">
-            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
-              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#people"></use>
-              </svg>
-            </div>
-            <div class="usa-media-block__body">
-              <h3>Engage with the community</h3>
-              <a href="https://designsystem.digital.gov/about/community/">
-                Find a channel that works for you
-              </a>
+        {% for callout in footer.callouts %}
+          <div class="tablet:grid-col">
+            <div class="usa-media-block">
+              <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
+                <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
+                  <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ callout.icon }}"></use>
+                </svg>
+              </div>
+              <div class="usa-media-block__body">
+                <h3>{{ callout.tagline }}</h3>
+                <a href="{{ callout.link_href }}">
+                  {{- callout.link_text -}}
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="tablet:grid-col">
-          <div class="usa-media-block">
-            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
-              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#mail"></use>
-              </svg>
-            </div>
-            <div class="usa-media-block__body">
-              <h3>Subscribe to our newsletter</h3>
-              <a class="usa-link usa-link--external" href="https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS">
-                Sign up for USWDS updates
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="tablet:grid-col">
-          <div class="usa-media-block">
-            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
-              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#support"></use>
-              </svg>
-            </div>
-            <div class="usa-media-block__body">
-              <h3>Get support</h3>
-              <a href="mailto:{{ site.uswds_email }}">
-                Email the USWDS team
-              </a>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
 
     <div class="bg-base-light padding-y-1 line-height-sans-3 font-lang-4">
       <div class="grid-container">
-        Looking for USWDS v1 documentation?
+        {{ footer.complimentary.label }}
         <a
-          href="https://v1.designsystem.digital.gov"
+          href="{{ footer.complimentary.link_href }}"
           class="text-ink text-bold hover:text-no-underline"
-          >Visit v1.designsystem.digital.gov</a
+          >{{- footer.complimentary.link_text -}}</a
         >
       </div>
     </div>

@@ -19,7 +19,7 @@ subnav:
   - text: Package
     href: '#list-package'
   - text: Latest updates
-    href: '#list-changelog'
+    href: '#changelog'
 title: List
 type: component
 variants:
@@ -31,4 +31,6 @@ tags:
   - numbered
   - unordered
   - ordered
+changelog:
+  key: component-list
 ---

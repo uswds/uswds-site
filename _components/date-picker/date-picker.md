@@ -47,7 +47,7 @@ subnav:
 - text: Package
   href: '#date-picker-package'
 - text: Latest updates
-  href: '#date-picker-changelog'
+  href: '#changelog'
 tags:
   - calendar
   - form
@@ -56,4 +56,6 @@ tags:
   - input
 title: Date picker
 type: component
+changelog:
+  key: component-date-picker
 ---

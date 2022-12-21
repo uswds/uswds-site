@@ -2,8 +2,21 @@ title: State color tokens
 type: token
 changelogURL:
 items:
+  - date: 2021-12-21
+    summary: Updated the documentation for `success-dark` and `success-darker` to match the current USWDS values.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1939
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2021-06-16
-    summary: Updated values for `success-dark` and `success-darker`.
+    summary: Updated the values of `success-dark` from `green-cool-50` to `green-cool-50v` and `success-darker` from `green-cool-60` to `green-cool-60v`.
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

@@ -1,9 +1,20 @@
 title: Validation
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-
 items:
+  - date: 2022-12-21
+    summary: Clarified implementation guidance and removed the `#` from the example `data-validation-element` value.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1851
+    githubRepo: uswds-site
+    versionUswds:
   # 3.2.0 release
   - date: 2022-10-19
     summary: Improved status updates about the completion of validation requirements for users of assistive technologies.

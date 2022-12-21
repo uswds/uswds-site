@@ -12,12 +12,10 @@ positive:
       value: 8px
     - token: '105'
       value: 12px
-      conversion: 1.5
     - token: '2'
       value: 16px
     - token: '205'
       value: 20px
-      conversion: 2.5
     - token: '3'
       value: 24px
   medium:
@@ -62,51 +60,35 @@ negative:
   smaller:
     - token: 'neg-1px'
       value: -1px
-      conversion: -1px
     - token: 'neg-2px'
       value: -2px
-      conversion: -2px
   small:
     - token: 'neg-05'
       value: -4px
-      conversion: -0.5
     - token: 'neg-1'
       value: -8px
-      conversion: -1
     - token: 'neg-105'
       value: -12px
-      conversion: -1.5
     - token: 'neg-2'
       value: -16px
-      conversion: -2
     - token: 'neg-205'
       value: -20px
-      conversion: -2.5
     - token: 'neg-3'
       value: -24px
-      conversion: -3
   medium:
     - token: 'neg-4'
       value: -32px
-      conversion: -4
     - token: 'neg-5'
       value: -40px
-      conversion: -5
     - token: 'neg-6'
       value: -48px
-      conversion: -6
     - token: 'neg-7'
       value: -56px
-      conversion: -7
     - token: 'neg-8'
       value: -64px
-      conversion: -8
     - token: 'neg-9'
       value: -72px
-      conversion: -9
     - token: 'neg-10'
       value: -80px
-      conversion: -10
     - token: 'neg-15'
       value: -120px
-      conversion: -15

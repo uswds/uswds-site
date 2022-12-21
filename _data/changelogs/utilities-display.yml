@@ -1,0 +1,17 @@
+title: Display utility
+type: utility
+changelogURL:
+items:
+  - date: 2022-06-08
+    summary: Updated demonstration of `display:none`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1630
+    githubRepo: uswds-site
+    versionUswds:

@@ -1,0 +1,17 @@
+title: Typesetting tokens
+type: token
+changelogURL:
+items:
+  - date: 2021-03-17
+    summary: Added default font stacks.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4084
+    githubRepo: uswds
+    versionUswds: 2.11.0

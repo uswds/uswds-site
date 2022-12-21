@@ -27,7 +27,7 @@ subnav:
 - text: Package
   href: '#step-indicator-package'
 - text: Latest updates
-  href: '#step-indicator-changelog'
+  href: '#changelog'
 tags:
   - stepper
   - step by step
@@ -35,4 +35,6 @@ tags:
   - form
   - multi page form
   - progress
+changelog:
+  key: component-step-indicator
 ---

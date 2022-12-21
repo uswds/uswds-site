@@ -1,0 +1,17 @@
+title: Display utility
+type: utility
+changelogURL:
+items:
+  - date: 2021-05-25
+    summary: Corrected the value of `.text-ls-1` to `0.025em` from `0.05em`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1214
+    githubRepo: uswds-site
+    versionUswds:

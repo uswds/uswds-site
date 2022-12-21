@@ -6,26 +6,12 @@ redirect_from:
 layout: styleguide
 category: About
 lead: Your contribution helps make the Design System better for the next team that uses it.
-
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: about-contribute
 ---
-
-## What's on this page
-
-- [What's on this page](#whats-on-this-page)
-- [Get started](#get-started)
-- [Report bugs and issues](#report-bugs-and-issues)
-- [Propose a feature request or enhancement](#propose-a-feature-request-or-enhancement)
-- [Submit a pull request](#submit-a-pull-request)
-  - [If it's a bug fix:](#if-its-a-bug-fix)
-  - [If it's a feature request or enhancement:](#if-its-a-feature-request-or-enhancement)
-  - [Want to propose something else?](#want-to-propose-something-else)
-- [How we prioritize](#how-we-prioritize)
-- [Code of Conduct](#code-of-conduct)
-- [Licenses and attribution](#licenses-and-attribution)
-  - [A few parts of this project are not in the public domain](#a-few-parts-of-this-project-are-not-in-the-public-domain)
-  - [The rest of this project is in the public domain](#the-rest-of-this-project-is-in-the-public-domain)
-  - [Contributions will be released into the public domain](#contributions-will-be-released-into-the-public-domain)
-
 ## Get started
 
 Anyone can contribute to the U.S. Web Design System (USWDS). Whether it's submitting a bug or proposing a new component, we welcome your ideas on how to improve the Design System.

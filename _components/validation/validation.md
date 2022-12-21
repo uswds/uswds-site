@@ -18,11 +18,13 @@ subnav:
   - text: Package
     href: '#validation-package'
   - text: Latest updates
-    href: '#validation-changelog'
+    href: '#changelog'
 tags:
   - forms
   - error
   - check
   - checking
   - checkmark
+changelog:
+  key: component-validation
 ---

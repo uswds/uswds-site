@@ -10,6 +10,9 @@
 {% if this_token == 0 or this_token == '0' %}
   {% assign is_number = true %}
 {% endif %}
+{% if this_token == "'05'" %}
+  {% assign is_number = false %}
+{% endif %}
 {% if this_token == '105' %}
   {% assign is_number = false %}
 {% endif %}

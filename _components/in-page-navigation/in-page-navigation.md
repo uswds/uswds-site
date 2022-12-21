@@ -34,7 +34,7 @@ subnav:
 - text: References
   href: '#references'
 - text: Latest updates
-  href: '#in-page-navigation-changelog'
+  href: '#changelog'
 tags:
   - in-page
   - nav
@@ -62,6 +62,8 @@ implementation:
       default: "1"
 title: In-page navigation
 type: component
+changelog:
+  key: component-in-page-navigation
 ---
 In-page navigation helps users understand the contents of a page and navigate to the section they need to read. This component is most suited for lengthy pages. The component is displayed to the right of the main content, in a sticky container that remains fixed when the user scrolls. When a user clicks an item on the in-page navigation, the page smoothly scrolls to the target section.
 

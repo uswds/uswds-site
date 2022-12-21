@@ -30,10 +30,12 @@ subnav:
 - text: Package
   href: '#accordion-package'
 - text: Latest updates
-  href: '#accordion-changelog'
+  href: "#changelog"
 title: Accordion
 type: component
 variants:
   - variant: "`.usa-accordion--bordered`"
     description: Display a border around accordion content.
+changelog:
+  key: component-accordion
 ---

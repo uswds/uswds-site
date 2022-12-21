@@ -354,7 +354,7 @@ utilities:
             {{ item.value }}
           {% endcapture %}
           {% capture this_example %}
-          <div class="position-relative height-4 width-15 border-1px bg-white">
+          <div class="position-relative height-4 width-card-lg border-1px bg-white">
             <div class="bg-secondary-light pin-right height-full width-{{ item.equiv }}"></div>
             <div class="bg-secondary-light pin-left height-full width-{{ item.equiv }}"></div>
           </div>
@@ -411,7 +411,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative height-15 width-4 border-1px bg-white">
+        <div class="position-relative height-card-lg width-4 border-1px bg-white">
           <div class="bg-secondary-light pin-top width-full height-{{ item.equiv }}"></div>
           <div class="bg-secondary-light pin-bottom width-full height-{{ item.equiv }}"></div>
         </div>
@@ -457,8 +457,8 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-          <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-{{ item.token }}">
-            <div class="bg-white add-aspect-1x1"></div>
+          <div class="square-card-lg border-1px bg-primary-lighter margin-0 display-inline-block padding-{{ item.token }}">
+            <div class="bg-white height-full"></div>
           </div>
         {% endcapture %}
         {% include utilities/utility-example.html
@@ -557,7 +557,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative width-card height-15 border-1px margin-0 bg-white">
+        <div class="position-relative width-card-lg height-15 border-1px margin-0 bg-white">
           <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
           <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
         </div>
@@ -578,7 +578,7 @@ utilities:
           {{ item.value }}
         {% endcapture %}
         {% capture this_example %}
-        <div class="position-relative height-card width-15 border-1px margin-0 bg-white">
+        <div class="position-relative height-card-lg width-15 border-1px margin-0 bg-white">
           <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
           <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
         </div>

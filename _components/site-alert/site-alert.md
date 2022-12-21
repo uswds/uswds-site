@@ -21,7 +21,7 @@ subnav:
 - text: Package
   href: '#site-alert-package'
 - text: Latest updates
-  href: '#site-alert-changelog'
+  href: '#changelog'
 tags:
   - warning
   - bar
@@ -35,6 +35,8 @@ variants:
     description: Display a slimmer version of the site alert.
   - variant: "`usa-site-alert--no-icon`"
     description: Display an site alert without an icon.
+changelog:
+  key: component-site-alert
 ---
 
 When your agency has urgent information to share with the public, it’s essential that it stands out from other content on the site. A site alert prominently displays critical, time-sensitive warnings or directions across every page so that users see it whenever they visit the site. Using the same site alert treatment across agencies helps create a consistent and predictable way for users to find urgent information across all government websites.

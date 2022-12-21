@@ -16,6 +16,10 @@ subnav:
   href: '#customizing-family-tokens'
 - text: Using family tokens
   href: '#using-family-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-type-font-family
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}

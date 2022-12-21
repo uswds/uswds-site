@@ -17,7 +17,7 @@ subnav:
 - text: Package
   href: '#icon-list-package'
 - text: Latest updates
-  href: '#icon-list-changelog'
+  href: '#changelog'
 title: Icon list
 type: component
 variants:
@@ -27,4 +27,6 @@ variants:
     description: "Change the size of the text and icon by updating [size] to a theme font size: `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, or `2xl` as detailed on the [font size and family](/utilities/font-size-and-family) utility page."
   - variant: "`[responsive_variant]:usa-icon-list--size-[size]`"
     description: "Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology."
+changelog:
+  key: component-icon-list
 ---

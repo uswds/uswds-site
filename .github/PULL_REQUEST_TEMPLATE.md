@@ -24,7 +24,7 @@ USWDS-Site - [Page]: [Brief statement describing what this pull request solves]
 eg: "USWDS-Site - Settings: Add theme settings"
  -->
 
-## Summary
+# Summary
 
 _Provide a one or two sentence summary of the update that can be used in the changelog._
 <!--

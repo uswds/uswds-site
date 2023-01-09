@@ -18,6 +18,10 @@ subnav:
   href: '#using-family-tokens'
 - text: Creating a custom typeface token
   href: '#creating-a-custom-typeface-token'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-type-font-family
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}

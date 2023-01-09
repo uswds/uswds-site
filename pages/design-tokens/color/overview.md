@@ -22,6 +22,10 @@ subnav:
     href: '#further-reading'
   - text: Tools
     href: '#tools'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: tokens-color
 ---
 
 ## Introduction

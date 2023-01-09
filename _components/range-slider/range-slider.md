@@ -24,7 +24,7 @@ subnav:
 - text: Package
   href: '#range-slider-package'
 - text: Latest updates
-  href: '#range-slider-changelog'
+  href: '#changelog'
 tags:
   - form
   - forms
@@ -32,4 +32,6 @@ tags:
   - input
   - drag
   - volume
+changelog:
+  key: component-range-slider
 ---

@@ -5,6 +5,11 @@ title: "Phase 3: Customize"
 category: How to use USWDS
 lead: Customize the Design System with settings and custom code.
 type: docs
+subnav:
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: docs-getting-started-devs-phase-3
 ---
 
 Now, equipped with building blocks that are accessible and cohesive, you can get creative. This phase is an overview of what you need to know to customize your project.

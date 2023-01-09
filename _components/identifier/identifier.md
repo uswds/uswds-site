@@ -20,13 +20,15 @@ subnav:
 - text: Package
   href: '#identifier-package'
 - text: Latest updates
-  href: '#identifier-changelog'
+  href: '#changelog'
 tags:
   - footer
   - required
   - links
   - indentifier
   - logo
+changelog:
+  key: component-identifier
 ---
 
 {:.site-note}

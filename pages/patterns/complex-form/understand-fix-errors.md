@@ -111,7 +111,7 @@ Generally, the most effective guidance or interaction feedback will be clear, co
 Each agency or program has their own approach to messaging, style, and voice and tone. The suggestions below are examples of good, human-centered messaging, but do not replace agency- or program-level guidance.
 
 {:.usa-content-list}
-- <strong>Instead of:<strong> The applicant, the patient<br/>
+- <strong>Instead of:</strong> The applicant, the patient<br/>
     <strong>Try:</strong> You, the person
 - <strong>Instead of:</strong> If you need immediate assistance<br/>
     <strong>Try:</strong> If you need help right now

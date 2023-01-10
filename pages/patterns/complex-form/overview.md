@@ -8,6 +8,7 @@ subnav:
   - href: /patterns/complete-a-complex-form/establish-trust/
   - href: /patterns/complete-a-complex-form/progress-easily/
   - href: /patterns/complete-a-complex-form/keep-a-record/
+  - href: /patterns/complete-a-complex-form/avoid-errors/
   
 ---
 
@@ -60,5 +61,20 @@ Complex forms can be daunting and overwhelming. This is especially true when use
         <p>Allow users to review and keep a copy of the answers they’ve provided and feel confident in their interaction.</p>
       </div>
     </div>
-  </div>  
+  </div>
+<div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit avoid errors pattern"
+  data-meta="Visit avoid errors pattern">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/avoid-errors/"><strong>Avoid errors</strong></a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Help users to avoid making mistakes in entering information into form fields.</p>
+      </div>
+    </div>
+  </div>      
 </div>

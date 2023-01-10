@@ -99,6 +99,7 @@ Provide helpful design constraints, clear affordances, and concise guidance for 
 - <strong>Incorporate trauma-informed design considerations.</strong> If you are collecting information from someone in crisis (and most people are at some point), be especially careful with the language in your guidance. 
 
 ### Accessibility
+
 {:.usa-content-list}
 - <strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.
 - <strong>Don’t visually hide alert messages</strong> and then make them visible when they are activated. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.

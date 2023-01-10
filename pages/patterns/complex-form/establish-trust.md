@@ -7,7 +7,7 @@ category: Patterns
 sub-category: Complete a complex form
 lead: Help users understand the purpose of a form and the time commitment needed to complete it, feel confident they have what they need, and trust that the information they provide will be safeguarded and used responsibly.
 changelog:
-  key: pattern-complete-a-complex-form-establish-trust
+  key: pattern-complex-form-establish-trust
 ---
 
 {:.site-component-section-title}

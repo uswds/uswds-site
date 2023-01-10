@@ -9,7 +9,8 @@ subnav:
   - href: /patterns/complete-a-complex-form/progress-easily/
   - href: /patterns/complete-a-complex-form/keep-a-record/
   - href: /patterns/complete-a-complex-form/avoid-errors/
-  
+  - href: /patterns/complete-a-complex-form/understand-fix-errors/
+
 ---
 
 ## Why this matters
@@ -70,7 +71,7 @@ Complex forms can be daunting and overwhelming. This is especially true when use
   data-meta="Visit avoid errors pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/avoid-errors/"><strong>Avoid errors</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/avoid-errors/">Prevent mistakes by helping users <strong>Avoid errors</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to avoid making mistakes in entering information into form fields by providing guidance and constraints.</p>
@@ -85,7 +86,7 @@ Complex forms can be daunting and overwhelming. This is especially true when use
   data-meta="Visit understand and fix errors pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/understand-fix-errors/"><strong>Understand and fix errors</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/understand-fix-errors/">Successfully complete forms by <strong>Understanding and fixing errors</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to understand the form errors and how to correct them by using clear and contextual messaging that helps them complete the form successfully.</p>

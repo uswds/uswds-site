@@ -7,7 +7,7 @@ category: Patterns
 sub-category: Complete a complex form
 lead: The avoid errors pattern helps users to avoid making errors when they complete forms. This pattern is used to support easy and clear form design that minimizes confusion and supports successful completion.
 changelog:
-  key: pattern-complete-a-complex-form-avoid-errors
+  key: pattern-complex-form-avoid-errors
 ---
 
 {:.site-component-section-title}

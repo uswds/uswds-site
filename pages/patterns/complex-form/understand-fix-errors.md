@@ -7,7 +7,7 @@ category: Patterns
 sub-category: Complete a complex form
 lead: The understand and fix errors pattern helps users quickly and efficiently recover from errors. The messaging is calm and clear and is designed to help users find a successful resolution without undue stress.
 changelog:
-  key: pattern-complete-a-complex-form-understand-fix-errors
+  key: pattern-complex-form-understand-fix-errors
 ---
 
 {:.site-component-section-title}
@@ -102,7 +102,9 @@ Provide contextual guidance that clearly states both the problem and the solutio
 
 {:.usa-content-list}
 - <strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.
-- More...
+- <strong>Don’t rely on color alone</strong> to indicate errors. Users should be able to distinguish error states from surrounding text and nearby form fields.
+- <strong>Don’t visually hide alert messages and then make them visible when they are needed.</strong> Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
+- <strong>Use the proper ARIA role.</strong> The ARIA `role` attribute can notify users of assistive technologies of time-sensitive and important messages. See the <a href="{{ site.baseurl }}/components/alert/">Alert component</a> for more information on ARIA roles..
 
 ### Messaging
 

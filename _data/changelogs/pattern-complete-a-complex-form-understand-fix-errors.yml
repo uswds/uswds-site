@@ -1,0 +1,9 @@
+title: Understand and fix errors
+type: pattern
+changelogURL:
+items:
+  - date: 2023-01-09
+    summary: Pattern published.
+    affectsGuidance: true
+    githubRepo: uswds-site
+    versionUswds: 3.3.0

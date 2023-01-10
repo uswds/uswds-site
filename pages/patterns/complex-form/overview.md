@@ -62,7 +62,7 @@ Complex forms can be daunting and overwhelming. This is especially true when use
       </div>
     </div>
   </div>
-<div
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
@@ -74,6 +74,21 @@ Complex forms can be daunting and overwhelming. This is especially true when use
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to avoid making mistakes in entering information into form fields by providing guidance and constraints.</p>
+      </div>
+    </div>
+  </div>   
+  <div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit understand and fix errors pattern"
+  data-meta="Visit understand and fix errors pattern">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/understand-fix-errors/"><strong>Understand and fix errors</strong></a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Help users to understand the form errors and how to correct them by using clear and contextual messaging that helps them complete the form successfully.</p>
       </div>
     </div>
   </div>      

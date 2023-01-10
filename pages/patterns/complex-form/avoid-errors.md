@@ -5,7 +5,7 @@ permalink: /patterns/complete-a-complex-form/avoid-errors/
 layout: pattern
 category: Patterns
 sub-category: Complete a complex form
-lead: Forms can be confusing to complete. This is especially true if users have low literacy or limited English proficiency, use assistive technologies, or are under a great deal of stress. Good design and copy can help prevent a lot of errors before they are made.
+lead: The avoid errors pattern helps users to avoid making errors when they complete forms. This pattern is used to support easy and clear form design that minimizes confusion and supports successful completion.
 changelog:
   key: pattern-complete-a-complex-form-avoid-errors
 ---
@@ -102,14 +102,8 @@ Provide helpful design constraints, clear affordances, and concise guidance for 
 
 {:.usa-content-list}
 - <strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.
-- <strong>Don’t visually hide alert messages</strong> and then make them visible when they are activated. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
+- <strong>Don’t visually hide alert messages and then make them visible when they are needed.</strong> Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
 - <strong>Use the proper ARIA role.</strong> The ARIA `role` attribute can notify users of assistive technologies of time-sensitive and important messages. See the <a href="{{ site.baseurl }}/components/alert/">Alert component</a> for more information on ARIA roles.
-
-### Messaging
-
-{:.usa-content-list}
-- <strong>Each agency or program has their own approach</strong> to messaging, style, and voice and tone. The suggestions below are examples of good, human-centered messaging, but do not replace agency- or program-level guidance.
-- Generally, the <strong>most effective guidance or interaction feedback</strong> will be clear, concise, and informative but not overly familiar. 
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates

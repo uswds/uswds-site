@@ -1,6 +1,6 @@
 ---
 title: Understand and fix errors
-story: Help the user to understand when an error has been made in form entry, how to fix the error, and when the information has been correctly entered.
+story: Help the user to understand when an error has been made in form entry, how to fix the error, and when the information has been correctly entered
 permalink: /patterns/complete-a-complex-form/understand-fix-errors/
 layout: pattern
 category: Patterns
@@ -123,7 +123,7 @@ Each agency or program has their own approach to messaging, style, and voice and
     <strong>Try:</strong> The email or password you entered do not match our records. Please double-check and try again. (Also see the <a href="{{ site.baseurl }}/templates/authentication-pages/sign-in/">Sign-in template</a> for more information.)
 - <strong>Instead of:</strong> Warning! You are about to delete your record.<br/>
     <strong>Try:</strong> Are you sure you want to delete your record? This cannot be undone.
-- <strong>Instead of:</strong> Please try again later.
+- <strong>Instead of:</strong> Please try again later.<br/>
     <strong>Try:</strong> Our system isn’t working right now. Please try again in a few minutes.
 
 ### Special cases

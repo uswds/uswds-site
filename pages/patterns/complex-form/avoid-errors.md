@@ -1,11 +1,11 @@
 ---
-title: Prevent errors
-story: Help a user to errors in form inputs and selections
+title: Prevent mistakes
+story: Help prevent user errors in form inputs and selections
 permalink: /patterns/complete-a-complex-form/avoid-errors/
 layout: pattern
 category: Patterns
 sub-category: Complete a complex form
-lead: The avoid errors pattern helps users to avoid making errors when they complete forms. This pattern is used to support easy and clear form design that minimizes confusion and supports successful completion.
+lead: The prevent mistakes pattern helps users to avoid making errors when they complete forms. This pattern is used to support easy and clear form design that minimizes confusion and supports successful completion.
 changelog:
   key: pattern-complex-form-avoid-errors
 ---

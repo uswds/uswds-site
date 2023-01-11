@@ -1,13 +1,13 @@
 ---
 title: Prevent mistakes
 story: Help prevent user errors in form inputs and selections
-permalink: /patterns/complete-a-complex-form/avoid-errors/
+permalink: /patterns/complete-a-complex-form/prevent-mistakes/
 layout: pattern
 category: Patterns
 sub-category: Complete a complex form
 lead: The prevent mistakes pattern helps users to avoid making errors when they complete forms. This pattern is used to support easy and clear form design that minimizes confusion and supports successful completion.
 changelog:
-  key: pattern-complex-form-avoid-errors
+  key: pattern-complex-form-prevent-mistakes
 ---
 
 {:.site-component-section-title}

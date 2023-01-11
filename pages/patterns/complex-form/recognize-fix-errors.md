@@ -1,13 +1,13 @@
 ---
 title: Recognize and fix errors
 story: Help the user to understand when an error has been made in form entry, how to fix the error, and when the information has been correctly entered
-permalink: /patterns/complete-a-complex-form/understand-fix-errors/
+permalink: /patterns/complete-a-complex-form/recognize-fix-errors/
 layout: pattern
 category: Patterns
 sub-category: Complete a complex form
 lead: The recognize and fix errors pattern helps users quickly and efficiently recover from errors. The messaging is calm and clear and is designed to help users find a successful resolution without undue stress.
 changelog:
-  key: pattern-complex-form-understand-fix-errors
+  key: pattern-complex-form-recognize-fix-errors
 ---
 
 {:.site-component-section-title}
@@ -88,9 +88,9 @@ Provide contextual guidance that clearly states both the problem and the solutio
 ### Considerations
 
 {:.usa-content-list}
-- <strong>Prevent errors, if possible.</strong> Wherever possible, structure your form to <a href="{{ site.baseurl }}/patterns/complex-forms/avoid-errors/">help the user avoid making mistakes</a> using hint text and constraints. 
-- <strong>Validate, where possible.</strong> Validate formats and content, if possible, for fields like addresses. However, if possible, allow the user to override the validation if it’s likely they may require more flexibility in a specific field.
-- <strong>Use clear, unambiguous language.</strong> Use jargon-free language to communicate the error state. Note what the user needs to provide, not what has been incorrectly entered. For example, instead of “Incorrect file type” try something like “Please make sure the file you are uploading is a .pdf or .doc file, and try again.” 
+- <strong>Prevent errors, if possible.</strong> Wherever possible, structure your form to <a href="{{ site.baseurl }}/patterns/complex-forms/prevent-mistakes/">help the user avoid making mistakes</a> using hint text and constraints. 
+- <strong>Validate, where possible.</strong> Validate format and content for fields like addresses. If possible, allow the user to override validation flags if it’s likely a specific type of field may require more flexibility. For example, certain ZIP codes may be shared by several cities or towns. Offering the user a choice between the information entered and the information the system expects will allow them to proceed through the form. 
+- <strong>Use clear, unambiguous language.</strong> Use jargon-free language to communicate the error state. Note what the user needs to provide, not what has been incorrectly entered. For example, instead of “Incorrect file type” try something like “Please make sure the file you are uploading is a .PDF or .DOC file, and try again.” 
 - <strong>Avoid blame.</strong> Don’t use language that blames the user. The user may be confused, under stress, or in a difficult situation. Take ownership of the problem. For example, “We’re sorry, we can’t find your record in our system.”
 - <strong>Error focus.</strong> Don’t make the user search for the problem. Transfer focus to the specific field with an error when validation fails. 
 - <strong>Multiple errors.</strong> When the user has more than one field with errors, flag the error in close proximity to each field, and consider putting a list of all the errors at the top.

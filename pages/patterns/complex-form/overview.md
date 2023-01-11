@@ -86,7 +86,7 @@ Complex forms can be daunting and overwhelming. This is especially true when use
   data-meta="Visit recognize and fix errors pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/understand-fix-errors/"><strong>Recognize and fix errors</strong> for successful form completions</a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/recognize-fix-errors/"><strong>Recognize and fix errors</strong> for successful form completions</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to understand the form errors and how to correct them by using clear and contextual messaging that helps them complete the form successfully.</p>

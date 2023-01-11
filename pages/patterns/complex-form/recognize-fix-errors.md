@@ -92,9 +92,9 @@ Provide contextual guidance that clearly states both the problem and the solutio
 - <strong>Validate, where possible.</strong> Validate format and content for fields like addresses. If possible, allow the user to override validation flags if it’s likely a specific type of field may require more flexibility. For example, certain ZIP codes may be shared by several cities or towns. Offering the user a choice between the information entered and the information the system expects will allow them to proceed through the form. 
 - <strong>Use clear, unambiguous language.</strong> Use jargon-free language to communicate the error state. Note what the user needs to provide, not what has been incorrectly entered. For example, instead of “Incorrect file type” try something like “Please make sure the file you are uploading is a .PDF or .DOC file, and try again.” 
 - <strong>Avoid blame.</strong> Don’t use language that blames the user. The user may be confused, under stress, or in a difficult situation. Take ownership of the problem. For example, “We’re sorry, we can’t find your record in our system.”
-- <strong>Combining multiple error communication strategies</strong> can help make errors more noticeable for users and help them resolve issues faster. For example, in addition to error states and error messages near specific form fields, a top of page error summary with a link for each invalid field may be useful in many situations.
-- <strong>Error focus.</strong> Don’t make the user search for the problem. Transfer focus to the specific field with an error when validation fails. 
+- <strong>Combining multiple error communication strategies</strong> can help make errors more noticeable for users and help them resolve issues faster. 
 - <strong>Multiple errors.</strong> When the user has more than one field with errors, flag the error in close proximity to each field, and consider putting a list of all the errors at the top.
+- <strong>Error focus.</strong> Don’t make the user search for the problem. Transfer focus to the specific field with an error when validation fails. 
 - <strong>Provide a solution.</strong> If possible, provide a solution, such as a look-up table of school district codes.
 - <strong>Provide a way out.</strong> Allow the user to continue working on the form or to save and resume the form without correcting the error. Don’t force the user to resolve an issue with a specific field or lose all their data by leaving the form.
 - <strong>Reward progress.</strong> Consider whether success indicators will be helpful. This can be associated with fields or sections of a form. It can be used to communicate successful completion of the field or section and may encourage completion of the entire form.
@@ -124,7 +124,7 @@ Each agency or program has their own approach to messaging, style, and voice and
 - <strong>Instead of:</strong> You’re not in our system.<br/>
     <strong>Try:</strong> We can’t find your records under that login information. For help accessing your records, please call...
 - <strong>Instead of:</strong> Something went wrong<br/>
-    <strong>Try:</strong> We weren’t able to upload your file. Please make sure it is a .pdf or a .doc file, and try again.
+    <strong>Try:</strong> We weren’t able to upload your file. Please make sure it is a .PDF or a .DOC file, and try again.
 - <strong>Instead of:</strong> Invalid credentials<br/>
     <strong>Try:</strong> The email or password you entered do not match our records. Please double-check and try again. (Also see the <a href="{{ site.baseurl }}/templates/authentication-pages/sign-in/">Sign-in template</a> for more information.)
 - <strong>Instead of:</strong> Warning! You are about to delete your record.<br/>

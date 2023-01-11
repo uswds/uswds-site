@@ -1,0 +1,119 @@
+- component: "Accordion"
+  link: "/components/accordion"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "Breaking"
+
+- component: "Alert"
+  link: "/components/alert"
+  stat: "Production"
+  updated: 2022-10-19
+  breaking: "No"
+
+- component: "Banner"
+  link: "/components/banner"
+  stat: "Production"
+  updated: 2022-10-09
+  breaking: "No"
+
+- component: "Breadcrumb"
+  link: "/components/breadcrumb"
+  stat: "Deprecated"
+  updated: 2022-04-28
+  breaking: "Breaking"
+
+- component: "Button"
+  link: "/components/button"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "No"
+
+- component: "Button group"
+  link: "/components/button-group"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "No"
+
+- component: "Card"
+  link: "/components/card"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "No"
+
+- component: "Character count"
+  link: "/components/character-count"
+  stat: "Release candidate"
+  updated: 2022-10-19
+  breaking: "No"
+
+- component: "Checkbox"
+  link: "/components/checkbox"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "No"
+
+- component: "Collection"
+  link: "/components/collection"
+  stat: "Production"
+  updated: 2022-04-28
+  breaking: "Breaking"
+
+- component: "Combo box"
+  link: "/components/combo-box"
+  stat: "Available with caution"
+  updated: 2022-11-14
+  breaking: "Breaking"
+
+- component: "Data visualizations"
+  link: "/components/data-visualizations"
+  stat: "Production"
+  updated: 2022-04-28
+  breaking: "Breaking"
+
+- component: "Date picker"
+  link: "/components/date-picker"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "No"
+
+- component: "Date range picker"
+  link: "/components/date-range-picker"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "No"
+
+- component: "File input"
+  link: "/components/file-input"
+  stat: "Production"
+  updated: 2022-10-09
+  breaking: "No"
+
+- component: "Footer"
+  link: "/components/footer"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "Breaking"
+
+- component: "Form"
+  link: "/components/form"
+  stat: "Production"
+  updated: 2022-10-09
+  breaking: "Breaking"
+
+- component: "Grid"
+  link: "/components/grid"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "Breaking"
+
+- component: "Header"
+  link: "/components/header"
+  stat: "Production"
+  updated: 2022-08-05
+  breaking: "Breaking"
+
+- component: "Icon"
+  link: "/components/icon"
+  stat: "Production"
+  updated: 2022-10-09
+  breaking: "No"

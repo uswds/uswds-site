@@ -1,0 +1,67 @@
+{% assign statuses = site.data.component-status %}
+{% assign col1Title = 'Component' %}
+{% assign col1Width = 'flex-1' %}
+{% assign col2Title = 'Status' %}
+{% assign col2Width = 'flex-1' %}
+{% assign col3Title = 'Updated (yyyy-mm-dd)' %}
+{% assign col3Width = 'flex-1' %}
+{% assign col4Title = 'Breaking changes?' %}
+{% assign col4Width = 'flex-1' %}
+
+<table class="usa-table--borderless site-table-responsive site-table-simple margin-top-4">
+  <thead>
+    <tr>
+      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
+      <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
+      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for status in statuses %}
+    <tr>
+      <td data-title="{{ col1Title }}" class="{{ col1Width }}">
+        <span class="font-lang-2xs">
+          <a href="{{ site.baseurl}}/{{ status.link }}">{{ status.component }}</a>
+        </span>
+      </td>
+      <td data-title="{{ col2Title }}" class="{{ col2Width }}">
+        <span class="">
+          <!--{{ status.stat }}-->
+          {% if status.stat == "Production" %}
+            🟢 <span class="text-green">Production</span>
+          {% elsif status.stat == "Deprecated" %}
+            ♦️ <span class="text-red">Deprecated</span>
+          {% elsif status.stat == "Release candidate" %}
+            🟧 <span class="text-orange">Release candidate</span>
+          {% elsif status.stat == "Available with caution" %}
+            ⚠️ <span class="text-yellow-30">Available with caution</span>
+          {% endif %}
+        </span>
+      </td>
+      <td data-title="{{ col3Title }}" class="{{ col3Width }}">
+        <span class="">
+          {{ status.updated }}
+        </span>
+      </td>
+      <td data-title="{{ col4Title }}" class="{{ col4Width }}">
+        {% if status.breaking == "Breaking" %}
+          <span class="usa-tag bg-error">{{ status.breaking }}</span>
+        {% else %}
+          No
+        {% endif %}
+      </td>
+      <!-- <td data-title="{{ col5Title }}" class="{{ col5Width }}">
+        <span>
+          {% if status.dependencies != null %}
+            {% assign deps = status.dependencies | sort %}
+          {% else %}
+            {% assign deps = "—" %}
+          {% endif %}
+          {% for dep in deps %}<span class="text-no-wrap">{{ dep }}</span>{% if forloop.last != true %}, {% endif %}{% endfor %}
+        </span>
+      </td> -->
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

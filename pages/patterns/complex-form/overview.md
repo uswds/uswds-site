@@ -71,7 +71,7 @@ Complex forms can be daunting and overwhelming. This is especially true when use
   data-meta="Visit prevent mistakes pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/prevent-mistakes/"><strong>Prevent mistakes</strong> by helping users avoid errors</a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/prevent-mistakes/"><strong>Prevent mistakes</strong> by avoiding errors</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to avoid making mistakes in entering information into form fields by providing guidance and constraints.</p>

@@ -52,26 +52,11 @@ Complex forms can be daunting and overwhelming. This is especially true when use
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit keep a record pattern"
-  data-meta="Visit keep a record pattern">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/keep-a-record/"><strong>Keep a record</strong> of submitted information</a></h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Allow users to review and keep a copy of the answers they’ve provided and feel confident in their interaction.</p>
-      </div>
-    </div>
-  </div>
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
   aria-label="Visit prevent mistakes pattern"
   data-meta="Visit prevent mistakes pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/prevent-mistakes/">Avoid errors by <strong>Preventing mistakes</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/prevent-mistakes/">Avoid errors by <strong>preventing mistakes</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to avoid making mistakes in entering information into form fields by providing guidance and constraints.</p>
@@ -92,5 +77,20 @@ Complex forms can be daunting and overwhelming. This is especially true when use
         <p>Help users to understand the form errors and how to correct them by using clear and contextual messaging that helps them complete the form successfully.</p>
       </div>
     </div>
-  </div>      
+  </div>       
+  <div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit keep a record pattern"
+  data-meta="Visit keep a record pattern">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/keep-a-record/"><strong>Keep a record</strong> of submitted information</a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Allow users to review and keep a copy of the answers they’ve provided and feel confident in their interaction.</p>
+      </div>
+    </div>
+  </div>
 </div>

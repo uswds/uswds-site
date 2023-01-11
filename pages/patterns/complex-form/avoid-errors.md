@@ -1,5 +1,5 @@
 ---
-title: Avoid errors
+title: Prevent errors
 story: Help a user to errors in form inputs and selections
 permalink: /patterns/complete-a-complex-form/avoid-errors/
 layout: pattern

@@ -67,11 +67,11 @@ Complex forms can be daunting and overwhelming. This is especially true when use
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit avoid errors pattern"
-  data-meta="Visit avoid errors pattern">
+  aria-label="Visit prevent mistakes pattern"
+  data-meta="Visit prevent mistakes pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/avoid-errors/">Prevent mistakes by helping users <strong>avoid errors</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/avoid-errors/"><strong>Prevent mistakes</strong> by helping users avoid errors</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to avoid making mistakes in entering information into form fields by providing guidance and constraints.</p>
@@ -82,11 +82,11 @@ Complex forms can be daunting and overwhelming. This is especially true when use
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit understand and fix errors pattern"
-  data-meta="Visit understand and fix errors pattern">
+  aria-label="Visit recognize and fix errors pattern"
+  data-meta="Visit recognize and fix errors pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/understand-fix-errors/">Successfully complete forms by <strong>understanding and fixing errors</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complete-a-complex-form/understand-fix-errors/"><strong>Recognize and fix errors</strong> for successful form completions</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to understand the form errors and how to correct them by using clear and contextual messaging that helps them complete the form successfully.</p>

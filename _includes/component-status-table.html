@@ -29,13 +29,33 @@
         <span class="">
           <!--{{ status.stat }}-->
           {% if status.stat == "Production" %}
-            🟢 <span class="text-green">Production</span>
+            <span class="text-green display-flex flex-align-center">
+              <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+              </svg>
+              Production
+            </span>
           {% elsif status.stat == "Deprecated" %}
-            ♦️ <span class="text-red">Deprecated</span>
+            <span class="text-red display-flex flex-align-center">
+              <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use>
+              </svg>
+              Deprecated
+            </span>
           {% elsif status.stat == "Release candidate" %}
-            🟧 <span class="text-orange">Release candidate</span>
+            <span class="text-gray-50 display-flex flex-align-center">
+              <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#star"></use>
+              </svg>
+              Release candidate
+            </span>
           {% elsif status.stat == "Available with caution" %}
-            ⚠️ <span class="text-yellow-30">Available with caution</span>
+            <span class="text-yellow-40 display-flex flex-align-center">
+              <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#warning"></use>
+              </svg>
+              Available with caution
+            </span>
           {% endif %}
         </span>
       </td>

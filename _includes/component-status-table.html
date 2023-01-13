@@ -8,20 +8,20 @@
 {% assign col4Title = 'Breaking changes?' %}
 {% assign col4Width = 'flex-1' %}
 
-<table class="usa-table--borderless site-table-responsive site-table-simple margin-top-4">
+<table class="usa-table usa-table--borderless site-table-responsive site-table-simple margin-top-4">
   <thead>
     <tr>
-      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
-      <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
-      <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
-      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
+      <th data-sortable role="columnheader" scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
+      <th data-sortable role="columnheader" scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+      <th data-sortable role="columnheader" scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
+      <th data-sortable role="columnheader" scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
     </tr>
   </thead>
-  <tbody class="font-mono-2xs">
+  <tbody>
     {% for status in statuses %}
     <tr>
       <td data-title="{{ col1Title }}" class="{{ col1Width }}">
-        <span class="font-lang-2xs">
+        <span>
           <a href="{{ site.baseurl}}/{{ status.link }}">{{ status.component }}</a>
         </span>
       </td>

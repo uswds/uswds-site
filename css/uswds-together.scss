@@ -34,7 +34,8 @@ $next-theme-colors: (
   "next-blue-medium" #2672de,
   "next-blue-dark" #1f5aad,
   "next-mint-medium" #74d7ad true,
-  "next-mint-dark" #45a17a true "together-green" #00a91c true
+  "next-mint-dark" #45a17a true,
+  "together-green" #00a91c true
 );
 
 @each $color-name, $color-value, $text-black in $next-theme-colors {

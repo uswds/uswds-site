@@ -75,16 +75,7 @@ Provide helpful design constraints, clear affordances, and concise guidance for 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
   <div id="accordion-preview-01" class="usa-accordion__content">
-    {% include patterns/establish-trust.html %}
-  </div>
-</div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
-  <div id="accordion-code-01" class="usa-accordion__content highlight-code">
-    <div class="usa-sr-only">
-       {% highlight text%}{% include patterns/establish-trust.html %}{% endhighlight %}
-    </div>
-    {% highlight html%}{% include patterns/establish-trust.html %}{% endhighlight %}
+    {% include patterns/prevent-errors.html %}
   </div>
 </div>
 

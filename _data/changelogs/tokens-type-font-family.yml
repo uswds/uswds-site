@@ -2,7 +2,7 @@ title: Typesetting tokens
 type: token
 changelogURL:
 items:
-  - date: 2022-01-17
+  - date: 2022-01-18
     summary: Added instructions for adding custom fonts to USWDS.
     summaryAdditional:
     isBreaking:

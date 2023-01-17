@@ -20,9 +20,11 @@ subnav:
 - text: Package
   href: '#banner-package'
 - text: Latest updates
-  href: '#banner-changelog'
+  href: '#changelog'
 title: Banner
 type: component
+changelog:
+  key: component-banner
 ---
 
 {:.site-note}

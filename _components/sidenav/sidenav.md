@@ -19,11 +19,13 @@ subnav:
 - text: Package
   href: '#side-navigation-package'
 - text: Latest updates
-  href: '#side-navigation-changelog'
+  href: '#changelog'
 tags:
   - sidenav
   - nav
   - toc
 title: Side navigation
 type: component
+changelog:
+  key: component-side-navigation
 ---

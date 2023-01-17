@@ -16,8 +16,8 @@ subnav:
   href: '#customizing-family-tokens'
 - text: Using family tokens
   href: '#using-family-tokens'
-- text: Adding a font to USWDS
-  href: '#adding-a-font-to-uswds'
+- text: Adding fonts to USWDS
+  href: '#adding-fonts-to-uswds'
 - text: Latest updates
   href: '#changelog'
 changelog:
@@ -243,7 +243,7 @@ Your context and coding style determine how you access USWDS family tokens in co
   </div>
 </div>
 
-## Adding a font to USWDS
+## Adding fonts to USWDS
 
 If you need to use a font that isn’t included in [USWDS Available Fonts](#available-fonts), you can add a new font to your USWDS project. There are two typical scenarios for this:
 

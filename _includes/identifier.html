@@ -32,7 +32,7 @@
       <div class="usa-identifier__container">
         <ul class="usa-identifier__required-links-list">
           {%- for link in identifier.requiredLinks -%}
-          <li>
+          <li class="usa-identifier__required-links-item">
             <a href="{{ link.href }}" class="usa-identifier__required-link">
               {{- link.label -}}
             </a>

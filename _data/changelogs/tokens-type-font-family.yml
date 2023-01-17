@@ -2,6 +2,19 @@ title: Typesetting tokens
 type: token
 changelogURL:
 items:
+  - date: 2022-01-17
+    summary: Added instructions for adding custom fonts to USWDS.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1905
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2021-03-17
     summary: Added default font stacks.
     summaryAdditional:

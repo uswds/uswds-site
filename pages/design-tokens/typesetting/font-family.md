@@ -243,32 +243,58 @@ Your context and coding style determine how you access USWDS family tokens in co
   </div>
 </div>
 
-## Creating a custom typeface token
+## Adding a font to USWDS
 
-Add fonts outside of the ones mentioned in [USWDS Available Fonts](#available-fonts) by creating a custom typeface token.
+If you need to use a font that isn’t included in [USWDS Available Fonts](#available-fonts), you can add a new font to your USWDS project. There are two typical scenarios for this:
 
-If you’re importing a new font from an open source font web directory, often you’ll be including JavaScript at the top of your file that loads the font and associates it with a display name. In addition to adding this JavaScript, you’ll need to make a typeface token that uses that display name and associates a fallback font stack with it. Here’s how to make the customizations to your code:
+1. [Adding a font from a hosting service](#adding-a-font-from-a-hosting-service)
+1. [Adding a self-hosted font](#adding-a-self-hosted-font)
 
-1. Tell USWDS about the font you’re using by defining a new typeface token in your [settings configuration]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings). In the code example, we are using the font Lato.
+### Adding a font from a hosting service
+
+If you’re importing a font from an open source font web directory, the steps will generally look like this:
+
+1. In your HTML files, add a reference to the JavaScript and/or CSS files provided by the font hosting service.
+
+{% include tokens/create-font-token.html %}
+
+### Adding a self-hosted font
+If you want to add a font that will be hosted in your project, you’ll need to:
+
+1. Copy font files into your fonts directory
+1. Configure `$theme-font-[font type]-custom-src` to:
+    1. Tell the system where to find your font files
+    1. Specify which font weights you want the system to use
+    1. Declare the file name for each font weight
+
+    In the code example, we tell the Design System to look in the `lato` font directory to create `@font-face` rules for the following font files: `Lato-Regular.ttf`, `Lato-Bold.ttf`,`Lato-Italic.ttf`, and `Lato-BoldItalic.ttf`.
 
     ```sass
-    $theme-typeface-tokens: (
-      'lato': (
-        'display-name': 'Lato Web', // or other font
-        'cap-height': 364px,        // the default, leave it for now
-        'stack': 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif', // or whatever stack you want
+    $theme-font-serif-custom-src: (
+      dir: "lato", // the name of your font family directory
+      roman: (
+        100: false,
+        200: false,
+        300: false,
+        400: "Lato-Regular", // the font file name, without the extension
+        500: false,
+        600: false,
+        700: "Lato-Bold",
+        800: false,
+        900: false,
+      ),
+      italic: (
+        100: false,
+        200: false,
+        300: false,
+        400: "Lato-Bold",
+        500: false,
+        600: false,
+        700: "Lato-BoldItalic",
+        800: false,
+        900: false,
       ),
     ),
     ```
 
-2. Then associate your new typeface token with the desired [type](#type-based-tokens){:.token} settings variable. In this example, we are associating "Lato" with the "sans" font type.
-
-    ```sass
-    $theme-font-type-sans: 'lato',
-    ```
-
-3. It works! Now everything that uses the "sans" token will use the custom Lato font stack. The CSS will now include something like:
-
-    ```sass
-    font-family: 'Lato Web', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif
-    ```
+{% include tokens/create-font-token.html %}

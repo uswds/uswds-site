@@ -2,11 +2,10 @@
 
     ```sass
     $theme-typeface-tokens: (
-      'lato': (
-        'display-name': 'Lato Web', // or other font
-        'cap-height': 364px,        // the default, leave it for now
-        'stack': '"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif',
-          // or whatever stack you want
+      "lato": (
+        "display-name": "Lato Web",  // or other font
+        "cap-height": 364px,         // the default, leave it for now
+        "stack": "Helvetica, Arial, sans-serif", // or whatever stack you want
       ),
     ),
     ```
@@ -14,11 +13,11 @@
 1. Then tell `$theme-font-type-[font type]` to use the new typeface token in your theme.  In this example, we are associating `Lato` with the `sans` font type.
 
     ```sass
-    $theme-font-type-sans: 'lato',
+    $theme-font-type-sans: "lato",
     ```
 
 1. It works! Now everything that uses the `sans` token will use the custom `Lato` font stack. The CSS will now include something like this:
 
     ```sass
-    font-family: 'Lato Web', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif
+    font-family: "Lato Web", Helvetica, Arial, sans-serif;
     ```

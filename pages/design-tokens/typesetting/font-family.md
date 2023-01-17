@@ -16,8 +16,8 @@ subnav:
   href: '#customizing-family-tokens'
 - text: Using family tokens
   href: '#using-family-tokens'
-- text: Creating a custom typeface token
-  href: '#creating-a-custom-typeface-token'
+- text: Adding a font to USWDS
+  href: '#adding-a-font-to-uswds'
 - text: Latest updates
   href: '#changelog'
 changelog:

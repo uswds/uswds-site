@@ -24,6 +24,12 @@ changelog:
   key: tokens-type-font-family
 ---
 
+<style>
+  ol ol {
+    list-style: lower-roman;
+  }
+</style>
+
 {% assign tokens = site.data.tokens.typesetting %}
 
 {:.bg-gold-20v.padding-2.radius-md}

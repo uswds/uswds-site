@@ -1420,8 +1420,8 @@ ignore:
         expires: '2022-01-27T21:29:25.296Z'
     - '*':
         reason: No available upgrade or patch
-        expires: 2023-01-18T23:30:13.009Z
-        created: 2022-12-19T23:30:13.064Z
+        expires: 2023-02-08T23:54:37.979Z
+        created: 2023-01-09T23:54:38.031Z
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -3498,13 +3498,18 @@ ignore:
   SNYK-JS-UNSETVALUE-2400660:
     - '*':
         reason: No available upgrade or patch
-        expires: 2023-01-18T23:30:14.882Z
-        created: 2022-12-19T23:30:14.935Z
+        expires: 2023-02-08T23:54:39.844Z
+        created: 2023-01-09T23:54:39.898Z
   SNYK-JS-DECODEURICOMPONENT-3149970:
     - '*':
         reason: No available upgrade or patch
-        expires: 2023-01-18T23:30:33.040Z
-        created: 2022-12-19T23:30:33.094Z
+        expires: 2023-02-08T23:54:41.654Z
+        created: 2023-01-09T23:54:41.708Z
+  SNYK-JS-DEBUG-3227433:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2023-02-08T23:54:33.524Z
+        created: 2023-01-09T23:54:33.576Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

@@ -16,10 +16,8 @@ subnav:
   href: '#customizing-family-tokens'
 - text: Using family tokens
   href: '#using-family-tokens'
-- text: Latest updates
-  href: '#changelog'
-changelog:
-  key: tokens-type-font-family
+- text: Setting custom fonts
+  href: '#setting-custom-fonts'
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}
@@ -241,3 +239,43 @@ Your context and coding style determine how you access USWDS family tokens in co
     <div class="grid-col-5">.font-<code>body</code>-<code>2xl</code>;</div>
   </div>
 </div>
+
+## Setting custom fonts
+
+If you want to use fonts outside of the ones mentioned in USWDS Available Fonts, you have a few options. The complexity of importing and setting other fonts depends on how you’re including that font.
+ 
+###Option 1: Import a font from the web
+ 
+If you’re importing a new font from an open source font web directory,often you’ll be including JavaScript at the top of your file, and that loads the font and associates it with a display name. To make sure that happens, you’ll need to make a typeface token that uses that display name and associates a fallback font stack with it. Here’s how to make the customizations to your code:
+ 
+<ol>
+<li>Define: Tell USWDS about the font you’re using by defining a new typeface token in your settings. In the code example, we are using the font Lato. 
+ 
+```sass
+$theme-typeface-tokens: (
+  "lato": (
+    "display-name": "Lato Web", // or other font
+    "cap-height": 364px, // the default, leave it for now
+    "stack": "Helvetica Neue, Helvetica, Roboto, Arial, sans-serif", // or whatever stack you want
+  ),
+),
+```
+</li>
+<li>Associate new token with type: Then associate your new "lato" token with the "sans" font type:
+ 
+$theme-font-type-sans: "lato",
+</li>
+<li>It works! Now everything that uses the "sans" token will use Lato. The CSS will now include something like:
+
+```sass
+font-family:Lato Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif
+```
+ </li>
+ </ol>
+
+For more information on how USWDS Typography works,  [Typography settings]({{ site.baseurl }}/design-tokens/typesetting){:.text-ink.text-bold}.
+  
+###Option 2: Change default font settings
+
+USWDS settings variables tell the design system how to build. If you want to change the default font settins in uswds-core, see the instructions in [Configuring custom USWDS settings]({{site.baseurl }}documentation/settings/#configuring-custom-uswds-settings)
+

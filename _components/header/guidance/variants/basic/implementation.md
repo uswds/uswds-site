@@ -1,1 +1,0 @@
-{% include init-note.html %}

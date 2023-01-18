@@ -167,9 +167,6 @@ Role-based tokens set the font family value based on the _role_ the face plays i
   </table>
 </div>
 
-{:.bg-gold-20v.padding-2.radius-md}
-**Note:** It is possible to add **custom font metadata**, **custom font stacks**, and **custom font source files** in your USWDS settings. This documentation is coming soon. See the inline documentation in [_settings-typography.scss](https://github.com/uswds/uswds/blob/develop/packages/uswds-core/src/styles/settings/_settings-typography.scss){:.text-ink.text-bold} for more details.
-
 ## Customizing family tokens
 Customize the values of [type](#type-based-tokens){:.token} and [role](#role-based-tokens){:.token} family tokens with available [font](#available-fonts){:.token} tokens in your project's [settings configuration]({{ site.baseurl }}/documentation/settings/).
 
@@ -304,3 +301,6 @@ If you want to add a font that will be hosted in your project, you’ll need to:
     ```
 
 {% include tokens/create-font-token.html %}
+
+{:.site-note.margin-top-4}
+**Note:** It is possible to add **custom font metadata** in your USWDS settings. See the inline documentation in [_settings-typography.scss](https://github.com/uswds/uswds/blob/develop/packages/uswds-core/src/styles/settings/_settings-typography.scss){:.text-ink.text-bold} for more details.

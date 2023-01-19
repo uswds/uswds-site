@@ -16,6 +16,8 @@ subnav:
   href: '#line-charts'
 - text: Bar charts
   href: '#bar-charts'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - dataviz
   - infographics
@@ -24,6 +26,8 @@ tags:
   - graphs
   - line
   - bar
+changelog:
+  key: component-data-visualizations
 ---
 <div class="site-note"><strong>Note:</strong> The data visualizations components are guidance-only and do not include any <code>Component Code</code>. The examples of specific visualizations included with our guidance are intended to be a demonstration of one way to implement our guidance with a focus on accessibility and assistive tooling.</div>
 <section class="site-component-section site-component-usage">

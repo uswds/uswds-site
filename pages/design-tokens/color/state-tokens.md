@@ -10,6 +10,10 @@ subnav:
   href: '#uswds-state-color-tokens'
 - text: Using color tokens
   href: '#using-color-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-color-state
 ---
 
 {% assign colors = site.data.tokens.color %}

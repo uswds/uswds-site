@@ -17,8 +17,12 @@ subnav:
   href: '#process-list-guidance'
 - text: Package
   href: '#process-list-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - steps
   - step by step
   - stepper
+changelog:
+  key: component-process-list
 ---

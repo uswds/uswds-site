@@ -22,6 +22,8 @@ subnav:
   href: '#card-guidance'
 - text: Package
   href: '#card-package'
+- text: Latest updates
+  href: '#changelog'
 type: component
 variants:
   - variant: "`.usa-card--flag`"
@@ -38,6 +40,8 @@ variants:
     description: Extends the body element out over the card border. Useful for light-bordered cards.
   - variant: "`.usa-card__footer--exdent`"
     description: Extends the footer element out over the card border. Useful for light-bordered cards.
+changelog:
+  key: component-card
 ---
 
 A **card** is often a subset or summary of a larger idea. It acts as an entry point to more detailed information. This summary can contain a variety of content types, such as text, images and multimedia, or buttons and links.

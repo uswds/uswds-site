@@ -207,6 +207,7 @@ img {
     padding-right: 0;
     padding-left: units(4);
     width: units($width-nav-sidebar);
+    top: 4em;
   }
 
   .usa-navigation-submenu {
@@ -1176,6 +1177,24 @@ code[class*="language-plaintext"] {
   margin-bottom: units(7);
 }
 
+.site-component-preview {
+  h5 {
+    @include typeset("lang", "sm", 3);
+    @include u-text($site-ink, "bold");
+    margin-top: units(4);
+    margin-bottom: units(1);
+
+    & + form fieldset legend,
+    & + label {
+      margin-top: 0;
+    }
+  }
+
+  h4 + h5 {
+    margin-top: units(2);
+  }
+}
+
 // External link styles
 
 #{$external-href} {
@@ -1691,6 +1710,22 @@ strong {
 .output-false {
   @extend %output-true;
   @include u-bg("error");
+}
+
+.output-warning {
+  @extend %output-true;
+  @include u-bg("warning");
+  @include u-text("ink");
+}
+
+.output-neutral {
+  @extend %output-true;
+  @include u-bg("base-lighter");
+  @include u-text("ink");
+}
+
+li + li .output-neutral {
+  margin-top: units(0.5);
 }
 
 // Ensure that inline lists do not have a bottom margin
@@ -2435,6 +2470,10 @@ $theme-table-column-gap: 4;
       @include u-text("normal");
     }
 
+    h2 + h3 {
+      margin-top: units(3);
+    }
+
     h6 {
       @include typeset("lang", "2xs", 2);
       @include u-text("uppercase", "ls-2", "normal");
@@ -3024,6 +3063,7 @@ pre.lineno {
 }
 
 body {
+  @include u-bg($site-background-color);
   text-rendering: optimizeLegibility;
 }
 
@@ -3031,7 +3071,8 @@ body {
 .site-accordion-code {
   > .usa-accordion__button {
     h2,
-    h3 {
+    h3,
+    h4 {
       @include typeset("lang", "sm", 1);
       @include u-margin-y(0);
     }
@@ -3250,7 +3291,7 @@ body {
     @extend %site-h2;
     border-top: units(1px) solid;
     margin-bottom: units(2);
-    margin-top: units(3);
+    margin-top: units(6);
     padding-top: units(1.5);
   }
 
@@ -3363,4 +3404,131 @@ p + .pagination-behaviors--examples {
   .gd {
     color: color("red-60v");
   }
+}
+
+// Do/Don't Guidance Section
+
+$do-dont-color-do: "green-cool-50v";
+$do-dont-color-dont: "red-cool-50v";
+$do-dont-color-border: "gray-cool-20";
+$do-dont-padding: 3;
+$do-dont-top-bar-width: 1;
+
+.do-dont {
+  display: flex;
+  height: 100%;
+  padding-top: units(2);
+}
+
+.do-dont__do,
+.do-dont__dont {
+  background-color: color("white");
+  border: 1px solid color($do-dont-color-border);
+  flex: 1 0 0;
+  height: 100%;
+  position: relative;
+}
+
+.do-dont__do {
+  padding: 0rem;
+}
+
+.do-dont__do:before,
+.do-dont__dont:before {
+  content: "";
+  position: absolute;
+  height: units($do-dont-top-bar-width);
+  width: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+}
+
+.do-dont__do:before {
+  background-color: color($do-dont-color-do);
+}
+
+.do-dont__dont:before {
+  background-color: color($do-dont-color-dont);
+}
+
+.do-dont__heading {
+  @include typeset("lang", "lg", 2);
+  align-items: center;
+  border-bottom: 1px solid color($do-dont-color-border);
+  display: flex;
+  font-weight: fw("bold");
+  margin: 0;
+  padding: units(4) units($do-dont-padding) units($do-dont-padding);
+
+  .usa-icon {
+    @include u-square(3);
+    margin-right: units(0.5);
+  }
+}
+
+.do-dont__do .do-dont__heading {
+  color: color($do-dont-color-do);
+}
+
+.do-dont__dont .do-dont__heading {
+  color: color($do-dont-color-dont);
+}
+
+.do-dont__content {
+  padding: 0 units($do-dont-padding) units($do-dont-padding) 0;
+
+  ul {
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+  }
+
+  li + li {
+    margin-top: units(1);
+  }
+}
+
+// Pattern landing page
+.pattern-card-heading {
+  font-weight: fw("normal");
+}
+
+// Memorable Date w/select
+.usa-form-group--month {
+  width: units(card-lg);
+}
+.usa-in-page-nav {
+  .usa-in-page-nav__heading {
+    @include typeset("lang", "2xs", 3);
+  }
+  .usa-in-page-nav__list {
+    .usa-in-page-nav__item {
+      @include typeset("lang", "3xs", 2);
+    }
+  }
+}
+
+.site-story {
+  @include typeset("lang", "xl", 2);
+  @include u-text("normal");
+}
+.site-changelog--show-tablet {
+  @include at-media-max("tablet") {
+    display: none;
+  }
+  @include at-media("widescreen") {
+    display: none;
+  }
+}
+
+.site-changelog--hide-tablet {
+  @include at-media("tablet") {
+    display: none;
+  }
+  @include at-media("widescreen") {
+    display: block;
+  }
+}
+
+.usa-in-page-nav {
+  @include u-z(100);
 }

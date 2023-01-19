@@ -37,7 +37,7 @@ tags:
   </ul>
   <h4>References</h4>
   <ul class="usa-content-list">
-    <li><a href="https://medium.com/nightingale/how-to-choose-the-colors-for-your-data-visualizations-50b2557fa335">Choosing Colors</a>&nbsp; [medium.com]</li>
+    <li><a href="https://nightingaledvs.com/how-to-choose-colors-for-your-data-visualizations/">Choosing Colors</a>&nbsp; [nightingaledvs.com]</li>
     <li><a href="https://venngage.com/blog/color-blind-friendly-palette/">Color Contrast and Color Blindness</a>&nbsp; [venngage.com]</li>
   </ul>
   <h3>Lossless representation</h3>
@@ -405,7 +405,7 @@ tags:
       </g>
     </g>
     </svg>
-    <table class="usa-sr-only" aria-describedby="source">
+    <table class="usa-sr-only" aria-describedby="source_bar">
       <caption>Top 5 most visited Nation Parks</caption>
       <thead>
         <tr>

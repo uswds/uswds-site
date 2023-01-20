@@ -3,7 +3,7 @@ The examples in the Preview section above are common input masks, but you can ad
 
 {:.usa-content-list }
 - **Add component classes.** The structure should include a base element with the class `usa-input-mask`. Inside of that base element there should be an input element with the class `usa-input-mask__field` and a message element (span or div) with the class `usa-input-mask__message`.
-- **Add a `mask` attribute to the input element.** The mask attribute is used to define the format of your mask. Use 9's for numbers and A's for letters. For example, a typical SSN number format in the mask attribute should look like _999-99-9999_.
+- **Add a `mask` attribute to the input element.** The mask attribute is used to define the format of your mask. Use `9`s for numbers and `A`s for letters. For example, a typical SSN number format in the mask attribute should look like `999-99-9999`.
 - **Add a `placeholder` attribute to the input element.** This indicates the mask format. Use underscores `_` for character input placeholders combined with any valid format characters (see below) to customize your input mask. e.g. A US telephone `placeholder` attribute may look like `(___) ___-____`
 - **Add a `maxlength` attribute to the input element.** This will be used as the limit referenced in the message and for validation.
 - **Set the attribute `type` to numeric if your mask is all numbers.** This will display the numeric keypad instead of the full keyboard.
@@ -36,7 +36,7 @@ type="text"
 Input mask examples include an alphanumeric version which can be customized to meet your needs. Include the number `9` for every number and a capitalized letter `A` for every required letter. We recommend changing inputmode to `text` so the full keyboard is available to your user.
 
 {:.usa-content-list }
-If your input mask calls for a pattern such as _1EG4-TE5-MK73_, you could implement that by adding the following attributes and character formatting to your `input` element:
+If your input mask calls for a complicated pattern like _1EG4-TE5-MK73_, you could implement that by adding the following attributes and character formatting to your `input` element:
 
 {:.usa-content-list }
 ```
@@ -62,7 +62,7 @@ Additional parameters can be used to force uppercase or lowercase characters. Ad
 <h3>Error handling</h3>
 
 {:.usa-content-list }
-The input mask utilizes screen reader friendly logic to gently notify a user if the character they typed is incorrect. The Preview section above illustrates this.
+The input mask utilizes screen reader-friendly logic to gently notify a user if the character they typed is incorrect. The Preview section above illustrates this.
 
 {:.usa-content-list }
 <h3>Available format characters</h3>

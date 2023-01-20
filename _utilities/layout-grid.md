@@ -273,7 +273,7 @@ The following sections break the layout grid down and describe how it works.
 </div>
 {% endcapture %}
 {{ grid-markers }}
- 
+
 <div class="docs-grid-example">
 {% capture grid-responsive %}
 <div class="grid-row">

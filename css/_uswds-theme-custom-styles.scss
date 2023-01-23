@@ -1266,9 +1266,7 @@ code[class*="language-plaintext"] {
   // Override for 4x1 media grid when it collapses to 2x2
   @media screen and (max-width: units("desktop")) and (min-width: units("tablet")) {
     // scss-lint:disable SelectorDepth
-    .usa-graphic-list
-      .usa-graphic-list__row
-      .usa-media-block:nth-child(-n + 2) {
+    .usa-graphic-list .usa-graphic-list__row .usa-media-block:nth-child(-n + 2) {
       margin-bottom: units(8);
     }
   }
@@ -1612,14 +1610,7 @@ strong {
   @include u-padding-x("05");
   @include u-padding-y(2px);
   @include u-radius("sm");
-  @include u-text(
-    "normal",
-    "no-wrap",
-    "no-underline",
-    "uppercase",
-    "no-italic",
-    "ls-2"
-  );
+  @include u-text("normal", "no-wrap", "no-underline", "uppercase", "no-italic", "ls-2");
 }
 
 .prose-graf-intro {
@@ -2223,9 +2214,7 @@ $theme-table-column-gap: 4;
         @include u-pin("left");
         content: "";
         background-color: color("gray-2");
-        border-bottom-left-radius: radius(
-          $theme-table-responsive-border-radius
-        );
+        border-bottom-left-radius: radius($theme-table-responsive-border-radius);
         border-top-left-radius: radius($theme-table-responsive-border-radius);
         display: block;
         max-width: units($theme-table-responsive-title-width);
@@ -2527,9 +2516,7 @@ $theme-table-column-gap: 4;
 
 // because any accordion__content inside of a bordered accordion get's
 // borders, we need to overide for this nested component preview.
-.site-component-preview
-  .usa-accordion:not(.usa-accordion--bordered)
-  .usa-accordion__content {
+.site-component-preview .usa-accordion:not(.usa-accordion--bordered) .usa-accordion__content {
   border: none;
 }
 
@@ -2750,10 +2737,7 @@ $theme-table-column-gap: 4;
 
   .usa-banner__header,
   .usa-banner__content {
-    @include set-text-from-bg(
-      $site-banner-background-color,
-      $context: $banner-context
-    );
+    @include set-text-from-bg($site-banner-background-color, $context: $banner-context);
   }
 
   .usa-banner__content {
@@ -2834,18 +2818,8 @@ $theme-table-column-gap: 4;
   }
 
   .usa-banner__header-action {
-    @include place-icon(
-      $banner-icon-chevron,
-      "after",
-      0,
-      middle,
-      $site-banner-background-color
-    );
-    @include set-link-from-bg(
-      $site-banner-background-color,
-      $site-banner-link-color,
-      $context: $banner-context
-    );
+    @include place-icon($banner-icon-chevron, "after", 0, middle, $site-banner-background-color);
+    @include set-link-from-bg($site-banner-background-color, $site-banner-link-color, $context: $banner-context);
 
     line-height: line-height($site-banner-font-family, 2);
     margin-bottom: units(0);
@@ -2902,11 +2876,7 @@ $theme-table-column-gap: 4;
     @include u-pin("left");
     @include u-pin("y");
     @include u-text("primary", underline, baseline);
-    @include set-link-from-bg(
-      $site-banner-background-color,
-      $site-banner-link-color,
-      $context: $banner-context
-    );
+    @include set-link-from-bg($site-banner-background-color, $site-banner-link-color, $context: $banner-context);
     display: block;
     font-size: font-size($site-banner-font-family, 1);
     height: auto;
@@ -2921,18 +2891,8 @@ $theme-table-column-gap: 4;
     }
 
     @include at-media("tablet") {
-      @include place-icon(
-        $banner-icon-chevron,
-        "after",
-        "2px",
-        middle,
-        $site-banner-background-color
-      );
-      @include set-link-from-bg(
-        $site-banner-background-color,
-        $site-banner-link-color,
-        $context: $banner-context
-      );
+      @include place-icon($banner-icon-chevron, "after", "2px", middle, $site-banner-background-color);
+      @include set-link-from-bg($site-banner-background-color, $site-banner-link-color, $context: $banner-context);
       @include u-pin("none");
       display: inline;
       margin-left: units(1);
@@ -2956,13 +2916,7 @@ $theme-table-column-gap: 4;
       background-image: none;
 
       @include at-media-max("tablet") {
-        @include place-icon(
-          $banner-icon-close,
-          "after",
-          0,
-          middle,
-          "base-lighter"
-        );
+        @include place-icon($banner-icon-close, "after", 0, middle, "base-lighter");
 
         &:before {
           @include u-pin("y");
@@ -2980,13 +2934,7 @@ $theme-table-column-gap: 4;
       }
 
       @include at-media("tablet") {
-        @include place-icon(
-          $banner-icon-chevron-up,
-          "after",
-          "2px",
-          middle,
-          $site-banner-background-color
-        );
+        @include place-icon($banner-icon-chevron-up, "after", "2px", middle, $site-banner-background-color);
         height: auto;
         padding: units(0);
         position: relative;
@@ -3105,8 +3053,7 @@ body {
     @include u-padding-top(6);
     background-image: url("../img/introducing-uswds-2-0/feature-image-homepage.svg");
     background-repeat: no-repeat;
-    background-position: left calc(#{units("mobile-lg")} + #{units(2)}) top
-      units("105");
+    background-position: left calc(#{units("mobile-lg")} + #{units(2)}) top units("105");
     background-size: auto 400px;
   }
 
@@ -3531,4 +3478,62 @@ $do-dont-top-bar-width: 1;
 
 .usa-in-page-nav {
   @include u-z(100);
+}
+
+// Component Status Table
+
+.usa-status-pill {
+  display: inline-flex;
+  padding: units(0.5);
+  padding-right: units(1);
+  align-items: center;
+  background: color("disabled-light");
+  font-size: units(2);
+  svg {
+    height: units(3);
+    width: units(3);
+  }
+  &--production {
+    background: color("success-lighter");
+    svg {
+      color: color("success");
+    }
+  }
+  &--deprecated {
+    background: color("error-lighter");
+    svg {
+      color: color("error");
+    }
+  }
+  &--with-caution {
+    background: color("warning-lighter");
+    svg {
+      color: color("warning");
+    }
+  }
+  &--considering {
+    background: color("primary-lighter");
+    svg {
+      color: color("primary");
+    }
+  }
+}
+
+.update-summary {
+  span {
+    display: flex;
+    line-height: 1;
+    border-left: 8px solid;
+    padding-left: units(1);
+    margin-bottom: units(0.5);
+    &.breaking {
+      border-color: color("error");
+    }
+    &.accessibility {
+      border-color: color("warning");
+    }
+    &.updates {
+      border-color: color("disabled");
+    }
+  }
 }

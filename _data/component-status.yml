@@ -1,119 +1,120 @@
 - component: "Accordion"
   link: "/components/accordion"
   stat: "Production"
+  introduced: "3.1.0"
   updated: 2022-08-05
-  breaking: "Breaking"
+  breaking: true
+  updates: "Javascript, Markup"
 
 - component: "Alert"
   link: "/components/alert"
   stat: "Production"
+  introduced: "3.2.0"
   updated: 2022-10-19
-  breaking: "No"
 
 - component: "Banner"
   link: "/components/banner"
   stat: "Production"
+  introduced: "3.2.0"
   updated: 2022-10-09
-  breaking: "No"
+  accessibility: true
+  updates: "Markup"
 
 - component: "Breadcrumb"
   link: "/components/breadcrumb"
   stat: "Deprecated"
+  introduced: "3.0.0"
   updated: 2022-04-28
-  breaking: "Breaking"
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
 
-- component: "Button"
+- component: "Buttons"
   link: "/components/button"
   stat: "Production"
+  introduced: "3.1.0"
   updated: 2022-08-05
-  breaking: "No"
+  accessibility: true
+  updates: "Styles"
 
 - component: "Button group"
   link: "/components/button-group"
-  stat: "Production"
+  stat: "Release candidate"
   updated: 2022-08-05
-  breaking: "No"
 
 - component: "Card"
   link: "/components/card"
   stat: "Production"
+  introduced: "3.1.0"
   updated: 2022-08-05
-  breaking: "No"
+  updates: "JavaScript, Markup"
 
 - component: "Character count"
   link: "/components/character-count"
-  stat: "Release candidate"
+  stat: "Considering"
   updated: 2022-10-19
-  breaking: "No"
 
 - component: "Checkbox"
   link: "/components/checkbox"
   stat: "Production"
+  introduced: "3.1.0"
   updated: 2022-08-05
-  breaking: "No"
+  breaking: true
+  accessibility: true
+  updates: "Guidance, JavaScript, Markup"
 
 - component: "Collection"
   link: "/components/collection"
   stat: "Production"
+  introduced: "3.1.0"
   updated: 2022-04-28
-  breaking: "Breaking"
 
 - component: "Combo box"
   link: "/components/combo-box"
-  stat: "Available with caution"
+  stat: "Use with caution"
   updated: 2022-11-14
-  breaking: "Breaking"
+  updates: "Guidance, Assets, JavaScript, Styles, Markup"
 
 - component: "Data visualizations"
   link: "/components/data-visualizations"
   stat: "Production"
   updated: 2022-04-28
-  breaking: "Breaking"
 
 - component: "Date picker"
   link: "/components/date-picker"
   stat: "Production"
   updated: 2022-08-05
-  breaking: "No"
 
 - component: "Date range picker"
   link: "/components/date-range-picker"
   stat: "Production"
   updated: 2022-08-05
-  breaking: "No"
 
 - component: "File input"
   link: "/components/file-input"
   stat: "Production"
   updated: 2022-10-09
-  breaking: "No"
 
 - component: "Footer"
   link: "/components/footer"
   stat: "Production"
   updated: 2022-08-05
-  breaking: "Breaking"
 
 - component: "Form"
   link: "/components/form"
   stat: "Production"
   updated: 2022-10-09
-  breaking: "Breaking"
 
 - component: "Grid"
   link: "/components/grid"
   stat: "Production"
   updated: 2022-08-05
-  breaking: "Breaking"
 
 - component: "Header"
   link: "/components/header"
   stat: "Production"
   updated: 2022-08-05
-  breaking: "Breaking"
 
 - component: "Icon"
   link: "/components/icon"
   stat: "Production"
   updated: 2022-10-09
-  breaking: "No"

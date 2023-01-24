@@ -6,16 +6,18 @@
 {% assign col3Title = 'Version introduced' %}
 {% assign col4Title = 'Updated (yyyy-mm-dd)' %}
 {% assign col5Title = 'Summary of recent updates' %}
+{% assign col6Title = 'Issues' %}
 {% assign versionLink = 'https://github.com/uswds/uswds/releases/tag/v' %}
 
-<table class="usa-table usa-table--borderless width-full margin-top-4">
+<table class="usa-table usa-table--borderless usa-table--status-table width-full font-body-xs margin-top-4">
   <thead>
     <tr>
       <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">{{ col1Title }}</th>
       <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">{{ col2Title }}</th>
       <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">Version<br>Introduced</th>
       <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">Last updated<br>(yyyy-mm-dd)</th>
-      <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }} width-card-lg">{{ col5Title }}</th>
+      <th role="columnheader" scope="col" class="{{ flex-2 }}">{{ col5Title }}</th>
+      <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }} width-6">{{ col6Title }}</th>
     </tr>
   </thead>
   <tbody>
@@ -23,7 +25,7 @@
     <tr>
       <td data-title="{{ col1Title }}" class="{{ flex-1}}">
         <span>
-          <a href="{{ site.baseurl}}/{{ status.link }}">{{ status.component }}</a>
+          <a href="{{ site.baseurl}}/components/{{ status.component | downcase }}">{{ status.component }}</a>
         </span>
       </td>
       <td data-title="{{ col2Title }}" class="{{ flex-1 }}">
@@ -44,9 +46,7 @@
           </div>
         {% elsif status.stat == "Release candidate" %}
           <div class="usa-status-pill usa-status-pill--candidate">
-            <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
-              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#radio_button_unchecked"></use>
-            </svg>
+            <img class="margin-right-1 margin-left-2px" src="{{ site.baseurl }}/img/icons/release-candidate.svg" alt="" role="img" width="20" height="20">
             Release candidate
           </div>
         {% elsif status.stat == "Use with caution" %}
@@ -68,13 +68,18 @@
       <td data-title="{{ col3Title }}" class="{{ flex-1 }}">
         {% if status.introduced %}
           <a href="{{ versionLink }}{{ status.introduced }}">{{ status.introduced }}</a>
-        {% elsif status.introduced == null %}
+        {% elsif status.planned %}
+          Planned for<br>{{ status.planned }}
+        {% elsif status.introduced == null and status.planned == null %}
           -
         {% endif %}
       </td>
       <td data-title="{{ col4Title }}" class="{{ flex-1 }}">
         <span>
-          {{ status.updated }}
+          {{ status.updated-date }}<br>
+          {% if status.updated-version %}
+            <a href="{{ versionLink }}{{ status.updated-version }}">{{ status.updated-version}}</a>
+          {% endif %}
         </span>
       </td>
       <td data-title="{{ col4Title }}" class="{{ col5Class }}">
@@ -87,9 +92,18 @@
         {% if status.updates %}
           <span class="updates">{{ status.updates}}</span>
         {% endif %}
-        {% if status.breaking != true and status.accessibility != true and status.updates == null %}
+        {% if status.feedback %}
+          <p class="discussion margin-0">
+            Seeking community feedback<br>
+            <a href="https://github.com/uswds/uswds/discussions">Join the Github discussion</a>
+          </p>
+        {% endif %}
+        {% if status.breaking != true and status.accessibility != true and status.updates == null and status.feedback != true %}
           -
         {% endif %}
+      </td>
+      <td>
+        <a href="https://github.com/uswds/uswds/labels/Package%3A%20{{ status.component}}">Link</a>
       </td>
     </tr>
     {% endfor %}

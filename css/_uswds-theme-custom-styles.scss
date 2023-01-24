@@ -3489,7 +3489,8 @@ $do-dont-top-bar-width: 1;
   align-items: center;
   background: color("disabled-light");
   font-size: units(2);
-  svg {
+  svg,
+  img {
     height: units(3);
     width: units(3);
   }
@@ -3520,9 +3521,10 @@ $do-dont-top-bar-width: 1;
 }
 
 .update-summary {
+  font-size: size("body", "xs");
   span {
     display: flex;
-    line-height: 1;
+    line-height: 1.1;
     border-left: 8px solid;
     padding-left: units(1);
     margin-bottom: units(0.5);

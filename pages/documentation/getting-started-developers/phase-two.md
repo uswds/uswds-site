@@ -24,6 +24,10 @@ subnav:
     href: '#step-7-initialize-your-project'
   - text: 'Step 8: Verify successful installation'
     href: '#step-8-verify-successful-installation'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: docs-getting-started-devs-phase-2
 ---
 
 U.S. Web Design System source code is written in Sass, a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with the Design System, you do all your stylesheet work in Sass then use a compiler to convert that Sass into CSS.

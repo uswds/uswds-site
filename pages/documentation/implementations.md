@@ -15,6 +15,11 @@ subnav:
   data: implementations
   href: ['#%', name]
   text: name
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: docs-implementations
 ---
 
 If you have a new implementation to add to this list, please [open an issue] on GitHub or [send us an email] with the following information:

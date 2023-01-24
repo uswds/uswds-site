@@ -4,8 +4,7 @@ title: What’s Next `|` Inclusive Design Patterns Research Report
 nav_title: What’s next
 # For open graph meta description
 description: USWDS is excited to provide a new library of guidance and examples focused on key digital interactions — what we call design patterns — that foster effective, inclusive, and equitable digital experiences.
-meta:
-  og:image: /img/together/og-together-report.png
+image: /img/together/og-together-report.png
 permalink: /together/whats-next/
 slug: whats-next
 hero_title: What’s next

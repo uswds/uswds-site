@@ -222,7 +222,6 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
 - Nonbinary airline passenger tickets. (June 22, 2022) Retrieved on July 15, 2022, from [https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html](https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html)
 - Patient centered care for transgender people: recommended practices for health care settings. (n.d.) Retrieved on November 4, 2022, from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/affirmative-care.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/affirmative-care.html)
 - Social Security implements self-attestation of sex marker in Social Security Number records. (October 19, 2022) Retrieved on October 24, 2022, from [https://www.ssa.gov/news/press/releases/2022/#10-2022-3](https://www.ssa.gov/news/press/releases/2022/#10-2022-3)
-- Updates on terminology of sexual orientation and gender identity survey measures. (August 2020) Retrieved on October 24, 2022, from [https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf](https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf)
 - X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from [https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/](https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)
 
 {:.site-component-section-title}

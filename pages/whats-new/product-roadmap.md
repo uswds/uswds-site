@@ -9,6 +9,11 @@ category: About
 lead: Our product roadmap is an up-to-date report on the work we’re doing and planning to do.
 redirect_from:
   - /whats-new/product-roadmap/
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: about-roadmap
 ---
 
 Our product roadmap communicates what we've recently done and what we've got planned for the next 4-8 months. We've moved our roadmap planning board to GitHub so we can keep it more up-to-date.

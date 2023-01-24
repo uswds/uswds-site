@@ -10,8 +10,12 @@ subnav:
   - href: /documentation/getting-started/developers/phase-two-compile/
   - href: /documentation/getting-started/developers/phase-three-customize/
   - href: /documentation/getting-started/developers/resources/
+  - text: Latest updates
+    href: '#changelog'
 redirect_from:
   - /documentation/fundamentals/
+changelog:
+  key: docs-getting-started-devs-overview
 ---
 
 Getting started for developers will lead you, step by step, through the process of installing and compiling the U.S. Web Design System and customizing your project using components and design tokens. If you prefer a hands-on demonstration of this process, please check out [our interactive tutorial](https://github.com/uswds/uswds-tutorial), which will take you through the same steps using a pre-made example website.

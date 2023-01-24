@@ -4,9 +4,7 @@ title: Together `|` Inclusive Design Patterns Research Report
 # For open graph meta description
 description: USWDS is excited to provide a new library of guidance and examples focused on key digital interactions — what we call design patterns — that foster effective, inclusive, and equitable digital experiences.
 nav_title: Summary
-meta:
-  og:image: /img/together/og-together-report.png
-
+image: /img/together/og-together-report.png
 permalink: /together/
 slug: together
 hero_title: Inclusive design patterns
@@ -149,10 +147,6 @@ With help from digital leaders across the federal space, we've developed pattern
   <h3>A commitment to the practice of inclusivity</h3>
   <p>
     While we may never reach the aspirational goal of a totally inclusive experience, the <em>process</em> of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. 
-  </p>
-
-  <p>
-    While we may never reach the aspirational goal of a totally inclusive experience, the process of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. 
   </p>
 
   <p>

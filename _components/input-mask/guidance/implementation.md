@@ -7,10 +7,6 @@ The examples in the Preview section above are common input masks, but you can ad
 - **Add a `placeholder` attribute to the input element.** This indicates the mask format. Use underscores `_` for character input placeholders combined with any valid format characters (see below) to customize your input mask. e.g. A US telephone `placeholder` attribute may look like `(___) ___-____`
 - **Add a `maxlength` attribute to the input element.** This will be used as the limit referenced in the message and for validation.
 - **Set the attribute `type` to numeric if your mask is all numbers.** This will display the numeric keypad instead of the full keyboard.
-- **Optionally, add a `pattern` attribute to the input element.** For non-number fields, the `pattern` attribute takes a regular expression that should match the intended mask. If the user input does not match the pattern regex, the `patternMismatch` property of the `ValidityState` object will be true. When true, the element matches the `:invalid` CSS pseudo-class and can be used to add, for example, a red border around the field if the user input does not match the regex.
-
-{:.site-note}
-**Note:** The `pattern` attribute cannot be used on a field with a type of _number_ e.g. `type="number"`. Only fields with types _text, tel, email, url, password, or search_ will trigger the `patternMismatch` property.
 
 {:.usa-content-list }
 The following is an example of `input` element attributes for a Social Security Number mask:
@@ -24,7 +20,6 @@ inputmode="numeric"
 mask="999-99-9999"
 maxlength="11"
 name="ssn"
-pattern="\d{3}-\d{2}-\d{4}"
 placeholder="___-__-____"
 type="text"
 ```
@@ -46,7 +41,6 @@ forceupper="true"
 id="alphanumeric"
 mask="9AA9-AA9-AA99"
 name="alphanumeric"
-pattern="\d\w\w\d-\w\w\d-\w\w\d\d"
 placeholder="____-___-____"
 maxlength="13"
 type="text"

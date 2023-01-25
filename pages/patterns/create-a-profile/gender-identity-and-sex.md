@@ -201,7 +201,7 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
 
 {:.site-component-section-title}
 ## Provide pattern feedback
-### Help update and improve this pattern by sharing your feedback
+Help update and improve this pattern by sharing your feedback
 
 {:.usa-content-list}
 - <a href="https://github.com/uswds/uswds/discussions">Join Github discussion</a> about the Gender identity and sex pattern.

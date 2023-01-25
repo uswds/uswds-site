@@ -21,7 +21,7 @@ subnav:
   - text: Package
     href: '#alert-package'
   - text: Latest updates
-    href: '#alert-changelog'
+    href: '#changelog'
 title: Alert
 variants:
   - variant: "`.usa-alert--info`"
@@ -36,4 +36,6 @@ variants:
     description: Display a slimmer version of the alert.
   - variant: "`.usa-alert--no-icon`"
     description: Display an alert without an icon.
+changelog:
+  key: component-alert
 ---

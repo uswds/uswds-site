@@ -28,6 +28,10 @@ subnav:
   href: '#gutters'
 - text: Sass mixins
   href: '#sass-mixins'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: utilities-layout-grid
 ---
 
 <h2 id="how-it-works">How it works</h2>

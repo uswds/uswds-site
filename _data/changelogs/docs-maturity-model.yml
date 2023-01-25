@@ -1,0 +1,17 @@
+title: Maturity model
+type: documentation
+changelogURL:
+items:
+  - date: 2022-03-10
+    summary: |
+      Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1424
+    githubRepo: uswds-site

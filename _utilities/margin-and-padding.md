@@ -14,6 +14,10 @@ subnav:
   href: '#utility-mixins'
 - text: Advanced settings
   href: '#advanced-settings'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: utilities-margin-padding
 vals_positive:
   - token: 0
     value: 0

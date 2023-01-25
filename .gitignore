@@ -17,4 +17,4 @@ pa11y-results.json
 *.code-workspace
 .vscode/
 
-Gemfile.lock
+# Gemfile.lock

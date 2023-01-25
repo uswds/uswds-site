@@ -12,11 +12,13 @@ layout: default
   </aside>
 
   <div class="usa-in-page-nav-container">
+    {% if page.in-page-nav != false %}
     <aside class="usa-in-page-nav" 
       aria-label="On this page" 
       data-scroll-offset="-120" 
       data-root-margin="48px 0px -90% 0px" 
       data-threshold="1"></aside>
+    {% endif %}
     <main id="main-content" class="main-content">
       <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
         <header>

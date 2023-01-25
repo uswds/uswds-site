@@ -1,5 +1,6 @@
 ---
 permalink: /components/status/
+in-page-nav: false
 layout: styleguide
 title: Component status summary
 category: Components

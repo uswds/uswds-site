@@ -28,6 +28,8 @@ layout: default
           <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
         </header>
 
+        {% include status.html %}
+
         {% include lead.html text=page.lead %}
 
         {{ content }}

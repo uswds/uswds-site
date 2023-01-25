@@ -1,5 +1,6 @@
 ---
 category: Components
+status: Production
 component:
   name: accordion
   status: ready
@@ -39,3 +40,4 @@ variants:
 changelog:
   key: component-accordion
 ---
+

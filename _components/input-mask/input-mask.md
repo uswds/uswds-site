@@ -1,5 +1,6 @@
 ---
 category: Components
+status: Needs research
 component:
   status: ready
   package: usa-input-mask

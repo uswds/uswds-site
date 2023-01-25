@@ -3518,6 +3518,12 @@ $do-dont-top-bar-width: 1;
       color: color("primary");
     }
   }
+  &--research {
+    background: color("accent-warm-lighter");
+    svg {
+      color: color("accent-warm");
+    }
+  }
 }
 
 .update-summary {

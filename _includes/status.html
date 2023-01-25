@@ -1,0 +1,16 @@
+{% if page.status == "Production" %}
+<div class="usa-status-pill usa-status-pill--production margin-top-1">
+    <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+        <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+    </svg>
+    Production
+</div>
+{% endif %}
+{% if page.status == "Needs research" %}
+<div class="usa-status-pill usa-status-pill--research margin-top-1">
+    <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+        <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#assessment"></use>
+    </svg>
+    Needs research
+</div>
+{% endif %}

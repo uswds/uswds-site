@@ -3526,6 +3526,19 @@ $do-dont-top-bar-width: 1;
   }
 }
 
+.status-area {
+  display: flex;
+  align-items: center;
+  margin-top: units(1);
+  margin-bottom: units(2);
+  .usa-status-pill {
+    margin-right: units(2);
+  }
+  a {
+    margin-top: 2px;
+  }
+}
+
 .update-summary {
   font-size: size("body", "xs");
   span {

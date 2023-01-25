@@ -612,14 +612,16 @@ We use the `typeset()` mixin on all our components to get the effect of default 
 #### Example: Settings and typesetting
 
 ```scss
-// in _uswds-theme:
+// in your settings configuration:
 
-$theme-respect-user-font-size: true;
-$theme-font-type-sans:         'public-sans';
-$theme-font-role-ui:           $theme-font-sans;
-$theme-type-scale-sm:          5;
-$theme-body-font-size:         'sm';
-$theme-body-line-height:       5;
+ @use "uswds-core" with (
+  $theme-respect-user-font-size: true,
+  $theme-font-type-sans:         'public-sans',
+  $theme-font-role-ui:           $theme-font-sans,
+  $theme-type-scale-sm:          5,
+  $theme-body-font-size:         'sm',
+  $theme-body-line-height:       5,
+ )
 
 // in component code:
 

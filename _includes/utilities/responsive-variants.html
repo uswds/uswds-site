@@ -63,7 +63,17 @@
     </tbody>
   </table>
 
-  <p class="utility-text margin-top-4">Set whether a utility family outputs with responsive variants by setting the value of <code>$[utility_family]-settings.responsive</code> in your <a href="{{ site.baseurl }}/documentation/settings" class="">USWDS settings configuration</a>.</p>
+  <p class="utility-text margin-top-4">Set whether a utility family outputs with responsive variants by setting the value of <code>$[utility_family]-settings.responsive</code> in your <a href="{{ site.baseurl }}/documentation/settings" class="">USWDS settings configuration</a>. This code sample shows a how to disable or enable responsive variants for a utility module:</p>
+
+  <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2 margin-bottom-2">
+    <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+@use "uswds-core" with (
+  $background-color-settings: (
+    responsive: false,
+  ),
+);
+</pre>
+  </div>
 
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>

@@ -117,13 +117,21 @@
 
 - component: "Footer"
   stat: "Production"
+  introduced: 2.13.0
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  breaking: true
+  updates: "Assets"
+
+- component: "Form"
+  stat: "Production"
   introduced: 2.12.1
   updated-date: 2022-08-05
-  updated-version: 3.0.0
+  updated-version: 3.1.0
   accessibility: true
   updates: "Styles"
 
-- component: "Form"
+- component: "Grid"
   stat: "Production"
   introduced: 2.12.1
   updated-date: 2022-08-05
@@ -131,16 +139,8 @@
   accessibility: true
   updates: "Styles"
 
-- component: "Grid"
-   stat: "Production"
-  introduced: 2.12.1
-  updated-date: 2022-08-05
-  updated-version: 3.0.0
-  accessibility: true
-  updates: "Styles"
-
 - component: "Header"
-    stat: "Production"
+  stat: "Production"
   introduced: 2.12.1
   updated-date: 2022-08-05
   updated-version: 3.0.0
@@ -148,7 +148,7 @@
   updates: "Styles"
 
 - component: "Icon"
-    stat: "Production"
+  stat: "Production"
   introduced: 2.12.1
   updated-date: 2022-08-05
   updated-version: 3.0.0

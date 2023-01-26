@@ -6,7 +6,7 @@
 {% assign col3Title = 'Version introduced' %}
 {% assign col4Title = 'Updated (yyyy-mm-dd)' %}
 {% assign col5Title = 'Summary of recent updates' %}
-{% assign col6Title = 'Issues' %}
+<!-- {% assign col6Title = 'Issues' %} -->
 {% assign versionLink = 'https://github.com/uswds/uswds/releases/tag/v' %}
 
 <table class="usa-table usa-table--borderless usa-table--status-table width-full font-body-xs margin-top-4">
@@ -17,7 +17,7 @@
       <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">Version<br>Introduced</th>
       <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">Last updated<br>(yyyy-mm-dd)</th>
       <th role="columnheader" scope="col" class="{{ flex-2 }}">{{ col5Title }}</th>
-      <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }} width-6">{{ col6Title }}</th>
+      <!-- <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }} width-6">{{ col6Title }}</th> -->
     </tr>
   </thead>
   <tbody>
@@ -102,9 +102,9 @@
           -
         {% endif %}
       </td>
-      <td>
+      <!-- <td>
         <a href="https://github.com/uswds/uswds/labels/Package%3A%20{{ status.component}}">Link</a>
-      </td>
+      </td> -->
     </tr>
     {% endfor %}
   </tbody>

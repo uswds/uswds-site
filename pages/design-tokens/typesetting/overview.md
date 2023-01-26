@@ -479,8 +479,6 @@ The individual design token sections go into this in more detail, but here's a s
 ### Family, size, and line height together
 The `typeset()` mixin accepts the tokens listed as well as a special `null` value. If either of the three properties get `null` instead of a token, the system will use a default value from [typography settings]({{ site.baseurl }}/documentation/settings/#typography-settings): either `$theme-body-font-family`, `$theme-body-font-size`, or `$theme-body-line-height` depending on the property passed the `null` value.
 
-See this example:
-
 We use the `typeset()` mixin on all our components to get the effect of default `<body>` element styling without having to explicitly style the `<body>` element.
 
 <div class="site-table-wrapper">
@@ -607,6 +605,9 @@ We use the `typeset()` mixin on all our components to get the effect of default 
     </tbody>
   </table>
 </div>
+
+
+See this example:
 
 {:.margin-top-4}
 #### Example: Settings and typesetting

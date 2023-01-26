@@ -477,7 +477,7 @@ The individual design token sections go into this in more detail, but here's a s
 </div>
 
 ### Family, size, and line height together
-The `typeset()` mixin accepts the tokens listed as well as a special `null` value. If either of the three properties get `null` instead of a token, the system will use a default value from [typography settings]({{ site.baseurl }}/documentation/settings/#typography-settings): either `$theme-body-font-family`, `$theme-body-font-size`, or `$theme-body-line-height` depending on the property passed the `null` value.
+The `typeset()` mixin allows you to set family, size, and line height all in one line. It accepts the tokens listed as well as a special `null` value. If either of the three properties get `null` instead of a token, the system will use a default value from [typography settings]({{ site.baseurl }}/documentation/settings/#typography-settings): either `$theme-body-font-family`, `$theme-body-font-size`, or `$theme-body-line-height` depending on the property passed the `null` value.
 
 See this example:
 

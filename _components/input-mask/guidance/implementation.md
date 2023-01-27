@@ -6,7 +6,7 @@
 - **Add a `mask` attribute to the input element.** The mask attribute is used to define the format of your mask. Use `9`s for numbers and `A`s for letters. For example, a typical SSN number format in the mask attribute should look like `999-99-9999`.
 - **Add a `placeholder` attribute to the input element.** This indicates the mask format. Use underscores `_` for character input placeholders combined with any valid format characters (see below) to customize your input mask. e.g. A US telephone `placeholder` attribute may look like `(___) ___-____`
 - **Add a `maxlength` attribute to the input element.** This will be used as the limit referenced in the message and for validation.
-- **Set the attribute `type` to numeric if your mask is all numbers.** This will display the numeric keypad instead of the full keyboard.
+- **Set the attribute `inputmode` to numeric if your mask is all numbers.** This will display the numeric keypad instead of the full keyboard.
 
 {:.usa-content-list }
 The following is an example of `input` element attributes for a Social Security Number mask:

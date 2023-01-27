@@ -1,5 +1,5 @@
 {:.usa-content-list }
-The examples in the Preview section above are common input masks, but you can adapt the code to meet the needs of your project. In order to extend the functionality of the input mask, you must include a `placeholder` attribute as the visible input mask, using the underscore `_` to represent a character the user should enter. You may use punctuation literals like `[space]`, `-`, `/`, or `(` to help format your mask, but these literals will not be included in the final submitted value. _See a complete list of format characters below_.
+**Customize the pattern.** The examples in the [component preview section]({{ site.baseurl }}/components/input-mask/#input-mask-preview-content) show common input mask patterns, but you can adapt the code to meet the needs of your project. In order to extend the functionality of the input mask, you must include a `placeholder` attribute as the visible input mask, using the underscore `_` to represent a character the user should enter. You may use punctuation literals like `[space]`, `-`, `/`, or `(` to help format your mask, but these literals will not be included in the final submitted value. A full list of formatting characters can be found in the [Available format characters table]({{ site.baseurl }}/components/input-mask/#available-format-characters).
 
 {:.usa-content-list }
 - **Add component classes.** The structure should include a base element with the class `usa-input-mask`. Inside of that base element there should be an input element with the class `usa-input-mask__field` and a message element (span or div) with the class `usa-input-mask__message`.
@@ -24,11 +24,10 @@ placeholder="___-__-____"
 type="text"
 ```
 
-{:.usa-content-list }
-<h3>The input mask and alphanumeric characters</h3>
+### The input mask and alphanumeric characters
 
 {:.usa-content-list }
-Input mask examples include an alphanumeric version which can be customized to meet your needs. Include the number `9` for every number and a capitalized letter `A` for every required letter. We recommend changing inputmode to `text` so the full keyboard is available to your user.
+Input mask examples include an alphanumeric version which can be customized to meet your needs. Include the number `9` for every number and a capitalized letter `A` for every required letter. We recommend changing `inputmode` to `text` so the full keyboard is available to your user.
 
 {:.usa-content-list }
 If your input mask calls for a complicated pattern like _1EG4-TE5-MK73_, you could implement that by adding the following attributes and character formatting to your `input` element:

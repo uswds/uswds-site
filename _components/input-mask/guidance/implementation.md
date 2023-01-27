@@ -28,7 +28,7 @@ type="text"
 <h3>The input mask and alphanumeric characters</h3>
 
 {:.usa-content-list }
-Input mask examples include an alphanumeric version which can be customized to meet your needs. Include the number `9` for every number and a capitalized letter `A` for every required letter. We recommend changing inputmode to `text` so the full keyboard is available to your user.
+Input mask examples include an alphanumeric version which can be customized to meet your needs. Include the number `9` for every number and a capitalized letter `A` for every required letter. We recommend changing `inputmode` to `text` so the full keyboard is available to your user.
 
 {:.usa-content-list }
 If your input mask calls for a complicated pattern like _1EG4-TE5-MK73_, you could implement that by adding the following attributes and character formatting to your `input` element:

@@ -49,7 +49,7 @@
             <img class="margin-right-1 margin-left-2px" src="{{ site.baseurl }}/img/icons/release-candidate.svg" alt="" role="img" width="20" height="20">
             Release candidate
           </div>
-        {% elsif status.stat == "Use with caution" or status.breaking %}
+        {% elsif status.stat == "Use with caution" or status.breaking == true %}
           <div class="usa-status-pill usa-status-pill--with-caution">
             <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
               <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error"></use>

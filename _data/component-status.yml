@@ -1,6 +1,6 @@
 - component: "Accordion"
   component-link: "accordion"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.10.2
   updated-date: 2022-08-05
   updated-version: 3.1.0
@@ -79,7 +79,7 @@
 
 - component: "Collection"
   component-link: "collection"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.12.2
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -88,7 +88,7 @@
 
 - component: "Combo box"
   component-link: "combo-box"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.12.2
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -97,7 +97,7 @@
 
 - component: "Data visualizations"
   component-link: "data-visualizations"
-  stat: "Production"
+  stat: "Use with caution"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -123,7 +123,7 @@
 
 - component: "File input"
   component-link: "file-input"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.12.2
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -132,7 +132,7 @@
 
 - component: "Footer"
   component-link: "footer"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.13.0
   updated-date: 2022-08-05
   updated-version: 3.1.0
@@ -141,7 +141,7 @@
 
 - component: "Form"
   component-link: "form"
-  stat: "Production"
+  stat: "Use with caution"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -155,7 +155,7 @@
 
 - component: "Header"
   component-link: "header"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.10.2
   updated-date: 2022-08-05
   updated-version: 3.1.0
@@ -166,13 +166,13 @@
   component-link: "icon"
   stat: "Production"
   introduced: 2.10.2
-  updated-date: 2022-08-05
+  updated-date: 2022-10-19
   updated-version: 3.2.0
   updates: "JavaScript"
 
 - component: "Icon list"
   component-link: "icon-list"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.11.0
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -181,7 +181,7 @@
 
 - component: "Identifier"
   component-link: "identifier"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 3.0.0
   updated-date: 2022-10-19
   updated-version: 3.2.0
@@ -206,12 +206,13 @@
   updates: "Guidance, JavaScript, Markup, Styles"
 
 - component: "Input prefix or suffix"
-  component-link: "input-prefix-or-suffix"
-  stat: "Production"
-  introduced: 3.3.0
-  updated-date: 2022-11-14
+  component-link: "input-prefix-suffix"
+  stat: "Use with caution"
+  introduced: 2.11.0
+  updated-date: 2022-04-28
   updated-version: 3.3.0
-  updates: "Guidance, JavaScript, Markup, Styles"
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
 
 - component: "Language selector"
   component-link: "language-selector"
@@ -223,7 +224,7 @@
 
 - component: "Link"
   component-link: "link"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.11.0
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -232,8 +233,7 @@
 
 - component: "List"
   component-link: "list"
-  stat: "Production"
-  introduced: 3.0.0
+  stat: "Use with caution"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -242,7 +242,7 @@
 - component: "Memorable date"
   component-link: "memorable-date"
   stat: "Production"
-  introduced: 3.3.0
+  introduced: 3.0.0
   updated-date: 2022-11-14
   updated-version: 3.3.0
   updates: "Guidance, Markup, Styles"
@@ -257,7 +257,7 @@
 
 - component: "Pagination"
   component-link: "pagination"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.12.2
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -266,8 +266,7 @@
 
 - component: "Process list"
   component-link: "process-list"
-  stat: "Production"
-  introduced: 3.0.0
+  stat: "Use with caution"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -275,8 +274,7 @@
 
 - component: "Prose"
   component-link: "prose"
-  stat: "Production"
-  introduced: 3.0.0
+  stat: "Use with caution"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -288,10 +286,11 @@
   introduced: 2.11.0
   updated-date: 2022-08-05
   updated-version: 3.1.0
+  accessibility: true
 
 - component: "Range slider"
   component-link: "range-slider"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.12.1
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -300,7 +299,7 @@
 
 - component: "Search"
   component-link: "search"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.13.0
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -317,7 +316,7 @@
 
 - component: "Side navigation"
   component-link: "side-navigation"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.11.2
   updated-date: 2022-08-05
   updated-version: 3.1.0
@@ -328,14 +327,14 @@
 - component: "Site alert"
   component-link: "site-alert"
   stat: "Production"
-  introduced: 2.11.2
+  introduced: 2.11.0
   updated-date: 2022-10-19
   updated-version: 3.2.0
   updates: "Styles"
 
 - component: "Step indicator"
   component-link: "step-indicator"
-  stat: "Production"
+  stat: "Use with caution"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -344,8 +343,8 @@
 
 - component: "Summary box"
   component-link: "summary-box"
-  stat: "Production"
-  introduced: 2.10.2
+  stat: "Use with caution"
+  introduced: 2.11.2
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -361,7 +360,7 @@
 
 - component: "Tag"
   component-link: "tag"
-  stat: "Production"
+  stat: "Use with caution"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -377,7 +376,7 @@
 
 - component: "Time picker"
   component-link: "time-picker"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 2.13.3
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -395,7 +394,7 @@
 
 - component: "Typography"
   component-link: "typography"
-  stat: "Production"
+  stat: "Use with caution"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -403,7 +402,7 @@
 
 - component: "Validation"
   component-link: "validation"
-  stat: "Production"
+  stat: "Use with caution"
   introduced: 3.0.0
   updated-date: 2022-10-19
   updated-version: 3.2.0

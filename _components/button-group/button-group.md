@@ -1,5 +1,6 @@
 ---
 category: Components
+status: Production
 component:
   name: button-group
   status: ready

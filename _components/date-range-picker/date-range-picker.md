@@ -4,6 +4,7 @@ component:
   package: usa-date-range-picker
   dependencies:
 category: Components
+status: Production
 implementation:
   initProps:
     - property: "`required`"

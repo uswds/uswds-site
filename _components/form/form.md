@@ -10,6 +10,7 @@ redirect_from:
 layout: styleguide
 type: component
 title: Form
+status: Use with caution
 category: Components
 lead: A form allows users to enter information into a page.
 subnav:

@@ -1,21 +1,47 @@
 {% if page.status != null %}
-    <div class="status-area">
-        {% if page.status == "Production" %}
-        <div class="usa-status-pill usa-status-pill--production">
-            <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-            Production
-        </div>
-        {% endif %}
-        {% if page.status == "Needs research" %}
-        <div class="usa-status-pill usa-status-pill--research">
-            <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#assessment"></use>
-            </svg>
-            Needs research
-        </div>
-        {% endif %}
-        <a href="https://github.com/uswds/uswds/discussions">Discuss this pattern</a>
+<div class="status-area">
+    {% if page.status == "Production" %}
+    <div class="usa-status-pill usa-status-pill--production">
+        <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+        </svg>
+        Production
     </div>
+    {% elsif page.status == "Deprecated" %}
+    <div class="usa-status-pill usa-status-pill--deprecated">
+        <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#warning"></use>
+        </svg>
+        Deprecated
+    </div>
+    {% elsif page.status == "Release candidate" %}
+    <div class="usa-status-pill usa-status-pill--candidate">
+        <img class="margin-right-1 margin-left-2px" src="{{ site.baseurl }}/img/icons/release-candidate.svg" alt=""
+            role="img" width="20" height="20">
+        Release candidate
+    </div>
+    {% elsif page.status == "Use with caution" %}
+    <div class="usa-status-pill usa-status-pill--with-caution">
+        <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error"></use>
+        </svg>
+        Use with caution
+    </div>
+    {% elsif page.status == "Considering" %}
+    <div class="usa-status-pill usa-status-pill--considering">
+        <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#lightbulb_outline"></use>
+        </svg>
+        Considering
+    </div>
+    {% elsif page.status == "Needs research" %}
+    <div class="usa-status-pill usa-status-pill--research">
+        <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#assessment"></use>
+        </svg>
+        Needs research
+    </div>
+    {% endif %}
+    <a href="https://github.com/uswds/uswds/discussions">Discuss this pattern</a>
+</div>
 {% endif %}

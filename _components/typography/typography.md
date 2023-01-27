@@ -9,6 +9,7 @@ redirect_from:
 layout: styleguide
 title: Typography
 category: Components
+status: Use with caution
 lead: "Government websites need clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields. Our default typefaces are designed for legibility and can adapt to a variety of visual tones."
 subnav:
   - text: Typesetting with USWDS

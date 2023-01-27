@@ -7,6 +7,7 @@ permalink: /components/step-indicator/
 type: component
 title: Step indicator
 category: Components
+status: Use with caution
 lead: A step indicator updates users on their progress through a multi-step process.
 variants:
   - variant: "`.usa-step-indicator--no-labels`"

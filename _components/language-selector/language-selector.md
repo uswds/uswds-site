@@ -1,5 +1,6 @@
 ---
 category: Components
+status: Production
 component:
   name: language-selector
   status: ready

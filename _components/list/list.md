@@ -1,5 +1,6 @@
 ---
 category: Components
+status: Use with caution
 component:
   name: list
   status: ready

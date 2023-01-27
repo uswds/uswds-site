@@ -362,53 +362,50 @@
 - component: "Tag"
   component-link: "tag"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
   breaking: true
-  updates: "JavaScript, Markup"
+  updates: "Assets, JavaScript, Styles"
 
 - component: "Text input"
   component-link: "text-input"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
-  breaking: true
-  updates: "JavaScript, Markup"
+  introduced: 3.0.0
+  updated-date: 2022-06-17
+  updated-version: 3.0.2
+  updates: "Styles"
 
 - component: "Time picker"
   component-link: "time-picker"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
+  introduced: 2.13.3
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
   breaking: true
-  updates: "JavaScript, Markup"
+  accessibility: true
+  updates: "Assets, JavaScript, Styles"
 
 - component: "Tooltip"
   component-link: "tooltip"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
-  breaking: true
-  updates: "JavaScript, Markup"
+  introduced: 2.11.0
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  updates: "JavaScript"
 
 - component: "Typography"
   component-link: "typography"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
   breaking: true
-  updates: "JavaScript, Markup"
+  updates: "Assets, JavaScript, Styles"
 
 - component: "Validation"
   component-link: "validation"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
-  breaking: true
-  updates: "JavaScript, Markup"
+  introduced: 3.0.0
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  accessibility: true
+  updates: "Guidance, JavaScript, Markup"

@@ -24,8 +24,7 @@ placeholder="___-__-____"
 type="text"
 ```
 
-{:.usa-content-list }
-<h3>The input mask and alphanumeric characters</h3>
+### The input mask and alphanumeric characters
 
 {:.usa-content-list }
 Input mask examples include an alphanumeric version which can be customized to meet your needs. Include the number `9` for every number and a capitalized letter `A` for every required letter. We recommend changing `inputmode` to `text` so the full keyboard is available to your user.

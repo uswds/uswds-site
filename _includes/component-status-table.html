@@ -44,7 +44,7 @@
             </svg>
             Deprecated
           </div>
-        {% elsif status.stat == "Release candidate" %}
+        {% elsif status.stat == "Release candidate" or status.breaking %}
           <div class="usa-status-pill usa-status-pill--candidate">
             <img class="margin-right-1 margin-left-2px" src="{{ site.baseurl }}/img/icons/release-candidate.svg" alt="" role="img" width="20" height="20">
             Release candidate

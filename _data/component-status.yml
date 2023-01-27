@@ -276,92 +276,88 @@
 - component: "Prose"
   component-link: "prose"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
+  introduced: 3.0.0
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
   breaking: true
-  updates: "JavaScript, Markup"
+  updates: "Assets, JavaScript, Styles"
 
 - component: "Radio buttons"
   component-link: "radio-buttons"
   stat: "Production"
-  introduced: 2.10.2
+  introduced: 2.11.0
   updated-date: 2022-08-05
   updated-version: 3.1.0
-  breaking: true
-  updates: "JavaScript, Markup"
 
 - component: "Range slider"
   component-link: "range-slider"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
+  introduced: 2.12.1
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
   breaking: true
-  updates: "JavaScript, Markup"
+  updates: "Assets, JavaScript, Styles"
 
 - component: "Search"
   component-link: "search"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
+  introduced: 2.13.0
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
   breaking: true
-  updates: "JavaScript, Markup"
+  updates: "Assets, JavaScript, Styles"
 
 - component: "Select"
   component-link: "select"
   stat: "Production"
-  introduced: 2.10.2
+  introduced: 3.0.0
   updated-date: 2022-08-05
   updated-version: 3.1.0
-  breaking: true
-  updates: "JavaScript, Markup"
+  updates: "Styles"
 
 - component: "Side navigation"
   component-link: "side-navigation"
   stat: "Production"
-  introduced: 2.10.2
+  introduced: 2.11.2
   updated-date: 2022-08-05
   updated-version: 3.1.0
+  accessibility: true
   breaking: true
-  updates: "JavaScript, Markup"
+  updates: "Guidance, JavaScript, Markup"
 
 - component: "Site alert"
   component-link: "site-alert"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
-  breaking: true
-  updates: "JavaScript, Markup"
+  introduced: 2.11.2
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  updates: "Styles"
 
 - component: "Step indicator"
   component-link: "step-indicator"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
   breaking: true
-  updates: "JavaScript, Markup"
+  accessibility: true
+  updates: "Assets, JavaScript, Styles"
 
 - component: "Summary box"
   component-link: "summary-box"
   stat: "Production"
   introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
   breaking: true
-  updates: "JavaScript, Markup"
+  updates: "Assets, JavaScript, Styles"
 
 - component: "Table"
   component-link: "table"
   stat: "Production"
-  introduced: 2.10.2
-  updated-date: 2022-08-05
-  updated-version: 3.1.0
-  breaking: true
-  updates: "JavaScript, Markup"
+  introduced: 2.11.0
+  updated-date: 2022-06-17
+  updated-version: 3.0.2
+  updates: "Styles"
 
 - component: "Tag"
   component-link: "tag"

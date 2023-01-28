@@ -87,7 +87,7 @@ Provide helpful design constraints, clear affordances, and concise guidance for 
 - <strong>Avoid putting hint text as a placeholder in form entry fields.</strong> Place hint text in close proximity and before the data entry field, but not within the field itself as a placeholder. When users start to type, placeholder text will disappear, which means users won’t be able to reference it.
 - <strong>Provide clear warnings if the user is about to make a mistake.</strong> For example, if the user is approaching the character limit in a text box, consider changing the color of the character count to red and bolding the character limit guidance.
 - <strong>Use polite, simple, conversational language.</strong> Provide guidance that can help a user avoid an error. Provide examples of what information is expected in the field. Keep the information short, but polite. 
-- <strong>Incorporate trauma-informed design considerations.</strong> If you are collecting information from someone in crisis (and most people are at some point), be especially careful with the language in your guidance. 
+- <strong>Incorporate trauma-informed design considerations.</strong> If you are collecting information from someone in crisis (and most people are at some point), be especially careful with the language in your guidance. For resources on trauma-informed design, see the <a href="{{ site.baseurl }}/patterns/complex-forms/progress-easily#trauma-informed-design">Progress easily</a> complex forms pattern references.
 
 ### Accessibility
 

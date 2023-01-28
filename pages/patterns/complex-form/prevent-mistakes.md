@@ -95,7 +95,7 @@ Provide helpful design constraints, clear affordances, and concise guidance for 
 - <strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.
 - <strong>Don’t visually hide alert messages and then make them visible when they are needed.</strong> Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
 - <strong>Use the proper ARIA role.</strong> The ARIA `role` attribute can notify users of assistive technologies of time-sensitive and important messages. See the <a href="{{ site.baseurl }}/components/alert/">Alert component</a> for more information on ARIA roles.
-- Help users <strong>avoid serious consequences as the result of a mistake</strong> when performing an action that cannot be reversed, making sure that you provide the ability to [https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html](check, confirm, or reverse data entered by the user).
+- <strong>Help users avoid serious consequences as the result of a mistake</strong> when performing an action that cannot be reversed. Make sure that you provide the ability to [check, confirm, or reverse data entered by the user](https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html).
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates

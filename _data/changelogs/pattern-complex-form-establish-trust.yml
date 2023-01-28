@@ -2,6 +2,11 @@ title: Establish trust
 type: pattern
 changelogURL:
 items:
+  - date: 2023-01-37
+    summary: Pattern updated to include WCAG 2.1 AA 3.3.4 Error Prevention reference.
+    affectsGuidance: true
+    githubRepo: uswds-site
+    versionUswds: 3.3.0
   - date: 2022-11-14
     summary: Pattern published.
     affectsGuidance: true

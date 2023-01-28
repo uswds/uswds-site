@@ -2,7 +2,7 @@ title: Prevent mistakes
 type: pattern
 changelogURL:
 items:
-  - date: 2023-01-09
+  - date: 2023-01-27
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

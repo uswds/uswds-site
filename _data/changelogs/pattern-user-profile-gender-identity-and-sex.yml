@@ -2,6 +2,12 @@ title: Gender identity and sex
 type: pattern
 changelogURL:
 items:
+  - date: 2023-01-27
+    summary: Updated background section.
+    summaryAdditional: Added new White House report on collection of Sexual Orientation and Gender Identity (SOGI) information for statistical purposes.
+    affectsGuidance: true
+    githubPr: 2000
+    githubRepo: uswds-site
   - date: 2022-12-20
     summary: Updated preview for gender identity.
     summaryAdditional: Updated gender identity pattern preview label for `prefer not to answer` to include the word identity.

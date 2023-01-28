@@ -2,6 +2,17 @@ title: Input mask
 type: component
 changelogURL:
 items:
+  - date: 2023-01-28
+    summary: Added a new parent wrapper class requirement to facilitate input mask error handling.
+    summaryAdditional: This new version requires a parent wrapper element with the class `.usa-input-mask`. Add the class `.usa-input-mask__field` to the `input` element and add a message element with the class `.usa-input-mask__message` to activate invalid character error handling.
+    isBreaking: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubRepo: uswds
+    githubPr: 5104
+    versionUswds: 3.3.0
   - date: 2022-11-14
     summary: Component released.
     affectsGuidance: true

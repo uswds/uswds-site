@@ -28,7 +28,7 @@ As one example, in April 2022, the U.S. Department of State updated [Form DS-11]
 The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way CDC's [HIV Nexus Clinician Resources](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) articulates the importance of asking two separate questions to ensure healthcare providers can provide patient-centered, high quality care: `current gender identity`, and `sex listed at birth`. This multi-question approach is also recommended in [Recommendations on the best practices for the collection of
 sexual orientation and gender identity data on federal statistical surveys](https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf) released in January 2023.
 
-This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex` vs. `biological sex`. In very specific clinical or legal use cases a more specific label may be correct. This language, in particular, should be evaluated for your specific program needs.
+This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex`. For specific use cases, a more specific label may be correct, like `Sex listed at birth` or `Legal sex`. This language, in particular, should be evaluated for your specific program needs.
 
 ### What problems do these patterns solve?
 Gender and sex are often used synonymously. Many users struggle to provide gender identity information that best represents them. An overwhelming number of choices for gender identity can be as alienating as too limited a set of provided options.
@@ -55,9 +55,11 @@ Present the user with the tools to accurately depict their gender identity.
         </h4>
         <div class="do-dont__content">
           <ul>
+            <li>Do collect gender identity data when you are collecting other general demographic information like race, ethnicity, or disability status.</li>
             <li>Do support long text fields for gender identity. The language behind gender identity is constantly evolving.</li>
             <li>Do include a "prefer not to answer" option.</li>
             <li>Do consider safety implications of the information provided. Regional and state laws are highly variable and may not adequately protect individuals from disclosure.</li>
+            <li>Do provide helper text that explains why you are asking for this data and who it will be shared with.</li>
             <li>Do be transparent about what you are asking for (for example, gender identity or sex).</li>
             <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
             <li>Do use clear hint text to help users understand what type of information should be provided.</li>

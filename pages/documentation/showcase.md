@@ -95,7 +95,6 @@ If your project is currently using USWDS and you do not see it on this list, ple
 - [MyMedicare](https://www.mymedicare.gov/)
 - [NASA Glenn Research Center](https://www1.grc.nasa.gov)
 - [NASA Human Computer Interaction Group](https://hci.arc.nasa.gov)
-- [NASA Web Style Guide](https://app.frontify.com/d/NZPXDvjOcz5x/nasa-web-style-guide)
 - [National Agricultural Statistics Service - USDA](https://release.nass.usda.gov/)
 - [National Archives and Records Administration](https://archives.gov)
 - [National Archives Museum](https://museum.archives.gov/)

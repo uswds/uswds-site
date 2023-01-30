@@ -8,7 +8,7 @@ redirect_from:
   - /getting-started/showcase/
 ---
 
-If your project is currently using USWDS and you do not see it on this list, please feel free to [submit a pull request](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md) via GitHub or email the core team at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
+If your project is currently using USWDS and you do not see it on this list, please feel free to [open an issue](https://github.com/uswds/uswds-site/issues/new) via GitHub or email the core team at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
 
 ## Websites and applications that use the Design System
 

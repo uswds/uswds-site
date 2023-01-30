@@ -6,6 +6,8 @@ category: How to use USWDS
 lead: Federal, state, and local governments used USWDS to help build over 100 government websites. Below is a selection of sites that showcase what can be accomplished by using USWDS.
 redirect_from:
   - /getting-started/showcase/
+  - /getting-started/showcase/all/
+  - /documentation/showcase/all/
 ---
 
 If your project is currently using USWDS and you do not see it on this list, please feel free to [open an issue](https://github.com/uswds/uswds-site/issues/new) via GitHub or email the core team at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).

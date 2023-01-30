@@ -17,7 +17,7 @@ changelog:
 
 Services collect gender identity information to let individuals tell us who they are: how they should be identified and how they wish to interact with the world. Gendered experiences are complex and vary widely. Gender is a social construct and gender identity can be an integral expression of a user's sense of self. 
 
-Services collect sex information to match documents for identity proofing purposes and to provide biological information in a clinical context. “Sex assigned at birth” or “sex listed at birth” is what it says on a person's original birth certificate. “Non-binary” is typically used when referring to gender identity, but many states now allow terms like `non-binary`, `X`, or `unspecified` on birth certificates. 
+Services collect sex information to match documents for identity proofing purposes, on certain statistical surveys, and to provide biological information in a clinical context. “Sex listed at birth” or “sex assigned at birth” is what it says on a person's original birth certificate. “Legal sex” is what it says on any qualifying legal document. “Non-binary” is typically used when referring to gender identity, but many states now allow terms like `non-binary`, `X`, or `unspecified` on birth certificates. 
 
 While the sex listed on a person's birth certificate or driver's license is often used as part of validating their identity, gender identity is generally more important for ensuring respectful and inclusive policies, interactions, and communication.
 
@@ -28,7 +28,7 @@ As one example, in April 2022, the U.S. Department of State updated [Form DS-11]
 The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way CDC's [HIV Nexus Clinician Resources](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) articulates the importance of asking two separate questions to ensure healthcare providers can provide patient-centered, high quality care: `current gender identity`, and `sex listed at birth`. A multi-question approach is also recommended in [Recommendations on the best practices for the collection of
 sexual orientation and gender identity data on federal statistical surveys](https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf) released in January 2023.
 
-This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex` vs. `biological sex`. In very specific clinical or legal use cases a more specific label may be correct. This language, in particular, should be evaluated for your specific program needs.
+This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex`. For specific use cases, a more specific label may be correct, like `Sex listed at birth` or `Legal sex`. This language, in particular, should be evaluated for your specific program needs.
 
 ### What problems do these patterns solve?
 Gender and sex are often used synonymously. Many users struggle to provide gender identity information that best represents them. An overwhelming number of choices for gender identity can be as alienating as too limited a set of provided options.
@@ -55,9 +55,11 @@ Present the user with the tools to accurately depict their gender identity.
         </h4>
         <div class="do-dont__content">
           <ul>
+            <li>Do collect gender identity data when you are collecting other general demographic information like race, ethnicity, or disability status.</li>
             <li>Do support long text fields for gender identity. The language behind gender identity is constantly evolving.</li>
             <li>Do include a "prefer not to answer" option.</li>
             <li>Do consider safety implications of the information provided. Regional and state laws are highly variable and may not adequately protect individuals from disclosure.</li>
+            <li>Do provide helper text that explains why you are asking for this data and who it will be shared with.</li>
             <li>Do be transparent about what you are asking for (for example, gender identity or sex).</li>
             <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
             <li>Do use clear hint text to help users understand what type of information should be provided.</li>
@@ -128,10 +130,10 @@ Present the user with the tools to accurately depict their gender identity.
 ## Sex
 
 ### When to use this pattern 
-Follow this pattern when you are collecting sex as part of your service. Only ask for this information if you need it. Sometimes it’s more prudent to skip collecting this information altogether. 
+Services collect sex information to match documents for identity proofing purposes, on certain statistical surveys, and to provide biological information in a clinical context. Only ask for this information if you need it. Even for identity proofing, sex data is not always needed. Asking for gender identity instead of sex is generally more important for ensuring respectful communication.
 
 ### What's the solution?
-Present the user with a controlled vocabulary to accurately depict sex as required by your program or service. 
+Know what information you need and ask for it with specificity. If you are collecting sex information to match documents for identity proofing, be clear about whether you need the sex marker listed on an original birth certificate (“Sex listed at birth”) or the sex marker listed on any qualifying legal document (“Legal sex”).  
 
 {:.site-component-section-title}
 ### Guidance
@@ -146,10 +148,10 @@ Present the user with a controlled vocabulary to accurately depict sex as requir
         </h4>
         <div class="do-dont__content">
           <ul>
-            <li>Do determine if you need to collect sex data and only use if the information is essential to the user's experience. Collect sex information to match documents for identity proofing purposes or to provide biological information in a clinical context.</li>
+            <li>Do determine if you need to collect sex data and only use if the information is essential to the user's experience. Services collect sex information to match documents for identity proofing purposes, on certain statistical surveys, or to provide biological information in a clinical context.</li>
             <li>Do provide a controlled vocabulary when asking for sex listed at birth (<code>Male</code>, <code>Female</code>, and <code>X</code>). </li>
-            <li>Do be clear about why you are asking for the information.</li>
-            <li>Do be transparent about what you are asking for. To some people gender and sex are synonymous, so ensure you use clear language.</li>
+            <li>Do provide helper text that explains why you are asking for this data and who it will be shared with.</li>
+            <li>Do be transparent about what you are asking for. To some people gender and sex are synonymous, so use clear language.</li>
             <li>Do use fieldset and legend to group related radio buttons together, and clear labels and attributes on these form elements.</li>
             <li>When collecting both gender identity and sex, gender identity should precede sex.</li>
           </ul> 
@@ -167,7 +169,8 @@ Present the user with a controlled vocabulary to accurately depict sex as requir
         <div class="do-dont__content">
           <ul>
             <li>Do not assume gender identity based on the user's sex.</li>
-            <li>Do not include "prefer not to answer." If you are considering adding this option, then consider whether the question is needed at all.</li>
+            <li>Do not include “prefer not to answer.” If you are considering adding this option, then consider whether the question is needed at all.</li>
+            <li>Do not include <code>intersex</code> as an option for Legal sex or Sex listed at birth. Use <code>X</code> instead.</li>
             <li>Do not combine gender identity and sex into a single question.</li>
           </ul>
         </div>
@@ -177,18 +180,18 @@ Present the user with a controlled vocabulary to accurately depict sex as requir
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h4 id="pattern-preview-biological-sex">Pattern preview</h4></button>
+  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h4 id="pattern-preview-sex">Pattern preview</h4></button>
   <div id="accordion-preview-01" class="usa-accordion__content">
-    {% include patterns/biological-sex.html %}
+    {% include patterns/sex.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h4 id="pattern-code-biological-sex">Pattern code</h4></button>
+  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h4 id="pattern-code-sex">Pattern code</h4></button>
   <div id="accordion-code-01" class="usa-accordion__content">
     <div class="usa-sr-only">
-      {% highlight text%}{% include patterns/biological-sex.html %}{% endhighlight %}
+      {% highlight text%}{% include patterns/sex.html %}{% endhighlight %}
     </div>
-    {% highlight html%}{% include patterns/biological-sex.html %}{% endhighlight %}
+    {% highlight html%}{% include patterns/sex.html %}{% endhighlight %}
   </div>
 </div>
 
@@ -196,7 +199,7 @@ Present the user with a controlled vocabulary to accurately depict sex as requir
 
 {:.usa-content-list}
 - <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and safety. 
-- <strong>Be specific about the information you are requesting.</strong> Clearly state the context, such as, "Please enter your sex as it appears on your birth certificate." so that users can successfully provide the information required. Because gender and sex are often used synonymously, users have difficulty determining which information is being requested.
+- <strong>Be specific about the information you are requesting.</strong> Clearly state the context, such as, “Please enter the sex that appears on your driver's license, state ID, passport, or passport card.” so that users can successfully provide the information required.
 
 #### Accessibility
 

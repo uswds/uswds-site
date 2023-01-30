@@ -15,19 +15,19 @@ items:
     githubPr: 2000
     githubRepo: uswds-site    
   - date: 2022-12-20
-    summary: Updated preview for gender identity.
-    summaryAdditional: Updated gender identity pattern preview label for `prefer not to answer` to include the word identity.
+    summary: Added information on how some states collect sex data.
+    summaryAdditional: Added information and a reference link for how some states collect sex data on birth certificates and other legal documents.
     affectsGuidance: true
     githubPr: 2000
     githubRepo: uswds-site
   - date: 2022-12-20
-    summary: Updated preview for sex.
-    summaryAdditional: Updated sex pattern preview to show two specific use cases - identity proofing by sex marker on a legal document like a driver's license or identify proofing based on sex marker on original birth certificate for special circumstances like Selective Service registration, and sex marker on original birth certificate for sharing in a clinical setting.
+    summary: Added more detail supporting specific use cases for collecting sex data.
+    summaryAdditional: Added more detail about the most common use cases — matching an original birth certificate ("Sex listed at birth") or matching current legal documents ("Legal sex").
     affectsGuidance: true
     githubPr: 2000
     githubRepo: uswds-site
   - date: 2022-12-20
-    summary: Updated background section.
+    summary: Updated information on information on Form DS-11.
     summaryAdditional: Added more detail about how the Department of State collects gender information on Form DS-11 and displays this information on passports.
     affectsGuidance: true
     githubPr: 2000
@@ -39,20 +39,19 @@ items:
     githubPr: 2000
     githubRepo: uswds-site
   - date: 2022-12-20
-    summary: Updated guidance to include details on state collection of sex data.
-    summaryAdditional: Added information on how some states collect sex data on birth certificates and a reference link.
+    summary: Updated sex pattern preview.
+    summaryAdditional: Show show the most common use cases of matching documents — either an original birth certificate ("Sex listed at birth") or current legal documents ("Legal sex").
     affectsGuidance: true
     githubPr: 2000
     githubRepo: uswds-site
   - date: 2022-12-20
-    summary: Updated guidance for consistency.
-    summaryAdditional: Updated our use of "gender identity" and "sex" to be more consistent throughout. 
+    summary: Updated our use of "gender identity" and "sex" to be more consistent throughout.
     affectsGuidance: true
     githubPr: 2000
     githubRepo: uswds-site
   - date: 2022-12-20
-    summary: Updated guidance on sex.
-    summaryAdditional: Updated our use of "sex assigned at birth" to refer to original birth certificate information specifically.
+    summary: Updated usage for "sex listed at birth".
+    summaryAdditional: Updated our use of "sex listed at birth" to refer to original birth certificate information specifically.
     affectsGuidance: true
     githubPr: 2000
     githubRepo: uswds-site

@@ -3482,6 +3482,10 @@ $do-dont-top-bar-width: 1;
 
 // Component Status Table
 
+.usa-in-page-nav-container main.width-table-lg {
+  max-width: 75rem;
+}
+
 .usa-status-pill {
   display: inline-flex;
   padding: units(0.5);

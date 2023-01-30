@@ -1,7 +1,7 @@
 ---
 permalink: /components/status/
 in-page-nav: false
-layout: styleguide
+layout: styleguide-wide-table
 title: Component status summary
 category: Components
 lead: Lorem and stuff

@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="default-container">
+  <aside class="sidenav" id="page-side-navigation" aria-label="Section navigation">
+    {% assign sidenav = site.data.nav[page.category] %}
+    {% if sidenav %}
+    <ul class="site-sidenav usa-sidenav">
+      {% include nav/list.html links=sidenav %}
+    </ul>
+    {% endif %}
+  </aside>
+
+  <div class="usa-in-page-nav-container">
+    {% if page.in-page-nav != false %}
+    <aside class="usa-in-page-nav" 
+      aria-label="On this page" 
+      data-scroll-offset="-120" 
+      data-root-margin="48px 0px -90% 0px" 
+      data-threshold="1"></aside>
+    {% endif %}
+    <main id="main-content" class="main-content width-table-lg">
+      <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
+        <header>
+          {% if page.category != null %}
+            {% unless page.path contains 'overview' and page.permalink != '/design-tokens/color/overview/' %}
+              <p class="site-subheading">{{ page.category }}</p>
+            {% endunless %}
+          {% endif %}
+          <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
+        </header>
+
+        {% include status.html %}
+
+        {% include lead.html text=page.lead %}
+
+        {{ content }}
+
+        {% include changelog.html %}
+      </div>
+    </main>
+  </div>
+</div>

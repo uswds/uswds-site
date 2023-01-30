@@ -23,9 +23,9 @@ While the sex listed on a person's birth certificate or driver's license is ofte
 
 Historically, the federal government has asked people to choose between male and female. Recently, agencies and programs have been moving toward providing more options, reflecting the fact that a person's gender identity may not reflect the sex they were assigned at birth, and that sex is not always unambiguously male or female.
 
-As one example, in April 2022, the U.S. Department of State updated [Form DS-11](https://eforms.state.gov/Forms/ds11.pdf) and began allowing people to self-attest and specify `M` (male), `F` (female), or `X` on their passports. The Department of State defines `X` as “Unspecified or another gender identity” on Form DS-11. The form collects this information as `Gender` but it is displayed on a passport as `Sex`. 
+As one example, in April 2022, the U.S. Department of State updated [Form DS-11](https://eforms.state.gov/Forms/ds11.pdf) and began allowing people to self-attest and specify `M` (male), `F` (female), or `X` on their passports. The Department of State defines `X` as “Unspecified or another gender identity” on Form DS-11. The form collects this information as `Gender` but it is displayed on a passport as `Sex`. More recently, [Executive Order 14075](https://www.whitehouse.gov/briefing-room/presidential-actions/2022/06/15/executive-order-on-advancing-equality-for-lesbian-gay-bisexual-transgender-queer-and-intersex-individuals/) Advancing Equality for Lesbian, Gay, Bisexual, Transgender, Queer, and Intersex Individuals makes specific calls for improved, responsible collection of sexual orientation and gender identity information.
 
-The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way CDC's [HIV Nexus Clinician Resources](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) articulates the importance of asking two separate questions to ensure healthcare providers can provide patient-centered, high quality care: `current gender identity`, and `sex listed at birth`. This two-question approach is also recommended in [Recommendations on the best practices for the collection of
+The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way CDC's [HIV Nexus Clinician Resources](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) articulates the importance of asking two separate questions to ensure healthcare providers can provide patient-centered, high quality care: `current gender identity`, and `sex listed at birth`. This multi-question approach is also recommended in [Recommendations on the best practices for the collection of
 sexual orientation and gender identity data on federal statistical surveys](https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf) released in January 2023.
 
 This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex` vs. `biological sex`. In very specific clinical or legal use cases a more specific label may be correct. This language, in particular, should be evaluated for your specific program needs.
@@ -62,6 +62,7 @@ Present the user with the tools to accurately depict their gender identity.
             <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
             <li>Do use clear hint text to help users understand what type of information should be provided.</li>
             <li>When collecting both gender identity and sex, gender identity should precede sex.</li>
+            <li>Use tested translations for labels and hint text when delivering multilingual surveys or forms.</li>
           </ul> 
         </div>
       </div>
@@ -194,7 +195,7 @@ Present the user with a controlled vocabulary to accurately depict sex as requir
 #### Considerations
 
 {:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and safety. 
 - <strong>Be specific about the information you are requesting.</strong> Clearly state the context, such as, "Please enter your sex as it appears on your birth certificate." so that users can successfully provide the information required. Because gender and sex are often used synonymously, users have difficulty determining which information is being requested.
 
 #### Accessibility

@@ -8,6 +8,12 @@ items:
     affectsGuidance: true
     githubPr: 2000
     githubRepo: uswds-site
+  - date: 2023-01-27
+    summary: Updated DOs section.
+    summaryAdditional: Added additional language around ensuring safety, and using tested translations on multilingual forms.
+    affectsGuidance: true
+    githubPr: 2000
+    githubRepo: uswds-site    
   - date: 2022-12-20
     summary: Updated preview for gender identity.
     summaryAdditional: Updated gender identity pattern preview label for `prefer not to answer` to include the word identity.

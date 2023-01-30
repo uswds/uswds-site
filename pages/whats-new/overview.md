@@ -32,7 +32,7 @@ You can read some older posts on the [18F Blog](https://18f.gsa.gov/tags/web-des
 
 Interested in seeing who else is using USWDS? We
 maintain a list of USWDS-based sites on our [showcase page]({{ site.baseurl }}/documentation/showcase). Feel free to
-[open an issue](https://github.com/uswds/uswds-site/issues/new) using GitHub
+[open an issue](https://github.com/uswds/uswds-site/issues/new/choose) using GitHub
 or [email us](mailto:{{ site.uswds_email }}) if you’d like to add your
 project to our list.
 

@@ -23,9 +23,10 @@ While the sex listed on a person's birth certificate or driver's license is ofte
 
 Historically, the federal government has asked people to choose between male and female. Recently, agencies and programs have been moving toward providing more options, reflecting the fact that a person's gender identity may not reflect the sex they were assigned at birth, and that sex is not always unambiguously male or female.
 
-As one example, in April 2022, the U.S. Department of State updated [Form DS-11](https://eforms.state.gov/Forms/ds11.pdf) and began allowing people to self-attest and specify `M` (male), `F` (female), or `X` on their passports. The Department of State defines `X` as “Unspecified or another gender identity” on Form DS-11. The form collects this information as `Gender` but it is displayed on a passport as `Sex`. 
+As one example, in April 2022, the U.S. Department of State updated [Form DS-11](https://eforms.state.gov/Forms/ds11.pdf) and began allowing people to self-attest and specify `M` (male), `F` (female), or `X` on their passports. The Department of State defines `X` as “Unspecified or another gender identity” on Form DS-11. The form collects this information as `Gender` but it is displayed on a passport as `Sex`. More recently, [Executive Order 14075](https://www.whitehouse.gov/briefing-room/presidential-actions/2022/06/15/executive-order-on-advancing-equality-for-lesbian-gay-bisexual-transgender-queer-and-intersex-individuals/) Advancing Equality for Lesbian, Gay, Bisexual, Transgender, Queer, and Intersex Individuals makes specific calls for improved, responsible collection of sexual orientation and gender identity information.
 
-The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way CDC's [HIV Nexus Clinician Resources](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) articulates the importance of asking two separate questions to ensure healthcare providers can provide patient-centered, high quality care: `current gender identity`, and `sex listed at birth`.
+The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way CDC's [HIV Nexus Clinician Resources](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) articulates the importance of asking two separate questions to ensure healthcare providers can provide patient-centered, high quality care: `current gender identity`, and `sex listed at birth`. This multi-question approach is also recommended in [Recommendations on the best practices for the collection of
+sexual orientation and gender identity data on federal statistical surveys](https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf) released in January 2023.
 
 This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex` vs. `biological sex`. In very specific clinical or legal use cases a more specific label may be correct. This language, in particular, should be evaluated for your specific program needs.
 
@@ -61,6 +62,7 @@ Present the user with the tools to accurately depict their gender identity.
             <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
             <li>Do use clear hint text to help users understand what type of information should be provided.</li>
             <li>When collecting both gender identity and sex, gender identity should precede sex.</li>
+            <li>Use tested translations for labels and hint text when delivering multilingual surveys or forms.</li>
           </ul> 
         </div>
       </div>
@@ -194,7 +196,7 @@ Know what information you need and ask for it with specificity. If you are colle
 #### Considerations
 
 {:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and safety. 
 - <strong>Be specific about the information you are requesting.</strong> Clearly state the context, such as, “Please enter the sex that appears on your driver's license, state ID, passport, or passport card.” so that users can successfully provide the information required.
 
 #### Accessibility
@@ -229,6 +231,8 @@ Know what information you need and ask for it with specificity. If you are colle
 - Interagency Technical Working Group on Sexual Orientation and Gender Identity Items in the Household Pulse Survey: Report and Recommendations. (May 25, 2021) Retrieved on October 31, 2022, from [https://omb.report/icr/202106-0607-003/doc/112605500](https://omb.report/icr/202106-0607-003/doc/112605500)
 - Nonbinary airline passenger tickets. (June 22, 2022) Retrieved on July 15, 2022, from [https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html](https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html)
 - Patient centered care for transgender people: recommended practices for health care settings. (n.d.) Retrieved on November 4, 2022, from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/affirmative-care.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/affirmative-care.html)
+- Recommendations on the best practices for the collection of
+sexual orientation and gender identity data on federal statistical surveys. (January 2023) Retrieved on January 27, 2023, from [https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf](https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf)
 - Social Security implements self-attestation of sex marker in Social Security Number records. (October 19, 2022) Retrieved on October 24, 2022, from [https://www.ssa.gov/news/press/releases/2022/#10-2022-3](https://www.ssa.gov/news/press/releases/2022/#10-2022-3)
 - X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from [https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/](https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)
 

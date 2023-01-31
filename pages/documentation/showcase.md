@@ -11,7 +11,7 @@ redirect_from:
 ---
 
 {: .site-note }
-If your project is currently using USWDS and you do not see it on this list, please feel free to [open an issue](https://github.com/uswds/uswds-site/issues/new/choose) via GitHub or email the core team at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
+If your project is currently using USWDS and you would like to see it included in this list, please let us know by [opening an issue](https://github.com/uswds/uswds-site/issues/new/choose) via GitHub or emailing the core team at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
 
 ## Websites and applications that use the Design System
 

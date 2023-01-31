@@ -1,6 +1,6 @@
 ---
 category: Components
-status: Production
+status: Deprecated
 component:
   name: button-group
   status: ready

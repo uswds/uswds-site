@@ -1,6 +1,6 @@
 ---
 category: Components
-status: Use with caution
+status: Release candidate
 component:
   status: ready
   package: usa-file-input

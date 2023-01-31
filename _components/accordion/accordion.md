@@ -1,6 +1,6 @@
 ---
 category: Components
-status: Use with caution
+status: Production
 component:
   name: accordion
   status: ready

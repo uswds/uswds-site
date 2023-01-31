@@ -1,6 +1,6 @@
 - component: "Accordion"
   component-link: "accordion"
-  stat: "Use with caution"
+  stat: "Production"
   introduced: 2.10.2
   updated-date: 2022-08-05
   updated-version: 3.1.0
@@ -44,7 +44,7 @@
 
 - component: "Button group"
   component-link: "button-group"
-  stat: "Production"
+  stat: "Deprecated"
   introduced: 3.0.0
   updated-date: 2022-08-05
   updated-version: 3.1.0
@@ -79,7 +79,7 @@
 
 - component: "Collection"
   component-link: "collection"
-  stat: "Use with caution"
+  stat: "Production"
   introduced: 2.12.2
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -97,7 +97,7 @@
 
 - component: "Data visualizations"
   component-link: "data-visualizations"
-  stat: "Use with caution"
+  stat: "Considering"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -123,16 +123,15 @@
 
 - component: "File input"
   component-link: "file-input"
-  stat: "Use with caution"
+  stat: "Release candidate"
   introduced: 2.12.2
   updated-date: 2022-04-28
   updated-version: 3.0.0
-  breaking: true
-  updates: "Assets, JavaScript, Styles"
+  feedback: true
 
 - component: "Footer"
   component-link: "footer"
-  stat: "Use with caution"
+  stat: "Production"
   introduced: 2.13.0
   updated-date: 2022-08-05
   updated-version: 3.1.0
@@ -141,7 +140,7 @@
 
 - component: "Form"
   component-link: "form"
-  stat: "Use with caution"
+  stat: "Production"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -207,7 +206,7 @@
 
 - component: "Input prefix or suffix"
   component-link: "input-prefix-suffix"
-  stat: "Use with caution"
+  stat: "Production"
   introduced: 2.11.0
   updated-date: 2022-04-28
   updated-version: 3.3.0
@@ -224,7 +223,7 @@
 
 - component: "Link"
   component-link: "link"
-  stat: "Use with caution"
+  stat: "Production"
   introduced: 2.11.0
   updated-date: 2022-04-28
   updated-version: 3.0.0
@@ -233,7 +232,7 @@
 
 - component: "List"
   component-link: "list"
-  stat: "Use with caution"
+  stat: "Production"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -266,7 +265,7 @@
 
 - component: "Process list"
   component-link: "process-list"
-  stat: "Use with caution"
+  stat: "Production"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true
@@ -334,7 +333,7 @@
 
 - component: "Step indicator"
   component-link: "step-indicator"
-  stat: "Use with caution"
+  stat: "Considering"
   updated-date: 2022-04-28
   updated-version: 3.0.0
   breaking: true

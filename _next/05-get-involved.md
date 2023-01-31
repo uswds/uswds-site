@@ -64,7 +64,7 @@ chapter: true
 
 - Learn about [customization, theming,]({{ site.baseurl }}/documentation/settings/) [utilities]({{ site.baseurl }}/utilities/), and [tokens]({{ site.baseurl }}/design-tokens/) to adapt the design system to your agency’s brand
 
-- Review existing websites that use USWDS (such as those on the [designsystem.digital.gov Showcase]({{ site.baseurl }}/documentation/showcase/)) to see how you could better integrate USWDS [principles]({{ site.baseurl }}/design-principles/) and [components]({{ site.baseurl }}/components/)
+- Review existing websites that use USWDS (such as those in the [Showcase]({{ site.baseurl }}/documentation/showcase/)) to see how you could better integrate USWDS [principles]({{ site.baseurl }}/design-principles/) and [components]({{ site.baseurl }}/components/)
 
 ### Designers can:
 

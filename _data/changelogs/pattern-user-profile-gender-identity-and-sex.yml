@@ -32,7 +32,7 @@ items:
     githubPr: 2000
     githubRepo: uswds-site
   - date: 2023-02-02
-    summary: Updated usage for "sex listed at birth".
+    summary: Updated usage for "sex listed at birth."
     summaryAdditional: Updated our use of "sex listed at birth" to refer to original birth certificate information specifically.
     affectsGuidance: true
     githubPr: 2000

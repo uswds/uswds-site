@@ -5,7 +5,7 @@ component:
   status: ready
   package: usa-language-selector
 layout: styleguide
-lead: The consistent placement, interface, and behavior of the language selection component allows users to easily find and access content in the language the user is most comfortable in. 
+lead: The consistent placement, interface, and behavior of the language selection component allows users to easily find and access content in the language the user is most comfortable in.
 permalink: /components/language-selector/
 redirect_from:
   - /language-selector/
@@ -35,9 +35,11 @@ subnav:
   - text: Unstyled example
     href: '#language-selector-unstyled'
   - text: Latest updates
-    href: '#language-selector-changelog'
+    href: '#changelog'
 title: Language selector
 type: component
+changelog:
+  key: component-language-selector
 ---
 
 ## Language selector pattern guidance

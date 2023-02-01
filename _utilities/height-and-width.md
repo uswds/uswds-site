@@ -28,7 +28,10 @@ subnav:
   href: '#utility-mixins'
 - text: Advanced settings
   href: '#advanced-settings'
-
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: utilities-height-width
 utilities:
 - base:         height
   var:          height

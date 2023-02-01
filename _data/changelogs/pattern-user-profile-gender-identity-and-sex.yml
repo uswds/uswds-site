@@ -44,7 +44,7 @@ items:
     githubPr: 2000
     githubRepo: uswds-site
   - date: 2023-02-02
-    summary: Updated information on information on Form DS-11.
+    summary: Updated information on Form DS-11.
     summaryAdditional: Added more detail about how the Department of State collects gender information on Form DS-11 and displays this information on passports.
     affectsGuidance: true
     githubPr: 2000

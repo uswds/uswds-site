@@ -4,6 +4,8 @@ story: Help users to enter their phone number or numbers to ensure effective com
 permalink: /patterns/create-a-user-profile/phone-number/
 layout: pattern
 category: Patterns
+status: Production
+callout: A11y
 sub-category: Create a user profile
 lead: The phone number pattern allows users to easily enter their phone number and ensures the phone number is properly formatted.
 changelog:

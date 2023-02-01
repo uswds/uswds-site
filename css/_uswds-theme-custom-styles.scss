@@ -3492,6 +3492,7 @@ $do-dont-top-bar-width: 1;
   padding-right: units(1);
   align-items: center;
   background: color("disabled-light");
+  border: 2px solid color("disabled-light");
   font-size: units(2);
   svg,
   img {
@@ -3500,30 +3501,35 @@ $do-dont-top-bar-width: 1;
   }
   &--production {
     background: color("success-lighter");
+    border: 2px solid color("success-lighter");
     svg {
       color: color("success");
     }
   }
   &--deprecated {
     background: color("error-lighter");
+    border: 2px solid color("error-lighter");
     svg {
       color: color("error");
     }
   }
   &--with-caution {
     background: color("warning-lighter");
+    border: 2px solid color("warning-lighter");
     svg {
       color: color("warning");
     }
   }
   &--considering {
     background: color("primary-lighter");
+    border: 2px solid color("primary-lighter");
     svg {
       color: color("primary");
     }
   }
-  &--research {
-    background: color("accent-warm-lighter");
+  &--callout {
+    border: 2px solid color("accent-warm-lighter");
+    background: transparent;
     svg {
       color: color("accent-warm");
     }

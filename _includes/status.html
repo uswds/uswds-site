@@ -1,5 +1,6 @@
 {% if page.status != null %}
 <div class="status-area">
+    <!-- Status -->
     {% if page.status == "Production" %}
     <div class="usa-status-pill usa-status-pill--production">
         <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
@@ -33,6 +34,36 @@
             <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#lightbulb_outline"></use>
         </svg>
         Considering
+    </div>
+    {% endif %}
+    <!-- Community -->
+    {% if page.callout == "Research" %}
+    <div class="usa-status-pill usa-status-pill--callout">
+        <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#insights"></use>
+        </svg>
+        Needs research
+    </div>
+    {% elsif page.callout == "User testing" %}
+    <div class="usa-status-pill usa-status-pill--callout">
+        <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#assessment"></use>
+        </svg>
+        Needs user testing
+    </div>
+    {% elsif page.callout == "Discussion" %}
+    <div class="usa-status-pill usa-status-pill--callout">
+        <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#groups"></use>
+        </svg>
+        Needs discussion
+    </div>
+    {% elsif page.callout == "A11y" %}
+    <div class="usa-status-pill usa-status-pill--callout">
+        <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#accessible_forward"></use>
+        </svg>
+        Needs a11y review
     </div>
     {% endif %}
     <a href="https://github.com/uswds/uswds/discussions">Discuss this 

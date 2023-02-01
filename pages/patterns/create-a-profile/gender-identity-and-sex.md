@@ -1,6 +1,7 @@
 ---
 title: Gender identity and sex
 status: Production
+callout: Research
 story: Help a user select their gender identity and sex
 permalink: /patterns/create-a-user-profile/gender-identity-and-sex/
 layout: pattern

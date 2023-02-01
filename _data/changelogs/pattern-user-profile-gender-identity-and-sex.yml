@@ -51,7 +51,7 @@ items:
     githubRepo: uswds-site
   - date: 2023-02-02
     summary: Updated sex pattern preview.
-    summaryAdditional: Show show the most common use cases of matching documents — either an original birth certificate ("Sex listed at birth") or current legal documents ("Legal sex").
+    summaryAdditional: Show the most common use cases of matching documents — either an original birth certificate ("Sex listed at birth") or current legal documents ("Legal sex").
     affectsGuidance: true
     githubPr: 2000
     githubRepo: uswds-site

@@ -45,4 +45,4 @@ I’m pretty happy with the level of engagement from USWDS team. They have been 
 
 ---
 
-We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md). If you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/) (sign up via Google Forms).
+We’re looking to learn more [from agencies that have used USWDS]({{ site.baseurl }}/documentation/showcase/). If you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/) (sign up via Google Forms).

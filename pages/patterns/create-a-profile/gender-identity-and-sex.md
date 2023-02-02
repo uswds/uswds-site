@@ -149,7 +149,7 @@ Know what information you need and ask for it with specificity. If you are colle
         <div class="do-dont__content">
           <ul>
             <li>Do determine if you need to collect sex data and only use if the information is essential to the user's experience. Services collect sex information to match documents for identity proofing purposes, on certain statistical surveys, or to provide biological information in a clinical context.</li>
-            <li>Do provide a controlled vocabulary when asking for sex listed at birth (<code>Male</code>, <code>Female</code>, and <code>X</code>). </li>
+            <li>Do provide a controlled vocabulary when asking for sex listed at birth or legal sex (<code>Male</code>, <code>Female</code>, and <code>X</code>). Use helper text to explain that <code>X</code> should be used for any marker that is neither male nor female.</li>
             <li>Do provide helper text that explains why you are asking for this data and who it will be shared with.</li>
             <li>Do be transparent about what you are asking for. To some people gender and sex are synonymous, so use clear language.</li>
             <li>Do use fieldset and legend to group related radio buttons together, and clear labels and attributes on these form elements.</li>
@@ -170,7 +170,6 @@ Know what information you need and ask for it with specificity. If you are colle
           <ul>
             <li>Do not assume gender identity based on the user's sex.</li>
             <li>Do not include “prefer not to answer.” If you are considering adding this option, then consider whether the question is needed at all.</li>
-            <li>Do not include <code>intersex</code> as an option for Legal sex or Sex listed at birth. Use <code>X</code> instead.</li>
             <li>Do not combine gender identity and sex into a single question.</li>
           </ul>
         </div>

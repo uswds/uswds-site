@@ -10,6 +10,7 @@ redirect_from:
 type: component
 title: Tag
 category: Components
+status: Use with caution
 lead: A tag draws attention to new or categorized content elements.
 subnav:
 - text: Preview

@@ -1,0 +1,409 @@
+- component: "Accordion"
+  component-link: "accordion"
+  stat: "Production"
+  introduced: 2.10.2
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  breaking: true
+  updates: "JavaScript, Markup"
+
+- component: "Alert"
+  component-link: "alert"
+  stat: "Production"
+  introduced: 2.11.0
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  updates: "Styles"
+
+- component: "Banner"
+  component-link: "banner"
+  stat: "Production"
+  introduced: 2.7.0
+  updated-date: 2022-10-09
+  updated-version: 3.2.0
+  accessibility: true
+  updates: "Markup"
+
+- component: "Breadcrumb"
+  component-link: "breadcrumb"
+  stat: "Production"
+  introduced: 2.12.1
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Button"
+  component-link: "button"
+  stat: "Production"
+  introduced: 2.10.0
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  accessibility: true
+  updates: "Styles"
+
+- component: "Button group"
+  component-link: "button-group"
+  stat: "Deprecated"
+  introduced: 3.0.0
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  accessibility: true
+  updates: "Styles"
+
+- component: "Card"
+  component-link: "card"
+  stat: "Production"
+  introduced: 2.12.0
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  updates: "JavaScript, Markup"
+
+- component: "Character count"
+  component-link: "character-count"
+  stat: "Production"
+  introduced: 3.0.0
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  accessibility: true
+  updates: "JavaScript, Markup, Styles"
+
+- component: "Checkbox"
+  component-link: "checkbox"
+  stat: "Production"
+  introduced: 2.11.0
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  accessibility: true
+  updates: "Styles"
+
+- component: "Collection"
+  component-link: "collection"
+  stat: "Production"
+  introduced: 2.12.2
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Combo box"
+  component-link: "combo-box"
+  stat: "Use with caution"
+  introduced: 2.12.2
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Guidance"
+
+- component: "Data visualizations"
+  component-link: "data-visualizations"
+  stat: "Considering"
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Date picker"
+  component-link: "date-picker"
+  stat: "Production"
+  introduced: 2.12.1
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  accessibility: true
+  updates: "Styles"
+
+- component: "Date range picker"
+  component-link: "date-range-picker"
+  stat: "Production"
+  introduced: 2.12.1
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  accessibility: true
+  updates: "Styles"
+
+- component: "File input"
+  component-link: "file-input"
+  stat: "Release candidate"
+  introduced: 2.12.2
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  feedback: true
+
+- component: "Footer"
+  component-link: "footer"
+  stat: "Production"
+  introduced: 2.13.0
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  breaking: true
+  updates: "Assets"
+
+- component: "Form"
+  component-link: "form"
+  stat: "Production"
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Grid"
+  component-link: "grid"
+  stat: "Production"
+  updated-date: 2022-03-11
+  updates: "Guidance, Styles"
+
+- component: "Header"
+  component-link: "header"
+  stat: "Use with caution"
+  introduced: 2.10.2
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  breaking: true
+  updates: "JavaScript, Markup"
+
+- component: "Icon"
+  component-link: "icon"
+  stat: "Production"
+  introduced: 2.10.2
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  updates: "JavaScript"
+
+- component: "Icon list"
+  component-link: "icon-list"
+  stat: "Use with caution"
+  introduced: 2.11.0
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Identifier"
+  component-link: "identifier"
+  stat: "Use with caution"
+  introduced: 3.0.0
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  accessibility: true
+  breaking: true
+  updates: "Markup"
+
+- component: "In-page navigation"
+  component-link: "in-page-navigation"
+  stat: "Production"
+  introduced: 3.3.0
+  updated-date: 2022-11-14
+  updated-version: 3.3.0
+  updates: "Guidance, JavaScript, Markup, Styles"
+
+- component: "Input mask"
+  component-link: "input-mask"
+  stat: "Production"
+  introduced: 3.3.0
+  updated-date: 2022-11-14
+  updated-version: 3.3.0
+  updates: "Guidance, JavaScript, Markup, Styles"
+
+- component: "Input prefix or suffix"
+  component-link: "input-prefix-suffix"
+  stat: "Production"
+  introduced: 2.11.0
+  updated-date: 2022-04-28
+  updated-version: 3.3.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Language selector"
+  component-link: "language-selector"
+  stat: "Production"
+  introduced: 3.3.0
+  updated-date: 2022-11-14
+  updated-version: 3.3.0
+  updates: "Guidance"
+
+- component: "Link"
+  component-link: "link"
+  stat: "Production"
+  introduced: 2.11.0
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Markup"
+
+- component: "List"
+  component-link: "list"
+  stat: "Production"
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Memorable date"
+  component-link: "memorable-date"
+  stat: "Production"
+  introduced: 3.0.0
+  updated-date: 2022-11-14
+  updated-version: 3.3.0
+  updates: "Guidance, Markup, Styles"
+
+- component: "Modal"
+  component-link: "modal"
+  stat: "Production"
+  introduced: 2.11.0
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Pagination"
+  component-link: "pagination"
+  stat: "Use with caution"
+  introduced: 2.12.2
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Process list"
+  component-link: "process-list"
+  stat: "Production"
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Prose"
+  component-link: "prose"
+  stat: "Use with caution"
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Radio buttons"
+  component-link: "radio-buttons"
+  stat: "Production"
+  introduced: 2.11.0
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  accessibility: true
+
+- component: "Range slider"
+  component-link: "range-slider"
+  stat: "Use with caution"
+  introduced: 2.12.1
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Search"
+  component-link: "search"
+  stat: "Use with caution"
+  introduced: 2.13.0
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Select"
+  component-link: "select"
+  stat: "Production"
+  introduced: 3.0.0
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  updates: "Styles"
+
+- component: "Side navigation"
+  component-link: "side-navigation"
+  stat: "Use with caution"
+  introduced: 2.11.2
+  updated-date: 2022-08-05
+  updated-version: 3.1.0
+  accessibility: true
+  breaking: true
+  updates: "Guidance, JavaScript, Markup"
+
+- component: "Site alert"
+  component-link: "site-alert"
+  stat: "Production"
+  introduced: 2.11.0
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  updates: "Styles"
+
+- component: "Step indicator"
+  component-link: "step-indicator"
+  stat: "Considering"
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  accessibility: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Summary box"
+  component-link: "summary-box"
+  stat: "Use with caution"
+  introduced: 2.11.2
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Table"
+  component-link: "table"
+  stat: "Production"
+  introduced: 2.11.0
+  updated-date: 2022-06-17
+  updated-version: 3.0.2
+  updates: "Styles"
+
+- component: "Tag"
+  component-link: "tag"
+  stat: "Use with caution"
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Text input"
+  component-link: "text-input"
+  stat: "Production"
+  introduced: 3.0.0
+  updated-date: 2022-06-17
+  updated-version: 3.0.2
+  updates: "Styles"
+
+- component: "Time picker"
+  component-link: "time-picker"
+  stat: "Use with caution"
+  introduced: 2.13.3
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  accessibility: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Tooltip"
+  component-link: "tooltip"
+  stat: "Production"
+  introduced: 2.11.0
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  updates: "JavaScript"
+
+- component: "Typography"
+  component-link: "typography"
+  stat: "Use with caution"
+  updated-date: 2022-04-28
+  updated-version: 3.0.0
+  breaking: true
+  updates: "Assets, JavaScript, Styles"
+
+- component: "Validation"
+  component-link: "validation"
+  stat: "Use with caution"
+  introduced: 3.0.0
+  updated-date: 2022-10-19
+  updated-version: 3.2.0
+  accessibility: true
+  updates: "Guidance, JavaScript, Markup"

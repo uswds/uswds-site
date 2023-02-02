@@ -26,10 +26,13 @@ layout: default
             {% endunless %}
           {% endif %}
           <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
+          {% include status.html %}
           <p id="{{ page.story | slugify }}" class="site-story">{{ page.story }}.</p>
         </header>
 
         {% include lead.html text=page.lead %}
+
+        {% include community-feedback.html %}
 
         {{ content }}
 

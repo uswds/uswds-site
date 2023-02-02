@@ -6,6 +6,7 @@ redirect_from:
 type: component
 title: Button
 category: Components
+status: Production
 lead: A button draws attention to important actions with a large selectable surface.
 component:
   name: button

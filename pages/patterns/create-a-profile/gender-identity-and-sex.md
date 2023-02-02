@@ -1,9 +1,12 @@
 ---
 title: Gender identity and sex
+status: Production
+callout: Research
 story: Help a user select their gender identity and sex
 permalink: /patterns/create-a-user-profile/gender-identity-and-sex/
 layout: pattern
 category: Patterns
+feedback: true
 sub-category: Create a user profile
 lead: This pattern helps users to provide gender identity and sex information in an accurate and respectful manner. Gender identity and sex are often integral to an individual’s sense of self, and several federal agencies and working groups are striving to define a meaningful, inclusive way to collect gender identity and sex information when it is needed.
 changelog:
@@ -198,6 +201,14 @@ Present the user with a controlled vocabulary to accurately depict sex listed at
 - <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
+{:.site-component-section-title}
+## Provide pattern feedback
+Help update and improve this pattern by sharing your feedback
+
+{:.usa-content-list}
+- <a href="https://github.com/uswds/uswds/discussions">Join Github discussion</a> about the Gender identity and sex pattern.
+- <a href="https://github.com/uswds/uswds/issues">View open issues</a>  for the Gender identity and sex pattern.
+- <a href="mailto:uswds@gsa.gov">Contact the USWDS team</a> for more support with the Gender identity and sex pattern.
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates

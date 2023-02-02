@@ -1,5 +1,6 @@
 ---
 category: Components
+status: Deprecated
 component:
   name: button-group
   status: ready

@@ -1,5 +1,6 @@
 ---
 category: Components
+status: Production
 component:
   status: ready
   package: usa-input-mask

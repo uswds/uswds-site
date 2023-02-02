@@ -1,0 +1,18 @@
+{% if page.feedback == true %}
+    <div class="usa-alert usa-alert--info">
+        <div class="usa-alert__body">
+            <p class="usa-alert__heading text-bold">Community feedback needed</p>
+            <p class="usa-alert__text">
+                The USWDS team is currently collecting feedback about this release candidate 
+                {% if page.category == "Patterns" %}pattern.
+                {% elsif page.category == "Components" %}component.
+                {% endif %}
+                Please considering joining the <a href="https://github.com/uswds/uswds/discussions">Github discussion</a> about this
+                {% if page.category == "Patterns" %}pattern
+                {% elsif page.category == "Components" %}component
+                {% endif %}
+                or <a href="#provide-pattern-feedback">reaching out through another channel</a> to share any research, suggestions, or ideas.
+            </p>
+        </div>
+    </div>
+{% endif %}

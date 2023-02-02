@@ -4,6 +4,8 @@ story: Help a user input their physical or mailing addresses for successful comm
 permalink: /patterns/create-a-user-profile/address/
 layout: pattern
 category: Patterns
+status: Production
+callout: User testing
 sub-category: Create a user profile
 lead: The physical and mailing address patterns help users enter their address successfully.
 changelog:

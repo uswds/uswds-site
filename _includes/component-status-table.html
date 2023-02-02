@@ -1,0 +1,111 @@
+{% assign statuses = site.data.component-status %}
+{% assign flex-1 = 'flex-1' %}
+{% assign col5Class = 'flex-1 update-summary' %}
+{% assign col1Title = 'Component' %}
+{% assign col2Title = 'Status' %}
+{% assign col3Title = 'Version introduced' %}
+{% assign col4Title = 'Updated (yyyy-mm-dd)' %}
+{% assign col5Title = 'Summary of recent updates' %}
+{% assign col6Title = 'Issues' %}
+{% assign versionLink = 'https://github.com/uswds/uswds/releases/tag/v' %}
+
+<table class="usa-table usa-table--borderless usa-table--status-table width-full font-body-xs margin-top-4">
+  <thead>
+    <tr>
+      <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">{{ col1Title }}</th>
+      <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">{{ col2Title }}</th>
+      <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">Version<br>Introduced</th>
+      <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }}">Last updated<br>(yyyy-mm-dd)</th>
+      <th role="columnheader" scope="col" class="{{ flex-2 }}">{{ col5Title }}</th>
+      <th data-sortable role="columnheader" scope="col" class="{{ flex-1 }} width-6">{{ col6Title }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for status in statuses %}
+    <tr>
+      <td data-title="{{ col1Title }}" class="{{ flex-1}}">
+        <span>
+          <a href="{{ site.baseurl}}/components/{{ status.component-link }}">{{ status.component }}</a>
+        </span>
+      </td>
+      <td data-title="{{ col2Title }}" class="{{ flex-1 }}">
+        <!--{{ status.stat }}-->
+        {% if status.stat == "Production" %}
+          <div class="usa-status-pill usa-status-pill--production">
+            <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
+              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+            Production
+          </div>
+        {% elsif status.stat == "Deprecated" %}
+          <div class="usa-status-pill usa-status-pill--deprecated">
+            <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
+              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#warning"></use>
+            </svg>
+            Deprecated
+          </div>
+        {% elsif status.stat == "Release candidate" %}
+          <div class="usa-status-pill usa-status-pill--candidate">
+            <img class="margin-right-1 margin-left-2px" src="{{ site.baseurl }}/img/icons/release-candidate.svg" alt="" role="img" width="20" height="20">
+            Release candidate
+          </div>
+        {% elsif status.stat == "Use with caution" %}
+          <div class="usa-status-pill usa-status-pill--with-caution">
+            <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
+              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error"></use>
+            </svg>
+            Use with caution
+          </div>
+        {% elsif status.stat == "Considering" %}
+          <div class="usa-status-pill usa-status-pill--considering">
+            <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img">
+              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#lightbulb_outline"></use>
+            </svg>
+            Considering
+          </div>
+        {% endif %}
+      </td>
+      <td data-title="{{ col3Title }}" class="{{ flex-1 }}">
+        {% if status.introduced %}
+          <a href="{{ versionLink }}{{ status.introduced }}">{{ status.introduced }}</a>
+        {% elsif status.planned %}
+          Planned for<br>{{ status.planned }}
+        {% elsif status.introduced == null and status.planned == null %}
+          -
+        {% endif %}
+      </td>
+      <td data-title="{{ col4Title }}" class="{{ flex-1 }}">
+        <span>
+          {{ status.updated-date }}<br>
+          {% if status.updated-version %}
+            <a href="{{ versionLink }}{{ status.updated-version }}">{{ status.updated-version}}</a>
+          {% endif %}
+        </span>
+      </td>
+      <td data-title="{{ col4Title }}" class="{{ col5Class }}">
+        {% if status.breaking %}
+          <span class="breaking">Breaking</span>
+        {% endif %}
+        {% if status.accessibility %}
+          <span class="accessibility">Accessibility</span>
+        {% endif %}
+        {% if status.updates %}
+          <span class="updates">{{ status.updates}}</span>
+        {% endif %}
+        {% if status.feedback %}
+          <p class="discussion margin-0">
+            Seeking community feedback<br>
+            <a href="https://github.com/uswds/uswds/discussions">Join the Github discussion</a>
+          </p>
+        {% endif %}
+        {% if status.breaking != true and status.accessibility != true and status.updates == null and status.feedback != true %}
+          -
+        {% endif %}
+      </td>
+      <td>
+        <a href="https://github.com/uswds/uswds/labels/Package%3A%20{{ status.component }}">{{ status.component}} issues</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

@@ -4,6 +4,8 @@ story: Help users to enter their email address
 permalink: /patterns/create-a-user-profile/email-address/
 layout: pattern
 category: Patterns
+status: Production
+callout: Discussion
 sub-category: Create a user profile
 lead: The email address pattern allows users to confidently and accurately enter their email address and ensures that it is properly formatted.
 changelog:

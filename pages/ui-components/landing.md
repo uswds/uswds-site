@@ -8,4 +8,6 @@ type: docs
 subnav:
   - href: /components/overview/
   - href: /components/packages/
+  - text: Status
+    href: /components/status/
 ---

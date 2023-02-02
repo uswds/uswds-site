@@ -7,6 +7,7 @@ permalink: /components/data-visualizations/
 layout: styleguide
 type: component
 title: Data visualizations
+status: Use with caution
 category: Components
 lead: Data visualizations help communicate patterns and relationships in a data set.
 subnav:

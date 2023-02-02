@@ -9,7 +9,6 @@ title: Breadcrumb
 status: Production
 category: Components
 lead: Breadcrumbs provide secondary navigation to help users understand where they are in a website.
-feedback: true
 component:
   name: breadcrumb
   status: ready

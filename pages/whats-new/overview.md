@@ -31,12 +31,13 @@ You can read some older posts on the [18F Blog](https://18f.gsa.gov/tags/web-des
 ## Design System in the wild
 
 Interested in seeing who else is using USWDS? We
-maintain a list of sites in our GitHub repo. Feel free to
-[open an issue](https://github.com/uswds/uswds/issues/new) using GitHub
+maintain a list of USWDS-based sites on our [showcase page]({{ site.baseurl }}/documentation/showcase). Feel free to
+[open an issue](https://github.com/uswds/uswds-site/issues/new/choose) using GitHub
 or [email us](mailto:{{ site.uswds_email }}) if you’d like to add your
 project to our list.
 
-<a href="https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md" class="usa-button site-button">View our list on GitHub</a>
+<a href="{{ site.baseurl }}/documentation/showcase" class="usa-button site-button">View our showcase list</a>
+
 {% endcapture %}
 
 <div class="grid-row grid-gap">

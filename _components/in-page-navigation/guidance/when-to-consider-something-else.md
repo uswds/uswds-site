@@ -1,3 +1,3 @@
 - **Short pages.** For pages that require little or no scrolling, in-page navigation is not necessary.
-- **Unstructured content.** Pages that lack hierarchical structures (`h2` and `h3` elements inside a content section) cannot use the in-page navigation component.
+- **Unstructured content.** Pages that lack hierarchical structures (`h2` and `h3` elements inside a content section) don't benefit from the in-page navigation component.
 - **Infinite scrolling.** For pages that feature infinite scrolling, in-page navigation is neither practical nor feasible.

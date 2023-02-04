@@ -2,6 +2,7 @@
 
 - **Customize the pattern.** The examples in the [component preview section]({{ site.baseurl }}/components/input-mask/#input-mask-preview-content) show common input mask patterns, but you can adapt the code to meet the needs of your project. In order to extend the functionality of the input mask, you must include a `placeholder` attribute as the visible input mask, using the underscore `_` to represent a character the user should enter. You may use punctuation literals like `[space]`, `-`, `/`, or `(` to help format your mask, but these literals will not be included in the final submitted value. A full list of formatting characters can be found in the [Available format characters table]({{ site.baseurl }}/components/input-mask/#available-format-characters).
 
+{:.usa-content-list }
 - **Properties.** The following properties modify component functionality.
 {% include settings-table-flex.html
   content=page.implementation.props

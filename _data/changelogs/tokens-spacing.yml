@@ -2,7 +2,7 @@ title: Spacing tokens
 type: token
 changelogURL:
 items:
-  - date: 2022-12-19
+  - date: 2023-02-24
     summary: Corrected alternate token name for token `05`.
     summaryAdditional:
     isBreaking:

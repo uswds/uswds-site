@@ -211,9 +211,9 @@ contents:
     subsection: theme color token
     description: Use grades 60-90.
     var: $theme-color-accent-warm-darker
-    default: '"orange-60v"'
+    default: '"orange-60"'
     type: color
-  - name: accent-warm-lightest
+  - name: accent-warm-darkest
     subsection: theme color token
     description: Use grades 70-90.
     var: $theme-color-accent-warm-darkest
@@ -370,13 +370,13 @@ contents:
     subsection: state color token
     description: Use grades 60-70.
     var: $theme-color-success-dark
-    default: '"green-cool-50"'
+    default: '"green-cool-50v"'
     type: color
   - name: success-darker
     subsection: state color token
     description: Use grades 70-80.
     var: $theme-color-success-darker
-    default: '"green-cool-60"'
+    default: '"green-cool-60v"'
     type: color
 
   - name: Info color family
@@ -438,19 +438,19 @@ contents:
     var: $theme-color-disabled-family
     default: '"gray"'
     type: color
-  - name: info-light
+  - name: disabled-light
     subsection: state color token
     description: Use grade 10.
     var: $theme-color-disabled-light
     default: '"gray-10"'
     type: color
-  - name: info
+  - name: disabled
     subsection: state color token
     description: Use grade 20.
     var: $theme-color-disabled
     default: '"gray-20"'
     type: color
-  - name: info-dark
+  - name: disabled-dark
     subsection: state color token
     description: Use grade 30.
     var: $theme-color-disabled-dark
@@ -505,7 +505,7 @@ contents:
     var: $theme-link-reverse-hover-color
     default: '"base-lightest"'
     type: color
-  - name: Link reverse hover color
+  - name: Link reverse active color
     description: Color for reverse `:active` text links.
     var: $theme-link-reverse-active-color
     default: '"white"'

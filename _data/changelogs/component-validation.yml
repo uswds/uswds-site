@@ -18,6 +18,11 @@ items:
     githubPr: 4914
     githubRepo: uswds
     versionUswds: 3.2.0
+  - date: 2022-04-28
+    summary: Updated package name to `usa-validation`.
+    affectsGuidance: true
+    githubPr: 1538
+    githubRepo: uswds-site
   # 3.0 release
   - date: 2022-04-28
     summary: Updated to Sass module syntax and new package structure.
@@ -28,3 +33,8 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
+  - date: 2021-06-07
+    summary: Updated package name to `validation`.
+    affectsGuidance: true
+    githubPr: 1219
+    githubRepo: uswds-site

@@ -19,6 +19,11 @@ items:
     githubPr: 4695
     githubRepo: uswds
     versionUswds: 3.1.0
+  - date: 2022-06-03
+    summary: Added guidance for using the button `type` attribute.
+    affectsGuidance: true
+    githubPr: 1608
+    githubRepo: uswds-site
   - date: 2022-04-28
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
@@ -28,6 +33,11 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
+  - date: 2021-06-08
+    summary: Added guidance to use the `disabled` attribute instead of `.usa-button--disabled`.
+    affectsGuidance: true
+    githubPr: 1232
+    githubRepo: uswds-site
   - date: 2021-04-28
     summary: Fixed unstyled button styling.
     summaryAdditional: We updated and strengthened the styling of unstyled buttons to prevent any unwanted style leakage from conventional buttons, especially is used in conjunction with <code>usa-button--hover</code> and <code>usa-button--active</code> classes.

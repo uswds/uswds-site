@@ -3,7 +3,7 @@ contents:
   - name: Pagination background color
     description: The background color of the entire pagination component, used for accessible color setting.
     var: $theme-pagination-background-color
-    default: '"white"'
+    default: '"default"'
     type: color
   - name: Breakpoint
     description: Breakpoint at which full pagination displays.

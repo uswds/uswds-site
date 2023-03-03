@@ -30,7 +30,7 @@ contents:
         value: '"grid-"'
         type: string
       - key: grid.output
-        description: Output grid prefix.
+        description: Output the grid prefix.
         value: "true"
         type: boolean
       - key: utility.namespace
@@ -38,13 +38,22 @@ contents:
         value: '"u-"'
         type: string
       - key: utility.output
-        description: Output utility prefix.
-        value: "true"
+        description: Output the utility prefix.
+        value: "false"
         type: boolean
+
+  - name: Prefix separator
+    description: |
+      Set the character that separates responsive and state prefixes from the main class name.
+      The default (":") is preceded by two backslashes so that it is properly escaped.
+    var: $theme-prefix-separator
+    default: |
+      "\\:"
+    type: string
 
   - name: Important layout grid
     description: |
-      Output grid classes output with "!important."
+      Output grid classes with `!important`.
     var: $theme-layout-grid-use-important
     default: "false"
     type: boolean
@@ -58,7 +67,7 @@ contents:
 
   - name: Focus
     subsection: color
-    description: The default color of the focus outline.
+    description: The color of the focus outline.
     var: $theme-focus-color
     default: '"blue-40v"'
     type: color

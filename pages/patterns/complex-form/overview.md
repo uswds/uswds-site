@@ -8,7 +8,7 @@ subnav:
   - href: /patterns/complete-a-complex-form/establish-trust/
   - href: /patterns/complete-a-complex-form/progress-easily/
   - href: /patterns/complete-a-complex-form/keep-a-record/
-  
+in_page_nav: false
 ---
 
 ## Why this matters
@@ -60,5 +60,5 @@ Complex forms can be daunting and overwhelming. This is especially true when use
         <p>Allow users to review and keep a copy of the answers they’ve provided and feel confident in their interaction.</p>
       </div>
     </div>
-  </div>  
+  </div>
 </div>

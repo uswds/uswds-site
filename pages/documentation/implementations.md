@@ -20,6 +20,7 @@ subnav:
   href: '#changelog'
 changelog:
   key: docs-implementations
+in_page_nav: false
 ---
 
 If you have a new implementation to add to this list, please [open an issue] on GitHub or [send us an email] with the following information:

@@ -5,8 +5,8 @@ redirect_from:
 - /patterns/overview
 layout: styleguide
 category: Patterns
-lead: USWDS patterns are practical guidelines and best practices for common user interactions 
-
+lead: USWDS patterns are practical guidelines and best practices for common user interactions
+in_page_nav: false
 ---
 
 Interested in what the USWDS team learned speaking with digital teams throughout the federal government as they work to remove barriers and create inclusive digital experiences for all users? Visit <a href="{{ site.baseurl }}/together/">Together: Inclusive Design Patterns</a>.
@@ -27,7 +27,7 @@ Interested in what the USWDS team learned speaking with digital teams throughout
         <p>Help users enter form information by easing their cognitive load and providing peace of mind.</p>
       </div>
     </div>
-  </li>  
+  </li>
   <li
   class="usa-card site-component-card grid-col-6 tablet:grid-col-4 margin-bottom-2"
   role="region"

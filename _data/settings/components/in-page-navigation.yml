@@ -20,7 +20,7 @@ contents:
     var: $theme-in-page-nav-bar-color
     default: '"default"'
     type: color
-  - name: Active state line width
+  - name: Active state vertical line width
     description: Width of the colored bar representing the active state of a link in the in-page nav.
     var: $theme-in-page-nav-bar-width
     default: '"05"'
@@ -35,7 +35,7 @@ contents:
     var: $theme-in-page-nav-link-color
     default: '"default"'
     type: color
-  - name: Content width
+  - name: Main content max width
     description: Maximum width of the main element.
     var: $theme-in-page-nav-main-content-max-width
     default: '"desktop"'

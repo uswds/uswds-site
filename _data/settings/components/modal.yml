@@ -1,6 +1,6 @@
 name: Modal
 contents:
-  - name: Border Radius
+  - name: Border radius
     description: The border radius of the modal window.
     var: $theme-modal-border-radius
     default: "'lg'"
@@ -10,12 +10,12 @@ contents:
     var: $theme-modal-default-max-width
     default: "'mobile-lg'"
     type: units
-  - name: Max width
+  - name: Large max width
     description: Maximum width of large modal window.
     var: $theme-modal-lg-max-width
     default: "'tablet-lg'"
     type: units
-  - name: Max width
+  - name: Large content max width
     description: Maximum width of content area within large modal window.
     var: $theme-modal-lg-content-max-width
     default: "'tablet'"

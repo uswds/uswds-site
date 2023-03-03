@@ -464,7 +464,7 @@ contents:
     default: '"white"'
     type: color
   - name: Body text color
-    description: Color of body text
+    description: Color of body text.
     var: $theme-text-color
     default: '"ink"'
     type: color

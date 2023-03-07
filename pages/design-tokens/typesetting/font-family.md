@@ -16,13 +16,19 @@ subnav:
   href: '#customizing-family-tokens'
 - text: Using family tokens
   href: '#using-family-tokens'
-- text: Adding a font to USWDS
-  href: '#adding-a-font-to-uswds'
+- text: Adding fonts to USWDS
+  href: '#adding-fonts-to-uswds'
 - text: Latest updates
   href: '#changelog'
 changelog:
   key: tokens-type-font-family
 ---
+
+<style>
+  ol ol {
+    list-style: lower-roman;
+  }
+</style>
 
 {% assign tokens = site.data.tokens.typesetting %}
 
@@ -161,9 +167,6 @@ Role-based tokens set the font family value based on the _role_ the face plays i
   </table>
 </div>
 
-{:.bg-gold-20v.padding-2.radius-md}
-**Note:** It is possible to add **custom font metadata**, **custom font stacks**, and **custom font source files** in your USWDS settings. This documentation is coming soon. See the inline documentation in [_settings-typography.scss](https://github.com/uswds/uswds/blob/develop/packages/uswds-core/src/styles/settings/_settings-typography.scss){:.text-ink.text-bold} for more details.
-
 ## Customizing family tokens
 Customize the values of [type](#type-based-tokens){:.token} and [role](#role-based-tokens){:.token} family tokens with available [font](#available-fonts){:.token} tokens in your project's [settings configuration]({{ site.baseurl }}/documentation/settings/).
 
@@ -243,7 +246,7 @@ Your context and coding style determine how you access USWDS family tokens in co
   </div>
 </div>
 
-## Adding a font to USWDS
+## Adding fonts to USWDS
 
 If you need to use a font that isn’t included in [USWDS Available Fonts](#available-fonts), you can add a new font to your USWDS project. There are two typical scenarios for this:
 
@@ -298,3 +301,6 @@ If you want to add a font that will be hosted in your project, you’ll need to:
     ```
 
 {% include tokens/create-font-token.html %}
+
+{:.site-note.margin-top-4}
+**Note:** It is possible to add **custom font metadata** in your USWDS settings. See the inline documentation in [_settings-typography.scss](https://github.com/uswds/uswds/blob/develop/packages/uswds-core/src/styles/settings/_settings-typography.scss){:.text-ink.text-bold} for more details.

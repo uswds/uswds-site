@@ -53,7 +53,7 @@ We can't include tokens, like `max-width: 1`, directly in our Sass. Rather, we u
 
 ### Example: Tokens in settings and component Sass
 
-Tokens can be expressed as variables, which is how most Design System theme settings work. For instance, the following is an example of theme settings in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings). This example shows settings variables that have assigned spacing unit tokens would look:
+Tokens can be expressed as variables, which is how most Design System theme settings work. For instance, the following is an example of theme settings in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings). This example shows spacing unit tokens assigned to settings variables:
 
 ```
 $theme-grid-container-max-width:    'desktop';

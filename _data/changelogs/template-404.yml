@@ -1,7 +1,7 @@
 title: 404 page
 type: template
 items:
-  - date:
+  - date: 2023-03-09
     summary: Updated template copy to follow parallel structure and use active voice.
     summaryAdditional:
     isBreaking:
@@ -39,4 +39,3 @@ items:
     affectsStyles:
     githubPr: 4003
     githubRepo: uswds
-    versionUswds: 2.11.0

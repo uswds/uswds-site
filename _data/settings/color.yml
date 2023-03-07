@@ -211,7 +211,7 @@ contents:
     subsection: theme color token
     description: Use grades 60-90.
     var: $theme-color-accent-warm-darker
-    default: '"orange-60v"'
+    default: '"orange-60"'
     type: color
   - name: accent-warm-lightest
     subsection: theme color token
@@ -370,13 +370,13 @@ contents:
     subsection: state color token
     description: Use grades 60-70.
     var: $theme-color-success-dark
-    default: '"green-cool-50"'
+    default: '"green-cool-50v"'
     type: color
   - name: success-darker
     subsection: state color token
     description: Use grades 70-80.
     var: $theme-color-success-darker
-    default: '"green-cool-60"'
+    default: '"green-cool-60v"'
     type: color
 
   - name: Info color family

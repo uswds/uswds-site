@@ -2,6 +2,19 @@ title: Spacing tokens
 type: token
 changelogURL:
 items:
+  - date: 2023-02-24
+    summary: Corrected alternate token name for token `05`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1949
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2022-03-11
     summary: Reverted value of `tablet-lg` to `880px`.
     summaryAdditional:

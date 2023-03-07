@@ -37,9 +37,6 @@ jekyll_get:
   - data: install-readme
     json: "https://api.github.com/repos/uswds/uswds/contents/README.md?ref=develop"
     decode_content: true
-  - data: standards-sites
-    json: "https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md"
-    decode_content: true
   - data: security
     json: "https://api.github.com/repos/uswds/uswds/contents/SECURITY.md"
     decode_content: true

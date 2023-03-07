@@ -613,16 +613,16 @@ See this example:
 #### Example: Settings and typesetting
 
 ```scss
-// in your settings configuration:
+// In your settings configuration:
 
- @use "uswds-core" with (
+@use "uswds-core" with (
   $theme-respect-user-font-size: true,
-  $theme-font-type-sans:         'public-sans',
-  $theme-font-role-ui:           $theme-font-sans,
-  $theme-type-scale-sm:          5,
-  $theme-body-font-size:         'sm',
-  $theme-body-line-height:       5,
- )
+  $theme-font-type-sans: "public-sans",
+  $theme-font-role-ui: $theme-font-sans,
+  $theme-type-scale-sm: 5,
+  $theme-body-font-size: "sm",
+  $theme-body-line-height: 5
+);
 
 // in component code:
 

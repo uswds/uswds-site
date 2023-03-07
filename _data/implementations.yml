@@ -183,3 +183,13 @@
     name: Brian Hurst
     url: https://github.com/hursey013
   notes: "A Tailwind CSS plugin for adding U.S. Web Design System design tokens to supported Tailwind utilities."
+  
+- name: Vue USWDS
+  distribution: Vue.js
+  id: vue-uswds
+  url: https://github.com/patrickcate/vue-uswds
+  author:
+    name: Patrick Cate
+    url: https://github.com/patrickcate
+  version:
+  notes: "A Vue.js implementation of the U.S. Web Design System."

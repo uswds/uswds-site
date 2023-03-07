@@ -15,6 +15,11 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
+  - date: 2022-04-11
+    summary: Added documentation for the `value` property.
+    affectsGuidance: true
+    githubPr: 1516
+    githubRepo: uswds-site
   # 2.13.3
   - date: 2022-04-11
     summary: Allow default `value` in time picker.

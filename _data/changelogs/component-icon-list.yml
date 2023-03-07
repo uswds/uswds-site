@@ -12,6 +12,11 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-03-17
+    summary: Added icon list documentation.
+    affectsGuidance: true
+    githubPr: 1180
+    githubRepo: uswds-site
+  - date: 2021-03-17
     summary: Added the icon list component.
     summaryAdditional: An icon list reinforces the meaning and visibility of individual list items with a leading icon.
     affectsGuidance: true

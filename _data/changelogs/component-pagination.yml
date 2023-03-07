@@ -25,6 +25,11 @@ items:
   githubRepo: uswds
   versionUswds: 2.13.3
 - date: 2021-06-16
+  summary: Added pagination documentation.
+  affectsGuidance: true
+  githubPr: 1218
+  githubRepo: uswds-site
+- date: 2021-06-16
   summary: Added pagination component.
   summaryAdditional: Pagination is navigation for paginated content.
   isBreaking: false

@@ -5,3 +5,5 @@
 - **Closers.** Place a `data-close-modal` attribute on any button that will close a modal. Closers may have event listeners attached to them. Code closers as `<button type="button">`.
 
 - **Disabling close when an action is required.** In instances that a user must make a choice before continuing, you want to prevent them from closing the modal without taking action. Add `data-force-action` attribute to `.usa-modal` to prevent the user from closing the modal without taking an action.
+
+{% include init-note.html %}

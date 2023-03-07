@@ -52,7 +52,7 @@ utilities:
   </div>
 </div>
 
-<section id="utilities-section" class="utilities-section">
+<section class="utilities-section">
 
 {% include utilities/utilities-section-title-bar.html %}
 

@@ -1,7 +1,7 @@
 name: Pagination
 contents:
   - name: Pagination background color
-    description: The background color of the entire pagination component, used for accessible color setting.
+    description: The background color of the entire pagination component.
     var: $theme-pagination-background-color
     default: '"default"'
     type: color

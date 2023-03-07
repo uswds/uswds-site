@@ -4,7 +4,7 @@
   author:
     name: SAM.gov
     url: https://github.com/GSA
-  notes: "A test application that incorporates sam-styles and sam-design-system components with real-world examples"
+  notes: "A test application that incorporates sam-styles and sam-design-system components with real-world examples."
 
 - name: Sam-Design-System
   distribution: Angular

@@ -93,16 +93,16 @@ Present the user with the tools to accurately depict their gender identity.
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true"><h4 id="pattern-preview-gender">Pattern preview</h4></button>
   <div id="accordion-preview-02" class="usa-accordion__content">
-    {% include patterns/gender.html %}
+    {% include patterns/gender-identity.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h4 id="pattern-code-gender">Pattern code</h4></button>
   <div id="accordion-code-02" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      {% highlight text%}{% include patterns/gender.html %}{% endhighlight %}
+      {% highlight text%}{% include patterns/gender-identity.html %}{% endhighlight %}
     </div>
-    {% highlight html%}{% include patterns/gender.html %}{% endhighlight %}
+    {% highlight html%}{% include patterns/gender-identity.html %}{% endhighlight %}
   </div>
 </div>
 

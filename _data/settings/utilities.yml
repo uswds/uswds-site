@@ -108,8 +108,8 @@ contents:
   - name: "Utility manual values"
     description: |
       Utilities output with the tokens and values set in the manual values map.
-    var: $[utility-module]-palettes
-    default: '"palette-[utility-module]-manual-values"'
+    var: $[utility-module]-manual-values
+    default:
     type: map
     map:
       - key: "[token name]"

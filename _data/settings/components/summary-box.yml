@@ -14,7 +14,7 @@ contents:
     description: Width of the border around the Summary box.
     var: $theme-summary-box-border-width
     default: 1px
-    type: size
+    type: border-width
   - name: Border radius
     description: Border radius of the summary box.
     var: $theme-summary-box-border-radius

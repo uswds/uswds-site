@@ -11,7 +11,7 @@ contents:
     default: '"mobile-lg"'
     type: units
   - name: Border width when selected
-    description: Border width when selected.
+    description: Border width of selection element for checkbox, radio, and range.
     var: $theme-input-select-border-width
     default: 2px
     type: units

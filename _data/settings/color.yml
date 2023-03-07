@@ -496,17 +496,17 @@ contents:
     default: '"primary-darker"'
     type: color
   - name: Link reverse color
-    description: Color for reverse text links.
+    description: Color for text links on dark backgrounds.
     var: $theme-link-reverse-color
     default: '"base-lighter"'
     type: color
   - name: Link reverse hover color
-    description: Color for reverse `:hover` text links.
+    description: Color for `:hover` text links on dark backgrounds.
     var: $theme-link-reverse-hover-color
     default: '"base-lightest"'
     type: color
   - name: Link reverse active color
-    description: Color for reverse `:active` text links.
+    description: Color for `:active` text links on dark backgrounds.
     var: $theme-link-reverse-active-color
     default: '"white"'
     type: color

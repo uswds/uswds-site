@@ -4,8 +4,7 @@ tags:
 - updates
 category: About
 author: Ammie Farraj Feijoo, Dan O. Williams
-meta:
-  og:image: /img/banner-blog/banner-blog-post.jpg
+image: /img/banner-blog/banner-blog-post.jpg
 excerpt: We improved the security banner that's featured on many government websites and we encourage teams to update to this new security language as soon as possible.
 ---
 

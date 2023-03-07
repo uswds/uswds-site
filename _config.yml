@@ -2,16 +2,13 @@
 title: U.S. Web Design System (USWDS)
 description: USWDS makes it easier to build accessible, mobile-friendly government websites.
 google_analytics_ua: UA-48605964-43
-uswds_version: 3.0.2
+uswds_version: 3.3.0
 uswds_email: uswds@gsa.gov
-federalist_base: "https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds"
+federalist_base: "https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.sites.pages.cloud.gov/preview/uswds/uswds"
 federalist_component_preview: "iframe.html?id="
 federalist_release_prefix: "release-"
-meta:
-  og:image: /img/uswds-logo/lg-black.png
 touchpoints:
   active: true
-  hosted: true
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/
 
@@ -40,14 +37,11 @@ jekyll_get:
   - data: install-readme
     json: "https://api.github.com/repos/uswds/uswds/contents/README.md?ref=develop"
     decode_content: true
-  - data: standards-sites
-    json: "https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md"
-    decode_content: true
   - data: security
     json: "https://api.github.com/repos/uswds/uswds/contents/SECURITY.md"
     decode_content: true
   - data: hash
-    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-3.0.2-zip-hash.txt?ref=main"
+    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-3.3.0-zip-hash.txt?ref=main"
     decode_content: true
 
 repos:
@@ -74,11 +68,18 @@ collections:
   next:
     output: true
     permalink: /:collection/:title
+  together:
+    output: true
+    permalink: /:collection/:title
   security_updates:
     output: true
     permalink: /:collection/:title
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /img/uswds-logo/lg-black.png
   - scope:
       path: ""
       type: components
@@ -115,6 +116,14 @@ defaults:
       hero_color: "next-gray-dark"
   - scope:
       path: ""
+      type: together
+    values:
+      report_title: "Inclusive Design Patterns"
+      layout: "together-content"
+      chapter: false
+      hero_color: "next-gray-dark"
+  - scope:
+      path: ""
       type: security_updates
     values:
       layout: styleguide
@@ -123,6 +132,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 exclude:
   - ".ruby-version"
@@ -142,5 +152,10 @@ exclude:
   - circle.yml
   - css
   - pa11y-results.json
+
+# Jekyll SEO tag
+twitter:
+  username: USWDS
+  card: summary_large_image
 
 env: dev

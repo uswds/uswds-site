@@ -34,6 +34,8 @@ subnav:
   href: '#icon-guidance'
 - text: Package
   href: '#icon-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - image
   - graphic
@@ -41,6 +43,8 @@ tags:
   - material
   - font awesome
   - icons
+changelog:
+  key: component-icon
 ---
 
 Icons are a simple, easily graspable way to add visual emphasis or interest, signal an action, or indicate a feedback state — all while reducing a user's cognitive load.

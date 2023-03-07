@@ -1,5 +1,8 @@
 @use "sass:math";
 
+@import "mixins";
+
+@import "custom-styles/site-header";
 @import "custom-styles/card-policy";
 @import "custom-styles/highlight";
 
@@ -21,46 +24,12 @@ $theme-grid-gap-default: "md";
 
 $site-measure: 5;
 
-@mixin grid-cols($default, $split: null, $full: null) {
-  @if $default {
-    @include grid-col($default);
-  }
-  @if $split {
-    @include at-media($theme-site-cols-split) {
-      @include grid-col($split);
-    }
-  }
-  @if $full {
-    @include at-media($theme-site-cols-show) {
-      @include grid-col($full);
-    }
-  }
-}
-
-@mixin usa-grid-container {
-  @include grid-container;
-}
-
 .usa-grid-container {
   @include usa-grid-container;
 }
 
-@mixin usa-grid-row {
-  @include grid-row;
-  @include u-flex("column", "align-stretch");
-  @include at-media($theme-site-cols-split) {
-    @include grid-gap($theme-grid-gap-default);
-    @include u-flex("row");
-  }
-}
-
 .usa-grid-row {
   @include usa-grid-row;
-}
-
-@mixin usa-grid-col {
-  @include grid-cols("auto", 6);
-  width: 100%;
 }
 
 .usa-grid-col {
@@ -70,20 +39,6 @@ $site-measure: 5;
 // ========================================
 // 1. Generic
 // ----------------------------------------
-
-$site-primary-family: "blue-warm";
-$site-primary-lighter: "#{$site-primary-family}-10";
-$site-primary-light: "#{$site-primary-family}-30";
-$site-primary: "#{$site-primary-family}-50";
-$site-primary-vivid: "#{$site-primary-family}-50v";
-$site-primary-dark: "#{$site-primary-family}-70";
-$site-primary-darker: "#{$site-primary-family}-80";
-$site-ink: "black-transparent-80";
-
-$site-border-width: 2px;
-$site-base-transparent-light: "black-transparent-10";
-$site-background-color: "gray-1";
-
 .default-container {
   @include u-bg($site-background-color);
 }
@@ -118,93 +73,10 @@ img {
 // Header ------------------------------ //
 
 .sticky {
-  position: sticky;
-  top: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    display: table;
-  }
-}
-
-.site-header {
-  background-color: color($site-primary-darker);
-
   @include at-media("desktop") {
-    border-bottom: none;
-  }
-
-  .site-logo {
-    margin-left: units($theme-site-margins-mobile-width);
-
-    @include at-media("desktop") {
-      display: inherit;
-      float: left;
-      margin-bottom: 0;
-      margin-left: units($theme-site-margins-width);
-    }
-
-    .usa-logo__text {
-      @include at-media("desktop") {
-        display: inherit;
-        letter-spacing: ls(-1);
-      }
-    }
-  }
-
-  .usa-button-list {
-    display: none;
-    margin-top: units(-0.5);
-
-    @include at-media("desktop") {
-      float: right;
-      line-height: units(10);
-      margin-top: 0;
-      display: block;
-      padding-right: units($theme-site-margins-width);
-    }
-
-    // scss-lint:disable SelectorDepth, NestingDepth
-    li {
-      display: inline;
-      font-family: font-family("lang");
-
-      &:last-child .usa-button {
-        margin-right: 0;
-      }
-    }
-
-    .usa-button {
-      @include u-margin-y(0);
-    }
-  }
-}
-
-.navbar__search {
-  .usa-input {
-    @include at-media("desktop") {
-      background-color: color("blue-warm-90");
-      color: color("white");
-      height: 39px;
-      margin-top: 0;
-    }
-  }
-
-  .usa-button {
-    @include at-media("desktop") {
-      height: 39px;
-    }
-  }
-}
-
-#search_form-mobile {
-  .usa-input {
-    @include at-media-max("desktop") {
-      height: auto;
-      margin-top: 0;
-      padding: 0;
-    }
+    @include u-z(200);
+    position: sticky;
+    top: 0;
   }
 }
 
@@ -234,151 +106,6 @@ img {
 
   .usa-banner__header-action {
     color: color("gray-30");
-  }
-}
-
-.site-header-navbar {
-  background-color: color("white");
-  border-bottom: none !important; // scss-lint:disable ImportantRule
-
-  @include at-media("desktop") {
-    height: units(10);
-    width: 100%;
-    display: block;
-  }
-
-  // Firefox fix so that navbar buttons to align right
-  @-moz-document url-prefix() {
-    @include at-media("desktop") {
-      padding-top: units(1px);
-    }
-  }
-}
-
-@mixin outline-inverse-button {
-  // TODO: Fix this with button mixin
-  .usa-button.usa-button--outline-inverse {
-    box-shadow: inset 0 0 0 units(2px) color($site-primary);
-    color: color($site-primary);
-
-    &:hover {
-      box-shadow: inset 0 0 0 unit(2px) color($site-primary-dark);
-      color: color($site-primary-dark);
-    }
-  }
-}
-
-.sidenav-mobile {
-  @include outline-inverse-button;
-
-  @include at-media("desktop") {
-    display: none;
-  }
-
-  .usa-button-list {
-    margin-top: units(4);
-  }
-
-  .usa-button {
-    margin-top: units(1);
-  }
-}
-
-.site-logo {
-  @include at-media("desktop") {
-    margin-top: units(2px);
-  }
-
-  a {
-    color: color($site-ink);
-  }
-
-  .usa-logo__text {
-    $logo-size-mobile: 3;
-    $logo-size-desktop: 3;
-    @include u-font("lang", "xs");
-    line-height: units(5);
-
-    &::before {
-      @include u-square($logo-size-mobile);
-      content: "";
-      background-image: url("../img/uswds-logo/4c-lg-on-white.png");
-      background-image: url("../img/uswds-logo/4c-lg-on-white.svg");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      display: inline-block;
-      margin-left: units(-2px);
-      margin-right: units(0.5);
-      position: relative;
-      top: units(-1px);
-      vertical-align: middle;
-
-      @include at-media("desktop") {
-        @include u-square($logo-size-desktop);
-      }
-    }
-
-    @include at-media("desktop") {
-      @include typeset("lang", "lg", 1);
-      line-height: units(9);
-    }
-  }
-}
-
-.site-nav-secondary {
-  display: none;
-
-  @include at-media("desktop") {
-    background-color: color("white");
-    border-bottom: units($site-border-width) solid
-      color($site-base-transparent-light);
-    clear: both;
-    display: block;
-    height: units($height-nav-secondary);
-    padding-left: units(2);
-    z-index: z-index($z-nav-secondary);
-  }
-
-  &.sticky {
-    @include u-z(200);
-  }
-
-  ul {
-    @include unstyled-list;
-
-    li {
-      display: inline;
-    }
-  }
-
-  a {
-    @include typeset("lang", "xs", 1);
-    color: color("gray-50");
-    display: inline-block;
-    font-weight: fw("normal");
-    height: units($height-nav-secondary);
-    padding: units(2);
-    position: relative;
-    text-decoration: none;
-
-    .page-home & {
-      color: color("ink");
-    }
-
-    &:hover {
-      @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
-      color: color($site-primary-vivid);
-    }
-  }
-
-  .usa-current {
-    @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
-    color: color($site-ink);
-    font-weight: fw("bold");
-
-    &:hover {
-      color: color($site-ink);
-    }
   }
 }
 
@@ -480,6 +207,7 @@ img {
     padding-right: 0;
     padding-left: units(4);
     width: units($width-nav-sidebar);
+    top: 4em;
   }
 
   .usa-navigation-submenu {
@@ -517,6 +245,16 @@ img {
   & + p {
     margin-top: units(1.5);
   }
+}
+
+.site-figure {
+  @include u-margin(0);
+}
+
+.site-figcaption {
+  @include u-font-size("lang", "2xs");
+  @include u-margin-y(2);
+  color: color($site-ink);
 }
 
 // Styleguide Content -------- //
@@ -1335,11 +1073,6 @@ code[class*="language-plaintext"] {
 
 // Alt font styles
 
-@mixin font-lead-alt {
-  font-size: font-size("lang", "xs");
-  font-weight: font-weight("normal");
-}
-
 .serif-robust {
   .usa-display-alt {
     font-size: font-size("lang", $theme-h1-font-size);
@@ -1442,6 +1175,24 @@ code[class*="language-plaintext"] {
 
 .site-accordion-docs {
   margin-bottom: units(7);
+}
+
+.site-component-preview {
+  h5 {
+    @include typeset("lang", "sm", 3);
+    @include u-text($site-ink, "bold");
+    margin-top: units(4);
+    margin-bottom: units(1);
+
+    & + form fieldset legend,
+    & + label {
+      margin-top: 0;
+    }
+  }
+
+  h4 + h5 {
+    margin-top: units(2);
+  }
 }
 
 // External link styles
@@ -1961,6 +1712,22 @@ strong {
   @include u-bg("error");
 }
 
+.output-warning {
+  @extend %output-true;
+  @include u-bg("warning");
+  @include u-text("ink");
+}
+
+.output-neutral {
+  @extend %output-true;
+  @include u-bg("base-lighter");
+  @include u-text("ink");
+}
+
+li + li .output-neutral {
+  margin-top: units(0.5);
+}
+
 // Ensure that inline lists do not have a bottom margin
 li {
   &.display-inline-block {
@@ -2302,50 +2069,6 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
   }
 }
 
-.site-header {
-  .usa-button {
-    background-color: color($site-primary-vivid);
-
-    &:hover {
-      background-color: color("blue-warm-60v");
-    }
-  }
-
-  .usa-button--outline-inverse {
-    background-color: transparent;
-    margin-right: 0;
-
-    &:hover {
-      background-color: transparent;
-    }
-  }
-
-  .navbar--container {
-    @include at-media("desktop") {
-      align-items: center;
-      display: flex;
-      float: right;
-      height: units(10);
-    }
-
-    .usa-button {
-      display: none;
-
-      @include at-media("desktop") {
-        display: block;
-      }
-    }
-  }
-
-  // Read website standards, Download, Github buttons
-  .buttons {
-    @include at-media("desktop") {
-      display: flex;
-      align-items: center;
-    }
-  }
-}
-
 .site-docs-card-link {
   border-top: units("05") solid color($site-base-transparent-light);
   padding-top: units("105");
@@ -2363,10 +2086,6 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
 .block-link::before {
   @include u-pin("all");
   content: "";
-}
-
-@mixin inner-border($width, $color) {
-  box-shadow: inset 0 0 0 units($width) color($color);
 }
 
 .usa-button-list.site-button-list {
@@ -2390,89 +2109,11 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
   }
 }
 
-.usa-nav__inner {
-  margin-bottom: 0;
-
-  .usa-button {
-    &:hover {
-      background-color: color("blue-warm-60v");
-    }
-  }
-
-  .usa-button.site-button-version {
-    @include no-knockout-font-smoothing;
-    color: color($site-ink);
-    background-color: color($site-background-color);
-
-    &:visited {
-      color: color($site-ink);
-    }
-
-    &:hover {
-      background-color: color("yellow-20v");
-    }
-  }
-
-  .usa-button.site-button-outline-secondary {
-    @include inner-border($site-border-width, "primary");
-    background-color: color("transparent");
-    color: color("primary");
-
-    &:visited {
-      color: color("primary");
-    }
-
-    &:hover {
-      @include inner-border($site-border-width, "blue-warm-60v");
-      background-color: transparent;
-      color: color("blue-warm-60v");
-    }
-  }
-}
-
-.site-header-dark {
-  .site-header-navbar {
-    background-color: color("blue-warm-80");
-  }
-  .site-logo {
-    a {
-      color: color("white");
-    }
-
-    .usa-logo__text {
-      &::before {
-        background-image: url("../img/uswds-logo/4c-lg-on-black.png");
-        background-image: url("../img/uswds-logo/4c-lg-on-black.svg");
-      }
-    }
-  }
-
-  .usa-button.site-button-outline-secondary {
-    @include inner-border($site-border-width, "white-transparent-70");
-    background-color: color("transparent");
-    color: color("white-transparent-70");
-
-    &:hover {
-      @include inner-border($site-border-width, "white");
-      background-color: transparent;
-      color: color("white");
-    }
-
-    @include at-media("desktop") {
-      margin-right: units(4);
-    }
-  }
-}
-
 .site-page-title,
 %site-page-title {
   @include typeset("lang", "2xl", 2);
   font-weight: fw("bold");
   color: color($site-ink);
-}
-
-.foo {
-  @include u-border(0.5);
 }
 
 pre {
@@ -2829,6 +2470,10 @@ $theme-table-column-gap: 4;
       @include u-text("normal");
     }
 
+    h2 + h3 {
+      margin-top: units(3);
+    }
+
     h6 {
       @include typeset("lang", "2xs", 2);
       @include u-text("uppercase", "ls-2", "normal");
@@ -2928,6 +2573,10 @@ $theme-table-column-gap: 4;
         text-align: left;
         text-indent: 0;
         width: units(3);
+      }
+
+      a {
+        text-indent: initial;
       }
     }
   }
@@ -3044,34 +2693,6 @@ $theme-table-column-gap: 4;
 .site-button-list {
   .usa-button {
     @include typeset("lang", null, 1);
-  }
-}
-
-.site-header {
-  @include typeset("lang");
-
-  .usa-menu-btn {
-    font-size: fs("lang", "3xs");
-  }
-}
-
-.site-nav {
-  @include typeset("lang");
-
-  .usa-accordion {
-    @include typeset("lang");
-  }
-
-  .usa-nav__close {
-    background-color: color("base-lightest");
-  }
-
-  .usa-nav__primary button {
-    line-height: lh("lang", 2);
-  }
-
-  .usa-nav__submenu-item {
-    @include typeset("lang", "2xs", 2);
   }
 }
 
@@ -3446,6 +3067,7 @@ pre.lineno {
 }
 
 body {
+  @include u-bg($site-background-color);
   text-rendering: optimizeLegibility;
 }
 
@@ -3453,7 +3075,8 @@ body {
 .site-accordion-code {
   > .usa-accordion__button {
     h2,
-    h3 {
+    h3,
+    h4 {
       @include typeset("lang", "sm", 1);
       @include u-margin-y(0);
     }
@@ -3503,16 +3126,6 @@ body {
 .page-website-standards {
   .site-subheading {
     display: none;
-  }
-}
-
-.site-nav {
-  // Search input gets cutoff on mobile.
-  .usagov-search-autocomplete {
-    min-width: 0;
-  }
-  .usa-button {
-    display: block;
   }
 }
 
@@ -3571,18 +3184,6 @@ body {
     .text {
       @include add-sr-only;
     }
-  }
-}
-
-@include at-media("desktop") {
-  .site-header .buttons .usa-button {
-    position: relative;
-    bottom: units(-2px);
-  }
-
-  .site-header .buttons .site-button-standards {
-    box-shadow: inset 0 0 0 2px color("gold-30v");
-    color: color("gold-30v");
   }
 }
 
@@ -3694,7 +3295,7 @@ body {
     @extend %site-h2;
     border-top: units(1px) solid;
     margin-bottom: units(2);
-    margin-top: units(3);
+    margin-top: units(6);
     padding-top: units(1.5);
   }
 
@@ -3807,4 +3408,131 @@ p + .pagination-behaviors--examples {
   .gd {
     color: color("red-60v");
   }
+}
+
+// Do/Don't Guidance Section
+
+$do-dont-color-do: "green-cool-50v";
+$do-dont-color-dont: "red-cool-50v";
+$do-dont-color-border: "gray-cool-20";
+$do-dont-padding: 3;
+$do-dont-top-bar-width: 1;
+
+.do-dont {
+  display: flex;
+  height: 100%;
+  padding-top: units(2);
+}
+
+.do-dont__do,
+.do-dont__dont {
+  background-color: color("white");
+  border: 1px solid color($do-dont-color-border);
+  flex: 1 0 0;
+  height: 100%;
+  position: relative;
+}
+
+.do-dont__do {
+  padding: 0rem;
+}
+
+.do-dont__do:before,
+.do-dont__dont:before {
+  content: "";
+  position: absolute;
+  height: units($do-dont-top-bar-width);
+  width: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+}
+
+.do-dont__do:before {
+  background-color: color($do-dont-color-do);
+}
+
+.do-dont__dont:before {
+  background-color: color($do-dont-color-dont);
+}
+
+.do-dont__heading {
+  @include typeset("lang", "lg", 2);
+  align-items: center;
+  border-bottom: 1px solid color($do-dont-color-border);
+  display: flex;
+  font-weight: fw("bold");
+  margin: 0;
+  padding: units(4) units($do-dont-padding) units($do-dont-padding);
+
+  .usa-icon {
+    @include u-square(3);
+    margin-right: units(0.5);
+  }
+}
+
+.do-dont__do .do-dont__heading {
+  color: color($do-dont-color-do);
+}
+
+.do-dont__dont .do-dont__heading {
+  color: color($do-dont-color-dont);
+}
+
+.do-dont__content {
+  padding: 0 units($do-dont-padding) units($do-dont-padding) 0;
+
+  ul {
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+  }
+
+  li + li {
+    margin-top: units(1);
+  }
+}
+
+// Pattern landing page
+.pattern-card-heading {
+  font-weight: fw("normal");
+}
+
+// Memorable Date w/select
+.usa-form-group--month {
+  width: units(card-lg);
+}
+.usa-in-page-nav {
+  .usa-in-page-nav__heading {
+    @include typeset("lang", "2xs", 3);
+  }
+  .usa-in-page-nav__list {
+    .usa-in-page-nav__item {
+      @include typeset("lang", "3xs", 2);
+    }
+  }
+}
+
+.site-story {
+  @include typeset("lang", "xl", 2);
+  @include u-text("normal");
+}
+.site-changelog--show-tablet {
+  @include at-media-max("tablet") {
+    display: none;
+  }
+  @include at-media("widescreen") {
+    display: none;
+  }
+}
+
+.site-changelog--hide-tablet {
+  @include at-media("tablet") {
+    display: none;
+  }
+  @include at-media("widescreen") {
+    display: block;
+  }
+}
+
+.usa-in-page-nav {
+  @include u-z(100);
 }

@@ -1,9 +1,8 @@
 ---
 title: Get involved
-subhead: Here are just a few ideas to get started. 
+subhead: Here are just a few ideas to get started.
 description: "Take action. Improving how the public interacts with government digital services will be a collective effort and won’t happen overnight."
-meta:
-  og:image: /img/next/og-next-report.png
+image: /img/next/og-next-report.png
 
 nav_title: Get involved
 permalink: /next/get-involved/
@@ -25,19 +24,19 @@ chapter: true
     <div class="grid-row">
 <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 desktop:grid-col-6 desktop:padding-right-205" markdown="1">
 
-### Everyone can: 
+### Everyone can:
 
 - Use the conversation starters throughout this report to prompt discussions with your managers and team members
 
 - Join the [USWDS community](https://chat.18f.gov/) and get involved
 
-### Thought-leaders can: 
+### Thought-leaders can:
 
 - Be vocal advocates of USWDS and the benefits it provides
 
 - [Share critical, candid feedback with us](mailto:{{ site.uswds_email }}) to help make the design system better
 
-### Policy analysts can: 
+### Policy analysts can:
 
 - Better define what [21st Century IDEA](https://digital.gov/resources/21st-century-integrated-digital-experience-act/) compliance is
 
@@ -45,7 +44,7 @@ chapter: true
 
 - Identify key performance indicators and include digital services in strategic plans
 
-### Content managers can: 
+### Content managers can:
 
 - Use the [design system’s [principles]({{ site.baseurl }}/design-principles/) to bring human-centered design into your work and make data-informed decisions
 
@@ -59,23 +58,23 @@ chapter: true
 <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 desktop:grid-col-6 desktop:padding-left-205" markdown="1">
 
 
-### Engineers can: 
+### Engineers can:
 
 - Review [design system documentation]({{ site.baseurl }}/documentation/developers/) to learn about the design system’s architecture and available components
 
 - Learn about [customization, theming,]({{ site.baseurl }}/documentation/settings/) [utilities]({{ site.baseurl }}/utilities/), and [tokens]({{ site.baseurl }}/design-tokens/) to adapt the design system to your agency’s brand
 
-- Review existing websites that use USWDS (such as those on the [designsystem.digital.gov Showcase]({{ site.baseurl }}/getting-started/showcase/all/)) to see how you could better integrate USWDS [principles]({{ site.baseurl }}/design-principles/) and [components]({{ site.baseurl }}/components/)
+- Review existing websites that use USWDS (such as those in the [Showcase]({{ site.baseurl }}/documentation/showcase/)) to see how you could better integrate USWDS [principles]({{ site.baseurl }}/design-principles/) and [components]({{ site.baseurl }}/components/)
 
-### Designers can: 
+### Designers can:
 
 - [Download the design assets]({{ site.baseurl }}/documentation/designers/) and work to incorporate them into your regular design process
 
 - Investigate how the design system can be customized to meet your agency’s brand needs
 
-- Review existing websites that use USWDS (such as the [design system Showcase]({{ site.baseurl }}/getting-started/showcase/all/)) to see how you could better integrate the design system [principles]({{ site.baseurl }}/design-principles/) and [components]({{ site.baseurl }}/components/)
+- Review existing websites that use USWDS (such as the [design system Showcase]({{ site.baseurl }}/getting-started/showcase/)) to see how you could better integrate the design system [principles]({{ site.baseurl }}/design-principles/) and [components]({{ site.baseurl }}/components/)
 
-### Leadership can: 
+### Leadership can:
 
 - Talk with other agency leadership to learn how they’ve implemented the design system
 
@@ -137,7 +136,7 @@ We thank everyone who shared their time, feedback, and ideas throughout this res
           <p><a href="https://touchpoints.app.cloud.gov/touchpoints/8338c61b/submit">Stay up-to-date</a> with the latest updates and events.</p>
         </div>
       </div>
-      
+
     </div>
   </div>
 </div>

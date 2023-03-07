@@ -1,0 +1,57 @@
+title: Utilities
+type: utility
+changelogURL:
+items:
+  - date: 2022-05-04
+    summary: Added `margin-horizontal` and `margin-vertical` utility modules.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1583
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2022-04-28
+    summary: |
+      Replaced the outdated text: `$output-all-utilities` with updated: `$output-these-utilities`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4631
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2022-04-28
+    summary: Added documentation for using the `uswds-utilities` package, customizing utilities settings, and understanding utility modules.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1538
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2021-06-16
+    summary: Added state color tokens to default utilities.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4198
+    githubRepo: uswds
+    versionUswds: 2.12.0

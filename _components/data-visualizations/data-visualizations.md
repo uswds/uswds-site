@@ -16,6 +16,8 @@ subnav:
   href: '#line-charts'
 - text: Bar charts
   href: '#bar-charts'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - dataviz
   - infographics
@@ -24,6 +26,8 @@ tags:
   - graphs
   - line
   - bar
+changelog:
+  key: component-data-visualizations
 ---
 <div class="site-note"><strong>Note:</strong> The data visualizations components are guidance-only and do not include any <code>Component Code</code>. The examples of specific visualizations included with our guidance are intended to be a demonstration of one way to implement our guidance with a focus on accessibility and assistive tooling.</div>
 <section class="site-component-section site-component-usage">
@@ -37,7 +41,7 @@ tags:
   </ul>
   <h4>References</h4>
   <ul class="usa-content-list">
-    <li><a href="https://medium.com/nightingale/how-to-choose-the-colors-for-your-data-visualizations-50b2557fa335">Choosing Colors</a>&nbsp; [medium.com]</li>
+    <li><a href="https://nightingaledvs.com/how-to-choose-colors-for-your-data-visualizations/">Choosing Colors</a>&nbsp; [nightingaledvs.com]</li>
     <li><a href="https://venngage.com/blog/color-blind-friendly-palette/">Color Contrast and Color Blindness</a>&nbsp; [venngage.com]</li>
   </ul>
   <h3>Lossless representation</h3>
@@ -405,7 +409,7 @@ tags:
       </g>
     </g>
     </svg>
-    <table class="usa-sr-only" aria-describedby="source">
+    <table class="usa-sr-only" aria-describedby="source_bar">
       <caption>Top 5 most visited Nation Parks</caption>
       <thead>
         <tr>

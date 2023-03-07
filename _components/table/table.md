@@ -23,6 +23,8 @@ subnav:
   href: '#table-guidance'
 - text: Package
   href: '#table-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - table
   - zebra stripes
@@ -50,6 +52,8 @@ variants:
     description: Stacks the table cells on narrow screens and visually promotes the first cell of every row into a “header” for that group. Preferred for directories and other lists where the first cell of every row is a name. If you use this variant, you must ensure there is a data-label attribute on each cell of the table that matches the column header.
   - variant: "`usa-table--striped`"
     description: Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns.
+changelog:
+  key: component-table
 ---
 Tables help logically organize information and group like things together, and they [make it easier to understand complex content](https://www.plainlanguage.gov/guidelines/design/use-tables-to-make-complex-material-easier-to-understand/), as explained on plainlanguage.gov. They’re especially useful for showing long lists of sequential or structured content. Users read tables one row or column at a time, making it easy to digest and compare information.
 

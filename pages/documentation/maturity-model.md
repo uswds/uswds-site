@@ -13,6 +13,10 @@ subnav:
   href: '#level-3-use-uswds-code'
 - text: Maturity assessment resources
   href: '#maturity-assessment-resources'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: docs-maturity-model
 ---
 
 <div class="margin-top-6 border-top-05 border-primary padding-top-2">
@@ -29,11 +33,10 @@ subnav:
       </ul>
       </div>
     </div>
-    <div class="tablet:grid-col-5">
-      <div class="padding-2 tablet:padding-left-4">
-        <img src="{{ site.baseurl }}/img/maturity-model.svg" role="img" alt="A diagram showing the concentric circles of the USWDS maturity model, progressing from Principles on the outside, through Guidance, and finally to Code in the innermost circle.">
-      </div>
-    </div>
+    <figure class="site-figure tablet:grid-col-5 padding-2 tablet:padding-left-4">
+      <img src="{{ site.baseurl }}/img/maturity-model.svg" role="img" alt="A diagram showing the concentric circles of the USWDS maturity model, progressing from Principles on the outside, through Guidance, and finally to Code in the innermost circle.">
+      <figcaption class="site-figcaption">The USWDS maturity model shows how teams can grow their USWDS maturity by starting with Principles (the outermost circle) and progressing through Guidance (the middle circle) and Code (the innermost circle).</figcaption>
+    </figure>
   </div>
 </div>
 

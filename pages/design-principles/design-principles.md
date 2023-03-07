@@ -18,9 +18,6 @@ subnav:
   - text: Listen
     href: "#listen"
 ---
-
-<div></div>
-
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## Start with real user needs
@@ -242,7 +239,7 @@ The following are practical actions you can take:
 - [Example: USDA's design and brand guidelines](https://www.usda.gov/digital-strategy/design-and-brand) [usda.gov]
 - [Example: Centers for Medicare and Medicaid Services design system](https://design.cms.gov/) [design.cms.gov]
 - [Federal Front Door research findings](https://labs.usa.gov/) [labs.usa.gov]
-- [Sharing Quality Services Cross-Agency Performance goal](https://www.performance.gov/CAP/sharing-quality-services/) [performance.gov]
+- [Sharing Quality Services Cross-Agency Performance goal](https://trumpadministration.archives.performance.gov/CAP/sharing-quality-services/) [performance.gov]
 - [Eight Principles of Mobile-Friendliness](https://digital.gov/resources/mobile/principles/) [digital.gov]
 - [Test on real devices with the Federal Crowdsource Mobile Testing Program](https://digital.gov/services/mobile-application-testing-program/) [digital.gov]
 
@@ -303,10 +300,10 @@ The following are practical actions you can take:
 - [Office of Evaluation Sciences](https://oes.gsa.gov/) [oes.gsa.gov]
 - [Improving Customer Experience: Cross-Agency Priority Goal](https://www.performance.gov/CAP/cx/) [performance.gov]
 - [Tips for Starting Your Customer Experience Journey](https://www.performance.gov/tips-for-starting-your-customer-experience-journey/) [performance.gov]
-- [OMB Circular A-11 Section 280: Managing Customer Experience and Improving Service Delivery](https://www.performance.gov/cx/a11-280.pdf) [performance.gov]
+- [OMB Circular A-11 Section 280: Managing Customer Experience and Improving Service Delivery](https://www.performance.gov/cx/assets/files/a11_2021-FY22.pdf) [performance.gov]
 - [USDA's guidance on conducting a regular customer experience (or A-11) survey](https://www.usda.gov/digital-strategy/research/plays#research2) [usda.gov]
-- [Customer Experience Maturity Self-Assessment](https://www.performance.gov/cx/CXMaturitySelfAssessment.pdf) [performance.gov]
-- [Customer Experience Action Plan Template](https://www.performance.gov/cx/CXActionPlanTemplate.pptx) [performance.gov]
+- [Customer Experience Maturity Self-Assessment](https://www.performance.gov/cx/assets/files/CXMaturitySelfAssessment.pdf) [performance.gov]
+- [Customer Experience Action Plan Template](https://www.performance.gov/cx/assets/files/CXActionPlanTemplate.pptx) [performance.gov]
 - [Customer Experience Toolkit](https://digital.gov/resources/customer-experience-toolkit/) [digital.gov]
 - [Top tasks with Gerry McGovern [youtube.com]](https://www.youtube.com/watch?v=5llJ98UkXYI) [digital.gov]
 

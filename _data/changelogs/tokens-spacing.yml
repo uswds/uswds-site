@@ -1,0 +1,43 @@
+title: Spacing tokens
+type: token
+changelogURL:
+items:
+  - date: 2023-02-24
+    summary: Corrected alternate token name for token `05`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1949
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2022-03-11
+    summary: Reverted value of `tablet-lg` to `880px`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1474
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2022-02-24
+    summary: Updated value of `tablet-lg` from `880px` to `800px`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1455
+    githubRepo: uswds-site
+    versionUswds:

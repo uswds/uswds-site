@@ -88,7 +88,7 @@ contents:
     default: "false"
     type: family
   - name: mono
-    subsection: font family token
+    subsection: font-family token
     description: Project monospaced font. Set to `false` if unused.
     var: $theme-font-type-mono
     default: '"roboto-mono"'
@@ -442,7 +442,7 @@ contents:
     default: '"sm"'
     type: size
   - name: Body line height
-    description:
+    description: Use theme tokens when possible.
     var: $theme-body-line-height
     default: 5
     type: line-height

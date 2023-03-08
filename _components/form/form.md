@@ -17,9 +17,13 @@ subnav:
   href: '#general-accessibility-guidance-for-forms'
 - text: Known issues with screen readers
   href: '#known-issues-with-screen-readers'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: component-form
 ---
 
-<div class="site-note"><strong>Note:</strong> If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</div>
+<div class="site-note"><strong>Note:</strong> If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines on the “Form Templates” page</a>.</div>
 
 {% include accessibility.html %}
 

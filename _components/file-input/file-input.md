@@ -2,7 +2,7 @@
 category: Components
 component:
   status: ready
-  package: usa-form-controls
+  package: usa-file-input
   dependencies:
 lead: File input allows users to attach one or multiple files.
 permalink: /components/file-input/
@@ -18,6 +18,8 @@ subnav:
   href: '#file-input-guidance'
 - text: Package
   href: '#file-input-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - document
   - upload
@@ -26,4 +28,6 @@ tags:
   - form controls
   - input
 title: File input
+changelog:
+  key: component-file-input
 ---

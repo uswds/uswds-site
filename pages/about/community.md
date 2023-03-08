@@ -7,6 +7,11 @@ redirect_from:
 layout: styleguide
 category: About
 lead: We have an active open source community of content specialists, designers, engineers, and other technologists. Contributors support dozens of agencies and hundreds of websites across the federal government.
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: about-community
 ---
 
 ## Join the community
@@ -16,7 +21,7 @@ Join us in the `#uswds-public` channel in Slack by [filling out our form](https:
 
 <a href="https://chat.18f.gov/" class="usa-button width-card-lg margin-top-2">Join the USWDS Community</a>
 
-If you're having trouble, email [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov?subject=Join%20USWDS%20Slack) with _Join the USWDS Community_ in the subject.
+If you're having trouble, email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}?subject=Join%20USWDS%20Slack) with _Join the USWDS Community_ in the subject.
 
 
 ## Contribute to USWDS
@@ -27,7 +32,7 @@ There are several ways to contribute to USWDS. Participating in the community is
 </p>
 
 ## Community Conduct
-When participating in this community, you must follow [Digital.gov Etiquette Guidelines](https://digital.gov/communities/manage-your-subscription/). Respect your peers, use plain language, be patient, practice constructive criticism, and stay organized. By participating in the community, you agree to abide by the [TTS Code of Conduct](https://handbook.tts.gsa.gov/code-of-conduct/).
+By voluntarily participating in this community, you are agreeing to abide by the  [Digital.gov Community Guidelines](https://digital.gov/communities/community-guidelines/) and the [TTS Code of Conduct](https://handbook.tts.gsa.gov/code-of-conduct/). Respect your peers, use plain language, be patient, practice constructive criticism, and stay organized.
 
 ## Community Managers
 
@@ -38,14 +43,5 @@ When participating in this community, you must follow [Digital.gov Etiquette Gui
       <a href="https://digital.gov/authors/dan-williams/">Dan Williams</a>
     </h3>
     <p class="margin-top-0">GSA | Portland, OR</p>
-  </div>
-</div>
-<div class="usa-media-block flex-align-center">
-  <img class="circle-5 usa-media-block__img" src="https://github.com/afeijoo.png?size=40" alt="">
-  <div class="usa-media-block__body">
-    <h3 class="margin-bottom-0">
-      <a href="https://digital.gov/authors/dan-williams/">Ammie Farraj Feijoo</a>
-    </h3>
-    <p class="margin-top-0">GSA | Washington, DC</p>
   </div>
 </div>

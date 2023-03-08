@@ -15,6 +15,11 @@ subnav:
   data: implementations
   href: ['#%', name]
   text: name
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: docs-implementations
 ---
 
 If you have a new implementation to add to this list, please [open an issue] on GitHub or [send us an email] with the following information:
@@ -72,4 +77,4 @@ If you have a new implementation to add to this list, please [open an issue] on 
 </div>
 
 [open an issue]: https://github.com/uswds/uswds-site/issues/new
-[send us an email]: mailto:uswds@support.digitalgov.gov
+[send us an email]: mailto:{{ site.uswds_email }}

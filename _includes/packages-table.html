@@ -1,0 +1,59 @@
+{% assign packages = site.data.packages %}
+{% assign col1Title = 'Package name' %}
+{% assign col1Width = 'flex-2' %}
+{% assign col2Title = 'Gzip size' %}
+{% assign col2Width = 'flex-1' %}
+{% assign col3Title = 'Full size' %}
+{% assign col3Width = 'flex-1' %}
+{% assign col4Title = 'Source size' %}
+{% assign col4Width = 'flex-1' %}
+{% assign col5Title = 'Dependencies' %}
+{% assign col5Width = 'flex-4' %}
+
+<table class="usa-table--borderless site-table-responsive site-table-simple margin-top-4">
+  <thead>
+    <tr>
+      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
+      <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
+      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
+      <th scope="col" class="{{ col5Width }}">{{ col5Title }}</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for package in packages %}
+    <tr>
+      <td data-title="{{ col1Title }}" class="{{ col1Width }}">
+        <span class="font-lang-2xs">
+          {{ package.name }}
+        </span>
+      </td>
+      <td data-title="{{ col2Title }}" class="{{ col2Width }}">
+        <span class="">
+          {{ package.fullSize | times: 0.185 }} KB
+        </span>
+      </td>
+      <td data-title="{{ col3Title }}" class="{{ col3Width }}">
+        <span class="">
+          {{ package.fullSize }} KB
+        </span>
+      </td>
+      <td data-title="{{ col4Title }}" class="{{ col4Width }}">
+        <span>
+          {{ package.sourceSize }} KB
+        </span>
+      </td>
+      <td data-title="{{ col5Title }}" class="{{ col5Width }}">
+        <span>
+          {% if package.dependencies != null %}
+            {% assign deps = package.dependencies | sort %}
+          {% else %}
+            {% assign deps = "—" %}
+          {% endif %}
+          {% for dep in deps %}<span class="text-no-wrap">{{ dep }}</span>{% if forloop.last != true %}, {% endif %}{% endfor %}
+        </span>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

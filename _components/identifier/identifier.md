@@ -19,12 +19,16 @@ subnav:
   href: '#identifier-guidance'
 - text: Package
   href: '#identifier-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - footer
   - required
   - links
   - indentifier
   - logo
+changelog:
+  key: component-identifier
 ---
 
 {:.site-note}

@@ -1,3 +1,4 @@
-- The examples demonstrate how to use button elements. To use a button style on a link, add the `usa-button` class to your link.
+- The component preview and component code demonstrate how to use button elements. To use a button style on a link, add the `usa-button` class to your link.
 - To use a different style button on your link, add button variant classes in addition to `usa-button`.
 - Use the browser-native `disabled` attribute for any disabled button. Don't use `usa-button--disabled`, which is intended only for debugging and prototyping.
+- Always set the `type` attribute to define the purpose of the button. The type attribute can accept three values: `submit`, `button`, and `reset`. If no type attribute is defined, the button will behave as a `submit` button.

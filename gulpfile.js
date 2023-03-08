@@ -1,55 +1,64 @@
+const gulp = require("gulp");
+const uswds = require("@uswds/compile");
+
 // Bring in individual Gulp configurations
 //
+const build = require("./config/gulp/build");
+const images = require("./config/gulp/images");
+const js = require("./config/gulp/javascript");
+const sass = require("./config/gulp/sass");
 
-require( './config/gulp/flags' );
-require( './config/gulp/fonts' );
-require( './config/gulp/images' );
-require( './config/gulp/javascript' );
-require( './config/gulp/sass' );
-require( './config/gulp/build' );
+/**
+ * USWDS Compile Settings
+ */
+uswds.settings.version = 3;
 
-var gulp  = require( 'gulp' );
-var dutil = require( './config/gulp/doc-util' );
+uswds.paths.src.projectIcons = "./img/site-sprite";
 
-gulp.task( 'default', function ( done ) {
+uswds.paths.dist.theme = "./css";
+uswds.paths.dist.img = "./assets/img";
+uswds.paths.dist.fonts = "./assets/fonts";
+uswds.paths.dist.js = "./assets/js/vendor";
+uswds.paths.dist.css = "./assets/css";
 
-  dutil.logIntroduction();
+/**
+ * USWDS Compile tasks
+ */
+exports.init = uswds.init;
+exports.compile = uswds.compile;
+exports.compileIcons = uswds.compileIcons;
+exports.copyFonts = uswds.copyFonts;
+exports.copyAssets = uswds.copyAssets;
+exports.compileSass = uswds.compileSass;
+exports.watchSass = uswds.watch;
 
-  dutil.logHelp(
-    'gulp',
-    'This task will output the currently supported automation tasks. ( e.g. This help message. )'
-  );
+/**
+ * Custom tasks
+ */
+exports.cleanAssets = build.cleanAssets;
+exports.copyDocImages = images.default;
 
-  dutil.logHelp(
-    'gulp build',
-    'This task is an alias for running `gulp clean-assets javascript images sass fonts` and is the recommended task to build all assets.'
-  );
+exports.js = gulp.series(js.lint, js.build);
+exports.lintJS = js.lint;
+exports.watchJS = js.watch;
 
-  dutil.logCommand(
-    'gulp sass',
-    'This task will compile all the Sass files into the assets directory.'
-  );
+exports.sassProd = sass.prodStyles;
+exports.sassProdNext = sass.prodNextStyles;
+exports.sassProdStyles = gulp.parallel(this.sassProd, this.sassProdNext);
+exports.sass = gulp.series(sass.lint, uswds.compileSass, this.sassProdStyles);
 
-  dutil.logCommand(
-    'gulp javascript',
-    'This task will compile all the JavaScript files into the assets directory.'
-  );
+exports.lintSass = sass.lint;
 
-  dutil.logCommand(
-    'gulp images',
-    'This task will copy all the image files into the assets directory.'
-  );
+exports.buildUSWDSComponents = build.buildUSWDSComponents;
 
-  dutil.logCommand(
-    'gulp fonts',
-    'This task will copy all the font files into the assets directory.'
-  );
+exports.build = gulp.series(
+  build.cleanAssets,
+  build.buildUSWDSComponents,
+  uswds.copyAssets,
+  uswds.compile,
+  this.js,
+  this.copyDocImages,
+  this.sassProdStyles
+);
 
-  dutil.logCommand(
-    'gulp html',
-    'This task generates the code snippets based off of uswds package html files.'
-  );
-
-  done();
-
-} );
+exports.watch = gulp.parallel(this.watchSass, this.watchJS);

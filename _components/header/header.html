@@ -1,7 +1,7 @@
 ---
 component:
   status: ready
-  package: usa-tk
+  package: usa-header
   dependencies:
 permalink: /components/header/
 redirect_from:
@@ -11,7 +11,7 @@ layout: styleguide
 title: Header
 type: component
 category: Components
-lead: 'A header helps users identify where they are and provide a quick, organized way to reach the main sections of a website.'
+lead: 'A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website.'
 subnav:
   - text: Basic header
     href: '#basic-header'
@@ -21,17 +21,21 @@ subnav:
     href: '#extended-header'
   - text: Extended header with megamenu
     href: '#extended-header-with-megamenu'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: component-header
 ---
 
-<h2>When to use the header component</h2>
+<h2>When to use a header component</h2>
 <ul class="usa-content-list">
   <li>
     <strong>Use the gov banner on all federal websites.</strong> We recommend
-    that all federal government sites include the “official government website”
+    that all federal government websites include the “official government website”
     banner and a logo or site name.
   </li>
   <li>
-    <strong>Most websites require header navigation.</strong> Most sites will
+    <strong>Most websites require header navigation.</strong> Most websites
     require some form of navigation to help users find the information they
     need. While a horizontal navigation bar is just one option for navigation
     design, it is one of the most visible and familiar ways of helping users
@@ -68,7 +72,7 @@ subnav:
     the right.
   </li>
   <li>
-    <strong>Avoid org structure navigation.</strong> Don’t model your navigation
+    <strong>Avoid org-structure navigation.</strong> Don’t model your navigation
     after your agency’s org structure. Instead, structure it according to the
     tasks and information your users most frequently need to access.
   </li>
@@ -78,7 +82,7 @@ subnav:
   </li>
   <li>
     <strong>Always research your navigation.</strong> Conduct research with your
-    users and base decisions about your site’s information architecture and
+    users, and base decisions about your site’s information architecture and
     navigation structure on your findings. Continue researching to confirm that
     updates meet your users’ needs.
   </li>
@@ -89,14 +93,11 @@ subnav:
   <li>
     Include skip navigation links to allow users with screen readers to bypass
     long navigation lists. Make sure you include an id at the beginning of your
-    main content and that it matches the skipnav link. Find more information
-    here:
-    <a href="http://webaim.org/techniques/skipnav/"
-      >http://webaim.org/techniques/skipnav/.</a
-    >
+    main content and that it matches the skipnav link. Find more <a href="http://webaim.org/techniques/skipnav/">information on these links</a> at WebAIM.
+
   </li>
   <li>
-    Include tab focus for all top-level navigation navigation items — this will
+    Include tab focus for all top-level navigation navigation items — this feature will
     allow keyboard-reliant users to easily navigate interactive items.
   </li>
   <li>
@@ -109,7 +110,7 @@ subnav:
     with keyboard navigation.
   </li>
   <li>
-    USWDS uses semantic header and nav elements with
+    The Design System uses semantic header and nav elements with
     <code>role="banner"</code> and <code>role="navigation"</code> respectively.
     <code>role="banner"</code> is your masthead.
   </li>
@@ -119,7 +120,7 @@ subnav:
     page.
   </li>
   <li>
-    Use lists for your nav links — this enables screen readers to decipher
+    Use lists for your nav links — doing so enables screen readers to decipher
     header contents.
   </li>
   <li>
@@ -137,9 +138,9 @@ subnav:
 
 <h2>The “official government website” banner</h2>
 <p>
-  We recommend that all federal government sites include the “official
+  We recommend that all federal government websites include the “official
   government website” banner and a logo or site name. The banner clearly
-  identifies your site as part of the United States government, while a logo or
+  identifies your website as part of the United States government, while a logo or
   site name helps visitors understand who you are and what you do.
 </p>
 <h3>Building with HTTPS</h3>
@@ -157,7 +158,7 @@ subnav:
   <a href="https://https.cio.gov/">https://https.cio.gov/.</a>
 </p>
 
-<h2>References</h2>
+<h2>Further reading</h2>
 <ul>
   <li>
     <a href="https://www.nngroup.com/articles/menu-design/"
@@ -166,8 +167,8 @@ subnav:
   </li>
   <li>
     <a
-      href="https://www.usertesting.com/blog/2015/03/19/site-navigation-tree-testing/"
-      >https://www.usertesting.com/blog/2015/03/19/site-navigation-tree-testing/</a
+      href="https://www.usertesting.com/blog/site-navigation-tree-testing"
+      >https://www.usertesting.com/blog/site-navigation-tree-testing</a
     >
   </li>
 </ul>
@@ -178,5 +179,6 @@ subnav:
 {% include settings-table-simple.html
   settings=settings.contents
 %}
+{% include init-note.html %}
 
 {% include child-sections.html parent='Header' %}

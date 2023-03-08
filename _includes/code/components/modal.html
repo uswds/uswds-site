@@ -1,5 +1,5 @@
 {% capture modal %}
-  {% fractal_component modal %}
-  {% fractal_component modal--large-modal %}
-  {% fractal_component modal--forced-action %}
+  {% library_component usa-modal %}
+  {% library_component usa-modal~large %}
+  {% library_component usa-modal~forced-action %}
 {% endcapture %}{{ modal | strip }}

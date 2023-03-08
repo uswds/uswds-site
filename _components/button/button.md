@@ -38,4 +38,8 @@ subnav:
   href: '#button-guidance'
 - text: Package
   href: '#button-package'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: component-button
 ---

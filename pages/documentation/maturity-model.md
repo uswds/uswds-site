@@ -13,6 +13,10 @@ subnav:
   href: '#level-3-use-uswds-code'
 - text: Maturity assessment resources
   href: '#maturity-assessment-resources'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: docs-maturity-model
 ---
 
 <div class="margin-top-6 border-top-05 border-primary padding-top-2">
@@ -29,11 +33,10 @@ subnav:
       </ul>
       </div>
     </div>
-    <div class="tablet:grid-col-5">
-      <div class="padding-2 tablet:padding-left-4">
-        <img src="{{ site.baseurl }}/img/maturity-model.svg" role="img" alt="A diagram showing the concentric circles of the USWDS maturity model, progressing from Principles on the outside, through Guidance, and finally to Code in the innermost circle.">
-      </div>
-    </div>
+    <figure class="site-figure tablet:grid-col-5 padding-2 tablet:padding-left-4">
+      <img src="{{ site.baseurl }}/img/maturity-model.svg" role="img" alt="A diagram showing the concentric circles of the USWDS maturity model, progressing from Principles on the outside, through Guidance, and finally to Code in the innermost circle.">
+      <figcaption class="site-figcaption">The USWDS maturity model shows how teams can grow their USWDS maturity by starting with Principles (the outermost circle) and progressing through Guidance (the middle circle) and Code (the innermost circle).</figcaption>
+    </figure>
   </div>
 </div>
 
@@ -118,17 +121,17 @@ Government websites include components that aren’t included in USWDS yet. Use 
 
 #### 1: Add USWDS code and adjust settings.
 
-- Add USWDS to your project [with NPM]({{ site.baseurl }}/documentation/developers/#install-using-npm) or by [downloading the source from Github]({{ site.baseurl }}/documentation/developers/#download-and-install).
-- Compile the Sass source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) or by using [uswds-gulp](https://github.com/uswds/uswds-gulp) available via GitHub.
-- Compile the Javascript source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#js-customization) or [download a precompiled version]({{ site.baseurl }}/documentation/developers/#download-and-install).
+- Add USWDS to your project [with NPM]({{ site.baseurl }}/documentation/developers/#install-using-node-and-npm) or by [downloading the source from Github]({{ site.baseurl }}/documentation/developers/#install-the-package-directly-from-github).
+- Compile the Sass source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) or by using [uswds-compile](https://github.com/uswds/uswds-compile) available via GitHub.
+- Compile the Javascript source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#js-customization) or [download a precompiled version]({{ site.baseurl }}/documentation/developers/#install-the-package-directly-from-github).
 - Add USWDS Javascript to your page templates.
 - Add USWDS CSS to your page templates.
 
 #### 2: Use USWDS design tokens in all stylesheets.
 
-- Install USWDS source Sass files using [the instructions]({{ site.baseurl }}/documentation/developers/#download-and-install) on the USWDS website.
+- Install USWDS source Sass files using [the instructions]({{ site.baseurl }}/documentation/developers/#install-the-package-directly-from-github) on the USWDS website.
 - Include USWDS Sass before including existing project source files. See [Sass an theme settings]({{ site.baseurl }}/documentation/developers/#sass-and-theme-settings).
-- Convert existing values to tokenized values. Use [the conversion tables](/documentation/migration/#integrating-tokens) to convert existing values to USWDS tokens.
+- Convert existing values to tokenized values. Use [the conversion tables]({{ site.baseurl }}/documentation/migration-v2/#integrating-tokens) to convert existing values to USWDS tokens.
 - Use USWDS [tokens]({{ site.baseurl }}/design-tokens/), functions (see [font-family functions]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example), and utility mixins (see [font-family utility mixins]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example) in existing component code.
 
 #### 3: Replace existing components with USWDS components.
@@ -174,7 +177,7 @@ understanding and adopting the design principles and individual components.
 This is a work in progress, and we want your input.
 - Share your feedback and collaborate with the [USWDS community](https://digital.gov/communities/uswds/)
 on the [#uswds-public](https://app.slack.com/client/T025AQGAN/C3F14AHSQ){:target="_blank" rel="noopener"} Slack channel.
-- If you can't access slack, email us your feedback directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov)
+- If you can't access slack, email us your feedback directly at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }})
 
 If you’re new to the maturity model, listen to [USWDS January Monthly Call](https://digital.gov/event/2020/01/16/uswds-january-monthly-call/)
 on the using the USWDS maturity model.

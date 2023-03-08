@@ -18,6 +18,8 @@ subnav:
   href: '#character-count-guidance'
 - text: Package
   href: '#character-count-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - form
   - forms
@@ -26,4 +28,6 @@ tags:
   - validation
 title: Character count
 type: component
+changelog:
+  key: component-character-count
 ---

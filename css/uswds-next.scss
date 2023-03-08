@@ -1,23 +1,14 @@
 // Imports
-@import "variables";
-@import "uswds-theme-general";
-@import "uswds-theme-typography";
-@import "uswds-theme-spacing";
-@import "uswds-theme-color";
-@import "uswds-theme-utilities";
-
-// Settings
-// -------------------------------------
-@import "settings/settings-general";
-@import "settings/settings-typography";
-@import "settings/settings-color";
-@import "settings/settings-spacing";
-@import "settings/settings-utilities";
-@import "settings/settings-components";
+@import "./settings/variables";
+@import "./settings/uswds-theme-general";
+@import "./settings/uswds-theme-typography";
+@import "./settings/uswds-theme-spacing";
+@import "./settings/uswds-theme-color";
+@import "./settings/uswds-theme-utilities";
 
 // Tools
 // -------------------------------------
-@import "packages/required";
+@import "uswds/packages/uswds-core";
 
 $pink-20v: #f8a897;
 $pink-50v: #bc5843;
@@ -100,11 +91,11 @@ html {
 }
 
 // Header
-.next-site-header .site-header-navbar {
+.next-site-header {
   background-color: $gray-80-next;
 }
 
-.site-header-dark .site-logo .usa-logo__text::before {
+.site-header--dark .site-logo__text::before {
   filter: brightness(20);
 }
 
@@ -710,7 +701,7 @@ html {
     }
   }
 
-  .next-opportunity__need__need-img {
+  .next-opportunity__need--need-img {
     @include u-square(2);
     margin-right: units(2);
     @include at-media("desktop") {
@@ -718,7 +709,7 @@ html {
     }
   }
 
-  .next-opportunity__need__need-label {
+  .next-opportunity__need--need-label {
     font-size: size("lang", 6);
     font-weight: $theme-font-weight-semibold;
     margin-right: units(4);

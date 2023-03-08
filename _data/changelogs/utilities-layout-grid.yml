@@ -1,0 +1,30 @@
+title: Layout grid utility
+type: utility
+changelogURL:
+items:
+  - date: 2022-03-11
+    summary: Updated value of `tablet-lg` from `800px` to `880px`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 1474
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2021-12-02
+    summary: Updated value of `desktop` from `1040px` to `1024px`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1361
+    githubRepo: uswds-site
+    versionUswds:

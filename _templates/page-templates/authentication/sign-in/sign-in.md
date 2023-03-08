@@ -8,8 +8,8 @@ component:
     - /assets/img/templates/layout--sign-in.jpeg
     - /assets/img/templates/layout--sign-in-lang-es.jpeg
   demo:
-    - sign-in--default
-    - sign-in--lang-es
+    - pages-sign-in--sign-in-page
+    - pages-sign-in--sign-in-page-spanish
   variants:
     - Sign-in
     - Sign-in (Spanish)
@@ -27,6 +27,10 @@ subnav:
     href: '#sign-in-code'
   - text: Guidance
     href: '#sign-in-guidance'
+  - text: Latest updates
+    href: '#changelog'
 title: Sign-in
 type: template
+changelog:
+  key: template-sign-in
 ---

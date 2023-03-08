@@ -308,7 +308,7 @@
       subsection: theme color token
       usage: Use grades 60-90.
       var: $theme-color-accent-warm-darker
-      default: "'orange-60v'"
+      default: "'orange-60'"
       kind: color
     - name: accent-warm-lightest
       subsection: theme color token
@@ -467,13 +467,13 @@
       subsection: state color token
       usage: Use grades 60-70.
       var: $theme-color-success-dark
-      default: "'green-cool-50'"
+      default: "'green-cool-50v'"
       kind: color
     - name: success-darker
       subsection: state color token
       usage: Use grades 70-80.
       var: $theme-color-success-darker
-      default: "'green-cool-60'"
+      default: "'green-cool-60v'"
       kind: color
 
     - name: Info color family
@@ -789,7 +789,7 @@
       subsection: Modal max width (lg)
       usage: Maximum width of large modal window.
       var: $theme-modal-lg-max-width
-      default: "800px"
+      default: "880px"
       kind: px
     - name: Modal
       subsection: Modal max width (lg inner content)
@@ -811,6 +811,12 @@
       var: $theme-footer-font-family
       default: "'body'"
       kind: family
+    - name: Footer
+      subsection: Footer max width
+      usage: Maximum width of footer container.
+      var: $theme-footer-max-width
+      default: "'desktop'"
+      kind: units
 
     - name: Checkbox
       section: true
@@ -1562,12 +1568,12 @@
       var: $utilities-use-important
       default: "false"
       kind: boolean
-    - name: Output all utilities
+    - name: Utilities uselist
       usage: |
-        Output all utilities regardless of any individual utility’s output setting.
-      var: $output-all-utilities
-      default: "true"
-      kind: boolean
+        Include a list of all utility modules to output. Ex: `("align-tems", "border", "margion", "padding")`. `default` includes all utilities.
+      var: $output-these-utilities
+      default: "default"
+      kind: list
     - name: Utility breakpoints
       usage: |
         Set which mobile-first breakpoints are output for the utilities.
@@ -1622,8 +1628,8 @@
 
     - name: "Utility settings"
       usage: |
-        Control the output of a [utility] and its responsive and state variants.
-      var: $[utility]-settings
+        Control the output of a [utility-module] and its responsive and state variants.
+      var: $[utility-module]-settings
       default:
       kind: map
       map:
@@ -1654,14 +1660,14 @@
     - name: "Utility palettes"
       usage: |
         Utilities output with the values set in the palettes list.
-      var: $[utility]-palettes
-      default: "'palette-[utility]-default'"
+      var: $[utility-module]-palettes
+      default: "'palette-[utility-module]-default'"
       kind: palettes
     - name: "Utility manual values"
       usage: |
         Utilities output with the tokens and values set in the manual values map.
-      var: $[utility]-palettes
-      default: "'palette-[utility]-manual-values'"
+      var: $[utility-module]-palettes
+      default: "'palette-[utility-module]-manual-values'"
       kind: map
       map:
         - key: "[token name]"

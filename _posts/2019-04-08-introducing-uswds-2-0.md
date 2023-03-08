@@ -4,8 +4,7 @@ tags:
 - updates
 category: About
 author: Dan O. Williams, Maya Benari
-meta:
-  og:image: /img/introducing-uswds-2-0/feature-image.jpg
+image: /img/introducing-uswds-2-0/feature-image.jpg
 excerpt: Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.
 ---
 
@@ -18,7 +17,7 @@ Today, we’re launching [U.S. Web Design System 2.0](https://v2.designsystem.di
 
 USWDS is a library of code, tools, and guidance to help government teams design and build fast, accessible, mobile-friendly government websites backed by user research and modern best practices. USWDS 2.0 is an important update to the design system — it introduces a powerful toolkit of new features to help make creating useful, consistent digital services faster, simpler, and more fun.
 
-We’re proud that USWDS currently powers nearly [200 federal websites](https://v2.designsystem.digital.gov/getting-started/showcase/all/) and we’re committed to making the design system work better for _any_ federal website. With USWDS 2.0 we’re introducing a design system that’s built to grow with your needs — to help teams build better, more engaging websites for the American public.
+We’re proud that USWDS currently powers nearly [200 federal websites]({{ site.baseurl }}/documentation/showcase/) and we’re committed to making the design system work better for _any_ federal website. With USWDS 2.0 we’re introducing a design system that’s built to grow with your needs — to help teams build better, more engaging websites for the American public.
 
 Over the last two years, we’ve listened to the designers and developers using USWDS. We’ve conducted interviews with project teams, listened to public feedback, and paid attention to the issues in our [GitHub repos](https://github.com/uswds/). We’ve conducted our own research on how designers and developers communicate with each other, and the tools they use to prototype. This research and feedback shaped our priorities for USWDS 2.0:
 
@@ -189,7 +188,7 @@ USWDS 2.0 is built to grow and designed to adapt. It exists to help teams build 
 - Prepared to grow and adapt to user needs and industry best practices
 
 {:.margin-top-6}
-Like any true 2.0, this is a living product. We’ll continue to test our decisions and assumptions with real-world feedback as it develops and evolves. We encourage you to explore USWDS 2.0, contribute your own code and ideas, and leave feedback on [GitHub](https://github.com/uswds/uswds/issues), [email](mailto:uswds@support.digitalgov.gov), or our [Slack channel](https://chat.18f.gov/) (sign-up via Google Forms). And join our new mailing list by sending an email to [uswds-subscribe-request@listserv.gsa.gov](mailto:uswds-subscribe-request@listserv.gsa.gov). We’ll use your input to continuously improve the system with ongoing regular releases. We’re listening.
+Like any true 2.0, this is a living product. We’ll continue to test our decisions and assumptions with real-world feedback as it develops and evolves. We encourage you to explore USWDS 2.0, contribute your own code and ideas, and leave feedback on [GitHub](https://github.com/uswds/uswds/issues), [email](mailto:{{ site.uswds_email }}), or our [Slack channel](https://chat.18f.gov/) (sign-up via Google Forms). And join our new mailing list by sending an email to [uswds-subscribe-request@listserv.gsa.gov](mailto:uswds-subscribe-request@listserv.gsa.gov). We’ll use your input to continuously improve the system with ongoing regular releases. We’re listening.
 
 ---
 

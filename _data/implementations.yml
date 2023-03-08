@@ -1,3 +1,11 @@
+- name: ngx-uswds
+  distribution: Angular
+  url: https://github.com/GSA/ngx-uswds
+  author:
+    name: GSA
+    url: https://github.com/gsa
+  notes: "This package provides Angular integration with USWDS."
+
 - name: django-designstandards
   distribution: Django
   url: https://github.com/department-of-veterans-affairs/django-designstandards
@@ -49,7 +57,6 @@
     url: https://www.drupal.org/u/smustgrave
   notes: "USWDS components as paragraph bundles. Includes accordion, card, alert, process list, summary box, step indicator, and layout grid options."
 
-
 - name: uswds-jekyll
   distribution: Jekyll
   url: https://github.com/18f/uswds-jekyll
@@ -87,6 +94,15 @@
     name: Abdul Ahad Monty
     url: https://www.nuget.org/profiles/montyaahad
   notes: "The NuGet Package has been created to access the library easily from Visual Studio [NuGet Package Manager](https://www.nuget.org/)."
+
+- name: USWDS components
+  distribution: Rails
+  url: https://github.com/TalariaSoftware/uswds_components
+  status:
+  author:
+    name: Damien Burke (Talaria Software)
+    url: https://talariasoftware.com/
+  notes: "An implementation of USWDS for Rails applications using [View Components](https://viewcomponent.org/). [Demo](https://uswdscomponents.herokuapp.com/rails/view_components)"
 
 - name: uswds-rails
   distribution: Rails gem
@@ -167,3 +183,13 @@
     name: Brian Hurst
     url: https://github.com/hursey013
   notes: "A Tailwind CSS plugin for adding U.S. Web Design System design tokens to supported Tailwind utilities."
+  
+- name: Vue USWDS
+  distribution: Vue.js
+  id: vue-uswds
+  url: https://github.com/patrickcate/vue-uswds
+  author:
+    name: Patrick Cate
+    url: https://github.com/patrickcate
+  version:
+  notes: "A Vue.js implementation of the U.S. Web Design System."

@@ -8,8 +8,8 @@ component:
     - /assets/img/templates/layout--sign-in-multiple.jpeg
     - /assets/img/templates/layout--sign-in-multiple-lang-es.jpeg
   demo:
-    - sign-in--multiple
-    - sign-in--lang-es-multiple
+    - pages-sign-in--multiple-sign-in-page
+    - pages-sign-in--multiple-sign-in-page-spanish
   variants:
     - Multiple sign-in
     - Multiple sign-in (Spanish)
@@ -27,8 +27,12 @@ subnav:
     href: '#multiple-sign-in-options-code'
   - text: Guidance
     href: '#multiple-sign-in-options-guidance'
+  - text: Latest updates
+    href: '#changelog'
 title: Multiple sign-in options
 type: template
+changelog:
+  key: template-multiple-sign-in
 ---
 If you have multiple sign-in options, use this template to guide users to access their account through a prioritized option.
 

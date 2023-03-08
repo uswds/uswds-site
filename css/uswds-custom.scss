@@ -1,21 +1,12 @@
 // Imports
-@import "variables";
-@import "uswds-theme-general";
-@import "uswds-theme-typography";
-@import "uswds-theme-spacing";
-@import "uswds-theme-color";
-@import "uswds-theme-utilities";
-
-// Settings
-// -------------------------------------
-@import "settings/settings-general";
-@import "settings/settings-typography";
-@import "settings/settings-color";
-@import "settings/settings-spacing";
-@import "settings/settings-utilities";
-@import "settings/settings-components";
+@import "./settings/variables";
+@import "./settings/uswds-theme-general";
+@import "./settings/uswds-theme-typography";
+@import "./settings/uswds-theme-spacing";
+@import "./settings/uswds-theme-color";
+@import "./settings/uswds-theme-utilities";
 
 // Tools
 // -------------------------------------
-@import "packages/required";
+@import "uswds/packages/uswds-core";
 @import "uswds-theme-custom-styles";

@@ -34,7 +34,7 @@
     > GSA published a report, [Transforming the American Digital Experience [PDF, 18 pages]](https://designsystem.digital.gov/files/next/Transforming-the-American-digital-experience.pdf)
 
     **Example 2:**
-    > Download the [Revised 508 Standards Applicability Checklist [DOCX, 2 pages]](https://section508.gov/sites/default/files/Revised%20508%20Standards%20Applicability%20Checklist%20%287%29.docx)
+    > Download the [Revised 508 Standards Applicability Checklist [DOCX, 2 pages]](https://assets.section508.gov/files/508-standards-applicability-checklist.docx)
 
     **Example 3:**
     > Download the [USWDS 2.11.2 Design Kit for Sketch [ZIP, 13.3 MB]](https://github.com/uswds/uswds-for-designers/releases/download/v2.4.0/uswds-for-designers-v2.4.0.zip)
@@ -50,7 +50,7 @@
 - **Write out email and phone links.** For `mailto:` and `tel:` links, write out email addresses and phone numbers so users can read or copy this information without selecting the link.
 
     **Example:**
-    > Email us at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov)
+    > Email us at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }})
 
 - **Encode email and phone links.** Some browsers don’t automatically display a clickable link for email addresses or phone numbers, so encode email and phone links with `mailto:` and `tel:`. Include the country code in phone numbers to support international users.
 

@@ -3,37 +3,27 @@ permalink: /documentation/getting-started/developers/phase-three-customize/
 layout: styleguide
 title: "Phase 3: Customize"
 category: How to use USWDS
-lead: Customize the design system with settings and custom code
+lead: Customize the Design System with settings and custom code.
 type: docs
 subnav:
-  - text: "Resources"
-    href: "#resources"
-  - text: "Need installation help?"
-    href: "#need-installation-help"
-  - text: "Stay involved"
-    href: "#stay-involved"
-  - text: "Continue learning"
-    href: "#continue-learning"
-  - text: "Contribute to the codebase"
-    href: "#contribute-to-the-codebase"
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: docs-getting-started-devs-phase-3
 ---
 
-Now, equipped with building blocks that are accessible and cohesive, you can get creative. Here is an overview of what you need to know to customize your project: 
+Now, equipped with building blocks that are accessible and cohesive, you can get creative. This phase is an overview of what you need to know to customize your project.
+
+The U.S. Web Design System provides extensive support for theming via its [theme settings]({{ site.baseurl }}/documentation/settings). You'll update the `_uswds-theme.scss` file in `uswds.paths.dist.theme` so its `@use` directive includes a list of all the settings you're customizing for your project.
 
 {: .site-note }
-**Note:** If you use `uswds-gulp`, as detailed in Phase 2, this tool adds each of the files mentioned below to the directory you specify in `PROJECT_SASS_SRC`.
+**Note:** If you use `uswds-compile`, as detailed in Phase 2, this tool adds this file to the directory you specify in `uswds.paths.dist.theme`.
 
-USWDS provides extensive support for theming via its theme settings files. The critical files you'll need in your project are the following, which are located in `dist/scss/theme`:
--	`_uswds-theme-color.scss` — color settings
--	`_uswds-theme-components.scss` — component settings
--	`_uswds-theme-general.scss` — general settings
--	`_uswds-theme-spacing.scss` — spacing settings
-- `_uswds-theme-typography.scss` — typography settings
--	`_uswds-theme-utilities.scss` — utility class output settings
+Because `uswds.paths.dist.theme` will be updated the next time you run the `init` script, do this with caution! We don't recommend using `init` more than once.
 
 The [USWDS Settings page]({{ site.baseurl }}/documentation/settings/) describes each of the settings available in the settings files, as well as the values the settings accept. Most settings accept design tokens, visit the [Design tokens section]({{ site.baseurl }}/design-tokens/) of our website for more information on the available tokens for [color]({{ site.baseurl }}/design-tokens/color), [spacing units]({{ site.baseurl }}/design-tokens/spacing-units), [font size]({{ site.baseurl }}/design-tokens/typesetting/font-size/), and more.
 
-You can also use `uswds-gulp` to watch for any changes to your project Sass and recompile the CSS. Watch and recompile with the following command:
+You can also use `uswds-compile` to watch for any changes to your project Sass and recompile the CSS. Watch and recompile with the following command:
 
 {:.site-terminal}
 ```bash
@@ -42,33 +32,6 @@ npx gulp watch
 
 This command will run in your Terminal window. When you want to shut it down, use `control-c`.
 
-Our showcase illustrates how other teams of developers and designers have taken the building blocks USWDS provides and redesigned them for their brand and message.
+Our [showcase]({{ site.baseurl }}/documentation/showcase/) illustrates how other teams of developers and designers have taken the building blocks the Design System provides and redesigned them for their brand and message. We hope the possibilities inspire your team!
 
 We’re looking forward to hearing about your experience and seeing how USWDS's components look in your project!
-
-
-## Resources
-Now that you’ve gotten started, the following resources are available to help you stay in touch, to provide support as you continue with your projects, and to enable you to provide recommendations and feedback.
-
-### Need installation help?
-Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to [open an issue](https://github.com/uswds/uswds/issues) in GitHub.
-
-You can also email us directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov).
-
-### Stay involved
-USWDS is supported by an active, open-source community of engineers, content specialists, and designers.
-
-### Continue learning
-We regularly update USWDS. To stay informed of changes, tips, and tricks, join us for our monthly calls and/or [subscribe to Wave](https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS), our newsletter.
-
-### Contribute to the codebase
-For complete instructions on how to contribute code, please read [CONTRIBUTING.md](https://github.com/uswds/uswds/blob/develop/CONTRIBUTING.md). These instructions also include guidance on how to set up your own copy of the design system style guide website for development.
-
-If you would like to learn more about how we work, check out the [Workflow](https://github.com/uswds/uswds/wiki/Workflow) and [Issue label Glossary](https://github.com/uswds/uswds/wiki/Issue-label-glossary) pages on our wiki.
-
-If you have questions or concerns about our contributing workflow, feel free to [open an issue](https://github.com/uswds/uswds/issues), such as the following in GitHub:
-- Bug report — Report a bug and help USWDS improve.
-- Feature request — Suggest a new idea for the design system.
-- Report a security vulnerability — Report potential security issues. Review our [security policy](https://github.com/uswds/uswds/security/policy) for more details.
-
-You can also email us directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov).

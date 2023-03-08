@@ -7,23 +7,14 @@ layout: styleguide
 title: Website policies and notices
 category: About
 lead: Accessibility, linking, open source, privacy, and more
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: about-policies
 ---
 
 Read the U.S. Web Design System (USWDS) policies on accessibility, linking, open source, privacy, and more. These policies and notices apply only to our websites --- [designsystem.digital.gov](https://designsystem.digital.gov) and [public-sans.digital.gov](https://public-sans.digital.gov) --- and not any other government websites.
-
-## On this page
-
--   [Accessibility policy](#accessibility-policy) →
-
--   [Linking policy](#linking-policy) →
-
--   [Open source policy](#open-source-policy) →
-
--   [Privacy and security policies](#privacy-and-security-policies) →
-
--   [System requirements notice](#system-requirements-notice) →
-
--   [Required content notice](#required-content-notice) →
 
 ## Accessibility policy
 
@@ -47,7 +38,7 @@ For those familiar with Section 508 and WCAG, we aim for AA compliance across ou
 
 ### Accessibility feedback
 
-If you have a problem using our site, please email us at <uswds@support.digital.gov> and provide the URL (web address) of the material you tried to access, the problem you experienced, and your contact information. We'll attempt to provide the information you're seeking.
+If you have a problem using our site, please email us at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}) and provide the URL (web address) of the material you tried to access, the problem you experienced, and your contact information. We'll attempt to provide the information you're seeking.
 
 ### Additional accessibility help
 
@@ -131,7 +122,7 @@ We use open-source software and free or low cost, commercial application program
 
 ### Persistent cookies
 
-Like many websites, our websites use "persistent cookie" technology. A persistent cookie is a small text file that this website places on your web browser so that it can gather anonymous summary demographic information, and remember your browser when it is used to visit our site again later---kind of like cookie crumbs! (Hence the name.) These cookies uniquely identify a browser on a computer, but never a person.  In other words, if the same person uses Chrome and Internet Explorer, two unique browser cookies will be assigned, one for each browser, so that person will be counted as two different visitors because visits are based on browsers, not computers or persons. We use persistent cookies to enhance your experience on our site while also protecting your privacy:
+Like many websites, our websites use "persistent cookie" technology. A persistent cookie is a small text file that this website places on your web browser so that it can gather anonymous summary demographic information, and remember your browser when it is used to visit our site again later---kind of like cookie crumbs! (Hence the name.) These cookies uniquely identify a browser on a computer, but never a person.  In other words, if the same person uses Chrome and Firefox, two unique browser cookies will be assigned, one for each browser, so that person will be counted as two different visitors because visits are based on browsers, not computers or persons. We use persistent cookies to enhance your experience on our site while also protecting your privacy:
 
 -   To remember you when your browser comes back to the site, so we don't invite you to take our customer satisfaction survey every time you visit. 
 
@@ -185,7 +176,7 @@ Federal agencies are required to provide the following links to agency-level inf
 
 -   [Office of the Inspector General](https://www.gsaig.gov/)
 
--   [Open government initiatives](https://www.gsa.gov/governmentwide-initiatives/gsas-open-government-initiatives)
+-   [Open government initiatives](https://www.gsa.gov/node/78692)
 
 -   [Orders and directives](http://www.gsa.gov/portal/directives)
 

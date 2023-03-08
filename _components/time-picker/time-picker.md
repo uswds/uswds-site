@@ -21,6 +21,9 @@ implementation:
     - property: "`data-step`"
       element: .usa-time-picker
       description: The number of minutes between options. The minimum is `1` minute and the default is `30` minutes.
+    - property: "`value`"
+      element: .usa-input
+      description: The default value shown in the time picker.
   props:
     - property: "`data-filter`"
       element: .usa-time-picker
@@ -41,9 +44,13 @@ subnav:
   href: '#time-picker-guidance'
 - text: Package
   href: '#time-picker-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - input
   - box
   - form controls
   - schedule
+changelog:
+  key: component-time-picker
 ---

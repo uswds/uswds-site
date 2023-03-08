@@ -54,8 +54,12 @@ Any spacing value in utilities or component CSS should use the following spacing
         <tr>
           <th scope="row" data-title="Token" class="tablet:width-10">
             <span class="text-no-wrap padding-right-4">
+              <!-- Non-numeric tokens receive `converted` value from conversion.yml-->
               {% if converted %}
                 <code>{{ converted }}</code>,
+              <!-- Some non-numerics need explicit `conversion` value from spacing.yml -->
+              {% elsif item.conversion %}
+                <code>{{ item.conversion }}</code>,
               {% endif %}
               {% if is_number %}
                 <code>{{ item.token }}</code>

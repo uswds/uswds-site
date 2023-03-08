@@ -16,20 +16,6 @@ changelog:
 
 Read the U.S. Web Design System (USWDS) policies on accessibility, linking, open source, privacy, and more. These policies and notices apply only to our websites --- [designsystem.digital.gov](https://designsystem.digital.gov) and [public-sans.digital.gov](https://public-sans.digital.gov) --- and not any other government websites.
 
-## On this page
-
--   [Accessibility policy](#accessibility-policy) →
-
--   [Linking policy](#linking-policy) →
-
--   [Open source policy](#open-source-policy) →
-
--   [Privacy and security policies](#privacy-and-security-policies) →
-
--   [System requirements notice](#system-requirements-notice) →
-
--   [Required content notice](#required-content-notice) →
-
 ## Accessibility policy
 
 We strive to make our website as accessible and usable as possible. We do this by following [Section 508 laws and policies](https://section508.gov/manage/laws-and-policies) and the [Web Content Accessibility Guidelines (WCAG 2.1)](https://www.w3.org/TR/WCAG21/) produced by the World Wide Web Consortium (W3C, the web's governing body).

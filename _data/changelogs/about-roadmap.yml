@@ -1,0 +1,17 @@
+title: Product roadmap
+type: documentation
+changelogURL:
+items:
+  - date: 2022-06-16
+    summary: Simplified content and added link to the public roadmap on GitHub.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1654
+    githubRepo: uswds-site
+    versionUswds:

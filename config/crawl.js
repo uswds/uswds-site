@@ -11,7 +11,6 @@ const runServer = require("./static-server");
 const WARNING_PAGES = [
   "/documentation/code-guidelines/",
   "/whats-new/releases/",
-  "/getting-started/showcase/all/",
 ];
 const WARNING = chalk.yellow("Warning");
 const ERROR = chalk.red("Error");

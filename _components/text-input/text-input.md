@@ -19,6 +19,8 @@ subnav:
   href: '#text-input-guidance'
 - text: Package
   href: '#text-input-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - input
   - box
@@ -30,5 +32,6 @@ variants:
     description: The success state of the text input.
   - variant: "`usa-input--[width]`"
     description: Displays an input at a specific width. Accepts `2xs` (4ex), `xs` (7ex), `sm` or `small` (10ex), `md` or `medium` (20ex), `lg` (30ex), `xl` (40ex), and `2xl` (50ex).
+changelog:
+  key: component-text-input
 ---
-

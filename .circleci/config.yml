@@ -6,7 +6,7 @@ orbs:
 executors:
   my-executor:
     docker:
-      - image: cimg/ruby:3.0.4-browsers
+      - image: cimg/ruby:3.1.2-browsers
 
 jobs:
   install_ruby_deps:
@@ -16,7 +16,6 @@ jobs:
       - restore_cache:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}
-            - gem-cache
       - run:
           name: Install ruby dependencies
           command: |
@@ -63,11 +62,16 @@ jobs:
             - gem-cache-{{ checksum "Gemfile.lock" }}
             - gem-cache
       - run:
-          name: Build USWDS if needed
+          name: Build USWDS components if needed
           command: npm run build:uswds
       - run:
           name: Build site assets
           command: npm run build:all-assets
+      - run:
+          name: Build static site
+          command: |
+            bundle config set --local path '~/project/vendor/bundle'
+            bundle exec jekyll build
       - persist_to_workspace:
           root: ~/project
           paths:

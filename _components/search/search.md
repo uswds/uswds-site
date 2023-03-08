@@ -18,6 +18,8 @@ subnav:
   href: '#search-guidance'
 - text: Package
   href: '#search-package'
+- text: Latest updates
+  href: '#changelog'
 title: Search
 type: component
 tags:
@@ -32,5 +34,6 @@ variants:
     description: Search component with increased padding and font-size.
   - variant: "`.usa-search--small`"
     description: A compact variation of the search. Uses a magnifying glass icon for the submit button.
+changelog:
+  key: component-search
 ---
-

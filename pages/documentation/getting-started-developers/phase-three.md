@@ -5,6 +5,11 @@ title: "Phase 3: Customize"
 category: How to use USWDS
 lead: Customize the Design System with settings and custom code.
 type: docs
+subnav:
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: docs-getting-started-devs-phase-3
 ---
 
 Now, equipped with building blocks that are accessible and cohesive, you can get creative. This phase is an overview of what you need to know to customize your project.
@@ -27,6 +32,6 @@ npx gulp watch
 
 This command will run in your Terminal window. When you want to shut it down, use `control-c`.
 
-Our [showcase](https://designsystem.digital.gov/getting-started/showcase/all/) illustrates how other teams of developers and designers have taken the building blocks the Design System provides and redesigned them for their brand and message. We hope the possibilities inspire your team!
+Our [showcase]({{ site.baseurl }}/documentation/showcase/) illustrates how other teams of developers and designers have taken the building blocks the Design System provides and redesigned them for their brand and message. We hope the possibilities inspire your team!
 
 We’re looking forward to hearing about your experience and seeing how USWDS's components look in your project!

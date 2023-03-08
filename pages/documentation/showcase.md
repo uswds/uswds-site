@@ -8,6 +8,7 @@ redirect_from:
   - /getting-started/showcase/
   - /getting-started/showcase/all/
   - /documentation/showcase/all/
+in_page_nav: false
 ---
 
 {: .site-note }

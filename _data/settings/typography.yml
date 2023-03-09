@@ -40,7 +40,7 @@ contents:
     description: Output additional font formats (`woff` and `ttf`) to support IE11.
     var: $theme-font-browser-compatibility
     default: false
-    type: bool
+    type: boolean
 
   - name: Custom typeface tokens
     description: Add custom typeface tokens.

@@ -2,6 +2,13 @@ title: Alert
 type: component
 changelogURL:
 items:
+  - date: 2023-03-09
+    summary: Updated padding to accept any valid spacing token.
+    summaryAdditional: The site alert and banner component was also updated.
+    affectsStyles: true
+    githubPr: 5076
+    githubRepo: uswds
+    versionUswds: 3.4.0
   - date: 2022-10-19
     summary: Updated the alignment of alert content to visually match banner content.
     summaryAdditional: The site alert component was also updated.

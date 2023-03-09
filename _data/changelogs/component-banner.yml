@@ -10,8 +10,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2023-03-09
-    summary: Updated padding to accept any valid spacing token.
-    summaryAdditional: The alert and site alert component was also updated.
+    summary: Updated padding settings to accept any valid spacing token.
+    summaryAdditional:
     affectsStyles: true
     githubPr: 5076
     githubRepo: uswds

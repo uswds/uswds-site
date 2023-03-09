@@ -4,9 +4,10 @@ changelogURL:
 items:
   - date: 2023-03-09
     summary: Added `$theme-font-browser-compatibility` setting.
-    summaryAdditional:
+    summaryAdditional: We now only output `woff2` fonts in out `@font-face` rules. If you need `woff` and `ttf` for IE11 compatibility, set this new setting to `true`.
     affectsAccessibility:
     affectsAssets:
+    affectsSettings: true
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
@@ -18,7 +19,7 @@ items:
     summary: Removed `woff` and `ttf` file format requirements from custom font source settings.
     summaryAdditional:
     affectsAccessibility:
-    affectsAssets:
+    affectsAssets: true
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:

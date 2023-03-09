@@ -1050,6 +1050,13 @@
       var: $theme-font-path
       default: "'../fonts'"
       kind: path
+    - name: Generate all font weights
+      subsection: font-weight token
+      description: |
+        If USWDS is generating `@font-face` rules, generate all available weights regardless of the assignments above.
+      var: $theme-generate-all-weights
+      default: "false"
+      type: boolean
 
     - name: Custom typeface tokens
       usage: Add custom typeface tokens.
@@ -1296,7 +1303,8 @@
       usage: |
         If you want USWDS to generate additional `@font-face` declarations,
         add your font data to the following variables as a map with these keys.
-        You must include fonts saved as `.ttf`, `.woff`, and `.woff2`.
+        You must include fonts saved as `.woff2`. You must include `.ttf` and 
+        `.woff` fonts if `$theme-font-browser-compatibility` is set to `true`.
       var: $theme-font-[family]-custom-src
       default:
       kind: map

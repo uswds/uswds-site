@@ -36,6 +36,11 @@ contents:
     var: $theme-font-path
     default: '"../fonts"'
     type: path
+  - name: Browser compatibility mode
+    description: Output additional font formats (`woff` and `ttf`) to support IE11.
+    var: $theme-font-browser-compatibility
+    default: false
+    type: bool
 
   - name: Custom typeface tokens
     description: Add custom typeface tokens.
@@ -282,7 +287,8 @@ contents:
     description: |
       If you want USWDS to generate additional `@font-face` declarations,
       add your font data to the following variables as a map with these keys.
-      You must include fonts saved as `.ttf`, `.woff`, and `.woff2`.
+      You must include fonts saved as `.woff2`. You must include `.ttf` and 
+      `.woff` fonts if `$theme-font-browser-compatibility` is set to `true`.
     var: $theme-font-[family]-custom-src
     default:
     type: map

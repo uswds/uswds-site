@@ -2,6 +2,14 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: 2023-03-09
+    summary: Allow full-page width for header.
+    summaryAdditional: You can now set a value of `"none"` for any `max-width` setting, including `$theme-header-max-width``.
+    isBreaking: false
+    affectsStyles: true
+    githubPr: 5072
+    githubRepo: uswds
+    versionUswds: 3.4.0
   - date: 2022-08-05
     summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.

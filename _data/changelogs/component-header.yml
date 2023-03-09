@@ -6,6 +6,7 @@ items:
     summary: Secondary nav is now read properly on screen readers.
     summaryAdditional: The separator between nav elements is no longer read on screen readers.
     isBreaking: false
+    affectsAccessibility: true
     affectsStyles: true
     githubPr: 4963
     githubRepo: uswds

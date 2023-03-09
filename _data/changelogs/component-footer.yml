@@ -5,6 +5,7 @@ items:
   - date: 2023-03-09
     summary: Footer now accepts any heading level for primary link headers.
     summaryAdditional: Use any heading level for `.usa-footer__primary-link` without it reverting to an h4 when the JavaScript rebuilds the element for mobile.
+    affectsAccessibility: true
     affectsJavascript: true
     affectsMarkup: true
     githubPr: 5044

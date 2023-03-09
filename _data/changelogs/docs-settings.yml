@@ -13,6 +13,7 @@ items:
     affectsStyles:
     githubPr: 2022
     githubRepo: uswds-site
+    versionUswds: 3.4.0
   - date: 2023-03-09
     summary: Removed `woff` and `ttf` file format requirements from custom font source settings.
     summaryAdditional:
@@ -24,6 +25,7 @@ items:
     affectsStyles:
     githubPr: 2022
     githubRepo: uswds-site
+    versionUswds: 3.4.0
   - date: 2022-09-16
     summary: Fixed typos in `primary-vivid` and `secondary-vivid` variable names.
     summaryAdditional:

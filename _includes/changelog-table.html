@@ -58,6 +58,9 @@
           {% if item.affectsStyles %}
             <li><span class="output-neutral">Styles</span></li>
           {% endif %}
+          {% if item.affectsSettings %}
+            <li><span class="output-neutral">Settings</span></li>
+          {% endif %}
         </ul>
       </td>
       <td data-title="{{ col4Title }}" class="{{ col4Classes }}">

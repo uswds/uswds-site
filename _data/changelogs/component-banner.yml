@@ -2,6 +2,13 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: 2023-03-09
+    summary: Removed grid dependency from Banner.
+    summaryAdditional: Banner no longer needs the `usa-layout-grid` package resulting in a much smaller package size.
+    affectsStyles: true
+    githubPr: 5000
+    githubRepo: uswds
+    versionUswds: 3.4.0
   - date: 2022-10-09
     summary: Updated the aria-label in English versions of banner.
     summaryAdditional: When read out on a screen reader, the statement "An official website of the United States government" can sound like "Unofficial website of the United States government". To minimize confusion, we updated the component's `aria-label` to instead read "Official website of the United States government".

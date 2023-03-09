@@ -3,8 +3,16 @@ type: component
 changelogURL:
 items:
   - date: 2023-03-09
+    summary: Secondary nav is now read properly on screen readers.
+    summaryAdditional: The separator between nav elements is no longer read on screen readers.
+    isBreaking: false
+    affectsStyles: true
+    githubPr: 4963
+    githubRepo: uswds
+    versionUswds: 3.4.0
+  - date: 2023-03-09
     summary: Allow full-page width for header.
-    summaryAdditional: You can now set a value of `"none"` for any `max-width` setting, including `$theme-header-max-width``.
+    summaryAdditional: You can now set a value of `"none"` for any `max-width` setting, including `$theme-header-max-width`.
     isBreaking: false
     affectsStyles: true
     githubPr: 5072

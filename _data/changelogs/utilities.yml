@@ -2,6 +2,19 @@ title: Utilities
 type: utility
 changelogURL:
 items:
+  - date: 2023-03-09
+    summary: Outline utility and mixin now accept the 05 token.
+    summaryAdditional: Now, the `.outline-05` utility class and the `u-outline('05')` mixin should work as expected.
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 5079
+    githubRepo: uswds
+    versionUswds: 3.4.0
   - date: 2022-05-04
     summary: Added `margin-horizontal` and `margin-vertical` utility modules.
     summaryAdditional:

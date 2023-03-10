@@ -1,2 +1,8 @@
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls]({{ site.baseurl }}/components/form).
 - **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
+- **Instructions for keyboard navigation** You can navigate this component using the following commands (Mac-equivalent commands are in parentheses):
+  - Days use left and right arrows
+  - Weeks use up and down arrows
+  - Months by using <kbd>page up</kbd> (<kbd>fn + up arrow</kbd>) and <kbd>page down</kbd> (<kbd>fn + down arrow</kbd>)
+  - Years by using <kbd>shift + page up</kbd> (<kbd>shift + fn + up arrow</kbd>) and <kbd>shift + page down</kbd> (<kbd>shift + fn + down arrow</kbd>)
+  - <kbd>Home</kbd> (<kbd>fn + left arrow</kbd>) and <kbd>End</kbd> (<kbd>fn + right arrow</kbd>) keys navigate to the beginning and end of a week

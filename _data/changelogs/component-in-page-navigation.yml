@@ -2,7 +2,7 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
-  - date: 2023-03-09
+  - date: 2023-03-13
     summary: URL in address bar is updated when navigating component.
     summaryAdditional: Users can now see the proper anchor link in the address bar when navigating from the in-page navigation.
     affectsGuidance:

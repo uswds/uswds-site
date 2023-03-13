@@ -6,6 +6,7 @@ items:
     summary: Fixed invisible link text for links styled as buttons within forms.
     summaryAdditional: Now link text does not match the primary button color when nested inside of a form and the `usa-button` class is present.
     isBreaking: false
+    affectsStyles: true
     githubPr: 5112
     githubRepo: uswds
     versionUswds: 3.4.1

@@ -2,6 +2,18 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: 2023-03-15
+    summary: Updated our docs and settings to include `$theme-prefix-separator`.
+    summaryAdditional: Added guidance for custom prefixes to general settings table.
+    affectsAccessibility:
+    affectsAssets:
+    affectsSettings:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr:
+    githubRepo: uswds-site
   - date: 2023-03-09
     summary: Added `$theme-font-browser-compatibility` setting.
     summaryAdditional: We now only output `woff2` fonts in our `@font-face` rules. If you need `woff` and `ttf` for IE11 compatibility, set this new setting to `true`.

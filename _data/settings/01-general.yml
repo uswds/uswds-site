@@ -42,6 +42,12 @@ contents:
         value: "true"
         type: boolean
 
+  - name: Prefix separator
+    description: A custom prefix separator. For systems that can't parse the `:` separator character in responsive and state prefixes like `tablet:margin-x-2`. Note the two `\` characters are used to escape and properly output the `:`.
+    var: $theme-prefix-separator
+    default: '"\\:"'
+    type: string
+
   - name: Important layout grid
     description: |
       Output grid classes output with "!important."

@@ -9,7 +9,7 @@
 
   - **[Accessibility](https://digital.gov/resources/required-web-content-and-links/#accessibility-statement):** Link to your agency's [accessibility statement](https://www.section508.gov/manage/laws-and-policies/website-accessibility-statement/).
 
-    Example: [https://www.gsa.gov/website-information/accessibility-aids](https://www.gsa.gov/website-information/accessibility-aids)
+    Example: [https://www.dhs.gov/accessibility](https://www.dhs.gov/accessibility)
 
   - **[FOIA requests](https://digital.gov/resources/required-web-content-and-links/#freedom-of-information-act-foia):** Link to a page that includes information about how the public can request information under the Freedom of Information Act on your parent agency's principal website.
 

@@ -5,11 +5,6 @@ contents:
     var: $theme-table-border-color
     default: '"ink"'
     type: color
-  - name: Text color
-    description: Defines a text color for table cells. A value of `default` uses either the default text or reverse text color depending on the site background color.
-    var: $theme-table-text-color
-    default: "default"
-    type: color
   - name: Header background color
     description: Defines a background color for header cells.
     var: $theme-table-header-background-color
@@ -28,6 +23,11 @@ contents:
   - name: Stripe text color
     description: Defines a text color for alternating horizontal stripes in the striped table variant. A value of `default` uses either the default text or reverse text color depending on the stripe background color.
     var: $theme-table-stripe-text-color
+    default: "default"
+    type: color
+  - name: Text color
+    description: Defines a text color for table cells. A value of `default` uses either the default text or reverse text color depending on the site background color.
+    var: $theme-table-text-color
     default: "default"
     type: color
   - name: Sorted column header background color

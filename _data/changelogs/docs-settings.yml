@@ -2,17 +2,38 @@ title: Settings
 type: utility
 changelogURL:
 items:
-  - date: 2023-03-08
+  - date: 2023-03-20
     summary: Updated settings information to match what is found in USWDS 3.3.0.
     summaryAdditional:
     affectsAccessibility:
     affectsAssets:
+    githubPr: 2016
+    githubRepo: uswds-site
+  - date: 2023-03-09
+    summary: Added `$theme-font-browser-compatibility` setting.
+    summaryAdditional: We now only output `woff2` fonts in our `@font-face` rules. If you need `woff` and `ttf` for IE11 compatibility, set this new setting to `true`.
+    affectsAccessibility:
+    affectsAssets:
+    affectsSettings: true
     affectsGuidance: true
     affectsJavascript:
     affectsMarkup:
     affectsStyles:
-    githubPr: 2016
-    githubRepo: uswds-site
+    githubPr: 5108
+    githubRepo: uswds
+    versionUswds: 3.4.0
+  - date: 2023-03-09
+    summary: Removed `woff` and `ttf` file format requirements from custom font source settings.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 5108
+    githubRepo: uswds
+    versionUswds: 3.4.0
   - date: 2022-09-16
     summary: Fixed typos in `primary-vivid` and `secondary-vivid` variable names.
     summaryAdditional:

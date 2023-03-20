@@ -2,6 +2,31 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: 2023-03-13
+    summary: Logo text width setting now works as expected.
+    summaryAdditional: Now the design system respects the value passed to `$theme-header-logo-text-width`.
+    isBreaking: false
+    affectsStyles: true
+    githubPr: 5008
+    githubRepo: uswds
+    versionUswds: 3.4.1
+  - date: 2023-03-09
+    summary: Secondary nav is now read properly on screen readers.
+    summaryAdditional: The separator between nav elements is no longer read on screen readers.
+    isBreaking: false
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4963
+    githubRepo: uswds
+    versionUswds: 3.4.0
+  - date: 2023-03-09
+    summary: Allow full-page width for header.
+    summaryAdditional: You can now set a value of `"none"` for any `max-width` setting, including `$theme-header-max-width`.
+    isBreaking: false
+    affectsStyles: true
+    githubPr: 5072
+    githubRepo: uswds
+    versionUswds: 3.4.0
   - date: 2022-08-05
     summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.

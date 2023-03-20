@@ -60,19 +60,6 @@ contents:
         description: Height of a 500px `N` character in Sketch.
         value: 364px
         type: px
-    map:
-      - key: token
-        description: Name of the token.
-        value: example-sans-token
-        type: string
-      - key: token.display-name
-        description: Display name of the typeface.
-        value: '"Example Sans Display Name"'
-        type: string
-      - key: token.cap-height
-        description: Height of a 500px `N` character in Sketch.
-        value: 364px
-        type: px
   - name: cond
     section: true
     subsection: font-family token

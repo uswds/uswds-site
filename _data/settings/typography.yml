@@ -287,7 +287,7 @@ contents:
     description: |
       If you want USWDS to generate additional `@font-face` declarations,
       add your font data to the following variables as a map with these keys.
-      You must include fonts saved as `.woff2`. You must include `.ttf` and `.woff` fonts if `$theme-font-browser-compatibility` is set to `true`. Instructions can be found on the [font-family](https://designsystem.digital.gov/design-tokens/typesetting/font-family/#adding-a-self-hosted-font) page.
+      You must include fonts saved as `.woff2`. Include `.ttf` and `.woff` fonts as well if `$theme-font-browser-compatibility` is set to `true`. Instructions can be found on the [font-family](https://designsystem.digital.gov/design-tokens/typesetting/font-family/#adding-a-self-hosted-font) page.
     var: $theme-font-[family]-custom-src
     default:
     type: map

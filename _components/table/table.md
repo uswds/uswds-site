@@ -25,7 +25,6 @@ subnav:
   href: '#table-package'
 - text: Latest updates
   href: '#changelog'
-in_page_nav: false
 tags:
   - table
   - zebra stripes

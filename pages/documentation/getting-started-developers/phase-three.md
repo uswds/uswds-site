@@ -10,7 +10,6 @@ subnav:
     href: '#changelog'
 changelog:
   key: docs-getting-started-devs-phase-3
-in_page_nav: false
 ---
 
 Now, equipped with building blocks that are accessible and cohesive, you can get creative. This phase is an overview of what you need to know to customize your project.

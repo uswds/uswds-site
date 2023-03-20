@@ -12,7 +12,6 @@ subnav:
   href: '#system-tokens'
 - text: Using size tokens
   href: '#using-size-tokens'
-in_page_nav: false
 ---
 
 {% assign tokens = site.data.tokens.typesetting.size %}

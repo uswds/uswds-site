@@ -32,7 +32,6 @@ subnav:
   href: '#changelog'
 changelog:
   key: utilities-height-width
-in_page_nav: false
 utilities:
 - base:         height
   var:          height

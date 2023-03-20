@@ -20,19 +20,24 @@ contents:
     var: $theme-alert-padding-x
     default: 2.5
     type: units
+  - name: Vertical padding
+    description: Padding on the top and bottom of the alert.
+    var: $theme-alert-padding-y
+    default: 2
+    type: units
   - name: Text color
     description: Text color on light backgrounds. `Default` uses text color set in `$theme-text-color`.
     var: $theme-alert-text-color
     default: "default"
     type: color
+  - name: Link color
+    description: Link color on light backgrounds. `Default` uses text color set in `$theme-text-color`.
+    var: $theme-alert-link-color
+    default: "default"
+    type: color
   - name: Reverse text color
     description: Text color on dark backgrounds. `Default` uses reverse text color set in `$theme-text-reverse-color`.
     var: $theme-alert-text-reverse-color
-    default: "default"
-    type: color
-  - name: Link color
-    description: Link color on light backgrounds. `Default` uses link color set in `$theme-link-color`.
-    var: $theme-alert-text-color
     default: "default"
     type: color
   - name: Reverse link color

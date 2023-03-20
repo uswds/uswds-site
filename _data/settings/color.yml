@@ -481,7 +481,7 @@ contents:
     default: '"primary"'
     type: color
   - name: Visited link color
-    description: Color for `:visted` text links
+    description: Color for `:visited` text links
     var: $theme-link-visited-color
     default: '"violet-70v"'
     type: color

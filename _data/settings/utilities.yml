@@ -10,12 +10,12 @@ contents:
     type: boolean
   - name: Utilities uselist
     usage: |
-      Include a list of all utility modules to output. Ex: `("align-tems", "border", "margin", "padding")`. `default` includes all utilities.
+      Include a list of all utility modules to output. Ex: `("align-items", "border", "margin", "padding")`. `default` includes all utilities.
     var: $output-these-utilities
     default: "default"
     type: list
     description: |
-      Include a list of all utility modules to output. Ex: `("align-tems", "border", "margin", "padding")`. `default` includes all utilities.
+      Include a list of all utility modules to output. Ex: `("align-items", "border", "margin", "padding")`. `default` includes all utilities.
   - name: Utility breakpoints
     description: |
       Set which mobile-first breakpoints are output for the utilities.

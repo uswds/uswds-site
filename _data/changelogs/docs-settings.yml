@@ -3,10 +3,14 @@ type: utility
 changelogURL:
 items:
   - date: 2023-03-20
-    summary: Updated settings information to match what is found in USWDS 3.3.0.
+    summary: Updated settings information to match what is found in USWDS.
     summaryAdditional:
     affectsAccessibility:
     affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
     githubPr: 2016
     githubRepo: uswds-site
   - date: 2023-03-09

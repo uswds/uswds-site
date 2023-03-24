@@ -2,7 +2,7 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
-  - date: 2023-03-24
+  - date: 2023-03-27
     summary: Updated the documentation to clarify the component's recommended display location.
     summaryAdditional:
     affectsGuidance: true

@@ -7,18 +7,15 @@ redirect_from:
 layout: styleguide
 category: About
 lead: Using the U.S. Web Design System makes it easier to build accessible, mobile-friendly government websites. Here's why USWDS works for government teams.
+subnav:
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: about-key-benefits
 ---
 The U.S. Web Design System (USWDS) is a toolkit of principles, guidance, and code that makes it easier to build accessible, mobile-friendly government websites. We use human-centered design to support human-centered design teams.
 
-There are many ways to build a website or service. We designed USWDS to deliver unique benefits to government teams:
-
-- [Compliance from the start](#compliance-from-the-start)
-- [Proven design solutions that users expect](#proven-design-solutions-that-users-expect)
-- [Team alignment and common goals](#team-alignment-and-common-goals)
-- [Mission focus](#mission-focus)
-- [A cross-functional design system community](#a-cross-functional-design-system-community)
-- [Effective stewardship of public resources](#effective-stewardship-of-public-resources)
-
+There are many ways to build a website or service. We designed USWDS to deliver unique benefits to government teams.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

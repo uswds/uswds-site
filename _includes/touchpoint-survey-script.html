@@ -1,4 +1,4 @@
-{% if site.touchpoints.hosted == false %}
+{% if site.env == "production" %}
   <script src="https://touchpoints.app.cloud.gov/touchpoints/5c2410e4.js" async></script>
 {% endif %}
 
@@ -7,9 +7,9 @@
 {% assign tpClasses = "usa-button usa-button--outline" %}
 
 <section class="touchpoints__container" role="complementary" aria-label="Page feedback">
-  {% if site.touchpoints.hosted %}
-  <a href="https://touchpoints.app.cloud.gov/touchpoints/5c2410e4/submit" target="_blank" class="{{ tpClasses }}" aria-label="{{ tpLabel }}">{{ tpText }}</a>
+  {% if site.env == "production" %}
+    <button type="button" class="{{ tpClasses }}" id="touchpoints-modal-button" aria-label="{{ tpLabel }}" tabindex="0">{{ tpText }}</button>
   {% else %}
-  <button type="button" class="{{ tpClasses }}" id="#touchpoints-modal-button" aria-label="{{ tpLabel }}" tabindex="0">{{ tpText }}</button>
+    <a href="https://touchpoints.app.cloud.gov/touchpoints/5c2410e4/submit" target="_blank" class="{{ tpClasses }}" aria-label="{{ tpLabel }}">{{ tpText }}</a>
   {% endif %}
 </section>

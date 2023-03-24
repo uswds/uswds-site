@@ -14,7 +14,7 @@ contents:
     description: Width of the border around the Summary box.
     var: $theme-summary-box-border-width
     default: 1px
-    type: size
+    type: border-width
   - name: Border radius
     description: Border radius of the summary box.
     var: $theme-summary-box-border-radius
@@ -31,7 +31,7 @@ contents:
     default: "default"
     type: color
   - name: Text color
-    description: 'Color of the links inside the content text. When set to "default", text will get one of two values, based on contrast: "white" or "ink".'
-    var: $theme-summary-box-link-color
+    description: 'Color of the content text. When set to "default", text will get one of two values, based on contrast: `$theme-text-reverse-color` or `$theme-text-color`.'
+    var: $theme-summary-box-text-color
     default: "default"
     type: color

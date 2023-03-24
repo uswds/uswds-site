@@ -50,10 +50,12 @@
           {{ setting.default }}
         </span>
       </td>
-      <td data-title="{{ col4Title }}" class="{{ col4Width }} display-inline-flex flex-align-start">
-        <span>
-          {% include get-token-url.html token=setting.type %}
-        </span>
+      <td data-title="{{ col4Title }}" class="{{ col4Width }} display-inline-flex flex-align-start flex-wrap">
+        {% for type in setting.type %}
+          <span class="margin-bottom-05">
+            {% include get-token-url.html token=type %}
+          </span>
+        {% endfor %}
       </td>
       <td data-title="{{ col5Title }}" class="{{ col5Width }} display-inline-flex flex-align-start">
         <span class="font-lang-3xs">
@@ -87,12 +89,12 @@
             </td>
             <td data-title="{{ col4Title }}" class="{{ col4Width }} display-inline-flex flex-align-start">
               <span>
-                {% include get-token-url.html token=entry.kind %}
+                {% include get-token-url.html token=entry.type %}
               </span>
             </td>
             <td data-title="{{ col5Title }}" class="{{ col5Width }} display-inline-flex flex-align-start">
               <span class="font-lang-3xs">
-                {{ entry.usage | markdownify }}
+                {{ entry.description | markdownify }}
               </span>
             </td>
           </tr>

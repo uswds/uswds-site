@@ -18,7 +18,10 @@ subnav:
     href: '#list-guidance'
   - text: Package
     href: '#list-package'
+  - text: Latest updates
+    href: '#changelog'
 title: List
+type: component
 variants:
 tags:
   - typography
@@ -28,4 +31,6 @@ tags:
   - numbered
   - unordered
   - ordered
+changelog:
+  key: component-list
 ---

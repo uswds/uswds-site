@@ -1,0 +1,21 @@
+{% assign pageName = page.changelog.key | default: page.title | downcase %}
+{% assign pageSlug = pageName | slugify %}
+{% assign changelog = site.data.changelogs[pageSlug] %}
+{% assign changelogItems = changelog.items %}
+
+{%- if changelog.items or changelog.changelogURL -%}
+  <h2 id="changelog" class="site-component-section-title">Latest updates</h2>
+{%- endif -%}
+
+{%- if changelog.changelogURL -%}
+  <p>A list of all code changes for this component can be found in its <a href="{{ changelog.changelogURL }}">changelog</a>.</p>
+{%- endif -%}
+
+{%- if changelog.items -%}
+  <p>Meaningful code and guidance updates are listed in the following table:</p>
+  {% if changelog.type == "documentation" %}
+    {% include changelog-table-simple.html %}
+  {% else %}
+    {% include changelog-table.html %}
+  {% endif %}
+{%- endif -%}

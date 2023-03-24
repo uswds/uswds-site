@@ -25,6 +25,10 @@ subnav:
   href: '#breadcrumb-guidance'
 - text: Package
   href: '#breadcrumb-package'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: component-breadcrumb
 ---
 
 A breadcrumb bar shows the location of the current page in the site structure. It's like a path from the current page back to the home page, showing each level of organization in-between. Breadcrumbs allow a user to navigate “up” to a parent section instead of  “Back” to the previous page. Use breadcrumbs to help users navigate and understand the organization of your site.

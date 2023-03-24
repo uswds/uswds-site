@@ -34,10 +34,14 @@ subnav:
     href: '#link-code'
   - text: Guidance
     href: '#link-guidance'
+  - text: What you should do
+    href: '#what-you-should-do'
   - text: Package
     href: '#link-package'
   - text: Research findings
     href: '#research-findings'
+  - text: Latest updates
+    href: '#changelog'
 title: Link
 variants:
   - variant: "`usa-link--external`"
@@ -49,5 +53,7 @@ tags:
   - hyperlink
   - external link
 type: component
+changelog:
+  key: component-link
 ---
 Links are navigational elements that direct visitors to other locations, either on the same page or to a different page or site. They can be inline or separate from the text flow. Since every link is a potential user interaction, too many links can be overwhelming. Be judicious with links to better identify necessary calls to action.

@@ -23,6 +23,8 @@ subnav:
   href: '#range-slider-guidance'
 - text: Package
   href: '#range-slider-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - form
   - forms
@@ -30,4 +32,6 @@ tags:
   - input
   - drag
   - volume
+changelog:
+  key: component-range-slider
 ---

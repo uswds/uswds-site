@@ -1,0 +1,54 @@
+{% assign identifier = site.data.identifier %}
+
+<div class="usa-identifier site-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="{{ identifier.ariaLabel }}"
+  >
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__logos">
+        {%- for logo in identifier.logos -%}
+        <a href="javascript:void(0);" class="usa-identifier__logo">
+          <img
+            class="usa-identifier__logo-img"
+            src="{{ site.baseurl }}/{{ logo.path }}"
+            alt="{{ logo.alt }}"
+            role="img"
+            width="48"
+            height="48"
+          >
+        </a>
+        {%- endfor -%}
+      </div>
+      <section class="usa-identifier__identity" aria-label="Agency description">
+        <p class="usa-identifier__identity-domain">{{ identifier.domain }}</p>
+        <p class="usa-identifier__identity-disclaimer">
+          {{- identifier.disclaimer -}}
+        </p>
+      </section>
+    </div>
+  </section>
+  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+      <div class="usa-identifier__container">
+        <ul class="usa-identifier__required-links-list">
+          {%- for link in identifier.requiredLinks -%}
+          <li class="usa-identifier__required-links-item">
+            <a href="{{ link.href }}" class="usa-identifier__required-link">
+              {{- link.label -}}
+            </a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+  </nav>
+  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="Government information and services">
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__usagov-description">
+        {{ identifier.usagov.description }}
+      </div>
+      <a href="{{ identifier.usagov.url }}" class="usa-link">
+        {{- identifier.usagov.label -}}
+      </a>
+    </div>
+  </section>
+</div>

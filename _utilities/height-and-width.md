@@ -28,7 +28,10 @@ subnav:
   href: '#utility-mixins'
 - text: Advanced settings
   href: '#advanced-settings'
-
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: utilities-height-width
 utilities:
 - base:         height
   var:          height
@@ -181,7 +184,7 @@ utilities:
   </div>
 </div>
 
-<section class="utilities-section">
+<section id="utilities-section" class="utilities-section">
   {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="height">

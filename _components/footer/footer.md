@@ -20,6 +20,8 @@ subnav:
   href: '#footer-guidance'
 - text: Package
   href: '#footer-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - slim
   - big
@@ -30,4 +32,6 @@ variants:
     description: A multi-column footer that expands and collapses on mobile.
   - variant: usa-footer--slim
     description: A compact version of the footer.
+changelog:
+  key: component-footer
 ---

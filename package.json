@@ -57,7 +57,7 @@
   "dependencies": {
     "jquery": "^3.4.0",
     "normalize.css": "^8.0.0",
-    "uswds": "2.0.3"
+    "uswds": "github:uswds/uswds#jm-v2-core-deps"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",

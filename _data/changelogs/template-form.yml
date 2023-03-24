@@ -2,6 +2,19 @@ title: Form templates
 type: template
 changelogURL:
 items:
+  - date: 2023-03-24
+    summary: Added documentation for required links.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1834
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2021-12-28
     summary: Updated support notes for `aria-describedby`.
     summaryAdditional:

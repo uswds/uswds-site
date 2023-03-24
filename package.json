@@ -141,5 +141,8 @@
       "build-js"
     ]
   },
-  "snyk": true
+  "snyk": true,
+  "overrides": {
+    "graceful-fs": "^4.2.10"
+  }
 }

@@ -7,7 +7,7 @@ Implementing the in-page navigation component requires a few additions and adjus
 
   The following is an example of the minimum markup your page would need to implement the in-page navigation component:
 
-  ```
+  ```html
   <div class="usa-in-page-nav-container">
     <aside class="usa-in-page-nav"></aside>
     <main id="main-content" class="main-content">

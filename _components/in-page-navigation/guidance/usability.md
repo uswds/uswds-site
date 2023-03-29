@@ -1,4 +1,4 @@
-- **Display the in-page navigation to the side of the main content.** Visually, place the in-page navigation component after the main content in the language’s natural reading order. (For example, for a left-to-right language like English, this component goes to the right of the main content.)
+- **Display the in-page navigation to the side of the main content.** Visually, place the in-page navigation component after the main content in the language’s natural reading order. For example, for a left-to-right language like English, this component goes to the right of the main content.
 
 - **Make it stand out.** Site visitors should be able to quickly and easily distinguish in-page navigation from other landmarks on the page. Include borders and well-defined link active states to clearly convey the utility and purpose of the section. Define a consistent width for the in-page navigation component that is sufficiently wide and does not change based on text length.
 

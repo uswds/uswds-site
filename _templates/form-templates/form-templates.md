@@ -15,7 +15,7 @@ subnav:
   - href: /templates/form-templates/sign-in-form/
 subnav:
   - text: Latest updates
-    href: '#changelog'
+    href: /templates/form-templates/test
 changelog:
   key: template-form
 ---

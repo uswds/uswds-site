@@ -17,25 +17,29 @@
       ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.
     </li>
   </ul>
-  <h2 id="general-usability-guidance-for-forms">Usability guidance</h2>
+  <h2 id="identifying-required-fields">Identifying required fields</h2>
   <ul class="usa-content-list">
     <li><strong>Show whether a field is required or optional.</strong> Mark required fields as required by using a red
       asterisk (<abbr title="required" class="usa-hint--required">*</abbr>).</li>
     <li><strong>Use text descriptions.</strong> Combine red asterisks (<abbr title="required"
         class="usa-hint--required">*</abbr>) with a text description at the top of the form instructing the user of its
-      meaning. <em>Example: “A red asterisk (<abbr title="required" class="usa-hint--required">*</abbr>) indicates a
-        required field.”</em></li>
+      meaning. <br />
+      <em>Example:</em> “A red asterisk (<abbr title="required" class="usa-hint--required">*</abbr>) indicates a
+      required field.”
+    </li>
     <li><strong>Use the <code>required</code> attribute.</strong> Add the <code>required</code> attribute to your form
       elements to indicate that a field must be filled out before submitting the form.</li>
     <li><strong>Mark optional fields as "optional."</strong> Label optional fields with the word “optional” placed in
-      parentheses. <em>Example: (optional)</em></li>
+      parentheses. <br />
+      <em>Example:</em> (optional)
+    </li>
     <li><strong>Let users know if there is an error.</strong> Use a message or <a
         href="{{ site.baseurl }}/components/alert">alert</a> to notify the user if a field that is required was not
       completed, and indicate which field was not completed. Additionally, include an error notification in the page
       title (<code>title</code> element) for screen readers.</li>
+    <li><em><strong>Note:</strong> One-field forms are the exception and do not need to be marked with a required label or symbol.</em>
+    </li>
   </ul>
-  <div class="site-note"><strong>Note:</strong> One-field forms are the exception and do not need to be marked with a
-    required label or symbol.</div>
 
   <h2 id="known-issues-with-screen-readers">Known issues with screen readers</h2>
   <ul class="usa-content-list">

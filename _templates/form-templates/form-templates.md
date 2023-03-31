@@ -17,7 +17,7 @@ subnav:
   - text: Latest updates
     href: '#changelog'
 changelog:
-  key: template-form
+  key: component-form
 ---
 
 {% include forms-guidance.html %}

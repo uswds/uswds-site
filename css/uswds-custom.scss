@@ -17,10 +17,6 @@
 
 // Tools
 // -------------------------------------
-@import 'core/functions';
-@import 'core/system-tokens';
-@import 'core/variables';
-@import 'core/properties';
-@import 'core/mixins/all';
+@import "packages/required";
 
-@import 'uswds-theme-custom-styles';
+@import "uswds-theme-custom-styles";

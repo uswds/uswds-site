@@ -1442,7 +1442,7 @@ code {
 
 // External link styles
 #{$external-href} {
-  @include external-link(external-link, external-link-hover);
+  @include external-link();
 }
 
 .usa-button,

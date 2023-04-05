@@ -100,7 +100,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  html-proofer (= 4.4.3)
+  html-proofer
   jekyll (>= 4.3.1)
   jekyll-include-cache
   jekyll-redirect-from (>= 0.15.0)

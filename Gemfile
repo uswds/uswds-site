@@ -6,7 +6,7 @@ gem 'jekyll-redirect-from', '>= 0.15.0'
 gem 'jekyll-sitemap', '>= 1.4.0'
 gem 'jekyll-include-cache'
 gem 'liquid-c'
-gem 'html-proofer', '= 4.4.3'
+gem 'html-proofer'
 
 gem 'rspec-core'
 gem 'rspec-expectations'

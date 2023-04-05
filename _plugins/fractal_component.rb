@@ -37,7 +37,7 @@ module Jekyll
         else
           raise (
             "Unable to find the fractal component #{@name}! " +
-            "Looking in #{@fs_path}" +
+            "Looking in #{@fs_path}. " +
             "Please either define #{BASE_URL_ENV_VAR} or run " +
             "'fractal build' in the uswds directory."
           )

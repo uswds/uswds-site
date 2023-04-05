@@ -9,6 +9,13 @@ jobs:
       - image: cimg/ruby:3.0.2-browsers
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - npm-cache-{{ checksum "package-lock.json" }}
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run:
           name: Install ruby dependencies
           command: |
@@ -19,9 +26,17 @@ jobs:
       - run:
           name: Install scss_lint
           command: gem install scss_lint
+      - save_cache:
+          key: gem-cache-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
       - run:
           name: Install node dependencies
           command: npm install
+      - save_cache:
+          key: npm-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
       - snyk/scan:
           organization: uswds
       - run:

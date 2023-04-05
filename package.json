@@ -50,7 +50,7 @@
     "federalist": "npx gulp build",
     "lint": "gulp eslint scss-lint && npm run prettier:scss",
     "prestart": "gulp build",
-    "proof": "bundle exec htmlproofer --assume-extension --disable-external --allow-hash-href --alt-ignore '/.*/' --file-ignore '/developers/' ./_site",
+    "proof": "bundle exec htmlproofer --allow-hash-href=true --enforce-https=false --allow-missing-href=true --ignore-empty-alt=true --ignore-status-codes 0,403,429,503,302 --swap-urls 'https\\://designsystem.digital.gov/:/' --ignore-files \"//select-a-language//,//2017//,//2018//,//2019//\" ./_site",
     "serve": "npm run build-all-assets && bundle exec jekyll serve --drafts --future --incremental --livereload --host=localhost",
     "serve:package": "npm run build-uswds && npm run serve",
     "serve:local": "export FRACTAL_BASE_URL=\"http://localhost:3000\" && npm run serve",
@@ -117,7 +117,7 @@
     "stylelint-config-recommended-scss": "^4.3.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^3.21.0",
-    "uswds": "2.13.3",
+    "uswds": "github:uswds/uswds#jm-v2-core-deps",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yamljs": "^0.3.0"

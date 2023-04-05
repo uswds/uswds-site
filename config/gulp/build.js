@@ -66,7 +66,7 @@ gulp.task('build-uswds-if-needed', function () {
   const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
   const gulpfile = path.join(uswdsDir, 'gulpfile.js');
 
-  dutil.logMessage('build-uswds-if-needed', 'USWDS is already built.');
+  dutil.logMessage('build-uswds-if-needed', 'Building USWDS...');
 
   if (!fs.existsSync(gulpfile)) {
     return Promise.reject(new Error(
@@ -79,9 +79,7 @@ gulp.task('build-uswds-if-needed', function () {
   const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
 
   return spawnP('npm', [ 'install' ], sharedOpts)
-    .then(() => spawnP('npx', [ 'fractal', 'build' ], sharedOpts))
     .then(() => spawnP('npm', [ 'run', 'prettier:templates' ], sharedOpts));
-
 });
 
 gulp.task('build',

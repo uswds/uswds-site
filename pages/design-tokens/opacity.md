@@ -30,8 +30,8 @@ subnav:
         {% include tokens/is_number.html %}
 
         <tr>
-          <td scope="row" data-title="Token" class="tablet:width-10">
-            <span>
+          <th scope="row" data-title="Token" class="tablet:width-10">
+            <span class="text-normal">
               {% if converted %}
                 <code>{{ converted }}</code>,
               {% endif %}
@@ -41,7 +41,7 @@ subnav:
                 <code>'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Example" class="padding-y-0">
             <div class="grid-row bg-primary padding-05 width-full margin-x-neg-05">
               <div class="grid-col opacity-{{ item.token }} bg-white height-4"></div>
@@ -74,10 +74,10 @@ Your context and coding style determine how you access USWDS opacity tokens in c
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context">
-          <span class="text-bold font-lang-3">function</span>
-        </td>
-        <td data-title="Usage">
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">function</span>
+        </th>
+        <td data-title="Description">
           <span>
             opacity(<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>)
           </span>
@@ -89,12 +89,12 @@ Your context and coding style determine how you access USWDS opacity tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
+            mixin
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             u-opacity(<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>)
           </span>
@@ -106,12 +106,10 @@ Your context and coding style determine how you access USWDS opacity tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </td>
-        <td data-title="Usage">
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">setting</span>
+        </th>
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>
           </span>
@@ -123,12 +121,12 @@ Your context and coding style determine how you access USWDS opacity tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
+            utility
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             .opacity-<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>
           </span>

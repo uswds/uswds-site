@@ -1,44 +1,53 @@
-version: 2
+version: 2.1
+
+orbs:
+  snyk: snyk/snyk@1.1.2
 
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4-node-browsers
+      - image: cimg/ruby:3.0.2-browsers
     steps:
       - checkout
       - restore_cache:
           keys:
-            - v1-gem-cache-{{ checksum "Gemfile.lock" }}
-            - v1-gem-cache
-      - run:
-          name: Install ruby dependencies
-          command: bundle install --jobs=4 --retry=3 --path vendor/bundle
-      - save_cache:
-          key: v1-gem-cache-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
+            - npm-cache-{{ checksum "package-lock.json" }}
       - restore_cache:
           keys:
-            - v2-npm-cache-{{ .Branch }}-{{ .Revision }}
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run:
-          name: Install node dependencies
-          command: npm install --ignore-scripts --verbose
-      - save_cache:
-          key: v2-npm-cache-{{ .Branch }}-{{ .Revision }}
-          paths:
-            - node_modules
-      - run:
-          name: Rebuild node-sass
-          command: npm rebuild node-sass
-      - run:
-          name: Build site files
-          command: npm run build
+          name: Install ruby dependencies
+          command: |
+            gem update --system
+            gem install bundler
+            bundle config set --local path 'vendor/bundle'
+            bundle install --jobs=4 --retry=3
       - run:
           name: Install scss_lint
           command: gem install scss_lint
+      - save_cache:
+          key: gem-cache-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - run:
+          name: Build USWDS if needed
+          command: npm run build-uswds
+      - save_cache:
+          key: npm-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - snyk/scan:
+          organization: uswds
       - run:
           name: Run test
-          command: npm test
-      - run:
-          name: Checking build
-          command: ls -agolf _site/
+          command: npm run test:ci
+
+workflows:
+  version: 2.1
+  circle-uswds-site:
+    jobs:
+      - build

@@ -1,0 +1,19 @@
+typesetting:
+  - letterspacing
+  - line-height
+  - measure
+  - stack
+
+font:
+  - family
+  - size
+  - weight
+
+general:
+  - color
+  - flex
+  - opacity
+  - order
+  - shadow
+  - spacing
+  - z-index

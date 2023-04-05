@@ -1,0 +1,22 @@
+name: Header
+contents:
+  - name: Font family
+    description: Font family of the header.
+    var: $theme-header-font-family
+    default: '"ui"'
+    type: family
+  - name: Logo text width
+    description: Width of the logo text area at desktop width as a percentage of the total header width.
+    var: $theme-header-logo-text-width
+    default: 33%
+    type: percentage
+  - name: Max width
+    description: Maximum width of the header.
+    var: $theme-header-max-width
+    default: '"desktop"'
+    type: units
+  - name: Min width
+    description: Breakpoint at which the non-mobile header is shown.
+    var: $theme-header-min-width
+    default: '"desktop"'
+    type: units

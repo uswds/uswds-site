@@ -1,0 +1,544 @@
+name: Typography settings
+description: Set values related to typefaces, type style, font size, and weights.
+contents:
+  - name: Respect user font size
+    description: |
+      When `true` the root font size will be `100%` and media queries use ems.
+      When `false`, the root font size will be the px value specified in
+      `$theme-root-font-size` and media queries will use px values.
+    var: $theme-respect-user-font-size
+    default: "true"
+    type: boolean
+  - name: Root font size
+    description: |
+      Only applies when `$theme-respect-user-font-size` is `false`.
+      Set the root font size to the specified px value and use px values for media queries.
+    var: $theme-root-font-size
+    default: 10px
+    type: px
+  - name: Global paragraph styles
+    description: Add basic styling to `p` elements.
+    var: $theme-global-paragraph-styles
+    default: "false"
+    type: boolean
+  - name: Global link styles
+    description: Add basic styling to `a` elements.
+    var: $theme-global-link-styles
+    default: "false"
+    type: boolean
+  - name: Global content styles
+    description: Add basic styling to paragraph text, links, headings, lists, and tables.
+    var: $theme-global-content-styles
+    default: "false"
+    type: boolean
+  - name: Font path
+    description: Path to the font files, relative to the compiled CSS.
+    var: $theme-font-path
+    default: '"../fonts"'
+    type: path
+
+  - name: Custom typeface tokens
+    description: Add custom typeface tokens.
+    var: $theme-typeface-tokens
+    default:
+    type: map
+    map:
+      - key: token
+        description: Name of the token.
+        value: example-serif-token
+        type: string
+      - key: token.display-name
+        description: Display name of the typeface.
+        value: '"Example Serif Display Name"'
+        type: string
+      - key: token.cap-height
+        description: Height of a 500px `N` character in Sketch.
+        value: 364px
+        type: px
+    map:
+      - key: token
+        description: Nme of the token.
+        value: example-sans-token
+        type: string
+      - key: token.display-name
+        description: Display name of the typeface.
+        value: '"Example Sans Display Name"'
+        type: string
+      - key: token.cap-height
+        description: Height of a 500px `N` character in Sketch.
+        value: 364px
+        type: px
+  - name: cond
+    section: true
+    subsection: font-family token
+    description: Project condensed font. <br/>Set to `false` if unused.
+    var: $theme-font-type-cond
+    default: "false"
+    type: family
+  - name: icon
+    subsection: font-type token
+    description: Project icon font. <br/>Set to `false` if unused.
+    var: $theme-font-type-icon
+    default: "false"
+    type: family
+  - name: lang
+    subsection: font-family token
+    description: Project language-specific font. <br/>Set to `false` if unused.
+    var: $theme-font-type-lang
+    default: "false"
+    type: family
+  - name: mono
+    subsection: font family token
+    description: Project monospaced font. <br/>Set to `false` if unused.
+    var: $theme-font-type-mono
+    default: '"roboto-mono"'
+    type: family
+  - name: sans
+    subsection: font-family token
+    description: Project sans-serif font. <br/>Set to `false` if unused.
+    var: $theme-font-type-sans
+    default: '"source-sans-pro"'
+    type: family
+  - name: serif
+    subsection: font-family token
+    description: Project serif font. <br/>Set to `false` if unused.
+    var: $theme-font-type-serif
+    default: '"merriweather"'
+    type: family
+
+  - name: ui
+    section: true
+    subsection: font-family token
+    description: Assign font family used for interfaces and buttons from type-based `family` tokens.
+    var: $theme-font-role-ui
+    default: '"sans"'
+    type: family
+  - name: heading
+    subsection: font-family token
+    description: Assign font family used for headings from type-based `family` tokens.
+    var: $theme-font-role-heading
+    default: '"serif"'
+    type: family
+  - name: body
+    subsection: font-family token
+    description: Assign font family used for body text from type-based `family` tokens.
+    var: $theme-font-role-body
+    default: '"sans"'
+    type: family
+  - name: code
+    subsection: font-family token
+    description: Assign font family used for code from type-based `family` tokens.
+    var: $theme-font-role-code
+    default: '"mono"'
+    type: family
+  - name: alt
+    subsection: font-family token
+    description: Assign font family used for alternative type sections from type-based `family` tokens.
+    var: $theme-font-role-alt
+    default: '"serif"'
+    type: family
+
+  - name: 3xs
+    section: true
+    subsection: font-size token
+    description: Use system `size` tokens. <br/>Use `false` if unused.
+    var: $theme-type-scale-3xs
+    default: 2
+    type: size
+  - name: 2xs
+    subsection: font-size token
+    description: Use system `size` tokens. <br/>Use `false` if unused.
+    var: $theme-type-scale-2xs
+    default: 3
+    type: size
+  - name: xs
+    subsection: font-size token
+    description: Use system `size` tokens. <br/>Use `false` if unused.
+    var: $theme-type-scale-xs
+    default: 4
+    type: size
+  - name: sm
+    subsection: font-size token
+    description: Use system `size` tokens. <br/>Use `false` if unused.
+    var: $theme-type-scale-sm
+    default: 5
+    type: size
+  - name: md
+    subsection: font-size token
+    description: Use system `size` tokens. <br/>Use `false` if unused.
+    var: $theme-type-scale-md
+    default: 6
+    type: size
+  - name: lg
+    subsection: font-size token
+    description: Use system `size` tokens. <br/>Use `false` if unused.
+    var: $theme-type-scale-lg
+    default: 9
+    type: size
+  - name: xl
+    subsection: font-size token
+    description: Use system `size` tokens. <br/>Use `false` if unused.
+    var: $theme-type-scale-xl
+    default: 12
+    type: size
+  - name: 2xl
+    subsection: font-size token
+    description: Use system `size` tokens. <br/>Use `false` if unused.
+    var: $theme-type-scale-2xl
+    default: 14
+    type: size
+  - name: 3xl
+    subsection: font-size token
+    description: Use system `size` tokens. <br/>Use `false` if unused.
+    var: $theme-type-scale-3xl
+    default: 15
+    type: size
+
+  - name: thin
+    section: true
+    subsection: font-weight token
+    description: Use system `weight` tokens. <br/>Use `false` if unused.
+    var: $theme-font-weight-thin
+    default: "false"
+    type: weight
+  - name: light
+    subsection: font-weight token
+    description: Use system `weight` tokens. <br/>Use `false` if unused.
+    var: $theme-font-weight-light
+    default: 300
+    type: weight
+  - name: normal
+    subsection: font-weight token
+    description: Use system `weight` tokens. <br/>Use `false` if unused.
+    var: $theme-font-weight-normal
+    default: 400
+    type: weight
+  - name: medium
+    subsection: font-weight token
+    description: Use system `weight` tokens. <br/>Use `false` if unused.
+    var: $theme-font-weight-medium
+    default: "false"
+    type: weight
+  - name: semibold
+    subsection: font-weight token
+    description: Use system `weight` tokens. <br/>Use `false` if unused.
+    var: $theme-font-weight-semibold
+    default: "false"
+    type: weight
+  - name: bold
+    subsection: font-weight token
+    description: Use system `weight` tokens. <br/>Use `false` if unused.
+    var: $theme-font-weight-bold
+    default: 700
+    type: weight
+  - name: heavy
+    subsection: font-weight token
+    description: Use system `weight` tokens. <br/>Use `false` if unused.
+    var: $theme-font-weight-heavy
+    default: "false"
+    type: weight
+  - name: Generate all font weights
+    subsection: font-weight token
+    description: |
+      If USWDS is generating `@font-face` rules, generate all available weights regardless of the assignments above.
+    var: $theme-generate-all-weights
+    default: "false"
+    type: boolean
+
+  - name: Condensed custom font stack
+    section: yes
+    description: Custom font stack for condensed font. <br/>Set to `false` if unused.
+    var: $theme-font-cond-custom-stack
+    default: "false"
+    type: font stack
+  - name: Icon font stack
+    description: Custom font stack for icon font. <br/>Set to `false` if unused.
+    var: $theme-font-icon-custom-stack
+    default: "false"
+    type: font stack
+  - name: Language-specific font stack
+    description: Custom font stack for language-specific font. <br/>Set to `false` if unused.
+    var: $theme-font-lang-custom-stack
+    default: "false"
+    type: font stack
+  - name: Monospaced font stack
+    description: Custom font stack for monospaced font. <br/>Set to `false` if unused.
+    var: $theme-font-mono-custom-stack
+    default: "false"
+    type: font stack
+  - name: Sans-serif font stack
+    description: Custom font stack for sans-serif font. <br/>Set to `false` if unused.
+    var: $theme-font-sans-custom-stack
+    default: "false"
+    type: font stack
+  - name: Serif font stack
+    description: Custom font stack for serif font. <br/>Set to `false` if unused.
+    var: $theme-font-serif-custom-stack
+    default: "false"
+    type: font stack
+
+  - name: Custom font source files
+    section: true
+    description: |
+      If you want USWDS to generate additional `@font-face` declarations,
+      add your font data to the following variables as a map with these keys.
+      You must include fonts saved as `.ttf`, `.woff`, and `.woff2`.
+    var: $theme-font-[family]-custom-src
+    default:
+    type: map
+    map:
+      - key: dir
+        description: Path relative to `$theme-font-path`
+        value: '"custom/example-serif"'
+        type: path
+      - key: roman.100
+        description: |
+          The Roman 100 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: roman.200
+        description: |
+          The Roman 200 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: roman.300
+        description: |
+          The Roman 300 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: '"ExampleSerif-Light"'
+        type: file name
+      - key: roman.400
+        description: |
+          The Roman 400 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: '"ExampleSerif-Normal"'
+        type: file name
+      - key: roman.500
+        description: |
+          The Roman 500 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: roman.600
+        description: |
+          The Roman 600 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: roman.700
+        description: |
+          The Roman 700 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: '"ExampleSerif-Bold"'
+        type: file name
+      - key: roman.800
+        description: |
+          The Roman 800 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: roman.900
+        description: |
+          The Roman 900 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: italic.100
+        description: |
+          The Italic 100 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: italic.200
+        description: |
+          The Italic 200 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: italic.300
+        description: |
+          The Italic 300 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: '"ExampleSerif-LightItalic"'
+        type: file name
+      - key: italic.400
+        description: |
+          The Italic 400 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: '"ExampleSerif-Italic"'
+        type: file name
+      - key: italic.500
+        description: |
+          The Italic 500 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: italic.600
+        description: |
+          The Italic 600 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: italic.700
+        description: |
+          The Italic 700 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: '"ExampleSerif-BoldItalic"'
+        type: file name
+      - key: italic.800
+        description: |
+          The Italic 800 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+      - key: italic.900
+        description: |
+          The Italic 900 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        type: file name
+  - name: Custom condensed source files
+    description: _See guidance above._ <br/>Set to `false` if unused.
+    var: $theme-font-cond-custom-src
+    default: "false"
+    type: map
+  - name: Custom icon source files
+    description: _See guidance above._ <br/>Set to `false` if unused.
+    var: $theme-font-icon-custom-src
+    default: "false"
+    type: map
+  - name: Custom language-specific source files
+    description: _See guidance above._ <br/>Set to `false` if unused.
+    var: $theme-font-lang-custom-src
+    default: "false"
+    type: map
+  - name: Custom monospaced source files
+    description: _See guidance above._ <br/>Set to `false` if unused.
+    var: $theme-font-mono-custom-src
+    default: "false"
+    type: map
+  - name: Custom sans-serif source files
+    description: _See guidance above._ <br/>Set to `false` if unused.
+    var: $theme-font-sans-custom-src
+    default: "false"
+    type: map
+  - name: Custom serif source files
+    description: _See guidance above._ <br/>Set to `false` if unused.
+    var: $theme-font-serif-custom-src
+    default: "false"
+    type: map
+
+  - name: Body font family
+    section: true
+    description: Use theme tokens when possible.
+    var: $theme-body-font-family
+    default: '"body"'
+    type: family
+  - name: Body font size
+    description: Use theme tokens when possible.
+    var: $theme-body-font-size
+    default: '"sm"'
+    type: size
+  - name: Body line height
+    description:
+    var: $theme-body-line-height
+    default: 5
+    type: line-height
+  - name: Style body element
+    description: Add explicit body styles to the `body` element.
+    var: $theme-style-body-element
+    default: "false"
+    type: boolean
+
+  - name: h1 font size
+    section: true
+    description:
+    var: $theme-h1-font-size
+    default: '"2xl"'
+    type: size
+  - name: h2 font size
+    description:
+    var: $theme-h2-font-size
+    default: '"xl"'
+    type: size
+  - name: h3 font size
+    description:
+    var: $theme-h3-font-size
+    default: '"lg"'
+    type: size
+  - name: h4 font size
+    description:
+    var: $theme-h4-font-size
+    default: '"sm"'
+    type: size
+  - name: h5 font size
+    description:
+    var: $theme-h5-font-size
+    default: '"xs"'
+    type: size
+  - name: h6 font size
+    description:
+    var: $theme-h6-font-size
+    default: '"3xs"'
+    type: size
+  - name: Heading line height
+    description:
+    var: $theme-heading-line-height
+    default: 2
+    type: line-height
+  - name: Small font size
+    description: Used for the smallest text on a site.
+    var: $theme-small-font-size
+    default: '"2xs"'
+    type: size
+  - name: Display font size
+    description: Used for the largest text on a site.
+    var: $theme-display-font-size
+    default: '"3xl"'
+    type: size
+
+  - name: Narrow measure
+    section: true
+    description:
+    var: $theme-text-measure-narrow
+    default: 1
+    type: measure
+  - name: Default measure
+    description:
+    var: $theme-text-measure
+    default: 4
+    type: measure
+  - name: Wide measure
+    description:
+    var: $theme-text-measure-wide
+    default: 6
+    type: measure
+  - name: Prose font family
+    description: Font family used for body text in `usa-prose`. Use role-based `family` tokens.
+    var: $theme-prose-font-family
+    default: '"body"'
+    type: family
+
+  - name: Lead (intro) font family
+    section: true
+    description: _This name may change._ Use role-based `family` tokens.
+    var: $theme-lead-font-family
+    default: '"heading"'
+    type: family
+  - name: Lead (intro) font size
+    description: _This name may change._ Use role-based `size` tokens.
+    var: $theme-lead-font-size
+    default: '"lg"'
+    type: size
+  - name: Lead (intro) line height
+    description: _This name may change._
+    var: $theme-lead-line-height
+    default: 6
+    type: line-height
+  - name: Lead (intro) measure
+    description: _This name may change._
+    var: $theme-lead-measure
+    default: 6
+    type: measure

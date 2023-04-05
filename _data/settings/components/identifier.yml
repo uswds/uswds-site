@@ -1,0 +1,32 @@
+name: Identifier
+contents:
+  - name: Background color
+    description: The background color of the identifier. Use a color of **grade 80 or higher**, darker than the section that precedes it.
+    var: $theme-identifier-background-color
+    default: '"base-darkest"'
+    type: color
+  - name: Font family
+    description: The font family of the identifier.
+    var: $theme-identifier-font-family
+    default: '"ui"'
+    type: family
+  - name: Domain text color
+    description: The color of your domain text in the identifier masthead. This should be **grade 20-30** in the same family as the `$theme-identifier-background-color`.
+    var: $theme-identifier-identity-domain-color
+    default: '"base-light"'
+    type: color
+  - name: Maximum width
+    description: The maximum width of the content within the identifier. Use the same max-width as your site footer.
+    var: $theme-identifier-max-width
+    default: '"desktop"'
+    type: units
+  - name: Primary link color
+    description: The color of the links in the masthead section. `Default` uses either the standard or reverse link color set with `$theme-link-color` and `$theme-link-reverse-color`.
+    var: $theme-identifier-primary-link-color
+    default: "default"
+    type: color
+  - name: Secondary link color
+    description: The color of the links in the required links section. This should be **grade 20-30** in a `gray` family.
+    var: $theme-identifier-secondary-link-color
+    default: '"base-light"'
+    type: color

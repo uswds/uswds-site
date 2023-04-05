@@ -1,5 +1,17 @@
-{% capture _syntax %}
-{% highlight html linenos %}
+{% capture _markup %}
 {% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}
-{% endhighlight %}
-{% endcapture %}{{ _syntax | markdownify }}
+{% endcapture %}
+
+<div class="usa-sr-only">
+  {% highlight text %}
+  {{- _markup -}}
+  {% endhighlight %}
+</div>
+<div aria-hidden="true">
+  {%- comment -%}
+  was `highlight html linenos` but linenos stopped working
+  {%- endcomment -%}
+  {% highlight html %}
+  {{- _markup -}}
+  {% endhighlight %}
+</div>

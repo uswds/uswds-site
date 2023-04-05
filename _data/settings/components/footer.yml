@@ -1,0 +1,7 @@
+name: Footer
+contents:
+  - name: Font family
+    description: Font family of the footer.
+    var: $theme-footer-font-family
+    default: '"body"'
+    type: family

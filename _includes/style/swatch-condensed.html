@@ -16,9 +16,9 @@
 
 {% if item.value %}
   <tr>
-    <td scope="row" data-title="Color" class="flex-align-center">
-      <span class="site-inline-swatch bg-{{ item.token }}"></span>
-    </td>
+    <th scope="row" data-title="Color" class="flex-align-center">
+      <span class="site-inline-swatch bg-{{ item.token }} text-normal"></span>
+    </th>
     <td data-title="Token">
       {% if item.value %}
         <span class="utility-class">'{{ item.token }}'</span>

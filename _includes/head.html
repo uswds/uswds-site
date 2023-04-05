@@ -36,6 +36,11 @@
   <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.png">
 
+<!-- ANALYTICS
+================================================== -->
+
+{% include analytics.html %}
+
 <!-- CSS
 ================================================== -->
 <!-- env: {{ site.env }} -->
@@ -43,9 +48,22 @@
 {% if site.env == 'dev' %}
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-fonts.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-components.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-layout-grid.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-custom.css">
+  {% if page.layout == 'next' or page.layout == 'next-content' %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-next.css">
+  {% endif %}
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-utilities.css">
+  
 {% else %}
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+  {% if page.layout == 'next' or page.layout == 'next-content' %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles-next.css">
+  {% else %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+  {% endif %}
+
 {% endif %}
+
+<!-- USWDS INIT
+================================================== -->
+<script src="{{ site.baseurl }}/assets/js/vendor/uswds-init.min.js"></script>
+<link rel="preload" href="{{ site.baseurl }}/assets/js/vendor/uswds.min.js" as="script">

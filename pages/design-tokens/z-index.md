@@ -74,44 +74,44 @@ Your context and coding style determine how you access USWDS z-index tokens in c
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context">
-          <span class="text-bold font-lang-3">function</span>
-        </td>
-        <td data-title="Usage">
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">function</span>
+        </th>
+        <td data-title="Description">
           <span>
-            z-index(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
+            z-index(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)<br/>
+            z(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
           </span>
         </td>
         <td data-title="Example">
           <span>
-            z-index: z-index(<code>'bottom'</code>)
+            z-index: z-index(<code>'bottom'</code>)<br/>
+            z-index: z(<code>'bottom'</code>)
           </span>
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
+            mixin
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
-            u-z-index(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
+            u-z(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
           </span>
         </td>
         <td data-title="Example">
           <span>
-            @include u-z-index(<code>'bottom'</code>)<br/>
+            @include u-z(<code>'bottom'</code>)<br/>
           </span>
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </td>
-        <td data-title="Usage">
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">setting</span>
+        </th>
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
           </span>
@@ -123,19 +123,19 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
+            utility
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
-            .z-index-<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
+            .z-<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
           </span>
         </td>
         <td data-title="Example">
           <span>
-            .z-index-<code>top</code>
+            .z-<code>top</code>
           </span>
         </td>
       </tr>

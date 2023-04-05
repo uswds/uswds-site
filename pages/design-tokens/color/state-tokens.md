@@ -7,9 +7,9 @@ lead: USWDS state colors tokens provide flexible, accessible, customizable color
 type: docs
 subnav:
 - text: State color tokens
-  href: '#uswds-theme-color-tokens'
+  href: '#uswds-state-color-tokens'
 - text: Using color tokens
-  href: '#using-color-tokens-in-utilities-settings-and-component-sass'
+  href: '#using-color-tokens'
 ---
 
 {% assign colors = site.data.tokens.color %}
@@ -20,9 +20,9 @@ USWDS state color tokens are designed to be useful and effective for any project
 
 {:#uswds-state-color-tokens}
 ## State color tokens
-The state color palette is divided into five high-level role-based color families: `info`, `error`, `warning`, `success`, and `disabled`.
+The state color palette is divided into five high-level role-based color families: `info`, `error`, `warning`, `success`, `emergency`, and `disabled`.
 
-Each color family except `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
+Each color family except `emergency` and `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
 
 Customize state color tokens using the variables listed below in `_uswds_theme_color.scss` with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
 
@@ -40,9 +40,9 @@ Customize state color tokens using the variables listed below in `_uswds_theme_c
     <tbody>
       {% for item in colors.state %}
         <tr>
-          <td scope="row" data-title="Color" class="flex-align-center">
+          <th scope="row" data-title="Color" class="flex-align-center">
             <span class="site-inline-swatch bg-{{ item.token }}"></span>
-          </td>
+          </th>
           <td data-title="Token">
             <span class="utility-class font-mono-2xs">'{{ item.token }}'</span>
           </td>
@@ -76,10 +76,10 @@ Your context and coding style determine how you access USWDS color tokens in cod
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context">
-          <span class="text-bold font-lang-3">function</span>
-        </td>
-        <td data-title="Usage">
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">function</span>
+        </th>
+        <td data-title="Description">
           <span>
             color(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -91,13 +91,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
-            <span>background-color</span>
+            <span>mixin</span><br/>
+            <span class="text-normal">background-color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             u-bg(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -109,13 +109,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
-            <span>color</span>
+            <span>mixin</span><br/>
+            <span class="text-normal">color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             u-text(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)<br/>
           </span>
@@ -127,13 +127,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
-            <span>border-color</span>
+            <span>mixin</span><br/>
+            <span class="text-normal">border-color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             u-border(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -145,13 +145,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
-            <span>text-decoration-color</span>
+            <span>mixin</span><br/>
+            <span class="text-normal">text-decoration-color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             u-underline(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -163,12 +163,12 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
+            <span class="font-lang-3">setting</span><br/>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -180,13 +180,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
-            <span>text-decoration-color</span>
+            <span>mixin</span><br/>
+            <span class="text-normal">text-decoration-color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             u-underline(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -198,13 +198,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
-            <span>background-color</span>
+            <span>utility</span><br/>
+            <span class="text-normal">background-color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             .bg-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -216,13 +216,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
-            <span>border-color</span>
+            <span>utility</span><br/>
+            <span class="text-normal">border-color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             .border-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -234,13 +234,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
-            <span>color</span>
+            <span>utility</span><br/>
+            <span class="text-normal">color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             .text-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -252,13 +252,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
-            <span>outline-color</span>
+            <span>utility</span><br/>
+            <span class="text-normal">outline-color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             .outline-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -270,13 +270,13 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
-            <span>text-decoration-color</span>
+            <span>utility</span><br/>
+            <span class="text-normal">text-decoration-color</span>
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             .underline-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>

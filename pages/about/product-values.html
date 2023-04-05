@@ -1,0 +1,44 @@
+---
+title: Product values
+permalink: /about/product-values/
+redirect_from:
+  - /about/design-principles/
+  - /about/product-principles/
+category: About
+layout: styleguide
+lead: "We designed the U.S. Web Design System to help the federal government design and build better digital experiences. Our internal product values support the [USWDS Design Principles](/design-principles) and guide how we design the system itself."
+
+principles:
+  - title: Put user needs first.
+    desc: If we don’t know what our users need, we won’t build the right thing. Research, analyze data, and talk to the people who use what we build. Test with them. Continuously validate assumptions, even those of our users. Listen, and try to understand.
+
+  - title: Make it easy to do the right thing.
+    desc: The U.S. Web Design System should be the easiest way for teams around the federal government to build with contemporary best practices and comply with federal policy. We should cultivate the curiosity, research, and open communication necessary to understand what is best and easiest for those who use the system and for those who use what we build with it.
+
+  - title: Accessibility is fundamental.
+    desc: Accessibility isn’t an optional enhancement, it’s at the core of how we design. Every design, asset, and piece of code we offer should meet or exceed the accessibility standards outlined in Section 508, and our guidance should ensure any project-specific customizations perform well for the broadest possible definition of the public.
+
+  - title: Start from existing solutions.
+    desc: It’s counterproductive and wasteful to recreate basic components and patterns for every new government website. We should encourage building from a common collection of practical solutions that reflect modern best practices. Enable teams to focus on their users and their mission, and less on reinventing existing solutions. Do less to do more.
+
+  - title: Be consistent, not static.
+    desc: While consistency builds familiarity, our guidance and code should support the diverse needs of government digital services and the teams that understand them. Our guidance should be specific enough to be practical but general enough to be extensible. We should support and welcome new information. Our goal should be continuous user- and mission-focussed improvement, not static uniformity.
+
+  - title: Share what we do.
+    desc: Be open about what we do and encourage others to share with us. Honesty, scrutiny, and accountability strengthen our connection to our principles and improve our decision making. We both rely on and contribute back to the commons that sustains our project and its future. We encourage those who build with our tools to follow this example.
+---
+
+{% for principle in page.principles %} {% cycle '
+<div class="grid-row grid-gap margin-top-0">
+  ', '' %}
+  <div class="tablet:grid-col-6">
+    <h2 class="site-h2 font-lang-8 border-top-05 padding-top-1">
+      {% if principle.href %}<a href="{{ principle.href | relative_url }}"
+        >{% endif %} {{ principle.title }} {% if principle.href %}</a
+      >{% endif %}
+    </h2>
+    <p>{{ principle.desc | normalize_whitespace }}</p>
+  </div>
+  {% cycle '', '
+</div>
+' %} {% endfor %}

@@ -8,7 +8,7 @@ module Jekyll
       super
       @name = name.strip
       @base_url = ENV[BASE_URL_ENV_VAR]
-      @fs_path = "node_modules/uswds/build/components/render/#{@name}.html"
+      @fs_path = "node_modules/uswds/_site/components/render/#{@name}.html"
     end
 
     def get_from_server()
@@ -29,10 +29,10 @@ module Jekyll
       cache = site.data['fractal_components']
       if not cache.key? @name
         if @base_url
-          puts " + uswds component: #{@name} from #{@fs_path}"
+          puts " + local uswds component: #{@name}"
           html = get_from_server
         elsif File.exist?(@fs_path)
-          puts " + uswds component: #{@name}"
+          puts " + packaged uswds component: #{@name}"
           html = open(@fs_path).read
         else
           raise (

@@ -1,0 +1,29 @@
+---
+permalink: /download/
+layout: styleguide
+title: Download code and design files
+category: How to use USWDS
+lead: Here you'll find all the assets you need to start working with USWDS
+redirect_from:
+  - /getting-started/download/
+---
+
+<h2 class="usa-heading">Code</h2>
+
+<a
+  class="link-download"
+  href="https://github.com/uswds/uswds/releases/download/v{{ site.uswds_version }}/uswds-{{ site.uswds_version }}.zip"
+  onclick="ga('send', 'event', 'Downloaded framework', 'Clicked download button inside site');"
+  >Download code</a
+>
+<div class="link-download-subtext">Version {{ site.uswds_version }}</div>
+<div class="link-download-subtext">
+  SHA-256 hash:
+  <code class="">{{ site.data.hash.decoded }}</code>
+</div>
+
+<!--<span class="link-download-subtext">Version {{ site.uswds_version }}</span>-->
+
+<h2 class="usa-heading">Design assets</h2>
+
+{% include download-buttons-design.html %}

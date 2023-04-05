@@ -24,7 +24,7 @@ Typefaces vary in optical size. This means that at any specific pixel value, an 
 ### Fonts at native size
 
 {:.padding-top-2}
-![optical size of typefaces]({{ site.baseurl }}/assets/img/design-tokens/font-comparison.svg)
+![optical size of native typefaces. shows merriweather as optically large, source sans pro as optically small, and public sans in the middle.]({{ site.baseurl }}/assets/img/design-tokens/font-comparison.svg){: role="img"}
 
 USWDS 2 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
@@ -32,7 +32,7 @@ USWDS 2 is designed so each size token outputs a consistent optical size regardl
 ### Fonts with normalization applied
 
 {:.padding-y-2}
-![normalized typefaces]({{ site.baseurl }}/assets/img/design-tokens/font-comparison-normalized.svg)
+![optical size of normalized typefaces. shows each font having a similar optical size.]({{ site.baseurl }}/assets/img/design-tokens/font-comparison-normalized.svg){: role="img"}
 
 To make different typefaces appear the same size (here called the _target size_) at each step of the scale (below, we see the output of [size]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.
 
@@ -60,11 +60,11 @@ Each [supported typeface]({{ site.baseurl }}/design-tokens/typesetting/font-fami
           | times: 1.0
           | divided_by: item.normal %}
         <tr>
-          <td scope="row" data-title="Typeface">
-            <span>
+          <th scope="row" data-title="Typeface">
+            <span class="text-normal">
               {{ item.name }}
             </span>
-          </td>
+          </th>
           <td data-title="Normalization">
             <span>
               {{ multiple | round: 2 }}
@@ -112,11 +112,11 @@ Since we use normalization on font sizing, we must also normalize line height to
           | times: 1.0
           | divided_by: item.normal %}
         <tr>
-          <td scope="row" data-title="Typeface">
-            <span>
+          <th scope="row" data-title="Typeface">
+            <span class="text-normal">
               {{ item.name }}
             </span>
-          </td>
+          </th>
           <td data-title="Normalization">
             <span>
               {{ normal | round: 2 }}
@@ -161,11 +161,11 @@ The individual design token sections go into this in more detail, but here's a s
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>)
@@ -183,11 +183,11 @@ The individual design token sections go into this in more detail, but here's a s
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'body'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             family('body')
@@ -205,11 +205,11 @@ The individual design token sections go into this in more detail, but here's a s
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'sans'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             family('sans')
@@ -243,11 +243,11 @@ The individual design token sections go into this in more detail, but here's a s
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
@@ -265,11 +265,11 @@ The individual design token sections go into this in more detail, but here's a s
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'ui', 'micro'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             size('ui', 'micro')
@@ -287,11 +287,11 @@ The individual design token sections go into this in more detail, but here's a s
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'sans', 6
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             size('sans', 6)
@@ -325,11 +325,11 @@ The individual design token sections go into this in more detail, but here's a s
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -347,11 +347,11 @@ The individual design token sections go into this in more detail, but here's a s
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'ui', 'micro'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -369,11 +369,11 @@ The individual design token sections go into this in more detail, but here's a s
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'sans', 6
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -407,11 +407,11 @@ The individual design token sections go into this in more detail, but here's a s
     </thead>
     <tbody class="font-mono-2xs line-height-sans-6">
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
@@ -429,11 +429,11 @@ The individual design token sections go into this in more detail, but here's a s
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'ui', 1
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             line-height('ui', 1)
@@ -451,11 +451,11 @@ The individual design token sections go into this in more detail, but here's a s
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'sans', 3
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             line-height('sans', 3)
@@ -493,11 +493,11 @@ We use the `typeset()` mixin on all our components to get the effect of default 
     </thead>
     <tbody class="font-mono-2xs line-height-sans-6">
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -515,11 +515,11 @@ We use the `typeset()` mixin on all our components to get the effect of default 
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'ui', 'micro', 1
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -537,11 +537,11 @@ We use the `typeset()` mixin on all our components to get the effect of default 
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'ui', null, 3
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -559,11 +559,11 @@ We use the `typeset()` mixin on all our components to get the effect of default 
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'ui', xs, null
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -581,11 +581,11 @@ We use the `typeset()` mixin on all our components to get the effect of default 
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token">
-          <span>
+        <th scope="row" data-title="Token">
+          <span class="text-normal">
             'ui', null, null
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —

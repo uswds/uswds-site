@@ -1,61 +1,100 @@
 primary:
-  - href: /documentation/
+  - text: How to use USWDS
+    href: /how-to-use-uswds/
+  - href: /design-principles/
   - href: /components/
   - href: /design-tokens/
   - href: /utilities/
-  - href: /page-templates/
-  - text: About
-    href: /about/
+  - href: /templates/
+  - href: /about/
 
 mobile:
-  - href: /documentation/
+  - href: /how-to-use-uswds/
     collapsible: true
+  - href: /design-principles/
   - href: /components/
     collapsible: true
   - href: /design-tokens/
     collapsible: true
   - href: /utilities/
     collapsible: true
-  - href: /page-templates/
+  - href: /templates/
+    collapsible: true
   - href: /about/
     collapsible: true
 
 Components:
-  - text: Overview
+  - text: Components
     href: /components/
   - href: /components/accordion/
   - href: /components/alert/
+  - href: /components/banner/
+  - href: /components/breadcrumb/
   - href: /components/button/
+  - href: /components/button-group/
+  - href: /components/card/
+  - href: /components/character-count/
+  - href: /components/checkbox/
+  - href: /components/collection/
+  - href: /components/combo-box/
+  - href: /components/data-visualizations/
+  - href: /components/date-input/
+  - href: /components/date-picker/
+  - href: /components/date-range-picker/
+  - href: /components/dropdown/
+  - href: /components/file-input/
   - href: /components/footer/
-  - href: /components/form-controls/
-  - href: /components/form-templates/
+  - href: /components/form/
   - text: Grid
-    href: /components/grids/
+    href: /utilities/layout-grid/
   - href: /components/header/
-  - href: /components/icons/
+  - href: /components/icon/
+  - href: /components/icon-list/
+  - href: /components/identifier/
+  - href: /components/input-prefix-suffix/
+  - href: /components/link/
+  - href: /components/list/
+  - href: /components/modal/
+  - href: /components/pagination/
+  - href: /components/process-list/
+  - href: /components/prose/
+  - href: /components/radio-buttons/
+  - href: /components/range-slider/
   - href: /components/search/
-  - href: /components/sidenav/
+  - href: /components/side-navigation/
+  - href: /components/site-alert/
+  - href: /components/step-indicator/
+  - href: /components/summary-box/
   - href: /components/table/
   - href: /components/tag/
+  - href: /components/text-input/
+  - href: /components/time-picker/
+  - href: /components/tooltip/
   - href: /components/typography/
+  - href: /components/validation/
 
-Documentation:
-  - text: Overview
-    href: /documentation/
+How to use USWDS:
+  - href: /how-to-use-uswds/
+  - text: Getting started for developers
+    href: /documentation/getting-started-for-developers/
+  - text: Getting started for designers
+    href: /documentation/getting-started-for-designers/
   - href: /documentation/developers/
-  - href: /documentation/designers/
+  - href: /documentation/settings/
+  - href: /maturity-model/
   - href: /documentation/accessibility/
   - href: /performance/
   - href: /documentation/code-guidelines/
-  - text: Migration
+  - text: Migrating to USWDS 2
     href: /documentation/migration/
   - href: /documentation/video-tutorials/
   - href: /documentation/implementations/
   - href: /documentation/showcase/
+  - href: /documentation/sample-contract-language/
+  - href: /website-standards/
 
 Design tokens:
-  - text: Overview
-    href: /design-tokens/
+  - href: /design-tokens/
   - text: Color
     href: /design-tokens/color/
   - text: Typesetting
@@ -74,8 +113,7 @@ Design tokens:
     href: /design-tokens/z-index/
 
 Utilities:
-  - text: Overview
-    href: /utilities/
+  - href: /utilities/
   - href: /utilities/layout-grid/
   - href: /utilities/color/
   - href: /utilities/height-and-width/
@@ -92,16 +130,27 @@ Utilities:
   - href: /utilities/clearfix/
   - href: /utilities/list-reset/
 
-Page templates:
-  - href: /page-templates/
+Templates:
+  - text: Templates
+    href: /templates/
+  - href: /templates/404-page/
+  - href: /templates/documentation-page/
+  - href: /templates/landing-page/
+  - href: /templates/authentication-pages/
+  - href: /templates/form-templates/
 
-About USWDS:
-  - text: Overview
-    href: /about/
-  - href: /about/history/
-  - href: /about/design-principles/
+About:
+  - href: /about/
+  - href: /about/key-benefits/
+  - href: /about/product-values/
+  - href: /about/community/
   - href: /about/whats-new/
   - href: /about/releases/
   - href: /about/updates/
   - href: /about/product-roadmap/
   - href: /about/research/
+  - href: /about/security/
+  - href: /about/website-policies-notices/
+
+Design principles:
+  - href: /design-principles/

@@ -2,9 +2,9 @@
   <li class="usa-nav__primary-item">
   {% assign _page = section.href | resolve_permalink %}
   {% if section.collapsible %}
-    {% include nav/page-collapsible.html page=_page %}
+    {% include nav/page-collapsible.html text=section.text page=_page %}
   {% else %}
-    {% include nav/page-item.html page=_page %}
+    {% include nav/page-item.html text=section.text page=_page %}
   {% endif %}
   </li>
 {% endfor %}

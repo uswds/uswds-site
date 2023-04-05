@@ -3,19 +3,19 @@
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
-      <th scope="col">Palette name</th>
-      <th scope="col">Palette contents</th>
+      <th scope="col" class="display-inline-flex">Palette name</th>
+      <th scope="col" class="display-inline-flex">Palette contents</th>
     </tr>
   </thead>
   <tbody class="font-mono-2xs">
     {% for utility in page.utilities %}
       <tr>
-        <td scope="row" data-title="Palette name" class="tablet:text-no-wrap">
-          <span>
+        <th scope="row" data-title="Palette name" class="tablet:text-no-wrap display-inline-flex">
+          <span class="text-normal">
             'palette-{{ utility.var }}-default'
           </span>
-        </td>
-        <td data-title="Palette contents">
+        </th>
+        <td data-title="Palette contents" class="display-inline-flex">
           <span>
             {{ utility.var}} default tokens
           </span>

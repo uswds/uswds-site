@@ -1,6 +1,25 @@
-<a class="usa-button desktop:margin-right-1" href="{{ site.baseurl }}/download/" onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');">
-  Download v2.0.3
-</a>
-<a class="usa-button site-button-outline-secondary" href="{{ site.repos[0].url }}" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
-  View on GitHub
-</a>
+<div class="buttons">
+  <a
+    class="usa-button site-button-outline-secondary site-button-standards margin-x-0 desktop:margin-right-1 padding-x-05 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="{{ site.baseurl }}/website-standards/"
+    onclick="ga('send', 'event', 'Read website standards', 'Clicked Read website standards from inside site');"
+  >
+    Read website standards
+  </a>
+  <a
+    class="usa-button site-button-outline-secondary site-button-download margin-x-0 desktop:margin-right-1 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="{{ site.baseurl }}/download/"
+    onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');"
+  >
+    Download <span class="version desktop:display-none desktop-lg:display-inline">v{{ site.uswds_version }}</span>
+  </a>
+  <a
+    class="usa-button site-button-github margin-x-0 desktop:margin-right-4 font-lang-sm"
+    href="{{ site.repos[0].url }}"
+    onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"
+  >
+    {% include github-logo.svg %}
+    <span class="text">View on GitHub</span>
+  </a>
+</div>
+

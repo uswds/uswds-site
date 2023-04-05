@@ -1,0 +1,28 @@
+<div class="usa-step-indicator" aria-label="progress">
+  <ol class="usa-step-indicator__segments">
+    {% for step in page.steps %}
+      {% if step.status == "completed" %}
+        {% assign modifier = "--complete" %}
+      {% elsif step.status == "current" %}
+        {% assign modifier = "--current" %}
+      {% else %}
+        {% assign modifier = "" %}
+      {% endif %}
+      <li class="usa-step-indicator__segment usa-step-indicator__segment{{ modifier }}">
+        <span class="usa-step-indicator__segment-label"
+          >{{ step.name }}{% if step.status == "completed" %} <span class="usa-sr-only">completed</span>{% endif %}{% if step.status == "completed" %} <span class="usa-sr-only">not completed</span>{% endif %}</span
+        >
+      </li>
+    {% endfor %}
+  </ol>
+  <div class="usa-step-indicator__header">
+    <h4 class="usa-step-indicator__heading">
+      <span class="usa-step-indicator__heading-counter">
+        <span class="usa-sr-only">Step</span>
+        <span class="usa-step-indicator__current-step">3</span>
+        <span class="usa-step-indicator__total-steps">of 5</span>
+      </span>
+      <span class="usa-step-indicator__heading-text">Supporting documents</span>
+    </h4>
+  </div>
+</div>

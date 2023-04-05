@@ -18,50 +18,77 @@ https://v2.designsystem.digital.gov/style-tokens
 */
 
 // Accordion
-$theme-accordion-border-width:        0.5;
-$theme-accordion-border-color:        'base-lightest';
-$theme-accordion-font-family:         'body';
+$theme-accordion-border-width: 0.5;
+$theme-accordion-border-color: "base-lightest";
+$theme-accordion-font-family: "body";
 
 // Alert
-$theme-alert-bar-width:               1;
-$theme-alert-font-family:             'ui';
-$theme-alert-icon-size:               4;
-$theme-alert-measure:                 3;
-$theme-alert-padding-x:               2.5;
+$theme-alert-bar-width: 1;
+$theme-alert-font-family: "ui";
+$theme-alert-icon-size: 4;
+$theme-alert-measure: 3;
+$theme-alert-padding-x: 2.5;
 
 // Banner
-$theme-banner-font-family:            'ui';
+// Don't use settings. It affects component examples.
+//$theme-banner-background-color: "ink" !default;
+//$theme-banner-font-family: "lang" !default;
+//$theme-banner-link-color: default !default;
+//$theme-banner-max-width: "none" !default;
 
 // Button
-$theme-button-font-family:            'ui';
-$theme-button-border-radius:          'md';
-$theme-button-small-width:            6;
-$theme-button-stroke-width:           2px;
+$theme-button-font-family: "ui";
+$theme-button-border-radius: "md";
+$theme-button-small-width: 6;
+$theme-button-stroke-width: 2px;
+
+// Card
+$theme-card-bg-color: "white";
+$theme-card-border-color: "base-lighter";
+$theme-card-border-radius: "md";
+$theme-card-border-width: 2px;
+$theme-card-font-family: "body";
+$theme-card-header-font-family: "heading";
+$theme-card-margin: 4;
+$theme-card-padding: 3;
+$theme-card-shadow: 2;
 
 // Footer
-$theme-footer-font-family:            'body';
+$theme-footer-font-family: "body";
 
 // Form and input
-$theme-checkbox-border-radius:        'sm';
-$theme-form-font-family:              'ui';
-$theme-input-line-height:             3;
-$theme-input-max-width:               'mobile-lg';
-$theme-input-select-border-width:     2px;
-$theme-input-select-size:             2.5;
-$theme-input-state-border-width:      0.5;
+$theme-checkbox-border-radius: "sm";
+$theme-form-font-family: "ui";
+$theme-input-line-height: 3;
+$theme-input-max-width: "mobile-lg";
+$theme-input-select-border-width: 2px;
+$theme-input-select-size: 2.5;
+$theme-input-state-border-width: 0.5;
 
 // Header
-$theme-header-font-family:            'ui';
-$theme-megamenu-logo-text-width:      33%;
+$theme-header-font-family: "ui";
+$theme-header-logo-text-width: 33%;
+//$theme-header-max-width: 'desktop';
+//$theme-header-min-width: 'full';
+
+// Hero
+//$theme-hero-image: null;
+
+// Identifier
+$theme-identifier-font-family: "lang";
+$theme-identifier-background-color: "base-darkest";
+$theme-identifier-identity-domain-color: "base-light";
+$theme-identifier-max-width: "widescreen";
+$theme-identifier-secondary-link-color: "base-light";
 
 // Navigation
-$theme-navigation-font-family:        'ui';
-$theme-navigation-width:              'desktop';
+$theme-navigation-font-family: "ui";
+$theme-navigation-width: "desktop";
 
 // Search
-$theme-search-font-family:            'ui';
-$theme-search-min-width:              27ch;
+$theme-search-font-family: "ui";
+$theme-search-min-width: 27ch;
 
 // Sidenav
-$theme-sidenav-current-border-width:  0.5;
-$theme-sidenav-font-family:           'ui';
+$theme-sidenav-current-border-width: 0.5;
+$theme-sidenav-font-family: "ui";

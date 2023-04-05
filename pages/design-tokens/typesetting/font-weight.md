@@ -10,10 +10,8 @@ subnav:
   href: '#theme-tokens'
 - text: System tokens
   href: '#system-tokens'
-- text: Customizing tokens
-  href: '#customizing-tokens'
 - text: Using weight tokens
-  href: '#using-font-weight-tokens'
+  href: '#using-weight-tokens'
 ---
 
 {% assign tokens = site.data.tokens.typesetting.weight %}
@@ -47,15 +45,15 @@ Customize [theme](#theme-tokens){:.token} font weight tokens in your project's t
           {% assign is_number = true %}
         {% endif %}
         <tr>
-          <td scope="row" data-title="Theme token">
-            <span>
+          <th scope="row" data-title="Theme token">
+            <span class="text-normal">
               {% if is_number %}
                 <code class="text-no-wrap">{{ item.token }}</code>
               {% else %}
                 <code class="text-no-wrap">'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Default">
             <span>
               {% if item.default == false %}
@@ -110,15 +108,15 @@ Font weight system tokens use numbers from `100`-`900` in increments of 100, wit
           {% assign is_number = true %}
         {% endif %}
         <tr>
-          <td scope="row" data-title="Theme token">
-            <span>
+          <th scope="row" data-title="Theme token">
+            <span class="text-normal">
               {% if is_number %}
                 <code class="text-no-wrap">{{ item.token }}</code>
               {% else %}
                 <code class="text-no-wrap">'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Example" class="overflow-hidden">
             <span class="font-sans-8 text-{{ item.token }}">
               Tallahassee
@@ -144,27 +142,27 @@ Your context and coding style determine how you access USWDS font weight tokens 
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context">
-          <span class="text-bold font-lang-3">function</span>
-        </td>
-        <td data-title="Usage">
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">function</span>
+        </th>
+        <td data-title="Description">
           <span class="line-height-sans-6">
-            weight(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
+            font-weight(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
           </span>
         </td>
         <td data-title="Example">
           <span class="line-height-sans-6">
-            font-weight: weight(<code>'bold'</code>)
+            font-weight: font-weight(<code>'bold'</code>)
           </span>
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
+            mixin
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             u-text(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
           </span>
@@ -176,12 +174,10 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </td>
-        <td data-title="Usage">
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">setting</span>
+        </th>
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>
           </span>
@@ -193,12 +189,12 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
+            utility
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             .text-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>
           </span>

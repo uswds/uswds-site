@@ -1,0 +1,12 @@
+name: Collection
+contents:
+  - name: Font family
+    description: Font family for collection body.
+    var: $theme-collection-font-family
+    default: '"ui"'
+    type: family
+  - name: Header typeset
+    description: Family, size, and line height of the heading.
+    var: $theme-collection-header-typeset
+    default: '"ui", "md", 3'
+    type: family

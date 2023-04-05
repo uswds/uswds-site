@@ -1,3 +1,11 @@
+{% if include.var %}
+  {% assign this_var = include.var %}
+{% else %}
+  {% assign this_var = include.title | slugify %}
+{% endif %}
+
+{% assign utility = page.utilities | where: "var", this_var | first%}
+
 <section class="utility-title-bar">
   <div class="usa-grid-row">
     <div class="usa-grid-col utility-name">
@@ -8,27 +16,27 @@
     </div>
 
     <ul class="usa-grid-col utility-scope">
-      {% if include.responsive %}
+      {% if utility.responsive %}
         <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
       {% else %}
         <li class="utility-scope-button-disabled">responsive</li>
       {% endif %}
-      {% if include.active %}
+      {% if utility.active %}
         <li class="utility-scope-button-active"><a href="#state-variants">active</a></li>
       {% else %}
         <li class="utility-scope-button-disabled">active</li>
       {% endif %}
-      {% if include.hover %}
+      {% if utility.hover %}
         <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
       {% else %}
         <li class="utility-scope-button-disabled">hover</li>
       {% endif %}
-      {% if include.focus %}
+      {% if utility.focus %}
         <li class="utility-scope-button-active"><a href="#state-variants">focus</a></li>
       {% else %}
         <li class="utility-scope-button-disabled">focus</li>
       {% endif %}
-      {% if include.visited %}
+      {% if utility.visited %}
         <li class="utility-scope-button-active"><a href="#state-variants">visited</a></li>
       {% else %}
         <li class="utility-scope-button-disabled">visited</li>

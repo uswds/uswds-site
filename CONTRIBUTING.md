@@ -2,7 +2,7 @@
 
 We’re so glad you’re thinking about contributing to a Technology Transformation Services (TTS) open source project! If you’re unsure about anything, just ask — or submit your issue or pull request anyway. The worst that can happen is we’ll politely ask you to change something. We appreciate all friendly contributions.
 
-TTS is committed to building a safe, welcoming, harassment-free culture for everyone. We expect everyone on the TTS team and everyone within TTS spaces, including contributors to our projects, to follow the [TTS Code of Conduct](https://github.com/18F/code-of-conduct/blob/master/code-of-conduct.md).
+TTS is committed to building a safe, welcoming, harassment-free culture for everyone. We expect everyone on the TTS team and everyone within TTS spaces, including contributors to our projects, to follow the [TTS Code of Conduct](https://github.com/18F/code-of-conduct/blob/main/code-of-conduct.md).
 
 We encourage you to read this project’s CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), [README](README.md) and its [Workflow](https://github.com/uswds/uswds/wiki/Workflow) process.
 
@@ -58,9 +58,9 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Create a GitHub account or sign in to your existing account.
 1. Fork this repo into your GitHub account (or just clone it if you’re an 18F team member). Read more about forking a repo here on GitHub:
 [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
-1. Create a branch from `master` that lightly defines what you’re working on (for example, add-styles).
+1. Create a branch from `main` that lightly defines what you’re working on (for example, add-styles).
 1. Once you’re ready to submit a pull request, fill out the `PULL REQUEST TEMPLATE` provided.
-1. Submit your pull request against the `master` branch.
+1. Submit your pull request against the `main` branch.
 
 Have questions or need help with setup? Open an issue here [https://github.com/uswds/uswds-site/issues](https://github.com/uswds/uswds-site/issues).
 

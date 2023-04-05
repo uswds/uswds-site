@@ -5,7 +5,7 @@ redirect_from:
 - /about/research-strategy/
 layout: styleguide
 title: Research
-category: About USWDS
+category: About
 lead: User research is a core aspect of USWDS as it’s our main source of feedback and inspiration for future product development.
 redirect_from:
   - /whats-new/research/
@@ -24,18 +24,21 @@ improvements to the design patterns. You can use these metrics to help justify
 the adoption and continued use of USWDS.
 
 #### References
-* [https://www.nngroup.com/articles/analytics-reports-ux-strategists/](https://www.nngroup.com/articles/analytics-reports-ux-strategists/)
-* [http://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/](ttp://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/)
+
+- [https://www.nngroup.com/articles/analytics-reports-ux-strategists/](https://www.nngroup.com/articles/analytics-reports-ux-strategists/)
+- [http://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/](http://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/)
 
 ## User Research Activities
+
 ### Recruitment
 
 One of our challenges is knowing who is interested in being part of our user research. To resolve this, we will implement several channels for federal designers and developers to signal their interest and provide their contact information to us. This will allow us to conduct research in a timely fashion.
 
 #### Potential Methods
-* Re-activate the screener to intercept users of designsystem.digital.gov
-* Provide a “Contact Us” feature on designsystem.digital.gov
-* Perform outreach via federal listservs and other digital channels
+
+- Re-activate the screener to intercept users of designsystem.digital.gov
+- Provide a “Contact Us” feature on designsystem.digital.gov
+- Perform outreach via federal listservs and other digital channels
 
 ### Digital Service Team Remote Interviews
 

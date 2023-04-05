@@ -26,27 +26,27 @@ layout-grid:
   - v1: .usa-grid-full
     v2: .grid-container.padding-x-0
   - v1: .usa-width-one-whole
-    v2: .grid-row-12
+    v2: .grid-col-12
   - v1: .usa-width-one-half
-    v2: .grid-row-6
+    v2: .grid-col-6
   - v1: .usa-width-one-third
-    v2: .grid-row-4
+    v2: .grid-col-4
   - v1: .usa-width-two-thirds
-    v2: .grid-row-8
+    v2: .grid-col-8
   - v1: .usa-width-one-fourth
-    v2: .grid-row-3
+    v2: .grid-col-3
   - v1: .usa-width-three-fourths
-    v2: .grid-row-9
+    v2: .grid-col-9
   - v1: .usa-width-one-sixth
-    v2: .grid-row-2
+    v2: .grid-col-2
   - v1: .usa-width-five-sixths
-    v2: .grid-row-10
+    v2: .grid-col-10
   - v1: .usa-width-one-twelfth
-    v2: .grid-row-1
+    v2: .grid-col-1
   - v1: .usa-width-five-twelfths
-    v2: .grid-row-5
+    v2: .grid-col-5
   - v1: .usa-width-seven-twelfths
-    v2: .grid-row-7
+    v2: .grid-col-7
   - v1: .usa-offset-one-twelfth
     v2: .grid-offset-1
   - v1: .usa-offset-one-sixth
@@ -581,3 +581,885 @@ sidenav:
 skipnav:
   - v1: '.usa-skipnav'
     v2: '.usa-skipnav'
+
+variables:
+  - v1: '$em-base'
+    v1_value: '10px'
+    v2: '$theme-root-font-size'
+    v2_value: '16px'
+    kind: 'px'
+    location: 'typography'
+    notes: 'only applies when `$theme-respect-user-font-size` is set to `false`'
+  - v1: '$base-font-size'
+    v1_value: '1.7rem'
+    v2: '$theme-body-font-size'
+    v2_value: 'sm'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$small-font-size'
+    v1_value: '1.4rem'
+    v2: '$theme-small-font-size'
+    v2_value: '2xs'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$lead-font-size'
+    v1_value: '2rem'
+    v2: '$theme-lead-font-size'
+    v2_value: 'lg'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$title-font-size'
+    v1_value: '5.2rem'
+    v2: '$theme-display-font-size'
+    v2_value: '3xl'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$h1-font-size'
+    v1_value: '4rem'
+    v2: '$theme-h1-font-size'
+    v2_value: '2xl'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$h2-font-size'
+    v1_value: '3rem'
+    v2: '$theme-h2-font-size'
+    v2_value: 'xl'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$h3-font-size'
+    v1_value: '2rem'
+    v2: '$theme-h3-font-size'
+    v2_value: 'lg'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$h4-font-size'
+    v1_value: '1.7rem'
+    v2: '$theme-h4-font-size'
+    v2_value: 'sm'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$h5-font-size'
+    v1_value: '1.5rem'
+    v2: '$theme-h5-font-size'
+    v2_value: 'xs'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$h6-font-size'
+    v1_value: '1.3rem'
+    v2: '$theme-h6-font-size'
+    v2_value: '3xs'
+    kind: 'size'
+    location: 'typography'
+    notes:
+  - v1: '$base-line-height'
+    v1_value: '1.5'
+    v2: '$theme-body-line-height'
+    v2_value: '5'
+    kind: 'line-height'
+    location: 'typography'
+    notes:
+  - v1: '$heading-line-height'
+    v1_value: '1.3'
+    v2: '$theme-heading-line-height'
+    v2_value: '2'
+    kind: 'line-height'
+    location: 'typography'
+    notes:
+  - v1: '$lead-line-height'
+    v1_value: '1.7'
+    v2: '$theme-lead-line-height'
+    v2_value: '6'
+    kind: 'line-height'
+    location: 'typography'
+    notes:
+  - v1: '$font-sans'
+    v1_value: 'Source Sans Pro, $helvetica'
+    v2: '$theme-font-type-sans'
+    v2_value: 'source-sans-pro'
+    kind: 'family'
+    location: 'typography'
+    notes:
+  - v1: '$font-serif'
+    v1_value: 'Merriweather, $georgia'
+    v2: '$theme-font-type-serif'
+    v2_value: 'merriweather'
+    kind: 'family'
+    location: 'typography'
+    notes:
+  - v1: '$font-normal'
+    v1_value: '400'
+    v2: '$theme-font-weight-normal'
+    v2_value: '400'
+    kind: 'weight'
+    location: 'typography'
+    notes:
+  - v1: '$font-bold'
+    v1_value: '700'
+    v2: '$theme-font-weight-bold'
+    v2_value: '700'
+    kind: 'weight'
+    location: 'typography'
+    notes:
+  - v1: '$color-blue'
+    v1_value: '#0071bc'
+    v2: 'n/a'
+    v2_value: 'blue-60v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-blue-darker'
+    v1_value: '#205493'
+    v2: 'n/a'
+    v2_value: 'blue-warm-70v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-blue-darkest'
+    v1_value: '#112e51'
+    v2: 'n/a'
+    v2_value: 'blue-warm-80v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-aqua'
+    v1_value: '#02bfe7'
+    v2: 'n/a'
+    v2_value: 'cyan-30v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-aqua-dark'
+    v1_value: '#00a6d2'
+    v2: 'n/a'
+    v2_value: 'cyan-40v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-aqua-darkest'
+    v1_value: '#046b99'
+    v2: 'n/a'
+    v2_value: 'blue-cool-60v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-aqua-light'
+    v1_value: '#9bdaf1'
+    v2: 'n/a'
+    v2_value: 'blue-cool-20v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-aqua-lightest'
+    v1_value: '#e1f3f8'
+    v2: 'n/a'
+    v2_value: 'blue-cool-5v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-red'
+    v1_value: '#e31c3d'
+    v2: 'n/a'
+    v2_value: 'red-cool-50v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-red-dark'
+    v1_value: '#cd2026'
+    v2: 'n/a'
+    v2_value: 'red-60v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-red-darkest'
+    v1_value: '#981b1e'
+    v2: 'n/a'
+    v2_value: 'red-70v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-red-light'
+    v1_value: '#e59393'
+    v2: 'n/a'
+    v2_value: 'red-30'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-red-lightest'
+    v1_value: '#f9dede'
+    v2: 'n/a'
+    v2_value: 'red-cool-10v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-white'
+    v1_value: '#ffffff'
+    v2: 'n/a'
+    v2_value: 'white'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-black'
+    v1_value: '#000000'
+    v2: 'n/a'
+    v2_value: 'black'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-black-light'
+    v1_value: '#212121'
+    v2: 'n/a'
+    v2_value: 'gray-90'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gray-dark'
+    v1_value: '#323a45'
+    v2: 'n/a'
+    v2_value: 'gray-cool-70'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gray'
+    v1_value: '#5b616b'
+    v2: 'n/a'
+    v2_value: 'gray-cool-60'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gray-medium'
+    v1_value: '#757575'
+    v2: 'n/a'
+    v2_value: 'gray-50'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gray-light'
+    v1_value: '#aeb0b5'
+    v2: 'n/a'
+    v2_value: 'gray-cool-30'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gray-lighter'
+    v1_value: '#d6d7d9'
+    v2: 'n/a'
+    v2_value: 'gray-cool-10'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gray-lightest'
+    v1_value: '#f1f1f1'
+    v2: 'n/a'
+    v2_value: 'gray-cool-5'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gray-warm-dark'
+    v1_value: '#494440'
+    v2: 'n/a'
+    v2_value: 'gray-warm-70'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gray-warm-light'
+    v1_value: '#e4e2e0'
+    v2: 'n/a'
+    v2_value: 'gray-warm-10'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gray-cool-light'
+    v1_value: '#dce4ef'
+    v2: 'n/a'
+    v2_value: 'blue-warm-10'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gold'
+    v1_value: '#fdb81e'
+    v2: 'n/a'
+    v2_value: 'gold-20v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gold-light'
+    v1_value: '#f9c642'
+    v2: 'n/a'
+    v2_value: 'yellow-20v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gold-lighter'
+    v1_value: '#fad980'
+    v2: 'n/a'
+    v2_value: 'gold-10v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-gold-lightest'
+    v1_value: '#fff1d2'
+    v2: 'n/a'
+    v2_value: 'gold-5v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-green'
+    v1_value: '#2e8540'
+    v2: 'n/a'
+    v2_value: 'green-cool-50v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-green-light'
+    v1_value: '#4aa564'
+    v2: 'n/a'
+    v2_value: 'green-cool-40'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-green-lighter'
+    v1_value: '#94bfa2'
+    v2: 'n/a'
+    v2_value: 'green-cool-20'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-green-lightest'
+    v1_value: '#e7f4e4'
+    v2: 'n/a'
+    v2_value: 'green-cool-5'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-cool-blue'
+    v1_value: '#205493'
+    v2: 'n/a'
+    v2_value: 'blue-warm-60'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-cool-blue-light'
+    v1_value: '#4773aa'
+    v2: 'n/a'
+    v2_value: 'blue-warm-50'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-cool-blue-lighter'
+    v1_value: '#8ba6ca'
+    v2: 'n/a'
+    v2_value: 'blue-warm-30'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-cool-blue-lightest'
+    v1_value: '#dce4ef'
+    v2: 'n/a'
+    v2_value: 'blue-warm-10'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-purple'
+    v1_value: '#4c2c92'
+    v2: 'n/a'
+    v2_value: 'violet-70v'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$color-primary'
+    v1_value: '$color-blue'
+    v2: '$theme-color-primary'
+    v2_value: 'blue-60v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-primary-darker'
+    v1_value: '$color-blue-darker'
+    v2: '$theme-color-primary-dark'
+    v2_value: 'blue-warm-70v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-primary-darkest'
+    v1_value: '$color-blue-darkest'
+    v2: '$theme-color-primary-darker'
+    v2_value: 'blue-warm-80v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-primary-alt'
+    v1_value: '$color-aqua'
+    v2: '$theme-color-accent-cool'
+    v2_value: 'cyan-30v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-primary-alt-dark'
+    v1_value: '$color-aqua-dark'
+    v2: '$theme-color-accent-cool-dark'
+    v2_value: 'blue-cool-40v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-primary-alt-darkest'
+    v1_value: '$color-aqua-darkest'
+    v2: '$theme-color-accent-cool-darker'
+    v2_value: 'blue-cool-60v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-primary-alt-light'
+    v1_value: '$color-aqua-light'
+    v2: '$theme-color-accent-cool-light'
+    v2_value: 'blue-cool-20v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-primary-alt-lightest'
+    v1_value: '$color-aqua-lightest'
+    v2: '$theme-color-accent-cool-lighter'
+    v2_value: 'blue-cool-5v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-secondary'
+    v1_value: '$color-red'
+    v2: '$theme-color-secondary-vivid'
+    v2_value: 'red-cool-50v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-secondary-dark'
+    v1_value: '$color-red-dark'
+    v2: '$theme-color-secondary-dark'
+    v2_value: 'red-60v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-secondary-darkest'
+    v1_value: '$color-red-darkest'
+    v2: '$theme-color-secondary-darker'
+    v2_value: 'red-70v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-secondary-light'
+    v1_value: '$color-red-light'
+    v2: '$theme-color-secondary-light'
+    v2_value: 'red-30'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-secondary-lightest'
+    v1_value: '$color-red-lightest'
+    v2: '$theme-color-secondary-lighter'
+    v2_value: 'red-cool-10v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-base'
+    v1_value: '$color-black-light'
+    v2: '$theme-color-base-darkest'
+    v2_value: 'black-90'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-focus'
+    v1_value: '$color-gray-light'
+    v2: '$theme-focus-color'
+    v2_value: 'blue-40v'
+    kind: 'color'
+    location: 'general'
+    notes:
+  - v1: '$color-visited'
+    v1_value: '$color-purple'
+    v2: '$theme-link-visited-color'
+    v2_value: 'violet-70v'
+    kind: 'color'
+    location: 'color'
+    notes:
+  - v1: '$color-shadow'
+    v1_value: 'rgba(#000, 0.3)'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use shadow tokens'
+  - v1: '$color-transparent'
+    v1_value: 'rgba(#000, 0)'
+    v2: 'n/a'
+    v2_value: 'transparent'
+    kind: '—'
+    notes: 'use color token'
+  - v1: '$small-screen'
+    v1_value: '481px'
+    v2: 'n/a'
+    v2_value: 'mobile-lg'
+    kind: '—'
+    notes: 'use width token'
+  - v1: '$medium-screen'
+    v1_value: '600px'
+    v2: 'n/a'
+    v2_value: 'tablet'
+    kind: '—'
+    notes: 'use width token'
+  - v1: '$large-screen'
+    v1_value: '1201px'
+    v2: 'n/a'
+    v2_value: 'desktop-lg'
+    kind: '—'
+    notes: 'use width token'
+  - v1: '$grid-columns-small'
+    v1_value: '1'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use layout grid'
+  - v1: '$grid-columns-medium'
+    v1_value: '6'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use layout grid'
+  - v1: '$grid-columns-large'
+    v1_value: '12'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use layout grid'
+  - v1: '$small'
+    v1_value: 'new-breakpoint(min-width $small-screen $grid-columns-small)'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use `at-media()` mixin and width tokens'
+  - v1: '$medium'
+    v1_value: 'new-breakpoint(min-width $medium-screen $grid-columns-medium)'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use `at-media()` mixin and width tokens'
+  - v1: '$large'
+    v1_value: 'new-breakpoint(min-width $large-screen $grid-columns-large)'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use `at-media()` mixin and width tokens'
+  - v1: '$asset-path'
+    v1_value: '../'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use `$theme-font-path` and `$theme-image-path`'
+  - v1: '$font-path'
+    v1_value: '#{$asset-path}fonts'
+    v2: '$theme-font-path'
+    v2_value: '../fonts'
+    kind: 'path'
+    location: 'typography'
+    notes: 'relative to the compiled css'
+  - v1: '$image-path'
+    v1_value: '#{$asset-path}img'
+    v2: '$theme-image-path'
+    v2_value: '../img'
+    kind: 'path'
+    location: 'general'
+    notes: 'relative to the compiled css'
+  - v1: '$asset-pipeline'
+    v1_value: 'FALSE'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'this functionality is not implemented in v2'
+  - v1: '$text-max-width'
+    v1_value: '66ch'
+    v2: '$theme-text-measure'
+    v2_value: '4'
+    kind: 'measure'
+    location: 'typography'
+    notes:
+  - v1: '$lead-max-width'
+    v1_value: '77rem'
+    v2: '$theme-lead-measure'
+    v2_value: '6'
+    kind: 'measure'
+    location: 'typography'
+    notes:
+  - v1: '$site-max-width'
+    v1_value: '1040px'
+    v2: '$theme-grid-container-max-width'
+    v2_value: 'desktop'
+    kind: 'units'
+    location: 'spacing'
+    notes:
+  - v1: '$site-margins'
+    v1_value: '3rem'
+    v2: '$theme-site-margins-width'
+    v2_value: '4'
+    kind: 'units'
+    location: 'spacing'
+    notes:
+  - v1: '$site-margins-mobile'
+    v1_value: '1.5rem'
+    v2: '$theme-site-margins-mobile-width'
+    v2_value: '2'
+    kind: 'units'
+    location: 'spacing'
+    notes:
+  - v1: '$article-max-width'
+    v1_value: '600px'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes:
+  - v1: '$input-max-width'
+    v1_value: '46rem'
+    v2: '$theme-input-max-width'
+    v2_value: 'mobile-lg'
+    kind: 'units'
+    location: 'component'
+    notes:
+  - v1: '$label-border-radius'
+    v1_value: '2px'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'not used in v2 — currently `sm`'
+  - v1: '$checkbox-border-radius'
+    v1_value: '2px'
+    v2: '$theme-checkbox-border-radius'
+    v2_value: 'sm'
+    kind: 'border-radius|units'
+    location: 'component'
+    notes:
+  - v1: '$border-radius'
+    v1_value: '3px'
+    v2: '$theme-border-radius-md'
+    v2_value: '0.5'
+    kind: 'units'
+    location: 'spacing'
+    notes: 'use alongside `$theme-border-radius-sm` and `$theme-border-radius-lg`. sets value of `sm`, `md`, and `lg` border-radius theme tokens'
+  - v1: '$button-border-radius'
+    v1_value: '5px'
+    v2: '$theme-button-border-radius'
+    v2_value: 'md'
+    kind: 'border-radius|units'
+    location: 'component'
+    notes:
+  - v1: '$box-shadow'
+    v1_value: '0 0 2px $color-shadow'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use shadow tokens'
+  - v1: '$focus-outline'
+    v1_value: '2px dotted $color-gray-light'
+    v2: '$theme-focus-width'
+    v2_value: '0.5'
+    kind: 'units'
+    location: 'general'
+    notes:
+  - v1: '$focus-spacing'
+    v1_value: '3px'
+    v2: '$theme-focus-offset'
+    v2_value: '0'
+    kind: 'units'
+    location: 'general'
+    notes:
+  - v1: '$nav-width'
+    v1_value: '951px'
+    v2: '$theme-header-max-width'
+    v2_value: 'desktop'
+    kind: 'units'
+    location: 'component'
+    notes: 'The maximum width of header and nav.'
+  - v1: '$nav-width'
+    v1_value: '951px'
+    v2: '$theme-header-min-width'
+    v2_value: 'desktop'
+    kind: 'units'
+    location: 'component'
+    notes: 'The minimum width of the header and nav. In practice, this is the breakpoint at which the mobile nav becomes the desktop nav. Used in media queries.'
+  - v1: '$sidenav-current-border-width'
+    v1_value: '0.4rem'
+    v2: '$theme-sidenav-current-border-width'
+    v2_value: '0.5'
+    kind: 'units'
+    location: 'component'
+    notes:
+  - v1: '$hit-area'
+    v1_value: '4.4rem'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'no longer a user-settable variable (now `$size-touch-target`)'
+  - v1: '$spacing-x-small'
+    v1_value: '0.5rem'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use spacing tokens'
+  - v1: '$spacing-small'
+    v1_value: '1rem'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use spacing tokens'
+  - v1: '$spacing-md-small'
+    v1_value: '1.5rem'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use spacing tokens'
+  - v1: '$spacing-medium'
+    v1_value: '2rem'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use spacing tokens'
+  - v1: '$spacing-large'
+    v1_value: '3rem'
+    v2: 'n/a'
+    v2_value: '—'
+    kind: '—'
+    notes: 'use spacing tokens'
+
+units:
+  - v1: 1px
+    v2: 1px
+    function: units(1px)
+    mixin: u-margin-top(1px)
+    utility: .margin-top-1px
+    setting: 1px
+    value: 1px
+  - v1: 2px
+    v2: 2px
+    function: units(2px)
+    mixin: u-margin-top(2px)
+    utility: .margin-top-2px
+    setting: 2px
+    value: 2px
+  - v1: 3px
+    v2: 0.5 units
+    function: units(0.5)
+    mixin: u-margin-top(0.5)
+    utility: .margin-top-05
+    setting: 0.5
+    value: 4px
+  - v1: 4px
+    v2: 0.5 units
+    function: units(0.5)
+    mixin: u-margin-top(0.5)
+    utility: .margin-top-05
+    setting: 0.5
+    value: 4px
+  - v1: 5px
+    v2: 0.5 units
+    function: units(0.5)
+    mixin: u-margin-top(0.5)
+    utility: .margin-top-05
+    setting: 0.5
+    value: 4px
+  - v1: 6px
+    v2: 1 unit
+    function: units(1)
+    mixin: u-margin-top(1)
+    utility: .margin-top-1
+    setting: 1
+    value: 8px
+  - v1: 7px
+    v2: 1 unit
+    function: units(1)
+    mixin: u-margin-top(1)
+    utility: .margin-top-1
+    setting: 1
+    value: 8px
+  - v1: 8px
+    v2: 1 unit
+    function: units(1)
+    mixin: u-margin-top(1)
+    utility: .margin-top-1
+    setting: 1
+    value: 8px
+  - v1: 9px
+    v2: 1 unit
+    function: units(1)
+    mixin: u-margin-top(1)
+    utility: .margin-top-1
+    setting: 1
+    value: 8px
+  - v1: 10px
+    v2: 1.5 units
+    function: units(1.5)
+    mixin: u-margin-top(1.5)
+    utility: .margin-top-105
+    setting: 1.5
+    value: 12px
+  - v1: 11px
+    v2: 1.5 units
+    function: units(1.5)
+    mixin: u-margin-top(1.5)
+    utility: .margin-top-105
+    setting: 1.5
+    value: 12px
+  - v1: 12px
+    v2: 1.5 units
+    function: units(1.5)
+    mixin: u-margin-top(1.5)
+    utility: .margin-top-105
+    setting: 1.5
+    value: 12px
+  - v1: 13px
+    v2: 1.5 units
+    function: units(1.5)
+    mixin: u-margin-top(1.5)
+    utility: .margin-top-105
+    setting: 1.5
+    value: 12px
+  - v1: 14px
+    v2: 2 units
+    function: units(2)
+    mixin: u-margin-top(2)
+    utility: .margin-top-2
+    setting: 2
+    value: 16px
+  - v1: 15px
+    v2: 2 units
+    function: units(2)
+    mixin: u-margin-top(2)
+    utility: .margin-top-2
+    setting: 2
+    value: 16px
+  - v1: 16px
+    v2: 2 units
+    function: units(2)
+    mixin: u-margin-top(2)
+    utility: .margin-top-2
+    setting: 2
+    value: 16px
+  - v1: 17px
+    v2: 2 units
+    function: units(2)
+    mixin: u-margin-top(2)
+    utility: .margin-top-2
+    setting: 2
+    value: 16px
+  - v1: 18px
+    v2: 2.5 units
+    function: units(2.5)
+    mixin: u-margin-top(2.5)
+    utility: .margin-top-205
+    setting: 2.5
+    value: 20px
+  - v1: 19px
+    v2: 2.5 units
+    function: units(2.5)
+    mixin: u-margin-top(2.5)
+    utility: .margin-top-205
+    setting: 2.5
+    value: 20px
+  - v1: 20px
+    v2: 2.5 units
+    function: units(2.5)
+    mixin: u-margin-top(2.5)
+    utility: .margin-top-205
+    setting: 2.5
+    value: 20px
+  - v1: 25px
+    v2: 3 units
+    function: units(3)
+    mixin: u-margin-top(3)
+    utility: .margin-top-3
+    setting: 3
+    value: 24px
+  - v1: 30px
+    v2: 4 units
+    function: units(4)
+    mixin: u-margin-top(4)
+    utility: .margin-top-4
+    setting: 4
+    value: 32px
+  - v1: 35px
+    v2: 5 units
+    function: units(5)
+    mixin: u-margin-top(5)
+    utility: .margin-top-5
+    setting: 5
+    value: 40px
+  - v1: 40px
+    v2: 5 units
+    function: units(5)
+    mixin: u-margin-top(5)
+    utility: .margin-top-5
+    setting: 5
+    value: 40px

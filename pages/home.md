@@ -1,22 +1,24 @@
 ---
 permalink: /
 redirect_from:
-- /getting-started/
+  - /getting-started/
+
 layout: landing
 title: "USWDS: The United States Web Design System"
 class: home
 hero:
   callout: A design system for the federal government
   content: Design and build fast, accessible, mobile-friendly government websites backed by user research.
+touchpoints_survey: false
 graphic_list:
   list_item:
     - topic: Components
-      description: Browse all USWDS components and get UX, accessibility, and implementation guidance.
+      description: Browse all USWDS components, and get UX, accessibility, and implementation guidance.
       image:
         src: img/home/ui-component.svg
         alt:
       link:
-        text: Browse the components
+        text: Browse components
         url: components
     - topic: Design tokens
       description: Learn how to get started using design tokens, the building blocks of USWDS component design.
@@ -27,7 +29,7 @@ graphic_list:
         text: View design tokens
         url: design-tokens
     - topic: Utilities
-      description: Adapt your designs and deliver prototypes quickly and consistently, without touching a line of CSS.
+      description: Adapt your designs and deliver prototypes quickly and consistently without touching a line of CSS.
       image:
         src: img/home/utilities.svg
         alt:
@@ -44,7 +46,7 @@ graphic_list:
         url: page-templates
 ---
 
-<section class="usa-section bg-base-lightest showcase">
+<section class="usa-section bg-base-lightest showcase" aria-label="Sites using USWDS">
   <div class="grid-container">
     <h2 class="font-lang-xl margin-y-0 line-height-serif-2">Showcase</h2>
     <div class="grid-row grid-gap tablet:margin-top-3">

@@ -2,7 +2,7 @@
 permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
-category: About USWDS
+category: About
 lead: Here you can find the latest news and information about USWDS. Read our latest release notes, learn about our impact in the government, and learn how we conduct user research to continuously improve our product and process.
 columns:
   - title: New users
@@ -32,8 +32,8 @@ You can read some older posts on the [18F Blog](https://18f.gsa.gov/tags/web-des
 
 Interested in seeing who else is using USWDS? We
 maintain a list of sites in our GitHub repo. Feel free to
-[open an issue](https://github.com/uswds/uswds-assets/issues/new)
-or [email us](mailto:uswds@gsa.gov) if you’d like to add your
+[open an issue](https://github.com/uswds/uswds-assets/issues/new) using GitHub
+or [email us](mailto:{{ site.uswds_email }}) if you’d like to add your
 project to our list.
 
 <a href="https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md" class="usa-button site-button">View our list on GitHub</a>
@@ -46,34 +46,4 @@ project to our list.
   <div class="tablet:grid-col">
     {{ in_wild | markdownify }}
   </div>
-</div>
-
-## Web analytics for sites that use USWDS
-
-By accessing the Google Analytics data gathered for [analytics.usa.gov](https://analytics.usa.gov),
-we have aggregated a few data points to approximate how many users of federal
-websites have “experienced” USWDS. We will update these
-numbers quarterly.
-
-<div class="site-table-wrapper margin-top-4">
-  <table class="usa-table--borderless site-table-responsive">
-    <thead>
-      <tr>
-        <th scope="col" aria-sort="ascending">Quarter</th>
-        {% for column in page.columns %}
-        <th scope="col" align="right" class="text-right">{{ column.title }}</th>
-        {% endfor %}
-      </tr>
-    </thead>
-    <tbody class="font-lang-2 text-tabular">
-    {% for row in site.data.google_analytics reversed %}
-      <tr>
-        <td scope="row" data-title="Quarter"><span><strong>{{ row.Year }}</strong> {{ row.Quarter }}</span></td>
-        {% for column in page.columns %}
-        <td data-title="{{ column.title }}" class="text-right">{{ row[column.source] }}</td>
-        {% endfor %}
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
 </div>

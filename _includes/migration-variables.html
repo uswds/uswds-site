@@ -1,0 +1,66 @@
+{% assign classes = site.data.migration['variables'] %}
+{% assign col1Title = 'USWDS v1' %}
+{% assign col1Width = 'flex-1' %}
+{% assign col2Title = 'USWDS v2' %}
+{% assign col2Width = 'flex-2' %}
+{% assign col3Title = 'v2 default' %}
+{% assign col3Width = 'flex-1' %}
+{% assign col4Title = 'Kind' %}
+{% assign col4Width = 'flex-1' %}
+{% assign col5Title = 'Settings file' %}
+{% assign col5Width = 'flex-1' %}
+{% assign col6Title = 'Note' %}
+{% assign col6Width = 'flex-2' %}
+
+<table class="usa-table--borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
+      <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
+      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
+      <th scope="col" class="{{ col5Width }}">{{ col5Title }}</th>
+      <th scope="col" class="{{ col6Width }}">{{ col6Title }}</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for class in classes %}
+      <tr>
+        <td data-title="{{ col1Title }}" class="{{ col1Width }}">
+          <span class="font-lang-3xs">
+            {{ class.v1 }}
+          </span>
+        </td>
+        <td data-title="{{ col2Title }}" class="{{ col2Width }}">
+            <span class="text-bold font-lang-3xs">
+              {{ class.v2 }}
+            </span>
+        </td>
+        <td data-title="{{ col3Title }}" class="{{ col3Width }}">
+          <span class="text-primary-vivid">
+            {{ class.v2_value }}
+          </span>
+        </td>
+        <td data-title="{{ col4Title }}" class="{{ col4Width }}">
+          <span>
+            {% include get-token-url.html token=class.kind %}
+          </span>
+        </td>
+        <td data-title="{{ col5Title }}" class="{{ col5Width }}">
+          <span class="font-lang-3xs">
+            {% if class.location %}
+            <a href="{{ site.baseurl }}/documentation/settings/#{{ class.location }}-settings">{{ class.location }}</a>
+            {% else %}
+            —
+            {% endif %}
+          </span>
+        </td>
+        <td data-title="{{ col6Title }}" class="{{ col6Width }}">
+          <span class="font-lang-3xs">
+            {{ class.notes | markdownify }}
+          </span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

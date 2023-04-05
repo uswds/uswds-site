@@ -12,12 +12,27 @@
     </div>
     <button class="usa-menu-btn">Menu</button>
     <div class="navbar--container">
-      <form class="navbar__search usa-search usa-search--small desktop:margin-right-2 display-none desktop:display-inline-block float-none text-middle" action="{{ site.baseurl }}/search/">
+      <form
+        id="search_form"
+        class="navbar__search usa-search usa-search--small desktop:margin-right-2 display-none desktop:display-inline-block float-none text-middle"
+        action="https://search.usa.gov/search"
+        accept-charset="UTF-8"
+        method="get">
+        <input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="affiliate" id="affiliate" value="uswds" />
         <div role="search">
-          <label class="usa-sr-only" for="search-input">Search</label>
-          <input class="usa-input" id="search-input" type="search" name="q">
-          <button class="usa-button" type="submit">
-            <span class="usa-sr-only">Search</span>
+          <label class="usa-sr-only" for="query">Search</label>
+          <input
+            id="query"
+            class="usa-input usagov-search-autocomplete"
+            name="query"
+            type="search"
+            autocomplete="off"/>
+          <button 
+            class="usa-button" 
+            type="submit"
+            name="commit">    
+            <img src="{{ site.baseurl }}/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search">
           </button>
         </div>
       </form>
@@ -42,12 +57,28 @@
   <button class="usa-nav__close">
     <span class="usa-sr-only">Close</span>
   </button>
-  <form class="usa-search usa-search--small desktop:margin-right-4" action="{{ site.baseurl }}/search/">
+
+  <form
+    id="search_form-mobile"
+    class="usa-search usa-search--small desktop:margin-right-4"
+    action="https://search.usa.gov/search"
+    accept-charset="UTF-8"
+    method="get">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="affiliate" id="affiliate-mobile" value="uswds" />
     <div role="search">
-      <label class="usa-sr-only" for="search-field-small2">Search</label>
-      <input class="usa-input" id="search-field-small2" type="search" name="q">
-      <button class="usa-button margin-top-0" type="submit">
-        <span class="usa-sr-only">Search</span>
+      <label class="usa-sr-only" for="query-mobile">Search</label>
+      <input
+        id="query-mobile"
+        class="usa-input usagov-search-autocomplete"
+        name="query"
+        type="search"
+        autocomplete="off"/>
+      <button
+        class="usa-button margin-top-0"
+        type="submit"
+        name="commit">
+        <img src="{{ site.baseurl }}/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search">
       </button>
     </div>
   </form>

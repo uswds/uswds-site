@@ -1,0 +1,4 @@
+- **Users frequently confuse tags as buttons.** Always conduct usability testing to make sure your particular implementation is not causing frustration.
+- **If your tags aren’t interactive, disable hover, focus, and active styles.**
+- **Don’t mix interactive and static tags.** Once you establish a pattern for how tags behave on your site, users will expect that behavior every time.
+- **Don’t overdo it.** If everything on a page is called out as important, nothing commands unique attention.

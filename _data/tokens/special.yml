@@ -17,10 +17,10 @@ full_percent:
     value: 100%
 full_viewport_height:
   - token: 'viewport'
-    value: 100vw
+    value: 100vh
 full_viewport_width:
   - token: 'viewport'
-    value: 100vh
+    value: 100vw
 spacing_05:
   - token: '05'
     value: 4px

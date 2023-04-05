@@ -34,8 +34,8 @@ subnav:
         {% include tokens/is_number.html %}
 
         <tr>
-          <td scope="row" data-title="Token">
-            <span>
+          <th scope="row" data-title="Token">
+            <span class="text-normal">
               {% if converted %}
                 <code>{{ converted }}</code>,
               {% endif %}
@@ -45,7 +45,7 @@ subnav:
                 <code>'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Example">
             <span class="font-sans-12 text-ls-{{ item.token }} overflow-hidden">
               Tallahassee
@@ -76,10 +76,10 @@ Your context and coding style determine how you access USWDS letterspacing token
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context">
-          <span class="text-bold font-lang-3">function</span>
-        </td>
-        <td data-title="Usage">
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">function</span>
+        </th>
+        <td data-title="Description">
           <span class="line-height-sans-6">
             letter-spacing(<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>)<br/>
             ls(<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>)
@@ -93,12 +93,12 @@ Your context and coding style determine how you access USWDS letterspacing token
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
+            mixin
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             u-text('ls-<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>')
           </span>
@@ -110,12 +110,10 @@ Your context and coding style determine how you access USWDS letterspacing token
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </td>
-        <td data-title="Usage">
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">setting</span>
+        </th>
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
           </span>
@@ -127,12 +125,12 @@ Your context and coding style determine how you access USWDS letterspacing token
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
+            utility
           </span>
-        </td>
-        <td data-title="Usage">
+        </th>
+        <td data-title="Description">
           <span>
             .text-ls-<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
           </span>

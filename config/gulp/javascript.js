@@ -1,14 +1,14 @@
-var gulp        = require('gulp');
-var gutil       = require('gulp-util');
-var dutil       = require('./doc-util');
-var browserify  = require('browserify');
-var buffer      = require('vinyl-buffer');
-var source      = require('vinyl-source-stream');
-var uglify      = require('gulp-uglify');
-var sourcemaps  = require('gulp-sourcemaps');
-var rename      = require('gulp-rename');
-var linter      = require('gulp-eslint');
-var task        = 'javascript';
+const gulp        = require('gulp');
+const log       = require('fancy-log');
+const dutil       = require('./doc-util');
+const browserify  = require('browserify');
+const buffer      = require('vinyl-buffer');
+const source      = require('vinyl-source-stream');
+const uglify      = require('gulp-uglify');
+const sourcemaps  = require('gulp-sourcemaps');
+const rename      = require('gulp-rename');
+const linter      = require('gulp-eslint');
+const task        = 'javascript';
 
 gulp.task('eslint', function (done) {
 
@@ -36,6 +36,7 @@ gulp.task('copy-uswds-javascript', function (done) {
 
 });
 
+
 gulp.task(task,
   gulp.series(
     gulp.parallel(
@@ -55,7 +56,7 @@ gulp.task(task,
         .pipe(buffer())
         .pipe(sourcemaps.init({ loadMaps: true }))
           .pipe(uglify())
-          .on('error', gutil.log)
+          .on('error', log)
           .pipe(rename({
             basename: 'styleguide',
           }))

@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="default-container">
-  <aside class="sidenav">
+  <aside class="sidenav" id="page-side-navigation">
     {% assign sidenav = site.data.nav[page.category] %}
     {% if sidenav %}
     <ul class="site-sidenav usa-sidenav">
@@ -21,11 +21,6 @@ layout: default
           {% endunless %}
         {% endif %}
         <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
-        {% if page.category == 'UI components' and page.component_url %}
-          <span class="components-library-link">
-            <a href="{{ page.component_url }}">View in Component Library</a>
-          </span>
-        {% endif %}
       </header>
 
       {% include lead.html text=page.lead %}

@@ -9,3 +9,6 @@ npm-debug.log
 assets/
 .jekyll_get_cache/
 contrast-report.json
+.jekyll-cache/
+vendor/
+pa11y-results.json

@@ -3,16 +3,40 @@ layout: default
 ---
 
 <main id="main-content">
-  <div class="bg-gold-20v padding-x-2 desktop:padding-x-4 padding-y-1 line-height-sans-3 font-lang-4">
-    For USWDS 1.x documentation, see <a href="https://v1.designsystem.digital.gov" class="text-ink text-bold text-no-underline hover:text-underline">v1.designsystem.digital.gov</a>.
+  <div
+    class="bg-gold-20v padding-x-2 desktop:padding-x-4 padding-y-1 line-height-sans-3 font-lang-4"
+  >
+    What's next for USWDS? Read our report,
+    <a
+      href="{{site.baseurl}}/next/?utm_source=site-uswds&utm_medium=referral&utm_campaign=whats-next-uswds"
+      class="text-ink text-bold hover:text-no-underline"
+      >Transforming the American digital experience</a
+    >
   </div>
   <section class="site-hero">
     <div class="grid-container">
       <div class="maxw-mobile-lg">
-        <h1 class="hero--heading margin-y-0 line-height-sans-3 text-thin font-lang-13">A design system for the federal government.</h1>
-        <p class="hero--content font-lang-10 text-thin line-height-sans-4 margin-top-205 margin-bottom-105">We make it easier to build accessible, mobile-friendly government websites for the American public.</p>
-        <a class="usa-button bg-secondary hover:bg-secondary-dark text-normal font-lang-sm margin-top-1" href="{{ site.baseurl }}/whats-new/updates/2019/04/08/introducing-uswds-2-0/">Learn about USWDS 2</a>
-        <a class="usa-button hover:bg-primary-darker text-normal font-lang-sm bg-primary-vivid margin-top-1" href="{{ site.baseurl }}/documentation/migration/">Migrate to v2.0.3</a>
+        <h1
+          class="hero--heading margin-y-0 line-height-sans-3 text-thin font-lang-13"
+        >
+          A design system for the federal government.
+        </h1>
+        <p
+          class="hero--content font-lang-10 text-thin line-height-sans-4 margin-top-205 margin-bottom-105"
+        >
+          We make it easier to build accessible, mobile-friendly government
+          websites.
+        </p>
+        <a
+          class="usa-button bg-secondary hover:bg-secondary-dark text-normal font-lang-sm margin-top-1"
+          href="{{ site.baseurl }}/how-to-use-uswds"
+          >Get started</a
+        >
+        <a
+          class="usa-button hover:bg-primary-darker text-normal font-lang-sm bg-primary-vivid margin-top-1"
+          href="{{ site.baseurl }}/about/key-benefits/">
+          Why use USWDS?
+        </a>
       </div>
     </div>
   </section>
@@ -22,14 +46,25 @@ layout: default
     <div class="">
       <div class="grid-row grid-gap">
         {% for list_item in page.graphic_list.list_item %}
-          <div class="desktop:grid-col-3 tablet:grid-col-6 usa-media-block margin-bottom-3 desktop:margin-bottom-0">
-            <img class="usa-media-block__img"  src="{{ list_item.image.src | relative_url }}" alt="{{ list_item.image.alt }}">
-            <div class="usa-media-block__body">
-              {% if list_item.topic %}<h3>{{ list_item.topic }}</h3>{% endif %}
-              {{ list_item.description | markdownify }}
-              <p><a href="{{ site.baseurl }}/{{ list_item.link.url }}/">{{ list_item.link.text }}</a></p>
-            </div>
+        <div
+          class="desktop:grid-col-3 tablet:grid-col-6 usa-media-block margin-bottom-3 desktop:margin-bottom-0"
+        >
+          <img
+            class="usa-media-block__img"
+            src="{{ list_item.image.src | relative_url }}"
+            alt="{{ list_item.image.alt }}"
+          />
+          <div class="usa-media-block__body">
+            {% if list_item.topic %}
+            <h2>{{ list_item.topic }}</h2>
+            {% endif %} {{ list_item.description | markdownify }}
+            <p>
+              <a href="{{ site.baseurl }}/{{ list_item.link.url }}/"
+                >{{ list_item.link.text }}</a
+              >
+            </p>
           </div>
+        </div>
         {% endfor %}
       </div>
     </div>

@@ -1,7 +1,7 @@
 ---
 title: Why track performance
 permalink: /performance/why/
-category: Documentation
+category: How to use USWDS
 layout: styleguide
 lead: Performance is an important part of user experience that shouldn’t go unnoticed
 ---
@@ -19,8 +19,7 @@ Conversion is the rate at which customers of a website product take a desired ac
 
 Performance has been known to be an influencing factor when it comes to the conversion rate for a site. Regardless of the user interface and its purpose, multiple studies have shown that improving performance consistently improves conversion rates over a wide range of applications. According to [surveys done by Akamai](https://www.akamai.com/us/en/about/news/press/2009-press/akamai-reveals-2-seconds-as-the-new-threshold-of-acceptability-for-ecommerce-web-page-response-times.jsp), nearly half of web users expect a site to load in two seconds or less, and they tend to abandon a site that isn’t loaded within three seconds. This means that even a relatively fast site may be losing conversion due to speed. There are real-world examples of how performance can affect conversion, such as:
 
-- [Google found out that slowing search results by just 4/10ths of a second would reduce the number of searches by 8,000,000 per day](http://www.getelastic.com/site-speed-infographic/).
-- [At Walmart, for every one second of improvement they experienced up to a 2% increase in conversions](http://www.webperformancetoday.com/2012/02/28/4-awesome-slides-showing-how-page-speed-correlates-to-business-metrics-at-walmart-com/).
+- [Getelastic.com notes, Google found out that slowing search results by just 4/10ths of a second would reduce the number of searches by 8,000,000 per day](http://www.getelastic.com/site-speed-infographic/).
 - [Amazon calculated that a page load slowdown of just one second could cost it $1.6 billion in sales each year](https://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales).
 
 How fast a site loads is often the first indication of what a web experience will be for a user, and a slow loading site can cause a user to quickly lose trust and patience with a website.
@@ -34,11 +33,11 @@ A common excuse by a team  for not tracking web performance, is that the site ap
 
 At 18F, currently, most people working on the sites being built are working on fast laptops, on wired or relatively fast connections within the United States. These factors are all conducive to good performance. A user of a site could instead be on a mobile device and mobile network, a computer outside of the United States, or a network that is congested or just plain slow. Being on a network outside the U.S., alone, could mean an extra 150 milliseconds in round trip time to the server due to the longer distance the signal has to travel, meaning seconds more time in loading a page. Different types of networks, such as satellite networks, have much higher round trip times, which again leads to longer times when loading a page. When considering how fast a site loads, it's important to consider that the network the site's users are on could perform much differently than the development team's network.
 
-The prevelance of mobile usage of websites also signifigantly contributes to a site's speed for a customer. According to the [Digital analytics program](https://analytics.usa.gov/), roughly 37% of traffic to government sites is from mobile devices. While wired and wi-fi networks provide relatively consistent performance, mobile networks can rapidly change from fast 4G connections, to slow 3G connections, to periods of being disconnected. Smaller devices, such as mobile phones and older devices don't have as much CPU power to quickly download and process multiple resources. By limiting the measurement of the performance of a site to just a user on a fast connection and device, a huge amount of the site’s user base could be left with a site that’s very difficult to use and interact with, due to poor performance.
+The prevalence of mobile usage of websites also significantly contributes to a site's speed for a customer. According to the [Digital analytics program](https://analytics.usa.gov/), roughly 37% of traffic to government sites is from mobile devices. While wired and wi-fi networks provide relatively consistent performance, mobile networks can rapidly change from fast 4G connections, to slow 3G connections, to periods of being disconnected. Smaller devices, such as mobile phones and older devices don't have as much CPU power to quickly download and process multiple resources. By limiting the measurement of the performance of a site to just a user on a fast connection and device, a huge amount of the site’s user base could be left with a site that’s very difficult to use and interact with, due to poor performance.
 
 ## Perception of performance
 
-Studies have shown that users perceive differences in speed of a user interface (UI) [when it changes by a ratio of 20%](https://www.sitepoint.com/the-perception-of-performance/). To put it more simply, if a website wants to create a difference in speed that is noticeable to its users, it should perform at least 20% faster than it previously did. Changes less than 20% are usually not perceptible. This means that 20% is (somewhat of) a “golden number” when working on performance.
+Sitepoint.com highlihgts the "20% rule," a rule based on studies that suggest users perceive differences in speed of a user interface (UI)[when it changes by a ratio of 20%](https://www.sitepoint.com/the-perception-of-performance/). To put it more simply, if a website wants to create a difference in speed that is noticeable to its users, it should perform at least 20% faster than it previously did. Changes less than 20% are usually not perceptible. This means that 20% is (somewhat of) a “golden number” when working on performance.
 
 ## Measurement of performance
 
@@ -52,4 +51,4 @@ Measuring performance ensures the team:
 
 ## Conclusion
 
-As technology becomes more prevelant in the Unites States, it's more common that the primary way Americans interact with the government is through the web. Ensuring that government sites perform quickly for all ensures that all Americans have a good user experience and aren't blocked from the web services they require. Tracking and improving a site's performance is a first step towards ensuring that a site can reach as wide of an audience as possible.
+As technology becomes more prevalent in the Unites States, it's more common that the primary way Americans interact with the government is through the web. Ensuring that government sites perform quickly for all ensures that all Americans have a good user experience and aren't blocked from the web services they require. Tracking and improving a site's performance is a first step towards ensuring that a site can reach as wide of an audience as possible.

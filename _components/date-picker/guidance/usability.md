@@ -1,0 +1,1 @@
+- **Describe the date format.** Provide a hint of `mm/dd/yyyy` to help users enter the proper date format if they opt not to use the date picker.

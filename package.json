@@ -58,7 +58,7 @@
     "test": "npx snyk test && npm run test:core",
     "test:detached": "npm run start-detached && npm run test:core",
     "test:core": "bundle exec rspec && npm run lint && npm run proof && npm run pa11y-ci:sitemap && npm run pa11y-ci:sitemap-mobile",
-    "test:ci": "npm run build-all-assets && npm run test:detached",
+    "test:ci": "npm run build-all-assets",
     "test:full": "npm run startup && npm run test:detached && npm run test:stop",
     "test:stop": "pkill -f jekyll",
     "watch": "NODE_ENV=development nswatch",

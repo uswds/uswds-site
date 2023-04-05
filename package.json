@@ -90,10 +90,14 @@
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-scss-lint": "^0.7.2",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "highlight.js": "^9.14.2",
     "gulp-eslint": "^6.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-stylelint": "^13.0.0",
     "gulp-svg-sprite": "^1.5.0",
@@ -104,12 +108,12 @@
     "minimist": "^1.2.6",
     "node-notifier": "^10.0.0",
     "nswatch": "^0.2.0",
+    "sass-embedded": "^1.60.0",
     "pa11y-ci": "^2.4.2",
     "postcss": "^8.3.11",
     "postcss-csso": "^5.0.1",
     "prettier": "^2.4.1",
     "sass": "^1.43.4",
-    "sass-embedded": "^1.60.0",
     "simplecrawler": "^1.1.8",
     "snyk": "^1.811.0",
     "stylelint": "^13.13.1",
@@ -163,8 +167,5 @@
       "build-js"
     ]
   },
-  "snyk": true,
-  "overrides": {
-    "graceful-fs": "^4.2.10"
-  }
+  "snyk": true
 }

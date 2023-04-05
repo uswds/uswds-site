@@ -64,29 +64,24 @@ function spawnP(cmd, args, opts) {
 gulp.task('build-uswds-if-needed', function () {
   const rootDir = path.normalize(path.join(__dirname, '..', '..'));
   const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
-  const fractalIndex = path.join(uswdsDir, '_site', 'index.html');
   const gulpfile = path.join(uswdsDir, 'gulpfile.js');
 
-  if (fs.existsSync(fractalIndex)) {
-    dutil.logMessage('build-uswds-if-needed', 'USWDS is already built.');
-    return Promise.resolve();
-  } else {
-    dutil.logMessage('build-uswds-if-needed', 'Building USWDS...');
+  dutil.logMessage('build-uswds-if-needed', 'USWDS is already built.');
 
-    if (!fs.existsSync(gulpfile)) {
-      return Promise.reject(new Error(
-        `${gulpfile} does not exist! You need a newer version of USWDS; ` +
-        `specifically, one that includes the following PR: ` +
-        `https://github.com/uswds/uswds/pull/2050`
-      ));
-    }
-
-    const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
-
-    return spawnP('npm', [ 'install' ], sharedOpts)
-      .then(() => spawnP('npx', [ 'fractal', 'build' ], sharedOpts))
-      .then(() => spawnP('npm', [ 'run', 'prettier:templates' ], sharedOpts));
+  if (!fs.existsSync(gulpfile)) {
+    return Promise.reject(new Error(
+      `${gulpfile} does not exist! You need a newer version of USWDS; ` +
+      `specifically, one that includes the following PR: ` +
+      `https://github.com/uswds/uswds/pull/2050`
+    ));
   }
+
+  const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
+
+  return spawnP('npm', [ 'install' ], sharedOpts)
+    .then(() => spawnP('npx', [ 'fractal', 'build' ], sharedOpts))
+    .then(() => spawnP('npm', [ 'run', 'prettier:templates' ], sharedOpts));
+
 });
 
 gulp.task('build',

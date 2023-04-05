@@ -163,5 +163,8 @@
       "build-js"
     ]
   },
-  "snyk": true
+  "snyk": true,
+  "optionalDependencies": {
+    "sass-embedded-linux-x64": "^1.60.0"
+  }
 }

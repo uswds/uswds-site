@@ -3,9 +3,11 @@ type: component
 changelogURL:
 items:
   - date: 2023-03-13
-    summary: Logo text width setting now works as expected.
-    summaryAdditional: Now the design system respects the value passed to `$theme-header-logo-text-width`.
-    isBreaking: false
+    summary: Extended headers now respect the value passed to `$theme-header-logo-text-width`.
+    summaryAdditional: The default setting value might differ from the previous value.
+      This can cause unexpected line breaks.
+      When updating, confirm that there are no visual regressions.
+    isBreaking: trues
     affectsStyles: true
     githubPr: 5008
     githubRepo: uswds

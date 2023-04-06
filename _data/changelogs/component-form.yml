@@ -1,23 +1,13 @@
+# Note: This changelog is used on multiple pages:
+# templates/form-templates
+# components/form
 title: Form
 type: component
 changelogURL:
 items:
-  - date: 2023-04-03
-    summary: Added documentation for required links.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
-    affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
-    githubPr: 1834
-    githubRepo: uswds-site
-    versionUswds:
   - date: 2023-03-13
     summary: Fixed invisible link text for links styled as buttons within forms.
-    summaryAdditional: Now link text does not match the primary button color when nested inside of a form and the `usa-button` class is present.
+    summaryAdditional: Now link text does not match the primary button color when nested inside of a form and the `usa-button` class is presenZkt.
     isBreaking: false
     affectsStyles: true
     githubPr: 5112
@@ -32,29 +22,3 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
-  - date: 2021-12-28
-    summary: Updated support notes for `aria-describedby`.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
-    affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
-    githubPr: 1363
-    githubRepo: uswds-site
-    versionUswds:
-  - date: 2021-03-17
-    summary: Moved form templates to templates section.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
-    affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
-    githubPr: 1136
-    githubRepo: uswds-site
-    versionUswds:

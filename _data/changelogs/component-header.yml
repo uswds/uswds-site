@@ -4,9 +4,8 @@ changelogURL:
 items:
   - date: 2023-03-13
     summary: Extended headers now respect the value passed to `$theme-header-logo-text-width`.
-    summaryAdditional: The default setting value might differ from the previous value.
-      This can cause unexpected line breaks.
-      When updating, confirm that there are no visual regressions.
+    summaryAdditional: For extended headers, the default setting value is narrower than
+      the previous hard-coded value, which can cause unexpected line breaks.
     isBreaking: true
     affectsStyles: true
     githubPr: 5008

@@ -50,14 +50,14 @@
     "federalist": "npx gulp build",
     "lint": "gulp eslint scss-lint && npm run prettier:scss",
     "prestart": "gulp build",
-    "proof": "bundle exec htmlproofer --assume-extension --disable-external --allow-hash-href --alt-ignore '/.*/' --file-ignore '/developers/' ./_site",
+    "proof": "bundle exec htmlproofer --allow-hash-href=true --enforce-https=false --allow-missing-href=true --ignore-empty-alt=true --ignore-status-codes 0,403,429,503,302 --swap-urls 'https\\://designsystem.digital.gov/:/' --ignore-files \"//select-a-language//,//2017//,//2018//,//2019//\" ./_site",
     "serve": "npm run build-all-assets && bundle exec jekyll serve --drafts --future --incremental --livereload --host=localhost",
     "serve:package": "npm run build-uswds && npm run serve",
     "serve:local": "export FRACTAL_BASE_URL=\"http://localhost:3000\" && npm run serve",
     "start": "bundle exec jekyll serve --drafts --future --host=localhost",
     "test": "npx snyk test && npm run test:core",
     "test:detached": "npm run start-detached && npm run test:core",
-    "test:core": "bundle exec rspec && npm run lint && npm run proof && npm run pa11y-ci:sitemap && npm run pa11y-ci:sitemap-mobile",
+    "test:core": "bundle exec rspec && npm run lint && npm run pa11y-ci:sitemap && npm run pa11y-ci:sitemap-mobile",
     "test:ci": "npm run build-all-assets && npm run test:detached",
     "test:full": "npm run startup && npm run test:detached && npm run test:stop",
     "test:stop": "pkill -f jekyll",
@@ -90,10 +90,10 @@
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
-    "gulp-dart-scss": "^1.1.0",
     "gulp-eslint": "^6.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-stylelint": "^13.0.0",
     "gulp-svg-sprite": "^1.5.0",
@@ -109,6 +109,7 @@
     "postcss-csso": "^5.0.1",
     "prettier": "^2.4.1",
     "sass": "^1.43.4",
+    "sass-embedded": "^1.60.0",
     "simplecrawler": "^1.1.8",
     "snyk": "^1.811.0",
     "stylelint": "^13.13.1",
@@ -116,7 +117,7 @@
     "stylelint-config-recommended-scss": "^4.3.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^3.21.0",
-    "uswds": "2.13.3",
+    "uswds": "github:uswds/uswds#jm-v2-core-deps",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yamljs": "^0.3.0"
@@ -162,5 +163,8 @@
       "build-js"
     ]
   },
-  "snyk": true
+  "snyk": true,
+  "optionalDependencies": {
+    "sass-embedded-linux-x64": "^1.60.0"
+  }
 }

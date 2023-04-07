@@ -6,7 +6,7 @@ const dutil = require("./doc-util");
 const gulp = require("gulp");
 const gulpStylelint = require("gulp-stylelint");
 const postcss = require("gulp-postcss");
-const sass = require("gulp-dart-scss");
+const sass = require("gulp-sass")(require("sass-embedded"));
 const sourcemaps = require("gulp-sourcemaps");
 const task = "sass";
 

@@ -58,30 +58,6 @@ function spawnP(cmd, args, opts) {
   });
 }
 
-// We might be using USWDS from a git repository instead of npm, in
-// which case it might not have the pre-built assets we need. If that's
-// the case, we'll want to build those assets.
-gulp.task('build-uswds-if-needed', function () {
-  const rootDir = path.normalize(path.join(__dirname, '..', '..'));
-  const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
-  const gulpfile = path.join(uswdsDir, 'gulpfile.js');
-
-  dutil.logMessage('build-uswds-if-needed', 'Building USWDS...');
-
-  if (!fs.existsSync(gulpfile)) {
-    return Promise.reject(new Error(
-      `${gulpfile} does not exist! You need a newer version of USWDS; ` +
-      `specifically, one that includes the following PR: ` +
-      `https://github.com/uswds/uswds/pull/2050`
-    ));
-  }
-
-  const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
-
-  return spawnP('npm', [ 'install' ], sharedOpts)
-    .then(() => spawnP('npm', [ 'run', 'prettier:templates' ], sharedOpts));
-});
-
 gulp.task('build',
   gulp.series(
     function(done) {
@@ -92,7 +68,6 @@ gulp.task('build',
       done();
     },
     'clean-assets',
-    'build-uswds-if-needed',
     gulp.parallel(
       'fonts',
       'images',

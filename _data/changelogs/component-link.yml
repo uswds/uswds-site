@@ -2,6 +2,19 @@ title: Link
 type: component
 changelogURL:
 items:
+- date: 2023-04-10
+  summary:	External links that open in new and current tab are now announced in screen readers.
+  affectsStyles: true
+  affectsAccessibility: true
+  githubPr: 5166
+  githubRepo: uswds
+  versionUswds: 3.5.0
+- date: 2023-04-10
+  summary:	Added external link guidance with `rel="noreferrer"`.
+  affectsGuidance: true
+  githubPr: 2056
+  githubRepo: uswds-site
+  versionUswds: 3.5.0
 - date: 2023-03-09
   summary:	External link icons and link text now wrap as expected.
   affectsStyles: true

@@ -4,6 +4,7 @@ require("./form-disable");
 require("./scroll-to-top-for-hash");
 require("./sidenav");
 require("./vendor/stickyfill.min.js");
+require("./copy-code");
 
 // Initialize sticky fill
 var stickyElements = document.getElementsByClassName("sticky");

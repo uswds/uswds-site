@@ -1,0 +1,60 @@
+$default-icon-object: (
+  "color": "white",
+  "height": units(3),
+  "svg-height": 1,
+  "svg-width": 1
+);
+
+$copy-icon-object: map-merge(
+  $default-icon-object, 
+  (
+    "name": "content_copy",
+  ));
+
+$check-icon-object: map-merge(
+  $default-icon-object, 
+  (
+    "name": "check",
+  ));
+
+.usa-accordion__copy-button {
+  @include u-order("first");
+  left: 100%;
+  margin-bottom: units(2); // Needs to be mobile only
+  position: sticky;
+  top: units(1);
+  z-index: 100;
+
+  & > .usa-icon {
+    @include add-color-icon($copy-icon-object);
+  }
+
+  &--success,
+  &--success:hover {
+    background-color: color("success-dark");
+
+    & > .usa-icon {
+      @include add-color-icon($check-icon-object);
+    }
+  }
+
+  @include at-media("desktop") {
+    // Offset for nav
+    top: units(10);
+  }
+  
+  // In larger than mobile views, compensate for the buttons height
+  @include at-media("mobile-lg") {
+    margin-bottom: 0;
+
+    & ~ div > figure {
+      position: relative;
+      top: units(-6);
+    }
+  }
+}
+
+// Necessary for sticky button to work correctly
+.usa-accordion__content:has(.usa-accordion__copy-button) {
+  overflow: initial;
+}

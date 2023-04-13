@@ -3323,6 +3323,24 @@ body {
     }
   }
 
+  // Targets component code blocks
+  .usa-accordion__content--code {
+    display: flex;
+    flex-direction: column;
+  
+    // Necessary for sticky button to work correctly
+    overflow: initial;
+  
+    // Override display flex on collapsed accordion
+    &[hidden] {
+      display: none;
+    }
+  
+    @include at-media("tablet") {
+      flex-direction: row-reverse;
+    }
+  }
+
   // When form: Don't show margin at the top of the first form's label
   .usa-form:first-child {
     > .usa-label:first-child {

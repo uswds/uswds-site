@@ -18,9 +18,8 @@ $check-icon-object: map-merge(
   ));
 
 .usa-accordion__copy-button {
-  @include u-order("first");
   left: 100%;
-  margin-bottom: units(2); // Needs to be mobile only
+  margin-bottom: units(2);
   position: sticky;
   top: units(1);
   z-index: 100;

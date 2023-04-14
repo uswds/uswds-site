@@ -13,9 +13,8 @@ subnav:
   - href: /templates/form-templates/name-form/
   - href: /templates/form-templates/password-reset-form/
   - href: /templates/form-templates/sign-in-form/
-subnav:
   - text: Latest updates
-    href: '#changelog'
+    href: /templates/form-templates/#changelog
 changelog:
   key: template-form
 ---

@@ -4,12 +4,12 @@ COPY_BUTTONS.forEach(button => {
   button.addEventListener("click", () => {
     // Set success state
     button.classList.add("usa-accordion__copy-button--success");
-    button.querySelector(".usa-sr-only").textContent = "Code copied to clipboard";
+    button.textContent = "Copied!";
 
     // After timeout, reset to default state
     setTimeout(() => {
       button.classList.remove("usa-accordion__copy-button--success");
-      button.querySelector(".usa-sr-only").textContent = "Copy code";
+      button.textContent = "Copy";
     }, 3000);
 
     // Select section code and copy to clipboard

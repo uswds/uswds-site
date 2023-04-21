@@ -1,46 +1,27 @@
-$default-icon-object: (
-  "color": "white",
-  "height": units(3),
-  "svg-height": 1,
-  "svg-width": 1,
-);
-
-$copy-icon-object: map-merge(
-  $default-icon-object,
-  (
-    "name": "content_copy",
-  )
-);
-
-$check-icon-object: map-merge(
-  $default-icon-object,
-  (
-    "name": "check",
-  )
-);
-
 .usa-accordion__copy-button {
-  height: fit-content;
-  margin-bottom: units(2);
+  @include u-padding-left(2);
   position: sticky;
   top: units(1);
   z-index: 100;
 
-  & > .usa-icon {
-    @include add-color-icon($copy-icon-object);
-  }
-
   &--success,
   &--success:hover {
     background-color: color("success-dark");
-
-    & > .usa-icon {
-      @include add-color-icon($check-icon-object);
-    }
+    color: color("white");
   }
 
   @include at-media("desktop") {
     // Offset for nav
-    top: units(10);
+    top: units(8);
+  }
+}
+
+.copy-button-wrapper {
+  display: none;
+
+  @include at-media ("tablet") {
+    display: block;
+    margin-left: units(2);
+    width: units(10);
   }
 }

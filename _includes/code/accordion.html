@@ -4,10 +4,11 @@
   {% assign _content_id = include.component | append: '-code-content' %}
   <button type="button" class="usa-accordion__button" aria-controls="{{ _content_id }}"><{{ level }} id="{{ _id }}">Component code</{{ level }}></button>
   <div id="{{ _content_id }}" class="usa-accordion__content usa-accordion__content--code">
-    <button class="usa-button usa-accordion__copy-button">
-      <span class="usa-sr-only">Copy code</span>
-      <span class="usa-icon"></span>
-    </button>
     {% include code/syntax.html component=include.component %}
+    <div class="copy-button-wrapper">
+      <button class="usa-button usa-button--outline usa-accordion__copy-button" aria-live="polite">
+        Copy
+      </button>
+    </div>
   </div>
 </div>

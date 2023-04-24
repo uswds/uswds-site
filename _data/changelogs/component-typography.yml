@@ -4,6 +4,20 @@ type: component
 changelogURL:
 
 items:
+  # 3.5.0 release
+  - date: TK
+    summary: Deprecate font smoothing mixins.
+    summaryAdditional: Deprecates an old technique used for improving font rendering in legacy browsers.
+    affectsAccessibility:
+    affectsAssets:
+    affectsSettings:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 5250
+    githubRepo: uswds
+    versionUswds: 3.5.0
   # 3.4.0 release
   - date: 2023-03-09
     summary: Use only `woff2` in our `@font-face` declarations.

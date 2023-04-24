@@ -25,7 +25,7 @@ const btnFunction = (button) => {
     // Set success state
     button.classList.add("usa-copy-code--button--success");
     button.querySelector("[aria-hidden]").textContent = "Copied!";
-    button.querySelector(".usa-sr-only").textContent = "Copied code to clipboard";
+    button.querySelector(".usa-sr-only").textContent = "Code copied to clipboard";
     
     // After timeout, reset to default state
     setTimeout(() => {

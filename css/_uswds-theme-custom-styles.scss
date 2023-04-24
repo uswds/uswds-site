@@ -1694,7 +1694,6 @@ strong {
 
 .output-true,
 %output-true {
-  @include add-knockout-font-smoothing;
   @include u-bg("blue-50v");
   @include u-display("inline-block");
   @include u-padding-y(0);

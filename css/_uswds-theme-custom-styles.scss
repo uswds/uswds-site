@@ -3322,22 +3322,6 @@ body {
       margin-top: 0;
     }
   }
-
-  // Targets component code blocks
-  .usa-accordion__content--code {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    // Necessary for sticky button to work correctly
-    overflow: initial;
-
-    // Override display flex on collapsed accordion
-    &[hidden] {
-      display: none;
-    }
-  }
-
   // When form: Don't show margin at the top of the first form's label
   .usa-form:first-child {
     > .usa-label:first-child {
@@ -3426,7 +3410,7 @@ p + .pagination-behaviors--examples {
   }
 }
 
-// Do/Don't Guidance Section
+// Do/Don't Guidance Section f
 
 $do-dont-color-do: "green-cool-50v";
 $do-dont-color-dont: "red-cool-50v";

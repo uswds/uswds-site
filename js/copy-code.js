@@ -1,15 +1,35 @@
-const COPY_BUTTONS = document.querySelectorAll(".usa-accordion__copy-button");
+const COPY_CODE_SELECTOR = document.querySelectorAll(".usa-copy-code");
+const COPY_BUTTON_CLASSNAME = "usa-button usa-button--outline usa-copy-code--button";
+const COPY_WRAPPER_CLASSNAME = "usa-copy-code--wrapper";
 
-COPY_BUTTONS.forEach(button => {
+const buildHTML = () => {
+  COPY_CODE_SELECTOR.forEach(e => {
+    const buttonWrapper = document.createElement("div");
+    buttonWrapper.classList.add(COPY_WRAPPER_CLASSNAME);
+    const btn = document.createElement("button");
+    btn.className = COPY_BUTTON_CLASSNAME;
+    var buttonText = `
+          <span aria-hidden="true">Copy</span>
+          <span class="usa-sr-only">Copy component code</span>
+    `;
+    btn.insertAdjacentHTML("beforeend", buttonText);
+    btnFunction(btn);
+    buttonWrapper.appendChild(btn);
+    
+    e.appendChild(buttonWrapper);
+  });
+};
+
+const btnFunction = (button) => {
   button.addEventListener("click", () => {
     // Set success state
-    button.classList.add("usa-accordion__copy-button--success");
+    button.classList.add("usa-copy-code--button--success");
     button.querySelector("[aria-hidden]").textContent = "Copied!";
     button.querySelector(".usa-sr-only").textContent = "Copied code to clipboard";
     
     // After timeout, reset to default state
     setTimeout(() => {
-      button.classList.remove("usa-accordion__copy-button--success");
+      button.classList.remove("usa-copy-code--button--success");
       button.querySelector("[aria-hidden]").textContent = "Copy";
       button.querySelector(".usa-sr-only").textContent = "Copy component code";
     }, 3000);
@@ -20,4 +40,6 @@ COPY_BUTTONS.forEach(button => {
     const CODE = CONTENT.querySelector("code");
     return navigator.clipboard.writeText(CODE.textContent);
   });
-});
+};
+
+buildHTML();

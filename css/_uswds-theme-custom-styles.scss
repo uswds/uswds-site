@@ -1568,10 +1568,6 @@ iframe {
 
 // Utilities CSS --------------------- //
 
-.is-inverse {
-  @include add-knockout-font-smoothing;
-}
-
 .page-content {
   h3 {
     @include u-font-size("lang", 10);

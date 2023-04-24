@@ -75,7 +75,7 @@ utilities:
             | times: 1 %}
 
           <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-default-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-default-{{ color.token }}{% if grade < 50 %} bg-gray-90{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {% assign system = system-colors | where: 'token', color.default %}
@@ -107,7 +107,7 @@ utilities:
             {% endif %}
           {% endif %}
           <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {{ color.value }}
@@ -138,7 +138,7 @@ utilities:
             {% endif %}
           {% endif %}
           <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {{ value }}

@@ -1472,8 +1472,8 @@ code[class*="language-plaintext"] {
 }
 
 // Demo fixed footer
+// Example url: `/templates/docs`
 .demo-footer {
-  @include add-knockout-font-smoothing;
   @include u-padding-y(1);
   background-color: color("gray-cool-80");
   // TODO: figure this out

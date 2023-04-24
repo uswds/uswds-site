@@ -1894,7 +1894,6 @@ li {
 
   a {
     @extend %utility-scope-button;
-    @include add-knockout-font-smoothing;
     @include u-bg("blue-50v");
     @include u-text("white", "no-underline");
 

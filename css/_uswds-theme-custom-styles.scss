@@ -3322,6 +3322,7 @@ body {
       margin-top: 0;
     }
   }
+
   // When form: Don't show margin at the top of the first form's label
   .usa-form:first-child {
     > .usa-label:first-child {
@@ -3410,7 +3411,7 @@ p + .pagination-behaviors--examples {
   }
 }
 
-// Do/Don't Guidance Section f
+// Do/Don't Guidance Section
 
 $do-dont-color-do: "green-cool-50v";
 $do-dont-color-dont: "red-cool-50v";

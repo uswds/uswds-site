@@ -12,6 +12,10 @@ type: component
 lead: An input mask is a string expression that constrains input to support valid input values.
 implementation:
   props:
+    - property: "`.usa-input-mask`"
+      required: "Yes"
+      description: |
+        Initiates and styles the component.
     - property: "`data-invalid-alpha-text`"
       required: "No"
       description: |

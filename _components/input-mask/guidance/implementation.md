@@ -1,4 +1,4 @@
-The examples in the Preview section, above, are common input masks, but you can adapt the code to meet the needs of your project. In order to extend the functionality of the input mask, you must include a `placeholder` attribute as the visible input mask, using the underscore `_` to represent a character the user should enter. You may use punctuation literals like `[space]`, `-`, `/`, or `(` to help format your mask, but these literals will not be included in the final submitted value. You also need a related `pattern` attribute on the `input` element, its value epxressed as a regular expression that describes the intended format of the input data. Additionally, if the expected input is numeric, make sure to add the `inputmode="numeric"` attribute and setting so the numeric keypad is displayed. For example, an `input` with an input mask of three groups of three numerals, separated with spaces might have the following properties: 
+The examples in the Preview section, above, are common input masks, but you can adapt the code to meet the needs of your project. In order to extend the functionality of the input mask, you must include a `placeholder` attribute as the visible input mask, using the underscore `_` to represent a character the user should enter. You may use punctuation literals like `[space]`, `-`, `/`, or `(` to help format your mask, but these literals will not be included in the final submitted value. You also need a related `pattern` attribute on the `input` element, its value epxressed as a regular expression that describes the intended format of the input data. Additionally, if the expected input is numeric, make sure to add the `inputmode="numeric"` attribute and setting so the numeric keypad is displayed. For example, an `input` with an input mask of three groups of three numerals, separated with spaces might have the following properties:
 
 {:.usa-content-list }
 ```
@@ -22,3 +22,20 @@ placeholder="___ ___"
 pattern="\w\d\w \d\w\d"
 data-charset="A#A #A#"
 ```
+
+
+### Properties
+Add the following properties to the `input` element to modify component functionality:
+{% include settings-table-flex.html
+  content=page.implementation.props
+  cols="flex-3, flex-1, flex-5"
+  section="component properties"
+%}
+
+### Available format characters
+The following format characters can be used in your implementation of input mask:
+{% include settings-table-flex.html
+  content=page.implementation.formatCharacters
+  cols="flex-1, flex-1, flex-2"
+  section="component properties"
+%}

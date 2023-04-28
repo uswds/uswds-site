@@ -1,1 +1,1 @@
-- **Common input patterns.** In fields with a specific expected format like Social Security Number or ZIP code, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping.
+- **The input requires a specific pattern.** In fields with a specific expected format like Social Security Number or ZIP code, an input mask allows you to constrain and shape the information being entered into that format.

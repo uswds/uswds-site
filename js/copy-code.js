@@ -1,5 +1,6 @@
 const COPY_CODE_CLASS = "usa-copy-code";
 const COPY_BUTTON_CLASS = `usa-button usa-button--outline ${COPY_CODE_CLASS}__button`;
+const COPY_BUTTON_SUCCESS_CLASS = `${COPY_CODE_CLASS}__button--success`;
 const COPY_WRAPPER_CLASS = `${COPY_CODE_CLASS}__wrapper`;
 
 const COPY_CODE = document.querySelectorAll(`.${COPY_CODE_CLASS}`);
@@ -28,18 +29,19 @@ const createCopyButton = () => {
 
 const copyOnClick = (event) => {
   const copyBtn = event.currentTarget;
+  const labelVisual = copyBtn.querySelector("[aria-hidden]");
+  const labelSROnly = copyBtn.querySelector(".usa-sr-only");
 
   // Set success state
-  copyBtn.classList.add("usa-copy-code--button--success");
-  copyBtn.querySelector("[aria-hidden]").textContent = "Copied!";
-  copyBtn.querySelector(".usa-sr-only").textContent =
-    "Code copied to clipboard";
+  copyBtn.classList.add(COPY_BUTTON_SUCCESS_CLASS);
+  labelVisual.textContent = "Copied!";
+  labelSROnly.textContent = "Code copied to clipboard";
 
   // After timeout, reset to default state
   setTimeout(() => {
-    copyBtn.classList.remove("usa-copy-code--button--success");
-    copyBtn.querySelector("[aria-hidden]").textContent = "Copy";
-    copyBtn.querySelector(".usa-sr-only").textContent = "Copy component code";
+    copyBtn.classList.remove(COPY_BUTTON_SUCCESS_CLASS);
+    labelVisual.textContent = "Copy";
+    labelSROnly.textContent = "Copy component code";
   }, 3000);
 
   // Select section code and copy to clipboard
@@ -55,7 +57,6 @@ const buildHTML = () => {
     const copyButton = createCopyButton();
 
     copyWrapper.appendChild(copyButton);
-
     copyCodeElement.appendChild(copyWrapper);
 
     copyButton.addEventListener("click", copyOnClick);

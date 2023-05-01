@@ -1,6 +1,6 @@
-const COPY_CODE_SELECTOR = document.querySelectorAll(".usa-copy-code");
-const COPY_BUTTON_CLASSNAME = "usa-button usa-button--outline usa-copy-code--button";
-const COPY_WRAPPER_CLASSNAME = "usa-copy-code--wrapper";
+const COPY_BUTTON_CLASSNAME =
+  "usa-button usa-button--outline usa-copy-code__button";
+const COPY_WRAPPER_CLASSNAME = "usa-copy-code__wrapper";
 
 const buildHTML = () => {
   COPY_CODE_SELECTOR.forEach(e => {

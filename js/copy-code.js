@@ -1,7 +1,8 @@
 const COPY_CODE_CLASS = "usa-copy-code";
 const COPY_BUTTON_CLASS = `usa-button usa-button--outline ${COPY_CODE_CLASS}__button`;
 const COPY_WRAPPER_CLASS = `${COPY_CODE_CLASS}__wrapper`;
-const COPY_CODE_SELECTOR = document.querySelectorAll(`.${COPY_CODE_CLASS}`);
+
+const COPY_CODE = document.querySelectorAll(`.${COPY_CODE_CLASS}`);
 
 const createWrapper = () => {
   const wrapper = document.createElement("div");
@@ -26,14 +27,14 @@ const createCopyButton = () => {
 };
 
 const buildHTML = () => {
-  COPY_CODE_SELECTOR.forEach((e) => {
+  COPY_CODE.forEach((copyCodeElement) => {
     const copyWrapper = createWrapper();
     const copyButton = createCopyButton();
 
     copyWrapper.appendChild(copyButton);
     btnFunction(copyButton);
 
-    e.appendChild(buttonWrapper);
+    copyCodeElement.appendChild(buttonWrapper);
   });
 };
 

@@ -45,10 +45,9 @@ const copyOnClick = (event) => {
   }, 3000);
 
   // Select section code and copy to clipboard
-  const WRAPPER = copyBtn.parentNode;
-  const CONTENT = WRAPPER.parentNode;
-  const CODE = CONTENT.querySelector("code");
-  return navigator.clipboard.writeText(CODE.textContent);
+  const copyComponent = copyBtn.closest(`.${COPY_CODE_CLASS}`);
+  const codeElement = copyComponent.querySelector("code");
+  return navigator.clipboard.writeText(codeElement.textContent);
 };
 
 const buildHTML = () => {

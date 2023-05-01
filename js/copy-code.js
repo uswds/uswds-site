@@ -3,19 +3,35 @@ const COPY_BUTTON_CLASS = `usa-button usa-button--outline ${COPY_CODE_CLASS}__bu
 const COPY_WRAPPER_CLASS = `${COPY_CODE_CLASS}__wrapper`;
 const COPY_CODE_SELECTOR = document.querySelectorAll(`.${COPY_CODE_CLASS}`);
 
+const createWrapper = () => {
+  const wrapper = document.createElement("div");
+  wrapper.classList.add(COPY_WRAPPER_CLASS);
+
+  return wrapper;
+};
+
+const createCopyButton = () => {
+  const btn = document.createElement("button");
+  const btnText = `
+    <span class="" aria-hidden="true">Copy</span>
+    <span class="usa-sr-only">Copy component code</span>
+  `;
+
+  btn.className = COPY_BUTTON_CLASS;
+  btn.setAttribute("type", "button");
+
+  btn.insertAdjacentHTML("beforeend", btnText);
+
+  return btn;
+};
+
 const buildHTML = () => {
   COPY_CODE_SELECTOR.forEach((e) => {
-    const buttonWrapper = document.createElement("div");
-    buttonWrapper.classList.add(COPY_WRAPPER_CLASS);
-    const btn = document.createElement("button");
-    btn.className = COPY_BUTTON_CLASS;
-    var buttonText = `
-          <span aria-hidden="true">Copy</span>
-          <span class="usa-sr-only">Copy component code</span>
-    `;
-    btn.insertAdjacentHTML("beforeend", buttonText);
-    btnFunction(btn);
-    buttonWrapper.appendChild(btn);
+    const copyWrapper = createWrapper();
+    const copyButton = createCopyButton();
+
+    copyWrapper.appendChild(copyButton);
+    btnFunction(copyButton);
 
     e.appendChild(buttonWrapper);
   });

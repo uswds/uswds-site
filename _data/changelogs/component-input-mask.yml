@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2023-05-01
-    summary: Updated input mask functionality.
-    summaryAdditional: The component now allows for better keyboard controls, simplifies the mask attribute requirements, and provides instant feedback to the user if they enter an invalid character.
+    summary: Updated input mask attributes and functionality.
+    summaryAdditional: This update simplifies the mask attribute requirements, provides instant feedback to the user if they enter an invalid character, and allows for better keyboard controls.
     isBreaking: true
     affectsGuidance: true
     affectsJavascript: true

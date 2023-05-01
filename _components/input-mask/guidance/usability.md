@@ -1,1 +1,2 @@
-- **Wait to validate.** Only show error validation messages or stylings after a user has interacted with a particular field.
+- **Include a label.** Make sure each form control includes an informative `label` with a `for` attribute related to the `id` of the `input` element it labels.
+- **Include helpful hint text.** Add hint text that gives users an example of the expected pattern.

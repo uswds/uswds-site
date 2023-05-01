@@ -1,2 +1,2 @@
-- **When the input requires a free-form field.** When there isn’t a common input pattern to use, input masking is not appropriate.
-- **When the pattern is too complicated to allow for a valid input mask.** A pattern like email, with many possible scenarios for input, is not a good candidate for masking. Allow the user to enter their email address (or other complicated data) and have your validation library confirm before form submission.
+- **If the input is a free-form field.** Input masking is not appropriate when the expected value can take any format.
+- **If the input pattern is too complicated to allow for a valid input mask.** A pattern like email, with many possible scenarios for input, is not a good candidate for masking. Instead, allow the user to enter their email address (or other complicated data) without a mask and have your validation library confirm before form submission.

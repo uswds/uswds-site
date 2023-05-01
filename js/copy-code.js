@@ -5,6 +5,11 @@ const COPY_WRAPPER_CLASS = `${COPY_CODE_CLASS}__wrapper`;
 
 const COPY_CODE = document.querySelectorAll(`.${COPY_CODE_CLASS}`);
 
+/**
+ * Creates a wrapper for copy button.
+ *
+ * @return {HTMLElement} - A div for `usa-copy-code__wrapper`.
+ */
 const createWrapper = () => {
   const wrapper = document.createElement("div");
   wrapper.classList.add(COPY_WRAPPER_CLASS);
@@ -12,6 +17,11 @@ const createWrapper = () => {
   return wrapper;
 };
 
+/**
+ * Creates a copy button component.
+ *
+ * @return {HTMLElement} - A button for copying code `usa-copy-code__button`.
+ */
 const createCopyButton = () => {
   const btn = document.createElement("button");
   const btnText = `
@@ -27,6 +37,12 @@ const createCopyButton = () => {
   return btn;
 };
 
+/**
+ * Copy <code> text content when copy code button is clicked.
+ *
+ * @param {Event} event - The click event from copy code button.
+ * @return {Clipboard} - Code element contents written to clipboard.
+ */
 const copyOnClick = (event) => {
   const copyBtn = event.currentTarget;
   const labelVisual = copyBtn.querySelector("[aria-hidden]");
@@ -50,6 +66,13 @@ const copyOnClick = (event) => {
   return navigator.clipboard.writeText(codeElement.textContent);
 };
 
+/**
+ * Initialize code component.
+ *
+ * Iterate through all code components and attach dynamically generated
+ * button & wrapper to DOM. Copy code element contents when button is clicked.
+ *
+ */
 const init = () => {
   COPY_CODE.forEach((copyCodeElement) => {
     const copyWrapper = createWrapper();

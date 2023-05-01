@@ -50,7 +50,7 @@ const copyOnClick = (event) => {
   return navigator.clipboard.writeText(codeElement.textContent);
 };
 
-const buildHTML = () => {
+const init = () => {
   COPY_CODE.forEach((copyCodeElement) => {
     const copyWrapper = createWrapper();
     const copyButton = createCopyButton();
@@ -62,4 +62,4 @@ const buildHTML = () => {
   });
 };
 
-buildHTML();
+init();

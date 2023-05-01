@@ -19,11 +19,11 @@ implementation:
     - property: "`data-invalid-alpha-text`"
       required: "No"
       description: |
-        Overrides the default value for the invalid alphabetic character hint text. Default value: "Please enter a letter character here"
+        Overrides the default value for the invalid alphabetic character hint text. Default value: "Invalid character. Please enter a letter character here."
     - property: "`data-invalid-numeric-text`"
       required: "No"
       description: |
-        Overrides the default value for the invalid numeric character hint text. Default value: "Please enter a letter character here"
+        Overrides the default value for the invalid numeric character hint text. Default value: "Invalid character.Please enter a number character here."
     - property: "`forcelower`"
       required: "No"
       description: Forces casing on alphabetic characters. Add `forcelower="true"` to the input element to enforce lowercase letters.
@@ -32,10 +32,10 @@ implementation:
       description: Forces casing on alphabetic characters. Add `forceupper="true"` to the input element to enforce uppercase letters.
     - property: "`inputmode`"
       required: "No"
-      description: Tells browsers which keyboard type to display. For masks that contain all numbers, set `inputmode` to numeric to display a numeric keyboard. Set `inputmode` to `tel` to display a telephone keyboard. Set `inputmode` to `text` if your input mask includes alphabetic characters.
+      description: Tells browsers which keyboard type to display. For masks that contain all numbers, set `inputmode` to `numeric` to display a numeric keyboard. Set `inputmode` to `tel` to display a telephone keyboard. Set `inputmode` to `text` if your input mask includes alphabetic characters.
     - property: "`mask`"
       required: "Yes"
-      description: Defines the format of your mask. Use the number `9` to represent any number, the letter `A` to represent any letter, and any available format character. For example, an input that requires three numbers followed by four letters with a hyphen in-between would have a  `mask` attribute that looks like `999-AAAA`.
+      description: Defines the format of your mask. Use the number `9` to represent any number, the letter `A` to represent any letter, and any format character from the [Available format characters table]({{ site.baseurl }}/components/input-mask/#available-format-characters). For example, an input that requires three numbers followed by four letters with a hyphen separator would have a  `mask` attribute that looks like `999-AAAA`.
     - property: "`placeholder`"
       required: "Yes"
       description: Creates the visual placeholder and informs some elements of mask formatting. Use underscores `_` for character input placeholders combined with any valid format characters to customize your input mask. For example, a U.S. telephone `placeholder` attribute may look like `(___) ___-____`.

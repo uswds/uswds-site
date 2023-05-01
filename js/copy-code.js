@@ -26,38 +26,39 @@ const createCopyButton = () => {
   return btn;
 };
 
+const copyOnClick = (event) => {
+  const copyBtn = event.currentTarget;
+
+  // Set success state
+  copyBtn.classList.add("usa-copy-code--button--success");
+  copyBtn.querySelector("[aria-hidden]").textContent = "Copied!";
+  copyBtn.querySelector(".usa-sr-only").textContent =
+    "Code copied to clipboard";
+
+  // After timeout, reset to default state
+  setTimeout(() => {
+    copyBtn.classList.remove("usa-copy-code--button--success");
+    copyBtn.querySelector("[aria-hidden]").textContent = "Copy";
+    copyBtn.querySelector(".usa-sr-only").textContent = "Copy component code";
+  }, 3000);
+
+  // Select section code and copy to clipboard
+  const WRAPPER = copyBtn.parentNode;
+  const CONTENT = WRAPPER.parentNode;
+  const CODE = CONTENT.querySelector("code");
+  return navigator.clipboard.writeText(CODE.textContent);
+};
+
 const buildHTML = () => {
   COPY_CODE.forEach((copyCodeElement) => {
     const copyWrapper = createWrapper();
     const copyButton = createCopyButton();
 
     copyWrapper.appendChild(copyButton);
-    btnFunction(copyButton);
 
-    copyCodeElement.appendChild(buttonWrapper);
-  });
-};
+    copyCodeElement.appendChild(copyWrapper);
 
-const btnFunction = (button) => {
-  button.addEventListener("click", () => {
-    // Set success state
-    button.classList.add("usa-copy-code--button--success");
-    button.querySelector("[aria-hidden]").textContent = "Copied!";
-    button.querySelector(".usa-sr-only").textContent =
-      "Code copied to clipboard";
-
-    // After timeout, reset to default state
-    setTimeout(() => {
-      button.classList.remove("usa-copy-code--button--success");
-      button.querySelector("[aria-hidden]").textContent = "Copy";
-      button.querySelector(".usa-sr-only").textContent = "Copy component code";
-    }, 3000);
-
-    // Select section code and copy to clipboard
-    const WRAPPER = button.parentNode;
-    const CONTENT = WRAPPER.parentNode;
-    const CODE = CONTENT.querySelector("code");
-    return navigator.clipboard.writeText(CODE.textContent);
+    copyButton.addEventListener("click", copyOnClick);
   });
 };
 

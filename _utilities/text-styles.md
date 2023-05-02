@@ -285,8 +285,8 @@ utilities:
       <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-middle"></span> <span class="text-middle text-red">.text-middle</span></p>
       <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-sub"></span> <span class="text-sub text-red">.text-sub</span></p>
       <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-super"></span> <span class="text-super text-red">.text-super</span></p>
-      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-tbottom"></span> <span class="text-tbottom text-red">.text-tbottom</span></p>
-      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-ttop"></span> <span class="text-ttop text-red">.text-ttop</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-bottom"></span> <span class="text-bottom text-red">.text-bottom</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-top"></span> <span class="text-top text-red">.text-top</span></p>
       <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-top"></span> <span class="text-top text-red">.text-top</span></p>
     </section>
   </section>
@@ -431,7 +431,7 @@ utilities:
       </td>
       <td data-title="Example" class="display-inline-flex">
         <span>
-          @include u-text('ttop')
+          @include u-text('top')
         </span>
       </td>
     </tr>
@@ -530,7 +530,7 @@ utilities:
     <div class="grid-col-4">
       <span class="display-block">u-text('baseline')</span>
       <span class="display-block margin-top-1">u-text('sup')</span>
-      <span class="display-block margin-top-1">u-text('ttop')</span>
+      <span class="display-block margin-top-1">u-text('top')</span>
     </div>
   </div>
   <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">

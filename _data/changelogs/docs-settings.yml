@@ -2,6 +2,17 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: 2023-05-03
+    summary: Added accordion color settings.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: TK
+    githubRepo: uswds-site
   - date: 2023-03-20
     summary: Updated settings information to match what is found in USWDS.
     summaryAdditional:
@@ -109,7 +120,7 @@ items:
     versionUswds: 3.0.2
   - date: 2022-06-17
     summary: Fixed errors related to `$theme-body-background-color`.
-    summaryAdditional:  Updated icons so that custom background colors no longer cause compile failures.
+    summaryAdditional: Updated icons so that custom background colors no longer cause compile failures.
     affectsAccessibility:
     affectsAssets: true
     affectsGuidance:

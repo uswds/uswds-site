@@ -2,6 +2,15 @@ title: Accordion
 type: component
 changelogURL:
 items:
+  - date: 2023-05-03
+    summary: Added two new settings to customize accordion background colors.
+    summaryAdditional: You can now customize accordion button and content background colors.
+    isBreaking: false
+    affectsJavascript: false
+    affectsMarkup: false
+    githubPr: 5269
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-08-05
     summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.

@@ -8,6 +8,7 @@ items:
     isBreaking: false
     affectsJavascript: false
     affectsMarkup: false
+    affectsStyles: true
     githubPr: 5269
     githubRepo: uswds
     versionUswds: 3.5.0

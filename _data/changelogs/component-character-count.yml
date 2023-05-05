@@ -1,7 +1,7 @@
 title: Character count
 type: component
 changelogURL:
-items:
+items:  
   - date: 2022-10-19
     summary: Improved screen reader experience.
     summaryAdditional: The character counter now includes a brief pause after input before announcing how many characters remain. Announcing the input no longer prevents the character counter from reading.

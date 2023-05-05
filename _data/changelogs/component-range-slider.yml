@@ -2,6 +2,14 @@ title: Range slider
 type: component
 changelogURL:
 items:
+- date: 2023-03-28
+  summary: Normalize disabled form elements
+  summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute are now consistently styled accross USWDS and ensure proper color contrast
+  affectsAccessibility: true
+  affectsStyles: true
+  githubPr: 5063
+  githubRepo: uswds
+  versionUswds: 3.5.0
 - date: 2022-04-28
   summary: Updated to Sass module syntax and new package structure.
   isBreaking: true

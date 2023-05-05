@@ -2,6 +2,14 @@ title: Combo box
 type: component
 changelogURL:
 items:
+  - date: 2023-03-28
+    summary: Normalize disabled form elements
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute are now consistently styled accross USWDS and ensure proper color contrast
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5063
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-11-14
     summary: Added note on usability issues with assistive technology.
     summaryAdditional: Testing with people using assistive technology revealed usability concerns that require additional investigation. Until addressed, consider using a Select component instead of a Combo box.

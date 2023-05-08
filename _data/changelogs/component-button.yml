@@ -2,6 +2,14 @@ title: Button
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improve button legibility in forced colors mode.
+    summaryAdditional: Adds a consistent border to any `usa-button` in high contrast mode.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5147
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-08-05
     summary: Styled aria-disabled to match disabled.
     summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).

@@ -2,6 +2,14 @@ title: Prose
 type: component
 changelogURL:
 items:
+- date: 2023-05-08
+  summary: Remove `usa-prose-` mixins and placeholders. Users should instead use `typeset-` mixins in their place.
+  additionalSummary: This change also introduces `$theme-heading-margin-top` and `$theme-paragraph-margin-top` system variables
+  isBreaking: true
+  affectsStyles: true
+  githubPr: 5158
+  githubRepo: uswds
+  versionUswds: 3.5.0
 - date: 2022-04-28
   summary: Updated to Sass module syntax and new package structure.
   isBreaking: true

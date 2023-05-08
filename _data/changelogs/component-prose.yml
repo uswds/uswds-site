@@ -2,12 +2,19 @@ title: Prose
 type: component
 changelogURL:
 items:
-- date: 2022-04-28
-  summary: Updated to Sass module syntax and new package structure.
-  isBreaking: true
-  affectsAssets: true
-  affectsJavascript: true
-  affectsStyles: true
-  githubPr: 4656
-  githubRepo: uswds
-  versionUswds: 3.0.0
+  - date: NNNN-NN-NN
+    summary: Removed `usa-prose-` mixins and placeholders from Sass.
+    summaryAdditional: This is a breaking change only if your project Sass uses `usa-prose-` mixins and placeholders. It does not affect the look of any `usa-prose`–styled element.
+    affectsStyles: true
+    githubPr: 5158
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0

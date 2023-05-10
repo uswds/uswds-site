@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Improved consistency of keyboard actions.
-    summaryAdditional: Users can now to use `Tab` to escape the combobox selection without making a choice, and `Space` to select the current highlighted option when within the dropdown menu.
+    summaryAdditional: Users can now to use `Tab` to escape the Combo box selection without making a choice, and `Space` to select the current highlighted option when within the dropdown menu.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 5160

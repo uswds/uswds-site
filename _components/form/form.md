@@ -25,7 +25,7 @@ changelog:
 
 <div class="site-note"><strong>Note:</strong> If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines on the “Form Templates” page</a>.</div>
 
-{% include accessibility.html %}
+{% include forms-guidance.html %}
 
 <div id="settings" class="usa-prose site-prose margin-top-5">
   <h3 class="usa-heading heading-margin-alt">Form settings</h3>

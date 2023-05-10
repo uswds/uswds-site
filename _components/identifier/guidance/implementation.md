@@ -7,7 +7,7 @@
 
     Example: [https://www.gsa.gov/about-us](https://www.gsa.gov/about-us)
 
-  - **[Accessibility](https://digital.gov/resources/required-web-content-and-links/#accessibility-statement):** Link to your agency's [accessibility statement](https://www.section508.gov/manage/laws-and-policies/website-accessibility-statement/).
+  - **[Accessibility statement](https://digital.gov/resources/required-web-content-and-links/#accessibility-statement):** Link to your agency's [accessibility statement](https://www.section508.gov/manage/laws-and-policies/website-accessibility-statement/).
 
     Example: [https://www.dhs.gov/accessibility](https://www.dhs.gov/accessibility)
 

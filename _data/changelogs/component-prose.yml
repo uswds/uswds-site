@@ -3,9 +3,18 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
-  summary: Removed `usa-prose-` mixins and placeholders from Sass.
-  summaryAdditional: This is a breaking change only if your project Sass uses `usa-prose-` mixins and placeholders. It does not affect the look of any `usa-prose`–styled element.
+  summary: Added `$theme-heading-margin-top` and `$theme-paragraph-margin-top` system variables.
   affectsStyles: true
+  affectsSettings: true
+  githubPr: 5158
+  githubRepo: uswds
+  versionUswds: 3.5.0
+- date: NNNN-NN-NN
+  summary: Removed `usa-prose-` mixins and placeholders from Sass.
+  summaryAdditional: Users should instead use `typeset-` mixins in their place. This is a breaking change only if your project Sass uses `usa-prose-` mixins and placeholders. It does not affect the look of any `usa-prose`–styled element.
+  isBreaking: true
+  affectsStyles: true
+  affectsSettings: true
   githubPr: 5158
   githubRepo: uswds
   versionUswds: 3.5.0

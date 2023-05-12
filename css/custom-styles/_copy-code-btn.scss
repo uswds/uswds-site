@@ -13,7 +13,9 @@
 
   &__button {
     @include u-padding-left(2);
-    min-width: units(15);
+    @include u-font('sans', '3xs');
+    margin-right: 0;
+    min-width: 5.5rem;
     position: sticky;
     top: units(1);
     z-index: 100;

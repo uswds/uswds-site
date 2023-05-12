@@ -26,11 +26,12 @@ const createCopyButton = () => {
   const btn = document.createElement("button");
   const btnText = `
     <span class="" aria-hidden="true">Copy</span>
-    <span class="usa-sr-only">Copy component code</span>
+    <span class="usa-sr-only" role="presentation">Copy component code</span>
   `;
 
   btn.className = COPY_BUTTON_CLASS;
   btn.setAttribute("type", "button");
+  btn.setAttribute("aria-live", "polite");
 
   btn.insertAdjacentHTML("beforeend", btnText);
 

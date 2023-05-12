@@ -28,7 +28,6 @@ variants:
     description: A more condensed item presentation with less space between items.
 changelog:
   key: component-collection
-in_page_nav: false
 ---
 
 The collection component offers users a way to view short descriptions of related content, providing a simple way to access the original source to learn more. It’s useful when you want to highlight information like articles, events, or documents that appear elsewhere on your website or from other sources.

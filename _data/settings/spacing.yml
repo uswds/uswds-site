@@ -1,19 +1,19 @@
 name: Spacing settings
 description: Spacing
 contents:
-  - name: sm
+  - name: Small border radius
     subsection: border-radius token
     description: Sets `"sm"` `border-radius` theme token.
     var: $theme-border-radius-sm
     default: 2px
     type: units
-  - name: md
+  - name: Medium border radius
     subsection: border-radius token
     description: Sets `"md"` `border-radius` theme token.
     var: $theme-border-radius-md
     default: 0.5
     type: units
-  - name: lg
+  - name: Large border radius
     subsection: border-radius token
     description: Sets `"lg"` `border-radius` theme token.
     var: $theme-border-radius-lg
@@ -21,27 +21,32 @@ contents:
     type: units
 
   - name: Small grid gap
+    subsection: grid-gap token
     section: true
     description: Sets `"grid-gap-sm"` token.
     var: $theme-column-gap-sm
     default: 2px
     type: units
   - name: Medium grid gap
+    subsection: grid-gap token
     description: Sets `"grid-gap-md"` token.
     var: $theme-column-gap-md
     default: 2
     type: units
   - name: Large grid gap
+    subsection: grid-gap token
     description: Sets `"grid-gap-lg"` token.
-    var: $theme-column-gap-md
+    var: $theme-column-gap-lg
     default: 3
     type: units
   - name: Mobile grid gap
+    subsection: grid-gap token
     description: Sets value of `"grid-gap"` at `mobile` width.
     var: $theme-column-gap-mobile
     default: 2
     type: units
   - name: Desktop grid gap
+    subsection: grid-gap token
     description: Sets value of `"grid-gap"` at `desktop` width.
     var: $theme-column-gap-desktop
     default: 4
@@ -65,7 +70,7 @@ contents:
     default: 4
     type: units
   - name: Site mobile outer margins
-    description: Site outer margin at mobile width.
+    description: Site outer margin at mobile width (breakpoint defined by `$theme-site-margins-breakpoint`).
     var: $theme-site-margins-mobile-width
     default: 2
     type: units

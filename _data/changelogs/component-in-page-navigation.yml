@@ -2,6 +2,16 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
+  - date: 2023-03-27
+    summary: Updated the documentation to clarify the component's recommended display location.
+    summaryAdditional:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubRepo: uswds-site
+    githubPr: 2033
+    versionUswds:
   - date: 2023-03-13
     summary: URL in address bar is updated when navigating component.
     summaryAdditional: Users can now see the proper anchor link in the address bar when navigating from the in-page navigation.

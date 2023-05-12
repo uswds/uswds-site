@@ -11,7 +11,7 @@ contents:
     default: '"md"'
     type: units
   - name: Small width
-    description: Size of the header search button.
+    description: Width of small buttons. Used to define the size of the header search button and small language selector button.
     var: $theme-button-small-width
     default: 6
     type: units

@@ -2,6 +2,17 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: 2023-05-12
+    summary: Updated sass map instructions to reflect new pattern.
+    summaryAdditional: Users are now instructed to define only the variable they wish to change instead of having to define the entire map
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 2077
+    githubRepo: uswds-site
   - date: 2023-03-20
     summary: Updated settings information to match what is found in USWDS.
     summaryAdditional:

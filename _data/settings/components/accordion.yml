@@ -16,7 +16,7 @@ contents:
     default: '"base-lightest"'
     type: color
   - name: Button background color
-    description: Button background color of the accordion.
+    description: Background color of the accordion button.
     var: $theme-accordion-button-background-color
     default: '"base-lightest"'
     type: color

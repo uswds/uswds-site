@@ -1,7 +1,7 @@
 name: Accordion
 contents:
   - name: Background color
-    description: Content background color of the accordion.
+    description: Background color of the accordion content.
     var: $theme-accordion-background-color
     default: "default"
     type: color

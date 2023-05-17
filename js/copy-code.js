@@ -26,7 +26,7 @@ const createCopyButton = () => {
   const btn = document.createElement("button");
   const btnText = `
     <span class="" aria-hidden="true">Copy</span>
-    <span class="usa-sr-only" role="presentation">Copy component code</span>
+    <span class="usa-sr-only">Copy component code</span>
   `;
 
   btn.className = COPY_BUTTON_CLASS;
@@ -39,6 +39,20 @@ const createCopyButton = () => {
 };
 
 /**
+ * Creates a screen reader only span element for success text 
+ * 
+ * @returns {HTMLElement} - A span for screen reader text
+ */
+const createSRStatus = () => {
+  const srText = document.createElement("span");
+  srText.className = "usa-sr-only";
+  srText.setAttribute("aria-live", "polite");
+  srText.innerHTML = "Code copied to clipboard";
+
+  return srText;
+};
+
+/**
  * Copy <code> text content when copy code button is clicked.
  *
  * @param {Event} event - The click event from copy code button.
@@ -46,19 +60,20 @@ const createCopyButton = () => {
  */
 const copyOnClick = (event) => {
   const copyBtn = event.currentTarget;
+  const copyWrapper = copyBtn.closest(`.${COPY_WRAPPER_CLASS}`);
   const labelVisual = copyBtn.querySelector("[aria-hidden]");
-  const labelSROnly = copyBtn.querySelector(".usa-sr-only");
+  const labelSROnly = createSRStatus();
 
   // Set success state
   copyBtn.classList.add(COPY_BUTTON_SUCCESS_CLASS);
   labelVisual.textContent = "Copied!";
-  labelSROnly.textContent = "Code copied to clipboard";
+  copyWrapper.appendChild(labelSROnly);
 
   // After timeout, reset to default state
   setTimeout(() => {
     copyBtn.classList.remove(COPY_BUTTON_SUCCESS_CLASS);
     labelVisual.textContent = "Copy";
-    labelSROnly.textContent = "Copy component code";
+    labelSROnly.remove();
   }, 3000);
 
   // Select section code and copy to clipboard

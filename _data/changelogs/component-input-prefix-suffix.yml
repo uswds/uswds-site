@@ -2,6 +2,14 @@ title: Input prefix or suffix
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-04-28
     summary: Updated package name to `usa-input-prefix-suffix`.
     affectsGuidance: true

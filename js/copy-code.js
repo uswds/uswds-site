@@ -45,7 +45,7 @@ const createCopyButton = () => {
  */
 const createSRStatus = () => {
   const srText = document.createElement("span");
-  srText.className = "usa-sr-only";
+  srText.classList.add("usa-sr-only");
   srText.setAttribute("aria-live", "polite");
   srText.innerHTML = "Code copied to clipboard";
 
@@ -66,7 +66,7 @@ const copyOnClick = (event) => {
 
   // Set success state
   copyBtn.classList.add(COPY_BUTTON_SUCCESS_CLASS);
-  labelVisual.textContent = "Copied!";
+  labelVisual.innerHTML = "Copied!";
   copyWrapper.appendChild(labelSROnly);
 
   // After timeout, reset to default state

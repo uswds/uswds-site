@@ -9,7 +9,7 @@ items:
     githubPr: 4385
     githubRepo: uswds
     versionUswds: 3.5.0
- - date: 2022-08-29
+  - date: 2022-08-29
     summary: Added guidance for using aspect ratio utility classes.
     affectsGuidance: true
     githubPr: 1729

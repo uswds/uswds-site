@@ -3,6 +3,14 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
     summary: Fixed an issue with large file previews.
     summaryAdditional: Now adding large files no longer results in an infinite spinner. Adding large files should now result in an accurate preview.
     affectsJavascript: true

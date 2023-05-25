@@ -2,6 +2,14 @@ title: Input mask
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-11-14
     summary: Component released.
     affectsGuidance: true

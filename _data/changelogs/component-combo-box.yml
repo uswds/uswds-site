@@ -3,6 +3,14 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
     summary: Improved consistency of keyboard actions.
     summaryAdditional: Users can now to use `Tab` to escape the Combo box selection without making a choice, and `Space` to select the current highlighted option when within the dropdown menu.
     affectsAccessibility: true

@@ -3,6 +3,14 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
     summary: Improved button legibility in forced colors mode.
     summaryAdditional: Adds a consistent border to any `usa-button` in high contrast mode.
     affectsAccessibility: true

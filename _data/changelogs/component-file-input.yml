@@ -10,6 +10,13 @@ items:
     githubPr: 5295
     githubRepo: uswds
     versionUswds: 3.5.0
+  - date: NNNN-NN-NN
+    summary: Fixed an issue with large file previews.
+    summaryAdditional: Now adding large files no longer results in an infinite spinner. Adding large files should now result in an accurate preview.
+    affectsJavascript: true
+    githubPr: 5114
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-04-28
     summary: Updated package name to `usa-file-input`.
     affectsGuidance: true

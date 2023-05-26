@@ -7,7 +7,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Improved consistency and visibility of disabled styles.
-    summaryAdditional: Disabled form inputs now use a consistent gray background.
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 5603

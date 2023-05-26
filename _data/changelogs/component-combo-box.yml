@@ -2,6 +2,30 @@ title: Combo box
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improved consistency and visibility of disabled styles.
+    summaryAdditional: Disabled form inputs now use a consistent gray background.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5603
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
+    summary: Improved consistency of keyboard actions.
+    summaryAdditional: Users can now to use `Tab` to escape the Combo box selection without making a choice, and `Space` to select the current highlighted option when within the dropdown menu.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 5160
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-11-14
     summary: Added note on usability issues with assistive technology.
     summaryAdditional: Testing with people using assistive technology revealed usability concerns that require additional investigation. Until addressed, consider using a Select component instead of a Combo box.

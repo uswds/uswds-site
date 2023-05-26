@@ -2,6 +2,30 @@ title: Button
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
+    summary: Improved button legibility in forced colors mode.
+    summaryAdditional: Adds a consistent border to any `usa-button` in high contrast mode.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5147
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
+    summary: Added spacebar trigger to links styled as buttons.
+    summaryAdditional: Now any item that looks like a button will trigger with the spacebar, even if the element is a link.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 4385
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-08-05
     summary: Styled aria-disabled to match disabled.
     summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).

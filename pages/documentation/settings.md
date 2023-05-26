@@ -56,9 +56,9 @@ For example, if you wanted to customize the `$background-color-settings` default
 ```scss
 @use "uswds-core" with (
   $background-color-settings: (
-      focus: true,
-      hover: false,
-    )
+    focus: true,
+    hover: false,
+  )
 );
 ```
 

@@ -3,6 +3,14 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
+  summary: Improved consistency and visibility of disabled styles.
+  summaryAdditional: Disabled form inputs now use a consistent gray background.
+  affectsAccessibility: true
+  affectsStyles: true
+  githubPr: 5603
+  githubRepo: uswds
+  versionUswds: 3.5.0
+- date: NNNN-NN-NN
   summary: Improved consistency of disabled styles in forced colors mode.
   summaryAdditional:
   affectsAccessibility: true

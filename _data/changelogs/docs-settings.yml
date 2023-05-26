@@ -2,6 +2,12 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Update individual Sass map settings without affecting defaults.
+    summaryAdditional: Now adjusting a single Sass map setting no longer sets all other values in the map to `false`. Users can now update only the map values they wish to change.
+    githubPr: 5216
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2023-03-20
     summary: Updated settings information to match what is found in USWDS.
     summaryAdditional:

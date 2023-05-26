@@ -8,7 +8,7 @@ items:
     isBreaking: true
     affectsAccessibility: true
     affectsMarkup: true
-    githubPr: 4964
+    githubPr: 2097
     githubRepo: uswds-site
     versionUswds: 3.5.0
   - date: NNN-NN-NN

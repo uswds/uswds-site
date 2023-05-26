@@ -114,12 +114,7 @@ You can further customize utility output with USWDS settings. Add settings from 
     "mobile-lg": false,
   ),
   $color-settings: (
-    "output": true
-    "responsive": false
-    "active": false
-    "focus": false
-    "hover": false
-    "visited": false
+    "hover": false,
   ),
   $color-palettes: (
     "palette-color-theme"

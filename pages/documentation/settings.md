@@ -62,18 +62,19 @@ For example, if you wanted to customize the `$background-color-settings` default
 );
 ```
 
-**Outputs:**
+This will generate the same output as configuring the setting with default values for all other map items:
 
 ```scss
-$background-color-settings-complete: (
-      output: true,
-      responsive: false,
-      active: false,
-      focus: true,
-      hover: false,
-      visited: false,
-    )
-```
+@use "uswds-core" with (
+  $background-color-settings: (
+    output: true, // default value
+    responsive: false, // default value
+    active: false, // default value
+    focus: true,
+    hover: false,
+    visited: false, // default value
+  )
+);
 
 ### What to include in your configuration
 Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type, as identified in the tables below.

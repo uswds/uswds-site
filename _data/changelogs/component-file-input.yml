@@ -3,6 +3,17 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Improved the file input experience for voice command and screen reader users.
+    summaryAdditional: Voice command users can now interact with the component by speaking the visible instructions text.
+      Additionally, screen reader users now have access to both the instructions text
+      and the file selection status.
+    affectsAccessibility: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 5213
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Disabled form inputs now use a consistent gray background.
     affectsAccessibility: true

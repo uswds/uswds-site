@@ -48,7 +48,7 @@ To create your custom configuration, add the USWDS settings variables that you w
 ```
 Note that the settings variables in this module inform both general theme and component customizations.
 
-## Configuring settings maps
+### Configuring settings maps
 Similar to single-value settings, when configuring Sass settings maps in USWDS, you will only need to include the map items you wish to customize. Any item that is not defined in your configuration will keep its default value.
 
 ```scss

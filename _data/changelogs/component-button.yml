@@ -3,9 +3,9 @@ type: component
 changelogURL:
 items:
   - date: 2023-05-08
-    summary: Fixed a bug that caused button `type` attribute to render empty
+    summary: Fixed a bug that caused button `type` attribute to render empty.
     affectsAccessibility: true
-    affectsMarkdown: true
+    affectsMarkup: true
     githubPr: 5247
     githubRepo: uswds
     versionUswds: 3.5.0

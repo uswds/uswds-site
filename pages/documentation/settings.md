@@ -75,6 +75,7 @@ This will generate the same output as configuring the setting with default value
     visited: false, // default value
   )
 );
+```
 
 ### What to include in your configuration
 Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type, as identified in the tables below.

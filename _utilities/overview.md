@@ -100,7 +100,7 @@ You can further customize utility output with USWDS settings. Add settings from 
 
   {:.margin-bottom-4}
   ```scss
-@use "uswds core" with (
+@use "uswds-core" with (
   $utilities-use-important: true,
   $output-these-utilities:(
     "background-color",

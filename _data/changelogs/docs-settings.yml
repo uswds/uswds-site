@@ -3,7 +3,7 @@ type: utility
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated sass map instructions to reflect new pattern.
+    summary: Updated the Sass map configuration pattern to allow users to define overrides only.
     summaryAdditional: Users can now define only the variables they wish to change instead of needing to define the entire map.
     isBreaking: true
     affectsAccessibility:

@@ -2,6 +2,22 @@ title: Date range picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improved consistency and visibility of disabled styles.
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5603
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-08-05
     summary: Styled aria-disabled to match disabled.
     summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).

@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Updated sass map instructions to reflect new pattern.
-    summaryAdditional: Users are now instructed to define only the variable they wish to change instead of having to define the entire map
+    summaryAdditional: Users can now define only the variables they wish to change instead of needing to define the entire map.
     isBreaking: true
     affectsAccessibility:
     affectsAssets:

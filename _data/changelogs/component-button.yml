@@ -26,8 +26,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: NNNN-NN-NN
-    summary: Improved button legibility in forced colors mode.
-    summaryAdditional: Adds a consistent border to any `usa-button` in forced colors mode.
+    summary: Improved legibility in forced colors mode.
+    summaryAdditional: Adds a consistent border in forced colors mode.
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 5147

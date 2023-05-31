@@ -3,6 +3,14 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
+  summary: Improved legibility in forced colors mode.
+  summaryAdditional: Adds a consistent border in forced colors mode.
+  affectsAccessibility: true
+  affectsStyles: true
+  githubPr: 5147
+  githubRepo: uswds
+  versionUswds: 3.5.0
+- date: NNNN-NN-NN
   summary: Improved accessible markup of overflow ellipses.
   summaryAdditional: We replaced the `role="presentation"` with `aria-label="ellipsis indicating non-visible pages"` for `usa-pagination__overflow` items to better conform to WCAG 2.0 and 2.1.
   affectsMarkup: true

@@ -7,7 +7,7 @@ items:
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
     affectsAccessibility: true
     affectsStyles: true
-    githubPr: 5603
+    githubPr: 5063
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: NNNN-NN-NN

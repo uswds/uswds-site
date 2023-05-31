@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Banner module initializes without external dependencies. 
-    summaryAdditional: When imported as a JavaScript module, Banner now initializes on its own without the user having to separately initialize Accordion.
+    summary: Updated banner so that it can initialize without external dependencies. 
+    summaryAdditional: When imported as a JavaScript module, banner now initializes on its own without the user having to separately initialize accordion.
     affectsJavascript: true
     githubPr: 5242
     githubRepo: uswds

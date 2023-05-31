@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Fixed a bug that caused button `type` attribute to render empty.
+    summary: Fixed a bug that caused the button `type` attribute to render empty.
     affectsAccessibility: true
     affectsMarkup: true
     githubPr: 5247
@@ -35,7 +35,6 @@ items:
     versionUswds: 3.5.0
   - date: NNNN-NN-NN
     summary: Added spacebar trigger to links styled as buttons.
-    summaryAdditional: Now any item that looks like a button will trigger with the spacebar, even if the element is a link.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 4385

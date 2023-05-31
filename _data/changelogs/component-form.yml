@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Updated guidance to suggest identifying required and optional fields.
-    summaryAdditional: We added a new section on identifying required fields and now suggest labeling required fields with a red asterisk and optional fields with the word `optional`.
+    summaryAdditional: We added a new section on identifying required fields and now suggest labeling required fields with a red asterisk and optional fields with the word "optional".
     affectsGuidance: true
     affectsMarkup: true
     githubPr: 1834

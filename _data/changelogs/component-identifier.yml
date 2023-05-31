@@ -2,6 +2,15 @@ title: Identifier
 type: component
 changelogURL:
 items:
+  - date: NNN-NN-NN
+    summary: Updated Accessibility statement link guidance.
+    summaryAdditional: Updated the Identifier guidance to use the text "Accessibility statement" for the required link to an accessibility statement. We improved the supporting links that describe accessibility statements.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 2097
+    githubRepo: uswds-site
+    versionUswds: 3.5.0
   - date: NNNN-NN-NN
     summary: Updated Accessibility statement link text. 
     summaryAdditional: Updated the identifier to use the text "Accessibility statement" (EN) / "Declaración de accesibilidad" (ES) for the required link to an accessibility statement.

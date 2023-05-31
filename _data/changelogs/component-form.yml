@@ -1,3 +1,6 @@
+# Note: This changelog is used on multiple pages:
+# templates/form-templates
+# components/form
 title: Form
 type: component
 changelogURL:

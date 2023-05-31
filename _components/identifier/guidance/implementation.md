@@ -7,9 +7,9 @@
 
     Example: [https://www.gsa.gov/about-us](https://www.gsa.gov/about-us)
 
-  - **[Accessibility](https://digital.gov/resources/required-web-content-and-links/#accessibility-statement):** Link to the “Accessibility” page of your parent agency's principal website.
+  - **[Accessibility statement](https://digital.gov/resources/required-web-content-and-links/#accessibility-statement):** Link to your website or service's [accessibility statement](https://www.section508.gov/manage/laws-and-policies/website-accessibility-statement/), or to your agency's accessibility statement if your website or service does not have its own.
 
-    Example: [https://www.gsa.gov/website-information/accessibility-aids](https://www.gsa.gov/website-information/accessibility-aids)
+    Example: [https://www.dhs.gov/accessibility](https://www.dhs.gov/accessibility)
 
   - **[FOIA requests](https://digital.gov/resources/required-web-content-and-links/#freedom-of-information-act-foia):** Link to a page that includes information about how the public can request information under the Freedom of Information Act on your parent agency's principal website.
 

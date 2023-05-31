@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Adjusted high contrast styles to ensure visibility and increase consistency.
-    summaryAdditional: Forced color mode will now override the background color and display the button outline. The open/close icons now dynamically adjust to high contrast `ButtonText` colors.
+    summary: Adjusted high contrast mode and forced colors styles to ensure visibility and increase consistency.
+    summaryAdditional: High contrast mode and forced colors styles will now override the background color and display the button outline. The open/close icons now dynamically adjust to `ButtonText` colors.
     affectsStyles: true
     affectsAccessibility: true
     githubPr: 5286

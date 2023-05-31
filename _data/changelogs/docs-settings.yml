@@ -2,6 +2,19 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the Sass map configuration pattern to allow users to define overrides only.
+    summaryAdditional: Users can now define only the variables they wish to change instead of needing to define the entire map.
+    isBreaking: true
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 5216
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2023-03-20
     summary: Updated settings information to match what is found in USWDS.
     summaryAdditional:

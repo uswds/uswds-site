@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Adjusted forced colors mode styles to ensure visibility and increase consistency.
-    summaryAdditional: forced colors mode styles will now override the background color and display the button outline. The open/close icons now dynamically adjust to `ButtonText` colors.
+    summaryAdditional: Forced colors mode styles will now override the background color and display the button outline. The open/close icons now dynamically adjust to `ButtonText` colors.
     affectsStyles: true
     affectsAccessibility: true
     githubPr: 5286

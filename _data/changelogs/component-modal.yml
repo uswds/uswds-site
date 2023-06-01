@@ -2,6 +2,14 @@ title: Modal
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Refactors Modal javascript for added consistency and failsafe measures. 
+  summaryAdditional: This resolves issues when initialization is called more than once on a document.
+  isBreaking: false
+  affectsJavascript: true
+  githubPr: 5315
+  githubRepo: uswds
+  versionUswds: 3.5.0
 - date: 2023-03-09
   summary: Fixed the display of interactive form elements (like Date Picker) in modal windows.
   summaryAdditional: Now any element in a modal should work as expected.

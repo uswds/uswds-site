@@ -7,6 +7,7 @@ items:
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
     isBreaking: false
     affectsGuidance: true
+    affectsMarkup: true
     githubPr: 5311
     githubRepo: uswds
     versionUswds: 3.5.0

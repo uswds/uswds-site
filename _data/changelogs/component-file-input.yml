@@ -5,6 +5,7 @@ items:
   - date: NNNN-NN-NN
     summary: Removed disabled file input variant preview.
     summaryAdditional: 
+    affectsGuidance: true
     githubPr: 2114
     githubRepo: uswds-site
     versionUswds: 3.5.0

@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: TK
-    summary: Fixed a bug with inaccurate Megamenu template markup.
+    summary: Fixed a bug that caused inaccurate megamenu template markup.
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
     isBreaking: false
     affectsGuidance: true

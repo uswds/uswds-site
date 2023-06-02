@@ -8,6 +8,7 @@ items:
     affectsAccessibility:
     affectsAssets:
     affectsGuidance: true
+    affectsSettings: true
     affectsJavascript:
     affectsMarkup:
     affectsStyles: false

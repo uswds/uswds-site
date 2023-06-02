@@ -9,6 +9,7 @@ items:
     affectsJavascript: false
     affectsMarkup: false
     affectsStyles: true
+    affectsSettings: true
     githubPr: 5269
     githubRepo: uswds
     versionUswds: 3.5.0

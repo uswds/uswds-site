@@ -2,7 +2,7 @@ title: Header
 type: component
 changelogURL:
 items:
-  - date: TK
+  - date: NNNN-NN-NN
     summary: Fixed a bug that caused inaccurate megamenu template markup.
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
     isBreaking: false

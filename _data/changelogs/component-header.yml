@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: TK
     summary: Fixed a bug with inaccurate Megamenu template markup.
-    summaryAdditional: The markup in megamenu code examples was inaccurate due to an issue with data being passed incorrectly to the template.
+    summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
     isBreaking: false
     affectsGuidance: true
     githubPr: 5311

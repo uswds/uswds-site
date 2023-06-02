@@ -14,6 +14,7 @@ items:
     affectsStyles: false
     githubPr: 2081
     githubRepo: uswds-site
+    versionUswds: 3.5.0
   - date: NNNN-NN-NN
     summary: Added settings for announcing external links.
     summaryAdditional: Added `$theme-external-link-sr-label-tab-same` and `$theme-external-link-sr-label-tab-new` to control how screen readers announce external links.

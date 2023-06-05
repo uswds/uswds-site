@@ -2,6 +2,13 @@ title: Utilities
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed unused utility builder comments from compiled CSS.
+    summaryAdditional: This update significantly reduces the compiled file size.
+    affectsStyles: true
+    githubPr: 5209
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: NNN-NN-NN
     summary: Updated sass map instructions to reflect new pattern.
     summaryAdditional: Users are now instructed to define only the variable they wish to change instead of having to define the entire map.

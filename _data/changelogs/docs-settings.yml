@@ -3,6 +3,12 @@ type: utility
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Added a note about configuring settings that are described using dot notation.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2122
+    githubRepo: uswds-site
+  - date: NNNN-NN-NN
     summary: Updated the Sass map configuration pattern to allow users to define overrides only.
     summaryAdditional: Users can now define only the variables they wish to change instead of needing to define the entire map.
     isBreaking: true

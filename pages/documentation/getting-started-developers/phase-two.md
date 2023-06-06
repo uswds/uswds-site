@@ -62,13 +62,13 @@ For your entry point to complete these tasks, you will need to add the following
 /* styles.scss */
 
 // 1. Load USWDS settings
-@forward "uswds-settings.scss";
+@forward "uswds-theme.scss";
 
 // 2. Load USWDS source code
 @forward "./path/to/source/uswds";
 
 // 3. Load your project's custom Sass
-@forward "project-custom.scss";
+@forward "uswds-theme-custom-styles.scss";
 ```
 
 Note that each `@forward` reference in this example is tied to one of the tasks listed above.

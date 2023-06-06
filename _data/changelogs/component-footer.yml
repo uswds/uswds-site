@@ -43,7 +43,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-04-11
-    summary: Added support for high contrast mode and forced colors.
+    summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true

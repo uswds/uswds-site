@@ -2,6 +2,19 @@ title: Spacing tokens
 type: token
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated token value of `0` to match other tokens by using `spacing-multiple()`
+    summaryAdditional: This corrects issues found when `units(0)` is used in a `calc()` function
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: 
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 5325
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2023-02-24
     summary: Corrected alternate token name for token `05`.
     summaryAdditional:

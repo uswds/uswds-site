@@ -5,7 +5,6 @@ items:
   - date: NNNN-NN-NN
     summary: Removed the `id` attribute from the `usa-logo` element.
     summaryAdditional:
-    isBreaking: false
     affectsMarkup: true
     githubPr: 5319
     githubRepo: uswds

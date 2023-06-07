@@ -38,20 +38,20 @@ If you don't yet have Sass compilation set up on your project, we recommend usin
 
 This tool provides simple Gulp 4 functions that copy USWDS static assets into your project and transform USWDS Sass into browser-readable CSS. Additionally, `uswds-compile` applies Autoprefixer to all compiled code to make sure your CSS is browser-compatible.
 
-Later in this guide we will walk you through setting up Sass compilation for your project with `uswds-compile`. To get started, jump ahead to the [Using uswds-compile](#using-uswds-compile) section below. If you instead prefer to manage Sass compilation on your own, read the [Loading USWDS Sass with a custom compiler](#loading-uswds-in-your-sass-entry-point) section to learn how to load USWDS into your project's Sass entry point.
+Later in this guide we will walk you through setting up Sass compilation for your project with `uswds-compile`. To get started, jump ahead to the [Using uswds-compile](#using-uswds-compile) section below.
 
 ## Loading USWDS Sass with a custom compiler
-If you already have Sass compilation set up on your project, you can add USWDS Sass to your project by loading it into your Sass entry point.
+If you already have Sass compilation set up on your project, you can add USWDS Sass to your project by loading it into your Sass entry point along with your settings configuration.
 
 ### About Sass entry points
 
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase. Often, a project's Sass entry point is named something like `index.scss` or `styles.scss`.
 
 ### Creating a Sass entry point
-If your project does not yet have a Sass entry point, create a file called `index.scss` or `styles.scss` at the root of your Sass directory.
+If your project does not yet have a Sass entry point, create a file called `styles.scss`. Often, your Sass entry point will live at the root of your project's Sass directory.
 
 ### Loading USWDS in your Sass entry point
- Your project’s Sass entry point is a simple file that will need to do the following three tasks:
+Your project’s Sass entry point is a simple file that will need to do the following three tasks:
 
 1. Load your project's [USWDS settings configuration]({{ site.baseurl }}/documentation/settings/) (required)
 2. Load USWDS source code (required)
@@ -88,12 +88,12 @@ In plain language, this code says:
 
     To load the `uswds` package, you must provide a path to its `index.scss` entry point. If you installed USWDS 3 with npm, the complete path to this file is: `./node_modules/@uswds/uswds/packages/uswds/_index.scss`.
 
-3. **Build new work on top of that foundation**: Finally, add any custom project styles built from design system code.
+3. **Build new work on top of that foundation**: Finally, add any custom project styles built from Design System code.
 
-    After you've loaded the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings and USWDS source code in your Sass entry point.
+    After you've loaded the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings configuration and USWDS source code in your Sass entry point.
 
-### Adding Autoprefixer
-USWDS relies on Autoprefixer to be browser-compatible. If your compiler does not already use Autoprefixer, we strongly encourage you to add it to your project.
+{:.site-note}
+**Note:** USWDS relies on [Autoprefixer](https://github.com/postcss/autoprefixer) to make its compiled CSS browser-compatible. If your compiler does not already use Autoprefixer, we strongly encourage that you add it to your project.
 
 ## Using uswds-compile
 Complete the following steps to install, configure, and use `uswds-compile`:

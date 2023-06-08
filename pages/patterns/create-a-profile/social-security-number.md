@@ -116,7 +116,7 @@ Provide a single text field to enter the Social Security Number.
 ## References
 - 8 recommendations for creating effective input fields. (n.d.) Retrieved on July 20, 2022, from [https://baymard.com/learn/input-fields](https://baymard.com/learn/input-fields)
 - Consider using localized input masks for ‘phone’ and other restricted inputs. (November 28, 2017) Retrieved on July 20, 2022, from [https://baymard.com/blog/input-masking-form-field](https://baymard.com/blog/input-masking-form-field)
-- Masked field. (n.d.) Retrieved on July 20, 2022, from [https://design.cms.gov/v/5.0.2/components/masked-field](https://design.cms.gov/v/5.0.2/components/masked-field)
+- Masked field. (n.d.) Retrieved on July 20, 2022, from [https://design.cms.gov/components/text-field/masked-field/](https://design.cms.gov/components/text-field/masked-field/)
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
 - National Insurance Numbers. (n.d.) Retrieved on July 20, 2022, from [https://design-system.service.gov.uk/patterns/national-insurance-numbers/](https://design-system.service.gov.uk/patterns/national-insurance-numbers/)
 - Placeholders in a form field. (May 11, 2014) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/form-design-placeholders/](https://www.nngroup.com/articles/form-design-placeholders/)

@@ -65,6 +65,6 @@ type: component
 changelog:
   key: component-in-page-navigation
 ---
-In-page navigation helps users understand the contents of a page and navigate to the section they need to read. This component is most suited for lengthy pages. The component is displayed to the right of the main content, in a sticky container that remains fixed when the user scrolls. When a user clicks an item on the in-page navigation, the page smoothly scrolls to the target section.
+In-page navigation helps users understand the contents of a page and navigate to the section they need to read. This component is most suited for lengthy pages. The component is displayed alongside the main content in a sticky container that remains fixed when the user scrolls. When a user clicks an item on the in-page navigation, the page smoothly scrolls to the target section.
 
 The USWDS in-page navigation component generates its content automatically, based on the content of the `main` element of the page. It utilizes the Intersection Observer API which provides a performant, future-proof way of assuring that the navigation highlights the current section visible in the viewport.

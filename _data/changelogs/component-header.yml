@@ -3,12 +3,20 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Fixed a bug that caused inaccurate megamenu template markup.
+    summary: Fixed a bug that caused inaccurate megamenu template markup in the documentation.
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
     isBreaking: false
     affectsGuidance: true
     affectsMarkup: true
     githubPr: 5311
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: NNNN-NN-NN
+    summary: Removed the `id` attribute from the `usa-logo` element.
+    summaryAdditional:
+    isBreaking: false
+    affectsMarkup: true
+    githubPr: 5319
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-03-13

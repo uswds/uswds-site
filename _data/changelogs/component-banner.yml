@@ -2,13 +2,6 @@ title: Banner
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
-    summary: Updated banner so that it can initialize without external dependencies. 
-    summaryAdditional: When imported as a JavaScript module, banner now initializes on its own without the user having to separately initialize accordion.
-    affectsJavascript: true
-    githubPr: 5242
-    githubRepo: uswds
-    versionUswds: 3.5.0
   - date: 2023-03-09
     summary: Improved display of focus outline on mobile.
     summaryAdditional: Now the focus outline is visible all around the banner on mobile devices.

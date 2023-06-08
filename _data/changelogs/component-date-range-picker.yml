@@ -73,7 +73,6 @@ items:
     githubPr: 4610
     githubRepo: uswds
     versionUswds: 2.13.3
-    affectsAccessibility: true
   - date: 2022-01-20
     summary: Fixed date picker input bug in Safari.
     summaryAdditional: We fixed a bug where date picker selections would not propagate into the input field in Safari.
@@ -82,7 +81,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.1
   - date: 2021-12-14
-    summary:  Improved screen reader experience.
+    summary: Improved screen reader experience.
     summaryAdditional: Now screen readers can better describe the label and description of a date picker `input`.
     affectsAccessibility: true
     affectsMarkup: true

@@ -14,6 +14,8 @@
 
 - **If you use an external link indicator, use it consistently for all text links.** If your project uses an external link indicator (like an icon), use it for all text links across your site. If users learn to associate an external link with the indicator, they will also expect that text links without an indicator are not external links. Icon- or image-only links like social share buttons or logos do not need the same treatment as text links.
 
+- **Use `rel="noreferrer"` property on external links.** Setting `noreferrer` on links prevents the browser from leaking information about the original web address.
+
 - **Provide text context for external links.** Following a link is a decision. Terse links without context often don't give users enough information to make that decision. Plain, straightforward text can be the best way to communicate to users that a link will take them away from your site. This is useful whether the external link is to a government or a non-government site. When possible, use the content of the link text itself to indicate its destination. In isolation, an external link indicator (like an icon) can be ambiguous. Plain text can help make any link destination more clear.
 
     **Example 1:**
@@ -62,4 +64,3 @@
     ```
 
 - **Check with your IT security department regarding email link best practices.** While displaying email addresses and phone numbers provides a better experience for users, it can increase spam for the email recipient. One approach is to use a group email to protect individuals. The email address will remain the same even as staff and organizational structures change. Also consider using a contact form instead of showing email addresses.
-

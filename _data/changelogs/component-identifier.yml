@@ -11,11 +11,11 @@ items:
     githubPr: 2097
     githubRepo: uswds-site
     versionUswds: 3.5.0
-  - date: NNN-NN-NN
-    summary: Updated Accessibility statement link text.
-    summaryAdditional: Updated the Identifier to use the text "Accessibility statement" (EN) / "Declaración de accesibilidad" (ES) for the required link to an accessibility statement.
+  - date: NNNN-NN-NN
+    summary: Updated Accessibility statement link text. 
+    summaryAdditional: Updated the identifier to use the text "Accessibility statement" (EN) / "Declaración de accesibilidad" (ES) for the required link to an accessibility statement.
     isBreaking: true
-    affectsMarkup: true
+    affectsContent: true
     githubPr: 5278
     githubRepo: uswds
     versionUswds: 3.5.0

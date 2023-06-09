@@ -71,6 +71,14 @@
             <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
+            Add <code>rel="noreferrer"</code> to external links.
+          </div>
+        </li>
+        <li class="usa-icon-list__item">
+          <div class="usa-icon-list__icon">
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+          </div>
+          <div class="usa-icon-list__content">
             Provide text context for external links.
           </div>
         </li>

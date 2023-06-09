@@ -2,14 +2,14 @@ title: Button
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Fixed a bug that caused the button `type` attribute to render empty.
     affectsAccessibility: true
     affectsMarkup: true
     githubPr: 5247
     githubRepo: uswds
     versionUswds: 3.5.0
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
     affectsAccessibility: true
@@ -17,7 +17,7 @@ items:
     githubPr: 5063
     githubRepo: uswds
     versionUswds: 3.5.0
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Improved consistency of disabled styles in forced colors mode.
     summaryAdditional:
     affectsAccessibility: true
@@ -25,7 +25,7 @@ items:
     githubPr: 5295
     githubRepo: uswds
     versionUswds: 3.5.0
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Improved legibility in forced colors mode.
     summaryAdditional: Adds a consistent border in forced colors mode.
     affectsAccessibility: true
@@ -33,7 +33,7 @@ items:
     githubPr: 5147
     githubRepo: uswds
     versionUswds: 3.5.0
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Added spacebar trigger to links styled as buttons.
     affectsAccessibility: true
     affectsJavascript: true

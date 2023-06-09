@@ -5,7 +5,7 @@ type: component
 changelogURL:
 
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Fixed a bug that removed default positioning.
     summaryAdditional: If the `data-position` attribute is not specified, the tooltip position will now default to "top".
     affectsJavascript: true

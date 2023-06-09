@@ -2,7 +2,7 @@ title: Range slider
 type: component
 changelogURL:
 items:
-- date: NNNN-NN-NN
+- date: 2023-06-09
   summary: Improved legibility in forced colors mode.
   summaryAdditional: Adds a consistent border in forced colors mode.
   affectsAccessibility: true

@@ -2,7 +2,7 @@ title: Header
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Fixed a bug that caused inaccurate megamenu template markup in the documentation.
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
     isBreaking: false
@@ -11,7 +11,7 @@ items:
     githubPr: 5311
     githubRepo: uswds
     versionUswds: 3.5.0
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Removed the `id` attribute from the `usa-logo` element.
     summaryAdditional:
     isBreaking: false

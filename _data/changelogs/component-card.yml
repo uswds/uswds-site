@@ -2,7 +2,7 @@ title: Card
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Replaced `button` elements with links styled as buttons
     affectsMarkup: true
     affectsAccessibility: true

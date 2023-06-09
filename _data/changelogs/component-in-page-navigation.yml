@@ -2,7 +2,7 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Fixed a bug that prevented links that start with a number from scrolling when clicked.
     summaryAdditional:
     affectsJavascript: true

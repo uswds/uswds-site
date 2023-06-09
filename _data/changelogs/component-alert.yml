@@ -2,7 +2,7 @@ title: Alert
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Removed redundant and invalid height declaration.
     affectsStyles: true
     githubPr: 5187

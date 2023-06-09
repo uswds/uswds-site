@@ -26,7 +26,7 @@ Our primary research goals were to:
 - **Develop new USWDS components** to support agency emergency response efforts
 
 
-Taking action on what we learned from the research, we created and updated several design system components and templates to address the common needs agencies faced. These updates are included in [Release 2.10.0]({{ site.baseurl }}/about/releases/#version-2100) and you can learn more about them in our [December 2020 monthly call](https://www.youtube.com/watch?v=OhtiTfKAIRw&feature=emb_logo) (available on YouTube).
+Taking action on what we learned from the research, we created and updated several design system components and templates to address the common needs agencies faced. These updates are included in [Release 2.10.0](https://github.com/uswds/uswds/releases/tag/v2.10.0) and you can learn more about them in our [December 2020 monthly call](https://www.youtube.com/watch?v=OhtiTfKAIRw&feature=emb_logo) (available on YouTube).
 
 ## Research themes and insights
 

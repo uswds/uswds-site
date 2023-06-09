@@ -2,13 +2,7 @@ title: Link
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
-    summary: Added external link guidance with `rel="noreferrer"`.
-    affectsGuidance: true
-    githubPr: 2056
-    githubRepo: uswds-site
-    versionUswds: 3.5.0
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Labeled external links for screen readers.
     summaryAdditional: Adds a label for screen readers that identifies external links and if they open in a new tab.
     affectsAccessibility: true

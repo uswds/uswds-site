@@ -2,7 +2,7 @@ title: Utilities
 type: utility
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Removed unused utility builder comments from compiled CSS.
     summaryAdditional: This update significantly reduces the compiled file size.
     affectsStyles: true

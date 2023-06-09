@@ -4,7 +4,7 @@ type: component
 changelogURL:
 
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Stopped using font smoothing.
     summaryAdditional: No longer use font smoothing for dark backgrounds and disabled buttons. 
     affectsStyles: true

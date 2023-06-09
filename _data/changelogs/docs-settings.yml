@@ -2,7 +2,7 @@ title: Settings
 type: utility
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Added accordion color settings.
     summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.
     affectsAccessibility:
@@ -15,7 +15,7 @@ items:
     githubPr: 2081
     githubRepo: uswds-site
     versionUswds: 3.5.0
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Added settings for announcing external links.
     summaryAdditional: Added `$theme-external-link-sr-label-tab-same` and `$theme-external-link-sr-label-tab-new` to control how screen readers announce external links.
     affectsSettings: true
@@ -23,7 +23,7 @@ items:
     githubPr: 5166
     githubRepo: uswds
     versionUswds: 3.5.0
-  - date: NNNN-NN-NN
+  - date: 2023-06-09
     summary: Updated individual Sass map settings without affecting defaults.
     summaryAdditional: Now adjusting a single Sass map setting no longer sets all other values in the map to `false`. Users can now update only the map values they wish to change.
     isBreaking: true

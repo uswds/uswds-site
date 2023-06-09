@@ -6,7 +6,7 @@ contents:
     default: '"External, opens in a new tab."'
     type: string
   - name: Same tab screen reader label
-    description: Screen reader label for external links in same tab.
+    description: Screen reader label for external links that open in current tab.
     var: $theme-external-link-sr-label-tab-same
     default: '"External."'
     type: string

@@ -1,0 +1,12 @@
+title: Accordion
+type: component
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added accordion accessibility page.
+    summaryAdditional:
+    isBreaking:
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
+    versionUswds:

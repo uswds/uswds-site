@@ -1,12 +1,14 @@
 ---
-permalink: /documentation/a11y-demo/
+permalink: /components/accordion/a11y/
 layout: styleguide
 title: Accordion accessibility
-category: Accordion
-lead: [Testing for accessibility is a team effort. This guide will show you how USWDS tests for accessibility and how you can test your own implementation for accessibility.]
+category: Components
+lead: [This guide will show you how USWDS tests for accessibility and how you can test your own implementation for accessibility.]
 subnav:
+- text: Accessibility
+  href: '/components/accordion/a11y'
 - text: Latest updates
-  href: '#changelog'
+  href: "#changelog"
 changelog:
   key: 'component-accordion-a11y'
 ---
@@ -94,12 +96,14 @@ How does a keyboard user interact with the accordion component?
       Consider your audience
     </h3>
     <div class="usa-summary-box__text">
+        <ul>
           <li>
           <b>Some audiences struggle with accordions.</b> If your audience tends toward being not tech-savvy or could have cognitive challenges, avoid accordions. Instead, consider [these other components] [because...].
           </li>
          <li>
           <b>Collapsed content can be hard to find via search.</b> With content hidden inside a collapsed accordion, users who land on a page via a keyword search may have difficulty finding the answer they need. People who perform on-page searches (Command+F or Ctrl+F) cannot always find keywords if they are hidden inside an accordion. [Note about how this affects accessibility?]
         </li>
+        </ul>
     </div>
   </div>
 </div>
@@ -131,12 +135,12 @@ The checklists will reflect the current test results for the component with eith
   <div
     class="usa-modal usa-modal--lg"
     id="kb-modal"
-    aria-labelledby="modal-1-heading"
-    aria-describedby="modal-1-description"
+    aria-labelledby="kb-modal-heading"
+    aria-describedby="kb-modal-description"
   >
     <div class="usa-modal__content">
       <div class="usa-modal__main">
-        <h2 class="usa-modal__heading" id="modal-1-heading">
+        <h2 class="usa-modal__heading" id="kb-modal-heading">
           How to perform keyboard testing
         </h2>
         <div class="usa-prose">
@@ -332,20 +336,20 @@ The checklists will reflect the current test results for the component with eith
 <div class="margin-y-3">
   <p>Optional statement about who uses zoom magnification/why a tester should care. <br/>
   You can find full instructions for magnification testing <a
-    href="#example-modal-1"
-    aria-controls="example-modal-1"
+    href="#zoom-modal"
+    aria-controls="zoom-modal"
     data-open-modal
     >here</a
   >.</p>
   <div
     class="usa-modal"
-    id="example-modal-1"
-    aria-labelledby="modal-1-heading"
-    aria-describedby="modal-1-description"
+    id="zoom-modal"
+    aria-labelledby="zoom-modal-heading"
+    aria-describedby="zoom-modal-description"
   >
     <div class="usa-modal__content">
       <div class="usa-modal__main">
-        <h2 class="usa-modal__heading" id="modal-1-heading">
+        <h2 class="usa-modal__heading" id="zoom-modal-heading">
           How to perform screen reader testing
         </h2>
         <div class="usa-prose">
@@ -420,21 +424,21 @@ The checklists will reflect the current test results for the component with eith
 ### Screen reader checklist
 
 <div class="margin-y-3">
-  <i>You can find full instructions for completing screen testing <a
-    href="#example-modal-1"
-    aria-controls="example-modal-1"
+  <i>You can find full instructions for completing screen reader testing <a
+    href="#sr-modal"
+    aria-controls="sr-modal"
     data-open-modal
     >here</a
   >.</i>
   <div
     class="usa-modal usa-modal--lg"
-    id="example-modal-1"
-    aria-labelledby="modal-1-heading"
-    aria-describedby="modal-1-description"
+    id="sr-modal"
+    aria-labelledby="sr-modal-heading"
+    aria-describedby="sr-modal-description"
   >
     <div class="usa-modal__content">
       <div class="usa-modal__main">
-        <h2 class="usa-modal__heading" id="modal-1-heading">
+        <h2 class="usa-modal__heading" id="sr-modal-heading">
           How to perform screen reader testing
         </h2>
         <div class="usa-prose">
@@ -553,21 +557,21 @@ The checklists will reflect the current test results for the component with eith
 
 <div class="margin-y-3">
   <i>You can find full instructions for completing mobile testing <a
-    href="#example-modal-1"
-    aria-controls="example-modal-1"
+    href="#mobile-modal"
+    aria-controls="mobile-modal"
     data-open-modal
     >here</a
   >.</i>
   <div
     class="usa-modal usa-modal--lg"
-    id="example-modal-1"
-    aria-labelledby="modal-1-heading"
-    aria-describedby="modal-1-description"
+    id="mobile-modal"
+    aria-labelledby="mobile-modal-heading"
+    aria-describedby="mobile-modal-description"
   >
     <div class="usa-modal__content">
       <div class="usa-modal__main">
-        <h2 class="usa-modal__heading" id="modal-1-heading">
-          How to perform screen reader testing
+        <h2 class="usa-modal__heading" id="mobile-modal-heading">
+          How to perform mobile testing
         </h2>
         <div class="usa-prose">
             <ol>
@@ -633,7 +637,7 @@ The checklists will reflect the current test results for the component with eith
 ## More information
 <div class="usa-accordion margin-top-2">
 
-  <h4 class="usa-accordion__heading">
+  <h3 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
@@ -642,7 +646,7 @@ The checklists will reflect the current test results for the component with eith
     >
       Related WCAG Criteria
     </button>
-  </h4>
+  </h3>
   <div id="r1" class="usa-accordion__content usa-prose">
     <ul>
       <li><a href="">2.1.1 Keyboard</a> - All functionality of the accordion is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. (Level A)</li>
@@ -653,7 +657,7 @@ The checklists will reflect the current test results for the component with eith
       <li>4.1.2 Name, Role, Value - For the accordion component, the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</li>
     </ul>
   </div>
-  <h4 class="usa-accordion__heading">
+  <h3 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
@@ -662,7 +666,7 @@ The checklists will reflect the current test results for the component with eith
     >
       Expected accordion keyboard interaction
     </button>
-  </h4>
+  </h3>
   <div id="kbi" class="usa-accordion__content usa-prose">
                 <table class="font-body-3xs usa-table--borderless">
   <thead>
@@ -687,7 +691,7 @@ The checklists will reflect the current test results for the component with eith
   </tbody>
 </table>
   </div>
-    <h4 class="usa-accordion__heading">
+    <h3 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
@@ -696,7 +700,7 @@ The checklists will reflect the current test results for the component with eith
     >
       How USWDS tests
     </button>
-  </h4>
+  </h3>
   <div id="uswds-test" class="usa-accordion__content usa-prose">
     <ul>
       <li>Test using pa11y</li>
@@ -709,7 +713,7 @@ The checklists will reflect the current test results for the component with eith
 </li>
     </ul>
   </div>
-      <h4 class="usa-accordion__heading">
+      <h3 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
@@ -718,7 +722,7 @@ The checklists will reflect the current test results for the component with eith
     >
       What USWDS is unable to test
     </button>
-  </h4>
+  </h3>
   <div id="no-test" class="usa-accordion__content usa-prose">
     <ul>
       <li>We are unable to test in all configurations, all contrast modes, and all platforms.</li>

@@ -52,7 +52,7 @@ changelog:
 ## Testing for accessibility
 [Introduction explaining how creating accessible components is a team effort. Outline what USWDS is responsible for, what the users are responsible for, etc]
 
-### How to check if your implementation is accessible
+## How to check if your implementation is accessible
 
 {:.usa-content-list}
 - **Manually test your own implementation of the accordion component.** USWDS intends to provide components that are accessible; however, accessibility ultimately depends on how you implement them in your context. Use the checklists below as your guide to test the component in your project.
@@ -63,9 +63,9 @@ changelog:
   role="region"
 >
   <div class="usa-summary-box__body maxw-tablet">
-    <h3 class="usa-summary-box__heading" id="summary-box-key-information">
+    <h2 class="usa-summary-box__heading" id="summary-box-key-information">
       Consider your audience
-    </h3>
+    </h2>
     <div class="usa-summary-box__text">
         <ul>
           <li>
@@ -85,21 +85,10 @@ changelog:
 The checklists will reflect the current test results for the component with either a green checkmark to indicate a passing score, a red x to indicate a failing score, and a blue question mark to indicate that it is something that can only be tested on implementation.]
 ### Keyboard testing checklist
 
-Optional statement about who uses keyboard navigation/why a tester should care. You can find full [instructions for completing keyboard testing](https://digital.gov/resources/introduction-accessibility/#try-using-a-screen-reader).
+[Optional statement about who uses keyboard navigation/why a tester should care. You can find full [instructions for completing keyboard testing](https://digital.gov/resources/introduction-accessibility/#try-using-a-screen-reader).]
 
+#### Keyboard operability
 <ul class="usa-icon-list usa-content-list">
-    <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-green">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-        </div>
-        <div class="usa-icon-list__content">
-             Do all of the closed accordions expand when using either the enter key or the spacebar? Do the open
-            accordions close?
-            <span class="usa-tag wcag-AAA">WCAG 2.1 AAA</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
-        </div>
-    </li>
     <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-red">
             <svg class="usa-icon" aria-hidden="true" role="img">
@@ -117,8 +106,61 @@ Optional statement about who uses keyboard navigation/why a tester should care. 
                 <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
             </svg>
         </div>
+        <div class="usa-icon-list__content">If you click ‘“shift+tab’” does the focus move to the previous focusable
+            element? All focusable elements should be included in the tab sequence.
+            <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
+        </div>
+    </li>
+    <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon text-green">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+        </div>
         <div class="usa-icon-list__content">
-            Can you clearly see the visible focus outline around each clickable element?
+             Do all of the closed accordions expand when using either the enter key or the spacebar? Do the open
+            accordions close?
+            <span class="usa-tag wcag-AAA">WCAG 2.1 AAA</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
+        </div>
+    </li>
+    <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon text-green">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+        </div>
+        <div class="usa-icon-list__content">Does the expand/collapse functionality require user input (i.e., it is not
+            hover-only)?
+            <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
+        </div>
+    </li>
+</ul>
+
+#### Focus trap
+<ul class="usa-icon-list usa-content-list">
+    <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon text-green">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+        </div>
+        <div class="usa-icon-list__content">
+            Can you navigate out of the accordion area without closing the accordion?
+            <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
+        </div>
+    </li>
+</ul>
+
+#### Focus order
+<ul class="usa-icon-list usa-content-list">
+    <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon text-green">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+        </div>
+        <div class="usa-icon-list__content">When you press the tab key, does the focus move to the next focusable
+            element in sequential order?
             <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
         </div>
     </li>
@@ -140,50 +182,6 @@ Optional statement about who uses keyboard navigation/why a tester should care. 
                 <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
             </svg>
         </div>
-        <div class="usa-icon-list__content">Does the expand/collapse functionality require user input (i.e., it is not
-            hover-only)?
-            <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
-        </div>
-    </li>
-    <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-green">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-        </div>
-        <div class="usa-icon-list__content">When you press the tab key, does the focus move to the next focusable
-            element in sequential order?
-            <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
-        </div>
-    </li>
-    <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-green">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-        </div>
-        <div class="usa-icon-list__content">If you click ‘“shift+tab’” does the focus move to the previous focusable
-            element? All focusable elements should be included in the tab sequence.
-            <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
-        </div>
-    </li>
-    <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-green">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-        </div>
-        <div class="usa-icon-list__content">
-            Can you navigate out of the accordion area without closing the accordion?
-            <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
-        </div>
-    </li>
-    <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-green">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-        </div>
         <div class="usa-icon-list__content">Confirm that the focus is appropriately managed when opening or closing the
             accordion items. Does focus move to the newly expanded item? If an item is closed, does the focus return to
             the accordion header or move to the next logical element?
@@ -192,9 +190,24 @@ Optional statement about who uses keyboard navigation/why a tester should care. 
     </li>
 </ul>
 
+#### Focus visible
+<ul class="usa-icon-list usa-content-list">
+    <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon text-green">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+        </div>
+        <div class="usa-icon-list__content">
+            Can you clearly see the visible focus outline around each clickable element?
+            <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
+        </div>
+    </li>
+</ul>
+
 <div class="usa-accordion margin-top-4 usa-content-list">
 
-  <h3 class="usa-accordion__heading">
+  <h4 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
@@ -203,17 +216,17 @@ Optional statement about who uses keyboard navigation/why a tester should care. 
     >
       Related WCAG Criteria
     </button>
-  </h3>
+  </h4>
   <div id="kb-accordion1" class="usa-accordion__content usa-prose">
   <p>Through this process of keyboard testing, you can confirm the accordion component complies with:</p>
     <ul>
-      <li><a href="">2.1.1 Keyboard</a> - All functionality of the accordion is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. (Level A)</li>
-      <li>2.1.2 No Keyboard Trap - If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away. (Level A)</li>
-      <li>2.4.3 Focus Order - If the accordion can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. (Level A)</li>
-      <li>2.4.7 Focus Visible - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)</li>
+      <li><a href="">2.1.1 Keyboard</a> - All functionality of the accordion is operable through a keyboard interface without requiring specific timings for individual keystrokes.<span class="usa-tag wcag-A">WCAG 2.1 A</span></li>
+      <li><a href="">2.1.2 No Keyboard Trap</a> - If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface. <span class="usa-tag wcag-A">WCAG 2.1 A</span></li>
+      <li><a href="">2.4.3 Focus Order</a> - Focusable elements receive focus in an order that preserves meaning and operability. <span class="usa-tag wcag-A">WCAG 2.1 A</span></li>
+      <li><a href="">2.4.7 Focus Visible</a> - The keyboard focus indicator is visible. <span class="usa-tag wcag-AA">WCAG 2.1 AA</span></li>
     </ul>
   </div>
-  <h3 class="usa-accordion__heading">
+  <h4 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
@@ -222,7 +235,7 @@ Optional statement about who uses keyboard navigation/why a tester should care. 
     >
       Expected keyboard interaction
     </button>
-  </h3>
+  </h4>
   <div id="kbi" class="usa-accordion__content usa-prose">
                 <table class="font-body-3xs usa-table--borderless">
   <thead>
@@ -251,8 +264,9 @@ Optional statement about who uses keyboard navigation/why a tester should care. 
 
 ### Zoom magnification checklist
 
-Optional statement about who uses zoom magnification/why a tester should care. You can find full [instructions for completing zoom magnification testing](https://digital.gov/resources/introduction-accessibility/#try-using-a-screen-reader).
+[Optional statement about who uses zoom magnification/why a tester should care. You can find full [instructions for completing zoom magnification testing](https://digital.gov/resources/introduction-accessibility/#try-using-a-screen-reader).]
 
+#### Content visibility
 <ul class="usa-icon-list usa-content-list " >
     <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-green">
@@ -297,12 +311,79 @@ Optional statement about who uses zoom magnification/why a tester should care. Y
     </li>
 </ul>
 
+<div class="usa-accordion margin-top-4 usa-content-list">
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="zoom-accordion1"
+    >
+      Related WCAG Criteria
+    </button>
+  </h4>
+  <div id="zoom-accordion1" class="usa-accordion__content usa-prose">
+  <p>Through this process of screen reader testing, you can confirm the accordion component complies with:</p>
+    <ul>
+      <li>2.4.10 Section Headings - Section headings are used to organize accordion content. (Level AAA)</li>
+      <li>4.1.2 Name, Role, Value - For the accordion component, the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</li>
+    </ul>
+  </div>
+ </div>
+
 ### Screen reader checklist
 
-Optional statement about who uses screen readers/why a tester should care. You can find full [instructions for completing screen reader testing](https://digital.gov/resources/introduction-accessibility/#try-using-a-screen-reader).
-
-
+[Optional statement about who uses screen readers/why a tester should care. You can find full [instructions for completing screen reader testing](https://digital.gov/resources/introduction-accessibility/#try-using-a-screen-reader).]
+#### Screen reader functionality
 <ul class="usa-icon-list usa-content-list">
+    <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon text-green">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+        </div>
+        <div class="usa-icon-list__content">Can the screen reader perceive all of the content in the accordion sections?
+        <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
+        </div>
+    </li>
+        <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon text-green">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+        </div>
+        <div class="usa-icon-list__content">Do you hear “collapsed” or "expanded”?
+        <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
+        </div>
+    </li>
+</ul>
+
+#### Name, Role, Value
+<ul class="usa-icon-list usa-content-list">
+    <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon text-green">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+        </div>
+        <div class="usa-icon-list__content">Is your accordion section labeled as a region or landmark for easy access via a keyboard?
+        <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
+        </div>
+    </li>
+</ul>
+
+#### Section Headings
+<ul class="usa-icon-list usa-content-list">
+    <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon text-green">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+        </div>
+        <div class="usa-icon-list__content">Does the virtual cursor (JAWS focus) move from one header to the next?
+        <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
+        </div>
+    </li>
     <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-green">
             <svg class="usa-icon" aria-hidden="true" role="img">
@@ -315,16 +396,6 @@ Optional statement about who uses screen readers/why a tester should care. You c
         </div>
     </li>
     <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-green">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-        </div>
-        <div class="usa-icon-list__content">Does the virtual cursor (JAWS focus) move from one header to the next?
-        <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
-        </div>
-    </li>
-    <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-info-darker">
             <svg class="usa-icon" aria-hidden="true" role="img">
                 <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#help"></use>
@@ -333,41 +404,13 @@ Optional statement about who uses screen readers/why a tester should care. You c
         <div class="usa-icon-list__content">Are your heading levels in proper order?<span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
         </div>
     </li>
-    <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-green">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-        </div>
-        <div class="usa-icon-list__content">Do you hear “collapsed” or "expanded”?
-        <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
-        </div>
-    </li>
-    <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-green">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-        </div>
-        <div class="usa-icon-list__content">Is your accordion section labeled as a region or landmark for easy access via a keyboard?
-        <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
-        </div>
-    </li>
-    <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-green">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-        </div>
-        <div class="usa-icon-list__content">Can the screen reader perceive all of the content in the accordion sections?
-        <span class="usa-tag wcag-A">WCAG 2.1 A</span> <span class="usa-tag wcag-tag">2.1.1 Keyboard</span>
-        </div>
-    </li>
 </ul>
+
+
 
 <div class="usa-accordion margin-top-4 usa-content-list">
 
-  <h3 class="usa-accordion__heading">
+  <h4 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
@@ -376,7 +419,7 @@ Optional statement about who uses screen readers/why a tester should care. You c
     >
       Related WCAG Criteria
     </button>
-  </h3>
+  </h4>
   <div id="sr-accordion1" class="usa-accordion__content usa-prose">
   <p>Through this process of screen reader testing, you can confirm the accordion component complies with:</p>
     <ul>
@@ -388,7 +431,7 @@ Optional statement about who uses screen readers/why a tester should care. You c
 
 ### Mobile testing checklist
 
-Optional statement about who uses mobile navigation/why a tester should care. You can find full [instructions for completing mobile testing here](https://digital.gov/resources/introduction-accessibility/#try-using-a-screen-reader).
+[Optional statement about who uses mobile navigation/why a tester should care. You can find full [instructions for completing mobile testing here](https://digital.gov/resources/introduction-accessibility/#try-using-a-screen-reader).]
 
 <ul class="usa-icon-list usa-content-list " >
     <li class="usa-icon-list__item">

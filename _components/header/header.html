@@ -23,6 +23,13 @@ subnav:
     href: '#extended-header-with-megamenu'
   - text: Latest updates
     href: '#changelog'
+variants:
+  - variant: "`.usa-header--basic`"
+    description: Display a simple header.
+  - variant: "`.usa-header--megamenu`"
+    description: Display a megamenu.
+  - variant: "`.usa-header--extended`"
+    description: Display an extended header.
 changelog:
   key: component-header
 ---
@@ -178,6 +185,14 @@ changelog:
 {% assign settings = site.data.settings.components.header %}
 {% include settings-table-simple.html
   settings=settings.contents
+%}
+<h4 id="component-variants-{{ componentKey }}">
+  {{ page.title }} variants
+</h4>
+{% include settings-table-flex.html
+  content=page.variants
+  cols="flex-1, flex-1"
+  section="variants"
 %}
 {% include init-note.html %}
 

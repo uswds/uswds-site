@@ -2,6 +2,47 @@ title: File input
 type: component
 changelogURL:
 items:
+  - date: 2023-06-09
+    summary: Removed disabled file input variant preview.
+    summaryAdditional: 
+    affectsGuidance: true
+    githubPr: 2114
+    githubRepo: uswds-site
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved the file input experience for voice command and screen reader users.
+    summaryAdditional: Voice command users can now interact with the component by speaking the visible instructions text.
+      Additionally, screen reader users now have access to both the instructions text
+      and the file selection status.
+    affectsAccessibility: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 5213
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency and visibility of disabled styles.
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5063
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Fixed a bug that caused large files to trigger an infinite spinner.
+    summaryAdditional: Adding large files should now result in an accurate preview.
+    affectsJavascript: true
+    githubPr: 5114
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-04-28
     summary: Updated package name to `usa-file-input`.
     affectsGuidance: true

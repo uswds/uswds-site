@@ -2707,8 +2707,8 @@ ignore:
         expires: '2022-01-27T21:29:25.295Z'
     - '*':
         reason: No available upgrade or patch
-        expires: 2023-05-26T18:10:49.252Z
-        created: 2023-04-26T18:10:49.348Z
+        expires: 2023-07-09T22:06:05.497Z
+        created: 2023-06-09T22:06:05.590Z
   SNYK-JS-AXIOS-1579269:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -3498,8 +3498,8 @@ ignore:
   SNYK-JS-UNSETVALUE-2400660:
     - '*':
         reason: No available upgrade or patch
-        expires: 2023-05-26T18:11:00.505Z
-        created: 2023-04-26T18:11:00.602Z
+        expires: 2023-07-09T22:06:36.828Z
+        created: 2023-06-09T22:06:36.923Z
   SNYK-JS-DECODEURICOMPONENT-3149970:
     - '*':
         reason: No available upgrade or patch

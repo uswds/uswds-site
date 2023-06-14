@@ -2,6 +2,25 @@ title: Accordion
 type: component
 changelogURL:
 items:
+  - date: 2023-06-09
+    summary: Added two new settings to customize accordion background colors.
+    summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.
+    isBreaking: false
+    affectsJavascript: false
+    affectsMarkup: false
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5269
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Adjusted forced colors mode styles to ensure visibility and increase consistency.
+    summaryAdditional: Forced colors mode styles will now override the background color and display the button outline. The open/close icons now dynamically adjust to `ButtonText` colors.
+    affectsStyles: true
+    affectsAccessibility: true
+    githubPr: 5286
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-08-05
     summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.

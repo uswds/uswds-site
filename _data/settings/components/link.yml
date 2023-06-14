@@ -1,0 +1,12 @@
+name: Link
+contents:
+  - name: New tab screen reader label
+    description: Screen reader label for external links that open in new tabs.
+    var: $theme-external-link-sr-label-tab-new
+    default: '"External, opens in a new tab."'
+    type: string
+  - name: Same tab screen reader label
+    description: Screen reader label for external links that open in current tab.
+    var: $theme-external-link-sr-label-tab-same
+    default: '"External."'
+    type: string

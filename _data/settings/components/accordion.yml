@@ -1,5 +1,10 @@
 name: Accordion
 contents:
+  - name: Background color
+    description: Background color of the accordion content.
+    var: $theme-accordion-background-color
+    default: "default"
+    type: color
   - name: Border width
     description: Border width of the bordered accordion.
     var: $theme-accordion-border-width
@@ -8,6 +13,11 @@ contents:
   - name: Border color
     description: Border color of the bordered accordion.
     var: $theme-accordion-border-color
+    default: '"base-lightest"'
+    type: color
+  - name: Button background color
+    description: Background color of the accordion button.
+    var: $theme-accordion-button-background-color
     default: '"base-lightest"'
     type: color
   - name: Font family

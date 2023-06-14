@@ -7,7 +7,7 @@ component:
 guidancePath: guidance/variants/scrollable
 layout: styleguide
 lead: A scrollable table is ideal for dense data.
-order: 05
+order: 04
 parent: Table
 sitemap: false
 title: Scrollable table

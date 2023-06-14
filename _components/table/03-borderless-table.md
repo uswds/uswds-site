@@ -7,7 +7,7 @@ component:
 guidancePath: guidance/variants/default
 layout: styleguide
 lead: A borderless table can be useful when you want the information to feel more a part of the text it accompanies and extends.
-order: 01
+order: 03
 parent: Table
 sitemap: false
 title: Borderless table

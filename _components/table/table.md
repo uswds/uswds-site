@@ -11,6 +11,10 @@ redirect_from:
 - /components/tables/
 layout: styleguide
 subnav:
+- test: Standard table
+  href: '#usa-table'
+- test: Striped table
+  href: '#striped-table'
 - text: Borderless table
   href: '#borderless-table'
 - text: Scrollable table

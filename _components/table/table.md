@@ -12,7 +12,7 @@ redirect_from:
 layout: styleguide
 subnav:
 - test: Standard table
-  href: '#usa-table'
+  href: '#standard-table'
 - test: Striped table
   href: '#striped-table'
 - text: Borderless table

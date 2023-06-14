@@ -4,6 +4,13 @@ type: component
 changelogURL:
 
 items:
+  - date: NNNN-NN-NN
+    summary: Restore standard table and striped table component previews to guidance page
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2143
+    githubRepo: uswds-site
+    versionUswds: 3.6.0
   - date: 2023-06-09
     summary: Fixed a typo in the sortable table JavaScript that caused the `aria-label` in table headers to have an unnecessary single quote.
     summaryAdditional:

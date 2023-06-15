@@ -5,7 +5,7 @@ changelogURL:
 
 items:
   - date: NNNN-NN-NN
-    summary: Restore standard and striped table component previews to guidance page.
+    summary: Restored standard and striped table component previews to guidance page.
     summaryAdditional:
     affectsGuidance: true
     githubPr: 2143

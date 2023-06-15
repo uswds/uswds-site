@@ -78,7 +78,10 @@ This will generate the same output as configuring the setting with default value
 ```
 
 {:.site-note.radius-bottom-0}
-**Note:** We use [dot notation](https://idratherbewriting.com/learnapidoc/docapis_diving_into_dot_notation.html#dot-notation) in most of our documentation to describe settings that are nested inside a Sass map. For example, in the code sample above, we would use `$background-color-settings.responsive` to refer to the `responsive` property inside `$background-color-settings`.
+#### Dot notation
+
+{:.site-note.radius-0.margin-top-0}
+We use [dot notation](https://idratherbewriting.com/learnapidoc/docapis_diving_into_dot_notation.html#dot-notation) in most of our documentation to describe settings that are nested inside a Sass map. For example, in the code sample above, we would use `$background-color-settings.responsive` to refer to the `responsive` property inside `$background-color-settings`.
 
 {:.site-note.margin-top-0.radius-top-0}
 Settings described using dot notation should be configured as a map, as shown in the previous code examples.

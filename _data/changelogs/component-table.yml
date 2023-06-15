@@ -10,7 +10,6 @@ items:
     affectsGuidance: true
     githubPr: 2143
     githubRepo: uswds-site
-    versionUswds: 3.5.0
   - date: 2023-06-09
     summary: Fixed a typo in the sortable table JavaScript that caused the `aria-label` in table headers to have an unnecessary single quote.
     summaryAdditional:

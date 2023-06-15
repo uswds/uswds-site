@@ -4,18 +4,16 @@ changelogURL:
 items:
   - date: NNN-NN-NN
     summary: Updated Accessibility statement link guidance.
-    summaryAdditional: Updated the Identifier guidance to use the text "Accessibility statement" for the required link to an accessibility statement. We improved the supporting links that describe accessibility statements.
-    isBreaking: true
-    affectsAccessibility: true
-    affectsMarkup: true
+    summaryAdditional: Updated and clarified the Identifier guidance for accessibility statements. We also improved the  accessibility statement example links.
+    affectsGuidance: true
     githubPr: 2097
     githubRepo: uswds-site
     versionUswds: 3.5.0
-  - date: NNN-NN-NN
-    summary: Updated Accessibility statement link text.
-    summaryAdditional: Updated the Identifier to use the text "Accessibility statement" (EN) / "Declaración de accesibilidad" (ES) for the required link to an accessibility statement.
+  - date: 2023-06-09
+    summary: Updated Accessibility statement link text. 
+    summaryAdditional: Updated the identifier to use the text "Accessibility statement" (EN) / "Declaración de accesibilidad" (ES) for the required link to an accessibility statement.
     isBreaking: true
-    affectsMarkup: true
+    affectsContent: true
     githubPr: 5278
     githubRepo: uswds
     versionUswds: 3.5.0

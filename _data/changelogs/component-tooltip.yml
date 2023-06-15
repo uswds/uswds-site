@@ -5,6 +5,13 @@ type: component
 changelogURL:
 
 items:
+  - date: 2023-06-09
+    summary: Fixed a bug that removed default positioning.
+    summaryAdditional: If the `data-position` attribute is not specified, the tooltip position will now default to "top".
+    affectsJavascript: true
+    githubPr: 5228
+    githubRepo: uswds
+    versionUswds: 3.5.0
   # 3.2.0 release
   - date: 2022-10-19
     summary: Updated tooltip to allow for dynamic initialization.

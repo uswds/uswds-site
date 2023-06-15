@@ -78,10 +78,10 @@ This will generate the same output as configuring the setting with default value
 ```
 
 {:.site-note.radius-bottom-0}
-**Note:** We use dot notation in most of our documentation to describe settings that are nested inside a Sass map. For example, for the code sample above, `$background-color-settings.responsive` would refer to the `responsive` property inside `$background-color-settings`.
+**Note:** We use [dot notation](https://idratherbewriting.com/learnapidoc/docapis_diving_into_dot_notation.html#dot-notation) in most of our documentation to describe settings that are nested inside a Sass map. For example, in the code sample above, we would use `$background-color-settings.responsive` to refer to the `responsive` property inside `$background-color-settings`.
 
 {:.site-note.margin-top-0.radius-top-0}
-Settings described using dot notation should be configured as a map, as shown in the previous example.
+Settings described using dot notation should be configured as a map, as shown in the previous code examples.
 
 ### What to include in your configuration
 Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type, as identified in the tables below.

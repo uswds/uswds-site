@@ -11,9 +11,9 @@ redirect_from:
 - /components/tables/
 layout: styleguide
 subnav:
-- test: Standard table
+- text: Standard table
   href: '#standard-table'
-- test: Striped table
+- text: Striped table
   href: '#striped-table'
 - text: Borderless table
   href: '#borderless-table'

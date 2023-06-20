@@ -6,7 +6,7 @@ component:
   variant: striped
 guidancePath: guidance/variants/default
 layout: styleguide
-lead: 
+lead: A striped table can improve readability by visually grouping row content with alternating background colors.
 order: 02
 parent: Table
 sitemap: false

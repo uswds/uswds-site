@@ -41,14 +41,14 @@ This tool provides simple Gulp 4 functions that copy USWDS static assets into yo
 Later in this guide we will walk you through setting up Sass compilation for your project with `uswds-compile`. To get started, jump ahead to the [Using uswds-compile](#using-uswds-compile) section below.
 
 ## Loading USWDS Sass with a custom compiler
-If you already have Sass compilation set up on your project, you can add USWDS Sass to your project by loading it into your Sass entry point along with your settings configuration.
+If you already have Sass compilation set up on your project, you'll need to load USWDS Sass and your USWDS settings configuration into your Sass entry point.
 
 ### About Sass entry points
 
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase. Often, a project's Sass entry point is named something like `index.scss` or `styles.scss`.
 
 ### Creating a Sass entry point
-If your project does not yet have a Sass entry point, create a file called `styles.scss`. Often, your Sass entry point will live at the root of your project's Sass directory.
+If your project does not yet have a Sass entry point, create a file called `styles.scss`. This file will typically live at the root of your project's Sass directory.
 
 ### Loading USWDS in your Sass entry point
 Your project’s Sass entry point is a simple file that will need to do the following three tasks:

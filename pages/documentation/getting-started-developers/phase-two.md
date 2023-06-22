@@ -88,7 +88,7 @@ In plain language, this code says:
 
     To load the `uswds` package, you must provide a path to its `index.scss` entry point. If you installed USWDS 3 with npm, the complete path to this file is: `./node_modules/@uswds/uswds/packages/uswds/_index.scss`.
 
-3. **Build new work on top of that foundation**: Finally, add any custom project styles built from Design System code.
+3. **Build new work on top of that foundation**: Finally, add any custom project styles built from Design System code. In this example, all project-specific Sass has been added to a file called `uswds-theme-custom-styles.scss`.
 
     After you've loaded the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings configuration and USWDS source code in your Sass entry point.
 
@@ -251,7 +251,7 @@ npx gulp compile
 
 When your `gulpfile.js` is ready, initialize your project to copy all the necessary Sass, image, font, and Javascript assets from the USWDS source code.
 
-Initialize your project and get started by running the following command:
+If you defined the `init` export in [Step 6](#step-6-export-compile-functions), you can initialize your project and get started by running the following command:
 
 ```bash
 npx gulp init

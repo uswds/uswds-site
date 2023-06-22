@@ -3,7 +3,7 @@
   sourceSize: 3
   dependencies:
     - "uswds-fonts"
-    - "usa-list"
+    - "usa-icon"
 - name: "usa-alert"
   fullSize: 13
   sourceSize: 7

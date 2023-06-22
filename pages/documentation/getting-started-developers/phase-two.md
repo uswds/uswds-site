@@ -51,7 +51,7 @@ A project often has many Sass files, but typically, there’s a single file that
 If your project does not yet have a Sass entry point, create a file called `styles.scss`. This file will typically live at the root of your project's Sass directory.
 
 ### Loading USWDS in your Sass entry point
-Your project’s Sass entry point is a simple file that will need to do the following three tasks:
+Your project’s Sass entry point is a simple file that will need to:
 
 1. Load your project's [USWDS settings configuration]({{ site.baseurl }}/documentation/settings/) (required)
 2. Load USWDS source code (required)

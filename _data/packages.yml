@@ -15,7 +15,6 @@
   sourceSize: 7
   dependencies:
     - "uswds-fonts"
-    - "usa-layout-grid"
     - "usa-media-block"
 - name: "usa-breadcrumb"
   fullSize: 12

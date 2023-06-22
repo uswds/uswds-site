@@ -1,2 +1,2 @@
-- **Use `aria-label` to give the banner a useful name.** Our default markup uses `aria-label="official government website"` to distinguish the banner `header` from the main `header`.
+- **Use `aria-label` to give the banner a useful name.** Our default markup uses `aria-label="Official website of the United States government"` or `aria-label="Un sitio oficial del Gobierno de Estados Unidos"` to distinguish the banner `header` from the main `header`.
 - **The banner's accordion uses JavaScript to set the `aria-hidden` value of its content area.** To ensure your content remains accessible in the event the JavaScript does not load or is disabled, you should not set `aria-hidden="true"` on `usa-banner__content`.

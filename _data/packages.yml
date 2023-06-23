@@ -49,6 +49,7 @@
     - "uswds-fonts"
     - "usa-fieldset"
     - "usa-legend"
+    - "usa-input-list"
 - name: "usa-checklist"
   fullSize: 7
   sourceSize: 0.7

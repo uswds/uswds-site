@@ -24,7 +24,7 @@ subnav:
 title: Collection
 type: component
 variants:
-  - variant: "`usa-collection--condensed`"
+  - variant: "`.usa-collection--condensed`"
     description: A more condensed item presentation with less space between items.
 changelog:
   key: component-collection

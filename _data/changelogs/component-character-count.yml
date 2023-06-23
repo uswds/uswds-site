@@ -2,6 +2,13 @@ title: Character count
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed note about adding `aria-live` to the markup.
+    summaryAdditional: The `aria-live` attribute is now added dynamically.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2022-10-19
     summary: Improved screen reader experience.
     summaryAdditional: The character counter now includes a brief pause after input before announcing how many characters remain. Announcing the input no longer prevents the character counter from reading.

@@ -2,6 +2,18 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the text in the `aria-label` documentation to match what is in the component.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+    versionUswds:
+  - date: NNNN-NN-NN
+    summary: Removed `usa-layout-grid` from the list of dependencies.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2023-03-09
     summary: Improved display of focus outline on mobile.
     summaryAdditional: Now the focus outline is visible all around the banner on mobile devices.

@@ -2,6 +2,12 @@ title: Checkbox
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added `usa-input-list` to the list of dependencies.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2023-06-09
     summary: Improved legibility in forced colors mode.
     summaryAdditional: Adds a consistent border in forced colors mode.

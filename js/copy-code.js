@@ -54,7 +54,7 @@ const createSRStatus = () => {
   srText.classList.add("usa-sr-only");
   srText.classList.add(SR_STATUS_MESSAGE_CLASS);
   srText.setAttribute("aria-live", "polite");
-  srText.innerHTML = SR_DEFAULT_MESSAGE;
+  srText.textContent = SR_DEFAULT_MESSAGE;
 
   return srText;
 };
@@ -74,14 +74,14 @@ const copyOnClick = (event) => {
 
   // Set success state
   copyBtn.classList.add(COPY_BUTTON_SUCCESS_CLASS);
-  labelVisual.innerHTML = "Copied!";
-  labelSR.innerHTML = SR_SUCCESS_MESSAGE;
+  labelVisual.textContent = "Copied!";
+  labelSR.textContent = SR_SUCCESS_MESSAGE;
 
   // After timeout, reset to default state
   setTimeout(() => {
     copyBtn.classList.remove(COPY_BUTTON_SUCCESS_CLASS);
-    labelVisual.innerHTML = "Copy";
-    labelSR.innerHTML = SR_DEFAULT_MESSAGE;
+    labelVisual.textContent = "Copy";
+    labelSR.textContent = SR_DEFAULT_MESSAGE;
   }, 3000);
 
   // Select section code and copy to clipboard

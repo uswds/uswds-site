@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  // Necessary for sticky button to work correctly
+  // Overrides .usa-accordion__content "overflow: auto", which prevents sticky positioning
   overflow: initial;
 
   // Override display flex on collapsed accordion

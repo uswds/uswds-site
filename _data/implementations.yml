@@ -137,6 +137,16 @@
     url: https://github.com/18F
   notes: "This [Ruby on Rails](http://rubyonrails.org/) gem is not currently maintained."
 
+- name: Comet
+  distribution: React
+  id: comet-uswds
+  url: https://github.com/MetroStar/comet
+  author:
+    name: MetroStar
+    url: https://github.com/MetroStar
+  version: 3.5.0
+  notes: "React with TypeScript implementation of USWDS, providing additional modular support for custom components, data visualization, and command line tools. Sample starter app included that is focused on accelerating and scaling design across the enterprise."
+
 - name: react-uswds
   distribution: React
   id: react-uswds

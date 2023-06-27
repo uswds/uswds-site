@@ -99,9 +99,15 @@ const copyOnClick = (event) => {
  */
 const init = () => {
   COPY_CODE.forEach((copyCodeElement) => {
+    const COPY_CODE_ID = copyCodeElement.id;
+    const SCREEN_READER_ID = `${COPY_CODE_ID}__sr-label`;
+
     const copyWrapper = createWrapper();
     const copyButton = createCopyButton();
     const labelSROnly = createSRStatus();
+    
+    labelSROnly.setAttribute("id", SCREEN_READER_ID);
+    copyButton.setAttribute("aria-labelledby", SCREEN_READER_ID);
     
     copyWrapper.appendChild(labelSROnly);
     copyWrapper.appendChild(copyButton);

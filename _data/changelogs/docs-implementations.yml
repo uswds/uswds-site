@@ -2,6 +2,18 @@ title: Implementations
 type: documentation
 changelogURL:
 items:
+  - date: 2023-06-27
+    summary: Added entry for "Comet".
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 2152
+    githubRepo: uswds-site
   - date: 2023-03-09
     summary: Added entry for "sam.gov" implementations.
     summaryAdditional:

@@ -2,6 +2,12 @@ title: Alert
 type: component
 changelogURL:
 items:
+  - date: 2023-06-09
+    summary: Removed redundant and invalid height declaration.
+    affectsStyles: true
+    githubPr: 5187
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2023-03-09
     summary: Updated padding settings to accept any valid spacing token.
     summaryAdditional:

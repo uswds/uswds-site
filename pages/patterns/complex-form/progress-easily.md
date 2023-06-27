@@ -1,6 +1,6 @@
 ---
 title: Progress easily
-story: Help a user to progress easily through form questions 
+story: Help a user to progress easily through form questions
 permalink: /patterns/complete-a-complex-form/progress-easily/
 layout: pattern
 category: Patterns
@@ -14,17 +14,17 @@ changelog:
 ## About this pattern
 
 ### What problem does this solve?
-Complex forms can be intimidating, overwhelming, and stressful at the best of times. Applying for the services and benefits a person most needs at the worst of times – when they may be experiencing added stresses like the trauma of natural disasters, displacement, joblessness, financial hardship, health issues, loss of a loved one, discrimination, or violence – can make a complex form seem like an impossible task to complete. 
+Complex forms can be intimidating, overwhelming, and stressful at the best of times. Applying for the services and benefits a person most needs at the worst of times – when they may be experiencing added stresses like the trauma of natural disasters, displacement, joblessness, financial hardship, health issues, loss of a loved one, discrimination, or violence – can make a complex form seem like an impossible task to complete.
 
 Employing principles learned through user experience techniques like progressive disclosure and trauma-informed design can help the user maintain focus, and promote calm while guiding them step-by-step through a form, increasing the likelihood of successful form submission.
 
-### When to use this pattern 
+### When to use this pattern
 Use this pattern when you are asking users to provide more than basic contact information, especially if you are collecting information that may require disclosing sensitive personal, financial, health, or safety details in a digital form.
 
 ### What’s the solution
-Provide the user with the most straightforward path through successful form completion by simplifying the user interface, progressively disclosing form questions and content, and employing trauma-informed research and design practices. 
+Provide the user with the most straightforward path through successful form completion by simplifying the user interface, progressively disclosing form questions and content, and employing trauma-informed research and design practices.
 
-Respectful, inclusive voice and tone throughout the form – the questions, field labels, hint text, and form messaging – will be critical success factors, as well as delivering questions that progress from simple to more difficult to answer. Help users avoid making mistakes with clear hint text, and empower them to recover from mistakes easily by providing actionable validation messaging. Any system or validation messaging should be free of blame and avoid alarming users. 
+Respectful, inclusive voice and tone throughout the form – the questions, field labels, hint text, and form messaging – will be critical success factors, as well as delivering questions that progress from simple to more difficult to answer. Help users avoid making mistakes with clear hint text, and empower them to recover from mistakes easily by providing actionable validation messaging. Any system or validation messaging should be free of blame and avoid alarming users.
 
 {:.site-component-section-title}
 ## Guidance
@@ -47,7 +47,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
             <li>Allow the user to complete the form in the order they choose, if possible. If changes to answers may impact steps already completed, inform the user of potential impacts and confirm before invalidating previous form entries.</li>
             <li>Allow the users to save and resume. Some users may need to take breaks as they complete a form on a difficult topic. If users can save and resume the form, tell them so up front, so they know this is an option.</li>
             <li>Do provide users with an option to get help (a phone number or chat, for example) if they get stuck or have a question.</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
 ## References
 
 ### Trauma-informed design
-- About trauma-informed design – design resources for homelessness. (n.d.) Retrieved on July 26, 2022, from [http://designresourcesforhomelessness.org/about-us-1/](http://designresourcesforhomelessness.org/about-us-1/)
+- About trauma-informed design – design resources for homelessness. (n.d.) Retrieved on July 26, 2022, from [http://designresourcesforhomelessness.org/](http://designresourcesforhomelessness.org/)
 - Concept of trauma and guidance for a trauma-informed approach. Substance Abuse and Mental Health Services Administration (SAMHSA) - U.S. Department of Health and Human Services. (July 2014) Retrieved on July 21, 2022, from [https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf](https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf)
 - Project 3: implementing trauma-informed content. (July 9, 2019) Retrieved on July 26, 2022, from [https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/](https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/)
 - Trauma-informed computing: towards safer technology experiences for all. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI ’22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475](https://doi.org/10.1145/3491102.3517475)
@@ -108,7 +108,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
 
 ### Progressive disclosure
 - 10 usability heuristics for user interface design. (April 24, 1994. Updated November 15, 2020.) Retrieved on July 22, 2022, from [https://www.nngroup.com/articles/ten-usability-heuristics/](https://www.nngroup.com/articles/ten-usability-heuristics/)
-- 10 UI design patterns you should be paying attention to. (June 23, 2009), Retrieved on July 27, 2022, from 
+- 10 UI design patterns you should be paying attention to. (June 23, 2009), Retrieved on July 27, 2022, from
 [https://www.smashingmagazine.com/2009/06/10-ui-design-patterns-you-should-be-paying-attention-to/](https://www.smashingmagazine.com/2009/06/10-ui-design-patterns-you-should-be-paying-attention-to/)
 - Design patterns: progressive disclosure for mobile apps. (May 26, 2016) Retrieved on July 26, 2022, from [https://uxplanet.org/design-patterns-progressive-disclosure-for-mobile-apps-f41001a293ba](https://uxplanet.org/design-patterns-progressive-disclosure-for-mobile-apps-f41001a293ba)
 - Designing for progressive disclosure. (May 4, 2020) Retrieved on July 26, 2022, from [https://www.uxmatters.com/mt/archives/2020/05/designing-for-progressive-disclosure.php](https://www.uxmatters.com/mt/archives/2020/05/designing-for-progressive-disclosure.php)

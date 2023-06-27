@@ -67,6 +67,10 @@ img {
   @include typeset("lang");
 }
 
+abbr[title="required"] {
+  text-decoration: none;
+}
+
 // ========================================
 // 2. Site layout
 // ----------------------------------------

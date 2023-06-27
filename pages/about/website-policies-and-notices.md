@@ -170,15 +170,15 @@ Federal agencies are required to provide the following links to agency-level inf
 
 -   [No FEAR Act data](https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002)
 
--   [GSA plans and reports](https://www.gsa.gov/reference/gsa-plans-and-reports), including [budget and performance reports](http://www.gsa.gov/portal/category/21546) and [information quality guidelines](https://www.gsa.gov/reference/reports/information-quality-guidelines)
+-   [GSA plans and reports](https://www.gsa.gov/reference/gsa-plans-and-reports), including [budget and performance reports](https://www.gsa.gov/reference/reports/budget-and-performance) and [information quality guidelines](https://www.gsa.gov/reference/reports/information-quality-guidelines)
 
 -   [GSA website policies](https://www.gsa.gov/website-information/website-policies), including accessibility policy, linking policy, privacy and security notice, required links, and social media sites
 
 -   [Office of the Inspector General](https://www.gsaig.gov/)
 
--   [Open government initiatives](https://www.gsa.gov/node/78692)
+-   Open government initiatives (pending updated link)
 
--   [Orders and directives](http://www.gsa.gov/portal/directives)
+-   [Orders and directives](https://www.gsa.gov/directives-library)
 
 -   [Plain language](https://www.gsa.gov/governmentwide-initiatives/plain-language)
 

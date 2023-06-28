@@ -45,7 +45,7 @@ const createCopyButton = () => {
 /**
  * Creates a screen reader only div element for success text 
  * 
- * @returns {HTMLDivElement} - A div for screen reader text
+ * @return {HTMLDivElement} - A div for screen reader text
  */
 const createSRStatus = () => {
   const srText = document.createElement("div");

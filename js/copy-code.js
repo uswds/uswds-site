@@ -14,7 +14,7 @@ const SR_SUCCESS_MESSAGE = "Code copied to clipboard.";
 /**
  * Creates a wrapper for copy button.
  *
- * @return {HTMLElement} - A div for `copy-code__wrapper`.
+ * @return {HTMLDivElement} - A div for `copy-code__wrapper`.
  */
 const createWrapper = () => {
   const wrapper = document.createElement("div");
@@ -26,20 +26,18 @@ const createWrapper = () => {
 /**
  * Creates a copy button component.
  *
- * @return {HTMLElement} - A button for copying code `copy-code__button`.
+ * @return {HTMLButtonElement} - A button for copying code `copy-code__button`.
  */
 const createCopyButton = () => {
   const btn = document.createElement("button");
-  const btnText = `
-    <span aria-hidden="true">Copy</span>
-  `;
+  const btnTxt = document.createElement("span");
+
+  btnTxt.setAttribute("aria-hidden", "true");
+  btnTxt.textContent = "Copy";
+  btn.append(btnTxt);
 
   btn.className = COPY_BUTTON_CLASS;
   btn.setAttribute("type", "button");
-  btn.setAttribute("aria-describedby", SR_STATUS_MESSAGE_CLASS);
-  ;
-
-  btn.insertAdjacentHTML("beforeend", btnText);
 
   return btn;
 };
@@ -47,12 +45,11 @@ const createCopyButton = () => {
 /**
  * Creates a screen reader only div element for success text 
  * 
- * @returns {HTMLElement} - A div for screen reader text
+ * @returns {HTMLDivElement} - A div for screen reader text
  */
 const createSRStatus = () => {
   const srText = document.createElement("div");
-  srText.classList.add("usa-sr-only");
-  srText.classList.add(SR_STATUS_MESSAGE_CLASS);
+  srText.classList.add("usa-sr-only", SR_STATUS_MESSAGE_CLASS);
   srText.setAttribute("aria-live", "polite");
   srText.textContent = SR_DEFAULT_MESSAGE;
 

@@ -2,6 +2,14 @@ title: Pagination
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Updated the ellipsis color to meet color contrast requirements.
+  summaryAdditional:
+  affectsAccessibility: true
+  affectsStyles: true
+  githubPr: 5358
+  githubRepo: uswds
+  versionUswds: 3.6.0
 - date: 2023-06-09
   summary: Improved legibility in forced colors mode.
   summaryAdditional: Adds a consistent border in forced colors mode.

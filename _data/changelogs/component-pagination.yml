@@ -3,6 +3,14 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
+  summary: Updated styles to respect the value of `$theme-pagination-background-color`.
+  summaryAdditional:
+  isBreaking: true
+  affectsStyles: true
+  githubPr: 5358
+  githubRepo: uswds
+  versionUswds: 3.6.0
+- date: NNNN-NN-NN
   summary: Updated the ellipsis color to meet color contrast requirements.
   summaryAdditional:
   affectsAccessibility: true

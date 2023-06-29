@@ -49,6 +49,35 @@ To create your custom configuration, add the USWDS settings variables that you w
 ```
 Note that the settings variables in this module inform both general theme and component customizations.
 
+### Configuring settings maps
+Similar to single-value settings, when configuring Sass settings maps in USWDS, you will only need to include the map items you wish to customize. Any item that is not defined in your configuration will keep its default value.
+
+For example, if you wanted to customize the `$background-color-settings` defaults to output focus styles and remove hover styles, you would configure the setting like this:
+
+```scss
+@use "uswds-core" with (
+  $background-color-settings: (
+    focus: true,
+    hover: false,
+  )
+);
+```
+
+This will generate the same output as configuring the setting with default values for all other map items:
+
+```scss
+@use "uswds-core" with (
+  $background-color-settings: (
+    output: true, // default value
+    responsive: false, // default value
+    active: false, // default value
+    focus: true,
+    hover: false,
+    visited: false, // default value
+  )
+);
+```
+
 ### What to include in your configuration
 Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type, as identified in the tables below.
 

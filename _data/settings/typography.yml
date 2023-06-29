@@ -534,3 +534,14 @@ contents:
     var: $theme-lead-measure
     default: 6
     type: measure
+  - name: Heading top margin
+    section: true
+    description: Top margin for headings in `usa-prose`.
+    var: $theme-heading-margin-top
+    default: 1.5em
+    type: em
+  - name: Paragraph top margin
+    description: Top margin for paragraphs in `usa-prose`.
+    var: $theme-paragraph-margin-top
+    default: 1em
+    type: em

@@ -176,7 +176,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [USGS Publications Warehouse](https://pubs.er.usgs.gov/)
 - [VA Caseflow](https://github.com/department-of-veterans-affairs/caseflow)
 - [VA Developer Portal](https://developer.va.gov/)
-- [VA Office of Information and Technology](https://www.oit.va.gov/)
 - [Virtual Student Foreign Service](http://vsfs.state.gov/)
 - [vote.gov](https://vote.gov/)
 - [Water Data for the Nation (USGS)](https://waterdata.usgs.gov/blog/)
@@ -184,4 +183,3 @@ If your project is currently using USWDS and you would like to see it included i
 - [The White House](https://www.whitehouse.gov/)
 - [WIC Works Resource System - USDA](https://wicworks.fns.usda.gov/)
 - [Worker.gov](https://www.worker.gov/)
-

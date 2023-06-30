@@ -4,7 +4,7 @@ changelogURL:
 items:
 - date: NNNN-NN-NN
   summary: Updated styles to respect the value of `$theme-pagination-background-color`.
-  summaryAdditional:
+  summaryAdditional: Users should confirm that pagination colors display as expected.
   isBreaking: true
   affectsStyles: true
   githubPr: 5358

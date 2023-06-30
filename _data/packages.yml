@@ -223,6 +223,8 @@
   fullSize: 8
   sourceSize: 1
   dependencies:
+    - "uswds-fonts"
+    - "usa-icon"
 - name: "usa-list"
   fullSize: 0.5
   sourceSize: 0.5

@@ -11,12 +11,14 @@ layout: default
     {% endif %}
   </aside>
 
+  {% unless page.in_page_nav == false %}
   <div class="usa-in-page-nav-container">
-    <aside class="usa-in-page-nav" 
-      aria-label="On this page" 
-      data-scroll-offset="-120" 
-      data-root-margin="48px 0px -90% 0px" 
+    <aside class="usa-in-page-nav"
+      aria-label="On this page"
+      data-scroll-offset="-120"
+      data-root-margin="48px 0px -90% 0px"
       data-threshold="1"></aside>
+  {% endunless %}
     <main id="main-content" class="main-content">
       <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
         <header>
@@ -35,5 +37,7 @@ layout: default
         {% include changelog.html %}
       </div>
     </main>
+  {% unless page.in_page_nav == false %}
   </div>
+  {% endunless %}
 </div>

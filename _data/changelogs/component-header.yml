@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added Header variants table to guidance page.
+    summary: Added header variants table to guidance page.
     affectsGuidance: true
     githubPr: 2139
     githubRepo: uswds-site

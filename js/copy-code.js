@@ -102,12 +102,11 @@ const init = () => {
     const copyWrapper = createWrapper();
     const copyButton = createCopyButton();
     const labelSROnly = createSRStatus();
-    
+
     labelSROnly.setAttribute("id", SCREEN_READER_ID);
     copyButton.setAttribute("aria-labelledby", SCREEN_READER_ID);
-    
-    copyWrapper.appendChild(labelSROnly);
-    copyWrapper.appendChild(copyButton);
+
+    copyWrapper.append(labelSROnly, copyButton);
     copyCodeElement.appendChild(copyWrapper);
 
     copyButton.addEventListener("click", copyOnClick);

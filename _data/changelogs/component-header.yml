@@ -7,7 +7,6 @@ items:
     affectsGuidance: true
     githubPr: 2139
     githubRepo: uswds-site
-    versionUswds: 3.6.0
   - date: 2023-06-09
     summary: Fixed a bug that caused inaccurate megamenu template markup in the documentation.
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.

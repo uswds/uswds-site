@@ -43,13 +43,14 @@ const createCopyButton = () => {
 };
 
 /**
- * Creates a screen reader only div element for success text
- *
+ * Creates a screen reader only div element for success text 
+ * 
  * @return {HTMLDivElement} - A div for screen reader text
  */
 const createSRStatus = () => {
   const srText = document.createElement("div");
   srText.classList.add("usa-sr-only", SR_STATUS_MESSAGE_CLASS);
+  srText.setAttribute("aria-live", "polite");
   srText.textContent = SR_DEFAULT_MESSAGE;
 
   return srText;
@@ -67,19 +68,11 @@ const copyOnClick = (event) => {
   const labelVisual = copyBtn.querySelector("[aria-hidden]");
   const labelSR = btnWrapper.querySelector(SR_STATUS_MESSAGE);
 
+
   // Set success state
   copyBtn.classList.add(COPY_BUTTON_SUCCESS_CLASS);
   labelVisual.textContent = "Copied!";
   labelSR.textContent = SR_SUCCESS_MESSAGE;
-
-  // Set aria-live once _after_ initial status update.
-  // Prevents VoiceOver from reading "Copy code" when parent accordion expands.
-  //
-  // See first item in PR comment:
-  // https://github.com/uswds/uswds-site/pull/2059#pullrequestreview-1503414868
-  if (!labelSR.hasAttribute("aria-live")) {
-    labelSR.setAttribute("aria-live", "polite");
-  }
 
   // After timeout, reset to default state
   setTimeout(() => {

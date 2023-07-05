@@ -2,6 +2,16 @@ title: Link
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added `uswds-fonts` and `usa-icon` to list of dependencies.
+    affectsGuidance: true
+    githubPr: 2162
+    githubRepo: uswds-site
+  - date: NNNN-NN-NN
+    summary: Updated code examples for encoding email and phone links.
+    affectsGuidance: true
+    githubPr: 2162
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Labeled external links for screen readers.
     summaryAdditional: Adds a label for screen readers that identifies external links and if they open in a new tab.

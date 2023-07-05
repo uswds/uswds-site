@@ -1,6 +1,6 @@
 - **Use unique ids.** Each `.usa-modal` must have a unique id so that openers can associate them with their `aria-controls` attribute.
 
-- **Openers.** A single modal can have multiple openers. Each opener requires `data-open-modal` and `aria-controls=”MODAL_ID”` attributes. Openers can be coded either as `<button type="button">` or `<a>`. Using `<a>` helps link to modals in the event javascript fails.
+- **Openers.** A single modal can have multiple openers. Each opener requires `data-open-modal` and `aria-controls=”[modal_id]”` attributes. Openers can be coded either as `<button>` or `<a>` elements. Using `<a>` helps link to modals in the event JavaScript fails.
 
 - **Closers.** Place a `data-close-modal` attribute on any button that will close a modal. Closers may have event listeners attached to them. Code closers as `<button type="button">`.
 

@@ -2,7 +2,7 @@ title: Select
 type: component
 changelogURL:
 items:
-- date: 2023-05-03
+- date: NNNN-NN-NN
   summary: Added ellipses to multiple select overflow.
   summaryAdditional: This provides a clear indication to users that there is text being cut off by the select width.
   isBreaking: false
@@ -13,7 +13,7 @@ items:
   affectsStyles: true
   githubPr: 5268
   githubRepo: uswds
-  versionUswds: 3.4.1
+  versionUswds: 3.6.0
 - date:  2022-08-05
   summary: Improved styling for select when the `multiple` attribute is present.
   summaryAdditional: According to the HTML5 standard, a select element whose `multiple` attribute is present is "expected to render as an inline-block box whose height is the height necessary to contain as many rows for items as given by the element's display size, or four rows if the [size] attribute is absent." Our select now conforms to this guidance.

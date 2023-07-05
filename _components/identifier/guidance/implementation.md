@@ -31,6 +31,6 @@
 
     Example: [https://www.dhs.gov/privacy-policy](https://www.dhs.gov/privacy-policy)
 
-- **Use the Spanish version if for Spanish-language sites.** If you have an official Spanish-language website, use the Spanish version of the identifier.
+- **Use the Spanish version for Spanish-language sites.** If you have an official Spanish-language website, use the Spanish version of the identifier.
 - **Duplicate the logo element if using multiple logos.** If you're using multiple logos, duplicate the `usa-identifier__logo` element and link the image to your image source.
 - **If applicable, include any taxpayer disclaimer after the standard text.** If the organization must provide a taxpayer expense disclaimer, include it following the "Official website" text, as a separate sentence. For example, "An official website of [Department]. Produced and published at taxpayer expense."

@@ -1,4 +1,4 @@
-- **Identify the title.** Use `aria-labelledby=”[id]”` on `.usa-modal` to associate a title to the modal so that it’s read when opening the modal. The `id` should belong to the `id` attribute on `.usa-modal__heading`.
+- **Label your modal with the modal heading.** Use `aria-labelledby=”[id]”` on `.usa-modal` to read out the modal title when opening the modal. The `[id]` should match the value of the `id` attribute on the `usa-modal__heading` element.
 
 - **Descriptions.** Optionally, you may use `aria-describedby=”[id]”` on `.usa-modal` to associate descriptive text to the modal window so that it’s read when opening the modal. The `id` should belong to a paragraph or a brief piece of content.
 

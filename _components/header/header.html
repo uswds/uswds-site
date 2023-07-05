@@ -27,7 +27,6 @@ changelog:
   key: component-header
 in_page_nav: false
 ---
-
 <h2>When to use a header component</h2>
 <ul class="usa-content-list">
   <li>
@@ -87,17 +86,17 @@ in_page_nav: false
 <h2 class="usa-heading heading-margin-alt">Header accessibility</h2>
 <ul class="usa-content-list">
   <li>
-    <strong>Add a skip navigation link before the header.</strong> Include skip navigation links to allow users with screen readers to bypass
-    long navigation lists. Make sure you include an <code>id</code> at the beginning of your
-    main content and that it matches the skip navigation link. Find more <a href="http://webaim.org/techniques/skipnav/">information on these links</a> at WebAIM.
-
+    <strong>Add a skip navigation link before the header.</strong> Include skip navigation links to allow users with
+    screen readers to bypass long navigation lists. Make sure you include an <code>id</code> at the beginning of your
+    main content and that it matches the skip navigation link. Find more <a
+      href="http://webaim.org/techniques/skipnav/">information on these links</a> at WebAIM.
   </li>
   <li>
     <strong>Ensure your horizontal navigation is keyboard compatible.</strong> Test to make sure
     users can use <code>Tab</code> to navigate and <code>Space</code> (or <code>Enter</code>) to open pages.
   </li>
   <li>
-    <strong>Include tab focus for all top-level navigation navigation items.</strong > This feature will
+    <strong>Include tab focus for all top-level navigation navigation items.</strong> This feature will
     allow keyboard-reliant users to easily navigate interactive items.
   </li>
   <li>
@@ -106,38 +105,33 @@ in_page_nav: false
     with keyboard navigation.
   </li>
   <li>
-    <strong>Use only one navigation role.</strong> You can use multiple nav elements for groups of navigation links, but you
-    should only use one <code>role="navigation"</code> for the main nav of a
-    page.
+    <strong>Add context by labelling your nav element.</strong> If your page has more than one
+    <code>nav</code> element, use the <code>aria-label</code> attribute to help assistive technology users understand the purpose of the navigation.
   </li>
   <li>
-    <strong>Use list elements for your nav links.</strong> This allows screen readers users to more easily navigate header content.
+    <strong>Use list elements for your navigation links.</strong> This allows screen readers users to more easily
+    navigate header content.
   </li>
   <li>
-    <strong>Add alt text to your logo image.</strong> If you’re using a logo that’s an image rather than text, make sure you
-    include alternative text for screen readers.
+    <strong>Add alt text to your logo image.</strong> If you’re using a logo that’s an image rather than text, make sure
+    you include alternative text for screen readers.
   </li>
   <li>
     <strong>Don't use an H1 for your logo.</strong> If you’re using a logo that’s text, use an <code>em</code>, not an
     <code>h1</code>, unless it’s the homepage. Find more information here:
-    <a href="http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/"
-      >http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/.</a
-    >
+    <a
+      href="http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/">http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/.</a>
   </li>
 </ul>
 
 <h2>Further reading</h2>
 <ul>
   <li>
-    <a href="https://www.nngroup.com/articles/menu-design/"
-      >https://www.nngroup.com/articles/menu-design/</a
-    >
+    <a href="https://www.nngroup.com/articles/menu-design/">https://www.nngroup.com/articles/menu-design/</a>
   </li>
   <li>
     <a
-      href="https://www.usertesting.com/blog/site-navigation-tree-testing"
-      >https://www.usertesting.com/blog/site-navigation-tree-testing</a
-    >
+      href="https://help.usertesting.com/hc/en-us/articles/115003372331-What-is-Tree-Testing">https://help.usertesting.com/hc/en-us/articles/115003372331-What-is-Tree-Testing</a>
   </li>
 </ul>
 

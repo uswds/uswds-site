@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Removed notes about banner component.
+    summary: Removed the role, banner component, and HTTPS sections.
     summaryAdditional:
     affectsGuidance: true
     githubPr: 2162

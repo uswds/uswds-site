@@ -9,7 +9,8 @@ const COPY_WRAPPER = `.${COPY_WRAPPER_CLASS}`;
 const SR_STATUS_MESSAGE = `.${SR_STATUS_MESSAGE_CLASS}`;
 
 const SR_DEFAULT_MESSAGE = "Copy component code.";
-const SR_SUCCESS_MESSAGE = "Code copied to clipboard.";
+const SR_SUCCESS_MESSAGE = "Code copied to clipboard";
+const SR_SUCCESS_MESSAGE_ALT = `${SR_SUCCESS_MESSAGE}.`;
 
 /**
  * Creates a wrapper for copy button.
@@ -38,6 +39,7 @@ const createCopyButton = () => {
 
   btn.className = COPY_BUTTON_CLASS;
   btn.setAttribute("type", "button");
+  btn.setAttribute("aria-label", SR_DEFAULT_MESSAGE);
 
   return btn;
 };
@@ -51,7 +53,6 @@ const createSRStatus = () => {
   const srText = document.createElement("div");
   srText.classList.add("usa-sr-only", SR_STATUS_MESSAGE_CLASS);
   srText.setAttribute("aria-live", "polite");
-  srText.textContent = SR_DEFAULT_MESSAGE;
 
   return srText;
 };
@@ -72,13 +73,19 @@ const copyOnClick = (event) => {
   // Set success state
   copyBtn.classList.add(COPY_BUTTON_SUCCESS_CLASS);
   labelVisual.textContent = "Copied!";
-  labelSR.textContent = SR_SUCCESS_MESSAGE;
+
+  // In order for consistent SR readouts, the text string must change
+  // Without changing, the SR will not consitently read the text on click
+  if (labelSR.textContent == SR_SUCCESS_MESSAGE) {
+    labelSR.textContent = SR_SUCCESS_MESSAGE_ALT;
+  } else {
+    labelSR.textContent = SR_SUCCESS_MESSAGE;
+  }
 
   // After timeout, reset to default state
   setTimeout(() => {
     copyBtn.classList.remove(COPY_BUTTON_SUCCESS_CLASS);
     labelVisual.textContent = "Copy";
-    labelSR.textContent = SR_DEFAULT_MESSAGE;
   }, 3000);
 
   // Select section code and copy to clipboard
@@ -96,15 +103,9 @@ const copyOnClick = (event) => {
  */
 const init = () => {
   COPY_CODE.forEach((copyCodeElement) => {
-    const COPY_CODE_ID = copyCodeElement.id;
-    const SCREEN_READER_ID = `${COPY_CODE_ID}__sr-label`;
-
     const copyWrapper = createWrapper();
     const copyButton = createCopyButton();
     const labelSROnly = createSRStatus();
-
-    labelSROnly.setAttribute("id", SCREEN_READER_ID);
-    copyButton.setAttribute("aria-labelledby", SCREEN_READER_ID);
 
     copyWrapper.append(labelSROnly, copyButton);
     copyCodeElement.appendChild(copyWrapper);

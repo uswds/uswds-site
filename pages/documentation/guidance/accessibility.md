@@ -21,6 +21,7 @@ subnav:
   href: '#changelog'
 changelog:
   key: 'docs-accessibility'
+in_page_nav: false
 ---
 
 When it comes to accessibility (sometimes shortened to "a11y" for the eleven characters between the letters "a" and "y" in the word "accessibility"), legal requirements are a critical, necessary starting point, but requirements are only the beginning. Accessibility is about real people who use our services — it's usability for any ability. Accessibility enables full participation, and everyone who works on government websites has a role to play in making federal resources accessible and inclusive. Incorporate accessibility from the start, design generously, and celebrate accessibility requirements as a set of design constraints that help us build products and services for those who need it most, and better products and services for all users.

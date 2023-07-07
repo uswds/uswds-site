@@ -130,7 +130,7 @@ We’ve created some example setups to give you an idea of how this works:
 ```
 
 ## Nested settings and dot notation
-We use dot notation in most of our documentation to describe settings that are nested inside a Sass map. Dot notation is a syntax used in programming languages to access or describe an object's attributes.
+We use dot notation in most of our documentation to describe settings that are nested inside a Sass map. Dot notation is a syntax used in programming languages to access an object's attributes.
 
 For example, in the [general settings table](#general-settings) on this page, we use `grid.namespace` to refer to the `namespace` property in the `$theme-namespace` `grid` map. Following the [settings map configuration instructions](#configuring-settings-maps) described earlier, you could configure that setting like this:
 

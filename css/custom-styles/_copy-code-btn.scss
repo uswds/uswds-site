@@ -11,8 +11,17 @@
     display: none;
   }
 
+  &__wrapper {
+    display: none;
+
+    @include at-media("tablet") {
+      display: block;
+      margin-left: units(2);
+    }
+  }
+
   &__button {
-    @include u-font('sans', '3xs');
+    @include u-font("sans", "3xs");
     @include u-padding-x(0.5);
     margin-right: 0;
     min-width: units(10);
@@ -29,15 +38,6 @@
     @include at-media("desktop") {
       // Offset for nav
       top: units(8);
-    }
-  }
-
-  &__wrapper {
-    display: none;
-
-    @include at-media("tablet") {
-      display: block;
-      margin-left: units(2);
     }
   }
 }

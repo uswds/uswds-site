@@ -224,7 +224,8 @@ abbr[title="required"] {
 
 // Main Content --------- //
 
-.main-content {
+.main-content,
+.usa-in-page-nav-container main {
   @include u-pin("right");
   @include u-pin("bottom");
   display: inline-block; // starting: not scrolled

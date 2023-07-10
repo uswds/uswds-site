@@ -48,7 +48,7 @@ If you already have Sass compilation set up on your project, you'll need to load
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase. Often, a project's Sass entry point is named something like `index.scss` or `styles.scss`.
 
 ### Creating a Sass entry point
-If your project does not yet have a Sass entry point, create a file called `styles.scss`. This file will typically live at the root of your project's Sass directory.
+If your project does not yet have a Sass entry point, create a file called `index.scss` or `styles.scss`. This file will typically live at the root of your project's Sass directory.
 
 ### Loading USWDS in your Sass entry point
 Your project’s Sass entry point is a simple file that will need to:
@@ -69,7 +69,7 @@ For your entry point to complete these tasks, you will need to add the following
 @forward "./path/to/source/uswds";
 
 // 3. Load your project's custom Sass
-@forward "uswds-theme-custom-styles.scss";
+@forward "project-styles.scss";
 ```
 
 Note that each `@forward` reference in this example is tied to one of the tasks listed above.

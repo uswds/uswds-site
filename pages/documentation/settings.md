@@ -50,14 +50,14 @@ To create your custom configuration, add the USWDS settings variables that you w
 Note that the settings variables in this module inform both general theme and component customizations.
 
 ### What to include in your configuration
-Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type, as identified in the [settings tables](#general-settings) below.
+Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type, as identified in the [settings tables](#general-settings) on this page.
 
 Please note that this configuration accepts only current USWDS settings variables &mdash; adding anything else here will result in an error.
 
 {: .site-note }
-**Note:** If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the list below and try compiling again.
+**Note:** If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the [settings tables](#general-settings) and try compiling again.
 
-### Configuring settings maps
+#### Configuring settings maps
 Similar to single-value settings, when configuring Sass settings maps in USWDS, you will only need to include the map items you wish to customize. Any item that is not defined in your configuration will keep its default value.
 
 For example, if you wanted to customize the `$background-color-settings` defaults to output focus styles and remove hover styles, you would configure the setting like this:
@@ -129,8 +129,8 @@ We’ve created some example setups to give you an idea of how this works:
 @forward 'uswds-theme-custom-styles';
 ```
 
-## Nested settings and dot notation
-We use dot notation in most of our documentation to describe settings that are nested inside a Sass map. Dot notation is a syntax used in programming languages to access an object's attributes.
+## Settings maps and dot notation
+We use dot notation in our documentation to describe settings that are nested inside a Sass map. Dot notation is a syntax that uses a period (or dot) to reference an object's properties.
 
 For example, in the [general settings table](#general-settings) on this page, we use `grid.namespace` to refer to the `namespace` property in the `$theme-namespace` `grid` map. Following the [settings map configuration instructions](#configuring-settings-maps) described earlier, you could configure that setting like this:
 

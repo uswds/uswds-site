@@ -34,7 +34,7 @@ U.S. Web Design System source code is written in Sass, a powerful stylesheet lan
 
 ## Introducing uswds-compile
 
-If you don't yet have Sass compilation set up on your project, we recommend using `uswds-compile`, a USWDS tool [hosted on GitHub](https://github.com/uswds/uswds-compile), as a quick way to get up and running with Sass compilation for USWDS.
+We recommend using `uswds-compile`, a USWDS tool [hosted on GitHub](https://github.com/uswds/uswds-compile), as a quick way to get up and running with Sass compilation for USWDS.
 
 This tool provides simple Gulp 4 functions that copy USWDS static assets into your project and transform USWDS Sass into browser-readable CSS. Additionally, `uswds-compile` applies Autoprefixer to all compiled code to make sure your CSS is browser-compatible.
 

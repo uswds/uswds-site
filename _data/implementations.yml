@@ -137,6 +137,16 @@
     url: https://github.com/18F
   notes: "This [Ruby on Rails](http://rubyonrails.org/) gem is not currently maintained."
 
+- name: Comet
+  distribution: React
+  id: comet-uswds
+  url: https://github.com/MetroStar/comet
+  author:
+    name: MetroStar
+    url: https://github.com/MetroStar
+  version: 3.5.0
+  notes: "A React with TypeScript component library based on USWDS 3.0. This library provides modular support for custom components, data visualization, and command line tools. Comet also includes a sample starter app that is focused on accelerating and scaling design across the enterprise."
+
 - name: react-uswds
   distribution: React
   id: react-uswds
@@ -207,7 +217,7 @@
     name: Brian Hurst
     url: https://github.com/hursey013
   notes: "A Tailwind CSS plugin for adding U.S. Web Design System design tokens to supported Tailwind utilities."
-  
+
 - name: Vue USWDS
   distribution: Vue.js
   id: vue-uswds

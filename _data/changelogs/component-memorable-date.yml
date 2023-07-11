@@ -2,6 +2,13 @@ title: Memorable date
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Updated memorable date styles to allow elements to wrap to multiple lines at narrow widths.
+  summaryAdditional:
+  affectsStyles: true
+  githubRepo: uswds
+  githubPr: 5372
+  versionUswds: 3.6.0
 - date: 2022-11-14
   summary: Updated the month entry to a `select` from an `input`.
   summaryAdditional: Recent usability testing indicated that using a `select` for month entry was more clear and reduced mistakes.

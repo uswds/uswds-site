@@ -3510,6 +3510,11 @@ ignore:
         reason: No available upgrade or patch
         expires: 2023-04-23T19:01:35.436Z
         created: 2023-03-24T19:01:35.488Z
+  SNYK-JS-SEMVER-3247795:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2023-07-29T20:35:08.765Z
+        created: 2023-06-29T20:35:08.815Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
-  summary: Updated memorable date styles to allow elements to wrap to multiple lines at narrow widths.
+  summary: Updated styles to allow the component to wrap to multiple lines at narrow widths.
   summaryAdditional:
   affectsStyles: true
   githubRepo: uswds

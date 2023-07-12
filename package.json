@@ -60,7 +60,7 @@
     "prettier:scss": "npx prettier --write './css/**/*.scss'"
   },
   "devDependencies": {
-    "@18f/identity-stylelint-config": "^2.0.0",
+    "@18f/identity-stylelint-config": "2.0.0",
     "ansi-colors": "^4.1.1",
     "axe-core": "^4.3.5",
     "browserify": "^17.0.0",

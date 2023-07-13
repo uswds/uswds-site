@@ -1,0 +1,9 @@
+title: Research
+type: documentation
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Removed broken link.
+    affectsGuidance: true
+    githubPr: 2185
+    githubRepo: uswds-site

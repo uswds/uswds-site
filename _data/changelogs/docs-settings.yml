@@ -2,6 +2,12 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated styles to allow `$theme-body-font-size` to accept `2xs` and `3xs` size tokens.
+    affectsStyles: true
+    githubPr: 5363
+    githubRepo: uswds
+    versionUswds: 3.6.0
   - date: 2023-06-09
     summary: Added accordion color settings.
     summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.

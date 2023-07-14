@@ -2,7 +2,7 @@ title: Header
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-07-14
     summary: Added header variants table to guidance page.
     affectsGuidance: true
     githubPr: 2139

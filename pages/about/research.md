@@ -9,6 +9,11 @@ category: About
 lead: User research is a core aspect of USWDS as it’s our main source of feedback and inspiration for future product development.
 redirect_from:
   - /whats-new/research/
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: about-research
 ---
 
 We plan to use a combination of research methods, quantitative research like collecting web analytics to see how frequently USWDS is used around the federal government, and qualitative research like remote observational studies to see whether USWDS is making government sites easier for people to use. We’ll use this research to see how well USWDS is working and what needs to be improved.
@@ -23,10 +28,9 @@ Web Design System. We will use this information to identify future
 improvements to the design patterns. You can use these metrics to help justify
 the adoption and continued use of USWDS.
 
-#### References
+#### Reference
 
-- [https://www.nngroup.com/articles/analytics-reports-ux-strategists/](https://www.nngroup.com/articles/analytics-reports-ux-strategists/)
-- [http://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/](http://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/)
+[https://www.nngroup.com/articles/analytics-reports-ux-strategists/](https://www.nngroup.com/articles/analytics-reports-ux-strategists/)
 
 ## User Research Activities
 

@@ -3,7 +3,7 @@ type: utility
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated styles to allow `$theme-body-font-size` to accept `2xs` and `3xs` size tokens.
+    summary: Fixed a bug that prevented `$theme-body-font-size` from accepting `2xs` and `3xs` size tokens.
     affectsStyles: true
     githubPr: 5363
     githubRepo: uswds

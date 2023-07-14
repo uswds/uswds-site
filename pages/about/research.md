@@ -28,10 +28,9 @@ Web Design System. We will use this information to identify future
 improvements to the design patterns. You can use these metrics to help justify
 the adoption and continued use of USWDS.
 
-#### References
+#### Reference
 
-- [https://www.nngroup.com/articles/analytics-reports-ux-strategists/](https://www.nngroup.com/articles/analytics-reports-ux-strategists/)
-- [http://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/](http://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/)
+[https://www.nngroup.com/articles/analytics-reports-ux-strategists/](https://www.nngroup.com/articles/analytics-reports-ux-strategists/)
 
 ## User Research Activities
 

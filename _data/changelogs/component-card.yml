@@ -2,6 +2,11 @@ title: Card
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Clarified guidance for using layout grid utilities.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Replaced `button` elements with links styled as buttons
     affectsMarkup: true

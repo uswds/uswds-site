@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated the text in the `aria-label` documentation to match what is in the component.
+    summary: Updated the text in the `aria-label` documentation to match what's in the component.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site

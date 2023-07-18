@@ -9,6 +9,13 @@ items:
     githubPr: 5378
     githubRepo: uswds
     versionUswds: 3.6.0
+  - date: NNNN-NN-NN
+    summary: Improved legibility in forced colors mode.
+    summaryAdditional:
+    affectsStyles: true
+    githubPr: 5378
+    githubRepo: uswds
+    versionUswds: 3.6.0
   - date: 2023-06-09
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.

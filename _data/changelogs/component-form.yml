@@ -5,6 +5,13 @@ title: Form
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Resolved usa-fieldset & usa-legend margin conflict.
+    summaryAdditional: usa-fieldset now appropriately respects the margin set by child legend elements.
+    affectsStyles: true
+    githubPr: 5344
+    githubRepo: uswds
+    versionUswds: 3.6.0
   - date: 2023-06-09
     summary: Updated guidance to suggest identifying required and optional fields.
     summaryAdditional: We added a new section on identifying required fields and now suggest labeling required fields with a red asterisk and optional fields with the word "optional".

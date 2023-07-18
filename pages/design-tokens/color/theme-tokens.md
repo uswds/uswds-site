@@ -6,9 +6,9 @@ category: Design tokens
 lead: USWDS theme color tokens provide flexible, accessible, customizable color choices for your project.
 type: docs
 redirect_from:
-  - /components/colors/theme
-  - /colors/theme
-  - /color/theme
+  - /components/colors/theme/
+  - /colors/theme/
+  - /color/theme/
 subnav:
 - text: About theme color tokens
   href: '#uswds-theme-color-tokens'

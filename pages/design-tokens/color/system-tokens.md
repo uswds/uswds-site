@@ -6,9 +6,9 @@ category: Design tokens
 lead: USWDS system color tokens are the complete palette of color tokens from which any project can build a theme palette.
 type: docs
 redirect_from:
-  - /components/colors/system
-  - /colors/system
-  - /color/system
+  - /components/colors/system/
+  - /colors/system/
+  - /color/system/
 subnav:
   - text: Red cool
     href: '#red-cool'

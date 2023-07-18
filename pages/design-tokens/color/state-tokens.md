@@ -6,9 +6,9 @@ category: Design tokens
 lead: USWDS state colors tokens provide flexible, accessible, customizable colors for warning, error, and other states
 type: docs
 redirect_from:
-  - /components/colors/state
-  - /colors/state
-  - /color/state
+  - /components/colors/state/
+  - /colors/state/
+  - /color/state/
 subnav:
 - text: State color tokens
   href: '#uswds-state-color-tokens'

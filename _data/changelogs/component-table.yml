@@ -4,6 +4,25 @@ type: component
 changelogURL:
 
 items:
+  - date: NNNN-NN-NN
+    summary: Restored standard and striped table component previews to guidance page.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2143
+    githubRepo: uswds-site
+  - date: 2023-06-09
+    summary: Fixed a typo in the sortable table JavaScript that caused the `aria-label` in table headers to have an unnecessary single quote.
+    summaryAdditional:
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: true
+    affectsMarkup: false
+    affectsStyles: false
+    githubPr: 5280
+    githubRepo: uswds
+    versionUswds: 3.5.0
   # 3.0.2 release
   - date: 2022-06-17
     summary: Updated table border settings to work as expected.

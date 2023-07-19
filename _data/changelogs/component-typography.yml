@@ -4,21 +4,13 @@ type: component
 changelogURL:
 
 items:
-  # 3.5.0 release
-  - date: TK
-    summary: Deprecate font smoothing mixins.
-    summaryAdditional: Deprecates an old technique used for improving font rendering in legacy browsers.
-    affectsAccessibility:
-    affectsAssets:
-    affectsSettings:
-    affectsGuidance:
-    affectsJavascript:
-    affectsMarkup:
+  - date: 2023-06-09
+    summary: Stopped using font smoothing.
+    summaryAdditional: No longer use font smoothing for dark backgrounds and disabled buttons.
     affectsStyles: true
     githubPr: 5250
     githubRepo: uswds
     versionUswds: 3.5.0
-  # 3.4.0 release
   - date: 2023-03-09
     summary: Use only `woff2` in our `@font-face` declarations.
     summaryAdditional: Since modern browsers only need the `woff2` font format, we now only output `woff2` fonts in our `@font-face` rules. If you need `woff` and `ttf` for IE11 compatibility, set `$theme-font-browser-compatibility` to `true` in settings.

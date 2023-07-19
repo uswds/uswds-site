@@ -15,6 +15,7 @@ subnav:
   - href: /patterns/create-a-user-profile/pronouns/
   - href: /patterns/create-a-user-profile/race-and-ethnicity/
   - href: /patterns/create-a-user-profile/social-security-number/
+in_page_nav: false
 ---
 
 ## Why this matters
@@ -51,7 +52,7 @@ User profiles are central to a person’s identity. A user profile may be integr
         <p>Help users to specify how they would like to be contacted and in what language.</p>
       </div>
     </div>
-  </div>  
+  </div>
   <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"

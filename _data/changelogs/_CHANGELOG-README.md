@@ -1,26 +1,26 @@
 # Creating changelogs
 
 ## Available data keys
-| Key | Description | Optional | Value type | Standard values | Displayed |
-| :--- | :----------- | -------- | ---------- | --------------- | --------- |
-| title | Page title | yes | string| N/A | No |
-| type | Identify page type| no | string| component, documentation, pattern, template, token, utility | No |
-| changelogURL | url for CHANGELOG.MD | yes | string| N/A | yes |
-| date | Merge date (YYYY-MM-DD)| no | date | N/A | yes |
-| summary | Short description of change | no | string| N/A | yes |
-| summaryAdditional | Additional description | yes | string| N/A | yes |
-| isBreaking | Breaking change | no | boolean | true, false | yes |
-| affectsAccessibility | Change affects accessibility| yes | boolean | true, false | yes |
-| affectsMarkup | Change affects component markup | yes | boolean | true, false | yes |
-| affectsJavascript | Change affects component JS | yes | boolean | true, false | yes |
-| affectsStyles | Change affects component styles, appearance, or settings | yes | boolean | true, false | yes |
-| affectsContent | Change affects content in the component itself | yes | boolean | true, false | yes |
-| affectsGuidance | Change affects component guidance| yes | boolean | true, false | yes |
-| affectsAssets | Change affects assets related to a component, like images | yes | boolean | true, false | yes |
-| affectsSettings | Change affects settings | yes | boolean | true, false | yes |
-| githubPr | Pull request number | no | number| N/A | yes |
-| githubRepo | Pull request repo name | no | string| uswds, uswds-site | yes |
-| versionUswds | USWDS Version Number | no | number| N/A | yes |
+| Key                  | Description                                                | Optional | Value type | Standard values                                             | Displayed |
+| :------------------- | :--------------------------------------------------------- | -------- | ---------- | ----------------------------------------------------------- | --------- |
+| title                | Page title                                                 | yes      | string     | N/A                                                         | No        |
+| type                 | Identify page type                                         | no       | string     | component, documentation, pattern, template, token, utility | No        |
+| changelogURL         | url for CHANGELOG.MD                                       | yes      | string     | N/A                                                         | yes       |
+| date                 | Merge date (YYYY-MM-DD). Use `NNNN-NN-NN` for placeholder. | no       | date       | N/A                                                         | yes       |
+| summary              | Short description of change                                | no       | string     | N/A                                                         | yes       |
+| summaryAdditional    | Additional description                                     | yes      | string     | N/A                                                         | yes       |
+| isBreaking           | Breaking change                                            | no       | boolean    | true, false                                                 | yes       |
+| affectsAccessibility | Change affects accessibility                               | yes      | boolean    | true, false                                                 | yes       |
+| affectsMarkup        | Change affects component markup                            | yes      | boolean    | true, false                                                 | yes       |
+| affectsJavascript    | Change affects component JS                                | yes      | boolean    | true, false                                                 | yes       |
+| affectsStyles        | Change affects component styles, appearance, or settings   | yes      | boolean    | true, false                                                 | yes       |
+| affectsContent       | Change affects content in the component itself             | yes      | boolean    | true, false                                                 | yes       |
+| affectsGuidance      | Change affects component guidance                          | yes      | boolean    | true, false                                                 | yes       |
+| affectsAssets        | Change affects assets related to a component, like images  | yes      | boolean    | true, false                                                 | yes       |
+| affectsSettings      | Change affects settings                                    | yes      | boolean    | true, false                                                 | yes       |
+| githubPr             | Pull request number                                        | no       | number     | N/A                                                         | yes       |
+| githubRepo           | Pull request repo name                                     | no       | string     | uswds, uswds-site                                           | yes       |
+| versionUswds         | USWDS Version Number                                       | no       | number     | N/A                                                         | yes       |
 
 ## Using .yml files
  - Tab spacing matters. Incorrect spacing can cause errors, so make sure your items line up.
@@ -47,7 +47,7 @@ title:
 type:
 changelogURL:
 items:
-  - date:
+  - date: NNNN-NN-NN
     summary:
     summaryAdditional:
     isBreaking:

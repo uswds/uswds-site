@@ -14,6 +14,7 @@ columns:
 redirect_from:
   - /about-our-work/
   - /whats-new/
+in_page_nav: false
 ---
 
 {% capture blog %}

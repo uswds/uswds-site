@@ -91,17 +91,16 @@ The entire package is {{ utilities.fullSize }} KB uncompressed.
 
 Include the `uswds-utilities` package in your project's Sass entry point with a module forward:
 
-  {:.site-terminal}
   ```scss
 @forward "uswds-utilities";
   ```
 
 ### Settings
-You can further customize utility output with USWDS settings. Add settings from the table below to your `uswds-core` module initialization. Here's an example:
+You can further customize utility output with USWDS settings. Add settings from the table below to your `uswds-core` module initialization. For more information on configuring USWDS settings, visit the [settings page]( {{ site.baseurl }}/documentation/settings#configuring-settings-maps). Here's an example:
 
-  {:.site-terminal.margin-bottom-4}
+  {:.margin-bottom-4}
   ```scss
-@use "uswds core" with (
+@use "uswds-core" with (
   $utilities-use-important: true,
   $output-these-utilities:(
     "background-color",
@@ -114,12 +113,7 @@ You can further customize utility output with USWDS settings. Add settings from 
     "mobile-lg": false,
   ),
   $color-settings: (
-    "output": true
-    "responsive": false
-    "active": false
-    "focus": false
-    "hover": false
-    "visited": false
+    "hover": false,
   ),
   $color-palettes: (
     "palette-color-theme"

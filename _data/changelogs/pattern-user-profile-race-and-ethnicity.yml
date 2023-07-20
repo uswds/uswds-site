@@ -10,7 +10,7 @@ items:
     githubRepo: uswds-site
   - date: 2022-11-16
     summary: Updated guidance to clarify race and ethnicity question format and requirements.
-    summaryAdditional: Added link to guidance on asking for race and ethnicity as a two-part question as currently required by OMB. Removed suggested link to working group considering a combined question. Removed list of combined race and ethnicity catgories tested in the 2020 Census to prevent confusion.
+    summaryAdditional: Added link to guidance on asking for race and ethnicity as a two-part question as currently required by OMB. Removed suggested link to working group considering a combined question. Removed list of combined race and ethnicity categories tested in the 2020 Census to prevent confusion.
     affectsGuidance: true
     githubPr: 1906
     githubRepo: uswds-site

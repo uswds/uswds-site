@@ -16,12 +16,12 @@ contents:
     default: '"lg"'
     type: units
   - name: Active state vertical line color
-    description: Color of the bar representing the active state of a link in the in-page nav. `Default` uses the default link settings calculated from your background color.
+    description: Color of the bar representing the active state of a link in the in-page navigation. `Default` uses the default link settings calculated from your background color.
     var: $theme-in-page-nav-bar-color
     default: '"default"'
     type: color
   - name: Active state vertical line width
-    description: Width of the colored bar representing the active state of a link in the in-page nav.
+    description: Width of the colored bar representing the active state of a link in the in-page navigation.
     var: $theme-in-page-nav-bar-width
     default: '"05"'
     type: units
@@ -31,7 +31,7 @@ contents:
     default: '"ui"'
     type: family
   - name: Link color
-    description: The color of the link in the in-page nav. `Default` uses the default link settings calculated from your background color.
+    description: The color of the link in the in-page navigation. `Default` uses the default link settings calculated from your background color.
     var: $theme-in-page-nav-link-color
     default: '"default"'
     type: color

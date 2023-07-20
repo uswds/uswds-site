@@ -3,14 +3,14 @@ component:
   status: ready
   package: usa-table
   dependencies:
-  variant: scrollable
-guidancePath: guidance/variants/scrollable
+  variant:
+guidancePath: guidance/variants/default
 layout: styleguide
-lead: A scrollable table is ideal for dense data.
-order: 02
+lead: 
+order: 01
 parent: Table
 sitemap: false
-title: Scrollable table
+title: Standard table
 ---
 
 {% include component-preview-and-code.html level="h3" %}

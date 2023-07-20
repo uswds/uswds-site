@@ -8,7 +8,7 @@ image: /img/2021-next-blog/post-3-social-share.jpg
 excerpt: Learn how the Accelerator team collaborated with other digital teams and end-users across the federal government to bring new and updated components to the USWDS community in Release 2.10.
 ---
 
-[Release 2.10]({{ site.baseurl }}/about/releases/#version-2100) of the U.S. Web Design System (USWDS) included eight contributions to the design system from a separate product team in GSA’s Technology Transformation Services. We focused on providing tools and guidance to help support federal agencies’ emergency response efforts.
+[Release 2.10](https://github.com/uswds/uswds/releases/tag/v2.10.0) of the U.S. Web Design System (USWDS) included eight contributions to the design system from a separate product team in GSA’s Technology Transformation Services. We focused on providing tools and guidance to help support federal agencies’ emergency response efforts.
 
 Our team is fortunate to include folks who’ve worked with the USWDS product team on several [10x](https://10x.gsa.gov/) projects, as well as designers and developers who’ve used the design system at other agencies. Lessons learned from two recent 10x projects — [10x Advanced Form Components](https://trello.com/c/r9uQ20rP/75-uswds-advanced-form-controls-formerly-digital-forms-experience-pack) and [10x Accessibility in Data Visualizations](https://trello.com/c/OOOres7a/63-improving-accessibility-in-data-visualizations-formerly-uswds-visualization-tool) (summaries available via Trello) — really helped us get an understanding of how work flows into the design system so we could dive in and get early traction.
 
@@ -34,7 +34,7 @@ No matter how evidence-based, well-architected and cleanly executed a component 
 
 <iframe title="USWDS Monthly Call for December 2020" class="width-full maxw-full" width="560" height="315" src="https://www.youtube.com/embed/OhtiTfKAIRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-We partnered with the product owner to quickly identify inconsistencies and opportunities for improvement, knock those out, and get those improvements into [Release 2.10]({{ site.baseurl }}/about/releases/#version-2100) in time for the monthly call.
+We partnered with the product owner to quickly identify inconsistencies and opportunities for improvement, knock those out, and get those improvements into [Release 2.10](https://github.com/uswds/uswds/releases/tag/v2.10.0) in time for the monthly call.
 
 Of course, a release isn’t the end of the story. Once a component is “in the wild,” teams start getting creative and really pushing the code further. Without fail, these industrious teams find issues or propose opportunities for enhancement, and we love getting their feedback.
 

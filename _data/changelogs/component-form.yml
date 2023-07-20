@@ -7,7 +7,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Fixed a bug that caused standard text input variants to show disabled styles when in forced colors mode.
-    summaryAdditional: Now the disabled border color only shows when the element is correctly disabled.
+    summaryAdditional: Now the disabled border color only shows when the element is disabled.
     affectsStyles: true
     affectsAccessibility: true
     githubPr: 5397

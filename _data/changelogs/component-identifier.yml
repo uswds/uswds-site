@@ -12,7 +12,7 @@ items:
     versionUswds: 3.5.0
   - date: 2023-05-26
     summary: Updated Accessibility statement link guidance.
-    summaryAdditional: Updated and clarified the Identifier guidance for accessibility statements. We also improved the  accessibility statement example links.
+    summaryAdditional: Updated and clarified the identifier guidance for accessibility statements. We also improved the  accessibility statement example links.
     affectsGuidance: true
     githubPr: 2097
     githubRepo: uswds-site

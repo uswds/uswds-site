@@ -6,7 +6,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Removed high-contrast disabled border from text input standard variants.
+    summary: Fixed a bug that caused standard text input variants to show disabled styles when in forced colors mode.
     summaryAdditional: Now the disabled border color only shows when the element is correctly disabled.
     affectsStyles: true
     affectsAccessibility: true

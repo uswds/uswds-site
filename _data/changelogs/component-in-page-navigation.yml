@@ -9,7 +9,7 @@ items:
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 5387
-    versionUswds: 3.6.0
+    versionUswds: 3.5.1
   - date: 2023-06-09
     summary: Fixed a bug that prevented links that start with a number from scrolling when clicked.
     summaryAdditional:

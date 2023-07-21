@@ -2,6 +2,12 @@ title: Button
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added visual alignment to `usa-icons` inside of buttons.
+    affectsStyles: true
+    githubPr: 5398
+    githubRepo: uswds
+    versionUswds: 3.5.1
   - date: 2023-06-09
     summary: Fixed a bug that caused the button `type` attribute to render empty.
     affectsAccessibility: true

@@ -1,0 +1,11 @@
+title: Font size and family
+type: utility
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Fixed a bug that caused `font-[family]-[size]` utility classes to not generate font-family rules.
+    summaryAdditional:
+    affectsStyles: true
+    githubPr: 5388
+    githubRepo: uswds
+    versionUswds: 3.5.1

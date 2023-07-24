@@ -8,7 +8,7 @@ items:
     affectsStyles: true
     githubPr: 5325
     githubRepo: uswds
-    versionUswds: 3.5.0
+    versionUswds: 3.5.1
   - date: 2022-08-29
     summary: Added guidance for using aspect ratio utility classes.
     affectsGuidance: true

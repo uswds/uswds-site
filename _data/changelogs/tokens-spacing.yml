@@ -14,7 +14,7 @@ items:
     affectsStyles: true
     githubPr: 5325
     githubRepo: uswds
-    versionUswds: 3.5.0
+    versionUswds: 3.5.1
   - date: 2023-02-24
     summary: Corrected alternate token name for token `05`.
     summaryAdditional:

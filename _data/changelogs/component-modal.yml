@@ -9,7 +9,7 @@ items:
   affectsJavascript: true
   githubPr: 5315
   githubRepo: uswds
-  versionUswds: 3.5.0
+  versionUswds: N.N.N
 - date: 2023-03-09
   summary: Fixed the display of interactive form elements (like Date Picker) in modal windows.
   summaryAdditional: Now any element in a modal should work as expected.

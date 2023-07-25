@@ -1,19 +1,24 @@
+<h3>Input accepts a single file</h3>
 {% capture file-input %}
   {% library_component usa-file-input %}
 {% endcapture %}{{ file-input | strip }}
 
+<h3>Input accepts only specific file types</h3>
 {% capture file-input-specific %}
   {% library_component usa-file-input~specific %}
 {% endcapture %}{{ file-input-specific | strip }}
 
+<h3>Input accepts any kind of image</h3>
 {% capture file-input-wildcard %}
   {% library_component usa-file-input~wildcard %}
 {% endcapture %}{{ file-input-wildcard | strip }}
 
+<h3>Input accepts multiple files</h3>
 {% capture file-input-multiple %}
   {% library_component usa-file-input~multiple %}
 {% endcapture %}{{ file-input-multiple | strip }}
 
+<h3>Input has an error</h3>
 {% capture file-input-error %}
   {% library_component usa-file-input~error %}
 {% endcapture %}{{ file-input-error | strip }}

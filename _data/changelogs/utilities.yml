@@ -9,7 +9,7 @@ items:
     githubPr: 5209
     githubRepo: uswds
     versionUswds: 3.5.0
-  - date: NNN-NN-NN
+  - date: 2023-06-09
     summary: Updated sass map instructions to reflect new pattern.
     summaryAdditional: Users are now instructed to define only the variable they wish to change instead of having to define the entire map.
     isBreaking: true

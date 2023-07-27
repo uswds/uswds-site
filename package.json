@@ -41,7 +41,7 @@
     "federalist": "npx gulp build",
     "lint": "npx gulp lintJS lintSass && npm run prettier:scss",
     "prestart": "npx gulp build",
-    "proof": "bundle exec htmlproofer --allow-hash-href=true --enforce-https=false --allow-missing-href=true --ignore-empty-alt=true --ignore-status-codes 0,403,429,503,302 --swap-urls 'https\\://designsystem.digital.gov/:/' --ignore-files \"//select-a-language//,//2017//,//2018//,//2019//\" ./_site",
+    "proof": "bundle exec htmlproofer --allow-hash-href=true --enforce-https=false --allow-missing-href=true --ignore-empty-alt=true --ignore-status-codes 0,403,429,503,302 --swap-urls 'https\\://designsystem.digital.gov/:/' --ignore-files \"//select-a-language//,//2017//,//2018//,//2019//,//code-guidelines//\" ./_site",
     "serve": "npm run build:all-assets && bundle exec jekyll serve --drafts --future --incremental --livereload --host=localhost",
     "serve:package": "npm run build:uswds && npm run serve",
     "serve:local": "export LIBRARY_BASE_URL=\"http://localhost:3000\" && npm run serve",
@@ -60,7 +60,7 @@
     "prettier:scss": "npx prettier --write './css/**/*.scss'"
   },
   "devDependencies": {
-    "@18f/identity-stylelint-config": "^1.0.0",
+    "@18f/identity-stylelint-config": "^2.0.0",
     "ansi-colors": "^4.1.1",
     "axe-core": "^4.3.5",
     "browserify": "^17.0.0",
@@ -91,7 +91,7 @@
     "sass": "^1.43.4",
     "simplecrawler": "^1.1.8",
     "snyk": "^1.1064.0",
-    "stylelint": "^14.1.0",
+    "stylelint": "^15.10.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

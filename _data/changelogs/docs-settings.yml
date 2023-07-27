@@ -2,6 +2,14 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed configuration errors with disabled color settings.
+    summaryAdditional: All disabled color settings should now be configurable and accept hex color values.
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 5402
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Added accordion color settings.
     summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.

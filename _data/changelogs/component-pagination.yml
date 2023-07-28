@@ -17,7 +17,7 @@ items:
   affectsStyles: true
   githubPr: 5358
   githubRepo: uswds
-  versionUswds: 3.6.0
+  versionUswds: N.N.N
 - date: 2023-06-09
   summary: Improved legibility in forced colors mode.
   summaryAdditional: Adds a consistent border in forced colors mode.

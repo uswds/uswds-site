@@ -81,7 +81,7 @@ Provide all the fields needed for a user to provide a physical address, even les
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h4 id="pattern-code-physical-address">Pattern code</h4></button>
-  <div id="accordion-code-01" class="usa-accordion__content">
+  <div id="accordion-code-01" class="usa-accordion__content copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/physical-address.html %}{% endhighlight %}
     </div>
@@ -178,7 +178,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h4 id="pattern-code-mailing-address">Pattern code</h4></button>
-  <div id="accordion-code-02" class="usa-accordion__content highlight-code">
+  <div id="accordion-code-02" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/mailing-address.html %}{% endhighlight %}
     </div>

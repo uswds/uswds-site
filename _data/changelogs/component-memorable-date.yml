@@ -8,7 +8,7 @@ items:
   affectsStyles: true
   githubRepo: uswds
   githubPr: 5372
-  versionUswds: 3.6.0
+  versionUswds: N.N.N
 - date: 2022-11-14
   summary: Updated the month entry to a `select` from an `input`.
   summaryAdditional: Recent usability testing indicated that using a `select` for month entry was more clear and reduced mistakes.

@@ -2,7 +2,7 @@ title: Settings
 type: utility
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-07-28
     summary: Added a note about configuring settings that are described using dot notation.
     summaryAdditional:
     affectsGuidance: true

@@ -9,7 +9,7 @@ items:
   affectsStyles: true
   githubPr: 5358
   githubRepo: uswds
-  versionUswds: 3.6.0
+  versionUswds: N.N.N
 - date: NNNN-NN-NN
   summary: Updated the ellipsis color to meet color contrast requirements.
   summaryAdditional:

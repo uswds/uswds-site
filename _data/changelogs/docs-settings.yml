@@ -7,7 +7,7 @@ items:
     affectsStyles: true
     githubPr: 5363
     githubRepo: uswds
-    versionUswds: 3.6.0
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Added accordion color settings.
     summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.

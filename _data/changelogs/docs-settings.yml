@@ -2,6 +2,12 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: 2023-07-28
+    summary: Added a note about configuring settings that are described using dot notation.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2122
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Added accordion color settings.
     summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.

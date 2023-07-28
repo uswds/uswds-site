@@ -2,7 +2,7 @@ title: "Phase 2: Compile"
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-07-28
     summary: Added clarity to the instructions for custom compilers.
     affectsGuidance: true
     githubPr: 2123

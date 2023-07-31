@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Improved screen reader keyboard navigation.
+    summary: Improved keyboard navigation for screen readers.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 5374

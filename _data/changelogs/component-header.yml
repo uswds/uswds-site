@@ -2,6 +2,13 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed a Safari-only bug that caused the mobile menu to unexpectedly close at a narrow range of screen widths.
+    summaryAdditional:
+    affectsJavascript: true
+    githubPr: 5410
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-07-14
     summary: Added header variants table to guidance page.
     affectsGuidance: true

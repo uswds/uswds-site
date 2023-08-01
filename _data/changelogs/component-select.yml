@@ -2,6 +2,18 @@ title: Select
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Added ellipses to multiple select overflow.
+  summaryAdditional: This provides a clear indication to users that there is text being cut off by the select width.
+  isBreaking: false
+  affectsAccessibility: false
+  affectsGuidance: false
+  affectsJavascript: false
+  affectsMarkup: false
+  affectsStyles: true
+  githubPr: 5268
+  githubRepo: uswds
+  versionUswds: N.N.N
 - date: 2023-06-09
   summary: Improved consistency and visibility of disabled styles.
   summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.

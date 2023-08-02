@@ -231,8 +231,12 @@ $site-secondary-nav-input-height: 38px;
 
   @include at-media("desktop") {
     @include u-margin-y(0, "!important");
-    margin-right: units(2);
+    margin-right: units(1);
     width: auto !important;
+  }
+
+  @include at-media("desktop-lg") {
+    margin-right: units(2);
   }
 
   .usa-input {

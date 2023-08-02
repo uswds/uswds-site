@@ -77,7 +77,7 @@ npm will show some notifications, install USWDS, and display the version number 
 {:.site-terminal}
 ```json
 "dependencies": {
-  "uswds": "^{{ site.uswds_version }}" [or another version number]
+  "@uswds/uswds": "^{{ site.uswds_version }}" [or another version number]
 }
 ```
 

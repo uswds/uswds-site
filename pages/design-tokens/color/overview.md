@@ -9,6 +9,7 @@ redirect_from:
   - /components/colors/
   - /design-tokens/color/
   - /colors/
+  - /color/
 subnav:
   - text: Introduction
     href: '#introduction'

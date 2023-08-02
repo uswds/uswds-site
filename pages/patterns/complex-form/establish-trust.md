@@ -77,7 +77,7 @@ Provide clear information on why it is necessary to complete the form, what info
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
-  <div id="accordion-code-01" class="usa-accordion__content highlight-code">
+  <div id="accordion-code-01" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
        {% highlight text%}{% include patterns/establish-trust.html %}{% endhighlight %}
     </div>

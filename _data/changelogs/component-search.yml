@@ -2,6 +2,14 @@ title: Search
 type: component
 changelogURL:
 items:
+- date: 2023-06-09
+  summary: Improved legibility in forced colors mode.
+  summaryAdditional: Adds a consistent border in forced colors mode.
+  affectsAccessibility: true
+  affectsStyles: true
+  githubPr: 5147
+  githubRepo: uswds
+  versionUswds: 3.5.0
 - date: 2022-04-28
   summary: Updated to Sass module syntax and new package structure.
   isBreaking: true

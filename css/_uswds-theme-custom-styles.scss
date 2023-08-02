@@ -5,6 +5,7 @@
 @import "custom-styles/site-header";
 @import "custom-styles/card-policy";
 @import "custom-styles/highlight";
+@import "custom-styles/copy-code-btn";
 
 // ========================================
 // CUSTOM PROJECT SASS
@@ -64,6 +65,10 @@ img {
 
 .usa-prose .site-prose {
   @include typeset("lang");
+}
+
+abbr[title="required"] {
+  text-decoration: none;
 }
 
 // ========================================
@@ -219,7 +224,8 @@ img {
 
 // Main Content --------- //
 
-.main-content {
+.main-content,
+.usa-in-page-nav-container main {
   @include u-pin("right");
   @include u-pin("bottom");
   display: inline-block; // starting: not scrolled

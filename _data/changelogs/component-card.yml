@@ -8,7 +8,14 @@ items:
     affectsStyles: true
     githubPr: 5325
     githubRepo: uswds
-    versionUswds: 3.5.1
+    versionUswds: N.N.N
+  - date: 2023-06-09
+    summary: Replaced `button` elements with links styled as buttons.
+    affectsMarkup: true
+    affectsAccessibility: true
+    githubPr: 4385
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-08-29
     summary: Added guidance for using aspect ratio utility classes.
     affectsGuidance: true

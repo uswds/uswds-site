@@ -2,6 +2,30 @@ title: Combo box
 type: component
 changelogURL:
 items:
+  - date: 2023-06-09
+    summary: Improved consistency and visibility of disabled styles.
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5063
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency of keyboard actions.
+    summaryAdditional: Users can now to use `Tab` to escape the combo box selection without making a choice, and `Space` to select the current highlighted option when within the dropdown menu.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 5160
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-11-14
     summary: Added note on usability issues with assistive technology.
     summaryAdditional: Testing with people using assistive technology revealed usability concerns that require additional investigation. Until addressed, consider using a Select component instead of a Combo box.
@@ -28,7 +52,7 @@ items:
     githubPr: 1497
     githubRepo: uswds-site
   - date: 2022-04-11
-    summary: Added support for high contrast mode and forced colors.
+    summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true

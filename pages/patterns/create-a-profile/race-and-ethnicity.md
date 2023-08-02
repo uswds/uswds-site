@@ -84,7 +84,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
+  <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight html%}{% include patterns/race-and-ethnicity.html %}{% endhighlight %}
     </div>

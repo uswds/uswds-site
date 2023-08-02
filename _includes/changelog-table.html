@@ -46,6 +46,9 @@
           {% if item.affectsAssets %}
             <li><span class="output-neutral">Assets</span></li>
           {% endif %}
+          {% if item.affectsContent %}
+            <li><span class="output-neutral">Content</span></li>
+          {% endif %}
           {% if item.affectsGuidance %}
             <li><span class="output-neutral">Guidance</span></li>
           {% endif %}

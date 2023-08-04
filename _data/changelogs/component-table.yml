@@ -4,6 +4,21 @@ type: component
 changelogURL:
 
 items:
+  - date: NNNN-NN-NN
+    summary: Created the `.usa-table--sticky-header` variant to allow sticky positioning on table headers.
+    summaryAdditional:
+    affectsStyles: true
+    githubPr: 5420
+    githubRepo: uswds
+    versionUswds: N.N.N
+  - date: NNNN-NN-NN
+    summary: Added `$theme-table-background-color` and `$theme-table-sticky-top-offset` settings.
+    summaryAdditional:
+    affectsStyles: true
+    affectsSetings: true
+    githubPr: 5420
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-07-17
     summary: Restored standard and striped table component previews to guidance page.
     summaryAdditional:

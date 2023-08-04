@@ -2,6 +2,14 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added `$theme-table-background-color` and `$theme-table-sticky-top-offset` settings.
+    summaryAdditional:
+    affectsStyles: true
+    affectsSetings: true
+    githubPr: 5420
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-07-28
     summary: Added a note about configuring settings that are described using dot notation.
     summaryAdditional:

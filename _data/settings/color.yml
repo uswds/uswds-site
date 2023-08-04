@@ -438,23 +438,35 @@ contents:
     var: $theme-color-disabled-family
     default: '"gray"'
     type: color
+  - name: disabled-lighter
+    subsection: state color token
+    description: Use grade 20.
+    var: $theme-color-disabled-lighter
+    default: '"gray-20"'
+    type: color
   - name: disabled-light
     subsection: state color token
-    description: Use grade 10.
+    description: Use grade 40.
     var: $theme-color-disabled-light
-    default: '"gray-10"'
+    default: '"gray-40"'
     type: color
   - name: disabled
     subsection: state color token
-    description: Use grade 20.
+    description: Use grade 50.
     var: $theme-color-disabled
-    default: '"gray-20"'
+    default: '"gray-50"'
     type: color
   - name: disabled-dark
     subsection: state color token
-    description: Use grade 30.
+    description: Use grade 70.
     var: $theme-color-disabled-dark
-    default: '"gray-30"'
+    default: '"gray-70"'
+    type: color
+  - name: disabled-darker
+    subsection: state color token
+    description: Use grade 90.
+    var: $theme-color-disabled-darker
+    default: '"gray-90"'
     type: color
 
   - name: Body background color

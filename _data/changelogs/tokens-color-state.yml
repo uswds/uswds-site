@@ -2,6 +2,13 @@ title: State color tokens
 type: token
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added `disabled-lighter` and `disabled-darker` tokens.
+    summaryAdditional:
+    affectsStyles: true
+    githubPr: 5402
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2021-12-21
     summary: Updated the documentation for `success-dark` and `success-darker` to match the current USWDS values.
     summaryAdditional:

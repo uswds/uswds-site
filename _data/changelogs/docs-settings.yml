@@ -3,6 +3,14 @@ type: utility
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Added `$theme-color-disabled-lighter` and `$theme-color-disabled-darker` settings.
+    summaryAdditional:
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 5402
+    githubRepo: uswds
+    versionUswds: N.N.N
+  - date: NNNN-NN-NN
     summary: Fixed configuration errors with disabled color settings.
     summaryAdditional: All disabled color settings should now be configurable and accept hex color values.
     affectsSettings: true

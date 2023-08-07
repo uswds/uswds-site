@@ -3,8 +3,9 @@ type: utility
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added `$theme-color-disabled-lighter` and `$theme-color-disabled-darker` settings.
-    summaryAdditional:
+    summary: Updated default disabled color settings values and added `$theme-color-disabled-lighter` and `$theme-color-disabled-darker`.
+    summaryAdditional: If your project customizes disabled colors, confirm that disabled states meet color contrast requirements.
+    isBreaking: true
     affectsSettings: true
     affectsStyles: true
     githubPr: 5402

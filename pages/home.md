@@ -59,6 +59,10 @@ graphic_list:
     <h2 class="font-lang-xl margin-y-0 line-height-serif-2">Showcase</h2>
     <div class="grid-row grid-gap tablet:margin-top-3">
       <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/NIH.webp" alt="Preview image of National Institutes of Health Library" width="960" height="540">
+        <a href="https://plainlanguage.gov/">National Institutes of Health Library</a>
+      </div>
+      <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="Preview image of vote.gov home page" width="960" height="540">
         <a href="https://vote.gov/">vote.gov</a>
       </div>
@@ -82,10 +86,6 @@ graphic_list:
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/webp/home/showcase/seedfund.webp" alt="Preview image of Seed Fund home page" width="960" height="540">
         <a href="https://seedfund.nsf.gov/">America’s Seed Fund</a>
-      </div>
-      <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/plainlanguage.webp" alt="Preview image of Plain Language home page" width="960" height="540">
-        <a href="https://plainlanguage.gov/">Plain Language</a>
       </div>
     </div>
   </div>

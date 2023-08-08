@@ -5,6 +5,7 @@ items:
   - date: NNNN-NN-NN
     summary: Added `disabled-lighter` and `disabled-darker` tokens.
     summaryAdditional: Also updated the default values for all disabled tokens.
+    isBreaking: true
     affectsStyles: true
     githubPr: 5402
     githubRepo: uswds

@@ -4,14 +4,12 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Fixed a bug that caused the hover state to adopt disabled styling.
-    summaryAdditional:
     affectsStyles: true
     githubPr: 5378
     githubRepo: uswds
     versionUswds: N.N.N
   - date: NNNN-NN-NN
     summary: Improved legibility in forced colors mode.
-    summaryAdditional:
     affectsStyles: true
     githubPr: 5378
     githubRepo: uswds

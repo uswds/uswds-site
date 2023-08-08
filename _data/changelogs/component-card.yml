@@ -3,8 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated exdent negative border calculation.
-    summaryAdditional: The calculation now properly accepts all expected border tokens including string tokens.
+    summary: Fixed a bug that prevented `$theme-card-border-width` from accepting `0` or string tokens.
     affectsStyles: true
     githubPr: 5325
     githubRepo: uswds

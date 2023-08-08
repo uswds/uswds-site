@@ -3,8 +3,8 @@ type: token
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated token value of `0` to match other tokens by using `spacing-multiple()`
-    summaryAdditional: This corrects issues found when `units(0)` is used in a `calc()` function
+    summary: Fixed a bug that prevented `units(0)` from being used in a `calc()` function.
+    summaryAdditional: This change updated the unit-less `0` token value to have a unit when needed.
     isBreaking:
     affectsAccessibility:
     affectsAssets:

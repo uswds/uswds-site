@@ -4,8 +4,6 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Added the optional `data-main-content-selector` attribute.
-    summaryAdditional: This attribute allows users to designate which element they want the component to pull headers from.
-      If `data-main-content-selector` is not defined, the component will pull from the `<main>` element.
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 5387

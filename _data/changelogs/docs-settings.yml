@@ -2,6 +2,42 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: 2023-07-28
+    summary: Added a note about configuring settings that are described using dot notation.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2122
+    githubRepo: uswds-site
+  - date: 2023-06-09
+    summary: Added accordion color settings.
+    summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsSettings: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: false
+    githubPr: 2081
+    githubRepo: uswds-site
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Added settings for announcing external links.
+    summaryAdditional: Added `$theme-external-link-sr-label-tab-same` and `$theme-external-link-sr-label-tab-new` to control how screen readers announce external links.
+    affectsSettings: true
+    affectsAccessibility: true
+    githubPr: 5166
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Updated individual Sass map settings without affecting defaults.
+    summaryAdditional: Now adjusting a single Sass map setting no longer sets all other values in the map to `false`. Users can now update only the map values they wish to change.
+    isBreaking: true
+    affectsGuidance: true
+    affectsStyles: true
+    githubPr: 5216
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2023-03-20
     summary: Updated settings information to match what is found in USWDS.
     summaryAdditional:
@@ -109,7 +145,7 @@ items:
     versionUswds: 3.0.2
   - date: 2022-06-17
     summary: Fixed errors related to `$theme-body-background-color`.
-    summaryAdditional:  Updated icons so that custom background colors no longer cause compile failures.
+    summaryAdditional: Updated icons so that custom background colors no longer cause compile failures.
     affectsAccessibility:
     affectsAssets: true
     affectsGuidance:

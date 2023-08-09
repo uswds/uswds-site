@@ -2,6 +2,23 @@ title: "Phase 2: Compile"
 type: documentation
 changelogURL:
 items:
+  - date: 2023-07-28
+    summary: Added clarity to the instructions for custom compilers.
+    affectsGuidance: true
+    githubPr: 2123
+    githubRepo: uswds-site
+  - date: 2023-05-11
+    summary: Replaced references to `copySetup` with `copyTheme`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 2071
+    githubRepo: uswds-site
   - date: 2022-10-11
     summary: Restructured content to add clarity.
     summaryAdditional:

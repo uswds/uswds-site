@@ -34,25 +34,26 @@ U.S. Web Design System source code is written in Sass, a powerful stylesheet lan
 
 ## Introducing uswds-compile
 
-We’ve developed `uswds-compile`, a tool [hosted on GitHub](https://github.com/uswds/uswds-compile), to help teams compile USWDS Sass files. This tool provides simple Gulp 4 functions that copy USWDS static assets into your project and transform USWDS Sass into browser-readable CSS. Additionally, `uswds-compile` applies Autoprefixer to all compiled code to make sure your CSS is browser-compatible.
+We recommend using `uswds-compile`, a USWDS tool [hosted on GitHub](https://github.com/uswds/uswds-compile), as a quick way to get up and running with Sass compilation for USWDS.
 
-We recommend using `uswds-compile` as a quick way to get up and running with Sass compilation for USWDS .
+This tool provides simple Gulp 4 functions that copy USWDS static assets into your project and transform USWDS Sass into browser-readable CSS. Additionally, `uswds-compile` applies Autoprefixer to all compiled code to make sure your CSS is browser-compatible.
 
-{: .site-note }
-Note: One of the benefits of using `uswds-compile` is that it will set up a Sass entry point for you. If you plan on using `uswds-compile`, you can safely skip [About Sass entry points](#about-sass-entry-points) and jump straight to the [step-by-step instructions](#step-1-install-uswds-compile) that explain how to install and use `uswds-compile`.
+Later in this guide we will walk you through setting up Sass compilation for your project with `uswds-compile`. To get started, jump ahead to the [Using uswds-compile](#using-uswds-compile) section below.
 
-If you prefer to set up Sass compilation yourself, the next thing you'll need to do is set up (or edit) your Sass entry point.
+## Loading USWDS Sass with a custom compiler
+If you already have Sass compilation set up on your project, you'll need to load USWDS Sass and your USWDS settings configuration into your Sass entry point.
 
-## About Sass entry points
+### About Sass entry points
 
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase. Often, a project's Sass entry point is named something like `index.scss` or `styles.scss`.
 
-### Setting up USWDS in your Sass entry point
-If your project does not yet have a Sass entry point, create a file called `index.scss` or `styles.scss`.
+### Creating a Sass entry point
+If your project does not yet have a Sass entry point, create a file called `index.scss` or `styles.scss`. This file will typically live at the root of your project's Sass directory.
 
- Your project’s Sass entry point is a simple file that will only need to do the following three tasks:
+### Loading USWDS in your Sass entry point
+Your project’s Sass entry point is a simple file that will need to:
 
-1. Load or define [USWDS settings]({{ site.baseurl }}/documentation/settings/) (required)
+1. Load your project's [USWDS settings configuration]({{ site.baseurl }}/documentation/settings/) (required)
 2. Load USWDS source code (required)
 3. Load your project’s custom Sass (optional)
 
@@ -61,23 +62,23 @@ For your entry point to complete these tasks, you will need to add the following
 ```scss
 /* styles.scss */
 
-// 1. Load USWDS settings
-@forward "uswds-settings.scss";
+// 1. Load your project's USWDS settings configuration
+@forward "uswds-theme.scss";
 
 // 2. Load USWDS source code
 @forward "./path/to/source/uswds";
 
 // 3. Load your project's custom Sass
-@forward "project-custom.scss";
+@forward "project-styles.scss";
 ```
 
 Note that each `@forward` reference in this example is tied to one of the tasks listed above.
 
 In plain language, this code says:
 
-1. **Get the instructions**: Get the USWDS settings that tell the Design System how to build the styles. Settings are the first thing you'll need to include in your entry point.
+1. **Get the instructions**: Add the USWDS settings configuration that tells the Design System how to build the styles.
 
-    In USWDS, settings are Sass variables that can be configured via Sass' `@use...with()` rule. You can find full instructions for configuring USWDS settings, along with a list of all available settings, on the [Settings page]({{ site.baseurl }}/documentation/settings/).
+    Your settings configuration is the first thing you'll need to include in your entry point. Often, this configuration will live in its own file, which in this example is called `uswds-theme.scss`. You can find full instructions for configuring USWDS settings, along with a list of all available settings, on the [Settings page]({{ site.baseurl }}/documentation/settings/).
 
 2. **Create the foundation**: Build all USWDS styles from these settings.
 
@@ -87,9 +88,12 @@ In plain language, this code says:
 
     To load the `uswds` package, you must provide a path to its `index.scss` entry point. If you installed USWDS 3 with npm, the complete path to this file is: `./node_modules/@uswds/uswds/packages/uswds/_index.scss`.
 
-3. **Build new work on top of that foundation**: Finally, add any custom project styles built from design system code.
+3. **Build new work on top of that foundation**: Finally, add any custom project styles built from Design System code.
 
-    After you've loaded the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings and USWDS source code in your Sass entry point.
+    After you've loaded the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings configuration and USWDS source code in your Sass entry point.
+
+{:.site-note}
+**Note:** USWDS relies on [Autoprefixer](https://github.com/postcss/autoprefixer) to make its compiled CSS browser-compatible. If your compiler does not already use Autoprefixer, we strongly encourage that you add it to your project.
 
 ## Using uswds-compile
 Complete the following steps to install, configure, and use `uswds-compile`:
@@ -104,7 +108,13 @@ npm install @uswds/compile --save-dev
 
 ### Step 2: Create a gulpfile
 
-Once installed, create a file called `gulpfile.js` at the root of your project by running the command `touch gulpfile.js` (alternatively, use an existing gulpfile if one already exists). This file will need to do the following:
+If your project does not yet have a `gulpfile.js` file, create one at the root of your project by running this command:
+
+```
+touch gulpfile.js
+```
+
+This file will need to do the following:
 
 1. [Import the `@uswds/compile` package](#step-3-import-the-uswds-compile-package)
 2. [Set the project's USWDS version](#step-4-set-uswds-version)
@@ -213,12 +223,12 @@ Function | Description
 `compileIcons` | Build the USWDS icon sprite into `paths.dist.img`
 `compileSass` | Compile Sass into `paths.dist.css`
 `default` | `watch`
-`copyAll` | `copySetup` + `copyAssets`
+`copyAll` | `copyTheme` + `copyAssets`
 `copyAssets` | Copies all static assets: `copyFonts` + `copyImages` + `copyJS`
 `copyFonts` | Copy USWDS fonts to `paths.dist.fonts`
 `copyImages` | Copy USWDS images to `paths.dist.img`
 `copyJS` | Copy USWDS compiled JavaScript to `paths.dist.js`
-`copySetup` | Copy USWDS theme files (Sass entry point and settings files) from the `uswds` package to `paths.dist.sass`
+`copyTheme` | Copy USWDS theme files (Sass entry point and settings files) from the `uswds` package to `paths.dist.sass`
 `init` | `copyAll` + `compile`
 `updateUswds` | `copyAssets` + `compile`
 `watch` | Compiles, then recompiles when there are changes to Sass files in `paths.dist.sass` and `paths.src.projectSass`
@@ -241,7 +251,7 @@ npx gulp compile
 
 When your `gulpfile.js` is ready, initialize your project to copy all the necessary Sass, image, font, and Javascript assets from the USWDS source code.
 
-Initialize your project and get started by running the following command:
+If you defined the `init` export in [Step 6](#step-6-export-compile-functions), you can initialize your project and get started by running the following command:
 
 ```bash
 npx gulp init

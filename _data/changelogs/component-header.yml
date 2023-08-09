@@ -2,10 +2,34 @@ title: Header
 type: component
 changelogURL:
 items:
-  - date: 2023-03-13
-    summary: Logo text width setting now works as expected.
-    summaryAdditional: Now the design system respects the value passed to `$theme-header-logo-text-width`.
+  - date: 2023-07-14
+    summary: Added header variants table to guidance page.
+    affectsGuidance: true
+    githubPr: 2139
+    githubRepo: uswds-site
+  - date: 2023-06-09
+    summary: Fixed a bug that caused inaccurate megamenu template markup in the documentation.
+    summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
     isBreaking: false
+    affectsGuidance: true
+    affectsMarkup: true
+    githubPr: 5311
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Removed the `id` attribute from the `usa-logo` element.
+    summaryAdditional:
+    isBreaking: false
+    affectsMarkup: true
+    githubPr: 5319
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-03-13
+    summary: Extended headers now respect the value passed to `$theme-header-logo-text-width`.
+    summaryAdditional:
+      For extended headers, the default setting value is narrower than
+      the previous hard-coded value, which can cause unexpected line breaks for `usa-logo__text`.
+    isBreaking: true
     affectsStyles: true
     githubPr: 5008
     githubRepo: uswds
@@ -72,7 +96,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Added support for high contrast mode and forced colors.
+    summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -88,7 +112,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.0
   - date: 2021-12-14
-    summary:  Improved resilience of icon-only functionality in search.
+    summary: Improved resilience of icon-only functionality in search.
     summaryAdditional: Updated search to add a text equivalent if the image path is broken and does not load.
     isBreaking: true
     affectsAccessibility: true

@@ -2,6 +2,23 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
+  - date: 2023-06-09
+    summary: Fixed a bug that prevented links that start with a number from scrolling when clicked.
+    summaryAdditional:
+    affectsJavascript: true
+    githubPr: 5200
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-03-27
+    summary: Updated the documentation to clarify the component's recommended display location.
+    summaryAdditional:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubRepo: uswds-site
+    githubPr: 2033
+    versionUswds:
   - date: 2023-03-13
     summary: URL in address bar is updated when navigating component.
     summaryAdditional: Users can now see the proper anchor link in the address bar when navigating from the in-page navigation.

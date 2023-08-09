@@ -2,6 +2,21 @@ title: Identifier
 type: component
 changelogURL:
 items:
+  - date: 2023-06-09
+    summary: Updated Accessibility statement link text.
+    summaryAdditional: Updated the identifier to use the text "Accessibility statement" (EN) / "Declaración de accesibilidad" (ES) for the required link to an accessibility statement.
+    isBreaking: true
+    affectsContent: true
+    githubPr: 5278
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Updated Accessibility statement link guidance.
+    summaryAdditional: Updated and clarified the identifier guidance for accessibility statements. We also improved the  accessibility statement example links.
+    affectsGuidance: true
+    githubPr: 2097
+    githubRepo: uswds-site
+    versionUswds: 3.5.0
   - date: 2022-10-19
     summary: Used valid element for identity's aria-label.
     summaryAdditional: We updated the identity section of the identifier to use a `section` instead of a `div` so its `aria-label` will apply to a valid element.

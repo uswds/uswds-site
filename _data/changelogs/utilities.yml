@@ -2,6 +2,26 @@ title: Utilities
 type: utility
 changelogURL:
 items:
+  - date: 2023-06-09
+    summary: Removed unused utility builder comments from compiled CSS.
+    summaryAdditional: This update significantly reduces the compiled file size.
+    affectsStyles: true
+    githubPr: 5209
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Updated sass map instructions to reflect new pattern.
+    summaryAdditional: Users are now instructed to define only the variable they wish to change instead of having to define the entire map.
+    isBreaking: true
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 5216
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2023-03-09
     summary: Outline utility and mixin now accept the 05 token.
     summaryAdditional: Now, the `.outline-05` utility class and the `u-outline('05')` mixin should work as expected.

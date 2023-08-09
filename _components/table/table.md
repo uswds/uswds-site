@@ -23,6 +23,8 @@ subnav:
   href: '#responsive-stacked-table'
 - text: Sortable table rows
   href: '#sortable-table-rows'
+- text: Sticky table headers
+  href: '#sticky-table-headers'
 - text: Guidance
   href: '#table-guidance'
 - text: Package
@@ -41,6 +43,7 @@ tags:
   - borderless
   - scrollable
   - scrolling
+  - sticky
 title: Table
 type: component
 variants:

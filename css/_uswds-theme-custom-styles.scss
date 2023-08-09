@@ -436,7 +436,7 @@ abbr[title="required"] {
       margin: units(2) units(2) units(4);
     }
     @include at-media("widescreen") {
-      pointer-events: all;
+      pointer-events: auto;
     }
   }
 }

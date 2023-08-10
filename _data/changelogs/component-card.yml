@@ -3,11 +3,10 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added `usa-card__header--exdent` variant to variants table
+    summary: Added `usa-card__header--exdent` variant to variants table.
     affectsGuidance: true
     githubPr: 2228
     githubRepo: uswds-site
-    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Replaced `button` elements with links styled as buttons
     affectsMarkup: true

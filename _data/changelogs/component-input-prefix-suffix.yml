@@ -2,6 +2,12 @@ title: Input prefix or suffix
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed redundant media query for disabled high contrast borders.
+    affectsStyles: true
+    githubPr: 5433
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.

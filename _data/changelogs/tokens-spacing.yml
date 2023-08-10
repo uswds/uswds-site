@@ -3,8 +3,8 @@ type: token
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Fixed a bug that caused an error when using `units(0)` within a `calc()` function.
-    summaryAdditional: Now, `units(0)` will return `0rem` to allow it's use in sass functions. If the unit is not needed, it is automatically dropped during compilation.
+    summary: Updated `0` token values to include units when needed.  
+    summaryAdditional: Now, `units(0)` can be used in `calc()` functions. 
     isBreaking:
     affectsAccessibility:
     affectsAssets:

@@ -434,6 +434,10 @@ abbr[title="required"] {
       @include u-bg($site-background-color);
       margin: units(2) units(2) units(4);
     }
+
+    &#{$external-href} {
+      display: inline-block;
+    }
   }
 }
 

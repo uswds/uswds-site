@@ -63,10 +63,6 @@ graphic_list:
         <a href="https://www.nihlibrary.nih.gov/">National Institutes of Health Library</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="Preview image of vote.gov home page" width="960" height="540">
-        <a href="https://vote.gov/">vote.gov</a>
-      </div>
-      <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/webp/home/showcase/va-healthcare.webp" alt="Preview image of Veterans affairs home page" width="960" height="540">
         <a href="https://www.va.gov/">U.S. Department of Veterans Affairs</a>
       </div>
@@ -82,6 +78,10 @@ graphic_list:
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/webp/home/showcase/pubmed.webp" alt="Preview image of PubMed Labs home page" width="960" height="540">
         <a class="font-lang-md" href="https://www.ncbi.nlm.nih.gov/labs/pubmed/">PubMed Labs | U.S. National Library of Medicine</a>
+      </div>
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="Preview image of vote.gov home page" width="960" height="540">
+        <a href="https://vote.gov/">vote.gov</a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/webp/home/showcase/seedfund.webp" alt="Preview image of Seed Fund home page" width="960" height="540">

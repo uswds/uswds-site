@@ -59,7 +59,7 @@ graphic_list:
     <h2 class="font-lang-xl margin-y-0 line-height-serif-2">Showcase</h2>
     <div class="grid-row grid-gap tablet:margin-top-3">
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/NIH.webp" alt="Preview image of National Institutes of Health Library" width="960" height="540">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/NIH.webp" alt="Preview image of National Institutes of Health Library home page" width="960" height="540">
         <a href="https://www.nihlibrary.nih.gov/">National Institutes of Health Library</a>
       </div>
       <div class="tablet:grid-col">

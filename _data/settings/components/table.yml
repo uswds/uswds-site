@@ -3,7 +3,7 @@ contents:
   - name: Background color
     description: Defines the table background color. A value of `default` uses the body background color.
     var: $theme-table-background-color
-    default: '"white"'
+    default: 'default'
     type: color
   - name: Border color
     description: Defines a border color for table cells. A value of `default` uses either the default text or reverse text color depending on the site background color.

@@ -2,6 +2,12 @@ title: Button
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Created storybook preview for links styled as buttons
+    affectsContent: true
+    githubPr: 5435
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Fixed a bug that caused the button `type` attribute to render empty.
     affectsAccessibility: true

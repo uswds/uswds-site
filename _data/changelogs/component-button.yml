@@ -4,7 +4,6 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Created storybook preview for links styled as buttons
-    affectsContent: true
     githubPr: 5435
     githubRepo: uswds
     versionUswds: N.N.N

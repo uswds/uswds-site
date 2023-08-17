@@ -40,6 +40,9 @@ tags:
   - nav
 implementation:
   initProps:
+    - property: "`data-heading-selector`"
+      description: The list of header levels that should be included in the link list.
+      default: '"h2 h3"'
     - property: "`data-main-content-selector`"
       description: The element the component pulls headers from.
       default: '`<main>`'

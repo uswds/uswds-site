@@ -3,6 +3,13 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Added the optional `data-heading-selector` attribute.
+    affectsJavascript: true
+    affectsStyles: true
+    githubRepo: uswds
+    githubPr: 5444
+    versionUswds: N.N.N
+  - date: NNNN-NN-NN
     summary: Added the optional `data-main-content-selector` attribute.
     affectsJavascript: true
     githubRepo: uswds

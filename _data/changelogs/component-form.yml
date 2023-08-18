@@ -5,6 +5,14 @@ title: Form
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed a bug that caused standard text input variants to show disabled styles when in forced colors mode.
+    summaryAdditional: Now the disabled border color only shows when the element is disabled.
+    affectsStyles: true
+    affectsAccessibility: true
+    githubPr: 5397
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Updated guidance to suggest identifying required and optional fields.
     summaryAdditional: We added a new section on identifying required fields and now suggest labeling required fields with a red asterisk and optional fields with the word "optional".

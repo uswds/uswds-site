@@ -2,6 +2,12 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added the optional `data-main-content-selector` attribute.
+    affectsJavascript: true
+    githubRepo: uswds
+    githubPr: 5387
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Fixed a bug that prevented links that start with a number from scrolling when clicked.
     summaryAdditional:

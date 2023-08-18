@@ -2,19 +2,19 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-08-18
     summary: Updated JavaScript to exclude hidden headers from the in-page navigation link list.
     summaryAdditional: Any header with a style of `display:none` or `visibility:hidden` will now be excluded from the list of links in the component.
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 5393
-    versionUswds: N.N.N
-  - date: NNNN-NN-NN
+    versionUswds: 3.6.0
+  - date: 2023-08-18
     summary: Added the optional `data-main-content-selector` attribute.
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 5387
-    versionUswds: N.N.N
+    versionUswds: 3.6.0
   - date: 2023-06-09
     summary: Fixed a bug that prevented links that start with a number from scrolling when clicked.
     summaryAdditional:

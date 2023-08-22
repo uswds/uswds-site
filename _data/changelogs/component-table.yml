@@ -7,7 +7,7 @@ items:
   - date: NNNN-NN-NN
     summary: Fixed a Safari-only bug that caused the header to unexpectedly close at a narrow range of window widths.
     summaryAdditional:
-    isBreaking: false
+    affectsJavascript: true
     affectsStyles: true
     githubPr: 5443
     githubRepo: uswds

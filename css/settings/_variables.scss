@@ -3,6 +3,7 @@ $color-grid-dark: "base";
 $color-grid-light: "base-lightest";
 $font-monospace: Consolas, Monaco, "Andale Mono", monospace;
 $asset-path: "../";
+$font-path: "#{$asset-path}fonts";
 $image-path: "#{$asset-path}img";
 
 $external-href: '[href^="http"]:not([href*="designsystem.digital.gov"])';

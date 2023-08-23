@@ -4,17 +4,25 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Added the optional `data-heading-selector` attribute.
+    summaryAdditional: This attribute allows users to list the heading levels that should be included in the component link list.
     affectsJavascript: true
     affectsStyles: true
     githubRepo: uswds
     githubPr: 5444
     versionUswds: N.N.N
-  - date: NNNN-NN-NN
-    summary: Added the optional `data-main-content-selector` attribute.
+  - date: 2023-08-23
+    summary: Updated JavaScript to exclude headers that have a style of `display:none` or `visibility:hidden` from the component link list.
+    summaryAdditional:
+    affectsJavascript: true
+    githubRepo: uswds
+    githubPr: 5393
+    versionUswds: 3.6.0
+  - date: 2023-08-23
+    summary: Added the option to designate a custom main content region with the `data-main-content-selector` attribute.
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 5387
-    versionUswds: N.N.N
+    versionUswds: 3.6.0
   - date: 2023-06-09
     summary: Fixed a bug that prevented links that start with a number from scrolling when clicked.
     summaryAdditional:

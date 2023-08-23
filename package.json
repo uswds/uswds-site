@@ -101,6 +101,6 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "^1.0.0-beta.3",
-    "@uswds/uswds": "github:uswds/uswds#al-in-page-nav-header-select"
+    "@uswds/uswds": "^3.6.0"
   }
 }

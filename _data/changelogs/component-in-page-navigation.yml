@@ -3,14 +3,14 @@ type: component
 changelogURL:
 items:
   - date: 2023-08-23
-    summary: Updated JavaScript to exclude hidden headers from the in-page navigation link list.
-    summaryAdditional: Any header with a style of `display:none` or `visibility:hidden` will now be excluded from the list of links in the component.
+    summary: Updated JavaScript to exclude headers that have a style of `display:none` or `visibility:hidden` from the component link list.
+    summaryAdditional: 
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 5393
     versionUswds: 3.6.0
   - date: 2023-08-23
-    summary: Added the optional `data-main-content-selector` attribute.
+    summary: Added the option to designate a custom main content region with the `data-main-content-selector` attribute.
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 5387

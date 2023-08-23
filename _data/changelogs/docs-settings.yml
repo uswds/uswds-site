@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: 2023-08-23
     summary: Updated default disabled color settings values and added `$theme-color-disabled-lighter` and `$theme-color-disabled-darker`.
-    summaryAdditional: If your project customizes disabled colors, confirm that disabled states meet color contrast requirements.
+    summaryAdditional: If your project customizes disabled color settings, you probably need to update your configuration. 
     isBreaking: true
     affectsSettings: true
     affectsStyles: true

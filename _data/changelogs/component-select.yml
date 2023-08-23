@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
 - date: 2023-08-23
-  summary: Added ellipses to multiple select overflow.
-  summaryAdditional: This provides a clear indication to users that there is text being cut off by the select width.
+  summary: Added ellipses to overflow text in the multiple select variant.
+  summaryAdditional: This provides a clear indication to users that there is text that extends beyond the select width.
   isBreaking: false
   affectsAccessibility: false
   affectsGuidance: false

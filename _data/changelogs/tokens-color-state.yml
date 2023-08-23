@@ -3,8 +3,8 @@ type: token
 changelogURL:
 items:
   - date: 2023-08-23
-    summary: Added `disabled-lighter` and `disabled-darker` tokens.
-    summaryAdditional: Also updated the default values for all disabled tokens.
+    summary: Updated the default values for all disabled tokens and added `disabled-lighter` and `disabled-darker` tokens.
+    summaryAdditional: If your project uses disabled tokens, you probably need to update your token references. 
     isBreaking: true
     affectsStyles: true
     githubPr: 5402

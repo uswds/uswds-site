@@ -2,6 +2,19 @@ title: Spacing tokens
 type: token
 changelogURL:
 items:
+  - date: 2023-08-23
+    summary: Updated `0` token values to include units when needed.  
+    summaryAdditional: Now, `units(0)` can be used in `calc()` functions. 
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: 
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 5325
+    githubRepo: uswds
+    versionUswds: 3.6.0
   - date: 2023-02-24
     summary: Corrected alternate token name for token `05`.
     summaryAdditional:

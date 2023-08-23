@@ -2,7 +2,7 @@ title: Select
 type: component
 changelogURL:
 items:
-- date: 2023-08-18
+- date: 2023-08-23
   summary: Added ellipses to multiple select overflow.
   summaryAdditional: This provides a clear indication to users that there is text being cut off by the select width.
   isBreaking: false

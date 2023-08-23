@@ -2,7 +2,7 @@ title: Settings
 type: utility
 changelogURL:
 items:
-  - date: 2023-08-18
+  - date: 2023-08-23
     summary: Updated default disabled color settings values and added `$theme-color-disabled-lighter` and `$theme-color-disabled-darker`.
     summaryAdditional: If your project customizes disabled colors, confirm that disabled states meet color contrast requirements.
     isBreaking: true
@@ -11,7 +11,7 @@ items:
     githubPr: 5402
     githubRepo: uswds
     versionUswds: 3.6.0
-  - date: 2023-08-18
+  - date: 2023-08-23
     summary: Fixed configuration errors with disabled color settings.
     summaryAdditional: All disabled color settings should now be configurable and accept hex color values.
     affectsSettings: true
@@ -19,7 +19,7 @@ items:
     githubPr: 5402
     githubRepo: uswds
     versionUswds: 3.6.0
-  - date: 2023-08-18
+  - date: 2023-08-23
     summary: Fixed a bug that prevented `$theme-body-font-size` from accepting `2xs` and `3xs` size tokens.
     affectsStyles: true
     githubPr: 5363

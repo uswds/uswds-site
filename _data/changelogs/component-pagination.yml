@@ -2,7 +2,7 @@ title: Pagination
 type: component
 changelogURL:
 items:
-- date: 2023-08-18
+- date: 2023-08-23
   summary: Updated styles to respect the value of `$theme-pagination-background-color`.
   summaryAdditional: Users should confirm that pagination colors display as expected.
   isBreaking: true
@@ -10,7 +10,7 @@ items:
   githubPr: 5358
   githubRepo: uswds
   versionUswds: 3.6.0
-- date: 2023-08-18
+- date: 2023-08-23
   summary: Updated the ellipsis color to meet color contrast requirements.
   summaryAdditional:
   affectsAccessibility: true

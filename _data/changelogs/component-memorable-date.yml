@@ -2,7 +2,7 @@ title: Memorable date
 type: component
 changelogURL:
 items:
-- date: 2023-08-18
+- date: 2023-08-23
   summary: Updated styles to allow the component to wrap to multiple lines at narrow widths.
   summaryAdditional:
   affectsStyles: true

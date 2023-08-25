@@ -61,23 +61,25 @@ Now, you can install USWDS — and any other Node package — from the command l
 
 npm does the work of installing packages and, behind the scenes, automatically installing all the software each package needs to run (also known as a package’s dependencies). The final software is saved into a new directory called `node_modules`.
 
-Install USWDS from the command line, and save it as a dependency in your package.json as follows:
+Install USWDS from the command line, and save it as a dependency in your `package.json` as follows:
 
 {:.site-terminal}
 ```bash
-npm install @uswds/uswds --save
+npm install @uswds/uswds --save-exact
 
 # [a lot of notices]
 # + uswds@{{ site.uswds_version }} [or another version number]
 # [a few more notifications]
 ```
 
-npm will show some notifications, install USWDS, and display the version number of the USWDS package. You’ll also see the following information in your package.json:
+We recommend using the `--save-exact` flag when installing `@uswds/uswds` because it prevents updates from being pulled into your project until you manually update the version. This reduces the risk of a update unexpectedly breaking or changing your project.
+
+Once you run this command, npm will show some notifications, install USWDS, and display the version number of the USWDS package. You’ll also see the following information in your package.json:
 
 {:.site-terminal}
 ```json
 "dependencies": {
-  "@uswds/uswds": "^{{ site.uswds_version }}" [or another version number]
+  "@uswds/uswds": "{{ site.uswds_version }}" [or another version number]
 }
 ```
 

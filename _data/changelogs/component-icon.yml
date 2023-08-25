@@ -2,6 +2,12 @@ title: Icon
 type: component
 changelogURL:
 items:
+  - date: 2023-08-28
+    summary: Added note about icon color contrast.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2258
+    githubRepo: uswds-site
   - date: 2022-10-19
     summary: Updated our SVG sprite compiler to fix potential incompatibility with ARM-based Macs.
     summaryAdditional: This should resolve potential dependency incompatibilities on computers with ARM processors.

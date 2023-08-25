@@ -16,4 +16,5 @@
   </svg>
 </a>
 ```
+- **Check for sufficient color contrast.** Verify that the icon has a minimum 3:1 color contrast ratio against its background. (Reference: [w3.org](https://www.w3.org/WAI/WCAG21/Techniques/general/G207))
 - **Place icons inside links.** If icons accompany a text link, place the icon inside the link to prevent the screen reader from announcing the link twice.

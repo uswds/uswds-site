@@ -6,7 +6,7 @@ changelogURL:
 
 items:
   - date: NNNN-NN-NN
-    summary: "Restored `opacity: 0` to the initial tooltip body styles."
+    summary: "Restored the `opacity: 0` style rule to the tooltip's initial state."
     summaryAdditional:
     affectsStyles: true
     githubPr: 5475

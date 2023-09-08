@@ -25,6 +25,10 @@ $theme-grid-gap-default: "md";
 
 $site-measure: 5;
 
+body {
+  padding:38px;
+}
+
 .usa-grid-container {
   @include usa-grid-container;
 }

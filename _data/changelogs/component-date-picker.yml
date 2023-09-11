@@ -4,6 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Improved keyboard navigation for screen readers.
+    summaryAdditional: Various screen readers now have more consistent and intuitive navigation using the respective table navigation controls.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 5374

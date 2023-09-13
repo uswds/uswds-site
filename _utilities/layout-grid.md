@@ -14,8 +14,6 @@ redirect_from:
 subnav:
 - text: How it works
   href: '#how-it-works'
-- text: Responsive variants
-  href: '#responsive-variants'
 - text: Auto layout columns
   href: '#auto-layout-columns'
 - text: Responsive classes
@@ -138,155 +136,6 @@ The following sections break the layout grid down and describe how it works.
 - **Gutters:** Rows and columns don't have any gutters by default, but gutters can be added by including `grid-gap-sm`, `grid-gap`, or `grid-gap-lg` at the row level. Refer to [gutters](#gutters) for more info.
 - **Media queries:** Grid breakpoints are based on minimum-width media queries, meaning they apply to that specific width and all greater widths (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices but not at `mobile-lg` or any width below the tablet breakpoint). Refer to [responsive variants](#responsive-variants) for a full list.
 - **Sass mixins:** You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
-
-
-<h2 id="responsive-variants">Responsive variants</h2>
-
-<div>
-  <table class="usa-table--borderless site-table-responsive site-table-simple">
-    <caption>Default responsive sizes</caption>
-    <thead>
-      <tr>
-        <th scope="col" class="flex-2">Width</th>
-        <th scope="col" class="display-inline-flex">Size</th>
-        <th scope="col" class="flex-3">Utility class</th>
-        <th scope="col" class="display-inline-flex">Columns</th>
-        <th scope="col" class="display-inline-flex">Gutters</th>
-        <th scope="col" class="display-inline-flex">Nestable</th>
-      </tr>
-    </thead>
-    <tbody class="font-mono-2xs">
-      <tr>
-        <th scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs">
-            Smallest
-          </span>
-        </th>
-        <td data-title="Size">
-          <span>
-            ≥0px
-          </span>
-        </td>
-        <td data-title="Utility class" class="flex-3">
-          <span>
-            .grid-col
-          </span>
-        </td>
-        <td data-title="Columns">
-          <span>
-            12
-          </span>
-        </td>
-        <td data-title="Gutters">
-          <span>
-            0
-          </span>
-        </td>
-        <td data-title="Nestable">
-          <span>
-            Yes
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs">
-            Mobile large
-          </span>
-        </th>
-        <td data-title="Size">
-          <span>
-            ≥480px
-          </span>
-        </td>
-        <td data-title="Utility class" class="flex-3">
-          <span>
-            <span class="text-secondary bg-white">.mobile-lg:</span>grid-col
-          </span>
-        </td>
-        <td data-title="Columns">
-          <span>
-            12
-          </span>
-        </td>
-        <td data-title="Gutters">
-          <span>
-            0
-          </span>
-        </td>
-        <td data-title="Nestable">
-          <span>
-            Yes
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs">
-            Tablet
-          </span>
-        </th>
-        <td data-title="Size">
-          <span>
-            ≥640px
-          </span>
-        </td>
-        <td data-title="Utility class" class="flex-3">
-          <span>
-            <span class="text-secondary bg-white">.tablet:</span>grid-col
-          </span>
-        </td>
-        <td data-title="Columns">
-          <span>
-            12
-          </span>
-        </td>
-        <td data-title="Gutters">
-          <span>
-            0
-          </span>
-        </td>
-        <td data-title="Nestable">
-          <span>
-            Yes
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs">
-            Desktop
-          </span>
-        </th>
-        <td data-title="Size">
-          <span>
-            ≥1024px
-          </span>
-        </td>
-        <td data-title="Utility class" class="flex-3">
-          <span>
-            <span class="text-secondary bg-white">.desktop:</span>grid-col
-          </span>
-        </td>
-        <td data-title="Columns">
-          <span>
-            12
-          </span>
-        </td>
-        <td data-title="Gutters">
-          <span>
-            0
-          </span>
-        </td>
-        <td data-title="Nestable">
-          <span>
-            Yes
-          </span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 <h2 id="auto-layout-columns">Auto layout columns</h2>
 <h3>Variable-width content</h3>
@@ -664,6 +513,152 @@ Variables and maps determine the number of columns, gutter width, and media-quer
 
   {% include utilities/responsive-variants.html %}
   No settings available.
+
+  <div>
+    <table class="usa-table--borderless site-table-responsive site-table-simple">
+      <caption>Default responsive sizes</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="flex-2">Width</th>
+          <th scope="col" class="display-inline-flex">Size</th>
+          <th scope="col" class="flex-3">Utility class</th>
+          <th scope="col" class="display-inline-flex">Columns</th>
+          <th scope="col" class="display-inline-flex">Gutters</th>
+          <th scope="col" class="display-inline-flex">Nestable</th>
+        </tr>
+      </thead>
+      <tbody class="font-mono-2xs">
+        <tr>
+          <th scope="row" data-title="Width" class="flex-2">
+            <span class="font-lang-2xs">
+              Smallest
+            </span>
+          </th>
+          <td data-title="Size">
+            <span>
+              ≥0px
+            </span>
+          </td>
+          <td data-title="Utility class" class="flex-3">
+            <span>
+              .grid-col
+            </span>
+          </td>
+          <td data-title="Columns">
+            <span>
+              12
+            </span>
+          </td>
+          <td data-title="Gutters">
+            <span>
+              0
+            </span>
+          </td>
+          <td data-title="Nestable">
+            <span>
+              Yes
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" data-title="Width" class="flex-2">
+            <span class="font-lang-2xs">
+              Mobile large
+            </span>
+          </th>
+          <td data-title="Size">
+            <span>
+              ≥480px
+            </span>
+          </td>
+          <td data-title="Utility class" class="flex-3">
+            <span>
+              <span class="text-secondary bg-white">.mobile-lg:</span>grid-col
+            </span>
+          </td>
+          <td data-title="Columns">
+            <span>
+              12
+            </span>
+          </td>
+          <td data-title="Gutters">
+            <span>
+              0
+            </span>
+          </td>
+          <td data-title="Nestable">
+            <span>
+              Yes
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" data-title="Width" class="flex-2">
+            <span class="font-lang-2xs">
+              Tablet
+            </span>
+          </th>
+          <td data-title="Size">
+            <span>
+              ≥640px
+            </span>
+          </td>
+          <td data-title="Utility class" class="flex-3">
+            <span>
+              <span class="text-secondary bg-white">.tablet:</span>grid-col
+            </span>
+          </td>
+          <td data-title="Columns">
+            <span>
+              12
+            </span>
+          </td>
+          <td data-title="Gutters">
+            <span>
+              0
+            </span>
+          </td>
+          <td data-title="Nestable">
+            <span>
+              Yes
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" data-title="Width" class="flex-2">
+            <span class="font-lang-2xs">
+              Desktop
+            </span>
+          </th>
+          <td data-title="Size">
+            <span>
+              ≥1024px
+            </span>
+          </td>
+          <td data-title="Utility class" class="flex-3">
+            <span>
+              <span class="text-secondary bg-white">.desktop:</span>grid-col
+            </span>
+          </td>
+          <td data-title="Columns">
+            <span>
+              12
+            </span>
+          </td>
+          <td data-title="Gutters">
+            <span>
+              0
+            </span>
+          </td>
+          <td data-title="Nestable">
+            <span>
+              Yes
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
 

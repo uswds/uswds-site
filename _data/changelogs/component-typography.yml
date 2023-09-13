@@ -6,7 +6,7 @@ changelogURL:
 items:
   - date: 2023-06-09
     summary: Stopped using font smoothing.
-    summaryAdditional: No longer use font smoothing for dark backgrounds and disabled buttons. 
+    summaryAdditional: No longer use font smoothing for dark backgrounds and disabled buttons.
     affectsStyles: true
     githubPr: 5250
     githubRepo: uswds

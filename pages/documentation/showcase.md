@@ -122,7 +122,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [Pandemic Oversight](https://www.pandemicoversight.gov/)
 - [Pathogen Detection - NCBI](https://www.ncbi.nlm.nih.gov/pathogens/)
 - [Performance.gov](https://www.performance.gov/)
-- [PIV Usage Guidelines](https://piv.idmanagement.gov/)
+- [PIV Usage Guidelines](https://www.idmanagement.gov/university/piv/)
 - [Plainlanguage.gov](https://plainlanguage.gov/)
 - [The Privacy and Civil Liberties Oversight Board](https://www.pclob.gov/)
 - [PubMed Labs - National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/labs/pubmed/)

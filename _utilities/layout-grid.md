@@ -437,7 +437,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:maxw-card-lg">
+        <td data-title="Utility" class="tablet:maxw-card-lg">
           <span>.grid-<code>container</code>
           </span>
         </td>

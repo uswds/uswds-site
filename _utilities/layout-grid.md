@@ -109,7 +109,7 @@ changelog:
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
-  <div id="code-sticky" class="usa-accordion__content">
+  <div id="code-sticky" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-1 | strip }}
@@ -310,7 +310,7 @@ The following sections break the layout grid down and describe how it works.
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-auto" aria-expanded="true">Code</button>
-  <div id="code-auto" class="usa-accordion__content">
+  <div id="code-auto" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-auto | strip }}
@@ -356,7 +356,7 @@ The following sections break the layout grid down and describe how it works.
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-responsive" aria-expanded="true">Code</button>
-  <div id="code-responsive" class="usa-accordion__content">
+  <div id="code-responsive" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-responsive | strip }}
@@ -386,7 +386,7 @@ The following sections break the layout grid down and describe how it works.
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-stacked" aria-expanded="true">Code</button>
-  <div id="code-stacked" class="usa-accordion__content">
+  <div id="code-stacked" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-stacked | strip }}
@@ -423,7 +423,7 @@ The following sections break the layout grid down and describe how it works.
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-mix" aria-expanded="true">Code</button>
-  <div id="code-mix" class="usa-accordion__content">
+  <div id="code-mix" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-mix | strip }}
@@ -447,7 +447,7 @@ The following sections break the layout grid down and describe how it works.
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-offsets" aria-expanded="true">Code</button>
-  <div id="code-offsets" class="usa-accordion__content">
+  <div id="code-offsets" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-offsets | strip }}
@@ -473,7 +473,7 @@ The following sections break the layout grid down and describe how it works.
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-wrapping" aria-expanded="true">Code</button>
-  <div id="code-wrapping" class="usa-accordion__content">
+  <div id="code-wrapping" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-wrapping | strip }}
@@ -507,7 +507,7 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-gutters" aria-expanded="true">Code</button>
-  <div id="code-gutters" class="usa-accordion__content">
+  <div id="code-gutters" class="usa-accordion__content copy-code">
 
 {% highlight html %}
 {{ grid-gutters | strip }}
@@ -552,7 +552,7 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
-  <div id="code-gutters-lg" class="usa-accordion__content">
+  <div id="code-gutters-lg" class="usa-accordion__content copy-code">
 
 {% highlight html %}
 {{ grid-gutters-lg | strip }}

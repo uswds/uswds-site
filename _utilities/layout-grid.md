@@ -574,12 +574,6 @@ Variables and maps determine the number of columns, gutter width, and media-quer
   settings=page.spacing_settings
 %}
 
-
-#### Utilities settings
-
-  {% include utilities/responsive-variants.html %}
-  No settings available.
-
 <section id="utility-mixins" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
@@ -594,10 +588,10 @@ Variables and maps determine the number of columns, gutter width, and media-quer
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg">
+        <td scope="row" data-title="Utility" class="tablet:maxw-card-lg">
           <span>.grid-<code>container</code>
           </span>
-        </th>
+        </td>
         <td data-title="Mixin" class="display-inline-flex">
           <span>
             grid-<code>container</code>
@@ -664,3 +658,12 @@ Variables and maps determine the number of columns, gutter width, and media-quer
   </table>
   {% include utilities/utility-mixin-using.html %}
 </section>  
+
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="site-h2 margin-y-0">Advanced settings</h2>
+
+  {% include utilities/responsive-variants.html %}
+  No settings available.
+</section>
+
+

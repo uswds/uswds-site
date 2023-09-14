@@ -8,8 +8,14 @@ items:
     githubPr: 5423
     githubRepo: uswds
     versionUswds: N.N.N
+  - date: 2023-08-23
+    summary: Fixed a bug that prevented `$theme-card-border-width` from accepting `0` or string tokens.
+    affectsStyles: true
+    githubPr: 5325
+    githubRepo: uswds
+    versionUswds: 3.6.0
   - date: 2023-06-09
-    summary: Replaced `button` elements with links styled as buttons
+    summary: Replaced `button` elements with links styled as buttons.
     affectsMarkup: true
     affectsAccessibility: true
     githubPr: 4385

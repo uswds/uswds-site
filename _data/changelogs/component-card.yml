@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Fixed a margin bug on header-first variants that causes card media to overlap headers.
+    summary: Fixed a margin bug on header-first variants that caused exdent card media to overlap headers.
     affectsStyles: true
     githubPr: 5423
     githubRepo: uswds

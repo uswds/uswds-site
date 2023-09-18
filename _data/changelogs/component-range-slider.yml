@@ -7,6 +7,7 @@ items:
   summaryAdditional: To incorporate these changes, update your range component markup.
   isBreaking: true
   affectsAccessibility: true
+  affectsMarkup: true
   githubPr: 5413
   githubRepo: uswds
   versionUswds: N.N.N

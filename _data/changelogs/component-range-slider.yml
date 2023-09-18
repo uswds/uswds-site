@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
-  summary: Removed redundant ARIA attributes.
-  summaryAdditional: This ultimately improved accessibility usage, particularly with screen readers.
+  summary: Removed redundant ARIA attributes to improve the screen reader experience.
+  summaryAdditional: To incorporate these changes, update your range component markup.
   isBreaking: true
   affectsAccessibility: true
   githubPr: 5413

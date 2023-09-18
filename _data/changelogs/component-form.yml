@@ -11,8 +11,8 @@ items:
     isBreaking: true
     affectsStyles: true
     githubPr: 5344
+    githubRepo: uswds
     versionUswds: N.N.N
-    versionUswds: 3.6.0
   - date: 2023-06-09
     summary: Updated guidance to suggest identifying required and optional fields.
     summaryAdditional: We added a new section on identifying required fields and now suggest labeling required fields with a red asterisk and optional fields with the word "optional".

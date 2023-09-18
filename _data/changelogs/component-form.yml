@@ -6,11 +6,12 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Resolved usa-fieldset & usa-legend margin conflict.
-    summaryAdditional: usa-fieldset now appropriately respects the margin set by child legend elements.
+    summary: Resolved `usa-fieldset` and `usa-legend` margin conflict in Chrome and Safari.
+    summaryAdditional: Now, `usa-fieldset` appropriately respects the margin set by child `usa-legend` elements. Confirm that your fieldset margins appear as expected. 
+    isBreaking: true
     affectsStyles: true
     githubPr: 5344
-    githubRepo: uswds
+    versionUswds: N.N.N
     versionUswds: 3.6.0
   - date: 2023-06-09
     summary: Updated guidance to suggest identifying required and optional fields.

@@ -6,6 +6,7 @@ items:
   summary: Updated how the modal JavaScript resets body padding and improved body padding detection.
   summaryAdditional: Now the component will rely on the CSS to reset body padding rather than injecting an inline style with JavaScript.
   affectsJavascript: true
+  affectsStyles: true
   githubPr: 5493
   githubRepo: uswds
   versionUswds: N.N.N

@@ -7,7 +7,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: "Restored the `opacity: 0` style rule to the tooltip's initial state."
-    summaryAdditional:
+    summaryAdditional: This prevents the component from flickering if its position needs to be recalculated.
     affectsStyles: true
     githubPr: 5475
     githubRepo: uswds

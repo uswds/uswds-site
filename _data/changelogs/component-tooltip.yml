@@ -5,6 +5,13 @@ type: component
 changelogURL:
 
 items:
+  - date: NNNN-NN-NN
+    summary: "Restored the `opacity: 0` style rule to the tooltip's initial state."
+    summaryAdditional: This prevents the component from flickering if its position needs to be recalculated.
+    affectsStyles: true
+    githubPr: 5475
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Fixed a bug that removed default positioning.
     summaryAdditional: If the `data-position` attribute is not specified, the tooltip position will now default to "top".

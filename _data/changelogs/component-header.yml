@@ -2,6 +2,13 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Allow mobile nav to stay open during page loads to prevent confusion upon closing.
+    summaryAdditional:  Links to subsection headers will still appropriately close the mobile navigation window.
+    affectsJavascript: true
+    githubPr: 5513
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-07-14
     summary: Added header variants table to guidance page.
     affectsGuidance: true

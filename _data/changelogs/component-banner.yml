@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated horizontal alignment in `icon-dot-gov.svg`.
+    summary: Improved horizontal alignment in `icon-dot-gov.svg`.
     summaryAdditional:
     affectsAssets: true
     githubPr: 5370

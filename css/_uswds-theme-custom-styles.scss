@@ -5,6 +5,7 @@
 @import "custom-styles/site-header";
 @import "custom-styles/card-policy";
 @import "custom-styles/highlight";
+@import "custom-styles/copy-code-btn";
 
 // ========================================
 // CUSTOM PROJECT SASS
@@ -432,6 +433,10 @@ abbr[title="required"] {
     @include at-media("desktop") {
       @include u-bg($site-background-color);
       margin: units(2) units(2) units(4);
+    }
+
+    &#{$external-href} {
+      display: inline-block;
     }
   }
 }
@@ -1477,8 +1482,8 @@ code[class*="language-plaintext"] {
 }
 
 // Demo fixed footer
+// Example url: `/templates/docs`
 .demo-footer {
-  @include add-knockout-font-smoothing;
   @include u-padding-y(1);
   background-color: color("gray-cool-80");
   // TODO: figure this out
@@ -1572,10 +1577,6 @@ iframe {
 }
 
 // Utilities CSS --------------------- //
-
-.is-inverse {
-  @include add-knockout-font-smoothing;
-}
 
 .page-content {
   h3 {
@@ -1703,7 +1704,6 @@ strong {
 
 .output-true,
 %output-true {
-  @include add-knockout-font-smoothing;
   @include u-bg("blue-50v");
   @include u-display("inline-block");
   @include u-padding-y(0);
@@ -1904,7 +1904,6 @@ li {
 
   a {
     @extend %utility-scope-button;
-    @include add-knockout-font-smoothing;
     @include u-bg("blue-50v");
     @include u-text("white", "no-underline");
 

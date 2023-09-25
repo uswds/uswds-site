@@ -2,6 +2,14 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added button icon gap setting.
+    summaryAdditional: You can now customize the spacing between button text and usa icons with `$theme-button-icon-gap`.
+    affectsGuidance: true
+    affectsSettings: true
+    githubPr: 2207
+    githubRepo: uswds-site
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Added accordion color settings.
     summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.

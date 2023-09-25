@@ -4,7 +4,9 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Improved the vertical alignment of `usa-icon` elements inside of buttons.
+    summaryAdditional: Spacing can be adjusted using the `$theme-button-icon-gap` setting.
     affectsStyles: true
+    affectsSettings: true
     githubPr: 5398
     githubRepo: uswds
     versionUswds: N.N.N

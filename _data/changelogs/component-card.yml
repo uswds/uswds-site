@@ -7,8 +7,19 @@ items:
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
+  - date: 2023-09-20
+    summary: Added `usa-card__header--exdent` variant to variants table.
+    affectsGuidance: true
+    githubPr: 2228
+    githubRepo: uswds-site
+  - date: 2023-08-23
+    summary: Fixed a bug that prevented `$theme-card-border-width` from accepting `0` or string tokens.
+    affectsStyles: true
+    githubPr: 5325
+    githubRepo: uswds
+    versionUswds: 3.6.0
   - date: 2023-06-09
-    summary: Replaced `button` elements with links styled as buttons
+    summary: Replaced `button` elements with links styled as buttons.
     affectsMarkup: true
     affectsAccessibility: true
     githubPr: 4385

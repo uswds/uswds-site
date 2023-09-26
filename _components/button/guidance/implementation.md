@@ -1,3 +1,3 @@
 - **Always set the type attribute.** Define the purpose and behavior of a button with the `type` attribute. The `type` attribute can accept three values: `submit`, `button`, and `reset`. If no type attribute is defined, the button will behave as a `submit` button.
-- **Don't use the `usa-button--disabled` class.** Use the browser-native `disabled` attribute for any disabled button. Don't use `usa-button--disabled`, which is intended only for debugging and prototyping.
+- **Use the `disabled` or `aria-disabled` attributes to turn on disabled button styles.**
 - **You can add button styles to links.** To use a button style on a link, add the `usa-button` class to your link. To use a different style button on your link, add button variant classes in addition to `usa-button`.

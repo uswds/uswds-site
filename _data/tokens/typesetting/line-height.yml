@@ -2,10 +2,10 @@
   value: 1
   usage: 'buttons, navigation, and text not meant to break over a line'
 - token: 2
-  value: 1.15
+  value: 1.2
   usage: 'headings, introductory (lead or dek) text, no more than 1-2 sentences'
 - token: 3
-  value: 1.35
+  value: 1.3
   usage: 'short text (under 1 paragraph), captions, text with a very short or very long measure'
 - token: 4
   value: 1.5

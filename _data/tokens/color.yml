@@ -167,10 +167,6 @@ theme:
     default: "orange-50v"
   - token: accent-warm-darker
     default: "orange-60"
-  - token: emergency
-    default: "red-warm-60v"
-  - token: emergency-dark
-    default: "red-warm-80"
 
 system:
   red-cool:

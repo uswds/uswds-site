@@ -1,7 +1,11 @@
+- token: first
+  value: -1
+- token: last
+  value: 999
 - token: initial
   value: initial
-- token: first
-  value: first
+- token: 0
+  value: 0
 - token: 1
   value: 1
 - token: 2
@@ -24,5 +28,3 @@
   value: 10
 - token: 11
   value: 11
-- token: last
-  value: last

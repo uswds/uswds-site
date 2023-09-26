@@ -23,7 +23,7 @@ theme:
   - token: light
     default: 300
   - token: normal
-    default: 400
+    default: normal
   - token: medium
     default: false
   - token: semibold

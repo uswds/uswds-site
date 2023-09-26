@@ -2,6 +2,10 @@
   value: auto
 - token: bottom
   value: -100
+- token: top
+  value: 99999
+- token: 0
+  value: 0
 - token: 100
   value: 100
 - token: 200
@@ -12,5 +16,4 @@
   value: 400
 - token: 500
   value: 500
-- token: top
-  value: 99999
+

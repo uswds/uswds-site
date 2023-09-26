@@ -1,8 +1,8 @@
 - token: system
   value: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
-- token: helvetica
-  value: '"Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif'
 - token: georgia
   value: '"Georgia", "Cambria", "Times New Roman", "Times", serif'
-- token: mono
+- token: helvetica
+  value: '"Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif'
+- token: monospace
   value: '"Roboto Mono Web", "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace'

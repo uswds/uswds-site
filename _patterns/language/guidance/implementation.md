@@ -1,2 +1,2 @@
-- **Multiselectable accordion groups.** Add the `aria-multiselectable="true"` attribute to any `usa-accordion` to create a multiselectable accordion group.
-- **Default an accordion button to open.** Add the `aria-expanded="true"` attribute to any `usa-accordion__button` to have that section open by default at page load. The `aria-expanded="false"` attribute will be added to other buttons when the accordion is initialized by the JavaScript.
+- **Multiselectable accordion groups.** Add the `aria-multiselectable="true"` attribute to any usa-accordion to create a multiselectable accordion group.
+- **Default an accordion button to open.** Add the `aria-expanded="true"` attribute to any `usa-accordion__button` to have that section open by default at page load.

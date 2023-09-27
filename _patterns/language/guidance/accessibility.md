@@ -1,3 +1,4 @@
-- **Code header areas in the accordion as buttons.** Using a `<button type="button">` assures accordions are usable with both screen readers and keyboards.
-- **Use unique ids.** Each button has a unique name, `aria-controls="[id]"`, that associates the control with the appropriate region by referencing the controlled element’s `id`.
+- **Code header areas in the accordion as buttons.** Using a `<button>` assures accordions are usable with both screen readers and keyboards.
+- **Use `aria-expanded` on buttons to express an accordion’s default state.** Buttons should state if they are expanded by default with `aria-expanded="true"`. The `aria-expanded="false"` attribute will be added to other buttons when the accordion is initialized by the JavaScript.
+- **Use unique ids.** Each button has a unique name, `aria-controls="id"`, that associates the control with the appropriate region by referencing the controlled element’s `id`.
 - **Accordions use javascript to set the `hidden` values of their content areas.** Each content area will have its `hidden` attribute set by the component, depending on its corresponding button’s `aria-expanded` attribute. To ensure your content is accessible in the event that the JavaScript does not load or is disabled, you should not manually set `hidden` on any of your content areas.

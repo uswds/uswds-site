@@ -3,11 +3,10 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated the listed `usa-list` dependency with `usa-icon`.
+    summary: Added `usa-icon` to the dependency list and removed `usa-list`.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
-    versionUswds:
   - date: 2023-06-09
     summary: Added two new settings to customize accordion background colors.
     summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.

@@ -3,17 +3,10 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added the emergency variant to the examples in the component preview.
+    summary: Added documentation for the `usa-alert--emergency` variant.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
-    versionUswds:
-  - date: NNNN-NN-NN
-    summary: Added documentation for `usa-alert--warning` and `usa-alert--info` variants.
-    affectsGuidance: true
-    githubPr: 2149
-    githubRepo: uswds-site
-    versionUswds:
   - date: 2023-06-09
     summary: Removed redundant and invalid height declaration.
     affectsStyles: true

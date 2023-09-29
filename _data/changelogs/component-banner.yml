@@ -2,13 +2,13 @@ title: Banner
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-09-29
     summary: Improved horizontal alignment in `icon-dot-gov.svg`.
     summaryAdditional:
     affectsAssets: true
     githubPr: 5370
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.6.1
   - date: 2023-03-09
     summary: Improved display of focus outline on mobile.
     summaryAdditional: Now the focus outline is visible all around the banner on mobile devices.

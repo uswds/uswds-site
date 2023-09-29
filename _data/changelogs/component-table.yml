@@ -4,13 +4,13 @@ type: component
 changelogURL:
 
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-09-29
     summary: Fixed a bug that prevented VoiceOver from reading stacked table content while using Safari.
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 5477
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.6.1
   - date: 2023-07-17
     summary: Restored standard and striped table component previews to guidance page.
     summaryAdditional:

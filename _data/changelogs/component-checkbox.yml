@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated radio and checkbox tile styling to have lighter borders.
+    summary: Updated radio and checkbox tiles to have lighter borders, reducing visual noise.
     summaryAdditional:
     affectsAccessibility: true
     affectsStyles: true

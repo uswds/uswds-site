@@ -1,0 +1,33 @@
+{% assign componentName = page.component.name
+  | default: page.title
+  | downcase %}
+{% assign componentKey = componentName | slugify %}
+
+<h2 id="warnings-{{ componentKey }}" class="site-component-section-title">Usability warnings</h2>
+
+<ul class="usa-icon-list usa-content-list">
+  {%- if page.warnings -%}
+    {%- for warning in page.warnings -%}
+    <li class="usa-icon-list__item">
+      <div
+        {% if warning.level == 'high' %}class="usa-icon-list__icon text-error-dark"{% endif %}
+        {% if warning.level == 'medium' %}class="usa-icon-list__icon text-error-light"{% endif %}
+        {% if warning.level == 'low' %}class="usa-icon-list__icon text-warning"{% endif %}
+      >
+        <svg class="usa-icon" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error"></use>
+        </svg>
+      </div>
+      <div class="usa-icon-list__content">
+        <strong>{{ warning.description }}</strong> {{ warning.description_additional}}
+        {%- if page.warnings -%}
+          Learn more in <a href="https://github.com/uswds/uswds-site/issues/{{ warning.issue_number }}">issue #{{ warning.issue_number }}</a>.
+        {%- endif -%}
+      </div>
+    </li>
+    {%- endfor -%}
+  {%- endif -%}
+  <li class="usa-icon-list__item">
+    [Link to all GitHub issues]
+  </li>
+</ul>

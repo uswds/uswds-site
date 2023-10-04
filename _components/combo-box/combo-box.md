@@ -54,9 +54,22 @@ tags:
 title: Combo box
 type: component
 alert: true
-alert-class: info
-alert-heading: Current accessibility issues
-alert-content: In late 2022, we found some combo box <a href="#accessibility-combo-box">usability issues</a> when we were testing with people who use screen readers and alternative input devices. For more information, see <a href="https://github.com/uswds/uswds-site/issues/1898">the issue on GitHub</a>.
+alert-class: warning
+alert-heading: This component has known usability issues.
+alert-content: Details in <a href="#warnings-combo-box">"Usability warnings"</a>.
+alert-tag: "Warning: Usability concerns"
+warnings:
+- description: High priority item lorem ipsum dolor.
+  description_additional: More details lorem ipsum dolor sit anum.
+  level: high
+  issue_number: 1234
+- description: Medium priority item lorem ipsum dolor.
+  level: medium
+  issue_number: 3456
+- description: Low priority item lorem ipsum dolor.
+  description_additional: More details lorem ipsum dolor sit anum.
+  level: low
+  issue_number: 6789
 changelog:
   key: component-combo-box
 ---

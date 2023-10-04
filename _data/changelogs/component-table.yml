@@ -4,6 +4,19 @@ type: component
 changelogURL:
 
 items:
+  - date: 2023-09-29
+    summary: Fixed a bug that prevented VoiceOver from reading stacked table content while using Safari.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5477
+    githubRepo: uswds
+    versionUswds: 3.6.1
+  - date: 2023-07-17
+    summary: Restored standard and striped table component previews to guidance page.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2143
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Fixed a typo in the sortable table JavaScript that caused the `aria-label` in table headers to have an unnecessary single quote.
     summaryAdditional:

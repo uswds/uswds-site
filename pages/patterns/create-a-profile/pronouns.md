@@ -15,8 +15,8 @@ changelog:
 
 ### What problem does this solve?
 A person's name or sex are not indicative of the pronouns they use. Allowing users to specify their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
- 
-### When to use this pattern 
+
+### When to use this pattern
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
 
 ### What's the solution?
@@ -44,7 +44,7 @@ Provide a text entry field that supports a rich array of special characters and 
             <li>Do support long text fields. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
             <li>Do be prepared for a complex answer.</li>
             <li>Do allow users to opt out of answering with a "Prefer not to answer" option.</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@ Provide a text entry field that supports a rich array of special characters and 
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
+  <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/pronouns.html %}{% endhighlight %}
     </div>
@@ -87,7 +87,7 @@ Provide a text entry field that supports a rich array of special characters and 
 ### Considerations
 
 {:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 - <strong>If you don't need a controlled vocabulary.</strong> Strongly consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
 ### Usability guidance
@@ -98,7 +98,7 @@ Provide a text entry field that supports a rich array of special characters and 
 ### Accessibility
 
 {:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/).
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 {:.site-component-section-title}
@@ -114,15 +114,15 @@ Provide a text entry field that supports a rich array of special characters and 
 - Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
 - Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from [http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms](http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)
 - DOL policies on gender identity: rights and responsibi (n.d.) Retrieved on November 1, 2022, from [https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/internal/policies/gender-identity](https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/internal/policies/gender-identity)
-- Gender pronouns. (October 23, 2017) Retrieved on November 1, 2022, from 
+- Gender pronouns. (October 23, 2017) Retrieved on November 1, 2022, from
 [https://www1.nyc.gov/assets/hra/downloads/pdf/services/lgbtqi/Gender%20Pronouns%20final%20draft%2010.23.17.pdf](https://www1.nyc.gov/assets/hra/downloads/pdf/services/lgbtqi/Gender%20Pronouns%20final%20draft%2010.23.17.pdf)
 - Gender pronouns & their use in workplace communications. (n.d.) Retrieved on November 1, 2022 from, [https://dpcpsi.nih.gov/sgmro/gender-pronouns-resource](https://dpcpsi.nih.gov/sgmro/gender-pronouns-resource)
 - Gender-inclusive language. (n.d.) Retrieved on July 19, 2022, from [https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/)
-- The importance of personal pronouns. (September 16, 2022) Retrieved on November 1, 2022 from, [https://www.oit.va.gov/news/article/?read=the-importance-of-personal-pronouns](https://www.oit.va.gov/news/article/?read=the-importance-of-personal-pronouns) 
-- Inclusive forms. (n.d.) Retrieved on July 19, 2022, from [https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/](https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/) 
+- The importance of personal pronouns. (September 16, 2022) Retrieved on November 1, 2022 from, [https://digital.va.gov/people-excellence/the-importance-of-personal-pronouns/](https://digital.va.gov/people-excellence/the-importance-of-personal-pronouns/)
+- Inclusive forms. (n.d.) Retrieved on July 19, 2022, from [https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/](https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/)
 - Living up to our value of inclusion: Why we should use pronouns. (September 14, 2021) Retrieved on November 1, 2022 from, [https://www.fs.usda.gov/inside-fs/leadership/living-our-value-inclusion-why-we-should-use-preferred-pronouns](https://www.fs.usda.gov/inside-fs/leadership/living-our-value-inclusion-why-we-should-use-preferred-pronouns)
 - Pronoun use in email signatures. (June 29, 2020) Retrieved on November 1, 2022, from [https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/](https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/)
-- They, their. (April 10, 2019). Retrieved on July 19, 2022, from [https://design.va.gov/content-style-guide/they-their](https://design.va.gov/content-style-guide/they-their) 
+- They, their. (April 10, 2019). Retrieved on July 19, 2022, from [https://design.va.gov/content-style-guide/they-their](https://design.va.gov/content-style-guide/they-their)
 
 {:.site-component-section-title}
 ## Disclaimer

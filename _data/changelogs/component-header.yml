@@ -2,6 +2,19 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: 2023-09-29
+    summary: Fixed a Safari-only bug that caused the mobile menu to unexpectedly close at a narrow range of window widths.
+    summaryAdditional:
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 5443
+    githubRepo: uswds
+    versionUswds: 3.6.1
+  - date: 2023-07-14
+    summary: Added header variants table to guidance page.
+    affectsGuidance: true
+    githubPr: 2139
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Fixed a bug that caused inaccurate megamenu template markup in the documentation.
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.

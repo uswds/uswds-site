@@ -9,6 +9,7 @@ subnav:
   - href: /patterns/select-a-language/three-or-more-languages/
   - href: /patterns/select-a-language/selected-content/
   - href: /patterns/select-a-language/language-preferences/
+in_page_nav: false
 ---
 
 ## Why this matters
@@ -61,7 +62,7 @@ Accessing content in the language that the user is most comfortable in allows th
         <p>Help users to find content in their preferred language when only selected pieces of content have been translated.</p>
       </div>
     </div>
-  </div>  
+  </div>
   <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
@@ -76,6 +77,6 @@ Accessing content in the language that the user is most comfortable in allows th
         <p>Help users to choose the languages they prefer for communication</p>
       </div>
     </div>
-  </div>  
+  </div>
 
 </div>

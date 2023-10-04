@@ -56,7 +56,7 @@ type: component
 alert: true
 alert-class: warning
 alert-heading: This component has known usability issues.
-alert-content: Details in <a href="#warnings-combo-box">"Usability warnings"</a>.
+alert-content: Details in <a href="#warnings-combo-box">"Known issues"</a>.
 alert-tag: "Warning: Usability concerns"
 warnings:
 - description: High priority item lorem ipsum dolor.

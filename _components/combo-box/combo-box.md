@@ -58,7 +58,7 @@ alert-class: warning
 alert-heading: This component has <a href="#warnings-combo-box">known usability issues</a>.
 alert-content: Use this component with caution.
 alert-tag: "Warning: Usability concerns"
-issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Combo+Box
+issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Combo+Box%22
 warnings:
 - description: High priority item lorem ipsum dolor.
   description_additional: More details lorem ipsum dolor sit anum.

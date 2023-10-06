@@ -2,9 +2,16 @@ title: File input
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added optional custom text data attributes.
+    summaryAdditional: These attributes make it simpler to translate component text into other languages.
+    affectsGuidance: true
+    githubPr: 5508
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Removed disabled file input variant preview.
-    summaryAdditional: 
+    summaryAdditional:
     affectsGuidance: true
     githubPr: 2114
     githubRepo: uswds-site

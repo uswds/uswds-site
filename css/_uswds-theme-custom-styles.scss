@@ -37,6 +37,24 @@ $site-measure: 5;
   @include usa-grid-col;
 }
 
+@media (min-width: 55em) {
+  .tablet-lg\:grid-col-6 {
+    flex: 0 1 auto!important;
+    width: 50%!important;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .widescreen\:grid-col-6 {
+    flex: 0 1 auto!important;
+    width: 50%!important;
+  }
+
+  .widescreen\:grid-col-4 {
+    flex: 0 1 auto!important;
+    width: 33.3333333333%!important;
+  }
+}
 // ========================================
 // 1. Generic
 // ----------------------------------------

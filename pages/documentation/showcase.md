@@ -27,7 +27,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [Agricultural Research Service - USDA](https://www.ars.usda.gov/)
 - [Scientific Discoveries - Agricultural Research Service - USDA](https://scientificdiscoveries.ars.usda.gov/)
 - [America’s Seed Fund - National Science Foundation](https://seedfund.nsf.gov/)
-- [Army Medical Department Center of History & Heritage](https://achh.army.mil)
 - [Army Medical Department Civilian Corps](https://ameddciviliancorps.amedd.army.mil)
 - [Army Publishing Directorate](https://armypubs.army.mil/)
 - [ATF eRegulations](https://regulations.atf.gov/)

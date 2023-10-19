@@ -1,1 +1,3 @@
 - Set the `min` and `max` attribute of the `input` element to correspond to the instructions or labels that accompany the slider.
+- Set the `data-optional-unit` attribute of the `input` element to add a unit to screen reader callouts. The unit will be read after the current value.
+- Set the `data-optional-preposition` attribute of the `input` element to change the preposition between current value and max value. If no value is present, it will default to `of`. When providing a range slider on pages in a language other than English, be sure to update as necessary.

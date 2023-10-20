@@ -7,6 +7,12 @@ items:
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
+  - date: 2023-09-29
+    summary: Fixed a margin bug on header-first variants that caused exdent card media to overlap headers.
+    affectsStyles: true
+    githubPr: 5423
+    githubRepo: uswds
+    versionUswds: 3.6.1
   - date: 2023-09-20
     summary: Added `usa-card__header--exdent` variant to variants table.
     affectsGuidance: true

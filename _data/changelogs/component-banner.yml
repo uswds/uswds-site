@@ -2,6 +2,14 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed a bug causing component code example ID’s and relevant aria attributes to display incorrectly.
+    summaryAdditional: Now, example ID’s match what’s found in the USWDS repo and are more succinct.
+    isBreaking: true 
+    affectsMarkup: true
+    githubPr: 2312
+    githubRepo: uswds-site
+    versionUswds: N.N.N
   - date: 2023-09-29
     summary: Improved horizontal alignment in `icon-dot-gov.svg`.
     summaryAdditional:

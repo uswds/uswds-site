@@ -2,11 +2,11 @@ title: Icon
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-10-20
     summary: Added note about icon color contrast.
-    summaryAdditional:
     affectsGuidance: true
     githubPr: 2258
+    githubRepo: uswds-site
   - date: 2023-09-29
     summary: Added social media icon disclaimer.
     summaryAdditional: This disclaimer explains that social media icons are subject to separate terms and conditions, and that our inclusion of these icons does not constitute an endorsement of these services.

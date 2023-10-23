@@ -45,6 +45,7 @@ tags:
   - icons
 changelog:
   key: component-icon
+disclaimer: Use of any social media icons placed on this page are subject to separate terms and conditions that govern the use of said icons. The General Services Administration (GSA) does not review and evaluate such agreements for anything beyond the GSA's needs, and users should make their own decisions regarding the use of such services for their own purposes. In addition, a reference to any non-federal entity does not constitute or imply its endorsement, recommendation, or favoring by GSA.
 ---
 
 Icons are a simple, easily graspable way to add visual emphasis or interest, signal an action, or indicate a feedback state — all while reducing a user's cognitive load.

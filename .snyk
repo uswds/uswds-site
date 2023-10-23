@@ -3515,6 +3515,11 @@ ignore:
         reason: No available upgrade or patch
         expires: 2023-07-29T20:35:08.765Z
         created: 2023-06-29T20:35:08.815Z
+  SNYK-JS-POSTCSS-5926692:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2023-11-10T19:28:02.827Z
+        created: 2023-10-11T19:28:02.917Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

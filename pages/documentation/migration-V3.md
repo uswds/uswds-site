@@ -174,6 +174,9 @@ USWDS 3.0 load paths must include a path to the `@uswds/uswds/packages` director
 
 Add this load path to your compiler settings, or update any old paths if your compiler already includes them. We have guidance for a few common compiler setups.
 
+{:.site-note}
+**Note:** USWDS relies on [Autoprefixer](https://github.com/postcss/autoprefixer) to make its compiled CSS browser-compatible. If your compiler does not already use Autoprefixer, we strongly encourage that you add it to your project.
+
 <!--Start compiler accordion -->
 <div class="usa-accordion usa-accordion--bordered">
 

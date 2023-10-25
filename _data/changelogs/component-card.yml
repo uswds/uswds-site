@@ -6,10 +6,8 @@ items:
     summary: Updated the grid breakpoints in the card template.
     summaryAdditional: This change affects only the template grid, not the component itself.
     affectsMarkup: true
-    affectsStyles: true
-    githubPr: 5545
-    githubRepo: uswds
-    versionUswds: N.N.N
+    githubPr: 2299
+    githubRepo: uswds-site
   - date: 2023-09-29
     summary: Fixed a margin bug on header-first variants that caused exdent card media to overlap headers.
     affectsStyles: true

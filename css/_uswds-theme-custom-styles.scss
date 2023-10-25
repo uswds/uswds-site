@@ -38,22 +38,22 @@ $site-measure: 5;
 }
 
 // Specific grid-col styes added for use in the card component grid
-@media all and (min-width: 55em){
+@media all and (min-width: 55em) {
   .tablet-lg\:grid-col-6 {
-    flex: 0 1 auto!important;
-    width: 50%!important;
+    flex: 0 1 auto !important;
+    width: 50% !important;
   }
 }
 
-@media all and (min-width: 87.5em){
+@media all and (min-width: 87.5em) {
   .widescreen\:grid-col-4 {
-    flex: 0 1 auto!important;
-    width:33.3333333333%!important;
+    flex: 0 1 auto !important;
+    width: 33.3333333333% !important;
   }
 
   .widescreen\:grid-col-6 {
-    flex: 0 1 auto!important;
-    width: 50%!important;
+    flex: 0 1 auto !important;
+    width: 50% !important;
   }
 }
 

@@ -12,8 +12,11 @@ columns:
   - title: Page views
     source: Pageviews
 redirect_from:
+  - /about/releases/
   - /about-our-work/
+  - /about-our-work/releases
   - /whats-new/
+  - /whats-new/releases
 in_page_nav: false
 ---
 
@@ -41,6 +44,20 @@ project to our list.
 
 {% endcapture %}
 
+{% capture release_notes %}
+## Release notes
+
+You can find our release notes — summaries of bug fixes, new features, and other updates introduced in each release on our <a href="https://github.com/uswds/uswds/releases">GitHub releases page</a>.
+
+You can subscribe to our GitHub releases by visiting the USWDS <a href="https://github.com/uswds/uswds/">GitHub repo</a>, selecting the `watch` button, selecting `custom`, and checking the box for `releases`, and selecting apply.
+
+{% endcapture %}
+
+<div class="grid-row grid-gap">
+
+    {{ release_notes | markdownify }}
+
+</div>
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col">
     {{ blog | markdownify }}

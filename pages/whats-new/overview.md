@@ -20,7 +20,12 @@ redirect_from:
 in_page_nav: false
 ---
 
-{% capture blog %}
+## Release notes
+
+You can find our release notes — summaries of bug fixes, new features, and other updates introduced in each release on our <a href="https://github.com/uswds/uswds/releases">GitHub releases page</a>.
+
+You can subscribe to our GitHub releases by visiting the USWDS <a href="https://github.com/uswds/uswds/">GitHub repo</a>, selecting the `watch` button, selecting `custom`, and checking the box for `releases`, and selecting apply.
+
 ## Latest blog posts
 
 You can read more about USWDS in our [News and updates]({{ site.baseurl }}/whats-new/updates/), where we cover the
@@ -29,9 +34,7 @@ government who have successfully implemented USWDS at their agencies.
 You can read some older posts on the [18F Blog](https://18f.gsa.gov/tags/web-design-system/).
 
 <a href="{{ site.baseurl }}/whats-new/updates/" class="usa-button site-button">Read the latest blog posts</a>
-{% endcapture %}
 
-{% capture in_wild %}
 ## Design System in the wild
 
 Interested in seeing who else is using USWDS? We
@@ -41,28 +44,3 @@ or [email us](mailto:{{ site.uswds_email }}) if you’d like to add your
 project to our list.
 
 <a href="{{ site.baseurl }}/documentation/showcase" class="usa-button site-button">View our showcase list</a>
-
-{% endcapture %}
-
-{% capture release_notes %}
-## Release notes
-
-You can find our release notes — summaries of bug fixes, new features, and other updates introduced in each release on our <a href="https://github.com/uswds/uswds/releases">GitHub releases page</a>.
-
-You can subscribe to our GitHub releases by visiting the USWDS <a href="https://github.com/uswds/uswds/">GitHub repo</a>, selecting the `watch` button, selecting `custom`, and checking the box for `releases`, and selecting apply.
-
-{% endcapture %}
-
-<div class="grid-row grid-gap">
-
-    {{ release_notes | markdownify }}
-
-</div>
-<div class="grid-row grid-gap">
-  <div class="tablet:grid-col">
-    {{ blog | markdownify }}
-  </div>
-  <div class="tablet:grid-col">
-    {{ in_wild | markdownify }}
-  </div>
-</div>

@@ -27,7 +27,7 @@ If you have a new implementation to add to this list, please [open an issue] on 
 
 * The implementation’s target language and/or framework
 * The author’s name (or alias) and contact URL or email address
-* The most recent [version]({{ site.baseurl }}/whats-new/releases/) of USWDS that the project targets
+* The most recent [version](https://github.com/uswds/uswds/releases) of USWDS that the project targets
 * Any useful caveats or other notes
 
 {% assign latest = site.data.releases | first %}

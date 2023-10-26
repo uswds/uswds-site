@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Removed the top margin on `usa-alert`.
+    summary: Removed the top margin on the component.
     summaryAdditional:
     affectsStyles: true
     githubPr: 5550

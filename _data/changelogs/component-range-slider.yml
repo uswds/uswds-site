@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
-  summary: Added optional `data-optional-unit` and `data-optional-preposition` attributes.
+  summary: Added optional `data-text-unit` and `data-text-preposition` attributes.
   summaryAdditional: These optional attributes provide additional context to screen reader users, and allow for proper preposition translations for range sliders on pages in languages other than English.
   isBreaking: false
   affectsAccessibility: true

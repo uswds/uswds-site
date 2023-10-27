@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Optimized the `us_flag_small.png` icon and created a vector `us_flag.svg`icon.
+    summary: Optimized the `us_flag_small.png` icon and added a vector `us_flag.svg`icon.
     summaryAdditional:
     affectsAssets: true
     githubPr: 5542

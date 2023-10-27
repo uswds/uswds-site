@@ -1,16 +1,13 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
-<!--
-{% if page.alert == true %}
-  <span class="usa-tag usa-tag--big bg-warning-dark">{{ page.alert-tag }}</span>
-{% endif %} -->
 
 {% if page.alert == true %}
 <div class="usa-alert margin-bottom-3 usa-alert--{{ page.alert-class }}">
   <div class="usa-alert__body">
+    <h2 class="usa-alert__heading">{{ page.alert-heading }}</h2>
     <p class="usa-alert__text">
-      <strong>{{ page.alert-heading }}</strong> {{ page.alert-content }}
+      {{ page.alert-content }}
     </p>
   </div>
 </div>
@@ -28,7 +25,6 @@
 {% if page.component.package %}
 {% include component-package.html %}
 {% endif %}
-{% include component-known-issues.html %}
 {% if page.disclaimer %}
 {% include disclaimer.html %}
 {% endif %}

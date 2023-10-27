@@ -2,6 +2,13 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Optimized the `us_flag_small.png` icon and created a vector `us_flag.svg`icon.
+    summaryAdditional:
+    affectsAssets: true
+    githubPr: 5542
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-09-29
     summary: Improved horizontal alignment in `icon-dot-gov.svg`.
     summaryAdditional:

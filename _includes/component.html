@@ -1,10 +1,6 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
-<!--
-{% if page.alert == true %}
-  <span class="usa-tag usa-tag--big bg-warning-dark">{{ page.alert-tag }}</span>
-{% endif %} -->
 
 {% if page.alert == true %}
 <div class="usa-alert margin-bottom-3 usa-alert--{{ page.alert-class }}">

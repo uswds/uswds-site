@@ -32,8 +32,9 @@
       </li>
       {%- endfor -%}
     {%- endif -%}
-    <li>
-      All known issues for {{ page.title | downcase }} are tracked on <a href="{{ page.issues_link }}">GitHub</a>. You can add to the issues or contribute to their fixes.
-     Not on GitHub? Please <a href="{{ site.baseurl }}/about/community/">join our community</a> to share feedback and contribute to USWDS.
-    </li>
   </ul>
+
+  <p class="padding-top-2 border-top-1px border-gray-10">
+    All known issues for {{ page.title | downcase }} are tracked on <a href="{{ page.issues_link }}">GitHub</a>. You can add to the issues or contribute to their fixes.
+    Not on GitHub? Please <a href="{{ site.baseurl }}/about/community/">join our community</a> to share feedback and contribute to USWDS.
+  </p>

@@ -88,8 +88,15 @@
   {% endif %}
   {% if accessibility.size > guidanceNullLength %}
     <h3 id="accessibility-{{ componentKey }}" class="usa-heading">
-      Accessibility
+      Accessibility guidance
     </h3>
+    <div class="usa-alert margin-bottom-3 usa-alert--{{ page.alert-class }} usa-alert--slim">
+      <div class="usa-alert__body">
+        <p class="usa-alert__text">
+          <a href="#warnings-combo-box">Review known accessibility issues</a>
+        </p>
+      </div>
+    </div>
     {{ accessibility | markdownify }}
   {% endif %}
   {% if related.size > guidanceNullLength %}

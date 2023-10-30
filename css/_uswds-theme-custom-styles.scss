@@ -2683,6 +2683,10 @@ $theme-table-column-gap: 4;
   h4 {
     @include typeset("lang", "md", 2);
   }
+
+  .usa-alert {
+    @include u-measure($site-measure);
+  }
 }
 
 %header-margin {

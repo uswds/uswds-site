@@ -55,22 +55,14 @@ title: Combo box
 type: component
 alert: true
 alert-class: warning
-alert-heading: This component has <a href="#warnings-combo-box">known usability issues</a>.
+alert-heading: This component has <a href="#warnings-combo-box">known accessibility issues</a>.
 alert-content: Use this component with caution.
-alert-tag: "Warning: Usability concerns"
 issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Combo+Box%22
 warnings:
-- description: High priority item lorem ipsum dolor.
-  description_additional: More details lorem ipsum dolor sit anum.
-  level: high
-  issue_number: 1234
-- description: Medium priority item lorem ipsum dolor.
-  level: medium
-  issue_number: 3456
-- description: Low priority item lorem ipsum dolor.
-  description_additional: More details lorem ipsum dolor sit anum.
-  level: low
-  issue_number: 6789
+- description: Known assistive technology issues.
+  description_additional: Testing with people using assistive technology revealed usability concerns that require additional investigation. At this time, consider using a <a href="{{ site.baseurl }}/components/select">Select component</a> instead of a combo box. More research and testing is planned to better understand and address these accessibility issues.
+  issue_repo: uswds
+  issue_number: 5522
 changelog:
   key: component-combo-box
 ---

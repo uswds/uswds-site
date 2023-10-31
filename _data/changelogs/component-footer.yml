@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Restores underlines to footer links in default states.
+    summary: Restored underlines to footer links in the default state.
     summaryAdditional: Now, footer links meet WCAG 2.0 AA requirements.
     affectsAccessibility: true
     affectsStyles: true

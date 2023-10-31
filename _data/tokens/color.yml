@@ -89,12 +89,16 @@ state:
     default: "green-cool-50v"
   - token: success-darker
     default: "green-cool-60v"
-  - token: disabled-light
-    default: "gray-10"
-  - token: disabled
+  - token: disabled-lighter
     default: "gray-20"
+  - token: disabled-light
+    default: "gray-40"
+  - token: disabled
+    default: "gray-50"
   - token: disabled-dark
-    default: "gray-30"
+    default: "gray-70"
+  - token: disabled-darker
+    default: "gray-90"
   - token: emergency
     default: "red-warm-60v"
   - token: emergency-dark

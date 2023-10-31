@@ -3,8 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Init method added to banner.
-    summaryAdditional: Banner now initializes without requiring additional accordion import.
+    summary: Updated the banner component so that it initializes without requiring import of the `usa-accordion` package.
     isBreaking: false
     affectsJavascript: true
     githubPr: 5551

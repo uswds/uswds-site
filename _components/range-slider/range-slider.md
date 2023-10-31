@@ -14,6 +14,14 @@ type: component
 maturity: alpha
 id_custom: range
 lead: A range slider allows users to choose an approximate number from a range.
+implementation:
+  initProps:
+    - property: "`data-text-unit`"
+      description: "Adds a unit to screen reader callouts. The unit will be read after the current value."
+      default: "`null`"
+    - property: "`data-text-preposition`"
+      description: "Changes the preposition between current value and max value. If no value is present, it will default to of. When providing a range slider on pages in a language other than English, be sure to update as necessary."
+      default: '"of"'
 subnav:
 - text: Preview
   href: '#range-slider-preview'

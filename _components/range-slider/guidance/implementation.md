@@ -1,3 +1,8 @@
 - Set the `min` and `max` attribute of the `input` element to correspond to the instructions or labels that accompany the slider.
-- Set the `data-text-unit` attribute of the `input` element to add a unit to screen reader callouts. The unit will be read after the current value.
-- Set the `data-text-preposition` attribute of the `input` element to change the preposition between current value and max value. If no value is present, it will default to `of`. When providing a range slider on pages in a language other than English, be sure to update as necessary.
+
+#### Range slider initialization properties
+{% include settings-table-flex.html
+  content=page.implementation.initProps
+  cols="flex-2, flex-3, flex-1"
+  section="initialization properties"
+%}

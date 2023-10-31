@@ -3,6 +3,13 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Updated the banner component so that it initializes without requiring import of the `usa-accordion` package.
+    isBreaking: false
+    affectsJavascript: true
+    githubPr: 5551
+    githubRepo: uswds
+    versionUswds: N.N.N
+  - date: NNNN-NN-NN
     summary: Optimized the `us_flag_small.png` icon and added a vector `us_flag.svg`icon.
     summaryAdditional:
     affectsAssets: true

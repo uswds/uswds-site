@@ -2,6 +2,14 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improved keyboard navigation for screen readers.
+    summaryAdditional: This change enables table navigation controls in the calendar, which creates more consistent and intuitive navigation across browsers and screen readers. 
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 5374
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-06-09
     summary: Improved legibility in forced colors mode.
     summaryAdditional: Adds a consistent border in forced colors mode.

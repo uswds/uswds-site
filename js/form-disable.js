@@ -1,5 +1,6 @@
 var $ = require("jquery");
 
-$(".preview form").submit(function (e) {
-  e.preventDefault();
+$(".site-component-preview form").on("submit", (e) => {
+  e.preventDefault;
+  return false;
 });

@@ -323,8 +323,4 @@ $site-secondary-nav-input-height: 38px;
       }
     }
   }
-
-  &.site-button-version {
-    @include no-knockout-font-smoothing;
-  }
 }

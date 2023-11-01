@@ -4,7 +4,7 @@ changelogURL:
 items:
 - date: NNNN-NN-NN
   summary: Added optional `data-text-unit` and `data-text-preposition` attributes.
-  summaryAdditional: These optional attributes provide additional context to screen reader users, and allow for proper preposition translations for range sliders on pages in languages other than English.
+  summaryAdditional: The `data-text-unit` attribute provides additional context to screen reader users, and `data-text-preposition` allows for proper preposition translations on non-English pages.
   isBreaking: false
   affectsAccessibility: true
   affectsGuidance: true

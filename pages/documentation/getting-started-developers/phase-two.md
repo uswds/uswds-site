@@ -92,8 +92,7 @@ In plain language, this code says:
 
     After you've loaded the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings configuration and USWDS source code in your Sass entry point.
 
-{:.site-note}
-**Note:** USWDS relies on [Autoprefixer](https://github.com/postcss/autoprefixer) to make its compiled CSS browser-compatible. If your compiler does not already use Autoprefixer, we strongly encourage that you add it to your project.
+{% include autoprefixer-note.html %}
 
 ## Using uswds-compile
 Complete the following steps to install, configure, and use `uswds-compile`:

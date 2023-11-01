@@ -13,6 +13,14 @@ items:
   githubPr: 5472
   githubRepo: USWDS
   versionUswds: 3.7.0
+  summary: Removed redundant ARIA attributes to improve the screen reader experience.
+  summaryAdditional: To incorporate these changes, update your range component markup.
+  isBreaking: true
+  affectsAccessibility: true
+  affectsMarkup: true
+  githubPr: 5413
+  githubRepo: uswds
+  versionUswds: N.N.N
 - date: 2023-06-09
   summary: Improved legibility in forced colors mode.
   summaryAdditional: Adds a consistent border in forced colors mode.

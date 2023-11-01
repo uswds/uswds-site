@@ -1,13 +1,19 @@
 {% assign componentName = page.component.name
-    | default: page.title
-    | downcase %}
-  {% assign componentKey = componentName | slugify %}
+| default: page.title
+| downcase %}
+{% assign componentKey = componentName | slugify %}
+<!-- {% assign col1Title = 'Date' %}
+{% assign col1Classes = 'tablet:grid-col' %} -->
+{% assign col2Title = 'Affects' %}
+{% assign col2Classes = 'tablet:grid-col' %}
+{% assign col3Title = 'Description' %}
+{% assign col3Classes = 'tablet:grid-col-8' %}
 
-  <h2 id="warnings-{{ componentKey }}" class="site-component-section-title">Known issues</h2>
+<!-- <h2 id="warnings-{{ componentKey }}" class="site-component-section-title">Known issues</h2>
 
-  <ul class="usa-icon-list usa-content-list">
-    {% if page.alert == true %}
-      <div class="usa-alert margin-bottom-3 usa-alert--{{ page.alert-class }} usa-alert--slim">
+  <ul class="usa-icon-list usa-content-list padding-bottom-2 border-bottom-1px border-gray-10">
+    {% if page.alert-warning == true %}
+      <div class="usa-alert margin-bottom-3 usa-alert--warning usa-alert--slim">
         <div class="usa-alert__body">
           <p class="usa-alert__text">
             <strong>This component has known accessibility issues. </strong> Think about your specific audience and use with caution.
@@ -18,15 +24,20 @@
     {%- if page.warnings -%}
       {%- for warning in page.warnings -%}
       <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon text-error-dark">
+        <div class="usa-icon-list__icon  text-warning">
           <svg class="usa-icon" aria-hidden="true" role="img">
               <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error"></use>
           </svg>
         </div>
         <div class="usa-icon-list__content">
-          <strong>{{ warning.description }}</strong> {{ warning.description_additional}}
-          {%- if warning.issue_repo and warning.issue_number -%}
-            More information: <a href="https://github.com/uswds/{{ warning.issue_repo }}/issues/{{ warning.issue_number }}">{{ warning.issue_repo }}/#{{ warning.issue_number }}</a>.
+          {% if warning.summary %}
+            <strong>{{ warning.summary }}</strong>
+          {% endif %}
+          {% if warning.summaryAdditional %}
+            {{ warning.summaryAdditional | markdownify }}
+          {% endif %}
+          {%- if warning.issueRepo and warning.issueNumber -%}
+            More information: <a href="https://github.com/uswds/{{ warning.issueRepo }}/issues/{{ warning.issueNumber }}">{{ warning.issueRepo }}/#{{ warning.issueNumber }}</a>.
           {%- endif -%}
         </div>
       </li>
@@ -34,7 +45,85 @@
     {%- endif -%}
   </ul>
 
-  <p class="padding-top-2 border-top-1px border-gray-10">
+  <p>
     All known issues for {{ page.title | downcase }} are tracked on <a href="{{ page.issues_link }}">GitHub</a>. You can add to the issues or contribute to their fixes.
     Not on GitHub? Please <a href="{{ site.baseurl }}/about/community/">join our community</a> to share feedback and contribute to USWDS.
-  </p>
+  </p> -->
+
+<h2 id="known-issues" class="site-component-section-title">Known issues</h2>
+
+<p>All known issues for {{ page.title | downcase }} are tracked on <a href="{{ page.issues_link }}">GitHub</a>. Notable
+  issues are tracked in the following table:</p>
+{% if page.alert-warning == true %}
+<div class="usa-alert margin-bottom-3 usa-alert--warning usa-alert--slim">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      <strong>This component has known accessibility issues. </strong> Think about your specific audience and use with
+      caution.
+    </p>
+  </div>
+</div>
+{% endif %}
+{%- if page.warnings -%}
+<table class="usa-table--borderless site-table-responsive site-table-simple measure-5">
+  <thead>
+    <tr>
+      <!-- <th scope="col" class="{{ col1Classes }}">{{ col1Title }}</th> -->
+      <th scope="col" class="{{ col2Classes }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Classes }}">{{ col3Title }}</th>
+    </tr>
+  </thead>
+  <tbody class="font-lang-3xs">
+    {%- for warning in page.warnings -%}
+    <tr>
+      <!-- <td data-title="{{ col1Title }}" class="{{ col91Classes }}">
+          {% if warning.date %}
+            <span class="font-mono-3xs">{{ warning.date }}</span>
+          {% endif %}
+        </td> -->
+      <td data-title="{{ col2Title }}" class="{{ col2Classes }}">
+        <ul class="add-list-reset">
+          {% if warning.affectsAccessibility %}
+          <li><span class="output-warning">Accessibility</span></li>
+          {% endif %}
+          {% if warning.affectsUsability %}
+          <li><span class="output-warning">Usability</span></li>
+          {% endif %}
+          {% if warning.affectsScreenReaders %}
+          <li><span class="output-neutral">Screen readers</span></li>
+          {% endif %}
+          {% if warning.affectsJaws %}
+          <li><span class="output-neutral">JAWS</span></li>
+          {% endif %}
+        </ul>
+      </td>
+      <td data-title="{{ col3Title }}" class="{{ col3Classes }}">
+        {% if warning.summary %}
+        <p class="measure-6">
+          <strong>
+            {{ warning.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+          </strong>
+          {% if warning.summaryAdditional %}
+          {{ warning.summaryAdditional | markdownify | remove: '
+        <p>' | remove: '</p>' }}
+        {% endif %}
+        {% if warning.issueNumber %}
+        More information:
+        <a href="https://github.com/uswds/{{ warning.issueRepo }}/pull/{{ warning.issueNumber }}">
+          {{ warning.issueRepo }}#{{ warning.issueNumber }}
+        </a>
+        {% endif %}
+        </p>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{%- endif -%}
+
+<p>
+  You can contribute to these issues by adding information or contributing to their fixes.
+  Not on GitHub? Please <a href="{{ site.baseurl }}/about/community/">join our community</a> to share feedback and
+  contribute to USWDS.
+</p>

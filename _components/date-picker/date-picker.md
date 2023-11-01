@@ -37,7 +37,7 @@ lead: A date picker helps users select a single date.
 permalink: /components/date-picker/
 redirect_from:
 - /form-controls/05-date-picker/
-subnav:
+subnav9:
 - text: Preview
   href: '#date-picker-preview'
 - text: Code
@@ -58,4 +58,21 @@ title: Date picker
 type: component
 changelog:
   key: component-date-picker
+alert-info: true
+issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Date+picker%22
+warnings:
+- date: 2023-09-29
+  summary: Manually entering dates into date picker can be cumbersome.
+  summaryAdditional: More research and testing is planned to better understand and address this.
+  affectsAccessibility: true
+  affectsUsability: true
+  issueRepo: uswds
+  issueNumber: 5534
+- date: 2023-09-29
+  summary: It is not possible to tab to calendar icon while using assistive technology.
+  summaryAdditional:
+  affectsAccessibility: true
+  affectsScreenReaders: true
+  issueRepo: uswds
+  issueNumber: 5535
 ---

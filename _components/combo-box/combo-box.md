@@ -53,16 +53,16 @@ tags:
   - select
 title: Combo box
 type: component
-alert: true
-alert-class: warning
+alert-warning: true
 alert-heading: This component has <a href="#warnings-combo-box">known accessibility issues</a>.
 alert-content: Use this component with caution.
 issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Combo+Box%22
 warnings:
-- description: Known assistive technology issues.
-  description_additional: Testing with people using assistive technology revealed usability concerns that require additional investigation. At this time, consider using a <a href="{{ site.baseurl }}/components/select">Select component</a> instead of a combo box. More research and testing is planned to better understand and address these accessibility issues.
-  issue_repo: uswds
-  issue_number: 5522
+- affectsAccessibility: true
+  summary: Known assistive technology issues.
+  summaryAdditional: Testing with people using assistive technology revealed usability concerns that require additional investigation. At this time, consider using a <a href="{{ site.baseurl }}/components/select">Select component</a> instead of a combo box. More research and testing is planned to better understand and address these accessibility issues.
+  issueRepo: uswds
+  issueNumber: 5522
 changelog:
   key: component-combo-box
 ---

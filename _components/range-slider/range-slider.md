@@ -16,10 +16,10 @@ id_custom: range
 lead: A range slider allows users to choose an approximate number from a range.
 implementation:
   initProps:
-    - property: 'min'
+    - property: '`min`'
       description: 'Mininum value of the range slider.'
       default: '0'
-    - property: 'max'
+    - property: '`max`'
       description: 'Maxium value of the range slider.'
       default: '100'
     - property: '`data-text-unit`'

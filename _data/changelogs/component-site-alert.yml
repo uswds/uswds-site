@@ -2,6 +2,13 @@ title: Site alert
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed the component's top margin.
+    summaryAdditional:
+    affectsStyles: true
+    githubPr: 5550
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-03-09
     summary: Updated padding settings to accept any valid spacing token.
     summaryAdditional:

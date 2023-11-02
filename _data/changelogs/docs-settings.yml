@@ -3,6 +3,13 @@ type: utility
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Fixed a bug that prevented `$theme-site-margins-width` from accepting expected token values.
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 5582
+    githubRepo: uswds
+    versionUswds: N.N.N
+  - date: NNNN-NN-NN
     summary: Fixed a bug that prevented `$theme-card-padding-y` from accepting expected token values.
     affectsSettings: true
     affectsStyles: true

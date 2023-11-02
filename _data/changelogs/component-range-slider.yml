@@ -12,7 +12,8 @@ items:
   affectsMarkup: true
   githubPr: 5472
   githubRepo: USWDS
-  versionUswds: 3.7.0
+  versionUswds: N.N.N
+- date: NNNN-NN-NN
   summary: Removed redundant ARIA attributes to improve the screen reader experience.
   summaryAdditional: To incorporate these changes, update your range component markup.
   isBreaking: true

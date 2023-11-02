@@ -2,6 +2,13 @@ title: Card
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed a bug that prevented `$theme-card-padding-y` from accepting expected token values.
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 5571
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-09-29
     summary: Fixed a margin bug on header-first variants that caused exdent card media to overlap headers.
     affectsStyles: true

@@ -62,17 +62,17 @@ alert-info: true
 issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Date+picker%22
 warnings:
 - date: 2023-09-29
-  summary: Manually entering dates into date picker can be cumbersome.
-  summaryAdditional: More research and testing is planned to better understand and address this.
-  affectsAccessibility: true
-  affectsUsability: true
-  issueRepo: uswds
-  issueNumber: 5534
-- date: 2023-09-29
-  summary: It is not possible to tab to calendar icon while using assistive technology.
+  summary: Users had trouble correctly typing dates in the input field.
   summaryAdditional:
-  affectsAccessibility: true
+  affectsAll: true
   affectsScreenReaders: true
-  issueRepo: uswds
-  issueNumber: 5535
+  githubRepo: uswds
+  githubNumber: 5534
+- date: 2023-09-29
+  summary: JAWS user could not tab to the calendar icon with keyboard navigation.
+  summaryAdditional:
+  affectsJaws: true
+  affectsKeyboard: true
+  githubRepo: uswds
+  githubNumber: 5535
 ---

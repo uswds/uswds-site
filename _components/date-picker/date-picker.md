@@ -37,7 +37,7 @@ lead: A date picker helps users select a single date.
 permalink: /components/date-picker/
 redirect_from:
 - /form-controls/05-date-picker/
-subnav9:
+subnav:
 - text: Preview
   href: '#date-picker-preview'
 - text: Code

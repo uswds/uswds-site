@@ -3,26 +3,10 @@
 {% assign settingsKey = componentKey %}
 
 {% if page.alert-info == true %}
-<div class="usa-alert margin-bottom-3 usa-alert--info">
-  <div class="usa-alert__body">
-    <h2 class="usa-alert__heading">
-      Recent testing has revealed some issues with this component.
-    </h2>
-    <p class="usa-alert__text">
-      Learn more in the <a href="#known-issues">known issues section</a> on this page.
-    </p>
-  </div>
-</div>
+  {% include known-issues-alert-info.html %}
 {% endif %}
-
 {% if page.alert-warning == true %}
-<div class="usa-alert margin-bottom-3 usa-alert--warning">
-  <div class="usa-alert__body">
-    <p class="usa-alert__text">
-      <strong>{{ page.alert-heading }}</strong> {{ page.alert-content }}
-    </p>
-  </div>
-</div>
+  {% include known-issues-alert-warning.html %}
 {% endif %}
 
 {% if page.parent == null and content.size > 1 %}

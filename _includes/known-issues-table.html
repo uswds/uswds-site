@@ -1,0 +1,75 @@
+<!-- {% assign col1Title = 'Impact' %}
+{% assign col1Classes = 'tablet:grid-col-1 site-changelog--hide-tablet' %} -->
+{% assign col2Title = 'Affects' %}
+{% assign col2Classes = 'tablet:grid-col-3' %}
+{% assign col3Title = 'Description' %}
+{% assign col3Classes = 'tablet:grid-col-8' %}
+
+<table class="usa-table--borderless site-table-responsive site-table-simple measure-5">
+  <thead>
+    <tr>
+      <!-- <th scope="col" class="{{ col1Classes }}">{{ col1Title }}</th> -->
+      <th scope="col" class="{{ col2Classes }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Classes }}">{{ col3Title }}</th>
+    </tr>
+  </thead>
+  <tbody class="font-lang-3xs">
+    {%- for issue in issues.items -%}
+    <tr>
+      <!-- <td data-title="{{ col1Title }}" class="{{ col1Classes }}">
+        <ul class="add-list-w">
+          {% if issue.impact == "medium" %}
+          <li><span class="output-issue">Medium</span></li>
+          {% endif %}
+          {% if issue.impact == "low" %}
+          <li><span class="output-neutral">Low</span></li>
+          {% endif %}
+        </ul>
+      </td> -->
+      <td data-title="{{ col2Title }}" class="{{ col2Classes }}">
+        <ul class="add-list-reset">
+          {% if issue.affectsAll %}
+          <li><span class="output-neutral">All users</span></li>
+          {% endif %}
+          {% if issue.affectsScreenReaders %}
+          <li><span class="output-neutral">Screen reader users</span></li>
+          {% endif %}
+          {% if issue.affectsScreenMagnification %}
+          <li><span class="output-neutral">Screen magnification users</span></li>
+          {% endif %}
+          {% if issue.affectsKeyboard %}
+          <li><span class="output-neutral">Keyboard navigation users</span></li>
+          {% endif %}
+          {% if issue.affectsJaws %}
+          <li><span class="output-neutral">JAWS users</span></li>
+          {% endif %}
+          {% if issue.affectsVoiceOver %}
+          <li><span class="output-neutral">VoiceOver users</span></li>
+          {% endif %}
+        </ul>
+      </td>
+      <td data-title="{{ col3Title }}" class="{{ col3Classes }}">
+        {% if issue.summary %}
+        <p>
+          {% if issue.impact == "medium" %}
+            <span class="site-changelog--show-tablet output-issue">Medium impact</span>
+          {% endif %}
+          <strong>
+            {{ issue.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+          </strong>
+          {% if issue.summaryAdditional %}
+            {{ issue.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
+          {% endif %}
+          {% if issue.githubNumber and issue.githubRepo %}
+            More information:
+            <a href="https://github.com/uswds/{{ issue.githubRepo }}/pull/{{ issue.githubNumber }}">
+              {{ issue.githubRepo }}#{{ issue.githubNumber }}
+            </a>
+          {% endif %}
+        </p>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

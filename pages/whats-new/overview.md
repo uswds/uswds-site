@@ -26,7 +26,8 @@ You can find summaries of bug fixes, new features, and other updates introduced 
 
 Want to learn about new USWDS releases as they are published? You can sign up to be notified of new USWDS releases by setting up [watch notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository) in the USWDS repository in GitHub. 
 
-<a href="[{{ site.baseurl }}/whats-new/updates/](https://github.com/uswds/uswds/releases)" class="usa-button site-button">Read the USWDS release notes</a>
+<a href="https://github.com/uswds/uswds/releases" class="usa-button site-button display-inline-block">Read the USWDS release notes</a>
+
 ## Latest blog posts
 
 You can read more about USWDS in our [News and updates]({{ site.baseurl }}/whats-new/updates/), where we cover the

@@ -1,5 +1,5 @@
 ---
-title: Past Monthly Calls
+title: Past monthly calls
 permalink: /about/monthly-calls/
 redirect_from:
 - /documentation/video-tutorials/

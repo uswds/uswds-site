@@ -30,9 +30,6 @@ If you have a new implementation to add to this list, please [open an issue] on 
 * The most recent [version](https://github.com/uswds/uswds/releases) of USWDS that the project targets
 * Any useful caveats or other notes
 
-{% assign latest = site.data.releases | first %}
-{% capture latest_version %}<a href="{{ site.baseurl }}/whats-new/releases/#version-{{ latest.name | slugify }}">{{ latest.name }}</a>{% endcapture %}
-
 <div class="usa-alert usa-alert--warning">
   <div class="usa-alert__body">
     <h2 class="usa-alert__heading">Heads up</h2>

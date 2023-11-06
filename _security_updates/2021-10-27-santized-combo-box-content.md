@@ -10,7 +10,7 @@ tags:
 As of USWDS 2.12.1, the design system automatically sanitizes content passed into the Combo Box.
 
 ## When we made this change
-Fixed in [USWDS 2.12.1](https://github.com/uswds/uswds/releases/tag/v2.13.1).
+Fixed in [USWDS 2.12.1](https://github.com/uswds/uswds/releases/tag/v2.12.1).
 
 ## Who should update
 You should update if you use Combo Box in versions 2.7.0 to 2.12.0.

@@ -3,6 +3,17 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
+  summary: Added optional data attributes to customize text for screen readers.
+  summaryAdditional: The `data-text-unit` attribute provides additional context to screen reader users, and `data-text-preposition` allows for proper preposition translations on non-English pages.
+  isBreaking: false
+  affectsAccessibility: true
+  affectsGuidance: true
+  affectsJavascript: true
+  affectsMarkup: true
+  githubPr: 5472
+  githubRepo: USWDS
+  versionUswds: N.N.N
+- date: NNNN-NN-NN
   summary: Removed redundant ARIA attributes to improve the screen reader experience.
   summaryAdditional: To incorporate these changes, update your range component markup.
   isBreaking: true

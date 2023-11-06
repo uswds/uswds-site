@@ -16,12 +16,6 @@ id_custom: range
 lead: A range slider allows users to choose an approximate number from a range.
 implementation:
   initProps:
-    - property: '`min`'
-      description: 'Mininum value of the range slider. Set the value to correspond to the instructions or labels that accompany the slider. If undefined, it will use the default value.'
-      default: '0'
-    - property: '`max`'
-      description: 'Maxium value of the range slider. Set the value to correspond to the instructions or labels that accompany the slider. If undefined, it will use the default value.'
-      default: '100'
     - property: '`data-text-unit`'
       description: 'Adds a unit to screen reader callouts. The unit will be read after the current value. For example, adding a value of "stars" enables a readout like "3.5 stars of 5."'
       default: '_Undefined by default_'

@@ -1,0 +1,10 @@
+
+title: Monthly calls
+type: documentation
+changelogURL:
+items:
+  - date: 2023-11-06
+    summary: Added monthly calls page.
+    affectsGuidance: true
+    githubPr: 2345
+    githubRepo: uswds-site

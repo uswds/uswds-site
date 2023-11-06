@@ -2,6 +2,38 @@ title: Checkbox
 type: component
 changelogURL:
 items:
+  - date: 2023-09-29
+    summary: Updated radio and checkbox tiles to have lighter borders, reducing visual noise.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5494
+    githubRepo: uswds
+    versionUswds: 3.6.1
+  - date: 2023-06-09
+    summary: Improved legibility in forced colors mode.
+    summaryAdditional: Adds a consistent border in forced colors mode.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5147
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency and visibility of disabled styles.
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5063
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-08-05
     summary: Styled aria-disabled to match disabled.
     summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
@@ -20,7 +52,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Added support for high contrast mode and forced colors.
+    summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true

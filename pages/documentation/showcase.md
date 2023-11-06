@@ -8,6 +8,7 @@ redirect_from:
   - /getting-started/showcase/
   - /getting-started/showcase/all/
   - /documentation/showcase/all/
+in_page_nav: false
 ---
 
 {: .site-note }
@@ -26,7 +27,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [Agricultural Research Service - USDA](https://www.ars.usda.gov/)
 - [Scientific Discoveries - Agricultural Research Service - USDA](https://scientificdiscoveries.ars.usda.gov/)
 - [America’s Seed Fund - National Science Foundation](https://seedfund.nsf.gov/)
-- [Army Medical Department Center of History & Heritage](https://achh.army.mil)
 - [Army Medical Department Civilian Corps](https://ameddciviliancorps.amedd.army.mil)
 - [Army Publishing Directorate](https://armypubs.army.mil/)
 - [ATF eRegulations](https://regulations.atf.gov/)
@@ -96,6 +96,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [Method Cards - 18F](https://methods.18f.gov/)
 - [Move.mil — Official DOD Moving Portal](https://www.move.mil/)
 - [MyMedicare](https://www.mymedicare.gov/)
+- [NASA General Coordinates Network (GCN)](https://gcn.nasa.gov)
 - [NASA Glenn Research Center](https://www1.grc.nasa.gov)
 - [NASA Human Computer Interaction Group](https://hci.arc.nasa.gov)
 - [National Agricultural Statistics Service - USDA](https://release.nass.usda.gov/)
@@ -120,7 +121,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [Pandemic Oversight](https://www.pandemicoversight.gov/)
 - [Pathogen Detection - NCBI](https://www.ncbi.nlm.nih.gov/pathogens/)
 - [Performance.gov](https://www.performance.gov/)
-- [PIV Usage Guidelines](https://piv.idmanagement.gov/)
+- [PIV Usage Guidelines](https://www.idmanagement.gov/university/piv/)
 - [Plainlanguage.gov](https://plainlanguage.gov/)
 - [The Privacy and Civil Liberties Oversight Board](https://www.pclob.gov/)
 - [PubMed Labs - National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/labs/pubmed/)
@@ -175,7 +176,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [USGS Publications Warehouse](https://pubs.er.usgs.gov/)
 - [VA Caseflow](https://github.com/department-of-veterans-affairs/caseflow)
 - [VA Developer Portal](https://developer.va.gov/)
-- [VA Office of Information and Technology](https://www.oit.va.gov/)
 - [Virtual Student Foreign Service](http://vsfs.state.gov/)
 - [vote.gov](https://vote.gov/)
 - [Water Data for the Nation (USGS)](https://waterdata.usgs.gov/blog/)
@@ -183,4 +183,3 @@ If your project is currently using USWDS and you would like to see it included i
 - [The White House](https://www.whitehouse.gov/)
 - [WIC Works Resource System - USDA](https://wicworks.fns.usda.gov/)
 - [Worker.gov](https://www.worker.gov/)
-

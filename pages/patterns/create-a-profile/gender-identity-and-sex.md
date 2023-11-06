@@ -98,7 +98,7 @@ Present the user with the tools to accurately depict their gender identity.
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h4 id="pattern-code-gender">Pattern code</h4></button>
-  <div id="accordion-code-02" class="usa-accordion__content highlight-code">
+  <div id="accordion-code-02" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/gender-identity.html %}{% endhighlight %}
     </div>
@@ -186,7 +186,7 @@ Know what information you need and ask for it with specificity. If you are colle
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h4 id="pattern-code-sex">Pattern code</h4></button>
-  <div id="accordion-code-01" class="usa-accordion__content">
+  <div id="accordion-code-01" class="usa-accordion__content copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/sex.html %}{% endhighlight %}
     </div>

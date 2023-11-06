@@ -2,6 +2,35 @@ title: Input mask
 type: component
 changelogURL:
 items:
+  - date: 2023-08-23
+    summary: Fixed a bug that caused the hover state to adopt disabled styling.
+    affectsStyles: true
+    githubPr: 5378
+    githubRepo: uswds
+    versionUswds: 3.6.0
+  - date: 2023-08-23
+    summary: Improved legibility in forced colors mode.
+    affectsStyles: true
+    affectsAccessibility: true
+    githubPr: 5378
+    githubRepo: uswds
+    versionUswds: 3.6.0
+  - date: 2023-06-09
+    summary: Improved consistency and visibility of disabled styles.
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5063
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
   - date: 2022-11-14
     summary: Component released.
     affectsGuidance: true

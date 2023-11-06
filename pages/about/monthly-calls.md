@@ -17,7 +17,7 @@ changelog:
 
 Register for [upcoming calls on Digital.gov](https://digital.gov/events/).
 
-## USWDS monthly call playlist
+## USWDS playlist
 
 <div class="usa-embed-container">
   <iframe src="https://www.youtube.com/embed?listType=playlist&list=PLd9b-GuOJ3nGqDYCNsCMHCQ9MdD5jfB01" title="USWDS YouTube playlist" frameborder="0" allowfullscreen></iframe>

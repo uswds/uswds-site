@@ -22,10 +22,11 @@ in_page_nav: false
 
 ## Release notes
 
-You can find our release notes — summaries of bug fixes, new features, and other updates introduced in each release on our [GitHub releases page](https://github.com/uswds/uswds/releases).
+You can find summaries of bug fixes, new features, and other updates introduced in each release on our [GitHub releases page](https://github.com/uswds/uswds/releases).
 
-You can subscribe to our GitHub releases by visiting the USWDS [GitHub repo](https://github.com/uswds/uswds/), selecting the `watch` button, selecting `custom`, checking the box for `releases`, and selecting apply.
+Want to learn about new USWDS releases as they are published? You can sign up to be notified of new USWDS releases by setting up [watch notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository) in the USWDS repository in GitHub. 
 
+<a href="[{{ site.baseurl }}/whats-new/updates/](https://github.com/uswds/uswds/releases)" class="usa-button site-button">Read the USWDS release notes</a>
 ## Latest blog posts
 
 You can read more about USWDS in our [News and updates]({{ site.baseurl }}/whats-new/updates/), where we cover the

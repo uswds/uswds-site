@@ -32,6 +32,13 @@ layout: default
 
         {% include lead.html text=page.lead %}
 
+        {% assign title = page.title | slugify %}
+        {% assign issues = site.data.issues[title] %}
+
+        {% if issues %}
+          {% include alert--known-issues.html severity=issues.severity %}
+        {% endif %}
+
         {{ content }}
 
         {% include changelog.html %}

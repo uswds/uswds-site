@@ -46,6 +46,8 @@ subnav:
   href: '#date-picker-guidance'
 - text: Package
   href: '#date-picker-package'
+- text: Known issues
+  href: '#known-issues'
 - text: Latest updates
   href: '#changelog'
 tags:

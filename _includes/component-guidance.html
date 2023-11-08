@@ -8,6 +8,7 @@
 {% assign guidanceNullLength = guidanceFormat.size | plus: 1 %}
 {% assign guidanceFirst = page.guidance | where: "first", true %}
 {% assign guidanceLast = page.guidance | where: "first", null %}
+{% assign issues = site.data.issues[componentKey] %}
 
 {%- capture about -%}
   {% if page.component.about %}
@@ -90,7 +91,7 @@
     <h3 id="accessibility-{{ componentKey }}" class="usa-heading">
       Accessibility guidance
     </h3>
-    {% if page.alert-warning %}
+    {% if issues.alert-type == "warning" %}
     <div class="usa-alert margin-bottom-3 usa-alert--warning usa-alert--slim">
       <div class="usa-alert__body">
         <p class="usa-alert__text">

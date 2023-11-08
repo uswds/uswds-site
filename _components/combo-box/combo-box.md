@@ -46,7 +46,7 @@ subnav:
 - text: Known issues
   href: '#known-issues'
 - text: Latest updates
-  href: '#changelog'               
+  href: '#changelog'
 tags:
   - form
   - forms

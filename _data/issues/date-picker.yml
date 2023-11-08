@@ -14,5 +14,6 @@ items:
   summaryAdditional:
   affectsJaws: true
   affectsKeyboard: true
+  affectsScreenReaders: true
   githubRepo: uswds
   githubNumber: 5535

@@ -57,5 +57,4 @@ title: Combo box
 type: component
 changelog:
   key: component-combo-box
-issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Combo+Box%22
 ---

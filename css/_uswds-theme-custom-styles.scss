@@ -1232,6 +1232,16 @@ code[class*="language-plaintext"] {
   }
 }
 
+.usa-prose .usa-button {
+  &#{$external-href} {
+    display: inline-block;
+
+    &::after {
+      display: initial;
+    }
+  }
+}
+
 // ========================================
 // 3. Custom page styles
 // ----------------------------------------

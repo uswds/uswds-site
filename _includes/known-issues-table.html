@@ -22,7 +22,7 @@
           {% if issue.affectsScreenReaders %}
           <li><span class="output-warning">Screen readers</span></li>
           {% endif %}
-          {% if issue.affectsZoom %}
+          {% if issue.affectsScreenMagnification %}
           <li><span class="output-warning">Screen magnification</span></li>
           {% endif %}
           {% if issue.affectsKeyboard %}
@@ -52,7 +52,7 @@
             {{ issue.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
           {% endif %}
           {% if issue.githubNumber and issue.githubRepo %}
-            More information:
+            More information on GitHub:
             <a href="https://github.com/uswds/{{ issue.githubRepo }}/pull/{{ issue.githubNumber }}">
               {{ issue.githubRepo }}#{{ issue.githubNumber }}
             </a>

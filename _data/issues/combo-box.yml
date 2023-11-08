@@ -1,5 +1,8 @@
 title: Combo box
 type: component
+alert-type: warning
+alert-heading: This component has <a href="#known-issues">known accessibility issues</a>.
+alert-content: Use this component with caution.
 items:
 - affectsScreenReaders: true
   summary: Known assistive technology issues.

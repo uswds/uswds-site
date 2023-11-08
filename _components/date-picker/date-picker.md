@@ -58,6 +58,5 @@ title: Date picker
 type: component
 changelog:
   key: component-date-picker
-alert-info: true
 issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Date+picker%22
 ---

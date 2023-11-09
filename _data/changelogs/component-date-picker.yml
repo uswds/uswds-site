@@ -2,7 +2,7 @@ title: Date picker
 type: component
 changelogURL:
 items:
-  - date: 2023-11-9
+  - date: 2023-11-09
     summary: Improved keyboard navigation for screen readers.
     summaryAdditional: This change enables table navigation controls in the calendar, which creates more consistent and intuitive navigation across browsers and screen readers. 
     affectsAccessibility: true

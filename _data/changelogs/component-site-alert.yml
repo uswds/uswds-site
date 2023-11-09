@@ -2,7 +2,7 @@ title: Site alert
 type: component
 changelogURL:
 items:
-  - date: 2023-11-9
+  - date: 2023-11-09
     summary: Removed the component's top margin.
     summaryAdditional:
     affectsStyles: true

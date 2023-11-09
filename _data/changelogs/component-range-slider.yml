@@ -2,7 +2,7 @@ title: Range slider
 type: component
 changelogURL:
 items:
-- date: 2023-11-9
+- date: 2023-11-09
   summary: Added optional data attributes to customize text for screen readers.
   summaryAdditional: The `data-text-unit` attribute provides additional context to screen reader users, and `data-text-preposition` allows for proper preposition translations on non-English pages.
   isBreaking: false
@@ -13,7 +13,7 @@ items:
   githubPr: 5472
   githubRepo: USWDS
   versionUswds: 3.7.0
-- date: 2023-11-9
+- date: 2023-11-09
   summary: Removed redundant ARIA attributes to improve the screen reader experience.
   summaryAdditional: To incorporate these changes, update your range component markup.
   affectsAccessibility: true

@@ -2,7 +2,7 @@ title: Icon
 type: component
 changelogURL:
 items:
-  - date: 2023-11-9
+  - date: 2023-11-09
     summary: Added the X social media icon. 
     summaryAdditional: We also preserved the legacy Twitter icon to allow teams to make the decision on when to update their social media information.
     affectsAssets: true

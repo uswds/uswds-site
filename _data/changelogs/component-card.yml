@@ -2,7 +2,7 @@ title: Card
 type: component
 changelogURL:
 items:
-  - date: 2023-11-9
+  - date: 2023-11-09
     summary: Fixed a bug that prevented `$theme-card-padding-y` from accepting expected token values.
     affectsSettings: true
     affectsStyles: true

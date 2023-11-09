@@ -16,7 +16,6 @@ items:
 - date: NNNN-NN-NN
   summary: Removed redundant ARIA attributes to improve the screen reader experience.
   summaryAdditional: To incorporate these changes, update your range component markup.
-  isBreaking: true
   affectsAccessibility: true
   affectsMarkup: true
   githubPr: 5413

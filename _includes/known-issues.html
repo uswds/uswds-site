@@ -1,7 +1,7 @@
 {% assign pageName = page.title | downcase %}
 {% assign pageSlug = pageName | slugify %}
+{% assign gitHubLabel = page.gitHub_label_url | default: page.title | replace: ' ', '+' %}
 {% assign issues = site.data.issues[pageSlug] %}
-{% assign hasKnownIssues = issues.items %}
 
 <h2 id="known-issues" class="site-component-section-title">Known issues</h2>
 
@@ -14,6 +14,27 @@
 {% endif %}
 
 <p>
-  You can contribute to these issues by adding information or contributing to their fixes. Not on GitHub? Please <a href="{{ site.baseurl }}/about/community/">join our community</a> to share feedback and
+  All known issues for {{ page.title | downcase }} are tracked in
+  <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+{{ gitHubLabel }}%22">GitHub</a>.
+
+  {%- if issues.items -%}
+    &nbsp;Notable usability issues are tracked in the following table: </p>
+    {% if issues.alert-type == "warning" %}
+    <div class="usa-alert margin-bottom-3 usa-alert--warning usa-alert--slim">
+      <div class="usa-alert__body">
+        <p class="usa-alert__text">
+          <strong>This component has known accessibility issues. </strong> Think about your specific audience and use with
+          caution.
+        </p>
+      </div>
+    </div>
+    {% endif %}
+    {% include known-issues-table.html %}
+    <p>
+  {% endif %}
+
+  You can contribute to these issues by adding information or contributing to their fixes.
+  {%- unless issues.items -%}</p><p>{% endunless%}
+  Not on GitHub? Please <a href="{{ site.baseurl }}/about/community/">join our community</a> to share feedback and
   contribute to USWDS.
 </p>

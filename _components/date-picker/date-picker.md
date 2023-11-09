@@ -46,6 +46,8 @@ subnav:
   href: '#date-picker-guidance'
 - text: Package
   href: '#date-picker-package'
+- text: Known issues
+  href: '#known-issues'
 - text: Latest updates
   href: '#changelog'
 tags:
@@ -58,5 +60,4 @@ title: Date picker
 type: component
 changelog:
   key: component-date-picker
-issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Date+picker%22
 ---

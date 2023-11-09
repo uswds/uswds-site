@@ -1,5 +1,3 @@
-<!-- {% assign col1Title = 'Impact' %}
-{% assign col1Classes = 'tablet:grid-col-1 site-changelog--hide-tablet' %} -->
 {% assign col2Title = 'Affects' %}
 {% assign col2Classes = 'tablet:grid-col-2' %}
 {% assign col3Title = 'Description' %}
@@ -9,8 +7,7 @@
 {% assign col5Title = 'Track issue' %}
 {% assign col5Classes = 'tablet:grid-col-2' %}
 
-<table class="usa-table--borderless site-table-responsive flex-align-self-start" >
-  <caption>Notable usability issues</caption>
+<table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
       <!-- <th scope="col" class="{{ col1Classes }}">{{ col1Title }}</th> -->
@@ -23,16 +20,6 @@
   <tbody class="font-lang-3xs" style="vertical-align: top;">
     {%- for issue in issues.items -%}
     <tr>
-      <!-- <td data-title="{{ col1Title }}" class="{{ col1Classes }}">
-        <ul class="add-list-w">
-          {% if issue.impact == "medium" %}
-          <li><span class="output-issue">Medium</span></li>
-          {% endif %}
-          {% if issue.impact == "low" %}
-          <li><span class="output-neutral">Low</span></li>
-          {% endif %}
-        </ul>
-      </td> -->
       <td data-title="{{ col2Title }}" class="{{ col2Classes }}">
         <ul class="add-list-reset">
           {% if issue.affectsAll %}

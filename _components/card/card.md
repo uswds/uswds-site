@@ -22,6 +22,8 @@ subnav:
   href: '#card-guidance'
 - text: Package
   href: '#card-package'
+- text: Known issues
+  href: '#known-issues'
 - text: Latest updates
   href: '#changelog'
 type: component

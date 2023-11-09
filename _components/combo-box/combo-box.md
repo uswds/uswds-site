@@ -43,6 +43,8 @@ subnav:
   href: '#combo-box-guidance'
 - text: Package
   href: '#combo-box-package'
+- text: Known issues
+  href: '#known-issues'
 - text: Latest updates
   href: '#changelog'
 tags:
@@ -53,7 +55,6 @@ tags:
   - select
 title: Combo box
 type: component
-issues_link: https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+Combo+Box%22
 changelog:
   key: component-combo-box
 ---

@@ -2,6 +2,12 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added known issues section.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2326
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Improved legibility in forced colors mode.
     summaryAdditional: Adds a consistent border in forced colors mode.

@@ -36,7 +36,7 @@ layout: default
         {% assign issues = site.data.issues[title] %}
 
         {% if issues %}
-          {% include known-issues-alert.html %}
+          {% include alert--known-issues.html severity=issues.severity %}
         {% endif %}
 
         {{ content }}

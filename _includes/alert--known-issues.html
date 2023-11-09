@@ -1,0 +1,16 @@
+{% assign variant = "info" %}
+
+{% if include.severity == "moderate" %}
+  {% assign variant = "warning" %}
+{% endif %}
+
+<div class="usa-alert margin-bottom-8 usa-alert--{{ variant }} usa-alert--no-icon">
+  <div class="usa-alert__body">
+    <h2 class="usa-alert__heading font-ui-md">
+      {{ include.severity | capitalize }} known issues with this component
+    </h2>
+    <p class="usa-alert__text">
+      Recent testing has revealed issues in this component. More in the <a href="#known-issues">known issues section</a> below.
+    </p>
+  </div>
+</div>

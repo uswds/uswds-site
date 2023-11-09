@@ -4,8 +4,9 @@ alert-type: warning
 alert-heading: This component has <a href="#known-issues">known accessibility issues</a>.
 alert-content: Use this component with caution.
 items:
-- affectsScreenReaders: true
+- date: 2023-09-28
   summary: Known assistive technology issues.
   summaryAdditional: Testing with people using assistive technology revealed usability concerns that require additional investigation. At this time, consider using a Select component instead of a combo box. More research and testing is planned to better understand and address these accessibility issues.
+  affectsScreenReaders: true
   githubRepo: uswds
   githubNumber: 5522

@@ -1729,7 +1729,8 @@ strong {
   @include u-text("ink");
 }
 
-li + li .output-neutral {
+li + li .output-neutral,
+li + li .output-warning {
   margin-top: units(0.5);
 }
 

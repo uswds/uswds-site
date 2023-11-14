@@ -17,10 +17,14 @@ changelog:
 
 Register for [upcoming calls on Digital.gov](https://digital.gov/events/).
 
-Explore USWDS’s video content on this playlist, or [visit our YouTube page](https://www.youtube.com/playlist?list=PLd9b-GuOJ3nGqDYCNsCMHCQ9MdD5jfB01) for recordings of past monthly calls.
+{% for video in site.data.monthly-calls.videos %}
 
-## USWDS playlist
+## {{ video.date }}: {{ video.title }}
+
+{{ video.subtitle }}
 
 <div class="usa-embed-container">
-  <iframe src="https://www.youtube.com/embed?listType=playlist&list=PLd9b-GuOJ3nGqDYCNsCMHCQ9MdD5jfB01" title="USWDS YouTube playlist" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/{{ video.id }}" title="{{ video.title }}" frameborder="0" allowfullscreen></iframe>
 </div>
+
+{% endfor %}

@@ -1207,7 +1207,7 @@ code[class*="language-plaintext"] {
 
 // External link styles
 
-#{$external-href} {
+#{$external-href}:not(.usa-button) {
   @include external-link;
 }
 
@@ -1215,7 +1215,9 @@ code[class*="language-plaintext"] {
   @include external-link;
 }
 
+
 .usa-button,
+.site-button-github,
 .link-download,
 .media__link {
   &#{$external-href}::after {
@@ -1232,15 +1234,7 @@ code[class*="language-plaintext"] {
   }
 }
 
-.usa-prose .usa-button {
-  &#{$external-href} {
-    display: inline-block;
 
-    &::after {
-      display: initial;
-    }
-  }
-}
 
 // ========================================
 // 3. Custom page styles

@@ -6,7 +6,10 @@ $asset-path: "../";
 $font-path: "#{$asset-path}fonts";
 $image-path: "#{$asset-path}img";
 
-$external-href: '[href^="http"]:not([href*="designsystem.digital.gov"])';
+$touchpoints-href: '[href^="https://touchpoints.app.cloud.gov/touchpoints"]';
+$federalist-href: '[href^="https://federalist"]';
+$site-href: '[href*="designsystem.digital.gov"]';
+$external-href: '[href^="http"]:not(#{$site-href}, #{$touchpoints-href}, #{$federalist-href})';
 
 $z-nav-secondary: 100;
 

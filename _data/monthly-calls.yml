@@ -1,12 +1,22 @@
 videos:
   - title: Conducting user research with people with disabilities
-    subtitle: How to develop a sustainable, repeatable research process
+    subtitle: One of our roadmap goals is to conduct more user research with people who have disabilities — and to ensure we’re doing so regularly. We shared our progress and reported on findings from our first round of this research, working with users who have visual impairments to conduct usability tests on Design System components.
     date: October 2023
     id: _uNXQpu6Dwg?si=bTbOHSp7Qnfkjh8G
+    event_link: https://digital.gov/event/2022/10/20/october-2022-uswds-monthly-call/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-october-2022.pptx
+      size: 7.2
+      pages: 67
   - title: USWDS mission and vision
-    subtitle: Stepping back to look at the big picture
+    subtitle: It’s been eight years since the first public release of USWDS. What have we done? Where are we going? What have we learned? We revisited our mission and vision as we looked out in the direction of the next eight years.
     date: September 2023
     id: rl5hgoOK22o?si=mnOvqLh4ciC6JNzd
+    event_link: https://digital.gov/event/2023/08/17/uswds-monthly-call-august-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-september-2023.pptx
+      size: 3.9
+      pages: 99
   - title: USWDS product roadmap updates
     subtitle: Looking ahead to 2024 for the U.S. Web Design System
     date: August 2023

@@ -28,7 +28,7 @@ If you're having trouble, email [{{ site.uswds_email }}](mailto:{{ site.uswds_em
 There are several ways to contribute to USWDS. Participating in the community is one way to contribute. See [our contributing guidelines](https://github.com/uswds/uswds/blob/develop/CONTRIBUTING.md) for more about how to contribute back to our codebase. Also, please note that every submission we receive goes through a full design and code review.
 
 <p>
-  <a href="https://github.com/uswds/uswds" class="usa-button site-button usa-button--outline">USWDS on GitHub</a>
+  <a href="https://github.com/uswds/uswds" class="usa-button usa-button--outline">USWDS on GitHub</a>
 </p>
 
 ## Community Conduct

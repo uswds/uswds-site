@@ -100,7 +100,7 @@
   },
   "snyk": true,
   "dependencies": {
-    "@uswds/compile": "^1.0.0",
+    "@uswds/compile": "github:uswds/uswds-compile#jm-bugfix-sourcemaps-path",
     "@uswds/uswds": "^3.7.0"
   }
 }

@@ -6,10 +6,10 @@ videos:
     id: _uNXQpu6Dwg?si=bTbOHSp7Qnfkjh8G
     event_link: https://digital.gov/event/2023/10/19/uswds-monthly-call-october-2023/
     slides:
-      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-october-2022.pptx
-      size: 7.2
-      pages: 67
-  - title: USWDS mission and vision
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-october-2023.pptx
+      size: 9.2
+      pages: 111
+  - title: Mission, vision, and polestar
     subtitle: Stepping back to look at the big picture
     description: "It’s been eight years since the first public release of USWDS. What have we done? Where are we going? What have we learned? We revisited our mission and vision as we looked out in the direction of the next eight years."
     date: September 2023
@@ -17,10 +17,10 @@ videos:
     event_link: https://digital.gov/event/2023/09/21/uswds-monthly-call-september-2023/
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-september-2023.pptx
-      size: 3.9
+      size: 3.4
       pages: 99
-  - title: USWDS product roadmap updates
-    subtitle: We looked ahead to 2024 for USWDS
+  - title: Product roadmap
+    subtitle: Looking ahead to 2024 for the U.S. Web Design System
     date: August 2023
     id: Kj-MYq_0A3s?si=Ot2wE-Aw6IPXKqA_
     event_link: https://digital.gov/event/2023/08/17/uswds-monthly-call-august-2023/
@@ -28,7 +28,7 @@ videos:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-august-2023.pptx
       size: 3.9
       pages: 94
-  - title: Content testing and critical checklists
+  - title: Introducing critical checklists
     subtitle: Developing and evaluating content for manual accessibility and user experience (UX) tests
     description: "We talked about the easy-to-follow, manual accessibility and user experience (UX) tests we’re developing for USWDS components. We’re calling these tests Critical Checklists."
     date: June 2023
@@ -58,7 +58,7 @@ videos:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-april-2023.pptx
       size: 3.2
       pages: 72
-  - title: Making sense
+  - title: "Making sense: Attention and the brain"
     subtitle: Cognition, perception, and design
     description: "The Design System team took a step back and explored how our design decisions both support and are supported by the ways our bodies and brains perceive order and make sense of the world."
     date: March 2023
@@ -68,7 +68,7 @@ videos:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-march-2023.pptx
       size: 1.8
       pages: 56
-  - title: Using USWDS design tokens
+  - title: Using design tokens
     subtitle: What design tokens are and how to adapt them to agency needs
     description: "Take a deep dive into USWDS design tokens. What are they? How are they used? How can they be adapted to agencies’ branding needs?"
     date: February 2023
@@ -78,11 +78,11 @@ videos:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-february-2023.pptx
       size: 1.4
       pages: 67
-  - title: U.S. Design System questions and answers
+  - title: Frequently asked questions
     subtitle: We answered your most-asked questions about USWDS.
     date: January 2023
     id: JApBVTwZans?si=qjNQI0NsWWk5JoUe
     event_link: https://digital.gov/event/2023/01/19/uswds-monthly-call-january-2023/
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-january-2023.pptx
-      size: 1.907
+      size: 1.9

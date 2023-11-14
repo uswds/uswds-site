@@ -6,7 +6,7 @@ redirect_from:
 - /about/monthly-call/
 layout: styleguide
 category: About
-lead: At USWDS monthly calls, we share important updates and tips about how to use the Design System.
+lead: At USWDS monthly calls, we share important updates and tips about how to use the design system.
 subnav:
 - text: Latest updates
   href: '#changelog'
@@ -33,7 +33,14 @@ Register for [upcoming calls on Digital.gov](https://digital.gov/events/). All U
 </ul>
 {% endif %}
 
-<div class="usa-embed-container">
+{% if video.slides.link %}
+<ul class="usa-list">
+  <li><a href="{{ video.slides.link}}">{{ video.date }} slides (PowerPoint presentation, {{ video.slides.size }} MB, {{ video.slides.pages }} pages)</a></li>
+  <li><a href="{{ video.event_link}}">{{ video.date }} script and more at Digital.gov</a></li>
+</ul>
+{% endif %}
+
+<div class="usa-embed-container margin-top-4">
   <iframe src="https://www.youtube.com/embed/{{ video.id }}" title="{{ video.title }}" frameborder="0" allowfullscreen></iframe>
 </div>
 

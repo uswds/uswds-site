@@ -18,6 +18,7 @@ changelog:
 
 Research supports at least two USWDS design principles: [Start with real user needs]({{ site.baseurl }}/design-principles/#start-with-real-user-needs-2) and [Listen]({{ site.baseurl }}/design-principles/#listen-2). To make effective design system decisions, we need to know how government digital teams use the design system itself, and how end users interact with what we build using the design system. Our research practice helps us better understand both.
 
+{:.margin-top-6 .border-top-05 .border-primary .padding-top-2}
 ## Research focus
 
 Our research program focuses on:
@@ -25,6 +26,7 @@ Our research program focuses on:
 - **The needs of the USWDS community.** We are always looking for ways to improve our components and our guidance to better meet the needs of designers, developers, and other practitioners.
 - **The needs of people with disabilities.** These participants help us recognize and address accessibility and usability issues.
 
+{:.margin-top-6 .border-top-05 .border-primary .padding-top-2}
 ## Research methods
 
 We use a variety of research methods to gain insights at all stages of the design process. Find more information about different research methods we use in the [18F Methods](https://methods.18f.gov/).
@@ -52,6 +54,7 @@ We do regular, ongoing research, such as usability testing of our components. Ou
 
 Other more ad hoc research helps us answer specific questions or solve certain problems. Our research strategy is intentional but flexible.
 
+{:.margin-top-6 .border-top-05 .border-primary .padding-top-2}
 ## Key research
 
 Explore some of our past research:
@@ -61,6 +64,7 @@ Explore some of our past research:
 - [Inclusive Design Patterns research]({{ site.baseurl }}/together/) (November 2022): Reducing barriers to participation in common government interactions.
 - [Transforming the American digital experience]({{ site.baseurl }}/next/) (March 2021): Supporting emergency response efforts related to the COVID-19 and identifying strategies for advancing the design system through agency collaboration.
 
+{:.margin-top-6 .border-top-05 .border-primary .padding-top-2}
 ## Research ethics
 
 We use ethical research practices to avoid harming participants. This includes:

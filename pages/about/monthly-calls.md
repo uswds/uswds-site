@@ -15,7 +15,7 @@ changelog:
 
 ---
 
-Register for [upcoming calls on Digital.gov](https://digital.gov/events/).
+Register for [upcoming calls on Digital.gov](https://digital.gov/events/). All USWDS videos are available on [our YouTube page](https://www.youtube.com/playlist?list=PLd9b-GuOJ3nGqDYCNsCMHCQ9MdD5jfB01).
 
 {% for video in site.data.monthly-calls.videos %}
 

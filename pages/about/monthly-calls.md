@@ -19,7 +19,7 @@ Register for [upcoming calls on Digital.gov](https://digital.gov/events/). All U
 
 {% for video in site.data.monthly-calls.videos %}
 
-{:.border-bottom-1px .padding-bottom-1 .border-base-lighter}
+{:.border-bottom-1px .padding-bottom-1 .border-base-lighter .measure-5}
 ## {{ video.date }}: {{ video.title }}
 
 **{{ video.subtitle }}**

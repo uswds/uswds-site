@@ -23,6 +23,7 @@ Research supports at least two USWDS design principles: [Start with real user ne
 {:.border-top-2px .border-base-lighter .padding-top-1}
 Our research program focuses on:
 
+{:.usa-list}
 - **The needs of the USWDS community.** We are always looking for ways to improve our components and our guidance to better meet the needs of designers, developers, and other practitioners.
 - **The needs of people with disabilities.** These participants help us recognize and address accessibility and usability issues.
 
@@ -35,6 +36,7 @@ We use a variety of research methods to gain insights at all stages of the desig
 
 Methods that can **generate new knowledge** about needs or a certain problem, such as:
 
+{:.usa-list}
 - [User interviews](https://methods.18f.gov/discover/stakeholder-and-user-interviews/)
 - Surveys
 - [Card sorting](https://methods.18f.gov/validate/card-sorting/)
@@ -43,6 +45,7 @@ Methods that can **generate new knowledge** about needs or a certain problem, su
 
 Methods that can help us **evaluate an existing idea, prototype, or product**, such as:
 
+{:.usa-list}
 - [Usability testing](https://methods.18f.gov/validate/usability-testing/)
 - [Manual accessibility testing](https://digital.gov/resources/how-test-websites-for-accessibility/)
 - [Analytics](https://digital.gov/resources/how-to-build-an-analytics-strategy/)
@@ -61,6 +64,7 @@ Other more ad hoc research helps us answer specific questions or solve certain p
 {:.border-top-2px .border-base-lighter .padding-top-1}
 Explore some of our past research:
 
+{:.usa-list}
 - [Usability testing](https://github.com/uswds/uswds/wiki/Usability-research-findings-for-Q3-2023) (August and September 2023): Testing components with visually impaired participants. We also discussed this research at the [October 2023 USWDS monthly call](https://youtu.be/_uNXQpu6Dwg?feature=shared).
 - [Top Tasks](https://digital.gov/event/2023/04/20/uswds-monthly-call-april-2023/) (March 2023): Finding out what matters most to USWDS users.
 - [Inclusive Design Patterns research]({{ site.baseurl }}/together/) (November 2022): Reducing barriers to participation in common government interactions.
@@ -71,6 +75,7 @@ Explore some of our past research:
 {:.border-top-2px .border-base-lighter .padding-top-1}
 We use ethical research practices to avoid harming participants. This includes:
 
+{:.usa-list}
 - Protecting participants’ privacy
 - Securely storing data
 - Giving participants the information they need in order to comfortably consent to research
@@ -78,5 +83,6 @@ We use ethical research practices to avoid harming participants. This includes:
 
 Learn more about research ethics and privacy protocols we follow:
 
+{:.usa-list}
 - [Ethics guidance from the 18F User Experience Design Guide](https://ux-guide.18f.gov/research/ethics/)
 - [Privacy guidance from the 18F User Experience Design Guide](https://ux-guide.18f.gov/research/privacy/)

@@ -319,6 +319,10 @@ abbr[title="required"] {
       margin-top: units(0.5);
     }
   }
+
+  .usa-list {
+    max-width: measure($site-measure);
+  }
 }
 
 .usa-prose > .usa-button-group {

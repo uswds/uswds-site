@@ -335,6 +335,10 @@ abbr[title="required"] {
   }
 }
 
+#known-issues {
+  scroll-margin-top: 2.75rem;
+}
+
 // Label links
 
 %label-maturity {
@@ -2687,6 +2691,10 @@ $theme-table-column-gap: 4;
 
   h4 {
     @include typeset("lang", "md", 2);
+  }
+
+  .usa-alert {
+    @include u-measure($site-measure);
   }
 }
 

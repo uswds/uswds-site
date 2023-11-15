@@ -30,6 +30,7 @@ title: Checkbox
 type: component
 changelog:
   key: component-checkbox
+gitHub_label_url: "Checkbox%2FRadio"
 ---
 
 Checkboxes are an easily understandable way to indicate that users can select one or more answers to a question or items from a list. They’re always followed by a label or instructions that clearly indicate what checking the box represents.

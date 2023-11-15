@@ -34,7 +34,7 @@ We use a variety of research methods to gain insights at all stages of the desig
 
 ### Examples of methods we use
 
-Methods that can generate new knowledge about needs or a certain problem, such as:
+Methods that can **generate new knowledge** about needs or a certain problem, such as:
 
 - [User interviews](https://methods.18f.gov/discover/stakeholder-and-user-interviews/)
 - Surveys
@@ -42,7 +42,7 @@ Methods that can generate new knowledge about needs or a certain problem, such a
 - Top Tasks analysis
 - Landscape analysis
 
-Methods that can help us evaluate an existing idea, prototype, or product, such as:
+Methods that can help us **evaluate an existing idea, prototype, or product**, such as:
 
 - [Usability testing](https://methods.18f.gov/validate/usability-testing/)
 - Manual accessibility testing
@@ -63,7 +63,7 @@ Other more ad hoc research helps us answer specific questions or solve certain p
 Explore some of our past research:
 
 {:.usa-content-list }
-- [Usability testing](https://github.com/uswds/uswds/wiki/Usability-research-findings-for-Q3-2023) (August and September 2023): Testing components with visually impaired participants. We also discussed this research at the October 2023 USWDS monthly call.
+- [Usability testing](https://github.com/uswds/uswds/wiki/Usability-research-findings-for-Q3-2023) (August and September 2023): Testing components with visually impaired participants. We also discussed this research at the [October 2023 USWDS monthly call](https://youtu.be/_uNXQpu6Dwg?feature=shared).
 - [Top Tasks](https://digital.gov/event/2023/04/20/uswds-monthly-call-april-2023/) (March 2023): Finding out what matters most to USWDS users.
 - [Inclusive Design Patterns research]({{ site.baseurl }}/together/) (November 2022): Reducing barriers to participation in common government interactions.
 - [Transforming the American digital experience]({{ site.baseurl }}/next/) (March 2021): Supporting emergency response efforts related to the COVID-19 and identifying strategies for advancing the design system through agency collaboration.

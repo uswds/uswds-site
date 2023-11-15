@@ -28,6 +28,10 @@ videos:
       pages: 99
   - title: Product roadmap
     subtitle: Looking ahead to 2024 for the U.S. Web Design System
+    description: |
+      The USWDS team shared the latest iteration of the design system's
+      [product roadmap](https://github.com/orgs/uswds/projects/13/views/1?visibleFields=%5B%22Title%22%2C%22Labels%22%5D).
+      We discussed how we develop, update, and publicly display our roadmap.
     date: August 2023
     id: Kj-MYq_0A3s?si=Ot2wE-Aw6IPXKqA_
     event_link: https://digital.gov/event/2023/08/17/uswds-monthly-call-august-2023/
@@ -95,6 +99,9 @@ videos:
       pages: 67
   - title: Frequently asked questions
     subtitle: Answering your most-asked questions about the U.S. Web Design System
+    description: |
+      The USWDS team answered frequent questions, such as how to theme USWDS,
+      how to set up custom fonts, and when new components get released.
     date: January 2023
     id: JApBVTwZans?si=qjNQI0NsWWk5JoUe
     event_link: https://digital.gov/event/2023/01/19/uswds-monthly-call-january-2023/

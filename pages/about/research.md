@@ -23,6 +23,7 @@ Research supports at least two USWDS design principles: [Start with real user ne
 
 Our research program focuses on:
 
+{:.usa-content-list }
 - **The needs of the USWDS community.** We are always looking for ways to improve our components and our guidance to better meet the needs of designers, developers, and other practitioners.
 - **The needs of people with disabilities.** These participants help us recognize and address accessibility and usability issues.
 
@@ -59,6 +60,7 @@ Other more ad hoc research helps us answer specific questions or solve certain p
 
 Explore some of our past research:
 
+{:.usa-content-list }
 - [Usability testing](https://github.com/uswds/uswds/wiki/Usability-research-findings-for-Q3-2023) (August and September 2023): Testing components with visually impaired participants. We also discussed this research at the October 2023 USWDS monthly call.
 - [Top Tasks](https://digital.gov/event/2023/04/20/uswds-monthly-call-april-2023/) (March 2023): Finding out what matters most to USWDS users.
 - [Inclusive Design Patterns research]({{ site.baseurl }}/together/) (November 2022): Reducing barriers to participation in common government interactions.

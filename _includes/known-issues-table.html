@@ -1,4 +1,4 @@
-{% assign col2Title = 'Affects' %}
+<!-- {% assign col2Title = 'Affects' %}
 {% assign col2Classes = 'tablet:grid-col-3' %}
 {% assign col3Title = 'Description' %}
 {% assign col3Classes = 'tablet:grid-col-8' %}
@@ -6,7 +6,6 @@
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
-      <!-- <th scope="col" class="{{ col1Classes }}">{{ col1Title }}</th> -->
       <th scope="col" class="{{ col2Classes }}">{{ col2Title }}</th>
       <th scope="col" class="{{ col3Classes }}">{{ col3Title }}</th>
     </tr>
@@ -63,4 +62,55 @@
     </tr>
     {% endfor %}
   </tbody>
-</table>
+</table> -->
+
+<ul class="usa-content-list padding-bottom-1 margin-top-2 border-bottom-1px border-base-lighter">
+  {%- for issue in issues.items -%}
+  <li class="font-lang-xs">
+    {% if issue.summary %}
+      <strong>
+        {{ issue.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+      </strong>
+    {% endif %}
+    {% if issue.summaryAdditional %}
+      {{ issue.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
+    {% endif %}
+    {% if issue.githubNumber and issue.githubRepo %}
+      More information on GitHub:
+      <a href="https://github.com/uswds/{{ issue.githubRepo }}/pull/{{ issue.githubNumber }}">
+        {{ issue.githubRepo }}#{{ issue.githubNumber }}
+      </a>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<!--
+<ul class="usa-icon-list usa-content-list margin-top-2 padding-bottom-1 border-bottom-1px border-base-lightest">
+  {%- for issue in issues.items -%}
+    <li class="usa-icon-list__item">
+      <div class="usa-icon-list__icon text-warning">
+        <svg class="usa-icon" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error"></use>
+        </svg>
+      </div>
+      <div class="usa-icon-list__content font-lang-xs">
+        {% if issue.summary %}
+      <strong>
+        {{ issue.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+      </strong>
+    {% endif %}
+    {% if issue.summaryAdditional %}
+      {{ issue.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
+    {% endif %}
+    {% if issue.githubNumber and issue.githubRepo %}
+      More information on GitHub:
+      <a href="https://github.com/uswds/{{ issue.githubRepo }}/pull/{{ issue.githubNumber }}">
+        {{ issue.githubRepo }}#{{ issue.githubNumber }}
+      </a>
+    {% endif %}
+      </div>
+    </li>
+  {%- endfor -%}
+</ul> -->

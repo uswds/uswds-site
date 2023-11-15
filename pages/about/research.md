@@ -16,7 +16,7 @@ changelog:
   key: about-research
 ---
 
-Research supports at least two USWDS design principles: [Start with real user needs]({{ site.baseurl }}/design-principles/#start-with-real-user-needs-2) and [Listen]({{ site.baseurl }}/design-principles/#listen-2). To make effective design system decisions, we need to know how government digital teams use the design system itself, and how end users interact with what we build using the design system. Our research practice helps us better understand both.
+Research supports at least two USWDS design principles: [Start with real user needs]({{ site.baseurl }}/design-principles/#start-with-real-user-needs) and [Listen]({{ site.baseurl }}/design-principles/#listen). To make effective design system decisions, we need to know how government digital teams use the design system itself, and how end users interact with what we build using the design system. Our research practice helps us better understand both.
 
 ## Research focus
 

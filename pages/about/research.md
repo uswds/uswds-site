@@ -29,7 +29,7 @@ Our research program focuses on:
 ## Research methods
 
 {:.border-top-2px .border-base-lighter .padding-top-1}
-We use a variety of research methods to gain insights at all stages of the design process. Find more information about different research methods we use in the [18F Methods](https://methods.18f.gov/).
+We use a variety of research methods to gain insights at all stages of the design process. Find more information about different research methods we use in [18F Methods](https://methods.18f.gov/).
 
 ### Examples of methods we use
 
@@ -76,7 +76,7 @@ We use ethical research practices to avoid harming participants. This includes:
 - Giving participants the information they need in order to comfortably consent to research
 - Allowing participants to opt out at any time, for any reason, without penalty
 
-Learn more about cresearch ethics and privacy protocols we follow:
+Learn more about research ethics and privacy protocols we follow:
 
 - [Ethics guidance from the 18F User Experience Design Guide](https://ux-guide.18f.gov/research/ethics/)
 - [Privacy guidance from the 18F User Experience Design Guide](https://ux-guide.18f.gov/research/privacy/)

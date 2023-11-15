@@ -38,17 +38,17 @@ Methods that can **generate new knowledge** about needs or a certain problem, su
 - [User interviews](https://methods.18f.gov/discover/stakeholder-and-user-interviews/)
 - Surveys
 - [Card sorting](https://methods.18f.gov/validate/card-sorting/)
-- Top Tasks analysis
+- [Top Tasks analysis](https://digital.gov/event/2018/04/11/a-deep-dive-into-top-tasks-with-gerry-mcgovern/)
 - Landscape analysis
 
 Methods that can help us **evaluate an existing idea, prototype, or product**, such as:
 
 - [Usability testing](https://methods.18f.gov/validate/usability-testing/)
-- Manual accessibility testing
-- Analytics
+- [Manual accessibility testing](https://digital.gov/resources/how-test-websites-for-accessibility/)
+- [Analytics](https://digital.gov/resources/how-to-build-an-analytics-strategy/)
 - Concept testing
 - Content testing
-- Tree testing
+- [Tree testing](https://digital.gov/2022/01/06/open-source-information-architecture-design-using-the-tools-you-have-to-conduct-card-sorting-and-tree-testing/)
 
 ### How often we do research
 

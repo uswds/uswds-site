@@ -32,17 +32,19 @@ Our research program focuses on:
 
 We use a variety of research methods to gain insights at all stages of the design process. Find more information about different research methods we use in the [18F Methods](https://methods.18f.gov/).
 
-### Examples of methods we use:
+### Examples of methods we use
 
 Methods that can generate new knowledge about needs or a certain problem, such as:
-- User interviews
+
+- [User interviews](https://methods.18f.gov/discover/stakeholder-and-user-interviews/)
 - Surveys
-- Card sorting
+- [Card sorting](https://methods.18f.gov/validate/card-sorting/)
 - Top Tasks analysis
--Landscape analysis
+- Landscape analysis
 
 Methods that can help us evaluate an existing idea, prototype, or product, such as:
-- Usability testing
+
+- [Usability testing](https://methods.18f.gov/validate/usability-testing/)
 - Manual accessibility testing
 - Analytics
 - Concept testing
@@ -78,5 +80,5 @@ We use ethical research practices to avoid harming participants. This includes:
 
 Learn more about research ethics and privacy protocols we follow:
 
-- Ethics guidance from the 18F User Experience Design Guide
-- Privacy guidance from the 18F User Experience Design Guide
+- [Ethics guidance from the 18F User Experience Design Guide](https://ux-guide.18f.gov/research/ethics/)
+- [Privacy guidance from the 18F User Experience Design Guide](https://ux-guide.18f.gov/research/privacy/)

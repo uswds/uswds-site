@@ -96,7 +96,8 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "overrides": {
-    "glob-parent": "6.0.2"
+    "glob-parent": "6.0.2",
+    "postcss": "^8.4.31"
   },
   "snyk": true,
   "dependencies": {

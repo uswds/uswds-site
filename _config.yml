@@ -2,7 +2,7 @@
 title: U.S. Web Design System (USWDS)
 description: USWDS makes it easier to build accessible, mobile-friendly government websites.
 google_analytics_ua: UA-48605964-43
-uswds_version: 3.6.1
+uswds_version: 3.7.0
 uswds_email: uswds@gsa.gov
 federalist_base: "https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.sites.pages.cloud.gov/preview/uswds/uswds"
 federalist_component_preview: "iframe.html?id="

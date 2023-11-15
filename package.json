@@ -68,10 +68,10 @@
     "cheerio": "^1.0.0-rc.12",
     "chrome-launcher": "^0.14.1",
     "chrome-remote-interface": "^0.33.0",
-    "concurrently": "^8.2.1",
+    "concurrently": "^8.2.2",
     "del": "^6.1.1",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-import": "^2.29.0",
     "express": "^4.18.2",
     "fancy-log": "^2.0.0",
     "gulp": "^4.0.2",
@@ -87,11 +87,11 @@
     "pa11y-ci": "^2.4.2",
     "postcss": "^8.4.31",
     "postcss-csso": "^6.0.1",
-    "prettier": "^3.0.3",
-    "sass": "^1.69.3",
+    "prettier": "^2.8.8",
+    "sass": "^1.69.5",
     "simplecrawler": "^1.1.9",
-    "snyk": "^1.1234.0",
-    "stylelint": "^15.10.3",
+    "snyk": "^1.1246.0",
+    "stylelint": "^15.11.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
@@ -101,6 +101,6 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "^1.0.0",
-    "@uswds/uswds": "^3.6.1"
+    "@uswds/uswds": "^3.7.0"
   }
 }

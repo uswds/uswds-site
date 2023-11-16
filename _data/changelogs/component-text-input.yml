@@ -5,7 +5,7 @@ type: component
 changelogURL:
 
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-16
     summary: Updated the listed values for `.usa-input--[width]`.
     affectsGuidance: true
     githubPr: 2291

@@ -241,7 +241,6 @@ The following are practical actions you can take:
 - [Federal Front Door research findings](https://labs.usa.gov/) [labs.usa.gov]
 - [Sharing Quality Services Cross-Agency Performance goal](https://trumpadministration.archives.performance.gov/CAP/sharing-quality-services/) [performance.gov]
 - [Eight Principles of Mobile-Friendliness](https://digital.gov/resources/mobile/principles/) [digital.gov]
-- [Test on real devices with the Federal Crowdsource Mobile Testing Program](https://digital.gov/services/mobile-application-testing-program/) [digital.gov]
 
 #### Non-government resources
 

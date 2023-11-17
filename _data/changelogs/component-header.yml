@@ -5,7 +5,7 @@ items:
   - date: NNNN-NN-NN
     summary: Resolved a compilation error when `$theme-max-header-width` is set to `"none"`.
     affectsStyles: true
-    githubPr: 5617
+    githubPr: 5624
     githubRepo: uswds
     versionUswds: N.N.N
   - date: 2023-09-29

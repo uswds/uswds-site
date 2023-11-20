@@ -8,6 +8,14 @@ items:
     affectsGuidance: true
     githubPr: 2162
     githubRepo: uswds-site
+  - date: 2023-09-29
+    summary: Fixed a Safari-only bug that caused the mobile menu to unexpectedly close at a narrow range of window widths.
+    summaryAdditional:
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 5443
+    githubRepo: uswds
+    versionUswds: 3.6.1
   - date: 2023-07-14
     summary: Added header variants table to guidance page.
     affectsGuidance: true

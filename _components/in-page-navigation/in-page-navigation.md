@@ -40,24 +40,22 @@ tags:
   - nav
 implementation:
   initProps:
+    - property: "`data-main-content-selector`"
+      description: The element the component pulls headers from.
+      default: '`<main>`'
     - property: "`data-title-heading-level`"
-      element: usa-in-page-nav
       description: The heading level of the navigation title header.
-      default: "h4"
+      default: '`h4`'
     - property: "`data-title-text`"
-      element: usa-in-page-nav
       description: The text of the navigation title header.
-      default: "On this page"
+      default: '"On this page"'
     - property: "`data-scroll-offset`"
-      element: usa-in-page-nav
       description: Number of pixels scroll should offset from the top of the parent element.
       default: "0"
-    - property: "`data-root-margin`"
-      element: usa-in-page-nav
+    - property: '`data-root-margin`'
       description: Observable margin around the observed root used for calculating the current active section. Use values similar to CSS margin.
-      default: "0px 0px 0px 0px"
+      default: '`0px 0px 0px 0px`'
     - property: "`data-threshold`"
-      element: usa-in-page-nav
       description: Percentage of the scrolling section that must be in the observed area before the current section is triggered. Use a value between 0 and 1.
       default: "1"
 title: In-page navigation

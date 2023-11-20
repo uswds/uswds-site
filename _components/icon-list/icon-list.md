@@ -23,8 +23,8 @@ type: component
 variants:
   - variant: "`.usa-icon-list--[color]`"
     description: Change the color of all the list's icons by updating [color] to any [theme](/design-tokens/color/theme-tokens/) or [state](/design-tokens/color/state-tokens/) color token.
-  - variant: "`.usa-icon-list--size-[size]`"
-    description: "Change the size of the text and icon by updating [size] to one of the following theme font sizes: `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, or `3xl` as detailed on the [font size and family](/utilities/font-size-and-family) utility page."
+  - variant: "`usa-icon-list--size-[size]`"
+    description: "Change the size of the text and icon by updating [size] to a [font size token](/design-tokens/typesetting/font-size/)."
   - variant: "`[responsive_variant]:usa-icon-list--size-[size]`"
     description: "Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology."
 changelog:

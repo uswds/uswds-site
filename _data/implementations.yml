@@ -230,7 +230,7 @@
 
 - name: Americana Stack
   distribution: Remix
-  id: vue-uswds
+  id: remix-uswds
   url: https://github.com/nasa-gcn/americana-stack
   author:
     name: NASA's General Coordinates Network (GCN)

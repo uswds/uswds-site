@@ -2,7 +2,7 @@ title: Date picker
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-15
     summary: Added known issues section.
     summaryAdditional:
     affectsGuidance: true

@@ -2,7 +2,7 @@ title: Accordion
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Added `usa-icon` to the dependency list and removed `usa-list`.
     affectsGuidance: true
     githubPr: 2149

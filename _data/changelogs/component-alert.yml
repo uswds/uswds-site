@@ -2,7 +2,7 @@ title: Alert
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Added documentation for the `usa-alert--emergency` variant.
     affectsGuidance: true
     githubPr: 2149

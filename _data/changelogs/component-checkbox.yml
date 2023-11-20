@@ -2,7 +2,7 @@ title: Checkbox
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Added `usa-input-list` to the list of dependencies.
     affectsGuidance: true
     githubPr: 2149

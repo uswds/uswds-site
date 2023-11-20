@@ -2,12 +2,12 @@ title: Banner
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Updated the text in the `aria-label` documentation to match the component markup.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Removed `usa-layout-grid` from the list of dependencies.
     affectsGuidance: true
     githubPr: 2149

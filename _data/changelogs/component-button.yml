@@ -2,7 +2,7 @@ title: Button
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Updated summaries in the "Using the button component" section.
     affectsGuidance: true
     githubPr: 2149

@@ -65,7 +65,7 @@ Explore some of our past research work:
 
 {:.usa-list}
 - [Usability testing](https://github.com/uswds/uswds/wiki/Usability-research-findings-for-Q3-2023) (August and September 2023): Testing components with visually impaired participants. We also discussed this research at the [October 2023 USWDS monthly call](https://youtu.be/_uNXQpu6Dwg?feature=shared).
-- [Usability testing day checklist](https://github.com/uswds/uswds/wiki/Usability-testing-day-checklist): Steps to follow on the day of testing. This checklist also prepares testers to account for assistive technology like screen readers.
+- [Usability testing day checklist](https://github.com/uswds/uswds/wiki/Usability-testing-day-checklist): Steps to follow on the day of testing. This checklist also prepares researchers to account for assistive technology like screen readers.
 - [Top Tasks](https://digital.gov/event/2023/04/20/uswds-monthly-call-april-2023/) (March 2023): Finding out what matters most to USWDS users.
 - [Inclusive Design Patterns research]({{ site.baseurl }}/together/) (November 2022): Reducing barriers to participation in common government interactions.
 - [Transforming the American digital experience]({{ site.baseurl }}/next/) (March 2021): Supporting emergency response efforts related to the COVID-19 and identifying strategies for advancing the design system through agency collaboration.

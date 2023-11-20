@@ -2,6 +2,20 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: 2023-11-09
+    summary: Updated the banner component so that it initializes without requiring import of the `usa-accordion` package.
+    isBreaking: false
+    affectsJavascript: true
+    githubPr: 5551
+    githubRepo: uswds
+    versionUswds: 3.7.0
+  - date: 2023-11-09
+    summary: Optimized the `us_flag_small.png` icon and added a vector `us_flag.svg`icon.
+    summaryAdditional:
+    affectsAssets: true
+    githubPr: 5542
+    githubRepo: uswds
+    versionUswds: 3.7.0
   - date: 2023-09-29
     summary: Improved horizontal alignment in `icon-dot-gov.svg`.
     summaryAdditional:

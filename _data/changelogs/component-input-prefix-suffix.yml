@@ -2,7 +2,7 @@ title: Input prefix or suffix
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Added documentation for `usa-input-group--success` variant.
     affectsGuidance: true
     githubPr: 2162

@@ -2,12 +2,12 @@ title: Link
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Added `uswds-fonts` and `usa-icon` to list of dependencies.
     affectsGuidance: true
     githubPr: 2162
     githubRepo: uswds-site
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Updated code examples for encoding email and phone links.
     affectsGuidance: true
     githubPr: 2162

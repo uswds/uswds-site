@@ -2,7 +2,7 @@ title: Language selector
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Removed the note about using links styled as buttons in the two languages variant.
     summaryAdditional:
     affectsGuidance: true

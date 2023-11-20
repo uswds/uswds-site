@@ -2,7 +2,7 @@ title: Header
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-11-20
     summary: Removed the role, banner component, and HTTPS sections.
     summaryAdditional:
     affectsGuidance: true

@@ -6,7 +6,7 @@ items:
     summary: Added known issues section.
     summaryAdditional:
     affectsGuidance: true
-    githubPr: 2326
+    githubPr: 2360
     githubRepo: uswds-site
   - date: 2023-11-09
     summary: Improved keyboard navigation for screen readers.

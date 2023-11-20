@@ -2,6 +2,11 @@ title: Input prefix or suffix
 type: component
 changelogURL:
 items:
+  - date: 2023-11-20
+    summary: Added documentation for `usa-input-group--success` variant.
+    affectsGuidance: true
+    githubPr: 2162
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.

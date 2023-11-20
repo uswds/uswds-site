@@ -319,6 +319,10 @@ abbr[title="required"] {
       margin-top: units(0.5);
     }
   }
+
+  .usa-list {
+    max-width: measure($site-measure);
+  }
 }
 
 .usa-prose > .usa-button-group {
@@ -329,6 +333,10 @@ abbr[title="required"] {
   li {
     max-width: 100%;
   }
+}
+
+#known-issues {
+  scroll-margin-top: 2.75rem;
 }
 
 // Label links

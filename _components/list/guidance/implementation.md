@@ -1,1 +1,1 @@
-- For unstyled lists, use either the `.usa-list.usa-list--unstyled` classes or the unstyled list mixin: `@include unstyled-list`.
+- **Remove list styles with the unstyled variant.** For unstyled lists, either add the `.usa-list--unstyled` class or use the Sass mixin: `@include unstyled-list`.

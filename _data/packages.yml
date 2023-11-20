@@ -281,6 +281,7 @@
     - "uswds-fonts"
     - "usa-fieldset"
     - "usa-legend"
+    - "usa-input-list"
 - name: "usa-range"
   fullSize: 8
   sourceSize: 2

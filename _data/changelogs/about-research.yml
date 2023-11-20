@@ -2,6 +2,11 @@ title: Research
 type: documentation
 changelogURL:
 items:
+  - date: 2023-11-15
+    summary: Replaced page content.
+    affectsGuidance: true
+    githubPr: 2355
+    githubRepo: uswds-site
   - date: 2023-07-14
     summary: Removed broken link.
     affectsGuidance: true

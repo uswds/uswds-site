@@ -7,6 +7,13 @@ items:
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
+  - date: 2023-11-09
+    summary: Fixed a bug that prevented `$theme-card-padding-y` from accepting expected token values.
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 5571
+    githubRepo: uswds
+    versionUswds: 3.7.0
   - date: 2023-09-29
     summary: Fixed a margin bug on header-first variants that caused exdent card media to overlap headers.
     affectsStyles: true

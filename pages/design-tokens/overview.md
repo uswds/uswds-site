@@ -56,10 +56,12 @@ We can't include tokens, like `max-width: 1`, directly in our Sass. Rather, we u
 Tokens can be expressed as variables, which is how most Design System theme settings work. For instance, the following is an example of theme settings in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings). This example shows spacing unit tokens assigned to settings variables:
 
 ```
-$theme-grid-container-max-width:    'desktop';
-$theme-site-margins-breakpoint:     'desktop';
-$theme-site-margins-width:          4;
-$theme-site-margins-mobile-width:   2;
+@use "uswds-core" with (
+  $theme-grid-container-max-width:    'desktop',
+  $theme-site-margins-breakpoint:     'desktop',
+  $theme-site-margins-width:          4,
+  $theme-site-margins-mobile-width:   2,
+);
 ```
 
 The Design System's component Sass uses those variableized tokens to build component styles as in the following code:

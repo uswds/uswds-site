@@ -79,7 +79,7 @@ A text input field with validation and robust error messaging to guide users in 
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
+  <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/email.html %}{% endhighlight %}
     </div>

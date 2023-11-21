@@ -2,6 +2,38 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: 2023-11-20
+    summary: Updated the text in the `aria-label` documentation to match the component markup.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    summary: Removed `usa-layout-grid` from the list of dependencies.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2023-11-09
+    summary: Updated the banner component so that it initializes without requiring import of the `usa-accordion` package.
+    isBreaking: false
+    affectsJavascript: true
+    githubPr: 5551
+    githubRepo: uswds
+    versionUswds: 3.7.0
+  - date: 2023-11-09
+    summary: Optimized the `us_flag_small.png` icon and added a vector `us_flag.svg`icon.
+    summaryAdditional:
+    affectsAssets: true
+    githubPr: 5542
+    githubRepo: uswds
+    versionUswds: 3.7.0
+  - date: 2023-09-29
+    summary: Improved horizontal alignment in `icon-dot-gov.svg`.
+    summaryAdditional:
+    affectsAssets: true
+    githubPr: 5370
+    githubRepo: uswds
+    versionUswds: 3.6.1
   - date: 2023-03-09
     summary: Improved display of focus outline on mobile.
     summaryAdditional: Now the focus outline is visible all around the banner on mobile devices.

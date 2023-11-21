@@ -2,6 +2,20 @@ title: Checkbox
 type: component
 changelogURL:
 items:
+  - date: 2023-11-20
+    summary: Added `usa-input-list` to the list of dependencies.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2023-09-29
+    summary: Updated radio and checkbox tiles to have lighter borders, reducing visual noise.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5494
+    githubRepo: uswds
+    versionUswds: 3.6.1
   - date: 2023-06-09
     summary: Improved legibility in forced colors mode.
     summaryAdditional: Adds a consistent border in forced colors mode.

@@ -44,17 +44,17 @@ tags:
 title: Table
 type: component
 variants:
-  - variant: "`usa-table--borderless`"
+  - variant: "`.usa-table--borderless`"
     description: Removes the outer table borders, retaining only a single bottom border on each row. Best for tables with more text than numbers.
-  - variant: "`usa-table--compact`"
+  - variant: "`.usa-table--compact`"
     description: Reduces the row height and vertical spacing to display more table rows within a limited space. Should only be used with dense, numerical data, not text content. Pairs well with scrollable and striped variants, but is not suitable for use with stacked variants.
   - variant: "`.usa-table-container--scrollable > .usa-table`"
     description: Add the `usa-table-container--scrollable` class to a container around any `usa-table` to apply a horizontal scrollbar if the columns exceed the available width. Ideal for dense tables with many columns.
-  - variant: "`usa-table--stacked`"
+  - variant: "`.usa-table--stacked`"
     description: Stacks the table cells on narrow screens. Ideal for tables that contain more text information than numerical data. If you use this variant, you must ensure there is a data-label attribute on each cell of the table that matches the column header.
-  - variant: "`usa-table--stacked-header`"
+  - variant: "`.usa-table--stacked-header`"
     description: Stacks the table cells on narrow screens and visually promotes the first cell of every row into a “header” for that group. Preferred for directories and other lists where the first cell of every row is a name. If you use this variant, you must ensure there is a data-label attribute on each cell of the table that matches the column header.
-  - variant: "`usa-table--striped`"
+  - variant: "`.usa-table--striped`"
     description: Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns.
 changelog:
   key: component-table

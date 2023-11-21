@@ -20,8 +20,7 @@ redirect_from:
 subnav:
 - text: Latest updates
   href: '#changelog'
-in_page_nav: false
-changelog:
+- changelog:
   key: about-whats-new
 ---
 

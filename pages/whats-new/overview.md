@@ -18,9 +18,9 @@ redirect_from:
   - /whats-new/
   - /whats-new/releases
 subnav:
-- text: Latest updates
-  href: '#changelog'
-- changelog:
+  - text: Latest updates
+    href: '#changelog'
+changelog:
   key: about-whats-new
 ---
 

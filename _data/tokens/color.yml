@@ -135,7 +135,7 @@ theme:
   - token: primary-darker
     default: "blue-warm-80v"
   - token: secondary-lighter
-    default: "red-cool-10v"
+    default: "red-cool-10"
   - token: secondary-light
     default: "red-30"
   - token: secondary

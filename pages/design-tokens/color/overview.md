@@ -60,7 +60,7 @@ Accessibility is not a special case. In the second quarter of 2018, [sites using
 
 ### Accessible color pairings
 
-USWDS helps teams choose accessible colors with a color-grade system. The following figure represents the `gray` color family in grades 5–90 (grade 0 is `white`):
+USWDS helps teams choose accessible colors with a color-grade system. The following figure represents the `gray` color family in grades 5–90:
 
 {% capture gray-grade %}
 <div class="padding-2 bg-white radius-md measure-3">

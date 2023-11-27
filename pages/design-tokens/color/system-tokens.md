@@ -169,7 +169,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            color: color(<code>'red-50v'</code>)
+            color: color(<code>'gray-30'</code>)
           </span>
         </td>
       </tr>
@@ -187,7 +187,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            @include u-bg(<code>'red-50v'</code>)<br/>
+            @include u-bg(<code>'gray-30'</code>)<br/>
           </span>
         </td>
       </tr>
@@ -205,7 +205,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            @include u-text(<code>'red-50v'</code>)<br/>
+            @include u-text(<code>'gray-30'</code>)<br/>
           </span>
         </td>
       </tr>
@@ -223,7 +223,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            @include u-border(<code>'red-50v'</code>)<br/>
+            @include u-border(<code>'gray-30'</code>)<br/>
           </span>
         </td>
       </tr>
@@ -241,7 +241,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            @include u-underline(<code>'red-50v'</code>)<br/>
+            @include u-underline(<code>'gray-30'</code>)<br/>
           </span>
         </td>
       </tr>
@@ -258,25 +258,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            $theme-color-warning: <code>'red-50v'</code>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Context">
-          <span class="font-lang-3">
-            <span>mixin</span><br/>
-            <span class="text-normal">text-decoration-color</span>
-          </span>
-        </th>
-        <td data-title="Description">
-          <span>
-            @include u-underline(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
-          </span>
-        </td>
-        <td data-title="Example">
-          <span>
-            @include u-underline(<code>'red-50v'</code>)<br/>
+            $theme-color-disabled: <code>'gray-30'</code>
           </span>
         </td>
       </tr>
@@ -294,7 +276,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            .bg-<code>red-50v</code>
+            .bg-<code>gray-30</code>
           </span>
         </td>
       </tr>
@@ -312,7 +294,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            .border-<code>red-50v</code>
+            .border-<code>gray-30</code>
           </span>
         </td>
       </tr>
@@ -330,7 +312,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            .text-<code>red-50v</code>
+            .text-<code>gray-30</code>
           </span>
         </td>
       </tr>
@@ -348,7 +330,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            .outline-<code>red-50v</code>
+            .outline-<code>gray-30</code>
           </span>
         </td>
       </tr>
@@ -366,7 +348,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            .underline-<code>red-50v</code>
+            .underline-<code>gray-30</code>
           </span>
         </td>
       </tr>

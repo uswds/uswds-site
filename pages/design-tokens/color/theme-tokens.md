@@ -33,17 +33,11 @@ USWDS theme color tokens are divided into five high-level role-based color famil
 
 Each color family has seven possible lightness grades, from `lightest` to `darkest`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings. The default USWDS theme palette does not use every grade for every family. The `primary` and `secondary` families also have a `vivid` grade available.
 
-## Customizing theme color tokens
+{% assign token_type="theme" %}
+{% assign example_token="primary-vivid" %}
+{% assign example_value="blue-warm-50v" %}
 
-Customize theme color tokens in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings) using the variables listed below. Define any theme setting variable with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
-
-For example, if you wanted to set the value of the `primary-vivid` token to `blue-warm-50v`, your settings configuration would look like this:
-
-```
-@use "uswds-core" with (
-  $theme-color-primary-vivid: "blue-warm-50v",
-);
-```
+{% include tokens/customize-color-token.html %}
 
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">

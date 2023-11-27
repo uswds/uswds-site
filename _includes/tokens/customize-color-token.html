@@ -1,0 +1,13 @@
+## Customizing {{ token_type }} color tokens
+
+Customize {{ token_type }} color tokens in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings/#configuring-custom-uswds-settings) using the variables listed below.
+Define any {{ token_type }} setting variable with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/).
+Set any unused theme color to `false`.
+
+For example, if you wanted to set the value of the `{{ example_token }}` token to `{{ example_value }}`, your settings configuration would look like this:
+
+```
+@use "uswds-core" with (
+    $theme-color-{{ example_token }}: "{{ example_value }}",
+);
+```

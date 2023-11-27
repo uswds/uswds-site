@@ -16,6 +16,10 @@ subnav:
   href: '#customizing-theme-color-tokens'
 - text: Using theme color tokens
   href: '#using-theme-color-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-color-theme
 ---
 
 {% assign colors = site.data.tokens.color %}

@@ -62,6 +62,10 @@ subnav:
     href: '#gray-warm'
   - text: Using color tokens
     href: '#using-color-tokens'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: tokens-color-system
 families:
   - red-cool
   - red-cool-vivid

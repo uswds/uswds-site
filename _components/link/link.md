@@ -44,7 +44,7 @@ subnav:
     href: '#changelog'
 title: Link
 variants:
-  - variant: "`usa-link--external`"
+  - variant: "`.usa-link--external`"
     description: Display an external link icon after the link.
 tags:
   - typography

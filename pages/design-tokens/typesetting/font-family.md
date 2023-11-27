@@ -234,7 +234,7 @@ Your context and coding style determine how you access USWDS family tokens in co
       <span class="text-normal">font-family</span>
     </div>
     <div class="grid-col-5">.font-family-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a></div>
-    <div class="grid-col-5">.font-family-<code>body</code>;</div>
+    <div class="grid-col-5">.font-family-<code>body</code></div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
     <div class="grid-col-2 text-bold font-lang-3">utility<br/>
@@ -242,7 +242,7 @@ Your context and coding style determine how you access USWDS family tokens in co
       <span class="text-normal">font-size</span>
     </div>
     <div class="grid-col-5">.font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a></div>
-    <div class="grid-col-5">.font-<code>body</code>-<code>2xl</code>;</div>
+    <div class="grid-col-5">.font-<code>body</code>-<code>2xl</code></div>
   </div>
 </div>
 

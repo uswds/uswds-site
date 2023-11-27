@@ -216,7 +216,7 @@ div {
         </td>
         <td data-title="Example">
           <span>
-            $theme-border-color: <code>'primary-vivid'</code>
+            $theme-link-color: <code>'primary-vivid'</code>
           </span>
         </td>
       </tr>

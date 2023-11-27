@@ -593,7 +593,7 @@ Use design tokens, like `$theme-grid-container-max-width: 'desktop'`, directly t
       <tr>
         <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
-            'ui', 'micro'
+            'ui', 'lg'
           </span>
         </th>
         <td data-title="Function">
@@ -603,19 +603,19 @@ Use design tokens, like `$theme-grid-container-max-width: 'desktop'`, directly t
         </td>
         <td data-title="Mixin">
           <span>
-            u-font('ui', 'micro')
+            u-font('ui', 'lg')
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .font-ui-micro
+            .font-ui-lg
           </span>
         </td>
       </tr>
       <tr>
         <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
-            'body', 15
+            'body', '2xl'
           </span>
         </th>
         <td data-title="Function">
@@ -625,12 +625,12 @@ Use design tokens, like `$theme-grid-container-max-width: 'desktop'`, directly t
         </td>
         <td data-title="Mixin">
           <span>
-            u-font('body', 15)
+            u-font('body', '2xl')
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .font-body-15
+            .font-body-2xl
           </span>
         </td>
       </tr>

@@ -26,7 +26,7 @@ changelog:
 
 ## Release notes
 
-You can find summaries of bug fixes, new features, and other updates introduced in each release on our [GitHub releases page](https://github.com/uswds/uswds/releases).
+Find summaries of each USWDS update on our [GitHub releases page](https://github.com/uswds/uswds/releases). Release notes explain bug fixes, new features, and other changes.
 
 Want to learn about new USWDS releases as they are published? You can sign up to be notified of new USWDS releases by setting up [watch notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository) in the USWDS repository in GitHub.
 

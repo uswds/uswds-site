@@ -187,7 +187,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            $theme-color-warning: <code>'warning-dark'</code>
+            $theme-alert-text-color: <code>'warning-dark'</code>
           </span>
         </td>
       </tr>

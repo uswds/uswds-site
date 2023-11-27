@@ -1,0 +1,10 @@
+title: Tokens
+type: token
+changelogURL:
+items:
+  - date: 2023-11-27
+    summary: Updated token references in "Using design tokens" section.
+    summaryAdditional: Also updated the settings configuration code example.
+    affectsGuidance: true
+    githubPr: 2366
+    githubRepo: uswds-site

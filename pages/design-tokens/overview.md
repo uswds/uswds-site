@@ -12,6 +12,10 @@ subnav:
     href: '#keys-and-values'
   - text: Using design tokens
     href: '#using-design-tokens'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: tokens
 ---
 
 {{ page.collection | slugify }}

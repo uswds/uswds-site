@@ -150,44 +150,22 @@ Use design tokens, like `$theme-grid-container-max-width: 'desktop'`, directly t
       <tr>
         <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
-            'red-warm-50'
+            'red'
           </span>
         </th>
         <td data-title="Function">
           <span>
-            color('red-warm-50')
+            color('red')
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-border('red-warm-50')
+            u-border('red')
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .border-red-warm-50
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
-          <span>
-            'red-warm-50v'
-          </span>
-        </th>
-        <td data-title="Function">
-          <span>
-            color('red-warm-50v')
-          </span>
-        </td>
-        <td data-title="Mixin">
-          <span>
-            u-border('red-warm-50v')
-          </span>
-        </td>
-        <td data-title="Utility class">
-          <span>
-            .border-red-warm-50v
+            .border-red
           </span>
         </td>
       </tr>

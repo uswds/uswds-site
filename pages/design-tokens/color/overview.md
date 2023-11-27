@@ -43,7 +43,7 @@ USWDS organizes its color tokens into [theme tokens]({{ site.baseurl }}/design-t
 
 Throughout our documentation and guidance, we’ll use the terms "color," "color family," and "grade" — but what do we mean when we use them?
 
-**Color** is any specific swatch in our System token palettes, like `red-50`, `primary-base`, or `indigo-warm-60v`.
+**Color** is any specific swatch in our [system color token palette]({{ site.baseurl }}/design-tokens/color/system-tokens/), like `red-50`, `green-cool-10`, or `indigo-warm-60v`.
 
 **Color family** is a group of colors that all have the same hue on a color wheel (refer to [USWDS color wheels](#uswds-color-wheels)). Each contains a number of individual colors, distinguished from each other by the brightness or saturation. A System token's color family typically has a conventional color name, like `red` or `blue-warm`, and a theme token's color family has a role-based name, like `primary`.
 

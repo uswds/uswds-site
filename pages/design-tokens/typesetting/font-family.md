@@ -174,22 +174,26 @@ Customize the values of [type](#type-based-tokens){:.token} and [role](#role-bas
 
 {:.margin-bottom-4}
 ```sass
-$theme-font-type-cond:   false;
-$theme-font-type-icon:   false;
-$theme-font-type-lang:   false;
-$theme-font-type-mono:   'roboto-mono';
-$theme-font-type-sans:   'source-sans-pro';
-$theme-font-type-serif:  'merriweather';
+@use "uswds-core" with (
+  $theme-font-type-cond:   false,
+  $theme-font-type-icon:   false,
+  $theme-font-type-lang:   false,
+  $theme-font-type-mono:   'roboto-mono',
+  $theme-font-type-sans:   'source-sans-pro',
+  $theme-font-type-serif:  'merriweather',
+);
 ```
 
 **Then use the [type](#type-based-tokens){:.token} tokens you just set to define the [$theme-font-role-]({{ site.baseurl }}/documentation/settings/#typography-settings) settings variables.** These settings define the value of the [role](#role-based-tokens){:.token} family tokens. Set any unused types to `false`.
 
 ```sass
-$theme-font-role-ui:       'sans';
-$theme-font-role-heading:  'serif';
-$theme-font-role-body:     'sans';
-$theme-font-role-code:     'mono';
-$theme-font-role-alt:      'serif';
+@use "uswds-core" with (
+  $theme-font-role-ui:       'sans',
+  $theme-font-role-heading:  'serif',
+  $theme-font-role-body:     'sans',
+  $theme-font-role-code:     'mono',
+  $theme-font-role-alt:      'serif',
+);
 ```
 
 ## Using family tokens

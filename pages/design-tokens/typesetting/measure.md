@@ -117,7 +117,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
         </td>
         <td data-title="Example">
           <span>
-            $theme-body-measure: <code>4</code>
+            $theme-text-measure: <code>5</code>
           </span>
         </td>
       </tr>

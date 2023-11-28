@@ -3,7 +3,7 @@ type: token
 changelogURL:
 items:
   - date: 2023-11-29
-    summary: Updated guidance for configuring settings.
+    summary: Updated settings configuration code example.
     affectsGuidance: true
     githubPr: 2379
     githubRepo: uswds-site

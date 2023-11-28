@@ -10,6 +10,10 @@ subnav:
   href: '#letterspacing-tokens'
 - text: Using letterspacing tokens
   href: '#using-letterspacing-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-type-letterspacing
 ---
 
 {% assign conversion = site.data.tokens.conversion %}

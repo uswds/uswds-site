@@ -1,0 +1,9 @@
+title: Font weight tokens
+type: token
+changelogURL:
+items:
+  - date: 2023-11-29
+    summary: Updated setting code example.
+    affectsGuidance: true
+    githubPr: 2379
+    githubRepo: uswds-site

@@ -10,6 +10,10 @@ subnav:
   href: '#measure-tokens'
 - text: Using measure tokens
   href: '#using-measure-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-type-measure
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}

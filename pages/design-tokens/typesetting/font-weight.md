@@ -12,6 +12,10 @@ subnav:
   href: '#system-tokens'
 - text: Using weight tokens
   href: '#using-weight-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-type-font-weight
 ---
 
 {% assign tokens = site.data.tokens.typesetting.weight %}

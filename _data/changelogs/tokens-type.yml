@@ -1,0 +1,9 @@
+title: Typesetting tokens
+type: token
+changelogURL:
+items:
+  - date: 2023-11-29
+    summary: Updated value in the settings configuration code example.
+    affectsGuidance: true
+    githubPr: 2379
+    githubRepo: uswds-site

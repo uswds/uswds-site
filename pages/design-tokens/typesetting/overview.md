@@ -13,6 +13,10 @@ subnav:
     href: '#normalization'
   - text: Typesetting with tokens
     href: '#typesetting-with-tokens'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: tokens-type
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}

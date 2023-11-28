@@ -3,7 +3,7 @@ type: token
 changelogURL:
 items:
   - date: 2023-11-29
-    summary: Updated setting code example in "Using measure tokens" section.
+    summary: Updated the setting code example in "Using measure tokens" section.
     affectsGuidance: true
     githubPr: 2379
     githubRepo: uswds-site

@@ -43,6 +43,8 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
 
 {% include tokens/customize-color-token.html %}
 
+## Theme color tokens table
+
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">
     <thead>

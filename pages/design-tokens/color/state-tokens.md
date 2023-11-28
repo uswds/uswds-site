@@ -38,6 +38,9 @@ Each color family except `emergency` and `disabled` has five possible lightness 
 
 {% include tokens/customize-color-token.html %}
 
+
+## State color tokens table
+
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">
     <thead>

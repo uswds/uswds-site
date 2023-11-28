@@ -120,7 +120,7 @@ Your context and coding style determine how you access USWDS letterspacing token
         </td>
         <td data-title="Example">
           <span>
-            $theme-heading-letterspacing: <code>-2</code>
+            $heading-letterspacing: <code>-2</code>
           </span>
         </td>
       </tr>

@@ -32,7 +32,14 @@ The state color palette is divided into five high-level role-based color familie
 
 Each color family except `emergency` and `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
 
-Customize state color tokens using the variables listed below in `_uswds_theme_color.scss` with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
+{% assign token_type="state" %}
+{% assign example_token="error-dark" %}
+{% assign example_value="red-warm-60v" %}
+
+{% include tokens/customize-color-token.html %}
+
+
+## State color tokens table
 
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">
@@ -183,7 +190,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Example">
           <span>
-            $theme-color-warning: <code>'warning-dark'</code>
+            $theme-alert-text-color: <code>'warning-dark'</code>
           </span>
         </td>
       </tr>

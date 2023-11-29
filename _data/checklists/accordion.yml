@@ -1,0 +1,19 @@
+title: Accordion
+testDate: 2023-11-29
+meetsStandards: true
+complianceLevel: 2.1 AA
+checklistItems:
+  - summary: When you tab into the content of the accordion, you can click on links and other interactive items.
+    topic: Keyboard
+    wcagLevel: AA
+    passedTest: true
+    testDate: 2023-11-29
+    version: 3.5.0
+    wcagRule: 2.1.1 Keyboard
+  - summary: When you click `shift+tab` the focus moves to the previous focusable element. All focusable elements are included in the tab sequence.
+    topic: Focus order
+    wcagLevel: AAA
+    passedTest: false
+    testDate: 2023-09-06
+    version: 3.0.0
+    wcagRule: 2.1.1 Keyboard

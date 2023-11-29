@@ -1,0 +1,166 @@
+{% assign pageName = page.title | remove: 'critical checklist'%}
+{% assign pageSlug = pageName | slugify %}
+{% assign component = site.data.checklists[pageSlug] %}
+{% assign checklistItems = component.checklistItems %}
+
+
+<style>
+  .wcag-A {
+      background-color: #e7f6f8;
+      color: #1b1b1b;
+      /* background-color: #009ec1; */
+  }
+  .wcag-AA {
+      /* background-color: #009ec1; */
+      background-color: lightblue;
+      color: #1b1b1b;
+  }
+  .wcag-AAA {
+      /* background-color: #2e6276;
+      order: -1; */
+      /* background-color: #009ec1; */
+      background-color: rgb(144, 197, 213);
+      color: #1b1b1b;
+  }
+  .wcag-tag {
+      background-color: #e7f6f8;
+      color: #1b1b1b;
+      display: none;
+  }
+</style>
+
+
+{% if component.meetsStandards %}
+<div class="usa-alert usa-alert--success usa-alert--no-icon">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      The {{ pageName }} meets  WCAG {{ component.complianceLevel }} conformance standards.
+      <i>This component was last tested by the USWDS team on {{ component.testDate }}.</i>
+    </p>
+  </div>
+</div>
+{% else %}
+<div class="usa-alert usa-alert--warning usa-alert--no-icon">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      This component is not in compliance with WCAG {{ component.complianceLevel }}.
+      <i>This component was last tested by the USWDS accessibility team on {{ component.testDate }}.</i>
+    </p>
+  </div>
+</div>
+{% endif %}
+
+## {{ pageName | capitalize }} testing checklist
+{% assign col1Title = 'Status' %}
+{% assign col1Classes = 'tablet:grid-col' %}
+{% assign col2Title = 'Description' %}
+{% assign col2Classes = 'tablet:grid-col' %}
+{% assign col3Title = 'Date tested' %}
+{% assign col3Classes = 'tablet:grid-col' %}
+{% assign col4Title = 'Tabs' %}
+{% assign col4Classes = 'tablet:grid-col' %}
+
+<table class="usa-table--borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col" class="{{ col1Classes }}">{{ col1Title }}</th>
+      <th scope="col" class="{{ col2Classes }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Classes }}">{{ col3Title }}</th>
+      <th scope="col" class="{{ col4Classes }}">{{ col4Title }}</th>
+    </tr>
+  </thead>
+  <tbody class="font-lang-3xs">
+    {% for item in checklistItems %}
+    <tr>
+      <td data-title="{{ col1Title }}" class="{{ col1Classes }}">
+        {% if item.passedTest == true %}
+          <span class="font-mono-3xs">Passes</span>
+        {% endif %}
+      </td>
+      <td data-title="{{ col2Title }}" class="{{ col2Classes }}">
+        {% if item.summary %}
+        <span class="font-mono-3xs">
+          {{ item.summary }}
+        </span>
+        {% endif %}
+      </td>
+      <td data-title="{{ col3Title }}" class="{{ col3Classes }}">
+        <ul class="add-list-reset">
+          {% if item.affectsAccessibility %}
+            <li><span class="output-warning">Accessibility</span></li>
+          {% endif %}
+          {% if item.affectsAssets %}
+            <li><span class="output-neutral">Assets</span></li>
+          {% endif %}
+          {% if item.affectsContent %}
+            <li><span class="output-neutral">Content</span></li>
+          {% endif %}
+          {% if item.affectsGuidance %}
+            <li><span class="output-neutral">Guidance</span></li>
+          {% endif %}
+          {% if item.affectsJavascript %}
+            <li><span class="output-neutral">JavaScript</span></li>
+          {% endif %}
+          {% if item.affectsMarkup %}
+            <li><span class="output-warning">Markup</span></li>
+          {% endif %}
+          {% if item.affectsStyles %}
+            <li><span class="output-neutral">Styles</span></li>
+          {% endif %}
+          {% if item.affectsSettings %}
+            <li><span class="output-neutral">Settings</span></li>
+          {% endif %}
+        </ul>
+      </td>
+      <td data-title="{{ col4Title }}" class="{{ col4Classes }}">
+        {% if item.isBreaking %}
+          <span class="output-false">Breaking</span>
+        {% else %}
+          No
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+## {{ pageName | capitalize }} testing checklist
+{% if checklistItems %}
+<ul class="usa-icon-list usa-content-list">
+  {% for item in checklistItems %}
+    <li class="usa-icon-list__item">
+        {% if item.passedTest == true %}
+        <div class="usa-icon-list__icon text-green">
+          <svg class="usa-icon" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+          </svg>
+        </div>
+        {% elsif item.passedTest == false %}
+        <div class="usa-icon-list__icon text-red">
+          <svg class="usa-icon" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use>
+          </svg>
+        </div>
+        {% endif %}
+
+        <div class="usa-icon-list__content">{{ item.summary }}
+          <i>Last tested on {{ item.testDate | date: "%b %e, %Y" }}.</i> <br/>
+          <div class="margin-top-1">
+            <span class="usa-tag wcag-{{ item.wcagLevel }} margin-top-2">WCAG 2.1 {{ item.wcagLevel }}</span>
+            {% if item.topic %}
+              <span class="usa-tag margin-top-2">{{ item.topic }}</span>
+            {% endif %}
+            {% if item.wcagRule %}
+              <a href="www.google.com" class="usa-tag margin-top-2">{{ item.wcagRule }}</a>
+            {% endif %}
+          </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+## Support
+If you discover accessibility issues with the accordion component, please let us know by [submitting an issue in GitHub.](https://github.com/uswds/uswds/issues/new/choose)

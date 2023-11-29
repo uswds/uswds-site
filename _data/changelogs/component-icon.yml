@@ -2,6 +2,13 @@ title: Icon
 type: component
 changelogURL:
 items:
+  - date: 2023-11-09
+    summary: Added the X social media icon. 
+    summaryAdditional: We also preserved the legacy Twitter icon to allow teams to make the decision on when to update their social media information.
+    affectsAssets: true
+    githubPr: 5589
+    githubRepo: uswds
+    versionUswds: 3.7.0
   - date: 2023-10-20
     summary: Added note about icon color contrast.
     affectsGuidance: true

@@ -1,40 +1,14 @@
-{% assign pageName = page.title | remove: 'critical checklist'%}
-{% assign pageSlug = pageName | slugify %}
-{% assign component = site.data.checklists[pageSlug] %}
+{% assign componentName = page.title | remove: 'critical checklist' | downcase %}
+{% assign componentSlug = componentName | slugify %}
+{% assign component = site.data.checklists[componentSlug] %}
 {% assign checklistItems = component.checklistItems | sort: "topic" %}
 {% assign lastTestDate = component.testDate | date: "%B %e, %Y" %}
-
-<style>
-  .wcag-A {
-      background-color: #e7f6f8;
-      color: #1b1b1b;
-      /* background-color: #009ec1; */
-  }
-  .wcag-AA {
-      /* background-color: #009ec1; */
-      background-color: lightblue;
-      color: #1b1b1b;
-  }
-  .wcag-AAA {
-      /* background-color: #2e6276;
-      order: -1; */
-      /* background-color: #009ec1; */
-      background-color: rgb(144, 197, 213);
-      color: #1b1b1b;
-  }
-  .wcag-tag {
-      background-color: #e7f6f8;
-      color: #1b1b1b;
-      display: none;
-  }
-</style>
-
 
 {% if component.meetsStandards %}
 <div class="usa-alert usa-alert--success usa-alert--no-icon">
   <div class="usa-alert__body">
     <p class="usa-alert__text">
-      The {{ pageName }} meets  WCAG {{ component.complianceLevel }} conformance standards.<br/>
+      The {{ componentName }} component meets  WCAG {{ component.complianceLevel }} conformance standards.<br/>
       <i>This component was last tested on {{ lastTestDate }}.</i>
     </p>
   </div>
@@ -50,85 +24,42 @@
 </div>
 {% endif %}
 
-<!-- ## {{ pageName | capitalize }} testing checklist
-{% assign col1Title = 'Status' %}
-{% assign col1Classes = 'tablet:grid-col' %}
-{% assign col2Title = 'Description' %}
-{% assign col2Classes = 'tablet:grid-col' %}
-{% assign col3Title = 'Date tested' %}
-{% assign col3Classes = 'tablet:grid-col' %}
-{% assign col4Title = 'Tabs' %}
-{% assign col4Classes = 'tablet:grid-col' %}
-
-<table class="usa-table--borderless site-table-responsive site-table-simple">
-  <thead>
-    <tr>
-      <th scope="col" class="{{ col1Classes }}">{{ col1Title }}</th>
-      <th scope="col" class="{{ col2Classes }}">{{ col2Title }}</th>
-      <th scope="col" class="{{ col3Classes }}">{{ col3Title }}</th>
-      <th scope="col" class="{{ col4Classes }}">{{ col4Title }}</th>
-    </tr>
-  </thead>
-  <tbody class="font-lang-3xs">
-    {% for item in checklistItems %}
-    <tr>
-      <td data-title="{{ col1Title }}" class="{{ col1Classes }}">
-        {% if item.passedTest == true %}
-          <span class="font-mono-3xs">Passes</span>
-        {% endif %}
-      </td>
-      <td data-title="{{ col2Title }}" class="{{ col2Classes }}">
-        {% if item.summary %}
-        <span class="font-mono-3xs">
-          {{ item.summary }}
-        </span>
-        {% endif %}
-      </td>
-      <td data-title="{{ col3Title }}" class="{{ col3Classes }}">
-        <ul class="add-list-reset">
-          {% if item.affectsAccessibility %}
-            <li><span class="output-warning">Accessibility</span></li>
-          {% endif %}
-          {% if item.affectsAssets %}
-            <li><span class="output-neutral">Assets</span></li>
-          {% endif %}
-          {% if item.affectsContent %}
-            <li><span class="output-neutral">Content</span></li>
-          {% endif %}
-          {% if item.affectsGuidance %}
-            <li><span class="output-neutral">Guidance</span></li>
-          {% endif %}
-          {% if item.affectsJavascript %}
-            <li><span class="output-neutral">JavaScript</span></li>
-          {% endif %}
-          {% if item.affectsMarkup %}
-            <li><span class="output-warning">Markup</span></li>
-          {% endif %}
-          {% if item.affectsStyles %}
-            <li><span class="output-neutral">Styles</span></li>
-          {% endif %}
-          {% if item.affectsSettings %}
-            <li><span class="output-neutral">Settings</span></li>
-          {% endif %}
-        </ul>
-      </td>
-      <td data-title="{{ col4Title }}" class="{{ col4Classes }}">
-        {% if item.isBreaking %}
-          <span class="output-false">Breaking</span>
-        {% else %}
-          No
-        {% endif %}
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table> -->
-
-## {{ pageName | capitalize }} testing checklist
+## {{ componentName | capitalize }} testing checklist
 {% if checklistItems %}
-<ul class="usa-icon-list usa-content-list">
+<ul class="usa-icon-list usa-content-list maxw-full">
   {% for item in checklistItems %}
-    <li class="usa-icon-list__item">
+    {% if item.wcagCriterion == "1.4.4" %}
+      {% assign criterionLevel = "AA" %}
+      {% assign criterionName = "Resize text" %}
+    {% endif %}
+    {% if item.wcagCriterion == "1.4.4" %}
+      {% assign criterionLevel = "AA" %}
+      {% assign criterionName = "Resize text" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.1.1" %}
+      {% assign criterionLevel = "A" %}
+      {% assign criterionName = "Keyboard" %}
+      {% assign criterionUrl = "https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.1.2" %}
+      {% assign criterionLevel = "A" %}
+      {% assign criterionName = "No keyboard trap" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.4.3" %}
+      {% assign criterionLevel = "A" %}
+      {% assign criterionName = "Focus order" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.4.6" %}
+      {% assign criterionLevel = "AA" %}
+      {% assign criterionName = "Headings and labels" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.4.7" %}
+      {% assign criterionLevel = "AA" %}
+      {% assign criterionName = "Focus visible" %}
+    {% endif %}
+
+    <li class="usa-icon-list__item grid-row grid-gap-lg flex-justify">
+      <div class="display-flex flex-row">
         {% if item.passedTest == true %}
         <div class="usa-icon-list__icon text-green">
           <svg class="usa-icon" aria-hidden="true" role="img">
@@ -142,18 +73,28 @@
           </svg>
         </div>
         {% endif %}
-
-        <div class="usa-icon-list__content">{{ item.summary }}
-          <i>Last tested on {{ item.testDate | date: "%b %e, %Y" }}.</i> <br/>
-          <div class="margin-top-1">
-            <span class="usa-tag wcag-{{ item.wcagLevel }} margin-top-2">WCAG 2.1 {{ item.wcagLevel }}</span>
-            {% if item.topic %}
-              <span class="usa-tag margin-top-2">{{ item.topic }}</span>
-            {% endif %}
-            {% if item.wcagRule %}
-              <a href="www.google.com" class="usa-tag margin-top-2">{{ item.wcagRule }}</a>
-            {% endif %}
-          </div>
+        <div class="usa-icon-list__content">
+          <p class="margin-bottom-05">
+            <strong>{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
+            {{ item.summaryAdditional | markdownify  | remove: '<p>' | remove: '</p>' }}
+          </p>
+          {% if item.wcagCriterion%}
+            <span class="usa-tag text-ink bg-base-lighter margin-right-1">
+              WCAG {{ criterionLevel }}
+            </span>
+            <a href="{{ criterionUrl }}" class="font-body-xs">
+              {{ item.wcagCriterion }} {{ criterionName }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+        <div class="display-flex flex-column flex-align-end text-right">
+          {% if item.version %}
+          <span class="padding-1 bg-primary-lighter margin-top-05 radius-md font-body-2xs line-height-sans-2">
+            Last manual test <br/>
+            v{{ item.version }}
+          </span>
+          {% endif %}
         </div>
     </li>
     {% endfor %}
@@ -162,18 +103,21 @@
 
 
 ## Testing for accessibility
+
 [Introduction explaining how creating accessible components is a team effort. Outline what USWDS is responsible for, what the users are responsible for, etc]
 
 ### How to check if your implementation is accessible
 
 {:.usa-content-list}
 - **Manually test your own implementation of the accordion component.** USWDS intends to provide components that are accessible; however, accessibility ultimately depends on how you implement them in your context. Use the checklists below as your guide to test the component in your project.
-- **Build accessibility into your team’s workflow.** Consider a component done or ready for implementation only after it has passed the manual testing checklists provided in the section below.
+- **Build accessibility into your team's workflow.** Consider a component done or ready for implementation only after it has passed the manual testing checklists provided in the section below.
 
 ### How to perform manual testing of the accordion component
+
 [You don't need to be an accessibility expert to test USWDS components. The checklists below will walk you through how to test items that are critical for component accessibility.
 
 The checklists will reflect the current test results for the component with either a green checkmark to indicate a passing score, a red x to indicate a failing score, and a blue question mark to indicate that it is something that can only be tested on implementation.]
 
 ## Support
+
 If you discover accessibility issues with the accordion component, please let us know by [submitting an issue in GitHub.](https://github.com/uswds/uswds/issues/new/choose)

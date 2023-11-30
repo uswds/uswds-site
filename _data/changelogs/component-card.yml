@@ -2,7 +2,7 @@ title: Card
 type: component
 changelogURL:
 items:
-  - date: 2023-11-21
+  - date: 2023-11-30
     summary: Updated the grid breakpoints in the card template.
     summaryAdditional: This change affects only the template grid, not the component itself.
     affectsMarkup: true

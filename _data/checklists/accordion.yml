@@ -2,7 +2,10 @@ title: Accordion
 testDate: 2023-11-29
 meetsStandards: true
 complianceLevel: 2.1 AA
-checklistItems:
+keyboardInteractions:
+  - name: tab
+    description: Tab moves things forward
+keyboardItems:
   - summary: Interactive elements work after tabbing.
     summaryAdditional: When you use the `tab` key to navigate into an open accordion panel, each interactive item inside that panel (like a link) is selectable.
     passedTest: true
@@ -23,7 +26,7 @@ checklistItems:
     wcagCriterion: 2.1.1
   - summary: Accordion panel does not toggle on hover.
     summaryAdditional: When you hover or focus on any accordion panel, the panel neither opens nor closes.
-    passedTest:
+    passedTest: false
     testDate:
     version: 3.5.0
     wcagCriterion: 2.1.1
@@ -65,6 +68,7 @@ checklistItems:
     testDate: 2023-07-17
     version: 3.5.0
     wcagCriterion: 2.4.7
+zoomItems:
   - summary: No horizontal scrolling with screen magnification.
     summaryAdditional: When you zoom to 200% in a 1080px-wide window, accordion panels do not require horizontal scrolling.
     passedTest: true
@@ -95,6 +99,7 @@ checklistItems:
     testDate: 2023-07-17
     version: 3.5.0
     wcagCriterion: 1.4.4
+screenReaderItems:
   - summary: Content is visible with screen magnification.
     summaryAdditional: |
       When you use a screen reader and navigate between accordion panels, the order the focus proceeds from item to item is logical.

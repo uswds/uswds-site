@@ -1,0 +1,106 @@
+{% if include.type == "keyboard" %}
+  {% assign title = "Keyboard control"%}
+  {% assign description = "when users use the keyboard to navigate"%}
+  {% assign items = keyboardItems  %}
+ {% endif %}
+{% if include.type == "zoom" %}
+  {% assign title = "Zoom magnification"%}
+  {% assign description = "when users increase the zoom magnification"%}
+  {% assign items = zoomItems  %}
+{% endif %}
+{% if include.type == "screenReader" %}
+  {% assign title = "Screen reader"%}
+  {% assign description = "to screen readers"%}
+  {% assign items = screenReaderItems  %}
+{% endif %}
+
+## {{ title }}
+
+These tests check to see if the accordion is accessible and usable {{ description }}.
+For more instructions on how to perform keyboard control tests, check out the resources in the expandable section below.
+
+<div class="usa-accordion">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-controls="a1">
+      {{ title }} resources
+    </button>
+  </h4>
+  <div id="a1" class="usa-accordion__content usa-prose">
+    <p>Lorem ipsum dolor sit anum.</p>
+  </div>
+</div>
+
+<ul class="usa-icon-list usa-content-list maxw-full margin-top-4">
+  {% for item in items %}
+    {% if item.wcagCriterion == "1.4.4" %}
+      {% assign criterionLevel = "AA" %}
+      {% assign criterionName = "Resize text" %}
+      {% assign criterionUrl = "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.1.1" %}
+      {% assign criterionLevel = "A" %}
+      {% assign criterionName = "Keyboard" %}
+      {% assign criterionUrl = "https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.1.2" %}
+      {% assign criterionLevel = "A" %}
+      {% assign criterionName = "No keyboard trap" %}
+      {% assign criterionUrl = "http://www.w3.org/TR/WCAG20/#keyboard-operation-trapping" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.4.3" %}
+      {% assign criterionLevel = "A" %}
+      {% assign criterionName = "Focus order" %}
+      {% assign criterionUrl = "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.4.6" %}
+      {% assign criterionLevel = "AA" %}
+      {% assign criterionName = "Headings and labels" %}
+      {% assign criterionUrl = "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" %}
+    {% endif %}
+    {% if item.wcagCriterion == "2.4.7" %}
+      {% assign criterionLevel = "AA" %}
+      {% assign criterionName = "Focus visible" %}
+      {% assign criterionUrl = "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible" %}
+    {% endif %}
+
+    <li class="usa-icon-list__item grid-row grid-gap-lg flex-justify">
+      <div class="display-flex flex-row">
+        {% if item.passedTest == true %}
+        <div class="usa-icon-list__icon text-green">
+          <svg class="usa-icon" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+          </svg>
+        </div>
+        {% elsif item.passedTest == false %}
+        <div class="usa-icon-list__icon text-red">
+          <svg class="usa-icon" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use>
+          </svg>
+        </div>
+        {% endif %}
+        <div class="usa-icon-list__content">
+          <p class="margin-bottom-05">
+            <!-- <strong>{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</strong> -->
+            {{ item.summaryAdditional | markdownify  | remove: '<p>' | remove: '</p>' }}
+          </p>
+          {% if item.wcagCriterion%}
+            <span class="usa-tag text-ink bg-base-lighter margin-right-1">
+              WCAG {{ criterionLevel }}
+            </span>
+            <a href="{{ criterionUrl }}" class="font-body-xs">
+              {{ item.wcagCriterion }} {{ criterionName }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+        <div class="display-flex flex-column flex-align-end text-right">
+          {% if item.version %}
+          <span class="padding-1 bg-primary-lighter margin-top-05 radius-md font-body-3xs line-height-sans-2">
+            Last manual test <br/>
+            <b>v{{ item.version }}</b>
+          </span>
+          {% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>

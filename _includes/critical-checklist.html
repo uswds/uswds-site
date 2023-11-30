@@ -1,10 +1,12 @@
 {% assign componentName = page.title | remove: 'critical checklist' | downcase %}
 {% assign componentSlug = componentName | slugify %}
 {% assign component = site.data.checklists[componentSlug] %}
-{% assign checklistItems = component.checklistItems | sort: "topic" %}
+{% assign keyboardItems = component.keyboardItems %}
+{% assign zoomItems = component.zoomItems %}
+{% assign screenReaderItems = component.screenReaderItems %}
 {% assign lastTestDate = component.testDate | date: "%B %e, %Y" %}
 
-{% if component.meetsStandards %}
+<!-- {% if component.meetsStandards %}
 <div class="usa-alert usa-alert--success usa-alert--no-icon">
   <div class="usa-alert__body">
     <p class="usa-alert__text">
@@ -22,102 +24,19 @@
     </p>
   </div>
 </div>
+{% endif %} -->
+
+
+{% if keyboardItems %}
+  {% include critical-checklist-list.html type='keyboard' %}
 {% endif %}
 
-## {{ componentName | capitalize }} testing checklist
-{% if checklistItems %}
-<ul class="usa-icon-list usa-content-list maxw-full">
-  {% for item in checklistItems %}
-    {% if item.wcagCriterion == "1.4.4" %}
-      {% assign criterionLevel = "AA" %}
-      {% assign criterionName = "Resize text" %}
-    {% endif %}
-    {% if item.wcagCriterion == "1.4.4" %}
-      {% assign criterionLevel = "AA" %}
-      {% assign criterionName = "Resize text" %}
-    {% endif %}
-    {% if item.wcagCriterion == "2.1.1" %}
-      {% assign criterionLevel = "A" %}
-      {% assign criterionName = "Keyboard" %}
-      {% assign criterionUrl = "https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable" %}
-    {% endif %}
-    {% if item.wcagCriterion == "2.1.2" %}
-      {% assign criterionLevel = "A" %}
-      {% assign criterionName = "No keyboard trap" %}
-    {% endif %}
-    {% if item.wcagCriterion == "2.4.3" %}
-      {% assign criterionLevel = "A" %}
-      {% assign criterionName = "Focus order" %}
-    {% endif %}
-    {% if item.wcagCriterion == "2.4.6" %}
-      {% assign criterionLevel = "AA" %}
-      {% assign criterionName = "Headings and labels" %}
-    {% endif %}
-    {% if item.wcagCriterion == "2.4.7" %}
-      {% assign criterionLevel = "AA" %}
-      {% assign criterionName = "Focus visible" %}
-    {% endif %}
-
-    <li class="usa-icon-list__item grid-row grid-gap-lg flex-justify">
-      <div class="display-flex flex-row">
-        {% if item.passedTest == true %}
-        <div class="usa-icon-list__icon text-green">
-          <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
-          </svg>
-        </div>
-        {% elsif item.passedTest == false %}
-        <div class="usa-icon-list__icon text-red">
-          <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use>
-          </svg>
-        </div>
-        {% endif %}
-        <div class="usa-icon-list__content">
-          <p class="margin-bottom-05">
-            <strong>{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
-            {{ item.summaryAdditional | markdownify  | remove: '<p>' | remove: '</p>' }}
-          </p>
-          {% if item.wcagCriterion%}
-            <span class="usa-tag text-ink bg-base-lighter margin-right-1">
-              WCAG {{ criterionLevel }}
-            </span>
-            <a href="{{ criterionUrl }}" class="font-body-xs">
-              {{ item.wcagCriterion }} {{ criterionName }}
-            </a>
-          {% endif %}
-        </div>
-      </div>
-        <div class="display-flex flex-column flex-align-end text-right">
-          {% if item.version %}
-          <span class="padding-1 bg-primary-lighter margin-top-05 radius-md font-body-2xs line-height-sans-2">
-            Last manual test <br/>
-            v{{ item.version }}
-          </span>
-          {% endif %}
-        </div>
-    </li>
-    {% endfor %}
-</ul>
+{% if zoomItems %}
+  {% include critical-checklist-list.html type='zoom' %}
 {% endif %}
 
+{% if screenReaderItems %}
+  {% include critical-checklist-list.html type='screenReader' %}
+{% endif %}
 
-## Testing for accessibility
-
-[Introduction explaining how creating accessible components is a team effort. Outline what USWDS is responsible for, what the users are responsible for, etc]
-
-### How to check if your implementation is accessible
-
-{:.usa-content-list}
-- **Manually test your own implementation of the accordion component.** USWDS intends to provide components that are accessible; however, accessibility ultimately depends on how you implement them in your context. Use the checklists below as your guide to test the component in your project.
-- **Build accessibility into your team's workflow.** Consider a component done or ready for implementation only after it has passed the manual testing checklists provided in the section below.
-
-### How to perform manual testing of the accordion component
-
-[You don't need to be an accessibility expert to test USWDS components. The checklists below will walk you through how to test items that are critical for component accessibility.
-
-The checklists will reflect the current test results for the component with either a green checkmark to indicate a passing score, a red x to indicate a failing score, and a blue question mark to indicate that it is something that can only be tested on implementation.]
-
-## Support
-
-If you discover accessibility issues with the accordion component, please let us know by [submitting an issue in GitHub.](https://github.com/uswds/uswds/issues/new/choose)
+{% include critical-checklist-instructions.html %}

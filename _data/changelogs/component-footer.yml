@@ -2,6 +2,14 @@ title: Footer
 type: component
 changelogURL:
 items:
+  - date: 2023-11-09
+    summary: Restored underlines to footer links in the default state.
+    summaryAdditional: Now, footer links meet WCAG 2.0 AA requirements.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5588
+    githubRepo: uswds
+    versionUswds: 3.7.0
   - date: 2023-03-09
     summary: Footer now accepts any heading level for primary link headers.
     summaryAdditional: Use any heading level for `.usa-footer__primary-link` without it reverting to an `h4` when the JavaScript rebuilds the element for mobile.

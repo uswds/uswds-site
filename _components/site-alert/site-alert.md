@@ -27,13 +27,13 @@ tags:
   - bar
   - urgent
 variants:
-  - variant: "`usa-site-alert--info`"
+  - variant: "`.usa-site-alert--info`"
     description: Displays an information site alert.
-  - variant: "`usa-site-alert--emergency`"
+  - variant: "`.usa-site-alert--emergency`"
     description: Displays an emergency site alert.
-  - variant: "`usa-site-alert--slim`"
+  - variant: "`.usa-site-alert--slim`"
     description: Display a slimmer version of the site alert.
-  - variant: "`usa-site-alert--no-icon`"
+  - variant: "`.usa-site-alert--no-icon`"
     description: Display an site alert without an icon.
 changelog:
   key: component-site-alert

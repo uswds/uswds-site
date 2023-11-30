@@ -1,3 +1,3 @@
 - **Allow multiple file formats.** Not everyone has access to the same software. Be flexible with file types to avoid unnecessary software requirements.
-- **Prefer one file per input.** Some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app.
-- **Highlight input restrictions.** Use `usa-hint` to be clear about any file restrictions, such as document types or file size.
+- **Prefer one file per input.** Some users might not know how to select multiple files in a file browser.
+- **Use hint text to highlight input restrictions.** Create an element with the `usa-hint` class to explain any file restrictions, such as document types or file size.

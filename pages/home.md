@@ -59,8 +59,8 @@ graphic_list:
     <h2 class="font-lang-xl margin-y-0 line-height-serif-2">Showcase</h2>
     <div class="grid-row grid-gap tablet:margin-top-3">
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="Preview image of vote.gov home page" width="960" height="540">
-        <a href="https://vote.gov/">vote.gov</a>
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/nih.webp" alt="Preview image of National Institutes of Health Library home page" width="960" height="540">
+        <a href="https://www.nihlibrary.nih.gov/">National Institutes of Health Library</a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/webp/home/showcase/va-healthcare.webp" alt="Preview image of Veterans affairs home page" width="960" height="540">
@@ -80,12 +80,12 @@ graphic_list:
         <a class="font-lang-md" href="https://www.ncbi.nlm.nih.gov/labs/pubmed/">PubMed Labs | U.S. National Library of Medicine</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/seedfund.webp" alt="Preview image of Seed Fund home page" width="960" height="540">
-        <a href="https://seedfund.nsf.gov/">America’s Seed Fund</a>
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="Preview image of vote.gov home page" width="960" height="540">
+        <a href="https://vote.gov/">vote.gov</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/plainlanguage.webp" alt="Preview image of Plain Language home page" width="960" height="540">
-        <a href="https://plainlanguage.gov/">Plain Language</a>
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/seedfund.webp" alt="Preview image of Seed Fund home page" width="960" height="540">
+        <a href="https://seedfund.nsf.gov/">America’s Seed Fund</a>
       </div>
     </div>
   </div>

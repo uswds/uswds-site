@@ -19,7 +19,7 @@
 These tests check to see if the accordion is accessible and usable {{ description }}.
 For more instructions on how to perform keyboard control tests, check out the resources in the expandable section below.
 
-<div class="usa-accordion">
+<div class="usa-accordion measure-5">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button" aria-controls="a1">
       {{ title }} resources
@@ -30,7 +30,7 @@ For more instructions on how to perform keyboard control tests, check out the re
   </div>
 </div>
 
-<ul class="usa-icon-list usa-content-list maxw-full margin-top-4">
+<ul class="usa-icon-list usa-content-list maxw-tablet-lg margin-top-4">
   {% for item in items %}
     {% if item.wcagCriterion == "1.4.4" %}
       {% assign criterionLevel = "AA" %}
@@ -63,7 +63,7 @@ For more instructions on how to perform keyboard control tests, check out the re
       {% assign criterionUrl = "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible" %}
     {% endif %}
 
-    <li class="usa-icon-list__item grid-row grid-gap-lg flex-justify">
+    <li class="usa-icon-list__item flex-justify">
       <div class="display-flex flex-row">
         {% if item.passedTest == true %}
         <div class="usa-icon-list__icon text-green">
@@ -80,26 +80,35 @@ For more instructions on how to perform keyboard control tests, check out the re
         {% endif %}
         <div class="usa-icon-list__content">
           <p class="margin-bottom-05">
-            <!-- <strong>{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</strong> -->
+            <strong>{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
             {{ item.summaryAdditional | markdownify  | remove: '<p>' | remove: '</p>' }}
           </p>
-          {% if item.wcagCriterion%}
-            <span class="usa-tag text-ink bg-base-lighter margin-right-1">
-              WCAG {{ criterionLevel }}
+          {% assign tagClasses = "padding-y-05 padding-x-1 border-1px border-gray-10 desktop-lg:radius-md font-body-3xs margin-right-1 margin-y-05" %}
+          <div class="display-flex flex-wrap flex-align-center margin-y-05">
+            {% if item.wcagCriterion%}
+              <span class="{{ tagClasses }}">
+                WCAG {{ criterionLevel }}
+              </span>
+              <a href="{{ criterionUrl }}" class="{{ tagClasses }}">
+                {{ item.wcagCriterion }} {{ criterionName }}
+              </a>
+            {% endif %}
+            {% if item.version %}
+            <span class="{{ tagClasses }} display-block desktop-lg:display-none">
+              Last manual test
+              <b>v{{ item.version }}</b>
             </span>
-            <a href="{{ criterionUrl }}" class="font-body-xs">
-              {{ item.wcagCriterion }} {{ criterionName }}
-            </a>
-          {% endif %}
+            {% endif %}
+          </div>
         </div>
       </div>
-        <div class="display-flex flex-column flex-align-end text-right">
-          {% if item.version %}
-          <span class="padding-1 bg-primary-lighter margin-top-05 radius-md font-body-3xs line-height-sans-2">
-            Last manual test <br/>
-            <b>v{{ item.version }}</b>
-          </span>
-          {% endif %}
+        <div class="flex-column flex-align-end text-right display-none desktop-lg:display-flex">
+            {% if item.version %}
+              <span class="padding-1 bg-primary-lighter radius-md font-body-3xs line-height-sans-2 display-none desktop-lg:display-block">
+                Last manual test<br/>
+                <b>v{{ item.version }}</b>
+              </span>
+            {% endif %}
         </div>
     </li>
     {% endfor %}

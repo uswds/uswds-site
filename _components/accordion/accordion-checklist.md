@@ -10,7 +10,7 @@ subnav:
 - text: Latest updates
   href: "#changelog"
 changelog:
-  key: 'component-accordion-a11y'
+  key: 'component-accordion-checklist'
 ---
 
-{% include critical-checklist.html %}
+{% include critical-checklist/critical-checklist.html %}

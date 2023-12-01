@@ -30,12 +30,12 @@
   {% include critical-checklist/list.html type='keyboard' %}
 {% endif %}
 
-{% if zoomItems %}
-  {% include critical-checklist/list.html type='zoom' %}
-{% endif %}
-
 {% if screenReaderItems %}
   {% include critical-checklist/list.html type='screenReader' %}
+{% endif %}
+
+{% if zoomItems %}
+  {% include critical-checklist/list.html type='zoom' %}
 {% endif %}
 
 {% include critical-checklist/how-to.html %}

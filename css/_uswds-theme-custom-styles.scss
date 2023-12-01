@@ -3549,3 +3549,28 @@ $do-dont-top-bar-width: 1;
 .usa-in-page-nav {
   @include u-z(100);
 }
+
+.site-checklist-bg--success {
+  background-color: color("green-cool-30");
+}
+.site-checklist-text--success {
+  color: color("green-cool-60");
+}
+.site-checklist-bg--success-light {
+  background-color: color("green-cool-10");
+}
+.site-checklist-bg--warning {
+  background-color: color("orange-30");
+}
+.site-checklist-text--warning {
+  color: color("orange-warm-60v");
+}
+.site-checklist-text--warning-light {
+  color: color("orange-30");
+}
+.site-checklist-bg--info {
+  background-color: color("blue-cool-40");
+}
+.site-checklist-text--info {
+  color: color("blue-cool-60");
+}

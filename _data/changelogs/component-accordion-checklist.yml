@@ -3,10 +3,10 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added accordion accessibility page.
+    summary: Added accordion critical checklist page.
     summaryAdditional:
     isBreaking:
     affectsGuidance: true
-    githubPr:
+    githubPr: 2138
     githubRepo: uswds-site
     versionUswds:

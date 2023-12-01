@@ -28,15 +28,25 @@
 
 
 {% if keyboardItems %}
-  {% include critical-checklist-list.html type='keyboard' %}
+  {% include critical-checklist/critical-checklist-list.html type='keyboard' %}
 {% endif %}
 
 {% if zoomItems %}
-  {% include critical-checklist-list.html type='zoom' %}
+  {% include critical-checklist/critical-checklist-list.html type='zoom' %}
 {% endif %}
 
 {% if screenReaderItems %}
-  {% include critical-checklist-list.html type='screenReader' %}
+  {% include critical-checklist/critical-checklist-list.html type='screenReader' %}
 {% endif %}
 
-{% include critical-checklist-instructions.html %}
+{% include critical-checklist/critical-checklist-instructions.html %}
+
+## Share your feedback
+<ul class="usa-button-group margin-top-4">
+  <li class="usa-button-group__item">
+    <a href="https://github.com/uswds/uswds/issues/new/choose" class="usa-button">Propose a new test</a>
+  </li>
+  <li class="usa-button-group__item">
+    <a href="https://github.com/uswds/uswds/issues/new/choose" class="usa-button usa-button--secondary">Report an error</a>
+  </li>
+</ul>

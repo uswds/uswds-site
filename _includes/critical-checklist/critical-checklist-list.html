@@ -1,3 +1,4 @@
+<!-- set section titles and descriptions -->
 {% if include.type == "keyboard" %}
   {% assign title = "Keyboard control"%}
   {% assign description = "when users use the keyboard to navigate"%}
@@ -13,59 +14,30 @@
   {% assign description = "to screen readers"%}
   {% assign items = screenReaderItems  %}
 {% endif %}
+<!-- set shared classes -->
+{% assign tagClasses = "padding-y-05 padding-x-1 radius-md font-body-3xs margin-right-1 margin-y-05" %}
+{% assign specialTextClasses = "margin-y-1" %}
 
-
-
-<style>
-.bg-success {
-  /* green-cool-30 */
-  background-color:#5e9f69!important;
-}
-.text-success-dark {
-  /* green-cool-60 */
-  color: #446443!important;
-}
-.bg-success-lighter {
-  /* green-cool-10 */
-  background-color:#dbebde!important;
-}
-
-.text-warning-dark {
-  /* orange-40 */
-  color: #dd7533!important;
-}
-
-.bg-warning-dark {
-  background-color: #dd7533!important;
-}
-
-.text-info-dark {
-  /* blue-cool-60 */
-  color: #2c608a!important;
-}
-.bg-info-dark {
-    /* blue-cool-40 */
-
-  background-color: #6499af!important;
-}
-</style>
+<!-- section description -->
 ## {{ title }}
 These tests check to see if the accordion is accessible and usable {{ description }}.
 For more instructions on how to perform keyboard control tests, check out the resources in the expandable section below.
 
 <div class="usa-accordion measure-5">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-controls="a1">
+    <button type="button" class="usa-accordion__button" aria-controls="{{ title | slugify | append:'-resources' }}">
       {{ title }} resources
     </button>
   </h4>
-  <div id="a1" class="usa-accordion__content usa-prose">
+  <div id="{{ title | slugify | append:'-resources'}}" class="usa-accordion__content usa-prose">
     <p>Lorem ipsum dolor sit anum.</p>
   </div>
 </div>
 
+<!-- section checklist items -->
 <ul class="usa-icon-list usa-content-list maxw-tablet-lg margin-top-4">
   {% for item in items %}
+    <!-- assign criterion details -->
     {% if item.wcagCriterion == "1.4.4" %}
       {% assign criterionLevel = "AA" %}
       {% assign criterionName = "Resize text" %}
@@ -96,105 +68,104 @@ For more instructions on how to perform keyboard control tests, check out the re
       {% assign criterionName = "Focus visible" %}
       {% assign criterionUrl = "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible" %}
     {% endif %}
+    <!-- assign version text -->
     {% if item.versionTested %}
       {% assign versionTested =  item.versionTested | prepend: 'v' %}
     {% else %}
       {% assign versionTested = "N/A" %}
     {% endif %}
-
+    <!-- assign test status classes -->
+    {% if item.testStatus == 'pass' and item.versionFixed == site.uswds_version %}
+      {% assign statusClass = 'site-checklist-bg--success' %}
+      {% elsif item.testStatus == 'pass' %}
+        {% assign statusClass = 'site-checklist-bg--success-light' %}
+      {% elsif item.testStatus == 'fail' %}
+        {% assign statusClass = 'site-checklist-bg--warning' %}
+      {% elsif item.testStatus == 'exempt' %}
+        {% assign statusClass = 'site-checklist-bg--info' %}
+      {% else %}
+        {% assign statusClass = 'border-2px border-disabled-lighter text-disabled' %}
+    {% endif %}
+    <!-- start checklist items -->
     <li class="usa-icon-list__item flex-justify">
       <div class="display-flex flex-row">
+        <!-- start icons -->
         {% if item.testStatus == 'pass' and item.versionFixed  == site.uswds_version %}
-        <div class="usa-icon-list__icon text-green">
-          <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#info"></use>
-          </svg>
-        </div>
+          {% include critical-checklist/critical-checklist-icon.html color='site-checklist-text--success' icon='info'%}
         {% elsif item.testStatus == 'pass' %}
-        <div class="usa-icon-list__icon text-green">
-          <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle_outline"></use>
-          </svg>
-        </div>
+          {% include critical-checklist/critical-checklist-icon.html color='site-checklist-text--success' icon='check_circle_outline'%}
         {% elsif item.testStatus == 'fail' %}
-        <div class="usa-icon-list__icon text-warning-dark">
-          <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#warning"></use>
-          </svg>
-        </div>
+          {% include critical-checklist/critical-checklist-icon.html color='site-checklist-text--warning' icon='warning'%}
         {% elsif item.testStatus == 'exempt' %}
-        <div class="usa-icon-list__icon text-info-dark">
-          <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#info"></use>
-          </svg>
-        </div>
+          {% include critical-checklist/critical-checklist-icon.html color='site-checklist-text--info' icon='info'%}
         {% else %}
-        <div class="usa-icon-list__icon text-info-dark">
-          <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#info_outline"></use>
-          </svg>
-        </div>
+          {% include critical-checklist/critical-checklist-icon.html color='text-disabled' icon='info_outline'%}
         {% endif %}
+        <!-- end icons -->
         <div class="usa-icon-list__content">
+          <!-- start text content -->
           <p class="margin-bottom-05">
             <strong>{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
             {{ item.summaryAdditional | markdownify  | remove: '<p>' | remove: '</p>' }}
+          </p>
             {% if item.testStatus == 'pass' and item.versionFixed  == site.uswds_version %}
-              <br/>
-              <span class="margin-y-05 text-success-dark font-body-xs">
+              <p class="{{ specialTextClasses }} site-checklist-text--success">
                 <b>This component passed this test in version {{ versionTested}}.</b><br/>
-                <a class="text-success-dark" href="https://github.com/uswds/uswds/releases/tag/v{{ versionTested }}">Read more in the release notes</a>.
-              </span>
+                <a class="site-checklist-text--success" href="https://github.com/uswds/uswds/releases/tag/v{{ versionTested }}">Read more in the release notes</a>.
+              </p>
             {% elsif item.testStatus == 'fail' %}
-              <br/>
-              <span class="margin-y-05 text-warning-dark font-body-xs">
+              <p class="{{ specialTextClasses }} site-checklist-text--warning">
                 <b>This component does not currently pass this test.</b><br/>
-                <a class="text-warning-dark" href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more and track this issue on GitHub</a>.
-              </span>
+                <a class="site-checklist-text--warning" href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more and track this issue on GitHub</a>.
+              </p>
             {% elsif item.testStatus == 'exempt' %}
-              <br/>
-              <span class="margin-y-05 text-info-dark font-body-xs">
+              <p class="{{ specialTextClasses }} site-checklist-text--info">
                 <b>We cannot effectively test this on a system level. </b><br/>
                 This must be tested on the project level.
-              </span>
-              {% elsif item.testStatus == 'pass' %}
+              </p>
+            {% elsif item.testStatus == 'pass' %}
             {% else %}
-              <br/>
-              <span class="margin-y-05 text-info-dark font-body-xs">
-                <b>This test has not been performed yet </b><br/>
-              </span>
+              <p class="{{ specialTextClasses }} site-checklist-text--info">
+                <b>We have not completed this test yet.</b><br/>
+                Make sure to test this manually in your project.
+              </p>
             {% endif %}
-          </p>
-          {% assign tagClasses = "padding-y-05 padding-x-1 border-1px border-gray-10 desktop-lg:radius-md font-body-3xs margin-right-1 margin-y-05" %}
+          <!-- end text content -->
+          <!-- start tags -->
           <div class="display-flex flex-wrap flex-align-center margin-y-05">
+            <!-- start "last tested" tag - mobile view -->
+            <span class="{{ tagClasses }} {{ statusClass }} border-1px border-gray-10 desktop-lg:display-none
+            ">
+              Last manual test
+              <b>{{ versionTested }}</b>
+            </span>
+            <!-- end "last tested" mobile view -->
+            <!-- start WCAG tags -->
             {% if item.wcagCriterion%}
-              <span class="{{ tagClasses }}">
-                WCAG {{ criterionLevel }} {{ versionTested }}
+              <span class="{{ tagClasses }} border-1px border-gray-10">
+                WCAG {{ criterionLevel }}
               </span>
-              <a href="{{ criterionUrl }}" class="{{ tagClasses }}">
+              <a href="{{ criterionUrl }}" class="{{ tagClasses }} border-1px border-gray-10">
                 {{ item.wcagCriterion }} {{ criterionName }}
               </a>
             {% endif %}
-            <span class="{{ tagClasses }} display-block desktop-lg:display-none">
-                Last manual test
-                <b>{{ versionTested }}</b>
-            </span>
+            <!-- end WCAG tags -->
           </div>
         </div>
       </div>
-        <div class="flex-column flex-align-end text-right display-none desktop-lg:display-flex">
-          <span class="{{ tagClasses }}
-            {% if item.testStatus == 'pass' and item.versionFixed == site.uswds_version %}bg-success
-              {% elsif item.testStatus == 'pass' %}bg-success-lighter
-              {% elsif item.testStatus == 'fail' %}bg-warning-dark
-              {% elsif item.testStatus == 'exempt' %}bg-info-dark
-              {% else %}border-2px border-info-dark
-            {% endif %}
-            border-0 margin-right-0 display-none desktop-lg:display-block">
-            Last manual test<br/>
-            <b>{{ versionTested }}</b>
-          </span>
-        </div>
+      <!-- start "last tested" desktop view -->
+      <div class="flex-column flex-align-end text-right display-none desktop-lg:display-flex">
+        <span class="
+          {{ tagClasses }}
+          {{ statusClass }}
+          margin-right-0 display-none desktop-lg:display-block
+        ">
+          Last manual test<br/>
+          <b>{{ versionTested }}</b>
+        </span>
+      </div>
+      <!-- end "last tested" desktop view -->
+      <!-- end tags -->
     </li>
     {% endfor %}
 </ul>

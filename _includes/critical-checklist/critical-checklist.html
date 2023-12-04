@@ -26,20 +26,19 @@
 </div>
 {% endif %} -->
 
-
 {% if keyboardItems %}
-  {% include critical-checklist/critical-checklist-list.html type='keyboard' %}
-{% endif %}
-
-{% if zoomItems %}
-  {% include critical-checklist/critical-checklist-list.html type='zoom' %}
+  {% include critical-checklist/list.html type='keyboard' %}
 {% endif %}
 
 {% if screenReaderItems %}
-  {% include critical-checklist/critical-checklist-list.html type='screenReader' %}
+  {% include critical-checklist/list.html type='screenReader' %}
 {% endif %}
 
-{% include critical-checklist/critical-checklist-instructions.html %}
+{% if zoomItems %}
+  {% include critical-checklist/list.html type='zoom' %}
+{% endif %}
+
+{% include critical-checklist/how-to.html %}
 
 ## Share your feedback
 <ul class="usa-button-group margin-top-4">

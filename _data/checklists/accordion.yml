@@ -1,47 +1,35 @@
 title: Accordion
-testDate: 2023-11-29
-meetsStandards: true
-complianceLevel: 2.1 AA
-keyboardInteractions:
-  - name: tab
-    description: Tab moves things forward
 keyboardItems:
   - summary: Interactive elements work after tabbing.
     summaryAdditional: When you use the `tab` key to navigate into an open accordion panel, each interactive item inside that panel (like a link) is selectable.
     testStatus: pass
-    testDate: 2023-07-17
     versionTested: 3.5.0
     wcagCriterion: 2.1.1
   - summary: Accordion panel opens with keyboard interaction.
     summaryAdditional: When you use the `enter` key or the `spacebar` on a closed panel, the panel opens (expands).
     testStatus: pass
-    testDate: 2023-07-17
     versionTested: 3.5.0
     wcagCriterion: 2.1.1
   - summary: Accordion panel closes with keyboard interaction.
     summaryAdditional: When you use the `enter` key or the `spacebar` on an open panel, the panel closes (collapses).
     testStatus: pass
-    testDate: 2023-07-17
     versionTested: 3.5.0
     wcagCriterion: 2.1.1
   - summary: Accordion panel does not toggle on hover.
     summaryAdditional: When you hover or focus on any accordion panel, the panel neither opens nor closes.
     testStatus: fail
     issueNumber: 1000
-    testDate:
     versionTested: 3.5.0
     wcagCriterion: 2.1.1
   - summary: Focus moves out of the accordion.
     summaryAdditional: When you navigate out of the accordion, it does not close.
     testStatus: pass
-    testDate: 2023-07-17
     versionTested: 3.8.0
     versionFixed: 3.7.0
     wcagCriterion: 2.1.2
   - summary: Focus moves backwards with keyboard interaction.
     summaryAdditional: When you navigate through items with `shift` + `tab`, the visible focus moves to the previous focusable elements without skipping any items.
     testStatus: exempt
-    testDate: 2023-07-17
     versionTested: 3.5.0
     wcagCriterion: 2.4.3
   - summary: Focus moves forward with keyboard interaction.
@@ -49,115 +37,90 @@ keyboardItems:
       When you navigate through items with the `tab` key, the order the visible focus proceeds from item to item is logical.
       (For example, the focus doesn't skip a link or accordion heading.)
     testStatus:
-    testDate:
     wcagCriterion: 2.4.3
   - summary: Focus stays on the panel header.
     summaryAdditional: When you use the enter key or the spacebar on a closed panel, the focus highlight stays on the panel header.
     testStatus: pass
-    testDate: 2023-07-17
     versionTested: 3.5.0
     wcagCriterion: 2.4.3
   - summary: Keyboard navigation clearly shows focus indicator.
     summaryAdditional: When you tab onto an accordion panel, the focus highlight is clear and visible.
     testStatus: pass
-    testDate: 2023-07-17
     versionTested: 3.5.0
     wcagCriterion: 2.4.7
   - summary: Keyboard navigation clearly shows focus indicator.
     summaryAdditional: When you navigate through interactive content items (like links) with the tab key, each item has a focus highlight that is clear and visible.
     testStatus: pass
-    testDate: 2023-07-17
     versionTested: 3.5.0
     wcagCriterion: 2.4.7
-zoomItems:
-  - summary: No horizontal scrolling with screen magnification.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window, accordion panels do not require horizontal scrolling.
-    testStatus: pass
-    testDate: 2023-07-17
-    versionTested: 3.5.0
-    wcagCriterion: 1.4.4
-  - summary: Focus indicator is clear with screen magnification.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window and navigate through items with the tab key, each item has a focus highlight that is clear and visible.
-    testStatus: pass
-    testDate: 2023-07-17
-    versionTested: 3.5.0
-    wcagCriterion: 1.4.4
-  - summary: Content does not get cut off with screen magnification.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window, no content is cut off.
-    testStatus: pass
-    testDate: 2023-07-17
-    versionTested: 3.5.0
-    wcagCriterion: 1.4.4
-  - summary: Content does not overlap with screen magnification.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window, no text or images in the content overlap.
-    testStatus: pass
-    testDate: 2023-07-17
-    versionTested: 3.5.0
-    wcagCriterion: 1.4.4
-  - summary: Content is visible with screen magnification.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window, the accordion panels are not obscured by any other page elements (like pop-ups or images).
-    testStatus: pass
-    testDate: 2023-07-17
-    versionTested: 3.5.0
-    wcagCriterion: 1.4.4
 screenReaderItems:
   - summary: Content is visible with screen magnification.
     summaryAdditional: |
       When you use a screen reader and navigate between accordion panels, the order the focus proceeds from item to item is logical.
       (For example, the focus doesn't skip a link or accordion heading.)
     testStatus: pass
-    testDate: 2023-07-28
     versionTested: 3.5.0
     wcagCriterion: 2.4.3
-    Technology: JAWS
   - summary: Focus indicator is visible with screen readers.
     summaryAdditional: When you use a screen reader and navigate between accordion panels, the virtual cursor (or JAWS focus) moves from one header to the next.
     testStatus: pass
-    testDate: 2023-07-28
     versionTested: 3.5.0
     wcagCriterion: 2.4.3
-    Technology: JAWS
   - summary: Heading levels are logical.
     summaryAdditional: When you use a screen reader and navigate through the accordion panel headings, the heading levels are the correct level for the page outline.
     testStatus: pass
-    testDate: 2023-07-28
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
-    Technology: JAWS
   - summary: Heading levels are consistent.
     summaryAdditional: |
       When you use a screen reader and navigate through the accordion panel headings, each accordion panel's heading level is the same.
       (Typically this is a heading level 2 or 3.)
     testStatus: pass
-    testDate: 2023-07-28
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
-    Technology: JAWS
   - summary: Screen reader announces "collapsed" state.
     summaryAdditional: When you use a screen reader and navigate to a closed panel, the screen reader announces that the content is "collapsed".
     testStatus: pass
-    testDate: 2023-07-28
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
-    Technology: JAWS
   - summary: Screen reader announces "expanded" state.
     summaryAdditional: When you use a screen reader and navigate to a open panel, the screen reader announces that the content is "expanded".
     testStatus: pass
-    testDate: 2023-07-28
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
-    Technology: JAWS
   - summary: Screen reader announces "expanded" state with expected keys.
     summaryAdditional: When you use a screen reader and use the `enter` key or the `spacebar` on a closed panel, the screen reader announces that the content is "expanded".
     testStatus: pass
-    testDate: 2023-07-28
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
-    Technology: JAWS
   - summary: Screen reader announces "collapsed" state with expected keys.
     summaryAdditional: When you use a screen reader and use the `enter` key or the `spacebar` on an open panel, the screen reader announces that the content is "collapsed".
     testStatus: pass
-    testDate: 2023-07-28
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
-    Technology: JAWS
+zoomItems:
+  - summary: No horizontal scrolling with screen magnification.
+    summaryAdditional: When you zoom to 200% in a 1080px-wide window, accordion panels do not require horizontal scrolling.
+    testStatus: pass
+    versionTested: 3.5.0
+    wcagCriterion: 1.4.4
+  - summary: Focus indicator is clear with screen magnification.
+    summaryAdditional: When you zoom to 200% in a 1080px-wide window and navigate through items with the tab key, each item has a focus highlight that is clear and visible.
+    testStatus: pass
+    versionTested: 3.5.0
+    wcagCriterion: 1.4.4
+  - summary: Content does not get cut off with screen magnification.
+    summaryAdditional: When you zoom to 200% in a 1080px-wide window, no content is cut off.
+    testStatus: pass
+    versionTested: 3.5.0
+    wcagCriterion: 1.4.4
+  - summary: Content does not overlap with screen magnification.
+    summaryAdditional: When you zoom to 200% in a 1080px-wide window, no text or images in the content overlap.
+    testStatus: pass
+    versionTested: 3.5.0
+    wcagCriterion: 1.4.4
+  - summary: Content is visible with screen magnification.
+    summaryAdditional: When you zoom to 200% in a 1080px-wide window, the accordion panels are not obscured by any other page elements (like pop-ups or images).
+    testStatus: pass
+    versionTested: 3.5.0
+    wcagCriterion: 1.4.4

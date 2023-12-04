@@ -19,20 +19,7 @@
 {% assign specialTextClasses = "margin-y-1" %}
 
 <!-- section description -->
-## {{ title }}
-These tests check to see if the accordion is accessible and usable {{ description }}.
-For more instructions on how to perform keyboard control tests, check out the resources in the expandable section below.
-
-<div class="usa-accordion measure-5">
-  <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-controls="{{ title | slugify | append:'-resources' }}">
-      {{ title }} resources
-    </button>
-  </h4>
-  <div id="{{ title | slugify | append:'-resources'}}" class="usa-accordion__content usa-prose">
-    <p>Lorem ipsum dolor sit anum.</p>
-  </div>
-</div>
+{% include critical-checklist/section-description.html %}
 
 <!-- section checklist items -->
 <ul class="usa-icon-list usa-content-list maxw-tablet-lg margin-top-4">
@@ -91,15 +78,15 @@ For more instructions on how to perform keyboard control tests, check out the re
       <div class="display-flex flex-row">
         <!-- start icons -->
         {% if item.testStatus == 'pass' and item.versionFixed  == site.uswds_version %}
-          {% include critical-checklist/critical-checklist-icon.html color='site-checklist-text--success' icon='info'%}
+          {% include critical-checklist/status-icon.html color='site-checklist-text--success' icon='info'%}
         {% elsif item.testStatus == 'pass' %}
-          {% include critical-checklist/critical-checklist-icon.html color='site-checklist-text--success' icon='check_circle_outline'%}
+          {% include critical-checklist/status-icon.html color='site-checklist-text--success' icon='check_circle_outline'%}
         {% elsif item.testStatus == 'fail' %}
-          {% include critical-checklist/critical-checklist-icon.html color='site-checklist-text--warning' icon='warning'%}
+          {% include critical-checklist/status-icon.html color='site-checklist-text--warning' icon='warning'%}
         {% elsif item.testStatus == 'exempt' %}
-          {% include critical-checklist/critical-checklist-icon.html color='site-checklist-text--info' icon='info'%}
+          {% include critical-checklist/status-icon.html color='site-checklist-text--info' icon='info'%}
         {% else %}
-          {% include critical-checklist/critical-checklist-icon.html color='text-disabled' icon='info_outline'%}
+          {% include critical-checklist/status-icon.html color='text-disabled' icon='info_outline'%}
         {% endif %}
         <!-- end icons -->
         <div class="usa-icon-list__content">
@@ -110,12 +97,12 @@ For more instructions on how to perform keyboard control tests, check out the re
           </p>
             {% if item.testStatus == 'pass' and item.versionFixed  == site.uswds_version %}
               <p class="{{ specialTextClasses }} site-checklist-text--success">
-                <b>This component passed this test in version {{ versionTested}}.</b><br/>
-                <a class="site-checklist-text--success" href="https://github.com/uswds/uswds/releases/tag/v{{ versionTested }}">Read more in the release notes</a>.
+                <b>The {{ componentName }} component recently passed this test in version {{ item.versionFixed }}.</b><br/>
+                <a class="site-checklist-text--success" href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionFixed }}">Read more in the release notes</a>.
               </p>
             {% elsif item.testStatus == 'fail' %}
               <p class="{{ specialTextClasses }} site-checklist-text--warning">
-                <b>This component does not currently pass this test.</b><br/>
+                <b>The {{ componentName }} component does not currently pass this test.</b><br/>
                 <a class="site-checklist-text--warning" href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more and track this issue on GitHub</a>.
               </p>
             {% elsif item.testStatus == 'exempt' %}
@@ -134,7 +121,7 @@ For more instructions on how to perform keyboard control tests, check out the re
           <!-- start tags -->
           <div class="display-flex flex-wrap flex-align-center margin-y-05">
             <!-- start "last tested" tag - mobile view -->
-            <span class="{{ tagClasses }} {{ statusClass }} border-1px border-gray-10 desktop-lg:display-none
+            <span class="{{ tagClasses }} {{ statusClass }} desktop-lg:display-none
             ">
               Last manual test
               <b>{{ versionTested }}</b>

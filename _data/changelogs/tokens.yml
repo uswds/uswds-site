@@ -2,12 +2,12 @@ title: Tokens
 type: token
 changelogURL:
 items:
-  - date: 2023-11-29
+  - date: 2023-12-04
     summary: Updated token references in "Using design tokens" section.
     affectsGuidance: true
     githubPr: 2366
     githubRepo: uswds-site
-  - date: 2023-11-29
+  - date: 2023-12-04
     summary: Updated the settings configuration code example.
     affectsGuidance: true
     githubPr: 2366

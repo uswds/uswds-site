@@ -10,6 +10,10 @@ subnav:
   href: '#order-tokens'
 - text: Using order tokens
   href: '#using-order-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-order
 ---
 
 {% assign tokens = site.data.tokens %}

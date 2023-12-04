@@ -2,6 +2,14 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the padding on `.usa-nav__submenu` elements so that they align with other header elements.
+    summaryAdditional:
+    isBreaking: false
+    affectsStyles: true
+    githubPr: 5649
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-11-20
     summary: Removed the role, banner component, and HTTPS sections.
     summaryAdditional:

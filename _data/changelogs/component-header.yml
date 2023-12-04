@@ -2,6 +2,14 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the padding on .usa-nav__submenu elements so that they align with other header elements.
+    summaryAdditional:
+    isBreaking: false
+    affectsStyles: true
+    githubPr: 5649
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-11-20
     summary: Removed the role, banner component, and HTTPS sections.
     summaryAdditional:
@@ -22,9 +30,9 @@ items:
     githubPr: 2139
     githubRepo: uswds-site
   - date: 2023-06-09
-    summary: Fixed a bug that caused inaccurate megamenu template markup in the documentation.
+    summary: Fixed a bug that caused inaccur ate megamenu template markup in the documentation.
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
-    isBreaking: false
+    isBreaking: falsegit l
     affectsGuidance: true
     affectsMarkup: true
     githubPr: 5311

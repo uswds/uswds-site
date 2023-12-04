@@ -30,9 +30,9 @@ items:
     githubPr: 2139
     githubRepo: uswds-site
   - date: 2023-06-09
-    summary: Fixed a bug that caused inaccur ate megamenu template markup in the documentation.
+    summary: Fixed a bug that caused inaccurate megamenu template markup in the documentation.
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
-    isBreaking: falsegit l
+    isBreaking: false
     affectsGuidance: true
     affectsMarkup: true
     githubPr: 5311

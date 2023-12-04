@@ -2,6 +2,20 @@ title: Footer
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed the `usa-layout-grid` dependency from the `usa-footer` package.
+    summaryAdditional: This update reduces the footer package size.
+    affectsStyles: true
+    githubPr: 5289
+    githubRepo: uswds
+    versionUswds: N.N.N
+  - date: NNNN-NN-NN
+    summary: Adjusted the right alignment of footer elements.
+    summaryAdditional: Footer content should now align with other page elements.
+    affectsStyles: true
+    githubPr: 5234
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-11-09
     summary: Restored underlines to footer links in the default state.
     summaryAdditional: Now, footer links meet WCAG 2.0 AA requirements.

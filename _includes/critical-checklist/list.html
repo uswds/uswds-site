@@ -15,8 +15,8 @@
   {% assign items = screenReaderItems  %}
 {% endif %}
 <!-- set shared classes -->
-{% assign tagClasses = "padding-y-05 padding-x-1 radius-md font-body-3xs margin-right-1 margin-y-05" %}
-{% assign specialTextClasses = "margin-y-1" %}
+{% assign tagClasses = "line-height-sans-4 padding-y-05 padding-x-1 radius-md font-body-3xs margin-right-1 margin-y-05" %}
+{% assign specialTextClasses = "margin-y-1 font-body-xs border-left-05 padding-left-105 line-height-sans-5" %}
 
 <!-- section description -->
 {% include critical-checklist/section-description.html %}
@@ -61,34 +61,39 @@
     {% else %}
       {% assign versionTested = "N/A" %}
     {% endif %}
-    <!-- assign test status classes -->
+    <!-- assign test status info -->
     {% if item.testStatus == 'pass' and item.versionFixed == site.uswds_version %}
-      {% assign statusClass = 'site-checklist-bg--success' %}
+      {% assign bgClass = 'site-checklist-bg--success-light' %}
+      {% assign textClass = 'site-checklist-text--success' %}
+      {% assign statusText = 'Passed' %}
+      {% assign statusIcon = 'check_circle' %}
       {% elsif item.testStatus == 'pass' %}
-        {% assign statusClass = 'site-checklist-bg--success-light' %}
+        {% assign bgClass = 'site-checklist-bg--success-light' %}
+        {% assign textClass = 'site-checklist-text--success' %}
+        {% assign statusText = 'Passed' %}
+        {% assign statusIcon = 'check_circle' %}
       {% elsif item.testStatus == 'fail' %}
-        {% assign statusClass = 'site-checklist-bg--warning' %}
+        {% assign bgClass = 'site-checklist-bg--warning' %}
+        {% assign textClass = 'site-checklist-text--warning' %}
+        {% assign statusText = 'Failed' %}
+        {% assign statusIcon = 'warning' %}
       {% elsif item.testStatus == 'exempt' %}
-        {% assign statusClass = 'site-checklist-bg--info' %}
+      {% assign bgClass = 'border-2px border-disabled-lighter text-disabled' %}
+      {% assign textClass = 'site-checklist-text--info' %}
+        {% assign statusText = 'Cannot test' %}
+        {% assign statusIcon = 'info' %}
       {% else %}
-        {% assign statusClass = 'border-2px border-disabled-lighter text-disabled' %}
+        {% assign bgClass = 'border-2px border-disabled-lighter text-disabled' %}
+        {% assign textClass = 'site-checklist-text--info' %}
+        {% assign statusText = 'Not tested yet' %}
+        {% assign statusIcon = 'info' %}
     {% endif %}
     <!-- start checklist items -->
     <li class="usa-icon-list__item flex-justify">
       <div class="display-flex flex-row">
-        <!-- start icons -->
-        {% if item.testStatus == 'pass' and item.versionFixed  == site.uswds_version %}
-          {% include critical-checklist/status-icon.html color='site-checklist-text--success' icon='info'%}
-        {% elsif item.testStatus == 'pass' %}
-          {% include critical-checklist/status-icon.html color='site-checklist-text--success' icon='check_circle_outline'%}
-        {% elsif item.testStatus == 'fail' %}
-          {% include critical-checklist/status-icon.html color='site-checklist-text--warning' icon='warning'%}
-        {% elsif item.testStatus == 'exempt' %}
-          {% include critical-checklist/status-icon.html color='site-checklist-text--info' icon='info'%}
-        {% else %}
-          {% include critical-checklist/status-icon.html color='text-disabled' icon='info_outline'%}
-        {% endif %}
-        <!-- end icons -->
+        <!-- Add icon -->
+        {% include critical-checklist/status-icon.html color=textClass icon=statusIcon %}
+         <!-- Add text content -->
         <div class="usa-icon-list__content">
           <!-- start text content -->
           <p class="margin-bottom-05">
@@ -120,13 +125,14 @@
           <!-- end text content -->
           <!-- start tags -->
           <div class="display-flex flex-wrap flex-align-center margin-y-05">
-            <!-- start "last tested" tag - mobile view -->
-            <span class="{{ tagClasses }} {{ statusClass }} desktop-lg:display-none
+            <!-- start "test status" mobile view -->
+            <span class="
+              {{ tagClasses }} {{bgClass }}
+              desktop-lg:display-none
             ">
-              Last manual test
-              <b>{{ versionTested }}</b>
+              <b>{{ statusText }}</b>
             </span>
-            <!-- end "last tested" mobile view -->
+            <!-- end "test status" mobile view -->
             <!-- start WCAG tags -->
             {% if item.wcagCriterion%}
               <span class="{{ tagClasses }} border-1px border-gray-10">
@@ -137,21 +143,23 @@
               </a>
             {% endif %}
             <!-- end WCAG tags -->
+            <span class="{{ tagClasses }} border-1px border-gray-10 ">
+              Last manual test: <b>{{ versionTested }}</b>
+            </span>
           </div>
         </div>
       </div>
-      <!-- start "last tested" desktop view -->
+      <!-- start "test status" desktop view -->
       <div class="flex-column flex-align-end text-right display-none desktop-lg:display-flex">
         <span class="
-          {{ tagClasses }}
-          {{ statusClass }}
+          {{ tagClasses }} {{bgClass }}
           margin-right-0 display-none desktop-lg:display-block
         ">
-          Last manual test<br/>
-          <b>{{ versionTested }}</b>
+          Test status:<br/>
+          <b>{{ statusText }}</b>
         </span>
       </div>
-      <!-- end "last tested" desktop view -->
+      <!-- end  "test status"desktop view -->
       <!-- end tags -->
     </li>
     {% endfor %}

@@ -3553,24 +3553,26 @@ $do-dont-top-bar-width: 1;
 .site-checklist-bg--success {
   background-color: color("green-cool-30");
 }
-.site-checklist-text--success {
-  color: color("green-cool-60");
+.site-checklist-text--success,
+.site-checklist-text--success:visited {
+  color: color("green-cool-50");
 }
 .site-checklist-bg--success-light {
   background-color: color("green-cool-10");
 }
 .site-checklist-bg--warning {
-  background-color: color("orange-30");
+  background-color: color("orange-warm-40");
 }
-.site-checklist-text--warning {
+.site-checklist-text--warning,
+.site-checklist-text--warning:visited  {
   color: color("orange-warm-60v");
 }
-.site-checklist-text--warning-light {
-  color: color("orange-30");
-}
 .site-checklist-bg--info {
-  background-color: color("blue-cool-40");
+  background-color: color("blue-cool-10");
 }
 .site-checklist-text--info {
   color: color("blue-cool-60");
+}
+.site-checklist-bg--info-light {
+  background-color: color("blue-cool-10");
 }

@@ -30,7 +30,7 @@ keyboardItems:
   - summary: Focus moves backwards with keyboard interaction.
     summaryAdditional: When you navigate through items with `shift` + `tab`, the visible focus moves to the previous focusable elements without skipping any items.
     testStatus: exempt
-    versionTested: 3.5.0
+    versionTested:
     wcagCriterion: 2.4.3
   - summary: Focus moves forward with keyboard interaction.
     summaryAdditional: |

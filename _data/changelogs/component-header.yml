@@ -2,6 +2,13 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed a bug that caused long navigation button spans to overflow into its padding.
+    summaryAdditional: Now, nav buttons properly break into two lines and maintain center alignment.
+    affectsStyles: True
+    githubPr: 5655
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-11-20
     summary: Removed the role, banner component, and HTTPS sections.
     summaryAdditional:

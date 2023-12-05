@@ -5,10 +5,8 @@ title: Accordion critical checklist
 category: Components
 lead: Summary of how this guide will show you how USWDS tests for accessibility and how you can test your own implementation for accessibility.
 subnav:
-- text: Accessibility testing
-  href: '/components/accordion/checklist'
-- text: Latest updates
-  href: "#changelog"
+  - text: Latest updates
+    href: "#changelog"
 changelog:
   key: 'component-accordion-checklist'
 ---

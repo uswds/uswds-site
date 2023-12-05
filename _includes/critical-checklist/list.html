@@ -14,15 +14,12 @@
   {% assign description = "to screen readers"%}
   {% assign items = screenReaderItems  %}
 {% endif %}
-<!-- set shared classes -->
-{% assign tagClasses = "line-height-sans-4 padding-y-05 padding-x-1 radius-md font-body-3xs margin-right-1 margin-top-1 margin-bottom-05" %}
-{% assign specialTextClasses = "margin-y-1 font-body-xs" %}
 
 <!-- section description -->
 {% include critical-checklist/section-description.html %}
 
 <!-- section checklist items -->
-<ul class="usa-icon-list usa-content-list maxw-tablet-lg margin-top-4">
+<ul class="usa-icon-list usa-content-list margin-top-4">
   {% for item in items %}
     <!-- assign criterion details -->
     {% include critical-checklist/criteria-details.html %}
@@ -33,34 +30,29 @@
       {% assign versionTested = "N/A" %}
     {% endif %}
     <!-- assign test status info -->
-    {% if item.testStatus == 'pass' and item.versionFixed == site.uswds_version %}
-      {% assign bgClass = 'site-checklist-bg--success' %}
-      {% assign textClass = 'site-checklist-text--success' %}
-      {% assign statusText = 'Recently passed' %}
-      {% assign statusIcon = 'check_circle' %}
-      {% elsif item.testStatus == 'pass' %}
-        {% assign bgClass = 'site-checklist-bg--success-light' %}
-        {% assign textClass = 'site-checklist-text--success' %}
+    {% if item.testStatus == 'pass' %}
+        {% assign tagClass = 'site-checklist-tag--pass' %}
+        {% assign textClass = 'site-checklist-text--pass' %}
         {% assign statusText = 'Passed' %}
         {% assign statusIcon = 'check_circle' %}
       {% elsif item.testStatus == 'fail' %}
-        {% assign bgClass = 'site-checklist-bg--warning' %}
-        {% assign textClass = 'site-checklist-text--warning' %}
+        {% assign tagClass = 'site-checklist-tag--fail' %}
+        {% assign textClass = 'site-checklist-text--fail' %}
         {% assign statusText = 'Failed' %}
         {% assign statusIcon = 'warning' %}
       {% elsif item.testStatus == 'exempt' %}
-      {% assign bgClass = 'border-2px border-disabled-lighter text-disabled' %}
-      {% assign textClass = 'site-checklist-text--info' %}
+        {% assign tagClass = 'site-checklist-tag--exempt' %}
+        {% assign textClass = 'site-checklist-text--exempt' %}
         {% assign statusText = 'Cannot test' %}
         {% assign statusIcon = 'info_outline' %}
       {% else %}
-        {% assign bgClass = 'border-2px border-disabled-lighter text-disabled' %}
-        {% assign textClass = 'site-checklist-text--info' %}
-        {% assign statusText = 'Not tested yet' %}
+        {% assign tagClass = 'site-checklist-tag--incomplete' %}
+        {% assign textClass = 'site-checklist-text-incomplete' %}
+        {% assign statusText = 'Incomplete' %}
         {% assign statusIcon = 'info_outline' %}
     {% endif %}
     <!-- start checklist items -->
-    <li class="usa-icon-list__item flex-justify">
+    <li class="usa-icon-list__item">
       <div class="display-flex flex-row">
         <!-- Add icon -->
         {% include critical-checklist/status-icon.html color=textClass icon=statusIcon %}
@@ -72,59 +64,43 @@
             {{ item.summaryAdditional | markdownify  | remove: '<p>' | remove: '</p>' }}
           </p>
             {% if item.testStatus == 'pass' and item.versionFixed  == site.uswds_version %}
-              <p class="{{ specialTextClasses }}  {{ textClass }}">
+              <p class="site-checklist-text {{ textClass }}">
                 <b>The {{ componentName }} component recently passed this test in version {{ item.versionFixed }}.</b><br/>
-                <a class="site-checklist-text--success" href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionFixed }}">Read more in the {{ item.versionFixed }} release notes</a>.
+                <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionFixed }}">Read more in the {{ item.versionFixed }} release notes</a>.
               </p>
             {% elsif item.testStatus == 'fail' %}
-              <p class="{{ specialTextClasses }}  {{ textClass }}">
+              <p class="site-checklist-text {{ textClass }}">
                 <b>The {{ componentName }} component does not currently pass this test.</b><br/>
-                <a class="site-checklist-text--warning" href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more about this issue on GitHub</a>.
+                <a href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more about this issue on GitHub</a>.
               </p>
             {% elsif item.testStatus == 'exempt' %}
-              <p class="{{ specialTextClasses }}  {{ textClass }}">
+              <p class="site-checklist-text {{ textClass }}">
                 <b>We cannot perform this test.</b><br/>
                 This must be tested on the project level.
               </p>
             {% elsif item.testStatus == 'pass' %}
             {% else %}
-              <p class="{{ specialTextClasses }}  {{ textClass }}">
+              <p class="site-checklist-text {{ textClass }}">
                 <b>We have not completed this test yet.</b><br/>
                 Make sure to test this manually in your project.
               </p>
             {% endif %}
           <!-- end text content -->
           <!-- start tags -->
-          <div class="display-flex flex-wrap flex-align-center margin-y-05">
-            <!-- start "test status" mobile view -->
-            <span class="{{ tagClasses }} {{ bgClass }} desktop-lg:display-none">
-              <b>{{ statusText }}</b>
-            </span>
-            <!-- end "test status" mobile view -->
-            <!-- start WCAG tags -->
-            {% if item.wcagCriterion%}
-              <span class="{{ tagClasses }} border-1px border-gray-10">
-                WCAG {{ criterionLevel }}
-              </span>
-              <a href="{{ criterionUrl }}" class="{{ tagClasses }} border-1px border-gray-10">
-                {{ item.wcagCriterion }} {{ criterionName }}
-              </a>
+          <ul class="site-checklist-tags">
+            <li class="{{ tagClass }}">Status: <b>{{ statusText }}</b></li>
+            {% if item.wcagCriterion %}
+              <li>WCAG {{ criterionLevel }}</li>
+              <li>
+                <a href="{{ criterionUrl }}">
+                  {{ item.wcagCriterion }} {{ criterionName }}
+                </a>
+              </li>
             {% endif %}
-            <!-- end WCAG tags -->
-            <span class="{{ tagClasses }} border-1px border-gray-10 ">
-              Last manual test: <b>{{ versionTested }}</b>
-            </span>
-          </div>
+            <li>Last test: <b>{{ versionTested }}</b></li>
+          </ul>
         </div>
       </div>
-      <!-- start "test status" desktop view -->
-      <div class="flex-column flex-align-end text-right display-none desktop-lg:display-flex padding-left-2 ">
-        <span style="width:6rem" class="{{ tagClasses }} {{bgClass }} margin-right-0 display-none desktop-lg:display-block">
-          Test status:<br/>
-          <b>{{ statusText }}</b>
-        </span>
-      </div>
-      <!-- end  "test status"desktop view -->
       <!-- end tags -->
     </li>
     {% endfor %}

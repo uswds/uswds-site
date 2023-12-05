@@ -1,0 +1,30 @@
+{% if item.wcagCriterion == "1.4.4" %}
+  {% assign criterionLevel = "AA" %}
+  {% assign criterionName = "Resize text" %}
+  {% assign criterionUrl = "https://www.w3.org/TR/WCAG21/#resize-text" %}
+{% endif %}
+{% if item.wcagCriterion == "2.1.1" %}
+  {% assign criterionLevel = "A" %}
+  {% assign criterionName = "Keyboard" %}
+  {% assign criterionUrl = "https://www.w3.org/TR/WCAG21/#keyboard" %}
+{% endif %}
+{% if item.wcagCriterion == "2.1.2" %}
+  {% assign criterionLevel = "A" %}
+  {% assign criterionName = "No keyboard trap" %}
+  {% assign criterionUrl = "https://www.w3.org/TR/WCAG21/#no-keyboard-trap" %}
+{% endif %}
+{% if item.wcagCriterion == "2.4.3" %}
+  {% assign criterionLevel = "A" %}
+  {% assign criterionName = "Focus order" %}
+  {% assign criterionUrl = "https://www.w3.org/TR/WCAG21/#focus-order" %}
+{% endif %}
+{% if item.wcagCriterion == "2.4.6" %}
+  {% assign criterionLevel = "AA" %}
+  {% assign criterionName = "Headings and labels" %}
+  {% assign criterionUrl = "https://www.w3.org/TR/WCAG21/#headings-and-labels" %}
+  {% endif %}
+{% if item.wcagCriterion == "2.4.7" %}
+  {% assign criterionLevel = "AA" %}
+  {% assign criterionName = "Focus visible" %}
+  {% assign criterionUrl = "https://www.w3.org/TR/WCAG21/#focus-visible" %}
+{% endif %}

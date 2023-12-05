@@ -1,7 +1,7 @@
 ---
 permalink: /components/accordion/checklist/
 layout: styleguide
-title: Accordion critical checklist
+title: Accordion accessibility checklist
 category: Components
 lead: Summary of how this guide will show you how USWDS tests for accessibility and how you can test your own implementation for accessibility.
 subnav:

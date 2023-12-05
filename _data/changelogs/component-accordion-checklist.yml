@@ -1,0 +1,9 @@
+title: Accordion checklist
+type: component
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Add accessibility checklist page.
+    affectsGuidance: true
+    githubPr: 3138
+    githubRepo: uswds-site

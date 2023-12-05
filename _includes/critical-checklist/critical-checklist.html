@@ -6,25 +6,8 @@
 {% assign screenReaderItems = component.screenReaderItems %}
 {% assign lastTestDate = component.testDate | date: "%B %e, %Y" %}
 
-<!-- {% if component.meetsStandards %}
-<div class="usa-alert usa-alert--success usa-alert--no-icon">
-  <div class="usa-alert__body">
-    <p class="usa-alert__text">
-      The {{ componentName }} component meets  WCAG {{ component.complianceLevel }} conformance standards.<br/>
-      <i>This component was last tested on {{ lastTestDate }}.</i>
-    </p>
-  </div>
-</div>
-{% else %}
-<div class="usa-alert usa-alert--warning usa-alert--no-icon">
-  <div class="usa-alert__body">
-    <p class="usa-alert__text">
-      This component is not in compliance with WCAG {{ component.complianceLevel }}.
-      <i>This component was last tested on {{ lastTestDate }}.</i>
-    </p>
-  </div>
-</div>
-{% endif %} -->
+Instructions for using this page. We perform the following tests to meet WCAG 2.1 AA compliance.
+Use the checklists below as your guide to test the component in your project.
 
 {% if keyboardItems %}
   {% include critical-checklist/list.html type='keyboard' %}
@@ -38,14 +21,4 @@
   {% include critical-checklist/list.html type='zoom' %}
 {% endif %}
 
-{% include critical-checklist/how-to.html %}
-
-## Share your feedback
-<ul class="usa-button-group margin-top-4">
-  <li class="usa-button-group__item">
-    <a href="https://github.com/uswds/uswds/issues/new/choose" class="usa-button">Propose a new test</a>
-  </li>
-  <li class="usa-button-group__item">
-    <a href="https://github.com/uswds/uswds/issues/new/choose" class="usa-button usa-button--secondary">Report an error</a>
-  </li>
-</ul>
+{% include critical-checklist/feedback-buttons.html type='zoom' %}

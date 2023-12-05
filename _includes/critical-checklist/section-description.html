@@ -2,19 +2,16 @@
 These tests check to see if the accordion is accessible and usable {{ description }}.
 For more instructions on how to perform keyboard control tests, check out the resources in the expandable section below.
 
+{% if title == "Screen reader" %}
+  {% assign title="screen readers" %}
+{% endif %}
 <div class="usa-accordion measure-5">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-controls="{{ title | slugify | append:'-resources' }}">
-      {{ title }} resources
+    <button type="button" class="usa-accordion__button" aria-controls="{{ title | slugify | append:'-how-to' }}">
+      How to test with {{ title | downcase}}
     </button>
   </h4>
-  <div id="{{ title | slugify | append:'-resources'}}" class="usa-accordion__content usa-prose">
-    <p>Through this process of screen reader testing, you can confirm the accordion component complies with:</p>
-    <ul>
-      <li><b>2.1.1 Keyboard</b>: All functionality of the accordion is operable through a keyboard interface. (Level A)</li>
-      <li><b>2.1.2 No Keyboard Trap</b>: If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface. (Level A)</li>
-      <li><b>2.4.3 Focus Order</b>: Focusable elements receive focus in an order that preserves meaning and operability. (Level A)</li>
-      <li><b>2.4.7 Focus Visible</b>: The keyboard focus indicator is visible. (Level AA)</li>
-    </ul>
+  <div id="{{ title | slugify | append:'-how-to'}}" class="usa-accordion__content usa-prose">
+    <p>Information about how to test with with {{ title }}. Maybe we can link to other resources that explain it well.</p>
   </div>
 </div>

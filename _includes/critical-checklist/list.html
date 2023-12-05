@@ -15,8 +15,8 @@
   {% assign items = screenReaderItems  %}
 {% endif %}
 <!-- set shared classes -->
-{% assign tagClasses = "line-height-sans-4 padding-y-05 padding-x-1 radius-md font-body-3xs margin-right-1 margin-y-05" %}
-{% assign specialTextClasses = "margin-y-1 font-body-xs border-left-05 padding-left-105 line-height-sans-5" %}
+{% assign tagClasses = "line-height-sans-4 padding-y-05 padding-x-1 radius-md font-body-3xs margin-right-1 margin-top-1 margin-bottom-05" %}
+{% assign specialTextClasses = "margin-y-1 font-body-xs" %}
 
 <!-- section description -->
 {% include critical-checklist/section-description.html %}
@@ -63,9 +63,9 @@
     {% endif %}
     <!-- assign test status info -->
     {% if item.testStatus == 'pass' and item.versionFixed == site.uswds_version %}
-      {% assign bgClass = 'site-checklist-bg--success-light' %}
+      {% assign bgClass = 'site-checklist-bg--success' %}
       {% assign textClass = 'site-checklist-text--success' %}
-      {% assign statusText = 'Passed' %}
+      {% assign statusText = 'Recently passed' %}
       {% assign statusIcon = 'check_circle' %}
       {% elsif item.testStatus == 'pass' %}
         {% assign bgClass = 'site-checklist-bg--success-light' %}
@@ -81,12 +81,12 @@
       {% assign bgClass = 'border-2px border-disabled-lighter text-disabled' %}
       {% assign textClass = 'site-checklist-text--info' %}
         {% assign statusText = 'Cannot test' %}
-        {% assign statusIcon = 'info' %}
+        {% assign statusIcon = 'info_outline' %}
       {% else %}
         {% assign bgClass = 'border-2px border-disabled-lighter text-disabled' %}
         {% assign textClass = 'site-checklist-text--info' %}
         {% assign statusText = 'Not tested yet' %}
-        {% assign statusIcon = 'info' %}
+        {% assign statusIcon = 'info_outline' %}
     {% endif %}
     <!-- start checklist items -->
     <li class="usa-icon-list__item flex-justify">
@@ -101,23 +101,23 @@
             {{ item.summaryAdditional | markdownify  | remove: '<p>' | remove: '</p>' }}
           </p>
             {% if item.testStatus == 'pass' and item.versionFixed  == site.uswds_version %}
-              <p class="{{ specialTextClasses }} site-checklist-text--success">
+              <p class="{{ specialTextClasses }}  {{ textClass }}">
                 <b>The {{ componentName }} component recently passed this test in version {{ item.versionFixed }}.</b><br/>
-                <a class="site-checklist-text--success" href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionFixed }}">Read more in the release notes</a>.
+                <a class="site-checklist-text--success" href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionFixed }}">Read more in the {{ item.versionFixed }} release notes</a>.
               </p>
             {% elsif item.testStatus == 'fail' %}
-              <p class="{{ specialTextClasses }} site-checklist-text--warning">
+              <p class="{{ specialTextClasses }}  {{ textClass }}">
                 <b>The {{ componentName }} component does not currently pass this test.</b><br/>
-                <a class="site-checklist-text--warning" href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more and track this issue on GitHub</a>.
+                <a class="site-checklist-text--warning" href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more about this issue on GitHub</a>.
               </p>
             {% elsif item.testStatus == 'exempt' %}
-              <p class="{{ specialTextClasses }} site-checklist-text--info">
-                <b>We cannot effectively test this on a system level. </b><br/>
+              <p class="{{ specialTextClasses }}  {{ textClass }}">
+                <b>We cannot perform this test.</b><br/>
                 This must be tested on the project level.
               </p>
             {% elsif item.testStatus == 'pass' %}
             {% else %}
-              <p class="{{ specialTextClasses }} site-checklist-text--info">
+              <p class="{{ specialTextClasses }}  {{ textClass }}">
                 <b>We have not completed this test yet.</b><br/>
                 Make sure to test this manually in your project.
               </p>
@@ -126,10 +126,7 @@
           <!-- start tags -->
           <div class="display-flex flex-wrap flex-align-center margin-y-05">
             <!-- start "test status" mobile view -->
-            <span class="
-              {{ tagClasses }} {{bgClass }}
-              desktop-lg:display-none
-            ">
+            <span class="{{ tagClasses }} {{ bgClass }} desktop-lg:display-none">
               <b>{{ statusText }}</b>
             </span>
             <!-- end "test status" mobile view -->
@@ -150,11 +147,8 @@
         </div>
       </div>
       <!-- start "test status" desktop view -->
-      <div class="flex-column flex-align-end text-right display-none desktop-lg:display-flex">
-        <span class="
-          {{ tagClasses }} {{bgClass }}
-          margin-right-0 display-none desktop-lg:display-block
-        ">
+      <div class="flex-column flex-align-end text-right display-none desktop-lg:display-flex padding-left-2 ">
+        <span style="width:6rem" class="{{ tagClasses }} {{bgClass }} margin-right-0 display-none desktop-lg:display-block">
           Test status:<br/>
           <b>{{ statusText }}</b>
         </span>

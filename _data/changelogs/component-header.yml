@@ -2,20 +2,20 @@ title: Header
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2023-12-08
     summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
     affectsStyles: true
     githubPr: 5624
     githubRepo: uswds
-    versionUswds: N.N.N
-  - date: NNNN-NN-NN
+    versionUswds: 3.7.1
+  - date: 2023-12-08
     summary: Fixed the horizontal alignment of header submenu elements.
     summaryAdditional: Now, `usa-nav__submenu` elements should align with other header elements.
     isBreaking: false
     affectsStyles: true
     githubPr: 5649
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.7.1
   - date: 2023-11-20
     summary: Removed the role, banner component, and HTTPS sections.
     summaryAdditional:

@@ -1,6 +1,6 @@
 videos:
   - title: Designing a repeatable research process for people with disabilities
-    subtitle: Conducting user research with people with disabilities
+    subtitle: Conducting user research on how USWDS serves people with disabilities
     description: |
       We continued a discussion from the October monthly call about ongoing research on how
       the design system works for users with disabilities. We presented more
@@ -15,7 +15,7 @@ videos:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-november-2023.pptx
       size: 6.3
       pages: 63
-  - title: Conducting user research with people with disabilities
+  - title: Conducting user research on how USWDS serves people with disabilities
     subtitle: How to develop a sustainable, repeatable research process
     description: |
       One of our roadmap goals is to conduct more user research with people who have disabilities —

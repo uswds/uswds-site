@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Improved the display of header navigation dropdown button for long links.
-    summaryAdditional:  The expander icon will now be vertically centered.
+    summary: Improved the vertical alignment of the expander icon in the mobile menu.
+    summaryAdditional:  The icon will now maintain vertical alignment on menu buttons with long links.
     affectsStyles: true
     githubPr: 5654
     githubRepo: uswds

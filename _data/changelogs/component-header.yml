@@ -8,6 +8,20 @@ items:
     githubPr: 5624
     githubRepo: uswds
     versionUswds: N.N.N
+  - date: NNNN-NN-NN
+    summary: Fixed the horizontal alignment of header submenu elements.
+    summaryAdditional: Now, `usa-nav__submenu` elements should align with other header elements.
+    isBreaking: false
+    affectsStyles: true
+    githubPr: 5649
+    githubRepo: uswds
+    versionUswds: N.N.N
+  - date: 2023-11-20
+    summary: Removed the role, banner component, and HTTPS sections.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2162
+    githubRepo: uswds-site
   - date: 2023-09-29
     summary: Fixed a Safari-only bug that caused the mobile menu to unexpectedly close at a narrow range of window widths.
     summaryAdditional:

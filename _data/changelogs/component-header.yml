@@ -3,6 +3,13 @@ type: component
 changelogURL:
 items:
   - date: 2023-12-08
+    summary: Improved the vertical alignment of the expand icon.
+    summaryAdditional: The icon will now maintain vertical alignment when menu button text breaks to multiple lines.
+    affectsStyles: true
+    githubPr: 5654
+    githubRepo: uswds
+    versionUswds: 3.7.1
+  - date: 2023-12-08
     summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
     affectsStyles: true
     githubPr: 5624

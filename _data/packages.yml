@@ -120,7 +120,6 @@
   sourceSize: 7
   dependencies:
     - "uswds-fonts"
-    - "usa-layout-grid"
     - "usa-input"
     - "usa-form"
     - "usa-label"

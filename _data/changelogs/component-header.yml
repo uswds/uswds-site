@@ -3,6 +3,12 @@ type: component
 changelogURL:
 items:
   - date: 2023-12-08
+    summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
+    affectsStyles: true
+    githubPr: 5624
+    githubRepo: uswds
+    versionUswds: 3.7.1
+  - date: 2023-12-08
     summary: Fixed the horizontal alignment of header submenu elements.
     summaryAdditional: Now, `usa-nav__submenu` elements should align with other header elements.
     isBreaking: false

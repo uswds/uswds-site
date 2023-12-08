@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated the padding on .usa-nav__submenu elements so that they align with other header elements.
-    summaryAdditional:
+    summary: Fixed the horizontal alignment of header submenu elements.
+    summaryAdditional: Now, `usa-nav__submenu` elements should align with other header elements.
     isBreaking: false
     affectsStyles: true
     githubPr: 5649

@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Removed the `usa-layout-grid` dependency from the `usa-footer` package.
+    summary: Removed the `usa-layout-grid` dependency.
     summaryAdditional: This update reduces the footer package size.
     affectsStyles: true
     githubPr: 5289

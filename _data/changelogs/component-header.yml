@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Improved the vertical alignment of the expand icon.
-    summaryAdditional:  The icon will now maintain vertical alignment on menu buttons with long link text.
+    summaryAdditional: The icon will now maintain vertical alignment when menu button text breaks to multiple lines.
     affectsStyles: true
     githubPr: 5654
     githubRepo: uswds

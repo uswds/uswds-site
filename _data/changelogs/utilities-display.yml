@@ -2,6 +2,14 @@ title: Display utility
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed a bug that prevented the CSS from generating `.left-full`, `.right-full`, and `.top-full` utility classes.
+    summaryAdditional:
+    isBreaking:
+    affectsStyles: true
+    githubPr: 5633
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2022-06-08
     summary: Updated demonstration of `display:none`.
     summaryAdditional:

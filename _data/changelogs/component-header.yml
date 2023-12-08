@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Resolved a compilation error when `$theme-max-header-width` is set to `"none"`.
+    summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
     affectsStyles: true
     githubPr: 5624
     githubRepo: uswds

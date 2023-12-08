@@ -24,7 +24,7 @@ Register for [upcoming calls on Digital.gov](https://digital.gov/events/). All U
 
 **{{ video.subtitle }}**
 
-{{ video.description | markdownify }}
+{{ video.description }}
 
 {% if video.slides.link %}
 <ul class="usa-list">

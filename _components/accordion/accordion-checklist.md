@@ -1,9 +1,9 @@
 ---
 permalink: /components/accordion/checklist/
 layout: styleguide
-title: Accordion accessibility checklist
+title: Accordion accessibility testing guide
 category: Components
-lead: Summary of how this guide will show you how USWDS tests for accessibility and how you can test your own implementation for accessibility.
+lead: Learn how USWDS tests for accessibility and how you should test for accessibility, too.
 subnav:
   - text: Latest updates
     href: "#changelog"

@@ -1,17 +1,15 @@
 <!-- set section titles and descriptions -->
 {% if include.type == "keyboard" %}
   {% assign title = "Keyboard control"%}
-  {% assign description = "when users use the keyboard to navigate"%}
   {% assign items = keyboardItems  %}
+  {% assign navType= "keyboard" %}
  {% endif %}
 {% if include.type == "zoom" %}
   {% assign title = "Zoom magnification"%}
-  {% assign description = "when users increase the zoom magnification"%}
   {% assign items = zoomItems  %}
 {% endif %}
 {% if include.type == "screenReader" %}
   {% assign title = "Screen reader"%}
-  {% assign description = "to screen readers"%}
   {% assign items = screenReaderItems  %}
 {% endif %}
 
@@ -76,13 +74,13 @@
             {% elsif item.testStatus == 'exempt' %}
               <p class="site-checklist-text {{ textClass }}">
                 <b>We cannot perform this test.</b><br/>
-                This must be tested on the project level.
+                This must be tested at the project level.
               </p>
             {% elsif item.testStatus == 'pass' %}
             {% else %}
               <p class="site-checklist-text {{ textClass }}">
-                <b>We have not completed this test yet.</b><br/>
-                Make sure to test this manually in your project.
+                <b>We have not done this test yet.</b><br/>
+                Make sure you perform this test manually in your project.
               </p>
             {% endif %}
           <!-- end text content -->

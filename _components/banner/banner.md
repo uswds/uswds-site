@@ -32,7 +32,7 @@ changelog:
 
 You should use the banner to identify your site as an official government site.
 
-The banner explains how to identify an official .gov or .mil domain and that these sites have secure HTTPS connections. Using the banner component is the best way to assure visitors that they're connected to an official site.
+The banner explains how to identify an official `.gov` or `.mil` domain and that these sites have secure HTTPS connections. Using the banner component is the best way to assure visitors that they're connected to an official site.
 
 Most government sites should use the banner, but some should not use the banner. Do NOT use the banner on non-government domains such as a .com or .org.
 

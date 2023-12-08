@@ -2,6 +2,24 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: 2023-11-30
+    summary: Fixed a bug causing component code example ID’s and relevant aria attributes to display incorrectly.
+    summaryAdditional: Now, example ID’s match what’s found in the USWDS repo and are more succinct.
+    isBreaking: true 
+    affectsMarkup: true
+    githubPr: 2312
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    summary: Updated the text in the `aria-label` documentation to match the component markup.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    summary: Removed `usa-layout-grid` from the list of dependencies.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2023-11-09
     summary: Updated the banner component so that it initializes without requiring import of the `usa-accordion` package.
     isBreaking: false

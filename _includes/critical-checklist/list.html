@@ -42,12 +42,12 @@
         {% assign tagClass = 'site-checklist-tag--exempt' %}
         {% assign textClass = 'site-checklist-text--exempt' %}
         {% assign statusText = 'Cannot test' %}
-        {% assign statusIcon = 'info_outline' %}
+        {% assign statusIcon = 'error' %}
       {% else %}
         {% assign tagClass = 'site-checklist-tag--incomplete' %}
         {% assign textClass = 'site-checklist-text-incomplete' %}
         {% assign statusText = 'Incomplete' %}
-        {% assign statusIcon = 'info_outline' %}
+        {% assign statusIcon = 'error_outline' %}
     {% endif %}
     <!-- start checklist items -->
     <li class="usa-icon-list__item">
@@ -73,8 +73,8 @@
               </p>
             {% elsif item.testStatus == 'exempt' %}
               <p class="site-checklist-text {{ textClass }}">
-                <b>We cannot perform this test.</b><br/>
-                This must be tested at the project level.
+                <b>This can only be tested in your implementation.</b><br/>
+                {{  item.exemptDetails | default:"You'll need to test this in your project."}}
               </p>
             {% elsif item.testStatus == 'pass' %}
             {% else %}

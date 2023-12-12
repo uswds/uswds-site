@@ -31,21 +31,31 @@
     {% if item.testStatus == 'pass' %}
         {% assign tagClass = 'site-checklist-tag--pass' %}
         {% assign textClass = 'site-checklist-text--pass' %}
-        {% assign statusText = 'Passed' %}
+        {% assign iconClass = 'site-checklist-text--pass' %}
+        {% assign statusText = 'Pass' %}
         {% assign statusIcon = 'check_circle' %}
       {% elsif item.testStatus == 'fail' %}
         {% assign tagClass = 'site-checklist-tag--fail' %}
         {% assign textClass = 'site-checklist-text--fail' %}
-        {% assign statusText = 'Failed' %}
+        {% assign iconClass = 'site-checklist-text--fail' %}
+        {% assign statusText = 'Fail' %}
+        {% assign statusIcon = 'error' %}
+      {% elsif item.testStatus == 'warning' %}
+        {% assign tagClass = 'site-checklist-tag--warning' %}
+        {% assign textClass = 'site-checklist-text--warning' %}
+        {% assign iconClass = 'site-checklist-icon--warning' %}
+        {% assign statusText = 'Warning' %}
         {% assign statusIcon = 'warning' %}
       {% elsif item.testStatus == 'exempt' %}
         {% assign tagClass = 'site-checklist-tag--exempt' %}
         {% assign textClass = 'site-checklist-text--exempt' %}
-        {% assign statusText = 'Cannot test' %}
-        {% assign statusIcon = 'error' %}
+        {% assign iconClass = 'site-checklist-text--exempt' %}
+        {% assign statusText = 'Unknown' %}
+        {% assign statusIcon = 'info' %}
       {% else %}
         {% assign tagClass = 'site-checklist-tag--incomplete' %}
         {% assign textClass = 'site-checklist-text-incomplete' %}
+        {% assign iconClass = 'site-checklist-text-incomplete' %}
         {% assign statusText = 'Incomplete' %}
         {% assign statusIcon = 'error_outline' %}
     {% endif %}
@@ -53,7 +63,7 @@
     <li class="usa-icon-list__item">
       <div class="display-flex flex-row">
         <!-- Add icon -->
-        {% include critical-checklist/status-icon.html color=textClass icon=statusIcon %}
+        {% include critical-checklist/status-icon.html color=iconClass icon=statusIcon %}
          <!-- Add text content -->
         <div class="usa-icon-list__content">
           <!-- start text content -->
@@ -66,17 +76,23 @@
                 <b>The {{ componentName }} component recently passed this test in version {{ item.versionFixed }}.</b><br/>
                 <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionFixed }}">Read more in the {{ item.versionFixed }} release notes</a>.
               </p>
+            {% elsif item.testStatus == 'pass' %}
+            {% elsif item.testStatus == 'warning' %}
+              <p class="site-checklist-text {{ textClass }}">
+                <b>The {{ componentName }} component does not pass all elements of this test.</b>
+                We have logged this issue and are prioritizing it. <a href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more about this issue on GitHub</a>.
+              </p>
             {% elsif item.testStatus == 'fail' %}
               <p class="site-checklist-text {{ textClass }}">
-                <b>The {{ componentName }} component does not currently pass this test.</b><br/>
+                <b>The {{ componentName }} component does not currently pass this test.
+                  We consider this to be a top-priority item and are working on a fix.</b><br/>
                 <a href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more about this issue on GitHub</a>.
               </p>
             {% elsif item.testStatus == 'exempt' %}
               <p class="site-checklist-text {{ textClass }}">
-                <b>This can only be tested in your implementation.</b><br/>
-                {{  item.exemptDetails | default:"You'll need to test this in your project."}}
+                <b>{{  item.exemptDetails | default:"This can only be tested in your implementation of the component."}}</b>
+                Be sure to test this in your project.
               </p>
-            {% elsif item.testStatus == 'pass' %}
             {% else %}
               <p class="site-checklist-text {{ textClass }}">
                 <b>We have not done this test yet.</b><br/>

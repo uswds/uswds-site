@@ -5,7 +5,7 @@
       <th>
         <div class="display-flex flex-align-center padding-right-05 ">
             <svg class="usa-icon height-205 width-205 margin-right-05 site-checklist-text--pass" aria-hidden="true" role="img">
-              <use xlink:href="/assets/img/sprite.svg#check_circle"></use>
+              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
             </svg>
           Pass
         </div>
@@ -13,36 +13,37 @@
       <th>
         <div class="display-flex flex-align-center ">
           <svg class="usa-icon height-205 width-205 margin-right-05 site-checklist-text--exempt" aria-hidden="true" role="img">
-            <use xlink:href="/assets/img/sprite.svg#error"></use>
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#info"></use>
           </svg>
-          Exempt
+          Unknown
         </div>
       </th>
       <th>
         <div class="display-flex flex-align-center ">
-          <svg class="usa-icon height-205 width-205 margin-right-05 site-checklist-text--fail" aria-hidden="true" role="img">
-            <use xlink:href="/assets/img/sprite.svg#warning"></use>
+          <svg class="usa-icon height-205 width-205 margin-right-05 site-checklist-icon--warning" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#warning"></use>
           </svg>
           Warning
         </div>
       </th>
       <th>
         <div class="display-flex flex-align-center ">
-          <svg class="usa-icon height-205 width-205 margin-right-05 site-checklist-text--incomplete" aria-hidden="true" role="img">
-            <use xlink:href="/assets/img/sprite.svg#error_outline"></use>
+          <svg class="usa-icon height-205 width-205 margin-right-05 site-checklist-text--fail" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error"></use>
           </svg>
-          Incomplete
+          Fail
         </div>
       </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row" class="bg-base-lightest text-bold text-center">23</th>
+      <td class="text-bold bg-base-lightest">23</td>
+
       <td>19</td>
       <td>2</td>
       <td>1</td>
-      <td>1</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -51,7 +52,7 @@
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon site-checklist-text--pass">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="/assets/img/sprite.svg#check_circle"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">21 items pass</div>
@@ -59,7 +60,7 @@
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon site-checklist-text--fail">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="/assets/img/sprite.svg#warning"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#warning"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">1 item fails</div>
@@ -67,7 +68,7 @@
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon site-checklist-text--exempt">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="/assets/img/sprite.svg#error"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">1 test can not be completed</div>
@@ -75,108 +76,9 @@
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon site-checklist-text--incomplete">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="/assets/img/sprite.svg#error_outline"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error_outline"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">1 test has not been completed</div>
     </li>
   </ul>
-<!--
-<div
-  class="usa-summary-box measure-5"
-  role="region"
-  aria-labelledby="summary-box-key-information"
->
-  <div class="usa-summary-box__body">
-    <h3 class="usa-summary-box__heading" id="summary-box-key-information">
-      Test results summary
-    </h3>
-
-    <div class="usa-summary-box__text">
-      <p>We performed 24 tests on the accordion component. Here are the results:</p>
-
-      <table class="usa-table">
-        <caption>
-          Accordion accessibility test results
-        </caption>
-        <thead>
-          <tr>
-            <th>Total tests</th>
-            <th><svg class="usa-icon" aria-hidden="true" role="img">
-                <use xlink:href="/assets/img/sprite.svg#check_circle"></use>
-              </svg> Pass </th>
-            <th><div class="usa-icon-list__icon site-checklist-text--fail">
-                <svg class="usa-icon" aria-hidden="true" role="img">
-                  <use xlink:href="/assets/img/sprite.svg#warning"></use>
-                </svg>
-              </div>Fail</th>
-            <th>Exempt</th>
-            <th>Incomplete</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>24</td>
-            <td>22</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-        </tbody>
-      </table>
-  </div>
-</div>
-</div> -->
-
-<!--
-<div
-  class="usa-summary-box measure-5"
-  role="region"
-  aria-labelledby="summary-box-key-information"
->
-  <div class="usa-summary-box__body">
-    <h3 class="usa-summary-box__heading" id="summary-box-key-information">
-      Results summary
-    </h3>
-
-    <div class="usa-summary-box__text">
-      <p>We performed 24 tests on the accordion component. Here are the results:</p>
-
-      <ul class="usa-icon-list">
-        <li class="usa-icon-list__item">
-          <div class="usa-icon-list__icon site-checklist-text--pass">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-              <use xlink:href="/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-          </div>
-          <div class="usa-icon-list__content">21 items pass</div>
-        </li>
-        <li class="usa-icon-list__item">
-          <div class="usa-icon-list__icon site-checklist-text--fail">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-              <use xlink:href="/assets/img/sprite.svg#warning"></use>
-            </svg>
-          </div>
-          <div class="usa-icon-list__content">1 item fails</div>
-        </li>
-        <li class="usa-icon-list__item">
-          <div class="usa-icon-list__icon site-checklist-text--exempt">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-              <use xlink:href="/assets/img/sprite.svg#error"></use>
-            </svg>
-          </div>
-          <div class="usa-icon-list__content">1 test can not be completed</div>
-        </li>
-        <li class="usa-icon-list__item">
-          <div class="usa-icon-list__icon site-checklist-text--incomplete">
-            <svg class="usa-icon" aria-hidden="true" role="img">
-              <use xlink:href="/assets/img/sprite.svg#error_outline"></use>
-            </svg>
-          </div>
-          <div class="usa-icon-list__content">1 test has not been completed</div>
-        </li>
-      </ul>
-  </div>
-</div>
-</div>
--->

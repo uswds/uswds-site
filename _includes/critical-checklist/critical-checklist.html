@@ -5,6 +5,13 @@
 {% assign zoomItems = component.zoomItems %}
 {% assign screenReaderItems = component.screenReaderItems %}
 
+## Accordion accessibility tests
+For the accordion component, we tested against 23 different WCAG 2.1 AA success criteria. Here is an overview of the results:
+
+{% include critical-checklist/test-results.html %}
+
+Based on these findings, we **recommend** using the accordion component in all scenarios.
+
 ## Instructions for using this page
 
 On this page, we have outlined how we tested the accordion component's adherence to WCAG 2.1 AA.
@@ -13,10 +20,9 @@ Please review to understand the accessibility strengths and weaknesses of this c
 Use the dropdown menus on this page to help you perform your own accessibility testing.
 Even a component that performed well for us still needs to be tested for accessibility in the context of your project.
 
-## Accordion accessibility checklist
-We performed 24 tests on the accordion component. Here is an overview of the results:
-
-{% include critical-checklist/test-results.html %}
+{% if zoomItems %}
+  {% include critical-checklist/list.html type='zoom' %}
+{% endif %}
 
 {% if keyboardItems %}
   {% include critical-checklist/list.html type='keyboard' %}
@@ -24,10 +30,6 @@ We performed 24 tests on the accordion component. Here is an overview of the res
 
 {% if screenReaderItems %}
   {% include critical-checklist/list.html type='screenReader' %}
-{% endif %}
-
-{% if zoomItems %}
-  {% include critical-checklist/list.html type='zoom' %}
 {% endif %}
 
 {% include critical-checklist/feedback-buttons.html type='zoom' %}

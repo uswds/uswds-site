@@ -1,5 +1,5 @@
 - **Except where noted, use the entire component without deletions or additions.** With rare exceptions, if you use the identifier, include the entire identifier. That is, don't delete sections or required links or change any link text beyond the customizations mentioned in the implementation section.
-- **Use a background color darker than that of the footer.**  color to anchor the identifier to the bottom of the page and distinguish it from other site content. Use primary or base family background colors of grade `80` or higher, or `black`.
+- **Use a background color darker than that of the footer.** Anchor the identifier to the bottom of the page and distinguish it from other site content by adding a background color that is darker than the footer. Use primary or base family background colors of grade `80` or higher, or `black`.
 - **Use an SVG logo if possible.** Ensure the logo is high resolution. We recommend using the SVG version of any logo if you have one. Otherwise, use an image that's at least 120 pixels tall.
 - **Use logos intended for dark backgrounds if possible.** The identifier has a dark background. If your agency has a version of its logo intended for dark backgrounds, use that version.
 - **Update the required links to point to the proper URLs.** The identifier includes links required of any federal website, and these links are specific to a department, agency, or website. We've linked each section below to the guidance on Digital.gov to provide further context.
@@ -31,6 +31,6 @@
 
     Example: [https://www.dhs.gov/privacy-policy](https://www.dhs.gov/privacy-policy)
 
-- **Use the Spanish version if for Spanish-language sites.** If you have an official Spanish-language website, use the Spanish version of the identifier.
+- **Use the Spanish version for Spanish-language sites.** If you have an official Spanish-language website, use the Spanish version of the identifier.
 - **Duplicate the logo element if using multiple logos.** If you're using multiple logos, duplicate the `usa-identifier__logo` element and link the image to your image source.
 - **If applicable, include any taxpayer disclaimer after the standard text.** If the organization must provide a taxpayer expense disclaimer, include it following the "Official website" text, as a separate sentence. For example, "An official website of [Department]. Produced and published at taxpayer expense."

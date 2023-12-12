@@ -241,7 +241,6 @@ The following are practical actions you can take:
 - [Federal Front Door research findings](https://labs.usa.gov/) [labs.usa.gov]
 - [Sharing Quality Services Cross-Agency Performance goal](https://trumpadministration.archives.performance.gov/CAP/sharing-quality-services/) [performance.gov]
 - [Eight Principles of Mobile-Friendliness](https://digital.gov/resources/mobile/principles/) [digital.gov]
-- [Test on real devices with the Federal Crowdsource Mobile Testing Program](https://digital.gov/services/mobile-application-testing-program/) [digital.gov]
 
 #### Non-government resources
 
@@ -298,7 +297,7 @@ The following are practical actions you can take:
 - [Guide to the Digital Analytics Program (DAP)](https://digital.gov/services/dap/) [digital.gov]
 - [Getting started with Search.gov [youtube.com]](https://www.youtube.com/watch?v=p-y9T23ziEg) [search.gov]
 - [Office of Evaluation Sciences](https://oes.gsa.gov/) [oes.gsa.gov]
-- [Improving Customer Experience: Cross-Agency Priority Goal](https://www.performance.gov/CAP/cx/) [performance.gov]
+- [Delivering Excellent, Equitable, and Secure Federal Services and Customer Experience](https://www.performance.gov/pma/cx/) [performance.gov]
 - [Tips for Starting Your Customer Experience Journey](https://www.performance.gov/cx/blog/tips-for-starting-your-customer-experience-journey/) [performance.gov]
 - [OMB Circular A-11 Section 280: Managing Customer Experience and Improving Service Delivery](https://www.performance.gov/cx/assets/files/a11_2021-FY22.pdf) [performance.gov]
 - [USDA's guidance on conducting a regular customer experience (or A-11) survey](https://www.usda.gov/digital-strategy/research/plays#research2) [usda.gov]

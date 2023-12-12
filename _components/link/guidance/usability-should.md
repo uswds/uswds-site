@@ -56,11 +56,13 @@
 
 - **Encode email and phone links.** Some browsers don’t automatically display a clickable link for email addresses or phone numbers, so encode email and phone links with `mailto:` and `tel:`. Include the country code in phone numbers to support international users.
 
-    **Example:**
-
-    {:.site-terminal}
+    **Examples:**
     ```html
-    <p>Email us at <a href="mailto:program-team@agency.gov">program-team@agency.gov</a> or call us at <a href="tel:1-800-555-1234">1-800-555-1234</a> to request support.</p>
+<a href="mailto:program-team@agency.gov">program-team@agency.gov</a>
+    ```
+
+    ```html
+<a href="tel:1-800-555-1234">1-800-555-1234</a>
     ```
 
 - **Check with your IT security department regarding email link best practices.** While displaying email addresses and phone numbers provides a better experience for users, it can increase spam for the email recipient. One approach is to use a group email to protect individuals. The email address will remain the same even as staff and organizational structures change. Also consider using a contact form instead of showing email addresses.

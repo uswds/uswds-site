@@ -2445,7 +2445,7 @@ $theme-table-column-gap: 4;
   @include typeset("lang", "lg", 5);
   @include u-measure(5);
   font-weight: fw("light");
-  margin-bottom: units(2);
+  margin-bottom: units(6);
   margin-top: units(1);
 }
 

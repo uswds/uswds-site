@@ -2,6 +2,22 @@ title: Modal
 type: component
 changelogURL:
 items:
+- date: 2023-11-09
+  summary: Updated JavaScript to include fallbacks and error messages when initialization cannot be completed.
+  summaryAdditional: Additionally, this improved code consistency and prevented errors when trying to initialize modal twice.
+  isBreaking: false
+  affectsJavascript: true
+  githubPr: 5315
+  githubRepo: uswds
+  versionUswds: 3.7.0
+- date: 2023-09-29
+  summary: Updated how the modal JavaScript resets body padding and improved body padding detection.
+  summaryAdditional: Now the component will rely on the CSS to reset body padding rather than injecting an inline style with JavaScript.
+  affectsJavascript: true
+  affectsStyles: true
+  githubPr: 5493
+  githubRepo: uswds
+  versionUswds: 3.6.1
 - date: 2023-03-09
   summary: Fixed the display of interactive form elements (like Date Picker) in modal windows.
   summaryAdditional: Now any element in a modal should work as expected.

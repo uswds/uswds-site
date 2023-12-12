@@ -37,6 +37,23 @@ $site-measure: 5;
   @include usa-grid-col;
 }
 
+// Specific grid-col styes added for use in the card component grid
+/* stylelint-disable */
+@media all and (min-width: 55em) {
+  .tablet-lg\:grid-col-6 {
+    flex: 0 1 auto !important;
+    width: 50% !important;
+  }
+}
+
+@media all and (min-width: 87.5em) {
+  .widescreen\:grid-col-4 {
+    flex: 0 1 auto !important;
+    width: 33.3333333333% !important;
+  }
+}
+/* stylelint-enable */
+
 // ========================================
 // 1. Generic
 // ----------------------------------------
@@ -319,6 +336,10 @@ abbr[title="required"] {
       margin-top: units(0.5);
     }
   }
+
+  .usa-list {
+    max-width: measure($site-measure);
+  }
 }
 
 .usa-prose > .usa-button-group {
@@ -329,6 +350,10 @@ abbr[title="required"] {
   li {
     max-width: 100%;
   }
+}
+
+#known-issues {
+  scroll-margin-top: 2.75rem;
 }
 
 // Label links
@@ -433,6 +458,10 @@ abbr[title="required"] {
     @include at-media("desktop") {
       @include u-bg($site-background-color);
       margin: units(2) units(2) units(4);
+    }
+
+    &#{$external-href} {
+      display: inline-block;
     }
   }
 }
@@ -1725,7 +1754,8 @@ strong {
   @include u-text("ink");
 }
 
-li + li .output-neutral {
+li + li .output-neutral,
+li + li .output-warning {
   margin-top: units(0.5);
 }
 

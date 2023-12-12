@@ -2,8 +2,43 @@ title: Card
 type: component
 changelogURL:
 items:
+  - date: 2023-11-30
+    summary: Updated the grid breakpoints in the card template.
+    summaryAdditional: This change affects only the template grid, not the component itself.
+    affectsMarkup: true
+    githubPr: 2299
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    summary: Clarified guidance for using layout grid utilities.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+  - date: 2023-11-09
+    summary: Fixed a bug that prevented `$theme-card-padding-y` from accepting expected token values.
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 5571
+    githubRepo: uswds
+    versionUswds: 3.7.0
+  - date: 2023-09-29
+    summary: Fixed a margin bug on header-first variants that caused exdent card media to overlap headers.
+    affectsStyles: true
+    githubPr: 5423
+    githubRepo: uswds
+    versionUswds: 3.6.1
+  - date: 2023-09-20
+    summary: Added `usa-card__header--exdent` variant to variants table.
+    affectsGuidance: true
+    githubPr: 2228
+    githubRepo: uswds-site
+  - date: 2023-08-23
+    summary: Fixed a bug that prevented `$theme-card-border-width` from accepting `0` or string tokens.
+    affectsStyles: true
+    githubPr: 5325
+    githubRepo: uswds
+    versionUswds: 3.6.0
   - date: 2023-06-09
-    summary: Replaced `button` elements with links styled as buttons
+    summary: Replaced `button` elements with links styled as buttons.
     affectsMarkup: true
     affectsAccessibility: true
     githubPr: 4385

@@ -12,6 +12,10 @@ subnav:
     href: '#keys-and-values'
   - text: Using design tokens
     href: '#using-design-tokens'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: tokens
 ---
 
 {{ page.collection | slugify }}
@@ -56,10 +60,12 @@ We can't include tokens, like `max-width: 1`, directly in our Sass. Rather, we u
 Tokens can be expressed as variables, which is how most Design System theme settings work. For instance, the following is an example of theme settings in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings). This example shows spacing unit tokens assigned to settings variables:
 
 ```
-$theme-grid-container-max-width:    'desktop';
-$theme-site-margins-breakpoint:     'desktop';
-$theme-site-margins-width:          4;
-$theme-site-margins-mobile-width:   2;
+@use "uswds-core" with (
+  $theme-grid-container-max-width:    'desktop',
+  $theme-site-margins-breakpoint:     'desktop',
+  $theme-site-margins-width:          4,
+  $theme-site-margins-mobile-width:   2,
+);
 ```
 
 The Design System's component Sass uses those variableized tokens to build component styles as in the following code:
@@ -148,44 +154,22 @@ Use design tokens, like `$theme-grid-container-max-width: 'desktop'`, directly t
       <tr>
         <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
-            'red-warm-50'
+            'red'
           </span>
         </th>
         <td data-title="Function">
           <span>
-            color('red-warm-50')
+            color('red')
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-border('red-warm-50')
+            u-border('red')
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .border-red-warm-50
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
-          <span>
-            'red-warm-50v'
-          </span>
-        </th>
-        <td data-title="Function">
-          <span>
-            color('red-warm-50v')
-          </span>
-        </td>
-        <td data-title="Mixin">
-          <span>
-            u-border('red-warm-50v')
-          </span>
-        </td>
-        <td data-title="Utility class">
-          <span>
-            .border-red-warm-50v
+            .border-red
           </span>
         </td>
       </tr>
@@ -613,7 +597,7 @@ Use design tokens, like `$theme-grid-container-max-width: 'desktop'`, directly t
       <tr>
         <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
-            'ui', 'micro'
+            'ui', 'lg'
           </span>
         </th>
         <td data-title="Function">
@@ -623,19 +607,19 @@ Use design tokens, like `$theme-grid-container-max-width: 'desktop'`, directly t
         </td>
         <td data-title="Mixin">
           <span>
-            u-font('ui', 'micro')
+            u-font('ui', 'lg')
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .font-ui-micro
+            .font-ui-lg
           </span>
         </td>
       </tr>
       <tr>
         <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
-            'body', 15
+            'body', '2xl'
           </span>
         </th>
         <td data-title="Function">
@@ -645,12 +629,12 @@ Use design tokens, like `$theme-grid-container-max-width: 'desktop'`, directly t
         </td>
         <td data-title="Mixin">
           <span>
-            u-font('body', 15)
+            u-font('body', '2xl')
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .font-body-15
+            .font-body-2xl
           </span>
         </td>
       </tr>

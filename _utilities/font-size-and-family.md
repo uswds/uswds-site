@@ -14,7 +14,10 @@ subnav:
     href: "#utility-mixins"
   - text: Advanced settings
     href: "#advanced-settings"
-
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: utilities-font-size
 utilities:
   - base: font
     var: font

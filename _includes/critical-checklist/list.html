@@ -50,7 +50,7 @@
         {% assign tagClass = 'site-checklist-tag--exempt' %}
         {% assign textClass = 'site-checklist-text--exempt' %}
         {% assign iconClass = 'site-checklist-text--exempt' %}
-        {% assign statusText = 'Unknown' %}
+        {% assign statusText = 'Conditional' %}
         {% assign statusIcon = 'info' %}
       {% else %}
         {% assign tagClass = 'site-checklist-tag--incomplete' %}
@@ -80,13 +80,13 @@
             {% elsif item.testStatus == 'warning' %}
               <p class="site-checklist-text {{ textClass }}">
                 <b>The {{ componentName }} component does not pass all elements of this test.</b>
-                We have logged this issue and are prioritizing it. <a href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more about this issue on GitHub</a>.
+                We have logged this issue and are prioritizing it. <a href="https://github.com/uswds/{{ item.issueRepo | default:'uswds' }}/issues/{{ item.issueNumber }}">Learn more about this issue on GitHub</a>.
               </p>
             {% elsif item.testStatus == 'fail' %}
               <p class="site-checklist-text {{ textClass }}">
                 <b>The {{ componentName }} component does not pass this test.</b>
                 We have logged this issue and are prioritizing it.
-                <a href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more about this issue on GitHub</a>.
+                <a href="https://github.com/uswds/{{ item.issueRepo | default:'uswds' }}/issues/{{ item.issueNumber }}">Learn more about this issue on GitHub</a>.
               </p>
             {% elsif item.testStatus == 'exempt' %}
               <p class="site-checklist-text {{ textClass }}">

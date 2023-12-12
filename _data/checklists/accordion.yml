@@ -74,7 +74,7 @@ keyboardItems:
     wcagCriterion: 2.4.7
   - summary: Focus indicator is clear on interactive items.
     summaryAdditional: When you navigate through interactive content items (like links) with the tab key, each item has a focus highlight that is clear and visible.
-    testStatus: warning
+    testStatus: fail
     issueNumber: 1000
     versionTested: 3.5.0
     wcagCriterion: 2.4.7

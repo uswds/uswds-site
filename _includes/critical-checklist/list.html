@@ -39,7 +39,7 @@
         {% assign textClass = 'site-checklist-text--fail' %}
         {% assign iconClass = 'site-checklist-text--fail' %}
         {% assign statusText = 'Fail' %}
-        {% assign statusIcon = 'error' %}
+        {% assign statusIcon = 'warning' %}
       {% elsif item.testStatus == 'warning' %}
         {% assign tagClass = 'site-checklist-tag--warning' %}
         {% assign textClass = 'site-checklist-text--warning' %}
@@ -84,8 +84,8 @@
               </p>
             {% elsif item.testStatus == 'fail' %}
               <p class="site-checklist-text {{ textClass }}">
-                <b>The {{ componentName }} component does not currently pass this test.
-                  We consider this to be a top-priority item and are working on a fix.</b><br/>
+                <b>The {{ componentName }} component does not pass this test.</b>
+                We have logged this issue and are prioritizing it.
                 <a href="https://github.com/uswds/uswds/issues/{{ issueNumber }}">Learn more about this issue on GitHub</a>.
               </p>
             {% elsif item.testStatus == 'exempt' %}

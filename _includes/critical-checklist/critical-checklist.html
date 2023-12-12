@@ -1,4 +1,4 @@
-{% assign componentName = page.title | remove: 'accessibility testing guide' | downcase %}
+{% assign componentName = page.title | remove: ' accessibility testing guide' | downcase %}
 {% assign componentSlug = componentName | slugify %}
 {% assign component = site.data.checklists[componentSlug] %}
 {% assign keyboardItems = component.keyboardItems %}

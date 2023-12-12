@@ -107,7 +107,6 @@ How to use USWDS:
     href: /documentation/migration/
   - text: Migrating to USWDS 2.0
     href: /documentation/migration-v2/
-  - href: /documentation/video-tutorials/
   - href: /documentation/implementations/
   - href: /documentation/showcase/
   - href: /documentation/sample-contract-language/
@@ -166,6 +165,7 @@ About:
   - href: /about/contribute/
   - href: /about/community/
   - href: /about/whats-new/
+  - href: /about/monthly-calls/
   - href: /about/releases/
   - href: /about/updates/
   - href: /about/product-roadmap/

@@ -1,0 +1,128 @@
+videos:
+  - title: Designing a repeatable research process with people with disabilities
+    subtitle: Managing and sustaining our user research
+    description: |
+      We continued a discussion from the October monthly call about ongoing research on how
+      the design system works for users with disabilities. We presented more
+      [research findings](https://github.com/uswds/uswds/wiki/Usability-research-findings-for-Q3-2023)
+      and talked about what those results mean for USWDS components. We also defined
+      [best research practices](https://github.com/uswds/uswds/wiki/Usability-testing-day-checklist)
+      and plans to continue, improve, and share findings from this work.
+    date: November 2023
+    id: EQ8Nb60xgXA?si=eHcGR5WjpOVeDc07
+    event_link: https://digital.gov/event/2023/11/16/uswds-monthly-call-november-2023/
+    missing_script: true
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-november-2023.pptx
+      size: 6.3
+      pages: 63
+  - title: Conducting user research on how USWDS serves people with disabilities
+    subtitle: How to develop a sustainable, repeatable research process
+    description: |
+      One of our roadmap goals is to conduct more user research with people who have disabilities —
+      and to ensure we're doing so regularly.
+      We shared our progress and reported on findings from our first round of this research:
+      working with users who have visual impairments to conduct usability tests on design system components.
+    date: October 2023
+    id: _uNXQpu6Dwg?si=bTbOHSp7Qnfkjh8G
+    event_link: https://digital.gov/event/2023/10/19/uswds-monthly-call-october-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-october-2023.pptx
+      size: 9.2
+      pages: 111
+  - title: Mission, vision, and polestar
+    subtitle: Stepping back to look at the big picture
+    description: |
+      It's been eight years since the first public release of USWDS.
+      What have we done? Where are we going? What have we learned?
+      We revisited our mission and vision as we looked out in the direction of the next eight years.
+    date: September 2023
+    id: rl5hgoOK22o?si=mnOvqLh4ciC6JNzd
+    event_link: https://digital.gov/event/2023/09/21/uswds-monthly-call-september-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-september-2023.pptx
+      size: 3.4
+      pages: 99
+  - title: Product roadmap
+    subtitle: Looking ahead to 2024 for the U.S. Web Design System
+    description: |
+      The USWDS team shared the latest iteration of the design system's
+      [product roadmap](https://github.com/orgs/uswds/projects/13/views/1?visibleFields=%5B%22Title%22%2C%22Labels%22%5D).
+      We discussed how we develop, update, and publicly display our roadmap.
+    date: August 2023
+    id: Kj-MYq_0A3s?si=Ot2wE-Aw6IPXKqA_
+    event_link: https://digital.gov/event/2023/08/17/uswds-monthly-call-august-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-august-2023.pptx
+      size: 3.9
+      pages: 94
+  - title: Introducing critical checklists
+    subtitle: Developing and evaluating content for manual accessibility and user experience (UX) tests
+    description: |
+      We talked about the easy-to-follow, manual accessibility and user experience (UX) tests we're developing for USWDS components.
+      We're calling these tests Critical Checklists.
+    date: June 2023
+    id: UxC-a48Vn7w?si=sJU-EAZmJfVRMEc-
+    event_link: https://digital.gov/event/2023/06/15/uswds-monthly-call-june-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-june-2023.pptx
+      size: 2.0
+      pages: 79
+  - title: Real-world accessibility
+    subtitle: What's it like to be blind and use the web in 2023
+    description: To observe Global Accessibility Awareness Day we talked about the real-world experience of blind users on the web.
+    date: May 2023
+    id: SG6Bbv-uKeg?si=9nzftzWV-V9MEtzQ
+    event_link: https://digital.gov/event/2023/05/18/uswds-monthly-call-may-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-may-2023.pptx
+      size: 5.4
+      pages: 23
+  - title: Top tasks
+    subtitle: What the U.S. Web Design System team did and what they found
+    description: |
+      We discussed how and why the USWDS team performed their Top Tasks research,
+      as well as what they learned and what they'll do next.
+    date: April 2023
+    id: d1wPuISaHIg?si=Zx-IcO31nqL4m0C9
+    event_link: https://digital.gov/event/2023/04/20/uswds-monthly-call-april-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-april-2023.pptx
+      size: 3.2
+      pages: 72
+  - title: "Making sense: Attention and the brain"
+    subtitle: Cognition, perception, and design
+    description: |
+      The design system team took a step back and explored how our design decisions both support
+      and are supported by the ways our bodies and brains perceive order and make sense of the world.
+    date: March 2023
+    id: ceRXbLwEgD0?si=13Kf0KTYC7Z0HjSQ
+    event_link: https://digital.gov/event/2023/03/28/uswds-monthly-call-march-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-march-2023.pptx
+      size: 1.8
+      pages: 56
+  - title: Using design tokens
+    subtitle: What design tokens are and how to adapt them to agency needs
+    description: |
+      Take a deep dive into USWDS design tokens. What are they? How are they used?
+      How can they be adapted to agencies' branding needs?
+    date: February 2023
+    id: ObqPeagLZ5o?si=bmjxNX6e660J8CyR
+    event_link: https://digital.gov/event/2023/02/16/uswds-monthly-call-february-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-february-2023.pptx
+      size: 14.6
+      pages: 67
+  - title: Frequently asked questions
+    subtitle: Answering your most-asked questions about the U.S. Web Design System
+    description: |
+      The USWDS team answered frequent questions, such as how to theme USWDS,
+      how to set up custom fonts, and when new components get released.
+    date: January 2023
+    id: JApBVTwZans?si=qjNQI0NsWWk5JoUe
+    event_link: https://digital.gov/event/2023/01/19/uswds-monthly-call-january-2023/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-january-2023.pptx
+      size: 1.9
+      pages: 60

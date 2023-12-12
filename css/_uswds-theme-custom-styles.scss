@@ -3576,8 +3576,8 @@ $do-dont-top-bar-width: 1;
     background-color: color("green-cool-10");
   }
   .site-checklist-tag--fail {
-    border-color: color("orange-warm-40");
-    background-color: color("orange-warm-40");
+    border-color: color("orange-warm-30");
+    background-color: color("orange-warm-30");
   }
   .site-checklist-tag--warning {
     border-color: color("orange-20v");
@@ -3618,6 +3618,9 @@ $do-dont-top-bar-width: 1;
 
 .site-checklist-icon--pass {
   color: color("green-cool-50");
+}
+.site-checklist-icon--fail  {
+  color: color("orange-warm-60v");
 }
 .site-checklist-icon--warning {
   color: color('orange-warm-40');

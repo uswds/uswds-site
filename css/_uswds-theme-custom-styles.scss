@@ -2445,7 +2445,7 @@ $theme-table-column-gap: 4;
   @include typeset("lang", "lg", 5);
   @include u-measure(5);
   font-weight: fw("light");
-  margin-bottom: units(6);
+  margin-bottom: units(2);
   margin-top: units(1);
 }
 
@@ -3616,6 +3616,9 @@ $do-dont-top-bar-width: 1;
   color: color("gray-60");
 }
 
+.site-checklist-icon--pass {
+  color: color("green-cool-50");
+}
 .site-checklist-icon--warning {
   color: color('orange-warm-40');
 }
@@ -3624,4 +3627,8 @@ $do-dont-top-bar-width: 1;
 }
 .site-checklist-text--incomplete {
   color: color("gray-60");
+}
+
+.site-checklist--recommended {
+  background-color: color("green-cool-50");
 }

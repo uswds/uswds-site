@@ -74,8 +74,7 @@ keyboardItems:
     wcagCriterion: 2.4.7
   - summary: Focus indicator is clear on interactive items.
     summaryAdditional: When you navigate through interactive content items (like links) with the tab key, each item has a focus highlight that is clear and visible.
-    testStatus: fail
-    issueNumber: 1000
+    testStatus: pass
     versionTested: 3.5.0
     wcagCriterion: 2.4.7
 screenReaderItems:
@@ -106,12 +105,16 @@ screenReaderItems:
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "collapsed" state.
     summaryAdditional: When you use a screen reader and navigate to a closed panel, the screen reader announces that the content is "collapsed".
-    testStatus: pass
+    testStatus: fail
+    issueNumber: 2368
+    issueRepo: uswds-site
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "expanded" state.
     summaryAdditional: When you use a screen reader and navigate to a open panel, the screen reader announces that the content is "expanded".
-    testStatus: pass
+    testStatus: fail
+    issueNumber: 2368
+    issueRepo: uswds-site
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "expanded" state with expected keys.

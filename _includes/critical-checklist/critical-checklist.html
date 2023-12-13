@@ -5,6 +5,8 @@
 {% assign zoomItems = component.zoomItems %}
 {% assign screenReaderItems = component.screenReaderItems %}
 
+{% assign statusTypes = "Pass, Fail, Conditional" | split: ", " %}
+
 <!-- Set status icons -->
 {% assign passIcon = 'check_circle' %}
 {% assign failIcon = 'warning' %}

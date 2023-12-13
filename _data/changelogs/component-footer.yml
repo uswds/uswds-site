@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: 2023-12-08
     summary: Removed the `usa-layout-grid` dependency.
-    summaryAdditional: This update reduces the footer package size. If you notice changes in your layout after making this update, your Sass might be missing the usa-layout-grid package. You can include it by adding `@forward usa-layout-grid` to your [Sass entry point](https://designsystem.digital.gov/documentation/migration/#using-component-packages).
+    summaryAdditional: This update reduces the footer package size. If you notice changes in your layout after making this update, add the `usa-layout-grid` package to your [Sass entry point](https://designsystem.digital.gov/documentation/migration/#using-component-packages).
     affectsStyles: true
     githubPr: 5289
     githubRepo: uswds

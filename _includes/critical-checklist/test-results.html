@@ -1,27 +1,35 @@
+{% assign item_count_total = 23 %}
+{% assign item_count_pass = 19 %}
+{% assign item_count_fail = 2 %}
+{% assign item_count_conditional = 2 %}
+{% assign svg_wrapper_classes = "display-flex flex-align-center" %}
+{% assign svg_classes = "usa-icon height-205 width-205 margin-right-05" %}
+
+
 <table class="usa-table text-center display-none tablet:display-block">
   <thead>
     <tr>
       <th>Total tests</th>
       <th>
-        <div class="display-flex flex-align-center padding-right-05 ">
-            <svg class="usa-icon height-205 width-205 margin-right-05 site-checklist-text--pass" aria-hidden="true" role="img">
-              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+        <div class="{{ svg_wrapper_classes }}">
+            <svg class="{{ svg_classes }} site-checklist-icon--pass" aria-hidden="true" role="img">
+              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ passIcon }}"></use>
             </svg>
           Pass
         </div>
       </th>
       <th>
-        <div class="display-flex flex-align-center ">
-          <svg class="usa-icon height-205 width-205 margin-right-05 site-checklist-text--exempt" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#info"></use>
+        <div class="{{ svg_wrapper_classes }}">
+          <svg class="{{ svg_classes }} site-checklist-icon--exempt" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ exemptIcon }}"></use>
           </svg>
           Conditional
         </div>
       </th>
       <th>
-        <div class="display-flex flex-align-center ">
-          <svg class="usa-icon height-205 width-205 margin-right-05 site-checklist-icon--fail" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#warning"></use>
+        <div class="{{ svg_wrapper_classes }}">
+          <svg class="{{ svg_classes }} site-checklist-icon--fail" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ failIcon }}"></use>
           </svg>
           Fail
         </div>
@@ -30,38 +38,37 @@
   </thead>
   <tbody>
     <tr>
-      <td class="text-bold bg-base-lightest">23</td>
-
-      <td>19</td>
-      <td>2</td>
-      <td>2</td>
+      <td class="text-bold bg-base-lightest">{{ item_count_total }}</td>
+      <td>{{ item_count_pass }}</td>
+      <td>{{ item_count_conditional }}</td>
+      <td>{{ item_count_fail }}</td>
     </tr>
   </tbody>
 </table>
 
 <ul class="usa-icon-list margin-top-2 tablet:display-none">
     <li class="usa-icon-list__item">
-      <div class="usa-icon-list__icon site-checklist-text--pass">
+      <div class="usa-icon-list__icon site-checklist-icon--pass">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ passIcon }}"></use>
         </svg>
       </div>
-      <div class="usa-icon-list__content">19 items pass</div>
+      <div class="usa-icon-list__content">{{ item_count_pass }} items pass</div>
     </li>
     <li class="usa-icon-list__item">
-      <div class="usa-icon-list__icon site-checklist-text--exempt">
+      <div class="usa-icon-list__icon site-checklist-icon--exempt">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#error"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ exemptIcon }}"></use>
         </svg>
       </div>
-      <div class="usa-icon-list__content">1 test is conditional and can not be completed</div>
+      <div class="usa-icon-list__content">{{ item_count_conditional }} tests are conditional and can not be completed</div>
     </li>
     <li class="usa-icon-list__item">
-      <div class="usa-icon-list__icon site-checklist-text--fail">
+      <div class="usa-icon-list__icon site-checklist-icon--fail">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#warning"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ failIcon }}"></use>
         </svg>
       </div>
-      <div class="usa-icon-list__content">2 items fail</div>
+      <div class="usa-icon-list__content">{{ item_count_fail }} items fail</div>
     </li>
   </ul>

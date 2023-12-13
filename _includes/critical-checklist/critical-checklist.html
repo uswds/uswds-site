@@ -5,6 +5,13 @@
 {% assign zoomItems = component.zoomItems %}
 {% assign screenReaderItems = component.screenReaderItems %}
 
+<!-- Set status icons -->
+{% assign passIcon = 'check_circle' %}
+{% assign failIcon = 'warning' %}
+{% assign warningIcon = 'warning' %}
+{% assign exemptIcon = 'info' %}
+{% assign incompleteIcon = 'error_outline' %}
+
 ## Accordion accessibility tests
 
 For the accordion component, we tested against 23 WCAG 2.1 AA success criteria. Here is an overview of the results:
@@ -31,4 +38,4 @@ Even a component that performed well for us still needs to be tested for accessi
   {% include critical-checklist/list.html type='screenReader' %}
 {% endif %}
 
-{% include critical-checklist/feedback-buttons.html type='zoom' %}
+{% include critical-checklist/feedback-buttons.html %}

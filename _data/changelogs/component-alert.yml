@@ -2,6 +2,11 @@ title: Alert
 type: component
 changelogURL:
 items:
+  - date: 2023-11-20
+    summary: Added documentation for the `usa-alert--emergency` variant.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Removed redundant and invalid height declaration.
     affectsStyles: true

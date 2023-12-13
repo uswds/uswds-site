@@ -3,7 +3,7 @@
   sourceSize: 3
   dependencies:
     - "uswds-fonts"
-    - "usa-list"
+    - "usa-icon"
 - name: "usa-alert"
   fullSize: 13
   sourceSize: 7
@@ -15,7 +15,6 @@
   sourceSize: 7
   dependencies:
     - "uswds-fonts"
-    - "usa-layout-grid"
     - "usa-media-block"
 - name: "usa-breadcrumb"
   fullSize: 12
@@ -50,6 +49,7 @@
     - "uswds-fonts"
     - "usa-fieldset"
     - "usa-legend"
+    - "usa-input-list"
 - name: "usa-checklist"
   fullSize: 7
   sourceSize: 0.7
@@ -120,7 +120,6 @@
   sourceSize: 7
   dependencies:
     - "uswds-fonts"
-    - "usa-layout-grid"
     - "usa-input"
     - "usa-form"
     - "usa-label"

@@ -2,6 +2,28 @@ title: Footer
 type: component
 changelogURL:
 items:
+  - date: 2023-12-08
+    summary: Removed the `usa-layout-grid` dependency.
+    summaryAdditional: This update reduces the footer package size. If you notice changes in your layout after making this update, add the `usa-layout-grid` package to your [Sass entry point](https://designsystem.digital.gov/documentation/migration/#using-component-packages).
+    affectsStyles: true
+    githubPr: 5289
+    githubRepo: uswds
+    versionUswds: 3.7.1
+  - date: 2023-12-08
+    summary: Adjusted the right alignment of footer elements.
+    summaryAdditional: Footer content should now align with other page elements.
+    affectsStyles: true
+    githubPr: 5234
+    githubRepo: uswds
+    versionUswds: 3.7.1
+  - date: 2023-11-09
+    summary: Restored underlines to footer links in the default state.
+    summaryAdditional: Now, footer links meet WCAG 2.0 AA requirements.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5588
+    githubRepo: uswds
+    versionUswds: 3.7.0
   - date: 2023-03-09
     summary: Footer now accepts any heading level for primary link headers.
     summaryAdditional: Use any heading level for `.usa-footer__primary-link` without it reverting to an `h4` when the JavaScript rebuilds the element for mobile.

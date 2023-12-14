@@ -4,7 +4,7 @@ logos:
     alt: GSA Logo
 domain: designsystem.digital.gov
 disclaimer: |-
-  An official website of the <a href=https://gsa.gov>General Services Administration</a>
+  <span aria-hidden="true">An </span>official website of the <a href=https://gsa.gov>General Services Administration</a>
 requiredLinks:
   - label: About GSA
     href: https://www.gsa.gov/about-us

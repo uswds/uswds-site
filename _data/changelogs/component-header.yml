@@ -2,6 +2,40 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: 2023-12-08
+    summary: Fixed a bug that caused long button text to overflow into its padding.
+    summaryAdditional: Now, button text breaks to multiple lines as expected and maintains vertical center alignment.
+    affectsStyles: True
+    githubPr: 5655
+    githubRepo: uswds
+    versionUswds: 3.7.1
+  - date: 2023-12-08
+    summary: Improved the vertical alignment of the expand icon.
+    summaryAdditional: The icon will now maintain vertical alignment when menu button text breaks to multiple lines.
+    affectsStyles: true
+    githubPr: 5654
+    githubRepo: uswds
+    versionUswds: 3.7.1
+  - date: 2023-12-08
+    summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
+    affectsStyles: true
+    githubPr: 5624
+    githubRepo: uswds
+    versionUswds: 3.7.1
+  - date: 2023-12-08
+    summary: Fixed the horizontal alignment of header submenu elements.
+    summaryAdditional: Now, `usa-nav__submenu` elements should align with other header elements.
+    isBreaking: false
+    affectsStyles: true
+    githubPr: 5649
+    githubRepo: uswds
+    versionUswds: 3.7.1
+  - date: 2023-11-20
+    summary: Removed the role, banner component, and HTTPS sections.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2162
+    githubRepo: uswds-site
   - date: 2023-09-29
     summary: Fixed a Safari-only bug that caused the mobile menu to unexpectedly close at a narrow range of window widths.
     summaryAdditional:

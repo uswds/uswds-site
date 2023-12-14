@@ -96,11 +96,12 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "overrides": {
-    "glob-parent": "6.0.2"
+    "glob-parent": "6.0.2",
+    "postcss": "^8.4.31"
   },
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "^1.0.0",
-    "@uswds/uswds": "^3.6.1"
+    "@uswds/uswds": "3.7.1"
   }
 }

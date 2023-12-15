@@ -2707,8 +2707,8 @@ ignore:
         expires: '2022-01-27T21:29:25.295Z'
     - '*':
         reason: No available upgrade or patch
-        expires: 2023-11-24T20:25:43.881Z
-        created: 2023-10-25T20:25:43.913Z
+        expires: 2023-12-30T19:33:21.268Z
+        created: 2023-11-30T19:33:21.304Z
   SNYK-JS-AXIOS-1579269:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -3498,8 +3498,8 @@ ignore:
   SNYK-JS-UNSETVALUE-2400660:
     - '*':
         reason: No available upgrade or patch
-        expires: 2023-11-24T20:25:58.002Z
-        created: 2023-10-25T20:25:58.034Z
+        expires: 2023-12-30T19:33:21.268Z
+        created: 2023-11-30T19:33:21.304Z
   SNYK-JS-DECODEURICOMPONENT-3149970:
     - '*':
         reason: No available upgrade or patch
@@ -3520,6 +3520,11 @@ ignore:
         reason: No available upgrade or patch
         expires: 2023-11-10T19:28:02.827Z
         created: 2023-10-11T19:28:02.917Z
+  SNYK-JS-INFLIGHT-6095116:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2023-12-30T19:33:21.268Z
+        created: 2023-11-30T19:33:21.304Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

@@ -1,74 +1,128 @@
-{% assign item_count_total = 23 %}
-{% assign item_count_pass = 19 %}
-{% assign item_count_fail = 2 %}
-{% assign item_count_conditional = 2 %}
+<!-- Set svg classes -->
 {% assign svg_wrapper_classes = "display-flex flex-align-center" %}
 {% assign svg_classes = "usa-icon height-205 width-205 margin-right-05" %}
 
+<!-- Create a list each status type -->
+{% assign statusTypes = "Pass, Pass with exceptions, Conditional, Fail" | split: ", " %}
 
+<!-- Count the number of items for each status type -->
+{% assign items = component.testItems %}
+{% assign itemsTotal = 0 %}
+{% assign itemsPass = 0 %}
+{% assign itemsPassIsh = 0 %}
+{% assign itemsFail = 0 %}
+{% assign itemsExempt = 0 %}
+{% for item in items %}
+  {% capture itemsTotal %}{{ itemsTotal | plus:1 }}{% endcapture %}
+  {% if item.testStatus == "pass" %}
+    {% capture itemsPass %}{{ itemsPass | plus:1 }}{% endcapture %}
+  {% elsif item.testStatus == "pass-ish" %}
+    {% capture itemsPassIsh %}{{ itemsPassIsh | plus:1 }}{% endcapture %}
+  {% elsif item.testStatus == "fail" %}
+    {% capture itemsFail %}{{ itemsFail | plus:1 }}{% endcapture %}
+  {% elsif item.testStatus == "exempt" %}
+    {% capture itemsExempt %}{{ itemsExempt | plus:1 }}{% endcapture %}
+  {% endif %}
+{% endfor %}
+
+<!-- Add test summary -->
+<p class="margin-top-0 margin-bottom-6"><span class="usa-tag usa-tag--big site-checklist--passing">Passing</span></p>
+
+## Accordion accessibility checklist
+For the accordion component, we created a checklist of {{ itemsTotal }} tests based on WCAG 2.1 AA success criteria.
+Here is an overview of the most recent test results for the accordion component:
+
+<!-- Add test summary for desktop widths -->
 <table class="usa-table text-center display-none tablet:display-block">
   <thead>
     <tr>
       <th>Total tests</th>
-      <th>
-        <div class="{{ svg_wrapper_classes }}">
-            <svg class="{{ svg_classes }} site-checklist-icon--pass" aria-hidden="true" role="img">
-              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ passIcon }}"></use>
-            </svg>
-          Pass
-        </div>
-      </th>
-      <th>
-        <div class="{{ svg_wrapper_classes }}">
-          <svg class="{{ svg_classes }} site-checklist-icon--exempt" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ exemptIcon }}"></use>
-          </svg>
-          Conditional
-        </div>
-      </th>
-      <th>
-        <div class="{{ svg_wrapper_classes }}">
-          <svg class="{{ svg_classes }} site-checklist-icon--fail" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ failIcon }}"></use>
-          </svg>
-          Fail
-        </div>
-      </th>
+      {% for status in statusTypes %}
+        {% if status == "Pass" %}
+          {% assign statusIcon = passIcon %}
+          {% assign iconColor = "pass" %}
+        {% elsif status == "Pass with exceptions" %}
+          {% assign statusIcon = passIshIcon %}
+          {% assign iconColor = "pass-ish" %}
+        {% elsif status == "Conditional" %}
+          {% assign statusIcon = conditionalIcon %}
+          {% assign iconColor = "exempt" %}
+        {% elsif status == "Fail" %}
+          {% assign statusIcon = failIcon %}
+          {% assign iconColor = "fail" %}
+        {% endif %}
+        <th>
+          <div class="{{ svg_wrapper_classes }}">
+              <svg class="{{ svg_classes }} site-checklist-icon--{{ iconColor | downcase }}" aria-hidden="true" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ statusIcon }}"></use>
+              </svg>
+            {{ status }}
+          </div>
+        </th>
+      {% endfor %}
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td class="text-bold bg-base-lightest">{{ item_count_total }}</td>
-      <td>{{ item_count_pass }}</td>
-      <td>{{ item_count_conditional }}</td>
-      <td>{{ item_count_fail }}</td>
+      <td class="text-bold bg-base-lightest">{{ itemsTotal }}</td>
+      {% for status in statusTypes %}
+        {% if status == "Pass" %}
+          {% assign itemCount = itemsPass %}
+        {% elsif status == "Pass with exceptions" %}
+          {% assign itemCount = itemsPassIsh %}
+        {% elsif status == "Fail" %}
+          {% assign itemCount = itemsFail %}
+        {% elsif status == "Conditional" %}
+          {% assign itemCount = itemsExempt %}
+        {% endif %}
+        <td>{{ itemCount | default:0 }}</td>
+      {% endfor %}
     </tr>
   </tbody>
 </table>
 
+<!-- Add test summary for mobile widths -->
 <ul class="usa-icon-list margin-top-2 tablet:display-none">
+  {% for status in statusTypes %}
+    {% if status == "Pass" %}
+      {% assign statusIcon = passIcon %}
+      {% assign iconColor = "pass" %}
+      {% assign itemCount = itemsPass %}
+      {% assign statusText = "cannot be evaluated at the system level" %}
+    {% elsif status == "Pass" %}
+      {% assign statusIcon = exceptionsIcon %}
+      {% assign iconColor = "exceptions" %}
+      {% assign itemCount = itemsExceptions %}
+      {% assign statusText = "passes with exceptions" %}
+    {% elsif status == "Fail" %}
+      {% assign statusIcon = failIcon %}
+      {% assign iconColor = "fail" %}
+      {% assign itemCount = itemsFail %}
+      {% assign statusText = "fail" %}
+    {% elsif status == "Conditional" %}
+      {% assign statusIcon = conditionalIcon %}
+      {% assign iconColor = "exempt" %}
+      {% assign itemCount = itemsExempt %}
+      {% assign statusText = "cannot be evaluated at the system level" %}
+    {% endif %}
+
+    {% assign items = "items" %}
+    {% if itemCount == "1" %}
+      {% assign items = "item" %}
+    {% endif %}
+
     <li class="usa-icon-list__item">
-      <div class="usa-icon-list__icon site-checklist-icon--pass">
+      <div class="usa-icon-list__icon site-checklist-icon--{{ iconColor | downcase }}">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ passIcon }}"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ statusIcon }}"></use>
         </svg>
       </div>
-      <div class="usa-icon-list__content">{{ item_count_pass }} items pass</div>
-    </li>
-    <li class="usa-icon-list__item">
-      <div class="usa-icon-list__icon site-checklist-icon--exempt">
-        <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ exemptIcon }}"></use>
-        </svg>
+      <div class="usa-icon-list__content">
+        {{ itemCount }} {{ items }} {{ statusText | default:status | downcase}}
       </div>
-      <div class="usa-icon-list__content">{{ item_count_conditional }} tests are conditional and can not be completed</div>
     </li>
-    <li class="usa-icon-list__item">
-      <div class="usa-icon-list__icon site-checklist-icon--fail">
-        <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ failIcon }}"></use>
-        </svg>
-      </div>
-      <div class="usa-icon-list__content">{{ item_count_fail }} items fail</div>
-    </li>
-  </ul>
+  {% endfor %}
+</ul>
+
+Based on these results, we consider the accordion to have a **passing** status.
+You can find details about each test in in the [checklists below](#accordion-accessibility-checklist).

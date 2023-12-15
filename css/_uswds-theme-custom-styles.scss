@@ -2445,7 +2445,7 @@ $theme-table-column-gap: 4;
   @include typeset("lang", "lg", 5);
   @include u-measure(5);
   font-weight: fw("light");
-  margin-bottom: units(6);
+  margin-bottom: units(2);
   margin-top: units(1);
 }
 
@@ -3575,17 +3575,13 @@ $do-dont-top-bar-width: 1;
     border-color: color("green-cool-10");
     background-color: color("green-cool-10");
   }
+  .site-checklist-tag--pass-ish {
+    border-color: color("gold-5v");
+    background-color: color("gold-5v");
+  }
   .site-checklist-tag--fail {
     border-color: color("orange-warm-30");
     background-color: color("orange-warm-30");
-  }
-  .site-checklist-tag--warning {
-    border-color: color("orange-20v");
-    background-color: color("orange-20v");
-  }
-  .site-checklist-tag--incomplete {
-    @include u-border(1px, "gray-10");
-    background-color: color("gray-10");
   }
   .site-checklist-tag--exempt {
     border-color: color("blue-cool-10");
@@ -3597,41 +3593,36 @@ $do-dont-top-bar-width: 1;
   @include u-margin-y(1);
   font-size: 1rem!important;
 }
-.site-checklist-text--fail,
-.site-checklist-text--fail a:visited  {
-  color: color("orange-warm-60");
-}
-.site-checklist-text--warning,
-.site-checklist-text--warning a:visited {
-  color: color('orange-60v');
-}
+
 .site-checklist-text--pass,
 .site-checklist-text--pass a:visited {
   color: color("green-cool-60");
 }
+.site-checklist-text--pass-ish,
+.site-checklist-text--pass-ish a:visited {
+  color: color('orange-70v');
+}
+.site-checklist-text--fail,
+.site-checklist-text--fail a:visited  {
+  color: color("orange-warm-60");
+}
 .site-checklist-text--exempt {
   color: color("blue-cool-60");
-}
-.site-checklist-text--incomplete {
-  color: color("gray-60");
 }
 
 .site-checklist-icon--pass {
   color: color("green-cool-50");
 }
+.site-checklist-icon--pass-ish {
+  color: color('gold-30v');
+}
 .site-checklist-icon--fail  {
   color: color("orange-warm-60v");
-}
-.site-checklist-icon--warning {
-  color: color('orange-warm-40');
 }
 .site-checklist-icon--exempt {
   color: color("blue-cool-60");
 }
-.site-checklist-text--incomplete {
-  color: color("gray-60");
-}
 
-.site-checklist--recommended {
+.site-checklist--passing {
   background-color: color("green-cool-50");
 }

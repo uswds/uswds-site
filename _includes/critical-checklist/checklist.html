@@ -1,27 +1,27 @@
 <!-- set section titles and descriptions -->
 {% if include.type == "keyboard" %}
   {% assign title = "Keyboard control"%}
-  {% assign items = keyboardItems  %}
+  {% assign items = component.testItems | where: 'testType', "keyboard" %}
   {% assign navType= "keyboard" %}
  {% endif %}
 {% if include.type == "zoom" %}
   {% assign title = "Zoom magnification"%}
-  {% assign items = zoomItems  %}
+  {% assign items = component.testItems | where: 'testType', "zoom" %}
 {% endif %}
 {% if include.type == "screenReader" %}
   {% assign title = "Screen reader"%}
-  {% assign items = screenReaderItems  %}
+  {% assign items = component.testItems | where: 'testType', "screenReader" %}
 {% endif %}
 
-<!-- section description -->
-{% include critical-checklist/section-description.html %}
+<!--Add checklist intro-->
+{% include critical-checklist/checklist-intros.html %}
 
-<!-- section checklist items -->
+<!--Add checklist items-->
 <ul class="usa-icon-list usa-content-list margin-top-4">
   {% for item in items %}
-    <!-- assign criterion details -->
-    {% include critical-checklist/criteria-details.html %}
-    <!-- assign version text -->
+    <!--set WCAG details-->
+    {% include critical-checklist/wcag-details.html %}
+    <!--Set version number-->
     {% if item.versionTested %}
       {% assign versionTested =  item.versionTested | prepend: 'v' %}
     {% else %}
@@ -31,34 +31,41 @@
     {% if item.testStatus == 'pass' %}
         {% assign statusText = 'Pass' %}
         {% assign statusIcon = passIcon %}
+      {% elsif item.testStatus == 'pass-ish' %}
+        {% assign statusText = 'Pass with exceptions' %}
+        {% assign statusIcon = passIshIcon %}
       {% elsif item.testStatus == 'fail' %}
         {% assign statusText = 'Fail' %}
         {% assign statusIcon = failIcon %}
       {% elsif item.testStatus == 'exempt' %}
         {% assign statusText = 'Conditional' %}
-        {% assign statusIcon = exemptIcon %}
+        {% assign statusIcon = conditionalIcon %}
     {% endif %}
     <!-- start checklist items -->
     <li class="usa-icon-list__item">
       <div class="display-flex flex-row">
-        <!-- Add icon -->
-        {% include critical-checklist/status-icon.html icon=statusIcon %}
+        <!-- Add status icon -->
+        {% include critical-checklist/checklist-icon.html icon=statusIcon %}
          <!-- Add text content -->
         <div class="usa-icon-list__content">
-          <!-- start text content -->
+          <!--Add summaries-->
           <p class="margin-bottom-05">
             <strong>{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
             {{ item.summaryAdditional | markdownify  | remove: '<p>' | remove: '</p>' }}
           </p>
+          <!--Add supplemental text, based on status type-->
             {% if item.testStatus == 'pass' and item.versionFixed  == site.uswds_version %}
               <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
                 <b>The {{ componentName }} component recently passed this test in version {{ item.versionFixed }}.</b><br/>
                 <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionFixed }}">Read more in the {{ item.versionFixed }} release notes</a>.
               </p>
             {% elsif item.testStatus == 'pass' %}
-            {% elsif item.testStatus == 'warning' %}
+            {% elsif item.testStatus == 'pass-ish' %}
               <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
                 <b>The {{ componentName }} component does not pass all elements of this test.</b>
+                {% if item.statusDetails  %}
+                  {{  item.statusDetails }}</p><p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
+                {% endif %}
                 We have logged this issue and are prioritizing it. <a href="https://github.com/uswds/{{ item.issueRepo | default:'uswds' }}/issues/{{ item.issueNumber }}">Learn more about this issue on GitHub</a>.
               </p>
             {% elsif item.testStatus == 'fail' %}
@@ -69,7 +76,7 @@
               </p>
             {% elsif item.testStatus == 'exempt' %}
               <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
-                <b>{{  item.exemptDetails | default:"This can only be tested in your implementation of the component."}}</b>
+                <b>{{  item.statusDetails | default:"This can only be tested in your implementation of the component."}}</b>
                 Be sure to test this in your project.
               </p>
             {% else %}
@@ -79,7 +86,8 @@
               </p>
             {% endif %}
           <!-- end text content -->
-          <!-- start tags -->
+
+          <!--Add tags -->
           <ul class="site-checklist-tags">
             <li class="site-checklist-tag--{{ item.testStatus }}">Status: <b>{{ statusText }}</b></li>
             {% if item.wcagCriterion %}

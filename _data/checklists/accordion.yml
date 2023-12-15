@@ -1,54 +1,66 @@
 title: Accordion
-zoomItems:
+componentStatus: pass
+testItems:
+# Zoom/screen magnification items
   - summary: No need to scroll horizontally when screen is magnified.
     summaryAdditional: When you zoom to 200% in a 1080px-wide window, accordion panels do not require horizontal scrolling.
     testStatus: pass
+    testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
   - summary: Focus indicator is clear when screen is magnified.
     summaryAdditional: When you zoom to 200% in a 1080px-wide window and navigate through items with the tab key, each item has a focus highlight that is clear and visible.
     testStatus: pass
+    testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
   - summary: Content does not get cut off when screen is magnified.
     summaryAdditional: When you zoom to 200% in a 1080px-wide window, no content is cut off.
     testStatus: pass
+    testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
   - summary: Content does not overlap when screen is magnified.
     summaryAdditional: When you zoom to 200% in a 1080px-wide window, no text or images in the content overlap.
     testStatus: pass
+    testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
   - summary: Content is not obscured by page elements when screen is magnified.
     summaryAdditional: When you zoom to 200% in a 1080px-wide window, the accordion panels are not obscured by any other page elements (like pop-ups or images).
     testStatus: pass
+    testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
-keyboardItems:
+# Keyboard control items
   - summary: Interactive elements work after tabbing.
     summaryAdditional: When you use the `tab` key to navigate into an open accordion panel, each interactive item inside that panel (like a link) is selectable.
     testStatus: pass
+    testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.1.1
   - summary: Accordion panel opens with keyboard interaction.
     summaryAdditional: When you use the `enter` key or the `spacebar` on a closed panel, the panel opens (expands).
     testStatus: pass
+    testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.1.1
   - summary: Accordion panel closes with keyboard interaction.
     summaryAdditional: When you use the `enter` key or the `spacebar` on an open panel, the panel closes (collapses).
     testStatus: pass
+    testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.1.1
   - summary: Accordion panel does not toggle on hover.
     summaryAdditional: When you hover or focus on any accordion panel, the panel neither opens nor closes.
     testStatus: pass
+    testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.1.1
   - summary: Focus moves out of the accordion.
     summaryAdditional: When you navigate out of the accordion, it does not close.
     testStatus: pass
+    testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.1.2
   - summary: Focus moves forward with keyboard interaction.
@@ -56,44 +68,52 @@ keyboardItems:
       When you navigate through items with the `tab` key, the order the visible focus proceeds from item to item is logical.
       (For example, the focus doesn't skip a link or accordion heading.)
     testStatus: pass
+    testType: keyboard
     wcagCriterion: 2.4.3
   - summary: Focus moves backwards with keyboard interaction.
     summaryAdditional: When you navigate through items with `shift` + `tab`, the visible focus moves to the previous focusable elements without skipping any items.
     testStatus: pass
+    testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.4.3
   - summary: Focus stays on the panel header.
     summaryAdditional: When you use the enter key or the `spacebar` on a closed panel, the focus highlight stays on the panel header.
     testStatus: pass
+    testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.4.3
   - summary: Focus indicator is clear on the accordion panel.
     summaryAdditional: When you tab onto an accordion panel, the focus highlight is clear and visible.
     testStatus: pass
+    testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.4.7
   - summary: Focus indicator is clear on interactive items.
     summaryAdditional: When you navigate through interactive content items (like links) with the tab key, each item has a focus highlight that is clear and visible.
     testStatus: pass
+    testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.4.7
-screenReaderItems:
+# Screen reader items
   - summary: Content is visible with screen magnification.
     summaryAdditional: |
       When you use a screen reader and navigate between accordion panels, the order the focus proceeds from item to item is logical.
       (For example, the focus doesn't skip a link or accordion heading.)
     testStatus: pass
+    testType: screenReader
     versionTested: 3.5.0
     wcagCriterion: 2.4.3
   - summary: Focus indicator is visible with screen readers.
     summaryAdditional: When you use a screen reader and navigate between accordion panels, the virtual cursor (or JAWS focus) moves from one header to the next.
     testStatus: pass
+    testType: screenReader
     versionTested: 3.5.0
     wcagCriterion: 2.4.3
   - summary: Heading levels are logical.
     summaryAdditional: When you use a screen reader and navigate through the accordion panel headings, the heading levels are the correct level for the page outline.
     testStatus: exempt
-    exemptDetails: This can only be tested in the context of your page.
+    testType: screenReader
+    statusDetails: This can only be tested in the context of your page.
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
   - summary: Heading levels are consistent.
@@ -101,18 +121,25 @@ screenReaderItems:
       When you use a screen reader and navigate through the accordion panel headings, each accordion panel's heading level is the same.
       (Typically this is a heading level 2 or 3.)
     testStatus: exempt
+    testType: screenReader
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "collapsed" state.
     summaryAdditional: When you use a screen reader and navigate to a closed panel, the screen reader announces that the content is "collapsed".
-    testStatus: fail
+    testStatus: pass-ish
+    testType: screenReader
+    statusDetails: |
+      In JAWS, the readout says "to activate press enter" instead of "collapsed". It works as expected in other screen readers.
     issueNumber: 2368
     issueRepo: uswds-site
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "expanded" state.
     summaryAdditional: When you use a screen reader and navigate to a open panel, the screen reader announces that the content is "expanded".
-    testStatus: fail
+    testStatus: pass-ish
+    testType: screenReader
+    statusDetails: |
+      In JAWS, the readout says "to activate press enter" instead of "expanded". It works as expected in other screen readers.
     issueNumber: 2368
     issueRepo: uswds-site
     versionTested: 3.5.0
@@ -120,11 +147,12 @@ screenReaderItems:
   - summary: Screen reader announces "expanded" state with expected keys.
     summaryAdditional: When you use a screen reader and use the `enter` key or the `spacebar` on a closed panel, the screen reader announces that the content is "expanded".
     testStatus: pass
+    testType: screenReader
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "collapsed" state with expected keys.
     summaryAdditional: When you use a screen reader and use the `enter` key or the `spacebar` on an open panel, the screen reader announces that the content is "collapsed".
     testStatus: pass
+    testType: screenReader
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
-

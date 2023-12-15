@@ -1,43 +1,24 @@
+<!-- Set component name and find checklist data -->
 {% assign componentName = page.component-name | downcase %}
 {% assign componentSlug = componentName | slugify %}
 {% assign component = site.data.checklists[componentSlug] %}
-{% assign keyboardItems = component.keyboardItems %}
-{% assign zoomItems = component.zoomItems %}
-{% assign screenReaderItems = component.screenReaderItems %}
-
-{% assign statusTypes = "Pass, Fail, Conditional" | split: ", " %}
-
-<!-- Set status icons -->
+<!-- Set shared status icons -->
 {% assign passIcon = 'check_circle' %}
-{% assign failIcon = 'warning' %}
-{% assign warningIcon = 'warning' %}
-{% assign exemptIcon = 'info' %}
-{% assign incompleteIcon = 'error_outline' %}
+{% assign passIshIcon = 'warning' %}
+{% assign failIcon = 'cancel' %}
+{% assign conditionalIcon = 'info' %}
 
-## Accordion accessibility tests
 
-For the accordion component, we tested against 23 WCAG 2.1 AA success criteria. Here is an overview of the results:
-
+<!--Add test results summary-->
 {% include critical-checklist/test-results.html %}
 
-## Instructions for using this page
+<!--Add page instructions-->
+{% include critical-checklist/page-intro.html %}
 
-On this page, we have outlined how we tested the accordion component's adherence to WCAG 2.1 AA.
-Please review to understand the accessibility strengths and weaknesses of this component and get advice about where manual testing is critical.
+<!--Add checklist items-->
+{% include critical-checklist/checklist.html type='zoom' %}
+{% include critical-checklist/checklist.html type='keyboard' %}
+{% include critical-checklist/checklist.html type='screenReader' %}
 
-Use the dropdown menus on this page to help you perform your own accessibility testing.
-Even a component that performed well for us still needs to be tested for accessibility in the context of your project.
-
-{% if zoomItems %}
-  {% include critical-checklist/list.html type='zoom' %}
-{% endif %}
-
-{% if keyboardItems %}
-  {% include critical-checklist/list.html type='keyboard' %}
-{% endif %}
-
-{% if screenReaderItems %}
-  {% include critical-checklist/list.html type='screenReader' %}
-{% endif %}
-
-{% include critical-checklist/feedback-buttons.html %}
+<!--Add feedback section-->
+{% include critical-checklist/checklist-feedback.html %}

@@ -1,0 +1,26 @@
+### {{ title }} tests
+
+{:.border-top .padding-top-1 .border-gray-10}
+
+USWDS performed these tests to check the {{ componentName }}'s accessibility and usability for {{ navType | default: title | downcase }} navigation.
+For help performing your own {{ title | downcase }} tests, check out the resources in the expandable section below.
+
+{% if title == "Screen reader" %}
+  {% assign title="screen readers" %}
+{% endif %}
+<div class="usa-accordion measure-5">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-controls="{{ title | slugify | append:'-how-to' }}">
+      How to test with {{ title | downcase}}
+    </button>
+  </h4>
+  <div id="{{ title | slugify | append:'-how-to'}}" class="usa-accordion__content usa-prose border-1px border-gray-5 border-top-none">
+    {% if title == "Zoom magnification" %}
+      {% include critical-checklist/zoom-instructions.html %}
+    {% elsif title == "screen readers" %}
+      {% include critical-checklist/screen-reader-instructions.html %}
+    {% elsif title == "Keyboard control" %}
+      {% include critical-checklist/keyboard-instructions.html %}
+    {% endif %}
+  </div>
+</div>

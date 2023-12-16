@@ -8,12 +8,11 @@
 {% assign failIcon = 'cancel' %}
 {% assign conditionalIcon = 'info' %}
 
-
 <!--Add test results summary-->
 {% include critical-checklist/test-results.html %}
 
-<!--Add page instructions-->
-{% include critical-checklist/page-intro.html %}
+<!--Add "how to test" instructions-->
+{% include critical-checklist/how-to-test.html %}
 
 <!--Add checklist items-->
 {% include critical-checklist/checklist.html type='zoom' %}

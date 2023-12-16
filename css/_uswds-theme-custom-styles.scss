@@ -3554,21 +3554,21 @@ $do-dont-top-bar-width: 1;
   display: flex;
   align-items: center;
   flex-direction: row;
-  flex-wrap:wrap;
-  list-style-type:none!important;
-  margin-bottom: units(1)!important;
-  padding-left: units(0)!important;
+  flex-wrap: wrap;
+  list-style-type: none !important;
+  margin-bottom: units(1) !important;
+  padding-left: units(0) !important;
 
   li {
-    @include u-border('1px', 'gray-10');
-    @include u-font('body', '3xs');
+    @include u-border("1px", "gray-10");
+    @include u-font("body", "3xs");
     @include u-margin-right(1);
     @include u-padding-y("05");
     @include u-padding-x(1);
     @include u-radius("md");
-    list-style-type:none!important;
-    margin-bottom: 0!important;
-    margin-top: units(1)!important;
+    list-style-type: none !important;
+    margin-bottom: 0 !important;
+    margin-top: units(1) !important;
   }
 
   .site-checklist-tag--pass {
@@ -3591,7 +3591,7 @@ $do-dont-top-bar-width: 1;
 
 .site-checklist-text {
   @include u-margin-y(1);
-  font-size: 1rem!important;
+  font-size: 1rem !important;
 }
 
 .site-checklist-text--pass,
@@ -3600,10 +3600,10 @@ $do-dont-top-bar-width: 1;
 }
 .site-checklist-text--pass-ish,
 .site-checklist-text--pass-ish a:visited {
-  color: color('orange-70v');
+  color: color("orange-70v");
 }
 .site-checklist-text--fail,
-.site-checklist-text--fail a:visited  {
+.site-checklist-text--fail a:visited {
   color: color("orange-warm-60");
 }
 .site-checklist-text--exempt {
@@ -3614,9 +3614,9 @@ $do-dont-top-bar-width: 1;
   color: color("green-cool-50");
 }
 .site-checklist-icon--pass-ish {
-  color: color('gold-30v');
+  color: color("gold-30v");
 }
-.site-checklist-icon--fail  {
+.site-checklist-icon--fail {
   color: color("orange-warm-60v");
 }
 .site-checklist-icon--exempt {

@@ -69,6 +69,7 @@ testItems:
       (For example, the focus doesn't skip a link or accordion heading.)
     testStatus: pass
     testType: keyboard
+    versionTested: 3.5.0
     wcagCriterion: 2.4.3
   - summary: Focus moves backwards with keyboard interaction.
     summaryAdditional: When you navigate through items with `shift` + `tab`, the visible focus moves to the previous focusable elements without skipping any items.

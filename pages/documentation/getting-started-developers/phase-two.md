@@ -189,12 +189,14 @@ Setting | Default values - Version 2.x | Default values - Version 3.0 | Descript
 `paths.src.fonts` | `"./node_modules/uswds/dist/fonts"` | `"./node_modules/@uswds/uswds/dist/fonts"` | Source location of the USWDS fonts
 `paths.src.img` | `"./node_modules/uswds/dist/img"` | `"./node_modules/@uswds/uswds/dist/img"` | Source location of the USWDS images
 `paths.src.js` | `"./node_modules/uswds/dist/js"` | `"./node_modules/@uswds/uswds/dist/js"` | Source location of the USWDS compiled JavaScript files
-`paths.src.projectSass` | `"./sass"` | `"./sass"` | Source location of any existing project Sass files outside of <br/>`paths.dist.sass`. The `watch` script will watch this <br>directory for changes.
+`paths.src.projectSass` | `"./sass"` | `"./sass"` | Source location of any existing project Sass files outside of <br/>`paths.dist.theme`. The `watch` script will watch this <br>directory for changes.
+`paths.src.projectIcons` | `""` | `""` | Source location of any additional project icons to include in the icon sprite. <br/>(Use _only_ these project icons in the sprite by setting `sprite.projectIconsOnly` to `true`.) |
 `paths.dist.theme` | `"./sass"` | `"./sass"` | Project destination for theme files (Sass entry point and <br>settings)
 `paths.dist.img` | `"./assets/uswds/images"` | `"./assets/uswds/images"` | Project destination for images
 `paths.dist.fonts` | `"./assets/uswds/fonts"` | `"./assets/uswds/fonts"` | Project destination for fonts
 `paths.dist.js` | `"./assets/uswds/js"` | `"./assets/uswds/js"` | Project destination for compiled JavaScript
 `paths.dist.css` | `"./assets/uswds/css"` | `"./assets/uswds/css"` | Project destination for compiled CSS
+`sprite.projectIconsOnly` | `false` | `false` | Include _only_ the icons in `paths.src.projectIcons` in the icon sprite
 
 </div>
 

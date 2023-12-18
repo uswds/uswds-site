@@ -228,10 +228,10 @@ Function | Description
 `copyFonts` | Copy USWDS fonts to `paths.dist.fonts`
 `copyImages` | Copy USWDS images to `paths.dist.img`
 `copyJS` | Copy USWDS compiled JavaScript to `paths.dist.js`
-`copyTheme` | Copy USWDS theme files (Sass entry point and settings files) from the `uswds` package to `paths.dist.sass`
+`copyTheme` | Copy USWDS theme files (Sass entry point and settings files) from the `uswds` package to `paths.dist.theme`
 `init` | `copyAll` + `compile`
 `updateUswds` | `copyAssets` + `compile`
-`watch` | Compiles, then recompiles when there are changes to Sass files in `paths.dist.sass` and `paths.src.projectSass`
+`watch` | Compiles, then recompiles when there are changes to Sass files in `paths.dist.theme` and `paths.src.projectSass`
 
 For any function you defined as an `export` in your `gulpfile.js`, you can run `npx gulp [function]`.
 

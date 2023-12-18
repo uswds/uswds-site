@@ -37,6 +37,23 @@ $site-measure: 5;
   @include usa-grid-col;
 }
 
+// Specific grid-col styes added for use in the card component grid
+/* stylelint-disable */
+@media all and (min-width: 55em) {
+  .tablet-lg\:grid-col-6 {
+    flex: 0 1 auto !important;
+    width: 50% !important;
+  }
+}
+
+@media all and (min-width: 87.5em) {
+  .widescreen\:grid-col-4 {
+    flex: 0 1 auto !important;
+    width: 33.3333333333% !important;
+  }
+}
+/* stylelint-enable */
+
 // ========================================
 // 1. Generic
 // ----------------------------------------
@@ -434,6 +451,7 @@ abbr[title="required"] {
     bottom: 0;
     position: sticky;
     z-index: z-index(500);
+    pointer-events: none;
   }
 
   .usa-button {
@@ -442,6 +460,11 @@ abbr[title="required"] {
       @include u-bg($site-background-color);
       margin: units(2) units(2) units(4);
     }
+
+    @include at-media("widescreen") {
+      pointer-events: auto;
+    }
+
 
     &#{$external-href} {
       display: inline-block;

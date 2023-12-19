@@ -11,8 +11,8 @@
       {% endif %}
       {% if issue.githubNumber and issue.githubRepo %}
         More information on GitHub:
-        <a href="https://github.com/uswds/{{ issue.githubRepo }}/pull/{{ issue.githubNumber }}">
-          {{ issue.githubRepo }}#{{ issue.githubNumber }}
+        <a href="https://github.com/uswds/{{ issue.issueRepo }}/pull/{{ issue.issueNumber }}">
+          {{ issue.issueRepo }}#{{ issue.issueNumber }}
         </a>
       {% endif %}
     </li>

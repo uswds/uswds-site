@@ -3,6 +3,8 @@ alert-type: info
 items:
 - date: 2023-11-27
   summary: Users are confused by the search results.
-  summaryAdditional: Typing in a single letter returns all options that contain that letter, rather than options that start with that letter.
+  summaryAdditional: |
+    When users type a single letter into the component, they expect to receive a list of items that start with that letter.
+    However, the component returns a list of items that contain that letter anywhere in the word.
   issueRepo: uswds
   issueNumber: 5647

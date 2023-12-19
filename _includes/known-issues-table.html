@@ -9,7 +9,7 @@
       {% if issue.summaryAdditional %}
         {{ issue.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
       {% endif %}
-      {% if issue.githubNumber and issue.githubRepo %}
+      {% if issue.issueNumber and issue.issueRepo %}
         More information on GitHub:
         <a href="https://github.com/uswds/{{ issue.issueRepo }}/pull/{{ issue.issueNumber }}">
           {{ issue.issueRepo }}#{{ issue.issueNumber }}

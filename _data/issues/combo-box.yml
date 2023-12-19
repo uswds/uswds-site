@@ -2,9 +2,9 @@ title: Combo box
 alert-type: info
 items:
 - date: 2023-11-27
-  summary: Users are confused by the search results.
+  summary: Users were confused by the component's unexpected search results.
   summaryAdditional: |
-    When users type a single letter into the component, they expect to receive a list of items that start with that letter.
-    However, the component returns a list of items that contain that letter anywhere in the word.
+    When users typed a single letter into the component, they expected to receive a list of items that began with that letter.
+    Instead, they received a list of items that contained that letter anywhere in the word.
   issueRepo: uswds
   issueNumber: 5647

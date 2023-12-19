@@ -8,6 +8,6 @@ items:
   issueNumber: 5642
 - date: 2023-10-25
   summary: Users are confused about the purpose of the validation component.
-  summaryAdditional: It does not match user expectations for how their information should be validated in a form input.
+  summaryAdditional: The component does not match user expectations for how their information should be validated in a form input.
   issueRepo: uswds-site
   issueNumber: 2320

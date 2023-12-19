@@ -2,7 +2,7 @@ title: Date picker
 alert-type: info
 items:
 - date: 2023-09-29
-  summary: Users had trouble correctly typing dates in the input field.
+  summary: Users had trouble correctly typing formatted dates in the input field.
   summaryAdditional:
   issueRepo: uswds
   issueNumber: 5534
@@ -11,3 +11,8 @@ items:
   summaryAdditional:
   issueRepo: uswds
   issueNumber: 5535
+- date: 2023-09-29
+  summary: Component guidance should explicitly state that the component needs to allow for the date to be typed in manually.
+  summaryAdditional:
+  issueRepo: uswds-site
+  issueNumber: 2294

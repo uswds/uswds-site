@@ -53,10 +53,6 @@ tags:
   - select
 title: Combo box
 type: component
-alert: true
-alert-class: info
-alert-heading: Current accessibility issues
-alert-content: In late 2022, we found some combo box <a href="#accessibility-combo-box">usability issues</a> when we were testing with people who use screen readers and alternative input devices. For more information, see <a href="https://github.com/uswds/uswds-site/issues/1898">the issue on GitHub</a>.
 changelog:
   key: component-combo-box
 ---

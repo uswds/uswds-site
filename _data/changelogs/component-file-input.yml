@@ -2,9 +2,15 @@ title: File input
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added known issues section.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2402
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Removed disabled file input variant preview.
-    summaryAdditional: 
+    summaryAdditional:
     affectsGuidance: true
     githubPr: 2114
     githubRepo: uswds-site

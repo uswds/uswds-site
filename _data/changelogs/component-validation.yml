@@ -2,6 +2,12 @@ title: Validation
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added known issues section.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2402
+    githubRepo: uswds-site
   - date: 2022-12-21
     summary: Clarified implementation guidance and removed the `#` from the example `data-validation-element` value.
     summaryAdditional:

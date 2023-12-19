@@ -1,0 +1,9 @@
+title: Input mask
+alert-type: info
+items:
+- date: 2023-09-29
+  summary: Users had trouble correctly typing dates into the input field.
+  summaryAdditional:
+  affectsScreenReaders: true
+  issueRepo: uswds
+  issueNumber: 5227

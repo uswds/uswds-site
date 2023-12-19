@@ -1,18 +1,13 @@
 title: Date picker
-type: component
 alert-type: info
 items:
 - date: 2023-09-29
   summary: Users had trouble correctly typing dates in the input field.
   summaryAdditional:
-  affectsAll: true
-  affectsScreenReaders: true
-  githubRepo: uswds
-  githubNumber: 5534
+  issueRepo: uswds
+  issueNumber: 5534
 - date: 2023-09-29
   summary: The focus indicator is not visible around the calendar icon in high contrast mode.
   summaryAdditional:
-  affectsKeyboard: true
-  affectsHighContrast: true
-  githubRepo: uswds
-  githubNumber: 5535
+  issueRepo: uswds
+  issueNumber: 5535

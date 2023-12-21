@@ -1,0 +1,9 @@
+{% assign items = component.testItems %}
+{% assign itemsTotal = 0 %}
+{% for item in items %}
+  {% capture itemsTotal %}{{ itemsTotal | plus:1 }}{% endcapture %}
+{% endfor %}
+
+<!-- Add test summary intro -->
+<h2>{{ componentName | capitalize }} accessibility status</h2>
+<p>We did {{ itemsTotal }} tests based on WCAG 2.1 AA success criteria.</p>

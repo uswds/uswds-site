@@ -2,8 +2,14 @@
 {% assign svg_wrapper_classes = "display-flex flex-align-center" %}
 {% assign svg_classes = "usa-icon font-body-xs minh-205 minw-205 margin-right-05" %}
 
-<!-- Create a list each status type -->
+<!-- Create a list of each status type -->
 {% assign statusTypes = "Pass, Pass with exceptions, Conditional, Fail" | split: ", " %}
+
+<!-- Set status icons -->
+{% assign passIcon = 'check_circle' %}
+{% assign passIshIcon = 'warning' %}
+{% assign failIcon = 'cancel' %}
+{% assign conditionalIcon = 'info' %}
 
 <!-- Count the number of items for each status type -->
 {% assign items = component.testItems %}
@@ -25,20 +31,17 @@
   {% endif %}
 {% endfor %}
 
-<!-- Add test summary -->
-<p class="margin-top-0 margin-bottom-6"><span class="usa-tag usa-tag--big site-checklist--passing">Passing</span></p>
-
-## Accordion accessibility
-For the accordion component, we created a checklist of {{ itemsTotal }} tests based on WCAG 2.1 AA success criteria.
+{% assign borderColor = "gray-50" %}
+{% assign headerBackgroundColor = "gray-10" %}
 
 <!-- Add test summary for desktop widths -->
 <table class="usa-table text-center display-none tablet:display-block font-sans-xs">
   <caption>
-    Overview of recent test results:
+    Overview of recent accessibility test results:
   </caption>
   <thead>
     <tr>
-      <th>Total tests</th>
+      <th class="border-{{ borderColor }} bg-{{ headerBackgroundColor }}">Total tests</th>
       {% for status in statusTypes %}
         {% if status == "Pass" %}
           {% assign statusIcon = passIcon %}
@@ -53,7 +56,7 @@ For the accordion component, we created a checklist of {{ itemsTotal }} tests ba
           {% assign statusIcon = failIcon %}
           {% assign iconColor = "fail" %}
         {% endif %}
-        <th>
+        <th class="border-{{ borderColor }} bg-{{ headerBackgroundColor }}">
           <div class="{{ svg_wrapper_classes }}">
               <svg class="{{ svg_classes }} site-checklist-icon--{{ iconColor | downcase }}" aria-hidden="true" role="img">
                 <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ statusIcon }}"></use>
@@ -66,7 +69,7 @@ For the accordion component, we created a checklist of {{ itemsTotal }} tests ba
   </thead>
   <tbody>
     <tr>
-      <td class="text-bold bg-base-lightest">{{ itemsTotal }}</td>
+      <td class="text-bold bg-{{ headerBackgroundColor }} border-{{ borderColor }}">{{ itemsTotal }}</td>
       {% for status in statusTypes %}
         {% if status == "Pass" %}
           {% assign itemCount = itemsPass %}
@@ -77,7 +80,7 @@ For the accordion component, we created a checklist of {{ itemsTotal }} tests ba
         {% elsif status == "Conditional" %}
           {% assign itemCount = itemsExempt %}
         {% endif %}
-        <td>{{ itemCount | default:0 }}</td>
+        <td class="border-{{ borderColor }}">{{ itemCount | default:0 }}</td>
       {% endfor %}
     </tr>
   </tbody>
@@ -125,8 +128,3 @@ For the accordion component, we created a checklist of {{ itemsTotal }} tests ba
     </li>
   {% endfor %}
 </ul>
-
-Based on these results, we consider the accordion to have a **passing** status,
-which means the code we offer meets accessibility standards.
-
-**However, to consider a component accessible you need to test it in your own project.**

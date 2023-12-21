@@ -1,15 +1,12 @@
-<!-- Set component name and find checklist data -->
-{% assign componentName = page.component-name | downcase %}
-{% assign componentSlug = componentName | slugify %}
-{% assign component = site.data.checklists[componentSlug] %}
-<!-- Set shared status icons -->
-{% assign passIcon = 'check_circle' %}
-{% assign passIshIcon = 'warning' %}
-{% assign failIcon = 'cancel' %}
-{% assign conditionalIcon = 'info' %}
+<!-- Set component name and find related checklist data -->
+{% assign componentName = page.component.name | default: page.title | downcase %}
+{% assign componentKey = componentName | slugify %}
+{% assign component = site.data.checklists[componentKey] %}
 
 <!--Add test results summary-->
-{% include critical-checklist/test-results.html %}
+{% include critical-checklist/test-results-tag.html %}
+{% include critical-checklist/test-results-intro.html %}
+{% include critical-checklist/test-results-table.html %}
 
 <!--Add "how to test" instructions-->
 {% include critical-checklist/how-to-test.html %}

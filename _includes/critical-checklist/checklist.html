@@ -13,6 +13,12 @@
   {% assign items = component.testItems | where: 'testType', "screenReader" %}
 {% endif %}
 
+<!-- Set shared status icons -->
+{% assign passIcon = 'check_circle' %}
+{% assign passIshIcon = 'warning' %}
+{% assign failIcon = 'cancel' %}
+{% assign conditionalIcon = 'info' %}
+
 <!--Add checklist intro-->
 {% include critical-checklist/checklist-intros.html %}
 

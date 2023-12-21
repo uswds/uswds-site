@@ -1,6 +1,7 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
+{% assign component = site.data.checklists[componentKey] %}
 
 {% if page.alert == true %}
 <div class="usa-alert margin-bottom-3 usa-alert--{{ page.alert-class }}">
@@ -19,6 +20,9 @@
   {{ content }}
 </div>
 {% endif %}
+
+<!--Add test results summary-->
+{% include critical-checklist/test-results-tag.html %}
 
 {% include component-preview-and-code.html %}
 {% include component-guidance.html %}

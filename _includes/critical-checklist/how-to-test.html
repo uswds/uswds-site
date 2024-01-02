@@ -1,4 +1,4 @@
-{% assign iconGridClasses = "tablet:grid-col display-flex flex-column flex-align-center" %}
+{% assign iconGridClasses = "tablet:grid-col display-flex flex-column flex-align-center  radius-md padding-2 margin-left-2 font-body-xs" %}
 
 ## You still need to test it. Here's how.
 <p>Using USWDS code isn't enough. To ensure accessibility, conduct manual testing on your own project.</p>
@@ -6,7 +6,7 @@
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="/assets/img/sprite.svg#check"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">
@@ -16,48 +16,11 @@
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="/assets/img/sprite.svg#person"></use>
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#person"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">
         You don't need to be an expert! Anyone can test for accessibility.
       </div>
     </li>
-    <!-- <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon">
-          <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="/assets/img/sprite.svg#help"></use>
-          </svg>
-        </div>
-        <div class="usa-icon-list__content">
-            Just follow the "how to test" instructions for each of the three types of assistive technology.
-        </div>
-    </li> -->
 </ul>
-
-
-Just follow the "how to test" instructions for each of the three types of assistive technology.
-
-
-<!-- Just follow the "how to test" instructions for three types of assistive technology.
-
-<div class="grid-row measure-5">
-    <div class="{{ iconGridClasses }}">
-        <svg class="usa-icon usa-icon--size-4" aria-hidden="true" role="img">
-            <use xlink:href="/assets/img/sprite.svg#zoom_in"></use>
-        </svg>
-        <p>Zoom magnification</p>
-    </div>
-    <div class="{{ iconGridClasses }}">
-        <svg class="usa-icon usa-icon--size-4" aria-hidden="true" role="img">
-            <use xlink:href="/assets/img/sprite.svg#keyboard"></use>
-        </svg>
-        <p>Keyboard navigation</p>
-    </div>
-    <a class="{{ iconGridClasses }}">
-        <svg class="usa-icon usa-icon--size-4" aria-hidden="true" role="img">
-            <use xlink:href="/assets/img/sprite.svg#hearing"></use>
-        </svg>
-        <p>Screen readers</p>
-    </a>
-</div> -->

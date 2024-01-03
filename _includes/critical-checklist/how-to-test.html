@@ -1,49 +1,57 @@
-{% assign iconGridClasses = "tablet:grid-col display-flex flex-column flex-align-center text-no-underline border-1px border-gray-40 text-gray-70 radius-md padding-2 margin-left-2 font-body-xs" %}
+{% assign iconGridClasses = "tablet:grid-col display-flex flex-column flex-align-center text-no-underline border-1px border-gray-30 text-gray-70 radius-md padding-2 margin-left-2 font-body-xs" %}
 
-## You still need to test it. Here's how.
-<p>Using USWDS code isn't enough. To ensure accessibility, conduct manual testing on your own project.</p>
-<ul class="usa-icon-list margin-top-2">
-    <li class="usa-icon-list__item">
-      <div class="usa-icon-list__icon">
-        <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check"></use>
-        </svg>
-      </div>
-      <div class="usa-icon-list__content">
-        Use the checklist below.
-      </div>
-    </li>
-    <li class="usa-icon-list__item">
-      <div class="usa-icon-list__icon">
-        <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#person"></use>
-        </svg>
-      </div>
-      <div class="usa-icon-list__content">
-        You don't need to be an expert! Anyone can test for accessibility.
-      </div>
-    </li>
-</ul>
+<style>
+  .usa-icon-list__icon .usa-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+</style>
+<!-- <div class="border-left-1 border-gray-50 measure-5 margin-top-4 padding-left-4"> -->
+  <h2>You still need to test it. Here's how.</h2>
+  <p>Using USWDS code isn't enough. To ensure accessibility, manually test your own work.</p>
+  <ul class="usa-icon-list margin-top-2">
+      <li class="usa-icon-list__item display-flex flex-align-center">
+        <div class="usa-icon-list__icon ">
+          <svg class="usa-icon" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check"></use>
+          </svg>
+        </div>
+        <div class="usa-icon-list__content">
+          Use the checklist below.
+        </div>
+      </li>
+      <li class="usa-icon-list__item display-flex flex-align-center">
+        <div class="usa-icon-list__icon">
+          <svg class="usa-icon" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#person"></use>
+          </svg>
+        </div>
+        <div class="usa-icon-list__content">
+          You don't need to be an expert! Anyone can test for accessibility.
+        </div>
+      </li>
+  </ul>
+<!-- </div> -->
+  <p class="margin-top-4">Follow the "how to test" instructions for all three types of assistive technology:</p>
 
-Just follow the "how to test" instructions for all types of assistive technology:
-
-<div class="grid-row grid-gap margin-y-3 measure-5">
+  <div class="grid-row grid-gap margin-top-2 margin-bottom-4 measure-5">
     <a href="#zoom-magnification-tests" class="{{ iconGridClasses }}">
-        <svg class="usa-icon usa-icon--size-4" aria-hidden="true" role="img">
+        <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img">
             <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#zoom_in"></use>
         </svg>
         Zoom magnification
     </a>
     <a href="#keyboard-control-tests" class="{{ iconGridClasses }}">
-        <svg class="usa-icon usa-icon--size-4" aria-hidden="true" role="img">
+        <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img">
             <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#keyboard"></use>
         </svg>
-        Keyboard control
+        Keyboard navigation
     </a>
     <a href="#screen-reader-tests" class="{{ iconGridClasses }}">
-        <svg class="usa-icon usa-icon--size-4" aria-hidden="true" role="img">
+        <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img">
             <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#hearing"></use>
         </svg>
-        Screen readers
+        Screen reader
     </a>
+
 </div>

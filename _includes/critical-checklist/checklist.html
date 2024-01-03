@@ -1,6 +1,6 @@
 <!-- set section titles and descriptions -->
 {% if include.type == "keyboard" %}
-  {% assign title = "Keyboard control"%}
+  {% assign title = "Keyboard navigation"%}
   {% assign items = component.testItems | where: 'testType', "keyboard" %}
   {% assign navType= "keyboard" %}
  {% endif %}
@@ -35,13 +35,13 @@
     {% endif %}
     <!-- assign test status info -->
     {% if item.testStatus == 'pass' %}
-        {% assign statusText = 'Pass' %}
+        {% assign statusText = 'Passed' %}
         {% assign statusIcon = passIcon %}
       {% elsif item.testStatus == 'pass-ish' %}
-        {% assign statusText = 'Pass with exceptions' %}
+        {% assign statusText = 'Passed with exceptions' %}
         {% assign statusIcon = passIshIcon %}
       {% elsif item.testStatus == 'fail' %}
-        {% assign statusText = 'Fail' %}
+        {% assign statusText = 'Failed' %}
         {% assign statusIcon = failIcon %}
       {% elsif item.testStatus == 'exempt' %}
         {% assign statusText = 'Conditional' %}

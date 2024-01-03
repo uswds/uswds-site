@@ -3,7 +3,7 @@ permalink: /components/accordion/checklist/
 layout: styleguide
 component:
   name: accordion
-title: "[New USWDS accessibility page prototype]"
+title: Accordion manual accessibility tests
 category: Components
 lead: Learn how USWDS tests for accessibility and how you should test for accessibility, too.
 subnav:

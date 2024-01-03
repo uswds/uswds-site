@@ -11,7 +11,7 @@ redirect_from:
   - /accordions/
   - /components/accordions/
 subnav:
-- text: "[New USWDS accessibility page prototype]"
+- text: Accordion manual accessibility tests
   href: /components/accordion/checklist/
 - text: Latest updates
   href: "#changelog"

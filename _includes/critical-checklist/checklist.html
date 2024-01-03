@@ -23,7 +23,12 @@
 {% include critical-checklist/checklist-intros.html %}
 
 <!--Add checklist items-->
-<ul class="usa-icon-list usa-content-list margin-top-4">
+<!-- <div class="display-flex flex-justify maxw-tablet-lg font-body-3xs text-bold">
+  <span class="text-left">Testing checklist</span>
+  <span class="text-right">USWDS test results</span>
+</div> -->
+
+<ul class="usa-icon-list usa-content-list ">
   {% for item in items %}
     <!--set WCAG details-->
     {% include critical-checklist/wcag-details.html %}
@@ -48,10 +53,15 @@
         {% assign statusIcon = conditionalIcon %}
     {% endif %}
     <!-- start checklist items -->
-    <li class="usa-icon-list__item">
+    <li class="usa-icon-list__item flex-justify">
       <div class="display-flex flex-row">
         <!-- Add status icon -->
-        {% include critical-checklist/checklist-icon.html icon=statusIcon %}
+        <div class="usa-icon-list__icon">
+          <svg class="usa-icon margin-top-2px" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_box_outline_blank"></use>
+          </svg>
+        </div>
+
          <!-- Add text content -->
         <div class="usa-icon-list__content">
           <!--Add summaries-->
@@ -95,7 +105,6 @@
 
           <!--Add tags -->
           <ul class="site-checklist-tags">
-            <li class="site-checklist-tag--{{ item.testStatus }}">Status: <b>{{ statusText }}</b></li>
             {% if item.wcagCriterion %}
               <li>WCAG {{ criterionLevel }}</li>
               <li>
@@ -103,12 +112,28 @@
                   {{ item.wcagCriterion }} {{ criterionName }}
                 </a>
               </li>
-            {% endif %}
-            <li>Last test: <b>{{ versionTested }}</b></li>
+              {% endif %}
+              <li>Last test: <b>{{ versionTested }}</b></li>
+              <li class="site-checklist-tag--{{ item.testStatus }} display-flex flex-align-center">
+                <svg class="usa-icon site-checklist-icon--{{ item.testStatus }} margin-right-05 height-2 width-2" aria-hidden="true" role="img">
+                  <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ statusIcon }}"></use>
+                </svg>
+                USWDS test status: <b> {{ statusText }}</b></li>
           </ul>
+
         </div>
+
       </div>
+      <!-- <ul class="site-checklist-tags flex-column flex-align-end">
+        <li class="site-checklist-tag--{{ item.testStatus }} display-flex flex-align-center margin-top-0 margin-right-0">
+          <svg class="usa-icon site-checklist-icon--{{ item.testStatus }} margin-right-05 height-2 width-2" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ statusIcon }}"></use>
+          </svg>
+          Status: <b>{{ statusText }}</b></li>
+          <li class="margin-right-0">Last test: <b>{{ versionTested }}</b></li>
+      </ul> -->
       <!-- end tags -->
     </li>
+
     {% endfor %}
 </ul>

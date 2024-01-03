@@ -32,7 +32,7 @@ testItems:
     testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
-# Keyboard control items
+# Keyboard navigation items
   - summary: Interactive elements work after tabbing.
     summaryAdditional: When you use the `tab` key to navigate into an open accordion panel, each interactive item inside that panel (like a link) is selectable.
     testStatus: pass

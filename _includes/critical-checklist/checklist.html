@@ -134,7 +134,6 @@
               </a>
             </li>
           {% endif %}
-          <li>Last test: <b>{{ versionTested }}</b></li>
           <li class="site-checklist-tag--{{ item.testStatus }} display-flex flex-align-center">
             <svg class="usa-icon site-checklist-icon--{{ item.testStatus }} margin-right-05 height-2 width-2"
               aria-hidden="true" role="img">
@@ -142,6 +141,7 @@
             </svg>
             USWDS test status: <b class="padding-left-05"> {{ statusText }}</b>
           </li>
+          <li>Last test: <b>{{ versionTested }}</b></li>
         </ul>
       </label>
       <!-- end text content -->

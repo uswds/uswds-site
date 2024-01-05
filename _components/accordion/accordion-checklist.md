@@ -3,9 +3,9 @@ permalink: /components/accordion/checklist/
 layout: styleguide
 component:
   name: accordion
-title: Accordion manual accessibility tests
+title: Accordion accessibility tests
 category: Components
-lead: Learn how USWDS tests for accessibility and how you should test for accessibility, too.
+lead: Learn how USWDS does manual tests for accessibility and how you should test for accessibility, too.
 subnav:
   - text: Latest updates
     href: "#changelog"

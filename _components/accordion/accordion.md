@@ -11,7 +11,7 @@ redirect_from:
   - /accordions/
   - /components/accordions/
 subnav:
-- text: Accordion manual accessibility tests
+- text: Accordion accessibility tests
   href: /components/accordion/checklist/
 - text: Latest updates
   href: "#changelog"

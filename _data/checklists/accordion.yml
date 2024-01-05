@@ -57,7 +57,7 @@ testItems:
     testType: keyboard
     versionTested: 3.5.0
     wcagCriterion: 2.1.1
-  - summary: Focus moves out of the accordion.
+  - summary: Focus moves out of the accordion without closing the panel.
     summaryAdditional: When you navigate out of the accordion, it does not close.
     testStatus: pass
     testType: keyboard
@@ -96,7 +96,7 @@ testItems:
     versionTested: 3.5.0
     wcagCriterion: 2.4.7
 # Screen reader items
-  - summary: Content is visible with screen magnification.
+  - summary: Focus moves in a logical order when using a screen reader.
     summaryAdditional: |
       When you use a screen reader and navigate between accordion panels, the order the focus proceeds from item to item is logical.
       (For example, the focus doesn't skip a link or accordion heading.)
@@ -104,7 +104,7 @@ testItems:
     testType: screenReader
     versionTested: 3.5.0
     wcagCriterion: 2.4.3
-  - summary: Focus indicator is visible with screen readers.
+  - summary: Focus indicator is visible when using a screen reader.
     summaryAdditional: When you use a screen reader and navigate between accordion panels, the virtual cursor (or JAWS focus) moves from one header to the next.
     testStatus: pass
     testType: screenReader

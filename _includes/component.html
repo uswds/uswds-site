@@ -30,9 +30,6 @@
 {% endif %}
 {% include component-preview-and-code.html %}
 {% include component-guidance.html %}
-{% if page.component.package %}
-  {% include component-package.html %}
-{% endif %}
 {% if component %}
   <h2 id="accessibility-status" class="site-component-section-title">Accessibility test status</h2>
   {% include critical-checklist/test-results-intro-main.html %}
@@ -40,6 +37,9 @@
   <p>Learn more on the <a href="{{ site.baseurl }}/components/accordion/checklist">accordion manual accessibility testing page</a>.</p>
 {% endif %}
 {% include known-issues.html %}
+{% if page.component.package %}
+  {% include component-package.html %}
+{% endif %}
 {% if page.disclaimer %}
   {% include disclaimer.html %}
 {% endif %}

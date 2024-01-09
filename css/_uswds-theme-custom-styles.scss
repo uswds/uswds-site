@@ -3573,47 +3573,80 @@ $do-dont-top-bar-width: 1;
   @include u-z(100);
 }
 
-.site-checklist-tags {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+// Accessibility checklist styles
+.site-checklist-tag-list--horizontal {
+  @include u-display("flex");
+  @include u-flex("align-center");
+  @include u-flex("row");
+  @include u-flex("wrap");
   list-style-type: none !important;
-  margin-bottom: units(1) !important;
+  margin-bottom: 0 !important;
+  padding-left: units(0) !important;
+}
+
+.site-checklist-tag-list--vertical {
+  @include u-display("none");
+  @include u-flex("align-end");
+  @include u-flex("justify-start");
+  @include u-flex("column");
+  @include u-margin-top("05");
+  list-style-type: none !important;
+  margin-bottom: 0 !important;
   padding-left: units(0) !important;
 
-  li {
-    @include u-border("1px", "gray-10");
-    @include u-font("body", "3xs");
-    @include u-margin-right(1);
-    @include u-padding-y("05");
-    @include u-padding-x(1);
-    @include u-radius("md");
-    list-style-type: none !important;
-    margin-bottom: units(1) !important;
+  @include at-media("widescreen"){
+    @include u-display("flex");
   }
 
-  .site-checklist-tag--pass {
-    border-color: color("green-cool-10");
-    background-color: color("green-cool-10");
+  .site-checklist-tag {
+    @include u-text('right');
   }
-  .site-checklist-tag--pass-ish {
-    border-color: color("gold-5v");
-    background-color: color("gold-5v");
-  }
-  .site-checklist-tag--fail {
-    border-color: color("orange-warm-30");
-    background-color: color("orange-warm-30");
-  }
-  .site-checklist-tag--exempt {
-    border-color: color("blue-cool-10");
-    background-color: color("blue-cool-10");
+}
+
+.site-checklist-tag {
+  @include u-border("1px", "gray-10");
+  @include u-font("body", "3xs");
+  @include u-margin-bottom(1);
+  @include u-margin-right(1);
+  @include u-padding-y("05");
+  @include u-padding-x(1);
+  @include u-radius("md");
+  list-style-type: none !important;
+
+  .usa-icon {
+    @include u-height(2);
+    @include u-width(2);
+    @include u-margin-right("05");
   }
 }
 
 .site-checklist-text {
   @include u-margin-y(1);
   font-size: 1rem !important;
+}
+
+.site-checklist-tag--pass {
+  border-color: color("green-cool-10");
+  background-color: color("green-cool-10");
+}
+.site-checklist-tag--pass-ish {
+  border-color: color("yellow-10");
+  background-color: color("yellow-10");
+}
+.site-checklist-tag--fail {
+  border-color: color("orange-warm-30");
+  background-color: color("orange-warm-30");
+}
+.site-checklist-tag--exempt {
+  border-color: color("blue-cool-10");
+  background-color: color("blue-cool-10");
+}
+.site-checklist-tag--hide-wide {
+  @include u-display("flex");
+
+  @include at-media("widescreen"){
+    @include u-display("none");
+  }
 }
 
 .site-checklist-text--pass,

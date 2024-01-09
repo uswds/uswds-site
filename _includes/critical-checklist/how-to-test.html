@@ -1,29 +1,26 @@
-{% assign iconGridClasses = "tablet:grid-col display-flex flex-column flex-align-center text-no-underline border-1px border-gray-30 text-gray-70 radius-md padding-2 margin-left-2 font-body-xs" %}
-
+{% assign iconGridClasses = "tablet:grid-col display-flex flex-row border-gray-10 border-1px border-bottom-1 text-gray-70 padding-2 padding-bottom-3 margin-left-2" %}
+{% assign iconSize = "2.75rem" %}
 <!-- <div class="border-left-1 border-gray-50 measure-5 margin-top-4 padding-left-4"> -->
   <h2>Test the accordion in your project</h2>
   <p>USWDS tests components in isolation. You need to test the accordion in the context of your own site to ensure compliance with Section 508 accessibility standards.</p>
-  <ul class="usa-icon-list margin-top-2">
-      <li class="usa-icon-list__item display-flex flex-align-center">
-        <div class="usa-icon-list__icon ">
-          <svg class="usa-icon" style="height: 2rem; width: 2rem" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#list"></use>
-          </svg>
-        </div>
-        <div class="usa-icon-list__content">
-          Use the checklist below.
-        </div>
-      </li>
-      <li class="usa-icon-list__item display-flex flex-align-center">
-        <div class="usa-icon-list__icon">
-          <svg class="usa-icon"  style="height: 2rem; width: 2rem" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#person"></use>
-          </svg>
-        </div>
-        <div class="usa-icon-list__content">
-          You don't need to be an expert! Anyone can test for accessibility.
-        </div>
-      </li>
-  </ul>
 
-<p>Just follow the "how to test" instructions for all three types of assistive technology.</p>
+  <div class="grid-row grid-gap margin-top-2 margin-bottom-4 measure-6">
+    <div class="{{ iconGridClasses }}">
+      <svg class="usa-icon margin-right-1" style="min-height: {{ iconSize }}; min-width: {{ iconSize }}" aria-hidden="true" role="img">
+        <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#list"></use>
+      </svg>
+      <div>
+        <p class="text-bold margin-y-1">Use the checklist below.</p>
+        <p class="font-body-xs margin-y-0 line-height-sans-5">Follow the instructions for using each type of assistive technology.</p>
+      </div>
+    </div>
+    <div class="{{ iconGridClasses }}">
+      <svg class="usa-icon margin-right-1"  style="min-height: {{ iconSize }}; min-width: {{ iconSize }}" aria-hidden="true" role="img">
+        <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#people"></use>
+      </svg>
+      <div>
+        <p class="text-bold margin-y-1">You don't need to be an expert!</p>
+        <p class="font-body-xs margin-y-0 line-height-sans-5">Anyone can test for accessibility.</p>
+      </div>
+    </div>
+  </div>

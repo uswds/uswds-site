@@ -465,7 +465,6 @@ abbr[title="required"] {
       pointer-events: auto;
     }
 
-
     &#{$external-href} {
       display: inline-block;
     }
@@ -3574,6 +3573,19 @@ $do-dont-top-bar-width: 1;
 }
 
 // Accessibility checklist styles
+.site-checklist-jump-link {
+  @include u-display("flex");
+  @include u-flex("align-center");
+  @include u-padding-y("05");
+  @include u-margin-right(2);
+  @include u-text("primary-dark");
+  @include u-text("bold");
+  @include u-text("no-underline");
+
+  &:visited {
+    color: color("primary-dark");
+  }
+}
 .site-checklist-tag-list--horizontal {
   @include u-display("flex");
   @include u-flex("align-center");
@@ -3594,12 +3606,12 @@ $do-dont-top-bar-width: 1;
   margin-bottom: 0 !important;
   padding-left: units(0) !important;
 
-  @include at-media("widescreen"){
+  @include at-media("widescreen") {
     @include u-display("flex");
   }
 
   .site-checklist-tag {
-    @include u-text('right');
+    @include u-text("right");
   }
 }
 
@@ -3644,7 +3656,7 @@ $do-dont-top-bar-width: 1;
 .site-checklist-tag--hide-wide {
   @include u-display("flex");
 
-  @include at-media("widescreen"){
+  @include at-media("widescreen") {
     @include u-display("none");
   }
 }

@@ -10,6 +10,8 @@ lead: How research supports USWDS decisions
 redirect_from:
   - /whats-new/research/
 subnav:
+- text: Recruitment
+  href: '/about/research/recruitment'
 - text: Latest updates
   href: '#changelog'
 changelog:

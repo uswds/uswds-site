@@ -31,10 +31,9 @@
 {% include component-preview-and-code.html %}
 {% include component-guidance.html %}
 {% if component %}
-  <h2 id="accessibility-status" class="site-component-section-title">Accessibility test status</h2>
   {% include critical-checklist/test-results-intro-main.html %}
   {% include critical-checklist/test-results-table.html %}
-  <p>Learn more on the <a href="{{ site.baseurl }}/components/accordion/checklist">accordion manual accessibility testing page</a>.</p>
+  <p>Learn more on the <a href="{{ site.baseurl }}/components/accordion/checklist">{{ componentName | downcase }} accessibility tests page</a>.</p>
 {% endif %}
 {% include known-issues.html %}
 {% if page.component.package %}

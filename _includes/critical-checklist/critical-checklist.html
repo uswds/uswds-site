@@ -3,10 +3,13 @@
 {% assign componentKey = componentName | slugify %}
 {% assign component = site.data.checklists[componentKey] %}
 
-<!--Add test results summary-->
 {% include critical-checklist/test-results-tag.html %}
-{% include critical-checklist/test-results-intro.html %}
-{% include critical-checklist/test-results-table.html %}
+
+<!--Add test results summary-->
+<div class="bg-gray-5 padding-y-1 padding-x-4 measure-6">
+    {% include critical-checklist/test-results-intro.html %}
+    {% include critical-checklist/test-results-table.html %}
+</div>
 
 <!--Add "how to test" instructions-->
 {% include critical-checklist/how-to-test.html %}

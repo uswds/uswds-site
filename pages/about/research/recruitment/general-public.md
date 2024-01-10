@@ -1,14 +1,11 @@
 ---
-permalink: /about/research/recruitment/general-public
+permalink: /about/research/recruitment/general-public/
 layout: styleguide
 title: Recruitment for general public
 category: About
 lead: Help shape the future of U.S. government websites.
 redirect_from:
   # - /whats-new/research/
-subnav:
-# - text: Recruitment for general public
-  # href: '/about/research/recruitment/general-public'
 changelog:
   key: about-research-recruitment-public
 ---

@@ -11,7 +11,7 @@ redirect_from:
   - /whats-new/research/
 subnav:
 - text: Recruitment for general public
-  href: '/about/research/recruitment/general-public'
+  href: /about/research/recruitment/general-public/
 - text: Latest updates
   href: '#changelog'
 changelog:

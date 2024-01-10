@@ -3573,6 +3573,25 @@ $do-dont-top-bar-width: 1;
 }
 
 // Accessibility checklist styles
+.site-checklist-status-table {
+  @include u-display("none");
+  @include u-text("center");
+  @include u-font("body", "2xs");
+
+  @include at-media("desktop-lg") {
+    @include u-display("block");
+  }
+}
+
+.site-checklist-status-list {
+  @include u-padding-bottom(2);
+  @include u-padding-top(1);
+
+  @include at-media("desktop-lg") {
+    @include u-display("none");
+  }
+}
+
 .site-checklist-jump-link {
   @include u-display("flex");
   @include u-flex("align-center");

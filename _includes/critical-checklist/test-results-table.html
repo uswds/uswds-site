@@ -35,7 +35,7 @@
 {% assign headerBackgroundColor = "gray-5" %}
 
 <!-- Add test summary for desktop widths -->
-<table class="usa-table text-center display-none tablet:display-block font-sans-2xs">
+<table class="usa-table site-checklist-status-table">
   <caption>
     Overview of recent accessibility test results:
   </caption>
@@ -87,44 +87,48 @@
 </table>
 
 <!-- Add test summary for mobile widths -->
-<ul class="usa-icon-list margin-top-2 tablet:display-none">
-  {% for status in statusTypes %}
-    {% if status == "Passed" %}
-      {% assign statusIcon = passIcon %}
-      {% assign iconColor = "pass" %}
-      {% assign itemCount = itemsPass %}
-      {% assign statusText = "pass" %}
-    {% elsif status == "Passed with exceptions" %}
-      {% assign statusIcon = passIshIcon %}
-      {% assign iconColor = "pass-ish" %}
-      {% assign itemCount = itemsPassIsh %}
-      {% assign statusText = "pass with some exceptions" %}
-    {% elsif status == "Failed" %}
-      {% assign statusIcon = failIcon %}
-      {% assign iconColor = "fail" %}
-      {% assign itemCount = itemsFail %}
-      {% assign statusText = "fail" %}
-    {% elsif status == "Conditional" %}
-      {% assign statusIcon = conditionalIcon %}
-      {% assign iconColor = "exempt" %}
-      {% assign itemCount = itemsExempt %}
-      {% assign statusText = "cannot be evaluated at the system level" %}
-    {% endif %}
+<div class="site-checklist-status-list">
+  <p class="font-sans-xs text-bold">Overview of recent accessibility test results:</p>
 
-    {% assign items = "items" %}
-    {% if itemCount == "1" %}
-      {% assign items = "item" %}
-    {% endif %}
+  <ul class="usa-icon-list margin-top-0">
+    {% for status in statusTypes %}
+      {% if status == "Passed" %}
+        {% assign statusIcon = passIcon %}
+        {% assign iconColor = "pass" %}
+        {% assign itemCount = itemsPass %}
+        {% assign statusText = "Passed" %}
+      {% elsif status == "Passed with exceptions" %}
+        {% assign statusIcon = passIshIcon %}
+        {% assign iconColor = "pass-ish" %}
+        {% assign itemCount = itemsPassIsh %}
+        {% assign statusText = "Passed with exceptions" %}
+      {% elsif status == "Failed" %}
+        {% assign statusIcon = failIcon %}
+        {% assign iconColor = "fail" %}
+        {% assign itemCount = itemsFail %}
+        {% assign statusText = "Failed" %}
+      {% elsif status == "Conditional" %}
+        {% assign statusIcon = conditionalIcon %}
+        {% assign iconColor = "exempt" %}
+        {% assign itemCount = itemsExempt %}
+        {% assign statusText = "Conditional" %}
+      {% endif %}
 
-    <li class="usa-icon-list__item">
-      <div class="usa-icon-list__icon site-checklist-icon--{{ iconColor | downcase }}">
-        <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ statusIcon }}"></use>
-        </svg>
-      </div>
-      <div class="usa-icon-list__content">
-        {{ itemCount }} {{ items }} {{ statusText | default:status | downcase}}
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+      {% assign items = "items" %}
+      {% if itemCount == "1" %}
+        {% assign items = "item" %}
+      {% endif %}
+
+      <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon site-checklist-icon--{{ iconColor | downcase }}">
+          <svg class="usa-icon" aria-hidden="true" role="img">
+            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ statusIcon }}"></use>
+          </svg>
+        </div>
+        <div class="usa-icon-list__content">
+          <b>Tests {{ statusText | default:status | downcase }}:</b> {{ itemCount }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

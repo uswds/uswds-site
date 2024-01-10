@@ -1,10 +1,10 @@
-{% assign iconGridClasses = "tablet:grid-col display-flex flex-row border-gray-10 border-1px border-bottom-1 text-gray-70 padding-2 padding-bottom-3 margin-left-2" %}
+{% assign iconGridClasses = "tablet:grid-col display-flex flex-row border-gray-10 border-1px border-bottom-1 text-gray-70 padding-2 padding-bottom-3 margin-top-3 desktop:margin-top-0 " %}
 {% assign iconSize = "2.75rem" %}
 <!-- <div class="border-left-1 border-gray-50 measure-5 margin-top-4 padding-left-4"> -->
   <h2>Test the accordion in your project</h2>
   <p>USWDS tests components in isolation. You need to test the accordion in the context of your own site to ensure compliance with Section 508 accessibility standards.</p>
 
-  <div class="grid-row grid-gap margin-top-2 margin-bottom-4 measure-6">
+  <div class="desktop:display-flex margin-top-2 margin-bottom-4 maxw-mobile-lg desktop:measure-6 desktop:maxw-none">
     <div class="{{ iconGridClasses }}">
       <svg class="usa-icon margin-right-1" style="min-height: {{ iconSize }}; min-width: {{ iconSize }}" aria-hidden="true" role="img">
         <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#list"></use>
@@ -14,7 +14,7 @@
         <p class="font-body-xs margin-y-0 line-height-sans-5">Follow the "how to test" instructions for each type of assistive technology.</p>
       </div>
     </div>
-    <div class="{{ iconGridClasses }}">
+    <div class="{{ iconGridClasses }} desktop:margin-left-2">
       <svg class="usa-icon margin-right-1"  style="min-height: {{ iconSize }}; min-width: {{ iconSize }}" aria-hidden="true" role="img">
         <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#people"></use>
       </svg>

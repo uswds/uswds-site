@@ -5,5 +5,5 @@ items:
   - date: 2024-01-10
     summary: Page created.
     affectsGuidance: true
-    githubPr: TK
+    githubPr: 2424
     githubRepo: uswds-site

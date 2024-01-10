@@ -26,10 +26,7 @@ const entrypoints = {
  * @param {*} outputName - string of output file name
  * @returns - outputName.css
  */
-function compileProdCSS(
-  cssEntrypoints,
-  outputName = "styles.css"
-) {
+function compileProdCSS(cssEntrypoints, outputName = "styles.css") {
   return gulp
     .src(cssEntrypoints)
     .pipe(

@@ -3573,7 +3573,7 @@ $do-dont-top-bar-width: 1;
 }
 
 // Accessibility checklist styles
-.site-checklist-status-table {
+.usa-prose .site-checklist-status-table {
   @include u-display("none");
   @include u-text("center");
   @include u-font("body", "2xs");

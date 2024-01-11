@@ -25,13 +25,40 @@ Usability research is the process of learning about people’s needs and observi
 
 Fill out this brief [sign up form](https://touchpoints.app.cloud.gov/touchpoints/b0c4b589/submit) or email us at <{{ site.uswds_email }}> to tell us you’re interested. We’ll add you to our list and email you when we have a suitable research opportunity for you.
 
-## What to expect if we email you to participate
+## What to expect
 
-{:.usa-list}
-- **Scheduling and information:** A member of our team will provide a few date and time options to schedule with you. We’ll also share details about that particular research effort with you so you know what to expect, and might ask you to fill out a brief consent form.
-- **Time:** Sessions usually take 1 hour and never exceed 1 hour and 20 minutes.
-Payment:  We generally pay $75 to $100 per session, depending on the length of the session.
-- **Technology needed:** You typically will need a laptop, tablet, or phone, and internet access.
+<!-- @TODO: Evaluate use of frontmatter for USA Graphic List. -->
+{% capture graphic_list_items %}
+  {% include
+    component-graphic-list-item.html
+    heading="Scheduling and information"
+    icon="support_agent"
+    body="A member of our team will provide a few date and time options to schedule with you. We’ll also share details about that particular research effort with you so you know what to expect, and might ask you to fill out a brief consent form."
+  %}
+  {% include
+    component-graphic-list-item.html
+    heading="Time"
+    icon="schedule"
+    body="Sessions usually take 1 hour and never exceed 1 hour and 20 minutes. "
+  %}
+  {% include
+    component-graphic-list-item.html
+    heading="Payment"
+    icon="account_balance"
+    body="Payment: We generally pay $75 to $100 per session, depending on the length of the session."
+  %}
+  {% include
+    component-graphic-list-item.html
+    heading="Technology needed"
+    icon="electrical_services"
+    body="You typically will need a laptop, tablet, or phone, and internet access."
+  %}
+{% endcapture %}
+
+{:.border-top-2px .border-base-lighter .padding-top-1}
+What to expect if we email you to participate.
+
+{% include component-graphic-list.html content=graphic_list_items %}
 
 ## Privacy
 

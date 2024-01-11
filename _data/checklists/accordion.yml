@@ -3,31 +3,31 @@ componentStatus: pass
 testItems:
 # Zoom/screen magnification items
   - summary: No need to scroll horizontally when screen is magnified.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window, accordion panels do not require horizontal scrolling.
+    summaryAdditional: When you zoom to 200%, accordion panels do not require horizontal scrolling.
     testStatus: pass
     testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
   - summary: Focus indicator is clear when screen is magnified.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window and navigate through items with the tab key, each item has a focus highlight that is clear and visible.
+    summaryAdditional: When you zoom to 200% and navigate through items with the tab key, each item has a focus highlight that is clear and visible.
     testStatus: pass
     testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
   - summary: Content does not get cut off when screen is magnified.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window, no content is cut off.
+    summaryAdditional: When you zoom to 200%, no content is cut off.
     testStatus: pass
     testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
   - summary: Content does not overlap when screen is magnified.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window, no text or images in the content overlap.
+    summaryAdditional: When you zoom to 200%, no text or images in the content overlap.
     testStatus: pass
     testType: zoom
     versionTested: 3.5.0
     wcagCriterion: 1.4.4
   - summary: Content is not obscured by page elements when screen is magnified.
-    summaryAdditional: When you zoom to 200% in a 1080px-wide window, the accordion panels are not obscured by any other page elements (like pop-ups or images).
+    summaryAdditional: When you zoom to 200%, the accordion panels are not obscured by any other page elements (like pop-ups or images).
     testStatus: pass
     testType: zoom
     versionTested: 3.5.0

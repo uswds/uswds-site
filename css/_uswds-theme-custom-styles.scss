@@ -3605,7 +3605,12 @@ $do-dont-top-bar-width: 1;
     color: color("primary-dark");
   }
 }
-.site-checklist-tag-list--horizontal {
+
+.site-checklist-intro-header{
+  scroll-margin-top: 3rem;
+}
+
+.site-checklist-tag-list {
   @include u-display("flex");
   @include u-flex("align-center");
   @include u-flex("row");
@@ -3615,7 +3620,7 @@ $do-dont-top-bar-width: 1;
   padding-left: units(0) !important;
 }
 
-.site-checklist-tag-list--vertical {
+.site-checklist-tag-list--aside {
   @include u-display("none");
   @include u-flex("align-end");
   @include u-flex("justify-start");
@@ -3709,6 +3714,9 @@ $do-dont-top-bar-width: 1;
   color: color("blue-cool-60");
 }
 
-.site-checklist--passing {
+.site-checklist--pass {
   background-color: color("green-cool-50");
+}
+.site-checklist--fail {
+  background-color: color("red-50");
 }

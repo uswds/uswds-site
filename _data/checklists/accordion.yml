@@ -127,7 +127,7 @@ testItems:
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "collapsed" state.
     summaryAdditional: When you use a screen reader and navigate to a closed panel, the screen reader announces that the content is "collapsed".
-    testStatus: pass-ish
+    testStatus: exception
     testType: screenReader
     statusDetails: |
       In JAWS, the readout says "to activate press enter" instead of "collapsed". It works as expected in other screen readers.
@@ -137,7 +137,7 @@ testItems:
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "expanded" state.
     summaryAdditional: When you use a screen reader and navigate to a open panel, the screen reader announces that the content is "expanded".
-    testStatus: pass-ish
+    testStatus: exception
     testType: screenReader
     statusDetails: |
       In JAWS, the readout says "to activate press enter" instead of "expanded". It works as expected in other screen readers.

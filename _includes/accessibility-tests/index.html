@@ -6,10 +6,7 @@
 {% include accessibility-tests/test-results-tag.html %}
 
 <!--Add test results summary-->
-<div class="bg-gray-5 padding-y-1 padding-x-4 measure-6">
-    {% include accessibility-tests/test-results-intro.html page='checklist' %}
-    {% include accessibility-tests/test-results-table.html %}
-</div>
+{% include accessibility-tests/test-results-table.html page='checklist' %}
 
 <!--Add "how to test" instructions-->
 {% include accessibility-tests/how-to-test.html %}

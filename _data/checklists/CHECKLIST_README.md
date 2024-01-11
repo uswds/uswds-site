@@ -8,7 +8,7 @@
 | componentStatus   | WCAG status for entire component                     | no       | string     | pass, fail                        | Yes       |
 | summary           | Short description of the test                        | no       | string     | N/A                               | yes       |
 | summaryAdditional | Additional description of the test                   | no       | string     | N/A                               | yes       |
-| testStatus        | Outcome of the individual test                       | no       | string     | pass, fail, conditional, pass-ish | yes       |
+| testStatus        | Outcome of the individual test                       | no       | string     | pass, fail, conditional, exception | yes       |
 | testType          | Assistive technology                                 | no       | string     | zoom, keyboard, screenReader      | yes       |
 | versionTested     | The USWDS version number that was tested             | no       | string     | N/A                               | yes       |
 | wcagCriterion     | The number of the WCAG criterion related to the test | no       | string     | N/A                               | yes       |

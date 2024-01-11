@@ -3573,6 +3573,13 @@ $do-dont-top-bar-width: 1;
 }
 
 // Accessibility checklist styles
+.site-checklist-test-summary {
+  @include u-bg("gray-5");
+  @include u-measure(6);
+  @include u-padding-y(1);
+  @include u-padding-x(4);
+}
+
 .usa-prose .site-checklist-status-table {
   @include u-display("none");
   @include u-text("center");
@@ -3665,7 +3672,7 @@ $do-dont-top-bar-width: 1;
   border-color: color("green-cool-10");
   background-color: color("green-cool-10");
 }
-.site-checklist-tag--pass-ish {
+.site-checklist-tag--exception {
   border-color: color("yellow-10");
   background-color: color("yellow-10");
 }
@@ -3689,8 +3696,8 @@ $do-dont-top-bar-width: 1;
 .site-checklist-text--pass a:visited {
   color: color("green-cool-60");
 }
-.site-checklist-text--pass-ish,
-.site-checklist-text--pass-ish a:visited {
+.site-checklist-text--exception,
+.site-checklist-text--exception a:visited {
   color: color("orange-70v");
 }
 .site-checklist-text--fail,
@@ -3704,7 +3711,7 @@ $do-dont-top-bar-width: 1;
 .site-checklist-icon--pass {
   color: color("green-cool-50");
 }
-.site-checklist-icon--pass-ish {
+.site-checklist-icon--exception {
   color: color("gold-30v");
 }
 .site-checklist-icon--fail {

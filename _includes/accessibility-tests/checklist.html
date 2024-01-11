@@ -68,7 +68,7 @@
     {% if item.testStatus == 'pass' %}
       {% assign status_text = 'Passed' %}
       {% assign status_icon = pass_icon %}
-    {% elsif item.testStatus == 'pass-ish' %}
+    {% elsif item.testStatus == 'exception' %}
       {% assign status_text = 'Passed with exceptions' %}
       {% assign status_icon = exceptions_icon %}
     {% elsif item.testStatus == 'fail' %}
@@ -100,7 +100,7 @@
               </a>.
             </p>
           {% elsif item.testStatus == 'pass' %}
-          {% elsif item.testStatus == 'pass-ish' %}
+          {% elsif item.testStatus == 'exception' %}
             <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
               <b>The {{ component_name }} component does not pass all elements of this test.</b>
               {% if item.statusDetails %}

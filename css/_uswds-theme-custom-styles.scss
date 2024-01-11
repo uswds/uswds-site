@@ -3665,8 +3665,8 @@ $do-dont-top-bar-width: 1;
   background-color: color("yellow-10");
 }
 .site-checklist-tag--fail {
-  border-color: color("orange-warm-30");
-  background-color: color("orange-warm-30");
+  border-color: color("red-20v");
+  background-color: color("red-20v");
 }
 .site-checklist-tag--exempt {
   border-color: color("blue-cool-10");
@@ -3690,7 +3690,7 @@ $do-dont-top-bar-width: 1;
 }
 .site-checklist-text--fail,
 .site-checklist-text--fail a:visited {
-  color: color("orange-warm-60");
+  color: color("red-70v");
 }
 .site-checklist-text--exempt {
   color: color("blue-cool-60");

@@ -1,46 +1,53 @@
-{% assign icon_grid_classes = "tablet:grid-col display-flex flex-row border-gray-10 border-1px border-bottom-1 text-gray-70 padding-2 padding-bottom-3 margin-top-3 desktop:margin-top-0 " %}
-{% assign icon_size = "2.75rem" %}
-  <h2>Test the {{ component_name }} in your project</h2>
-  <p>USWDS tests components in isolation. You need to test the {{ component_name }} in the context of your own site to ensure compliance with Section 508 accessibility standards.</p>
-  <div class="desktop:display-flex margin-top-2 margin-bottom-4 maxw-mobile-lg desktop:measure-6 desktop:maxw-none">
-    <div class="{{ icon_grid_classes }}">
-      <svg class="usa-icon margin-right-1" style="min-height: {{ icon_size }}; min-width: {{ icon_size }}" aria-hidden="true" role="img">
-        <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#list"></use>
-      </svg>
-      <div>
-        <p class="text-bold margin-y-1">Use the checklist below.</p>
-        <p class="font-body-xs margin-y-0 line-height-sans-5">Follow the "how to test" instructions for each type of assistive technology.</p>
-      </div>
-    </div>
-    <div class="{{ icon_grid_classes }} desktop:margin-left-2">
-      <svg class="usa-icon margin-right-1"  style="min-height: {{ icon_size }}; min-width: {{ icon_size }}" aria-hidden="true" role="img">
-        <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#people"></use>
-      </svg>
-      <div>
-        <p class="text-bold margin-y-1">You don't need to be an expert!</p>
-        <p class="font-body-xs margin-y-0 line-height-sans-5">Anyone can test for accessibility.</p>
-      </div>
-    </div>
-  </div>
+## Test the {{ component_name }} in your project
 
-  <h2>{{ component_name | capitalize }} accessibility checklist</h2>
-  <div class="display-flex flex-column margin-top-2 margin-bottom-4 width-mobile">
-    <a href="#zoom-magnification-tests" class="site-checklist-jump-link">
-        <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
-        </svg>
-        Zoom magnification tests
-    </a>
-    <a href="#keyboard-navigation-tests" class="site-checklist-jump-link">
-        <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
-        </svg>
-        Keyboard navigation tests
-    </a>
-    <a href="#screen-reader-tests" class="site-checklist-jump-link">
-        <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">
-            <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
-        </svg>
-        Screen reader tests
-    </a>
+USWDS tests components in isolation.
+You need to test the {{ component_name }} in the context of your own site to ensure compliance with Section 508 accessibility standards.
+
+<div class="site-checklist-intro-grid">
+  <div class="site-checklist-intro-grid__grid-item">
+    <svg class="usa-icon" aria-hidden="true" role="img">
+      <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#list"></use>
+    </svg>
+    <div>
+      <p class="site-checklist-intro-grid__summary">Use the checklist below.</p>
+      <p class="site-checklist-intro-grid__details">Follow the "how to test" instructions for each type of assistive technology.</p>
+    </div>
   </div>
+  <div class="site-checklist-intro-grid__grid-item">
+    <svg class="usa-icon" aria-hidden="true" role="img">
+      <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#people"></use>
+    </svg>
+    <div>
+      <p class="site-checklist-intro-grid__summary">You don't need to be an expert!</p>
+      <p class="site-checklist-intro-grid__details">Anyone can test for accessibility.</p>
+    </div>
+  </div>
+</div>
+
+## {{ component_name | capitalize }} accessibility checklist
+<ul class="site-checklist-jump-links">
+  <li>
+    <a href="#zoom-magnification-tests">
+      <svg class="usa-icon" aria-hidden="true" role="img">
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
+      </svg>
+      Zoom magnification tests
+    </a>
+  </li>
+  <li>
+    <a href="#screen-reader-tests">
+      <svg class="usa-icon" aria-hidden="true" role="img">
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
+      </svg>
+      Screen reader tests
+    </a>
+  </li>
+  <li>
+    <a href="#keyboard-navigation-tests">
+      <svg class="usa-icon" aria-hidden="true" role="img">
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
+      </svg>
+      Keyboard navigation tests
+    </a>
+  </li>
+</ul>

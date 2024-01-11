@@ -3599,17 +3599,80 @@ $do-dont-top-bar-width: 1;
   }
 }
 
-.site-checklist-jump-link {
-  @include u-display("flex");
-  @include u-flex("align-center");
-  @include u-padding-y("05");
-  @include u-margin-right(2);
-  @include u-text("primary-dark");
-  @include u-text("bold");
-  @include u-text("no-underline");
+.site-checklist-intro-grid {
+  @include u-margin-top(2);
+  @include u-margin-bottom(4);
+  @include u-maxw("mobile-lg");
 
-  &:visited {
-    color: color("primary-dark");
+  @include at-media("desktop") {
+    @include u-display("flex");
+    @include u-measure(6);
+  }
+
+  &__grid-item {
+    @include u-display("flex");
+    @include u-border("1px", "gray-10");
+    @include u-border-bottom(1);
+    @include u-text("gray-70");
+    @include u-padding(2);
+    @include u-bottom(3);
+    @include u-margin-top(2);
+
+    @include at-media("desktop") {
+      @include grid-col;
+      @include u-margin-top(0);
+    }
+
+    &:nth-of-type(odd) {
+      @include at-media("desktop") {
+        @include u-margin-right(2);
+      }
+    }
+  }
+
+  &__summary {
+    @include u-text("bold");
+    @include u-margin-y(1);
+  }
+
+  &__details {
+    @include u-font("body", "xs");
+    @include u-line-height("sans", 5);
+    @include u-margin-y(0);
+  }
+
+  .usa-icon {
+    @include u-margin-right(1);
+    @include u-minh(5);
+    @include u-minw(5);
+  }
+}
+
+.usa-prose .site-checklist-jump-links {
+  @include add-list-reset;
+  @include u-margin-top(2);
+
+  li {
+    @include u-margin-bottom(0);
+  }
+
+  a {
+    @include u-display("flex");
+    @include u-flex("align-center");
+    @include u-padding-y("05");
+    @include u-margin-right(2);
+    @include u-text("primary-dark");
+    @include u-text("bold");
+    @include u-text("no-underline");
+
+    &:visited {
+      color: color("primary-dark");
+    }
+  }
+
+  .usa-icon {
+    @include u-margin-right(1);
+
   }
 }
 

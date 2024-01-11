@@ -1,9 +1,9 @@
 {% assign items = component.testItems %}
-{% assign itemsTotal = 0 %}
+{% assign items_total = 0 %}
 {% for item in items %}
-  {% capture itemsTotal %}{{ itemsTotal | plus:1 }}{% endcapture %}
+  {% capture items_total %}{{ items_total | plus:1 }}{% endcapture %}
 {% endfor %}
 
 <!-- Add test summary intro -->
-<h2 class="margin-bottom-0 margin-top-1">{{ componentName | capitalize }} accessibility status</h2>
-<p class="margin-top-1 margin-bottom-0">The USWDS team did {{ itemsTotal }} tests based on WCAG 2.1 AA success criteria.</p>
+<h2 class="margin-bottom-0 margin-top-1">{{ component_name | capitalize }} accessibility status</h2>
+<p class="margin-top-1 margin-bottom-0">The USWDS team did {{ items_total }} tests based on WCAG 2.1 AA success criteria.</p>

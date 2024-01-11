@@ -1,12 +1,11 @@
-{% assign iconGridClasses = "tablet:grid-col display-flex flex-row border-gray-10 border-1px border-bottom-1 text-gray-70 padding-2 padding-bottom-3 margin-top-3 desktop:margin-top-0 " %}
-{% assign iconSize = "2.75rem" %}
+{% assign icon_grid_classes = "tablet:grid-col display-flex flex-row border-gray-10 border-1px border-bottom-1 text-gray-70 padding-2 padding-bottom-3 margin-top-3 desktop:margin-top-0 " %}
+{% assign icon_size = "2.75rem" %}
 <!-- <div class="border-left-1 border-gray-50 measure-5 margin-top-4 padding-left-4"> -->
   <h2>Test the accordion in your project</h2>
   <p>USWDS tests components in isolation. You need to test the accordion in the context of your own site to ensure compliance with Section 508 accessibility standards.</p>
-
   <div class="desktop:display-flex margin-top-2 margin-bottom-4 maxw-mobile-lg desktop:measure-6 desktop:maxw-none">
-    <div class="{{ iconGridClasses }}">
-      <svg class="usa-icon margin-right-1" style="min-height: {{ iconSize }}; min-width: {{ iconSize }}" aria-hidden="true" role="img">
+    <div class="{{ icon_grid_classes }}">
+      <svg class="usa-icon margin-right-1" style="min-height: {{ icon_size }}; min-width: {{ icon_size }}" aria-hidden="true" role="img">
         <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#list"></use>
       </svg>
       <div>
@@ -14,8 +13,8 @@
         <p class="font-body-xs margin-y-0 line-height-sans-5">Follow the "how to test" instructions for each type of assistive technology.</p>
       </div>
     </div>
-    <div class="{{ iconGridClasses }} desktop:margin-left-2">
-      <svg class="usa-icon margin-right-1"  style="min-height: {{ iconSize }}; min-width: {{ iconSize }}" aria-hidden="true" role="img">
+    <div class="{{ icon_grid_classes }} desktop:margin-left-2">
+      <svg class="usa-icon margin-right-1"  style="min-height: {{ icon_size }}; min-width: {{ icon_size }}" aria-hidden="true" role="img">
         <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#people"></use>
       </svg>
       <div>
@@ -25,8 +24,7 @@
     </div>
   </div>
 
-  <h2>Accordion accessibility checklist</h2>
-
+  <h2>{{ component_name | capitalize }} accessibility checklist</h2>
   <div class="display-flex flex-column margin-top-2 margin-bottom-4 width-mobile">
     <a href="#zoom-magnification-tests" class="site-checklist-jump-link">
         <svg class="usa-icon margin-right-1" aria-hidden="true" role="img">

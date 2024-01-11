@@ -66,17 +66,17 @@
 
     <!-- assign test status info -->
     {% if item.testStatus == 'pass' %}
-      {% assign statusText = 'Passed' %}
-      {% assign statusIcon = pass_icon %}
+      {% assign status_text = 'Passed' %}
+      {% assign status_icon = pass_icon %}
     {% elsif item.testStatus == 'pass-ish' %}
-      {% assign statusText = 'Passed with exceptions' %}
-      {% assign statusIcon = exceptions_icon %}
+      {% assign status_text = 'Passed with exceptions' %}
+      {% assign status_icon = exceptions_icon %}
     {% elsif item.testStatus == 'fail' %}
-      {% assign statusText = 'Failed' %}
-      {% assign statusIcon = fail_icon %}
+      {% assign status_text = 'Failed' %}
+      {% assign status_icon = fail_icon %}
     {% elsif item.testStatus == 'exempt' %}
-      {% assign statusText = 'Conditional' %}
-      {% assign statusIcon = conditional_icon %}
+      {% assign status_text = 'Conditional' %}
+      {% assign status_icon = conditional_icon %}
     {% endif %}
     <!-- start checklist items -->
 
@@ -94,7 +94,7 @@
           <!--Add supplemental text, based on status type-->
           {% if item.testStatus == 'pass' and item.versionFixed == site.uswds_version %}
             <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
-              <b>The {{ componentName }} component recently passed this test in version {{ item.versionFixed }}.</b><br />
+              <b>The {{ component_name }} component recently passed this test in version {{ item.versionFixed }}.</b><br />
               <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionFixed }}">
                 Read more in the {{ item.versionFixed }} release notes
               </a>.
@@ -102,7 +102,7 @@
           {% elsif item.testStatus == 'pass' %}
           {% elsif item.testStatus == 'pass-ish' %}
             <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
-              <b>The {{ componentName }} component does not pass all elements of this test.</b>
+              <b>The {{ component_name }} component does not pass all elements of this test.</b>
               {% if item.statusDetails %}
                 {{ item.statusDetails }}
                 </p>
@@ -116,7 +116,7 @@
             </p>
           {% elsif item.testStatus == 'fail' %}
             <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
-              <b>The {{ componentName }} component does not pass this test.</b>
+              <b>The {{ component_name }} component does not pass this test.</b>
               We have logged this issue and are prioritizing it.
               {% if  item.issueNumber %}
                 <a href="https://github.com/uswds/{{ item.issueRepo | default:'uswds' }}/issues/{{ item.issueNumber }}">Learn
@@ -139,19 +139,19 @@
           <!--Add tags -->
           <ul class="site-checklist-tag-list">
             {% if item.wcagCriterion %}
-              <li class="site-checklist-tag">WCAG {{ criterionLevel }}</li>
+              <li class="site-checklist-tag">WCAG {{ criterion_level }}</li>
               <li class="site-checklist-tag">
-                <a href="{{ criterionUrl }}">
-                  {{ item.wcagCriterion }} {{ criterionName }}
+                <a href="{{ criterion_url }}">
+                  {{ item.wcagCriterion }} {{ criterion_name }}
                 </a>
               </li>
             {% endif %}
             <li class="site-checklist-tag site-checklist-tag--{{ item.testStatus }} site-checklist-tag--hide-wide">
               <svg class="usa-icon site-checklist-icon--{{ item.testStatus }}"
                 aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ statusIcon }}"></use>
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ status_icon }}"></use>
               </svg>
-              USWDS test status: <b class="padding-left-05"> {{ statusText }}</b>
+              USWDS test status: <b class="padding-left-05"> {{ status_text }}</b>
             </li>
             <li class="site-checklist-tag site-checklist-tag--hide-wide">Last test: {{ version_tested }}</li>
           </ul>
@@ -161,11 +161,11 @@
             <div class="display-flex flex-align-center flex-justify-end">
               <svg class="usa-icon site-checklist-icon--{{ item.testStatus }}"
               aria-hidden="true" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ statusIcon }}"></use>
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ status_icon }}"></use>
               </svg>
               USWDS test status:
             </div>
-            <b class="padding-left-05"> {{ statusText }}</b>
+            <b class="padding-left-05"> {{ status_text }}</b>
           </li>
           <li class="site-checklist-tag">Last test: {{ version_tested }}</li>
         </ul>

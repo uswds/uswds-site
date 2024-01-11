@@ -1,7 +1,7 @@
 <!-- Set component name and find related checklist data -->
-{% assign componentName = page.component.name | default: page.title | downcase %}
-{% assign componentKey = componentName | slugify %}
-{% assign component = site.data.checklists[componentKey] %}
+{% assign component_name = page.component.name | default: page.title | downcase %}
+{% assign component_key = component_name | slugify %}
+{% assign component = site.data.checklists[component_key] %}
 
 {% include accessibility-tests/test-results-tag.html %}
 

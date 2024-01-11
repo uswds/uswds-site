@@ -3,11 +3,11 @@
 
 {:.border-top .padding-top-1 .border-gray-10}
 
-USWDS performed these tests to check the {{ componentName }}'s accessibility and usability for {{ nav_type | default: title | downcase }} navigation.
+USWDS performed these tests to check the {{ component_name }}'s accessibility and usability for {{ nav_type | default: title | downcase }} navigation.
 For help performing your own {{ title | downcase }} tests, check out the resources in the expandable section below.
 
 {% if title == "Screen reader" %}
-  {% assign title="screen readers" %}
+  {% assign title = "screen readers" %}
 {% endif %}
 <div class="usa-accordion measure-5">
   <h4 class="usa-accordion__heading">

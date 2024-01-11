@@ -1,6 +1,7 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
+{% assign checklistData = site.data.checklists[componentKey] %}
 
 {% assign guidancePath = page.guidancePath | default: "guidance" %}
 
@@ -28,7 +29,9 @@
   {%- include_relative {{guidancePath}}/usability.md -%}
 {%- endcapture -%}
 {%- capture accessibility -%}
+  {% if checklistData %}
   {% include accessibility-tests/a11y-note.html %}
+  {% endif %}
   {{- guidanceFormat }}
   {%- include_relative {{guidancePath}}/accessibility.md -%}
 {%- endcapture -%}

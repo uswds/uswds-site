@@ -31,9 +31,9 @@
 {% include component-preview-and-code.html %}
 {% include component-guidance.html %}
 {% if component %}
-  {% include accessibility-tests/test-results-intro-main.html %}
+  {% include accessibility-tests/test-results-intro.html page='main' %}
   {% include accessibility-tests/test-results-table.html %}
-  <p>Learn more on the <a href="{{ site.baseurl }}/components/accordion/checklist">{{ componentName | downcase }} accessibility tests page</a>.</p>
+  {% include accessibility-tests/test-results-learn-more.html %}
 {% endif %}
 {% include known-issues.html %}
 {% if page.component.package %}

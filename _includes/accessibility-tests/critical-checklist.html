@@ -1,0 +1,23 @@
+<!-- Set component name and find related checklist data -->
+{% assign componentName = page.component.name | default: page.title | downcase %}
+{% assign componentKey = componentName | slugify %}
+{% assign component = site.data.checklists[componentKey] %}
+
+{% include accessibility-tests/test-results-tag.html %}
+
+<!--Add test results summary-->
+<div class="bg-gray-5 padding-y-1 padding-x-4 measure-6">
+    {% include accessibility-tests/test-results-intro.html %}
+    {% include accessibility-tests/test-results-table.html %}
+</div>
+
+<!--Add "how to test" instructions-->
+{% include accessibility-tests/how-to-test.html %}
+
+<!--Add checklist items-->
+{% include accessibility-tests/checklist.html type='zoom' %}
+{% include accessibility-tests/checklist.html type='keyboard' %}
+{% include accessibility-tests/checklist.html type='screenReader' %}
+
+<!--Add feedback section-->
+{% include accessibility-tests/checklist-feedback.html %}

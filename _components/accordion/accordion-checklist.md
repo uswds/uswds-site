@@ -13,4 +13,4 @@ changelog:
   key: 'component-accordion-checklist'
 ---
 
-{% include critical-checklist/critical-checklist.html %}
+{% include accessibility-tests/critical-checklist.html %}

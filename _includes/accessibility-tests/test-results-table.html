@@ -6,16 +6,16 @@
 {% assign statusTypes = "Passed, Passed with exceptions, Conditional, Failed" | split: ", " %}
 
 <!-- Set status icons -->
-{% assign passIcon = 'check_circle' %}
-{% assign passIshIcon = 'warning' %}
-{% assign failIcon = 'cancel' %}
-{% assign conditionalIcon = 'info' %}
+{% assign pass_icon = 'check_circle' %}
+{% assign exceptions_icon = 'warning' %}
+{% assign fail_icon = 'cancel' %}
+{% assign conditional_icon = 'info' %}
 
 <!-- Count the number of items for each status type -->
 {% assign items = component.testItems %}
 {% assign itemsTotal = 0 %}
 {% assign itemsPass = 0 %}
-{% assign itemsPassIsh = 0 %}
+{% assign itemsException = 0 %}
 {% assign itemsFail = 0 %}
 {% assign itemsExempt = 0 %}
 {% for item in items %}
@@ -23,7 +23,7 @@
   {% if item.testStatus == "pass" %}
     {% capture itemsPass %}{{ itemsPass | plus:1 }}{% endcapture %}
   {% elsif item.testStatus == "pass-ish" %}
-    {% capture itemsPassIsh %}{{ itemsPassIsh | plus:1 }}{% endcapture %}
+    {% capture itemsException %}{{ itemsException | plus:1 }}{% endcapture %}
   {% elsif item.testStatus == "fail" %}
     {% capture itemsFail %}{{ itemsFail | plus:1 }}{% endcapture %}
   {% elsif item.testStatus == "exempt" %}
@@ -44,16 +44,16 @@
       <th class="border-{{ borderColor }} bg-{{ headerBackgroundColor }}">Total tests</th>
       {% for status in statusTypes %}
         {% if status == "Passed" %}
-          {% assign statusIcon = passIcon %}
+          {% assign statusIcon = pass_icon %}
           {% assign iconColor = "pass" %}
         {% elsif status == "Passed with exceptions" %}
-          {% assign statusIcon = passIshIcon %}
+          {% assign statusIcon = exceptions_icon %}
           {% assign iconColor = "pass-ish" %}
         {% elsif status == "Conditional" %}
-          {% assign statusIcon = conditionalIcon %}
+          {% assign statusIcon = conditional_icon %}
           {% assign iconColor = "exempt" %}
         {% elsif status == "Failed" %}
-          {% assign statusIcon = failIcon %}
+          {% assign statusIcon = fail_icon %}
           {% assign iconColor = "fail" %}
         {% endif %}
         <th class="border-{{ borderColor }} bg-{{ headerBackgroundColor }}">
@@ -74,7 +74,7 @@
         {% if status == "Passed" %}
           {% assign itemCount = itemsPass %}
         {% elsif status == "Passed with exceptions" %}
-          {% assign itemCount = itemsPassIsh %}
+          {% assign itemCount = itemsException %}
         {% elsif status == "Failed" %}
           {% assign itemCount = itemsFail %}
         {% elsif status == "Conditional" %}
@@ -93,22 +93,22 @@
   <ul class="usa-icon-list margin-top-0">
     {% for status in statusTypes %}
       {% if status == "Passed" %}
-        {% assign statusIcon = passIcon %}
+        {% assign statusIcon = pass_icon %}
         {% assign iconColor = "pass" %}
         {% assign itemCount = itemsPass %}
         {% assign statusText = "Passed" %}
       {% elsif status == "Passed with exceptions" %}
-        {% assign statusIcon = passIshIcon %}
+        {% assign statusIcon = exceptions_icon %}
         {% assign iconColor = "pass-ish" %}
-        {% assign itemCount = itemsPassIsh %}
+        {% assign itemCount = itemsException %}
         {% assign statusText = "Passed with exceptions" %}
       {% elsif status == "Failed" %}
-        {% assign statusIcon = failIcon %}
+        {% assign statusIcon = fail_icon %}
         {% assign iconColor = "fail" %}
         {% assign itemCount = itemsFail %}
         {% assign statusText = "Failed" %}
       {% elsif status == "Conditional" %}
-        {% assign statusIcon = conditionalIcon %}
+        {% assign statusIcon = conditional_icon %}
         {% assign iconColor = "exempt" %}
         {% assign itemCount = itemsExempt %}
         {% assign statusText = "Conditional" %}

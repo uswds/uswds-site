@@ -28,7 +28,7 @@
   {%- include_relative {{guidancePath}}/usability.md -%}
 {%- endcapture -%}
 {%- capture accessibility -%}
-  {% include critical-checklist/a11y-note.html %}
+  {% include accessibility-tests/a11y-note.html %}
   {{- guidanceFormat }}
   {%- include_relative {{guidancePath}}/accessibility.md -%}
 {%- endcapture -%}

@@ -23,7 +23,7 @@
 {% endif %}
 
 <!--Add test results summary-->
-{% include critical-checklist/test-results-tag.html %}
+{% include accessibility-tests/test-results-tag.html %}
 
 {% if issues %}
   {% include known-issues-alert.html %}
@@ -31,8 +31,8 @@
 {% include component-preview-and-code.html %}
 {% include component-guidance.html %}
 {% if component %}
-  {% include critical-checklist/test-results-intro-main.html %}
-  {% include critical-checklist/test-results-table.html %}
+  {% include accessibility-tests/test-results-intro-main.html %}
+  {% include accessibility-tests/test-results-table.html %}
   <p>Learn more on the <a href="{{ site.baseurl }}/components/accordion/checklist">{{ componentName | downcase }} accessibility tests page</a>.</p>
 {% endif %}
 {% include known-issues.html %}

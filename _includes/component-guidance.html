@@ -29,9 +29,6 @@
   {%- include_relative {{guidancePath}}/usability.md -%}
 {%- endcapture -%}
 {%- capture accessibility -%}
-  {% if checklistData %}
-  {% include accessibility-tests/a11y-note.html %}
-  {% endif %}
   {{- guidanceFormat }}
   {%- include_relative {{guidancePath}}/accessibility.md -%}
 {%- endcapture -%}
@@ -92,8 +89,11 @@
   {% endif %}
   {% if accessibility.size > guidanceNullLength %}
     <h3 id="accessibility-{{ componentKey }}" class="usa-heading">
-      Accessibility
+      Accessibility guidance
     </h3>
+    {% if checklistData %}
+    {% include accessibility-tests/a11y-note.html %}
+    {% endif %}
     {{ accessibility | markdownify }}
   {% endif %}
   {% if related.size > guidanceNullLength %}

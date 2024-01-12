@@ -14,11 +14,11 @@ For help performing your own {{ title | downcase }} tests, check out the resourc
   </h4>
   <div id="{{ title | slugify | append:'-how-to'}}" class="usa-accordion__content usa-prose border-1px border-gray-5 border-top-none">
     {% if title == "Zoom magnification" %}
-      {% include accessibility-tests/instructions-zoom.html %}
+      {% include accessibility-tests/how-to-zoom.html %}
     {% elsif title == "screen readers" %}
-      {% include accessibility-tests/instructions-screen-reader.html %}
+      {% include accessibility-tests/how-to-screen-reader.html %}
     {% elsif title == "Keyboard navigation" %}
-      {% include accessibility-tests/instructions-keyboard.html %}
+      {% include accessibility-tests/how-to-keyboard.html %}
     {% endif %}
   </div>
 </div>

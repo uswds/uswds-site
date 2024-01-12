@@ -31,7 +31,7 @@
 {% assign keyboard_tests = component.testItems | where: 'testType', "keyboard" %}
 {% assign screen_reader_tests = component.testItems | where: 'testType', "screenReader" %}
 
-{% include accessibility-tests/test-results-tag.html %}
+{% include accessibility-tests/compliance-tag.html %}
 
 <!--Add test results summary-->
 {% include accessibility-tests/test-results-table.html page='checklist' %}

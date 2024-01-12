@@ -1,0 +1,76 @@
+title: Button
+component_status: pass
+testItems:
+# General items
+  - summary: Buttons text conveys its meaning.
+    summaryAdditional: |
+      When you view the button on a page and determine the button's purpose,
+      the text (not color alone) conveys the button's meaning.
+    testStatus: conditional
+    testType: general
+    versionTested: 3.7.1
+    wcagCriterion: 1.4.1
+  - summary: Buttons meet color contrast requirements.
+    summaryAdditional: |
+      When you view the button on a page and use ANDI or color contrast analyzer to look at the hex colors,
+      contrast between the button background and text is at least 4.5:1.
+    testStatus: pass
+    testType: general
+    versionTested: 3.7.1
+    wcagCriterion: 1.4.3
+  - summary: Buttons are at least 44 pixels wide.
+    summaryAdditional: |
+      When you right click on the button and select "inspect element" to review the button's computed value,
+      the width of the button is at least 44 px.
+    testStatus: pass
+    testType: general
+    versionTested: 3.7.1
+    wcagCriterion: 2.5.5
+# Zoom/screen magnification items
+  - summary: Buttons are visible and functional when screen is magnified.
+    summaryAdditional: When you zoom the screen to 200%, you can scroll through buttons with no loss of information.
+    testStatus: exceptions
+    testType: conditional
+    versionTested: 3.7.1
+    wcagCriterion: 1.4.10
+# Keyboard navigation items
+  - summary: Buttons do not trap focus.
+    summaryAdditional: |
+      When you use a keyboard to tab into a button and click `tab` again,
+      you don't get stuck in the button.
+    testStatus: pass
+    testType: keyboard
+    versionTested: 3.7.1
+    wcagCriterion: 2.1.2
+  - summary: Focus indicators are clearly visible.
+    summaryAdditional: |
+      When you use a keyboard to tab into a button, the button has blue outline and visible indicator.
+    testStatus: pass
+    testType: keyboard
+    versionTested: 3.7.1
+    wcagCriterion: 2.4.7
+  - summary: Focus indicators have proper size, perimeter, and contrast.
+    summaryAdditional: |
+      When you use a keyboard to tab into a button, the focus indicator has proper size, perimeter and contrast.
+    testStatus: pass
+    testType: keyboard
+    versionTested: 3.7.1
+    wcagCriterion: 2.4.13
+# Screen reader items
+  - summary: Screen reader announces buttons in the same order that they appear on the page.
+    summaryAdditional: |
+      When you use a screen reader and navigate from button to button on a page (using the `B` shortcut key or `tab` key),
+      you hear the buttons announced in the same order that they appear on the page.
+    testStatus: pass
+    testType: screenReader
+    versionTested: 3.7.1
+    wcagCriterion: 1.3.2
+  - summary: Screen reader announces the button role.
+    summaryAdditional: |
+      When you use a screen reader and navigate from button to button on a page (using the `B` shortcut key or `tab` key),
+      you hear the role "button".
+    testStatus: pass
+    testType: screenReader
+    versionTested: 3.7.1
+    wcagCriterion: 4.1.2
+

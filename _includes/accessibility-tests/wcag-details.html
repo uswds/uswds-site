@@ -3,15 +3,30 @@
   {% assign criterion_name = "Info and relationships" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#info-and-relationships" %}
 {% endif %}
+{% if item.wcagCriterion == "1.3.2" %}
+  {% assign criterion_level = "A" %}
+  {% assign criterion_name = "Meaningful sequence" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#meaningful-sequence" %}
+{% endif %}
 {% if item.wcagCriterion == "1.4.1" %}
   {% assign criterion_level = "A" %}
   {% assign criterion_name = "Use of color" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#use-of-color" %}
 {% endif %}
+{% if item.wcagCriterion == "1.4.3" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Contrast (Minimum)" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#contrast-minimum" %}
+{% endif %}
 {% if item.wcagCriterion == "1.4.4" %}
   {% assign criterion_level = "AA" %}
   {% assign criterion_name = "Resize text" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#resize-text" %}
+{% endif %}
+{% if item.wcagCriterion == "1.4.10" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Reflow" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#reflow" %}
 {% endif %}
 {% if item.wcagCriterion == "2.1.1" %}
   {% assign criterion_level = "A" %}
@@ -37,4 +52,19 @@
   {% assign criterion_level = "AA" %}
   {% assign criterion_name = "Focus visible" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#focus-visible" %}
+{% endif %}
+{% if item.wcagCriterion == "2.4.13" %}
+  {% assign criterion_level = "AAA" %}
+  {% assign criterion_name = "Focus appearance (2.2)" %}
+  {% assign criterion_url = "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html" %}
+{% endif %}
+{% if item.wcagCriterion == "2.5.5" %}
+  {% assign criterion_level = "AAA" %}
+  {% assign criterion_name = "Target size" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#target-size" %}
+{% endif %}
+{% if item.wcagCriterion == "4.1.2" %}
+  {% assign criterion_level = "A" %}
+  {% assign criterion_name = "Name, role, value" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#name-role-value" %}
 {% endif %}

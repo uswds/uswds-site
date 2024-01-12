@@ -3611,6 +3611,7 @@ $do-dont-top-bar-width: 1;
 }
 
 .site-checklist-status-list {
+  @include u-margin(0);
   @include u-padding-bottom(2);
   @include u-padding-top(1);
 

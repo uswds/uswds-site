@@ -3,7 +3,7 @@ component_status: pass
 testItems:
 # General items
   - summary: Color is not the only method used to indicate links.
-    summaryAdditional: When you view the link and determine what your link's location is you can tell where the link is without relying on color.
+    summaryAdditional: When you view the link and determine what your link's location is, you can tell where the link is without relying on color.
     testStatus: pass
     testType: general
     versionTested:
@@ -22,8 +22,8 @@ testItems:
     testType: keyboard
     versionTested:
     wcagCriterion: 2.1.1
-  - summary: Visible focus indicators such as an underline, bold, or other styling are used to indicate links.
-    summaryAdditional: When using the tab key and navigating between links a focus indicator appears around each link that gets selected.
+  - summary: Focus indicator is clearly visible on links.
+    summaryAdditional: When using the tab key and navigating between links, a focus indicator appears around each link that gets selected.
     testStatus: pass
     testType: keyboard
     versionTested:

@@ -112,7 +112,7 @@ testItems:
     wcagCriterion: 2.4.3
   - summary: Heading levels are logical.
     summaryAdditional: When you use a screen reader and navigate through the accordion panel headings, the heading levels are the correct level for the page outline.
-    testStatus: exempt
+    testStatus: conditional
     testType: screenReader
     statusDetails: This can only be tested in the context of your page.
     versionTested: 3.5.0
@@ -121,16 +121,16 @@ testItems:
     summaryAdditional: |
       When you use a screen reader and navigate through the accordion panel headings, each accordion panel's heading level is the same.
       (Typically this is a heading level 2 or 3.)
-    testStatus: exempt
+    testStatus: conditional
     testType: screenReader
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "collapsed" state.
-    summaryAdditional: When you use a screen reader and navigate to a closed panel, the screen reader announces that the content is "collapsed".
+    summaryAdditional: When you use a screen reader and navigate to a closed panel, the screen reader announces that the content is "collapsed."
     testStatus: exception
     testType: screenReader
     statusDetails: |
-      In JAWS, the readout says "to activate press enter" instead of "collapsed". It works as expected in other screen readers.
+      In JAWS, the readout says "to activate press enter" instead of "collapsed." It works as expected in other screen readers.
     issueNumber: 2368
     issueRepo: uswds-site
     versionTested: 3.5.0
@@ -152,7 +152,7 @@ testItems:
     versionTested: 3.5.0
     wcagCriterion: 2.4.6
   - summary: Screen reader announces "collapsed" state with expected keys.
-    summaryAdditional: When you use a screen reader and use the `enter` key or the `spacebar` on an open panel, the screen reader announces that the content is "collapsed".
+    summaryAdditional: When you use a screen reader and use the `enter` key or the `spacebar` on an open panel, the screen reader announces that the content is "collapsed."
     testStatus: pass
     testType: screenReader
     versionTested: 3.5.0

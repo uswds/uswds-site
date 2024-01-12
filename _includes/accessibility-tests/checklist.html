@@ -59,7 +59,7 @@
     {% elsif item.testStatus == 'fail' %}
       {% assign status_text = 'Failed' %}
       {% assign status_icon = fail_icon %}
-    {% elsif item.testStatus == 'exempt' %}
+    {% elsif item.testStatus == 'conditional' %}
       {% assign status_text = 'Conditional' %}
       {% assign status_icon = conditional_icon %}
     {% endif %}
@@ -108,7 +108,7 @@
                   more about this issue on GitHub</a>.
               {% endif %}
             </p>
-          {% elsif item.testStatus == 'exempt' %}
+          {% elsif item.testStatus == 'conditional' %}
             <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
               <b>{{ item.statusDetails | default:"This can only be tested in your implementation of the component."}}</b>
               Be sure to test this in your project.

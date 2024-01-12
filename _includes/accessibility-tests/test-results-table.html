@@ -13,11 +13,13 @@
 
 <!-- Count the number of items for each status type -->
 {% assign items = component.testItems %}
+
 {% assign items_total = 0 %}
 {% assign items_pass = 0 %}
 {% assign items_exception = 0 %}
 {% assign items_fail = 0 %}
-{% assign items_exempt = 0 %}
+{% assign items_conditional = 0 %}
+
 {% for item in items %}
   {% capture items_total %}{{ items_total | plus:1 }}{% endcapture %}
   {% if item.testStatus == "pass" %}
@@ -26,8 +28,8 @@
     {% capture items_exception %}{{ items_exception | plus:1 }}{% endcapture %}
   {% elsif item.testStatus == "fail" %}
     {% capture items_fail %}{{ items_fail | plus:1 }}{% endcapture %}
-  {% elsif item.testStatus == "exempt" %}
-    {% capture items_exempt %}{{ items_exempt | plus:1 }}{% endcapture %}
+  {% elsif item.testStatus == "conditional" %}
+    {% capture items_conditional %}{{ items_conditional | plus:1 }}{% endcapture %}
   {% endif %}
 {% endfor %}
 
@@ -60,7 +62,7 @@
             {% assign icon_color = "exception" %}
           {% elsif status == "Conditional" %}
             {% assign status_icon = conditional_icon %}
-            {% assign icon_color = "exempt" %}
+            {% assign icon_color = "conditional" %}
           {% elsif status == "Failed" %}
             {% assign status_icon = fail_icon %}
             {% assign icon_color = "fail" %}
@@ -87,7 +89,7 @@
           {% elsif status == "Failed" %}
             {% assign item_count = items_fail %}
           {% elsif status == "Conditional" %}
-            {% assign item_count = items_exempt %}
+            {% assign item_count = items_conditional %}
           {% endif %}
           <td class="border-{{ borderColor }}">{{ item_count | default:0 }}</td>
         {% endfor %}
@@ -118,8 +120,8 @@
           {% assign status_text = "Failed" %}
         {% elsif status == "Conditional" %}
           {% assign status_icon = conditional_icon %}
-          {% assign icon_color = "exempt" %}
-          {% assign item_count = items_exempt %}
+          {% assign icon_color = "conditional" %}
+          {% assign item_count = items_conditional %}
           {% assign status_text = "Conditional" %}
         {% endif %}
 
@@ -143,4 +145,6 @@
   </div>
 {% if include.page == 'checklist' %}
 </div>
-{%  endif %}
+{% elsif include.page == 'main' %}
+<p>Learn more on the <a href="{{ site.baseurl }}/components/{{ componentName }}/checklist">{{ componentName }} accessibility tests page</a>.</p>
+{% endif %}

@@ -3746,7 +3746,7 @@ $do-dont-top-bar-width: 1;
   border-color: color("red-20v");
   background-color: color("red-20v");
 }
-.site-checklist-tag--exempt {
+.site-checklist-tag--conditional {
   border-color: color("blue-cool-10");
   background-color: color("blue-cool-10");
 }
@@ -3770,7 +3770,7 @@ $do-dont-top-bar-width: 1;
 .site-checklist-text--fail a:visited {
   color: color("red-70v");
 }
-.site-checklist-text--exempt {
+.site-checklist-text--conditional {
   color: color("blue-cool-60");
 }
 
@@ -3783,7 +3783,7 @@ $do-dont-top-bar-width: 1;
 .site-checklist-icon--fail {
   color: color("orange-warm-60v");
 }
-.site-checklist-icon--exempt {
+.site-checklist-icon--conditional {
   color: color("blue-cool-60");
 }
 

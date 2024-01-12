@@ -1,13 +1,13 @@
 <!-- Add compliance tag -->
 {% if component.component_status == "pass" %}
 <p class="margin-top-0 margin-bottom-6">
-    <span class="usa-tag usa-tag--big site-checklist--pass text-no-uppercase padding-x-1 padding-y-05">
+    <span class="usa-tag usa-tag--big site-compliance-tag site-compliance-tag--pass">
         USWDS test status: Passed WCAG 2.1 AA
     </span>
 </p>
 {% elsif component.component_status == "fail" %}
 <p class="margin-top-0 margin-bottom-6">
-    <span class="usa-tag usa-tag--big site-checklist--fail text-no-uppercase padding-x-1 padding-y-05">
+    <span class="usa-tag usa-tag--big site-compliance-tag site-compliance-tag--fail">
         USWDS test status: Did not pass WCAG 2.1 AA
     </span>
 </p>

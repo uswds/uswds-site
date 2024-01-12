@@ -3699,12 +3699,7 @@ $do-dont-top-bar-width: 1;
 
   .usa-icon {
     @include u-margin-right(1);
-
   }
-}
-
-.site-checklist-intro-header {
-  scroll-margin-top: 3rem;
 }
 
 .site-checklist-tag-list {
@@ -3760,8 +3755,12 @@ $do-dont-top-bar-width: 1;
 }
 
 .site-checklist-checklist {
-  @include u-margin-top(2);
-  @include u-maxw("tablet-lg");
+  @include u-margin-top(0);
+  @include u-measure(5);
+
+  @include at-media("widescreen") {
+    @include u-maxw("tablet-lg");
+  }
 
   .usa-checkbox {
     @include u-border-top("1px", "gray-10");
@@ -3848,9 +3847,15 @@ $do-dont-top-bar-width: 1;
   color: color("blue-cool-60");
 }
 
-.site-checklist--pass {
+.site-compliance-tag {
+  @include u-text("no-uppercase");
+  @include u-padding-x(1);
+  @include u-padding-y("05");
+}
+
+.site-compliance-tag--pass {
   background-color: color("green-cool-50");
 }
-.site-checklist--fail {
+.site-compliance-tag--fail {
   background-color: color("red-50");
 }

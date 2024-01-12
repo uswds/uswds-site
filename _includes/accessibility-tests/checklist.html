@@ -1,4 +1,3 @@
-{% assign nav_type = title %}
 {% if include.type == "general" %}
   {% assign title = "General"%}
   {% assign items = general_tests %}
@@ -6,7 +5,6 @@
 {% if include.type == "keyboard" %}
   {% assign title = "Keyboard navigation"%}
   {% assign items = keyboard_tests %}
-  {% assign nav_type = "keyboard" %}
 {% endif %}
 {% if include.type == "zoom" %}
   {% assign title = "Zoom magnification"%}
@@ -15,9 +13,10 @@
 {% if include.type == "screenReader" %}
   {% assign title = "Screen reader"%}
   {% assign items = screen_reader_tests %}
+  {% assign AT_type = "screen readers" %}
 {% endif %}
 
-<h3 class="site-checklist-intro-header">{{ title }} tests</h3>
+<h3 style="scroll-margin-top: 2.75rem;">{{ title }} tests</h3>
 
 <!--
   Add checklist intro

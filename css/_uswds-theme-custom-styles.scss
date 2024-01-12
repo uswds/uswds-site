@@ -3737,7 +3737,7 @@ $do-dont-top-bar-width: 1;
   }
 }
 
-.site-checklist-tag {
+.site-checklist-tag-list .site-checklist-tag {
   @include u-border("1px", "gray-10");
   @include u-font("body", "3xs");
   @include u-margin-bottom(1);
@@ -3752,6 +3752,11 @@ $do-dont-top-bar-width: 1;
     @include u-width(2);
     @include u-margin-right("05");
   }
+
+  // Safari fix
+  a {
+    display: flex;
+  }
 }
 
 .site-checklist-checklist {
@@ -3765,7 +3770,7 @@ $do-dont-top-bar-width: 1;
   .usa-checkbox {
     @include u-border-top("1px", "gray-10");
     @include u-margin-top(1);
-    background-color:unset;
+    background-color: unset;
   }
 
   .usa-checkbox__label {
@@ -3777,9 +3782,9 @@ $do-dont-top-bar-width: 1;
 
   .usa-checkbox__label::before {
     box-shadow: color("gray-70");
-    height:.9rem;
-    width:.9rem;
-    margin-top: .35rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-top: 0.35rem;
   }
 }
 

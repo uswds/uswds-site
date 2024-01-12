@@ -130,7 +130,7 @@
             </svg>
           </div>
           <div class="usa-icon-list__content">
-            <b>Tests {{ status_text | default:status | downcase }}:</b> {{ item_count }}
+            <b>{{ status_text | default:status | capitalize }}:</b> {{ item_count }}
           </div>
         </li>
       {% endfor %}

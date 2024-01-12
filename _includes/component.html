@@ -32,7 +32,7 @@
 {% include component-guidance.html %}
 <!--Add accessibility test results-->
 {% if component %}
-  {% include accessibility-tests/test-results-table.html page='main' %}
+  {% include accessibility-tests/test-results-summary.html page='main' %}
 {% endif %}
 {% include known-issues.html %}
 {% if page.component.package %}

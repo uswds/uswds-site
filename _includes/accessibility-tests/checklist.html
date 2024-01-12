@@ -17,15 +17,18 @@
   {% assign items = screen_reader_tests %}
 {% endif %}
 
-<!--Add checklist intro-->
 <h3 class="site-checklist-intro-header">{{ title }} tests</h3>
 
+<!--
+  Add checklist intro
+  Note: "general" does not have an intro or how-to instructions
+-->
 {% unless include.type == "general" %}
   {% include accessibility-tests/checklist-intros.html %}
 {% endunless %}
 
 <!--Add checklist items-->
-<fieldset class="usa-fieldset site-checklist-checklist">
+<fieldset class="usa-fieldset site-checklist-checklist margin-top-1">
   <legend class="usa-legend usa-sr-only">Select passing tests</legend>
 
   {% for item in items %}

@@ -5,7 +5,7 @@
 | Key               | Description                                          | Optional | Value type | Standard values                   | Displayed |
 | :---------------- | :--------------------------------------------------- | -------- | ---------- | --------------------------------- | --------- |
 | title             | Component name                                       | no       | string     | N/A                               | No        |
-| componentStatus   | WCAG status for entire component                     | no       | string     | pass, fail                        | Yes       |
+| component_status   | WCAG status for entire component                     | no       | string     | pass, fail                        | Yes       |
 | summary           | Short description of the test                        | no       | string     | N/A                               | yes       |
 | summaryAdditional | Additional description of the test                   | no       | string     | N/A                               | yes       |
 | testStatus        | Outcome of the individual test                       | no       | string     | pass, fail, conditional, exception | yes       |
@@ -21,7 +21,7 @@
 3. Copy the following template into the file:
 ```yaml
 title:
-componentStatus:
+component_status:
 testItems:
 # Zoom/screen magnification items
   - summary:

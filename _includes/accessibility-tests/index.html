@@ -1,7 +1,35 @@
+<style>
+    .usa-checkbox__label {
+      padding-left: 1.75rem;
+    }
+    .usa-checkbox__label::before {
+      box-shadow: #454545;
+      height:.9rem;
+      width:.9rem;
+      margin-top: .35rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+
 <!-- Set component name and find related checklist data -->
 {% assign component_name = page.component.name | default: page.title | downcase %}
 {% assign component_key = component_name | slugify %}
 {% assign component = site.data.checklists[component_key] %}
+
+<!-- Assign test items by assistive technology type -->
+{% assign general_tests = component.testItems | where: 'testType', "general" %}
+{% assign zoom_tests = component.testItems | where: 'testType', "zoom" %}
+{% assign keyboard_tests = component.testItems | where: 'testType', "keyboard" %}
+{% assign screen_reader_tests = component.testItems | where: 'testType', "screenReader" %}
 
 {% include accessibility-tests/test-results-tag.html %}
 
@@ -9,12 +37,23 @@
 {% include accessibility-tests/test-results-table.html page='checklist' %}
 
 <!--Add "how to test" instructions-->
-{% include accessibility-tests/how-to-test.html %}
+{% include accessibility-tests/page-intro.html %}
 
 <!--Add checklist items-->
-{% include accessibility-tests/checklist.html type='zoom' %}
-{% include accessibility-tests/checklist.html type='keyboard' %}
-{% include accessibility-tests/checklist.html type='screenReader' %}
+{% include accessibility-tests/jump-links.html %}
+
+{% if general_tests != empty %}
+    {% include accessibility-tests/checklist.html type='general' %}
+{% endif %}
+{% if zoom_tests != empty %}
+    {% include accessibility-tests/checklist.html type='zoom' %}
+{% endif %}
+{% if keyboard_tests != empty %}
+    {% include accessibility-tests/checklist.html type='keyboard' %}
+{% endif %}
+{% if screen_reader_tests != empty %}
+    {% include accessibility-tests/checklist.html type='screenReader' %}
+{% endif  %}
 
 <!--Add feedback section-->
 {% include accessibility-tests/checklist-feedback.html %}

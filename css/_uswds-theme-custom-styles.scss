@@ -3677,6 +3677,9 @@ $do-dont-top-bar-width: 1;
 }
 
 .site-checklist-intro-header{
+  @include u-border("1px", "gray-10");
+  @include u-padding-top(1);
+  @include u-measure(5);
   scroll-margin-top: 3rem;
 }
 

@@ -1,41 +1,21 @@
-<style>
-  .usa-checkbox__label {
-    padding-left: 1.75rem;
-  }
-  .usa-checkbox__label::before {
-    box-shadow: #454545;
-    height:.9rem;
-    width:.9rem;
-    margin-top: .35rem;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  @media screen and (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
-</style>
-
-<!-- set section titles and descriptions -->
 {% assign nav_type = title %}
+{% if include.type == "general" %}
+  {% assign title = "General"%}
+  {% assign items = general_tests %}
+{% endif %}
 {% if include.type == "keyboard" %}
   {% assign title = "Keyboard navigation"%}
-  {% assign items = component.testItems | where: 'testType', "keyboard" %}
+  {% assign items = keyboard_tests %}
   {% assign nav_type = "keyboard" %}
 {% endif %}
 {% if include.type == "zoom" %}
   {% assign title = "Zoom magnification"%}
-  {% assign items = component.testItems | where: 'testType', "zoom" %}
+  {% assign items = zoom_tests %}
 {% endif %}
 {% if include.type == "screenReader" %}
   {% assign title = "Screen reader"%}
-  {% assign items = component.testItems | where: 'testType', "screenReader" %}
+  {% assign items = screen_reader_tests %}
 {% endif %}
-
 
 <!-- Set shared status icons -->
 {% assign pass_icon = 'check_circle' %}
@@ -44,7 +24,12 @@
 {% assign conditional_icon = 'info' %}
 
 <!--Add checklist intro-->
-{% include accessibility-tests/checklist-intros.html %}
+{:.site-checklist-intro-header}
+### {{ title }} tests
+
+{% unless include.type == "general" %}
+  {% include accessibility-tests/checklist-intros.html %}
+{% endunless %}
 
 <!--Add checklist items-->
 <fieldset class="usa-fieldset margin-top-2 maxw-tablet-lg">
@@ -78,11 +63,11 @@
       {% assign status_text = 'Conditional' %}
       {% assign status_icon = conditional_icon %}
     {% endif %}
-    <!-- start checklist items -->
 
+    <!-- start checklist items -->
     <div class="usa-checkbox border-top-1px border-gray-10 margin-top-1" style="background-color:unset">
       <!-- Add text content -->
-      <input class="usa-checkbox__input" id="{{ checkboxID }}" type="checkbox" name="historical-figures"
+      <input class="usa-checkbox__input" id="{{ checkboxID }}" type="checkbox" name="accessibility-tests"
         value='{{ item.summary }}' />
       <label class="usa-checkbox__label margin-bottom-1 display-flex flex-row flex-justify" for="{{ checkboxID }}">
         <div class="measure-5">

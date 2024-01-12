@@ -17,22 +17,15 @@
   {% assign items = screen_reader_tests %}
 {% endif %}
 
-<!-- Set shared status icons -->
-{% assign pass_icon = 'check_circle' %}
-{% assign exceptions_icon = 'warning' %}
-{% assign fail_icon = 'cancel' %}
-{% assign conditional_icon = 'info' %}
-
 <!--Add checklist intro-->
-{:.site-checklist-intro-header}
-### {{ title }} tests
+<h3 class="site-checklist-intro-header">{{ title }} tests</h3>
 
 {% unless include.type == "general" %}
   {% include accessibility-tests/checklist-intros.html %}
 {% endunless %}
 
 <!--Add checklist items-->
-<fieldset class="usa-fieldset margin-top-2 maxw-tablet-lg">
+<fieldset class="usa-fieldset site-checklist-checklist">
   <legend class="usa-legend usa-sr-only">Select passing tests</legend>
 
   {% for item in items %}
@@ -47,7 +40,7 @@
     {% endif %}
 
     <!--Set unique id for checkboxes-->
-    {% assign checkboxID = item.summary | slugify %}
+    {% assign checkbox_id = item.summary | slugify %}
 
     <!-- assign test status info -->
     {% if item.testStatus == 'pass' %}
@@ -65,33 +58,32 @@
     {% endif %}
 
     <!-- start checklist items -->
-    <div class="usa-checkbox border-top-1px border-gray-10 margin-top-1" style="background-color:unset">
+    <div class="usa-checkbox">
       <!-- Add text content -->
-      <input class="usa-checkbox__input" id="{{ checkboxID }}" type="checkbox" name="accessibility-tests"
+      <input class="usa-checkbox__input" id="{{ checkbox_id }}" type="checkbox" name="accessibility-tests"
         value='{{ item.summary }}' />
-      <label class="usa-checkbox__label margin-bottom-1 display-flex flex-row flex-justify" for="{{ checkboxID }}">
+      <label class="usa-checkbox__label" for="{{ checkbox_id }}">
         <div class="measure-5">
           <!--Add summaries-->
-          <p class="margin-bottom-1 margin-top-0 line-height-sans-6">
+          <p class="site-checklist-text">
             <strong>{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
             {{ item.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
           </p>
           <!--Add supplemental text, based on status type-->
           {% if item.testStatus == 'pass' and item.versionFixed == site.uswds_version %}
-            <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
+            <p class="site-checklist-status-text site-checklist-text--{{ item.testStatus }}">
               <b>The {{ component_name }} component recently passed this test in version {{ item.versionFixed }}.</b><br />
               <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionFixed }}">
                 Read more in the {{ item.versionFixed }} release notes
               </a>.
             </p>
-          {% elsif item.testStatus == 'pass' %}
           {% elsif item.testStatus == 'exception' %}
-            <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
+            <p class="site-checklist-status-text site-checklist-text--{{ item.testStatus }}">
               <b>The {{ component_name }} component does not pass all elements of this test.</b>
               {% if item.statusDetails %}
                 {{ item.statusDetails }}
                 </p>
-                <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
+                <p class="site-checklist-status-text site-checklist-text--{{ item.testStatus }}">
               {% endif %}
               We have logged this issue and are prioritizing it.
               {% if item.issueNumber %}
@@ -100,7 +92,7 @@
               {% endif %}
             </p>
           {% elsif item.testStatus == 'fail' %}
-            <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
+            <p class="site-checklist-status-text site-checklist-text--{{ item.testStatus }}">
               <b>The {{ component_name }} component does not pass this test.</b>
               We have logged this issue and are prioritizing it.
               {% if  item.issueNumber %}
@@ -109,15 +101,11 @@
               {% endif %}
             </p>
           {% elsif item.testStatus == 'conditional' %}
-            <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
+            <p class="site-checklist-status-text site-checklist-text--{{ item.testStatus }}">
               <b>{{ item.statusDetails | default:"This can only be tested in your implementation of the component."}}</b>
               Be sure to test this in your project.
             </p>
-          {% else %}
-            <p class="site-checklist-text site-checklist-text--{{ item.testStatus }}">
-              <b>We have not done this test yet.</b><br />
-              Make sure you perform this test manually in your project.
-            </p>
+          {% elsif item.testStatus == 'pass' %}
           {% endif %}
           <!-- end text content -->
 
@@ -136,21 +124,21 @@
                 aria-hidden="true" role="img">
                 <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ status_icon }}"></use>
               </svg>
-              USWDS test status: <b class="padding-left-05"> {{ status_text }}</b>
+              USWDS test status: <b class="padding-left-05">{{ status_text }}</b>
             </li>
             <li class="site-checklist-tag site-checklist-tag--hide-wide">Last test: {{ version_tested }}</li>
           </ul>
         </div>
         <ul class="site-checklist-tag-list--aside">
           <li class="site-checklist-tag site-checklist-tag--{{ item.testStatus }}">
-            <div class="display-flex flex-align-center flex-justify-end">
+            <div class="site-checklist-tag__icon-text">
               <svg class="usa-icon site-checklist-icon--{{ item.testStatus }}"
               aria-hidden="true" role="img">
                 <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ status_icon }}"></use>
               </svg>
               USWDS test status:
             </div>
-            <b class="padding-left-05"> {{ status_text }}</b>
+            <b>{{ status_text }}</b>
           </li>
           <li class="site-checklist-tag">Last test: {{ version_tested }}</li>
         </ul>

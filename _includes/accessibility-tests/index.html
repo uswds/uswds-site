@@ -1,14 +1,4 @@
 <style>
-    .usa-checkbox__label {
-      padding-left: 1.75rem;
-    }
-    .usa-checkbox__label::before {
-      box-shadow: #454545;
-      height:.9rem;
-      width:.9rem;
-      margin-top: .35rem;
-    }
-
     html {
       scroll-behavior: smooth;
     }
@@ -18,7 +8,7 @@
         scroll-behavior: auto;
       }
     }
-  </style>
+</style>
 
 <!-- Set component name and find related checklist data -->
 {% assign component_name = page.component.name | default: page.title | downcase %}
@@ -31,6 +21,13 @@
 {% assign keyboard_tests = component.testItems | where: 'testType', "keyboard" %}
 {% assign screen_reader_tests = component.testItems | where: 'testType', "screenReader" %}
 
+<!-- Set status icons -->
+{% assign pass_icon = 'check_circle' %}
+{% assign exceptions_icon = 'warning' %}
+{% assign fail_icon = 'cancel' %}
+{% assign conditional_icon = 'info' %}
+
+<!--Add WCAG compliance status tag-->
 {% include accessibility-tests/compliance-tag.html %}
 
 <!--Add test results summary-->
@@ -39,9 +36,10 @@
 <!--Add "how to test" instructions-->
 {% include accessibility-tests/page-intro.html %}
 
-<!--Add checklist items-->
+<!--Add jump links to available groups of AT tests-->
 {% include accessibility-tests/jump-links.html %}
 
+<!--Add checklist items, sorted by type of assistive technology-->
 {% if general_tests != empty %}
     {% include accessibility-tests/checklist.html type='general' %}
 {% endif %}

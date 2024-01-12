@@ -1,7 +1,3 @@
-<!-- Set svg classes -->
-{% assign svg_wrapper_classes = "display-flex flex-align-center" %}
-{% assign svg_classes = "usa-icon font-body-2xs minh-205 minw-205 margin-right-05" %}
-
 <!-- Create a list of each status type -->
 {% assign status_types = "Passed, Passed with exceptions, Conditional, Failed" | split: ", " %}
 
@@ -33,9 +29,6 @@
   {% endif %}
 {% endfor %}
 
-{% assign borderColor = "gray-30" %}
-{% assign headerBackgroundColor = "gray-5" %}
-
 {% if include.page == 'checklist' %}
 <div class="site-checklist-test-summary">
   <h2 class="margin-bottom-0">{{ component_name | capitalize }} accessibility status</h2>
@@ -52,7 +45,7 @@
     </caption>
     <thead>
       <tr>
-        <th class="border-{{ borderColor }} bg-{{ headerBackgroundColor }}">Total tests</th>
+        <th>Total tests</th>
         {% for status in status_types %}
           {% if status == "Passed" %}
             {% assign status_icon = pass_icon %}
@@ -67,9 +60,9 @@
             {% assign status_icon = fail_icon %}
             {% assign icon_color = "fail" %}
           {% endif %}
-          <th class="border-{{ borderColor }} bg-{{ headerBackgroundColor }}">
-            <div class="{{ svg_wrapper_classes }}">
-                <svg class="{{ svg_classes }} site-checklist-icon--{{ icon_color | downcase }}" aria-hidden="true" role="img">
+          <th>
+            <div class="display-flex flex-align-center">
+                <svg class="usa-icon site-checklist-icon--{{ icon_color | downcase }}" aria-hidden="true" role="img">
                   <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ status_icon }}"></use>
                 </svg>
               {{ status }}
@@ -80,7 +73,7 @@
     </thead>
     <tbody>
       <tr>
-        <td class="text-bold bg-{{ headerBackgroundColor }} border-{{ borderColor }}">{{ items_total }}</td>
+        <td>{{ items_total }}</td>
         {% for status in status_types %}
           {% if status == "Passed" %}
             {% assign item_count = items_pass %}
@@ -99,7 +92,7 @@
 
   <!-- Add test summary for mobile widths -->
   <div class="site-checklist-status-list">
-    <p class="font-sans-xs text-bold">Overview of recent accessibility test results:</p>
+    <p class="site-checklist-status-list__summary">Overview of recent accessibility test results:</p>
 
     <ul class="usa-icon-list margin-top-0">
       {% for status in status_types %}

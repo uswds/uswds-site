@@ -30,7 +30,7 @@ We recommend using the following tools when working with the Design System:
 
 These step-by-step instructions describe how to get started with the Design System using npm (recommended method).
 
-If npm is not a viable tool for your project, however, you can [download and install the Design System directly](https://github.com/uswds/uswds#install-the-package-directly-from-github) as outlined in GitHub.
+If npm is not a viable tool for your project, however, you can [download and install the Design System directly](https://github.com/uswds/uswds#user-content-install-the-package-directly-from-github) as outlined in GitHub.
 
 The Design System supports older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). We follow the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): We officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). In other words, Design System version 3.0 supports Chrome, Firefox, Safari, and Edge. Note the Design System no longer supports Internet Explorer 11.
 

@@ -18,13 +18,13 @@
 
 {% for item in items %}
   {% capture items_total %}{{ items_total | plus:1 }}{% endcapture %}
-  {% if item.testStatus == "pass" %}
+  {% if item.test_status == "pass" %}
     {% capture items_pass %}{{ items_pass | plus:1 }}{% endcapture %}
-  {% elsif item.testStatus == "exception" %}
+  {% elsif item.test_status == "exception" %}
     {% capture items_exception %}{{ items_exception | plus:1 }}{% endcapture %}
-  {% elsif item.testStatus == "fail" %}
+  {% elsif item.test_status == "fail" %}
     {% capture items_fail %}{{ items_fail | plus:1 }}{% endcapture %}
-  {% elsif item.testStatus == "conditional" %}
+  {% elsif item.test_status == "conditional" %}
     {% capture items_conditional %}{{ items_conditional | plus:1 }}{% endcapture %}
   {% endif %}
 {% endfor %}
@@ -93,7 +93,6 @@
   <!-- Add test summary for mobile widths -->
   <div class="site-checklist-status-list">
     <p class="site-checklist-status-list__summary">Overview of recent accessibility test results:</p>
-
     <ul class="usa-icon-list margin-top-0">
       {% for status in status_types %}
         {% if status == "Passed" %}

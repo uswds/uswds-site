@@ -16,10 +16,10 @@
 {% assign component = site.data.checklists[component_key] %}
 
 <!-- Assign test items by assistive technology type -->
-{% assign general_tests = component.testItems | where: 'testType', "general" %}
-{% assign zoom_tests = component.testItems | where: 'testType', "zoom" %}
-{% assign keyboard_tests = component.testItems | where: 'testType', "keyboard" %}
-{% assign screen_reader_tests = component.testItems | where: 'testType', "screenReader" %}
+{% assign general_tests = component.testItems | where: 'test_type', "general" %}
+{% assign zoom_tests = component.testItems | where: 'test_type', "zoom" %}
+{% assign keyboard_tests = component.testItems | where: 'test_type', "keyboard" %}
+{% assign screen_reader_tests = component.testItems | where: 'test_type', "screenReader" %}
 
 <!-- Set status icons -->
 {% assign pass_icon = 'check_circle' %}

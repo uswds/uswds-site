@@ -7,11 +7,11 @@
 | title             | Component name                                       | no       | string     | N/A                               | No        |
 | component_status   | WCAG status for entire component                     | no       | string     | pass, fail                        | Yes       |
 | summary           | Short description of the test                        | no       | string     | N/A                               | yes       |
-| summaryAdditional | Additional description of the test                   | no       | string     | N/A                               | yes       |
-| testStatus        | Outcome of the individual test                       | no       | string     | pass, fail, conditional, exception | yes       |
-| testType          | Assistive technology                                 | no       | string     | zoom, keyboard, screenReader      | yes       |
-| versionTested     | The USWDS version number that was tested             | no       | string     | N/A                               | yes       |
-| wcagCriterion     | The number of the WCAG criterion related to the test | no       | string     | N/A                               | yes       |
+| summary_additional | Additional description of the test                   | no       | string     | N/A                               | yes       |
+| test_status        | Outcome of the individual test                       | no       | string     | pass, fail, conditional, exception | yes       |
+| test_type          | Assistive technology                                 | no       | string     | zoom, keyboard, screenReader      | yes       |
+| version_tested     | The USWDS version number that was tested             | no       | string     | N/A                               | yes       |
+| wcag_criterion     | The number of the WCAG criterion related to the test | no       | string     | N/A                               | yes       |
 
 
 ## Creating a new checklist file
@@ -25,25 +25,25 @@ component_status:
 testItems:
 # Zoom/screen magnification items
   - summary:
-    summaryAdditional:
-    testStatus:
-    testType: zoom
-    versionTested:
-    wcagCriterion:
+    summary_additional:
+    test_status:
+    test_type: zoom
+    version_tested:
+    wcag_criterion:
 # Keyboard navigation items
   - summary:
-    summaryAdditional:
-    testStatus:
-    testType: keyboard
-    versionTested:
-    wcagCriterion:
+    summary_additional:
+    test_status:
+    test_type: keyboard
+    version_tested:
+    wcag_criterion:
 # Screen reader items
   - summary:
-    summaryAdditional:
-    testStatus:
-    testType: screenReader
-    versionTested:
-    wcagCriterion:
+    summary_additional:
+    test_status:
+    test_type: screenReader
+    version_tested:
+    wcag_criterion:
 ```
 4. Fill in the data according to the data table above.
    Create a new data item for each test performed and group the items by the type of assistive technology used in the test.

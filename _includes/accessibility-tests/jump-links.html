@@ -21,16 +21,6 @@
     </a>
   </li>
   {% endif %}
-  {% if screen_reader_tests != empty %}
-  <li>
-    <a href="#screen-reader-tests">
-      <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
-      </svg>
-      Screen reader tests
-    </a>
-  </li>
-  {% endif %}
   {% if keyboard_tests != empty %}
   <li>
     <a href="#keyboard-navigation-tests">
@@ -38,6 +28,16 @@
           <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
       </svg>
       Keyboard navigation tests
+    </a>
+  </li>
+  {% endif %}
+  {% if screen_reader_tests != empty %}
+  <li>
+    <a href="#screen-reader-tests">
+      <svg class="usa-icon" aria-hidden="true" role="img">
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
+      </svg>
+      Screen reader tests
     </a>
   </li>
   {% endif %}

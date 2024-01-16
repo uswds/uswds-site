@@ -2,7 +2,7 @@ title: Button
 component_status: pass
 testItems:
 # General items
-  - summary: Buttons text conveys its meaning.
+  - summary: Button text conveys its meaning.
     summary_additional: |
       When you view the button on a page and determine the button's purpose,
       the text (not color alone) conveys the button's meaning.
@@ -28,9 +28,13 @@ testItems:
     wcag_criterion: 2.5.5
 # Zoom/screen magnification items
   - summary: Buttons are visible and functional when screen is magnified.
-    summary_additional: When you zoom the screen to 200%, you can scroll through buttons with no loss of information.
-    test_status: exceptions
-    test_type: conditional
+    summary_additional: |
+      When you zoom the screen to 200%,
+      you can scroll through buttons with no loss of information.
+    test_status: exception
+    status_details: |
+      The button is visible and functional, but the focus indicator overlaps with nearby buttons.
+    test_type: zoom
     version_tested: 3.7.1
     wcag_criterion: 1.4.10
 # Keyboard navigation items
@@ -44,7 +48,8 @@ testItems:
     wcag_criterion: 2.1.2
   - summary: Focus indicators are clearly visible.
     summary_additional: |
-      When you use a keyboard to tab into a button, the button has focus outline or other visible indicator.
+      When you use a keyboard to tab into a button,
+      the button has a visible outline or other clear indication of focus.
     test_status: pass
     test_type: keyboard
     version_tested: 3.7.1
@@ -62,6 +67,7 @@ testItems:
       When you use a screen reader and navigate from button to button on a page (using the `B` shortcut key or `tab` key),
       you hear the buttons announced in the same order that they appear on the page.
     test_status: conditional
+    status_details: This can only be tested in the context of your page.
     test_type: screenReader
     version_tested: 3.7.1
     wcag_criterion: 1.3.2

@@ -82,13 +82,13 @@
           {% elsif item.test_status == 'exception' %}
             <p class="site-checklist-status-text site-checklist-text--{{ item.test_status }}">
               <b>The {{ component_name }} component does not pass all elements of this test.</b>
-              {% if item.statusDetails %}
-                {{ item.statusDetails }}
+              {% if item.status_details %}
+                {{ item.status_details }}
                 </p>
                 <p class="site-checklist-status-text site-checklist-text--{{ item.test_status }}">
               {% endif %}
-              We have logged this issue and are prioritizing it.
               {% if item.issueNumber %}
+                We have logged this issue and are prioritizing it.
                 <a href="https://github.com/uswds/{{ item.issueRepo | default:'uswds' }}/issues/{{ item.issueNumber }}">Learn
                 more about this issue on GitHub</a>.
               {% endif %}
@@ -104,7 +104,7 @@
             </p>
           {% elsif item.test_status == 'conditional' %}
             <p class="site-checklist-status-text site-checklist-text--{{ item.test_status }}">
-              <b>{{ item.statusDetails | default:"This can only be tested in your implementation of the component."}}</b>
+              <b>{{ item.status_details | default:"This can only be tested in your implementation of the component."}}</b>
               Be sure to test this in your project.
             </p>
           {% elsif item.test_status == 'pass' %}

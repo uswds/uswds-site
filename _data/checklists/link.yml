@@ -22,7 +22,7 @@ testItems:
 # Keyboard navigation items
   - summary: The link is operable using the enter and spacebar keys.
     summary_additional: |
-      When you use your tab key for navigation and press `enter` or `space bar` for interaction,
+      When you use your tab key for navigation and press `enter` or `spacebar` for interaction,
       the link gets selected.
     test_status: pass
     test_type: keyboard

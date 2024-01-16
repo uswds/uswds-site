@@ -2,16 +2,20 @@
 
 ## Available data keys
 
-| Key               | Description                                          | Optional | Value type | Standard values                   | Displayed |
-| :---------------- | :--------------------------------------------------- | -------- | ---------- | --------------------------------- | --------- |
-| title             | Component name                                       | no       | string     | N/A                               | No        |
-| component_status   | WCAG status for entire component                     | no       | string     | pass, fail                        | Yes       |
-| summary           | Short description of the test                        | no       | string     | N/A                               | yes       |
-| summary_additional | Additional description of the test                   | no       | string     | N/A                               | yes       |
-| test_status        | Outcome of the individual test                       | no       | string     | pass, fail, conditional, exception | yes       |
-| test_type          | Assistive technology                                 | no       | string     | zoom, keyboard, screenReader      | yes       |
-| version_tested     | The USWDS version number that was tested             | no       | string     | N/A                               | yes       |
-| wcag_criterion     | The number of the WCAG criterion related to the test | no       | string     | N/A                               | yes       |
+| Key                 | Description                              | Optional | Value type | Standard values                    | Displayed |
+| :------------------ | :--------------------------------------- | -------- | ---------- | ---------------------------------- | --------- |
+| title               | Component name                           | no       | string     | N/A                                | No        |
+| component_status    | WCAG status for entire component         | no       | string     | pass, fail                         | Yes       |
+| summary             | Short description of the test            | no       | string     | N/A                                | yes       |
+| summary_additional  | Additional description of the test       | no       | string     | N/A                                | yes       |
+| test_status         | Outcome of the individual test           | no       | string     | pass, fail, conditional, exception | yes       |
+| test_type           | Assistive technology                     | no       | string     | zoom, keyboard, screenReader       | yes       |
+| status_details      | Additional details about the status      | yes      | string     | N/A                                | yes       |
+| status_details      | Additional details about the status      | yes      | string     | N/A                                | yes       |
+| github_issue_number | Related GitHub issue number              | No       | number     | N/A                                | Yes       |
+| github_issue_repo   | Related GitHub issue repo                | No       | string     | uswds, uswds-site                  | Yes       |
+| version_tested      | The USWDS version number that was tested | no       | string     | N/A                                | yes       |
+| wcag_criterion      | The related WCAG criterion number        | no       | string     | N/A                                | yes       |
 
 
 ## Creating a new checklist file

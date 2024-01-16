@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Add accessibility checklist page.
+    summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 2138
     githubRepo: uswds-site

@@ -2,6 +2,11 @@ title: Link
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Add WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2138
+    githubRepo: uswds-site
   - date: 2023-11-20
     summary: Added `uswds-fonts` and `usa-icon` to list of dependencies.
     affectsGuidance: true

@@ -27,25 +27,32 @@
 title:
 component_status:
 testItems:
-# Zoom/screen magnification items
+# General tests
   - summary:
     summary_additional:
     test_status:
     test_type: zoom
     version_tested:
     wcag_criterion:
-# Keyboard navigation items
+# Zoom/screen magnification tests
+  - summary:
+    summary_additional:
+    test_status:
+    test_type: zoom
+    version_tested:
+    wcag_criterion:
+# Keyboard navigation tests
   - summary:
     summary_additional:
     test_status:
     test_type: keyboard
     version_tested:
     wcag_criterion:
-# Screen reader items
+# Screen reader tests
   - summary:
     summary_additional:
     test_status:
-    test_type: screenReader
+    test_type: screen_reader
     version_tested:
     wcag_criterion:
 ```

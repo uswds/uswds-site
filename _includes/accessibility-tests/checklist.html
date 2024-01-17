@@ -81,18 +81,20 @@
             </p>
           {% elsif item.test_status == 'exception' %}
             <p class="site-checklist-fieldset__text--status site-checklist-fieldset__text--{{ item.test_status }}">
-              <b>The {{ component_name }} component does not pass all elements of this test.</b>
-              {% if item.status_details %}
+              <b>The {{ component_name }} component may not pass all elements of this test.</b>
+            </p>
+            {% if item.status_details %}
+              <p class="site-checklist-fieldset__text--status site-checklist-fieldset__text--{{ item.test_status }}">
                 {{ item.status_details }}
-                </p>
-                <p class="site-checklist-fieldset__text--status site-checklist-fieldset__text--{{ item.test_status }}">
-              {% endif %}
-              {% if item.github_issue_number %}
+              </p>
+            {% endif %}
+            {% if item.github_issue_number %}
+              <p class="site-checklist-fieldset__text--status site-checklist-fieldset__text--{{ item.test_status }}">
                 We have logged this issue and are prioritizing it.
                 <a href="https://github.com/uswds/{{ item.github_issue_repo | default:'uswds' }}/issues/{{ item.github_issue_number }}">Learn
                 more about this issue on GitHub</a>.
-              {% endif %}
-            </p>
+              </p>
+            {% endif %}
           {% elsif item.test_status == 'fail' %}
             <p class="site-checklist-fieldset__text--status site-checklist-fieldset__text--{{ item.test_status }}">
               <b>The {{ component_name }} component does not pass this test.</b>

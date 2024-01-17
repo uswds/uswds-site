@@ -167,8 +167,9 @@ testItems:
     test_status: exception
     test_type: screen_reader
     status_details: |
-      In JAWS, the readout says "to activate press enter" instead of "collapsed."
-      It works as expected in other screen readers.
+      In our JAWS test of the USWDS website, the readout said "to activate press enter" instead of "collapsed."
+      JAWS tests of accordions on other USWDS sites produced the correct readout.
+      The accordion worked as expected when we tested it in other screen readers.
     github_issue_number: 2368
     github_issue_repo: uswds-site
     version_tested: 3.5.0
@@ -180,8 +181,9 @@ testItems:
     test_status: exception
     test_type: screen_reader
     status_details: |
-      In JAWS, the readout says "to activate press enter" instead of "expanded."
-      It works as expected in other screen readers.
+      In our JAWS test of the USWDS website, the readout said "to activate press enter" instead of "expanded."
+      JAWS tests of accordions on other USWDS sites produced the correct readout.
+      The accordion worked as expected when we tested it in other screen readers.
     github_issue_number: 2368
     github_issue_repo: uswds-site
     version_tested: 3.5.0

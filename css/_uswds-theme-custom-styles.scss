@@ -3366,6 +3366,8 @@ body {
 }
 
 .site-accordion-code.site-component-preview {
+  @include u-margin-top(6);
+
   .usa-accordion__content {
     overflow: visible;
   }

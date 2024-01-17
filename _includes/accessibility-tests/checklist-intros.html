@@ -1,3 +1,5 @@
+{% assign accordion_id = title | slugify | append:'-how-to' %}
+
 {% if title == "Screen reader" %}
   {% assign title_plural = "screen readers" %}
 {% endif %}
@@ -9,14 +11,14 @@ For help performing your own {{ title | downcase }} tests, check out the resourc
 
 <div class="usa-accordion site-checklist-accordion">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-controls="{{ title | slugify | append:'-how-to' }}">
+    <button type="button" class="usa-accordion__button" aria-controls="{{ accordion_id }}">
       How to test with {{ title_plural | default: title | downcase}}
     </button>
   </h4>
-  <div id="{{ title | slugify | append:'-how-to'}}" class="usa-accordion__content usa-prose border-1px border-gray-5 border-top-none">
+  <div id="{{ accordion_id }}" class="usa-accordion__content usa-prose">
     {% if title == "Zoom magnification" %}
       {% include accessibility-tests/how-to-zoom.html %}
-    {% elsif title == "screen readers" %}
+    {% elsif title == "Screen reader" %}
       {% include accessibility-tests/how-to-screen-reader.html %}
     {% elsif title == "Keyboard navigation" %}
       {% include accessibility-tests/how-to-keyboard.html %}

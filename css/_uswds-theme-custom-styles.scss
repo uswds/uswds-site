@@ -3733,6 +3733,11 @@ $do-dont-top-bar-width: 1;
   .usa-accordion__content {
     @include u-font("lang","sm");
   }
+
+  .usa-accordion__content {
+    @include u-border("1px", "gray-5");
+    border-top: none;
+  }
 }
 
 .site-checklist-fieldset {

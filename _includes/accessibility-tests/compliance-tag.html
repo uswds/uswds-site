@@ -1,14 +1,11 @@
 <!-- Add compliance tag -->
+{% assign status_label =  "USWDS test status: Did not pass WCAG 2.1 AA" %}
 {% if component.component_status == "pass" %}
-<p class="margin-top-0 margin-bottom-6">
-    <span class="usa-tag usa-tag--big site-compliance-tag site-compliance-tag--pass">
-        USWDS test status: Passed WCAG 2.1 AA
-    </span>
-</p>
-{% elsif component.component_status == "fail" %}
-<p class="margin-top-0 margin-bottom-6">
-    <span class="usa-tag usa-tag--big site-compliance-tag site-compliance-tag--fail">
-        USWDS test status: Did not pass WCAG 2.1 AA
-    </span>
-</p>
+  {% assign status_label =  "USWDS test status: Passed WCAG 2.1 AA" %}
 {% endif %}
+
+<p class="margin-top-0 margin-bottom-6">
+  <span class="usa-tag usa-tag--big site-compliance-tag site-compliance-tag--{{ component.component_status }}">
+    {{ status_label }}
+  </span>
+</p>

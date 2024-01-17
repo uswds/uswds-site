@@ -451,6 +451,7 @@ abbr[title="required"] {
     bottom: 0;
     position: sticky;
     z-index: z-index(500);
+    pointer-events: none;
   }
 
   .usa-button {
@@ -458,6 +459,10 @@ abbr[title="required"] {
     @include at-media("desktop") {
       @include u-bg($site-background-color);
       margin: units(2) units(2) units(4);
+    }
+
+    @include at-media("widescreen") {
+      pointer-events: auto;
     }
 
     &#{$external-href} {

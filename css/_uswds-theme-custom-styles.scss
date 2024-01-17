@@ -3776,21 +3776,25 @@ $do-dont-top-bar-width: 1;
     }
 
     &--pass,
+    &--pass a,
     &--pass a:visited {
       color: color("green-cool-60");
     }
 
     &--exception,
+    &--exception a,
     &--exception a:visited {
       color: color("orange-70v");
     }
 
     &--fail,
+    &--fail a,
     &--fail a:visited {
       color: color("red-70v");
     }
 
     &--conditional,
+    &--conditional a,
     &--conditional a:visited {
       color: color("blue-cool-60");
     }

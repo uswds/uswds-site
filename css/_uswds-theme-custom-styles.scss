@@ -3577,6 +3577,7 @@ $do-dont-top-bar-width: 1;
 // Accessibility checklist styles
 .usa-prose .site-checklist-test-summary {
   @include u-bg("gray-5");
+  @include u-margin-top(6);
   @include u-measure(6);
   @include u-padding-x(3);
   @include u-padding-y(1);

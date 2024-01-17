@@ -2,7 +2,7 @@ title: Button checklist
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-01-17
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 2138

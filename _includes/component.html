@@ -15,7 +15,7 @@
 </div>
 {% endif %}
 
-<!--Add wcag compliance status tag-->
+<!-- Add wcag compliance status tag -->
 {% include accessibility-tests/compliance-tag.html %}
 
 {% if page.parent == null and content.size > 1 %}
@@ -30,7 +30,7 @@
 {% endif %}
 {% include component-preview-and-code.html %}
 {% include component-guidance.html %}
-<!--Add accessibility test results-->
+<!-- Add accessibility test results -->
 {% if component %}
   {% include accessibility-tests/test-results-summary.html page='main' %}
 {% endif %}

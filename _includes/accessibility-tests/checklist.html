@@ -26,25 +26,25 @@
   {% include accessibility-tests/checklist-intros.html %}
 {% endunless %}
 
-<!--Add checklist items-->
+<!-- Add checklist items -->
 <fieldset class="usa-fieldset site-checklist-fieldset">
   <legend class="usa-legend usa-sr-only">Select passing tests</legend>
 
   {% for item in items %}
-    <!--set WCAG details-->
+    <!-- Set WCAG details -->
     {% include accessibility-tests/wcag-details.html %}
 
-    <!--Set version number-->
+    <!-- Set version number -->
     {% if item.version_tested %}
       {% assign version_tested = item.version_tested | prepend: 'v' %}
     {% else %}
       {% assign version_tested = "N/A" %}
     {% endif %}
 
-    <!--Set unique id for checkboxes-->
+    <!-- Set unique id for checkboxes -->
     {% assign checkbox_id = item.summary | slugify %}
 
-    <!-- assign test status info -->
+    <!-- Assign test status info -->
     {% if item.test_status == 'pass' %}
       {% assign status_text = 'Passed' %}
       {% assign status_icon = pass_icon %}
@@ -59,19 +59,18 @@
       {% assign status_icon = conditional_icon %}
     {% endif %}
 
-    <!-- start checklist items -->
+    <!-- Start checklist items -->
     <div class="usa-checkbox">
       <!-- Add text content -->
-      <input class="usa-checkbox__input" id="{{ checkbox_id }}" type="checkbox" name="accessibility-tests"
-        value='{{ item.summary }}' />
+      <input class="usa-checkbox__input" id="{{ checkbox_id }}" type="checkbox" name="accessibility-tests" value='{{ item.summary }}' />
       <label class="usa-checkbox__label" for="{{ checkbox_id }}">
         <div class="measure-5">
-          <!--Add summaries-->
+          <!-- Add summaries -->
           <p class="site-checklist-fieldset__text">
             <strong>{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
             {{ item.summary_additional | markdownify | remove: '<p>' | remove: '</p>' }}
           </p>
-          <!--Add supplemental text, based on status type-->
+          <!-- Add supplemental text, based on status type -->
           {% if item.test_status == 'pass' and item.versionFixed == site.uswds_version %}
             <p class="site-checklist-fieldset__text--status site-checklist-fieldset__text--{{ item.test_status }}">
               <b>The {{ component_name }} component recently passed this test in version {{ item.versionFixed }}.</b><br />
@@ -111,9 +110,9 @@
             </p>
           {% elsif item.test_status == 'pass' %}
           {% endif %}
-          <!-- end text content -->
+          <!-- End text content -->
 
-          <!--Add tags -->
+          <!-- Add tags -->
           <ul class="site-checklist-tag-list site-checklist-tag-list--main">
             {% if item.wcag_criterion %}
               <li class="site-checklist-tag">WCAG {{ criterion_level }}</li>
@@ -147,7 +146,7 @@
           <li class="site-checklist-tag">Last test: {{ version_tested }}</li>
         </ul>
       </label>
-      <!-- end text content -->
+      <!-- End text content -->
     </div>
   {% endfor %}
 </fieldset>

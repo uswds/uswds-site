@@ -30,8 +30,6 @@ redirect_from:
 subnav:
 - text: Link accessibility tests
   href: /components/link/checklist/
-- text: Latest updates
-  href: '#changelog'
 title: Link
 variants:
   - variant: "`.usa-link--external`"

@@ -13,8 +13,6 @@ redirect_from:
 subnav:
 - text: Accordion accessibility tests
   href: /components/accordion/checklist/
-- text: Latest updates
-  href: "#changelog"
 title: Accordion
 type: component
 variants:

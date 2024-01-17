@@ -32,8 +32,6 @@ variants:
 subnav:
 - text: Button accessibility tests
   href: /components/button/checklist/
-- text: Latest updates
-  href: '#changelog'
 changelog:
   key: component-button
 ---

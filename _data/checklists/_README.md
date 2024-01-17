@@ -29,7 +29,7 @@ test_items:
   - summary:
     summary_additional:
     test_status:
-    test_type: zoom
+    test_type: general
     version_tested:
     wcag_criterion:
 # Zoom/screen magnification tests

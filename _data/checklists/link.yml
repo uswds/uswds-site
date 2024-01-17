@@ -1,6 +1,6 @@
 title: Link
 component_status: pass
-testItems:
+test_items:
 # General items
   - summary: Color is not the only method used to indicate links.
     summary_additional: |

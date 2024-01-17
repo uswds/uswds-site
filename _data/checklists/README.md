@@ -25,7 +25,7 @@
 ```yaml
 title:
 component_status:
-testItems:
+test_items:
 # General tests
   - summary:
     summary_additional:

@@ -1,6 +1,6 @@
 title: Accordion
 component_status: pass
-testItems:
+test_items:
 # Zoom/screen magnification items
   - summary: No need to scroll horizontally when screen is magnified.
     summary_additional: |

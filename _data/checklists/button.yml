@@ -1,6 +1,6 @@
 title: Button
 component_status: pass
-testItems:
+test_items:
 # General items
   - summary: Button text conveys its meaning.
     summary_additional: |

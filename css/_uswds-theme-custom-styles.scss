@@ -3576,21 +3576,35 @@ $do-dont-top-bar-width: 1;
 .usa-prose .site-checklist-test-summary {
   @include u-bg("gray-5");
   @include u-measure(6);
-  @include u-padding-x(4);
+  @include u-padding-x(3);
   @include u-padding-y(1);
 
   &__table {
     @include u-display("none");
-    @include u-font("body", "2xs");
+    @include u-font("lang", "3xs");
     @include u-text("center");
 
     @include at-media("desktop-lg") {
       @include u-display("block");
     }
 
+    @include at-media("widescreen") {
+      @include u-font("lang", "2xs");
+    }
+
+    caption {
+      @include u-font("lang", "xs");
+    }
+
     th,
     td {
       @include u-border("gray-30");
+      @include u-padding-left(1);
+      @include u-padding-right("105");
+
+      @include at-media("widescreen") {
+        @include u-padding-x(2);
+      }
     }
 
     td {
@@ -3599,7 +3613,7 @@ $do-dont-top-bar-width: 1;
 
     th,
     td:first-of-type {
-      @include u-bg("gray-5");
+      @include u-bg("gray-10");
     }
 
     .usa-icon {
@@ -3619,13 +3633,18 @@ $do-dont-top-bar-width: 1;
     }
 
     &-summary {
-      @include u-font("body", "xs");
+      @include u-font("lang", "xs");
       @include u-margin-y(1);
       @include u-text("bold");
     }
 
     .usa-icon-list {
-      @include u-margin-top(0);
+      @include u-margin-top(2);
+    }
+
+    .usa-icon-list__content {
+      @include u-font("lang", "sm");
+      @include u-line-height("lang", 5);
     }
   }
 }
@@ -3665,8 +3684,8 @@ $do-dont-top-bar-width: 1;
   }
 
   &__details {
-    @include u-font("body", "xs");
-    @include u-line-height("sans", 5);
+    @include u-font("lang", "xs");
+    @include u-line-height("lang", 5);
     @include u-margin-y(0);
   }
 
@@ -3701,6 +3720,78 @@ $do-dont-top-bar-width: 1;
 
   .usa-icon {
     @include u-margin-right(1);
+  }
+}
+
+.site-checklist-accordion {
+  @include u-margin-bottom(2);
+  @include u-measure(5);
+
+  .usa-accordion__button,
+  .usa-accordion__content {
+    @include u-font("lang","sm");
+  }
+}
+
+.site-checklist-fieldset {
+  @include u-margin-top(1);
+  @include u-measure(5);
+
+  @include at-media("widescreen") {
+    @include u-maxw("tablet-lg");
+  }
+
+  .usa-checkbox {
+    @include u-border-top("1px", "gray-10");
+    @include u-margin-top(1);
+    background-color: unset;
+  }
+
+  .usa-checkbox__label {
+    @include u-margin-bottom(1);
+    @include u-display("flex");
+    @include u-flex("justify");
+    padding-left: 1.75rem;
+  }
+
+  .usa-checkbox__label::before {
+    box-shadow: color("gray-70");
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-top: 0.35rem;
+  }
+
+  &__text {
+    @include u-font("lang","sm");
+    @include u-margin-bottom(1);
+    @include u-margin-top(0);
+    @include u-line-height("sans", 6);
+
+    &--status {
+      @include u-margin-y(1);
+      @include u-font("lang","xs");
+      @include u-line-height("lang", 4);
+    }
+
+    &--pass,
+    &--pass a:visited {
+      color: color("green-cool-60");
+    }
+
+    &--exception,
+    &--exception a:visited {
+      color: color("orange-70v");
+    }
+
+    &--fail,
+    &--fail a:visited {
+      color: color("red-70v");
+    }
+
+    &--conditional,
+    &--conditional a:visited {
+      color: color("blue-cool-60");
+    }
   }
 }
 
@@ -3746,7 +3837,8 @@ $do-dont-top-bar-width: 1;
 
 .site-checklist-tag {
   @include u-border("1px", "gray-10");
-  @include u-font("body", "3xs");
+  @include u-font("lang", "3xs");
+  @include u-line-height("lang", 4);
   @include u-margin-bottom(1);
   @include u-margin-right(1);
   @include u-padding-y("05");
@@ -3809,65 +3901,6 @@ $do-dont-top-bar-width: 1;
   }
 }
 
-.site-checklist-fieldset {
-  @include u-margin-top(1);
-  @include u-measure(5);
-
-  @include at-media("widescreen") {
-    @include u-maxw("tablet-lg");
-  }
-
-  .usa-checkbox {
-    @include u-border-top("1px", "gray-10");
-    @include u-margin-top(1);
-    background-color: unset;
-  }
-
-  .usa-checkbox__label {
-    @include u-margin-bottom(1);
-    @include u-display("flex");
-    @include u-flex("justify");
-    padding-left: 1.75rem;
-  }
-
-  .usa-checkbox__label::before {
-    box-shadow: color("gray-70");
-    height: 0.9rem;
-    width: 0.9rem;
-    margin-top: 0.35rem;
-  }
-
-  &__text {
-    @include u-margin-bottom(1);
-    @include u-margin-top(0);
-    @include u-line-height("sans", 6);
-
-    &--status {
-      @include u-margin-y(1);
-      @include u-font("body","xs");
-    }
-
-    &--pass,
-    &--pass a:visited {
-      color: color("green-cool-60");
-    }
-
-    &--exception,
-    &--exception a:visited {
-      color: color("orange-70v");
-    }
-
-    &--fail,
-    &--fail a:visited {
-      color: color("red-70v");
-    }
-
-    &--conditional,
-    &--conditional a:visited {
-      color: color("blue-cool-60");
-    }
-  }
-}
 
 .site-compliance-tag {
   @include u-text("no-uppercase");

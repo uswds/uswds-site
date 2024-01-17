@@ -6,7 +6,7 @@ For help performing your own {{ title | downcase }} tests, check out the resourc
 {% if title == "Screen reader" %}
   {% assign title = "screen readers" %}
 {% endif %}
-<div class="usa-accordion measure-5 margin-bottom-2">
+<div class="usa-accordion site-checklist-accordion">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button" aria-controls="{{ title | slugify | append:'-how-to' }}">
       How to test with {{ title | downcase}}

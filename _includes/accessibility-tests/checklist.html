@@ -15,7 +15,7 @@
   {% assign items = screen_reader_tests %}
 {% endif %}
 
-<h3 style="scroll-margin-top: 2.75rem;">{{ title }} tests</h3>
+<h3 id="{{ title | slugify | append: '-tests' }}" style="scroll-margin-top: 3.5rem;" >{{ title }} tests</h3>
 
 <!--
   Add checklist intro

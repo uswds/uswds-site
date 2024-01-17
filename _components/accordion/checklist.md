@@ -5,7 +5,7 @@ component:
   name: accordion
 title: Accordion accessibility tests
 category: Components
-lead: Learn how USWDS does manual tests for accessibility and how you should test for accessibility, too.
+lead: Any USWDS accordion should pass these manual accessibility tests.
 changelog:
   key: 'component-accordion-checklist'
 ---

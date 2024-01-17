@@ -5,7 +5,7 @@ component:
   name: link
 title: Link accessibility tests
 category: Components
-lead: Learn how USWDS does manual tests for accessibility and how you should test for accessibility, too.
+lead: Any USWDS link should pass these manual accessibility tests.
 changelog:
   key: 'component-link-checklist'
 ---

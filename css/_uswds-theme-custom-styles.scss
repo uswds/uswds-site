@@ -3915,9 +3915,10 @@ $do-dont-top-bar-width: 1;
 
 
 .site-compliance-tag {
+  @include u-font("lang", "xs");
   @include u-text("no-uppercase");
-  @include u-padding-x(1);
-  @include u-padding-y("05");
+  @include u-padding-x("105");
+  @include u-padding-y(1);
 
   &--pass {
     background-color: color("green-cool-50");

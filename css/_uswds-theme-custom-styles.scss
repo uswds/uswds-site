@@ -3573,56 +3573,60 @@ $do-dont-top-bar-width: 1;
 }
 
 // Accessibility checklist styles
-.site-checklist-test-summary {
+.usa-prose .site-checklist-test-summary {
   @include u-bg("gray-5");
   @include u-measure(6);
-  @include u-padding-y(1);
   @include u-padding-x(4);
-}
+  @include u-padding-y(1);
 
-.usa-prose .site-checklist-status-table {
-  @include u-display("none");
-  @include u-text("center");
-  @include u-font("body", "2xs");
-
-  @include at-media("desktop-lg") {
-    @include u-display("block");
-  }
-
-  th,
-  td {
-    @include u-border("gray-30");
-  }
-
-  td {
-    @include u-text("bold");
-  }
-
-  th,
-  td:first-of-type {
-    @include u-bg("gray-5");
-  }
-
-  .usa-icon {
-    @include u-minh("205");
-    @include u-minw("205");
-    @include u-margin("05");
-  }
-}
-
-.site-checklist-status-list {
-  @include u-margin(0);
-  @include u-padding-bottom(2);
-  @include u-padding-top(1);
-
-  @include at-media("desktop-lg") {
+  &__table {
     @include u-display("none");
+    @include u-font("body", "2xs");
+    @include u-text("center");
+
+    @include at-media("desktop-lg") {
+      @include u-display("block");
+    }
+
+    th,
+    td {
+      @include u-border("gray-30");
+    }
+
+    td {
+      @include u-text("bold");
+    }
+
+    th,
+    td:first-of-type {
+      @include u-bg("gray-5");
+    }
+
+    .usa-icon {
+      @include u-margin("05");
+      @include u-minh("205");
+      @include u-minw("205");
+    }
   }
 
-  &__summary {
-    @include u-font("sans", "xs");
-    @include u-text("bold");
-    @include u-margin-y(1);
+  &__list {
+    @include u-margin(0);
+    @include u-padding-bottom(2);
+    @include u-padding-top(1);
+
+    @include at-media("desktop-lg") {
+      @include u-display("none");
+    }
+
+    &-summary {
+      @include u-font("body", "xs");
+      @include u-margin-y(1);
+      @include u-text("bold");
+    }
+
+    .usa-icon-list {
+      @include u-margin-top(0);
+    }
   }
 }
 
@@ -3640,10 +3644,8 @@ $do-dont-top-bar-width: 1;
     @include u-display("flex");
     @include u-border("1px", "gray-10");
     @include u-border-bottom(1);
-    @include u-text("gray-70");
-    @include u-padding(2);
-    @include u-bottom(3);
     @include u-margin-top(2);
+    @include u-padding(2);
 
     @include at-media("desktop") {
       @include grid-col;
@@ -3676,8 +3678,8 @@ $do-dont-top-bar-width: 1;
 }
 
 .usa-prose .site-checklist-jump-links {
-  @include add-list-reset;
-  @include u-margin-top(2);
+  @include u-padding-left(0);
+  list-style-type: none;
 
   li {
     @include u-margin-bottom(0);
@@ -3686,8 +3688,8 @@ $do-dont-top-bar-width: 1;
   a {
     @include u-display("flex");
     @include u-flex("align-center");
-    @include u-padding-y("05");
     @include u-margin-right(2);
+    @include u-padding-y("05");
     @include u-text("primary-dark");
     @include u-text("bold");
     @include u-text("no-underline");
@@ -3703,39 +3705,44 @@ $do-dont-top-bar-width: 1;
 }
 
 .site-checklist-tag-list {
-  @include u-display("flex");
-  @include u-flex("align-center");
-  @include u-flex("row");
-  @include u-flex("wrap");
-  list-style-type: none !important;
-  margin-bottom: 0 !important;
-  padding-left: units(0) !important;
-}
+  @include u-padding-left(0);
+  @include u-margin-bottom(0);
+  list-style-type: none;
 
-.site-checklist-tag-list--aside {
-  @include u-display("none");
-  @include u-flex("align-end");
-  @include u-flex("justify-start");
-  @include u-flex("column");
-  @include u-margin-top("05");
-  list-style-type: none !important;
-  margin-bottom: 0 !important;
-  padding-left: units(0) !important;
-
-  @include at-media("widescreen") {
-    @include u-display("flex");
-  }
-
-  .site-checklist-tag {
-    @include u-text("right");
-  }
-
-  .site-checklist-tag__icon-text {
+  &--main {
     @include u-display("flex");
     @include u-flex("align-center");
-    @include u-flex("justify-end");
+    @include u-flex("row");
+    @include u-flex("wrap");
+
+    .site-checklist-tag {
+      @include u-flex("align-center");
+    }
+  }
+
+  &--aside {
+    @include u-display("none");
+    @include u-flex("align-end");
+    @include u-flex("justify-start");
+    @include u-flex("column");
+    @include u-margin-top("05");
+
+    @include at-media("widescreen") {
+      @include u-display("flex");
+    }
+
+    .site-checklist-tag {
+      @include u-text("right");
+    }
+
+    .site-checklist-tag__icon-text {
+      @include u-display("flex");
+      @include u-flex("align-center");
+      @include u-flex("justify-end");
+    }
   }
 }
+
 
 .site-checklist-tag {
   @include u-border("1px", "gray-10");
@@ -3745,22 +3752,65 @@ $do-dont-top-bar-width: 1;
   @include u-padding-y("05");
   @include u-padding-x(1);
   @include u-radius("md");
-  list-style-type: none !important;
-
-  .usa-icon {
-    @include u-height(2);
-    @include u-width(2);
-    @include u-margin-right("05");
-  }
 
   // Safari fix
   a {
     display: flex !important;
   }
+
+  &--pass {
+    border-color: color("green-cool-10");
+    background-color: color("green-cool-10");
+  }
+
+  &--exception {
+    border-color: color("yellow-10");
+    background-color: color("yellow-10");
+  }
+
+  &--fail {
+    border-color: color("red-20v");
+    background-color: color("red-20v");
+  }
+
+  &--conditional {
+    border-color: color("blue-cool-10");
+    background-color: color("blue-cool-10");
+  }
+
+  &--hide-wide {
+    @include u-display("flex");
+
+    @include at-media("widescreen") {
+      @include u-display("none");
+    }
+  }
 }
 
-.site-checklist-checklist {
-  @include u-margin-top(0);
+.site-checklist-icon {
+  @include u-height(2);
+  @include u-width(2);
+  @include u-margin-right("05");
+
+  &--pass {
+    color: color("green-cool-50");
+  }
+
+  &--exception {
+    color: color("gold-30v");
+  }
+
+  &--fail {
+    color: color("orange-warm-60v");
+  }
+
+  &--conditional {
+    color: color("blue-cool-60");
+  }
+}
+
+.site-checklist-fieldset {
+  @include u-margin-top(1);
   @include u-measure(5);
 
   @include at-media("widescreen") {
@@ -3786,81 +3836,49 @@ $do-dont-top-bar-width: 1;
     width: 0.9rem;
     margin-top: 0.35rem;
   }
-}
 
-.site-checklist-text {
-  @include u-margin-bottom(1);
-  @include u-margin-top(0);
-  @include u-line-height("sans", 6);
-}
+  &__text {
+    @include u-margin-bottom(1);
+    @include u-margin-top(0);
+    @include u-line-height("sans", 6);
 
-.site-checklist-status-text {
-  @include u-margin-y(1);
-  font-size: 1rem !important;
-}
+    &--status {
+      @include u-margin-y(1);
+      @include u-font("body","xs");
+    }
 
-.site-checklist-tag--pass {
-  border-color: color("green-cool-10");
-  background-color: color("green-cool-10");
-}
-.site-checklist-tag--exception {
-  border-color: color("yellow-10");
-  background-color: color("yellow-10");
-}
-.site-checklist-tag--fail {
-  border-color: color("red-20v");
-  background-color: color("red-20v");
-}
-.site-checklist-tag--conditional {
-  border-color: color("blue-cool-10");
-  background-color: color("blue-cool-10");
-}
-.site-checklist-tag--hide-wide {
-  @include u-display("flex");
+    &--pass,
+    &--pass a:visited {
+      color: color("green-cool-60");
+    }
 
-  @include at-media("widescreen") {
-    @include u-display("none");
+    &--exception,
+    &--exception a:visited {
+      color: color("orange-70v");
+    }
+
+    &--fail,
+    &--fail a:visited {
+      color: color("red-70v");
+    }
+
+    &--conditional,
+    &--conditional a:visited {
+      color: color("blue-cool-60");
+    }
   }
-}
-
-.site-checklist-text--pass,
-.site-checklist-text--pass a:visited {
-  color: color("green-cool-60");
-}
-.site-checklist-text--exception,
-.site-checklist-text--exception a:visited {
-  color: color("orange-70v");
-}
-.site-checklist-text--fail,
-.site-checklist-text--fail a:visited {
-  color: color("red-70v");
-}
-.site-checklist-text--conditional {
-  color: color("blue-cool-60");
-}
-
-.site-checklist-icon--pass {
-  color: color("green-cool-50");
-}
-.site-checklist-icon--exception {
-  color: color("gold-30v");
-}
-.site-checklist-icon--fail {
-  color: color("orange-warm-60v");
-}
-.site-checklist-icon--conditional {
-  color: color("blue-cool-60");
 }
 
 .site-compliance-tag {
   @include u-text("no-uppercase");
   @include u-padding-x(1);
   @include u-padding-y("05");
-}
 
-.site-compliance-tag--pass {
-  background-color: color("green-cool-50");
-}
-.site-compliance-tag--fail {
-  background-color: color("red-50");
+  &--pass {
+    background-color: color("green-cool-50");
+  }
+
+  &--fail {
+    background-color: color("red-50");
+  }
 }

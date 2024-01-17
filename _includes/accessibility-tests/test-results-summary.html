@@ -39,7 +39,7 @@
   <p class="margin-top-1 margin-bottom-0">The USWDS team did {{ items_total }} tests based on WCAG 2.1 AA success criteria.</p>
 
   <!-- Add test summary for desktop widths -->
-  <table class="usa-table site-checklist-status-table">
+  <table class="usa-table site-checklist-test-summary__table">
     <caption>
       Overview of recent accessibility test results:
     </caption>
@@ -62,7 +62,7 @@
           {% endif %}
           <th>
             <div class="display-flex flex-align-center">
-                <svg class="usa-icon site-checklist-icon--{{ icon_color | downcase }}" aria-hidden="true" role="img">
+                <svg class="usa-icon site-checklist-icon site-checklist-icon--{{ icon_color | downcase }}" aria-hidden="true" role="img">
                   <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ status_icon }}"></use>
                 </svg>
               {{ status }}
@@ -91,9 +91,9 @@
   </table>
 
   <!-- Add test summary for mobile widths -->
-  <div class="site-checklist-status-list">
-    <p class="site-checklist-status-list__summary">Overview of recent accessibility test results:</p>
-    <ul class="usa-icon-list margin-top-0">
+  <div class="site-checklist-test-summary__list">
+    <p class="site-checklist-test-summary__list-summary">Overview of recent accessibility test results:</p>
+    <ul class="usa-icon-list">
       {% for status in status_types %}
         {% if status == "Passed" %}
           {% assign status_icon = pass_icon %}

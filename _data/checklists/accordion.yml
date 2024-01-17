@@ -131,7 +131,7 @@ testItems:
       the order in which the focus proceeds from item to item is logical.
       (For example, the focus doesn't skip a link or accordion heading.)
     test_status: pass
-    test_type: screenReader
+    test_type: screen_reader
     version_tested: 3.5.0
     wcag_criterion: 2.4.3
   - summary: Focus indicator is visible when using a screen reader.
@@ -139,7 +139,7 @@ testItems:
       When you use a screen reader and navigate between accordion panels,
       the virtual cursor (or JAWS focus) moves from one header to the next.
     test_status: pass
-    test_type: screenReader
+    test_type: screen_reader
     version_tested: 3.5.0
     wcag_criterion: 2.4.3
   - summary: Heading levels are logical.
@@ -147,7 +147,7 @@ testItems:
       When you use a screen reader and navigate through the accordion panel headings,
       the heading levels are the correct level for the page outline.
     test_status: conditional
-    test_type: screenReader
+    test_type: screen_reader
     status_details: This can only be tested in the context of your page.
     version_tested: 3.5.0
     wcag_criterion: 2.4.6
@@ -157,7 +157,7 @@ testItems:
       each accordion panel's heading level is the same.
       (Typically this is a heading level 2 or 3.)
     test_status: conditional
-    test_type: screenReader
+    test_type: screen_reader
     version_tested: 3.5.0
     wcag_criterion: 2.4.6
   - summary: Screen reader announces "collapsed" state.
@@ -165,12 +165,12 @@ testItems:
       When you use a screen reader and navigate to a closed panel,
       the screen reader announces that the content is "collapsed."
     test_status: exception
-    test_type: screenReader
+    test_type: screen_reader
     status_details: |
       In JAWS, the readout says "to activate press enter" instead of "collapsed."
       It works as expected in other screen readers.
-    issueNumber: 2368
-    issueRepo: uswds-site
+    github_issue_number: 2368
+    github_issue_repo: uswds-site
     version_tested: 3.5.0
     wcag_criterion: 2.4.6
   - summary: Screen reader announces "expanded" state.
@@ -178,12 +178,12 @@ testItems:
       When you use a screen reader and navigate to an open panel,
       the screen reader announces that the content is "expanded."
     test_status: exception
-    test_type: screenReader
+    test_type: screen_reader
     status_details: |
       In JAWS, the readout says "to activate press enter" instead of "expanded."
       It works as expected in other screen readers.
-    issueNumber: 2368
-    issueRepo: uswds-site
+    github_issue_number: 2368
+    github_issue_repo: uswds-site
     version_tested: 3.5.0
     wcag_criterion: 2.4.6
   - summary: Screen reader announces "expanded" state with expected keys.
@@ -191,7 +191,7 @@ testItems:
       When you use a screen reader and use the `enter` key or the `spacebar` on a closed panel,
       the screen reader announces that the content is "expanded."
     test_status: pass
-    test_type: screenReader
+    test_type: screen_reader
     version_tested: 3.5.0
     wcag_criterion: 2.4.6
   - summary: Screen reader announces "collapsed" state with expected keys.
@@ -199,6 +199,6 @@ testItems:
       When you use a screen reader and use the `enter` key or the `spacebar` on an open panel,
       the screen reader announces that the content is "collapsed."
     test_status: pass
-    test_type: screenReader
+    test_type: screen_reader
     version_tested: 3.5.0
     wcag_criterion: 2.4.6

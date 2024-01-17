@@ -10,7 +10,7 @@
   {% assign title = "Zoom magnification"%}
   {% assign items = zoom_tests %}
 {% endif %}
-{% if include.type == "screenReader" %}
+{% if include.type == "screen_reader" %}
   {% assign title = "Screen reader"%}
   {% assign items = screen_reader_tests %}
   {% assign AT_type = "screen readers" %}
@@ -87,9 +87,9 @@
                 </p>
                 <p class="site-checklist-fieldset__text--status site-checklist-fieldset__text--{{ item.test_status }}">
               {% endif %}
-              {% if item.issueNumber %}
+              {% if item.github_issue_number %}
                 We have logged this issue and are prioritizing it.
-                <a href="https://github.com/uswds/{{ item.issueRepo | default:'uswds' }}/issues/{{ item.issueNumber }}">Learn
+                <a href="https://github.com/uswds/{{ item.github_issue_repo | default:'uswds' }}/issues/{{ item.github_issue_number }}">Learn
                 more about this issue on GitHub</a>.
               {% endif %}
             </p>
@@ -97,8 +97,8 @@
             <p class="site-checklist-fieldset__text--status site-checklist-fieldset__text--{{ item.test_status }}">
               <b>The {{ component_name }} component does not pass this test.</b>
               We have logged this issue and are prioritizing it.
-              {% if  item.issueNumber %}
-                <a href="https://github.com/uswds/{{ item.issueRepo | default:'uswds' }}/issues/{{ item.issueNumber }}">Learn
+              {% if  item.github_issue_number %}
+                <a href="https://github.com/uswds/{{ item.github_issue_repo | default:'uswds' }}/issues/{{ item.github_issue_number }}">Learn
                   more about this issue on GitHub</a>.
               {% endif %}
             </p>

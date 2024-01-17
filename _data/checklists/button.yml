@@ -68,7 +68,7 @@ testItems:
       you hear the buttons announced in the same order that they appear on the page.
     test_status: conditional
     status_details: This can only be tested in the context of your page.
-    test_type: screenReader
+    test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 1.3.2
   - summary: Screen reader announces the button role.
@@ -76,7 +76,7 @@ testItems:
       When you use a screen reader and navigate from button to button on a page (using the `B` shortcut key or `tab` key),
       you hear the role "button".
     test_status: pass
-    test_type: screenReader
+    test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 4.1.2
 

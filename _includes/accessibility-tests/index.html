@@ -19,7 +19,7 @@
 {% assign general_tests = component.testItems | where: 'test_type', "general" %}
 {% assign zoom_tests = component.testItems | where: 'test_type', "zoom" %}
 {% assign keyboard_tests = component.testItems | where: 'test_type', "keyboard" %}
-{% assign screen_reader_tests = component.testItems | where: 'test_type', "screenReader" %}
+{% assign screen_reader_tests = component.testItems | where: 'test_type', "screen_reader" %}
 
 <!-- Set status icons -->
 {% assign pass_icon = 'check_circle' %}
@@ -50,7 +50,7 @@
     {% include accessibility-tests/checklist.html type='keyboard' %}
 {% endif %}
 {% if screen_reader_tests != empty %}
-    {% include accessibility-tests/checklist.html type='screenReader' %}
+    {% include accessibility-tests/checklist.html type='screen_reader' %}
 {% endif  %}
 
 <!--Add feedback section-->

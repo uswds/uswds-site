@@ -29,7 +29,7 @@ redirect_from:
 - /typography/02-links/
 subnav:
 - text: Link accessibility tests
-  href: /components/link/checklist/
+  href: /components/link/accessibility-tests/
 title: Link
 variants:
   - variant: "`.usa-link--external`"

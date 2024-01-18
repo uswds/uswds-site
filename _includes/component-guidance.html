@@ -1,7 +1,7 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
-{% assign checklistData = site.data.checklists[componentKey] %}
+{% assign checklistData = site.data.accessibility-tests[componentKey] %}
 
 {% assign guidancePath = page.guidancePath | default: "guidance" %}
 

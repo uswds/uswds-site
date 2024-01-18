@@ -1,4 +1,4 @@
-# Creating checklists
+# Creating accessibility test checklists
 
 ## Available data keys
 
@@ -18,8 +18,8 @@
 
 ## Creating a new checklist file
 
-1. Create a new .yml file in the _data/checklists directory.
-2. Give it a name that matches the component.name on the related component's checklist markdown file.
+1. Create a new .yml file in the _data/accessibility-tests directory.
+2. Give it a name that matches the component.name on the related component's accessibility.md markdown file.
 3. Copy the following template into the file:
 ```yaml
 title:

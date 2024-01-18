@@ -1,7 +1,7 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
-{% assign component = site.data.checklists[componentKey] %}
+{% assign component = site.data.accessibility-tests[componentKey] %}
 {% assign issues = site.data.issues[componentKey] %}
 
 {% if page.alert == true %}

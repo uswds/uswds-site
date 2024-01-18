@@ -31,7 +31,7 @@ variants:
     description: A button that looks like a link.
 subnav:
 - text: Button accessibility tests
-  href: /components/button/checklist/
+  href: /components/button/accessibility-tests/
 changelog:
   key: component-button
 ---

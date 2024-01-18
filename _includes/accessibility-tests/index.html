@@ -13,7 +13,7 @@
 <!-- Set component name and find related checklist data -->
 {% assign component_name = page.component.name | default: page.title | downcase %}
 {% assign component_key = component_name | slugify %}
-{% assign component = site.data.checklists[component_key] %}
+{% assign component = site.data.accessibility-tests[component_key] %}
 
 <!-- Assign test items by assistive technology type -->
 {% assign general_tests = component.test_items | where: 'test_type', "general" %}

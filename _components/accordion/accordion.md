@@ -12,7 +12,7 @@ redirect_from:
   - /components/accordions/
 subnav:
 - text: Accordion accessibility tests
-  href: /components/accordion/checklist/
+  href: /components/accordion/accessibility-tests/
 title: Accordion
 type: component
 variants:

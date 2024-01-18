@@ -30,16 +30,8 @@ variants:
   - variant: "`.usa-button--unstyled`"
     description: A button that looks like a link.
 subnav:
-- text: Preview
-  href: '#button-preview'
-- text: Code
-  href: '#button-code'
-- text: Guidance
-  href: '#button-guidance'
-- text: Package
-  href: '#button-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Button accessibility tests
+  href: /components/button/checklist/
 changelog:
   key: component-button
 ---

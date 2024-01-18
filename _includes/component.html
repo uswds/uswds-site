@@ -1,6 +1,8 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
+{% assign component = site.data.checklists[componentKey] %}
+{% assign issues = site.data.issues[componentKey] %}
 
 {% if page.alert == true %}
 <div class="usa-alert margin-bottom-3 usa-alert--{{ page.alert-class }}">
@@ -13,6 +15,9 @@
 </div>
 {% endif %}
 
+<!-- Add wcag compliance status tag -->
+{% include accessibility-tests/compliance-tag.html %}
+
 {% if page.parent == null and content.size > 1 %}
 <h2 class="site-component-section-title">About the {{ componentName }} {{ page.type }}</h2>
 <div class="font-lang-md measure-5 margin-top-3 margin-bottom-6">
@@ -20,12 +25,19 @@
 </div>
 {% endif %}
 
+{% if issues %}
+  {% include known-issues-alert.html %}
+{% endif %}
 {% include component-preview-and-code.html %}
 {% include component-guidance.html %}
-{% if page.component.package %}
-{% include component-package.html %}
+<!-- Add accessibility test results -->
+{% if component %}
+  {% include accessibility-tests/test-results-summary.html page='main' %}
 {% endif %}
 {% include known-issues.html %}
+{% if page.component.package %}
+  {% include component-package.html %}
+{% endif %}
 {% if page.disclaimer %}
-{% include disclaimer.html %}
+  {% include disclaimer.html %}
 {% endif %}

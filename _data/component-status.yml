@@ -1,0 +1,56 @@
+components:
+- name: Accordion
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/accordion/
+- name: Banner
+  status_major: released
+  status_minor: stable
+- name: Breadcrumb
+  status_major: released
+  status_minor: stable
+- name: Card
+  status_major: released
+  status_minor: stable
+- name: Consectetur
+  status_major: development
+  status_minor: accepted
+- name: CUI Banner
+  status_major: proposal
+  status_minor: progress
+- name: Date picker
+  status_major: released
+  status_minor: stable
+- name: Dolor
+  status_major: development
+  status_minor: alpha
+- name: Elit
+  status_major: proposal
+  status_minor: rejected
+- name: Hero
+  status_major: released
+  status_minor: stable
+- name: In-page navigation
+  status_major: released
+  status_minor: stable
+- name: Ipsum
+  status_major: released
+  status_minor: beta
+- name: Lorem
+  status_major: deprecated
+  status_minor: deprecated
+- name: Sit anum
+  status_major: development
+  status_minor: development
+- name: Tabs
+  status_major: proposal
+  status_minor: submitted
+- name: Tag
+  status_major: released
+  status_minor: stable
+- name: Tooltip
+  status_major: released
+  status_minor: stable
+- name: Validation
+  status_major: released
+  status_minor: stable

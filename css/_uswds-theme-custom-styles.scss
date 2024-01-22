@@ -3732,7 +3732,7 @@ $do-dont-top-bar-width: 1;
 
   .usa-accordion__button,
   .usa-accordion__content {
-    @include u-font("lang","sm");
+    @include u-font("lang", "sm");
   }
 
   .usa-accordion__content {
@@ -3770,14 +3770,14 @@ $do-dont-top-bar-width: 1;
   }
 
   &__text {
-    @include u-font("lang","sm");
+    @include u-font("lang", "sm");
     @include u-margin-bottom(1);
     @include u-margin-top(0);
     @include u-line-height("sans", 6);
 
     &--status {
       @include u-margin-y(1);
-      @include u-font("lang","xs");
+      @include u-font("lang", "xs");
       @include u-line-height("lang", 4);
     }
 
@@ -3846,7 +3846,6 @@ $do-dont-top-bar-width: 1;
   }
 }
 
-
 .site-checklist-tag {
   @include u-border("1px", "gray-10");
   @include u-font("lang", "3xs");
@@ -3912,7 +3911,6 @@ $do-dont-top-bar-width: 1;
     color: color("blue-cool-60");
   }
 }
-
 
 .site-compliance-tag {
   @include u-font("lang", "xs");

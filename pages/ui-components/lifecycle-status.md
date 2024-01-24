@@ -23,6 +23,10 @@ in_page_nav: false
   .text-ink  a:visited {
     color: #1b1b1b
   }
+
+  .border-gray-1 {
+    border-color: #fcfcfc!important;
+  }
 </style>
 
 {% assign component_status_items = site.data.component-status-prototype.components %}
@@ -39,6 +43,8 @@ in_page_nav: false
 {% assign beta_classes = "bg-green-cool-20" %}
 {% assign caution_classes = "bg-orange-30v" %}
 {% assign deprecated_classes = "bg-gray-cool-20" %}
+
+{% assign table_cell_classes = "border-105 border-gray-1  font-lang-2xs" %}
 
 {% assign col1Title = 'Component name' %}
 
@@ -137,7 +143,8 @@ in_page_nav: false
   </tbody>
 </table>
 
-<ul class="tablet:display-none add-list-reset font-lang-2xs mobile-lg:font-lang-xs">
+<table class="usa-table width-full tablet:display-none">
+  <tbody>
   {% for item in component_status_items %}
     {% if item.status_major == "proposal" %}
       {% if item.status_minor == "will not pursue" %}
@@ -160,12 +167,17 @@ in_page_nav: false
     {% elsif item.status_major == "deprecated" %}
       {% assign status_classes = deprecated_classes %}
     {% endif %}
-    <li class="display-flex flex-align-center">
-      <a href="{{ item.url }}">
-        {{ item.name }}
-      </a>
-      <span class="usa-tag {{ status_classes }}">{{ item.status_minor | capitalize }}</span>
-    </li>
+    <tr  class="{{ table_cell_classes }}">
+      <td class="text-ink bg-white padding-y-05 padding-x-2 border-right-0 grid-col">
+        <a href="{{ item.url }}">
+          {{ item.name }}
+        </a>
+      </td>
+      <td class="{{ status_classes }} padding-y-05 padding-x-2 border-left-0 grid-col">
+        <span>{{ item.status_minor | capitalize }}</span>
+      </td>
+    </tr>
   {% endfor %}
-</ul>
+  </tbody>
+</table>
 

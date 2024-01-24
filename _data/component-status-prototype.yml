@@ -15,6 +15,10 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/card/
+- name: Consectetur
+  status_major: development
+  status_minor: Scheduled
+  url: https://designsystem.digital.gov/components/card/
 - name: CUI Banner
   status_major: proposal
   status_minor: In progress
@@ -23,6 +27,17 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/date-picker
+- name: Dolor
+  status_major: development
+  status_minor: In development
+  url: https://github.com/uswds/uswds/pulls
+- name: Elit
+  status_major: proposal
+  status_minor: will not pursue
+  url: https://github.com/uswds/uswds/pulls
+- name: Fermentum
+  status_major: proposal
+  status_minor: approved
 - name: Hero
   status_major: released
   status_minor: stable
@@ -30,6 +45,22 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/in-page-navigation/
+- name: Ipsum
+  status_major: released
+  status_minor: experimental
+  url: https://github.com/uswds/uswds/pulls
+- name: Lorem
+  status_major: released
+  status_minor: use with caution
+  url: https://github.com/uswds/uswds/pulls
+- name: Nullam
+  status_major: deprecated
+  status_minor: deprecated
+  url: https://github.com/uswds/uswds/pulls
+- name: Sit anum
+  status_major: development
+  status_minor: In development
+  url: https://github.com/uswds/uswds/pulls
 - name: Tabs
   status_major: proposal
   status_minor: Voting open
@@ -47,7 +78,6 @@ components:
   status_minor: stable
   url: https://designsystem.digital.gov/components/validation
 - name: Vestibulum
-  status_major: released
-  status_minor: stable
-  url: https://designsystem.digital.gov/components/validation
-
+  status_major: deprecated
+  status_minor: retired
+  url: https://github.com/uswds/uswds/pulls

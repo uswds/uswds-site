@@ -33,12 +33,12 @@ in_page_nav: false
 {% assign phase_complete_classes = 'bg-gray-5' %}
 {% assign proposal_classes = "bg-yellow-20v" %}
 {% assign approved_classes = "bg-yellow-20v" %}
-{% assign rejected_classes = "bg-gray-cool-60 text-white" %}
+{% assign rejected_classes = "bg-gray-cool-50 text-white" %}
 {% assign development_classes = "bg-blue-cool-20v" %}
 {% assign released_classes = "bg-green-cool-50v text-white" %}
 {% assign beta_classes = "bg-green-cool-20" %}
 {% assign caution_classes = "bg-orange-30v" %}
-{% assign deprecated_classes = "bg-red-warm-50 text-white" %}
+{% assign deprecated_classes = "bg-gray-cool-20" %}
 
 {% assign col1Title = 'Component name' %}
 

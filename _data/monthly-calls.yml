@@ -5,9 +5,10 @@ videos:
       We shared new component-based accessibility test pages (formerly called “critical checklists”) for 
       the [accordion](https://designsystem.digital.gov/components/accordion/accessibility-tests/), 
       [button](https://designsystem.digital.gov/components/button/accessibility-tests/), and 
-      [link](https://designsystem.digital.gov/components/link/) 
+      [link](https://designsystem.digital.gov/components/link/accessibility-tests/) 
       components. We also discussed the months of work that led to their 
-      launch. The process started with internal manual accessibility testing of USWDS components. Later, 
+      launch. The process started with internal manual accessibility testing of USWDS components. We 
+      then prototyped the pages that explain how we tested and what we found in those tests. Later, 
       usability testing with participants from the USWDS community shaped the iterative development of 
       these pages. We look forward to updating the community as we roll out accessibility tests for more 
       USWDS components.

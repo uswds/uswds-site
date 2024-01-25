@@ -1,6 +1,6 @@
 {% assign page_name = page.title | downcase %}
 {% assign page_slug = page_name | slugify %}
-{% assign github_label = page.gitHub_label_url | default: page.title | replace: ' ', '+' %}
+{% assign github_label = page.github_label_url | default: page.title | replace: ' ', '+' %}
 {% assign issues = site.data.issues[page_slug] %}
 
 {%- if issues.items -%}

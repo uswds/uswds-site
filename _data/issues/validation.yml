@@ -1,9 +1,9 @@
 title: Validation
 alert-type: info
 items:
-- date: 2023-11-27
-  summary: Screen reader and screen magnification users did not notice the validation status.
-  summaryAdditional: The component does not announce when the validation conditions are met.
+- date: 2023-11-28
+  summary: Screen reader and screen magnification users did not notice when the validation status changed.
+  summaryAdditional:
   issueRepo: uswds
   issueNumber: 5642
 - date: 2023-10-25

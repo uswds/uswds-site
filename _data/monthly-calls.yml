@@ -1,4 +1,23 @@
 videos:
+  - title: Component-based accessibility tests for the U.S. Web Design System
+    subtitle: Manual accessibility tests for the whole team
+    description: |
+      We shared new component-based accessibility test pages (formerly called “critical checklists”) for 
+      the [accordion](https://designsystem.digital.gov/components/accordion/accessibility-tests/), 
+      [button](https://designsystem.digital.gov/components/button/accessibility-tests/), and 
+      [link](https://designsystem.digital.gov/components/link/) 
+      components. We also discussed the months of work that led to their 
+      launch. The process started with internal manual accessibility testing of USWDS components. Later, 
+      usability testing with participants from the USWDS community shaped the iterative development of 
+      these pages. We look forward to updating the community as we roll out accessibility tests for more 
+      USWDS components.
+    date: January 2024
+    id: xP4IWCdzWmA
+    event_link: https://digital.gov/event/2024/01/18/uswds-monthly-call-january-2024/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-january-2024.pptx
+      size: 7.8
+      pages: 87
   - title: Designing a repeatable research process with people with disabilities
     subtitle: Managing and sustaining our user research
     description: |

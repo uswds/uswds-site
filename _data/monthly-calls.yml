@@ -15,6 +15,7 @@ videos:
     date: January 2024
     id: xP4IWCdzWmA
     event_link: https://digital.gov/event/2024/01/18/uswds-monthly-call-january-2024/
+    missing_script: true
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-january-2024.pptx
       size: 7.8

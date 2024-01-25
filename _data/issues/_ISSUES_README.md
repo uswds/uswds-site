@@ -5,12 +5,12 @@
 | Key | Description | Standard values |
 | :-- | :---------- | --------------- |
 | title | Name of component | -- |
-| alert-type | Designate the type of alert that should be shown on the top of the component page | "info", "error" |
+| alert_type | Designate the type of alert that should be shown on the top of the component page | "info", "error" |
 | date | Date the issue was created (YYYY-MM-DD) | -- |
 | summary | Short description of change | -- |
-| summaryAdditional | Additional description | -- |
-| issueRepo | Issue repo name | uswds, uswds-site |
-| issueNumber | Issue number | -- |
+| summary_additional | Additional description | -- |
+| issue_repo | Issue repo name | uswds, uswds-site |
+| issue_number | Issue number | -- |
 
 
 ## Creating a new known issues file
@@ -20,13 +20,13 @@ Then, copy the following template into the file:
 
 ```yaml
 title:
-alert-type: info
+alert_type: info
 items:
 - date:
   summary:
-  summaryAdditional:
-  issueRepo:
-  issueNumber:
+  summary_additional:
+  issue_repo:
+  issue_number:
 ```
 
 Fill it in with content according to the guides above.

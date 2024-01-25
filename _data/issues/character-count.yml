@@ -1,8 +1,8 @@
 title: Character count
-alert-type: info
+alert_type: info
 items:
 - date: 2023-10-23
   summary: Screen reader and screen magnifier users had trouble recognizing when they exceeded the character count limit.
-  summaryAdditional:
-  issueRepo: uswds
-  issueNumber: 5574
+  summary_additional:
+  issue_repo: uswds
+  issue_number: 5574

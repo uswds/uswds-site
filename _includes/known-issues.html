@@ -1,13 +1,13 @@
-{% assign pageName = page.title | downcase %}
-{% assign pageSlug = pageName | slugify %}
-{% assign gitHubLabel = page.gitHub_label_url | default: page.title | replace: ' ', '+' %}
-{% assign issues = site.data.issues[pageSlug] %}
+{% assign page_name = page.title | downcase %}
+{% assign page_slug = page_name | slugify %}
+{% assign github_label = page.gitHub_label_url | default: page.title | replace: ' ', '+' %}
+{% assign issues = site.data.issues[page_slug] %}
 
 {%- if issues.items -%}
   <h2 id="known-issues" class="site-component-section-title">Known issues</h2>
 
   <p>All known issues for {{ page.title | downcase }} are tracked in
-  <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+{{ gitHubLabel }}%22">GitHub</a>.
+  <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+{{ github_label }}%22">GitHub</a>.
   Notable usability issues are tracked below: </p>
 
   {% include known-issues-table.html %}

@@ -56,4 +56,3 @@ type: component
 changelog:
   key: component-combo-box
 ---
-

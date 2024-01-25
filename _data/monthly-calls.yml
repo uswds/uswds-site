@@ -1,5 +1,5 @@
 videos:
-  - title: Component-based accessibility tests for the U.S. Web Design System
+  - title: Component-based accessibility tests
     subtitle: Manual accessibility tests for the whole team
     description: |
       We shared new component-based accessibility test pages (formerly called “critical checklists”) for 

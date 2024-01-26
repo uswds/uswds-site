@@ -3935,11 +3935,23 @@ $deprecated-phase-color: color("gray-cool-20");
 .lifecycle {
 
 
-  &-phase::after {
-    content: '';
-    height: 100%;
-    border-left: 3px solid color("gray-cool-50");
-    position: absolute;
+  // &-phase::after {
+  //   content: '';
+  //   height: 100%;
+  //   border-left: 3px solid color("gray-cool-50");
+  //   position: absolute;
+  // }
+  &-phase-box {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: units(2);
+    border: units(1) solid;
+    margin-right: units(3);
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 
   &-phase-1,
@@ -3958,12 +3970,39 @@ $deprecated-phase-color: color("gray-cool-20");
     // background: color("blue-cool-5v");
   }
   &-phase-3 {
-    border-color: $released-phase-color!important;
+    border: 4px solid $released-phase-color!important;
+    background: white;
     // background: color("green-cool-5v");
   }
   &-phase-4 {
-    border-color: $deprecated-phase-color!important;
+    border: 4px solid $deprecated-phase-color!important;
+    background: white;
     // background: color("gray-cool-5");
+  }
+
+  &-header {
+    border-left: units("05") solid;
+    padding-left: units(2);
+  }
+
+  &-border-bottom {
+    border-bottom: units(1) solid;
+  }
+
+  &-border--proposal {
+    border-color: $proposal-phase-color!important;
+  }
+
+  &-border--development {
+    border-color: $development-phase-color;
+  }
+
+  &-bg--proposal {
+    background-color: $proposal-phase-color;
+  }
+
+  &-bg--development {
+    background-color: $development-phase-color;
   }
 }
 

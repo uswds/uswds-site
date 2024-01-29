@@ -11,8 +11,3 @@ items:
   summary_additional:
   issue_repo: uswds
   issue_number: 5535
-- date: 2023-09-29
-  summary: Component guidance does not explicitly state that the date picker should allow for the date to be typed in manually.
-  summary_additional:
-  issue_repo: uswds-site
-  issue_number: 2294

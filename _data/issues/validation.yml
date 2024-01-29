@@ -9,5 +9,5 @@ items:
 - date: 2023-10-25
   summary: Users are confused about the purpose of the validation component.
   summary_additional: The component does not match user expectations for how their information should be validated in a form input.
-  issue_repo: uswds-site
-  issue_number: 2320
+  issue_repo: uswds
+  issue_number: 5750

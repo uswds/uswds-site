@@ -29,7 +29,7 @@ in_page_nav: false
   }
 </style>
 
-{% assign component_status_items = site.data.component-status-prototype.components %}
+{% assign component_status_items = site.data.component-status.components %}
 {% assign check_icon_classes = 'text-gray-60' %}
 {% assign check_icon_styles = 'height:1rem; width:1rem' %}
 

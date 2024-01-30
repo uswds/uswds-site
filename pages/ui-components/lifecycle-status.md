@@ -1,5 +1,5 @@
 ---
-permalink: /components/status-prototype/
+permalink: /components/status/
 layout: styleguide
 title: USWDS component status
 category: Components

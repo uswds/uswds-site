@@ -11,10 +11,30 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/breadcrumb/
+- name: Button
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/button/
+- name: Button group
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/button-group/
 - name: Card
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/card/
+- name: Character count
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/character-count/
+- name: Checkbox
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/checkbox/
+- name: Combo box
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/combo-box/
 - name: Consectetur
   status_major: development
   status_minor: Scheduled
@@ -26,7 +46,11 @@ components:
 - name: Date picker
   status_major: released
   status_minor: stable
-  url: https://designsystem.digital.gov/components/date-picker
+  url: https://designsystem.digital.gov/components/date-picker/
+- name: Date range picker
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/date-range-picker/
 - name: Dolor
   status_major: development
   status_minor: In development

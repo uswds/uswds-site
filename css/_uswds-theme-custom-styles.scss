@@ -3929,20 +3929,29 @@ $do-dont-top-bar-width: 1;
 
 $proposal-phase-color: color("yellow-20v");
 $development-phase-color: color("blue-cool-20v");
-$released-phase-color: color("green-cool-50v");
+$released-phase-color: color("green-cool-50");
+$experimental-phase-color: color("green-cool-20");
 $deprecated-phase-color: color("gray-cool-20");
+$accepted-phase-color: color("yellow-20v");
+$rejected-phase-color: color("gray-cool-60");
+$caution-phase-color: color("orange-30v");
 
 .lifecycle {
-
-
-  // &-phase::after {
+  // &-header::after {
   //   content: '';
   //   height: 100%;
   //   border-left: 3px solid color("gray-cool-50");
   //   position: absolute;
   // }
+
+  // &-header::after {
+  //   border-left: 2px solid;
+  //   position: absolute;
+  //   content: "";
+  // }
+
   &-phase-box {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: units(2);
@@ -3960,37 +3969,37 @@ $deprecated-phase-color: color("gray-cool-20");
   }
 
   &-phase-1 {
-    border: 4px solid $proposal-phase-color!important;
+    border: 4px solid $proposal-phase-color !important;
     background: white;
     // background: $proposal-phase-color;
   }
   &-phase-2 {
-    border: 4px solid $development-phase-color!important;
+    border: 4px solid $development-phase-color !important;
     background: white;
     // background: color("blue-cool-5v");
   }
   &-phase-3 {
-    border: 4px solid $released-phase-color!important;
+    border: 4px solid $released-phase-color !important;
     background: white;
     // background: color("green-cool-5v");
   }
   &-phase-4 {
-    border: 4px solid $deprecated-phase-color!important;
+    border: 4px solid $deprecated-phase-color !important;
     background: white;
     // background: color("gray-cool-5");
   }
 
-  &-header {
-    border-left: units("05") solid;
-    padding-left: units(2);
-  }
+  // &-header {
+  //   border-left: units("05") solid;
+  //   padding-left: units(2);
+  // }
 
   &-border-bottom {
     border-bottom: units(1) solid;
   }
 
   &-border--proposal {
-    border-color: $proposal-phase-color!important;
+    border-color: $proposal-phase-color !important;
   }
 
   &-border--development {
@@ -4004,7 +4013,57 @@ $deprecated-phase-color: color("gray-cool-20");
   &-bg--development {
     background-color: $development-phase-color;
   }
+
+  &-bg--released {
+    background-color: $released-phase-color;
+    color: white;
+  }
+
+  &-bg--experimental {
+    background-color: $experimental-phase-color;
+  }
+
+  &-bg--caution {
+    background-color: $caution-phase-color;
+  }
+
+  &-bg--deprecated {
+    background-color: $deprecated-phase-color;
+  }
+
+  &-bg--accepted {
+    background-color: $accepted-phase-color;
+  }
+
+  &-bg--rejected {
+    background-color: $rejected-phase-color;
+    color: white;
+  }
 }
 
+.lifecycle-table {
+  thead {
+    @include u-text("bold");
 
+    th {
+      background-color: color("gray-1")!important;
+    }
+  }
 
+  tr {
+    border: units("05") solid color("gray-1")!important;
+  }
+
+  th,
+  td {
+    @include u-padding-x(0);
+    @include u-display("flex");
+    @include u-flex("align-center");
+    @include u-flex("justify-center");
+    text-align:center;
+  }
+
+  td:first-of-type {
+    @include u-flex("justify-start");
+  }
+}

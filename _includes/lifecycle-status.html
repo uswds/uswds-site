@@ -11,9 +11,9 @@
 </style>
 
 {% if include.data == 'prototype' %}
-  {% assign component_status_items = site.data.component-status-prototype.components %}
+  {% assign component_status_items = site.data.lifecycle-status-prototype.components %}
   {% else %}
-    {% assign component_status_items = site.data.component-status.components %}
+    {% assign component_status_items = site.data.lifecycle-status.components %}
 {% endif %}
 
 {% assign check_icon_classes = 'text-gray-60' %}

@@ -10,6 +10,8 @@ subnav:
     href: /components/overview/
   - text: Packages
     href: /components/packages/
+  - text: Component lifecycle
+    href: /components/lifecycle/
   - text: Component status
     href: /components/status/
   - text: Component status (Proto data)

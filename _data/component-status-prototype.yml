@@ -61,7 +61,7 @@ components:
   url: https://github.com/uswds/uswds/pulls
 - name: Fermentum
   status_major: proposal
-  status_minor: approved
+  status_minor: accepted
 - name: Hero
   status_major: released
   status_minor: stable

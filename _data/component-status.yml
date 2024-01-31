@@ -47,6 +47,14 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/date-range-picker/
+- name: Error summary
+  status_major: proposal
+  status_minor: In progress
+  url: https://github.com/uswds/uswds/issues/4019
+- name: Feedback
+  status_major: proposal
+  status_minor: In progress
+  url: https://github.com/uswds/uswds/issues/5564
 - name: File input
   status_major: released
   status_minor: stable
@@ -55,6 +63,10 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/footer/
+- name: Glossary
+  status_major: proposal
+  status_minor: In progress
+  url: https://github.com/uswds/uswds/issues/3937
 - name: Header
   status_major: released
   status_minor: stable
@@ -94,6 +106,22 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/list/
+- name: Primary nav - sidebar
+  status_major: proposal
+  status_minor: In progress
+  url: https://github.com/uswds/uswds/issues/3897
+- name: Quote with attribution
+  status_major: proposal
+  status_minor: In progress
+  url: https://github.com/uswds/uswds/issues/5695
+- name: Skip to
+  status_major: proposal
+  status_minor: In progress
+  url: https://github.com/uswds/uswds/issues/5306
+- name: Spinner
+  status_major: proposal
+  status_minor: In progress
+  url: https://github.com/uswds/uswds/issues/4346
 - name: Tabs
   status_major: proposal
   status_minor: Voting open
@@ -102,6 +130,14 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/tag
+- name: Toast
+  status_major: proposal
+  status_minor: In progress
+  url: https://github.com/uswds/uswds/issues/5071
+- name: Toggle
+  status_major: proposal
+  status_minor: In progress
+  url: https://github.com/uswds/uswds/issues/3229
 - name: Tooltip
   status_major: released
   status_minor: stable

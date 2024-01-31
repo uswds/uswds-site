@@ -3929,8 +3929,8 @@ $do-dont-top-bar-width: 1;
 
 $proposal-phase-color: color("yellow-20v");
 $development-phase-color: color("blue-cool-20v");
-$released-phase-color: color("green-cool-50");
-$experimental-phase-color: color("green-cool-20");
+$released-phase-color: color("mint-50");
+$experimental-phase-color: color("mint-20");
 $deprecated-phase-color: color("gray-cool-20");
 $accepted-phase-color: color("yellow-20v");
 $rejected-phase-color: color("gray-cool-60");
@@ -4007,63 +4007,78 @@ $caution-phase-color: color("orange-30v");
   }
 
   &-bg--proposal {
-    background-color: $proposal-phase-color;
+    background-color: $proposal-phase-color!important;
   }
 
   &-bg--development {
-    background-color: $development-phase-color;
+    background-color: $development-phase-color!important;
   }
 
   &-bg--released {
-    background-color: $released-phase-color;
-    color: white;
+    background-color: $released-phase-color!important;
+    color: white!important;
   }
 
   &-bg--experimental {
-    background-color: $experimental-phase-color;
+    background-color: $experimental-phase-color!important;
   }
 
   &-bg--caution {
-    background-color: $caution-phase-color;
+    background-color: $caution-phase-color!important;
   }
 
   &-bg--deprecated {
-    background-color: $deprecated-phase-color;
+    background-color: $deprecated-phase-color!important;
   }
 
   &-bg--accepted {
-    background-color: $accepted-phase-color;
+    background-color: $accepted-phase-color!important;
   }
 
   &-bg--rejected {
-    background-color: $rejected-phase-color;
-    color: white;
+    background-color: $rejected-phase-color!important;
+    color: white!important;
   }
 }
 
-.lifecycle-table {
+.usa-prose>.lifecycle-table {
+  @include u-font("lang", "3xs");
+  @include u-margin-top(4);
+  @include u-maxw("tablet-lg");
+  @include u-width("full");
+
   thead {
     @include u-text("bold");
-
-    th {
-      background-color: color("gray-1")!important;
-    }
   }
 
   tr {
-    border: units("05") solid color("gray-1")!important;
+    border: units("05") solid color($site-background-color)!important;
   }
 
-  th,
-  td {
-    @include u-padding-x(0);
-    @include u-display("flex");
-    @include u-flex("align-center");
-    @include u-flex("justify-center");
-    text-align:center;
+  td,
+  thead th {
+    background-color: color($site-background-color);
+    border: none;
+    text-align: center;
+    width:20%;
   }
 
   td:first-of-type {
-    @include u-flex("justify-start");
+    @include u-maxw(15);
+    @include u-padding-left(0);
+    text-align:left;
   }
+
+  // th,
+  // td {
+  //   @include u-padding-x(0);
+  //   @include u-display("flex");
+  //   @include u-flex("align-center");
+  //   @include u-flex("justify-center");
+  //   text-align:center;
+  // }
+
+  // td:first-of-type {
+  //   @include u-flex("justify-start");
+  // }
 }

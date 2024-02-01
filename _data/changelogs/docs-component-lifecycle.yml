@@ -1,0 +1,9 @@
+title: Component lifecycle
+type: documentation
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added component lifecycle page.
+    affectsGuidance: true
+    githubPr: 2462
+    githubRepo: uswds-site

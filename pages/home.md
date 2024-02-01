@@ -56,18 +56,18 @@ graphic_list:
 
 <section class="usa-section bg-base-lightest showcase" aria-label="Sites using USWDS">
   <div class="grid-container">
-    <h2 class="font-lang-xl margin-y-0 line-height-serif-2">Showcase</h2>
+    <h2 class="font-lang-xl margin-y-0 line-height-serif-2">Sites built with USWDS</h2>
     <div class="grid-row grid-gap tablet:margin-top-3">
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/nih.webp" alt="Preview image of National Institutes of Health Library home page" width="960" height="540">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/nih.webp" alt="" width="960" height="540">
         <a href="https://www.nihlibrary.nih.gov/">National Institutes of Health Library</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/va-healthcare.webp" alt="Preview image of Veterans affairs home page" width="960" height="540">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/va-healthcare.webp" alt="" width="960" height="540">
         <a href="https://www.va.gov/">U.S. Department of Veterans Affairs</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/nasa.webp" alt="Preview image of NASA Glenn Research Center home page" width="960" height="540">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/nasa.webp" alt="" width="960" height="540">
         <a href="https://www1.grc.nasa.gov/">NASA Glenn Research Center</a>
       </div>
     </div>
@@ -76,15 +76,15 @@ graphic_list:
   <div class="grid-container tablet:margin-top-6">
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/pubmed.webp" alt="Preview image of PubMed Labs home page" width="960" height="540">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/pubmed.webp" alt="" width="960" height="540">
         <a class="font-lang-md" href="https://www.ncbi.nlm.nih.gov/labs/pubmed/">PubMed Labs | U.S. National Library of Medicine</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="Preview image of vote.gov home page" width="960" height="540">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="" width="960" height="540">
         <a href="https://vote.gov/">vote.gov</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/seedfund.webp" alt="Preview image of Seed Fund home page" width="960" height="540">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/seedfund.webp" alt="" width="960" height="540">
         <a href="https://seedfund.nsf.gov/">America’s Seed Fund</a>
       </div>
     </div>

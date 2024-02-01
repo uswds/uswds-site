@@ -3928,13 +3928,13 @@ $do-dont-top-bar-width: 1;
 }
 
 $proposal-phase-color: color("yellow-20v");
-$development-phase-color: color("blue-cool-20v");
-$released-phase-color: color("mint-50");
-$experimental-phase-color: color("mint-20");
-$deprecated-phase-color: color("gray-cool-20");
 $accepted-phase-color: color("yellow-20v");
 $rejected-phase-color: color("gray-cool-60");
+$development-phase-color: color("blue-cool-20v");
+$experimental-phase-color: color("mint-20");
+$released-phase-color: color("mint-50");
 $caution-phase-color: color("orange-30v");
+$deprecated-phase-color: color("red-warm-60v");
 
 .lifecycle {
   // &-header::after {
@@ -4029,6 +4029,7 @@ $caution-phase-color: color("orange-30v");
 
   &-bg--deprecated {
     background-color: $deprecated-phase-color!important;
+    color: white!important;
   }
 
   &-bg--accepted {
@@ -4038,6 +4039,61 @@ $caution-phase-color: color("orange-30v");
   &-bg--rejected {
     background-color: $rejected-phase-color!important;
     color: white!important;
+  }
+}
+
+.lifecycle-phase{
+  @include u-display("flex");
+  @include u-flex("column");
+  @include u-padding-y(6);
+  @include u-border-bottom("1px", "gray-10");
+
+  @include at-media("desktop") {
+    @include u-flex("row");
+  }
+
+  &:last-of-type {
+    border:none;
+  }
+
+  &__intro {
+    @include at-media("desktop") {
+      @include grid-col(3);
+      @include u-margin-right(4);
+    }
+  }
+
+  &__heading {
+    @include u-line-height("sans", 4);
+    @include u-border-bottom("05");
+    @include u-padding-bottom(1);
+    @include u-margin-top(0);
+    @include u-margin-bottom("105");
+  }
+
+  &__heading-small {
+    @include u-font("lang", "xs");
+  }
+
+  &__heading-large {
+    @include u-font("lang", "xl");
+  }
+
+  &__description {
+    @include u-font("lang", "xs");
+  }
+
+  &__subphase {
+    @include u-measure(5);
+  }
+
+  &__subphase-header {
+    @include u-display("inline-block");
+    @include u-font("lang","sm");
+    @include u-padding-y("05");
+    @include u-padding-x(2);
+    @include u-margin-bottom(0);
+    @include u-margin-top(2);
   }
 }
 
@@ -4057,7 +4113,8 @@ $caution-phase-color: color("orange-30v");
 
   td,
   thead th {
-    background-color: color($site-background-color);
+    @include u-padding-y("05");
+    @include u-bg($site-background-color);
     border: none;
     text-align: center;
     width:20%;
@@ -4068,17 +4125,4 @@ $caution-phase-color: color("orange-30v");
     @include u-padding-left(0);
     text-align:left;
   }
-
-  // th,
-  // td {
-  //   @include u-padding-x(0);
-  //   @include u-display("flex");
-  //   @include u-flex("align-center");
-  //   @include u-flex("justify-center");
-  //   text-align:center;
-  // }
-
-  // td:first-of-type {
-  //   @include u-flex("justify-start");
-  // }
 }

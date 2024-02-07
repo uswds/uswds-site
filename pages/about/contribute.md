@@ -29,7 +29,7 @@ If something isn’t working the way it's supposed to, here’s how you can let 
 1. Check our [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Bug%22+) to see if your bug has already been reported.
 1. If your bug has already been reported, leave a comment in the original issue and provide any additional context (if different than the original submission).
 1. Document the steps we can take to reproduce the bug. If you can, take screen shots to capture specific details about the bug.
-1. Submit an issue using the [bug report template](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Bug%2CStatus%3A+Triage%2CNeeds%3A+Confirmation&template=bug_report.yaml&title=USWDS+-+Bug%3A+%5BYOUR+TITLE%5D). A USWDS core team member may reach out to you if we need further clarification or context. We may also need your help testing possible solutions. Be sure to check in on your issue to answer any questions we may have about it.
+1. Submit an issue using the [bug report template]({{ site.github_issue_bug_url }}). A USWDS core team member may reach out to you if we need further clarification or context. We may also need your help testing possible solutions. Be sure to check in on your issue to answer any questions we may have about it.
 
 If you have a code fix for the issue, go ahead and [submit a pull request](https://github.com/uswds/uswds/compare). Our team tracks issues, so make sure any pull request you submit has a related issue.
 
@@ -40,7 +40,7 @@ If you’ve got a new idea or a suggestion for how something could work better, 
 1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22) for any duplicate or similar feature requests. If your idea has already been suggested, upvote that feature request with a thumbs up emoji and comment on the issue to let us know why you need this feature request and any other supporting information. We review the number of upvotes to help us prioritize feature requests.
 <br/><br/>If you want to find other feature requests open for upvoting, check out our [feature request backlog view (sorted by those with the most upvotes)](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Voting+Open+%F0%9F%91%8D%22+sort%3Areactions-%2B1-desc).
 
-2. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit an issue using the [feature request template](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Feature+Request%2CStatus%3A+Triage&template=feature_request.yaml&title=USWDS+-+Feature%3A+%5BYOUR+TITLE%5D).  A USWDS core team member may reach out to you if we need further clarification on your submission.
+2. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit an issue using the [feature request template]({{ site.github_issue_feature_url }}).  A USWDS core team member may reach out to you if we need further clarification on your submission.
 
 ## Submit a pull request
 
@@ -64,7 +64,7 @@ If the pull request is accepted, we will schedule the issue and merge the pull r
 1. Check our [open issues backlog](https://github.com/uswds/uswds/issues) for any duplicate or similar issues.
 1. If your idea has already been suggested, upvote that feature request with a thumbs up emoji and comment on the issue to let us know why you need this feature request or enhancement and any other supporting information.
 <br/>**Tip:** If you want to find other feature requests open for upvoting, check out our [feature request view sorted by status](https://github.com/orgs/uswds/projects/8/views/18?sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=Status).
-1. If your proposed fix is not in the [open issues backlog](https://github.com/uswds/uswds/issues), [create an issue](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+feature+request&template=feature_request.md&title=) describing your proposal. This doesn’t mean we don’t want you to create a pull request. We simply want to start the process with an online conversation first. Plus, other community members might have supporting thoughts to add to your proposal. If you’ve already got a pull request, no worries. Go ahead and attach it to the issue.
+1. If your proposed fix is not in the [open issues backlog](https://github.com/uswds/uswds/issues), [create an issue]({{ site.github_issue_feature_url }}) describing your proposal. This doesn’t mean we don’t want you to create a pull request. We simply want to start the process with an online conversation first. Plus, other community members might have supporting thoughts to add to your proposal. If you’ve already got a pull request, no worries. Go ahead and attach it to the issue.
 
 ### Want to propose something else?
 

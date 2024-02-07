@@ -1,9 +1,9 @@
 ---
 permalink: /components/lifecycle/
 layout: styleguide
-title: Component lifecycle
+title: USWDS component lifecycle
 category: Components
-lead: Lorem ipsum dolor sit anum
+lead: [The USWDS component lifecycle defines the phases of component development]
 type: docs
 subnav:
   - text: Latest updates
@@ -12,8 +12,11 @@ changelog:
   key: docs-component-lifecycle
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum felis in nunc convallis, hendrerit tempus ipsum tempus.
-Maecenas convallis tellus non ornare tincidunt. Ut et consequat arcu.
+The USWDS component lifecycle tracks the life of a component as it moves from an idea to a released component and eventually deprecation.
+
+As an open source project, we rely on community contribution throughout the lifecycle. This page documents the phases of the component lifecycle and outlines how you can help at each phase.
+
+You can find a list of the components currently in the lifecycle on the the [component status page]({{ site.baseurl }}/components/status).
 
 <!-- ## Component lifecycle -->
 
@@ -61,11 +64,8 @@ Maecenas convallis tellus non ornare tincidunt. Ut et consequat arcu.
         {% endif %}
           {{ subphase.name }}
         </h3>
-        {% if subphase.description %}
-          <p>{{ subphase.description }}</p>
-        {% endif %}
-        {% if subphase.starts_when or subphase.ends_when%}
-          <p>
+        <!-- {% if subphase.starts_when or subphase.ends_when%}
+          <p class="font-lang-xs">
             {% if subphase.starts_when %}
               <b>Starts when:</b> {{ subphase.starts_when }}<br/>
             {% endif %}
@@ -73,9 +73,19 @@ Maecenas convallis tellus non ornare tincidunt. Ut et consequat arcu.
               <b>Ends when:</b> {{ subphase.ends_when }}<br/>
             {% endif %}
           </p>
+        {% endif %} -->
+        {% if subphase.description %}
+          <p>
+          {{ subphase.description }}
+          {% if subphase.contribution_method %}
+            {{ subphase.contribution_method }}
+          {% endif %}
+          </p>
         {% endif %}
         {% if subphase.learn_more %}
-          <p>{{ subphase.learn_more }}</p>
+          <p>
+            {{ subphase.learn_more }}
+          </p>
         {% endif %}
       {% endfor %}
     </div>

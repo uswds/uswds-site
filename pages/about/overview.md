@@ -5,7 +5,7 @@ redirect_from:
 - /about/history/
 layout: styleguide
 category: About
-lead: Here, you will learn more about the mission of the U.S. Web Design System. Learn about our impact in the government and history.
+lead: Here, you will learn more about the mission of the U.S. Web Design System. Learn about our impact in the government and a little about our history.
 ---
 
 {:.margin-top-4}

@@ -163,7 +163,7 @@
   author:
     name: GSA IT (Mark Vogelgesang)
     url: https://github.com/GSA/
-  notes: "Allows users to toggle between native Salesforce components/functionality along with custom components built using USWDS. Meets GSA's Guidelines for Digital Presence as well as tenants of [21st Century IDEA](https://digital.gov/resources/21st-century-integrated-digital-experience-act/)."
+  notes: "Allows users to toggle between native Salesforce components/functionality along with custom components built using USWDS. Meets GSA's Guidelines for Digital Presence as well as tenets of [21st Century IDEA](https://digital.gov/resources/21st-century-integrated-digital-experience-act/)."
 
 - name: USWDS WebJar
   distribution: WebJars

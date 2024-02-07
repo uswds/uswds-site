@@ -1,15 +1,3 @@
-<style>
-  .text-white a,
-  .text-white a:visited {
-    color: white
-  }
-
-  .text-ink a,
-  .text-ink  a:visited {
-    color: #1b1b1b
-  }
-</style>
-
 {% if include.data == 'prototype' %}
   {% assign component_status_items = site.data.lifecycle-status-prototype.components %}
   {% else %}
@@ -30,16 +18,13 @@
 {% assign caution_classes = "lifecycle-bg--caution" %}
 {% assign deprecated_classes = "lifecycle-bg--deprecated" %}
 
-{% assign table_cell_classes = "border-105 border-gray-1  font-lang-2xs" %}
-
 {% assign col1Title = 'Component name' %}
 
 {% assign major_status_types = "proposal, development, released, deprecated" | split: ', '%}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis convallis nibh, ut ullamcorper odio molestie in.
-Praesent feugiat laoreet ex, at mollis purus volutpat quis. Vestibulum mattis diam ac turpis consequat ultrices.
-
-[Don't see the component you are looking for? Link to [proposal repo](http://www.github.com).]
+This table illustrates the current status of where components are in the [component lifecycle]({{ site.baseurl }}/components/lifecycle).
+You can find a full list of all new component discussions on our [discussion board](http://www.github.com).
+Don't see the component you are looking for? Add your idea to the [new component discussion board](http://www.github.com).
 
 <table class="lifecycle-table display-none tablet:display-table">
   <caption class="usa-sr-only">Component status</caption>
@@ -159,7 +144,7 @@ Praesent feugiat laoreet ex, at mollis purus volutpat quis. Vestibulum mattis di
     {% elsif item.status_major == "deprecated" %}
       {% assign status_classes = deprecated_classes %}
     {% endif %}
-    <tr  class="{{ table_cell_classes }}">
+    <tr>
       <td>
         <a href="{{ item.url }}">
           {{ item.name }}

@@ -188,7 +188,7 @@ components:
   url: https://designsystem.digital.gov/components/table/
 - name: Tabs
   status_major: proposal
-  status_minor: Voting open
+  status_minor: Proposal started
   url: https://github.com/amyleadem/uswds-proposals/blob/339ac763be0bc879786e00ac87d0e8193ffdb35c/proposals/tabs-component.md
 - name: Tag
   status_major: released

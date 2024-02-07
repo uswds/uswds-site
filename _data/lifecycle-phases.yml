@@ -9,37 +9,41 @@ phases:
           A new component idea is added to the discussion board.
         ends_when: |
           The component is released.
-        contribution_method: |
-          In this phase, you can contribute by <a href="">opening new discussions</a>, sharing ideas or voting for <a href="">existing discussions</a>,
-          or volunteering to create a proposal for the component.
+        contribution_method:
+          - 'opening <a href="">a new component discussion</a>'
+          - 'sharing ideas or voting for <a href="">existing discussions</a>'
+          - 'volunteering to <a href="">create a proposal</a> for the component<'
         learn_more: |
           Learn more about starting and contributing to component discussions in the <a href="">uswds-proposals repo</a>.
       - name: Proposal started
         description: |
           A proposal for the component is in progress.
-        contribution_method: |
-          In this phase, you can contribute by adding information, opinions, and votes to <a href="">existing proposals</a>.
+        contribution_method:
+          - <a href="">adding information, opinions, and votes to existing proposals</a>.
         starts_when: The component proposal is drafted.
-        ends_when: The proposal is complete and ready for community feedback.
+        ends_when: The proposal is complete and opened for final feedback.
         learn_more: |
           Learn more about the proposal process in the <a href="">uswds-proposals repo</a>.
       - name: Proposal open for comment
         description: |
           The proposal is complete and ready for final comment from the community.
-          The proposal will remain open for comment for a minimum of 45 days.
-        contribution_method: |
-          During this phase, you can contribute by sharing your thoughts, questions, and votes on <a href="">open proposals</a>.
+          The proposal will remain open for a minimum of 45 days.
+        contribution_method:
+          - '<a href="">sharing your thoughts, questions, and votes on open proposals</a>.'
         ends_when: The proposal has been open a minimum of 45 days and the core team is ready to evaluate.
       - name: Proposal evaluation
         description: |
           The core team is evaluating the proposal for inclusion in the design system.
           After evaluation, the proposal will either be approved, returned for revision, or marked as “will not pursue.”
+        ends_when: |
+          The evaluation is complete.
       - name: Approved
         description: |
-          The core team has determined that the proposed component is a good fit for the design system.
+          The core team has determined that the component is a good fit for the design system.
           Components in this phase are ready to be developed.
         contribution_method: |
-          Reach out if you want to build this component.
+          In this phase, you can contribute by volunteering to develop the component.
+          <a href="">Reach out</a> if you are interested in building an implementation.
         ends_when: The component is assigned and scheduled for development.
       - name: Will not pursue
         class: rejected
@@ -52,10 +56,12 @@ phases:
       - name: Assigned
         description: |
          A team has committed to building this component.
+         This can be either the core team or members of the community.
         ends_when: The component starts to be developed.
       - name: In development
         description: |
-         Design, develop, test, document, and release the proposed concept
+          The component is designed, developed, tested and documented.
+          This phase can include alpha and beta releases.
         ends_when: The component is ready for release.
   - name: Released
     description: Release components to the public
@@ -63,30 +69,32 @@ phases:
       - name: Experimental
         class: experimental
         description: |
-          Provide early access to the component prior to stable release.
+          Provide early access to the component.
           These components have core functionality and production-quality code but might need additional testing, documentation, or features.
+        ends_when: |
+          The component is fully tested and documented.
       - name: Stable
         description: |
           Release components to the general public.
           These components must meet all standards, have full functionality, and have complete documentation.
           These components will regularly be audited for accessibility and usability.
-        ends_when: A component moves to "use with caution" or "deprecation".
+        ends_when: The component moves to either "use with caution" or "deprecation".
       - name: Use with caution
         class: caution
         description: |
           The component does not currently meet standards and is in need of significant rework.
-          The component will still receive maintenance and updates,
-          but we recommend ...
-        ends_when: A component is either returned to stable status or moved to deprecation.
+          We advise against using components in this state.
+        ends_when: The component is either returned to stable status or moved to deprecation.
   - name: Deprecated
     description: Phase out components that do not meet standards or are no longer needed
     subphases:
       - name: Deprecated
         description: |
-          The core team removes components from active support.
-          This means that the component is still available in the code base but will not receive any updates
-          and we cannot assure that it meets standards.
-          Deprecation can happen for a number of reasons including security risks, failure to meet standards, or replacement by a new feature.
+          The component is removed from active support.
+          This means that the component is still available in the code base but will not receive any updates.
+          We recommend removing this component from your project.
+        ends_when: |
+          The component is removed from the code base.
       - name: Retired
         description: |
-          The core team removes components from the code base. This is the end of the component lifecycle.
+          The component is removed from the code base. This is the end of the component lifecycle.

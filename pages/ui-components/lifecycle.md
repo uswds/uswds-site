@@ -3,7 +3,7 @@ permalink: /components/lifecycle/
 layout: styleguide
 title: USWDS component lifecycle
 category: Components
-lead: The USWDS component lifecycle defines the phases of component development
+lead: From suggesting new components to fixing bugs, the community contributes to every phase of the lifecycle.
 type: docs
 subnav:
   - text: Latest updates
@@ -12,10 +12,11 @@ changelog:
   key: docs-component-lifecycle
 ---
 
-The USWDS component lifecycle tracks the life of a component as it moves from an idea to release.
-This page documents the phases of the component lifecycle and outlines how you can help at each phase.
+A design system is never “done.”
+[Each component has its own lifecycle]({{ site.baseurl }}/components/status):
+As our community’s needs evolve, USWDS adds new components, refines existing ones, and retires those that have become obsolete.
 
-You can find a list of the components currently in the lifecycle on the the [component status page]({{ site.baseurl }}/components/status).
+There’s a role for you at each stage, and we hope you’ll get involved.
 
 {% assign lifecycle_phases = site.data.lifecycle-phases.phases %}
 {% assign phase_number = 0 %}

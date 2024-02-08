@@ -3930,57 +3930,13 @@ $do-dont-top-bar-width: 1;
 $proposal-phase-color: color("yellow-20v");
 $accepted-phase-color: color("yellow-20v");
 $rejected-phase-color: color("gray-cool-60");
-$development-phase-color: color("blue-cool-20v");
+$development-phase-color: color("blue-20v");
 $experimental-phase-color: color("mint-20");
 $released-phase-color: color("mint-50");
 $caution-phase-color: color("orange-30v");
 $deprecated-phase-color: color("red-warm-60v");
 
 .lifecycle {
-  &-phase-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: units(2);
-    border: units(1) solid;
-    margin-right: units(3);
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-
-  &-phase-1,
-  &-phase-2 {
-    z-index: 1;
-  }
-
-  &-phase-1 {
-    border: 4px solid $proposal-phase-color !important;
-    background: white;
-    // background: $proposal-phase-color;
-  }
-  &-phase-2 {
-    border: 4px solid $development-phase-color !important;
-    background: white;
-    // background: color("blue-cool-5v");
-  }
-  &-phase-3 {
-    border: 4px solid $released-phase-color !important;
-    background: white;
-    // background: color("green-cool-5v");
-  }
-  &-phase-4 {
-    border: 4px solid $deprecated-phase-color !important;
-    background: white;
-    // background: color("gray-cool-5");
-  }
-
-  // &-header {
-  //   border-left: units("05") solid;
-  //   padding-left: units(2);
-  // }
-
   &-border-bottom {
     border-bottom: units(1) solid;
   }
@@ -3990,7 +3946,15 @@ $deprecated-phase-color: color("red-warm-60v");
   }
 
   &-border--development {
-    border-color: $development-phase-color;
+    border-color: $development-phase-color !important;
+  }
+
+  &-border--released {
+    border-color: $released-phase-color !important;
+  }
+
+  &-border--deprecated {
+    border-color: $deprecated-phase-color !important;
   }
 
   &-bg--proposal {
@@ -4029,9 +3993,14 @@ $deprecated-phase-color: color("red-warm-60v");
   }
 }
 
-.lifecycle-phase{
-  @include u-measure(5);
-  border-top: 1px solid #ccc;
+.lifecycle-process {
+  .usa-process-list__item:last-child {
+    padding-bottom: units(1);
+  }
+}
+
+.lifecycle-phase {
+  @include u-measure(6);
 
   &__intro {
     @include at-media("desktop-lg") {
@@ -4041,44 +4010,46 @@ $deprecated-phase-color: color("red-warm-60v");
   }
 
   &__heading {
-    @include u-line-height("sans", 4);
-    @include u-border-bottom("05");
-    @include u-padding-bottom(1);
+    @include u-line-height("sans", 2);
     @include u-margin-top(0);
-    @include u-margin-bottom("105");
+    @include u-margin-bottom(1);
   }
 
-  &__heading-small {
-    @include u-font("lang", "xs");
-  }
+  // &__heading-small {
+  //   @include u-font("lang", "xs");
+  // }
 
-  &__heading-large {
-    @include u-font("lang", "xl");
-  }
+  // &__heading-large {
+  //   @include u-font("lang", "xl");
+  // }
 
   &__description {
-    @include u-font("lang", "xs");
+    @include u-margin-top(0);
   }
 
   &__subphase {
-    @include u-margin-bottom(2);
+    @include u-margin-bottom(4);
     @include u-measure(5);
-    @include u-padding-bottom(2);
-
-    border-bottom: 1px solid color("gray-10");
-
 
     p {
       @include u-margin-y("105");
+    }
+
+    ul,
+    li {
+      @include u-line-height("sans", 4);
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
 
   &__subphase-header {
     @include u-display("inline-block");
-    @include u-padding-y("05");
     @include u-margin-bottom(0);
+    @include u-padding-y("05");
     border-bottom: 4px solid color("gray-30");
-
 
     &:first-of-type {
       margin-top:0;
@@ -4086,7 +4057,7 @@ $deprecated-phase-color: color("red-warm-60v");
   }
 }
 
-.usa-prose>.lifecycle-table {
+.usa-prose > .lifecycle-table {
   @include u-font("lang", "3xs");
   @include u-margin-top(4);
   @include u-maxw("tablet-lg");

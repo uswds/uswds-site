@@ -3,7 +3,7 @@ permalink: /components/status/
 layout: styleguide
 title: USWDS component status
 category: Components
-lead: [Where components are in the component lifecycle]
+lead: Track where components are in the component lifecycle
 type: docs
 subnav:
   - text: Latest updates

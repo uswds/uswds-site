@@ -3,7 +3,7 @@ permalink: /components/lifecycle/
 layout: styleguide
 title: USWDS component lifecycle
 category: Components
-lead: [The USWDS component lifecycle defines the phases of component development]
+lead: The USWDS component lifecycle defines the phases of component development
 type: docs
 subnav:
   - text: Latest updates
@@ -20,47 +20,60 @@ You can find a list of the components currently in the lifecycle on the the [com
 {% assign lifecycle_phases = site.data.lifecycle-phases.phases %}
 {% assign phase_number = 0 %}
 
-{% for phase in lifecycle_phases %}
-  {% assign phase_number = phase_number | plus: 1 %}
-  <div class="lifecycle-phase">
-    <h2>Phase {{ phase_number }}: {{ phase.name | capitalize }}</h2>
-    <p>{{ phase.description }}</p>
-    {% for subphase in phase.subphases %}
-      <div class="lifecycle-phase__subphase">
-        <h3 class="lifecycle-phase__subphase-header">
-          {{ subphase.name }}
-        </h3>
-        <!-- {% if subphase.starts_when or subphase.ends_when%}
-          <p class="font-lang-xs">
-            {% if subphase.starts_when %}
-              <b>Starts when:</b> {{ subphase.starts_when }}<br/>
-            {% endif %}
-            {% if subphase.ends_when %}
-              <b>Ends when:</b> {{ subphase.ends_when }}<br/>
-            {% endif %}
-          </p>
-        {% endif %} -->
-        {% if subphase.description %}
-          <p>
-            {{ subphase.description }}
-          </p>
-        {% endif %}
+<ol class="usa-process-list lifecycle-process margin-top-4">
+  {% for phase in lifecycle_phases %}
+    {% assign phase_number = phase_number | plus: 1 %}
 
-        {% if subphase.contribution_method %}
-          <b>Contribute by:</b>
-          <ul>
-            {% for method in subphase.contribution_method %}
-              <li>{{ method }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
+    <li class="usa-process-list__item lifecycle-border--{{ phase.name | downcase  }}">
+      <div class="lifecycle-phase">
 
-        {% if subphase.learn_more %}
-          <p>
-            <b>Learn more:</b> {{ subphase.learn_more }}
-          </p>
-        {% endif %}
-      </div>
-    {% endfor %}
-    </div>
-{% endfor %}
+        <h2 class="lifecycle-phase__heading">
+          Phase {{ phase_number }}: {{ phase.name | capitalize }}
+        </h2>
+
+        <p class="lifecycle-phase__description">{{ phase.description }}</p>
+
+        {% for subphase in phase.subphases %}
+          <div class="lifecycle-phase__subphase">
+            <h3 class="lifecycle-phase__subphase-header">
+              {{ subphase.name }}
+            </h3>
+            <!-- {% if subphase.starts_when or subphase.ends_when%}
+              <p class="font-lang-xs">
+                {% if subphase.starts_when %}
+                  <b>Starts when:</b> {{ subphase.starts_when }}<br/>
+                {% endif %}
+                {% if subphase.ends_when %}
+                  <b>Ends when:</b> {{ subphase.ends_when }}<br/>
+                {% endif %}
+              </p>
+            {% endif %} -->
+            {% if subphase.description %}
+              <p>{{ subphase.description }}</p>
+            {% endif %}
+
+            {% if subphase.contribution_method %}
+              <b>Contribute by:</b>
+              {% if subphase.contribution_method.size == 1 %}
+                {% for method in subphase.contribution_method %}
+                  {{ method }}
+                {% endfor %}
+              {% else %}
+                <ul>
+                  {% for method in subphase.contribution_method %}
+                    <li>{{ method }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            {% endif %}
+
+            {% if subphase.learn_more %}
+              <p><b>Learn more:</b> {{ subphase.learn_more }}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+
+        </div>
+      </li>
+  {% endfor %}
+</ol>

@@ -12,41 +12,39 @@ phases:
         contribution_method:
           - Opening a new component discussion
           - Sharing ideas or voting for existing discussions
-          - Volunteering to create a proposal for the component
         learn_more: |
           Learn more about starting and contributing to component discussions in the <a href="">uswds-proposals repo</a>.
         find_more: |
-          Find the current component discussions in the USWDS component proposal discussion board.
+          Find the full list of <a href="">current component discussions</a> in the USWDS component proposal discussion board.
       - name: Proposal started
         description: |
-          A proposal for the component is in progress.
+          The USWDS core team is working on a proposal for this component.
         contribution_method:
-          - Adding information
-          - Sharing opinions
-          - Voting
+          - Adding information to the component discussion
+          - Sharing ideas or voting for discussions
         starts_when: The component proposal is drafted.
         ends_when: The proposal is complete and opened for final feedback.
         learn_more: |
-          Learn more about starting and contributing to proposals in the <a href="">uswds-proposals repo</a>.
+          Learn more about the proposal process in the <a href="">uswds-proposals repo</a>.
         find_more: |
-          Find all proposals in progress in the uswds-proposals repo.
+          Find all <a href="">proposals in progress</a> in the uswds-proposals repo.
       - name: Proposal open for comment
         description: |
           The proposal is complete and ready for final comment from the community.
           The proposal will remain open for a minimum of 45 days.
         contribution_method:
-          - Sharing your thoughts
-          - Asking questions
-          - Voting
+          - Sharing your thoughts about the proposal in the component discussion
+          - Asking questions about the proposal  in the component discussion
+          - Votingfor the component discussion
         ends_when: The proposal has been open a minimum of 45 days and the core team is ready to evaluate.
-        find_more: Find all open proposals in the uswds-proposals repo.
+        find_more: Find all <a href="">open proposals</a> in the uswds-proposals repo.
       - name: Proposal evaluation
         description: |
           The core team is evaluating the proposal for inclusion in the design system.
           After evaluation, the proposal will either be approved, returned for revision, or marked as “will not pursue.”
         ends_when: |
           The evaluation is complete.
-        find_more: Find all proposals currently being evaluated in the uswds-proposals repo.
+        find_more: Find the <a href="">proposals currently being evaluated</a> in the uswds-proposals repo.
       - name: Approved
         description: |
           The core team has determined that the component is a good fit for the design system.

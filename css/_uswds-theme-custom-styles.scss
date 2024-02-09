@@ -4010,18 +4010,10 @@ $deprecated-phase-color: color("red-warm-60v");
   }
 
   &__heading {
-    @include u-line-height("sans", 2);
+    @include u-line-height("sans", 1);
     @include u-margin-top(0);
     @include u-margin-bottom(1);
   }
-
-  // &__heading-small {
-  //   @include u-font("lang", "xs");
-  // }
-
-  // &__heading-large {
-  //   @include u-font("lang", "xl");
-  // }
 
   &__description {
     @include u-margin-top(0);

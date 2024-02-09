@@ -25,7 +25,8 @@ There’s a role for you at each stage, and we hope you’ll get involved.
   {% for phase in lifecycle_phases %}
     {% assign phase_number = phase_number | plus: 1 %}
 
-    <li class="usa-process-list__item lifecycle-border--{{ phase.name | downcase  }}">
+    <!-- <li class="usa-process-list__item lifecycle-border--{{ phase.name | downcase  }}"> -->
+    <li class="usa-process-list__item">
       <div class="lifecycle-phase">
 
         <h2 class="lifecycle-phase__heading">
@@ -39,41 +40,44 @@ There’s a role for you at each stage, and we hope you’ll get involved.
             <h3 class="lifecycle-phase__subphase-header">
               {{ subphase.name }}
             </h3>
-            <!-- {% if subphase.starts_when or subphase.ends_when%}
-              <p class="font-lang-xs">
-                {% if subphase.starts_when %}
-                  <b>Starts when:</b> {{ subphase.starts_when }}<br/>
-                {% endif %}
-                {% if subphase.ends_when %}
-                  <b>Ends when:</b> {{ subphase.ends_when }}<br/>
-                {% endif %}
-              </p>
-            {% endif %} -->
+
             {% if subphase.description %}
               <p>{{ subphase.description }}</p>
             {% endif %}
 
-            {% if subphase.contribution_method %}
+            {% if subphase.starts_when %}
+              <p><b>Starts when:</b> {{ subphase.starts_when }}</p>
+            {% endif %}
+            {% if subphase.ends_when %}
+              <p><b>Ends when:</b> {{ subphase.ends_when }}</p>
+            {% endif %}
+
+            {% if subphase.contribute_by %}
               <b>Contribute by:</b>
-              {% if subphase.contribution_method.size == 1 %}
-                {% for method in subphase.contribution_method %}
+              {% if subphase.contribute_by.size == 1 %}
+                {% for method in subphase.contribute_by %}
                   {{ method }}
                 {% endfor %}
               {% else %}
                 <ul>
-                  {% for method in subphase.contribution_method %}
+                  {% for method in subphase.contribute_by %}
                     <li>{{ method }}</li>
                   {% endfor %}
                 </ul>
               {% endif %}
             {% endif %}
 
-            {% if subphase.find_more %}
+            {% if subphase.find_more or subphase.learn_more %}
               <p>{{ subphase.find_more }}</p>
+              <!-- <p>{{ subphase.learn_more }}</p> -->
             {% endif %}
 
-            {% if subphase.learn_more %}
+            <!-- {% if subphase.learn_more %}
               <p><b>Learn more:</b> {{ subphase.learn_more }}</p>
+            {% endif %} -->
+
+            {% if subphase.reach_out %}
+              <p>{{ subphase.reach_out }}</p>
             {% endif %}
           </div>
         {% endfor %}

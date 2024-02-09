@@ -13,7 +13,7 @@ phases:
           - Opening a new component discussion
           - Sharing ideas or voting for existing discussions
         learn_more: |
-          Learn more about starting and contributing to component discussions in the <a href="">uswds-proposals repo</a>.
+          Learn more <a href="">about starting and contributing to component discussions</a> in the uswds-proposals repo.
         find_more: |
           Find the full list of <a href="">current component discussions</a> in the USWDS component proposal discussion board.
       - name: Proposal started
@@ -25,7 +25,7 @@ phases:
         starts_when: The component proposal is drafted.
         ends_when: The proposal is complete and opened for final feedback.
         learn_more: |
-          Learn more about the proposal process in the <a href="">uswds-proposals repo</a>.
+          Learn more <a href="">about the proposal process</a> in the uswds-proposals repo.
         find_more: |
           Find all <a href="">proposals in progress</a> in the uswds-proposals repo.
       - name: Proposal open for comment
@@ -35,7 +35,7 @@ phases:
         contribution_method:
           - Sharing your thoughts about the proposal in the component discussion
           - Asking questions about the proposal  in the component discussion
-          - Votingfor the component discussion
+          - Voting for the component discussion
         ends_when: The proposal has been open a minimum of 45 days and the core team is ready to evaluate.
         find_more: Find all <a href="">open proposals</a> in the uswds-proposals repo.
       - name: Proposal evaluation
@@ -51,32 +51,45 @@ phases:
           Components in this phase are ready to be developed but have not been assigned or scheduled yet.
         contribution_method:
           - Volunteering to develop the component.
+        find_more: Find all <a href="">components that have been approved for development</a> on the discussion board.
         ends_when: The component is assigned and scheduled for development.
+        learn_more: <a href="">Reach out</a> if you are interested in building a component.
+      - name: Returned for revision
+        class: returned
+        description: |
+          The core team has determined that the proposal for this component has not not yet made a compelling case, but with improvements it could be accepted.
+        contribution_method:
+          - Adding missing information to the discussion.
+        find_more: You can find all <a href="">proposals in need of revision</a> on the discussion board.
       - name: Will not pursue
         class: rejected
         description: |
           The core team has determined that the proposed component is not a good fit for the design system.
           These components will not be developed.
+        find_more: You can find a <a href="">list of rejected components</a> on the discussion board.
   - name: Development
-    description: Design, develop, test, and document new components
+    description: Design, develop, test, and document approved components
     subphases:
       - name: Assigned
         description: |
          A team has committed to building this component.
          The assignee might be a member of the core team or a member of the USWDS community.
+         Only approved components will be assigned.
         ends_when: The component starts to be developed.
+        find_more: You can find a list of all <a href="">assigned components</a> on the discussion board
       - name: In development
         description: |
           The component is being designed, developed, tested and documented.
           This phase can include alpha and beta releases.
         ends_when: The component is ready for release.
+        find_more: You can find a list of <a href="">components that are in development</a> on the discussion board.
   - name: Released
     description: Release components to the public
     subphases:
       - name: Experimental
         class: experimental
         description: |
-          The component is opened for early access.
+          The component is released for early access.
           These components have core functionality and production-quality code but might need additional testing, documentation, or features.
           Components in this state are more likely to change more frequently than their stable counterparts.
         contribution_method:
@@ -85,7 +98,11 @@ phases:
           - Submitting bugs
         ends_when: |
           The component is fully tested and documented.
-        find_more: Reach out if you want to coordinate efforts.
+        learn_more: |
+          All <a href="">experimental components</a> will be documented on our components page.
+          <br/>
+          <br/>
+          Reach out if you want to <a href="">contribute to experimental components</a>.
       - name: Stable
         description: |
           The component is released to the general public.
@@ -95,7 +112,7 @@ phases:
           - Submitting bugs
           - Submitting feature requests
           - Creating PRs
-        find_more: All stable components will be documented on our components page.
+        find_more: All <a href="">stable components</a> will be documented on our components page.
         ends_when: The component moves to either "use with caution" or "deprecation".
       - name: Use with caution
         class: caution
@@ -104,6 +121,7 @@ phases:
           We advise against using components in this state.
         contribution_method:
           - Submitting fixes
+        find_more: Reach out if you want to contribute to <a href="">components that are marked as “use with caution”</a>.
         ends_when: The component is either returned to stable status or moved to deprecation.
   - name: Deprecated
     description: Phase out components that do not meet standards or are no longer needed

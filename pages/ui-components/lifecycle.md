@@ -68,6 +68,10 @@ There’s a role for you at each stage, and we hope you’ll get involved.
               {% endif %}
             {% endif %}
 
+            {% if subphase.find_more %}
+              <p>{{ subphase.find_more }}</p>
+            {% endif %}
+
             {% if subphase.learn_more %}
               <p><b>Learn more:</b> {{ subphase.learn_more }}</p>
             {% endif %}

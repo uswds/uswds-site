@@ -1,11 +1,11 @@
 ---
 permalink: /about/research/recruitment/general-public/
 layout: styleguide
-title: Recruitment for general public
+title: How the public can participate in USWDS research
 category: About
 lead: Help shape the future of U.S. government websites.
 redirect_from:
-  # - /whats-new/research/
+  - /research/recruitment/public
 changelog:
   key: about-research-recruitment-public
 ---
@@ -23,11 +23,11 @@ Usability research is the process of learning about people’s needs and observi
 
 {:.border-top-2px .border-base-lighter .padding-top-1}
 
-**We’re currently looking for people who have a visual disability to help us do this research.** If you’re blind or have low vision, have a device with a web browser (a desktop, laptop, tablet, or smartphone), and have an internet connection, we would love to hear from you! You don’t need to be tech savvy or an expert in using websites to participate.
+**Right now, we’d like to talk with people who have disabilities to help us understand your needs.** For example, if you’re blind or have low vision, or a cognitive disability, and have a device with a web browser (a desktop, laptop, tablet, or smartphone), and an internet connection, we would love to hear from you! You don’t need to be tech savvy or any kind of expert in using websites to participate.
 
-### Sign up
+**Sign up:** Fill out this brief [sign up form](https://touchpoints.app.cloud.gov/touchpoints/b0c4b589/submit) or email us at <{{ site.uswds_email }}> to tell us you’re interested. We’ll then reach out when we have a research opportunity for you.
 
-Fill out this brief [sign up form](https://touchpoints.app.cloud.gov/touchpoints/b0c4b589/submit) or email us at <{{ site.uswds_email }}> to tell us you’re interested. We’ll add you to our list and email you when we have a suitable research opportunity for you.
+Your participation is completely voluntary, and you can decide to be taken off our list of possible participants at any time by emailing us at <{{ site.uswds_email }}>.
 
 ## What to expect
 
@@ -35,21 +35,21 @@ Fill out this brief [sign up form](https://touchpoints.app.cloud.gov/touchpoints
 {% capture graphic_list_items %}
   {% include
     component-graphic-list-item.html
-    heading="Scheduling and information"
+    heading="Information"
     icon="support_agent"
-    body="A member of our team will provide a few date and time options to schedule with you. We’ll also share details about that particular research effort with you so you know what to expect, and might ask you to fill out a brief consent form."
+    body="A member of our team will email details about the research effort so you know what to expect. You might be asked to fill out a brief consent form."
   %}
   {% include
     component-graphic-list-item.html
     heading="Time"
     icon="schedule"
-    body="Sessions usually take 1 hour and never exceed 1 hour and 20 minutes. "
+    body="Sessions usually take one hour. We will provide a few date and time options to schedule with you."
   %}
   {% include
     component-graphic-list-item.html
     heading="Payment"
     icon="account_balance"
-    body="Payment: We generally pay $75 to $100 per session, depending on the length of the session."
+    body="We generally pay $75 per session, depending on the length of the session."
   %}
   {% include
     component-graphic-list-item.html
@@ -60,7 +60,8 @@ Fill out this brief [sign up form](https://touchpoints.app.cloud.gov/touchpoints
 {% endcapture %}
 
 {:.border-top-2px .border-base-lighter .padding-top-1}
-What to expect if we email you to participate.
+
+## What to expect if we contact you to participate
 
 {% include component-graphic-list.html content=graphic_list_items %}
 
@@ -68,7 +69,7 @@ What to expect if we email you to participate.
 
 {:.border-top-2px .border-base-lighter .padding-top-1}
 
-Your privacy is important to us, and we follow strict data security and privacy protocols. We’ll keep all information you share confidential and use it only for research purposes. We’ll securely store any personal information you share. You can see more details about our privacy protocols on [18F’s Privacy page]().
+Your privacy is important to us, and we follow strict data security and privacy protocols. We keep all information you share confidential and use it only for research purposes. We securely store any personal information you share. You can see more details about our privacy protocols on [18F’s Privacy page](https://ux-guide.18f.gov/research/privacy/).
 
 ## Questions?
 

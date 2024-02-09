@@ -45,11 +45,15 @@ There’s a role for you at each stage, and we hope you’ll get involved.
               <p>{{ subphase.description }}</p>
             {% endif %}
 
-            {% if subphase.starts_when %}
-              <p><b>Starts when:</b> {{ subphase.starts_when }}</p>
-            {% endif %}
-            {% if subphase.ends_when %}
-              <p><b>Ends when:</b> {{ subphase.ends_when }}</p>
+            {% if subphase.starts_when or subphase.ends_when %}
+              <p>
+              {% if subphase.starts_when %}
+                <b>Starts when:</b> {{ subphase.starts_when }}<br/>
+              {% endif %}
+              {% if subphase.ends_when %}
+                <b>Ends when:</b> {{ subphase.ends_when }}
+              {% endif %}
+              </p>
             {% endif %}
 
             {% if subphase.contribute_by %}
@@ -67,14 +71,9 @@ There’s a role for you at each stage, and we hope you’ll get involved.
               {% endif %}
             {% endif %}
 
-            {% if subphase.find_more or subphase.learn_more %}
+            {% if subphase.find_more %}
               <p>{{ subphase.find_more }}</p>
-              <!-- <p>{{ subphase.learn_more }}</p> -->
             {% endif %}
-
-            <!-- {% if subphase.learn_more %}
-              <p><b>Learn more:</b> {{ subphase.learn_more }}</p>
-            {% endif %} -->
 
             {% if subphase.reach_out %}
               <p>{{ subphase.reach_out }}</p>

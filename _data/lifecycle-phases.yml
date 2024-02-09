@@ -95,6 +95,7 @@ phases:
          A team has committed to building this component.
          The assignee might be a member of the core team or a member of the USWDS community.
          Only approved components will be assigned.
+        starts_when: The component is assigned to a team for development.
         ends_when: The component starts to be developed.
         find_more: You can find a list of all <a href="">assigned components</a> on the discussion board.
       - name: In development
@@ -112,40 +113,43 @@ phases:
         description: |
           The component is released for early access.
           These components have core functionality and production-quality code but might need additional testing, documentation, or features.
-          Components in this state are more likely to change more frequently than their stable counterparts.
+          </p>
+          <p>Experimental components are likely to change more frequently than their stable counterparts.
         contribute_by:
           - Testing the component
           - Writing documentation
           - Submitting bugs
-        starts_when:|
+        starts_when: |
           The assigned team begins developing the component.
         ends_when: |
           The component is tested, documented, and ready for release.
-        learn_more: |
-          All <a href="">experimental components</a> will be documented on our components page.
-          <br/>
-          <br/>
-          Reach out if you want to <a href="">contribute to experimental components</a>.
+        find_more: |
+          All <a href="">experimental components</a> are documented on our components page.
+        reach_out: |
+          <a href="">Reach out</a> to the USWDS core teamif you want to contribute to experimental components.
       - name: Stable
         description: |
           The component is released to the general public.
-          These components must meet all standards, have full functionality, and have complete documentation.
-          These components will regularly be audited for accessibility and usability.
+          These components meet all USWDS standards, have full functionality, and have complete documentation.
+          These components are regularly audited for accessibility and usability.
+                ends_when: The component moves to either "use with caution" or "deprecation".
+        starts_when: The component passes all tests and is fully documented.
+        ends_when: The component moves to either "use with caution" or "deprecation".
         contribute_by:
           - Submitting bugs
           - Submitting feature requests
           - Creating PRs
-        find_more: All <a href="">stable components</a> will be documented on our components page.
-        ends_when: The component moves to either "use with caution" or "deprecation".
+        find_more: All <a href="">stable components</a> are documented on our components page.
       - name: Use with caution
         class: caution
         description: |
           The component does not currently meet standards and is in need of significant rework.
           We advise against using components in this state.
-        contribute_by:
-          - Submitting fixes
-        find_more: Reach out if you want to contribute to <a href="">components that are marked as “use with caution”</a>.
+        starts_when: The component fails to meet accessibility, usability, or development standards.
         ends_when: The component is either returned to stable status or moved to deprecation.
+        contribute_by:
+          - Submitting fixes for the component
+        find_more: Reach out if you want to contribute to <a href="">components that are marked as “use with caution”</a>.
   - name: Deprecated
     description: Phase out components that do not meet standards or are no longer needed
     subphases:
@@ -154,6 +158,8 @@ phases:
           The component is removed from active support.
           This means that the component is still available in the code base but it will not receive any updates.
           We recommend removing this component from your project.
+        starts_when: |
+          The USWDS core team removes the component from maintenance.
         ends_when: |
           The component is removed from the code base.
       - name: Retired

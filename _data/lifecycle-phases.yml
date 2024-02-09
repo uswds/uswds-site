@@ -12,10 +12,11 @@ phases:
         starts_when: |
           A new component idea is added to the discussion board.
         ends_when: |
-          The USWDS core team begins drafting a proposal.
+          The USWDS core team begins drafting a proposal for the component.
         contribute_by:
           - Opening a <a href="">new component discussion</a>
-          - Sharing ideas or voting for <a href="">existing discussions</a>
+          - Sharing ideas and opinions to existing discussions
+          - Voting for existing discussions
         learn_more: |
           Learn more about <a href="">starting and contributing to component discussions</a> in the uswds-proposals repo.
         find_more: |
@@ -23,7 +24,7 @@ phases:
       - name: Proposal started
         description: |
           The USWDS core team is working on a proposal for this component.
-        starts_when: The USWDS core team begins drafting a proposal.
+        starts_when: The USWDS core team begins drafting a proposal for the component.
         ends_when: The proposal is complete and opened to the community for final feedback.
         contribute_by:
           - Adding missing proposal information
@@ -32,7 +33,8 @@ phases:
         learn_more: |
           Learn more <a href="">about the proposal process</a> in the uswds-proposals repo.
         find_more: |
-          <i>Note: Questions and comments about the proposal should be added to the related component discussion</i>
+          <i>Note: Questions and comments about the proposal should be added to the related component discussion,
+          not the proposal itself.</i>
           </p><p>
           Find all <a href="">proposals in progress</a> in the uswds-proposals repo.
       - name: Proposal open for comment
@@ -46,9 +48,9 @@ phases:
         starts_when: The proposal is complete and opened to the community for final feedback.
         ends_when: The proposal has been open a minimum of 45 days and the core team is ready to evaluate.
         find_more: |
-          <i>Note: Questions and comments about the proposal should be added to the related component discussion</i>
+          <i>Note: Questions and comments about the proposal should be added to the related component discussion.</i>
           </p><p>
-          Find all <a href="">proposals that are open for comment</a> in the uswds-proposals repo.
+          Find all <a href="">proposals open for comment</a> in the uswds-proposals repo.
       - name: Proposal evaluation
         description: |
           The core team is evaluating the proposal for inclusion in the design system.
@@ -56,12 +58,12 @@ phases:
         starts_when: |
           The core team starts evaluating the proposal.
         ends_when: |
-          The evaluation is complete.
-        find_more: Find the <a href="">proposals currently being evaluated</a> in the uswds-proposals repo.
+          The proposal evaluation is complete.
+        find_more: Find the <a href="">proposals under evaluation</a> in the uswds-proposals repo.
       - name: Approved
         description: |
           The core team has determined that the component is a good fit for the design system.
-          Components in this phase are ready to be developed but have not yet been assigned or scheduled yet.
+          Components in this phase are ready to be developed but have not yet been assigned or scheduled.
         contribute_by:
           - Volunteering to develop the component.
         starts_when: |
@@ -75,9 +77,9 @@ phases:
         description: |
           The core team has determined that the proposal for this component has not not yet made a compelling case, but with improvements it could be accepted.
         starts_when: |
-          The core team returns a proposal for revision
+          The core team returns a proposal for revision.
         ends_when: |
-          The component discussion addresses the proposal gaps and the proposal is ready for re-evaluation.
+          The component discussion addresses the gaps in the proposal and the proposal is ready for re-evaluation.
         contribute_by:
           - Adding missing information to the discussion.
         find_more: You can find all <a href="">proposals returned for revision</a> on the discussion board.
@@ -93,7 +95,7 @@ phases:
       - name: Assigned
         description: |
          A team has committed to building this component.
-         The assignee might be a member of the core team or a member of the USWDS community.
+         The assignee might be a member of the USWDS core team or a member of the USWDS community.
          Only approved components will be assigned.
         starts_when: The component is assigned to a team for development.
         ends_when: The component starts to be developed.
@@ -114,7 +116,7 @@ phases:
           The component is released for early access.
           These components have core functionality and production-quality code but might need additional testing, documentation, or features.
           </p>
-          <p>Experimental components are likely to change more frequently than their stable counterparts.
+          <p>Experimental components are safe to use but are likely to change more frequently than their stable counterparts.
         contribute_by:
           - Testing the component
           - Writing documentation
@@ -122,17 +124,16 @@ phases:
         starts_when: |
           The assigned team begins developing the component.
         ends_when: |
-          The component is tested, documented, and ready for release.
+          The component is fully tested, documented, and moved to stable release.
         find_more: |
           All <a href="">experimental components</a> are documented on our components page.
         reach_out: |
-          <a href="">Reach out</a> to the USWDS core teamif you want to contribute to experimental components.
+          <a href="">Reach out</a> to the USWDS core team if you want to contribute to experimental components.
       - name: Stable
         description: |
           The component is released to the general public.
           These components meet all USWDS standards, have full functionality, and have complete documentation.
           These components are regularly audited for accessibility and usability.
-                ends_when: The component moves to either "use with caution" or "deprecation".
         starts_when: The component passes all tests and is fully documented.
         ends_when: The component moves to either "use with caution" or "deprecation".
         contribute_by:
@@ -149,7 +150,8 @@ phases:
         ends_when: The component is either returned to stable status or moved to deprecation.
         contribute_by:
           - Submitting fixes for the component
-        find_more: Reach out if you want to contribute to <a href="">components that are marked as “use with caution”</a>.
+        reach_out: |
+          <a href="">Reach out to the USWDS core team</a> if you want to contribute to “use with caution” components.
   - name: Deprecated
     description: Phase out components that do not meet standards or are no longer needed
     subphases:

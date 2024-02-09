@@ -13,10 +13,9 @@ changelog:
 ---
 
 A design system is never “done.”
-[Each component has its own lifecycle]({{ site.baseurl }}/components/status):
 As our community’s needs evolve, USWDS adds new components, refines existing ones, and retires those that have become obsolete.
 
-There’s a role for you at each stage, and we hope you’ll get involved.
+There’s a role for you at each stage of [the component lifecycle]({{ site.baseurl }}/components/lifecycle), and we hope you’ll get involved.
 
 {% assign lifecycle_phases = site.data.lifecycle-phases.phases %}
 {% assign phase_number = 0 %}

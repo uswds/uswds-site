@@ -29,7 +29,10 @@ Usability research is the process of learning about people’s needs and observi
 
 Your participation is completely voluntary, and you can decide to be taken off our list of possible participants at any time by emailing us at <{{ site.uswds_email }}>.
 
-## What to expect
+{:.border-bottom-2px .border-base-lighter .padding-bottom-1 .measure-2}
+
+## What to expect if we contact you to participate
+
 
 <!-- @TODO: Evaluate use of frontmatter for USA Graphic List. -->
 {% capture graphic_list_items %}
@@ -59,9 +62,6 @@ Your participation is completely voluntary, and you can decide to be taken off o
   %}
 {% endcapture %}
 
-{:.border-top-2px .border-base-lighter .padding-top-1}
-
-## What to expect if we contact you to participate
 
 {% include component-graphic-list.html content=graphic_list_items %}
 

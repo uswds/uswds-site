@@ -2,6 +2,14 @@ title: Checkbox
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added indeterminate styles for checkboxes.
+    summaryAdditional: Checkboxes will now display as indeterminate when `input.indeterminate = true` is set via JS or the `data-indeterminate` attribute is present. This is currently only a style addition and does not affect checkbox functionality.
+    affectsAssets: true
+    affectsStyles: true
+    githubPr: 5713
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2023-11-20
     summary: Added `usa-input-list` to the list of dependencies.
     affectsGuidance: true

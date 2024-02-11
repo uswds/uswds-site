@@ -3958,38 +3958,38 @@ $deprecated-phase-color: color("red-warm-60v");
   }
 
   &-bg--proposal {
-    background-color: $proposal-phase-color!important;
+    background-color: $proposal-phase-color !important;
   }
 
   &-bg--development {
-    background-color: $development-phase-color!important;
+    background-color: $development-phase-color !important;
   }
 
   &-bg--released {
-    background-color: $released-phase-color!important;
-    color: white!important;
+    background-color: $released-phase-color !important;
+    color: white !important;
   }
 
   &-bg--experimental {
-    background-color: $experimental-phase-color!important;
+    background-color: $experimental-phase-color !important;
   }
 
   &-bg--caution {
-    background-color: $caution-phase-color!important;
+    background-color: $caution-phase-color !important;
   }
 
   &-bg--deprecated {
-    background-color: $deprecated-phase-color!important;
-    color: white!important;
+    background-color: $deprecated-phase-color !important;
+    color: white !important;
   }
 
   &-bg--accepted {
-    background-color: $accepted-phase-color!important;
+    background-color: $accepted-phase-color !important;
   }
 
   &-bg--rejected {
-    background-color: $rejected-phase-color!important;
-    color: white!important;
+    background-color: $rejected-phase-color !important;
+    color: white !important;
   }
 }
 
@@ -4044,7 +4044,7 @@ $deprecated-phase-color: color("red-warm-60v");
     border-bottom: 4px solid color("gray-30");
 
     &:first-of-type {
-      margin-top:0;
+      margin-top: 0;
     }
   }
 }
@@ -4060,7 +4060,7 @@ $deprecated-phase-color: color("red-warm-60v");
   }
 
   tr {
-    border: units("05") solid color($site-background-color)!important;
+    border: units("05") solid color($site-background-color) !important;
   }
 
   td,
@@ -4069,12 +4069,12 @@ $deprecated-phase-color: color("red-warm-60v");
     @include u-bg($site-background-color);
     border: none;
     text-align: center;
-    width:20%;
+    width: 20%;
   }
 
   td:first-of-type {
     @include u-maxw(15);
     @include u-padding-left(0);
-    text-align:left;
+    text-align: left;
   }
 }

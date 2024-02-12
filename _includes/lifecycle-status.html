@@ -27,6 +27,48 @@ check out our [component proposals discussion board](http://www.github.com).
 
 Don’t see the component you are looking for? [Start a discussion about it](http://www.github.com).
 
+
+<!-- Start mobile-only status table -->
+<table class="lifecycle-table tablet:display-none">
+  <tbody>
+  {% for item in component_status_items %}
+    {% if item.status_major == "proposal" %}
+      {% if item.status_minor == "will not pursue" %}
+        {% assign status_classes = rejected_classes %}
+        {% elsif item.status_minor == "accepted" %}
+          {% assign status_classes = accepted_classes %}
+        {% else %}
+          {% assign status_classes = proposal_classes %}
+      {% endif %}
+    {% elsif item.status_major == "development" %}
+      {% assign status_classes = development_classes %}
+    {% elsif item.status_major == "released" %}
+      {% if item.status_minor == "experimental" %}
+        {% assign status_classes = experimental_classes %}
+        {% elsif item.status_minor == "use with caution" %}
+          {% assign status_classes = caution_classes %}
+        {% else %}
+          {% assign status_classes = released_classes %}
+      {% endif %}
+    {% elsif item.status_major == "deprecated" %}
+      {% assign status_classes = deprecated_classes %}
+    {% endif %}
+    <tr>
+      <td>
+        <a href="{{ item.url }}" class="text-bold">
+          {{ item.name }}
+        </a>
+      </td>
+      <td data-title="{{ type }}"  class="{{ status_classes }}">
+        {{ item.status_minor | capitalize }}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<!-- End mobile-only status table -->
+
+<!-- Start desktop-only status table -->
 <table class="lifecycle-table display-none tablet:display-table">
   <caption class="usa-sr-only">Component status</caption>
   <thead class="text-bold">
@@ -120,41 +162,4 @@ Don’t see the component you are looking for? [Start a discussion about it](htt
     {% endfor %}
   </tbody>
 </table>
-
-<table class="lifecycle-table tablet:display-none">
-  <tbody>
-  {% for item in component_status_items %}
-    {% if item.status_major == "proposal" %}
-      {% if item.status_minor == "will not pursue" %}
-        {% assign status_classes = rejected_classes %}
-        {% elsif item.status_minor == "accepted" %}
-          {% assign status_classes = accepted_classes %}
-        {% else %}
-          {% assign status_classes = proposal_classes %}
-      {% endif %}
-    {% elsif item.status_major == "development" %}
-      {% assign status_classes = development_classes %}
-    {% elsif item.status_major == "released" %}
-      {% if item.status_minor == "experimental" %}
-        {% assign status_classes = experimental_classes %}
-        {% elsif item.status_minor == "use with caution" %}
-          {% assign status_classes = caution_classes %}
-        {% else %}
-          {% assign status_classes = released_classes %}
-      {% endif %}
-    {% elsif item.status_major == "deprecated" %}
-      {% assign status_classes = deprecated_classes %}
-    {% endif %}
-    <tr>
-      <td>
-        <a href="{{ item.url }}">
-          {{ item.name }}
-        </a>
-      </td>
-      <td data-title="{{ type }}"  class="{{ status_classes }}">
-        {{ item.status_minor | capitalize }}
-      </td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+<!-- End desktop-only status table -->

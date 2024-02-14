@@ -2,6 +2,11 @@ title: Button
 type: component
 changelogURL:
 items:
+  - date: 2024-01-17
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2138
+    githubRepo: uswds-site
   - date: 2023-11-20
     summary: Updated summaries in the "Using the button component" section.
     affectsGuidance: true

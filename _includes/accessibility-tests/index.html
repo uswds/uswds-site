@@ -1,0 +1,57 @@
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+</style>
+
+<!-- Set component name and find related checklist data -->
+{% assign component_name = page.component.name | default: page.title | downcase %}
+{% assign component_key = component_name | slugify %}
+{% assign component = site.data.accessibility-tests[component_key] %}
+
+<!-- Assign test items by assistive technology type -->
+{% assign general_tests = component.test_items | where: 'test_type', "general" %}
+{% assign zoom_tests = component.test_items | where: 'test_type', "zoom" %}
+{% assign keyboard_tests = component.test_items | where: 'test_type', "keyboard" %}
+{% assign screen_reader_tests = component.test_items | where: 'test_type', "screen_reader" %}
+
+<!-- Set status icons -->
+{% assign pass_icon = 'check_circle' %}
+{% assign exceptions_icon = 'warning' %}
+{% assign fail_icon = 'cancel' %}
+{% assign conditional_icon = 'info' %}
+
+<!--Add WCAG compliance status tag-->
+{% include accessibility-tests/compliance-tag.html %}
+
+<!--Add test results summary-->
+{% include accessibility-tests/test-results-summary.html page='checklist' %}
+
+<!--Add "how to test" instructions-->
+{% include accessibility-tests/page-intro.html %}
+
+<!--Add jump links to available groups of AT tests-->
+{% include accessibility-tests/jump-links.html %}
+
+<!--Add checklist items, sorted by type of assistive technology-->
+{% if general_tests != empty %}
+    {% include accessibility-tests/checklist.html type='general' %}
+{% endif %}
+{% if zoom_tests != empty %}
+    {% include accessibility-tests/checklist.html type='zoom' %}
+{% endif %}
+{% if keyboard_tests != empty %}
+    {% include accessibility-tests/checklist.html type='keyboard' %}
+{% endif %}
+{% if screen_reader_tests != empty %}
+    {% include accessibility-tests/checklist.html type='screen_reader' %}
+{% endif  %}
+
+<!--Add feedback section-->
+{% include accessibility-tests/checklist-feedback.html %}

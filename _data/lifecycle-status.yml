@@ -29,7 +29,7 @@ components:
   url: https://designsystem.digital.gov/components/card/
 - name: CUI Banner
   status_major: proposal
-  status_minor: Proposal started
+  status_minor: Proposal in progress
   url:
 - name: Character count
   status_major: released
@@ -169,8 +169,8 @@ components:
   url: https://designsystem.digital.gov/components/table/
 - name: Tabs
   status_major: proposal
-  status_minor: Proposal started
-  url:
+  status_minor: Proposal in progress
+  url: https://github.com/uswds/uswds/discussions/5765
 - name: Tag
   status_major: released
   status_minor: stable

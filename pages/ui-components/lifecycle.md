@@ -60,9 +60,7 @@ There are opportunities for community contribution at each stage of the componen
             {% if subphase.contribute_by %}
               <b>Contribute by:</b>
               {% if subphase.contribute_by.size == 1 %}
-                {% for method in subphase.contribute_by %}
-                  {{ method }}
-                {% endfor %}
+                {{ subphase.contribute_by[0] }}
               {% else %}
                 <ul>
                   {% for method in subphase.contribute_by %}

@@ -29,11 +29,12 @@ in_page_nav: false
 {% assign col1Title = 'Component' %}
 {% assign major_status_types = "proposal, development, released, deprecated" | split: ', '%}
 
-This table illustrates where USWDS components currently fall in [component lifecycle page]({{ site.baseurl }}/components/lifecycle).
-For a full list of components under consideration for USWDS,
-check out our [component proposals discussion board](http://www.github.com).
+This table includes lifecycle information for every component we're tracking in the design system, including those in the proposal phase.
+For a complete description of each of the component lifecycle phases, see our [Component lifecycle phases]({{ site.baseurl/components/lifecycle }}) page.
 
-Don’t see the component you are looking for? [Start a discussion about it](http://www.github.com).
+We update this page regularly, but check out our component proposal discussion board for the most up-to-date list of components in the proposal phase.
+
+Don’t see the component you are looking for? Start a discussion about it.
 
 <!-- Start mobile-only status table -->
 <table class="lifecycle-table tablet:display-none">

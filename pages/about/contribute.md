@@ -44,12 +44,12 @@ Have an idea for something other than a new component? We want to hear about it.
 If you want to see other contributions before submitting your own, check out [some good first issues](https://github.com/uswds/uswds/issues?q=is%3Aissue+label%3A%22Good+First+Issue%22+) from other community members.
 
 1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22).
-  If your idea has already been suggested, upvote that feature request with a thumbs up emoji.
-  Comment on the issue to let us know why you need it and share supporting information. Comments and upvotes help us prioritize feature requests.
+    If your idea has already been suggested, upvote that feature request with a thumbs up emoji.
+    Comment on the issue to let us know why you need it and share supporting information. Comments and upvotes help us prioritize feature requests.
 
-  If you want to find other feature requests open for upvoting, check out our [“Voting open” feature requests](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Voting+Open+%F0%9F%91%8D%22+sort%3Areactions-%2B1-desc) (sorted by those with the most upvotes).
+    If you want to find other feature requests open for upvoting, check out our [“Voting open” feature requests](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Voting+Open+%F0%9F%91%8D%22+sort%3Areactions-%2B1-desc) (sorted by those with the most upvotes).
 1. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit a [feature request](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Feature+Request&projects=&template=feature_request.yaml&title=USWDS+-+Feature%3A+%5BYOUR+TITLE%5D).
-  A USWDS core team member may reach out to you if we need clarification.
+    A USWDS core team member may reach out to you if we need clarification.
 1. You may attach a pull request to your issue, but it isn’t required.
 
 ## Report bugs
@@ -72,7 +72,7 @@ If you want to propose a code change, here are the steps to submit a pull reques
   If none exists, create your own [bug report](#report-bugs) or [feature request](#propose-a-feature-request-or-enhancement).
 1. Fork this repo into your GitHub account. Read more about [forking a repo on GitHub](https://help.github.com/articles/fork-a-repo/).
 1. Create a branch from `develop` with a name that describes what you’re working on (for example, `add-border-styles`).
-1. When your code changes are ready for review, [open a pull request](https://designsystem.digital.gov/about/contribute/#submit-a-pull-request). Be sure to fill out all the applicable fields in the generated PR description.
+1. When your code changes are ready for review, [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request). Be sure to fill out all the applicable fields in the generated PR description.
 1. Link your pull request to the related GitHub issue.
   This important step helps us know which issue this solution fixes.
   Tip: You can link your pull request to the related issue in the body of the pull request description by adding the text “Closes #[issue number]” or “Resolves #[issue number]”.
@@ -82,7 +82,10 @@ If the pull request is accepted, we will schedule the issue and merge the pull r
 
 ## Want to contribute something else?
 If you’d like to contribute something else that doesn’t fall into any of the above, we’d still love to hear about it.
-Just [create an issue](https://github.com/uswds/uswds/issues/new/choose) or [create a discussion](https://github.com/uswds/uswds/discussions), and we can talk about it.
+Just [create an issue](https://github.com/uswds/uswds/issues/new/choose) or [create a discussion](https://github.com/uswds/uswds/discussions/new?category=component-proposals), and we can talk about it.
+
+## How we prioritize bug reports and feature requests
+If you’ve submitted a bug or feature request, we’ll triage it based on the following considerations:
 
 1. **Size:** Can we accomplish this in a sprint or will this take longer?
 1. **Severity:** What type of functionality is impacted? Is there a workaround?
@@ -109,7 +112,7 @@ For complete attribution and licensing information for parts of the project that
 
 ### The rest of this project is in the public domain
 
-The rest of this project is in the worldwide [public domain](https://github.com/uswds/uswds/blob/develop/LICENSE.md).
+The rest of this project is in the worldwide [public domain](https://github.com/uswds/uswds/blob/develop/LICENSE.md#the-rest-of-this-project-is-in-the-worldwide-public-domain).
 
 This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 

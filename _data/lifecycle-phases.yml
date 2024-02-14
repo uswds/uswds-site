@@ -118,7 +118,7 @@ phases:
           - Adding documentation
           - Submitting bugs and feature requests
         find_more: |
-          All experimental components are documented on our components page.
+          All experimental components are documented on our <a href="https://designsystem.digital.gov/components/overview/">components page</a>.
         reach_out: |
           <a href="mailto:uswds@gsa.gov">Reach out to the USWDS core team</a> if you want to create or contribute to an experimental component.
           You'll need to build any experimental component from an approved component proposal.
@@ -134,7 +134,7 @@ phases:
           - Submitting bugs
           - Submitting feature requests
           - Creating pull requests
-        find_more: All stable components will be documented on our components page.
+        find_more: All stable components will be documented on our <a href="https://designsystem.digital.gov/components/overview/">components page</a>.
       - name: Use with caution
         description: |
           The component does not currently meet requirements and needs significant rework.

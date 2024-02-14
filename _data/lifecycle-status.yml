@@ -59,14 +59,6 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/date-range-picker/
-- name: Error summary
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/issues/4019
-- name: Feedback
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/issues/5564
 - name: File input
   status_major: released
   status_minor: stable
@@ -79,10 +71,6 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/form/
-- name: Glossary
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/issues/3937
 - name: Header
   status_major: released
   status_minor: stable
@@ -135,10 +123,6 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/pagination/
-- name: Primary nav - sidebar
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/issues/3897
 - name: Process list
   status_major: released
   status_minor: stable
@@ -147,10 +131,6 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/prose/
-- name: Quote with attribution
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/issues/5695
 - name: Radio buttons
   status_major: released
   status_minor: stable
@@ -175,14 +155,6 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/site-alert/
-- name: Skip to
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/issues/5306
-- name: Spinner
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/issues/4346
 - name: Step indicator
   status_major: released
   status_minor: stable
@@ -198,7 +170,7 @@ components:
 - name: Tabs
   status_major: proposal
   status_minor: Proposal started
-  url: https://github.com/amyleadem/uswds-proposals/blob/339ac763be0bc879786e00ac87d0e8193ffdb35c/proposals/tabs-component.md
+  url:
 - name: Tag
   status_major: released
   status_minor: stable
@@ -211,14 +183,6 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/time-picker/
-- name: Toast
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/issues/5071
-- name: Toggle
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/issues/3229
 - name: Tooltip
   status_major: released
   status_minor: stable

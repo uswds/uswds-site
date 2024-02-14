@@ -14,6 +14,4 @@ subnav:
     href: /components/lifecycle/
   - text: Component status
     href: /components/status/
-  - text: Component status (Proto data)
-    href: /components/status-prototype/
 ---

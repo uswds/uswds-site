@@ -5,5 +5,5 @@ items:
   - date: NNNN-NN-NN
     summary: Added component status page.
     affectsGuidance: true
-    githubPr: 2462
+    githubPr: 2491
     githubRepo: uswds-site

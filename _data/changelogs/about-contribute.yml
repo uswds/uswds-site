@@ -2,6 +2,11 @@ title: Contribute
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added information about suggesting a new USWDS component.
+    affectsGuidance: true
+    githubPr: 2491
+    githubRepo: uswds-site
   - date: 2022-06-16
     summary: Added contribute page.
     summaryAdditional:

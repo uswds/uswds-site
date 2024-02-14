@@ -13,16 +13,9 @@ changelog:
 in_page_nav: false
 ---
 
-{% if include.data == 'prototype' %}
-  {% assign component_status_items = site.data.lifecycle-status-prototype.components %}
-  {% else %}
-    {% assign component_status_items = site.data.lifecycle-status.components %}
-{% endif %}
+{% assign component_status_items = site.data.lifecycle-status.components %}
 
 {% assign check_icon_classes = 'text-gray-60' %}
-{% assign check_icon_styles = 'height:1rem; width:1rem' %}
-
-{% assign colClasses = '' %}
 {% assign phase_complete_classes = 'bg-gray-5' %}
 {% assign proposal_classes = "lifecycle-bg--proposal" %}
 {% assign accepted_classes = "lifecycle-bg--accepted" %}
@@ -33,37 +26,42 @@ in_page_nav: false
 {% assign caution_classes = "lifecycle-bg--caution" %}
 {% assign deprecated_classes = "lifecycle-bg--deprecated" %}
 
-{% assign col1Title = 'Component name' %}
-
+{% assign col1Title = 'Component' %}
 {% assign major_status_types = "proposal, development, released, deprecated" | split: ', '%}
+
 This table illustrates where USWDS components currently fall in [component lifecycle page]({{ site.baseurl }}/components/lifecycle).
 For a full list of components under consideration for USWDS,
 check out our [component proposals discussion board](http://www.github.com).
 
 Don’t see the component you are looking for? [Start a discussion about it](http://www.github.com).
 
-
 <!-- Start mobile-only status table -->
 <table class="lifecycle-table tablet:display-none">
   <tbody>
+    <thead class="text-bold">
+      <tr>
+        <th scope="col" class="padding-left-0 text-left">{{ col1Title }}</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
   {% for item in component_status_items %}
     {% if item.status_major == "proposal" %}
       {% if item.status_minor == "will not pursue" %}
         {% assign status_classes = rejected_classes %}
-        {% elsif item.status_minor == "accepted" %}
-          {% assign status_classes = accepted_classes %}
-        {% else %}
-          {% assign status_classes = proposal_classes %}
-      {% endif %}
+      {% elsif item.status_minor == "accepted" %}
+        {% assign status_classes = accepted_classes %}
+      {% else %}
+        {% assign status_classes = proposal_classes %}
+    {% endif %}
     {% elsif item.status_major == "development" %}
       {% assign status_classes = development_classes %}
     {% elsif item.status_major == "released" %}
       {% if item.status_minor == "experimental" %}
         {% assign status_classes = experimental_classes %}
-        {% elsif item.status_minor == "use with caution" %}
-          {% assign status_classes = caution_classes %}
-        {% else %}
-          {% assign status_classes = released_classes %}
+      {% elsif item.status_minor == "use with caution" %}
+        {% assign status_classes = caution_classes %}
+      {% else %}
+        {% assign status_classes = released_classes %}
       {% endif %}
     {% elsif item.status_major == "deprecated" %}
       {% assign status_classes = deprecated_classes %}
@@ -88,8 +86,7 @@ Don’t see the component you are looking for? [Start a discussion about it](htt
   <caption class="usa-sr-only">Component status</caption>
   <thead class="text-bold">
     <tr>
-      <th scope="col">
-      </th>
+      <th scope="col" class="text-left padding-left-0">{{ col1Title }}</th>
       {% for type in major_status_types %}
           <th scope="col">
             {{ type | capitalize }}
@@ -102,78 +99,78 @@ Don’t see the component you are looking for? [Start a discussion about it](htt
       {% if item.status_major == "proposal" %}
         {% if item.status_minor == "will not pursue" %}
           {% assign status_classes = rejected_classes %}
-          {% elsif item.status_minor == "accepted" %}
-            {% assign status_classes = accepted_classes %}
-          {% else %}
-            {% assign status_classes = proposal_classes %}
-        {% endif %}
+        {% elsif item.status_minor == "accepted" %}
+          {% assign status_classes = accepted_classes %}
+        {% else %}
+          {% assign status_classes = proposal_classes %}
+      {% endif %}
       {% elsif item.status_major == "development" %}
         {% assign status_classes = development_classes %}
       {% elsif item.status_major == "released" %}
         {% if item.status_minor == "experimental" %}
           {% assign status_classes = experimental_classes %}
-          {% elsif item.status_minor == "use with caution" %}
-            {% assign status_classes = caution_classes %}
-          {% else %}
-            {% assign status_classes = released_classes %}
-        {% endif %}
+        {% elsif item.status_minor == "use with caution" %}
+          {% assign status_classes = caution_classes %}
+        {% else %}
+          {% assign status_classes = released_classes %}
+      {% endif %}
       {% elsif item.status_major == "deprecated" %}
         {% assign status_classes = deprecated_classes %}
       {% endif %}
-    <tr>
-      <td data-title="{{ col1Title }}" class="text-bold">
-        <a href="{{ item.url }}">
-          {{ item.name }}
-        </a>
-      </td>
-      {% if item.status_major == "proposal" %}
-        <td data-title="{{ item.status_major }}"  class="{{ status_classes }}">
-          {{ item.status_minor | capitalize }}
+      <tr>
+        <td data-title="{{ col1Title }}" class="text-bold">
+          <a href="{{ item.url }}">
+            {{ item.name }}
+          </a>
         </td>
-        {% elsif item.status_major == "development" or item.status_major == "released" or item.status_major == "deprecated" %}
-          <td class="{{ phase_complete_classes }}">
-            {% if has_proposal %}
-              {% include icon.html icon='check_circle' classes='text-gray-60' %}
-            {% else %}
-              N/A
-            {% endif %}
+        {% if item.status_major == "proposal" %}
+          <td data-title="{{ item.status_major }}"  class="{{ status_classes }}">
+            {{ item.status_minor | capitalize }}
           </td>
-        {% else %}
-          <td></td>
-      {% endif %}
+          {% elsif item.status_major == "development" or item.status_major == "released" or item.status_major == "deprecated" %}
+            <td class="{{ phase_complete_classes }} {{check_icon_classes}}">
+              {% if has_proposal %}
+                {% include icon.html icon='check_circle' %}
+              {% else %}
+                N/A
+              {% endif %}
+            </td>
+          {% else %}
+            <td></td>
+        {% endif %}
 
-      {% if item.status_major == "development" %}
-        <td data-title="{{ type }}"  class="{{ status_classes }}">
-          {{ item.status_minor | capitalize }}
-        </td>
-        {% elsif item.status_major == "released" or item.status_major == "deprecated" %}
-          <td class="{{ phase_complete_classes }}">
-            {% include icon.html icon='check_circle' classes='text-gray-60' %}
+        {% if item.status_major == "development" %}
+          <td data-title="{{ type }}"  class="{{ status_classes }}">
+            {{ item.status_minor | capitalize }}
           </td>
-        {% else %}
-          <td></td>
-      {% endif %}
+          {% elsif item.status_major == "released" or item.status_major == "deprecated" %}
+            <td class="{{ phase_complete_classes }} {{check_icon_classes}}">
+              {% include icon.html icon='check_circle' %}
+            </td>
+          {% else %}
+            <td></td>
+        {% endif %}
 
-      {% if item.status_major == "released" %}
-        <td data-title="{{ type }}"  class="{{ status_classes }}">
-          {{ item.status_minor | capitalize }}
-        </td>
-        {% elsif item.status_major == "deprecated" %}
-          <td class="{{ phase_complete_classes }}">
-            {% include icon.html icon='check_circle' classes='text-gray-60' %}
+        {% if item.status_major == "released" %}
+          <td data-title="{{ type }}"  class="{{ status_classes }}">
+            {{ item.status_minor | capitalize }}
           </td>
-        {% else %}
-          <td></td>
-      {% endif %}
+          {% elsif item.status_major == "deprecated" %}
+            <td class="{{ phase_complete_classes }} {{check_icon_classes}}">
+              {% include icon.html icon='check_circle' %}
+            </td>
+          {% else %}
+            <td></td>
+        {% endif %}
 
-      {% if item.status_major == "deprecated" %}
-        <td data-title="{{ type }}"  class="{{ status_classes }}">
-          {{ item.status_minor | capitalize }}
-        </td>
-        {% else %}
-          <td></td>
-      {% endif %}
-    </tr>
+        {% if item.status_major == "deprecated" %}
+          <td data-title="{{ type }}"  class="{{ status_classes }}">
+            {{ item.status_minor | capitalize }}
+          </td>
+          {% else %}
+            <td></td>
+        {% endif %}
+      </tr>
     {% endfor %}
   </tbody>
 </table>

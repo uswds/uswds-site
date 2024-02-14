@@ -67,7 +67,9 @@ Our list of [good first issues from the community](https://github.com/uswds/uswd
 
 If you want to propose a code change, here are the steps to submit a pull request:
 
-1. First, make sure there is an issue that describes the problem you are solving. Search the open issues backlog to find an existing issue. If none exists, create your own bug report or feature request.
+1. First, make sure there is an issue that describes the problem you are solving.
+  Search the [open issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen) to find an existing issue.
+  If none exists, create your own [bug report](#report-bugs) or [feature request](#propose-a-feature-request-or-enhancement).
 1. Fork this repo into your GitHub account. Read more about [forking a repo on GitHub](https://help.github.com/articles/fork-a-repo/).
 1. Create a branch from `develop` with a name that describes what you’re working on (for example, `add-border-styles`).
 1. When your code changes are ready for review, [open a pull request](https://designsystem.digital.gov/about/contribute/#submit-a-pull-request). Be sure to fill out all the applicable fields in the generated PR description.

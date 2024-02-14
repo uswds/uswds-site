@@ -3,7 +3,7 @@ permalink: /components/lifecycle/
 layout: styleguide
 title: USWDS component lifecycle
 category: Components
-lead: From suggesting new components to fixing bugs, the community contributes to every phase of the lifecycle.
+lead: How USWDS components mature from discussions and proposals to stable production releases, or are deprecated and retired
 type: docs
 subnav:
   - text: Latest updates
@@ -12,10 +12,10 @@ changelog:
   key: docs-component-lifecycle
 ---
 
-A design system is never “done.”
-As our community’s needs evolve, USWDS adds new components, refines existing ones, and retires those that have become obsolete.
+The USWDS component lifecycle outlines how new components enter the design system, and how we communicate our level of confidence that a component is suitable for use.
+USWDS adds new components, refines existing ones, and retires those that have become obsolete to adapt to the most current research, new technology, and evolving user needs.
 
-There’s a role for you at each stage of [the component lifecycle]({{ site.baseurl }}/components/lifecycle), and we hope you’ll get involved.
+There are opportunities for community contribution at each stage of the component lifecycle. We hope you’ll get involved.
 
 {% assign lifecycle_phases = site.data.lifecycle-phases.phases %}
 {% assign phase_number = 0 %}
@@ -33,6 +33,10 @@ There’s a role for you at each stage of [the component lifecycle]({{ site.base
         </h2>
 
         <p class="lifecycle-phase__description">{{ phase.description }}</p>
+
+        {% if phase.learn_more %}
+          <p>{{ phase.learn_more }}</p>
+        {% endif %}
 
         {% for subphase in phase.subphases %}
           <div class="lifecycle-phase__subphase">

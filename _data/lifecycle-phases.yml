@@ -25,7 +25,8 @@ phases:
           - Adding missing proposal information to the discussion
           - Adding additional information, context, or perspective to the discussion
         find_more: |
-          **Note:** Keep all questions and comments related to the component or the proposal in the public discussion. Don't add comments in the `uswds-proposals` repo
+          <b>Note:</b> Keep all questions and comments related to the component or the proposal in the public discussion.
+          Don't add comments in the <code>uswds-proposals</code> repo.
           </p><p>
           Find all components with proposals in progress on the discussion board.
       - name: Proposal open for comment
@@ -38,7 +39,8 @@ phases:
           - Asking questions about the proposal
           - Voting for the related component discussion
         find_more: |
-          **Note:** Keep all questions and comments related to the the proposal in the public discussion. Don't add comments in the `uswds-proposals` repo
+          <b>Note:</b> Keep all questions and comments related to the the proposal in the public discussion.
+          Don't add comments in the <code>uswds-proposals</code> repo.
           </p><p>
           Find all components with proposals open for comment on the discussion board.
       - name: Proposal evaluation
@@ -57,7 +59,7 @@ phases:
         contribute_by:
           - Volunteering to take the assignment and develop the component
         find_more: Find all approved components on the discussion board.
-        reach_out: <a href="mailto:{{ site.uswds_email }}">Reach out to the USWDS core team</a> if you are interested in building an approved component.
+        reach_out: <a href="mailto:uswds@gsa.gov">Reach out to the USWDS core team</a> if you are interested in building an approved component.
       - name: Conditionally approved
         description: |
           The USWDS core team determined that the component could be a good fit for the design system, but other work must be completed before development can be scheduled.
@@ -118,7 +120,7 @@ phases:
         find_more: |
           All experimental components are documented on our components page.
         reach_out: |
-          <a href="mailto:{{ site.uswds_email }}">Reach out to the USWDS core team</a> if you want to create or contribute to an experimental component.
+          <a href="mailto:uswds@gsa.gov">Reach out to the USWDS core team</a> if you want to create or contribute to an experimental component.
           You'll need to build any experimental component from an approved component proposal.
           If another team already has the assignment for an approved proposal, that team's work takes priority.
       - name: Stable
@@ -142,7 +144,7 @@ phases:
         contribute_by:
           - Suggesting or submitting fixes for the component
         reach_out: |
-          <a href="mailto:{{ site.uswds_email }}">Reach out to the USWDS core team</a> if you want to contribute to “use with caution” components.
+          <a href="mailto:uswds@gsa.gov">Reach out to the USWDS core team</a> if you want to contribute to “use with caution” components.
   - name: Deprecated
     description: Components that do not meet requirements or are no longer needed.
     subphases:

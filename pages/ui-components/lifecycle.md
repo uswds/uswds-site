@@ -23,7 +23,6 @@ There are opportunities for community contribution at each stage of the componen
   {% for phase in lifecycle_phases %}
     {% assign phase_number = forloop.index %}
 
-    <!-- <li class="usa-process-list__item lifecycle-border--{{ phase.name | downcase  }}"> -->
     <li class="usa-process-list__item">
       <div class="lifecycle-phase">
 

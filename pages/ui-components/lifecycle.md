@@ -18,11 +18,10 @@ USWDS adds new components, refines existing ones, and retires those that have be
 There are opportunities for community contribution at each stage of the component lifecycle. We hope you’ll get involved.
 
 {% assign lifecycle_phases = site.data.lifecycle-phases.phases %}
-{% assign phase_number = 0 %}
 
 <ol class="usa-process-list lifecycle-process margin-top-4">
   {% for phase in lifecycle_phases %}
-    {% assign phase_number = phase_number | plus: 1 %}
+    {% assign phase_number = forloop.index %}
 
     <!-- <li class="usa-process-list__item lifecycle-border--{{ phase.name | downcase  }}"> -->
     <li class="usa-process-list__item">

@@ -30,7 +30,7 @@ in_page_nav: false
 {% assign major_status_types = "proposal, development, released, deprecated" | split: ', '%}
 
 This table includes lifecycle information for every component we're tracking in the design system, including those in the proposal phase.
-For a complete description of each of the component lifecycle phases, see our [Component lifecycle phases]({{ site.baseurl/components/lifecycle }}) page.
+For a complete description of each of the component lifecycle phases, see our [Component lifecycle phases]({{ site.baseurl}}/components/lifecycle) page.
 
 We update this page regularly, but check out our [component proposal discussion board](https://github.com/uswds/uswds/discussions/categories/component-proposals) for the most up-to-date list of components in the proposal phase.
 

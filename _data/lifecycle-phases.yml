@@ -2,7 +2,8 @@ phases:
   - name: Proposal
     description: |
       Components under consideration for development through public discussion and a formal proposal.
-    learn_more: Visit the [proposal process overview](https://github.com/uswds/uswds/discussions/5764) to learn more about how to contribute.
+    learn_more: |
+      Visit the <a href="https://github.com/uswds/uswds/discussions/5764">proposal process overview</a> to learn more about how to contribute.
     subphases:
       - name: Discussion started
         description: |
@@ -12,10 +13,10 @@ phases:
         ends_when: |
           The USWDS core team begins drafting a proposal for the component.
         contribute_by:
-          - Opening a [new component discussion](https://github.com/uswds/uswds/discussions/new?category=component-proposals)
+          - Opening a <a href="https://github.com/uswds/uswds/discussions/new?category=component-proposals">new component discussion</a>.
           - Sharing ideas, opinions, and reactions in existing discussions
         find_more: |
-          Find all [active component discussions](https://github.com/uswds/uswds/discussions/categories/component-proposals) at the USWDS component proposal discussion board.
+          Find all <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals">active component discussions</a> at the USWDS component proposal discussion board.
       - name: Proposal in progress
         description: |
           The USWDS core team collects community discussion in a formal proposal for the component.

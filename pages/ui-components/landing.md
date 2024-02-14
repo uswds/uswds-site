@@ -6,6 +6,14 @@ category: Components
 lead: USWDS theme colors provide flexible, accessible, customizable color choices
 type: docs
 subnav:
-  - href: /components/overview/
-  - href: /components/packages/
+  - text: Components
+    href: /components/overview/
+  - text: Packages
+    href: /components/packages/
+  - text: Component lifecycle
+    href: /components/lifecycle/
+  - text: Component status
+    href: /components/status/
+  - text: Component status (Proto data)
+    href: /components/status-prototype/
 ---

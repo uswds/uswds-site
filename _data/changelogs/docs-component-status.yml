@@ -1,0 +1,9 @@
+title: Component status
+type: documentation
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added component status page.
+    affectsGuidance: true
+    githubPr: 2462
+    githubRepo: uswds-site

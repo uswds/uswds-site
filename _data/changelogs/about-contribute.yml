@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added information about suggesting a new USWDS component.
+    summary: Added USWDS component proposal information.
     affectsGuidance: true
     githubPr: 2491
     githubRepo: uswds-site

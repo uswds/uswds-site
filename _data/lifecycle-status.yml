@@ -59,6 +59,10 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/date-range-picker/
+- name: Feedback
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5773
 - name: File input
   status_major: released
   status_minor: stable
@@ -71,6 +75,10 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/form/
+- name: Glossary
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5771
 - name: Header
   status_major: released
   status_minor: stable
@@ -159,6 +167,18 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/site-alert/
+- name: Skipto
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5769
+- name: Spinner
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5768
+- name: Toast
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5770
 - name: Step indicator
   status_major: released
   status_minor: stable

@@ -2,7 +2,7 @@ title: Contribute
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-02-15
     summary: Added USWDS component proposal information.
     affectsGuidance: true
     githubPr: 2491

@@ -119,7 +119,7 @@ phases:
           - Adding documentation
           - Submitting bugs and feature requests
         find_more: |
-          All experimental components are documented on our <a href="https://designsystem.digital.gov/components/overview/">components page</a>.
+          In the future, all experimental components will be documented on our <a href="https://designsystem.digital.gov/components/overview/">components page</a>.
         reach_out: |
           <a href="mailto:uswds@gsa.gov">Reach out to the USWDS core team</a> if you want to create or contribute to an experimental component.
           You'll need to build any experimental component from an approved component proposal.

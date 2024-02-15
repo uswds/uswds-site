@@ -29,7 +29,7 @@ phases:
           <b>Note:</b> Keep all questions and comments related to the component or the proposal in the public discussion.
           Don't add comments in the <code>uswds-proposals</code> repo.
           </p><p>
-          Find all components with [proposals in progress](https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+in+progress%22+) on the discussion board.
+          Find all components with <a href="https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+in+progress%22+">proposals in progress</a> on the discussion board.
       - name: Proposal open for comment
         description: |
           The community has a minimum of 45 days to comment on the complete proposal.
@@ -43,7 +43,7 @@ phases:
           <b>Note:</b> Keep all questions and comments related to the the proposal in the public discussion.
           Don't add comments in the <code>uswds-proposals</code> repo.
           </p><p>
-          Find all components with [proposals open for comment](https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+open+for+comment%22+) on the discussion board.
+          Find all components with <a href="https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+open+for+comment%22+">proposals open for comment</a> on the discussion board.
       - name: Proposal evaluation
         description: |
           The USWDS core team evaluates the proposal for inclusion in the design system.
@@ -59,7 +59,7 @@ phases:
         ends_when: The component is assigned for development.
         contribute_by:
           - Volunteering to take the assignment and develop the component
-        find_more: Find all [approved components](https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen++label%3A%22Status%3A+Proposal+approved%22+) on the discussion board.
+        find_more: Find all <a href="https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen++label%3A%22Status%3A+Proposal+approved%22+">approved components</a> on the discussion board.
         reach_out: <a href="mailto:uswds@gsa.gov">Reach out to the USWDS core team</a> if you are interested in building an approved component.
       - name: Conditionally approved
         description: |
@@ -68,7 +68,7 @@ phases:
           Once the related work is complete, the component will move to the “approved” state.
         starts_when: The USWDS core team approves the component proposal.
         ends_when: The dependent work is complete and the component moves to approved status.
-        find_more: Find all [conditionally approved components](https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+conditionally+approved%22+) on the discussion board.
+        find_more: Find all <a href="https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+conditionally+approved%22+">conditionally approved components</a> on the discussion board.
       - name: Returned for revision
         description: |
           The USWDS core team determined that the proposal for the component has not not yet made the case for inclusion, but could be approved with revisions and improvements.
@@ -78,12 +78,12 @@ phases:
           Contributors to the component discussion address the gaps in the proposal, and the USWDS core team updates the proposal for re-evaluation.
         contribute_by:
           - Adding missing information to the discussion.
-        find_more: You can find all [proposals returned for revision](https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+returned+for+revision%22) on the discussion board.
+        find_more: You can find all <a href="https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+returned+for+revision%22">proposals returned for revision</a> on the discussion board.
       - name: Will not pursue
         description: |
           The core team determined that the proposed component is not a good fit for the design system.
           We will neither assign nor develop these components for USWDS.
-        find_more: You can find a list of  [“will not pursue” components](https://github.com/uswds/uswds/discussions?discussions_q=label%3A%22Status%3A+will+not+pursue%22+) on the discussion board.
+        find_more: You can find a list of  <a href="https://github.com/uswds/uswds/discussions?discussions_q=label%3A%22Status%3A+will+not+pursue%22+">“will not pursue” components</a> on the discussion board.
   - name: Development
     description: Components undergoing active design, development, testing, and documentation before public release.
     subphases:
@@ -94,14 +94,14 @@ phases:
           Only approved components are available for assignment.
         starts_when: The component is assigned to a team for development.
         ends_when: Component development begins.
-        find_more: You can find a list of all [assigned components](https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+assigned%22+) on the discussion board.
+        find_more: You can find a list of all <a href="https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Proposal+assigned%22+">assigned components</a> on the discussion board.
       - name: In development
         description: |
           The assigned team is designing, developing, testing, and documenting the component.
           This phase can include alpha and beta releases.
         starts_when: The component has been assigned to a team for development.
         ends_when: The component is ready for release.
-        find_more: You can find a list of [components in development](https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Component+in+development%22) on the discussion board.
+        find_more: You can find a list of <a href="https://github.com/uswds/uswds/discussions?discussions_q=is%3Aopen+label%3A%22Status%3A+Component+in+development%22">components in development</a> on the discussion board.
   - name: Released
     description: Components we've released to the public in our distribution package and documented on the USWDS website.
     subphases:

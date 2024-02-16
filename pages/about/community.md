@@ -39,9 +39,7 @@ By voluntarily participating in this community, you are agreeing to abide by the
 <div class="usa-media-block flex-align-center">
   <img class="circle-5 usa-media-block__img" src="https://github.com/thisisdano.png?size=40" alt="">
   <div class="usa-media-block__body">
-    <h3 class="margin-bottom-0">
       <a href="https://digital.gov/authors/dan-williams/">Dan Williams</a>
-    </h3>
     <p class="margin-top-0">GSA | Portland, OR</p>
   </div>
 </div>

@@ -2,6 +2,14 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed a bug that caused `mouseover` events to focus buttons and prevent keyboard navigation. 
+    summaryAdditional:  Now, hovering the mouse over date picker buttons will only cause the hover state.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 5778
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-11-20
     summary: Added known issues section.
     summaryAdditional:

@@ -2,6 +2,20 @@ title: Validation
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Validation support added to textarea.
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets:
+    affectsContent:
+    affectsGuidance:
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsSettings: true
+    affectsStyles:
+    githubPr: 5233
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2022-12-21
     summary: Clarified implementation guidance and removed the `#` from the example `data-validation-element` value.
     summaryAdditional:

@@ -5,6 +5,21 @@ type: component
 changelogURL:
 
 items:
+  - date: NNNN-NN-NN
+    summary: Textarea supports validation.
+    summaryAdditional:
+    isBreaking: false
+    affectsAccessibility:
+    affectsAssets:
+    affectsContent:
+    affectsGuidance:
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsSettings: true
+    affectsStyles:
+    githubPr: 5233
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2023-11-16
     summary: Updated the listed values for `.usa-input--[width]`.
     affectsGuidance: true

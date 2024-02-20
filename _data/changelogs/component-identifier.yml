@@ -2,6 +2,14 @@ title: Identifier
 type: component
 changelogURL:
 items:
+  - date: 2023-11-09
+    summary: Updated the screen reader readout in English versions of the component.
+    summaryAdditional: When read out on a screen reader, the statement "An official website of [Agency name]" can sound like "UNofficial website of [Agency name]". Users should update their markup to improve the screen reader experience.
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 5491
+    githubRepo: uswds
+    versionUswds: 3.7.0
   - date: 2023-06-09
     summary: Updated Accessibility statement link text.
     summaryAdditional: Updated the identifier to use the text "Accessibility statement" (EN) / "Declaración de accesibilidad" (ES) for the required link to an accessibility statement.

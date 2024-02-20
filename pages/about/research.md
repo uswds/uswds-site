@@ -6,7 +6,7 @@ redirect_from:
 layout: styleguide
 title: Research
 category: About
-lead: User research is a core aspect of USWDS as it’s our main source of feedback and inspiration for future product development.
+lead: How research supports USWDS decisions
 redirect_from:
   - /whats-new/research/
 subnav:
@@ -16,34 +16,73 @@ changelog:
   key: about-research
 ---
 
-We plan to use a combination of research methods, quantitative research like collecting web analytics to see how frequently USWDS is used around the federal government, and qualitative research like remote observational studies to see whether USWDS is making government sites easier for people to use. We’ll use this research to see how well USWDS is working and what needs to be improved.
+Research supports at least two USWDS design principles: [Start with real user needs]({{ site.baseurl }}/design-principles/#start-with-real-user-needs) and [Listen]({{ site.baseurl }}/design-principles/#listen). To make effective design system decisions, we need to know how government digital teams use the design system itself, and how end users interact with what we build using the design system. Our research practice helps us better understand both.
 
-## Analytics Reporting
+## Research focus
 
-### Quarterly Reports
+{:.border-top-2px .border-base-lighter .padding-top-1}
+Our research program focuses on:
 
-Once a quarter the metrics displayed on the [about our work]({{ site.baseurl }}/about-our-work/)
-page will be updated to reflect the recent traffic and usage of the U.S.
-Web Design System. We will use this information to identify future
-improvements to the design patterns. You can use these metrics to help justify
-the adoption and continued use of USWDS.
+{:.usa-list}
+- **The needs of the USWDS community.** We are always looking for ways to improve our components and our guidance to better meet the needs of designers, developers, and other practitioners.
+- **The needs of people with disabilities.** These participants help us recognize and address accessibility and usability issues.
 
-#### Reference
+## Research methods
 
-[https://www.nngroup.com/articles/analytics-reports-ux-strategists/](https://www.nngroup.com/articles/analytics-reports-ux-strategists/)
+{:.border-top-2px .border-base-lighter .padding-top-1}
+We use a variety of research methods to gain insights at all stages of the design process. Find more information about different research methods we use in [18F Methods](https://methods.18f.gov/).
 
-## User Research Activities
+### Examples of methods we use
 
-### Recruitment
+Methods that can **generate new knowledge** about needs or a certain problem, such as:
 
-One of our challenges is knowing who is interested in being part of our user research. To resolve this, we will implement several channels for federal designers and developers to signal their interest and provide their contact information to us. This will allow us to conduct research in a timely fashion.
+{:.usa-list}
+- [User interviews](https://methods.18f.gov/discover/stakeholder-and-user-interviews/)
+- Surveys
+- [Card sorting](https://methods.18f.gov/validate/card-sorting/)
+- [Top Tasks analysis](https://digital.gov/event/2018/04/11/a-deep-dive-into-top-tasks-with-gerry-mcgovern/)
+- Landscape analysis
 
-#### Potential Methods
+Methods that can help us **evaluate an existing idea, prototype, or product**, such as:
 
-- Re-activate the screener to intercept users of designsystem.digital.gov
-- Provide a “Contact Us” feature on designsystem.digital.gov
-- Perform outreach via federal listservs and other digital channels
+{:.usa-list}
+- [Usability testing](https://methods.18f.gov/validate/usability-testing/)
+- [Manual accessibility testing](https://digital.gov/resources/how-test-websites-for-accessibility/)
+- [Analytics](https://digital.gov/resources/how-to-build-an-analytics-strategy/)
+- Content testing
+- [Tree testing](https://digital.gov/2022/01/06/open-source-information-architecture-design-using-the-tools-you-have-to-conduct-card-sorting-and-tree-testing/)
 
-### Digital Service Team Remote Interviews
+### How often we do research
 
-One of the most consistent ways we have collected feedback from our users has been by conducting remote interviews with digital service teams around the federal government. This has allowed us to collect direct feedback and suggestions for how to improve the product. Given this success, the team aims to continue using this method on a frequent (1-2 interviews per month) basis.
+We do regular, ongoing research, such as usability testing of our components. Our research practice is still developing, but we intend to conduct at least one round of usability testing per quarter.
+
+Other more ad hoc research helps us answer specific questions or solve certain problems. Our research strategy is intentional but flexible.
+
+## Key research and research operations
+
+{:.border-top-2px .border-base-lighter .padding-top-1}
+Explore some of our past research work:
+
+{:.usa-list}
+- [Usability testing](https://github.com/uswds/uswds/wiki/Usability-research-findings-for-Q3-2023) (August and September 2023): Testing components with visually impaired participants. We also discussed this research at the [October 2023 USWDS monthly call](https://youtu.be/_uNXQpu6Dwg?feature=shared).
+- [Usability testing day checklist](https://github.com/uswds/uswds/wiki/Usability-testing-day-checklist): Steps to follow on the day of testing. This checklist also prepares researchers to account for assistive technology like screen readers.
+- [Top Tasks](https://digital.gov/event/2023/04/20/uswds-monthly-call-april-2023/) (March 2023): Finding out what matters most to USWDS users.
+- [Inclusive Design Patterns research]({{ site.baseurl }}/together/) (November 2022): Reducing barriers to participation in common government interactions.
+- [Transforming the American digital experience]({{ site.baseurl }}/next/) (March 2021): Supporting emergency response efforts related to the COVID-19 and identifying strategies for advancing the design system through agency collaboration.
+
+## Research ethics
+
+{:.border-top-2px .border-base-lighter .padding-top-1}
+We use ethical research practices to avoid harming participants. This includes:
+
+{:.usa-list}
+- Protecting participants’ privacy
+- Securely storing data
+- Giving participants the information they need in order to comfortably consent to research
+- Allowing participants to opt out at any time, for any reason, without penalty
+
+Learn more about research ethics and privacy protocols we follow:
+
+{:.usa-list}
+- [Ethics guidance from the 18F User Experience Design Guide](https://ux-guide.18f.gov/research/ethics/)
+- [Privacy guidance from the 18F User Experience Design Guide](https://ux-guide.18f.gov/research/privacy/)

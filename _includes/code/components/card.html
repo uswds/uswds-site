@@ -1,9 +1,15 @@
 <h3 class="site-preview-heading">Default card</h3>
 {% capture card--standard %}
   {% library_component usa-card~standard %}
-{% endcapture %}{{ card--standard | strip }}
+{% endcapture %}{{ card--standard
+  | strip
+  | replace: 'tablet:grid-col-4', 'tablet-lg:grid-col-6 widescreen:grid-col-4'
+}}
 
 <h3 class="site-preview-heading">Flag layout card</h3>
 {% capture card--flag %}
   {% library_component usa-card~flag %}
-{% endcapture %}{{ card--flag | strip }}
+{% endcapture %}{{ card--flag
+  | strip
+  | replace: 'desktop:grid-col-6', 'flex-1'
+}}

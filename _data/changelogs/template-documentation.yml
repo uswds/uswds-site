@@ -2,8 +2,8 @@ title: Documentation page
 type: template
 items:
   - date: NNNN-NN-NN
-    summary: Documentation page structure follows logical order.
-    summaryAdditional: Sidenav in template now follows logical HTML order on mobile. Previously, the sidenav was shifted after the content, which did not follow the HTML order.
+    summary: Visual order of the Documentation page matches the HTML order.
+    summaryAdditional:  Now, the side navigation is visually displayed before the main content at narrow screen widths.
     isBreaking: false
     affectsAccessibility: true
     affectsAssets:

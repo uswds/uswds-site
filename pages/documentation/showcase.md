@@ -109,7 +109,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [The National Flood Insurance Program (FloodSmart)](https://www.floodsmart.gov/)
 - [National Library of Medicine Customer Support](https://support.nlm.nih.gov)
 - [National Science Foundation (Beta)](https://beta.nsf.gov/)
-- [Navy 6th Fleet](http://www.c6f.navy.mil/)
+- [Navy 6th Fleet](https://www.c6f.navy.mil/)
 - [Oak Ridge Institute for Science and Education (ORISE)](https://orise.orau.gov/)
 - [Office of Evaluation Sciences](https://oes.gsa.gov/)
 - [Office of the Historian - Department of State](https://history.state.gov/)

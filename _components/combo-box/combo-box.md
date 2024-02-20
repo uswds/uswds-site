@@ -60,4 +60,3 @@ alert-content: In late 2022, we found some combo box <a href="#accessibility-com
 changelog:
   key: component-combo-box
 ---
-

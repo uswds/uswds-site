@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Resolved style specificity issues between `usa-footer` and `usa-layout-grid`.
-    summaryAdditional:  This resolves visual regressions potentially caused by removing layout grid dependency.
+    summary: Fixed a bug that caused some grid utility classes to be ignored when used inside `usa-footer`.
+    summaryAdditional:  
     affectsStyles: true
     githubPr: 5675
     githubRepo: uswds

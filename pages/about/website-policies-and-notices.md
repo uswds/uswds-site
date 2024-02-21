@@ -182,6 +182,6 @@ Federal agencies are required to provide the following links to agency-level inf
 
 -   [Privacy policy and program](https://www.gsa.gov/privacy)
 
--   [Small business events and contacts](https://www.gsa.gov/small-business/small-business-resources/osdbu-events-and-contacts)
+-   [Small business events and contacts](https://www.gsa.gov/small-business/small-business-resources/osdbu-events)
 
 Reviewed/Updated: October 2021

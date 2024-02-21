@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Allow mobile nav to stay open during page loads to prevent confusion upon closing.
-    summaryAdditional:  Links to subsection headers will still appropriately close the mobile navigation window.
+    summary: Updated the behavior of the mobile header navigation to stay open while loading a new page.
+    summaryAdditional:  
     affectsJavascript: true
     githubPr: 5513
     githubRepo: uswds

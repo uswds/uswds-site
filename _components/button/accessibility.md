@@ -1,6 +1,6 @@
 ---
 permalink: /components/button/accessibility-tests/
-layout: styleguide
+layout: accessibility-tests
 component:
   name: button
 title: Button accessibility tests
@@ -9,5 +9,3 @@ lead: Any USWDS button should pass these manual accessibility tests.
 changelog:
   key: 'component-button-accessibility'
 ---
-
-{% include accessibility-tests/index.html %}

@@ -18,7 +18,7 @@ items:
     affectsStyles:
     githubPr: 5783
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.8.0
   - date: 2023-09-29
     summary: Fixed a bug that prevented VoiceOver from reading stacked table content while using Safari.
     affectsAccessibility: true

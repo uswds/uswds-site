@@ -102,6 +102,6 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "^1.1.0",
-    "@uswds/uswds": "3.7.1"
+    "@uswds/uswds": "github:uswds/uswds#jm-bugfix-scrollable-table"
   }
 }

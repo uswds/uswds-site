@@ -5,7 +5,7 @@ title: How the public can participate in USWDS research
 category: About
 lead: Help shape the future of U.S. government websites.
 redirect_from:
-  - /research/recruitment/public
+  - /research/recruitment/public/
 changelog:
   key: about-research-recruitment-public
 ---

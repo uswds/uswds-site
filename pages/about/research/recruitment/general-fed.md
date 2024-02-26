@@ -8,6 +8,7 @@ redirect_from:
   - /research/recruitment/federal/
 changelog:
   key: about-research-recruitment-federal
+subnav: true
 ---
 
 How the federal USWDS community can participate in our research

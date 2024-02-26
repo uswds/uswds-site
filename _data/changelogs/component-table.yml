@@ -5,8 +5,8 @@ changelogURL:
 
 items:
   - date: NNNN-NN-NN
-    summary: Address a11y issue in table demos.
-    summaryAdditional:  Empty headers in complex table example were causing a11y issues.
+    summary: Simplified the structure of the scrollable table component example.
+    summaryAdditional:  Empty headers in the complex table example were causing accessibility issues.
     isBreaking: false
     affectsAccessibility:
     affectsAssets:

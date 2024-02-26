@@ -77,9 +77,6 @@ collections:
   security_updates:
     output: true
     permalink: /:collection/:title
-  accessibililty_tests:
-    output: true
-    permalink: /:path/
 
 defaults:
   - scope:
@@ -133,12 +130,6 @@ defaults:
       type: security_updates
     values:
       layout: styleguide
-  - scope:
-      path: ""
-      type: accessibility_tests
-    values: 
-      layout: accessibility-test
-
 
 plugins:
   - jekyll-redirect-from

@@ -1,6 +1,6 @@
 ---
 permalink: /components/button/accessibility-tests/
-type: accessibility-test
+layout: accessibility-test
 component:
   name: button
 title: Button accessibility tests

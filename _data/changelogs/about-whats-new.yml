@@ -2,7 +2,7 @@ title: What's new
 type: documentation
 changelogURL:
 items:
-  - date: 2023-11-21
+  - date: 2024-02-26
     summary: Added release notes section.
     affectsGuidance: true
     githubPr: 2318

@@ -1240,13 +1240,17 @@ code[class*="language-plaintext"] {
 
 #{$external-href} {
   @include external-link;
+
+  &.usa-button {
+    display: inline-block;
+  }
 }
 
 .usa-link--alt#{$external-href} {
   @include external-link;
 }
 
-.usa-button,
+.site-button-github,
 .link-download,
 .media__link {
   &#{$external-href}::after {

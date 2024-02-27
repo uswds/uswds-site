@@ -6,14 +6,15 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Created the `.usa-table--sticky-header` variant to allow sticky positioning on table headers.
-    summaryAdditional:
+    summaryAdditional: Also added the `$theme-table-sticky-top-offset` setting, which controls the top position of sticky headers.
     affectsStyles: true
+    affectsSettings: true
     githubPr: 5420
     githubRepo: uswds
     versionUswds: N.N.N
   - date: NNNN-NN-NN
-    summary: Added `$theme-table-background-color` and `$theme-table-sticky-top-offset` settings.
-    summaryAdditional:
+    summary: Added the `$theme-table-background-color` setting.
+    summaryAdditional: Use this setting to declare the table background color at a theme level.
     affectsStyles: true
     affectsSettings: true
     githubPr: 5420

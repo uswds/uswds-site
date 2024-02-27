@@ -9,6 +9,9 @@ federalist_component_preview: "iframe.html?id="
 federalist_release_prefix: "release-"
 touchpoints:
   active: true
+github_issue_bug_url: https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Bug%2CNeeds%3A+Confirmation&projects=&template=bug_report.yaml&title=USWDS+-+Bug%3A+%5BYOUR+TITLE%5D
+github_issue_feature_url: https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Feature+Request&projects=&template=feature_request.yaml&title=USWDS+-+Feature%3A+%5BYOUR+TITLE%5D
+
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/
 

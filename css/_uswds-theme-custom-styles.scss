@@ -3080,7 +3080,7 @@ $theme-table-column-gap: 4;
 
 .usa-table--sticky-header thead {
   @include at-media("desktop") {
-    top: 48px;
+    top: units($height-nav-secondary);
   }
 }
 

@@ -41,10 +41,10 @@ contents:
     default: '"blue-cool-10v"'
     type: color
   - name: Sticky header top offset
-    description: Defines the top offset for sticky headers.
+    description: Defines the top offset for sticky headers. This setting value must include the CSS unit type, for example `10px` or `2rem`.
     var: $theme-table-sticky-top-offset
     default: '-1px'
-    type:
+    type: CSS length
   - name: Stripe background color
     description: Defines a background color for alternating horizontal stripes in the striped table variant.
     var: $theme-table-stripe-background-color

@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Button group improved support for wrapping text.
-    summaryAdditional:  Improves support to button groups with wrapping lines of text.
+    summary: Improved the appearance of button groups when text wraps to multiple lines.
+    summaryAdditional:  Now, every button in the group will be the same height. 
     isBreaking: false
     affectsAccessibility:
     affectsAssets:

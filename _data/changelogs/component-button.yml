@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Improved the vertical alignment of `usa-icon` elements inside of buttons.
+    summary: Improved the vertical alignment of `usa-icon` elements inside of `usa-button`.
     summaryAdditional: Spacing can be adjusted using the `$theme-button-icon-gap` setting.
     affectsStyles: true
     affectsSettings: true

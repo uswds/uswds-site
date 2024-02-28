@@ -11,7 +11,7 @@ contents:
     default: '"ui"'
     type: family
   - name: Icon gap
-    description: Spacing between text and svg icon.
+    description: Size of the gap between the button's text and icon.
     var: $theme-button-icon-gap
     default: 1
     type: units

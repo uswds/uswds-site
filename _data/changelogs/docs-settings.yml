@@ -5,10 +5,10 @@ items:
   - date: NNNN-NN-NN
     summary: Added button icon gap setting.
     summaryAdditional: You can now customize the size of the gap between a button's text and icon with `$theme-button-icon-gap`.
-    affectsGuidance: true
+    affectsStyles: true
     affectsSettings: true
-    githubPr: 2207
-    githubRepo: uswds-site
+    githubPr: 5398
+    githubRepo: uswds
     versionUswds: N.N.N
   - date: 2023-11-09
     summary: Fixed a bug that prevented `$theme-site-margins-width` from accepting expected token values.

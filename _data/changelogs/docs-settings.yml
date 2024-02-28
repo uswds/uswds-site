@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Added color contrast checks for disabled tokens.
-    summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, a warning will be provided.
+    summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 5455

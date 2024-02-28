@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Added button icon gap setting.
-    summaryAdditional: You can now customize the spacing between button text and usa icons with `$theme-button-icon-gap`.
+    summaryAdditional: You can now customize the size of the gap between a button's text and icon with `$theme-button-icon-gap`.
     affectsGuidance: true
     affectsSettings: true
     githubPr: 2207

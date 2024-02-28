@@ -4,6 +4,21 @@ type: component
 changelogURL:
 
 items:
+  - date: NNNN-NN-NN
+    summary: Simplified the structure of the scrollable table component example.
+    summaryAdditional:  Empty headers in the complex table example were causing accessibility issues.
+    isBreaking: false
+    affectsAccessibility:
+    affectsAssets:
+    affectsContent: true
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsSettings:
+    affectsStyles:
+    githubPr: 5783
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2023-09-29
     summary: Fixed a bug that prevented VoiceOver from reading stacked table content while using Safari.
     affectsAccessibility: true

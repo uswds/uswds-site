@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Validation support added to textarea.
+    summary: Added `textarea` support to the validation component. 
     isBreaking: false
     affectsAccessibility: false
     affectsAssets:

@@ -6,7 +6,7 @@ changelogURL:
 
 items:
   - date: NNNN-NN-NN
-    summary: Textarea supports validation.
+    summary: Added `textarea` support to the validation component. 
     summaryAdditional:
     isBreaking: false
     affectsAccessibility:

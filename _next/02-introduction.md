@@ -121,7 +121,7 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 
 [^3]: D’Emidio, T., Greenberg, S., Heidenreich, K., Klier, J., Wagner, J., & Weber, T. (2019). [The global case for customer experience in government](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf) (Public Sector Practice, Rep.). McKinsey & Company.
 
-[^4]: Digital Dashboard. (n.d.). Retrieved January 06, 2021, from <https://digitaldashboard.gov/>
+[^4]: Digital Dashboard. (n.d.). Retrieved January 06, 2021, from `https://digitaldashboard.gov/`
 
 [^5]: The US government’s web traffic. (n.d.). Retrieved January 06, 2021, from <https://analytics.usa.gov/>
 

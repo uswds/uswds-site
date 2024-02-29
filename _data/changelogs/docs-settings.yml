@@ -2,6 +2,14 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added button icon gap setting.
+    summaryAdditional: You can now customize the size of the gap between a button's text and icon with `$theme-button-icon-gap`.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5398
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2023-12-08
     summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
     affectsStyles: true

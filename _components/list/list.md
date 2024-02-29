@@ -23,6 +23,8 @@ subnav:
 title: List
 type: component
 variants:
+  - variant: "`.usa-list--unstyled`"
+    description: Remove list styles.
 tags:
   - typography
   - type

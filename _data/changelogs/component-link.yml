@@ -2,6 +2,21 @@ title: Link
 type: component
 changelogURL:
 items:
+  - date: 2024-01-17
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2138
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    summary: Added `uswds-fonts` and `usa-icon` to list of dependencies.
+    affectsGuidance: true
+    githubPr: 2162
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    summary: Updated code examples for encoding email and phone links.
+    affectsGuidance: true
+    githubPr: 2162
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Labeled external links for screen readers.
     summaryAdditional: Adds a label for screen readers that identifies external links and if they open in a new tab.

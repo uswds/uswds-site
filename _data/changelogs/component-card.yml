@@ -2,6 +2,17 @@ title: Card
 type: component
 changelogURL:
 items:
+  - date: 2023-11-30
+    summary: Updated the grid breakpoints in the card template.
+    summaryAdditional: This change affects only the template grid, not the component itself.
+    affectsMarkup: true
+    githubPr: 2299
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    summary: Clarified guidance for using layout grid utilities.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
   - date: 2023-11-09
     summary: Fixed a bug that prevented `$theme-card-padding-y` from accepting expected token values.
     affectsSettings: true

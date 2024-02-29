@@ -21,7 +21,7 @@ contents:
     default: 6
     type: units
   - name: Stroke width
-    description: Stroke width of `outline` button variants.
+    description: Stroke width of outline button variants.
     var: $theme-button-stroke-width
     default: 2px
     type: units

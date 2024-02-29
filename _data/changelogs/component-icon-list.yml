@@ -2,6 +2,11 @@ title: Icon list
 type: component
 changelogURL:
 items:
+  - date: 2023-11-20
+    summary: Updated the value list for icon list variants.
+    affectsGuidance: true
+    githubPr: 2162
+    githubRepo: uswds-site
   - date: 2022-04-28
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true

@@ -9,7 +9,7 @@ items:
     affectsStyles: true
     githubPr: 5455
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.8.0
   - date: 2023-12-08
     summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
     affectsStyles: true

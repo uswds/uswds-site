@@ -67,7 +67,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [Federal Front Door](https://labs.usa.gov/)
 - [Federal Privacy Council](https://www.fpc.gov/)
 - [Federal Public Key Infrastructure Guides](https://fpki.idmanagement.gov/)
-- [Federalist](https://federalist.18f.gov/)
 - [FedRAMP](https://www.fedramp.gov/)
 - [FedRAMP Marketplace](https://marketplace.fedramp.gov/)
 - [FedRAMP Tailored](https://tailored.fedramp.gov/)

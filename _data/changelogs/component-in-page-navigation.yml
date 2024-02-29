@@ -9,7 +9,7 @@ items:
     affectsStyles: true
     githubRepo: uswds
     githubPr: 5444
-    versionUswds: N.N.N
+    versionUswds: 3.8.0
   - date: 2023-08-23
     summary: Updated JavaScript to exclude headers that have a style of `display:none` or `visibility:hidden` from the component link list.
     summaryAdditional:

@@ -8,6 +8,8 @@ items:
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 5455
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: NNNN-NN-NN
     summary: Added button icon gap setting.
     summaryAdditional: You can now customize the size of the gap between a button's text and icon with `$theme-button-icon-gap`.

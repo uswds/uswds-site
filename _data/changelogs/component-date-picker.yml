@@ -2,6 +2,14 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added focus styles to calendar button in high contrast mode. 
+    summaryAdditional: Now, the calendar icon changes to the `highlight` high contrast token on focus.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5701
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2023-11-20
     summary: Added known issues section.
     summaryAdditional:

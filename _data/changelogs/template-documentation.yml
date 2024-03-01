@@ -3,7 +3,7 @@ type: template
 items:
   - date: NNNN-NN-NN
     summary: Visual order of the Documentation page matches the HTML order.
-    summaryAdditional:  Now, the side navigation is visually displayed before the main content at narrow screen widths.
+    summaryAdditional:  Now, there are two separate side navigation components for mobile and desktop that are displayed or hidden depending on viewport widths.
     isBreaking: false
     affectsAccessibility: true
     affectsAssets:
@@ -11,6 +11,6 @@ items:
     affectsJavascript:
     affectsMarkup: false
     affectsStyles: true
-    githubPr: 5681
+    githubPr: 5794
     githubRepo: uswds
     versionUswds: 3.8.0

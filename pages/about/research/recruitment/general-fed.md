@@ -19,7 +19,7 @@ We regularly carry out research to better understand what you need from the desi
 
 {:.border-top-2px .border-base-lighter .padding-top-1}
 
-We’re looking for federal government employees who either currently use USWDS or who are curious about USWDS. We unfortunately can’t include contractors as part of this research effort.
+**We’re looking for federal government employees who either currently use USWDS or who are curious about USWDS.** We unfortunately can’t include contractors as part of this research effort.
 
 **To sign up:**  Fill out a brief [research signup form](https://touchpoints.app.cloud.gov/touchpoints/08432480/submit) or email us at <{{ site.uswds_email }}> to tell us you’re interested. We’ll reach out when we have a research opportunity for you.
 

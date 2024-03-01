@@ -3,16 +3,11 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added `textarea` support to the validation component. 
+    summary: Added `textarea` support to the validation component.
     isBreaking: false
     affectsAccessibility: false
-    affectsAssets:
-    affectsContent:
-    affectsGuidance:
     affectsJavascript: true
     affectsMarkup: true
-    affectsSettings: true
-    affectsStyles:
     githubPr: 5233
     githubRepo: uswds
     versionUswds: 3.8.0

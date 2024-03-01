@@ -6,16 +6,11 @@ changelogURL:
 
 items:
   - date: NNNN-NN-NN
-    summary: Added `textarea` support to the validation component. 
+    summary: Added `textarea` support to the validation component.
     summaryAdditional:
     isBreaking: false
-    affectsAccessibility:
-    affectsAssets:
-    affectsContent:
-    affectsGuidance:
     affectsJavascript: true
     affectsMarkup: true
-    affectsSettings: true
     affectsStyles:
     githubPr: 5233
     githubRepo: uswds

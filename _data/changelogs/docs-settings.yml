@@ -9,7 +9,15 @@ items:
     affectsSettings: true
     githubPr: 5420
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.8.0
+  - date: NNNN-NN-NN
+    summary: Added color contrast checks for disabled tokens.
+    summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5455
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: NNNN-NN-NN
     summary: Added button icon gap setting.
     summaryAdditional: You can now customize the size of the gap between a button's text and icon with `$theme-button-icon-gap`.

@@ -6,8 +6,3 @@ items:
   summary_additional:
   issue_repo: uswds
   issue_number: 5534
-- date: 2023-09-29
-  summary: The focus indicator is not visible around the calendar icon in high contrast mode.
-  summary_additional:
-  issue_repo: uswds
-  issue_number: 5535

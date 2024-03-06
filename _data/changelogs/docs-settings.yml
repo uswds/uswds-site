@@ -3,6 +3,14 @@ type: utility
 changelogURL:
 items:
   - date: NNNN-NN-NN
+    summary: Added `$theme-table-background-color` and `$theme-table-sticky-top-offset` settings.
+    summaryAdditional:
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5420
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: NNNN-NN-NN
     summary: Added color contrast checks for disabled tokens.
     summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.
     affectsAccessibility: true

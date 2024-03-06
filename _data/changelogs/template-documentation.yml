@@ -2,14 +2,14 @@ title: Documentation page
 type: template
 items:
   - date: NNNN-NN-NN
-    summary: Visual order of the Documentation page matches the HTML order.
-    summaryAdditional:  Now, there are two separate side navigation components for mobile and desktop that are displayed or hidden depending on viewport widths.
+    summary: Updated the order of the side navigation markup to match the visual order. 
+    summaryAdditional:  
     isBreaking: false
     affectsAccessibility: true
     affectsAssets:
     affectsGuidance:
     affectsJavascript:
-    affectsMarkup: false
+    affectsMarkup: true
     affectsStyles: true
     githubPr: 5794
     githubRepo: uswds

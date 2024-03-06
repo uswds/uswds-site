@@ -2,11 +2,10 @@ title: Icon
 component_status: pass
 test_items:
 # General items
-  - summary: Text conveys the icon's meaning when necessary.
+  - summary: Color is not used as the only means of conveying icon information.
     summary_additional: |
       When you view an icon that represents an action and determine the action,
       text, and never color alone, conveys the icon's meaning where necessary.
-      For example, a red "x" which indicates "stop" is also accompanied by the word "stop".
     test_status: pass
     test_type: general
     version_tested: 3.7.1

@@ -4,7 +4,7 @@ items:
   - date: NNNN-NN-NN
     summary: Updated the order of the side navigation markup to match the visual order. 
     summaryAdditional:  
-    isBreaking: false
+    isBreaking: true
     affectsAccessibility: true
     affectsAssets:
     affectsGuidance:

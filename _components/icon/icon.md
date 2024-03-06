@@ -26,16 +26,8 @@ variants:
   - variant: "`.usa-icon--size-9`"
     description: "`9 unit` x `9 unit` icon."
 subnav:
-- text: Preview
-  href: '#icon-preview'
-- text: Code
-  href: '#icon-code'
-- text: Guidance
-  href: '#icon-guidance'
-- text: Package
-  href: '#icon-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Icon accessibility tests
+  href: /components/icon/accessibility-tests/
 tags:
   - image
   - graphic

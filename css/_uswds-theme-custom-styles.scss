@@ -6,6 +6,7 @@
 @import "custom-styles/card-policy";
 @import "custom-styles/highlight";
 @import "custom-styles/copy-code-btn";
+@import "custom-styles/graphic-list";
 
 // ========================================
 // CUSTOM PROJECT SASS
@@ -1239,13 +1240,17 @@ code[class*="language-plaintext"] {
 
 #{$external-href} {
   @include external-link;
+
+  &.usa-button {
+    display: inline-block;
+  }
 }
 
 .usa-link--alt#{$external-href} {
   @include external-link;
 }
 
-.usa-button,
+.site-button-github,
 .link-download,
 .media__link {
   &#{$external-href}::after {
@@ -3071,6 +3076,12 @@ $theme-table-column-gap: 4;
 .site-table,
 .usa-prose > .site-table {
   @include typeset("lang");
+}
+
+.usa-table--sticky-header thead {
+  @include at-media("desktop") {
+    top: units($height-nav-secondary);
+  }
 }
 
 .usa-accordion__button:hover {

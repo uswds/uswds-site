@@ -2,6 +2,21 @@ title: Button
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added a new setting to adjust the gap between the button's text and icon.
+    summaryAdditional: Gap between elements can be adjusted using the `$theme-button-icon-gap` setting.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5398
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: NNNN-NN-NN
+    summary: Improved the vertical alignment of `usa-icon` when placed inside of `usa-button`.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5398
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2024-01-17
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

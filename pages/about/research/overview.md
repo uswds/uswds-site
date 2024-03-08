@@ -6,10 +6,12 @@ redirect_from:
 layout: styleguide
 title: Research
 category: About
-lead: How research supports USWDS decisions
+lead: How research supports USWDS decisions.
 redirect_from:
   - /whats-new/research/
 subnav:
+- text: Recruitment for general public
+  href: /about/research/recruitment/general-public/
 - text: Latest updates
   href: '#changelog'
 changelog:
@@ -69,6 +71,15 @@ Explore some of our past research work:
 - [Top Tasks](https://digital.gov/event/2023/04/20/uswds-monthly-call-april-2023/) (March 2023): Finding out what matters most to USWDS users.
 - [Inclusive Design Patterns research]({{ site.baseurl }}/together/) (November 2022): Reducing barriers to participation in common government interactions.
 - [Transforming the American digital experience]({{ site.baseurl }}/next/) (March 2021): Supporting emergency response efforts related to the COVID-19 and identifying strategies for advancing the design system through agency collaboration.
+
+## How to participate in research
+
+{:.border-top-2px .border-base-lighter .padding-top-1}
+Find details on how to participate and what to expect.
+
+{:.usa-list}
+- For federal government employees (_coming soon_)
+- [For people in the general public]({{ site.baseurl }}/about/research/recruitment/general-public)
 
 ## Research ethics
 

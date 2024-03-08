@@ -2,6 +2,21 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added new sidenav setting to temporarily address visual regression in new markup guidance.
+    summaryAdditional:  The new setting `$theme-sidenav-reorder` allows users to temporarily reorder the sidenav with CSS. Users should follow new markup recommendation in code example to avoid accessibility issues.
+    isBreaking: false
+    affectsAccessibility: true
+    affectsAssets:
+    affectsContent:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 5809
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2023-12-08
     summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
     affectsStyles: true

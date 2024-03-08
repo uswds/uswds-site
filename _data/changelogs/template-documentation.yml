@@ -2,8 +2,23 @@ title: Documentation page
 type: template
 items:
   - date: NNNN-NN-NN
-    summary: Updated the order of the side navigation markup to match the visual order. 
-    summaryAdditional:  
+    summary: Added a fallback theme setting for reordering sidenav in Documentation template.
+    summaryAdditional: A new setting `$theme-sidenav-reorder` allows users to reorder the sidenav to avoid visual regressions. Users should follow new markup recommendation in code example to avoid accessibility issues.
+    isBreaking: false
+    affectsAccessibility: true
+    affectsAssets:
+    affectsContent:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 5809
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: NNNN-NN-NN
+    summary: Updated the order of the side navigation markup to match the visual order.
+    summaryAdditional:
     isBreaking: true
     affectsAccessibility: true
     affectsAssets:

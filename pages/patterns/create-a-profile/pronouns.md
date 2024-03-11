@@ -112,6 +112,7 @@ Provide a text entry field that supports a rich array of special characters and 
 {:.site-component-section-title}
 ## References
 - Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
+- Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from `http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms` [This link is no longer active. [Archived copy of practicemakesprogress.org](https://web.archive.org/web/20220120033201/http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)]
 - DOL policies on gender identity: rights and responsibi (n.d.) Retrieved on November 1, 2022, from [https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/internal/policies/gender-identity](https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/internal/policies/gender-identity)
 - Gender pronouns. (October 23, 2017) Retrieved on November 1, 2022, from
 [https://www1.nyc.gov/assets/hra/downloads/pdf/services/lgbtqi/Gender%20Pronouns%20final%20draft%2010.23.17.pdf](https://www1.nyc.gov/assets/hra/downloads/pdf/services/lgbtqi/Gender%20Pronouns%20final%20draft%2010.23.17.pdf)

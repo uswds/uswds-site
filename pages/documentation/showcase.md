@@ -77,7 +77,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [General Services Administration](https://gsa.gov)
 - [General Services Administration - Tech at GSA](https://tech.gsa.gov/)
 - [GI Bill Comparison Tool (Vets.gov)](https://www.vets.gov/gi-bill-comparison-tool)
-- [GSA Grace Hopper Day Hackathon](https://open.gsa.gov/events/grace-hopper-hackathon/)
 - [openGSA - GSA Open Technology](https://open.gsa.gov/)
 - [HealthCare.gov](https://www.healthcare.gov/)
 - [Hack the Pay Gap](https://paygap.pif.gov/)

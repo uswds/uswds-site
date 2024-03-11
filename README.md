@@ -84,7 +84,7 @@ This documentation site showcases USWDS components by pulling in pre-built HTML 
 
 ### Deployment and previews
 
-This site is deployed on [Cloud.gov Pages](https://cloud.gov/pages/), which automatically builds the public site whenever commits are pushed to `main`. Pages also builds public previews for each branch pushed to GitHub.
+This site is deployed on [cloud.gov Pages](https://cloud.gov/pages/), which automatically builds the public site whenever commits are pushed to `main`. Federalist also builds public previews for each branch pushed to GitHub.
 
 ⚠️ When generating new sections, sometimes they fail to build on Pages. You can clear the cache by running a simple `bundle update`, which will trigger a fresh build.
 

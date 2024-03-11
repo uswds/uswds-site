@@ -23,6 +23,8 @@ subnav:
   href: '#responsive-stacked-table'
 - text: Sortable table rows
   href: '#sortable-table-rows'
+- text: Sticky table headers
+  href: '#sticky-table-headers'
 - text: Guidance
   href: '#table-guidance'
 - text: Package
@@ -41,6 +43,7 @@ tags:
   - borderless
   - scrollable
   - scrolling
+  - sticky
 title: Table
 type: component
 variants:
@@ -51,9 +54,11 @@ variants:
   - variant: "`.usa-table-container--scrollable > .usa-table`"
     description: Add the `usa-table-container--scrollable` class to a container around any `usa-table` to apply a horizontal scrollbar if the columns exceed the available width. Ideal for dense tables with many columns.
   - variant: "`.usa-table--stacked`"
-    description: Stacks the table cells on narrow screens. Ideal for tables that contain more text information than numerical data. If you use this variant, you must ensure there is a data-label attribute on each cell of the table that matches the column header.
+    description: Stacks the table cells on narrow screens. Ideal for tables that contain more text information than numerical data. If you use this variant, you must ensure there is a `data-label` attribute on each cell of the table that matches the column header.
   - variant: "`.usa-table--stacked-header`"
     description: Stacks the table cells on narrow screens and visually promotes the first cell of every row into a “header” for that group. Preferred for directories and other lists where the first cell of every row is a name. If you use this variant, you must ensure there is a data-label attribute on each cell of the table that matches the column header.
+  - variant: "`.usa-table--sticky-header`"
+    description: Allows the table header element to stick to the top of the page as the user scrolls. Preferred for long tables with many rows. This variant is not compatible with the scrollable and stacked table variants.
   - variant: "`.usa-table--striped`"
     description: Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns.
 changelog:

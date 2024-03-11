@@ -2,7 +2,7 @@ title: Button group
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-03-11
     summary: Improved the appearance of button groups when text wraps to multiple lines.
     summaryAdditional:  Now, every button in the group will be the same height. 
     isBreaking: false

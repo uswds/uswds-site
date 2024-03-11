@@ -4,23 +4,23 @@ type: component
 changelogURL:
 
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-03-11
     summary: Created the `.usa-table--sticky-header` variant to allow sticky positioning on table headers.
     summaryAdditional: Also added the `$theme-table-sticky-top-offset` setting, which controls the top position of sticky headers.
     affectsStyles: true
     affectsSettings: true
     githubPr: 5420
     githubRepo: uswds
-    versionUswds: N.N.N
-  - date: NNNN-NN-NN
+    versionUswds: 3.8.0
+  - date: 2024-03-11
     summary: Added the `$theme-table-background-color` setting.
     summaryAdditional: Use this setting to declare the table background color at a theme level.
     affectsStyles: true
     affectsSettings: true
     githubPr: 5420
     githubRepo: uswds
-    versionUswds: N.N.N
-  - date: NNNN-NN-NN
+    versionUswds: 3.8.0
+  - date: 2024-03-11
     summary: Simplified the structure of the scrollable table component example.
     summaryAdditional:  Empty headers in the complex table example were causing accessibility issues.
     isBreaking: false

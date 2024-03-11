@@ -2,7 +2,7 @@ title: Footer
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-03-11
     summary: Fixed a bug that caused some grid utility classes to be ignored when used inside `usa-footer`.
     summaryAdditional:
     affectsStyles: true

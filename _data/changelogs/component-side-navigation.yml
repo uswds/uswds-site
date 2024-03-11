@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
 # 3.8.0 release
-- date: NNNN-NN-NN
+- date: 2024-03-11
   summary: Added a new fallback setting for sidenavs in Documentation template.
   summaryAdditional:  The new setting `$theme-sidenav-reorder` reorders the sidenav with CSS. Users should follow new markup recommendation in Documentation template's code example to avoid accessibility issues.
   isBreaking: false

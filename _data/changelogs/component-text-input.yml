@@ -5,7 +5,7 @@ type: component
 changelogURL:
 
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-03-11
     summary: Added `textarea` support to the validation component.
     summaryAdditional:
     isBreaking: false

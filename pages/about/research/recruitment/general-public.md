@@ -5,9 +5,10 @@ title: How the public can participate in USWDS research
 category: About
 lead: Help shape the future of U.S. government websites.
 redirect_from:
-  - /research/recruitment/public
+  - /research/recruitment/public/
 changelog:
   key: about-research-recruitment-public
+subnav: true
 ---
 
 The U.S. Web Design System (USWDS) provides basic common elements for federal websites, and we value the public’s opinions and insights. Join our usability research program to play a crucial role in making government websites more accessible and user-friendly.

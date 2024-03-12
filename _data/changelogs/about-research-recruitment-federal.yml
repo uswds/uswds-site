@@ -1,0 +1,9 @@
+title: Recruitment for Federal
+type: documentation
+changelogURL:
+items:
+  - date: 2024-02-24
+    summary: Page created.
+    affectsGuidance: true
+    githubPr: 2504
+    githubRepo: uswds-site

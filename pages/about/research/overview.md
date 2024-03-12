@@ -12,6 +12,8 @@ redirect_from:
 subnav:
 - text: Recruitment for general public
   href: /about/research/recruitment/general-public/
+- text: Recruitment for Feds
+  href: /about/research/recruitment/general-fed/
 - text: Latest updates
   href: '#changelog'
 changelog:

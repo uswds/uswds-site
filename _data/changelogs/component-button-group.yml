@@ -2,6 +2,21 @@ title: Button group
 type: component
 changelogURL:
 items:
+  - date: 2024-03-11
+    summary: Improved the appearance of button groups when text wraps to multiple lines.
+    summaryAdditional:  Now, every button in the group will be the same height. 
+    isBreaking: false
+    affectsAccessibility:
+    affectsAssets:
+    affectsContent:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup: false
+    affectsSettings: false
+    affectsStyles: true
+    githubPr: 5657
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2022-08-05
     summary: Styled aria-disabled to match disabled.
     summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).

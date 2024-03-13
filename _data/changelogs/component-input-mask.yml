@@ -2,7 +2,7 @@ title: Input mask
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:
     affectsGuidance: true

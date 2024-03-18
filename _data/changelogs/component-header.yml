@@ -2,6 +2,13 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the behavior of the mobile header navigation to stay open while loading a new page.
+    summaryAdditional:  
+    affectsJavascript: true
+    githubPr: 5513
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-12-08
     summary: Fixed a bug that caused long button text to overflow into its padding.
     summaryAdditional: Now, button text breaks to multiple lines as expected and maintains vertical center alignment.

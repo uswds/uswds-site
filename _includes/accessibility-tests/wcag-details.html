@@ -2,7 +2,11 @@
   Catalog details related to WCAG criterion items.
   This information is used in the checklist tags on the accessibility tests pages.
 -->
-
+{% if item.wcag_criterion == "1.1.1" %}
+  {% assign criterion_level = "A" %}
+  {% assign criterion_name = "Non-text content" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#non-text-content" %}
+{% endif %}
 {% if item.wcag_criterion == "1.3.1" %}
   {% assign criterion_level = "A" %}
   {% assign criterion_name = "Info and relationships" %}
@@ -12,6 +16,11 @@
   {% assign criterion_level = "A" %}
   {% assign criterion_name = "Meaningful sequence" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#meaningful-sequence" %}
+{% endif %}
+{% if item.wcag_criterion == "1.3.6" %}
+  {% assign criterion_level = "AAA" %}
+  {% assign criterion_name = "Identify purpose" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#identify-purpose" %}
 {% endif %}
 {% if item.wcag_criterion == "1.4.1" %}
   {% assign criterion_level = "A" %}
@@ -28,10 +37,20 @@
   {% assign criterion_name = "Resize text" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#resize-text" %}
 {% endif %}
+{% if item.wcag_criterion == "1.4.6" %}
+  {% assign criterion_level = "AAA" %}
+  {% assign criterion_name = "Contrast enhanced" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#contrast-enhanced" %}
+{% endif %}
 {% if item.wcag_criterion == "1.4.10" %}
   {% assign criterion_level = "AA" %}
   {% assign criterion_name = "Reflow" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#reflow" %}
+{% endif %}
+{% if item.wcag_criterion == "1.4.11" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Non-text contrast" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#non-text-contrast" %}
 {% endif %}
 {% if item.wcag_criterion == "2.1.1" %}
   {% assign criterion_level = "A" %}
@@ -67,6 +86,11 @@
   {% assign criterion_level = "AAA" %}
   {% assign criterion_name = "Target size" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#target-size" %}
+{% endif %}
+{% if item.wcag_criterion == "3.2.4" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Consistent identification" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#consistent-identification" %}
 {% endif %}
 {% if item.wcag_criterion == "4.1.2" %}
   {% assign criterion_level = "A" %}

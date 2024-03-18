@@ -31,7 +31,7 @@ test_items:
     version_tested:
     wcag_criterion: 2.4.7
 # Screen reader items
-  - summary: Standalone icons provide a text alternative for screen readers.
+  - summary: Non-decorative icons provide a text alternative for screen readers.
     summary_additional: |
       When you listen to an icon's description using assistive technology
       and the icon receives focus,

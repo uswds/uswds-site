@@ -6,13 +6,13 @@
           {{ issue.summary | markdownify | remove: '<p>' | remove: '</p>' }}
         </strong>
       {% endif %}
-      {% if issue.summaryAdditional %}
-        {{ issue.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
+      {% if issue.summary_additional %}
+        {{ issue.summary_additional | markdownify | remove: '<p>' | remove: '</p>' }}
       {% endif %}
-      {% if issue.githubNumber and issue.githubRepo %}
+      {% if issue.issue_number and issue.issue_repo %}
         More information on GitHub:
-        <a href="https://github.com/uswds/{{ issue.githubRepo }}/pull/{{ issue.githubNumber }}">
-          {{ issue.githubRepo }}#{{ issue.githubNumber }}
+        <a href="https://github.com/uswds/{{ issue.issue_repo }}/pull/{{ issue.issue_number }}">
+          {{ issue.issue_repo }}#{{ issue.issue_number }}
         </a>
       {% endif %}
     </li>

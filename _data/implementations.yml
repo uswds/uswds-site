@@ -179,7 +179,7 @@
   author:
     name: Broadcasting Board of Governors (BBG)
     url: https://github.com/BBGInnovate
-  notes: "This is not a reusable WordPress theme, but an implementation of USWDS for [bbg.gov](https://www.bbg.gov/)."
+  notes: "This is not a reusable WordPress theme, but an implementation of USWDS for bbg.gov)."
 
 - name: Benjamin
   distribution: WordPress

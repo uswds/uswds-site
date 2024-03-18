@@ -2,6 +2,12 @@ title: Character count
 type: component
 changelogURL:
 items:
+  - date: 2024-03-13
+    summary: Added known issues section.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2402
+    githubRepo: uswds-site
   - date: 2023-11-20
     summary: Removed note about adding `aria-live` to the markup.
     summaryAdditional: The `aria-live` attribute is now added dynamically.

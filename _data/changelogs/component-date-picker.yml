@@ -2,8 +2,14 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: 2024-03-13
+    summary: Added known issues section.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2402
+    githubRepo: uswds-site
   - date: 2024-03-11
-    summary: Added focus styles to calendar button in high contrast mode. 
+    summary: Added focus styles to calendar button in high contrast mode.
     summaryAdditional: Now, the calendar icon changes to the `highlight` high contrast token on focus.
     affectsAccessibility: true
     affectsStyles: true
@@ -112,7 +118,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.1
   - date: 2021-12-14
-    summary:  Improved screen reader experience.
+    summary: Improved screen reader experience.
     summaryAdditional: Now screen readers can better describe the label and description of a date picker `input`.
     affectsAccessibility: true
     affectsMarkup: true

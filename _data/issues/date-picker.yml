@@ -1,11 +1,8 @@
 title: Date picker
-type: component
-alert-type: info
+alert_type: info
 items:
 - date: 2023-09-29
   summary: Users had trouble correctly typing dates in the input field.
-  summaryAdditional:
-  affectsAll: true
-  affectsScreenReaders: true
-  githubRepo: uswds
-  githubNumber: 5534
+  summary_additional:
+  issue_repo: uswds
+  issue_number: 5534

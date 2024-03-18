@@ -2,6 +2,12 @@ title: Validation
 type: component
 changelogURL:
 items:
+  - date: 2024-03-13
+    summary: Added known issues section.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2402
+    githubRepo: uswds-site
   - date: 2024-03-11
     summary: Added `textarea` support to the validation component.
     isBreaking: false

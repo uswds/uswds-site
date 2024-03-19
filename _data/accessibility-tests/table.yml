@@ -4,7 +4,7 @@ test_items:
 # General tests
   - summary: Color is not the only method used to convey meaning in a table.
     summary_additional: |
-      When you view the table on a page,
+      When viewing the table,
       you never have to rely on color alone to understand the table's meaning.
     test_status: pass
     test_type: general
@@ -18,23 +18,7 @@ test_items:
     test_type: general
     version_tested: 3.6.0
     wcag_criterion: 1.4.3
-  - summary: Table background color has sufficient contrast with page background color.
-    summary_additional: |
-      When you view a table with a background color,
-      the table's background color contrasts with the page's color, and it's obvious which content belongs in the table vs. on the surrounding page.
-    test_status: pass
-    test_type: general
-    version_tested: 3.6.0
-    wcag_criterion: 1.4.11
 # Zoom/screen magnification tests
-  - summary: Table content does not get cut off when text size is increased.
-    summary_additional: |
-      When you increase text size by 200%,
-      content in the table remains visible without the need to scroll.
-    test_status: pass
-    test_type: zoom
-    version_tested: 3.6.0
-    wcag_criterion: 1.4.4
   - summary: Table content is visible and functional when screen is magnified.
     summary_additional: |
       When you zoom the screen to 200%,
@@ -43,32 +27,21 @@ test_items:
     test_type: zoom
     version_tested: 3.6.0
     wcag_criterion: 1.4.10
-  - summary: Table content does not get cut off when text spacing is changed.
-    summary_additional: |
-      When you adjust text spacing in the following ways, all content remains visible without overlap or the need for horizontal scrolling:
-      - line height is at least 1.5 times the font size,
-      - letter spacing is at least 0.12 times the font size,
-      - the spacing following paragraphs is at least 2 times the font size,
-      - and word spacing is at least 0.16 times the font size,
-    test_status: pass
-    test_type: zoom
-    version_tested: 3.6.0
-    wcag_criterion: 1.4.12
 # Keyboard navigation tests
   - summary: Table elements can be navigated by keyboard without special cues.
     summary_additional: |
-      When you use a keyboard to navigate a table,
+      When using a keyboard to navigate a table,
       a user can navigate using arrow keys or the tab key with no unexpected cues or instruction.
     test_status: exception
     status_details: |
-      The table does not scroll with JAWS.
+      The scrollable table does not scroll with keystrokes in JAWS.
       A user would need to use their mouse to follow along with the focus indicator in JAWS.
     test_type: keyboard
-    version_tested:
+    version_tested: 3.6.0
     wcag_criterion: 2.1.1
   - summary: Table cells do not trap focus.
     summary_additional: |
-      When you use a keyboard to navigate a table,
+      When using a screen reader and keyboard keystrokes to navigate a table,
       you can easily navigate in and out of the table cells using only keystrokes.
     test_status:
     test_type: keyboard
@@ -76,17 +49,17 @@ test_items:
     wcag_criterion: 2.1.2
   - summary: Focus indicator is clear on interactive items in tables.
     summary_additional: |
-      When you use a keyboard to navigate a table,
+      When using a keyboard to navigate a table,
       a focus indicator appears around all interactive elements (e.g. arrows for sorting, links).
     test_status: pass
     test_type: keyboard
     version_tested: 3.5.0
     wcag_criterion: 2.4.7
 # Screen reader tests
-  - summary:
+  - summary: Table cells are read one at a time and provide context for each cell.
     summary_additional: |
       When using a screen reader to navigate a table,
-      the screen reader speaks one cell at a time and announces the correct header cells for context.
+      the screen reader speaks one cell at a time and explains where each cell is in the table.
       Tip: When using JAWS press the `ctrl` + `alt` keys to navigate within the table.
     test_status: pass
     test_type: screen_reader
@@ -108,7 +81,7 @@ test_items:
     test_type: screen_reader
     version_tested: 3.6.0
     wcag_criterion: 2.1.1
-  - summary: Table cells are associated with their related table headers.
+  - summary: The table has a header and it is associated with the correct table cells.
     summary_additional: |
       When using a screen reader to navigate a table,
       you can clearly hear which column head the data falls under.

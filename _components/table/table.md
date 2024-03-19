@@ -11,26 +11,8 @@ redirect_from:
 - /components/tables/
 layout: styleguide
 subnav:
-- text: Standard table
-  href: '#standard-table'
-- text: Striped table
-  href: '#striped-table'
-- text: Borderless table
-  href: '#borderless-table'
-- text: Scrollable table
-  href: '#scrollable-table'
-- text: Responsive stacked table
-  href: '#responsive-stacked-table'
-- text: Sortable table rows
-  href: '#sortable-table-rows'
-- text: Sticky table headers
-  href: '#sticky-table-headers'
-- text: Guidance
-  href: '#table-guidance'
-- text: Package
-  href: '#table-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Table accessibility tests
+  href: /components/table/accessibility-tests/
 tags:
   - table
   - zebra stripes

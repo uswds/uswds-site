@@ -1,0 +1,9 @@
+title: Table accessibility tests
+type: component
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site

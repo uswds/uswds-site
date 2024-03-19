@@ -1,11 +1,6 @@
 ---
 layout: default
 ---
-
-{% assign componentName = page.component.name | default: page.title | downcase %}
-{% assign componentKey = componentName | slugify %}
-{% assign component = site.data.accessibility-tests[componentKey] %}
-
 <div class="default-container">
   <aside class="sidenav" id="page-side-navigation" aria-label="Section navigation">
     {% assign sidenav = site.data.nav[page.category] %}

@@ -45,9 +45,9 @@ test_items:
     summary_additional: |
       When using a screen reader and keyboard keystrokes to navigate a table,
       you can easily navigate in and out of the table cells using only keystrokes.
-    test_status:
+    test_status: pass
     test_type: keyboard
-    version_tested:
+    version_tested: 3.6.0
     wcag_criterion: 2.1.2
   - summary: Focus indicator is clear on interactive items in tables.
     summary_additional: |

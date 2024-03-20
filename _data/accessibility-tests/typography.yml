@@ -10,9 +10,9 @@ test_items:
     test_type: general
     version_tested: 3.6.1
     wcag_criterion: 1.4.3
-  - summary: Headings are present, appropriate and follow logical order.
+  - summary: Headings are present, appropriate, and follow logical order.
     summary_additional: |
-      When you view text content on a page,
+      When you view text on a page,
       headings summarize the content under them and are uniquely styled.
       `H1`-`H4` levels are nested in a logical order (e.g., levels don't get skipped).
     test_status: conditional

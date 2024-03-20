@@ -1,5 +1,5 @@
-title:
-component_status:
+title: Typography
+component_status: pass
 test_items:
 # General tests
   - summary: Text meets color contrast requirements.

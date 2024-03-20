@@ -31,7 +31,7 @@ test_items:
 # Keyboard navigation items
   - summary: Focus indicators are clearly visible on interactive icons.
     summary_additional: |
-      When you use a keyboard to tab into an interactive icon and the icon receives focus,
+      When you use a keyboard to tab into an interactive icon,
       you see a visible indicator around the icon.
     test_status: conditional
     test_type: keyboard

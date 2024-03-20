@@ -34,8 +34,8 @@ test_items:
       a user can navigate using arrow keys or the tab key with no unexpected cues or instruction.
     test_status: exception
     status_details: |
-      The scrollable table does not scroll with keystrokes in JAWS.
-      A user would need to use their mouse to follow along with the focus indicator in JAWS.
+      The scrollable table does not scroll with left and right arrow keystrokes in JAWS and NVDA. 
+      The offscreen table data is read aloud, but a user would need to use their mouse to follow along with the focus indicator.
     github_issue_number: 5828
     github_issue_repo: uswds
     test_type: keyboard

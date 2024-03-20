@@ -36,6 +36,8 @@ test_items:
     status_details: |
       The scrollable table does not scroll with keystrokes in JAWS.
       A user would need to use their mouse to follow along with the focus indicator in JAWS.
+    github_issue_number: 5828
+    github_issue_repo: uswds
     test_type: keyboard
     version_tested: 3.6.0
     wcag_criterion: 2.1.1

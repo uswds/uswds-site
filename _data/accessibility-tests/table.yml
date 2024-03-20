@@ -21,7 +21,7 @@ test_items:
 # Zoom/screen magnification tests
   - summary: Table content is visible and functional when screen is magnified.
     summary_additional: |
-      When you zoom the screen to 200%,
+      When you zoom to 200%,
       content in the table remains visible and does not overlap with other content.
     test_status: pass
     test_type: zoom
@@ -52,7 +52,7 @@ test_items:
   - summary: Focus indicator is clear on interactive items in tables.
     summary_additional: |
       When using a keyboard to navigate a table,
-      a focus indicator appears around all interactive elements (e.g. arrows for sorting, links).
+      a focus indicator appears around all interactive elements (e.g., arrows for sorting, links).
     test_status: pass
     test_type: keyboard
     version_tested: 3.7.1
@@ -62,7 +62,7 @@ test_items:
     summary_additional: |
       When using a screen reader to navigate a table,
       the screen reader speaks one cell at a time and explains where each cell is in the table.
-      Tip: When using JAWS press the `ctrl` + `alt` keys to navigate within the table.
+      Tip: When using JAWS, press the `ctrl` + `alt` keys to navigate within the table.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.7.1
@@ -70,7 +70,7 @@ test_items:
   - summary: Table cells are read in a logical order.
     summary_additional: |
       When using a screen reader to navigate a table,
-      you hear the table cells for an entire row read in order from left to right before moving down to the next row.
+      you hear the table cells for an entire row read in the correct order (e.g., from left to right for English) before moving down to the next row.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.7.1
@@ -83,10 +83,10 @@ test_items:
     test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 2.1.1
-  - summary: The table has a header and it is associated with the correct table cells.
+  - summary: The table has a header, and it is associated with the correct table cells.
     summary_additional: |
       When using a screen reader to navigate a table,
-      you can clearly hear which column head the data falls under.
+      you can clearly hear which column header the data falls under.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.7.1

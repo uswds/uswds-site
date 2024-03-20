@@ -4,8 +4,8 @@ test_items:
 # General items
   - summary: Color is not the only method used to convey icon information.
     summary_additional: |
-      When you view an icon that represents an action and determine the action,
-      the text, and never color alone, conveys the icon's meaning where necessary.
+      When you view an icon paired with text,
+      the text, and never color alone, conveys the icon's meaning.
     test_status: conditional
     test_type: general
     version_tested: 3.7.1
@@ -21,8 +21,7 @@ test_items:
     wcag_criterion: 1.4.11
   - summary: Each icon has a consistent meaning across pages.
     summary_additional: |
-      When you use a screen reader or view the page
-      and determine the purpose of the icon,
+      When you use a screen reader or view the page,
       the icon's meaning, and the way it is announced, is the same across all pages.
     test_status: conditional
     test_type: general

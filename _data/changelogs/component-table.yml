@@ -4,7 +4,7 @@ type: component
 changelogURL:
 
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-03-20
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 2538

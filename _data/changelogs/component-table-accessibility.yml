@@ -2,7 +2,7 @@ title: Table accessibility tests
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-03-20
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 2538

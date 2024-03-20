@@ -2,7 +2,7 @@
 permalink: /components/typography/accessibility-tests/
 layout: styleguide
 component:
-  name: table
+  name: typography
 title: Typography accessibility tests
 category: Components
 lead: USWDS typography should pass these manual accessibility tests.

@@ -5,7 +5,8 @@ test_items:
   - summary: Text meets color contrast requirements.
     summary_additional: |
       When you view text on a page and use ANDI or color contrast analyzer to look at the hex colors,
-      the font color meets WCAG color contrast of 4.5:1.
+      the font color meets WCAG color contrast of at least 4.5:1.
+      Large text has a color contrast ratio of at least 3:1. 
     test_status: conditional
     test_type: general
     version_tested: 3.6.1

@@ -5,7 +5,7 @@ changelogURL:
 
 items:
   - date: 2024-03-20
-    summary: Added WCAG compliance tag and accessibility test status section.
+    summary: Added WCAG compliance tag.
     affectsGuidance: true
     githubPr: 2540
     githubRepo: uswds-site

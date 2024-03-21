@@ -7,7 +7,7 @@
       <ul class="usa-icon-list usa-icon-list--success margin-top-2">
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#local_police"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Clearly identify external links
@@ -15,7 +15,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#local_police"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Notify users about non-federal external links

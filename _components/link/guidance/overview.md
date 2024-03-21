@@ -2,10 +2,10 @@
 
 <div class="bg-white border-1px border-base-lightest padding-2 radius-lg">
   <div class="grid-row grid-gap-lg">
-        <div class="margin-top-3 tablet:margin-top-0 tablet:grid-col">
+    <div class="margin-top-3 tablet:margin-top-0 tablet:grid-col">
       <h4>What you should do</h4>
       <ul class="usa-icon-list usa-icon-list--success margin-top-2">
-<li class="usa-icon-list__item">
+        <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
             <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#local_police"></use></svg>
           </div>
@@ -20,7 +20,7 @@
           <div class="usa-icon-list__content">
             Notify users about non-federal external links
           </div>
-        </li>      
+        </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
             <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>

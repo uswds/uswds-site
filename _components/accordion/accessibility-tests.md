@@ -215,6 +215,3 @@ test_items:
     wcag_criterion: 2.4.6
 
 ---
-
-{{ page.title }}
-

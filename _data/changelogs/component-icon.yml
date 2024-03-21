@@ -2,8 +2,13 @@ title: Icon
 type: component
 changelogURL:
 items:
+  - date: 2024-03-20
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2518
+    githubRepo: uswds-site
   - date: 2023-11-09
-    summary: Added the X social media icon. 
+    summary: Added the X social media icon.
     summaryAdditional: We also preserved the legacy Twitter icon to allow teams to make the decision on when to update their social media information.
     affectsAssets: true
     githubPr: 5589

@@ -1,6 +1,6 @@
-- **Clearly identify external links.** The external link icon () is a good way to communicate that a link is external. 
- 
-- **Notify users about non-federal links.** Review [this resource on Digital.gov](https://digital.gov/resources/required-web-content-and-links/?=checklist.#external-links-2) for guidance on non-federal link requirements.
+- **Clearly identify external links.** The external link icon () is a good way to communicate that a link is external.
+
+- **Notify users about non-federal links.** Review [this resource on Digital.gov](https://digital.gov/resources/required-web-content-and-links) for guidance on non-federal link requirements.
 
 - **Use unique, meaningful link text.** Link text should explain the link's purpose and help the user understand the link's destination. Vague and repetitive text like “click here” or “read more” is unhelpful to those using screen-reading software. Screen-reading software collects all page links into a single list, and users typically start with that list. When they do so, they will not be able to tell the difference between links with similar wording.
 
@@ -32,7 +32,7 @@
 
     > [Food safety during an emergency [redcross.org]](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/food-safety.html)
 
-- **Add a non-endorsement statement to your site.** Your “Policy and Notices” page should explain to users that your agency does not endorse the information on any linked non-federal site. See, for example, [USA.gov’s linking policy](https://www.usa.gov/linking-policy). In addition to this site-level notice, consider adding additional non-endorsement statements on individual pages with non-federal links. 
+- **Add a non-endorsement statement to your site.** Your “Policy and Notices” page should explain to users that your agency does not endorse the information on any linked non-federal site. See, for example, [USA.gov’s linking policy](https://www.usa.gov/linking-policy). In addition to this site-level notice, consider adding additional non-endorsement statements on individual pages with non-federal links.
 
 - **Indicate file type and size for links to non-HTML content.** Whenever possible, create HTML pages instead of linking to files like PDFs. If you do link to a file, tell users ahead of time if the link may trigger a file download, and show the size and format of that file.
 

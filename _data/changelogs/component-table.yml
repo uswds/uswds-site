@@ -4,6 +4,11 @@ type: component
 changelogURL:
 
 items:
+  - date: 2024-03-20
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2538
+    githubRepo: uswds-site
   - date: 2024-03-11
     summary: Created the `.usa-table--sticky-header` variant to allow sticky positioning on table headers.
     summaryAdditional: Also added the `$theme-table-sticky-top-offset` setting, which controls the top position of sticky headers.

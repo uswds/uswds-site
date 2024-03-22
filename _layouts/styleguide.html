@@ -32,6 +32,9 @@ layout: default
 
         {% include lead.html text=page.lead %}
 
+        <!-- Add wcag compliance status tag -->
+        {% include accessibility-tests/compliance-tag.html %}
+
         {{ content }}
 
         {% include changelog.html %}

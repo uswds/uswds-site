@@ -1,0 +1,162 @@
+phases:
+  - name: Proposal
+    description: |
+      Components under consideration for development through public discussion and a formal proposal.
+    learn_more: |
+      Visit the <a href="https://github.com/uswds/uswds/discussions/5764">proposal process overview</a> to learn more about how to contribute.
+    subphases:
+      - name: Discussion started
+        description: |
+          A component idea has been submitted to the discussion board.
+        starts_when: |
+          Anyone starts a discussion about a potential new component.
+        ends_when: |
+          The USWDS core team begins drafting a proposal for the component.
+        contribute_by:
+          - Opening a <a href="https://github.com/uswds/uswds/discussions/new?category=component-proposals">new component discussion</a>.
+          - Sharing ideas, opinions, and reactions in existing discussions
+        find_more: |
+          Find all <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+">active component discussions</a> at the USWDS component proposal discussion board.
+      - name: Proposal in progress
+        description: |
+          The USWDS core team collects community discussion in a formal proposal for the component.
+        starts_when: The USWDS core team begins drafting the proposal for the component.
+        ends_when: The USWDS core team shares the complete proposal with the community for final feedback.
+        contribute_by:
+          - Adding missing proposal information to the discussion
+          - Adding additional information, context, or perspective to the discussion
+        find_more: |
+          <b>Note:</b> Keep all questions and comments related to the component or the proposal in the public discussion.
+          Don't add comments in the <code>uswds-proposals</code> repo.
+          </p><p>
+          Find all components with <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+label%3A%22Status%3A+Proposal+in+progress%22">proposals in progress</a> on the discussion board.
+      - name: Proposal open for comment
+        description: |
+          The community has a minimum of 45 days to comment on the complete proposal.
+        starts_when: The USWDS core team shares the complete proposal with the community for final feedback.
+        ends_when: The comment period closes and the core team starts evaluating feedback.
+        contribute_by:
+          - Sharing your thoughts about the proposal
+          - Asking questions about the proposal
+          - Voting for the related component discussion
+        find_more: |
+          <b>Note:</b> Keep all questions and comments related to the the proposal in the public discussion.
+          Don't add comments in the <code>uswds-proposals</code> repo.
+          </p><p>
+          Find all components with <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+label%3A%22Status%3A+Proposal+open+for+comment%22">proposals open for comment</a> on the discussion board.
+      - name: Proposal evaluation
+        description: |
+          The USWDS core team evaluates the proposal for inclusion in the design system.
+          After evaluation, the core team will approve the proposal, return it for revision, or mark as “will not pursue.”
+        starts_when: The USWDS core team starts evaluating the proposal.
+        ends_when: The USWDS core team shares its decision with the community.
+        find_more: Find the components with <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+label%3A%22Status%3A+Proposal+under+evaluation%22">proposals under evaluation</a> on the discussion board.
+      - name: Approved
+        description: |
+          The USWDS core team determined that the component could be a good fit for the design system.
+          Components in this phase are ready for development but have not yet been assigned.
+        starts_when: The USWDS core team approves the component proposal.
+        ends_when: The component is assigned for development.
+        contribute_by:
+          - Volunteering to take the assignment and develop the component
+        find_more: Find all <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+label%3A%22Status%3A+Proposal+approved%22">approved components</a> on the discussion board.
+        reach_out: <a href="mailto:uswds@gsa.gov">Reach out to the USWDS core team</a> if you are interested in building an approved component.
+      - name: Conditionally approved
+        description: |
+          The USWDS core team determined that the component could be a good fit for the design system, but other work must be completed before development can be scheduled.
+          Development for these components will be put on hold until the related work is finished.
+          Once the related work is complete, the component will move to the “approved” state.
+        starts_when: The USWDS core team approves the component proposal.
+        ends_when: The dependent work is complete and the component moves to approved status.
+        find_more: Find all <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+label%3A%22Status%3A+Proposal+conditionally+approved%22">conditionally approved components</a> on the discussion board.
+      - name: Returned for revision
+        description: |
+          The USWDS core team determined that the proposal for the component has not not yet made the case for inclusion, but could be approved with revisions and improvements.
+        starts_when: |
+          The USWDS core team returns a proposal for revision.
+        ends_when: |
+          Contributors to the component discussion address the gaps in the proposal, and the USWDS core team updates the proposal for re-evaluation.
+        contribute_by:
+          - Adding missing information to the discussion.
+        find_more: You can find all <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+label%3A%22Status%3A+Proposal+returned+for+revision%22">proposals returned for revision</a> on the discussion board.
+      - name: Will not pursue
+        description: |
+          The core team determined that the proposed component is not a good fit for the design system.
+          We will neither assign nor develop these components for USWDS.
+        find_more: You can find a list of  <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+label%3A%22Status%3A+Will+not+pursue%22">“will not pursue” components</a> on the discussion board.
+  - name: Development
+    description: Components undergoing active design, development, testing, and documentation before public release.
+    subphases:
+      - name: Assigned
+        description: |
+          A team committed to building this component.
+          The assignee might be the USWDS core team or a team from the USWDS community.
+          Only approved components are available for assignment.
+        starts_when: The component is assigned to a team for development.
+        ends_when: Component development begins.
+        find_more: You can find a list of all <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+label%3A%22Status%3A+Proposal+assigned%22">assigned components</a> on the discussion board.
+      - name: In development
+        description: |
+          The assigned team is designing, developing, testing, and documenting the component.
+          This phase can include alpha and beta releases.
+        starts_when: The component has been assigned to a team for development.
+        ends_when: The component is ready for release.
+        find_more: You can find a list of <a href="https://github.com/uswds/uswds/discussions/categories/component-proposals?discussions_q=is%3Aopen+category%3A%22Component+proposals%22+label%3A%22Status%3A+Component+in+development%22">components in development</a> on the discussion board.
+  - name: Released
+    description: Components we've released to the public in our distribution package and documented on the USWDS website.
+    subphases:
+      - name: Experimental
+        description: |
+          The component is released for early access.
+          These components pass accessibility tests, and have core functionality and production-quality code, but might need additional research, testing, documentation, or features.
+          </p><p>
+          Experimental components are OK to use but will likely change more frequently than their stable counterparts.
+        starts_when: The component is ready for release.
+        ends_when: The component is fully tested, documented, and has an established history in production.
+        contribute_by:
+          - Testing the component
+          - Documenting research findings
+          - Adding documentation
+          - Submitting bugs and feature requests
+        find_more: |
+          In the future, all experimental components will be documented on our <a href="https://designsystem.digital.gov/components/overview/">components page</a>.
+        reach_out: |
+          <a href="mailto:uswds@gsa.gov">Reach out to the USWDS core team</a> if you want to create or contribute to an experimental component.
+          You'll need to build any experimental component from an approved component proposal.
+          If another team already has the assignment for an approved proposal, that team's work takes priority.
+      - name: Stable
+        description: |
+          The component has an established history in production.
+          These components must meet all USWDS requirements, have full functionality, and have complete documentation.
+          The USWDS core team will audit these components regularly for accessibility and usability.
+        starts_when: The component passes all tests and is fully documented.
+        ends_when: The component moves to either "use with caution" or "deprecation."
+        contribute_by:
+          - Submitting bugs
+          - Submitting feature requests
+          - Creating pull requests
+        find_more: All stable components will be documented on our <a href="https://designsystem.digital.gov/components/overview/">components page</a>.
+      - name: Use with caution
+        description: |
+          The component does not currently meet requirements and needs significant rework.
+          We advise against using components in this state.
+        starts_when: The component fails to meet accessibility, usability, or development requirements.
+        ends_when: The component returns to stable status or moves to deprecation.
+        contribute_by:
+          - Suggesting or submitting fixes for the component
+        reach_out: |
+          <a href="mailto:uswds@gsa.gov">Reach out to the USWDS core team</a> if you want to contribute to “use with caution” components.
+  - name: Deprecated
+    description: Components that do not meet requirements or are no longer needed.
+    subphases:
+      - name: Deprecated
+        description: |
+          The component is removed from active support.
+          The component is still available in the code base, but it will not receive any updates.
+          We recommend removing the component from your project.
+        starts_when: The USWDS core team removes the component from maintenance.
+        ends_when: The component is removed from the code base.
+      - name: Retired
+        description: |
+          The component is removed from the code base.
+          This is the end of the component lifecycle.

@@ -2,7 +2,7 @@ title: Checkbox
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-03-11
     summary: Added indeterminate styles for checkboxes.
     summaryAdditional: Checkboxes will now display as indeterminate when you set `input.indeterminate = true` via JavaScript or add the `data-indeterminate` attribute. This is currently only a style addition and does not affect checkbox functionality.
     affectsAssets: true

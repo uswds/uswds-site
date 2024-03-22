@@ -2,6 +2,22 @@ title: Side navigation
 type: component
 changelogURL:
 items:
+# 3.8.0 release
+- date: 2024-03-11
+  summary: Added a new fallback setting for sidenavs in Documentation template.
+  summaryAdditional:  The new setting `$theme-sidenav-reorder` reorders the sidenav with CSS. Users should follow new markup recommendation in Documentation template's code example to avoid accessibility issues.
+  isBreaking: false
+  affectsAccessibility: true
+  affectsAssets:
+  affectsContent:
+  affectsGuidance:
+  affectsJavascript:
+  affectsMarkup:
+  affectsSettings: true
+  affectsStyles: true
+  githubPr: 5809
+  githubRepo: uswds
+  versionUswds: 3.8.0
   # 3.1.0 release
 - date: 2022-08-05
   summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.

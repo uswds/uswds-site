@@ -3078,6 +3078,12 @@ $theme-table-column-gap: 4;
   @include typeset("lang");
 }
 
+.usa-table--sticky-header thead {
+  @include at-media("desktop") {
+    top: units($height-nav-secondary);
+  }
+}
+
 .usa-accordion__button:hover {
   text-decoration: none;
 }

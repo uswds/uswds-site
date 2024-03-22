@@ -5,6 +5,14 @@ title: Form
 type: component
 changelogURL:
 items:
+  - date: 2024-03-11
+    summary: Added color contrast checks for disabled tokens.
+    summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5455
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2023-08-23
     summary: Fixed a bug that caused some form inputs to show disabled styles when in forced colors mode.
     summaryAdditional: 

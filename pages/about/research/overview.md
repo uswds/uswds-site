@@ -12,6 +12,8 @@ redirect_from:
 subnav:
 - text: Recruitment for general public
   href: /about/research/recruitment/general-public/
+- text: Recruitment for Feds
+  href: /about/research/recruitment/general-fed/
 - text: Latest updates
   href: '#changelog'
 changelog:
@@ -78,7 +80,7 @@ Explore some of our past research work:
 Find details on how to participate and what to expect.
 
 {:.usa-list}
-- For federal government employees (_coming soon_)
+- [For federal government employees]({{ site.baseurl }}/about/research/recruitment/general-fed)
 - [For people in the general public]({{ site.baseurl }}/about/research/recruitment/general-public)
 
 ## Research ethics

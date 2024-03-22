@@ -1,4 +1,4 @@
-- **Clearly identify external links.** The external link icon () is a good way to communicate that a link is external.
+- **Clearly identify external links.** The external link icon (<svg class="usa-icon text-middle" aria-hidden="true" focusable="false" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#launch"></use></svg>) is a good way to communicate that a link is external.
 
 - **Notify users about non-federal links.** Review [this resource on Digital.gov](https://digital.gov/resources/required-web-content-and-links) for guidance on non-federal link requirements.
 

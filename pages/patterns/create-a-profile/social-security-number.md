@@ -68,13 +68,21 @@ Provide a single text field to enter the Social Security Number.
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <h3 id="pattern-preview">
+    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/social-security-number.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <h3 id="pattern-code">
+    <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
+      Pattern code
+    </button>
+  </h3>
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight html%}{% include patterns/social-security-number.html %}{% endhighlight %}

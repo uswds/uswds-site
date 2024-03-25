@@ -18,15 +18,15 @@ changelog:
 {:.usa-content-list}
 Inconsistent placement and language selection interface components can be a barrier to users with limited English-language skills, preventing them from easily finding and accessing content in another language.
 
-### When to use this pattern 
+### When to use this pattern
 
 {:.usa-content-list}
-Use this pattern when the content is available in two languages. 
+Use this pattern when the content is available in two languages.
 
 ### When to consider something else
 
 {:.usa-content-list}
-When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected multilingual content is available in some languages, see the 
+When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected multilingual content is available in some languages, see the
  <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Selected content available</a> pattern.
 
 ### What's the solution?
@@ -53,7 +53,7 @@ Place the language selector button at the top of the screen above site navigatio
             <li>Take users to an equivalent page that includes the same or similar content.</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Strongly consider labeling the name in the common, native language like <span lang="es" xml:lang="es">Español</span> (Spanish) or <span lang="zh" xml:lang="zh">简体字</span> (Chinese - Simplified).</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -86,7 +86,11 @@ Place the language selector button at the top of the screen above site navigatio
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <h3 id="pattern-code">
+    <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
+      Pattern code
+    </button>
+  </h3>
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/two-languages-code.html %}{% endhighlight %}
@@ -100,7 +104,7 @@ Place the language selector button at the top of the screen above site navigatio
 {:.usa-content-list}
 - <strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
 
-### Accessibility 
+### Accessibility
 
 {:.usa-content-list}
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for buttons]({{ site.baseurl }}/components/button/#button-guidance).

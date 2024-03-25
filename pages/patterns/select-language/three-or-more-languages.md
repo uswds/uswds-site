@@ -16,8 +16,8 @@ changelog:
 ### What problem does this solve?
 Inconsistent placement and treatment of language selection interface components can be a barrier to users, especially those with limited English-language skills, preventing them from easily finding and accessing content in other languages.
 
-### When to use this pattern 
-Use this pattern when the content is available in three or more languages and all content is available in each language. 
+### When to use this pattern
+Use this pattern when the content is available in three or more languages and all content is available in each language.
 
 ### When to consider something else
 When content is available in only two languages, see the <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages/">Select from two languages</a> pattern. When only selected multilingual content is available in some languages, see the <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Selected content available</a> pattern.
@@ -44,7 +44,7 @@ Place the language selector menu at the top of the screen above site navigation,
             <li>Take users to an equivalent page that includes the same or similar content.</li>
             <li>Label the dropdown menu <code>Languages</code>.</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
-            <li>Do order the languages alphabetically by the common, native language name. For example:<br/> 
+            <li>Do order the languages alphabetically by the common, native language name. For example:<br/>
             <span lang="ar" xml:lang="ar">العربية</span> (Arabic)<br/>
             <span lang="zh" xml:lang="zh">简体字</span> (Chinese - Simplified)<br/>
             <span lang="en" xml:lang="en">English</span><br/>
@@ -52,7 +52,7 @@ Place the language selector menu at the top of the screen above site navigation,
             <span lang="fr" xml:lang="fr">Français</span> (French)<br/>
             <span lang="it" xml:lang="it">Italiano</span> (Italian)<br/>
             <span lang="ru" xml:lang="ru">Pусский</span> (Russian)</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -79,13 +79,21 @@ Place the language selector menu at the top of the screen above site navigation,
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <h3 id="pattern-preview">
+    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/three-languages.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <h3 id="pattern-code">
+    <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
+      Pattern code
+    </button>
+  </h3>
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/three-languages-code.html %}{% endhighlight %}
@@ -105,7 +113,7 @@ Place the language selector menu at the top of the screen above site navigation,
 {:.usa-content-list}
 - If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button"</strong> so that screen readers announce it as a button. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
 - <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
-- <strong>All logically related items and links</strong> must be presented as an HTML unordered list. 
+- <strong>All logically related items and links</strong> must be presented as an HTML unordered list.
 
 {:.site-component-section-title}
 ## See pattern in use

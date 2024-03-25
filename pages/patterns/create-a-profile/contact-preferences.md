@@ -5,7 +5,7 @@ permalink: /patterns/create-a-user-profile/contact-preferences/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
-lead: The contact preferences design pattern allows users to easily indicate how they would like to be contacted in the future. 
+lead: The contact preferences design pattern allows users to easily indicate how they would like to be contacted in the future.
 changelog:
   key: pattern-user-profile-contact-preferences
 ---
@@ -16,7 +16,7 @@ changelog:
 ### What problem does this solve?
 Effectively reaching the user is critical to good communication and building trust. Users have different preferred methods of communication, which become especially important during times of stress, disaster, or emergency response.
 
-### When to use this pattern 
+### When to use this pattern
 Use this pattern when collecting contact preference information from the user. Contact preferences options should only be offered if you can support the listed contact methods.
 
 ### When to consider something else
@@ -42,7 +42,7 @@ Allow the user to select from available options, and to include a brief message 
             <li>Only collect contact preference information if you need it and can deliver on the promise to the user that you will contact them via their preferred communications channel.</li>
             <li>Explain under what conditions you will reach out to the user and what the anticipated timeline will be, if possible.</li>
             <li>Do consider the safety implications of users who share their phone, voicemail, or email with other members of their household. Consider asking for permission to leave potentially sensitive messages.</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -68,13 +68,21 @@ Allow the user to select from available options, and to include a brief message 
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <h3 id="pattern-preview">
+    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/contact-preferences.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <h3 id="pattern-code">
+    <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
+      Pattern code
+    </button>
+  </h3>
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
      {% highlight text%}{% include patterns/contact-preferences.html %}{% endhighlight %}
@@ -92,12 +100,12 @@ Allow the user to select from available options, and to include a brief message 
 ### Usability guidance
 
 {:.usa-content-list}
-- See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
+- See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons).
 
-### Accessibility 
+### Accessibility
 
 {:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 {:.site-component-section-title}
@@ -117,5 +125,5 @@ Allow the user to select from available options, and to include a brief message 
 - Seamlessness in the omnichannel user experience. (March 19, 2017) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/seamless-cross-channel/](https://www.nngroup.com/articles/seamless-cross-channel/)
 
 {:.site-component-section-title}
-## Disclaimer 
+## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

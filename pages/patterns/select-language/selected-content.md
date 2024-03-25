@@ -5,7 +5,7 @@ permalink: /patterns/select-a-language/selected-content/
 layout: pattern
 category: Patterns
 sub-category: Select a language
-lead: This pattern helps users, especially those with limited English proficiency, find content in their preferred language when only selected pieces of content have been translated. For example, the site may be available in several languages, but specific information — fact sheets, overviews, videos, instructions — might be available in additional languages. 
+lead: This pattern helps users, especially those with limited English proficiency, find content in their preferred language when only selected pieces of content have been translated. For example, the site may be available in several languages, but specific information — fact sheets, overviews, videos, instructions — might be available in additional languages.
 changelog:
   key: pattern-select-language-selected-content
 ---
@@ -16,8 +16,8 @@ changelog:
 ### What problem does this solve?
 Inconsistent placement of language selection components prevent users, especially people with limited English-language skills, from easily finding and accessing content in other languages. When only select content is available in languages other than English, this problem can be compounded as users are forced to navigate to a specific section of the site to discover the content.
 
-### When to use this pattern 
-Use this pattern if your site offers a select set of content available in additional languages. Note: while this situation could apply to a single language or two language site, this pattern specifically describes a site with three or more languages as well as a small subset of content that is available in additional languages. 
+### When to use this pattern
+Use this pattern if your site offers a select set of content available in additional languages. Note: while this situation could apply to a single language or two language site, this pattern specifically describes a site with three or more languages as well as a small subset of content that is available in additional languages.
 
 ### When to consider something else
 If your site is available in two or more languages and all content is available in each language, see related patterns <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages/">Select from two languages</a> or <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a>.
@@ -43,7 +43,7 @@ Place the language selector button at the top right of the screen above site nav
             <li>Include the language dropdown in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
             <li>Label the dropdown menu <code>Languages</code>.</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
-            <li>Do order the languages alphabetically by the common, native language name. For example:<br/> 
+            <li>Do order the languages alphabetically by the common, native language name. For example:<br/>
             <span lang="ar" xml:lang="ar">العربية</span> (Arabic)<br/>
             <span lang="zh" xml:lang="zh">简体字</span> (Chinese - Simplified)<br/>
             <span lang="en" xml:lang="en">English</span><br/>
@@ -52,7 +52,7 @@ Place the language selector button at the top right of the screen above site nav
             <span lang="it" xml:lang="it">Italiano</span> (Italian)<br/>
             <span lang="ru" xml:lang="ru">Pусский</span> (Russian)</li>
             <li>Use a label like "Featured content in additional languages" or "Selected content in additional languages" as the last entry of the menu to link to the landing page for your additional language content.</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -79,13 +79,21 @@ Place the language selector button at the top right of the screen above site nav
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <h3 id="pattern-preview">
+    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/selected-content.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <h3 id="pattern-code">
+    <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
+      Pattern code
+    </button>
+  </h3>
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/three-languages-code.html %}{% endhighlight %}
@@ -101,7 +109,7 @@ Use this pattern when your site supports three or more languages, but offers a l
 {:.usa-content-list}
 - <strong>Topic-driven approach.</strong> A landing page is arranged topically, with links to specific content in the larger set of supported languages. This is generally recommended for sites that have rich topical content in a variety of supported languages.
 - <strong>Language-driven approach.</strong> A landing page is arranged by language, showcasing the specific additional languages and the content available in that language. This is generally recommended for sites that have a disparate set of content available in additional languages.
-- Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> where appropriate within your site to help surface this additional language content. 
+- Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> where appropriate within your site to help surface this additional language content.
 
 ### Usability guidance
 
@@ -109,7 +117,7 @@ Use this pattern when your site supports three or more languages, but offers a l
 - <strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
 - Provide a <strong>visual indicator that the text is a link</strong>. For example, permanently underline text or when hovering.
 
-### Accessibility 
+### Accessibility
 
 {:.usa-content-list}
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for buttons]({{ site.baseurl }}/components/button/#button-guidance).

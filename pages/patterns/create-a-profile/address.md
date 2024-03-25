@@ -19,14 +19,14 @@ While most addresses in the U.S. follow a specific pattern, there are unique var
 {:.site-component-name}
 ## Physical address
 
-### When to use this pattern 
+### When to use this pattern
 Use this pattern when you need the physical location of a person and you need to parse out the specific parts of the address. This may be important when determining benefits eligibility, for disaster recovery purposes, or other reasons. Since physical addresses may be new, temporary, or not currently served by the USPS consider asking for a mailing address, too. Physical addresses may be where a building or property is located, or potentially where a displaced individual is currently located. Mailing addresses are where postal mail must be sent.
 
 ### When to consider something else
 This pattern supports domestic U.S. addresses, including the U.S. territories and military outposts. If you need to collect addresses that may not fit this format, such as international addresses for citizens living overseas, you will need to [use something else](https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions).
 
 ### What’s the solution
-Provide all the fields needed for a user to provide a physical address, even less conventional attributes like a [Google Plus Code](https://maps.google.com/pluscodes/). 
+Provide all the fields needed for a user to provide a physical address, even less conventional attributes like a [Google Plus Code](https://maps.google.com/pluscodes/).
 
 {:.site-component-section-title}
 ### Guidance
@@ -49,7 +49,7 @@ Provide all the fields needed for a user to provide a physical address, even les
             <li>Provide rich information cues in dropdowns. For example, for state dropdowns, use <code>MD - Maryland</code> and <code>TX - Texas</code>, rather than the state code alone.</li>
             <li>Do provide the Puerto Rican Urbanization field, unless your program does not serve Puerto Rico.</li>
             <li>If your program does not serve the armed forces or U.S. territories, you may want to provide links to related resources for these users if such resources exist.</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -74,13 +74,21 @@ Provide all the fields needed for a user to provide a physical address, even les
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h4 id="pattern-preview-physical-address">Pattern preview</h4></button>
+  <h4 id="pattern-preview-physical-address">
+    <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h4>
   <div id="accordion-preview-01" class="usa-accordion__content">
     {% include patterns/physical-address.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h4 id="pattern-code-physical-address">Pattern code</h4></button>
+  <h4 id="pattern-code-physical-address">
+    <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false">
+      Pattern code
+    </button>
+  </h4>
   <div id="accordion-code-01" class="usa-accordion__content copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/physical-address.html %}{% endhighlight %}
@@ -92,11 +100,11 @@ Provide all the fields needed for a user to provide a physical address, even les
 #### Considerations
 
 {:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 - <strong>People without fixed addresses.</strong> Some people do not have fixed addresses. Consider providing other options for reaching them.
 - <strong>Physical vs. mailing address.</strong> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
 - <strong>Both physical and mailing address.</strong> If you need both the physical and mailing address, consider providing a checkbox for `same as physical address` to auto-populate the mailing address.
-- <strong>Google Plus Codes.</strong> Consider whether [Google Plus Codes](https://maps.google.com/pluscodes/) are appropriate for your audience. Google Plus Codes identify a physical location, including those that are not identifiable by a typical postal address. They can be used to identify physical locations that are very remote, where addresses are not available, where someone doesn’t have a fixed address (such as a person who is unhoused), or during an emergency. 
+- <strong>Google Plus Codes.</strong> Consider whether [Google Plus Codes](https://maps.google.com/pluscodes/) are appropriate for your audience. Google Plus Codes identify a physical location, including those that are not identifiable by a typical postal address. They can be used to identify physical locations that are very remote, where addresses are not available, where someone doesn’t have a fixed address (such as a person who is unhoused), or during an emergency.
 - <strong>Puerto Rico.</strong> Consider whether residents of Puerto Rico are part of your audience. Addresses for Puerto Rico require the Urbanization field.
 
 #### Usability guidance
@@ -109,18 +117,18 @@ Provide all the fields needed for a user to provide a physical address, even les
 #### Accessibility
 
 {:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
-- <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/).
+- <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 {:.site-component-name}
 ## Mailing address
 
-### When to use this pattern 
+### When to use this pattern
 Use this pattern when you need to provide written correspondence or materials to a person and need to parse out the elements of the address. For many people this may be the same address as their physical address.
 
 ### When to consider something else
-This pattern supports domestic U.S. addresses, including the U.S. territories and military outposts. If you need to collect addresses that may not fit this format, such as international addresses for citizens living overseas, you will need to [use something else](https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions). 
+This pattern supports domestic U.S. addresses, including the U.S. territories and military outposts. If you need to collect addresses that may not fit this format, such as international addresses for citizens living overseas, you will need to [use something else](https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions).
 
 ### What’s the solution
 Provide all the fields a user needs to successfully enter a mailing address.
@@ -146,7 +154,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
             <li>Provide rich information cues in dropdowns. For example, for state dropdowns, use <code>MD - Maryland</code> and <code>TX - Texas</code>, rather than the state code alone.</li>
             <li>Do provide the Puerto Rican Urbanization field, unless your program does not serve Puerto Rico.</li>
             <li>If the armed forces and the U.S. territories are not included, you may want to provide a link to their resources for clarity.</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -171,13 +179,21 @@ Provide all the fields a user needs to successfully enter a mailing address.
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true"><h4 id="pattern-preview-mailing-address">Pattern preview</h4></button>
+  <h4 id="pattern-preview-mailing-address">
+    <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true">
+    Pattern preview
+    </button>
+  </h4>
   <div id="accordion-preview-02" class="usa-accordion__content">
     {% include patterns/mailing-address.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h4 id="pattern-code-mailing-address">Pattern code</h4></button>
+  <h4 id="pattern-code-mailing-address">
+    <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false">
+    Pattern code
+    </button>
+  </h4>
   <div id="accordion-code-02" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/mailing-address.html %}{% endhighlight %}
@@ -189,7 +205,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 #### Considerations
 
 {:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 - <strong>People without fixed addresses.</strong> Some people do not have fixed addresses. Consider providing other options for them to be reached.
 - <strong>Physical vs. mailing address.</strong> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
 - <strong>Both physical and mailing address.</strong> If you need both the physical and mailing address, consider providing a checkbox for `same as physical address` to auto-populate the mailing address.
@@ -201,11 +217,11 @@ Provide all the fields a user needs to successfully enter a mailing address.
 - <strong>Avoid dropdowns that require long scrolling.</strong> If possible, let users type their state or territories’ abbreviation when they reach the state dropdown menu, instead of having to scroll and select.
 - <strong>Provide rich information cues in dropdowns.</strong> For example, for state dropdowns, use `MD - Maryland` and `TX - Texas`, rather than the state code alone.
 
-#### Accessibility 
+#### Accessibility
 
 {:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
-- <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>.
+- <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 {:.site-component-section-title}

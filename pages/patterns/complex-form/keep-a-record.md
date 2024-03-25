@@ -14,11 +14,11 @@ changelog:
 ## About this pattern
 
 ### What problem does this solve?
-Hitting the “Submit” button on a form can be terrifying, especially if the form is complex or contains deeply personal information. Providing the user with a record of the answers provided, questions skipped, and the URL and date stamp of form submission can reduce fear, increase confidence, and improve the user’s trust in your program. 
+Hitting the “Submit” button on a form can be terrifying, especially if the form is complex or contains deeply personal information. Providing the user with a record of the answers provided, questions skipped, and the URL and date stamp of form submission can reduce fear, increase confidence, and improve the user’s trust in your program.
 
 This record also provides a quick reference to submitted answers that might influence eligibility, helping program support personnel work with users to identify potential misunderstandings or mistakes for easier resolution and improved service.
 
-### When to use this pattern 
+### When to use this pattern
 Use this pattern when you are collecting information from users that extends beyond basic contact information, especially if you are collecting information in a long, complex form.
 
 ### What’s the solution
@@ -39,14 +39,14 @@ Provide the user with a printable record of their answers using a print style sh
           <ul>
             <li>Use a print style sheet to create a summary of submitted information in a print-optimized format.</li>
             <li>Do optimize for print by removing unnecessary graphics, minimizing color usage, and making effective use of page dimensions.</li>
-            <li>Provide a “title block” that includes the site name, URL, date, and record of successful submission.</li>            
+            <li>Provide a “title block” that includes the site name, URL, date, and record of successful submission.</li>
             <li>Add any next steps, time frames, or reference numbers like case or record identifiers to the title block, if possible.</li>
             <li>Include a complete recap of all questions and their submitted answers.</li>
-            <li>Consider whether any of the submitted values might benefit from partial masking when printed (e.g., a Social Security Number field). If you do mask, display no more than the last four (4) digits to ensure the user can still recognize their entry as the proper value.</li>            
+            <li>Consider whether any of the submitted values might benefit from partial masking when printed (e.g., a Social Security Number field). If you do mask, display no more than the last four (4) digits to ensure the user can still recognize their entry as the proper value.</li>
             <li>Include a “Print” button on the summary page.</li>
             <li>Strongly consider building in PDF generation. Print-to-PDF functionality is not widely understood in general, and can be particularly cumbersome on mobile devices.</li>
             <li>Do use good semantic structures to aid in creating more accessible PDFs.</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -71,7 +71,11 @@ Provide the user with a printable record of their answers using a print style sh
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <h3 id="pattern-preview">
+    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
   <div id="accordion-preview" class="usa-accordion__content">
     <img src="{{ site.baseurl }}/img/patterns/keep-a-record.png" alt="Screenshot of collected information shows save and print buttons, date of submission, response estimate, and a collection of the user's responses to the form questions." class="width-full maxw-mobile-lg"/>
   </div>
@@ -107,7 +111,7 @@ Provide the user with a printable record of their answers using a print style sh
 
   <li><strong>Avoid widowed or orphaned content.</strong> Widows and orphans can be disorienting and sometimes alarming if a user doesn’t see a phrase in context. Avoid splitting headings onto more than one page, and keep lists on the same page as much as possible.</li>
 
-  <li><strong>Tables require special care.</strong> While tables should not be used for layout, they are appropriate for tabular data and may be the clearest and most space-conscious way to display questions and answers in a printed summary. 
+  <li><strong>Tables require special care.</strong> While tables should not be used for layout, they are appropriate for tabular data and may be the clearest and most space-conscious way to display questions and answers in a printed summary.
     <ul>
       <li>Print table headers on every page. Avoid splitting tables across pages if possible by utilizing page-break-after or page-break-before CSS properties.</li>
       <li>Avoid splitting a table row onto more than one page.</li>
@@ -131,7 +135,7 @@ Provide the user with a printable record of their answers using a print style sh
 ## References
 - A guide to the state of print stylesheets in 2018. (May 1, 2018) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
 - Designing for print with CSS. (January 7, 2015) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/](https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
-- How to create printer-friendly pages with CSS. (January 5, 2020) Retrieved on July 29, 2020, from [https://www.sitepoint.com/css-printer-friendly-pages/](https://www.sitepoint.com/css-printer-friendly-pages/) 
+- How to create printer-friendly pages with CSS. (January 5, 2020) Retrieved on July 29, 2020, from [https://www.sitepoint.com/css-printer-friendly-pages/](https://www.sitepoint.com/css-printer-friendly-pages/)
 - SVG on the web - a practical guide. (n.d.) Retrieved on August 23, 2022, from [https://svgontheweb.com/](https://svgontheweb.com/)
 - What is a printer-friendly web page? (November 21, 2018) Retrieved on July 29, 2022, from [https://www.thoughtco.com/printer-friendly-web-page-3469219](https://www.thoughtco.com/printer-friendly-web-page-3469219)
 

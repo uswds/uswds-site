@@ -16,7 +16,7 @@ changelog:
 ### What problem does this solve?
 Approximately 8 percent of the total U.S. population over the age of five is considered Limited English Proficient (LEP). They may speak English, but speak it less than “very well,” and they may not read it well, either. Limited English proficiency can lead to misunderstandings and frustration. Individuals may miss important deadlines or may submit the wrong material. In some circumstances, the miscommunication can be critical—but it is always alienating.
 
-### When to use this pattern 
+### When to use this pattern
 Use this pattern when collecting information on the preferred written or spoken language of a user, in order to provide documentation in their preferred language, consultation with a speaker of their preferred language, or translation/interpretation services.
 
 ### What's the solution?
@@ -38,7 +38,7 @@ The pattern allows users to select their language preferences for both written a
             <li>Do list the languages in their native spelling</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Do include American Sign Language (ASL) in spoken preferences if you are committed to supporting in-person communications, such as in a health care setting.</li>
-            <li>Do order the languages alphabetically by the common, native language name. For example:<br/> 
+            <li>Do order the languages alphabetically by the common, native language name. For example:<br/>
             <span lang="ar" xml:lang="ar">العربية</span> (Arabic)<br/>
             <span lang="zh" xml:lang="zh">简体字</span> (Chinese - Simplified)<br/>
             <span lang="en" xml:lang="en">English</span><br/>
@@ -49,7 +49,7 @@ The pattern allows users to select their language preferences for both written a
             <li>Provide an “other” selection that allows the user to specify the specific language, if you are committed to supporting their language needs, such as in a health care setting.</li>
             <li>Do allow the user to select more than one language.</li>
             <li>Do consider providing an option for an individual to indicate “I need help completing this form,” if your program can support providing assistance. Some people with limited English-language skills or low literacy may not be able to complete the form themselves.</li>
-         </ul> 
+         </ul>
         </div>
       </div>
     </div>
@@ -75,13 +75,21 @@ The pattern allows users to select their language preferences for both written a
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <h3 id="pattern-preview">
+    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/language-preference.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <h3 id="pattern-code">
+    <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
+      Pattern code
+    </button>
+  </h3>
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
        {% highlight text%}{% include patterns/language-preference.html %}{% endhighlight %}

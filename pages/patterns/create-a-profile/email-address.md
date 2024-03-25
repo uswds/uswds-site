@@ -14,9 +14,9 @@ changelog:
 ## About this pattern
 
 ### What problem does this solve?
-Email addresses can be confusing to enter and users often make mistakes. Some users find it very frustrating to try to identify problems in email formatting. 
+Email addresses can be confusing to enter and users often make mistakes. Some users find it very frustrating to try to identify problems in email formatting.
 
-### When to use this pattern 
+### When to use this pattern
 Use this pattern whenever you are collecting email addresses.
 
 ### What's the solution?
@@ -45,7 +45,7 @@ A text input field with validation and robust error messaging to guide users in 
             <li>Do use fieldset and legend to group related fields together, and clear labels and attributes on these form elements.</li>
             <li>Do provide meaningful error messages that suggest the correct format for an email address.</li>
             <li>Do consider the safety implications of users who share email addresses with others. Consider asking for permission to leave potentially sensitive messages.</li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@ A text input field with validation and robust error messaging to guide users in 
             <li>Do not require users to re-enter their email address, unless you have a good reason for doing so.</li>
             <li>Do not set arbitrary minimum lengths for the local portion of the email address (occurring before the @ symbol) or domain (after the @ symbol) parts.</li>
             <li>Do not invalidate characters frequently seen in email addresses including hyphens (-), underscores (_), plus signs (+), or periods (.) in the local portion of an email address. <a href="https://datatracker.ietf.org/doc/html/rfc822">See RFC 822</a> for the exhaustive list of permitted characters in the local portion of an email address.</li>
-            <li>Do not restrict top-level domains for email address unless your use case is very specific, for example, only .gov or .mil addresses.</li> 
+            <li>Do not restrict top-level domains for email address unless your use case is very specific, for example, only .gov or .mil addresses.</li>
             <li>Do not assume that email messages are private unless explicitly stated through permission-based settings.</li>
           </ul>
         </div>
@@ -72,13 +72,21 @@ A text input field with validation and robust error messaging to guide users in 
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <h3 id="pattern-preview">
+    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/email.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <h3 id="pattern-code">
+    <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
+      Pattern code
+    </button>
+  </h3>
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/email.html %}{% endhighlight %}
@@ -90,20 +98,20 @@ A text input field with validation and robust error messaging to guide users in 
 ### Considerations
 
 {:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 - <strong>Sensitive information.</strong> If you plan on using the email address to follow up with the user, consider whether you need to ask the user whether potentially sensitive information can be included in the message. Some users may not want sensitive information left in email messages for privacy or safety reasons.
 
 ### Usability guidance
 
 {:.usa-content-list}
-- <strong>Do not require users to re-enter their email address, unless you have a good reason for doing so.</strong> If you're collecting email addresses for the purpose of communicating with the user, verifying that a user's email address is correctly spelled reduces the risk of sending sensitive information to the wrong individual. 
+- <strong>Do not require users to re-enter their email address, unless you have a good reason for doing so.</strong> If you're collecting email addresses for the purpose of communicating with the user, verifying that a user's email address is correctly spelled reduces the risk of sending sensitive information to the wrong individual.
 - <strong>Consider validating a user's email address by requiring them to click an emailed verification link.</strong> When creating an account based on an email address, requiring users to click an emailed verification link and successfully authenticate  ensures information will be shared with the correct individual.
-- This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
+- This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons).
 
-### Accessibility 
+### Accessibility
 
 {:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>.
 - <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
 - <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).

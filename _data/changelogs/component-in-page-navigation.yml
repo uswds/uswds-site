@@ -9,7 +9,7 @@ items:
     githubRepo: uswds-site
     githubPr: 2560
   - date: 2024-03-11
-    summary: Added the optional `data-heading-elements` attribute.
+    summary: Added the optional `data-heading-selector` attribute.
     summaryAdditional: This attribute allows users to list the heading levels that should be included in the component link list.
     affectsJavascript: true
     affectsStyles: true

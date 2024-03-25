@@ -80,13 +80,17 @@ Place the language selector button at the top of the screen above site navigatio
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-4">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
+    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/two-languages.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <h3 id="pattern-code">
+  <h3 id="pattern-code" class="usa-accordion__heading site-accordion-heading">
     <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
       Pattern code
     </button>

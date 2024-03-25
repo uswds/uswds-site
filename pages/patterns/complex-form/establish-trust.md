@@ -70,7 +70,7 @@ Provide clear information on why it is necessary to complete the form, what info
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <h3 id="pattern-preview">
+  <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
     <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true">Pattern preview</button>
   </h3>
   <div id="accordion-preview-01" class="usa-accordion__content">
@@ -78,7 +78,7 @@ Provide clear information on why it is necessary to complete the form, what info
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <h3 id="pattern-code">
+  <h3 id="pattern-code" class="usa-accordion__heading site-accordion-heading">
     <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false">Pattern code
     </button>
   </h3>

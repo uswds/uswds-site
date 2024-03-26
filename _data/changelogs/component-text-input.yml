@@ -5,6 +5,21 @@ type: component
 changelogURL:
 
 items:
+  - date: 2024-03-11
+    summary: Added `textarea` support to the validation component.
+    summaryAdditional:
+    isBreaking: false
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles:
+    githubPr: 5233
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2023-11-16
+    summary: Updated the listed values for `.usa-input--[width]`.
+    affectsGuidance: true
+    githubPr: 2291
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.

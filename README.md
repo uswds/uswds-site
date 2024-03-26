@@ -18,7 +18,7 @@ Recommended before install:
 You will need to have the following installed on your machine before following the commands below:
 
 1. Ruby v3.1.2 (see `.ruby-version` or `.tool-versions`), [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
-1. Node v16.18.0 (see `.nvmrc` or `.tool-versions`), [Installation guides](https://nodejs.org/en/download/)
+1. Node v20.9.0 (see `.nvmrc` or `.tool-versions`), [Installation guides](https://nodejs.org/en/download/)
 1. Bundler v2.2.0 (see `.bundler-version`) [Installation guides](https://bundler.io/guides/using_bundler_in_applications.html#getting-started---installing-bundler-and-bundle-init)
 1. Chrome v59 or higher (v60 if on Windows)
 1. Python v2.7* (For node-gyp dependency)
@@ -84,9 +84,9 @@ This documentation site showcases USWDS components by pulling in pre-built HTML 
 
 ### Deployment and previews
 
-This site is deployed on [Federalist](https://federalist.18f.gov/), which automatically builds the public site whenever commits are pushed to `main`. Federalist also builds public previews for each branch pushed to GitHub.
+This site is deployed on [cloud.gov Pages](https://cloud.gov/pages/), which automatically builds the public site whenever commits are pushed to `main`. Pages also builds public previews for each branch pushed to GitHub.
 
-⚠️ When generating new sections, sometimes they fail to build on Federalist. You can clear the cache by running a simple `bundle update`, which will trigger a fresh build.
+⚠️ When generating new sections, sometimes they fail to build on Pages. You can clear the cache by running a simple `bundle update`, which will trigger a fresh build.
 
 ### Updating the USWDS version
 

@@ -1,14 +1,19 @@
 name: Button
 contents:
+  - name: Border radius
+    description: Button border radius for rounded corners.
+    var: $theme-button-border-radius
+    default: '"md"'
+    type: units
   - name: Font family
     description: Font family of the button.
     var: $theme-button-font-family
     default: '"ui"'
     type: family
-  - name: Border radius
-    description: Button border radius for rounded corners.
-    var: $theme-button-border-radius
-    default: '"md"'
+  - name: Icon gap
+    description: Size of the gap between the button's text and icon.
+    var: $theme-button-icon-gap
+    default: 1
     type: units
   - name: Small width
     description: Width of small buttons. Used to define the size of the header search button and small language selector button.
@@ -16,7 +21,7 @@ contents:
     default: 6
     type: units
   - name: Stroke width
-    description: Stroke width of `outline` button variants.
+    description: Stroke width of outline button variants.
     var: $theme-button-stroke-width
     default: 2px
     type: units

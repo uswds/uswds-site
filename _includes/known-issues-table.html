@@ -1,0 +1,20 @@
+<ul class="usa-content-list padding-bottom-1 margin-top-2 border-bottom-1px border-base-lighter">
+    {%- for issue in issues.items -%}
+    <li class="font-lang-xs">
+      {% if issue.summary %}
+        <strong>
+          {{ issue.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+        </strong>
+      {% endif %}
+      {% if issue.summary_additional %}
+        {{ issue.summary_additional | markdownify | remove: '<p>' | remove: '</p>' }}
+      {% endif %}
+      {% if issue.issue_number and issue.issue_repo %}
+        More information on GitHub:
+        <a href="https://github.com/uswds/{{ issue.issue_repo }}/pull/{{ issue.issue_number }}">
+          {{ issue.issue_repo }}#{{ issue.issue_number }}
+        </a>
+      {% endif %}
+    </li>
+    {% endfor %}
+</ul>

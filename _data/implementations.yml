@@ -179,7 +179,7 @@
   author:
     name: Broadcasting Board of Governors (BBG)
     url: https://github.com/BBGInnovate
-  notes: "This is not a reusable WordPress theme, but an implementation of USWDS for [bbg.gov](https://www.bbg.gov/)."
+  notes: "This is not a reusable WordPress theme, but an implementation of USWDS for bbg.gov)."
 
 - name: Benjamin
   distribution: WordPress
@@ -227,3 +227,13 @@
     url: https://github.com/patrickcate
   version:
   notes: "A Vue.js implementation of the U.S. Web Design System."
+
+- name: Americana Stack
+  distribution: Remix
+  id: remix-uswds
+  url: https://github.com/nasa-gcn/americana-stack
+  author:
+    name: NASA's General Coordinates Network (GCN)
+    url: https://gcn.nasa.gov
+  version:
+  notes: "A Remix Stack for US Federal web sites on AWS. Includes US Web Design System, react-uswds, and pre-commit hooks for linting and type checking."

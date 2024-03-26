@@ -181,7 +181,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <h4 id="pattern-preview-mailing-address">
     <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true">
-    Pattern preview
+      Pattern preview
     </button>
   </h4>
   <div id="accordion-preview-02" class="usa-accordion__content">
@@ -191,7 +191,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <h4 id="pattern-code-mailing-address">
     <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false">
-    Pattern code
+      Pattern code
     </button>
   </h4>
   <div id="accordion-code-02" class="usa-accordion__content highlight-code copy-code">

@@ -2,6 +2,12 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
+  - date: 2024-03-26
+    summary: Updated outdated references to `data-heading-selector` with `data-heading-elements`.
+    summaryAdditional:
+    affectsGuidance: true
+    githubRepo: uswds-site
+    githubPr: 2560
   - date: 2024-03-11
     summary: Added the optional `data-heading-selector` attribute.
     summaryAdditional: This attribute allows users to list the heading levels that should be included in the component link list.

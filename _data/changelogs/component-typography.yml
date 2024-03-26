@@ -4,6 +4,11 @@ type: component
 changelogURL:
 
 items:
+  - date: 2024-03-20
+    summary: Added WCAG compliance tag.
+    affectsGuidance: true
+    githubPr: 2540
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Stopped using font smoothing.
     summaryAdditional: No longer use font smoothing for dark backgrounds and disabled buttons.

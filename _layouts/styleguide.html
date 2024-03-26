@@ -32,12 +32,8 @@ layout: default
 
         {% include lead.html text=page.lead %}
 
-        {% assign title = page.title | slugify %}
-        {% assign issues = site.data.issues[title] %}
-
-        {% if issues %}
-          {% include known-issues-alert.html %}
-        {% endif %}
+        <!-- Add wcag compliance status tag -->
+        {% include accessibility-tests/compliance-tag.html %}
 
         {{ content }}
 

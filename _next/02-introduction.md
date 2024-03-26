@@ -52,7 +52,7 @@ The current global pandemic has shown us that access to digital services is more
 
 To improve, we have to take a more holistic look at the fragmented ecosystem of the thousands of federal websites that currently exist, all of which offer different experiences for the public to navigate.
 
-We’re already making important strides forward. The growth of [GSA](https://gsa.gov) shared tools and services like the [U.S. Web Design System]({{ site.baseurl }}), [Federalist](https://federalist.18f.gov), and [login.gov](https://login.gov) have baked-in priorities like accessibility, continuity of experience, and designing for user needs.
+We’re already making important strides forward. The growth of [GSA](https://gsa.gov) shared tools and services like the [U.S. Web Design System]({{ site.baseurl }}), [Federalist](https://cloud.gov/pages/) [now cloud.gov Pages], and [login.gov](https://login.gov) have baked-in priorities like accessibility, continuity of experience, and designing for user needs.
 
 Teams like [18F](https://18f.gsa.gov), [Centers of Excellence](https://coe.gsa.gov), [Lab at OPM](https://lab.opm.gov), and [U.S. Digital Service](https://usds.gov) (USDS) have helped numerous agencies deliver better digital services. Dozens of agencies, including those designated as High Impact Service Providers and coordinated by the OMB Federal Customer Experience Initiative team, have also worked to think more strategically about how they design services with their customers. Together we can rebuild public trust by scaling what works and continuing to invest in the design and technology capabilities of our federal workforce.
 
@@ -121,7 +121,7 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 
 [^3]: D’Emidio, T., Greenberg, S., Heidenreich, K., Klier, J., Wagner, J., & Weber, T. (2019). [The global case for customer experience in government](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf) (Public Sector Practice, Rep.). McKinsey & Company.
 
-[^4]: Digital Dashboard. (n.d.). Retrieved January 06, 2021, from <https://digitaldashboard.gov/>
+[^4]: Digital Dashboard. (n.d.). Retrieved January 06, 2021, from `https://digitaldashboard.gov/`
 
 [^5]: The US government’s web traffic. (n.d.). Retrieved January 06, 2021, from <https://analytics.usa.gov/>
 

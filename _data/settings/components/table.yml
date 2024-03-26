@@ -1,5 +1,10 @@
 name: Tables
 contents:
+  - name: Background color
+    description: Defines the table background color. A value of `default` uses the body background color.
+    var: $theme-table-background-color
+    default: 'default'
+    type: color
   - name: Border color
     description: Defines a border color for table cells. A value of `default` uses either the default text or reverse text color depending on the site background color.
     var: $theme-table-border-color
@@ -35,6 +40,11 @@ contents:
     var: $theme-table-sorted-stripe-background-color
     default: '"blue-cool-10v"'
     type: color
+  - name: Sticky header top offset
+    description: Defines the top offset for sticky headers. This setting value must include the CSS unit type, for example `10px` or `2rem`.
+    var: $theme-table-sticky-top-offset
+    default: '-1px'
+    type: CSS length
   - name: Stripe background color
     description: Defines a background color for alternating horizontal stripes in the striped table variant.
     var: $theme-table-stripe-background-color

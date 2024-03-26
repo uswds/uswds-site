@@ -2,9 +2,16 @@ title: Footer
 type: component
 changelogURL:
 items:
+  - date: 2024-03-11
+    summary: Fixed a bug that caused some grid utility classes to be ignored when used inside `usa-footer`.
+    summaryAdditional:
+    affectsStyles: true
+    githubPr: 5675
+    githubRepo: uswds
+    versionUswds: 3.8.0
   - date: 2023-12-08
     summary: Removed the `usa-layout-grid` dependency.
-    summaryAdditional: This update reduces the footer package size.
+    summaryAdditional: This update reduces the footer package size. If you notice changes in your layout after making this update, add the `usa-layout-grid` package to your [Sass entry point](https://designsystem.digital.gov/documentation/migration/#using-component-packages).
     affectsStyles: true
     githubPr: 5289
     githubRepo: uswds

@@ -31,18 +31,18 @@ function build() {
     .pipe(
       rename({
         basename: "styleguide",
-      })
+      }),
     )
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("assets/js"));
 }
 
 function watch(done) {
-  return gulp.watch(["./js/*.js"], gulp.series(lint, build))
+  return gulp.watch(["./js/*.js"], gulp.series(lint, build));
 }
 
 module.exports = {
   lint,
   build,
-  watch
-}
+  watch,
+};

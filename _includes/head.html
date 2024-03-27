@@ -7,9 +7,9 @@
 ================================================== -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  {% unless site.env == "production" %}
+  {% if site.env != "production" or page.hide_from_search == true %}
     <meta name="robots" content="noindex, nofollow">
-  {% endunless %}
+  {% endif %}
 
 <!-- Mobile Specific Metas
 ================================================== -->

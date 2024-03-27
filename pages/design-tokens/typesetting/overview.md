@@ -13,6 +13,10 @@ subnav:
     href: '#normalization'
   - text: Typesetting with tokens
     href: '#typesetting-with-tokens'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: tokens-type
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}
@@ -618,7 +622,7 @@ See this example:
 @use "uswds-core" with (
   $theme-respect-user-font-size: true,
   $theme-font-type-sans: "public-sans",
-  $theme-font-role-ui: $theme-font-sans,
+  $theme-font-role-ui: "sans",
   $theme-type-scale-sm: 5,
   $theme-body-font-size: "sm",
   $theme-body-line-height: 5

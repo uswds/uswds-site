@@ -174,22 +174,26 @@ Customize the values of [type](#type-based-tokens){:.token} and [role](#role-bas
 
 {:.margin-bottom-4}
 ```sass
-$theme-font-type-cond:   false;
-$theme-font-type-icon:   false;
-$theme-font-type-lang:   false;
-$theme-font-type-mono:   'roboto-mono';
-$theme-font-type-sans:   'source-sans-pro';
-$theme-font-type-serif:  'merriweather';
+@use "uswds-core" with (
+  $theme-font-type-cond:   false,
+  $theme-font-type-icon:   false,
+  $theme-font-type-lang:   false,
+  $theme-font-type-mono:   'roboto-mono',
+  $theme-font-type-sans:   'source-sans-pro',
+  $theme-font-type-serif:  'merriweather',
+);
 ```
 
 **Then use the [type](#type-based-tokens){:.token} tokens you just set to define the [$theme-font-role-]({{ site.baseurl }}/documentation/settings/#typography-settings) settings variables.** These settings define the value of the [role](#role-based-tokens){:.token} family tokens. Set any unused types to `false`.
 
 ```sass
-$theme-font-role-ui:       'sans';
-$theme-font-role-heading:  'serif';
-$theme-font-role-body:     'sans';
-$theme-font-role-code:     'mono';
-$theme-font-role-alt:      'serif';
+@use "uswds-core" with (
+  $theme-font-role-ui:       'sans',
+  $theme-font-role-heading:  'serif',
+  $theme-font-role-body:     'sans',
+  $theme-font-role-code:     'mono',
+  $theme-font-role-alt:      'serif',
+);
 ```
 
 ## Using family tokens
@@ -234,7 +238,7 @@ Your context and coding style determine how you access USWDS family tokens in co
       <span class="text-normal">font-family</span>
     </div>
     <div class="grid-col-5">.font-family-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a></div>
-    <div class="grid-col-5">.font-family-<code>body</code>;</div>
+    <div class="grid-col-5">.font-family-<code>body</code></div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
     <div class="grid-col-2 text-bold font-lang-3">utility<br/>
@@ -242,7 +246,7 @@ Your context and coding style determine how you access USWDS family tokens in co
       <span class="text-normal">font-size</span>
     </div>
     <div class="grid-col-5">.font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a></div>
-    <div class="grid-col-5">.font-<code>body</code>-<code>2xl</code>;</div>
+    <div class="grid-col-5">.font-<code>body</code>-<code>2xl</code></div>
   </div>
 </div>
 

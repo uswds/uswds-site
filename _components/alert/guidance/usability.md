@@ -2,5 +2,5 @@
 - **Be polite.** Be polite in error messages — don’t blame the user.
 - **Alerts are an opportunity.** Users will read a message that helps them resolve an error even if they generally won’t read documentation; include some educational material in your error message.
 - **Don’t overdo it.** Too many notifications will either overwhelm or annoy the user and are likely to be ignored.
-- **Allow a user to dismiss a notification wherever appropriate.**
+- **Allow a user to dismiss a notification whenever appropriate.** USWDS is working on a way to help developers implement a dismissable alert. [You can follow our progress on GitHub]([url](https://github.com/uswds/uswds/issues/5754)).
 - **Understand the user’s context.** Don’t include notifications that aren’t related to the user’s current goal.

@@ -189,7 +189,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <h4 id="pattern-code-mailing-address">
+  <h4 id="pattern-code-mailing-address" class="usa-accordion__heading site-accordion-heading">
     <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false">
       Pattern code
     </button>

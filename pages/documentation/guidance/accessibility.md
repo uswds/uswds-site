@@ -9,11 +9,21 @@ category: How to use USWDS
 lead: Usability for every ability
 order: 25
 subnav:
+- text: We follow the four principles of accessibility
+  href: '#we-follow-the-four-principles-of-accessibility'
+- text: We address user needs
+  href: '#we-address-user-needs'
+- text: We include accessibility in all phases of our process
+  href: '#we-include-accessibility-in-all-phases-of-our-process'
+- text: What project teams should do
+  href: '#what-project-teams-should-do'
+- text: Accessibility resources
+  href: '#accessibility-resources'
 - text: Latest updates
   href: '#changelog'
 changelog:
   key: 'docs-accessibility'
-in_page_nav: true
+in_page_nav: false
 ---
 The U.S. Web Design System is built on a foundation of accessibility. That foundation was created with and for our colleagues who develop digital services for all Americans.
 
@@ -40,6 +50,7 @@ Accessibility guidelines help us address specific, ability-based patterns of use
 
 Real-life users may cross categories. For example, depending on their task, limited-vision users may use either screen readers or screen magnifiers. People with cognitive differences and neurodiverse individuals benefit from many of the guidelines listed below.
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### Visually impaired and blind users
 
 - Support screen readers and other assistive technology like braille displays
@@ -51,6 +62,7 @@ Real-life users may cross categories. For example, depending on their task, limi
 - Never use visual elements alone to convey meaning
 - Include descriptions of videos
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### Limited-vision users
 
 - Design for readability
@@ -62,11 +74,13 @@ Real-life users may cross categories. For example, depending on their task, limi
 - Don’t use color alone to convey meaning
 - Allow for customization of fonts and contrast styles
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### Deaf users
 
 - Provide an accurate text equivalent for audio resources
 - Don’t convey meaning through audio alone
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### Limited-mobility users
 
 - Support keyboard-only (linear) functionality
@@ -75,6 +89,7 @@ Real-life users may cross categories. For example, depending on their task, limi
 - Prefer linear layouts
 - Don’t rely on hover for critical information
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### Sensory-sensitive users
 
 - Keep layouts simple
@@ -92,6 +107,7 @@ As we grow our user research practice to include testing with more people with d
 
 Accessibility requirements may be relatively static, but accessibility itself is as dynamic and open-ended as any human-centered design process.
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### We deliver accessible components
 
 - Test with screen readers (VoiceOver, JAWS)
@@ -106,22 +122,26 @@ Accessibility requirements may be relatively static, but accessibility itself is
 - Provide conformance status on each component (in progress)
 - Conduct ongoing accessibility audits
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### We provide guidance on how to implement our components accessibly
 
 - Include accessibility guidance on our website’s component pages
 - Provide custom accessibility checks and plain language guides to test in your own environment (in progress)
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### We include accessibility-focused tools to build new functionality
 
 - Colors with [magic number contrast](https://designsystem.digital.gov/design-tokens/color/overview/#magic-number-2)
 - Rem-based size [tokens](https://designsystem.digital.gov/design-tokens/) and an em-based media query mixin that respond to user scale settings
 - Normalized [typography tokens](https://designsystem.digital.gov/design-tokens/typesetting/overview/) that provide reliable, readable results regardless of the typeface
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### We feature context-aware settings that allow accessible customization with minimal custom code
 
 - Adding more smart components that change their color based on background
 - Smart settings for links to automatically choose accessible link and hover states
 
+{:.border-top-1px.padding-top-2.measure-2}
 ### We make accessibility one of our core design principles
 
 - We strive not only to embrace accessibility but also to inspire all federal web teams to embrace it, too.
@@ -129,13 +149,14 @@ Accessibility requirements may be relatively static, but accessibility itself is
 
 While we conduct research during the design and development of components, it is impossible to predict every use case for accessibility and usability. That is why we encourage you to contribute to the community by providing feedback on how a component is working on your site. We also expect you to perform your own user testing at the page level to gauge the usability of a component within context. We welcome any and all findings and feedback.
 
-##  What project teams should do
+## What project teams should do
 
 Building with accessible USWDS components does not guarantee an accessible service. You need to keep testing to stay accessible.
 
 We recommend a mix of automated, semi-automated, and manual testing in addition to actual tests with real people who need assistive accommodations to interact with services effectively.
 
-Government usability testing resources
+{:.border-top-1px.padding-top-2.measure-2}
+### Government usability testing resources
 - [Usability testing on Digital.gov](https://digital.gov/topics/usability-testing/) [digital.gov]
 - [Getting started with usability testing](https://digital.gov/2015/03/19/getting-started-with-usability-testing/) [digital.gov]
 - [Testing for plain-language usability](https://www.plainlanguage.gov/guidelines/test/usability-testing/) [plainlanguage.gov]
@@ -143,7 +164,8 @@ Government usability testing resources
 
 ## Accessibility resources
 
-Government accessibility resources
+{:.border-top-1px.padding-top-2.measure-2}
+### Government accessibility resources
 
 - [The Section 508 accessibility program](https://www.section508.gov/) [section508.gov]
 - [Accessibility for Teams guide](https://accessibility.digital.gov/) [accessibility.digital.gov]
@@ -155,7 +177,8 @@ Government accessibility resources
 - [Accessibility Requirements Tool (ART) for contracting](https://www.section508.gov/buy/accessibility-requirements-tool) [section508.gov]
 - [Understanding universal design](https://www.section508.gov/blog/Universal-Design-What-is-it) [section508.gov]
 
-Non-government accessibility resources
+{:.border-top-1px.padding-top-2.measure-2}
+### Non-government accessibility resources
 
 - [Web Accessibility Perspectives Videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
 - [Inclusive design principles](https://inclusivedesignprinciples.org/) [inclusivedesignprinciples.org]
@@ -164,7 +187,8 @@ Non-government accessibility resources
 - [Inclusive components by Heydon Pickering](https://inclusive-components.design/) [inclusive-components.design]
 - [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
 
-Practical actions
+{:.border-top-1px.padding-top-2.measure-2}
+### Practical actions
 
 - **Humanize accessibility.** Seek out examples of the real-life impact of accessible products and services. Try to make accessibility less abstract and more personal.
 - **Use agency resources.** Reach out to [your agency’s accessibility team](https://www.section508.gov/tools/coordinator-listing) and build a relationship with them.
@@ -179,7 +203,8 @@ Practical actions
 - **Be responsive.** Remediate accessibility issues when you discover them.
 - **Contract for accessibility.** Use the [Accessibility Requirements Tool](https://www.section508.gov/buy/accessibility-requirements-tool) (ART) to incorporate accessibility requirements into your contracts.
 
-Key accessibility considerations
+{:.border-top-1px.padding-top-2.measure-2}
+### Key accessibility considerations
 
 - Can users easily interpret content associated with graphic elements?
 - Can users easily understand and complete key tasks?

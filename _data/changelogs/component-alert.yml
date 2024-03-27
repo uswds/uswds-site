@@ -2,6 +2,11 @@ title: Alert
 type: component
 changelogURL:
 items:
+  - date: 2024-03-27
+    summary: Added a note about USWDS developing dismissable alerts.
+    affectsGuidance: true
+    githubPr: 2563
+    githubRepo: uswds-site
   - date: 2023-11-20
     summary: Added documentation for the `usa-alert--emergency` variant.
     affectsGuidance: true

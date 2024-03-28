@@ -75,7 +75,7 @@ Provide all the fields needed for a user to provide a physical address, even les
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <h4 id="pattern-preview-physical-address" class="usa-accordion__heading site-accordion-heading">
-    <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true">
       Pattern preview
     </button>
   </h4>

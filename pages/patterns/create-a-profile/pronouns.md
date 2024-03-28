@@ -70,7 +70,7 @@ Provide a text entry field that supports a rich array of special characters and 
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
-    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
       Pattern preview
     </button>
   </h3>
@@ -80,7 +80,7 @@ Provide a text entry field that supports a rich array of special characters and 
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <h3 id="pattern-code" class="usa-accordion__heading site-accordion-heading">
-    <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
       Pattern code
     </button>
   </h3>

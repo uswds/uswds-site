@@ -8,4 +8,36 @@ category: Components
 lead: USWDS typography should pass these manual accessibility tests.
 changelog:
   key: 'component-typography-accessibility'
+component_status: pass
+test_items:
+# General tests
+  - summary: Text meets color contrast requirements.
+    summary_additional: |
+      When you view text on a page and use ANDI or color contrast analyzer to look at the hex colors,
+      the font color meets WCAG color contrast of at least 4.5:1.
+      Large text has a color contrast ratio of at least 3:1.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.6.1
+    wcag_criterion: 1.4.3
+  - summary: Headings are present, appropriate, and follow logical order.
+    summary_additional: |
+      When you view text on a page,
+      headings summarize the content under them and are uniquely styled.
+      `H1`-`H6` levels are nested in a logical order (e.g., levels don't get skipped).
+    test_status: conditional
+    test_type: general
+    version_tested: 3.6.1
+    wcag_criterion: 2.4.6
+# Zoom/screen magnification tests
+  - summary: Text can be resized without loss of information.
+    summary_additional: |
+      When you zoom to 200%,
+      the text format stays consistent, and words don't get obscured.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.6.1
+    wcag_criterion: 1.4.4
+# Keyboard navigation tests
+# Screen reader tests
 ---

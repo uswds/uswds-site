@@ -10,16 +10,13 @@
     }
 </style>
 
-<!-- Set component name and find related checklist data -->
-{% assign component_name = page.component.name | default: page.title | downcase %}
-{% assign component_key = component_name | slugify %}
-{% assign component = site.data.accessibility-tests[component_key] %}
+{% assign test_items = page.test_items %}
 
 <!-- Assign test items by assistive technology type -->
-{% assign general_tests = component.test_items | where: 'test_type', "general" %}
-{% assign zoom_tests = component.test_items | where: 'test_type', "zoom" %}
-{% assign keyboard_tests = component.test_items | where: 'test_type', "keyboard" %}
-{% assign screen_reader_tests = component.test_items | where: 'test_type', "screen_reader" %}
+{% assign general_tests = test_items | where: 'test_type', "general" %}
+{% assign zoom_tests = test_items | where: 'test_type', "zoom" %}
+{% assign keyboard_tests = test_items | where: 'test_type', "keyboard" %}
+{% assign screen_reader_tests = test_items | where: 'test_type', "screen_reader" %}
 
 <!-- Set status icons -->
 {% assign pass_icon = 'check_circle' %}

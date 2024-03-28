@@ -1,7 +1,7 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
-{% assign component = site.data.accessibility-tests[componentKey] %}
+{% assign test_items = page.test_items %}
 {% assign issues = site.data.issues[componentKey] %}
 
 {% if page.alert == true %}
@@ -28,7 +28,7 @@
 {% include component-preview-and-code.html %}
 {% include component-guidance.html %}
 <!-- Add accessibility test results -->
-{% if component %}
+{% if test_items %}
   {% include accessibility-tests/test-results-summary.html page='main' %}
 {% endif %}
 {% include known-issues.html %}

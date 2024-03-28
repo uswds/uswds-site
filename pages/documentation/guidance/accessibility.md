@@ -131,7 +131,7 @@ Accessibility requirements may be relatively static, but accessibility itself is
 {:.border-top-1px.padding-top-2.measure-2}
 ### We include accessibility-focused tools to build new functionality
 
-- Colors with [magic number contrast](https://designsystem.digital.gov/design-tokens/color/overview/#magic-number-2)
+- Colors with [magic number contrast](https://designsystem.digital.gov/design-tokens/color/overview/#magic-number)
 - Rem-based size [tokens](https://designsystem.digital.gov/design-tokens/) and an em-based media query mixin that respond to user scale settings
 - Normalized [typography tokens](https://designsystem.digital.gov/design-tokens/typesetting/overview/) that provide reliable, readable results regardless of the typeface
 

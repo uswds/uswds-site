@@ -1,4 +1,13 @@
-title: Icon
+---
+permalink: /components/icon/accessibility-tests/
+layout: accessibility-test
+component:
+  name: icon
+title: Icon accessibility tests
+category: Components
+lead: Any USWDS icon should pass these manual accessibility tests.
+changelog:
+  key: 'component-icon-accessibility'
 component_status: pass
 test_items:
 # General items
@@ -47,3 +56,5 @@ test_items:
     test_type: screen_reader
     version_tested:
     wcag_criterion: 1.1.1
+
+---

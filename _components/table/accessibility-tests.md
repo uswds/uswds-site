@@ -1,4 +1,13 @@
-title: Table
+---
+permalink: /components/table/accessibility-tests/
+layout: accessibility-test
+component:
+  name: table
+title: Table accessibility tests
+category: Components
+lead: Any USWDS table should pass these manual accessibility tests.
+changelog:
+  key: 'component-table-accessibility'
 component_status: pass
 test_items:
 # General tests
@@ -34,7 +43,7 @@ test_items:
       a user can navigate using arrow keys or the tab key with no unexpected cues or instruction.
     test_status: exception
     status_details: |
-      The scrollable table does not scroll with left and right arrow keystrokes in JAWS and NVDA. 
+      The scrollable table does not scroll with left and right arrow keystrokes in JAWS and NVDA.
       The offscreen table data is read aloud, but a user would need to use their mouse to follow along with the focus indicator.
     github_issue_number: 5828
     github_issue_repo: uswds
@@ -100,3 +109,5 @@ test_items:
     test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 4.1.2
+
+---

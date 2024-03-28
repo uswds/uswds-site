@@ -1,4 +1,13 @@
-title: Typography
+---
+permalink: /components/link/accessibility-tests/
+layout: accessibility-test
+component:
+  name: link
+title: Link accessibility tests
+category: Components
+lead: Any USWDS link should pass these manual accessibility tests.
+changelog:
+  key: 'component-link-accessibility'
 component_status: pass
 test_items:
 # General tests
@@ -29,5 +38,4 @@ test_items:
     test_type: zoom
     version_tested: 3.6.1
     wcag_criterion: 1.4.4
-# Keyboard navigation tests
-# Screen reader tests
+---

@@ -1,4 +1,13 @@
-title: Accordion
+---
+permalink: /components/accordion/accessibility-tests/
+layout: accessibility-test
+component:
+  name: accordion
+title: Accordion accessibility tests
+category: Components
+lead: Any USWDS accordion should pass these manual accessibility tests.
+changelog:
+  key: 'component-accordion-accessibility'
 component_status: pass
 test_items:
 # Zoom/screen magnification items
@@ -204,3 +213,5 @@ test_items:
     test_type: screen_reader
     version_tested: 3.5.0
     wcag_criterion: 2.4.6
+
+---

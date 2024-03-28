@@ -1,4 +1,13 @@
-title: Button
+---
+permalink: /components/button/accessibility-tests/
+layout: accessibility-test
+component:
+  name: button
+title: Button accessibility tests
+category: Components
+lead: Any USWDS button should pass these manual accessibility tests.
+changelog:
+  key: 'component-button-accessibility'
 component_status: pass
 test_items:
 # General items
@@ -79,4 +88,4 @@ test_items:
     test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 4.1.2
-
+---

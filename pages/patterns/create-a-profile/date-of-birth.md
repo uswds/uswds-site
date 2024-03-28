@@ -71,7 +71,7 @@ Mobile device users in particular may benefit from being able to type a year rat
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
-    <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
       Pattern preview
     </button>
   </h3>
@@ -81,7 +81,7 @@ Mobile device users in particular may benefit from being able to type a year rat
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <h3 id="pattern-code" class="usa-accordion__heading site-accordion-heading">
-    <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">
       Pattern code
     </button>
   </h3>

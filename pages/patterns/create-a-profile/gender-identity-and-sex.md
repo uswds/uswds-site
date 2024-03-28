@@ -92,7 +92,7 @@ Present the user with the tools to accurately depict their gender identity.
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <h4 id="pattern-preview-gender" class="usa-accordion__heading site-accordion-heading">
-    <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true">
       Pattern preview
     </button>
   </h4>
@@ -102,7 +102,7 @@ Present the user with the tools to accurately depict their gender identity.
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <h4 id="pattern-code-gender" class="usa-accordion__heading site-accordion-heading">
-    <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false">
       Pattern code
     </button>
   </h4>
@@ -188,7 +188,7 @@ Know what information you need and ask for it with specificity. If you are colle
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <h4 id="pattern-preview-sex" class="usa-accordion__heading site-accordion-heading">
-    <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true">
       Pattern preview
     </button>
   </h4>
@@ -198,7 +198,7 @@ Know what information you need and ask for it with specificity. If you are colle
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <h4 id="pattern-code-sex" class="usa-accordion__heading site-accordion-heading">
-    <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false">
       Pattern code
     </button>
   </h4>

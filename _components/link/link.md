@@ -12,9 +12,6 @@ guidance:
     path: guidance/overview.md
     first: true
     html: true
-  - heading: "What you must do"
-    path: guidance/usability-must.md
-    first: true
   - heading: "What you should do"
     path: guidance/usability-should.md
     first: true

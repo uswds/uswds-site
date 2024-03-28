@@ -2,6 +2,14 @@ title: Layout grid utility
 type: utility
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Refactored guidance page.
+    summaryAdditional: Improved layout for easier scanning and consistency across other utility pages.
+    affectsContent: true
+    affectsGuidance: true
+    githubPr: 2276
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2022-03-11
     summary: Updated value of `tablet-lg` from `800px` to `880px`.
     summaryAdditional:

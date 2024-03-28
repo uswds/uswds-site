@@ -482,7 +482,9 @@ Variables and maps determine the number of columns, gutter width, and media-quer
         </td>
         <td data-title="Example" class="display-inline-flex">
           <span>
-            @include grid-col(6)
+            @include grid-col <br/>
+            @include grid-col(6) <br/>
+            @include grid-col("auto")
           </span>
         </td>
       </tr>

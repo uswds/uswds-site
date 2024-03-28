@@ -1,6 +1,6 @@
 ---
 permalink: /components/typography/accessibility-tests/
-layout: styleguide
+layout: accessibility-test
 component:
   name: typography
 title: Typography accessibility tests
@@ -9,5 +9,3 @@ lead: USWDS typography should pass these manual accessibility tests.
 changelog:
   key: 'component-typography-accessibility'
 ---
-
-{% include accessibility-tests/index.html %}

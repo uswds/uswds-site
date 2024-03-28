@@ -1,6 +1,6 @@
 ---
 permalink: /components/link/accessibility-tests/
-layout: styleguide
+layout: accessibility-test
 component:
   name: link
 title: Link accessibility tests
@@ -9,5 +9,3 @@ lead: Any USWDS link should pass these manual accessibility tests.
 changelog:
   key: 'component-link-accessibility'
 ---
-
-{% include accessibility-tests/index.html %}

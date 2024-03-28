@@ -1,6 +1,6 @@
 ---
 permalink: /components/accordion/accessibility-tests/
-layout: styleguide
+layout: accessibility-test
 component:
   name: accordion
 title: Accordion accessibility tests
@@ -9,5 +9,3 @@ lead: Any USWDS accordion should pass these manual accessibility tests.
 changelog:
   key: 'component-accordion-accessibility'
 ---
-
-{% include accessibility-tests/index.html %}

@@ -477,7 +477,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
         </th>
         <td data-title="Mixin" class="display-inline-flex">
           <span>
-            grid-<code>col</code>(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
+            grid-<code>col(column count)</code>
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex">

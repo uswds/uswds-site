@@ -38,7 +38,7 @@ While we strive for excellence, we realize nothing can or will ever be 100% acce
 
 These four principles are the foundation of [Section 508 of the Rehabilitation Act of 1973](https://www.access-board.gov/ict/) requirements, amended in 1998 to require federal agencies to make their electronic and information technology accessible to people with disabilities. In 2018, Section 508 incorporated the Web Content Accessibility Guidelines (WCAG) 2.0 Level AA success criteria.
 
-Even though 2.0 Level AA is the baseline of conformance for legal compliance, USWDS seeks to achieve the higher standard of WCAG 2.1 AA (which also meets legal requirements). In October, [2023 WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/) was released. WCAG 2.2 is not required for legal compliance right now, but our team strives to conform to as many of the latest success criteria as possible.
+Even though 2.0 Level AA is the baseline of conformance for legal compliance, USWDS seeks to achieve the higher standard of WCAG 2.1 AA (which also meets legal requirements). In October, 2023 [WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/) was released. WCAG 2.2 is not required for legal compliance right now, but our team strives to conform to as many of the latest success criteria as possible.
 
 ## We test our work. You need to test yours.
 

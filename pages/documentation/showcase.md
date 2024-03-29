@@ -43,7 +43,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [Code.mil](https://www.code.mil/)
 - [Customs and Border Protection](https://www.cbp.gov/)
 - [Cybersecurity Directives](https://cyber.dhs.gov/directives/)
-- [Data Center Optimization Initiative (Office of the Federal Chief Information Officer - OMB)](https://datacenters.cio.gov/)
 - [Data Science Jobs Microsite (USAJOBS)](https://usajobs.github.io/microsite-data-science/)
 - [Defense Digital Service](https://www.dds.mil/)
 - [Defense Nuclear Facilities Safety Board](https://www.dnfsb.gov/)

@@ -125,7 +125,7 @@ Accessibility requirements may be relatively static, but accessibility itself is
 {:.border-top-1px.padding-top-2.measure-2}
 ### We provide guidance on how to implement our components accessibly
 
-- Include accessibility guidance on our website’s component pages
+- Include accessibility guidance on our website’s [component pages](https://designsystem.digital.gov/components/overview/)
 - Provide custom accessibility checks and plain language guides to test in your own environment (in progress)
 
 {:.border-top-1px.padding-top-2.measure-2}

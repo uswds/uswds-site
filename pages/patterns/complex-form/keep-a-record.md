@@ -126,11 +126,11 @@ Provide the user with a printable record of their answers using a print style sh
 {:.site-component-section-title}
 ## References
 
-- A guide to the state of print stylesheets in 2018. (May 1, 2018) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
-- Designing for print with CSS. (January 7, 2015) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/](https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
-- How to create printer-friendly pages with CSS. (January 5, 2020) Retrieved on July 29, 2020, from [https://www.sitepoint.com/css-printer-friendly-pages/](https://www.sitepoint.com/css-printer-friendly-pages/)
-- SVG on the web - a practical guide. (n.d.) Retrieved on August 23, 2022, from [https://svgontheweb.com/](https://svgontheweb.com/)
-- What is a printer-friendly web page? (November 21, 2018) Retrieved on July 29, 2022, from [https://www.thoughtco.com/printer-friendly-web-page-3469219](https://www.thoughtco.com/printer-friendly-web-page-3469219)
+- A guide to the state of print stylesheets in 2018. (May 1, 2018) Retrieved on July 29, 2022, from <https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/>
+- Designing for print with CSS. (January 7, 2015) Retrieved on July 29, 2022, from <https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/>
+- How to create printer-friendly pages with CSS. (January 5, 2020) Retrieved on July 29, 2020, from <https://www.sitepoint.com/css-printer-friendly-pages/>
+- SVG on the web - a practical guide. (n.d.) Retrieved on August 23, 2022, from <https://svgontheweb.com/>
+- What is a printer-friendly web page? (November 21, 2018) Retrieved on July 29, 2022, from <https://www.thoughtco.com/printer-friendly-web-page-3469219>
 
 {:.site-component-section-title}
 ## Disclaimer

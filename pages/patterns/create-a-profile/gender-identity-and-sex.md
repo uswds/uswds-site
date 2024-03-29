@@ -31,15 +31,18 @@ sexual orientation and gender identity data on federal statistical surveys](http
 This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex`. For specific use cases, a more specific label may be correct, like `Sex listed at birth` or `Legal sex`. This language, in particular, should be evaluated for your specific program needs.
 
 ### What problems do these patterns solve?
+
 Gender and sex are often used synonymously. Many users struggle to provide gender identity information that best represents them. An overwhelming number of choices for gender identity can be as alienating as too limited a set of provided options.
 
 {:.site-component-name#gender-identity-section}
 ## Gender identity
 
 ### When to use this pattern
+
 Follow this pattern when you are collecting gender identity for your service or program. Only ask for gender identity if you need it. Sometimes it’s more prudent to skip collecting this information altogether.
 
 ### What's the solution?
+
 Present the user with the tools to accurately depict their gender identity.
 
 {:.site-component-section-title}
@@ -117,30 +120,32 @@ Present the user with the tools to accurately depict their gender identity.
 #### Considerations
 
 {:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and safety.
-- <strong>Avoid using a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender identity options, strongly consider letting the user self-identify using a single text field.
+- **Confirm you need this information.** As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and safety.
+- **Avoid using a controlled vocabulary.** If you don’t need to enforce a controlled vocabulary of gender identity options, strongly consider letting the user self-identify using a single text field.
 
 #### Usability guidance
 
 {:.usa-content-list}
-- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, man, woman, non-binary." Do allow users to opt out with a "Prefer not to answer" option.
+- **Provide clear hint text.** Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, man, woman, non-binary." Do allow users to opt out with a "Prefer not to answer" option.
 - This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#usability-guidance-checkbox).
 
 #### Accessibility
 
 {:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/).
-- <strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
-- <strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
-- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+- **Follow input guidance.** These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/).
+- **These custom checkboxes are accessible.** The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
+- **Use a semantic tag.** The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
+- **Customization.** As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 {:.site-component-name}
 ## Sex
 
 ### When to use this pattern
+
 Services collect sex information to match documents for identity proofing purposes, on certain statistical surveys, and to provide biological information in a clinical context. Only ask for this information if you need it. Even for identity proofing, sex data is not always needed. Asking for gender identity instead of sex is generally more important for ensuring respectful communication.
 
 ### What's the solution?
+
 Know what information you need and ask for it with specificity. If you are collecting sex information to match documents for identity proofing, be clear about whether you need the sex marker listed on an original birth certificate (“Sex listed at birth”) or the sex marker listed on any qualifying legal document (“Legal sex”).
 
 {:.site-component-section-title}
@@ -213,46 +218,48 @@ Know what information you need and ask for it with specificity. If you are colle
 #### Considerations
 
 {:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and safety.
-- <strong>Be specific about the information you are requesting.</strong> Clearly state the context, such as, “Please enter the sex that appears on your driver's license, state ID, passport, or passport card.” so that users can successfully provide the information required.
+- **Confirm you need this information.** As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and safety.
+- **Be specific about the information you are requesting.** Clearly state the context, such as, “Please enter the sex that appears on your driver's license, state ID, passport, or passport card.” so that users can successfully provide the information required.
 
 #### Accessibility
 
 {:.usa-content-list}
 - This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons).
-- <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
-- <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
-- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+- **Use fieldset and legend.** Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
+- **Use proper labels and attributes.** Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
+- **Customization.** As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
-- <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
-- <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
-- <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/pronouns/">Pronouns</a> pattern
+- [Checkbox]({{ site.baseurl }}/components/checkbox/) component
+- [Radio buttons]({{ site.baseurl }}/components/radio-buttons/) component
+- [Text input]({{ site.baseurl }}/components/text-input/) component
+- [Pronouns]({{ site.baseurl }}/patterns/create-a-user-profile/pronouns/) pattern
 
 {:.site-component-section-title}
 ## References
-- Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on July 20, 2022, from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)
-- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Current Measures of Sexual Orientation and Gender Identity in Federal Surveys - 2016a. (August 2016) Retrieved on October 31, 2022, from [https://www.fcsm.gov/assets/files/docs/current_measures_20160812.pdf](https://www.fcsm.gov/assets/files/docs/current_measures_20160812.pdf)
-- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Evaluations of Sexual Orientation and Gender Identity Survey Measures: What Have We Learned? - 2016b. (September 23, 2016) Retrieved on October 31, 2022, from [https://www.fcsm.gov/assets/files/docs/Evaluations_of_SOGI_Questions_20160923.pdf](https://www.fcsm.gov/assets/files/docs/Evaluations_of_SOGI_Questions_20160923.pdf)
-- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Toward a Research Agenda for Measuring Sexual Orientation and Gender Identity in Federal Surveys: Findings, Recommendations, and Next Steps - 2016c. (October 20, 2016) Retrieved on October 31, 2022, from [https://www.fcsm.gov/assets/files/docs/SOGI_Research_Agenda_Final_Report_20161020.pdf](https://www.fcsm.gov/assets/files/docs/SOGI_Research_Agenda_Final_Report_20161020.pdf)
-- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). (August 2020). Updates of Terminology of Sexual Orientation and Gender Identity Survey Measures - FCSM 20-03. Retrieved on October 31, 2022, from [https://www.fcsm.gov/assets/files/docs/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf](https://www.fcsm.gov/assets/files/docs/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf)
-- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Why Do Federal Agencies Ask About Sexual Orientation and Gender Identity (SOGI) on Surveys? FCSM-21-01. (June 2021) Retrieved on October 31, 2022, from [https://www.fcsm.gov/assets/files/docs/FCSM%2021%2001%20062221.pdf](https://www.fcsm.gov/assets/files/docs/FCSM%2021%2001%20062221.pdf)
-- Gender or sex. (n.d.) Retrieved on July 15, 2022 from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
-- Gender terms you may not know. (June 17, 2022) Retrieved on July 15, 2022, from [https://www.dictionary.com/e/gender-terms-you-may-not-know/](https://www.dictionary.com/e/gender-terms-you-may-not-know/)
-- ID documents center. (November 2021) Retrieved on December 9, 2022, from [https://transequality.org/documents](https://transequality.org/documents)
-- Interagency Technical Working Group on Sexual Orientation and Gender Identity Items in the Household Pulse Survey: Report and Recommendations. (May 25, 2021) Retrieved on October 31, 2022, from [https://omb.report/icr/202106-0607-003/doc/112605500](https://omb.report/icr/202106-0607-003/doc/112605500)
-- Nonbinary airline passenger tickets. (June 22, 2022) Retrieved on July 15, 2022, from [https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html](https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html)
-- Patient centered care for transgender people: recommended practices for health care settings. (n.d.) Retrieved on November 4, 2022, from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/affirmative-care.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/affirmative-care.html)
+
+- Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on July 20, 2022, from <https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html>
+- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Current Measures of Sexual Orientation and Gender Identity in Federal Surveys - 2016a. (August 2016) Retrieved on October 31, 2022, from <https://www.fcsm.gov/assets/files/docs/current_measures_20160812.pdf>
+- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Evaluations of Sexual Orientation and Gender Identity Survey Measures: What Have We Learned? - 2016b. (September 23, 2016) Retrieved on October 31, 2022, from <https://www.fcsm.gov/assets/files/docs/Evaluations_of_SOGI_Questions_20160923.pdf>
+- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Toward a Research Agenda for Measuring Sexual Orientation and Gender Identity in Federal Surveys: Findings, Recommendations, and Next Steps - 2016c. (October 20, 2016) Retrieved on October 31, 2022, from <https://www.fcsm.gov/assets/files/docs/SOGI_Research_Agenda_Final_Report_20161020.pdf>
+- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). (August 2020). Updates of Terminology of Sexual Orientation and Gender Identity Survey Measures - FCSM 20-03. Retrieved on October 31, 2022, from <https://www.fcsm.gov/assets/files/docs/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf>
+- Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Why Do Federal Agencies Ask About Sexual Orientation and Gender Identity (SOGI) on Surveys? FCSM-21-01. (June 2021) Retrieved on October 31, 2022, from <https://www.fcsm.gov/assets/files/docs/FCSM%2021%2001%20062221.pdf>
+- Gender or sex. (n.d.) Retrieved on July 15, 2022 from <https://design-system.service.gov.uk/patterns/gender-or-sex/>
+- Gender terms you may not know. (June 17, 2022) Retrieved on July 15, 2022, from <https://www.dictionary.com/e/gender-terms-you-may-not-know/>
+- ID documents center. (November 2021) Retrieved on December 9, 2022, from <https://transequality.org/documents>
+- Interagency Technical Working Group on Sexual Orientation and Gender Identity Items in the Household Pulse Survey: Report and Recommendations. (May 25, 2021) Retrieved on October 31, 2022, from <https://omb.report/icr/202106-0607-003/doc/112605500>
+- Nonbinary airline passenger tickets. (June 22, 2022) Retrieved on July 15, 2022, from <https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html>
+- Patient centered care for transgender people: recommended practices for health care settings. (n.d.) Retrieved on November 4, 2022, from <https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/affirmative-care.html>
 - Recommendations on the best practices for the collection of
-sexual orientation and gender identity data on federal statistical surveys. (January 2023) Retrieved on January 27, 2023, from [https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf](https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf)
-- Social Security implements self-attestation of sex marker in Social Security Number records. (October 19, 2022) Retrieved on October 24, 2022, from [https://www.ssa.gov/news/press/releases/2022/#10-2022-3](https://www.ssa.gov/news/press/releases/2022/#10-2022-3)
-- X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from [https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/](https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)
+sexual orientation and gender identity data on federal statistical surveys. (January 2023) Retrieved on January 27, 2023, from <https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf>
+- Social Security implements self-attestation of sex marker in Social Security Number records. (October 19, 2022) Retrieved on October 24, 2022, from <https://www.ssa.gov/news/press/releases/2022/#10-2022-3>
+- X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from <https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/>
 
 {:.site-component-section-title}
 ## Disclaimer
+
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

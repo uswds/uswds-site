@@ -14,15 +14,19 @@ changelog:
 ## About this pattern
 
 ### What problem does this solve?
+
 Effectively reaching the user is critical to good communication and building trust. Users have different preferred methods of communication, which become especially important during times of stress, disaster, or emergency response.
 
 ### When to use this pattern
+
 Use this pattern when collecting contact preference information from the user. Contact preferences options should only be offered if you can support the listed contact methods.
 
 ### When to consider something else
+
 If you do not have the current capability of contacting the user via multiple channels of communication, do not ask the user for their communication preferences. Allowing a user to select a preferred communication option that is not operational risks communication gaps and can destroy a user's trust in a program or service.
 
 ### What's the solution?
+
 Allow the user to select from available options, and to include a brief message in a text input or textarea field if explanation is required. Use hint text to better explain the field's purpose, for example, if the preferred contact method is dependent on time or date, or if there’s another factor that needs to be considered when communicating with the user.
 
 {:.site-component-section-title}
@@ -94,8 +98,8 @@ Allow the user to select from available options, and to include a brief message 
 ### Considerations
 
 {:.usa-content-list}
-- <strong>Consider multiple means of communication for critical messaging.</strong> While prioritizing the user’s preferred communication method (for example, text message), do follow up with alternate methods (for example, email) to improve the likelihood of the user seeing your communication.
-- <strong>User needs.</strong> Strongly consider allowing users to specify any accessibility or language accommodations they require, such as needing an ASL interpreter, preferring braille formatted mailed communications, or preferring audio communication when available.
+- **Consider multiple means of communication for critical messaging.** While prioritizing the user’s preferred communication method (for example, text message), do follow up with alternate methods (for example, email) to improve the likelihood of the user seeing your communication.
+- **User needs.** Strongly consider allowing users to specify any accessibility or language accommodations they require, such as needing an ASL interpreter, preferring braille formatted mailed communications, or preferring audio communication when available.
 
 ### Usability guidance
 
@@ -105,25 +109,27 @@ Allow the user to select from available options, and to include a brief message 
 ### Accessibility
 
 {:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>.
-- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+- **Follow input guidance.** These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/).
+- **Customization.** As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
-- <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
-- <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/address">Address</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/email-address">Email address</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/phone-number">Phone number</a> pattern
-- <a href="{{ site.baseurl }}/templates/form-templates/address-form/">Address form</a> template
+- [Radio buttons]({{ site.baseurl }}/components/radio-buttons/) component
+- [Text input]({{ site.baseurl }}/components/text-input/) component
+- [Address]({{ site.baseurl }}/patterns/create-a-user-profile/address) pattern
+- [Email address]({{ site.baseurl }}/patterns/create-a-user-profile/email-address) pattern
+- [Phone number]({{ site.baseurl }}/patterns/create-a-user-profile/phone-number) pattern
+- [Address form]({{ site.baseurl }}/templates/form-templates/address-form/) template
 
 {:.site-component-section-title}
 ## References
-- Explicitly state the difference between options. (November 3, 2013) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/explicit-differences/](https://www.nngroup.com/articles/explicit-differences/)
-- Seamlessness in the omnichannel user experience. (March 19, 2017) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/seamless-cross-channel/](https://www.nngroup.com/articles/seamless-cross-channel/)
+
+- Explicitly state the difference between options. (November 3, 2013) Retrieved on July 20, 2022, from <https://www.nngroup.com/articles/explicit-differences/>
+- Seamlessness in the omnichannel user experience. (March 19, 2017) Retrieved on July 20, 2022, from <https://www.nngroup.com/articles/seamless-cross-channel/>
 
 {:.site-component-section-title}
 ## Disclaimer
+
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

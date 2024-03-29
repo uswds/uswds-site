@@ -15,23 +15,20 @@ changelog:
 
 ### What problem does this solve?
 
-{:.usa-content-list}
 Inconsistent placement and language selection interface components can be a barrier to users with limited English-language skills, preventing them from easily finding and accessing content in another language.
 
 ### When to use this pattern
 
-{:.usa-content-list}
 Use this pattern when the content is available in two languages.
 
 ### When to consider something else
 
 {:.usa-content-list}
-When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected multilingual content is available in some languages, see the
- <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Selected content available</a> pattern.
+- When content is available in three or more languages, see the [Select from three or more languages]({{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/) pattern.
+- When only selected multilingual content is available in some languages, see the [Selected content available]({{ site.baseurl }}/patterns/select-a-language/selected-content/) pattern.
 
 ### What's the solution?
 
-{:.usa-content-list}
 Place the language selector button at the top of the screen above site navigation to allow the user to toggle between two languages. Place the toggle on the top right of the page for left-to-right-languages and on the top left of the page for right-to-left languages, if possible.
 
 {:.site-component-section-title}
@@ -106,41 +103,43 @@ Place the language selector button at the top of the screen above site navigatio
 ### Usability guidance
 
 {:.usa-content-list}
-- <strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
+- **Ensure there’s enough color contrast** between the button, the text inside the button, and the site background to ensure readability.
 
 ### Accessibility
 
 {:.usa-content-list}
-- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for buttons]({{ site.baseurl }}/components/button/#button-guidance).
-- If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button"</strong> so that screen readers announce it as a button. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
-- <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
-- Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
+- **Customization.** As you customize, make sure you follow [accessibility guidelines for buttons]({{ site.baseurl }}/components/button/#button-guidance).
+- If the text will be visually presented as a button but coded as a link, it is recommended to **add ARIA role="button"** so that screen readers announce it as a button. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
+- **Use the HTML `lang` attributes** to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+- Consider including a **prominent in-page notice or link** in addition to the link in the header, in order to increase visibility for the user.
 
 {:.site-component-section-title}
 ## See pattern in use
 
 {:.usa-content-list}
-- <a href="http://beta.usa.gov/">USA.gov (beta)</a>
+- [USA.gov (beta)](http://beta.usa.gov/)
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
-- <a href="{{ site.baseurl }}/components/button/">Button</a> component
-- <a href="{{ site.baseurl }}/components/header/">Header</a> component
-- <a href="{{ site.baseurl }}/components/language-selector/">Language selector</a> component
-- <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Find selected multilingual content</a> pattern
-- <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a> pattern
+- [Button]({{ site.baseurl }}/components/button/) component
+- [Header]({{ site.baseurl }}/components/header/) component
+- [Language selector]({{ site.baseurl }}/components/language-selector/) component
+- [Find selected multilingual content]({{ site.baseurl }}/patterns/select-a-language/selected-content/) pattern
+- [Select from three or more languages]({{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/) pattern
 
 {:.site-component-section-title}
 ## References
-- Community research explores ways to improve access to multilingual content. (August 9, 2022) Retrieved on August 24, 2022, from [https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/](https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/)
-- Designing a perfect language selector UX. (May 4, 2022) Retrieved on July 21, 2022, from [https://www.smashingmagazine.com/2022/05/designing-better-language-selector/](https://www.smashingmagazine.com/2022/05/designing-better-language-selector/)
-- Flag problems. (August 1, 1996) Retrieved on July 22, 2022, from [https://www.nngroup.com/articles/flag-problems/](https://www.nngroup.com/articles/flag-problems/)
-- Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from [https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)
-- White paper on best practices for multilingual access to digital libraries. (June 23, 2016) Retrieved on July 21, 2022, from [https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf](https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf)
+
+- Community research explores ways to improve access to multilingual content. (August 9, 2022) Retrieved on August 24, 2022, from <https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/>
+- Designing a perfect language selector UX. (May 4, 2022) Retrieved on July 21, 2022, from <https://www.smashingmagazine.com/2022/05/designing-better-language-selector/>
+- Flag problems. (August 1, 1996) Retrieved on July 22, 2022, from <https://www.nngroup.com/articles/flag-problems/>
+- Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from <https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/>
+- White paper on best practices for multilingual access to digital libraries. (June 23, 2016) Retrieved on July 21, 2022, from <https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf>
 
 
 {:.site-component-section-title}
 ## Disclaimer
+
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

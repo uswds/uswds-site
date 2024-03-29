@@ -14,12 +14,15 @@ changelog:
 ## About this pattern
 
 ### What problem does this solve?
+
 A person's name or sex are not indicative of the pronouns they use. Allowing users to specify their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
 
 ### When to use this pattern
+
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
 
 ### What's the solution?
+
 Provide a text entry field that supports a rich array of special characters and accents that allows the user to inform you of their pronouns. This pattern best supports verbal communication. This pattern is not appropriate for automated communication.
 
 {:.site-component-section-title}
@@ -95,43 +98,45 @@ Provide a text entry field that supports a rich array of special characters and 
 ### Considerations
 
 {:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
-- <strong>If you don't need a controlled vocabulary.</strong> Strongly consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
+- **Confirm you need this information.** As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+- **If you don't need a controlled vocabulary.** Strongly consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
 ### Usability guidance
 
 {:.usa-content-list}
-- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze, he/they." Do allow users to opt out with a "Prefer not to answer" option.
+- **Provide clear hint text.** Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze, he/they." Do allow users to opt out with a "Prefer not to answer" option.
 
 ### Accessibility
 
 {:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/).
-- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+- **Follow input guidance.** These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/).
+- **Customization.** As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
-- <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
-- <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/gender-identity-and-sex/">Gender identity and sex</a> pattern
+- [Checkbox]({{ site.baseurl }}/components/checkbox/) component
+- [Text input]({{ site.baseurl }}/components/text-input/) component
+- [Gender identity and sex]({{ site.baseurl }}/patterns/create-a-user-profile/gender-identity-and-sex/) pattern
 
 {:.site-component-section-title}
 ## References
-- Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
+
+- Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from <https://design-system.service.gov.uk/patterns/gender-or-sex/>
 - Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from `http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms` [This link is no longer active. [Archived copy of practicemakesprogress.org](https://web.archive.org/web/20220120033201/http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)]
-- DOL policies on gender identity: rights and responsibi (n.d.) Retrieved on November 1, 2022, from [https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/internal/policies/gender-identity](https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/internal/policies/gender-identity)
+- DOL policies on gender identity: rights and responsibi (n.d.) Retrieved on November 1, 2022, from <https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/internal/policies/gender-identity>
 - Gender pronouns. (October 23, 2017) Retrieved on November 1, 2022, from
 [https://www1.nyc.gov/assets/hra/downloads/pdf/services/lgbtqi/Gender%20Pronouns%20final%20draft%2010.23.17.pdf](https://www1.nyc.gov/assets/hra/downloads/pdf/services/lgbtqi/Gender%20Pronouns%20final%20draft%2010.23.17.pdf)
 - Gender pronouns & their use in workplace communications. (n.d.) Retrieved on November 1, 2022 from, [https://dpcpsi.nih.gov/sgmro/gender-pronouns-resource](https://dpcpsi.nih.gov/sgmro/gender-pronouns-resource)
-- Gender-inclusive language. (n.d.) Retrieved on July 19, 2022, from [https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/)
+- Gender-inclusive language. (n.d.) Retrieved on July 19, 2022, from <https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/>
 - The importance of personal pronouns. (September 16, 2022) Retrieved on November 1, 2022 from, [https://digital.va.gov/people-excellence/the-importance-of-personal-pronouns/](https://digital.va.gov/people-excellence/the-importance-of-personal-pronouns/)
-- Inclusive forms. (n.d.) Retrieved on July 19, 2022, from [https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/](https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/)
+- Inclusive forms. (n.d.) Retrieved on July 19, 2022, from <https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/>
 - Living up to our value of inclusion: Why we should use pronouns. (September 14, 2021) Retrieved on November 1, 2022 from, [https://www.fs.usda.gov/inside-fs/leadership/living-our-value-inclusion-why-we-should-use-preferred-pronouns](https://www.fs.usda.gov/inside-fs/leadership/living-our-value-inclusion-why-we-should-use-preferred-pronouns)
-- Pronoun use in email signatures. (June 29, 2020) Retrieved on November 1, 2022, from [https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/](https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/)
-- They, their. (April 10, 2019). Retrieved on July 19, 2022, from [https://design.va.gov/content-style-guide/they-their](https://design.va.gov/content-style-guide/they-their)
+- Pronoun use in email signatures. (June 29, 2020) Retrieved on November 1, 2022, from <https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/>
+- They, their. (April 10, 2019). Retrieved on July 19, 2022, from <https://design.va.gov/content-style-guide/they-their>
 
 {:.site-component-section-title}
 ## Disclaimer
+
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

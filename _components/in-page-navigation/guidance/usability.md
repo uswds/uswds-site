@@ -2,7 +2,7 @@
 
 - **Make it stand out.** Site visitors should be able to quickly and easily distinguish in-page navigation from other landmarks on the page. Include borders and well-defined link active states to clearly convey the utility and purpose of the section. Define a consistent width for the in-page navigation component that is sufficiently wide and does not change based on text length.
 
-- **Use language that matches section headings.** The text of the links displayed within the in-page navigation `aside` should match the heading text of the target sections. Our component scans the page for `h2` and `h3` elements within the `main` element, automatically creates the in-page navigation block, and dynamically inserts the text to match the section headings.
+- **Use language that matches section headings.** The text of the links displayed within the in-page navigation `aside` should match the heading text of the target sections. By default, the component scans the page for `h2` and `h3` elements within the `main` element, automatically creates the in-page navigation block, and dynamically inserts the text to match the section headings.
 
 - **Don't include the page `h1` in the navigation.** Each page should have a single `h1` to describe its contents. It would be redundant to include this heading level in the in-page navigation.
 

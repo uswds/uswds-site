@@ -6,7 +6,7 @@ items:
     summary: Added clarification on parent agency.
     summaryAdditional: “Parent agency” means "the highest-level agency associated with a site or service." We added guidance to cover cases when a site is the primary site for an agency, and has no higher-level agency.
     affectsGuidance: true
-    githubPr: 5491
+    githubPr: 2591
     githubRepo: uswds-site
   - date: 2023-11-09
     summary: Updated the screen reader readout in English versions of the component.

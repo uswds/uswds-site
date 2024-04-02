@@ -7,7 +7,6 @@ title: Templates
 category: Templates
 lead: These templates represent common component combinations and are a great starting point for prototyping or trying USWDS to see if it’s a good fit for your project. Every template in this section is built using USWDS default theme settings and utilities.
 type: docs
-in_page_nav: false
 ---
 
 ## Built for flexibility

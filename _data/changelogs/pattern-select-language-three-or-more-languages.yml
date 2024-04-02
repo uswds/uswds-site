@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Fixed broken component preview links.
-    affectsContent: true
+    affectsGuidance: true
     githubPr: 2566
     githubRepo: uswds-site
   - date: 2022-11-14

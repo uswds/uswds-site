@@ -99,7 +99,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [National Archives and Records Administration](https://archives.gov)
 - [National Archives Museum](https://museum.archives.gov/)
 - [National Blue Ribbon Schools](https://nationalblueribbonschools.ed.gov)
-- [National Environmental Sattelite Data and Information Service (NOAA)](https://www.nesdis.noaa.gov/)
+- [National Environmental Satellite Data and Information Service (NOAA)](https://www.nesdis.noaa.gov/)
 - [National Initiative for Cybersecurity Careers & Studies (NICCS)](https://niccs.us-cert.gov/)
 - [National Institutes of Health](https://www.nih.gov/)
 - [The National Flood Insurance Program (FloodSmart)](https://www.floodsmart.gov/)

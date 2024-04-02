@@ -3,7 +3,7 @@ type: token
 changelogURL:
 items:
   - date: 2024-04-02
-    summary: Updated the tokens used in the "Using color tokens" code examples.
+    summary: Updated the token references in the "Using color tokens" code examples.
     affectsGuidance: true
     githubPr: 2377
     githubRepo: uswds-site

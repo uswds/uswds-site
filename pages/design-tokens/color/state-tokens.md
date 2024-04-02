@@ -32,12 +32,7 @@ The state color palette is divided into five high-level role-based color familie
 
 Each color family except `emergency` and `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
 
-{% assign token_type="state" %}
-{% assign example_token="error-dark" %}
-{% assign example_value="red-warm-60v" %}
-
-{% include tokens/customize-color-token.html %}
-
+{% include tokens/customize-color-token.html token_type="state" example_token="error-dark" example_value="red-warm-60v" %}
 
 ## State color tokens table
 

@@ -37,11 +37,7 @@ USWDS theme color tokens are divided into five high-level role-based color famil
 
 Each color family has seven possible lightness grades, from `lightest` to `darkest`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings. The default USWDS theme palette does not use every grade for every family. The `primary` and `secondary` families also have a `vivid` grade available.
 
-{% assign token_type="theme" %}
-{% assign example_token="primary-vivid" %}
-{% assign example_value="blue-warm-50v" %}
-
-{% include tokens/customize-color-token.html %}
+{% include tokens/customize-color-token.html token_type="theme" example_token="primary-vivid" example_value="blue-warm-50v" %}
 
 ## Theme color tokens table
 

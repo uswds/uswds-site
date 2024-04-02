@@ -12,6 +12,10 @@ redirect_from:
 subnav:
 - text: State color tokens
   href: '#uswds-state-color-tokens'
+- text: Customizing state color tokens
+  href: '#customizing-state-color-tokens'
+- text: State color tokens table
+  href: '#state-color-tokens-table'
 - text: Using color tokens
   href: '#using-color-tokens'
 - text: Latest updates

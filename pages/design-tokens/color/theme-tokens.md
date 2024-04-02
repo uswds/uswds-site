@@ -14,6 +14,8 @@ subnav:
   href: '#uswds-theme-color-tokens'
 - text: Customizing theme color tokens
   href: '#customizing-theme-color-tokens'
+- text: Theme color tokens table
+  href: '#theme-color-tokens-table'
 - text: Using theme color tokens
   href: '#using-theme-color-tokens'
 - text: Latest updates

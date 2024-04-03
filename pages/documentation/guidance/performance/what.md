@@ -3,6 +3,7 @@ title: What is web performance
 permalink: /performance/what/
 category: How to use USWDS
 layout: styleguide
+in_page_nav: false
 ---
 
 Web performance generally refers to how quickly a URL loads and appears in a web browser. Sites are considered to have good performance if they load quickly and allow users to easily interact with them. Sites with poor performance typically have slow, or halting, page loads and interaction delays, which may prevent users from accessing your content or using your web applications.

@@ -401,12 +401,12 @@ Variables and maps determine the number of columns, gutter width, and media-quer
       <tr>
         <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
-            .grid-<code>row</code>
+            .grid-row
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex">
           <span>
-            grid-<code>row</code>
+            grid-row
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex">
@@ -418,12 +418,12 @@ Variables and maps determine the number of columns, gutter width, and media-quer
       <tr>
         <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
-            .grid-<code>col</code>
+            .grid-col-<code>column count</code>
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex">
           <span>
-            grid-<code>col(column count)</code>
+            grid-col<code>(column count)</code>
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex">
@@ -437,12 +437,12 @@ Variables and maps determine the number of columns, gutter width, and media-quer
       <tr>
         <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
-            .grid-<code>gap</code>
+            .grid-gap-<code>value</code>
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex">
           <span>
-            grid-<code>gap</code>(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
+            grid-gap(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex">

@@ -28,62 +28,6 @@ subnav:
   href: '#sass-mixins'
 - text: Latest updates
   href: '#changelog'
-spacing_settings:
-  - name: Small grid gap
-    subsection: grid-gap token
-    section: true
-    description: Sets `"grid-gap-sm"` token.
-    var: $theme-column-gap-sm
-    default: 2px
-    type: units
-  - name: Medium grid gap
-    subsection: grid-gap token
-    description: Sets `"grid-gap-md"` token.
-    var: $theme-column-gap-md
-    default: 2
-    type: units
-  - name: Large grid gap
-    subsection: grid-gap token
-    description: Sets `"grid-gap-lg"` token.
-    var: $theme-column-gap-lg
-    default: 3
-    type: units
-  - name: Mobile grid gap
-    subsection: grid-gap token
-    description: Sets value of `"grid-gap"` at `mobile` width.
-    var: $theme-column-gap-mobile
-    default: 2
-    type: units
-  - name: Desktop grid gap
-    subsection: grid-gap token
-    description: Sets value of `"grid-gap"` at `desktop` width.
-    var: $theme-column-gap-desktop
-    default: 4
-    type: units
-
-  - name: Grid container max width
-    section: true
-    description: Sets the `max-width` value of the `.grid-container` utility.
-    var: $theme-grid-container-max-width
-    default: '"desktop"'
-    type: units
-
-  - name: Site outer margins breakpoint
-    description: The breakpoint at which the site's outer margin changes.
-    var: $theme-site-margins-breakpoint
-    default: '"desktop"'
-    type: units
-  - name: Site outer margins
-    description: Site outer margin at non-mobile width (breakpoint defined by `$theme-site-margins-breakpoint`).
-    var: $theme-site-margins-width
-    default: 4
-    type: units
-  - name: Site mobile outer margins
-    description: Site outer margin at mobile width (breakpoint defined by `$theme-site-margins-breakpoint`).
-    var: $theme-site-margins-mobile-width
-    default: 2
-    type: units
-
 
 changelog:
   key: utilities-layout-grid
@@ -418,9 +362,10 @@ Variables and maps determine the number of columns, gutter width, and media-quer
 
 #### Spacing settings
 
+{% assign spacing_settings = site.data.settings.spacing.contents | slice: 3, 9 %}
 
 {% include settings-table.html
-  settings=page.spacing_settings
+  settings=spacing_settings
 %}
 
 <section id="utility-mixins" class="padding-top-4">
@@ -443,8 +388,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
         </td>
         <td data-title="Mixin" class="display-inline-flex">
           <span>
-            grid-container <br/>
-            grid-container-<code>tablet</code>
+            grid-container<code>(container size)</code>
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex">

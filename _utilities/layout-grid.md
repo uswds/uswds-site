@@ -451,6 +451,23 @@ Variables and maps determine the number of columns, gutter width, and media-quer
           </span>
         </td>
       </tr>
+      <tr>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
+          <span class="text-normal">
+            .grid-offset-<code>column-count</code>
+          </span>
+        </th>
+        <td data-title="Mixin" class="display-inline-flex">
+          <span>
+            grid-offset<code>(column-count)</code>
+          </span>
+        </td>
+        <td data-title="Example" class="display-inline-flex">
+          <span>
+            @include grid-offset(4)
+          </span>
+        </td>
+      </tr>
     </tbody>
   </table>
   {% include utilities/utility-mixin-using.html %}

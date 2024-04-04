@@ -438,17 +438,19 @@ Variables and maps determine the number of columns, gutter width, and media-quer
     <tbody class="font-mono-2xs">
       <tr>
         <td data-title="Utility" class="tablet:maxw-card-lg">
-          <span>.grid-<code>container</code>
+          <span>.grid-container-<code>container size</code>
           </span>
         </td>
         <td data-title="Mixin" class="display-inline-flex">
           <span>
-            grid-<code>container</code>
+            grid-container <br/>
+            grid-container-<code>tablet</code>
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex">
           <span>
-            @include grid-container
+            @include grid-container <br/>
+            @include grid-container("tablet")
           </span>
         </td>
       </tr>

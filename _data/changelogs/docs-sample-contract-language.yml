@@ -1,0 +1,9 @@
+title: Sample contract language
+type: documentation
+changelogURL: 
+items:
+  - date: NNNN-NN-NN
+    summary: Updated Federal Web Council representative link.
+    affectsGuidance: true
+    githubPr: 2604
+    githubRepo: uswds-site

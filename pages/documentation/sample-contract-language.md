@@ -7,6 +7,8 @@ lead: How to document requirements related to website modernization in contracts
 redirect_from:
   - /contract-language
   - /contracts
+changelog:
+  key: docs-sample-contract-language
 ---
 
 The [21st Century Integrated Digital Experience Act](https://digital.gov/resources/21st-century-integrated-digital-experience-act/)

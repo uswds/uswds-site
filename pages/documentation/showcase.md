@@ -9,6 +9,8 @@ redirect_from:
   - /getting-started/showcase/all/
   - /documentation/showcase/all/
 in_page_nav: false
+changelog:
+  key: docs-showcase
 ---
 
 {: .site-note }

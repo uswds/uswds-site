@@ -60,4 +60,5 @@ title: Date picker
 type: component
 changelog:
   key: component-date-picker
+test: test
 ---

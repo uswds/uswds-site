@@ -2622,8 +2622,8 @@ $theme-table-column-gap: 4;
   }
 }
 
-.site-accordion-code {
-  > .usa-accordion__button {
+.site-accordion-heading {
+  .usa-accordion__button {
     @include add-background-svg("icons/remove-white");
     background-color: color("primary-vivid");
     color: color("white");

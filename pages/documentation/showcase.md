@@ -24,7 +24,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [Accessibility for Teams](https://accessibility.digital.gov/)
 - [Advanced Distributed Learning (ADL) Initiative](https://adlnet.gov)
 - [Agricultural Marketing Service - USDA](https://www.ams.usda.gov/)
-- [Agricultural Research Service - USDA](https://www.ars.usda.gov/)
 - [Scientific Discoveries - Agricultural Research Service - USDA](https://scientificdiscoveries.ars.usda.gov/)
 - [America’s Seed Fund - National Science Foundation](https://seedfund.nsf.gov/)
 - [Army Medical Department Civilian Corps](https://ameddciviliancorps.amedd.army.mil)

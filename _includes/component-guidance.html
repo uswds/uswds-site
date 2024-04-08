@@ -2,6 +2,7 @@
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
 {% assign checklistData = site.data.accessibility-tests[componentKey] %}
+{% assign _level = include.level | default: "h2" %}
 
 {% assign guidancePath = page.guidancePath | default: "guidance" %}
 
@@ -49,9 +50,9 @@
   {% endif %}
 {%- endcapture -%}
 
-<h2 id="{{ componentKey }}-guidance" class="site-component-section-title">
+<{{ _level }} id="{{ componentKey }}-guidance" class="site-component-section-title">
   Guidance
-</h2>
+</{{ _level }}>
 <div class="site-component-usage">
   {% for item in guidanceFirst %}
     <h3 id="{{ item.heading | slugify }}" class="usa-heading">

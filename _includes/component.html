@@ -25,7 +25,7 @@
 {% if issues %}
   {% include known-issues-alert.html %}
 {% endif %}
-{% include component-preview-and-code.html %}
+{% include component-preview-and-code.html level=include.level %}
 {% include component-guidance.html %}
 <!-- Add accessibility test results -->
 {% if component %}

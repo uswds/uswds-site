@@ -9,14 +9,6 @@ test_items:
     test_type: general
     version_tested: 3.7.1
     wcag_criterion: 1.3.5
-  - summary: Formatting remains when screen is magnified.
-    summary_additional: |
-      When you zoom in to 200%,
-      the character count keeps its formatting, and sufficient space remains between the character count and the text field above it.
-    test_status: pass
-    test_type: general
-    version_tested: 3.7.1
-    wcag_criterion: 1.4.12
   - summary: Users can see and hear context about character count errors.
     summary_additional: |
       Clear, readable information about character count appears below the text field.
@@ -34,6 +26,14 @@ test_items:
     test_type: zoom
     version_tested: 3.7.1
     wcag_criterion: 1.4.4
+  - summary: Formatting remains when screen is magnified.
+    summary_additional: |
+      When you zoom in to 200%,
+      the character count keeps its formatting, and sufficient space remains between the character count and the text field above it.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.7.1
+    wcag_criterion: 1.4.12
 # Keyboard navigation tests
   - summary: Field can be accessed with keyboard navigation.
     summary_additional: Using only a keyboard, you are able to tab into the character count's text input field, type, and tab out of it.

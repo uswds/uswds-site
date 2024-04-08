@@ -1,7 +1,7 @@
 title: Character count accessibility tests
 type: component
 items:
- - date: NNNN-NN-NN
+ - date: 2024-04-08
    summary: Added accessibility tests page.
    affectsGuidance: true
    githubPr: 2607

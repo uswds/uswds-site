@@ -1,0 +1,222 @@
+components:
+- name: Accordion
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/accordion/
+- name: Alert
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/alert/
+- name: Banner
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/banner/
+- name: Breadcrumb
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/breadcrumb/
+- name: Button
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/button/
+- name: Button group
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/button-group/
+- name: Card
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/card/
+- name: CUI Banner
+  status_major: proposal
+  status_minor: Proposal in progress
+  url: https://github.com/uswds/uswds/discussions/5767
+- name: Character count
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/character-count/
+- name: Checkbox
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/checkbox/
+- name: Collection
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/collection
+- name: Combo box
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/combo-box/
+- name: Data visualizations
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/data-visualizations/
+- name: Date picker
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/date-picker/
+- name: Date range picker
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/date-range-picker/
+- name: Feedback
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5773
+- name: File input
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/file-input/
+- name: Footer
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/footer/
+- name: Form
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/form/
+- name: Glossary
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5771
+- name: Header
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/header/
+- name: Icon
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/icon/
+- name: Icon list
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/icon-list/
+- name: Identifier
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/identifier/
+- name: In-page navigation
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/in-page-navigation/
+- name: Input mask
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/input-mask/
+- name: Input prefix or suffix
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/input-prefix-suffix/
+- name: Language selector
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/language-selector/
+- name: Link
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/link/
+- name: List
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/list/
+- name: Memorable date
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/memorable-date/
+- name: Modal
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/modal/
+- name: Pagination
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/pagination/
+- name: Process list
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/process-list/
+- name: Prose
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/prose/
+- name: Quote with attribution
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5766
+- name: Radio buttons
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/radio-buttons/
+- name: Range slider
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/range-slider/
+- name: Search
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/search/
+- name: Select
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/select/
+- name: Side navigation
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/side-navigation/
+- name: Site alert
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/site-alert/
+- name: Skipto
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5769
+- name: Spinner
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5768
+- name: Toast
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/5770
+- name: Step indicator
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/step-indicator/
+- name: Summary box
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/summary-box/
+- name: Table
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/table/
+- name: Tabs
+  status_major: proposal
+  status_minor: Proposal in progress
+  url: https://github.com/uswds/uswds/discussions/5765
+- name: Tag
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/tag
+- name: Text input
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/text-input/
+- name: Time picker
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/time-picker/
+- name: Tooltip
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/tooltip
+- name: Typography
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/typography
+- name: Validation
+  status_major: released
+  status_minor: stable
+  url: https://designsystem.digital.gov/components/validation
+

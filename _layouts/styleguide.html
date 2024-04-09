@@ -11,14 +11,14 @@ layout: default
     {% endif %}
   </aside>
 
-  {% unless page.in_page_nav == false %}
+  {% unless page.in_page_nav_headings == false %}
   <div class="usa-in-page-nav-container">
     <aside class="usa-in-page-nav"
       aria-label="On this page"
       data-scroll-offset="-120"
       data-root-margin="48px 0px -90% 0px"
       data-threshold="1"
-      data-heading-elements={{ page.in_page_nav }}
+      data-heading-elements={{ page.in_page_nav_headings }}
     ></aside>
   {% endunless %}
     <main id="main-content" class="main-content">
@@ -42,7 +42,7 @@ layout: default
         {% include changelog.html %}
       </div>
     </main>
-  {% unless page.in_page_nav == false %}
+  {% unless page.in_page_nav_headings == false %}
   </div>
   {% endunless %}
 </div>

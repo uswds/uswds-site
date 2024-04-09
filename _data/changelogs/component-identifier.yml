@@ -2,6 +2,14 @@ title: Identifier
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed a bug that mistakenly added the word "An" to Spanish variants in the component preview.
+    summaryAdditional:
+    affectsGuidance: true
+    affectsContent: true
+    githubPr: 5857
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-11-09
     summary: Updated the screen reader readout in English versions of the component.
     summaryAdditional: When read out on a screen reader, the statement "An official website of [Agency name]" can sound like "UNofficial website of [Agency name]". Users should update their markup to improve the screen reader experience.

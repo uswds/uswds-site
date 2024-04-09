@@ -1,0 +1,9 @@
+title: Recruitment for general public
+type: documentation
+changelogURL:
+items:
+  - date: 2024-01-10
+    summary: Page created.
+    affectsGuidance: true
+    githubPr: 2424
+    githubRepo: uswds-site

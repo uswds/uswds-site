@@ -45,7 +45,7 @@ variants:
     description: Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns.
 changelog:
   key: component-table
-in_page_nav: "h2"
+in_page_nav_headings: "h2"
 ---
 
 {: .margin-top-4 }

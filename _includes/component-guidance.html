@@ -3,6 +3,11 @@
 {% assign settingsKey = componentKey %}
 {% assign checklistData = site.data.accessibility-tests[componentKey] %}
 {% assign _level = include.level | default: "h2" %}
+{% assign _level_sub = "h3" %}
+
+{% if _level == "h3" %}
+  {% assign _level_sub = "h4" %}
+{% endif %}
 
 {% assign guidancePath = page.guidancePath | default: "guidance" %}
 
@@ -55,9 +60,9 @@
 </{{ _level }}>
 <div class="site-component-usage">
   {% for item in guidanceFirst %}
-    <h3 id="{{ item.heading | slugify }}" class="usa-heading">
+    <{{ _level_sub }} id="{{ item.heading | slugify }}" class="usa-heading">
       {{ item.heading }}
-    </h3>
+    </{{ _level_sub }}>
     {% if item.html %}
       {%- include_relative {{item.path}} -%}
     {% else %}
@@ -69,44 +74,44 @@
     {% endif %}
   {% endfor %}
   {% if about.size > guidanceNullLength %}
-    <h3 id="about-{{ componentKey }}">About</h3>
+    <{{ _level_sub }} id="about-{{ componentKey }}">About</{{ _level_sub }}>
     {{ about | markdownify }}
   {% endif %}
   {% if when_to_use.size > guidanceNullLength %}
-    <h3 id="when-to-use-the-{{ componentKey }}">
+    <{{ _level_sub }} id="when-to-use-the-{{ componentKey }}">
       When to use the {{ page.title | downcase }} {{ page.type }}
-    </h3>
+    </{{ _level_sub }}>
     {{ when_to_use | markdownify }}
   {% endif %}
   {% if when_to_consider_something_else.size > guidanceNullLength %}
-    <h3 id="when-to-consider-something-else-{{ componentKey }}">
+    <{{ _level_sub }} id="when-to-consider-something-else-{{ componentKey }}">
       When to consider something else
-    </h3>
+    </{{ _level_sub }}>
     {{ when_to_consider_something_else | markdownify }}
   {% endif %}
   {% if usability.size > guidanceNullLength %}
-    <h3 id="usability-guidance-{{ componentKey }}">Usability guidance</h3>
+    <{{ _level_sub }} id="usability-guidance-{{ componentKey }}">Usability guidance</{{ _level_sub }}>
     {{ usability | markdownify }}
   {% endif %}
   {% if accessibility.size > guidanceNullLength %}
-    <h3 id="accessibility-{{ componentKey }}" class="usa-heading">
+    <{{ _level_sub }} id="accessibility-{{ componentKey }}" class="usa-heading">
       Accessibility guidance
-    </h3>
+    </{{ _level_sub }}>
     {% if checklistData %}
     {% include accessibility-tests/a11y-note.html %}
     {% endif %}
     {{ accessibility | markdownify }}
   {% endif %}
   {% if related.size > guidanceNullLength %}
-    <h3 id="related-{{ componentKey }}" class="usa-heading">
+    <{{ _level_sub }} id="related-{{ componentKey }}" class="usa-heading">
       Related
-    </h3>
+    </{{ _level_sub }}>
     {{ related | markdownify }}
   {% endif %}
   {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
-    <h3  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading">
+    <{{ _level_sub }}  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading">
       Using the {{ page.title | downcase }} {{ page.type }}
-    </h3>
+    </{{ _level_sub }}>
     {{ implementation | markdownify }}
     {% if page.category == "Components" %}
       <h4 id="component-settings-{{ componentKey }}">
@@ -125,9 +130,9 @@
     {% endif %}
   {% endif %}
   {% for item in guidanceLast %}
-    <h3 id="{{ item.heading | slugify }}" class="usa-heading">
+    <{{ _level_sub }} id="{{ item.heading | slugify }}" class="usa-heading">
       {{ item.heading }}
-    </h3>
+    </{{ _level_sub }}>
     {%- capture thisText -%}
       {{- guidanceFormat }}
       {%- include_relative {{item.path}} -%}
@@ -135,7 +140,7 @@
     {{ thisText | markdownify }}
   {% endfor %}
   {% if references.size > guidanceNullLength %}
-    <h3 id="references">References</h3>
+    <{{ _level_sub }} id="references">References</{{ _level_sub }}>
     {{ references | markdownify }}
   {% endif %}
 </div>

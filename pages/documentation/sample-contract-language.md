@@ -7,6 +7,8 @@ lead: How to document requirements related to website modernization in contracts
 redirect_from:
   - /contract-language
   - /contracts
+changelog:
+  key: docs-sample-contract-language
 ---
 
 The [21st Century Integrated Digital Experience Act](https://digital.gov/resources/21st-century-integrated-digital-experience-act/)
@@ -26,7 +28,7 @@ Use the approaches below as a starting point for any solicitations with requirem
 
 21st Century IDEA codifies high-level requirements for federal websites and digital services. Additionally, many agencies have more specific requirements in their digital strategy and other guidelines.
 
-Consult with your agency’s Chief Information Officer and [Federal Web Council representative](https://digital.gov/resources/federal-web-council/#current-council-members) regarding agency requirements for websites and digital services, including 21st Century IDEA.
+Consult with your agency’s Chief Information Officer and [Federal Web Council representative](https://digital.gov/resources/an-introduction-to-the-digital-experience-council/#who-makes-up-the-digital-experience-council) regarding agency requirements for websites and digital services, including 21st Century IDEA.
 
 Then work with your contracting officer (CO) to determine your acquisition strategy, including customizing the draft language below to meet your needs and requirements.
 

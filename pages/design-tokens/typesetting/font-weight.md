@@ -188,7 +188,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
         <td data-title="Example">
           <span>
-            $heading-font-weight: <code>'heavy'</code>
+            $theme-font-weight-normal: <code>500</code>
           </span>
         </td>
       </tr>

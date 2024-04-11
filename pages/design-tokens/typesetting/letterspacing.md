@@ -115,21 +115,6 @@ Your context and coding style determine how you access USWDS letterspacing token
       </tr>
       <tr>
         <th scope="row" data-title="Context">
-          <span class="font-lang-3">setting</span>
-        </th>
-        <td data-title="Description">
-          <span>
-            <a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
-          </span>
-        </td>
-        <td data-title="Example">
-          <span>
-            $heading-letterspacing: <code>-2</code>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Context">
           <span class="font-lang-3">
             utility
           </span>

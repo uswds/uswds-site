@@ -8,7 +8,7 @@ items:
     githubPr: 2379
     githubRepo: uswds-site
   - date: NNNN-NN-NN
-    summary: Updated the setting code example in "Using letterspacing tokens" section.
+    summary: Removed the settings code example in "Using letterspacing tokens" section.
     affectsGuidance: true
     githubPr: 2379
     githubRepo: uswds-site

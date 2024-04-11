@@ -2,7 +2,7 @@ title: Three or more languages
 type: pattern
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-04-11
     summary: Fixed broken component preview links.
     affectsGuidance: true
     githubPr: 2566

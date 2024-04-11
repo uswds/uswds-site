@@ -2,7 +2,7 @@ title: Typesetting tokens
 type: token
 changelogURL:
 items:
-  - date: 2023-11-29
+  - date: 2024-04-11
     summary: Updated the value for `$theme-font-role-ui` in the settings configuration example.
     affectsGuidance: true
     githubPr: 2379

@@ -2,7 +2,7 @@ title: Font weight tokens
 type: token
 changelogURL:
 items:
-  - date: 2023-11-29
+  - date: 2024-04-11
     summary: Updated the setting code example in "Using weight tokens" section.
     affectsGuidance: true
     githubPr: 2379

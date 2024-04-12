@@ -11,7 +11,7 @@ redirect_from:
 - /typography/01-prose/
 subnav:
 - text: Prose accessibility tests
-  href: /components/usa-prose/accessibility-tests/
+  href: /components/prose/accessibility-tests/
 title: Prose
 type: component
 tags:

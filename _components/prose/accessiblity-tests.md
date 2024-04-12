@@ -1,5 +1,5 @@
 ---
-permalink: /components/usa-prose/accessibility-tests/
+permalink: /components/prose/accessibility-tests/
 layout: accessibility-test
 component:
  name: prose

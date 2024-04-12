@@ -122,7 +122,7 @@ The pattern allows users to select their language preferences for both written a
 - [Text input]({{ site.baseurl }}/components/text-input/) component
 - [Contact preferences]({{ site.baseurl }}/patterns/create-a-user-profile/contact-preferences/) pattern
 - [Find selected multilingual content]({{ site.baseurl }}/patterns/select-a-language/selected-content/) pattern
-- [Select from three or more languages]({{ site.baseurl }}/patterns/select-a-language/more-than-three-languages/) pattern
+- [Select from three or more languages]({{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/) pattern
 - [Select from two languages]({{ site.baseurl }}/patterns/select-a-language/two-languages/) pattern
 
 {:.site-component-section-title}

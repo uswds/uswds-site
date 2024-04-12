@@ -2,6 +2,11 @@ title: Prose
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Added WCAG compliance tag and accessibility test status section.
+  affectsGuidance: true
+  githubPr: NNNN
+  githubRepo: uswds-site
 - date: 2023-06-09
   summary: Added `$theme-heading-margin-top` and `$theme-paragraph-margin-top` system variables.
   affectsStyles: true

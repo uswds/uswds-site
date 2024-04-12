@@ -134,7 +134,7 @@ The pattern allows users to select their language preferences for both written a
 - Improving access to public websites and digital services for limited English proficient (LEP) persons. (December 2021) Retrieved on July 25, 2022, from <https://www.lep.gov/sites/lep/files/media/document/2021-12/2021_12_07_Website_Language_Access_Guide_508.pdf>
 - LEP.gov. (n.d.) Retrieved on July 25, 2022, from <https://www.lep.gov/>
 - The limited English proficient population in the United States in 2013. (July 8, 2015) Retrieved on July 25, 2022, from <https://www.migrationpolicy.org/article/limited-english-proficient-population-united-states-2013>
-- OMB memorandum m-17-06, 16. (November 2016) Retrieved on July 25, 2022, from <https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16>
+- OMB memorandum m-17-06, 16. (November 2016) Retrieved on July 25, 2022, from <https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf>
 
 {:.site-component-section-title}
 ## Disclaimer

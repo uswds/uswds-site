@@ -1,6 +1,6 @@
 ---
 permalink: /components/icon/accessibility-tests/
-layout: styleguide
+layout: accessibility-test
 component:
   name: icon
 title: Icon accessibility tests
@@ -9,5 +9,3 @@ lead: Any USWDS icon should pass these manual accessibility tests.
 changelog:
   key: 'component-icon-accessibility'
 ---
-
-{% include accessibility-tests/index.html %}

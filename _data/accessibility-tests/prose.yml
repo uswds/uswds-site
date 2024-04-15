@@ -30,7 +30,7 @@ test_items:
     wcag_criterion: 2.1.1
 # Screen reader tests
   - summary: Heading levels are logical.
-    summary_additional: All header tags contain appropriate heading text that describes the content nested below it. Headings are nested appropriately. For example, there is only one H1 per page, and no heading levels get skipped (e.g., no H4s nested directly under H2s without an H3 between them).
+    summary_additional: All header tags contain appropriate heading text that describes the content nested below it. Headings are nested appropriately. For example, there is only one `h1` per page, and no heading levels get skipped (e.g., no `h4`s nested directly under `h2`s without an `h3` between them).
     test_status: pass
     test_type: screen_reader
     version_tested: 3.7.1

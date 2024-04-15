@@ -11,6 +11,7 @@ image: /img/updates/fractal_v1.0.0.png
 preview_baseurl: https://federalist.fr.cloud.gov/preview/18f/web-design-standards
 github_baseurl: https://github.com/uswds/uswds
 category: About
+expiration_date: 2024-04-15
 ---
 
 <p class="site-text-intro">

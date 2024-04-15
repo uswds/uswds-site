@@ -51,7 +51,7 @@ test_items:
     test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 2.4.6
-  - summary: Screen reader announces violations of word limit.
+  - summary: Screen reader announces violations of character limit.
     summary_additional: After you enter one too many characters, the screen reader announces that you have exceeded the character limit.
     test_status: pass
     test_type: screen_reader

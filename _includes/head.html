@@ -7,8 +7,15 @@
 ================================================== -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  {% if site.env != "production" or page.hide_from_search == true %}
+  {% unless site.env == "production" %}
     <meta name="robots" content="noindex, nofollow">
+  {% endunless %}
+
+  {% assign today_date = 'now' | date: '%s' | minus: 0 %}
+  {% assign expiration_date = page.expiration_date | date: '%s' | minus: 0 %}
+
+  {% if today_date > expiration_date %}
+    <meta name="robots" content="noindex">
   {% endif %}
 
 <!-- Mobile Specific Metas

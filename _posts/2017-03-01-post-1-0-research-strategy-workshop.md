@@ -7,6 +7,7 @@ tags:
 excerpt: "With the recent launch of U.S. Web Design Standards 1.0, it's time for the team to take a look at the road ahead and determine what areas of the Standards they should focus on. To accomplish this, the team meet for a collaborative research and design workshop where ideas were proposed then mapped based on the ideas importance and feasibility."
 category: About
 hide_from_search: true
+expiration_date: 2024-04-10
 ---
 With the launch of 1.0 of the U.S Web Design Standards, it's time to look ahead at what the team needs to focus on and research in the coming months. It's been some time, last fall, since the team has performed any focused user research and design. To define what areas we needed to research and what new features we should potentially design, the team performed a collaborative brainstorming session.
 

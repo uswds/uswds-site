@@ -59,7 +59,7 @@ test_items:
     wcag_criterion: 3.3.1
   - summary: Screen reader announces remaining character count.
     summary_additional: |
-      When you use a screen reader to tab to the text field,
+      When you use a screen reader and tab to the text field,
       you hear accurate information about how many characters remain for the user to enter.
     test_status: pass
     test_type: screen_reader

@@ -15,7 +15,7 @@
   {% assign expiration_date = page.expiration_date | date: '%s' | minus: 0 %}
 
   {% if today_date > expiration_date %}
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="NOINDEX, NOFOLLOW" />
   {% endif %}
 
 <!-- Mobile Specific Metas

@@ -22,7 +22,7 @@ test_items:
     version_tested: 3.7.1
     wcag_criterion: 1.4.4
 # Keyboard navigation tests
-  - summary: Users can navigate between sections.
+  - summary: Users can navigate between sections using only a keyboard.
     summary_additional: You can navigate easily among headings, text sections, and links, even without a mouse. 
     test_status: pass
     test_type: keyboard

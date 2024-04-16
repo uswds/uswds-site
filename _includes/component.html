@@ -4,6 +4,10 @@
 {% assign component = site.data.accessibility-tests[componentKey] %}
 {% assign issues = site.data.issues[componentKey] %}
 
+{% if page.known_issues_key  %}
+  {% assign issues = site.data.issues[page.known_issues_key] %}
+{% endif %}
+
 {% if page.alert == true %}
 <div class="usa-alert margin-bottom-3 usa-alert--{{ page.alert-class }}">
   <div class="usa-alert__body">

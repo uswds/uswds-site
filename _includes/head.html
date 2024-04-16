@@ -7,15 +7,19 @@
 ================================================== -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  {% unless site.env == "production" %}
-    <meta name="robots" content="noindex, nofollow">
-  {% endunless %}
 
-  {% assign today_date = 'now' | date: '%s' | minus: 0 %}
-  {% assign expiration_date = page.expiration_date | date: '%s' | minus: 0 %}
+  {% if page.expiration_date %}
+    {% assign today_date = 'now' | date: '%s' %}
+    {% assign expiration_date = page.expiration_date | date: '%s' %}
+    {% assign expired_content = false %}
 
-  {% if today_date > expiration_date %}
-    <meta name="robots" content="NOINDEX, NOFOLLOW" />
+    {% if today_date > expiration_date %}
+      {% assign expired_content = true %}
+    {% endif %}
+  {% endif %}
+
+  {% if expired_content == true or site.env != "production" %}
+    <meta name="robots" content="noindex, nofollow" />
   {% endif %}
 
 <!-- Mobile Specific Metas

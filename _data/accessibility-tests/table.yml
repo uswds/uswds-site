@@ -67,7 +67,7 @@ test_items:
     test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 1.3.1
-  - summary: Table cells are read in a logical order.
+  - summary: Table cells are read in logical order.
     summary_additional: |
       When using a screen reader to navigate a table,
       you hear the table cells for an entire row read in the correct order (e.g., from left to right for English) before moving down to the next row.

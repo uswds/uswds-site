@@ -42,7 +42,7 @@ test_items:
     version_tested: 3.7.1
     wcag_criterion: 2.1.1
 # Screen reader tests
-  - summary: Screen reader announces field and character count.
+  - summary: Screen reader announces field label and character count.
     summary_additional: |
       When you tab into the text field with a screen reader,
       it announces the purpose of the field and the presence of a character count.

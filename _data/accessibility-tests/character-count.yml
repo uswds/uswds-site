@@ -6,7 +6,7 @@ test_items:
     summary_additional: |
       The text field has a visible label above it to indicate its purpose.
       For example, "Enter your full name."
-    test_status: pass
+    test_status: conditional
     test_type: general
     version_tested: 3.7.1
     wcag_criterion: 1.3.5
@@ -36,7 +36,7 @@ test_items:
     wcag_criterion: 1.4.12
 # Keyboard navigation tests
   - summary: Field can be accessed with keyboard navigation.
-    summary_additional: Using only a keyboard, you are able to tab into the character count's text input field, type, and tab out of it.
+    summary_additional: Using only a keyboard, you are able to tab into and out of the test input field associated with the character count.
     test_status: pass
     test_type: keyboard
     version_tested: 3.7.1
@@ -71,6 +71,11 @@ test_items:
       Red letters under the text field also show the how many characters over the limit you have entered.
       Feedback about how many characters need to be removed can be heard and seen.
     test_status: exception
+    status_details: |
+      The character count informs screen reader users of how many characters over the limit they have entered,
+      but it does not explicitly tell them the character limit they need to stay under.
+    github_issue_repo: uswds
+    github_issue_number: 5873
     test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 3.3.3

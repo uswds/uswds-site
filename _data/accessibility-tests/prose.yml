@@ -3,7 +3,7 @@ component_status: pass
 test_items:
 # General tests
   - summary: Content is written in plain language.
-    summary_additional: Content is easy to understand. It is written at the appropriate grade level. Complex words are defined by a glossary or other method.
+    summary_additional: Content is easy to understand. It is written at the appropriate [grade level](https://www.w3.org/TR/WCAG21/#reading-level). Complex words are defined by a glossary or other method.
     test_status: conditional
     test_type: general
     version_tested: 3.7.1

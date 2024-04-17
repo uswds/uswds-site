@@ -1,4 +1,4 @@
-{% assign component_name = page.title | downcase %}
+{% assign component_name = page.title | remove: ' accessibility tests' | downcase %}
 
 <!-- Create a list of each status type -->
 {% assign status_types = "Passed, Passed with exceptions, Conditional, Failed" | split: ", " %}

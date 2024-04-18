@@ -5,7 +5,7 @@ component:
  name: prose
 title: Prose accessibility tests
 category: Components
-lead: Any USWDS prose should pass these manual accessibility tests.
+lead: Any USWDS prose component should pass these manual accessibility tests.
 changelog:
  key: 'component-prose-accessibility'
 ---

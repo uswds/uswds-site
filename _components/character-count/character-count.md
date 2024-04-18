@@ -10,8 +10,8 @@ permalink: /components/character-count/
 redirect_from:
 - /form-controls/01-character-count/
 subnav:
-- text: Character count accessibility tests
-  href: /components/character-count/accessibility-tests/
+  - text: Character count accessibility tests
+    href: /components/character-count/accessibility-tests/
 tags:
   - form
   - forms

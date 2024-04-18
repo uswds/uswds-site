@@ -1,7 +1,7 @@
 title: Prose accessibility tests
 type: component
 items:
-- date: NNNN-NN-NN
+- date: 2024-04-18
   summary: Added accessibility tests page.
   affectsGuidance: true
   githubPr: 2613

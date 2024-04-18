@@ -1,4 +1,4 @@
-{% assign github_label =  page.title | replace: ' ', '+' %}
+{% assign github_label =  page.github_label_url | default: page.title | replace: ' ', '+' %}
 {% assign github_label_alt =  page.known_issues_key | replace: ' ', '+' | replace: '-', '+' %}
 
 <h2 id="known-issues" class="site-component-section-title">Known issues</h2>

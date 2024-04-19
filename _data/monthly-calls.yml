@@ -4,7 +4,7 @@ videos:
     description: |
      Our USWDS team did a great live [tutorial on customizing and extending USWDS](https://github.com/uswds/uswds-tutorial). We covered working with settings, applying tokens, handling style conflicts, and ensuring good color contrast.
     date: March 2024
-    id: M2SVDceCM
+    id: M2_SVDc_eCM
     event_link: https://digital.gov/event/2024/03/21/uswds-monthly-call-march-2024/
     missing_script: true
     slides:

@@ -2,7 +2,6 @@
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
 {% assign component = site.data.accessibility-tests[componentKey] %}
-
 {% assign known_issues_key = page.known_issues_key | default: page.title | slugify %}
 {% assign known_issues = site.data.issues[known_issues_key] %}
 

@@ -1,15 +1,13 @@
-{% assign github_label =  page.github_label_url | default: page.title | replace: ' ', '+' %}
-{% assign github_label_alt =  page.known_issues_key | replace: ' ', '+' | replace: '-', '+' %}
+{% assign github_label =  page.known_issues_key | default: page.title | replace: ' ', '+' | replace: '-', '+' %}
 
 <h2 id="known-issues" class="site-component-section-title">Known issues</h2>
 
 <p>All known issues for {{ page.title | downcase }} are tracked in
-  {% if page.known_issues_key %}
-    <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+{{ github_label_alt }}%22%2C%22Package%3A+{{ github_label }}%22">
-  {% else %}
-    <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+{{ github_label }}%22">
-  {% endif %}
-    GitHub</a>. Notable usability issues are tracked below: </p>
+  <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+{{ github_label }}%22">
+    GitHub
+  </a>.
+  Notable usability issues are tracked below:
+</p>
 
 {% include known-issues-table.html %}
 

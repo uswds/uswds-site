@@ -2,6 +2,12 @@ title: Date range picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added known issues section.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2620
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.

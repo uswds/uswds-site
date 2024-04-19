@@ -1,5 +1,5 @@
 videos:
-   - title: Building with USWDS tools
+  - title: Building with USWDS tools
     subtitle: Learn how to build new components that look and feel consistent with existing components.
     description: |
      Our USWDS team did a great live [tutorial on customizing and extending USWDS](https://github.com/uswds/uswds-tutorial). We covered working with settings, applying tokens, handling style conflicts, and ensuring good color contrast.

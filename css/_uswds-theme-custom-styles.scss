@@ -3340,6 +3340,7 @@ body {
   .site-component-section-title {
     @extend %site-h2;
     border-top: units(1px) solid;
+    font-weight: u-text("bold");
     margin-bottom: units(2);
     margin-top: units(6);
     padding-top: units(1.5);

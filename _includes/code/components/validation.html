@@ -1,3 +1,6 @@
 {% capture validation %}
   {% library_component usa-validation %}
-{% endcapture %}{{ validation | strip }}
+{% endcapture %}{{ validation
+  | strip
+  | replace: 'h3', 'h4'
+}}

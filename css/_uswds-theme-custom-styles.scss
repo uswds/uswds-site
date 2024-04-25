@@ -2710,13 +2710,13 @@ $theme-table-column-gap: 4;
     }
   }
 
-  &__header_secondary {
+  &__header_second {
     @include typeset("lang", "lg", 2);
     color: color("base-dark");
     font-weight: fw("thin");
   }
 
-  &__header_tertiary {
+  &__header_third {
     @include typeset("lang", "md", 2);
   }
 }

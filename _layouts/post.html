@@ -3,6 +3,15 @@ layout: default
 category: What’s new
 ---
 <div class="default-container">
+  {% if page.expiration_date %}
+    {% assign today_date = 'now' | date: '%s' %}
+    {% assign expiration_date = page.expiration_date | date: '%s' %}
+    {% assign expired_content = false %}
+
+    {% if today_date > expiration_date %}
+      {% include outdated-content-alert.html %}
+    {% endif %}
+  {% endif %}
   <aside class="sidenav" id="page-side-navigation">
     {% assign sidenav = site.data.nav[page.category] %}
     {% if sidenav %}

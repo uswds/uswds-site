@@ -1612,10 +1612,12 @@ iframe {
 }
 
 .post-outdated-content {
-  @include u-margin-y(3);
-  position: sticky;
-  top: 0;
   z-index: 99999;
+
+  @include at-media("tablet") {
+    position: sticky;
+    top: 0;
+  }
 
   @include at-media("desktop") {
     top: units($height-nav-secondary);
@@ -1623,11 +1625,6 @@ iframe {
 
   .usa-alert__body {
     margin-left: 0;
-    padding-top: units(3);
-  }
-
-  .usa-alert__text {
-    @include u-measure(5);
   }
 }
 

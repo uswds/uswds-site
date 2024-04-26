@@ -2,16 +2,6 @@ title: "Phase 2: Compile"
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
-    summary: Replaced outdated references to `paths.dist.sass` with `paths.dist.theme`.
-    affectsGuidance: true
-    githubPr: 2401
-    githubRepo: uswds-site
-  - date: NNNN-NN-NN
-    summary: Added documentation for `paths.src.projectIcons` and `sprite.projectIconsOnly`.
-    affectsGuidance: true
-    githubPr: 2401
-    githubRepo: uswds-site
   - date: 2023-07-28
     summary: Added clarity to the instructions for custom compilers.
     affectsGuidance: true

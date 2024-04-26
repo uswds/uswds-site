@@ -1,2 +1,2 @@
-- [OMB M-17-06: Policies for Federal Agency Public Websites and Digital Services [PDF, 18 pages]](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf)
+- [OMB M-23-22: Delivering a Digital-First Public Experience](https://www.whitehouse.gov/omb/management/ofcio/delivering-a-digital-first-public-experience/)
 - [OMB M-10-23: Guidance for Agency Use of Third-Party Websites and Applications [PDF, 9 pages]](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/memoranda_2010/m10-23.pdf)

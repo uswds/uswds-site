@@ -7,6 +7,7 @@ category: About
 author: Ammie Farraj Feijoo, Dan O. Williams
 image: /img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_1.png
 excerpt: In this digital age, it’s simpler than ever to share the &#x23;GovLove virtually on Valentine’s Day, and the U.S. Web Design System (USWDS) is here to help you do just that.
+expiration_date: 2024-04-15
 ---
 
 In this digital age, it’s simpler than ever to share the #GovLove virtually on Valentine’s Day, and the U.S. Web Design System (USWDS) is here to help you do just that.

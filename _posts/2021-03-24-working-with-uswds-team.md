@@ -6,6 +6,7 @@ category: About
 author: Jona Decker
 image: /img/2021-next-blog/post-3-social-share.jpg
 excerpt: Learn how the Accelerator team collaborated with other digital teams and end-users across the federal government to bring new and updated components to the USWDS community in Release 2.10.
+expiration_date: 2024-04-15
 ---
 
 [Release 2.10](https://github.com/uswds/uswds/releases/tag/v2.10.0) of the U.S. Web Design System (USWDS) included eight contributions to the design system from a separate product team in GSA’s Technology Transformation Services. We focused on providing tools and guidance to help support federal agencies’ emergency response efforts.

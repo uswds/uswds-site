@@ -2,6 +2,13 @@ title: Validation
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added a screen reader summary of input requirements to the validation component on initialization.
+    summaryAdditional: Previously, the component only provided this summary when the user added content to the input.
+    affectsJavascript: true
+    githubPr: 5897
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

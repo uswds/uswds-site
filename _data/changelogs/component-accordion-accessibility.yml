@@ -2,6 +2,12 @@ title: Accordion accessibility tests
 type: component
 changelogURL:
 items:
+  - date: 2024-03-29
+    summary: Updated the test status for announcing the "collapsed" and "expanded" states from "Passed with exceptions" to "Passed".
+    summaryAdditional: We determined that the flagged issue was isolated to our documentation site and fixed the issue.
+    affectsGuidance: true
+    githubPr: 2557
+    githubRepo: uswds-site
   - date: 2024-01-17
     summary: Added accessibility tests page.
     affectsGuidance: true

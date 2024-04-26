@@ -2,6 +2,12 @@ title: Accessibility
 type: documentation
 changelogURL:
 items:
+  - date: 2024-03-29
+    summary: Updated all page content.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2561
+    githubRepo: uswds-site
   - date: 2021-05-20
     summary: Added new accessibility guidance and resources.
     summaryAdditional:

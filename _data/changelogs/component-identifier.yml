@@ -3,15 +3,6 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated the "USA.gov en Español" link text and url in Spanish variants of the component.
-    summaryAdditional: |
-      The "Visite USA.gov en Español" link text has been updated to "Visite USAGov en Español".
-      The url has also been updated from `https://www.usa.gov/espanol/` to `https://www.usa.gov/es/`.
-    affectsContent: true
-    githubPr: 5857
-    githubRepo: uswds
-    versionUswds: N.N.N
-  - date: NNNN-NN-NN
     summary: Fixed a bug that mistakenly added the word "An" to Spanish variants in the component preview.
     summaryAdditional:
     affectsGuidance: true

@@ -9,6 +9,8 @@ redirect_from:
   - /getting-started/showcase/all/
   - /documentation/showcase/all/
 in_page_nav_headings: false
+changelog:
+  key: docs-showcase
 ---
 
 {: .site-note }
@@ -42,7 +44,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [Code.mil](https://www.code.mil/)
 - [Customs and Border Protection](https://www.cbp.gov/)
 - [Cybersecurity Directives](https://cyber.dhs.gov/directives/)
-- [Data Center Optimization Initiative (Office of the Federal Chief Information Officer - OMB)](https://datacenters.cio.gov/)
 - [Data Science Jobs Microsite (USAJOBS)](https://usajobs.github.io/microsite-data-science/)
 - [Defense Digital Service](https://www.dds.mil/)
 - [Defense Nuclear Facilities Safety Board](https://www.dnfsb.gov/)
@@ -70,7 +71,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [FedRAMP](https://www.fedramp.gov/)
 - [FedRAMP Marketplace](https://marketplace.fedramp.gov/)
 - [FedRAMP Tailored](https://tailored.fedramp.gov/)
-- [feedback.usa.gov](https://feedback.usa.gov/)
 - [FOIA](https://www.foia.gov/)
 - [Foster Youth Experience Map](https://github.com/presidential-innovation-fellows/fyem-jekyll)
 - [General Services Administration](https://gsa.gov)
@@ -92,7 +92,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [Manufacturing USA](https://www.manufacturing.gov/)
 - [Medicaid](https://www.medicaid.gov/)
 - [Method Cards - 18F](https://methods.18f.gov/)
-- [Move.mil — Official DOD Moving Portal](https://www.move.mil/)
 - [MyMedicare](https://www.mymedicare.gov/)
 - [NASA General Coordinates Network (GCN)](https://gcn.nasa.gov)
 - [NASA Glenn Research Center](https://www1.grc.nasa.gov)
@@ -101,7 +100,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [National Archives and Records Administration](https://archives.gov)
 - [National Archives Museum](https://museum.archives.gov/)
 - [National Blue Ribbon Schools](https://nationalblueribbonschools.ed.gov)
-- [National Environmental Sattelite Data and Information Service (NOAA)](https://www.nesdis.noaa.gov/)
+- [National Environmental Satellite Data and Information Service (NOAA)](https://www.nesdis.noaa.gov/)
 - [National Initiative for Cybersecurity Careers & Studies (NICCS)](https://niccs.us-cert.gov/)
 - [National Institutes of Health](https://www.nih.gov/)
 - [The National Flood Insurance Program (FloodSmart)](https://www.floodsmart.gov/)
@@ -123,7 +122,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [Plainlanguage.gov](https://plainlanguage.gov/)
 - [The Privacy and Civil Liberties Oversight Board](https://www.pclob.gov/)
 - [PubMed Labs - National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/labs/pubmed/)
-- [Report to the President on Federal IT Modernization](https://itmodernization.cio.gov/)
 - [SAM Web Design Standards](https://github.com/GSA/sam-design-system-site)
 - [SBA Brand Guide](https://www.sba.gov)
 - [SBA Certify - U.S. Small Business Administration](https://certify.sba.gov/)
@@ -174,7 +172,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [USGS Publications Warehouse](https://pubs.er.usgs.gov/)
 - [VA Caseflow](https://github.com/department-of-veterans-affairs/caseflow)
 - [VA Developer Portal](https://developer.va.gov/)
-- [Virtual Student Foreign Service](http://vsfs.state.gov/)
 - [vote.gov](https://vote.gov/)
 - [Water Data for the Nation (USGS)](https://waterdata.usgs.gov/blog/)
 - [We the People (Petition the White House)](https://petitions.whitehouse.gov/)

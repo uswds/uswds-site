@@ -7,7 +7,7 @@ items:
     affectsGuidance: true
     githubPr: 2401
     githubRepo: uswds-site
-  - date: NNNN-NN-NN
+  - date: 2024-04-26
     summary: Added documentation for `paths.src.projectIcons` and `sprite.projectIconsOnly`.
     affectsGuidance: true
     githubPr: 2401

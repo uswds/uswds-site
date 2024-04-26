@@ -2,7 +2,7 @@ title: Showcase
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-04-26
     summary: Remove broken links that have no alternate for redirects. 
     summaryAdditional: Correct misspelling that Siteimprove noted.
     affectsGuidance: true

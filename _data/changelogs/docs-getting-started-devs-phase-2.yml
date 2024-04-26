@@ -2,7 +2,7 @@ title: "Phase 2: Compile"
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-04-26
     summary: Replaced outdated references to `paths.dist.sass` with `paths.dist.theme`.
     affectsGuidance: true
     githubPr: 2401

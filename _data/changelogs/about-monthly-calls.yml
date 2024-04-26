@@ -4,21 +4,17 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Added February 2024 monthly call.
-    affectsGuidance: true
     githubPr: 2576
     githubRepo: uswds-site
   - date: 2024-02-09
     summary: Added January 2024 monthly call.
-    affectsGuidance: true
     githubPr: 2465
     githubRepo: uswds-site
   - date: 2023-12-11
     summary: Added November 2023 monthly call.
-    affectsGuidance: true
     githubPr: 2393
     githubRepo: uswds-site
   - date: 2023-11-06
     summary: Added monthly calls page.
-    affectsGuidance: true
     githubPr: 2345
     githubRepo: uswds-site

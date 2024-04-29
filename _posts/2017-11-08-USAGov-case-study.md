@@ -5,6 +5,7 @@ tags:
 - web design standards
 - design
 category: About
+expiration_date: 2024-04-15
 ---
 The U.S. Web Design Standards are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this ninth post in our series, we met with the team at USA.gov to talk about their use of the Standards. [USA.gov](https://USA.gov), and its Spanish counterpart [GobiernoUSA.gov](https://GobiernoUSA.gov), are the official guides for government information.
 

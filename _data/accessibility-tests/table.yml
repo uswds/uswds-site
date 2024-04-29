@@ -12,7 +12,7 @@ test_items:
     wcag_criterion: 1.4.1
   - summary: Table content meets color contrast requirements.
     summary_additional: |
-      When you view the content in a table and use ANDI or color contrast analyzer to look at the hex colors,
+      When you view the content in a table and use ANDI or a color contrast analyzer to look at the hex colors,
       contrast between the table background and text is at least 4.5:1.
     test_status: pass
     test_type: general
@@ -31,10 +31,10 @@ test_items:
   - summary: Table elements can be navigated by keyboard without special cues.
     summary_additional: |
       When using a keyboard to navigate a table,
-      a user can navigate using arrow keys or the tab key with no unexpected cues or instruction.
+      you can navigate using arrow keys or the tab key with no unexpected instruction.
     test_status: exception
     status_details: |
-      The scrollable table does not scroll with left and right arrow keystrokes in JAWS and NVDA. 
+      A scrollable table does not scroll with left and right arrow keystrokes in JAWS and NVDA.
       The offscreen table data is read aloud, but a user would need to use their mouse to follow along with the focus indicator.
     github_issue_number: 5828
     github_issue_repo: uswds
@@ -67,7 +67,7 @@ test_items:
     test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 1.3.1
-  - summary: Table cells are read in a logical order.
+  - summary: Table cells are read in logical order.
     summary_additional: |
       When using a screen reader to navigate a table,
       you hear the table cells for an entire row read in the correct order (e.g., from left to right for English) before moving down to the next row.

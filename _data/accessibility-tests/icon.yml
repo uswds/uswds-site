@@ -13,7 +13,7 @@ test_items:
   - summary: Icons meet color contrast requirements.
     summary_additional: |
       When you view the icon on a page
-      and use ANDI or color contrast analyzer to look at the hex colors,
+      and use ANDI or a color contrast analyzer to look at the hex colors,
       contrast between the icon and background is at least 3:1.
     test_status: conditional
     test_type: general
@@ -22,7 +22,7 @@ test_items:
   - summary: Each icon has a consistent meaning across pages.
     summary_additional: |
       When you use a screen reader or view the page,
-      the icon's meaning, and the way it is announced, is the same across all pages.
+      the icon's meaning, and the way it is announced, are the same across all pages.
     test_status: conditional
     test_type: general
     version_tested:
@@ -32,7 +32,7 @@ test_items:
   - summary: Focus indicators are clearly visible on interactive icons.
     summary_additional: |
       When you use a keyboard to tab into an interactive icon,
-      you see a visible indicator around the icon.
+      you see an indicator around the icon.
     test_status: conditional
     test_type: keyboard
     version_tested:

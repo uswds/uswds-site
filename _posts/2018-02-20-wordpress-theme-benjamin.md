@@ -6,6 +6,7 @@ tags:
 - design
 category: About
 excerpt:
+expiration_date: 2024-04-15
 ---
 
 The U.S. Web Design System (formerly Standards) is currently being used on hundreds of government sites, with an audience of more than 100 million monthly users. In this 10th post in our series, we met with Kyle Jennings, creator of the [Benjamin WordPress theme](https://github.com/kyle-jennings/benjamin) (and [Franklin plug-in](https://github.com/kyle-jennings/franklin)) (both of which are available on GitHub) using the System.

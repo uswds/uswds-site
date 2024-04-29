@@ -1,6 +1,5 @@
 - **Hide decorative icons from screen readers.** Icons are decorative if they don’t provide meaningful information to the user. Usually, decorative icons are accompanied by text. Announcing a decorative icon is redundant and can be annoying. Use the `aria-hidden="true"` and `role="img"`, as in the following code:
 
-
   ```html
   <a href="https://twitter.com/uswds">
     <svg class="usa-icon" aria-hidden="true" role="img">

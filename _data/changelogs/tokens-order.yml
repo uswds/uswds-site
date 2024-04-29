@@ -2,7 +2,7 @@ title: Order tokens
 type: token
 changelogURL:
 items:
-  - date: 2023-12-05
+  - date: NNNN-NN-NN
     summary: Updated documented values for `first` and `last` tokens.
     affectsGuidance: true
     githubPr: 2386

@@ -5,6 +5,7 @@ tags:
 - web design standards
 - design
 category: About
+expiration_date: 2024-04-15
 ---
 The U.S. Web Design Standards team continues to sit down with various agencies who are using the Standards. In this third post in our series, we met with the team at the U.S. Department of Agriculture (USDA) and learned how they used the Standards to refresh [USDA.gov](https://usda.gov).
 

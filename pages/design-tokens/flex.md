@@ -126,7 +126,7 @@ Your context and coding style determine how you access USWDS flex tokens in code
         </td>
         <td data-title="Example">
           <span>
-            $nav-column-flex: <code>4</code>
+            $theme-megamenu-columns: <code>4</code>
           </span>
         </td>
       </tr>

@@ -1,10 +1,31 @@
+<!-- ANALYTICS
+================================================== -->
+
+{% include analytics.html %}
+
 <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  {% unless site.env == "production" %}
-    <meta name="robots" content="noindex, nofollow">
-  {% endunless %}
+
+
+  {% if page.expiration_date %}
+    <!--
+      Note: `%s` converts the date to "seconds since 1970", based on strftime formatting.
+      This allows us to compare dates to see which is greater.
+    -->
+    {% assign today_date = 'now' | date: '%s' %}
+    {% assign expiration_date = page.expiration_date | date: '%s' %}
+    {% assign expired_content = false %}
+
+    {% if today_date > expiration_date %}
+      {% assign expired_content = true %}
+    {% endif %}
+  {% endif %}
+
+  {% if expired_content == true or site.env != "production" %}
+    <meta name="robots" content="noindex, nofollow {{ today_date }} {{ expiration_date }}" />
+  {% endif %}
 
 <!-- Mobile Specific Metas
 ================================================== -->
@@ -35,11 +56,6 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/img/favicons/favicon-114.png">
   <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.png">
-
-<!-- ANALYTICS
-================================================== -->
-
-{% include analytics.html %}
 
 <!-- CSS
 ================================================== -->

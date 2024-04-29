@@ -2,6 +2,51 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: 2024-03-11
+    summary: Added new sidenav setting to temporarily address visual regression in new markup guidance.
+    summaryAdditional:  The new setting `$theme-sidenav-reorder` allows users to temporarily reorder the sidenav with CSS. Users should follow new markup recommendation in code example to avoid accessibility issues.
+    isBreaking: false
+    affectsAccessibility: true
+    affectsAssets:
+    affectsContent:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 5809
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2024-03-11
+    summary: Added `$theme-table-background-color` and `$theme-table-sticky-top-offset` settings.
+    summaryAdditional:
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5420
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2024-03-11
+    summary: Added color contrast checks for disabled tokens.
+    summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5455
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2024-03-11
+    summary: Added button icon gap setting.
+    summaryAdditional: You can now customize the size of the gap between a button's text and icon with `$theme-button-icon-gap`.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5398
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2023-12-08
+    summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
+    affectsStyles: true
+    githubPr: 5624
+    githubRepo: uswds
+    versionUswds: 3.7.1
   - date: 2023-11-09
     summary: Fixed a bug that prevented `$theme-site-margins-width` from accepting expected token values.
     affectsSettings: true

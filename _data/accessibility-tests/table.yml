@@ -1,0 +1,102 @@
+title: Table
+component_status: pass
+test_items:
+# General tests
+  - summary: Color is not the only method used to convey meaning in a table.
+    summary_additional: |
+      When viewing the table,
+      you never have to rely on color alone to understand the table's meaning.
+    test_status: pass
+    test_type: general
+    version_tested: 3.7.1
+    wcag_criterion: 1.4.1
+  - summary: Table content meets color contrast requirements.
+    summary_additional: |
+      When you view the content in a table and use ANDI or a color contrast analyzer to look at the hex colors,
+      contrast between the table background and text is at least 4.5:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.7.1
+    wcag_criterion: 1.4.3
+# Zoom/screen magnification tests
+  - summary: Table content is visible and functional when screen is magnified.
+    summary_additional: |
+      When you zoom to 200%,
+      content in the table remains visible and does not overlap with other content.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.7.1
+    wcag_criterion: 1.4.10
+# Keyboard navigation tests
+  - summary: Table elements can be navigated by keyboard without special cues.
+    summary_additional: |
+      When using a keyboard to navigate a table,
+      you can navigate using arrow keys or the tab key with no unexpected instruction.
+    test_status: exception
+    status_details: |
+      A scrollable table does not scroll with left and right arrow keystrokes in JAWS and NVDA.
+      The offscreen table data is read aloud, but a user would need to use their mouse to follow along with the focus indicator.
+    github_issue_number: 5828
+    github_issue_repo: uswds
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.1.1
+  - summary: Table cells do not trap focus.
+    summary_additional: |
+      When using a screen reader and keyboard keystrokes to navigate a table,
+      you can easily navigate in and out of the table cells using only keystrokes.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.1.2
+  - summary: Focus indicator is clear on interactive items in tables.
+    summary_additional: |
+      When using a keyboard to navigate a table,
+      a focus indicator appears around all interactive elements (e.g., arrows for sorting, links).
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.4.7
+# Screen reader tests
+  - summary: Table cells are read one at a time and provide context for each cell.
+    summary_additional: |
+      When using a screen reader to navigate a table,
+      the screen reader speaks one cell at a time and explains where each cell is in the table.
+      Tip: When using JAWS, press the `ctrl` + `alt` keys to navigate within the table.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 1.3.1
+  - summary: Table cells are read in logical order.
+    summary_additional: |
+      When using a screen reader to navigate a table,
+      you hear the table cells for an entire row read in the correct order (e.g., from left to right for English) before moving down to the next row.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 1.3.2
+  - summary: Merged table headers are correctly associated with table cells.
+    summary_additional: |
+      When using a screen reader to navigate a table with merged header cells,
+      you can understand which lower-level data is organized under merged header cells.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 2.4.6
+  - summary: The table has a header, and it is associated with the correct table cells.
+    summary_additional: |
+      When using a screen reader to navigate a table,
+      you can clearly hear which column header the data falls under.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 2.4.6
+  - summary: Table elements have the appropriate name, role, and state.
+    summary_additional: |
+      When using a screen reader to navigate a table,
+      the screen reader announces the name and role of interactive elements such as scrolling, sorting, and clicking.
+      For sortable tables, you hear whether the column is sorted and how it is sorted.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 4.1.2

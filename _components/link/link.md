@@ -12,9 +12,6 @@ guidance:
     path: guidance/overview.md
     first: true
     html: true
-  - heading: "What you must do"
-    path: guidance/usability-must.md
-    first: true
   - heading: "What you should do"
     path: guidance/usability-should.md
     first: true
@@ -28,20 +25,8 @@ permalink: /components/link/
 redirect_from:
 - /typography/02-links/
 subnav:
-  - text: Preview
-    href: '#link-preview'
-  - text: Code
-    href: '#link-code'
-  - text: Guidance
-    href: '#link-guidance'
-  - text: What you should do
-    href: '#what-you-should-do'
-  - text: Package
-    href: '#link-package'
-  - text: Research findings
-    href: '#research-findings'
-  - text: Latest updates
-    href: '#changelog'
+- text: Link accessibility tests
+  href: /components/link/accessibility-tests/
 title: Link
 variants:
   - variant: "`.usa-link--external`"

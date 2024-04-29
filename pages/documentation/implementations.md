@@ -20,18 +20,15 @@ subnav:
   href: '#changelog'
 changelog:
   key: docs-implementations
-in_page_nav: false
+in_page_nav_headings: false
 ---
 
 If you have a new implementation to add to this list, please [open an issue] on GitHub or [send us an email] with the following information:
 
 * The implementation’s target language and/or framework
 * The author’s name (or alias) and contact URL or email address
-* The most recent [version]({{ site.baseurl }}/whats-new/releases/) of USWDS that the project targets
+* The most recent [version](https://github.com/uswds/uswds/releases) of USWDS that the project targets
 * Any useful caveats or other notes
-
-{% assign latest = site.data.releases | first %}
-{% capture latest_version %}<a href="{{ site.baseurl }}/whats-new/releases/#version-{{ latest.name | slugify }}">{{ latest.name }}</a>{% endcapture %}
 
 <div class="usa-alert usa-alert--warning">
   <div class="usa-alert__body">

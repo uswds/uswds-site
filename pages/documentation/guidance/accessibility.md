@@ -23,7 +23,7 @@ subnav:
   href: '#changelog'
 changelog:
   key: 'docs-accessibility'
-in_page_nav: false
+in_page_nav_headings: "h2"
 ---
 The U.S. Web Design System is built on a foundation of accessibility. That foundation was created with and for our colleagues who develop digital services for all Americans.
 

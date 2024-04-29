@@ -2,7 +2,7 @@ title: Migrating to 3.0
 type: documentation
 changelogURL:
 items:
-  - date: 2024-04-19
+  - date: 2024-04-29
     summary: Added note about Autoprefixer to Sass compilation section.
     affectsGuidance: true
     githubPr: 2319

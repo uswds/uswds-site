@@ -4,6 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Updated documented values for `first` and `last` tokens.
+    summary_additional: Also removed the outdated setting example from "Using order tokens".
     affectsGuidance: true
     githubPr: 2386
     githubRepo: uswds-site

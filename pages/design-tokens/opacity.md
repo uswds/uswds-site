@@ -10,6 +10,10 @@ subnav:
   href: '#opacity-tokens'
 - text: Using opacity tokens
   href: '#using-opacity-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-opacity
 ---
 
 {% assign tokens = site.data.tokens %}

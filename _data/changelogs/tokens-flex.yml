@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Updated the documented values for flex tokens.
-    summary_additional: Also replaced the outdated reference to `$theme-nav-column-flex` with `$theme-megamenu-columns`.
+    summaryAdditional: Also replaced the outdated reference to `$theme-nav-column-flex` with `$theme-megamenu-columns`.
     affectsGuidance: true
     githubPr: 2386
     githubRepo: uswds-site

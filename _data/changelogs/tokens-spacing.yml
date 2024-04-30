@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Added documentation for the '0' spacing token.
-    summary_additional: Also replaced the outdated reference to `$theme-site-margin-mobile` with `$theme-site-margins-mobile-width`.
+    summaryAdditional: Also replaced the outdated reference to `$theme-site-margin-mobile` with `$theme-site-margins-mobile-width`.
     affectsGuidance: true
     githubPr: 2386
     githubRepo: uswds-site

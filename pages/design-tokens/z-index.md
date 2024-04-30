@@ -109,21 +109,6 @@ Your context and coding style determine how you access USWDS z-index tokens in c
       </tr>
       <tr>
         <th scope="row" data-title="Context">
-          <span class="font-lang-3">setting</span>
-        </th>
-        <td data-title="Description">
-          <span>
-            <a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
-          </span>
-        </td>
-        <td data-title="Example">
-          <span>
-            $theme-subnav-z-index: <code>'top'</code>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Context">
           <span class="font-lang-3">
             utility
           </span>

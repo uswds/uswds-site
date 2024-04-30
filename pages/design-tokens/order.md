@@ -143,23 +143,6 @@ Your context and coding style determine how you access USWDS order tokens in cod
       </tr>
       <tr>
         <th scope="row" data-title="Context text-normal">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </th>
-        <td data-title="Description">
-          <span>
-            <a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
-          </span>
-        </td>
-        <td data-title="Example">
-          <span>
-            $theme-nav-item-order: <code>'last'</code>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Context text-normal">
           <span class="font-lang-3">
             <span class="text-bold">utility</span><br/>
           </span>

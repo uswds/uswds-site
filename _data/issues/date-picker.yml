@@ -1,4 +1,5 @@
-# Note: These issues are also pulled into date range picker page
+# These issues are also pulled into date range picker page.
+# See: `known_issues_key` in date-range-picker.md.
 title: Date picker
 alert_type: info
 items:

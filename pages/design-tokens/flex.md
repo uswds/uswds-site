@@ -10,6 +10,10 @@ subnav:
   href: '#flex-tokens'
 - text: Using flex tokens
   href: '#using-flex-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-flex
 ---
 
 {% assign tokens = site.data.tokens %}

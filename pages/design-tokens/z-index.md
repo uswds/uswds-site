@@ -10,6 +10,10 @@ subnav:
   href: '#z-index-tokens'
 - text: Using z-index tokens
   href: '#using-z-index-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-zindex
 ---
 
 ## Z-index tokens

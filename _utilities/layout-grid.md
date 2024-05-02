@@ -4,7 +4,6 @@ layout: styleguide
 type: utility
 title: Layout grid
 category: Utilities
-type: docs
 lead: Use our flexible grid system to structure website content. The grid is mobile-first, powered by flexbox, and based on a 12-column system.
 redirect_from:
   - /components/grids/

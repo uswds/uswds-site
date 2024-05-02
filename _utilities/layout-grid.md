@@ -432,7 +432,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
         <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
           <span class="text-normal">
             .grid-col <br />
-            .grid-col<code>-column count</code>
+            .grid-col-<code>column count</code>
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex flex-2">
@@ -457,7 +457,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
         <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
           <span class="text-normal">
             .grid-gap <br />
-            .grid-gap<code>-value</code>
+            .grid-gap-<code>gap size</code>
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex flex-2">

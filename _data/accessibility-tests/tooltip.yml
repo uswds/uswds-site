@@ -41,7 +41,11 @@ test_items:
 # Keyboard navigation tests
   - summary: Active tooltip content can be closed with a mouse or keyboard.
     summary_additional: When you open a tooltip with a mouse, you can use the "escape" key to close it.
-    test_status: fail
+    test_status: exception
+    status_details: |
+      You currently cannot dismiss a tooltip without moving focus away from the trigger component.
+    github_issue_number: 5909
+    github_issue_repo: uswds
     test_type: keyboard
     version_tested: 3.8.0
     wcag_criterion: 1.4.13

@@ -384,7 +384,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
     <tbody class="font-mono-2xs">
       <tr>
         <td data-title="Utility" class="tablet:maxw-card-lg flex-2">
-          <span>.grid-container-<code>container size</code>
+          <span>.grid-container<code>-container size</code>
           </span>
         </td>
         <td data-title="Mixin" class="display-inline-flex flex-2">
@@ -429,7 +429,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
       <tr>
         <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
           <span class="text-normal">
-            .grid-col-<code>column count</code>
+            .grid-col<code>-column count</code>
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex flex-2">
@@ -453,7 +453,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
       <tr>
         <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
           <span class="text-normal">
-            .grid-gap-<code>value</code>
+            .grid-gap<code>-value</code>
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex flex-2">
@@ -476,7 +476,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
       <tr>
         <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
           <span class="text-normal">
-            .grid-offset-<code>column-count</code>
+            .grid-offset<code>-column-count</code>
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex flex-2">

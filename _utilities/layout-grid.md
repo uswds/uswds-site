@@ -354,13 +354,10 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
   </div>
 </div>
 
-<h2 id="sass-mixins">Sass mixins</h2>
-When generating your CSS from USWDS source files, you have the option of customizing many system defaults by modifying project theme variables. USWDS also provides grid mixins for adding grid functionality to custom semantic component CSS.
-
-### Variables
+## Variables
 Variables and maps determine the number of columns, gutter width, and media-query point at which to begin floating columns. We use variables to generate the predefined grid classes documented on this page, as well as for the custom mixins noted under [spacing settings](#spacing-settings) and [utility mixins](#utility-mixins).
 
-#### Spacing settings
+### Spacing settings
 
 {% assign spacing_settings = site.data.settings.spacing.contents | slice: 3, 9 %}
 

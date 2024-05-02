@@ -1,10 +1,13 @@
 # Add page title. eg: Accessibility, Banner
 title: Tooltip
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-
 items:
+  - date: NNNN-NN-NN
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2646
+    githubRepo: uswds-site
   - date: 2023-09-29
     summary: "Restored the `opacity: 0` style rule to the tooltip's initial state."
     summaryAdditional: This prevents the component from flickering if its position needs to be recalculated.

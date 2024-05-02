@@ -49,11 +49,16 @@ Register for [upcoming calls on Digital.gov](https://digital.gov/events/). All U
       <li><a href="{{ video.event_link }}">{{ video.date }} script and more at Digital.gov</a></li>
     {% endif %}
   {% endif %}
+  {% if video.questions_link %}
+    <li><a href="{{ video.questions_link }}"> Q&A from the {{ video.date }} USWDS monthly call</a></li>
+  {% endif %}
 </ul>
 {% endif %}
 
-<div class="usa-embed-container margin-top-4">
-  <iframe src="https://www.youtube.com/embed/{{ video.id }}" title="{{ video.title }}" frameborder="0" allowfullscreen></iframe>
-</div>
+{% if video.id %}
+  <div class="usa-embed-container margin-top-4">
+    <iframe src="https://www.youtube.com/embed/{{ video.id }}" title="{{ video.title }}" frameborder="0" allowfullscreen></iframe>
+  </div>
+{% endif %}
 
 {% endfor %}

@@ -9,7 +9,7 @@ subnav:
   - href: /patterns/select-a-language/three-or-more-languages/
   - href: /patterns/select-a-language/selected-content/
   - href: /patterns/select-a-language/language-preferences/
-in_page_nav: false
+in_page_nav_headings: false
 ---
 
 ## Why this matters

@@ -23,8 +23,12 @@ subnav:
   href: '#column-wrapping'
 - text: Gutters
   href: '#gutters'
-- text: Sass mixins
-  href: '#sass-mixins'
+- text: Variables
+  href: '#variables'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 - text: Latest updates
   href: '#changelog'
 
@@ -368,7 +372,7 @@ Variables and maps determine the number of columns, gutter width, and media-quer
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-<table class="usa-table--borderless site-table-responsive site-table-simple">
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg display-inline-flex flex-2">Utility</th>

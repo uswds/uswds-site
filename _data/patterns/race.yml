@@ -1,11 +1,13 @@
 legend: |
   What is your race and/or ethnicity?
 hint: |
-  <span class="text-underline">Select all that apply</span> and enter additional details in the spaces below.
+  Select all that apply
+hint_additional: |
+  and enter additional details in the spaces below.
 categories:
   - name: American Indian or Alaska Native
     example: |
-      Enter, for example, Navajo Nation,
+      Navajo Nation,
       Blackfeet Tribe of the Blackfeet Indian Reservation of Montana,
       Native Village of Barrow Inupiat Traditional Government,
       Nome Eskimo Community, Aztec, Maya, etc.
@@ -18,7 +20,7 @@ categories:
       - Korean
       - Japanese
     example: |
-      Enter, for example, Pakistani, Hmong, Afghan, etc.
+      Pakistani, Hmong, Afghan, etc.
   - name: Black or African American
     types:
       - African American
@@ -28,7 +30,7 @@ categories:
       - Ethiopian
       - Somali
     example: |
-      Enter, for example, Trinidadian and Tobagonian, Ghanian, Congolese, etc.
+      Trinidadian and Tobagonian, Ghanian, Congolese, etc.
   - name: Hispanic or Latino
     types:
       - Mexican
@@ -38,7 +40,7 @@ categories:
       - Dominican
       - Guatemalan
     example: |
-      Enter, for example, Colombian, Honduran, Spaniard, etc.
+      Colombian, Honduran, Spaniard, etc.
   - name: Middle Eastern or North African
     types:
       - Lebanese
@@ -48,7 +50,7 @@ categories:
       - Iraqi
       - Israeli
     example: |
-      Enter, for example, Moroccan, Yemeni, Kurdish, etc.
+      Moroccan, Yemeni, Kurdish, etc.
   - name: Native Hawaiian or Pacific Islander
     types:
       - Native Hawaiian
@@ -58,7 +60,7 @@ categories:
       - Fijian
       - Marshallese
     example: |
-      Enter, for example, Chuukese, Palauan, Tahitian, etc.
+      Chuukese, Palauan, Tahitian, etc.
   - name: White
     types:
       - English
@@ -68,5 +70,5 @@ categories:
       - Polish
       - Scottish
     example: |
-      Enter, for example, French, Swedish, Norwegian, etc.
+      French, Swedish, Norwegian, etc.
 

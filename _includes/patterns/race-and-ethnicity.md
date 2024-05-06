@@ -6,7 +6,7 @@
     <legend class="usa-legend">
       <label>
         <strong>{{ data.legend }}</strong> <br/>
-        <span class="text-italic">{{ data.hint }}</span>
+        <span class="text-italic">{{ data.hint }} {{ data.hint_additional }}</span>
       </label>
     </legend>
 
@@ -37,7 +37,7 @@
           <label
             class="font-lang-2xs text-italic"
             for="{{ category.name | slugify }}-input">
-            {{ category.example }}
+            Enter, for example, {{ category.example }}
           </label>
           <input
             class="usa-input"

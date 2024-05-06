@@ -38,7 +38,7 @@ jekyll_get:
     json: "https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md"
     decode_content: true
   - data: install-readme
-    json: "https://api.github.com/repos/uswds/uswds/contents/README.md?ref=develop"
+    json: "https://api.github.com/repos/uswds/uswds/contents/README.md?ref=cm-update-npm-references"
     decode_content: true
   - data: security
     json: "https://api.github.com/repos/uswds/uswds/contents/SECURITY.md"

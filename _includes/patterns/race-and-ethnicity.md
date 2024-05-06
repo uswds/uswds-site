@@ -24,7 +24,7 @@
             <legend class="usa-legend font-lang-2xs text-italic">Provide details below</legend>
             <div class="grid-row margin-bottom-1">
               {% for type in category.types %}
-                <div class="usa-checkbox grid-col-4 margin-bottom-1">
+                <div class="usa-checkbox mobile-lg:grid-col-6 desktop:grid-col-4 margin-bottom-1">
                   <input class="usa-checkbox__input" type="checkbox" id="{{ type }}-checkbox" name="{{ type }}-checkbox">
                   <label class="usa-checkbox__label font-lang-xs" for="{{ type }}-checkbox">
                     {{ type }}

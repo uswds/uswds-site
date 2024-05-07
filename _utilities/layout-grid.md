@@ -362,6 +362,8 @@ Variables and maps determine the number of columns, gutter width, and media-quer
 
 ### Spacing settings
 
+Values are set as units tokens. You can change the default value of these  variables by updating them in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings).
+
 {% assign spacing_settings = site.data.settings.spacing.contents | slice: 3, 9 %}
 
 {% include settings-table.html

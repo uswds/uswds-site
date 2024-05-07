@@ -1,0 +1,9 @@
+title: Download
+type: documentation
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added note about incorrect package dates in downloadable USWDS package.
+    affectsGuidance: true
+    githubPr: 2621
+    githubRepo: uswds-site

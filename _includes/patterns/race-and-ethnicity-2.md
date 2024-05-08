@@ -5,7 +5,7 @@
   <fieldset name="race-and-ethnicity" class="usa-fieldset" aria-multiselectable="true">
     <legend class="usa-legend">
       <label>
-        <strong>{{ data.legend }}</strong> <br/>
+        <span class="text-bold">{{ data.legend }}</span> <br/>
         <span class="text-italic">{{ data.hint }}</span>
       </label>
     </legend>
@@ -15,7 +15,7 @@
         <legend>
           <div class="usa-checkbox">
             <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-2" name="{{ category.name | slugify }}-checkbox">
-            <label class="usa-checkbox__label text-bold" for="{{ category.name | slugify }}-checkbox-2">{{ category.name }}</label>
+            <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-2">{{ category.name }}</label>
           </div>
         </legend>
         <p class="padding-left-4 margin-top-05 margin-bottom-0 font-lang-2xs text-italic">

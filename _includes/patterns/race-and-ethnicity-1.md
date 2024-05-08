@@ -5,7 +5,7 @@
   <fieldset name="race-and-ethnicity" class="usa-fieldset" aria-multiselectable="true">
     <legend class="usa-legend">
       <label>
-        <strong>{{ data.legend }}</strong> <br/>
+        <span class="text-bold">{{ data.legend }}</span> <br/>
         <span class="text-italic">{{ data.hint }} {{ data.hint_additional }}</span>
       </label>
     </legend>

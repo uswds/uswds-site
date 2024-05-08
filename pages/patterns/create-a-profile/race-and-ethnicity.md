@@ -79,6 +79,9 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </div>
 </div>
 
+{:.site-component-section-title}
+## Extended
+
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
   <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
     <button type="button" class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true">
@@ -87,9 +90,16 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </h3>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/race-and-ethnicity-1.md %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-alt" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
+  <div id="accordion-preview-alt" class="usa-accordion__content">
     {% include patterns/race-and-ethnicity-1-alt.md %}
-    {% include patterns/race-and-ethnicity-2.md %}
-    {% include patterns/race-and-ethnicity-3.md %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -101,13 +111,61 @@ Allow selection of more than one race and acknowledge people with multiple racia
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
       {% highlight html%}{% include patterns/race-and-ethnicity-1.md %}{% endhighlight %}
-      {% highlight html%}{% include patterns/race-and-ethnicity-1-alt.md %}{% endhighlight %}
-      {% highlight html%}{% include patterns/race-and-ethnicity-2.md %}{% endhighlight %}
-      {% highlight html%}{% include patterns/race-and-ethnicity-3.md %}{% endhighlight %}
     </div>
     {% highlight html%}{% include patterns/race-and-ethnicity-1.md %}{% endhighlight %}
-    {% highlight html%}{% include patterns/race-and-ethnicity-1-alt.md %}{% endhighlight %}
+  </div>
+</div>
+
+{:.site-component-section-title}
+## Some details
+
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-2" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
+  <div id="accordion-preview-2" class="usa-accordion__content">
+    {% include patterns/race-and-ethnicity-2.md %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <h3 id="pattern-code" class="usa-accordion__heading site-accordion-heading">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-code-2" aria-expanded="false">
+      Pattern code
+    </button>
+  </h3>
+  <div id="accordion-code-2" class="usa-accordion__content highlight-code copy-code">
+    <div class="usa-sr-only">
+      {% highlight html%}{% include patterns/race-and-ethnicity-2.md %}{% endhighlight %}
+    </div>
     {% highlight html%}{% include patterns/race-and-ethnicity-2.md %}{% endhighlight %}
+  </div>
+</div>
+
+{:.site-component-section-title}
+## Condensed
+
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-3" aria-expanded="true">
+      Pattern preview
+    </button>
+  </h3>
+  <div id="accordion-preview-3" class="usa-accordion__content">
+    {% include patterns/race-and-ethnicity-3.md %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <h3 id="pattern-code" class="usa-accordion__heading site-accordion-heading">
+    <button type="button" class="usa-accordion__button" aria-controls="accordion-code-3" aria-expanded="false">
+      Pattern code
+    </button>
+  </h3>
+  <div id="accordion-code-3" class="usa-accordion__content highlight-code copy-code">
+    <div class="usa-sr-only">
+      {% highlight html%}{% include patterns/race-and-ethnicity-3.md %}{% endhighlight %}
+    </div>
     {% highlight html%}{% include patterns/race-and-ethnicity-3.md %}{% endhighlight %}
   </div>
 </div>

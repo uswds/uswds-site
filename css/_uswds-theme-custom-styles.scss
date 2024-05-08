@@ -1614,7 +1614,7 @@ iframe {
 .post-outdated-content {
   margin-bottom: units(4);
   margin-top: units(-5);
-  z-index: 99999;
+  z-index: z-index("top");
 
   @include at-media("tablet") {
     position: sticky;

@@ -22,9 +22,9 @@
           {% if category.types %}
           <fieldset class="usa-fieldset margin-top-05">
             <legend class="usa-legend font-lang-2xs text-italic">Provide details below</legend>
-            <div class="grid-row margin-bottom-1">
+            <div class="margin-bottom-1">
               {% for type in category.types %}
-                <div class="usa-checkbox mobile-lg:grid-col-6 desktop:grid-col-4 margin-bottom-1">
+                <div class="usa-checkbox">
                   <input class="usa-checkbox__input" type="checkbox" id="{{ type }}-checkbox" name="{{ type }}-checkbox">
                   <label class="usa-checkbox__label font-lang-xs" for="{{ type }}-checkbox">
                     {{ type }}
@@ -37,7 +37,11 @@
           <label
             class="font-lang-2xs text-italic"
             for="{{ category.name | slugify }}-input">
-            Enter, for example, {{ category.example }}
+            Enter, for example,
+              {% for type in category.types_additional %}
+                {{ type }},
+              {% endfor %}
+            etc.
           </label>
           <input
             class="usa-input"

@@ -6,11 +6,13 @@ hint_additional: |
   and enter additional details in the spaces below.
 categories:
   - name: American Indian or Alaska Native
-    example: |
-      Navajo Nation,
-      Blackfeet Tribe of the Blackfeet Indian Reservation of Montana,
-      Native Village of Barrow Inupiat Traditional Government,
-      Nome Eskimo Community, Aztec, Maya, etc.
+    types_additional:
+      - Navajo Nation,
+      - Blackfeet Tribe of the Blackfeet Indian Reservation of Montana
+      - Native Village of Barrow Inupiat Traditional Government
+      - Nome Eskimo Community
+      - Aztec
+      - Maya
   - name: Asian
     types:
       - Chinese
@@ -19,8 +21,10 @@ categories:
       - Vietnamese
       - Korean
       - Japanese
-    example: |
-      Pakistani, Hmong, Afghan, etc.
+    types_additional:
+      - Pakistani
+      - Hmong
+      - Afghan
   - name: Black or African American
     types:
       - African American
@@ -29,8 +33,10 @@ categories:
       - Nigerian
       - Ethiopian
       - Somali
-    example: |
-      Trinidadian and Tobagonian, Ghanian, Congolese, etc.
+    types_additional:
+      - Trinidadian and Tobagonian
+      - Ghanian
+      - Congolese
   - name: Hispanic or Latino
     types:
       - Mexican
@@ -39,8 +45,10 @@ categories:
       - Cuban
       - Dominican
       - Guatemalan
-    example: |
-      Colombian, Honduran, Spaniard, etc.
+    types_additional:
+      - Colombian
+      - Honduran
+      - Spaniard
   - name: Middle Eastern or North African
     types:
       - Lebanese
@@ -49,8 +57,10 @@ categories:
       - Syrian
       - Iraqi
       - Israeli
-    example: |
-      Moroccan, Yemeni, Kurdish, etc.
+    types_additional:
+      - Moroccan
+      - Yemeni
+      - Kurdish
   - name: Native Hawaiian or Pacific Islander
     types:
       - Native Hawaiian
@@ -59,8 +69,10 @@ categories:
       - Tongan
       - Fijian
       - Marshallese
-    example: |
-      Chuukese, Palauan, Tahitian, etc.
+    types_additional:
+      - Chuukese
+      - Palauan
+      - Tahitian
   - name: White
     types:
       - English
@@ -69,6 +81,8 @@ categories:
       - Italian
       - Polish
       - Scottish
-    example: |
-      French, Swedish, Norwegian, etc.
+    types_additional:
+      - French
+      - Swedish
+      - Norwegian
 

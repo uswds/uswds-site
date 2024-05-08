@@ -19,7 +19,11 @@
           </div>
         </legend>
         <p class="padding-left-4 margin-top-05 margin-bottom-0 font-lang-2xs text-italic">
-          For example, {{ category.example }}
+          For example,
+          {% for type in category.types %}
+            {{ type }},
+          {% endfor %}
+          etc.
         </p>
       </fieldset>
     {% endfor %}

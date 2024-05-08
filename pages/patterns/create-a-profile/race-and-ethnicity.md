@@ -86,7 +86,8 @@ Allow selection of more than one race and acknowledge people with multiple racia
     </button>
   </h3>
   <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/race-and-ethnicity.md %}
+    {% include patterns/race-and-ethnicity-1.md %}
+    {% include patterns/race-and-ethnicity-1-alt.md %}
     {% include patterns/race-and-ethnicity-2.md %}
     {% include patterns/race-and-ethnicity-3.md %}
   </div>
@@ -99,11 +100,13 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </h3>
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
-      {% highlight html%}{% include patterns/race-and-ethnicity.md %}{% endhighlight %}
+      {% highlight html%}{% include patterns/race-and-ethnicity-1.md %}{% endhighlight %}
+      {% highlight html%}{% include patterns/race-and-ethnicity-1-alt.md %}{% endhighlight %}
       {% highlight html%}{% include patterns/race-and-ethnicity-2.md %}{% endhighlight %}
       {% highlight html%}{% include patterns/race-and-ethnicity-3.md %}{% endhighlight %}
     </div>
-    {% highlight html%}{% include patterns/race-and-ethnicity.md %}{% endhighlight %}
+    {% highlight html%}{% include patterns/race-and-ethnicity-1.md %}{% endhighlight %}
+    {% highlight html%}{% include patterns/race-and-ethnicity-1-alt.md %}{% endhighlight %}
     {% highlight html%}{% include patterns/race-and-ethnicity-2.md %}{% endhighlight %}
     {% highlight html%}{% include patterns/race-and-ethnicity-3.md %}{% endhighlight %}
   </div>

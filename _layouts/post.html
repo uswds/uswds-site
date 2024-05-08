@@ -14,6 +14,10 @@ category: What’s new
 
   <main id="main-content" class="main-content">
     {% if page.expiration_date %}
+      <!--
+        Note: `%s` converts the date to "seconds since 1970", based on strftime formatting.
+        This allows us to compare dates to see which is greater.
+      -->
       {% assign today_date = 'now' | date: '%s' %}
       {% assign expiration_date = page.expiration_date | date: '%s' %}
       {% assign expired_content = false %}

@@ -8,7 +8,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+
   {% if page.expiration_date %}
+    <!--
+      Note: `%s` converts the date to "seconds since 1970", based on strftime formatting.
+      This allows us to compare dates to see which is greater.
+    -->
     {% assign today_date = 'now' | date: '%s' %}
     {% assign expiration_date = page.expiration_date | date: '%s' %}
     {% assign expired_content = false %}
@@ -19,7 +24,7 @@
   {% endif %}
 
   {% if expired_content == true or site.env != "production" %}
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content="noindex, nofollow {{ today_date }} {{ expiration_date }}" />
   {% endif %}
 
 <!-- Mobile Specific Metas

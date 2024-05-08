@@ -23,7 +23,7 @@ subnav:
   href: '#changelog'
 changelog:
   key: docs-settings
-in_page_nav: false
+in_page_nav_headings: "h2"
 ---
 
 ## Introducing USWDS settings

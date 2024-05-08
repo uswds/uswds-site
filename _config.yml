@@ -44,7 +44,7 @@ jekyll_get:
     json: "https://api.github.com/repos/uswds/uswds/contents/SECURITY.md"
     decode_content: true
   - data: hash
-    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-3.6.1-zip-hash.txt?ref=main"
+    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-3.8.0-zip-hash.txt?ref=main"
     decode_content: true
 
 repos:

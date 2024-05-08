@@ -1612,6 +1612,8 @@ iframe {
 }
 
 .post-outdated-content {
+  margin-bottom: units(4);
+  margin-top: units(-5);
   z-index: 99999;
 
   @include at-media("tablet") {
@@ -1620,6 +1622,8 @@ iframe {
   }
 
   @include at-media("desktop") {
+    margin-left: units(4);
+    margin-top: 0;
     top: units($height-nav-secondary);
   }
 

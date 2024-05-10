@@ -58,11 +58,11 @@
     "pa11y-ci:sitemap-mobile": "pa11y-ci --config .pa11yci--mobile --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next|together/'",
     "pa11y-ci:sitemap-json": "pa11y-ci --json > pa11y-results.json --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next|together/'",
     "prettier:scss": "npx prettier --write './css/**/*.scss'"
-  },
+  },  
   "devDependencies": {
     "@18f/identity-stylelint-config": "^2.0.0",
     "ansi-colors": "^4.1.3",
-    "axe-core": "^4.9.0",
+    "axe-core": "^4.9.1",
     "browserify": "^17.0.0",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.12",
@@ -88,9 +88,9 @@
     "postcss": "^8.4.38",
     "postcss-csso": "^6.0.1",
     "prettier": "^2.8.8",
-    "sass": "^1.74.1",
+    "sass": "^1.77.0",
     "simplecrawler": "^1.1.9",
-    "snyk": "^1.1288.0",
+    "snyk": "^1.1291.0",
     "stylelint": "^15.11.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"

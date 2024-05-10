@@ -20,7 +20,6 @@ category: What’s new
       -->
       {% assign today_date = 'now' | date: '%s' %}
       {% assign expiration_date = page.expiration_date | date: '%s' %}
-      {% assign expired_content = false %}
 
       {% if today_date > expiration_date %}
         {% include outdated-content-alert.html %}

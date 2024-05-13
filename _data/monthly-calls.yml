@@ -1,6 +1,19 @@
 videos:
+ - title: Introduction to Web Components
+    subtitle: Learn the basics about Web Components and what this technology means for USWDS
+    description: |
+     Dan Williams and James Mejia from USWDS described the basics of Web Components: what they are, how this technology works, and how Web Components can simplify how teams implement and stay up-to-date with the design system.
+    date: April 2024
+    id: GHomUbYTgwQ
+    event_link: https://digital.gov/event/2024/04/18/uswds-monthly-call-april-2024/
+    missing_script: true
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-april-2024.pptx
+      size: 5.9
+      pages: 96
+    questions_link: https://github.com/uswds/uswds/discussions/5922
   - title: Building with USWDS tools
-    subtitle: Learn how to build new components that look and feel consistent with existing components.
+    subtitle: Learn how to build new components that look and feel consistent with existing components
     description: |
      Our USWDS team did a live [tutorial on customizing and extending USWDS](https://github.com/uswds/uswds-tutorial). We covered working with settings, applying tokens, handling style conflicts, and ensuring good color contrast.
     date: March 2024

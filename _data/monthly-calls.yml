@@ -1,5 +1,5 @@
 videos:
- - title: Introduction to Web Components
+  - title: Introduction to Web Components
     subtitle: Learn the basics about Web Components and what this technology means for USWDS
     description: |
      Dan Williams and James Mejia from USWDS described the basics of Web Components: what they are, how this technology works, and how Web Components can simplify how teams implement and stay up-to-date with the design system.

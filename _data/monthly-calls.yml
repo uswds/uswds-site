@@ -6,7 +6,6 @@ videos:
     date: April 2024
     id: GHomUbYTgwQ
     event_link: https://digital.gov/event/2024/04/18/uswds-monthly-call-april-2024/
-    missing_script: true
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-april-2024.pptx
       size: 5.9
@@ -19,7 +18,6 @@ videos:
     date: March 2024
     id: M2_SVDc_eCM
     event_link: https://digital.gov/event/2024/03/21/uswds-monthly-call-march-2024/
-    missing_script: true
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-march-2024.pptx
       size: 1.9
@@ -32,7 +30,6 @@ videos:
     date: February 2024
     id: cmP9XsYVwQI
     event_link: https://digital.gov/event/2024/02/15/uswds-monthly-call-february-2024/
-    missing_script: true
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/USWDS%20Monthly%20Call%20Feb%202024.pptx
       size: 5.8
@@ -54,7 +51,6 @@ videos:
     date: January 2024
     id: xP4IWCdzWmA
     event_link: https://digital.gov/event/2024/01/18/uswds-monthly-call-january-2024/
-    missing_script: true
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-january-2024.pptx
       size: 7.8

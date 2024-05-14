@@ -11,11 +11,11 @@
     </legend>
 
     {% for category in data.categories %}
-      <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}">
+      <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}-alt">
         <legend>
           <div class="usa-checkbox">
-            <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox" name="{{ category.name | slugify }}-checkbox">
-            <label class="usa-checkbox__label text-bold" for="{{ category.name | slugify }}-checkbox">{{ category.name }}</label>
+            <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-alt" name="{{ category.name | slugify }}-checkbox-alt">
+            <label class="usa-checkbox__label text-bold" for="{{ category.name | slugify }}-checkbox-alt">{{ category.name }}</label>
           </div>
         </legend>
         <div class="padding-left-4">
@@ -25,8 +25,8 @@
             <div class="margin-bottom-1">
               {% for type in category.types %}
                 <div class="usa-checkbox">
-                  <input class="usa-checkbox__input" type="checkbox" id="{{ type }}-checkbox" name="{{ type }}-checkbox">
-                  <label class="usa-checkbox__label font-lang-xs" for="{{ type }}-checkbox">
+                  <input class="usa-checkbox__input" type="checkbox" id="{{ type }}-checkbox-alt" name="{{ type }}-checkbox-alt">
+                  <label class="usa-checkbox__label font-lang-xs" for="{{ type }}-checkbox-alt">
                     {{ type }}
                   </label>
                 </div>
@@ -36,7 +36,7 @@
           {% endif %}
           <label
             class="font-lang-2xs text-italic"
-            for="{{ category.name | slugify }}-input">
+            for="{{ category.name | slugify }}-input-alt">
             Enter, for example,
               {% for type in category.types_additional %}
                 {{ type }},
@@ -45,8 +45,8 @@
           </label>
           <input
             class="usa-input"
-            id="{{ category.name | slugify }}-input"
-            name="{{ category.name | slugify }}-input">
+            id="{{ category.name | slugify }}-input-alt"
+            name="{{ category.name | slugify }}-input-alt">
         </div>
       </fieldset>
     {% endfor %}

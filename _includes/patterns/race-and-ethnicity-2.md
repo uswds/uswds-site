@@ -21,23 +21,19 @@
         {% assign types = category.types_additional %}
       {% endif %}
 
-      <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}-2">
-        <legend>
-          <div class="usa-checkbox">
-            <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-2" name="{{ category.name | slugify }}-checkbox-2">
-            <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-2">
-              {{ category.name }}
-              <p class="margin-top-05 margin-bottom-0 font-lang-2xs text-italic">
-                For example,
-                {% for type in types %}
-                  {{ type }},
-                {% endfor %}
-                etc.
-              </p>
-            </label>
-          </div>
-        </legend>
-      </fieldset>
+      <div class="usa-checkbox">
+        <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-2" name="{{ category.name | slugify }}-checkbox-2">
+        <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-2">
+          {{ category.name }}
+          <p class="margin-top-05 margin-bottom-0 font-lang-2xs text-italic">
+            For example,
+            {% for type in types %}
+              {{ type }},
+            {% endfor %}
+            etc.
+          </p>
+        </label>
+      </div>
     {% endfor %}
   </fieldset>
 </form>

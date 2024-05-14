@@ -11,14 +11,10 @@
     </legend>
 
     {% for category in data.categories %}
-      <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}-3">
-        <legend>
-          <div class="usa-checkbox">
-            <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-3" name="{{ category.name | slugify }}-checkbox-3">
-            <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-3">{{ category.name }}</label>
-          </div>
-        </legend>
-      </fieldset>
+      <div class="usa-checkbox">
+        <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-3" name="{{ category.name | slugify }}-checkbox-3">
+        <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-3">{{ category.name }}</label>
+      </div>
     {% endfor %}
   </fieldset>
 </form>

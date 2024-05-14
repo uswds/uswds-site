@@ -7,7 +7,7 @@ hint_additional: |
 categories:
   - name: American Indian or Alaska Native
     types_additional:
-      - Navajo Nation,
+      - Navajo Nation
       - Blackfeet Tribe of the Blackfeet Indian Reservation of Montana
       - Native Village of Barrow Inupiat Traditional Government
       - Nome Eskimo Community
@@ -35,7 +35,7 @@ categories:
       - Somali
     types_additional:
       - Trinidadian and Tobagonian
-      - Ghanian
+      - Ghanaian
       - Congolese
   - name: Hispanic or Latino
     types:

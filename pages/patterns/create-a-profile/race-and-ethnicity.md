@@ -92,16 +92,6 @@ Allow selection of more than one race and acknowledge people with multiple racia
     {% include patterns/race-and-ethnicity-1.md %}
   </div>
 </div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
-    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-alt" aria-expanded="true">
-      Pattern preview
-    </button>
-  </h3>
-  <div id="accordion-preview-alt" class="usa-accordion__content">
-    {% include patterns/race-and-ethnicity-1-alt.md %}
-  </div>
-</div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <h3 id="pattern-code" class="usa-accordion__heading site-accordion-heading">
     <button type="button" class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false">

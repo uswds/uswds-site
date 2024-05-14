@@ -1,32 +1,22 @@
-{% assign data = site.data.patterns.race %}
-
-<h4 class="site-preview-heading">Race and Ethnicity</h4>
-<form class="usa-form usa-form--large">
-  <fieldset name="race-and-ethnicity" class="usa-fieldset" aria-multiselectable="true">
-    <legend class="usa-legend">
-      <label>
-        <span class="text-bold">{{ data.legend }}</span> <br/>
-        <span class="text-italic">{{ data.hint }} {{ data.hint_additional }}</span>
-      </label>
-    </legend>
+{% include patterns/race-and-ethnicity-intro.md %}
 
     {% for category in data.categories %}
-      <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}-1">
+      <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}-alt">
         <legend>
           <div class="usa-checkbox">
-            <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-1" name="{{ category.name | slugify }}-checkbox-1">
-            <label class="usa-checkbox__label text-bold" for="{{ category.name | slugify }}-checkbox-1">{{ category.name }}</label>
+            <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-alt" name="{{ category.name | slugify }}-checkbox-alt" aria-describedby="details">
+            <label class="usa-checkbox__label text-bold" for="{{ category.name | slugify }}-checkbox-alt">{{ category.name }}</label>
           </div>
         </legend>
         <div class="padding-left-4">
           {% if category.types %}
           <fieldset class="usa-fieldset margin-top-05">
-            <legend class="usa-legend font-lang-2xs text-italic">Provide details below</legend>
-            <div class="grid-row margin-bottom-1">
+            <legend class="usa-legend font-lang-2xs text-italic" id="details">Provide details below</legend>
+            <div class="margin-bottom-2">
               {% for type in category.types %}
-                <div class="usa-checkbox mobile-lg:grid-col-6 desktop:grid-col-4 margin-bottom-1">
-                  <input class="usa-checkbox__input" type="checkbox" id="{{ type }}-checkbox-1" name="{{ type }}-checkbox-1">
-                  <label class="usa-checkbox__label font-lang-xs" for="{{ type }}-checkbox-1">
+                <div class="usa-checkbox">
+                  <input class="usa-checkbox__input" type="checkbox" id="{{ type }}-checkbox-alt" name="{{ type }}-checkbox-alt">
+                  <label class="usa-checkbox__label font-lang-xs" for="{{ type }}-checkbox-alt">
                     {{ type }}
                   </label>
                 </div>
@@ -36,7 +26,7 @@
           {% endif %}
           <label
             class="font-lang-2xs text-italic"
-            for="{{ category.name | slugify }}-input-1">
+            for="{{ category.name | slugify }}-input-alt">
             Enter, for example,
               {% for type in category.types_additional %}
                 {{ type }},
@@ -45,8 +35,8 @@
           </label>
           <input
             class="usa-input"
-            id="{{ category.name | slugify }}-input-1"
-            name="{{ category.name | slugify }}-input-1">
+            id="{{ category.name | slugify }}-input-alt"
+            name="{{ category.name | slugify }}-input-alt">
         </div>
       </fieldset>
     {% endfor %}

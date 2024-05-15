@@ -6,6 +6,7 @@ category: About
 author: Ben Judy, Natalie Kurz, and Norah Maki
 image: /img/2021-next-blog/post-1-social-share.jpg
 excerpt: USWDS Release 2.10 brings new components and updates as a result of our research into recent federal agency emergency response.
+expiration_date: 2024-04-15
 ---
 
 We recently conducted research with federal partners to better understand the challenges agencies face in dealing with emergency response situations like COVID-19, and how the design system can better support them in the future.

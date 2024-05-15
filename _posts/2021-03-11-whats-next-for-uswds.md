@@ -6,6 +6,7 @@ category: About
 author: Arden Klemmer, Natalie Kurz, Norah Maki, and Kim Schulke
 image: /img/2021-next-blog/post-2-social-share.jpg
 excerpt: "Today we’re releasing a new and exciting report and strategy that outlines what’s next for the U.S. Web Design System (USWDS) and our community."
+expiration_date: 2024-04-15
 ---
 
 Today we’re releasing a new and exciting report and strategy that outlines [what’s next for the U.S. Web Design System (USWDS)]({{ site.baseurl }}/next/) and our community.

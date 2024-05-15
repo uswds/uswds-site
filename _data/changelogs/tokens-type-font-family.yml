@@ -2,7 +2,7 @@ title: Typesetting tokens
 type: token
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-05-15
     summary: Updated settings configuration code example.
     affectsGuidance: true
     githubPr: 2379

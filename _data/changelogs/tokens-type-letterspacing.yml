@@ -2,7 +2,7 @@ title: Letterspacing tokens
 type: token
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-05-15
     summary: Updated documented value for `auto` token.
     affectsGuidance: true
     githubPr: 2379

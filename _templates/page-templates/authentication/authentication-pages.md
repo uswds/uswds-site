@@ -10,7 +10,7 @@ subnav:
   - href: /templates/authentication-pages/create-account/
   - href: /templates/authentication-pages/sign-in/
   - href: /templates/authentication-pages/multiple-sign-in-options/
-in_page_nav: false
+in_page_nav_headings: false
 ---
 
 It can be difficult or confusing for users to create accounts or sign in to a website. The best way to help is to provide context about why they’re creating an account and to remove unnecessary distractions from the page.

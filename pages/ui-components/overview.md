@@ -8,7 +8,7 @@ type: docs
 redirect_from:
   - /components/
   - /form-controls/
-in_page_nav: false
+in_page_nav_headings: false
 ---
 
 {% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" %}

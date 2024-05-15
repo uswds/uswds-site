@@ -2,7 +2,7 @@ title: Character count
 type: component
 changelogURL:
 items:
-  - date: 2024-04-18
+  - date: 2024-05-15
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 2607

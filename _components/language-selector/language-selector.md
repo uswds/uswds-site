@@ -40,7 +40,6 @@ title: Language selector
 type: component
 changelog:
   key: component-language-selector
-in_page_nav_headings: "h2"
 ---
 
 ## Language selector pattern guidance

@@ -22,4 +22,4 @@ title: Language selector with two languages
 type: component
 ---
 
-{% include component.html %}
+{% include component.html level="h3" %}

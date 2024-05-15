@@ -7,7 +7,7 @@ items:
     affectsGuidance: true
     githubPr: 2379
     githubRepo: uswds-site
-  - date: NNNN-NN-NN
+  - date: 2024-05-5
     summary: Removed the settings code example in "Using letterspacing tokens" section.
     affectsGuidance: true
     githubPr: 2379

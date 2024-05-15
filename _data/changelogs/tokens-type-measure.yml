@@ -2,7 +2,7 @@ title: Measure tokens
 type: token
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-05-5
     summary: Updated the setting code example in "Using measure tokens" section.
     affectsGuidance: true
     githubPr: 2379

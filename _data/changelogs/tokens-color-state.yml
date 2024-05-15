@@ -2,7 +2,7 @@ title: State color tokens
 type: token
 changelogURL:
 items:
-  - date: 2024-04-02
+  - date: 2024-05-15
     summary: Updated guidance for configuring color settings.
     affectsGuidance: true
     githubPr: 2377

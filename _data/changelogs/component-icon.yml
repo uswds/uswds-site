@@ -2,7 +2,7 @@ title: Icon
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-05-15
     summary: Added clarity to icon guidance.
     affectsGuidance: true
     githubPr: 2643

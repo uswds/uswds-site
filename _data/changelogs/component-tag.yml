@@ -1,10 +1,12 @@
 title: Tag
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-
 items:
-  # 3.0 release
+  - date: 2024-05-15
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2645
+    githubRepo: uswds-site
   - date: 2022-04-28
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true

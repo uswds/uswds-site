@@ -6,6 +6,7 @@ category: About
 author: Dan O. Williams, Maya Benari
 image: /img/introducing-uswds-2-0/feature-image.jpg
 excerpt: Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.
+expiration_date: 2024-04-15
 ---
 
 <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">

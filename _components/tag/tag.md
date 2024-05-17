@@ -12,16 +12,8 @@ title: Tag
 category: Components
 lead: A tag draws attention to new or categorized content elements.
 subnav:
-- text: Preview
-  href: '#tag-preview'
-- text: Code
-  href: '#tag-code'
-- text: Guidance
-  href: '#tag-guidance'
-- text: Package
-  href: '#tag-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Tag accessibility tests
+  href: /components/tag/accessibility-tests/
 tags:
   - label
   - lable

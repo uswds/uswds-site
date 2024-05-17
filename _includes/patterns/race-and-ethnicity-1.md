@@ -1,4 +1,4 @@
-{% include patterns/race-and-ethnicity-intro.md %}
+{% include patterns/race-and-ethnicity-intro.md variant="input" %}
 
     {% for category in data.categories %}
       <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}-alt">
@@ -12,7 +12,7 @@
           {% if category.types %}
           <fieldset class="usa-fieldset margin-top-05">
             <legend class="usa-legend font-lang-2xs text-italic" id="details">Provide details below</legend>
-            <div class="margin-bottom-2">
+            <div class="margin-bottom-105">
               {% for type in category.types %}
                 <div class="usa-checkbox">
                   <input class="usa-checkbox__input" type="checkbox" id="{{ type }}-checkbox-alt" name="{{ type }}-checkbox-alt">

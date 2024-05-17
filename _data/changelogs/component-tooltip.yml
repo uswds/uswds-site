@@ -11,7 +11,7 @@ items:
     affectsJavascript: true
     affectsStyles: true
     githubPr: 5919
-    githubRepo: uswds-site
+    githubRepo: uswds
     versionUswds: N.N.N
   - date: 2023-09-29
     summary: "Restored the `opacity: 0` style rule to the tooltip's initial state."

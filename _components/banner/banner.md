@@ -11,16 +11,8 @@ redirect_from:
   - /banner/
   - /components/banners/
 subnav:
-- text: Preview
-  href: '#banner-preview'
-- text: Code
-  href: '#banner-code'
-- text: Guidance
-  href: '#banner-guidance'
-- text: Package
-  href: '#banner-package'
-- text: Latest updates
-  href: '#changelog'
+  - text: Banner accessibility tests
+    href: /components/banner/accessibility-tests/
 title: Banner
 type: component
 changelog:

@@ -101,7 +101,7 @@
   },
   "snyk": true,
   "dependencies": {
-    "@uswds/compile": "^1.1.0",
+    "@uswds/compile": "github:uswds/uswds-compile#cm-POAM-may-2024",
     "@uswds/uswds": "3.8.0"
   }
 }

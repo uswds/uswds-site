@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Restored layout-grid dependency in footer package and removed layout-grid styles from footer stylesheet.
-    summaryAdditional:  This update prevents visual regression in other components with layout-grid utility classes in their markup.
+    summary: Restored the `usa-layout-grid` dependency in the footer package and removed layout grid styles from the footer stylesheet. 
+    summaryAdditional:  This update prevents visual regressions in footer and other components with layout grid utility classes in their markup.
     affectsStyles: true
     githubPr: 5930
     githubRepo: uswds

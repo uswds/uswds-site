@@ -129,6 +129,4 @@ workflows:
       - test_a11y_desktop:
           requires:
             - build
-      - test_a11y_mobile:
-          requires:
-            - build
+

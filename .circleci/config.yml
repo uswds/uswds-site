@@ -112,7 +112,7 @@ jobs:
           name: Run pa11y-ci desktop
           command: npm run start-detached && npm run pa11y-ci:sitemap
     # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
-    resource_class: large
+    resource_class: 2xlarge+
 
 workflows:
   circle-uswds-site:
@@ -129,4 +129,3 @@ workflows:
       - test_a11y_desktop:
           requires:
             - build
-

@@ -13,5 +13,3 @@ gem 'rspec-core'
 gem 'rspec-expectations'
 
 gem "webrick", "~> 1.7"
-
-gem 'sass-embedded', '~> 1.77', '>= 1.77.2'

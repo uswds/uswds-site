@@ -42,7 +42,7 @@ test_items:
   - summary: Banner can be accessed, opened, and closed with only a keyboard.
     summary_additional: |
       When you navigate your site with a keyboard,
-      you can access the banner by using `tab` to move forward or `tab` + `shift` to move backwards.
+      you can access the banner by using `tab` to move forward or `shift` + `tab` to move backwards.
       You can use the `enter` and `spacebar` keys to open and close the banner.
     test_status: pass
     test_type: keyboard

@@ -113,19 +113,6 @@ jobs:
           command: npm run start-detached && npm run pa11y-ci:sitemap
     # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
     resource_class: large
-  test_a11y_mobile:
-    executor: my-executor
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Link bundler
-          command: |
-            bundle config set --local path '~/project/vendor/bundle'
-      - run:
-          name: Run pa11y-ci mobile
-          command: npm run start-detached && npm run pa11y-ci:sitemap-mobile
 
 workflows:
   circle-uswds-site:

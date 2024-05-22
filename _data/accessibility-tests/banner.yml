@@ -92,7 +92,7 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.0
     wcag_criterion: 4.1.2
-  - summary: Decorative elements are labeled appropriately.
+  - summary: Screen reader does not announce decorative icons.
     summary_additional: |
        When you access and open the banner while using a screen reader,
        you don't hear any information about the flag, blue government building, or green lock icon.

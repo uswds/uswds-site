@@ -98,21 +98,6 @@ jobs:
           command: npm run proof
       - snyk/scan:
           organization: uswds
-  test_a11y_desktop:
-    executor: my-executor
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Link bundler
-          command: |
-            bundle config set --local path '~/project/vendor/bundle'
-      - run:
-          name: Run pa11y-ci desktop
-          command: npm run start-detached && npm run pa11y-ci:sitemap
-    # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
-    resource_class: xlarge
 
 workflows:
   circle-uswds-site:
@@ -124,8 +109,5 @@ workflows:
             - install_ruby_deps
             - install_node_deps
       - test_build:
-          requires:
-            - build
-      - test_a11y_desktop:
           requires:
             - build

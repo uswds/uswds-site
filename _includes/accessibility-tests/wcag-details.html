@@ -102,6 +102,11 @@
   {% assign criterion_name = "Reading level" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#reading-level" %}
 {% endif %}
+{% if item.wcag_criterion == "3.2.3" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Consistent navigation" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#consistent-navigation" %}
+{% endif %}
 {% if item.wcag_criterion == "3.2.4" %}
   {% assign criterion_level = "AA" %}
   {% assign criterion_name = "Consistent identification" %}

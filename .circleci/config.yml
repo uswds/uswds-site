@@ -11,6 +11,7 @@ executors:
 jobs:
   install_ruby_deps:
     executor: my-executor
+    resource_class: large
     steps:
       - checkout
       - restore_cache:
@@ -36,6 +37,7 @@ jobs:
             - "vendor/bundle"
   install_node_deps:
     executor: my-executor
+    resource_class: large
     steps:
       - checkout
       - restore_cache:
@@ -54,6 +56,7 @@ jobs:
             - "node_modules"
   build:
     executor: my-executor
+    resource_class: large
     steps:
       - checkout
       - attach_workspace:
@@ -84,6 +87,7 @@ jobs:
             - "node_modules"
   test_build:
     executor: my-executor
+    resource_class: large
     steps:
       - checkout
       - attach_workspace:

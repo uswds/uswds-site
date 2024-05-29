@@ -4,6 +4,9 @@
     "timeout": 120000,
     "concurrency": 10,
     "standard": "WCAG2AA",
+    "chromeLaunchConfig": {
+      "args": ["--disable-dev-shm-usage", "--no-sandbox", "--disable-gpu"]
+    },
     "runners": ["axe"]
   }
 }

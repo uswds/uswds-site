@@ -101,7 +101,6 @@ jobs:
           organization: uswds
   test_a11y_desktop:
     executor: my-executor
-    parallelism: 4
     steps:
       - checkout
       - attach_workspace:
@@ -115,7 +114,6 @@ jobs:
           command: npm run start-detached && npm run pa11y-ci:sitemap
   test_a11y_mobile:
     executor: my-executor
-    parallelism: 4
     steps:
       - checkout
       - attach_workspace:

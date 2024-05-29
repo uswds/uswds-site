@@ -52,7 +52,6 @@ function buildUSWDSComponents() {
   } else {
     dutil.logMessage(__dirname, componentDir);
     dutil.logMessage("Building USWDS components", "Building USWDS...");
-    return Promise.resolve();
     if (!fs.existsSync(gulpfile)) {
       return Promise.reject(
         new Error(

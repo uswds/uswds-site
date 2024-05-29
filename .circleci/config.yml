@@ -6,7 +6,6 @@ orbs:
 executors:
   my-executor:
     resource_class: large
-    parallelism: 4
     docker:
       - image: cimg/ruby:3.1.2-browsers
 
@@ -102,6 +101,7 @@ jobs:
           organization: uswds
   test_a11y_desktop:
     executor: my-executor
+    parallelism: 4
     steps:
       - checkout
       - attach_workspace:
@@ -115,6 +115,7 @@ jobs:
           command: npm run start-detached && npm run pa11y-ci:sitemap
   test_a11y_mobile:
     executor: my-executor
+    parallelism: 4
     steps:
       - checkout
       - attach_workspace:

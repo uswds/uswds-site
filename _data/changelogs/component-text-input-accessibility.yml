@@ -1,0 +1,8 @@
+title: Text input accessibility tests
+type: component
+items:
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: NNNN
+    githubRepo: uswds-site

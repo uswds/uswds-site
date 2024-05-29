@@ -5,13 +5,13 @@ orbs:
 
 executors:
   my-executor:
+    resource_class: large
     docker:
       - image: cimg/ruby:3.1.2-browsers
 
 jobs:
   install_ruby_deps:
     executor: my-executor
-    resource_class: large
     steps:
       - checkout
       - restore_cache:
@@ -37,7 +37,6 @@ jobs:
             - "vendor/bundle"
   install_node_deps:
     executor: my-executor
-    resource_class: large
     steps:
       - checkout
       - restore_cache:
@@ -56,7 +55,6 @@ jobs:
             - "node_modules"
   build:
     executor: my-executor
-    resource_class: large
     steps:
       - checkout
       - attach_workspace:
@@ -87,7 +85,6 @@ jobs:
             - "node_modules"
   test_build:
     executor: my-executor
-    resource_class: large
     steps:
       - checkout
       - attach_workspace:
@@ -115,8 +112,6 @@ jobs:
       - run:
           name: Run pa11y-ci desktop
           command: npm run start-detached && npm run pa11y-ci:sitemap
-    # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
-    resource_class: large
   test_a11y_mobile:
     executor: my-executor
     steps:

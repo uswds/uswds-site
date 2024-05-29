@@ -50,7 +50,6 @@ function buildUSWDSComponents() {
     dutil.logMessage("Building USWDS components", "USWDS is already built.");
     return Promise.resolve();
   } else {
-    dutil.logMessage(__dirname, componentDir);
     dutil.logMessage("Building USWDS components", "Building USWDS...");
     if (!fs.existsSync(gulpfile)) {
       return Promise.reject(

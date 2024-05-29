@@ -17,6 +17,16 @@
   {% assign criterion_name = "Meaningful sequence" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#meaningful-sequence" %}
 {% endif %}
+{% if item.wcag_criterion == "1.3.3" %}
+  {% assign criterion_level = "A" %}
+  {% assign criterion_name = "Meaningful sequence" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#sensory-characteristics" %}
+{% endif %}
+{% if item.wcag_criterion == "1.3.4" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Orientation" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#orientation" %}
+{% endif %}
 {% if item.wcag_criterion == "1.3.5" %}
   {% assign criterion_level = "AA" %}
   {% assign criterion_name = "Identify input purpose" %}

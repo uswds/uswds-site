@@ -41,12 +41,12 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - npm-cache-{{ checksum "package-lock.json" }}
+            - npm-cache-{{ checksum "package.json" }}
       - run:
           name: Install node dependencies
           command: npm install
       - save_cache:
-          key: npm-cache-{{ checksum "package-lock.json" }}
+          key: npm-cache-{{ checksum "package.json" }}
           paths:
             - node_modules
       - persist_to_workspace:
@@ -61,7 +61,7 @@ jobs:
           at: ~/project
       - restore_cache:
           keys:
-            - npm-cache-{{ checksum "package-lock.json" }}
+            - npm-cache-{{ checksum "package.json" }}
       - restore_cache:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}

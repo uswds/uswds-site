@@ -85,6 +85,7 @@ jobs:
             - "node_modules"
   test_build:
     executor: my-executor
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:
@@ -101,6 +102,7 @@ jobs:
           organization: uswds
   test_a11y_desktop:
     executor: my-executor
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:
@@ -114,6 +116,7 @@ jobs:
           command: npm run start-detached && npm run pa11y-ci:sitemap
   test_a11y_mobile:
     executor: my-executor
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:

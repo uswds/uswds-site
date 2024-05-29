@@ -111,8 +111,8 @@ test_items:
     wcag_criterion: 2.4.7
   - summary: The focus indicator has proper size, perimeter and contrast.
     summary_additional: |
-      When viewing the focus indicator, you can tell it is at least the area of 2 CSS pixels unfocused and has 3:1 contrast between 
-      focused and unfocused pixels.
+      When you use a keyboard to tab into the search component, the focus indicator is clearly visible with the 
+      proper size, perimeter, and contrast.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.0

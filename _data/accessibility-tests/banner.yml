@@ -66,10 +66,10 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.0
     wcag_criterion: 2.1.2
-  - summary: Banner is the first interactive object after the main navigation.
+  - summary: The banner button is the first interactive object after the "skip navigation" link.
     summary_additional: |
-      When you navigate your site with a keyboard and skip navigation,
-      the "Here's how you know" banner button is the first focusable item on the page.
+      When you navigate your site with a keyboard and bypass the "skip navigation" link,
+      the “Here's how you know” banner button is the first focusable item on the page.
     test_status: conditional
     test_type: keyboard
     version_tested: 3.8.0

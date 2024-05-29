@@ -6,6 +6,7 @@ orbs:
 executors:
   my-executor:
     resource_class: large
+    parallelism: 4
     docker:
       - image: cimg/ruby:3.1.2-browsers
 

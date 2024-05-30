@@ -10,7 +10,7 @@ test_items:
     wcag_criterion: 1.4.1
   - summary: Search button background and text meet color contrast requirements. 
     summary_additional: |
-      When you use ANDI color contrast analyzer on the search button, the background and lettering are at least 4:5:1.
+      When you use ANDI color contrast analyzer on the search button, the background and lettering are at least 4.5:1.
     test_status: pass
     test_type: general
     version_tested: 3.8.0

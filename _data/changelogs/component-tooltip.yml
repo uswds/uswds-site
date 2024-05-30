@@ -6,6 +6,13 @@ changelogURL:
 
 items:
   - date: NNNN-NN-NN
+    summary: Updated component behavior to close active tooltips when the `escape` key is pressed.
+    summaryAdditional: This allows the component to meet the "dismissible" standard outlined in [WCAG 1.4.13](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus).
+    affectsJavascript: true
+    githubPr: 5909
+    githubRepo: uswds-site
+    versionUswds: N.N.N
+  - date: NNNN-NN-NN
     summary: Updated component behavior to allow users to hover over tooltip content.
     summaryAdditional: This allows the component to meet the "hoverable" standard outlined in [WCAG 1.4.13](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus).
     affectsJavascript: true

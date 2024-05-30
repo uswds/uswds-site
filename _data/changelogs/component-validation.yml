@@ -2,7 +2,7 @@ title: Validation
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-05-31
     summary: Fixed a bug which caused non-interactive checklist items to receive focus on tab.
     summaryAdditional:  Now, only the interactive input will receive focus.
     isBreaking: false
@@ -10,7 +10,7 @@ items:
     affectsJavascript: true
     githubPr: 5835
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.8.1
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

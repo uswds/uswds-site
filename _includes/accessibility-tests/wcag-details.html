@@ -17,6 +17,11 @@
   {% assign criterion_name = "Meaningful sequence" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#meaningful-sequence" %}
 {% endif %}
+{% if item.wcag_criterion == "1.3.4" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Orientation" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#orientation" %}
+{% endif %}
 {% if item.wcag_criterion == "1.3.5" %}
   {% assign criterion_level = "AA" %}
   {% assign criterion_name = "Identify input purpose" %}
@@ -77,11 +82,16 @@
   {% assign criterion_name = "Focus order" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#focus-order" %}
 {% endif %}
+{% if item.wcag_criterion == "2.4.5" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Multiple ways" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#multiple-ways" %}
+{% endif %}
 {% if item.wcag_criterion == "2.4.6" %}
   {% assign criterion_level = "AA" %}
   {% assign criterion_name = "Headings and labels" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#headings-and-labels" %}
-  {% endif %}
+{% endif %}
 {% if item.wcag_criterion == "2.4.7" %}
   {% assign criterion_level = "AA" %}
   {% assign criterion_name = "Focus visible" %}
@@ -92,6 +102,11 @@
   {% assign criterion_name = "Focus appearance (WCAG 2.2)" %}
   {% assign criterion_url = "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html" %}
 {% endif %}
+{% if item.wcag_criterion == "2.5.3" %}
+  {% assign criterion_level = "A" %}
+  {% assign criterion_name = "Label in name" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#label-in-name" %}
+{% endif %}
 {% if item.wcag_criterion == "2.5.5" %}
   {% assign criterion_level = "AAA" %}
   {% assign criterion_name = "Target size" %}
@@ -101,6 +116,11 @@
   {% assign criterion_level = "AAA" %}
   {% assign criterion_name = "Reading level" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#reading-level" %}
+{% endif %}
+{% if item.wcag_criterion == "3.2.2" %}
+  {% assign criterion_level = "A" %}
+  {% assign criterion_name = "On input" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#on-input" %}
 {% endif %}
 {% if item.wcag_criterion == "3.2.3" %}
   {% assign criterion_level = "AA" %}

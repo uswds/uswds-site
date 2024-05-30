@@ -2,9 +2,16 @@ title: Button group
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improved styles for nested button groups.
+    summaryAdditional: Now, nested button groups should match the height of their parents.
+    affectsStyles: true
+    githubPr: 5885
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-03-11
     summary: Improved the appearance of button groups when text wraps to multiple lines.
-    summaryAdditional:  Now, every button in the group will be the same height. 
+    summaryAdditional:  Now, every button in the group will be the same height.
     isBreaking: false
     affectsAccessibility:
     affectsAssets:

@@ -12,6 +12,10 @@ subnav:
   href: '#system-tokens'
 - text: Using weight tokens
   href: '#using-weight-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-type-font-weight
 ---
 
 {% assign tokens = site.data.tokens.typesetting.weight %}
@@ -184,7 +188,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
         <td data-title="Example">
           <span>
-            $theme-heading-font-weight: <code>'heavy'</code>
+            $theme-font-weight-normal: <code>500</code>
           </span>
         </td>
       </tr>

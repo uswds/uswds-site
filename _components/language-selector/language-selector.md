@@ -40,7 +40,6 @@ title: Language selector
 type: component
 changelog:
   key: component-language-selector
-in_page_nav: false
 ---
 
 ## Language selector pattern guidance

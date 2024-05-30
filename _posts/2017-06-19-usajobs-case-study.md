@@ -5,6 +5,7 @@ tags:
 - web design standards
 - design
 category: About
+expiration_date: 2024-04-15
 ---
 The U.S. Web Design Standards team continues to sit down with various agencies who are using the Standards. In this fourth post in our series, we met with the team at the [Lab@OPM](https://lab.opm.gov/) and learned how they used the Standards to refresh [USAJOBS](https://www.usajobs.gov/).
 

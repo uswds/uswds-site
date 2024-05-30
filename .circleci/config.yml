@@ -67,9 +67,6 @@ jobs:
             - gem-cache-{{ checksum "Gemfile.lock" }}
             - gem-cache
       - run:
-          name: Build USWDS components if needed
-          command: npm run build:uswds
-      - run:
           name: Build site assets
           command: npm run build:all-assets
       - run:

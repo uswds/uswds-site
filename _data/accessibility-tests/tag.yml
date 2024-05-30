@@ -1,0 +1,29 @@
+title: Tag
+component_status: pass
+test_items:
+# General tests
+  - summary: Color alone is not used to convey meaning.
+    summary_additional: When viewing a tag, you never have to rely on color alone to determine part of its meaning.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.0
+    wcag_criterion: 1.4.1
+  - summary: Tag content meets color contrast requirements.
+    summary_additional: When you use ANDI color contrast analyzer on a tag, the contrast between the text and background color is at least 4:5:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.0
+    wcag_criterion: 1.4.3
+  - summary: Tag meets color contrast requirements against the content background.
+    summary_additional: When you use ANDI color contrast analyzer on a tag, the contrast between the tag and surrounding background is at least 3:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.0
+    wcag_criterion: 1.4.11
+# Zoom/screen magnification tests
+  - summary: Tags are visible and functional when screen is magnified.
+    summary_additional: When you zoom in to 200%, you can use the tag components with no loss of information.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.8.0
+    wcag_criterion: 1.4.4

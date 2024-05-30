@@ -5,7 +5,7 @@
     "concurrency": 10,
     "standard": "WCAG2AA",
     "chromeLaunchConfig": {
-      "args": ["--disable-gpu"]
+      "args": ["--no-sandbox"]
     },
     "runners": ["axe"]
   }

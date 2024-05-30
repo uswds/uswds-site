@@ -5,7 +5,7 @@
     "concurrency": 10,
     "standard": "WCAG2AA",
     "chromeLaunchConfig": {
-      "args": ["--disable-dev-shm-usage", "--no-sandbox", "--disable-gpu"]
+      "args": ["--disable-dev-shm-usage", "--no-sandbox"]
     },
     "runners": ["axe"],
     "viewport": {

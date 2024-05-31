@@ -10,7 +10,7 @@ items:
     summaryAdditional: This allows the component to meet the "dismissible" standard outlined in [WCAG 1.4.13](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus).
     affectsJavascript: true
     githubPr: 5909
-    githubRepo: uswds-site
+    githubRepo: uswds
     versionUswds: 3.8.1
   - date: 2024-05-31
     summary: Updated component behavior to allow users to hover over tooltip content.

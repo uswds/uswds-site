@@ -2,6 +2,13 @@ title: Input mask
 type: component
 changelogURL:
 items:
+  - date: 2024-05-31
+    summary: Fixed a bug that caused input mask to break when it is not a direct child of a form.
+    summaryAdditional: Nested input masks will now initialize and work properly.
+    affectsJavascript: true
+    githubPr: 5518
+    githubRepo: uswds
+    versionUswds: 3.8.1
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

@@ -23,12 +23,12 @@
 - **Provide text context for external links.** Following a link is a user decision. Users need enough information to make that decision - short links without context often don’t provide that. Plain, straightforward text can be the best way to communicate to users that a link will take them away from your site, which can be useful whether the external link is to either a government or a non-government site. When possible, use the content of the link text itself to indicate where it goes. By itself, an external link indicator (like an icon) can be ambiguous. Adding plain text can help make any link destination more clear.
 
     **Example 1:**
-    > [CDC recommends using sunscreen when you’re outside](https://www.cdc.gov/cancer/skin/basic_info/sun-safety.htm) to reduce your risk of skin damage and skin cancer.
+    > [CDC recommends using sunscreen when you’re outside](https://www.cdc.gov/skin-cancer/sun-safety/) to reduce your risk of skin damage and skin cancer.
 
     > To ensure food safety during an emergency, [the Red Cross recommends you do not open the refrigerator or freezer](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/food-safety.html).
 
     **Example 2:**
-    > [Sun safety guidance [cdc.gov]](https://www.cdc.gov/cancer/skin/basic_info/sun-safety.htm).
+    > [Sun safety guidance [cdc.gov]](https://www.cdc.gov/skin-cancer/sun-safety/).
 
     > [Food safety during an emergency [redcross.org]](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/food-safety.html)
 

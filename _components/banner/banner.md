@@ -11,8 +11,8 @@ redirect_from:
   - /banner/
   - /components/banners/
 subnav:
-  - text: Banner accessibility tests
-    href: /components/banner/accessibility-tests/
+- text: Banner accessibility tests
+  href: /components/banner/accessibility-tests/
 title: Banner
 type: component
 changelog:

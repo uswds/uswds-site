@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2024-05-31
-    summary: Fixed a bug that mistakenly added the word "An" to Spanish variants in the component preview.
+    summary: Fixed a bug that mistakenly added the English word "An" to Spanish variants in the component preview.
     summaryAdditional:
     affectsGuidance: true
     affectsContent: true

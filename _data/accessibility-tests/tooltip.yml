@@ -29,7 +29,7 @@ test_items:
     summary_additional: When you move the pointer over an active tooltip, the tooltip stays open.
     test_status: pass
     test_type: general
-    version_tested: 3.8.0
+    version_tested: 3.8.1
     wcag_criterion: 1.4.13
   - summary: Active tooltips can be dismissed without moving the mouse or keyboard focus away from the tooltip trigger.
     summary_additional: |
@@ -37,13 +37,13 @@ test_items:
       the tooltip closes.
     test_status: pass
     test_type: general
-    version_tested: 3.8.0
+    version_tested: 3.8.1
     wcag_criterion: 1.4.13
   - summary: Active tooltips stay open until they are dismissed.
     summary_additional: Active tooltips close only when you move focus away from the tooltip trigger or press the `escape` key.
     test_status: pass
     test_type: general
-    version_tested: 3.8.0
+    version_tested: 3.8.1
     wcag_criterion: 1.4.13
 # Zoom/screen magnification tests
   - summary: Using zoom does not obstruct the tooltip or other content.

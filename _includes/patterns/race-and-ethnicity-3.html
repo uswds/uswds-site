@@ -1,4 +1,4 @@
-{% include patterns/race-and-ethnicity-intro.md %}
+{% include patterns/race-and-ethnicity-intro.html %}
     {% for category in data.categories %}
       <div class="usa-checkbox">
         <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-3" name="{{ category.name | slugify }}-checkbox-3">

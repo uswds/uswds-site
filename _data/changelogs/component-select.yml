@@ -2,6 +2,11 @@ title: Select
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Added WCAG compliance tag and accessibility test status section.
+  affectsGuidance: true
+  githubPr: 2702
+  githubRepo: uswds-site
 - date: 2023-08-23
   summary: Added ellipses to overflow text in the multiple select variant.
   summaryAdditional: This provides a clear indication to users that there is text that extends beyond the select width.

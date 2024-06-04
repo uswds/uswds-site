@@ -1,0 +1,10 @@
+title: Select accessibility tests
+type: component
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2702
+    githubRepo: uswds-site

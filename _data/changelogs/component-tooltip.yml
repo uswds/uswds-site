@@ -5,6 +5,23 @@ type: component
 changelogURL:
 
 items:
+  - date: 2024-05-31
+    summary: Updated component behavior to close active tooltips when the `escape` key is pressed.
+    summaryAdditional: This allows the component to meet the "dismissible" standard outlined in [WCAG 1.4.13](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus).
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 5909
+    githubRepo: uswds
+    versionUswds: 3.8.1
+  - date: 2024-05-31
+    summary: Updated component behavior to allow users to hover over tooltip content.
+    summaryAdditional: This allows the component to meet the "hoverable" standard outlined in [WCAG 1.4.13](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus).
+    affectsAccessibility: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 5919
+    githubRepo: uswds
+    versionUswds: 3.8.1
   - date: 2023-09-29
     summary: "Restored the `opacity: 0` style rule to the tooltip's initial state."
     summaryAdditional: This prevents the component from flickering if its position needs to be recalculated.

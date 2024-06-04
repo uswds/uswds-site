@@ -6,7 +6,7 @@ hint_additional: |
   and enter additional details in the spaces below.
 categories:
   - name: American Indian or Alaska Native
-    types_additional:
+    examples:
       - Navajo Nation
       - Blackfeet Tribe of the Blackfeet Indian Reservation of Montana
       - Native Village of Barrow Inupiat Traditional Government
@@ -21,7 +21,7 @@ categories:
       - Vietnamese
       - Korean
       - Japanese
-    types_additional:
+    examples:
       - Pakistani
       - Hmong
       - Afghan
@@ -33,7 +33,7 @@ categories:
       - Nigerian
       - Ethiopian
       - Somali
-    types_additional:
+    examples:
       - Trinidadian and Tobagonian
       - Ghanaian
       - Congolese
@@ -45,7 +45,7 @@ categories:
       - Cuban
       - Dominican
       - Guatemalan
-    types_additional:
+    examples:
       - Colombian
       - Honduran
       - Spaniard
@@ -57,7 +57,7 @@ categories:
       - Syrian
       - Iraqi
       - Israeli
-    types_additional:
+    examples:
       - Moroccan
       - Yemeni
       - Kurdish
@@ -69,7 +69,7 @@ categories:
       - Tongan
       - Fijian
       - Marshallese
-    types_additional:
+    examples:
       - Chuukese
       - Palauan
       - Tahitian
@@ -81,7 +81,7 @@ categories:
       - Italian
       - Polish
       - Scottish
-    types_additional:
+    examples:
       - French
       - Swedish
       - Norwegian

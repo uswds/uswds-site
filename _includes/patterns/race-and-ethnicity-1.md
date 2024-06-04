@@ -28,7 +28,7 @@
             class="font-lang-2xs text-italic"
             for="{{ category.name | slugify }}-input-alt">
             Enter, for example,
-              {% for type in category.types_additional %}
+              {% for type in category.examples %}
                 {{ type }},
               {% endfor %}
             etc.

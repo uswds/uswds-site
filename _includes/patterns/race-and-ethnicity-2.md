@@ -4,8 +4,8 @@
 
       {% if category.types %}
         {% assign types = category.types %}
-      {% elsif category.types_additional %}
-        {% assign types = category.types_additional %}
+      {% elsif category.examples %}
+        {% assign types = category.examples %}
       {% endif %}
 
       <div class="usa-checkbox">

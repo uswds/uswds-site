@@ -106,7 +106,7 @@ test_items:
     summary_additional: |
       When you use a screen reader and navigate to a select option,
       you hear every instruction for how to operate and for any options available.
-    test_status: exception
+    test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.0
     wcag_criterion: 3.3.2

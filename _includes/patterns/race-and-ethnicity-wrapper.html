@@ -3,7 +3,7 @@
   <fieldset name="race-and-ethnicity" class="usa-fieldset" aria-multiselectable="true">
     <legend class="usa-legend">
         <b>{{ data.legend }}</b><br/>
-        {{ data.hint }}{% if include.hint-input %}{{ data.hint_input }}{% endif %}
+        {{ data.hint }}{% if include.hint-input == true %}{{ data.hint_input }}{% endif %}
     </legend>
     {% include {{ include.content }} %}
   </fieldset>

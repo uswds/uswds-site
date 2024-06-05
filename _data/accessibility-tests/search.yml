@@ -3,7 +3,7 @@ component_status: pass
 test_items:
 # General tests
   - summary: Color is not the only method used to convey the search button's meaning.
-    summary_additional: When using the search button, you can read text to learn the button's meaning.
+    summary_additional: When using the search button, "search" text or a magnifying glass icon convey the button's meaning.
     test_status: pass
     test_type: general
     version_tested: 3.8.0
@@ -37,7 +37,7 @@ test_items:
     test_type: general
     version_tested: 3.8.0
     wcag_criterion: 3.2.4
-  - summary: The search feature appears in the same location on every page of the website.
+  - summary: The site search feature appears in the same location on every page of the website.
     summary_additional: |
       When you navigate to different pages on the website, the search feature is always in the same place.
     test_status: conditional
@@ -48,19 +48,14 @@ test_items:
     summary_additional: |
       When you use the search feature, you may hear instructions with a screen reader or see them on the page. 
       Instructions may be specific depending on intent (e.g., search this site, search this directory). Instructions do not disappear.
-    test_status: exception
-    status_details: | 
-      There are no instructions to tell the user what kind of search can be performed. Information will need to be added to help the user 
-      understand what type of search they can perform (e.g., site search, databases)
-    github_issue_number: 5937
-    github_issue_repo: uswds
+    test_status: conditional
     test_type: general
     version_tested: 3.8.0
     wcag_criterion: 3.3.2
   - summary: The label "search" always has the same meaning and function.
     summary_additional: |
       You can hear "search" when tabbing over the search button with a screen reader; you use the word "search" as a voice command to activate search. 
-      You can see the word "search" when looking at the search button.
+      You can see the word "search" or a magnifying glass icon when looking at the search button.
     test_status: pass
     test_type: general
     version_tested: 3.8.0
@@ -95,17 +90,15 @@ test_items:
       button, and perform the search.
     test_status: exception
     status_details: | 
-      Warning: Some browsers show an "x" that lets users delete text in the search field. Keyboard tabbing will not focus on the "x," 
-      but users can use the backspace key to delete text from the search field.
+      Warning: Some browsers show an "x" that lets users delete text in the search field. This is not a result of USWDS, it is built in browser behavior. 
+      Keyboard tabbing will not focus on the "x," but users can use the backspace key to delete text from the search field.
     github_issue_number: 5834
     github_issue_repo: uswds
     test_type: keyboard
     version_tested: 3.8.0
     wcag_criterion: 2.1.1
-  - summary: |
-      The text field and the search button each have a 3:1 contrast outline against the background. 
-      The outline size is greater than or equal to the perimeter of the search field. 
-    summary_additional: When you use a keyboard to tab into a button or text field, you see an indicator and thick outline. 
+  - summary: Focus indicators are clearly visible
+    summary_additional: When you use a keyboard to tab into a button, the button has a visible outline or other clear indication of focus.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.0

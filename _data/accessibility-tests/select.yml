@@ -65,7 +65,7 @@ test_items:
   - summary: Select options are read in the same order that they appear on the page.
     summary_additional: |
       When you use a screen reader and navigate through the dropdown list,
-      you hear each text option in the same order in which they appear on the page (e.g., left to right and top to bottom for English pages).
+      you hear each text option in the same order in which they appear on the page.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.0

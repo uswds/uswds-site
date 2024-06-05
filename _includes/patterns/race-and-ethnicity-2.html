@@ -7,15 +7,15 @@
   {% endif %}
 
   <div class="usa-checkbox">
-    <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-2" name="{{ category.name | slugify }}-checkbox-2">
+    <input
+      class="usa-checkbox__input"
+      type="checkbox"
+      id="{{ category.name | slugify }}-checkbox-2"
+      name="{{ category.name | slugify }}-checkbox-2">
     <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-2">
       {{ category.name }}
       <p class="margin-top-05 margin-bottom-0 usa-hint">
-        For example,
-        {% for type in types %}
-          {{ type }},
-        {% endfor %}
-        etc.
+        For example, {% for type in types %} {{ type }}, {% endfor %} etc.
       </p>
     </label>
   </div>

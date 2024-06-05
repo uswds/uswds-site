@@ -2,8 +2,15 @@
   <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}-alt">
     <legend>
       <div class="usa-checkbox">
-        <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-alt" name="{{ category.name | slugify }}-checkbox-alt" aria-describedby="details">
-        <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-alt"><b>{{ category.name }}</b></label>
+        <input
+          class="usa-checkbox__input"
+          type="checkbox"
+          id="{{ category.name | slugify }}-checkbox-alt"
+          name="{{ category.name | slugify }}-checkbox-alt"
+          aria-describedby="details">
+        <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-alt">
+          <b>{{ category.name }}</b>
+        </label>
       </div>
     </legend>
     <div class="padding-left-4">
@@ -13,7 +20,11 @@
         <div class="margin-bottom-105">
           {% for type in category.types %}
             <div class="usa-checkbox">
-              <input class="usa-checkbox__input" type="checkbox" id="{{ type }}-checkbox-alt" name="{{ type }}-checkbox-alt">
+              <input
+                class="usa-checkbox__input"
+                type="checkbox"
+                id="{{ type }}-checkbox-alt"
+                name="{{ type }}-checkbox-alt">
               <label class="usa-checkbox__label" for="{{ type }}-checkbox-alt">
                 {{ type }}
               </label>
@@ -25,11 +36,7 @@
       <label
         class="usa-hint"
         for="{{ category.name | slugify }}-input-alt">
-        Enter, for example,
-          {% for type in category.examples %}
-            {{ type }},
-          {% endfor %}
-        etc.
+        Enter, for example, {% for type in category.examples %}{{ type }}, {% endfor %} etc.
       </label>
       <input
         class="usa-input"

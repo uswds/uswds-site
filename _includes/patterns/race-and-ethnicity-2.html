@@ -1,11 +1,9 @@
 {% for category in data.categories %}
-
   {% if category.types %}
     {% assign types = category.types %}
   {% elsif category.examples %}
     {% assign types = category.examples %}
   {% endif %}
-
   <div class="usa-checkbox">
     <input
       class="usa-checkbox__input"

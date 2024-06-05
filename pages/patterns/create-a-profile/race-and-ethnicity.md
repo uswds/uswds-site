@@ -110,7 +110,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 ## Some details
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
+  <h3 id="pattern-preview-2" class="usa-accordion__heading site-accordion-heading">
     <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-2" aria-expanded="true">
       Pattern preview
     </button>
@@ -120,7 +120,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <h3 id="pattern-code" class="usa-accordion__heading site-accordion-heading">
+  <h3 id="pattern-code-2" class="usa-accordion__heading site-accordion-heading">
     <button type="button" class="usa-accordion__button" aria-controls="accordion-code-2" aria-expanded="false">
       Pattern code
     </button>
@@ -137,7 +137,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 ## Condensed
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <h3 id="pattern-preview" class="usa-accordion__heading site-accordion-heading">
+  <h3 id="pattern-preview-3" class="usa-accordion__heading site-accordion-heading">
     <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-3" aria-expanded="true">
       Pattern preview
     </button>
@@ -147,7 +147,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <h3 id="pattern-code" class="usa-accordion__heading site-accordion-heading">
+  <h3 id="pattern-code-3" class="usa-accordion__heading site-accordion-heading">
     <button type="button" class="usa-accordion__button" aria-controls="accordion-code-3" aria-expanded="false">
       Pattern code
     </button>

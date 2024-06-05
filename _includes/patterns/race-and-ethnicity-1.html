@@ -3,7 +3,7 @@
     <legend>
       <div class="usa-checkbox">
         <input class="usa-checkbox__input" type="checkbox" id="{{ category.name | slugify }}-checkbox-alt" name="{{ category.name | slugify }}-checkbox-alt" aria-describedby="details">
-        <label class="usa-checkbox__label text-bold" for="{{ category.name | slugify }}-checkbox-alt">{{ category.name }}</label>
+        <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-alt"><b>{{ category.name }}</b></label>
       </div>
     </legend>
     <div class="padding-left-4">
@@ -14,7 +14,7 @@
           {% for type in category.types %}
             <div class="usa-checkbox">
               <input class="usa-checkbox__input" type="checkbox" id="{{ type }}-checkbox-alt" name="{{ type }}-checkbox-alt">
-              <label class="usa-checkbox__label font-lang-xs" for="{{ type }}-checkbox-alt">
+              <label class="usa-checkbox__label" for="{{ type }}-checkbox-alt">
                 {{ type }}
               </label>
             </div>

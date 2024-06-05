@@ -5,11 +5,10 @@
         <b>{{ data.legend }}</b>
         <br/>
         {{ data.hint }}
-        {% if include.variant == "input" %}
+        {% if include.hint-input %}
           {{ data.hint_additional }}
         {% endif %}
     </legend>
-
     {% include {{ include.content }} %}
   </fieldset>
 </form>

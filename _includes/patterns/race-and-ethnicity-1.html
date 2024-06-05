@@ -9,7 +9,7 @@
     <div class="padding-left-4">
       {% if category.types %}
       <fieldset class="usa-fieldset margin-top-05">
-        <legend class="usa-legend font-lang-2xs text-italic" id="details">Provide details below</legend>
+        <legend class="usa-legend" id="details">Provide details below</legend>
         <div class="margin-bottom-105">
           {% for type in category.types %}
             <div class="usa-checkbox">
@@ -23,7 +23,7 @@
       </fieldset>
       {% endif %}
       <label
-        class="font-lang-2xs text-italic"
+        class="usa-hint"
         for="{{ category.name | slugify }}-input-alt">
         Enter, for example,
           {% for type in category.examples %}

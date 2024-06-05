@@ -7,7 +7,7 @@
           type="checkbox"
           id="{{ category.name | slugify }}-checkbox-alt"
           name="{{ category.name | slugify }}-checkbox-alt"
-          aria-describedby="details">
+          aria-describedby="details-{{ category.name | slugify }}">
         <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-alt">
           <b>{{ category.name }}</b>
         </label>
@@ -16,7 +16,7 @@
     <div class="padding-left-4">
       {% if category.types %}
       <fieldset class="usa-fieldset margin-top-05">
-        <legend class="usa-legend" id="details">Provide details below</legend>
+        <legend class="usa-legend" id="details-{{ category.name | slugify }}">Provide details below</legend>
         <div class="margin-bottom-105">
           {% for type in category.types %}
             <div class="usa-checkbox">

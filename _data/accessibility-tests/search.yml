@@ -157,10 +157,11 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.0
     wcag_criterion: 2.4.6
-  - summary: Screen reader announces that search results will be displayed.
+  - summary: Page context does not change before search submission.
     summary_additional: |
-      When you complete a search using a screen reader, you are informed of where search results will appear. 
-      You may be taken to a results page, or you may be notified that search results will display on the same page as the search field.
+      Updating page context or search results before expected can cause confusion for users of assistive technology. 
+      If search results are opened within a new window, advanced warning should be given alongside search 
+      instructions in the aria-label or button text.
     test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.0

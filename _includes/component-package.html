@@ -6,7 +6,9 @@
 {% assign package = site.data.packages
   | where: "name", page.component.package
   | first %}
-<h2 id="{{ componentKey }}-package" class="site-component-section-title">Package</h2>
+{% assign heading_level = include.level | default: "h2" %}
+
+<{{ heading_level }} id="{{ componentKey }}-package" class="site-component-section-title">Package</{{ heading_level }}>
 <ul class="usa-content-list">
   <li>
     <strong>Package usage:</strong> <code>@forward "{{ page.component.package }}";</code>

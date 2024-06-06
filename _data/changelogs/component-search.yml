@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
-  summary: Added WCAG compliance tag and accessibility test status section
+  summary: Added WCAG compliance tag and accessibility test status section.
   affectsGuidance: true
   githubPr: 2694
   githubRepo: uswds-site

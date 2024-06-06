@@ -105,7 +105,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.0
     wcag_criterion: 2.1.1
-  - summary: Focus indicators are clearly visible
+  - summary: Focus indicators are clearly visible.
     summary_additional: When you use a keyboard to tab into a button, the button has a visible outline or other clear indication of focus.
     test_status: pass
     test_type: keyboard

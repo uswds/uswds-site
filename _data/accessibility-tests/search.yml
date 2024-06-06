@@ -19,7 +19,6 @@ test_items:
   - summary: Search button background and icon meet color contrast requirements.
     summary_additional: |
       When you use ANDI color contrast analyzer on the search icon button, the contrast between the background and icon is at least 3:1.
-      contrast between the icon and background is at least 3:1.
     test_status: conditional
     test_type: general
     version_tested: 3.7.1

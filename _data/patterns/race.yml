@@ -1,9 +1,6 @@
-legend: |
-  What is your race and/or ethnicity?
-hint: |
-  Select all that apply
-hint_input: |
-  and enter additional details in the spaces below
+legend: What is your race and/or ethnicity?
+hint: Select all that apply
+hint_input: and enter additional details in the spaces below
 categories:
   - name: American Indian or Alaska Native
     examples:

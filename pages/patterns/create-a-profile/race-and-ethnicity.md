@@ -100,7 +100,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </h3>
   <div id="accordion-code" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
-      {% highlight html%}{% include patterns/race-and-ethnicity-wrapper.html content="patterns/race-and-ethnicity-1.html" hint-input=true %}{% endhighlight %}
+      {% highlight text%}{% include patterns/race-and-ethnicity-wrapper.html content="patterns/race-and-ethnicity-1.html" hint-input=true %}{% endhighlight %}
     </div>
     {% highlight html%}{% include patterns/race-and-ethnicity-wrapper.html content="patterns/race-and-ethnicity-1.html" hint-input=true %}{% endhighlight %}
   </div>
@@ -127,7 +127,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </h3>
   <div id="accordion-code-2" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
-      {% highlight html%}{% include patterns/race-and-ethnicity-wrapper.html content="patterns/race-and-ethnicity-2.html" %}{% endhighlight %}
+      {% highlight text%}{% include patterns/race-and-ethnicity-wrapper.html content="patterns/race-and-ethnicity-2.html" %}{% endhighlight %}
     </div>
     {% highlight html%}{% include patterns/race-and-ethnicity-wrapper.html content="patterns/race-and-ethnicity-2.html" %}{% endhighlight %}
   </div>
@@ -154,7 +154,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </h3>
   <div id="accordion-code-3" class="usa-accordion__content highlight-code copy-code">
     <div class="usa-sr-only">
-      {% highlight html%}{% include patterns/race-and-ethnicity-wrapper.html content="patterns/race-and-ethnicity-3.html" %}{% endhighlight %}
+      {% highlight text%}{% include patterns/race-and-ethnicity-wrapper.html content="patterns/race-and-ethnicity-3.html" %}{% endhighlight %}
     </div>
     {% highlight html%}{% include patterns/race-and-ethnicity-wrapper.html content="patterns/race-and-ethnicity-3.html" %}{% endhighlight %}
   </div>

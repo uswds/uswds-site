@@ -1,3 +1,11 @@
+{% comment %}
+  This partial is a child of race-and-ethnicity-wrapper.
+  Params are defined in race.yml
+
+  @param {string} category.name - Top-level race/ethnicity categories
+  @param {string} category.types - Second-level race/ethnicity categories
+{% endcomment %}
+
 {% for category in data.categories %}
   <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}-alt">
     <legend>

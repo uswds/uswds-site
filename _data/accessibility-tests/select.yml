@@ -5,7 +5,7 @@ test_items:
   - summary: Select component works on mobile devices.
     summary_additional: |
       On mobile devices and tablets,
-      "select" should work in both portrait and landscape orientation with no loss of functionality.
+      the select component should work in both portrait and landscape orientation with no loss of functionality.
     test_status: pass
     test_type: general
     version_tested: 3.8.0
@@ -73,7 +73,7 @@ test_items:
   - summary: Screen reader provides information about the purpose of the select.
     summary_additional: |
       When you are using a screen reader,
-      you will know the common purpose of the select option (e.g., date, time, state).
+      you will know the common purpose of the select option (e.g., "Select your state").
     test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.0

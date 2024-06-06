@@ -73,7 +73,7 @@ test_items:
   - summary: Screen reader provides information about the purpose of the select.
     summary_additional: |
       When you are using a screen reader,
-      you will know the common purpose of the select option (eg., date, time, state).
+      you will know the common purpose of the select option (e.g., date, time, state).
     test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.0

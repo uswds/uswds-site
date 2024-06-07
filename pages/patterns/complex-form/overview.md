@@ -8,7 +8,7 @@ subnav:
   - href: /patterns/complete-a-complex-form/establish-trust/
   - href: /patterns/complete-a-complex-form/progress-easily/
   - href: /patterns/complete-a-complex-form/keep-a-record/
-in_page_nav: false
+in_page_nav_headings: false
 ---
 
 ## Why this matters

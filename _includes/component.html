@@ -25,8 +25,8 @@
 {%- if known_issues.items -%}
   {% include known-issues-alert.html %}
 {% endif %}
-{% include component-preview-and-code.html %}
-{% include component-guidance.html %}
+{% include component-preview-and-code.html level=include.level %}
+{% include component-guidance.html level=include.level %}
 <!-- Add accessibility test results -->
 {% if component %}
   {% include accessibility-tests/test-results-summary.html page='main' %}
@@ -35,7 +35,7 @@
   {% include known-issues.html %}
 {% endif %}
 {% if page.component.package %}
-  {% include component-package.html %}
+  {% include component-package.html level=include.level %}
 {% endif %}
 {% if page.disclaimer %}
   {% include disclaimer.html %}

@@ -26,4 +26,4 @@ variants:
     description: Display a simple header.
 ---
 
-{% include component.html %}
+{% include component.html level="h3" %}

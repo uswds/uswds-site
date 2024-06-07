@@ -17,6 +17,11 @@
   {% assign criterion_name = "Meaningful sequence" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#meaningful-sequence" %}
 {% endif %}
+{% if item.wcag_criterion == "1.3.5" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Identify input purpose" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#identify-input-purpose" %}
+{% endif %}
 {% if item.wcag_criterion == "1.3.6" %}
   {% assign criterion_level = "AAA" %}
   {% assign criterion_name = "Identify purpose" %}
@@ -57,6 +62,11 @@
   {% assign criterion_name = "Text spacing" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#text-spacing" %}
 {% endif %}
+{% if item.wcag_criterion == "1.4.13" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Content on hover or focus" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus" %}
+{% endif %}
 {% if item.wcag_criterion == "2.1.1" %}
   {% assign criterion_level = "A" %}
   {% assign criterion_name = "Keyboard" %}
@@ -92,10 +102,30 @@
   {% assign criterion_name = "Target size" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#target-size" %}
 {% endif %}
+{% if item.wcag_criterion == "3.1.5" %}
+  {% assign criterion_level = "AAA" %}
+  {% assign criterion_name = "Reading level" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#reading-level" %}
+{% endif %}
 {% if item.wcag_criterion == "3.2.4" %}
   {% assign criterion_level = "AA" %}
   {% assign criterion_name = "Consistent identification" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#consistent-identification" %}
+{% endif %}
+{% if item.wcag_criterion == "3.3.1" %}
+  {% assign criterion_level = "A" %}
+  {% assign criterion_name = "Error identification" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#error-identification" %}
+{% endif %}
+{% if item.wcag_criterion == "3.3.2" %}
+  {% assign criterion_level = "A" %}
+  {% assign criterion_name = "Labels or instructions" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#labels-or-instructions" %}
+{% endif %}
+{% if item.wcag_criterion == "3.3.3" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Error suggestion" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#error-suggestion" %}
 {% endif %}
 {% if item.wcag_criterion == "4.1.1" %}
   {% assign criterion_level = "A" %}

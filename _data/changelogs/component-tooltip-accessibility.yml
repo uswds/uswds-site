@@ -2,7 +2,7 @@ title: Tooltip accessibility tests
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-06-07
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 2646

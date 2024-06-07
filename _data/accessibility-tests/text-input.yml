@@ -2,10 +2,9 @@ title: Text input
 component_status: pass
 test_items:
 # General tests
-  - summary: Instructions that use visual cues also use non-visual information.
+  - summary: Instructions that use visual cues also provide non-visual instruction.
     summary_additional: |
-      Text input instructions are announced through an ARIA label and can be understood 
-      by users who can’t see shapes or locations.
+       If you use visual cues like shapes or locations to describe controls (e.g., "input below"), also provide extra instructions. This way, users who can't see shapes or locations can still understand how to use the controls.
     test_status: conditional
     test_type: general
     version_tested: 3.8.0

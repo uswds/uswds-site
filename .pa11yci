@@ -2,8 +2,11 @@
   "defaults": {
     "userAgent": "pa11y",
     "timeout": 120000,
-    "concurrency": 2,
+    "concurrency": 10,
     "standard": "WCAG2AA",
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox"]
+    },
     "runners": ["axe"]
   }
 }

@@ -2,7 +2,7 @@ title: Banner accessibility tests
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-06-07
     summary: Added accessibility tests page.
     summaryAdditional:
     affectsGuidance: true

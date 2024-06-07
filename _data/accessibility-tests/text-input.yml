@@ -46,7 +46,7 @@ test_items:
 # Screen reader tests
   - summary: Fields and labels are read in the same order that they appear on the page. 
     summary_additional: |
-      When you use a screen reader and navigating through input fields, you hear each text field and 
+      When you use a screen reader and navigate through input fields, you hear each text field and 
       label announced in the same order in which they appear on the page (e.g., left to right and 
       top to bottom for English pages).
     test_status: conditional

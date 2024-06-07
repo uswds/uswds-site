@@ -1,17 +1,15 @@
-{% assign page_name = page.title | downcase %}
-{% assign page_slug = page_name | slugify %}
-{% assign github_label = page.github_label_url | default: page.title | replace: ' ', '+' %}
-{% assign issues = site.data.issues[page_slug] %}
+{% assign github_label =  page.known_issues_key | default: page.title | replace: ' ', '+' | replace: '-', '+' %}
 
-{%- if issues.items -%}
-  <h2 id="known-issues" class="site-component-section-title">Known issues</h2>
+<h2 id="known-issues" class="site-component-section-title">Known issues</h2>
 
-  <p>All known issues for {{ page.title | downcase }} are tracked in
-  <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+{{ github_label }}%22">GitHub</a>.
-  Notable usability issues are tracked below: </p>
+<p>All known issues for {{ page.title | downcase }} are tracked in
+  <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Package%3A+{{ github_label }}%22">
+    GitHub
+  </a>.
+  Notable usability issues are tracked below:
+</p>
 
-  {% include known-issues-table.html %}
+{% include known-issues-table.html %}
 
-  <p>Help fix these issues or add details on GitHub. Don't have an account?
-    Please <a href="{{ site.baseurl }}/about/community/">join our community</a> to share feedback and contribute to USWDS.</p>
-{% endif %}
+<p>Help fix these issues or add details on GitHub. Don't have an account?
+Please <a href="{{ site.baseurl }}/about/community/">join our community</a> to share feedback and contribute to USWDS.</p>

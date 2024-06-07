@@ -112,7 +112,7 @@ The pattern allows users to select their language preferences for both written a
 ### Accessibility
 
 {:.usa-content-list}
-- **Use the HTML lang attributes** to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+- **Use the HTML lang attributes** to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57.html) for more information.
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates

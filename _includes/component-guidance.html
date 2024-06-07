@@ -2,6 +2,14 @@
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
 {% assign checklistData = site.data.accessibility-tests[componentKey] %}
+{% assign heading_level_primary = include.level | default: "h2" %}
+{% assign heading_level_secondary= "h3" %}
+{% assign heading_level_tertiary = "h4" %}
+
+{% if heading_level_primary == "h3" %}
+  {% assign heading_level_secondary= "h4" %}
+  {% assign heading_level_tertiary = "h5" %}
+{% endif %}
 
 {% assign guidancePath = page.guidancePath | default: "guidance" %}
 
@@ -49,14 +57,14 @@
   {% endif %}
 {%- endcapture -%}
 
-<h2 id="{{ componentKey }}-guidance" class="site-component-section-title">
+<{{ heading_level_primary }} id="{{ componentKey }}-guidance" class="site-component-section-title">
   Guidance
-</h2>
+</{{ heading_level_primary }}>
 <div class="site-component-usage">
   {% for item in guidanceFirst %}
-    <h3 id="{{ item.heading | slugify }}" class="usa-heading">
+    <{{ heading_level_secondary}} id="{{ item.heading | slugify }}" class="usa-heading site-component-usage__header--secondary">
       {{ item.heading }}
-    </h3>
+    </{{ heading_level_secondary}}>
     {% if item.html %}
       {%- include_relative {{item.path}} -%}
     {% else %}
@@ -68,54 +76,54 @@
     {% endif %}
   {% endfor %}
   {% if about.size > guidanceNullLength %}
-    <h3 id="about-{{ componentKey }}">About</h3>
+    <{{ heading_level_secondary}} id="about-{{ componentKey }}" class="usa-heading site-component-usage__header--secondary">About</{{ heading_level_secondary}}>
     {{ about | markdownify }}
   {% endif %}
   {% if when_to_use.size > guidanceNullLength %}
-    <h3 id="when-to-use-the-{{ componentKey }}">
+    <{{ heading_level_secondary}} id="when-to-use-the-{{ componentKey }}" class="usa-heading site-component-usage__header--secondary">
       When to use the {{ page.title | downcase }} {{ page.type }}
-    </h3>
+    </{{ heading_level_secondary}}>
     {{ when_to_use | markdownify }}
   {% endif %}
   {% if when_to_consider_something_else.size > guidanceNullLength %}
-    <h3 id="when-to-consider-something-else-{{ componentKey }}">
+    <{{ heading_level_secondary}} id="when-to-consider-something-else-{{ componentKey }}" class="usa-heading site-component-usage__header--secondary">
       When to consider something else
-    </h3>
+    </{{ heading_level_secondary}}>
     {{ when_to_consider_something_else | markdownify }}
   {% endif %}
   {% if usability.size > guidanceNullLength %}
-    <h3 id="usability-guidance-{{ componentKey }}">Usability guidance</h3>
+    <{{ heading_level_secondary}} id="usability-guidance-{{ componentKey }}" class="usa-heading site-component-usage__header--secondary">Usability guidance</{{ heading_level_secondary}}>
     {{ usability | markdownify }}
   {% endif %}
   {% if accessibility.size > guidanceNullLength %}
-    <h3 id="accessibility-{{ componentKey }}" class="usa-heading">
+    <{{ heading_level_secondary}} id="accessibility-{{ componentKey }}" class="usa-heading site-component-usage__header--secondary">
       Accessibility guidance
-    </h3>
+    </{{ heading_level_secondary}}>
     {% if checklistData %}
     {% include accessibility-tests/a11y-note.html %}
     {% endif %}
     {{ accessibility | markdownify }}
   {% endif %}
   {% if related.size > guidanceNullLength %}
-    <h3 id="related-{{ componentKey }}" class="usa-heading">
+    <{{ heading_level_secondary}} id="related-{{ componentKey }}" class="usa-heading site-component-usage__header--secondary">
       Related
-    </h3>
+    </{{ heading_level_secondary}}>
     {{ related | markdownify }}
   {% endif %}
   {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
-    <h3  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading">
+    <{{ heading_level_secondary}}  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading site-component-usage__header--secondary">
       Using the {{ page.title | downcase }} {{ page.type }}
-    </h3>
+    </{{ heading_level_secondary}}>
     {{ implementation | markdownify }}
     {% if page.category == "Components" %}
-      <h4 id="component-settings-{{ componentKey }}">
+      <{{ heading_level_tertiary }} id="component-settings-{{ componentKey }}" class="site-component-usage__header--tertiary">
         {{ page.title }} settings
-      </h4>
+      </{{ heading_level_tertiary }}>
       {% assign settings = site.data.settings.components[settingsKey] %}
       {% include settings-table-simple.html settings=settings.contents %}
-      <h4 id="component-variants-{{ componentKey }}">
+      <{{ heading_level_tertiary }} id="component-variants-{{ componentKey }}" class="site-component-usage__header--tertiary">
         {{ page.title }} variants
-      </h4>
+      </{{ heading_level_tertiary }}>
       {% include settings-table-flex.html
         content=page.variants
         cols="flex-1, flex-1"
@@ -124,9 +132,9 @@
     {% endif %}
   {% endif %}
   {% for item in guidanceLast %}
-    <h3 id="{{ item.heading | slugify }}" class="usa-heading">
+    <{{ heading_level_secondary}} id="{{ item.heading | slugify }}" class="usa-heading site-component-usage__header--secondary">
       {{ item.heading }}
-    </h3>
+    </{{ heading_level_secondary}}>
     {%- capture thisText -%}
       {{- guidanceFormat }}
       {%- include_relative {{item.path}} -%}
@@ -134,7 +142,7 @@
     {{ thisText | markdownify }}
   {% endfor %}
   {% if references.size > guidanceNullLength %}
-    <h3 id="references">References</h3>
+    <{{ heading_level_secondary}} id="references">References</{{ heading_level_secondary}} class="usa-heading site-component-usage__header--secondary">
     {{ references | markdownify }}
   {% endif %}
 </div>

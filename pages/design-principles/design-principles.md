@@ -98,7 +98,7 @@ The following are practical actions you can take:
 - **Identify yourself.** Clearly identify your site as a federal government site.
 - **Build with modern best practices.** Review the guidance outlined in [Digital Services Playbook](https://playbook.cio.gov/).
 - **Review your content.** Review your content at least twice per year to assure information is correct and non-redundant.
-- **Use the proper government domain.** Use a [.gov ](https://home.dotgov.gov/) top-level domain and [https](https://https.cio.gov/) with up-to-date certificates.
+- **Use the proper government domain.** Use a [.gov ](https://get.gov/) top-level domain and [https](https://https.cio.gov/) with up-to-date certificates.
 - **Add the USWDS banner component.** This component shows your site is an official government website and explains the benefits of secure connections.
 - **Identify link rot.** Find and fix broken links on your website.
 - **Keep communications simple.** Ensure content is easy, personal, and timely.
@@ -115,7 +115,7 @@ The following are practical actions you can take:
 - [Digital Services Playbook](https://playbook.cio.gov/) [playbook.cio.gov]
 - [U.S. Web Design System performance guidelines](https://designsystem.digital.gov/performance/) [designsystem.digital.gov]
 - [The HTTPS-only standard](https://https.cio.gov/) [https.cio.gov]
-- [.gov domain registration](https://home.dotgov.gov/) [dotgov.gov]
+- [.gov domain registration](https://get.gov/) [get.gov]
 - [Federal plain language guidelines](https://plainlanguage.gov/guidelines/) [plainlanguage.gov]
 - [How to design effective communications](https://oes.gsa.gov/assets/abstracts/OES%20Learnings%20on%20Writing%20Better%20Communications%202018.pdf) [PDF; oes.gsa.gov]
 - [Best practices for multilingual websites](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/) [digital.gov]

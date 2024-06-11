@@ -2,10 +2,15 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: 2024-06-07
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2687
+    githubRepo: uswds-site
   - date: 2023-11-30
-    summary: Fixed a bug causing component code example ID’s and relevant aria attributes to display incorrectly.
-    summaryAdditional: Now, example ID’s match what’s found in the USWDS repo and are more succinct.
-    isBreaking: true 
+    summary: Fixed a bug causing component code example ID's and relevant aria attributes to display incorrectly.
+    summaryAdditional: Now, example ID's match what's found in the USWDS repo and are more succinct.
+    isBreaking: true
     affectsMarkup: true
     githubPr: 2312
     githubRepo: uswds-site

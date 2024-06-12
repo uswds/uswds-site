@@ -29,10 +29,9 @@ test_items:
     test_status: pass
     test_type: general
     version_tested: 3.8.0
-  - summary: Search component matches device orientation
+  - summary: Search component matches device orientation.
     summary_additional: |
       On mobile devices and tablets, the search component should work in both portrait and landscape orientation with no loss of functionality.
-      When you rotate between portrait mode and landscape mode on a mobile device, the search button and field are not restricted to a single view.
     test_status: pass
     test_type: general
     version_tested: 3.8.0

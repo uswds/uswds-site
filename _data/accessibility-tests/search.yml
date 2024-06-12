@@ -39,8 +39,7 @@ test_items:
     wcag_criterion: 1.3.4
   - summary: Page context does not change before search submission.
     summary_additional: |
-      Unless notified beforehand, page content stays the same until you submit the search. If search results are opened within a new window, an advanced warning should be given alongside search instructions, in the aria-label, or button text.
-      instructions in the aria-label or button text.
+      Unless notified beforehand, page content stays the same until you submit the search. If search results are opened within a new window, an advanced warning should be given alongside search instructions in the `aria-label` or button text.
     test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.0

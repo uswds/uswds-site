@@ -40,6 +40,6 @@ changelog:
 disclaimer: Use of any social media icons placed on this page are subject to separate terms and conditions that govern the use of said icons. The General Services Administration (GSA) does not review and evaluate such agreements for anything beyond the GSA's needs, and users should make their own decisions regarding the use of such services for their own purposes. In addition, a reference to any non-federal entity does not constitute or imply its endorsement, recommendation, or favoring by GSA.
 ---
 
-Icons are a simple, easily graspable way to add visual emphasis or interest, signal an action, or indicate a feedback state — all while reducing a user's cognitive load.
+Icons are simple symbols that attract attention, aid navigation, signal an action, add emphasis, or provide feedback. Icons serve as recognizable cues that users can understand easily — typically without thinking too hard.
 
-Using a consistent set of icons helps establish a familiar look and feel across a site or service, while using individual icons consistently establishes a reliable relationship between the image and a specific concept or action. For example, don’t use an envelope icon to indicate email on one page and mailing address on another. Users should be able to trust that a certain icon always means the same thing, no matter where it’s used on your site. It’s important that icons always serve a single functional purpose throughout a site or service.
+Icons must be used consistently across a site or service in order to accomplish their purpose well. For example, using an envelope icon for both email and a mailing address would likely confuse people. Viewers should be able to trust that a certain icon always means the same thing, no matter where it’s used.

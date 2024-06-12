@@ -183,7 +183,7 @@ Providing multilingual content is a huge investment, and a key way to communicat
 
 [^2]: Personal names around the world. (August 17, 2011) Retrieved on August 19, 2022, from <https://www.w3.org/International/questions/qa-personal-names>
 
-[^3]: Collecting sexual orientation and gender identity information: importance of the collection and use of this data. (March 8, 2022) Retrieved on August 19, 2022, from <https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html>
+[^3]: Collecting sexual orientation and gender identity information: importance of the collection and use of this data. (March 8, 2022) Retrieved on August 19, 2022, from <https://snapshot2024.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html>
 
 [^4]: Collecting and tabulating ethnicity and race response in the 2020 Census. (February 2020) Retrieved on August 19, 2022, from <https://www2.census.gov/about/training-workshops/2020/2020-02-19-pop-presentation.pdf>
 
@@ -200,4 +200,3 @@ Disclaimer: Links to nongovernment sources are made for educational or source ci
 </div>
   </div>
 </section>
-

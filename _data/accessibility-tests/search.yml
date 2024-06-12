@@ -24,8 +24,8 @@ test_items:
     wcag_criterion: 1.4.11
   - summary: The height and width of the search button touch target is at least 44 pixels.
     summary_additional: |
-      Touch target size can be calculated by adding the height or width of the element and including the spacing units that separate it from adjacent targets.
-      When you select "inspect element" to review the button's size, you can see the the button and it's spacing is at least 44 pixels wide by 44 pixels tall.
+      Touch target size can be calculated by adding the height or width of the element and the spacing that separates it from adjacent targets.
+      When you select "inspect element" to review the button's size, you can see the the button and its spacing is at least 44 pixels wide by 44 pixels tall.
     test_status: pass
     test_type: general
     version_tested: 3.8.0

@@ -78,10 +78,11 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.0
     wcag_criterion: 1.3.5
-  - summary: Screen reader announces user is in a combo box with select option.
+  - summary: Screen reader announces user is in a select element.
     summary_additional: |
-      When you use a screen reader and access the select component
-      you will hear that you have entered a combo box and that you can select an option.
+      When you use a screen reader and access the select component,
+      you will hear that you have entered a "combo box", "select",  or "menu pop-up" element,
+      and that you can select an option.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.0

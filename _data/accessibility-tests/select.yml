@@ -95,10 +95,10 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.0
     wcag_criterion: 3.2.2
-  - summary: Functionality titles are the same for different select components.
+  - summary: Select components are identified consistently.
     summary_additional: |
-      When you use a screen reader to navigate through multiple select components,
-      the functionality titles will always be the same so they are easily identifiable.
+      When using a screen reader to navigate a page with multiple select components,
+      each of them is announced as a select.
     test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.0

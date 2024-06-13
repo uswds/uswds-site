@@ -1611,6 +1611,27 @@ iframe {
   @include u-measure(1);
 }
 
+.post-outdated-content {
+  margin-bottom: units(4);
+  margin-top: units(-5);
+  z-index: z-index("top");
+
+  @include at-media("tablet") {
+    position: sticky;
+    top: 0;
+  }
+
+  @include at-media("desktop") {
+    margin-left: units(4);
+    margin-top: 0;
+    top: units($height-nav-secondary);
+  }
+
+  .usa-alert__body {
+    margin-left: 0;
+  }
+}
+
 // Utilities CSS --------------------- //
 
 .page-content {

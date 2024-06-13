@@ -80,7 +80,6 @@ test_items:
     summary_additional: |
       When you use the search component, you hear details about the purpose of the input with a screen reader or see them on the page. 
       The instructions are specific to the search's intent (e.g., "search this site", "search this directory").
-      Instructions may be specific depending on intent (e.g., search this site, search this directory).
     test_status: conditional
     test_type: general
     version_tested: 3.8.0

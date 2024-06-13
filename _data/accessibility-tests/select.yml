@@ -46,8 +46,8 @@ test_items:
     wcag_criterion: 2.4.7
   - summary: Navigating to select doesn't trigger a change of context.
     summary_additional: |
-      When you type into the select,
-      the context of the select component doesn't change.
+      When you interact with the select component,
+      the context of the component doesn't change.
       For example, landing on select doesn't cause a window to open or focus to jump to another field.
     test_status: pass
     test_type: keyboard

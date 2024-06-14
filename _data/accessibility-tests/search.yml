@@ -106,7 +106,7 @@ test_items:
       button, and perform the search.
     test_status: exception
     status_details: | 
-      Some browsers show an "x" that lets users delete text in the search field. This is not a result of USWDS; it is built in browser behavior. 
+      Some browsers show an "x" that lets users delete text in the search field. This is not a result of USWDS; it is built-in browser behavior. 
       Keyboard tabbing will not focus on the "x," but users can use the backspace key to delete text from the search field.
     github_issue_number: 5834
     github_issue_repo: uswds

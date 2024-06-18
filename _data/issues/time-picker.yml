@@ -1,7 +1,7 @@
 title: Time picker
 alert_type: info
 items:
-- date: NNNN-NN-NN
+- date: 2024-04-30
   summary: Screen reader users reported that instructions on the time picker component were verbose and confusing.
   summary_additional:
   issue_repo: uswds

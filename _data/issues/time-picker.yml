@@ -1,0 +1,9 @@
+title: Time picker
+alert_type: info
+items:
+- date: NNNN-NN-NN
+  summary: Screen reader users reported that instructions on the time picker component were verbose and confusing.
+  summary_additional:
+  issue_repo: uswds
+  issue_number: 5905
+

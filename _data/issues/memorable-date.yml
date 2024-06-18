@@ -2,7 +2,7 @@ title: Memorable date
 alert_type: info
 items:
 - date: 2024-05-03
-  summary: Screen reader users were confused that both the month's number and name (e.g., "01 - January") were announced.
+  summary: Screen reader users were confused that the component announced both the month's number and name (e.g., "01 - January").
   issue_repo: uswds
   issue_number: 5911
 - date: 2024-05-03

@@ -1,0 +1,17 @@
+title: Memorable date
+alert_type: info
+items:
+- date: 2024-05-03
+  summary: Screen reader users were confused that both the month's number and name were announced (e.g., "01 - January).
+  issue_repo: uswds
+  issue_number: 5911
+- date: 2024-05-03
+  summary: Users expected to be able to search the month input by either name or number but could do neither.
+  summary_additional:
+  issue_repo: uswds
+  issue_number: 5910
+- date: 2024-04-29
+  summary: Screen reader users experienced friction with understanding the what formatting was needed for the component.
+  summary_additional:
+  issue_repo: uswds
+  issue_number: 5902

@@ -127,9 +127,14 @@
   {% assign criterion_name = "Reading level" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#reading-level" %}
 {% endif %}
+{% if item.wcag_criterion == "3.2.1" %}
+  {% assign criterion_level = "A" %}
+  {% assign criterion_name = "On Focus" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#on-focus" %}
+{% endif %}
 {% if item.wcag_criterion == "3.2.2" %}
   {% assign criterion_level = "A" %}
-  {% assign criterion_name = "On input" %}
+  {% assign criterion_name = "On Input" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#on-input" %}
 {% endif %}
 {% if item.wcag_criterion == "3.2.3" %}

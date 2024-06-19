@@ -11,16 +11,8 @@ title: Text input
 type: component
 lead: A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.
 subnav:
-- text: Preview
-  href: '#text-input-preview'
-- text: Code
-  href: '#text-input-code'
-- text: Guidance
-  href: '#text-input-guidance'
-- text: Package
-  href: '#text-input-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Text input accessibility tests
+  href: /components/text-input/accessibility-tests/
 tags:
   - input
   - box

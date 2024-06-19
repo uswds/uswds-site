@@ -9,7 +9,7 @@ test_items:
     version_tested: 3.8.0
     wcag_criterion: 1.4.1
   - summary: Tag content meets color contrast requirements.
-    summary_additional: When you use ANDI color contrast analyzer on a tag, the contrast between the text and background color is at least 4:5:1.
+    summary_additional: When you use ANDI color contrast analyzer on a tag, the contrast between the text and background color is at least 4.5:1.
     test_status: pass
     test_type: general
     version_tested: 3.8.0

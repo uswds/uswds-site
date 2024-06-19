@@ -2,7 +2,7 @@ title: Select accessibility tests
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-06-19
     summary: Added accessibility tests page.
     summaryAdditional:
     affectsGuidance: true

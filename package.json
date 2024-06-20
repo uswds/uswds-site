@@ -74,6 +74,7 @@
     "eslint-plugin-import": "^2.29.1",
     "express": "^4.19.2",
     "fancy-log": "^2.0.0",
+    "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^6.0.0",

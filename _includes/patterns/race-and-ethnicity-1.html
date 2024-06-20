@@ -1,0 +1,55 @@
+{% comment %}
+  This partial is a child of race-and-ethnicity-wrapper.
+  Params are defined in race.yml
+
+  @param {string} category.name - Top-level race/ethnicity categories
+  @param {string} category.types - Second-level race/ethnicity categories
+{% endcomment %}
+
+{% for category in data.categories %}
+  <fieldset class="usa-fieldset margin-top-1" name="{{ category.name | slugify }}-alt">
+    <legend>
+      <div class="usa-checkbox">
+        <input
+          class="usa-checkbox__input"
+          type="checkbox"
+          id="{{ category.name | slugify }}-checkbox-alt"
+          name="{{ category.name | slugify }}-checkbox-alt"
+          aria-describedby="details-{{ category.name | slugify }}">
+        <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-alt">
+          <b>{{ category.name }}</b>
+        </label>
+      </div>
+    </legend>
+    <div class="padding-left-4">
+      {% if category.types %}
+      <fieldset class="usa-fieldset margin-top-05">
+        <legend class="usa-legend" id="details-{{ category.name | slugify }}">Provide details below</legend>
+        <div class="margin-bottom-105">
+          {% for type in category.types %}
+            <div class="usa-checkbox">
+              <input
+                class="usa-checkbox__input"
+                type="checkbox"
+                id="{{ type }}-checkbox-alt"
+                name="{{ type }}-checkbox-alt">
+              <label class="usa-checkbox__label" for="{{ type }}-checkbox-alt">
+                {{ type }}
+              </label>
+            </div>
+          {% endfor %}
+        </div>
+      </fieldset>
+      {% endif %}
+      <label
+        class="usa-hint"
+        for="{{ category.name | slugify }}-input-alt">
+        Enter, for example, {% for type in category.examples %}{{ type }}, {% endfor %} etc.
+      </label>
+      <input
+        class="usa-input"
+        id="{{ category.name | slugify }}-input-alt"
+        name="{{ category.name | slugify }}-input-alt">
+    </div>
+  </fieldset>
+{% endfor %}

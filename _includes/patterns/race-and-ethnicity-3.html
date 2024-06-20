@@ -1,0 +1,19 @@
+{% comment %}
+  This partial is a child of race-and-ethnicity-wrapper.
+  Params are defined in race.yml
+
+  @param {string} category.name - Top-level race/ethnicity categories
+{% endcomment %}
+
+{% for category in data.categories %}
+  <div class="usa-checkbox">
+    <input
+      class="usa-checkbox__input"
+      type="checkbox"
+      id="{{ category.name | slugify }}-checkbox-3"
+       name="{{ category.name | slugify }}-checkbox-3">
+    <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-3">
+      {{ category.name }}
+    </label>
+  </div>
+{% endfor %}

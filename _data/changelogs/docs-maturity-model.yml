@@ -2,20 +2,6 @@ title: Maturity model
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
-    summary: Updated npm references to all lowercase when not at the beginning of a sentence.
-    summaryAdditional:  # @TODO: Delete line if field is empty.
-    isBreaking: 
-    affectsAccessibility: 
-    affectsAssets: 
-    affectsContent: 
-    affectsGuidance: true
-    affectsJavascript: 
-    affectsMarkup: 
-    affectsSettings: 
-    affectsStyles: 
-    githubPr: 2659
-    githubRepo: uswds-site
   - date: 2022-03-10
     summary: |
       Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.

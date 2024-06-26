@@ -2,6 +2,21 @@ title: Utilities
 type: utility
 changelogURL:
 items:
+  - date: 2024-06-26
+    summary: Fixed example in settings.
+    summaryAdditional: Added missing comma to color example in `$output-these-utilities`.
+    isBreaking: false
+    affectsAccessibility:
+    affectsAssets:
+    affectsContent:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsSettings:
+    affectsStyles:
+    githubPr: 2731
+    githubRepo:
+    versionUswds:
   - date: 2023-06-09
     summary: Removed unused utility builder comments from compiled CSS.
     summaryAdditional: This update significantly reduces the compiled file size.

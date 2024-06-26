@@ -15,7 +15,7 @@ items:
     affectsSettings:
     affectsStyles:
     githubPr: 2731
-    githubRepo:
+    githubRepo: uswds-site
     versionUswds:
   - date: 2023-06-09
     summary: Removed unused utility builder comments from compiled CSS.

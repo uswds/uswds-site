@@ -54,7 +54,7 @@ The following are practical actions you can take:
 - [Usability testing with Steve Krug](https://digital.gov/event/2018/06/14/usability-testing-with-steve-krug/) [digital.gov]
 - [18F's human-centered design methods](https://methods.18f.gov/) [methods.18f.gov]
 - [18F's research guidelines](https://handbook.18f.gov/research-guidelines/) [handbook.18f.gov]
-- [Interview checklist](https://methods.18f.gov/interview-checklist/) [methods.18f.gov]
+- [Interview checklist](https://guides.18f.gov/ux-guide/interview-checklist/) [methods.18f.gov]
 - [Tips for capturing the best data from user interviews](https://18f.gsa.gov/2016/02/09/tips-for-capturing-the-best-data-from-user-interviews/) [18f.gsa.gov]
 - [How to address barriers to user-centered design](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/) [18f.gsa.gov]
 - [Three ways to manage research projects remotely](https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/) [18f.gsa.gov]

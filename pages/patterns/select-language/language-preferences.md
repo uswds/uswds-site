@@ -112,7 +112,7 @@ The pattern allows users to select their language preferences for both written a
 ### Accessibility
 
 {:.usa-content-list}
-- **Use the HTML lang attributes** to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+- **Use the HTML lang attributes** to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57.html) for more information.
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates
@@ -122,7 +122,7 @@ The pattern allows users to select their language preferences for both written a
 - [Text input]({{ site.baseurl }}/components/text-input/) component
 - [Contact preferences]({{ site.baseurl }}/patterns/create-a-user-profile/contact-preferences/) pattern
 - [Find selected multilingual content]({{ site.baseurl }}/patterns/select-a-language/selected-content/) pattern
-- [Select from three or more languages]({{ site.baseurl }}/patterns/select-a-language/more-than-three-languages/) pattern
+- [Select from three or more languages]({{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/) pattern
 - [Select from two languages]({{ site.baseurl }}/patterns/select-a-language/two-languages/) pattern
 
 {:.site-component-section-title}
@@ -134,7 +134,7 @@ The pattern allows users to select their language preferences for both written a
 - Improving access to public websites and digital services for limited English proficient (LEP) persons. (December 2021) Retrieved on July 25, 2022, from <https://www.lep.gov/sites/lep/files/media/document/2021-12/2021_12_07_Website_Language_Access_Guide_508.pdf>
 - LEP.gov. (n.d.) Retrieved on July 25, 2022, from <https://www.lep.gov/>
 - The limited English proficient population in the United States in 2013. (July 8, 2015) Retrieved on July 25, 2022, from <https://www.migrationpolicy.org/article/limited-english-proficient-population-united-states-2013>
-- OMB memorandum m-17-06, 16. (November 2016) Retrieved on July 25, 2022, from <https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16>
+- OMB memorandum m-17-06, page 16. (November 2016) Retrieved on July 25, 2022, from <https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf>
 
 {:.site-component-section-title}
 ## Disclaimer

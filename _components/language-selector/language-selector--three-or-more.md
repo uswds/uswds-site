@@ -26,4 +26,4 @@ variants:
     description: Three or more languages
 ---
 
-{% include component.html %}
+{% include component.html level="h3" %}

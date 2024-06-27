@@ -1,0 +1,10 @@
+title: Banner accessibility tests
+type: component
+changelogURL:
+items:
+  - date: 2024-06-07
+    summary: Added accessibility tests page.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2687
+    githubRepo: uswds-site

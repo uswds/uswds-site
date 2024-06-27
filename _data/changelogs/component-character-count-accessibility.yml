@@ -1,0 +1,8 @@
+title: Character count accessibility tests
+type: component
+items:
+ - date: 2024-05-15
+   summary: Added accessibility tests page.
+   affectsGuidance: true
+   githubPr: 2607
+   githubRepo: uswds-site

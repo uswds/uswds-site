@@ -104,7 +104,7 @@ You can further customize utility output with USWDS settings. Add settings from 
   $utilities-use-important: true,
   $output-these-utilities:(
     "background-color",
-    "color"
+    "color",
     "display",
     "margin",
     "padding",
@@ -134,4 +134,3 @@ Each utility module referenced in [the settings section, above](#settings), can 
 The size of each module will change based on its module settings. For instance, if a module is set to output responsive classes and state variants, it will be much larger than if it includes only the base classes and no variants.
 
 {% include utilities-module-table.html %}
-

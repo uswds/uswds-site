@@ -82,7 +82,7 @@ The following sections break the layout grid down and describe how it works.
 - **Equal-width columns:** With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `grid-col` will display as one-quarter-width columns across all sizes. Refer to the [auto-layout columns](#auto-layout-columns) section for more examples.
 - **Gutters:** Rows and columns don't have any gutters by default, but gutters can be added by including `grid-gap-sm`, `grid-gap`, or `grid-gap-lg` at the row level. Refer to [gutters](#gutters) for more info.
 - **Media queries:** Grid breakpoints are based on minimum-width media queries, meaning they apply to that specific width and all greater widths (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices but not at `mobile-lg` or any width below the tablet breakpoint). Refer to [responsive variants](#responsive-variants) for a full list.
-- **Sass mixins:** You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
+- **Sass mixins:** You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass utility mixins](#utility-mixins) for more semantic markup.
 
 <h2 id="auto-layout-columns">Auto layout columns</h2>
 <h3>Variable-width content</h3>

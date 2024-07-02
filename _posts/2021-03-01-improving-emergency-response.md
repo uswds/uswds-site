@@ -31,7 +31,7 @@ Taking action on what we learned from the research, we created and updated sever
 
 ## Research themes and insights
 
-We took quotes and highlights from the interviews to create data points. Using an [affinity map](https://methods.18f.gov/decide/affinity-mapping/) to group similar data points together, we assigned an overarching theme to each group and identified high-level insights that focused the challenges into more actionable solutions.
+We took quotes and highlights from the interviews to create data points. Using an [affinity map](https://guides.18f.gov/methods/decide/affinity-mapping/) to group similar data points together, we assigned an overarching theme to each group and identified high-level insights that focused the challenges into more actionable solutions.
 
 
 <div class="margin-top-4 margin-bottom-5">

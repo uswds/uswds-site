@@ -1,10 +1,13 @@
 # Add page title. eg: Accessibility, Banner
 title: Tooltip
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-
 items:
+  - date: 2024-06-07
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2646
+    githubRepo: uswds-site
   - date: 2024-05-31
     summary: Updated component behavior to close active tooltips when the `escape` key is pressed.
     summaryAdditional: This allows the component to meet the "dismissible" standard outlined in [WCAG 1.4.13](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus).

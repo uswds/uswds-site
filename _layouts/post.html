@@ -13,6 +13,18 @@ category: What’s new
   </aside>
 
   <main id="main-content" class="main-content">
+    {% if page.expiration_date %}
+      <!--
+        Note: `%s` converts the date to "seconds since 1970", based on strftime formatting.
+        This allows us to compare dates to see which is greater.
+      -->
+      {% assign today_date = 'now' | date: '%s' %}
+      {% assign expiration_date = page.expiration_date | date: '%s' %}
+
+      {% if today_date > expiration_date %}
+        {% include outdated-content-alert.html %}
+      {% endif %}
+    {% endif %}
     <div class="styleguide-content usa-prose site-prose">
     {% if page.collection == 'posts' %}
       {% include post.html post=page %}

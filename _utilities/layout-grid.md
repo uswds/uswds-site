@@ -357,18 +357,10 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
   </div>
 </div>
 
-## Variables
-Variables and maps determine the number of columns, gutter width, and media-query point at which to begin floating columns. We use variables to generate the predefined grid classes documented on this page, as well as for the custom mixins noted under [spacing settings](#spacing-settings) and [utility mixins](#utility-mixins).
+## Theme settings
+You can redefine column gap token sizes, set the grid container max width, and update site margin by defining the relevant theme setting in your `_uswds-theme.scss` file.
 
-### Spacing settings
-
-Values are set as units tokens. You can change the default value of these  variables by updating them in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings).
-
-{% assign spacing_settings = site.data.settings.spacing.contents | slice: 3, 9 %}
-
-{% include settings-table.html
-  settings=spacing_settings
-%}
+Visit the [settings page]( {{ site.baseurl }}/documentation/settings) for more information and available settings.
 
 <section id="utility-mixins" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>

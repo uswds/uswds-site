@@ -23,8 +23,8 @@ subnav:
   href: '#column-wrapping'
 - text: Gutters
   href: '#gutters'
-- text: Variables
-  href: '#variables'
+- text: Theme settings
+  href: '#theme-settings'
 - text: Utility mixins
   href: '#utility-mixins'
 - text: Advanced settings

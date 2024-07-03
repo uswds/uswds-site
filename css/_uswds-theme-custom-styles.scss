@@ -2963,27 +2963,8 @@ $theme-table-column-gap: 4;
   }
 
   .usa-banner__button {
-    @include button-unstyled;
-    @include u-pin("left");
-    @include u-pin("y");
-    @include u-text("primary", underline, baseline);
-    @include set-link-from-bg(
-      $site-banner-background-color,
-      $site-banner-link-color,
-      $context: $banner-context
-    );
-    display: block;
     font-size: font-size($site-banner-font-family, 1);
-    height: auto;
     line-height: line-height($site-banner-font-family, 2);
-    padding-top: units(0);
-    padding-left: units(0);
-    text-decoration: none;
-    width: auto;
-
-    @include at-media-max("tablet") {
-      width: 100%;
-    }
 
     @include at-media("tablet") {
       @include place-icon(
@@ -2998,68 +2979,10 @@ $theme-table-column-gap: 4;
         $site-banner-link-color,
         $context: $banner-context
       );
-      @include u-pin("none");
-      display: inline;
-      margin-left: units(1);
-      position: relative;
-
-      &:after {
-        position: absolute;
-      }
-
-      &:hover {
-        // Underline added to inner text instead.
-        text-decoration: none;
-      }
-    }
-
-    &[aria-expanded="false"] {
-      background-image: none;
     }
 
     &[aria-expanded="true"] {
       background-image: none;
-
-      @include at-media-max("tablet") {
-        @include place-icon(
-          $banner-icon-close,
-          "after",
-          0,
-          middle,
-          "base-lighter"
-        );
-
-        &:before {
-          @include u-pin("y");
-          @include u-pin("right");
-          background-color: color("base-lighter");
-          content: "";
-          display: block;
-          height: units($size-touch-target);
-          width: units($size-touch-target);
-        }
-        &:after {
-          @include u-pin("y");
-          @include u-pin("right");
-        }
-      }
-
-      @include at-media("tablet") {
-        @include place-icon(
-          $banner-icon-chevron-up,
-          "after",
-          "2px",
-          middle,
-          $site-banner-background-color
-        );
-        height: auto;
-        padding: units(0);
-        position: relative;
-
-        &:after {
-          position: absolute;
-        }
-      }
     }
   }
 

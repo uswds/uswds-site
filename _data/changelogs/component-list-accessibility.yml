@@ -1,0 +1,8 @@
+title: List accessibility tests
+type: component
+items:
+ - date: 2024-07-08
+   summary: Added accessibility tests page.
+   affectsGuidance: true
+   githubPr: 2727
+   githubRepo: uswds-site

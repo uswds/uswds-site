@@ -85,19 +85,19 @@
     "jquery": "^3.7.1",
     "node-notifier": "^10.0.1",
     "pa11y-ci": "^2.4.2",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.39",
     "postcss-csso": "^6.0.1",
     "prettier": "^2.8.8",
-    "sass": "^1.77.5",
+    "sass": "^1.77.6",
     "simplecrawler": "^1.1.9",
-    "snyk": "^1.1291.1",
+    "snyk": "^1.1292.1",
     "stylelint": "^15.11.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
   "overrides": {
     "glob-parent": "6.0.2",
-    "postcss": "^8.4.38"
+    "postcss": "^8.4.39"
   },
   "snyk": true,
   "dependencies": {

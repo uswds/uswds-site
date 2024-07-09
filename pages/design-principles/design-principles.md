@@ -42,8 +42,8 @@ The following are useful questions to ask your team as you assess users' needs:
 The following are practical actions you can take:
 
 - **Start early.** Early in the project, spend time with current and prospective users to better understand their perspective and the context of the problem.
-- **Use a range of methods.** Use a range of qualitative and quantitative research methods (such as [18F Methods](https://methods.18f.gov/)) to determine people’s goals, needs, and behaviors.
-- **Use prototypes.** Use [prototypes](https://methods.18f.gov/make/prototyping/) to test your assumptions and solutions with real people, in the field if possible.
+- **Use a range of methods.** Use a range of qualitative and quantitative research methods (such as [18F Methods](https://guides.18f.gov/methods/)) to determine people’s goals, needs, and behaviors.
+- **Use prototypes.** Use [prototypes](https://guides.18f.gov/methods/make/prototyping/) to test your assumptions and solutions with real people, in the field if possible.
 - **Share your findings.** Document and share your research findings with team members, managers, and the public whenever practical.
 - **Test regularly.** As the product is being built, regularly test it with potential users to ensure it meets people’s needs.
 
@@ -52,9 +52,9 @@ The following are practical actions you can take:
 #### Government resources
 
 - [Usability testing with Steve Krug](https://digital.gov/event/2018/06/14/usability-testing-with-steve-krug/) [digital.gov]
-- [18F's human-centered design methods](https://methods.18f.gov/) [methods.18f.gov]
+- [18F's human-centered design methods](https://guides.18f.gov/methods/) [guides.18f.gov]
 - [18F's research guidelines](https://handbook.18f.gov/research-guidelines/) [handbook.18f.gov]
-- [Interview checklist](https://methods.18f.gov/interview-checklist/) [methods.18f.gov]
+- [Interview checklist](https://guides.18f.gov/ux-guide/interview-checklist/) [guides.18f.gov]
 - [Tips for capturing the best data from user interviews](https://18f.gsa.gov/2016/02/09/tips-for-capturing-the-best-data-from-user-interviews/) [18f.gsa.gov]
 - [How to address barriers to user-centered design](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/) [18f.gsa.gov]
 - [Three ways to manage research projects remotely](https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/) [18f.gsa.gov]
@@ -234,7 +234,7 @@ The following are practical actions you can take:
 
 - [How design systems help us work together](https://digital.gov/event/2018/05/31/this-how-we-work-together-with-brad-frost/) [digital.gov]
 - [The U.S. Web Design System](https://designsystem.digital.gov/) [designsystem.digital.gov]
-- [The Journey Mapping method](https://methods.18f.gov/decide/journey-mapping/) [methods.18f.gov]
+- [The Journey Mapping method](https://guides.18f.gov/methods/decide/journey-mapping/) [guides.18f.gov]
 - [Embracing responsive design](https://digital.gov/2013/08/20/embracing-responsive-design/) [digital.gov]
 - [Example: USDA's design and brand guidelines](https://www.usda.gov/digital-strategy/design-and-brand) [usda.gov]
 - [Example: Centers for Medicare and Medicaid Services design system](https://design.cms.gov/) [design.cms.gov]

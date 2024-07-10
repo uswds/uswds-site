@@ -4,5 +4,5 @@ items:
  - date: 2024-07-08
    summary: Added accessibility tests page.
    affectsGuidance: true
-   githubPr: 2727
+   githubPr: 2746
    githubRepo: uswds-site

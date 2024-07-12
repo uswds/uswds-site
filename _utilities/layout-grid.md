@@ -502,7 +502,6 @@ Visit the [settings page]( {{ site.baseurl }}/documentation/settings) for more i
   <h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
-  No settings available.
 
   <div>
     <table class="usa-table--borderless site-table-responsive site-table-simple">

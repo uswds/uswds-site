@@ -31,7 +31,7 @@ test_items:
   - summary: Screen reader correctly reads unordered lists.
     summary_additional: |
       When you listen to an unordered list with a screen reader,
-      you hear "bullet item name" before each list item.
+      you hear "bullet item name" or "bullet" before each list item.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.0

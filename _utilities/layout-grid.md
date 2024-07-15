@@ -395,8 +395,8 @@ Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more in
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
           <span>
-            @include grid-container <br/>
-            @include grid-container("tablet")
+            @include grid-container; <br/>
+            @include grid-container("tablet");
           </span>
         </td>
       </tr>
@@ -436,7 +436,7 @@ Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more in
         </td>
         <td data-title="Accepted values" class="display-inline-flex flex-1">
           <span>
-            sm, md, lg, 2px, 05, 1, 3, 4, 6
+            auto, fill, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
@@ -461,7 +461,7 @@ Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more in
         </td>
         <td data-title="Accepted values" class="display-inline-flex flex-1">
           <span>
-            auto, fill, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+            sm, md, lg, 2px, 05, 1, 3, 4, 6
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
@@ -490,6 +490,29 @@ Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more in
         <td data-title="Example" class="display-inline-flex flex-2">
           <span>
             @include grid-offset(4)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
+          <span class="text-normal">
+            .order-<code>column-position</code>
+          </span>
+        </th>
+        <td data-title="Mixin" class="display-inline-flex flex-2">
+          <span>
+            u-order<code>(column-position)</code>
+          </span>
+        </td>
+        <td data-title="Accepted values" class="display-inline-flex flex-1">
+          <span>
+            first, last, initial, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+          </span>
+        </td>
+        <td data-title="Example" class="display-inline-flex flex-2">
+          <span>
+            @include u-order(4)
+            @include u-order("first")
           </span>
         </td>
       </tr>

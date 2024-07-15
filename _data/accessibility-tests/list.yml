@@ -18,7 +18,7 @@ test_items:
       For example, "List; four items."
     test_status: pass
     test_type: screen_reader
-    version_tested: 3.6.1
+    version_tested: 3.8.0
     wcag_criterion: 1.3.1
   - summary: Screen reader announces list items in the correct order.
     summary_additional: |
@@ -26,15 +26,15 @@ test_items:
       the screen reader announces list items in the same order that they appear on the screen (e.g., top to bottom for English pages).
     test_status: pass
     test_type: screen_reader
-    version_tested: 3.6.1
+    version_tested: 3.8.0
     wcag_criterion: 1.3.1
   - summary: Screen reader correctly reads unordered lists.
     summary_additional: |
       When you listen to an unordered list with a screen reader,
       you hear "bullet item name" before each list item.
     test_status: pass
-    test_type: screen reader
-    version_tested: 3.6.1
+    test_type: screen_reader
+    version_tested: 3.8.0
     wcag_criterion: 1.3.1
   - summary: Screen reader correctly reads ordered lists.
     summary_additional: |

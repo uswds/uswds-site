@@ -2783,23 +2783,14 @@ $theme-table-column-gap: 4;
     "color-variant": "white",
     "color-hover": $banner-icon-hover,
   );
+  
   $banner-icon-chevron-up: map-merge(
     $banner-icon-chevron,
     (
       "name": "expand_less",
     )
   );
-  $banner-icon-close: (
-    "name": "close",
-    "svg-height": 40,
-    "svg-width": 40,
-    "height": 3,
-    "color": "blue-60v",
-    "color-variant": "white",
-    "container-height": $size-touch-target,
-    "container-width": $size-touch-target,
-  );
-
+  
   @include typeset($site-banner-font-family);
   @include border-box-sizing;
   background-color: color($site-banner-background-color);
@@ -2807,18 +2798,6 @@ $theme-table-column-gap: 4;
   @include at-media("tablet") {
     font-size: font-size($site-banner-font-family, "3xs");
     padding-bottom: units(0);
-  }
-
-  .usa-accordion {
-    @include typeset($site-banner-font-family);
-  }
-
-  .usa-banner__header,
-  .usa-banner__content {
-    @include set-text-from-bg(
-      $site-banner-background-color,
-      $context: $banner-context
-    );
   }
 
   .usa-banner__content {
@@ -2843,55 +2822,6 @@ $theme-table-column-gap: 4;
     }
   }
 
-  .usa-banner__guidance {
-    @include u-display("flex");
-    @include u-flex("align-start");
-    @include u-measure($banner-guidance-measure);
-    padding-top: units(2);
-
-    @include at-media("tablet") {
-      padding-top: units(0);
-    }
-  }
-
-  .usa-banner__lock-image {
-    $lock-h: 64; // unitless height of svg
-    $lock-w: 52; // unitless width of svg
-    $lock-aspect: math.div($lock-w, $lock-h);
-    $icon-height: 1.5ex; // height of the lock icon; use ex for resilience
-
-    height: $icon-height;
-    width: $icon-height * $lock-aspect;
-    path {
-      fill: currentColor;
-    }
-  }
-
-  .usa-banner__inner {
-    @include add-responsive-site-margins;
-    @include grid-container($site-banner-max-width);
-    @include grid-row;
-    @include u-flex("align-start");
-    padding-right: units(0);
-
-    @include at-media("tablet") {
-      @include u-flex("align-center");
-    }
-  }
-
-  .usa-banner__header {
-    @include u-padding-y(1);
-    font-size: font-size($site-banner-font-family, 1);
-    font-weight: font-weight("normal");
-    min-height: units($size-touch-target);
-    position: relative;
-
-    @include at-media("tablet") {
-      @include u-padding-y(0.5);
-      min-height: 0;
-    }
-  }
-
   .usa-banner__header-text {
     @include u-margin-y(0);
     font-size: font-size($site-banner-font-family, 1);
@@ -2905,11 +2835,6 @@ $theme-table-column-gap: 4;
       0,
       middle,
       $site-banner-background-color
-    );
-    @include set-link-from-bg(
-      $site-banner-background-color,
-      $site-banner-link-color,
-      $context: $banner-context
     );
 
     line-height: line-height($site-banner-font-family, 2);
@@ -2926,78 +2851,38 @@ $theme-table-column-gap: 4;
     }
   }
 
-  .usa-banner__header-flag {
-    @include u-float("left");
-    margin-right: units(1);
-    width: units(2);
-
-    @include at-media("tablet") {
-      margin-right: units(1);
-      padding-top: units(0);
-    }
-  }
-
-  .usa-banner__header--expanded {
-    padding-right: units($size-touch-target + 1);
-
-    @include at-media("tablet") {
-      background-color: transparent;
-      display: block;
-      font-size: font-size($site-banner-font-family, 1);
-      font-weight: font-weight("normal");
-      min-height: units(0);
-      padding-right: units(0);
-    }
-
-    .usa-banner__inner {
-      margin-left: units(0);
-
-      @include at-media("tablet") {
-        margin-left: units(auto);
-      }
-    }
-
-    .usa-banner__header-action {
-      display: none;
-    }
-  }
-
   .usa-banner__button {
     font-size: font-size($site-banner-font-family, 1);
     line-height: line-height($site-banner-font-family, 2);
-
     @include at-media("tablet") {
       @include place-icon(
-        $banner-icon-chevron,
+        $banner-icon-chevron, 
         "after",
         "2px",
         middle,
-        $site-banner-background-color
-      );
-      @include set-link-from-bg(
         $site-banner-background-color,
-        $site-banner-link-color,
-        $context: $banner-context
       );
     }
 
     &[aria-expanded="true"] {
       background-image: none;
+      @include at-media("tablet") {
+        @include place-icon(
+          $banner-icon-chevron-up,
+          "after",
+          "2px",
+          middle,
+          $site-banner-background-color
+        );
+        height: auto;
+        padding: units(0);
+        position: relative;
+
+        &:after {
+          position: absolute;
+        }
+      }
     }
-  }
-
-  .usa-banner__button-text {
-    @include add-sr-only;
-    text-decoration: underline;
-
-    @include at-media("tablet") {
-      @include add-no-sr-only;
-      display: inline;
-    }
-  }
-
-  .usa-banner__icon {
-    width: units(5);
   }
 
   // [uswds-init.js] Offscreen content while js is loading

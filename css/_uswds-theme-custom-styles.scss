@@ -2800,6 +2800,10 @@ $theme-table-column-gap: 4;
     padding-bottom: units(0);
   }
 
+  .usa-accordion {
+    @include typeset($site-banner-font-family);
+  }
+
   .usa-banner__content {
     @include grid-container($site-banner-max-width);
     @include add-responsive-site-margins;

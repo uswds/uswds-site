@@ -2866,6 +2866,11 @@ $theme-table-column-gap: 4;
         middle,
         $site-banner-background-color,
       );
+      @include set-link-from-bg(
+        $site-banner-background-color,
+        $site-banner-link-color,
+        $context: $banner-context
+      );
     }
 
     &[aria-expanded="true"] {

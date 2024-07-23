@@ -1,0 +1,9 @@
+title: Identifier accessibility tests
+type: component
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: [Related PR number]
+    githubRepo: uswds-site

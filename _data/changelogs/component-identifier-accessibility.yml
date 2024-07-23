@@ -5,5 +5,5 @@ items:
   - date: NNNN-NN-NN
     summary: Added accessibility tests page.
     affectsGuidance: true
-    githubPr: [Related PR number]
+    githubPr: 2754
     githubRepo: uswds-site

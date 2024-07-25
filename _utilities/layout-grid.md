@@ -493,29 +493,6 @@ Find a full list of the available [grid settings]({{ site.baseurl }}/documentati
           </span>
         </td>
       </tr>
-      <tr>
-        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
-          <span class="text-normal">
-            .order-<code>column position</code>
-          </span>
-        </th>
-        <td data-title="Mixin" class="display-inline-flex flex-2">
-          <span>
-            u-order(<code>column position</code>)
-          </span>
-        </td>
-        <td data-title="Accepted values" class="display-inline-flex flex-1">
-          <span>
-            first, last, initial, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
-          </span>
-        </td>
-        <td data-title="Example" class="display-inline-flex flex-2">
-          <span>
-            @include u-order(4); <br/>
-            @include u-order("first");
-          </span>
-        </td>
-      </tr>
     </tbody>
   </table>
   {% include utilities/utility-mixin-using.html %}

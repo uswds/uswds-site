@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Fixed a bug that caused `mouseover` events to focus buttons and prevent keyboard navigation. 
-    summaryAdditional:  Now, hovering the mouse over date picker buttons will only cause the hover state.
+    summaryAdditional:  When you hover your mouse over the date picker buttons, only the hover state will be triggered.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 5774

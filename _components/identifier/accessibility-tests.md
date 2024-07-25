@@ -5,7 +5,7 @@ component:
   name: identifier
 title: Identifier accessibility tests
 category: Components
-lead: Any USWDS Identifier component should pass these manual accessibility tests.
+lead: Any USWDS identifier component should pass these manual accessibility tests.
 changelog:
   key: 'component-identifier-accessibility'
 ---

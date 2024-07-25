@@ -95,8 +95,8 @@ The following sections break the layout grid down and describe how it works.
 <div class="grid-container">
   <div class="grid-row">
     <div class="grid-col-auto">.grid-col-auto</div>
-    <div class="grid-col-fill">.grid-col</div>
-    <div class="grid-col-fill">.grid-col</div>
+    <div class="grid-col">.grid-col</div>
+    <div class="grid-col-fill">.grid-col-fill</div>
     <div class="grid-col-auto">.grid-col-auto</div>
   </div>
 </div>
@@ -198,20 +198,20 @@ The following sections break the layout grid down and describe how it works.
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="grid-row">
   <div class="tablet:grid-col-8">.tablet:grid-col-8</div>
-  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
 </div>
 
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
 <div class="grid-row">
-  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
-  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
-  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
 </div>
 
 <!-- Columns are always 50% wide, on mobile and desktop -->
 <div class="grid-row">
-  <div class="grid-col-6">.col-6</div>
-  <div class="grid-col-6">.col-6</div>
+  <div class="grid-col-6">.grid-col-6</div>
+  <div class="grid-col-6">.grid-col-6</div>
 </div>
 {% endcapture %}
 {{ grid-mix }}

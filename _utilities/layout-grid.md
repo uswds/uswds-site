@@ -385,12 +385,12 @@ Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more in
         </td>
         <td data-title="Mixin" class="display-inline-flex flex-2">
           <span>
-            grid-container<code>(container size)</code>
+            grid-container(<code>container size</code>)
           </span>
         </td>
         <td data-title="Accepted values" class="display-inline-flex flex-1">
           <span>
-            mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
+            card, card-lg, mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
@@ -431,7 +431,7 @@ Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more in
         </th>
         <td data-title="Mixin" class="display-inline-flex flex-2">
           <span>
-            grid-col<code>(column count)</code>
+            grid-col(<code>column count</code>)
           </span>
         </td>
         <td data-title="Accepted values" class="display-inline-flex flex-1">
@@ -461,7 +461,7 @@ Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more in
         </td>
         <td data-title="Accepted values" class="display-inline-flex flex-1">
           <span>
-            sm, md, lg, 2px, 05, 1, 3, 4, 6
+            sm, md, lg, 0, 2px, 05, 1, 2, 3, 4, 6
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
@@ -474,17 +474,17 @@ Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more in
       <tr>
         <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
           <span class="text-normal">
-            .grid-offset-<code>column-count</code>
+            .grid-offset-<code>column count</code>
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex flex-2">
           <span>
-            grid-offset<code>(column-count)</code>
+            grid-offset(<code>column count</code>)
           </span>
         </td>
         <td data-title="Accepted values" class="display-inline-flex flex-1">
           <span>
-            none, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+            none, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
@@ -496,17 +496,17 @@ Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more in
       <tr>
         <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
           <span class="text-normal">
-            .order-<code>column-position</code>
+            .order-<code>column position</code>
           </span>
         </th>
         <td data-title="Mixin" class="display-inline-flex flex-2">
           <span>
-            u-order<code>(column-position)</code>
+            u-order(<code>column position</code>)
           </span>
         </td>
         <td data-title="Accepted values" class="display-inline-flex flex-1">
           <span>
-            first, last, initial, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+            first, last, initial, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
           </span>
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">

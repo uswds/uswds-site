@@ -418,7 +418,7 @@ Find a full list of the available [grid settings]({{ site.baseurl }}/documentati
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
           <span>
-            @include grid-row
+            @include grid-row;
           </span>
         </td>
       </tr>
@@ -441,9 +441,9 @@ Find a full list of the available [grid settings]({{ site.baseurl }}/documentati
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
           <span>
-            @include grid-col <br/>
-            @include grid-col(6) <br/>
-            @include grid-col("auto")
+            @include grid-col; <br/>
+            @include grid-col(6); <br/>
+            @include grid-col("auto");
           </span>
         </td>
       </tr>
@@ -466,8 +466,8 @@ Find a full list of the available [grid settings]({{ site.baseurl }}/documentati
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
           <span>
-            @include grid-gap <br />
-            @include grid-gap("lg")
+            @include grid-gap; <br />
+            @include grid-gap("lg");
           </span>
         </td>
       </tr>
@@ -489,7 +489,7 @@ Find a full list of the available [grid settings]({{ site.baseurl }}/documentati
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
           <span>
-            @include grid-offset(4)
+            @include grid-offset(4);
           </span>
         </td>
       </tr>
@@ -511,8 +511,8 @@ Find a full list of the available [grid settings]({{ site.baseurl }}/documentati
         </td>
         <td data-title="Example" class="display-inline-flex flex-2">
           <span>
-            @include u-order(4)
-            @include u-order("first")
+            @include u-order(4); <br/>
+            @include u-order("first");
           </span>
         </td>
       </tr>

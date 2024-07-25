@@ -358,9 +358,9 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 </div>
 
 ## Theme settings
-You can redefine column gap token sizes, set the grid container max width, and update site margin by defining the relevant theme setting in your `_uswds-theme.scss` file.
+You can redefine column gap token sizes, set the grid container max width, and update site margin by defining the relevant theme setting in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings#configuring-custom-uswds-settings).
 
-Visit the [settings page]({{ site.baseurl }}/documentation/settings) for more information and available settings.
+Find a full list of the available [grid settings]({{ site.baseurl }}/documentation/settings#spacing-settings) on the settings page.
 
 <section id="utility-mixins" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>

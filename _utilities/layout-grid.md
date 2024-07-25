@@ -369,127 +369,101 @@ Find a full list of the available [grid settings]({{ site.baseurl }}/documentati
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col" class="tablet:maxw-card-lg display-inline-flex flex-2">Utility</th>
-        <th scope="col" class="display-inline-flex flex-2">Mixin</th>
-        <th scope="col" class="display-inline-flex flex-1">Accepted values</th>
-        <th scope="col" class="display-inline-flex flex-2">Example</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Utility</th>
+        <th scope="col" class="display-inline-flex">Mixin</th>
+        <th scope="col" class="display-inline-flex">Accepted values</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td data-title="Utility" class="tablet:maxw-card-lg flex-2">
+        <td data-title="Utility" class="tablet:maxw-card-lg">
           <span>
             .grid-container <br />
             .grid-container-<code>container size</code>
           </span>
         </td>
-        <td data-title="Mixin" class="display-inline-flex flex-2">
-          <span>
-            grid-container(<code>container size</code>)
-          </span>
-        </td>
-        <td data-title="Accepted values" class="display-inline-flex flex-1">
-          <span>
-            card, card-lg, mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
-          </span>
-        </td>
-        <td data-title="Example" class="display-inline-flex flex-2">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include grid-container; <br/>
             @include grid-container("tablet");
           </span>
         </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            card, card-lg, mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
+          </span>
+        </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .grid-row
           </span>
         </th>
-        <td data-title="Mixin" class="display-inline-flex flex-2">
-          <span>
-            grid-row
-          </span>
-        </td>
-        <td data-title="Accepted values" class="display-inline-flex flex-1">
-          <span>
-            -
-          </span>
-        </td>
-        <td data-title="Example" class="display-inline-flex flex-2">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include grid-row;
           </span>
         </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            -
+          </span>
+        </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .grid-col <br />
             .grid-col-<code>column count</code>
           </span>
         </th>
-        <td data-title="Mixin" class="display-inline-flex flex-2">
-          <span>
-            grid-col(<code>column count</code>)
-          </span>
-        </td>
-        <td data-title="Accepted values" class="display-inline-flex flex-1">
-          <span>
-            auto, fill, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-          </span>
-        </td>
-        <td data-title="Example" class="display-inline-flex flex-2">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include grid-col; <br/>
             @include grid-col(6); <br/>
             @include grid-col("auto");
           </span>
         </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            auto, fill, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+          </span>
+        </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .grid-gap <br />
             .grid-gap-<code>gap size</code>
           </span>
         </th>
-        <td data-title="Mixin" class="display-inline-flex flex-2">
-          <span>
-            grid-gap(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
-          </span>
-        </td>
-        <td data-title="Accepted values" class="display-inline-flex flex-1">
-          <span>
-            sm, md, lg, 0, 2px, 05, 1, 2, 3, 4, 6
-          </span>
-        </td>
-        <td data-title="Example" class="display-inline-flex flex-2">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include grid-gap; <br />
             @include grid-gap("lg");
           </span>
         </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            sm, md, lg, 0, 2px, 05, 1, 2, 3, 4, 6
+          </span>
+        </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex flex-2">
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .grid-offset-<code>column count</code>
           </span>
         </th>
-        <td data-title="Mixin" class="display-inline-flex flex-2">
-          <span>
-            grid-offset(<code>column count</code>)
-          </span>
-        </td>
-        <td data-title="Accepted values" class="display-inline-flex flex-1">
-          <span>
-            none, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-          </span>
-        </td>
-        <td data-title="Example" class="display-inline-flex flex-2">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include grid-offset(4);
+          </span>
+        </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            none, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
           </span>
         </td>
       </tr>

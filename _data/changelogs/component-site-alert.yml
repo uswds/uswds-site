@@ -2,6 +2,11 @@ title: Site alert
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated horizontal alignment in the alert and site alert components.
+    affectsStyles: true
+    githubPr: 5626
+    githubRepo: uswds
   - date: 2023-11-09
     summary: Removed the component's top margin.
     summaryAdditional:

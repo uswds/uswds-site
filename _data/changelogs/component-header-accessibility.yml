@@ -5,4 +5,4 @@ items:
    summary: Added accessibility tests page.
    affectsGuidance: true
    githubPr: [Related PR number]
-   githubRepo: uswds
+   githubRepo: uswds-site

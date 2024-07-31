@@ -71,8 +71,8 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.1
     wcag_criterion: 1.1.1
-  - summary: Screen reader announces footer navigation or region.
-    summary_additional: When using a screen reader to acces the footer, you hear "footer navigation, navigation landmark (or region in JAWS). You can also use shortcut keys in the screen reader to navigate the footer. 
+  - summary: Screen reader announces footer navigation and region.
+    summary_additional: When using a screen reader to navigate the footer, you hear "footer navigation" when focusing on the link list and "footer" when focusing on the outer region of the component.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.1

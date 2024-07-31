@@ -84,7 +84,7 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 1.3.1
   - summary: Screen reader focus follows logical content order.
-    summary_additional: When you navigate through the footer with a screen reader, the focus stays in order of the content as intended. 
+    summary_additional: When you navigate through the footer with a screen reader, you hear the content announced in the same order that it appears on the page.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.1

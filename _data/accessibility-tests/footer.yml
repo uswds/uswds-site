@@ -2,8 +2,8 @@ title: Footer
 component_status: pass
 test_items:
 # General tests
-  - summary: Some fields have auto-populate capability. 
-    summary_additional: When you navigate to an input field in the footer (like an email address), there will be an option in the browser to auto-populate information.
+  - summary: In the big footer variant, the email input field announces its purpose.
+    summary_additional: When you navigate to the email address input field in the big footer variant, you hear that the input expects the user's email address.
     test_status: pass
     test_type: general
     version_tested: 3.8.1

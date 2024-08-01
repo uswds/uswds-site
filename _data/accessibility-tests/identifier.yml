@@ -14,7 +14,7 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 1.4.3
- - summary: Identifier icons meets color contrast requirements.
+  - summary: Identifier icons meets color contrast requirements.
     summary_additional: When you use a color contrast checker to view the identifier, contrast between the icon and adjacent colors is at least 3:1.
     test_status: conditional
     test_type: general

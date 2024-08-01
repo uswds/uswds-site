@@ -8,18 +8,18 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 1.4.1
-  - summary: Identifier icons meets color contrast requirements.
-    summary_additional: When you use a color contrast checker to view the identifier, contrast between the icon and adjacent colors is at least 3:1.
-    test_status: conditional
-    test_type: general
-    version_tested: 3.8.1
-    wcag_criterion: 1.4.3
   - summary: Identifier text meets color contrast requirements.
     summary_additional: When you use a color contrast checker to view the identifier, contrast between the text color and background color is at least 4.5:1.
     test_status: conditional
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 1.4.3
+ - summary: Identifier icons meets color contrast requirements.
+    summary_additional: When you use a color contrast checker to view the identifier, contrast between the icon and adjacent colors is at least 3:1.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 1.4.11
   - summary: Links provide direct location description.
     summary_additional: You can read the text of any link in the identifier to understand where the link will take you.
     test_status: pass

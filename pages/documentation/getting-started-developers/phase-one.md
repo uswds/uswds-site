@@ -59,7 +59,7 @@ ls
 ## Step 3: Install USWDS
 Now, you can install USWDS — and any other Node package — from the command line with npm.
 
-npm does the work of installing packages and, behind the scenes, automatically installing all the software each package needs to run (also known as a package’s dependencies). The final software is saved into a new directory called `node_modules`.
+Npm does the work of installing packages and, behind the scenes, automatically installing all the software each package needs to run (also known as a package’s dependencies). The final software is saved into a new directory called `node_modules`.
 
 To install USWDS from the command line and save it as a dependency in your `package.json`, run the following command:
 

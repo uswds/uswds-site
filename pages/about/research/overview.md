@@ -34,23 +34,23 @@ Our research program focuses on:
 ## Research methods
 
 {:.border-top-2px .border-base-lighter .padding-top-1}
-We use a variety of research methods to gain insights at all stages of the design process. Find more information about different research methods we use in [18F Methods](https://methods.18f.gov/).
+We use a variety of research methods to gain insights at all stages of the design process. Find more information about different research methods we use in [18F Methods](https://guides.18f.gov/methods/).
 
 ### Examples of methods we use
 
 Methods that can **generate new knowledge** about needs or a certain problem, such as:
 
 {:.usa-list}
-- [User interviews](https://methods.18f.gov/discover/stakeholder-and-user-interviews/)
+- [User interviews](https://guides.18f.gov/methods/discover/stakeholder-and-user-interviews/)
 - Surveys
-- [Card sorting](https://methods.18f.gov/validate/card-sorting/)
+- [Card sorting](https://guides.18f.gov/methods/validate/card-sorting/)
 - [Top Tasks analysis](https://digital.gov/event/2018/04/11/a-deep-dive-into-top-tasks-with-gerry-mcgovern/)
 - Landscape analysis
 
 Methods that can help us **evaluate an existing idea, prototype, or product**, such as:
 
 {:.usa-list}
-- [Usability testing](https://methods.18f.gov/validate/usability-testing/)
+- [Usability testing](https://guides.18f.gov/methods/validate/usability-testing/)
 - [Manual accessibility testing](https://digital.gov/resources/how-test-websites-for-accessibility/)
 - [Analytics](https://digital.gov/resources/how-to-build-an-analytics-strategy/)
 - Content testing

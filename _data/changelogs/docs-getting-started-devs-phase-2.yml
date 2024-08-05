@@ -8,7 +8,7 @@ items:
     githubPr: 2750
     githubRepo: uswds-site
   - date: NNNN-NN-NN
-    summary: Replaced "Gulp 4" references with "Gulp 5".
+    summary: Removed the version number from "Gulp 4" references.
     affectsGuidance: true
     githubPr: 2750
     githubRepo: uswds-site

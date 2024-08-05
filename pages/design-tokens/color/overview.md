@@ -203,7 +203,7 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 - W3C: Contrast levels for readability
   [https://www.w3.org/WAI/test-evaluate/preliminary/#contrast](https://www.w3.org/WAI/test-evaluate/preliminary/#contrast){:.display-block}
 - W3C: Gap analysis of the state of accessibility for people with learning disabilities and cognitive disabilities
-  [https://w3c.github.io/wcag/coga/gap-analysis.html](https://w3c.github.io/wcag/coga/gap-analysis.html){:.display-block}
+  [https://www.w3.org/TR/coga-gap-analysis/](https://www.w3.org/TR/coga-gap-analysis/){:.display-block}
 - W3C: Low vision needs
   [https://www.w3.org/TR/low-vision-needs/](https://www.w3.org/TR/low-vision-needs/){:.display-block}
 

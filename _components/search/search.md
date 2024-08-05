@@ -10,16 +10,8 @@ redirect_from:
 - /search-bar/
 - /components/search-bar/
 subnav:
-- text: Preview
-  href: '#search-preview'
-- text: Code
-  href: '#search-code'
-- text: Guidance
-  href: '#search-guidance'
-- text: Package
-  href: '#search-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Search accessibility tests
+  href: /components/search/accessibility-tests/
 title: Search
 type: component
 tags:

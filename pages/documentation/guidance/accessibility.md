@@ -23,7 +23,7 @@ subnav:
   href: '#changelog'
 changelog:
   key: 'docs-accessibility'
-in_page_nav: false
+in_page_nav_headings: "h2"
 ---
 The U.S. Web Design System is built on a foundation of accessibility. That foundation was created with and for our colleagues who develop digital services for all Americans.
 
@@ -160,7 +160,7 @@ We recommend a mix of automated, semi-automated, and manual testing in addition 
 - [Usability testing on Digital.gov](https://digital.gov/topics/usability-testing/) [digital.gov]
 - [Getting started with usability testing](https://digital.gov/2015/03/19/getting-started-with-usability-testing/) [digital.gov]
 - [Testing for plain-language usability](https://www.plainlanguage.gov/guidelines/test/usability-testing/) [plainlanguage.gov]
-- [18F’s collection of human-centered design tools](https://methods.18f.gov/) [18f.gov]
+- [18F’s collection of human-centered design tools](https://guides.18f.gov/methods/) [guides.18f.gov]
 
 ## Accessibility resources
 

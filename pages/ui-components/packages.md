@@ -48,7 +48,7 @@ With packages and Sass module syntax in USWDS 3.0, you can be confident that pac
 ### The uswds-core package
 The `uswds-core` package is a new package in USWDS 3.0. `uswds-core` is the engine of the design system, and includes all the functions, mixins, placeholders, tokens, and fonts necessary to write USWDS Sass.
 
-Any custom Sass you write needs to `@use "uswds-core"` at the top of the file to load the USWDS design language. We suggest using `@uswds "uswds-core" as *` to add USWDS to the global namespace. For example:
+Any custom Sass you write needs to `@use "uswds-core"` at the top of the file to load the USWDS design language. We suggest using `@use "uswds-core" as *` to add USWDS to the global namespace. For example:
 
 ```scss
 /* custom-styles.scss */

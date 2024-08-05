@@ -1,3 +1,5 @@
+{% assign component_name = page.title | remove: ' accessibility tests' | downcase %}
+
 <!-- Create a list of each status type -->
 {% assign status_types = "Passed, Passed with exceptions, Conditional, Failed" | split: ", " %}
 
@@ -138,5 +140,5 @@
 {% if include.page == 'checklist' %}
 </div>
 {% elsif include.page == 'main' %}
-<p class="margin-top-0">Learn more on the <a href="{{ site.baseurl }}/components/{{ componentName }}/accessibility-tests/">{{ componentName }} accessibility tests page</a>.</p>
+<p class="margin-top-0">Learn more on the <a href="{{ site.baseurl }}/components/{{ componentKey }}/accessibility-tests/">{{ component_name }} accessibility tests page</a>.</p>
 {% endif %}

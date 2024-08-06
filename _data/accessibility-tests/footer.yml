@@ -6,7 +6,7 @@ test_items:
     summary_additional: When you navigate to the email address input field in the big footer variant, you hear that the input expects the user's email address. Additionally, the input field has the `autocomplete="email"` attribute.
     test_status: exception
     test_type: general
-    status_details: The input is appropriately marked as an "email" input type, but does not have the autocomplete attribute in the default component example. Be sure to add the autocomplete="email" attribute to the email input element in your implementation of the component.
+    status_details: The input is appropriately marked as an "email" input type, but does not have the autocomplete attribute in the default component example. Be sure to add the `autocomplete="email"` attribute to the email input element in your implementation of the component.
     github_issue_number: 6001
     github_issue_repo: uswds
     version_tested: 3.8.1

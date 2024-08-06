@@ -2,12 +2,6 @@ title: Header
 component_status: pass
 test_items:
 # General tests
-  - summary:
-    summary_additional:
-    test_status:
-    test_type: general
-    version_tested:
-    wcag_criterion:
   - summary: Header content is consistent in mobile views.
     summary_additional: |
       When you view the page on a mobile device, 
@@ -72,12 +66,6 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 2.4.5
 # Zoom/screen magnification tests
-  - summary:
-    summary_additional:
-    test_status:
-    test_type: zoom
-    version_tested:
-    wcag_criterion:
   - summary: Header links are visible and functional when screen is magnified.
     summary_additional: |
       When you zoom in to 200%, 
@@ -87,12 +75,6 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 1.4.4
 # Keyboard navigation tests
-  - summary:
-    summary_additional:
-    test_status:
-    test_type: keyboard
-    version_tested:
-    wcag_criterion:
   - summary: You can hover over header content.
     summary_additional: |
       When you move the pointer over an active header menu item, 
@@ -184,12 +166,6 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 2.4.13
 # Screen reader tests
-  - summary:
-    summary_additional:
-    test_status:
-    test_type: screen_reader
-    version_tested:
-    wcag_criterion:
   - summary: Screen reader announces header as a navigation landmark.
     summary_additional: |
       When you use a screen reader and access the header, 
@@ -234,7 +210,7 @@ test_items:
   - summary: Screen reader announces search field purpose.
     summary_additional: |
       When you use a screen reader and access a search field in a header, 
-      ou can hear that you are able to edit what is in the search field. 
+      you can hear that you are able to edit what is in the search field. 
       Note: Messaging varies, depending on which screen reader you use.
     test_status: pass
     test_type: screen_reader

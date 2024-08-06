@@ -23,8 +23,8 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 1.4.10
-  - summary: Footer icons and non-text content meet color contrast requirements. 
-    summary_additional: When you use a color contrast checker to view the footer, contrast between the icon or other non-text elements and adjacent colors is at least 3:1.
+  - summary: Footer icons meet color contrast requirements. 
+    summary_additional: When you use a color contrast checker to view the footer, contrast between the icons and adjacent colors is at least 3:1.
     test_status: pass
     test_type: general
     version_tested: 3.8.1

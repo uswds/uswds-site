@@ -181,8 +181,6 @@ The following are practical actions you can take:
 
 #### Non-government resources
 
-
-
 - [Web accessibility perspectives videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
 - [Inclusive design principles](https://inclusivedesignprinciples.info/) [inclusivedesignprinciples.info]
 - [Accessibility fundamentals with Rob Dodson](https://www.youtube.com/watch?v=z8xUCzToff8) [youtube.com]

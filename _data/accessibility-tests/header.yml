@@ -108,7 +108,7 @@ test_items:
     wcag_criterion: 2.1.1
   - summary: Header elements do not trap keyboard focus on desktop.
     summary_additional: | 
-      When you navigate with a keyboard, 
+      When you navigate with a keyboard in the desktop view, 
       you can easily move into and out of the header.
     test_status: pass
     test_type: keyboard

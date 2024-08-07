@@ -2,6 +2,12 @@ title: Memorable date
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Added known issues section.
+  summaryAdditional:
+  affectsGuidance: true
+  githubPr: 2716
+  githubRepo: uswds-site
 - date: 2023-08-23
   summary: Updated styles to allow the component to wrap to multiple lines at narrow widths.
   summaryAdditional:

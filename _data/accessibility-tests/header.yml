@@ -41,7 +41,7 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 3.2.3
-  - summary: All clickable elements touch target size meet height and width requirements.
+  - summary: The touch target on all interactive elements meets height and width requirements.
     summary_additional: |
       The size and spacing of the touch target are at least 24px wide and 24px tall.
     test_status: pass
@@ -108,7 +108,7 @@ test_items:
     wcag_criterion: 2.1.1
   - summary: Header elements do not trap keyboard focus on desktop.
     summary_additional: | 
-      When you navigate with a keyboard, 
+      When you navigate with a keyboard in the desktop view, 
       you can easily move into and out of the header.
     test_status: pass
     test_type: keyboard
@@ -125,7 +125,7 @@ test_items:
   - summary: Keyboard can bypass header and navigation. 
     summary_additional: |
       When you visit a page using the keyboard, 
-      a "skip to main content" link at the top of the page, before the header navigation, will allow you to navigate past the header and navigation, in to page content.
+      a "skip to main content" link at the top of the page, before the header navigation, will allow you to navigate past the header and navigation, into page content.
     test_status: conditional
     test_type: keyboard
     version_tested: 3.8.1
@@ -134,8 +134,8 @@ test_items:
     summary_additional: |
       When you tab through the header with a keyboard, 
       the focus stays in order of the content as intended. 
-    test_status: fail
-    status_details: The tab order in the mobile header menu does not currently match the visual order.
+    test_status: exception
+    status_details: In standard variants of the header component, the tab order of the search input in the mobile header menu does not currently match the visual order. This test passes in the "extended" variants of the header.
     github_issue_number: 5971
     github_issue_repo: uswds
     test_type: keyboard

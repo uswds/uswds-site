@@ -134,8 +134,8 @@ test_items:
     summary_additional: |
       When you tab through the header with a keyboard, 
       the focus stays in order of the content as intended. 
-    test_status: fail
-    status_details: The tab order in the mobile header menu does not currently match the visual order.
+    test_status: exception
+    status_details: In standard variants of the header component, the tab order of the search input in the mobile header menu does not currently match the visual order. This test passes in the "extended" variants of the header.
     github_issue_number: 5971
     github_issue_repo: uswds
     test_type: keyboard

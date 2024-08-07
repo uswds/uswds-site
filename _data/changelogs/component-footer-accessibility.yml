@@ -1,0 +1,8 @@
+title: Footer accessibility tests
+type: component
+items:
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 2760
+    githubRepo: uswds-site

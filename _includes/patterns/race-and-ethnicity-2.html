@@ -1,0 +1,29 @@
+{% comment %}
+  This partial is a child of race-and-ethnicity-wrapper.
+  Params are defined in race.yml
+
+  @param {string} category.name - Top-level race/ethnicity categories
+  @param {string} category.types - Second-level race/ethnicity categories
+  @param {string} category.examples - Third-level race/ethnicity categories
+{% endcomment %}
+
+{% for category in data.categories %}
+  {% if category.types %}
+    {% assign types = category.types %}
+  {% elsif category.examples %}
+    {% assign types = category.examples %}
+  {% endif %}
+  <div class="usa-checkbox">
+    <input
+      class="usa-checkbox__input"
+      type="checkbox"
+      id="{{ category.name | slugify }}-checkbox-2"
+      name="{{ category.name | slugify }}-checkbox-2">
+    <label class="usa-checkbox__label" for="{{ category.name | slugify }}-checkbox-2">
+      {{ category.name }}
+      <p class="margin-top-05 margin-bottom-0 usa-hint">
+        For example, {% for type in types %} {{ type }}, {% endfor %} etc.
+      </p>
+    </label>
+  </div>
+{% endfor %}

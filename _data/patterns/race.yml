@@ -1,0 +1,85 @@
+legend: What is your race and/or ethnicity?
+hint: Select all that apply
+hint_input: and enter additional details in the spaces below
+categories:
+  - name: American Indian or Alaska Native
+    examples:
+      - Navajo Nation
+      - Blackfeet Tribe of the Blackfeet Indian Reservation of Montana
+      - Native Village of Barrow Inupiat Traditional Government
+      - Nome Eskimo Community
+      - Aztec
+      - Maya
+  - name: Asian
+    types:
+      - Chinese
+      - Asian Indian
+      - Filipino
+      - Vietnamese
+      - Korean
+      - Japanese
+    examples:
+      - Pakistani
+      - Hmong
+      - Afghan
+  - name: Black or African American
+    types:
+      - African American
+      - Jamaican
+      - Haitian
+      - Nigerian
+      - Ethiopian
+      - Somali
+    examples:
+      - Trinidadian and Tobagonian
+      - Ghanaian
+      - Congolese
+  - name: Hispanic or Latino
+    types:
+      - Mexican
+      - Puerto Rican
+      - Salvadoran
+      - Cuban
+      - Dominican
+      - Guatemalan
+    examples:
+      - Colombian
+      - Honduran
+      - Spaniard
+  - name: Middle Eastern or North African
+    types:
+      - Lebanese
+      - Iranian
+      - Egyptian
+      - Syrian
+      - Iraqi
+      - Israeli
+    examples:
+      - Moroccan
+      - Yemeni
+      - Kurdish
+  - name: Native Hawaiian or Pacific Islander
+    types:
+      - Native Hawaiian
+      - Samoan
+      - Chamorro
+      - Tongan
+      - Fijian
+      - Marshallese
+    examples:
+      - Chuukese
+      - Palauan
+      - Tahitian
+  - name: White
+    types:
+      - English
+      - German
+      - Irish
+      - Italian
+      - Polish
+      - Scottish
+    examples:
+      - French
+      - Swedish
+      - Norwegian
+

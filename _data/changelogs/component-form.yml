@@ -5,6 +5,13 @@ title: Form
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improved form group error styles to be consistent across devices.
+    summaryAdditional: Margins are now uniform across various screen sizes and no longer shifts content.
+    affectsStyles: true
+    githubPr: 5999
+    githubRepo: uswds
+    versionUswds: 3.9.0
   - date: 2024-03-11
     summary: Added color contrast checks for disabled tokens.
     summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.

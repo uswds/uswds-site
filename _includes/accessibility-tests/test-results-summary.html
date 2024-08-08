@@ -1,4 +1,6 @@
 {% assign component_name = page.title | remove: ' accessibility tests' | downcase %}
+{% assign componentKey = component_name | slugify %}
+{% assign data = site.data.accessibility-tests[componentKey] %}
 
 <!-- Create a list of each status type -->
 {% assign status_types = "Passed, Passed with exceptions, Conditional, Failed" | split: ", " %}
@@ -10,7 +12,7 @@
 {% assign conditional_icon = 'info' %}
 
 <!-- Count the number of items for each status type -->
-{% assign items = component.test_items %}
+{% assign items = data.test_items %}
 
 {% assign items_total = 0 %}
 {% assign items_pass = 0 %}

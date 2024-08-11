@@ -39,7 +39,6 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
         </h3>
         <div class="do-dont__content">
           <ul>
-<li><b>New disabled states content here?</b></li>
             <li>Make sure you’re helping users to understand expectations as you are <a href="{{ site.baseurl }}/patterns/complete-a-complex-form/establish-trust/">Establishing trust</a>. Be transparent in why specific information is being collected, how it will be used, and how that information will be safeguarded.</li>
             <li>Design with mobile in mind. Consider the touch screen experience and how forms can be delivered in bandwidth-challenged environments.</li>
             <li>Progressively disclose information, guiding the user from simple to more difficult questions.</li>

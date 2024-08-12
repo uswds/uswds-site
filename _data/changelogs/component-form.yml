@@ -5,6 +5,14 @@ title: Form
 type: component
 changelogURL:
 items:
+  - date: 2024-08-12
+    summary: Added a Disabled states guidance section with new guidance.
+    summaryAdditional:  We added a new section providing guidance on best practices for disabled states. 
+    affectsAccessibility: true
+    affectsGuidance: true
+    githubPr: 2776
+    githubRepo: uswds
+    versionUswds: 3.8.2
   - date: 2024-03-11
     summary: Added color contrast checks for disabled tokens.
     summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.

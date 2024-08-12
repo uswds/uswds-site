@@ -93,9 +93,6 @@ jobs:
             bundle config set --local path '~/project/vendor/bundle'
             bundle exec rspec
       - run:
-          name: Build site assets
-          command: npm run build
-      - run:
           name: Run HTML proofer
           command: npm run proof
       - snyk/scan:

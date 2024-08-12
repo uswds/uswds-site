@@ -24,7 +24,7 @@ subnav:
 - text: Long-term support of v1.x
   href: '#long-term-support-of-v1x'
 - text: Long-term support of v2.x
-  href: '#long-term-support-of-v2x'
+  href: '#long-term-support-of-v2-x'
 - text: Need installation help?
   href: '#need-installation-help'
 - text: Contributing

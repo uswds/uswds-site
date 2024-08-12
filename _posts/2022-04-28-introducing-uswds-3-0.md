@@ -70,4 +70,4 @@ We believe that JavaScript-disabled environments fall below our 2% support thres
 
 In addition to supporting active development on USWDS 3, we will continue to support the USWDS 2 branch for one year of maintenance and security patches (until April 2023). The current LTS version of USWDS 2 is [USWDS 2.13.3](https://github.com/uswds/uswds/releases/tag/v2.13.3).
 
-[Long-term support of version 2.x]({{ site.baseurl }}/documentation/developers/#long-term-support-of-v2-x) →
+[Long-term support of version 2.x]({{ site.baseurl }}/documentation/developers/#long-term-support-of-v2x) →

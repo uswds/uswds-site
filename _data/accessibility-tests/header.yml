@@ -4,7 +4,7 @@ test_items:
 # General tests
   - summary: Header content is consistent in mobile views.
     summary_additional: |
-      When you view the page on a mobile device, 
+      When you view the page on a mobile device,
       the header is visible and works in both portrait and landscape settings.
     test_status: pass
     test_type: general
@@ -20,7 +20,7 @@ test_items:
     wcag_criterion: 1.4.3
   - summary: Search icon in header meets color contrast requirements.
     summary_additional: |
-      When you use a color contrast checker to view the search icon, 
+      When you use a color contrast checker to view the search icon,
       contrast between the icon and adjacent colors is at least 3:1.
     test_status: pass
     test_type: general
@@ -28,7 +28,7 @@ test_items:
     wcag_criterion: 1.4.11
   - summary: Current page link has a distinct style.
     summary_additional: |
-      When viewing the navigation link list, 
+      When viewing the navigation link list,
       the current page has distinct styling that gives clear visual indication of where you are in the site.
     test_status: pass
     test_type: general
@@ -50,15 +50,15 @@ test_items:
     wcag_criterion: 2.5.8
   - summary: Header is not the only way to navigate the site.
     summary_additional: |
-      When navigating through the website, 
+      When navigating through the website,
       you understand there are other options for navigation, such as Search or an HTML site map.
     test_status: conditional
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 2.4.5
-    - summary: You can hover over header content.
+  - summary: You can hover over header content.
     summary_additional: |
-      When you move the pointer over an active header menu item, 
+      When you move the pointer over an active header menu item,
       the header menu stays open.
     test_status: pass
     test_type: general
@@ -66,13 +66,13 @@ test_items:
     wcag_criterion: 1.4.13
   - summary: Header menu can be dismissed without moving the mouse or keyboard focus away.
     summary_additional: |
-      When you press the escape key while the header menu is active, 
+      When you press the escape key while the header menu is active,
       the menu closes.
     test_status: pass
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 1.4.13
-  - summary: Header menus stay open until they are dismissed. 
+  - summary: Header menus stay open until they are dismissed.
     summary_additional: |
       Header menus close only when you move focus away or press the escape key.
     test_status: pass
@@ -82,16 +82,16 @@ test_items:
 # Zoom/screen magnification tests
   - summary: Header links are visible and functional when screen is magnified.
     summary_additional: |
-      When you zoom in to 200%, 
+      When you zoom in to 200%,
       header links are legible and properly sized.
     test_status: pass
     test_type: zoom
     version_tested: 3.8.1
     wcag_criterion: 1.4.4
-  - summary: Header remains visible and functional when screen is magnified. 
+  - summary: Header remains visible and functional when screen is magnified.
     summary_additional: |
-      When you zoom in to 400%, 
-      you can still see and use the header menu and navigation, 
+      When you zoom in to 400%,
+      you can still see and use the header menu and navigation,
       and it doesn't overlap with or get cut off by any other content.
     test_status: pass
     test_type: zoom
@@ -100,40 +100,40 @@ test_items:
 # Keyboard navigation tests
   - summary: Keyboard can access all elements in the header.
     summary_additional: |
-      When you navigate through the header with a keyboard, 
+      When you navigate through the header with a keyboard,
       you can interact with every element inside it.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 2.1.1
   - summary: Header elements do not trap keyboard focus on desktop.
-    summary_additional: | 
-      When you navigate with a keyboard in the desktop view, 
+    summary_additional: |
+      When you navigate with a keyboard in the desktop view,
       you can easily move into and out of the header.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 2.1.2
-  - summary: Mobile menu navigation traps header focus. 
+  - summary: Mobile menu navigation traps header focus.
     summary_additional: |
-      When you access the header with a mobile device, 
+      When you access the header with a mobile device,
       you will need to take action to close the menu before proceeding to another action.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 2.1.2
-  - summary: Keyboard can bypass header and navigation. 
+  - summary: Keyboard can bypass header and navigation.
     summary_additional: |
-      When you visit a page using the keyboard, 
+      When you visit a page using the keyboard,
       a "skip to main content" link at the top of the page, before the header navigation, will allow you to navigate past the header and navigation, into page content.
     test_status: conditional
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 2.4.1
-  - summary: Focus follows logical content order on desktop. 
+  - summary: Focus follows logical content order on desktop.
     summary_additional: |
-      When you tab through the header with a keyboard, 
-      the focus stays in order of the content as intended. 
+      When you tab through the header with a keyboard,
+      the focus stays in order of the content as intended.
     test_status: exception
     status_details: In standard variants of the header component, the tab order of the search input in the mobile header menu does not currently match the visual order. This test passes in the "extended" variants of the header.
     github_issue_number: 5971
@@ -143,23 +143,23 @@ test_items:
     wcag_criterion: 2.4.3
   - summary: Focus indicator is clearly visible.
     summary_additional: |
-      When you use a keyboard to navigate through the header, 
-      there will be a visible outline or other clear indication where the the focus is. 
+      When you use a keyboard to navigate through the header,
+      there will be a visible outline or other clear indication where the the focus is.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 2.4.7
-  - summary: Header is at least partially visible when focus moves across other interactive elements. 
+  - summary: Header is at least partially visible when focus moves across other interactive elements.
     summary_additional: |
-      When you use a keyboard and tab across elements in a header, 
-      focus on interactive elements may overlay the header, but header will always appear partially visible in background. 
+      When you use a keyboard and tab across elements in a header,
+      focus on interactive elements may overlay the header, but header will always appear partially visible in background.
     test_status: conditional
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 2.4.11
   - summary: Focus indicator is clearly visible and consistent.
     summary_additional: |
-      When you use a keyboard to navigate through the header, 
+      When you use a keyboard to navigate through the header,
       the focus indicator has the same sizing, contrast and perimeter, regardless of the element selected.
     test_status: pass
     test_type: keyboard
@@ -168,15 +168,15 @@ test_items:
 # Screen reader tests
   - summary: Screen reader announces header as a navigation landmark.
     summary_additional: |
-      When you use a screen reader and access the header, 
-      "navigation region" is announced. 
+      When you use a screen reader and access the header,
+      "navigation region" is announced.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.1
     wcag_criterion: 1.3.1
   - summary: Screen reader announces header elements in logical order.
     summary_additional: |
-      When you use a screen reader and reach the header, 
+      When you use a screen reader and reach the header,
       elements will be announced in the order they appear visually.
     test_status: pass
     test_type: screen_reader
@@ -184,7 +184,7 @@ test_items:
     wcag_criterion: 1.3.2
   - summary: Magnifying glass icon in the header is only used to indicate "search" in every instance on the site.
     summary_additional: |
-      When you see or tab to the magnifying glass icon in any header, 
+      When you see or tab to the magnifying glass icon in any header,
       it will always and only be used to indicate search.
     test_status: conditional
     test_type: screen_reader
@@ -192,16 +192,16 @@ test_items:
     wcag_criterion: 3.2.4
   - summary: Screen reader announces role values.
     summary_additional: |
-      When you use a screen reader and access a button or text input option, 
-      you hear that the value of the role. 
+      When you use a screen reader and access a button or text input option,
+      you hear that the value of the role.
       For example: "button", "text edit".
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.1
     wcag_criterion: 4.1.2
   - summary: Screen reader announces current page.
-    summary_additional: | 
-      When landing on any page in the header navigation, 
+    summary_additional: |
+      When landing on any page in the header navigation,
       the role of "current" is announced.
     test_status: conditional
     test_type: screen_reader
@@ -209,11 +209,10 @@ test_items:
     wcag_criterion: 4.1.2
   - summary: Screen reader announces search field purpose.
     summary_additional: |
-      When you use a screen reader and access a search field in a header, 
-      you can hear that you are able to edit what is in the search field. 
+      When you use a screen reader and access a search field in a header,
+      you can hear that you are able to edit what is in the search field.
       Note: Messaging varies, depending on which screen reader you use.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.1
     wcag_criterion: 1.3.5
-  

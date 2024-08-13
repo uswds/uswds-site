@@ -27,6 +27,10 @@ subnav:
     href: '#sign-in-code'
   - text: Guidance
     href: '#sign-in-guidance'
+  - text: Latest updates
+    href: '#changelog'
 title: Sign-in
 type: template
+changelog:
+  key: template-sign-in
 ---

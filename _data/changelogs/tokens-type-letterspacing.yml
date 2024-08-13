@@ -1,0 +1,14 @@
+title: Letterspacing tokens
+type: token
+changelogURL:
+items:
+  - date: 2024-05-15
+    summary: Updated documented value for `auto` token.
+    affectsGuidance: true
+    githubPr: 2379
+    githubRepo: uswds-site
+  - date: 2024-05-15
+    summary: Removed the settings code example in "Using letterspacing tokens" section.
+    affectsGuidance: true
+    githubPr: 2379
+    githubRepo: uswds-site

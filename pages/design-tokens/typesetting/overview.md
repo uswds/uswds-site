@@ -13,6 +13,10 @@ subnav:
     href: '#normalization'
   - text: Typesetting with tokens
     href: '#typesetting-with-tokens'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: tokens-type
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}
@@ -477,7 +481,7 @@ The individual design token sections go into this in more detail, but here's a s
 </div>
 
 ### Family, size, and line height together
-The `typeset()` mixin outlined below accepts the tokens listed as well as a special `null` value. If either of the three properties get `null` instead of a token, the system will use a default value from `$uswds-theme-typography`: either `$theme-body-font-family`, `$theme-body-font-size`, or `$theme-body-line-height` depending on the property passed the `null` value.
+The `typeset()` mixin allows you to set family, size, and line height all in one line. It accepts the tokens listed as well as a special `null` value. If either of the three properties get `null` instead of a token, the system will use a default value from [typography settings]({{ site.baseurl }}/documentation/settings/#typography-settings): either `$theme-body-font-family`, `$theme-body-font-size`, or `$theme-body-line-height` depending on the property passed the `null` value.
 
 We use the `typeset()` mixin on all our components to get the effect of default `<body>` element styling without having to explicitly style the `<body>` element.
 
@@ -606,18 +610,23 @@ We use the `typeset()` mixin on all our components to get the effect of default 
   </table>
 </div>
 
+
+See this example:
+
 {:.margin-top-4}
 #### Example: Settings and typesetting
 
 ```scss
-// in _uswds-theme-typography:
+// In your settings configuration:
 
-$theme-respect-user-font-size: true;
-$theme-font-type-sans:         'public-sans';
-$theme-font-role-ui:           $theme-font-sans;
-$theme-type-scale-sm:          5;
-$theme-body-font-size:         'sm';
-$theme-body-line-height:       5;
+@use "uswds-core" with (
+  $theme-respect-user-font-size: true,
+  $theme-font-type-sans: "public-sans",
+  $theme-font-role-ui: "sans",
+  $theme-type-scale-sm: 5,
+  $theme-body-font-size: "sm",
+  $theme-body-line-height: 5
+);
 
 // in component code:
 

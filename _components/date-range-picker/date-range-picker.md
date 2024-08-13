@@ -43,6 +43,8 @@ subnav:
   href: '#date-range-picker-guidance'
 - text: Package
   href: '#date-range-picker-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - calendar
   - form
@@ -51,4 +53,7 @@ tags:
   - input
 title: Date range picker
 type: component
+changelog:
+  key: component-date-range-picker
+known_issues_key: date-picker
 ---

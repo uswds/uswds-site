@@ -1,2 +1,3 @@
+- **Label each field.** Be sure each field is properly labeled.
 - **Avoid select elements.** Leave the title and suffix fields as text boxes instead of offering select menus. There are many possible titles and suffixes; text boxes accommodate them all.
 - **Don’t restrict characters.** Do not restrict the types of characters users can enter in any of these fields. Names can include characters outside the standard Roman alphabet.

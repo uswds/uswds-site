@@ -1,9 +1,16 @@
 {% assign level = include.level | default: "h3" %}
-
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   {% assign _id = include.component | append: '-preview' %}
   {% assign _content_id = include.component | append: '-preview-content' %}
-  <button type="button" class="usa-accordion__button" aria-controls="{{ _content_id }}" aria-expanded="true"><{{ level }} id="{{ _id }}">Component preview</{{ level }}></button>
+  <{{ level }} id="{{ _id }}" class="usa-accordion__heading site-accordion-heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-controls="{{ _content_id }}"
+      aria-expanded="true">
+      Component preview
+    </button>
+  </{{ level }}>
   <div id="{{ _content_id }}" class="usa-accordion__content">
 
     {% if include.image %}
@@ -20,7 +27,7 @@
         {% endif %}
 
         <a
-          class="media__link"
+          class="media__link display-block"
           href={% include component-preview-link.html
             demoLink=demo
             component=include.component
@@ -28,7 +35,10 @@
         >
           <img
             src="{{ site.baseurl }}{{ image }}"
-            alt="{{ variant_alt | default: page.title }}"
+            alt="{{ include.alt | default: page.title }}"
+            {% if include.imageUtilities %}
+            class="{{ include.imageUtilities }}"
+            {% endif %}
           />
         </a>
         {% endfor %}

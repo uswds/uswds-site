@@ -12,9 +12,13 @@ subnav:
     href: "#step-2-initialize-your-project-in-node"
   - text: "Step 3: Install USWDS"
     href: "#step-3-install-uswds"
+  - text: Latest updates
+    href: "#changelog"
+changelog:
+  key: docs-getting-started-devs-phase-1
 ---
 
-The U.S. Web Design System distributes our source code through npm, a package manager that uses a flavor of JavaScript called Node.js. The best way to add the Design System to your project is with npm via a Terminal window (check out some tips for using Terminal on a [Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) or [Windows](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)). 
+The U.S. Web Design System distributes our source code through npm, a package manager that uses a flavor of JavaScript called Node.js. The best way to add the Design System to your project is with npm via a Terminal window (check out some tips for using Terminal on a [Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) or [Windows](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)).
 
 Installing the Design System with Node and npm not only allows you to install all the code the Design System needs to compile with just a couple commands, but will version any installed packages, like USWDS, as well — meaning your project code is tied to a specific version of the Design System. Confirming what version you’re using and updating to a newer (or older) version is straightforward.
 
@@ -55,25 +59,27 @@ ls
 ## Step 3: Install USWDS
 Now, you can install USWDS — and any other Node package — from the command line with npm.
 
-npm does the work of installing packages and, behind the scenes, automatically installing all the software each package needs to run (also known as a package’s dependencies). The final software is saved into a new directory called `node_modules`.
+Npm does the work of installing packages and, behind the scenes, automatically installing all the software each package needs to run (also known as a package’s dependencies). The final software is saved into a new directory called `node_modules`.
 
-Install USWDS from the command line, and save it as a dependency in your package.json as follows:
+To install USWDS from the command line and save it as a dependency in your `package.json`, run the following command:
 
 {:.site-terminal}
 ```bash
-npm install @uswds/uswds --save
+npm install @uswds/uswds --save-exact
 
 # [a lot of notices]
 # + uswds@{{ site.uswds_version }} [or another version number]
 # [a few more notifications]
 ```
 
-npm will show some notifications, install USWDS, and display the version number of the USWDS package. You’ll also see the following information in your package.json:
+We recommend using the `--save-exact` flag when installing `@uswds/uswds` because it allows you to control when USWDS updates get pulled into your project. This flag pins the dependency to an exact version until you manually update it, which reduces the risk of a USWDS update unexpectedly breaking or changing your project.
+
+Once you run this command, npm will show some notifications, install USWDS, and display the version number of the USWDS package. You’ll also see the following information in your package.json:
 
 {:.site-terminal}
 ```json
 "dependencies": {
-  "uswds": "^{{ site.uswds_version }}" [or another version number]
+  "@uswds/uswds": "{{ site.uswds_version }}" [or another version number]
 }
 ```
 

@@ -10,14 +10,8 @@ permalink: /components/prose/
 redirect_from:
 - /typography/01-prose/
 subnav:
-  - text: Preview
-    href: '#prose-preview'
-  - text: Code
-    href: '#prose-code'
-  - text: Guidance
-    href: '#prose-guidance'
-  - text: Package
-    href: '#prose-package'
+- text: Prose accessibility tests
+  href: /components/prose/accessibility-tests/
 title: Prose
 type: component
 tags:
@@ -30,4 +24,6 @@ tags:
   - text
   - writing
   - body
+changelog:
+  key: component-prose
 ---

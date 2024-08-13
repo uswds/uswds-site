@@ -203,7 +203,7 @@ utilities:
   </div>
 </div>
 
-<section class="utilities-section">
+<section id="utilities-section" class="utilities-section">
 {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-flex">
@@ -552,7 +552,7 @@ utilities:
         </div>
     {% endfor %}
     <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
-      <button type="button" class="usa-accordion__button" aria-controls="code-flex-align" aria-expanded="true">Code</button>
+      <button type="button" class="usa-accordion__button" aria-controls="code-flex-align-self" aria-expanded="true">Code</button>
       <div id="code-flex-align-self" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 {% highlight html linenos %}

@@ -13,6 +13,10 @@ subnav:
   href: '#level-3-use-uswds-code'
 - text: Maturity assessment resources
   href: '#maturity-assessment-resources'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: docs-maturity-model
 ---
 
 <div class="margin-top-6 border-top-05 border-primary padding-top-2">
@@ -117,7 +121,7 @@ Government websites include components that aren’t included in USWDS yet. Use 
 
 #### 1: Add USWDS code and adjust settings.
 
-- Add USWDS to your project [with NPM]({{ site.baseurl }}/documentation/developers/#install-using-node-and-npm) or by [downloading the source from Github]({{ site.baseurl }}/documentation/developers/#install-the-package-directly-from-github).
+- Add USWDS to your project [with npm]({{ site.baseurl }}/documentation/developers/#install-using-node-and-npm) or by [downloading the source from Github]({{ site.baseurl }}/documentation/developers/#install-the-package-directly-from-github).
 - Compile the Sass source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) or by using [uswds-compile](https://github.com/uswds/uswds-compile) available via GitHub.
 - Compile the Javascript source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#js-customization) or [download a precompiled version]({{ site.baseurl }}/documentation/developers/#install-the-package-directly-from-github).
 - Add USWDS Javascript to your page templates.

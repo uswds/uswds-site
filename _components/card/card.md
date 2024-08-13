@@ -22,6 +22,8 @@ subnav:
   href: '#card-guidance'
 - text: Package
   href: '#card-package'
+- text: Latest updates
+  href: '#changelog'
 type: component
 variants:
   - variant: "`.usa-card--flag`"
@@ -32,12 +34,16 @@ variants:
     description: In combination with `usa-card--flag`, sets the media element on the right. (Flag cards display media on the left by default.)
   - variant: "`.usa-card__media--inset`"
     description: Indents the media element so it doesn't extend to the edge of the card.
-  - variant: "`.usa-card__media--exdent`"
-    description: Extends the media element out over the card border. Useful for light-bordered cards.
   - variant: "`.usa-card__body--exdent`"
     description: Extends the body element out over the card border. Useful for light-bordered cards.
   - variant: "`.usa-card__footer--exdent`"
     description: Extends the footer element out over the card border. Useful for light-bordered cards.
+  - variant: "`.usa-card__header--exdent`"
+    description: Extends the header element out over the card border. Useful for light-bordered cards.
+  - variant: "`.usa-card__media--exdent`"
+    description: Extends the media element out over the card border. Useful for light-bordered cards.
+changelog:
+  key: component-card
 ---
 
 A **card** is often a subset or summary of a larger idea. It acts as an entry point to more detailed information. This summary can contain a variety of content types, such as text, images and multimedia, or buttons and links.

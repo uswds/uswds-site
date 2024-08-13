@@ -1420,8 +1420,8 @@ ignore:
         expires: '2022-01-27T21:29:25.296Z'
     - '*':
         reason: No available upgrade or patch
-        expires: 2022-11-18T13:56:03.336Z
-        created: 2022-10-19T13:56:03.390Z
+        expires: 2023-04-23T19:01:37.761Z
+        created: 2023-03-24T19:01:37.812Z
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -2707,8 +2707,8 @@ ignore:
         expires: '2022-01-27T21:29:25.295Z'
     - '*':
         reason: No available upgrade or patch
-        expires: 2022-11-18T13:55:45.748Z
-        created: 2022-10-19T13:55:45.804Z
+        expires: 2024-08-14T20:04:23.858Z
+        created: 2024-07-15T20:04:23.890Z
   SNYK-JS-AXIOS-1579269:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -3498,8 +3498,43 @@ ignore:
   SNYK-JS-UNSETVALUE-2400660:
     - '*':
         reason: No available upgrade or patch
-        expires: 2022-11-18T13:56:10.299Z
-        created: 2022-10-19T13:56:10.352Z
+        expires: 2024-08-14T20:06:06.287Z
+        created: 2024-07-15T20:06:06.319Z
+  SNYK-JS-DECODEURICOMPONENT-3149970:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2023-04-23T19:01:45.617Z
+        created: 2023-03-24T19:01:45.677Z
+  SNYK-JS-DEBUG-3227433:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2023-04-23T19:01:35.436Z
+        created: 2023-03-24T19:01:35.488Z
+  SNYK-JS-SEMVER-3247795:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2023-07-29T20:35:08.765Z
+        created: 2023-06-29T20:35:08.815Z
+  SNYK-JS-POSTCSS-5926692:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2023-11-10T19:28:02.827Z
+        created: 2023-10-11T19:28:02.917Z
+  SNYK-JS-INFLIGHT-6095116:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2024-08-14T20:05:23.703Z
+        created: 2024-07-15T20:05:23.742Z
+  SNYK-JS-BRACES-6838727:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2024-08-14T20:04:58.069Z
+        created: 2024-07-15T20:04:58.101Z
+  SNYK-JS-MICROMATCH-6838728:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2024-08-14T20:05:45.788Z
+        created: 2024-07-15T20:05:45.818Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

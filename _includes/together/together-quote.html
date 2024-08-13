@@ -1,0 +1,27 @@
+{% assign hideIcon = "false" %}
+
+{% if include.hide-icon %}
+  {% assign hideIcon = include.hide-icon %}
+{% endif %}
+
+{% if include.top-icon and hideIcon == "false"  %}
+  <img class="display-block margin-x-auto margin-top-4" src="{{ site.baseurl }}/img/together/quote.svg" alt="quote">
+{% endif %}
+  <blockquote class="together-blockquote together-blockquote--{{ include.variant }}">
+{% if hideIcon %}
+
+{% else %}
+<svg class="usa-icon text-{{ include.color }}" aria-hidden="true" focusable="false" role="img" width="38" height="28" viewBox="0 0 38 28"  xmlns="http://www.w3.org/2000/svg" fill="#202550">
+  <path d="M35.0013 0.589043L27.0013 0.589044L21.668 11.2557L21.668 27.2557L37.668 27.2557L37.668 11.2557L29.668 11.2557L35.0013 0.589043ZM13.668 0.589045L5.66797 0.589045L0.334631 11.2557L0.334633 27.2557L16.3346 27.2557L16.3346 11.2557L8.33463 11.2557L13.668 0.589045Z"/>
+</svg>
+{% endif %}
+  {{ include.quote }}
+
+  {% if include.source-link %}
+  <a href="{{ include.source-link }}">
+    <span class="together-blockquote__source">— {{ include.source }}</span>
+  </a>
+{% else %}
+  <p class="together-blockquote__source">— {{ include.source }}</p>
+{% endif %}
+</blockquote>

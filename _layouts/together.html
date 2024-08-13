@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  {% include head.html %}
+  <style>
+    .usa-current {
+      font-weight: bold;
+    }
+
+    .usa-in-page-nav-together-container {
+      align-items: flex-start;
+      display: flex;
+      margin: 4rem 0;
+    }
+
+    .usa-in-page-nav-together-container main,
+    .usa-in-page-nav-together-container [class^=main] {
+      max-width: 87.5rem;
+      width: 100%;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together {
+      display: none;
+      margin-left: 0.25rem;
+      margin-top: 6.25rem;
+      max-width: 15rem;
+      position: sticky;
+      top: 8rem;
+      
+    }
+    @media screen and (min-width: 768px) {
+      .usa-in-page-nav-together-container .usa-in-page-nav-together {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together nav {
+      background-color: #fff;
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together-list {
+      background-color: initial;
+      border: 0;
+      border-left: 1px solid #dfe1e2;
+      font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.1;
+      margin-bottom: 0;
+      margin-top: 0;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together-list a {
+      color: #565c65;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together-list a:where(:not(.usa-button)) {
+      display: block;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together-list a:hover {
+      color: #005ea2;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together-list a.usa-current {
+      color: #3d4551;
+      position: static;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together-list a.usa-current::after {
+      background-color: #2B44FF;
+      border-radius: 0;
+      bottom: -1px;
+      content: "";
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 2px;
+      z-index: 100;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together-list .usa-in-page-nav-together__item {
+      border-width: 0;
+      border-style: solid;
+      position: relative;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together-list .usa-in-page-nav-together__item.sub-item {
+      font-size: 0.87rem;
+    }
+
+    .usa-in-page-nav-together-container .usa-in-page-nav-together-list .usa-in-page-nav-together__item.sub-item a {
+      padding-left: 1.5rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  {% include banner.html %}
+  <header class="usa-header site-header site-header--dark together-site-header" aria-label="Together report header">
+    <div class="usa-navbar site-header__navbar bg-{{ page.navbar_color }}">
+      <div class="usa-logo site-logo desktop:margin-left-4" id="logo">
+        <em class="usa-logo__text site-logo__text">
+          <a class="margin-right-05" href="{{ site.baseurl }}/" title="Home" aria-label="{{ site.title }} home">
+            <span aria-hidden="true" class="site-title-short">USWDS</span>
+            <span class="site-title">{{ site.title }}</span>
+          </a>
+        </em>
+      </div>
+    </div>
+  </header>
+  {{ content }}
+  {% include footer.html %}
+  {% include scripts.html %}
+  <script>
+    function ready(fn) {
+      document.addEventListener("DOMContentLoaded", fn, false);
+    }
+
+    ready(() => {
+      const IN_PAGE_NAV_CLASS = "usa-in-page-nav-together";
+      const IN_PAGE_NAV_LIST_CLASS = `${IN_PAGE_NAV_CLASS}-list`;
+      const IN_PAGE_NAV_ITEM_CLASS = `${IN_PAGE_NAV_CLASS}__item`;
+      const IN_PAGE_NAV_LINK_CLASS = `${IN_PAGE_NAV_CLASS}__link`;
+      const IN_PAGE_NAV_ANCHOR_CLASS = "usa-anchor-tag";
+
+      const IN_PAGE_NAV_LINK = `.${IN_PAGE_NAV_LINK_CLASS}`;
+      const IN_PAGE_NAV_ANCHOR = `.${IN_PAGE_NAV_ANCHOR_CLASS}`;
+      const IN_PAGE_NAV_TITLE = "On this page";
+      const IN_PAGE_NAV = ".usa-in-page-nav-together";
+      const CURRENT_CLASS = "usa-current";
+      const MAIN_ELEMENT = "main";
+      const SITE_SUBHEADING = "site-subheading";
+      const SUB_ITEM = "sub-item";
+
+      // Set Intersection Observer options
+      const IO_ROOT = null;
+      const IO_ROOT_MARGIN = "0px";
+      const IO_THRESHOLD = [0];
+
+
+      const InPageNavigation = {
+        init() {
+          this.createInPageNav();
+        },
+
+        createInPageNav() {
+          const sectionHeadings = InPageNavigation.getSectionHeadings();
+          const insertNode = document.querySelector(".usa-in-page-nav-together");
+
+          const inPageNav = document.createElement("nav");
+          inPageNav.setAttribute("role", "navigation");
+          inPageNav.setAttribute("arial-label", "In-page navigation");
+
+          const inPageNavTitle = document.createElement("p");
+          inPageNavTitle.classList.add("site-subheading");
+          inPageNavTitle.textContent = IN_PAGE_NAV_TITLE;
+          inPageNav.appendChild(inPageNavTitle);
+
+          const inPageNavList = document.createElement("ul");
+          inPageNavList.classList.add("usa-in-page-nav-together-list");
+          inPageNav.appendChild(inPageNavList);
+
+          sectionHeadings.forEach((el, i) => {
+            const listItem = document.createElement("li");
+            const navLinks = document.createElement("a");
+            const anchorTag = document.createElement("a");
+            const textContentOfLink = el.textContent;
+            const tag = el.tagName.toLowerCase();
+
+            listItem.classList.add("usa-in-page-nav-together__item");
+            if (tag === "h3") {
+              listItem.classList.add("sub-item");
+            }
+
+            navLinks.setAttribute("href", `#section_${i}`);
+            navLinks.setAttribute("class", IN_PAGE_NAV_LINK_CLASS);
+            navLinks.textContent = textContentOfLink;
+
+            anchorTag.setAttribute("id", `section_${i}`);
+            anchorTag.setAttribute("class", IN_PAGE_NAV_ANCHOR_CLASS);
+            el.insertAdjacentElement("afterbegin", anchorTag);
+
+            inPageNavList.appendChild(listItem);
+            listItem.appendChild(navLinks);
+          });
+
+          insertNode.appendChild(inPageNav);
+
+          const options = {
+            root: IO_ROOT,
+            rootMargin: IO_ROOT_MARGIN,
+            threshold: IO_THRESHOLD
+          };
+
+          const anchorTags = InPageNavigation.getSectionAnchors();
+          const observeSections = new IntersectionObserver(InPageNavigation.setActive, options);
+
+          anchorTags.forEach((tag) => {
+
+            observeSections.observe(tag);
+          });
+        },
+        setActive(el) {
+
+          const allLinks = document.querySelectorAll(".usa-in-page-nav-together__link");
+          el.map((i) => {
+            if (i.isIntersecting && i.intersectionRatio >= 1) {
+              allLinks.forEach((link) => link.classList.remove("usa-current"));
+              document
+                .querySelector(`a[href="#${i.target.id}"]`)
+                .classList.add("usa-current");
+              return true;
+            }
+            return false;
+          });
+        },
+
+        getSectionHeadings() {
+          const sectionHeadings = document.querySelectorAll("main h2");
+          return sectionHeadings;
+        },
+
+        getSectionAnchors() {
+          const sectionAnchors = document.querySelectorAll(".usa-anchor-tag");
+          return sectionAnchors;
+        },
+
+        getSectionId(value) {
+          let id;
+
+          // Check if value is an event or element and get the cleaned up id
+          if (value && typeof value === "object" && value.nodeType === 1) {
+            id = value.getAttribute("href").replace("#", "");
+          } else {
+            id = value.target.hash.replace("#", "");
+          }
+
+          return id;
+        },
+
+        handleScrollToSection(el) {
+          window.scroll({
+            behavior: "smooth",
+            top: el.offsetTop,
+            block: "start"
+          });
+        },
+
+
+        handleClickFromLink(el) {
+          const id = InPageNavigation.getSectionId(el);
+          const allAnchors = InPageNavigation.getSectionAnchors();
+          const allAnchorsArr = Array.from(allAnchors);
+          const target = allAnchorsArr.find(
+            (anchor) => anchor.getAttribute("id") === id
+          );
+
+          InPageNavigation.handleScrollToSection(target);
+        },
+
+        handleEnterFromLink(event) {
+          const id = InPageNavigation.getSectionId(event);
+          const targetAnchor = document.getElementById(id);
+          const target = targetAnchor.parentElement;
+
+          if (target) {
+            target.setAttribute("tabindex", 0);
+            target.focus();
+          } else {
+            // throw an error?
+          }
+          InPageNavigation.handleScrollToSection(target);
+        },
+
+      };
+      InPageNavigation.init();
+    });
+
+  </script>
+</body>
+
+</html>

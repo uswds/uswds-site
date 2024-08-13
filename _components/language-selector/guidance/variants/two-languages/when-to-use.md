@@ -1,0 +1,1 @@
+- **Two languages are available.** Help users find information in their preferred language when equivalent translated content is available in two languages.

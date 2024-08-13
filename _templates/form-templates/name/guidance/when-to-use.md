@@ -1,1 +1,1 @@
-- **You need separate data elements.** When you need to collect users’ full names and store the parts separately in a database.
+- **You need separate data elements.** Follow this pattern when you need to ask for a user’s name as part of your service. Only ask for a name if you need it.

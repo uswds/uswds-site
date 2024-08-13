@@ -9,9 +9,7 @@ const runServer = require("./static-server");
 // they should be considered "second class" by the link checker, and
 // only emit warnings on 404s rather than errors.
 const WARNING_PAGES = [
-  "/documentation/code-guidelines/",
-  "/whats-new/releases/",
-  "/getting-started/showcase/all/",
+  "/documentation/code-guidelines/"
 ];
 const WARNING = chalk.yellow("Warning");
 const ERROR = chalk.red("Error");

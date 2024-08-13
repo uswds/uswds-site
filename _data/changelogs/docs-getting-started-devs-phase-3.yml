@@ -1,0 +1,78 @@
+title: "Phase 3: Customize"
+type: documentation
+changelogURL:
+items:
+  - date: 2022-06-17
+    summary: |
+      Replaced the outdated text: `_theme-settings.scss` with updated: `_uswds-theme.scss`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1667
+    githubRepo: uswds-site
+  - date: 2022-04-28
+    summary: Updated theming instructions.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1538
+    githubRepo: uswds-site
+  - date: 2022-03-10
+    summary: |
+      Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1424
+    githubRepo: uswds-site
+  - date: 2022-02-17
+    summary: Moved resources documentation to its own page.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1422
+    githubRepo: uswds-site
+  - date: 2021-12-14
+    summary: Added guidance for `uswds-gulp`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1370
+    githubRepo: uswds-site
+  - date: 2021-12-06
+    summary: Added "Getting started for developers" guide.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1362
+    githubRepo: uswds-site

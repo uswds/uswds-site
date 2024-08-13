@@ -1,22 +1,23 @@
-{% assign componentName = page.component.name 
-  | default: page.title 
+{% assign componentName = page.component.name
+  | default: page.title
   | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
-{% assign package = site.data.packages 
-  | where: "name", page.component.package 
+{% assign package = site.data.packages
+  | where: "name", page.component.package
   | first %}
+{% assign heading_level = include.level | default: "h2" %}
 
-<h2 id="{{ componentKey }}-package" class="site-component-section-title">Package</h2>
+<{{ heading_level }} id="{{ componentKey }}-package" class="site-component-section-title">Package</{{ heading_level }}>
 <ul class="usa-content-list">
   <li>
     <strong>Package usage:</strong> <code>@forward "{{ page.component.package }}";</code>
   </li>
   <li>
     {%- if package.dependencies -%}
-    <strong>Dependencies: </strong> 
+    <strong>Dependencies: </strong>
       {%- for dependency in package.dependencies -%}
-      <code>{{ dependency }}</code class="text-no-wrap">{% if forloop.last != true %}, {% endif %}
+      <code class="text-no-wrap">{{ dependency }}</code>{% if forloop.last != true %}, {% endif %}
       {%- endfor -%}
     {%- endif -%}
   </li>

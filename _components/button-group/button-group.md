@@ -14,8 +14,12 @@ subnav:
   href: '#default-button-group'
 - text: Segmented button group
   href: '#segmented-button-group'
+- text: Latest updates
+  href: '#changelog'
 title: Button group
 type: component
+changelog:
+  key: component-button-group
 ---
 
 {% include child-sections.html parent='Button group' %}

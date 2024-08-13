@@ -5,8 +5,9 @@ orbs:
 
 executors:
   my-executor:
+    resource_class: large
     docker:
-      - image: cimg/ruby:3.0.4-browsers
+      - image: cimg/ruby:3.2.5-browsers
 
 jobs:
   install_ruby_deps:
@@ -16,7 +17,6 @@ jobs:
       - restore_cache:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}
-            - gem-cache
       - run:
           name: Install ruby dependencies
           command: |
@@ -44,11 +44,15 @@ jobs:
             - npm-cache-{{ checksum "package-lock.json" }}
       - run:
           name: Install node dependencies
-          command: npm install
+          command: npm ci
       - save_cache:
           key: npm-cache-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - "node_modules"
   build:
     executor: my-executor
     steps:
@@ -62,9 +66,6 @@ jobs:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}
             - gem-cache
-      - run:
-          name: Build USWDS components if needed
-          command: npm run build:uswds
       - run:
           name: Build site assets
           command: npm run build:all-assets
@@ -81,6 +82,7 @@ jobs:
             - "node_modules"
   test_build:
     executor: my-executor
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:
@@ -97,6 +99,7 @@ jobs:
           organization: uswds
   test_a11y_desktop:
     executor: my-executor
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:
@@ -108,10 +111,9 @@ jobs:
       - run:
           name: Run pa11y-ci desktop
           command: npm run start-detached && npm run pa11y-ci:sitemap
-    # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
-    resource_class: large
   test_a11y_mobile:
     executor: my-executor
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:

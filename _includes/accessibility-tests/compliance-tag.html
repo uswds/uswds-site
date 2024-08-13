@@ -1,0 +1,16 @@
+<!-- Add compliance tag -->
+{% assign component_name = page.component.name | default: page.title | downcase %}
+{% assign component_key = component_name | slugify %}
+{% assign component = site.data.accessibility-tests[component_key] %}
+{% assign status_label =  "Did not pass WCAG 2.1 AA" %}
+{% if component.component_status == "pass" %}
+  {% assign status_label =  "Passed WCAG 2.1 AA" %}
+{% endif %}
+
+{% if component.component_status %}
+<p class="margin-top-0 margin-bottom-4">
+  <span class="usa-tag site-compliance-tag site-compliance-tag--{{ component.component_status }}">
+    {{ status_label }}
+  </span>
+</p>
+{% endif %}

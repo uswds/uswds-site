@@ -2,6 +2,7 @@
 component:
   status: ready
   package: usa-form-templates
+  related: true
   dependencies:
 category: Templates
 layout: component

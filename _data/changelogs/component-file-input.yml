@@ -1,0 +1,102 @@
+title: File input
+type: component
+changelogURL:
+items:
+  - date: 2024-03-13
+    summary: Added known issues section.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2402
+    githubRepo: uswds-site
+  - date: 2023-06-09
+    summary: Removed disabled file input variant preview.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2114
+    githubRepo: uswds-site
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved the file input experience for voice command and screen reader users.
+    summaryAdditional: Voice command users can now interact with the component by speaking the visible instructions text.
+      Additionally, screen reader users now have access to both the instructions text
+      and the file selection status.
+    affectsAccessibility: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 5213
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency and visibility of disabled styles.
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5063
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Fixed a bug that caused large files to trigger an infinite spinner.
+    summaryAdditional: Adding large files should now result in an accurate preview.
+    affectsJavascript: true
+    githubPr: 5114
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2022-04-28
+    summary: Updated package name to `usa-file-input`.
+    affectsGuidance: true
+    githubPr: 1538
+    githubRepo: uswds-site
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2022-04-13
+    summary: Updated package name to `form-controls`.
+    affectsGuidance: true
+    githubPr: 1497
+    githubRepo: uswds-site
+  - date: 2021-12-14
+    summary: Updated file upload to confirm files to screen readers.
+    summaryAdditional: Now file input will tell screen readers the total number of files and the names of files added to the component.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 4415
+    githubRepo: uswds
+    versionUswds: 2.13.0
+  - date: 2021-11-01
+    summary: Fixed a duplicate file bug in file input.
+    summaryAdditional: If a file with the same name was uploaded in two separate file input fields, the preview spinner would spin indefinitely. We now assign each upload an individual ID, and the image preview loads properly.
+    affectsJavascript: true
+    githubPr: 4313
+    githubRepo: uswds
+    versionUswds: 2.12.2
+  - date: 2021-11-01
+    summary: Added automatic sanitizing.
+    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like combo box, tooltip, file input, and date picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
+    affectsJavascript: true
+    githubPr: 4329
+    githubRepo: uswds
+    versionUswds: 2.12.2
+  - date: 2021-09-20
+    summary: Added documentation for using `data-errorMessage`.
+    affectsGuidance: true
+    githubPr: 1269
+    githubRepo: uswds-site
+  - date: 2021-06-07
+    summary: Updated package name to `usa-form-controls`.
+    affectsGuidance: true
+    githubPr: 1219
+    githubRepo: uswds-site

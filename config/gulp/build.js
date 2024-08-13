@@ -15,7 +15,7 @@ const cleanAssets = gulp.parallel(
   cleanImages,
   cleanJavascript,
   cleanStyles,
-  removeAssetsDir
+  removeAssetsDir,
 );
 
 function spawnP(cmd, args, opts) {
@@ -57,8 +57,8 @@ function buildUSWDSComponents() {
         new Error(
           `${gulpfile} does not exist! You need a newer version of USWDS; ` +
             `specifically, one that includes the following PR: ` +
-            `https://github.com/uswds/uswds/pull/2050`
-        )
+            `https://github.com/uswds/uswds/pull/2050`,
+        ),
       );
     }
 
@@ -68,7 +68,7 @@ function buildUSWDSComponents() {
      * We need to: install USWDS deps and build components to HTML.
      */
     return spawnP("npm", ["install", "--legacy-peer-deps"], sharedOpts).then(
-      () => spawnP("npm", ["run", "build:html"], sharedOpts)
+      () => spawnP("npm", ["run", "build:html"], sharedOpts),
     );
   }
 }

@@ -9,6 +9,11 @@ subnav:
 redirect_from:
 - /security/
 - /about/security-information/
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: about-security
 ---
 
 {{ site.data.security.decoded

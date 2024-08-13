@@ -1,0 +1,36 @@
+title: Time picker
+type: component
+# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
+changelogURL:
+
+items:
+  # 3.0 release
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2022-04-11
+    summary: Added documentation for the `value` property.
+    affectsGuidance: true
+    githubPr: 1516
+    githubRepo: uswds-site
+  # 2.13.3
+  - date: 2022-04-11
+    summary: Allow default `value` in time picker.
+    summaryAdditional: The input `value` is now used on initialization if set.
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: false
+    githubPr: 4488
+    githubRepo: uswds
+    versionUswds: 2.13.3

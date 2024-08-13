@@ -12,6 +12,10 @@ subnav:
   href: '#system-tokens'
 - text: Using weight tokens
   href: '#using-weight-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-type-font-weight
 ---
 
 {% assign tokens = site.data.tokens.typesetting.weight %}
@@ -19,7 +23,7 @@ subnav:
 ## Theme tokens
 Font weight theme tokens use common names. Most projects will use only 2-4 of these tokens, with the majority set to `false`.
 
-Customize [theme](#theme-tokens){:.token} font weight tokens in your project's theme settings with available [system](#system-tokens){:.token} font weight tokens. All typography-related settings are in `_uswds-theme-typography.scss`.
+Customize [theme](#theme-tokens){:.token} font weight tokens in your project's theme settings with available [system](#system-tokens){:.token} font weight tokens. All typography-related settings can be found in [USWDS settings]({{ site.baseurl }}/documentation/settings/#typography-settings).
 
 <div class="site-table-wrapper overflow-hidden">
   <table class="usa-table--borderless site-table-responsive width-full">
@@ -184,7 +188,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
         <td data-title="Example">
           <span>
-            $theme-heading-font-weight: <code>'heavy'</code>
+            $theme-font-weight-normal: <code>500</code>
           </span>
         </td>
       </tr>

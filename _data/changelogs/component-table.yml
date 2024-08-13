@@ -1,0 +1,123 @@
+title: Table
+type: component
+# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
+changelogURL:
+
+items:
+  - date: 2024-03-20
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2538
+    githubRepo: uswds-site
+  - date: 2024-03-11
+    summary: Created the `.usa-table--sticky-header` variant to allow sticky positioning on table headers.
+    summaryAdditional: Also added the `$theme-table-sticky-top-offset` setting, which controls the top position of sticky headers.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5420
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2024-03-11
+    summary: Added the `$theme-table-background-color` setting.
+    summaryAdditional: Use this setting to declare the table background color at a theme level.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5420
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2024-03-11
+    summary: Simplified the structure of the scrollable table component example.
+    summaryAdditional:  Empty headers in the complex table example were causing accessibility issues.
+    isBreaking: false
+    affectsContent: true
+    githubPr: 5783
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2023-09-29
+    summary: Fixed a bug that prevented VoiceOver from reading stacked table content while using Safari.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5477
+    githubRepo: uswds
+    versionUswds: 3.6.1
+  - date: 2023-07-17
+    summary: Restored standard and striped table component previews to guidance page.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2143
+    githubRepo: uswds-site
+  - date: 2023-06-09
+    summary: Fixed a typo in the sortable table JavaScript that caused the `aria-label` in table headers to have an unnecessary single quote.
+    summaryAdditional:
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: true
+    affectsMarkup: false
+    affectsStyles: false
+    githubPr: 5280
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  # 3.0.2 release
+  - date: 2022-06-17
+    summary: Updated table border settings to work as expected.
+    summaryAdditional: Theme table settings are now consistently applied to table styles.
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: false
+    affectsMarkup: false
+    affectsStyles: true
+    githubPr: 4712
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  # 3.0 release
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2021-05-19
+    summary: Added guidance for making scrollable tables more accessible with `tabindex`.
+    affectsGuidance: true
+    githubPr: 1227
+    githubRepo: uswds-site
+  - date: 2021-03-17
+    summary: Added guidance for sortable tables.
+    affectsGuidance: true
+    githubPr: 1180
+    githubRepo: uswds-site
+  # 2.11.0 release
+  - date: 2021-03-17
+    summary: Released sortable table.
+    summaryAdditional: A sorted column changes the row ordering based on alphabetical or numeric cell values.
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Updated default values for table settings.
+    summaryAdditional: Changed values of `$theme-table-border-color`, `$theme-table-header-text-color`, `$theme-table-stripe-text-color`, and `$theme-table-text-color` from `default` to `ink`.
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Added new table settings.
+    summaryAdditional: Added `$theme-table-sorted-header-background-color`, `$theme-table-sorted-background-color`, `$theme-table-sorted-stripe-background-color`, and `$theme-table-sorted-icon-color`, and `$theme-table-unsorted-icon-color` .
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0

@@ -1,0 +1,82 @@
+# Add page title. eg: Accessibility, Banner
+title: Text input
+type: component
+# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
+changelogURL:
+
+items:
+  - date: 2024-06-19
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2697
+    githubRepo: uswds-site
+  - date: 2024-03-11
+    summary: Added `textarea` support to the validation component.
+    summaryAdditional:
+    isBreaking: false
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles:
+    githubPr: 5233
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2023-11-16
+    summary: Updated the listed values for `.usa-input--[width]`.
+    affectsGuidance: true
+    githubPr: 2291
+    githubRepo: uswds-site
+  - date: 2023-06-09
+    summary: Improved consistency and visibility of disabled styles.
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5063
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  # 3.0.2 release
+  - date: 2022-06-17
+    summary: Improved form group error display.
+    summaryAdditional: Form group margins are the same whether or not the form group is in an error state.
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: false
+    affectsMarkup: false
+    affectsStyles: true
+    githubPr: 4751
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-04-28
+    summary: Updated package name to `usa-input`.
+    affectsGuidance: true
+    githubPr: 1538
+    githubRepo: uswds-site
+  # 3.0 release
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2022-04-13
+    summary: Updated package name to `form-controls`.
+    affectsGuidance: true
+    githubPr: 1497
+    githubRepo: uswds-site
+  - date: 2021-03-17
+    summary: Updated and improved guidance for text input.
+    affectsGuidance: true
+    githubPr: 1180
+    githubRepo: uswds-site

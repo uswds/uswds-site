@@ -1,3 +1,5 @@
+{% assign footer = site.data.footer %}
+
 {% if site.touchpoints.active and page.touchpoints_survey | default: false %}
   {% include touchpoint-survey-script.html %}
 {% endif %}
@@ -5,150 +7,41 @@
 <footer class="usa-footer site-footer">
   <div class="usa-footer__secondary-section">
     <div class="grid-container footer-content">
-      <h2>Become part of the community</h2>
+      <h2>{{ footer.title }}</h2>
       <p>
-        USWDS is an active open source community of government engineers,
-        content specialists, and designers. Our contributors both in and out of
-        government support dozens of agencies and nearly 200 sites.
+        {{ footer.description }}
       </p>
       <div class="grid-row footer-contact-links">
-        <div class="tablet:grid-col">
-          <div class="usa-media-block">
-            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
-              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#help"></use>
-              </svg>
-            </div>
-            <div class="usa-media-block__body">
-              <h3>Have an idea or an issue?</h3>
-              <a href="{{ site.repos[0].url }}/issues/new/choose">
-                Reach out in GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="tablet:grid-col">
-          <div class="usa-media-block">
-            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
-              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#people"></use>
-              </svg>
-            </div>
-            <div class="usa-media-block__body">
-              <h3>Engage with the community</h3>
-              <a href="https://designsystem.digital.gov/about/community/">
-                Find a channel that works for you
-              </a>
+        {% for callout in footer.callouts %}
+          <div class="tablet:grid-col">
+            <div class="usa-media-block">
+              <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
+                <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
+                  <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ callout.icon }}"></use>
+                </svg>
+              </div>
+              <div class="usa-media-block__body">
+                <h3>{{ callout.tagline }}</h3>
+                <a href="{{ callout.link_href }}">
+                  {{- callout.link_text -}}
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="tablet:grid-col">
-          <div class="usa-media-block">
-            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
-              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#mail"></use>
-              </svg>
-            </div>
-            <div class="usa-media-block__body">
-              <h3>Subscribe to our newsletter</h3>
-              <a class="usa-link usa-link--external" href="https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS">
-                Sign up for USWDS updates
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="tablet:grid-col">
-          <div class="usa-media-block">
-            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
-              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#support"></use>
-              </svg>
-            </div>
-            <div class="usa-media-block__body">
-              <h3>Get support</h3>
-              <a href="mailto:{{ site.uswds_email }}">
-                Email the USWDS team
-              </a>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
 
     <div class="bg-base-light padding-y-1 line-height-sans-3 font-lang-4">
       <div class="grid-container">
-        Looking for USWDS v1 documentation?
+        {{ footer.complimentary.label }}
         <a
-          href="https://v1.designsystem.digital.gov"
+          href="{{ footer.complimentary.link_href }}"
           class="text-ink text-bold hover:text-no-underline"
-          >Visit v1.designsystem.digital.gov</a
+          >{{- footer.complimentary.link_text -}}</a
         >
       </div>
     </div>
   </div>
 </footer>
-
-<div class="usa-identifier site-identifier">
-  <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier,,,,,,">
-      <div class="usa-identifier__container">
-          <div class="usa-identifier__logos">
-              <a href="javascript:void(0);" class="usa-identifier__logo">
-                  <img class="usa-identifier__logo-img" src="{{ site.baseurl }}/img/gsa-logo.svg" alt="GSA logo" role="img" width="48" height="48">
-              </a>
-          </div>
-          <section class="usa-identifier__identity" aria-label="Agency description">
-              <p class="usa-identifier__identity-domain">designsystem.digital.gov</p>
-              <p class="usa-identifier__identity-disclaimer">
-                  An official website of the <a href="https://gsa.gov">General Services Administration</a>
-              </p>
-          </section>
-      </div>
-  </section>
-  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
-      <div class="usa-identifier__container">
-          <ul class="usa-identifier__required-links-list">
-              <li class="usa-identifier__required-links-item">
-                  <a href="https://www.gsa.gov/about-us" class="usa-identifier__required-link">
-                      About GSA
-                  </a>
-              </li>
-              <li class="usa-identifier__required-links-item">
-                  <a href="https://www.gsa.gov/website-information/accessibility-aids" class="usa-identifier__required-link">
-                      Accessibility support
-                  </a>
-              </li>
-              <li class="usa-identifier__required-links-item">
-                  <a href="https://www.gsa.gov/reference/freedom-of-information-act-foia" class="usa-identifier__required-link usa-link">
-                      FOIA requests
-                  </a>
-              </li>
-              <li class="usa-identifier__required-links-item">
-                  <a href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002" class="usa-identifier__required-link usa-link">
-                      No FEAR Act data
-                  </a>
-              </li>
-              <li class="usa-identifier__required-links-item">
-                  <a href="https://www.gsaig.gov/" class="usa-identifier__required-link usa-link">
-                      Office of the Inspector General
-                  </a>
-              </li>
-              <li class="usa-identifier__required-links-item">
-                  <a href="https://www.gsa.gov/reference/reports/budget-performance" class="usa-identifier__required-link usa-link">
-                      Performance reports
-                  </a>
-              </li>
-              <li class="usa-identifier__required-links-item">
-                  <a href="https://www.gsa.gov/website-information/website-policies" class="usa-identifier__required-link usa-link">
-                      Privacy policy
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </nav>
-  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="Government information and services">
-      <div class="usa-identifier__container">
-          <div class="usa-identifier__usagov-description">Looking for U.S. government information and services?</div>
-          <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
-      </div>
-  </section>
-</div>
+{% include identifier.html %}

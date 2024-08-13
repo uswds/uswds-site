@@ -1,5 +1,5 @@
 - **Initialization properties.**  JavaScript will create most elements for file input. To get a file input to initialize, add the class name `usa-file-input` to `<input type="file" />`.
 - **Interaction.** When a user selects or drags documents to the file input, the file name and a thumbnail preview are listed.
-- **Using the `accept` attribute.** You can allow certain files by placing an accept attribute on the `<input/>`. If a file type is not accepted, the file will not be attached and the file input will display a message. [Learn more about the accept attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) [mozilla.org].
-- **Internet Explorer/Edge.** These browsers do not support dragging items to a file input. Instructions to drag files are removed for these browsers.
+- **Limit accepted file types with the `accept` attribute.** Add the `accept` attribute to the `input` element when you want to limit the types of files your input can accept. If a user selects a file that does not match the specified type, the file will not be attached and the file input will display an error message. [Learn more about the accept attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) [mozilla.org].
+- **Internet Explorer and older versions of Edge.** These browsers do not support dragging items to a file input. Instructions to drag files are removed for these browsers.
 - **Customizing the error message.** Add the data attribute `data-errorMessage` to `usa-file-input` to include a custom error message.

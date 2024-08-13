@@ -7,23 +7,14 @@ layout: styleguide
 title: Website policies and notices
 category: About
 lead: Accessibility, linking, open source, privacy, and more
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: about-policies
 ---
 
 Read the U.S. Web Design System (USWDS) policies on accessibility, linking, open source, privacy, and more. These policies and notices apply only to our websites --- [designsystem.digital.gov](https://designsystem.digital.gov) and [public-sans.digital.gov](https://public-sans.digital.gov) --- and not any other government websites.
-
-## On this page
-
--   [Accessibility policy](#accessibility-policy) →
-
--   [Linking policy](#linking-policy) →
-
--   [Open source policy](#open-source-policy) →
-
--   [Privacy and security policies](#privacy-and-security-policies) →
-
--   [System requirements notice](#system-requirements-notice) →
-
--   [Required content notice](#required-content-notice) →
 
 ## Accessibility policy
 
@@ -117,7 +108,7 @@ We use open-source software and free or low cost, commercial application program
 
 2.  Software source code previously released under an open source license and then modified by GSA staff is considered a "joint work." It is partially copyrighted, partially public domain, and as a whole is protected by the copyrights of the non-government authors and must be released according to the terms of the original open-source license.
 
-3.  All source code as defined above may be shared with the general public via a highly visible, easily accessible online source code community (such as Github or NPM) that facilitates the code's reuse. Source code won't be released if any of the following conditions are met:
+3.  All source code as defined above may be shared with the general public via a highly visible, easily accessible online source code community (such as Github or npm) that facilitates the code's reuse. Source code won't be released if any of the following conditions are met:
 
 1.  The USWDS core team determines that the code is too crude to merit distribution or provide value to the broader community.
 
@@ -145,7 +136,7 @@ We link to websites created and maintained by other public and/or private organi
 
 ### Social media and collaboration sites
 
-We manage a presence on social media and collaboration sites such as [Github](http://github.com/uswds), [NPM](https://www.npmjs.com/package/uswds), and [Twitter](https://twitter.com/uswds) to share government information, and engage with our audience. We do not collect any personally identifiable information through those sites, and we do not use personal information made available by the third-party sites.
+We manage a presence on social media and collaboration sites such as [Github](http://github.com/uswds), [npm](https://www.npmjs.com/package/uswds), and [Twitter](https://twitter.com/uswds) to share government information, and engage with our audience. We do not collect any personally identifiable information through those sites, and we do not use personal information made available by the third-party sites.
 
 ### If you send us personal information
 
@@ -179,20 +170,18 @@ Federal agencies are required to provide the following links to agency-level inf
 
 -   [No FEAR Act data](https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002)
 
--   [GSA plans and reports](https://www.gsa.gov/reference/gsa-plans-and-reports), including [budget and performance reports](http://www.gsa.gov/portal/category/21546) and [information quality guidelines](https://www.gsa.gov/reference/reports/information-quality-guidelines)
+-   [GSA plans and reports](https://www.gsa.gov/reference/gsa-plans-and-reports), including [budget and performance reports](https://www.gsa.gov/reference/reports/budget-and-performance) and [information quality guidelines](https://www.gsa.gov/reference/reports/information-quality-guidelines)
 
 -   [GSA website policies](https://www.gsa.gov/website-information/website-policies), including accessibility policy, linking policy, privacy and security notice, required links, and social media sites
 
 -   [Office of the Inspector General](https://www.gsaig.gov/)
 
--   [Open government initiatives](https://www.gsa.gov/node/78692)
-
--   [Orders and directives](http://www.gsa.gov/portal/directives)
+-   [Orders and directives](https://www.gsa.gov/directives-library)
 
 -   [Plain language](https://www.gsa.gov/governmentwide-initiatives/plain-language)
 
 -   [Privacy policy and program](https://www.gsa.gov/privacy)
 
--   [Small business events and contacts](https://www.gsa.gov/small-business/small-business-resources/osdbu-events-and-contacts)
+-   [Small business events and contacts](https://www.gsa.gov/small-business/small-business-resources/osdbu-events)
 
 Reviewed/Updated: October 2021

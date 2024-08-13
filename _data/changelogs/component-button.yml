@@ -1,0 +1,117 @@
+title: Button
+type: component
+changelogURL:
+items:
+  - date: 2024-03-11
+    summary: Added a new setting to adjust the gap between the button's text and icon.
+    summaryAdditional: Gap between elements can be adjusted using the `$theme-button-icon-gap` setting.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5398
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2024-03-11
+    summary: Improved the vertical alignment of `usa-icon` when placed inside of `usa-button`.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 5398
+    githubRepo: uswds
+    versionUswds: 3.8.0
+  - date: 2024-01-17
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2138
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    summary: Updated summaries in the "Using the button component" section.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+  - date: 2023-06-09
+    summary: Fixed a bug that caused the button `type` attribute to render empty.
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 5247
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency and visibility of disabled styles.
+    summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5063
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved consistency of disabled styles in forced colors mode.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5295
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved legibility in forced colors mode.
+    summaryAdditional: Adds a consistent border in forced colors mode.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5147
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Added spacebar trigger to links styled as buttons.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 4385
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2022-08-05
+    summary: Styled aria-disabled to match disabled.
+    summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4783
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-08-05
+    summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
+    isBreaking: true
+    affectsJavascript: true
+    affectsMarkup: true
+    githubPr: 4695
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-06-03
+    summary: Added guidance for using the button `type` attribute.
+    affectsGuidance: true
+    githubPr: 1608
+    githubRepo: uswds-site
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2021-06-08
+    summary: Added guidance to use the `disabled` attribute instead of `.usa-button--disabled`.
+    affectsGuidance: true
+    githubPr: 1232
+    githubRepo: uswds-site
+  - date: 2021-04-28
+    summary: Fixed unstyled button styling.
+    summaryAdditional: We updated and strengthened the styling of unstyled buttons to prevent any unwanted style leakage from conventional buttons, especially is used in conjunction with <code>usa-button--hover</code> and <code>usa-button--active</code> classes.
+    affectsStyles: true
+    githubPr: 4077
+    githubRepo: uswds
+    versionUswds: 2.11.2
+  - date: 2020-12-17
+    summary: Improved support for buttons with multiple variants.
+    summaryAdditional: We fixed a display bug with visited inverse unstyled buttons. Button styling is more reliable with different combinations of variants.
+    affectsStyles: true
+    githubPr: 3846
+    githubRepo: uswds
+    versionUswds: 2.10.0

@@ -1,0 +1,41 @@
+title: 404 page
+type: template
+items:
+  - date: 2023-03-09
+    summary: Updated template copy to follow parallel structure and use active voice.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup: true
+    affectsStyles:
+    githubPr: 5045
+    githubRepo: uswds
+    versionUswds:
+  - date: 2021-06-16
+    summary: Added Spanish variant.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup: true
+    affectsStyles:
+    githubPr: 4186
+    githubRepo: uswds
+    versionUswds: 2.12.0
+  - date: 2021-03-17
+    summary: Added 404 page template.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup: true
+    affectsStyles:
+    githubPr: 4003
+    githubRepo: uswds

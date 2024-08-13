@@ -11,10 +11,8 @@ title: Typography
 category: Components
 lead: "Government websites need clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields. Our default typefaces are designed for legibility and can adapt to a variety of visual tones."
 subnav:
-  - text: Typesetting with USWDS
-    href: '#typesetting-with-uswds'
-  - text: Included typefaces
-    href: '#included-typefaces'
+- text: Typography accessibility tests
+  href: /components/typography/accessibility-tests/
 tags:
   - type
   - typesetting
@@ -23,6 +21,8 @@ tags:
   - roboto mono
   - leading
   - measure
+changelog:
+  key: component-typography
 ---
 
 <h2 id="typesetting-with-uswds">Typesetting with USWDS</h2>

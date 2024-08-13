@@ -9,6 +9,7 @@ redirect_from:
   - /components/colors/
   - /design-tokens/color/
   - /colors/
+  - /color/
 subnav:
   - text: Introduction
     href: '#introduction'
@@ -22,6 +23,10 @@ subnav:
     href: '#further-reading'
   - text: Tools
     href: '#tools'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: tokens-color
 ---
 
 ## Introduction
@@ -38,7 +43,7 @@ USWDS organizes its color tokens into [theme tokens]({{ site.baseurl }}/design-t
 
 Throughout our documentation and guidance, we’ll use the terms "color," "color family," and "grade" — but what do we mean when we use them?
 
-**Color** is any specific swatch in our System token palettes, like `red-50`, `primary-base`, or `indigo-warm-60v`.
+**Color** is any specific swatch in our [system color token palette]({{ site.baseurl }}/design-tokens/color/system-tokens/), like `red-50`, `green-cool-10`, or `indigo-warm-60v`.
 
 **Color family** is a group of colors that all have the same hue on a color wheel (refer to [USWDS color wheels](#uswds-color-wheels)). Each contains a number of individual colors, distinguished from each other by the brightness or saturation. A System token's color family typically has a conventional color name, like `red` or `blue-warm`, and a theme token's color family has a role-based name, like `primary`.
 
@@ -55,7 +60,7 @@ Accessibility is not a special case. In the second quarter of 2018, [sites using
 
 ### Accessible color pairings
 
-USWDS helps teams choose accessible colors with a color-grade system. The following figure represents the `gray` color family in grades 5–90 (grade 0 is `white`):
+USWDS helps teams choose accessible colors with a color-grade system. The following figure represents the `gray` color family in grades 5–90:
 
 {% capture gray-grade %}
 <div class="padding-2 bg-white radius-md measure-3">
@@ -198,7 +203,7 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 - W3C: Contrast levels for readability
   [https://www.w3.org/WAI/test-evaluate/preliminary/#contrast](https://www.w3.org/WAI/test-evaluate/preliminary/#contrast){:.display-block}
 - W3C: Gap analysis of the state of accessibility for people with learning disabilities and cognitive disabilities
-  [https://w3c.github.io/wcag/coga/gap-analysis.html](https://w3c.github.io/wcag/coga/gap-analysis.html){:.display-block}
+  [https://www.w3.org/TR/coga-gap-analysis/](https://www.w3.org/TR/coga-gap-analysis/){:.display-block}
 - W3C: Low vision needs
   [https://www.w3.org/TR/low-vision-needs/](https://www.w3.org/TR/low-vision-needs/){:.display-block}
 

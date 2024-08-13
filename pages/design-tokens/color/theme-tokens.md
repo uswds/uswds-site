@@ -5,13 +5,23 @@ title: Theme color tokens
 category: Design tokens
 lead: USWDS theme color tokens provide flexible, accessible, customizable color choices for your project.
 type: docs
+redirect_from:
+  - /components/colors/theme/
+  - /colors/theme/
+  - /color/theme/
 subnav:
 - text: About theme color tokens
   href: '#uswds-theme-color-tokens'
 - text: Customizing theme color tokens
   href: '#customizing-theme-color-tokens'
+- text: Theme color tokens table
+  href: '#theme-color-tokens-table'
 - text: Using theme color tokens
   href: '#using-theme-color-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-color-theme
 ---
 
 {% assign colors = site.data.tokens.color %}
@@ -29,11 +39,9 @@ USWDS theme color tokens are divided into five high-level role-based color famil
 
 Each color family has seven possible lightness grades, from `lightest` to `darkest`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings. The default USWDS theme palette does not use every grade for every family. The `primary` and `secondary` families also have a `vivid` grade available.
 
-## Customizing theme color tokens
+{% include tokens/customize-color-token.html token_type="theme" example_token="primary-vivid" example_value="blue-warm-50v" %}
 
-Customize theme color tokens using the variables listed below in the `_uswds_theme_color.scss` [settings file]({{ site.baseurl }}/documentation/settings/) with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
-
-For example, if you wanted to set the value of the `primary-vivid` token to `blue-warm-50v`, set the variable `$theme-color-primary-vivid: "blue-warm-50v"` in `_uswds_theme_color.scss`.
+## Theme color tokens table
 
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">
@@ -206,7 +214,7 @@ div {
         </td>
         <td data-title="Example">
           <span>
-            $theme-border-color: <code>'primary-vivid'</code>
+            $theme-link-color: <code>'primary-vivid'</code>
           </span>
         </td>
       </tr>

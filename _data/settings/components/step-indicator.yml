@@ -9,12 +9,12 @@ contents:
     description: Gap between the counter and the segment.
     var: $theme-step-indicator-counter-gap
     default: 0.5
-    type: size
+    type: units
   - name: Counter border width
     description: Size of the border around the pending steps.
     var: $theme-step-indicator-counter-border-width
     default: 0.5
-    type: size
+    type: units
   - name: Font family
     description: Font family of the labels and counter numbers.
     var: $theme-step-indicator-font-family
@@ -49,19 +49,19 @@ contents:
     description: Width at which the component displays large-width features.
     var: $theme-step-indicator-min-width
     default: '"tablet"'
-    type: size
+    type: units
   - name: Pending segment color
-    description: Color of pending step segments. Use a grade of 20 more than **$step-indicator-background-color**.
+    description: Color of pending step segments. Use a grade of 40 more than **$step-indicator-background-color**.
     var: $theme-step-indicator-segment-color-pending
-    default: '"base-lighter"'
+    default: '"gray-40"'
     type: color
   - name: Complete segment color
-    description: Color of complete step segments. Use a grade at least 60.
+    description: Color of complete step segments. Use a grade of at least 60.
     var: $theme-step-indicator-segment-color-complete
     default: '"primary-darker"'
     type: color
   - name: Current segment color
-    description: Color of the current step segments. Use a grade at least 20 more than **$theme-step-indicator-segment-color-complete**.
+    description: Color of the current step segments. Use a grade at least 20 less than **$theme-step-indicator-segment-color-complete**.
     var: $theme-step-indicator-segment-color-current
     default: '"primary"'
     type: color

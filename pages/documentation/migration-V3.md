@@ -23,6 +23,10 @@ subnav:
   href: '#5-update-to-sass-module-syntax'
 - text: 6. Optimize your installation
   href: '#6-optimize-your-installation'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: docs-migration-v3
 ---
 {: .site-note }
 **Note:** This guide provides instructions for upgrading from USWDS 2 to USWDS 3. If your project uses USWDS 1, you will need to update according to the [USWDS 2.0 migration guide]({{ site.baseurl }}/documentation/migration-v2) before proceeding with these steps. [Not sure which version you're on? Here's how to check](#1-check-your-current-uswds-code-and-settings-versions).
@@ -169,6 +173,8 @@ USWDS 3.0 requires the use of [Sass Load Paths](https://sass-lang.com/documentat
 USWDS 3.0 load paths must include a path to the `@uswds/uswds/packages` directory, typically by updating an `IncludePaths` setting to include `node_modules/@uswds/uswds/packages`.
 
 Add this load path to your compiler settings, or update any old paths if your compiler already includes them. We have guidance for a few common compiler setups.
+
+{% include autoprefixer-note.html %}
 
 <!--Start compiler accordion -->
 <div class="usa-accordion usa-accordion--bordered">

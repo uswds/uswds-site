@@ -1,0 +1,20 @@
+title: Collection
+type: component
+changelogURL:
+items:
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2021-11-01
+    summary: Removed extraneous href from collection calendar.
+    summaryAdditional: The `usa-collection__calendar-date` should not include an `href`, so we removed it.
+    affectsMarkup: true
+    githubPr: 4308
+    githubRepo: uswds
+    versionUswds: 2.12.2

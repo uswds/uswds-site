@@ -1,0 +1,16 @@
+title: Resources
+type: documentation
+changelogURL:
+items:
+  - date: 2022-02-17
+    summary: Added resources page.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1422
+    githubRepo: uswds-site

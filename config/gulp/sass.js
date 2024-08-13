@@ -16,6 +16,7 @@ const entrypoints = {
     fonts: "./assets/css/uswds-fonts.css",
     utilities: "./assets/css/uswds-utilities.css",
     next: "./assets/css/uswds-next.css",
+    together: "./assets/css/uswds-together.css",
   },
 };
 
@@ -25,10 +26,7 @@ const entrypoints = {
  * @param {*} outputName - string of output file name
  * @returns - outputName.css
  */
-function compileProdCSS(
-  cssEntrypoints,
-  outputName = "styles.css"
-) {
+function compileProdCSS(cssEntrypoints, outputName = "styles.css") {
   return gulp
     .src(cssEntrypoints)
     .pipe(

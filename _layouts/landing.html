@@ -3,16 +3,6 @@ layout: default
 ---
 
 <main id="main-content">
-  <div
-    class="bg-gold-20v padding-x-2 desktop:padding-x-4 padding-y-1 line-height-sans-3 font-lang-4 text-bold"
-  >
-    USWDS 3.0 is here.
-    <a
-      href="{{site.baseurl}}/whats-new/updates/2022/04/28/introducing-uswds-3-0/"
-      class="text-ink text-normal hover:text-no-underline"
-      >Read about what's new in USWDS 3.0.</a
-    >
-  </div>
   <section class="site-hero">
     <div class="grid-container">
       <div class="maxw-mobile-lg">
@@ -72,6 +62,5 @@ layout: default
     </div>
   </section>
   {% endif %}
+  {{ content }}
 </main>
-
-{{ content }}

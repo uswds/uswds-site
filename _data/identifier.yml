@@ -1,0 +1,26 @@
+ariaLabel: Agency identifier,,,,,,
+logos:
+  - path: img/gsa-logo.svg
+    alt: GSA Logo
+domain: designsystem.digital.gov
+disclaimer: |-
+  <span aria-hidden="true">An </span>official website of the <a href=https://gsa.gov>General Services Administration</a>
+requiredLinks:
+  - label: About GSA
+    href: https://www.gsa.gov/about-us
+  - label: Accessibility statement
+    href: https://www.gsa.gov/website-information/accessibility-statement
+  - label: FOIA requests
+    href: https://www.gsa.gov/reference/freedom-of-information-act-foia
+  - label: No FEAR Act data
+    href: https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002
+  - label: Office of the Inspector General
+    href: https://www.gsaig.gov/
+  - label: Performance reports
+    href: https://www.gsa.gov/reference/reports/budget-performance
+  - label: Privacy policy
+    href: https://www.gsa.gov/website-information/website-policies
+usagov:
+  description: Looking for U.S. government information and services?
+  url: https://www.usa.gov/
+  label: Visit USA.gov

@@ -3,6 +3,7 @@ primary:
     href: /how-to-use-uswds/
   - href: /design-principles/
   - href: /components/
+  - href: /patterns/
   - href: /design-tokens/
   - href: /utilities/
   - href: /templates/
@@ -13,6 +14,8 @@ mobile:
     collapsible: true
   - href: /design-principles/
   - href: /components/
+    collapsible: true
+  - href: /patterns/
     collapsible: true
   - href: /design-tokens/
     collapsible: true
@@ -49,7 +52,10 @@ Components:
   - href: /components/icon/
   - href: /components/icon-list/
   - href: /components/identifier/
+  - href: /components/in-page-navigation/
+  - href: /components/input-mask/
   - href: /components/input-prefix-suffix/
+  - href: /components/language-selector/
   - href: /components/link/
   - href: /components/list/
   - href: /components/memorable-date/
@@ -73,6 +79,18 @@ Components:
   - href: /components/typography/
   - href: /components/validation/
 
+Patterns:
+  - text: Patterns
+    href: /patterns/
+  - text: Introducing patterns
+    href: /patterns/intro/
+  - text: Create a user profile
+    href: /patterns/create-a-user-profile/
+  - text: Complete a complex form
+    href: /patterns/complete-a-complex-form/
+  - text: Select a language
+    href: /patterns/select-a-language/
+
 How to use USWDS:
   - href: /how-to-use-uswds/
   - text: Getting started for developers
@@ -89,7 +107,6 @@ How to use USWDS:
     href: /documentation/migration/
   - text: Migrating to USWDS 2.0
     href: /documentation/migration-v2/
-  - href: /documentation/video-tutorials/
   - href: /documentation/implementations/
   - href: /documentation/showcase/
   - href: /documentation/sample-contract-language/
@@ -145,10 +162,11 @@ About:
   - href: /about/
   - href: /about/key-benefits/
   - href: /about/product-values/
-  - href: /about/contribute/
+  - text: Contribute
+    href: /about/contribute/
   - href: /about/community/
   - href: /about/whats-new/
-  - href: /about/releases/
+  - href: /about/monthly-calls/
   - href: /about/updates/
   - href: /about/product-roadmap/
   - href: /about/research/

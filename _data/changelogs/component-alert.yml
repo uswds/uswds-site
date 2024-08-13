@@ -1,0 +1,73 @@
+title: Alert
+type: component
+changelogURL:
+items:
+  - date: 2024-03-27
+    summary: Added a note about USWDS developing dismissible alerts.
+    affectsGuidance: true
+    githubPr: 2563
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    summary: Added documentation for the `usa-alert--emergency` variant.
+    affectsGuidance: true
+    githubPr: 2149
+    githubRepo: uswds-site
+  - date: 2023-06-09
+    summary: Removed redundant and invalid height declaration.
+    affectsStyles: true
+    githubPr: 5187
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-03-09
+    summary: Updated padding settings to accept any valid spacing token.
+    summaryAdditional:
+    affectsStyles: true
+    githubPr: 5076
+    githubRepo: uswds
+    versionUswds: 3.4.0
+  - date: 2022-10-19
+    summary: Updated the alignment of alert content to visually match banner content.
+    summaryAdditional: The site alert component was also updated.
+    affectsStyles: true
+    githubPr: 4922
+    githubRepo: uswds
+    versionUswds: 3.2.0
+  - date: 2022-09-26
+    summary: Updated instructions for using the ARIA `role` attribute.
+    affectsAccessibility: true
+    affectsGuidance: true
+    githubPr: 1770
+    githubRepo: uswds-site
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2021-03-17
+    summary: Restored missing white icons.
+    summaryAdditional: Restored `error--white`, `info--white`, and `warning--white` icons.
+    affectsAssets: true
+    githubPr: 4106
+    githubRepo: uswds
+    versionUswds: 2.11.1
+  - date: 2021-03-17
+    summary: Provided better support for color icons that adapt to theme settings.
+    summaryAdditional: Now the color of the alert icon will update automatically to adapt to the alert background, or to the color of the alert text.
+    affectsAccessibility:
+    affectsAssets: true
+    affectsStyles: true
+    githubPr: 4079
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Added the `$theme-alert-padding-y` setting.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsStyles: true
+    githubPr: 4079
+    githubRepo: uswds
+    versionUswds: 2.11.0

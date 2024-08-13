@@ -1,0 +1,9 @@
+title: Progress easily
+type: pattern
+changelogURL:
+items:
+  - date: 2022-11-14
+    summary: Pattern published.
+    affectsGuidance: true
+    githubRepo: uswds-site
+    versionUswds: 3.3.0

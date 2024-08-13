@@ -1,0 +1,141 @@
+title: "Phase 2: Compile"
+type: documentation
+changelogURL:
+items:
+  - date: 2024-04-26
+    summary: Replaced outdated references to `paths.dist.sass` with `paths.dist.theme`.
+    affectsGuidance: true
+    githubPr: 2401
+    githubRepo: uswds-site
+  - date: 2024-04-26
+    summary: Added documentation for `paths.src.projectIcons` and `sprite.projectIconsOnly`.
+    affectsGuidance: true
+    githubPr: 2401
+    githubRepo: uswds-site
+  - date: 2023-07-28
+    summary: Added clarity to the instructions for custom compilers.
+    affectsGuidance: true
+    githubPr: 2123
+    githubRepo: uswds-site
+  - date: 2023-05-11
+    summary: Replaced references to `copySetup` with `copyTheme`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 2071
+    githubRepo: uswds-site
+  - date: 2022-10-11
+    summary: Restructured content to add clarity.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1766
+    githubRepo: uswds-site
+  - date: 2022-08-16
+    summary: Fixed typo by replacing `_index.html` with `_index.scss`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1740
+    githubRepo: uswds-site
+  - date: 2022-06-17
+    summary: Added warning and success note for `gulp init`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1667
+    githubRepo: uswds-site
+  - date: 2022-06-03
+    summary: Updated the example compile settings with values that do not generate warnings.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1597
+    githubRepo: uswds-site
+  - date: 2022-04-28
+    summary: Updated documentation to use Sass module syntax and updated settings table.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1538
+    githubRepo: uswds-site
+  - date: 2022-03-10
+    summary: |
+      Replaced the outdated text: `paths.dist.sass` with updated: `paths.dist.theme`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1473
+    githubRepo: uswds-site
+  - date: 2022-03-10
+    summary: |
+      Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1424
+    githubRepo: uswds-site
+  - date: 2021-12-14
+    summary: Added clarity to guidance.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1370
+    githubRepo: uswds-site
+  - date: 2021-12-06
+    summary: Added "Getting started for developers" guide.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1362
+    githubRepo: uswds-site

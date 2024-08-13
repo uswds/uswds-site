@@ -10,7 +10,18 @@
 </pre>
 </div>
 
-  <p class="utility-text margin-top-4">Set whether a utility outputs a specific state variant by setting the value of the <code>$[utility_family]-settings.[state]</code> variable in <code>_uswds-theme-utilities.scss</code>.</p>
+<p class="utility-text margin-top-4">Set whether a utility outputs a specific state variant by setting the value of the <code>$[utility_family]-settings.[state]</code> variable in your <a href="{{ site.baseurl }}/documentation/settings" class="">USWDS settings configuration</a>. When modifying settings stored as a map, undefined map elements will keep their default values.</p>
+
+  <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2 margin-bottom-2 bg-white">
+    <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
+    <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+@use "uswds-core" with (
+  $background-color-settings: (
+    active: true
+  )
+);
+    </pre>
+  </div>
 
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>

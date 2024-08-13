@@ -1,0 +1,1 @@
+- **Content is available in three or more languages.** Use this component if your site offers equivalent content in three or more languages.

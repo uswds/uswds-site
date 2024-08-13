@@ -7,6 +7,11 @@ lead: USWDS provides principles, guidance, and code to help you design and build
 redirect_from:
   - /documentation/how-to-use-uswds/
   - /documentation/
+subnav:
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: docs-how-to-use-USWDS
 ---
 
 ## Get started with USWDS
@@ -53,7 +58,7 @@ You don’t need to understand the following concepts and tools to install the d
 - [Design tokens]({{ site.baseurl }}/design-tokens/): Design tokens are predefined units of color, spacing, typography, opacity, and more that form the building blocks of the design system.
 - [Components]({{ site.baseurl }}/components/overview): Components are simple and consistent solutions to common user interface needs, like form fields, buttons, and icons. If tokens are the building blocks of the design system, components are the building blocks of a site or service.
 - [Utilities]({{ site.baseurl }}/utilities/): Utilities are single-purpose classes mapped to USWDS tokens. Utilities allow developers to prototype with design system utilities without writing Sass or CSS.
-- [Implementations]({{ site.baseurl }}/documentation/implementations/): Implementations are how teams use USWDS in their projects, like in Drupal, as well as other platforms and frameworks. We'll link to projects and community supported implementations. 
+- [Implementations]({{ site.baseurl }}/documentation/implementations/): Implementations are how teams use USWDS in their projects, like in Drupal, as well as other platforms and frameworks. We'll link to projects and community supported implementations.
 
 We’ve created these resources to help designers start prototyping and developers start building quickly and establish a shared language to promote effective collaboration through the process of customizing and updating content. The [USWDS community](https://designsystem.digital.gov/about/community/) is also a resource available to you. Please get in touch with any questions, recommendations, before, during, and/or after getting started.
 

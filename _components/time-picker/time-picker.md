@@ -44,9 +44,13 @@ subnav:
   href: '#time-picker-guidance'
 - text: Package
   href: '#time-picker-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - input
   - box
   - form controls
   - schedule
+changelog:
+  key: component-time-picker
 ---

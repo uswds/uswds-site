@@ -43,6 +43,8 @@ subnav:
   href: '#combo-box-guidance'
 - text: Package
   href: '#combo-box-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - form
   - forms
@@ -51,5 +53,6 @@ tags:
   - select
 title: Combo box
 type: component
+changelog:
+  key: component-combo-box
 ---
-

@@ -8,13 +8,13 @@
 <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
 @media screen and (min-width: 640px) {
   .tablet\:padding-y-2 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 </pre>
 </div>
-  <p class="utility-text margin-top-4">Set which breakpoints are available to USWDS utilities with the <code>$theme_output_breakpoints</code> variable found in <code>_uswds-theme-utilities.scss</code>.</p>
+  <p class="utility-text margin-top-4">Set up which breakpoints are available to USWDS utilities by setting the <code>$theme-utility-breakpoints</code> variable in your <a href="{{ site.baseurl }}/documentation/settings" class="">USWDS settings configuration</a>.</p> 
 
   {% assign breakpoint = site.data.tokens.spacing.positive %}
   {% assign all-breakpoints =
@@ -63,7 +63,18 @@
     </tbody>
   </table>
 
-  <p class="utility-text margin-top-4">Set whether a utility family outputs with responsive variants by setting the value of  <code>$[utility_family]-settings.responsive</code> in <code>_uswds-theme-utilities.scss</code>.</p>
+  <p class="utility-text margin-top-4">Set whether a utility family outputs with responsive variants by setting the value of <code>$[utility_family]-settings.responsive</code> in your <a href="{{ site.baseurl }}/documentation/settings">USWDS settings configuration</a>. When modifying settings stored as a map, undefined map elements will keep their default values.</p>
+
+  <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2 margin-bottom-2 bg-white">
+    <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
+    <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+@use "uswds-core" with (
+  $background-color-settings: (
+    responsive: true
+  )
+);
+    </pre>
+  </div>
 
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>

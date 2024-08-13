@@ -4,6 +4,7 @@ layout: styleguide
 title: Website standards
 category: How to use USWDS
 lead: The Design System incorporates federal standards to improve federal websites and digital services.
+in_page_nav_headings: false
 ---
 
 The 21st Century Integrated Digital Experience Act ([P.L. 115-336](https://www.congress.gov/bill/115th-congress/house-bill/5759/text) § 3(e)) requires “any website of an executive agency that is made available to the public after the date of enactment of this Act shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration.”

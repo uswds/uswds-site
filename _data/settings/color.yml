@@ -211,9 +211,9 @@ contents:
     subsection: theme color token
     description: Use grades 60-90.
     var: $theme-color-accent-warm-darker
-    default: '"orange-60v"'
+    default: '"orange-60"'
     type: color
-  - name: accent-warm-lightest
+  - name: accent-warm-darkest
     subsection: theme color token
     description: Use grades 70-90.
     var: $theme-color-accent-warm-darkest
@@ -370,13 +370,13 @@ contents:
     subsection: state color token
     description: Use grades 60-70.
     var: $theme-color-success-dark
-    default: '"green-cool-50"'
+    default: '"green-cool-50v"'
     type: color
   - name: success-darker
     subsection: state color token
     description: Use grades 70-80.
     var: $theme-color-success-darker
-    default: '"green-cool-60"'
+    default: '"green-cool-60v"'
     type: color
 
   - name: Info color family
@@ -438,23 +438,35 @@ contents:
     var: $theme-color-disabled-family
     default: '"gray"'
     type: color
-  - name: info-light
-    subsection: state color token
-    description: Use grade 10.
-    var: $theme-color-disabled-light
-    default: '"gray-10"'
-    type: color
-  - name: info
+  - name: disabled-lighter
     subsection: state color token
     description: Use grade 20.
-    var: $theme-color-disabled
+    var: $theme-color-disabled-lighter
     default: '"gray-20"'
     type: color
-  - name: info-dark
+  - name: disabled-light
     subsection: state color token
-    description: Use grade 30.
+    description: Use grade 40.
+    var: $theme-color-disabled-light
+    default: '"gray-40"'
+    type: color
+  - name: disabled
+    subsection: state color token
+    description: Use grade 50.
+    var: $theme-color-disabled
+    default: '"gray-50"'
+    type: color
+  - name: disabled-dark
+    subsection: state color token
+    description: Use grade 70.
     var: $theme-color-disabled-dark
-    default: '"gray-30"'
+    default: '"gray-70"'
+    type: color
+  - name: disabled-darker
+    subsection: state color token
+    description: Use grade 90.
+    var: $theme-color-disabled-darker
+    default: '"gray-90"'
     type: color
 
   - name: Body background color
@@ -464,7 +476,7 @@ contents:
     default: '"white"'
     type: color
   - name: Body text color
-    description: Color of body text
+    description: Color of body text.
     var: $theme-text-color
     default: '"ink"'
     type: color
@@ -481,7 +493,7 @@ contents:
     default: '"primary"'
     type: color
   - name: Visited link color
-    description: Color for `:visted` text links
+    description: Color for `:visited` text links
     var: $theme-link-visited-color
     default: '"violet-70v"'
     type: color
@@ -496,17 +508,17 @@ contents:
     default: '"primary-darker"'
     type: color
   - name: Link reverse color
-    description: Color for reverse text links.
+    description: Color for text links on dark backgrounds.
     var: $theme-link-reverse-color
     default: '"base-lighter"'
     type: color
   - name: Link reverse hover color
-    description: Color for reverse `:hover` text links.
+    description: Color for `:hover` text links on dark backgrounds.
     var: $theme-link-reverse-hover-color
     default: '"base-lightest"'
     type: color
-  - name: Link reverse hover color
-    description: Color for reverse `:active` text links.
+  - name: Link reverse active color
+    description: Color for `:active` text links on dark backgrounds.
     var: $theme-link-reverse-active-color
     default: '"white"'
     type: color

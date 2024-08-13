@@ -19,11 +19,15 @@ subnav:
   href: '#collection-guidance'
 - text: Package
   href: '#collection-package'
+- text: Latest updates
+  href: '#changelog'
 title: Collection
 type: component
 variants:
-  - variant: "`usa-collection--condensed`"
+  - variant: "`.usa-collection--condensed`"
     description: A more condensed item presentation with less space between items.
+changelog:
+  key: component-collection
 ---
 
 The collection component offers users a way to view short descriptions of related content, providing a simple way to access the original source to learn more. It’s useful when you want to highlight information like articles, events, or documents that appear elsewhere on your website or from other sources.

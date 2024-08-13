@@ -8,17 +8,12 @@ contents:
   - name: Font family
     description: The family of the breadcrumb text.
     var: $theme-breadcrumb-font-family
-    default: '"sm"'
+    default: '"body"'
     type: family
   - name: Font size
     description: The size of the breadcrumb text.
     var: $theme-breadcrumb-font-size
     default: '"sm"'
-    type: units
-  - name: Breadcrumb gap
-    description: The space between indicator icons and text.
-    var: $theme-breadcrumb-gap
-    default: 1.5
     type: units
   - name: Link color
     description: The color of breadcrumb link. Add the link color and the system will generate the hover state. `Default` uses the default link settings calculated from your background color.
@@ -28,10 +23,10 @@ contents:
   - name: Full breadcrumb minimum width
     description: The width at which the breadcrumb displays the full breadcrumb list.
     var: $theme-breadcrumb-min-width
-    default: "mobile-lg"
+    default: '"mobile-lg"'
     type: units
   - name: Bottom padding
-    description: Padding under the breadcrumb.
+    description: Padding below the breadcrumb.
     var: $theme-breadcrumb-padding-bottom
     default: 2
     type: units
@@ -48,5 +43,5 @@ contents:
   - name: Separator color
     description: Color of the breadcrumb separator. This value needs AA contrast against the background.
     var: $theme-breadcrumb-separator-color
-    default: "base"
+    default: '"base"'
     type: color

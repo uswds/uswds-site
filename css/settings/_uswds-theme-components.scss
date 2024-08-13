@@ -67,7 +67,7 @@ $theme-input-state-border-width: 0.5;
 
 // Header
 $theme-header-font-family: "ui";
-$theme-header-logo-text-width: 33%;
+$theme-header-logo-text-width: 50%;
 // $theme-header-max-width: "full"; - https://github.com/uswds/uswds/issues/4851
 // $theme-header-min-width: 'full';
 
@@ -80,6 +80,10 @@ $theme-identifier-background-color: "base-darkest";
 $theme-identifier-identity-domain-color: "base-light";
 $theme-identifier-max-width: "widescreen";
 $theme-identifier-secondary-link-color: "base-light";
+
+$theme-in-page-nav-background-color: $site-background-color;
+$theme-in-page-nav-top: 6;
+$theme-in-page-nav-margin-left: 0;
 
 // Navigation
 $theme-navigation-font-family: "ui";

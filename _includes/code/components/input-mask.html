@@ -1,0 +1,23 @@
+<h3 class="site-preview-heading">Social Security Number Input Mask</h3>
+
+{% capture input-mask-ssn %}
+  {% library_component usa-input-mask-ssn %}
+{% endcapture %}{{ input-mask-ssn | strip }}
+
+<h3 class="site-preview-heading">US Telephone Number Input Mask</h3>
+
+{% capture input-mask-phone %}
+  {% library_component usa-input-mask-phone %}
+{% endcapture %}{{ input-mask-phone | strip }}
+
+<h3 class="site-preview-heading">9 Digit US ZIP Code Input Mask</h3>
+
+{% capture input-mask-zip %}
+  {% library_component usa-input-mask-zip %}
+{% endcapture %}{{ input-mask-zip | strip }}
+
+<h3 class="site-preview-heading">Alphanumeric Input Mask</h3>
+
+{% capture input-mask-alphanumeric %}
+  {% library_component usa-input-mask-alphanumeric %}
+{% endcapture %}{{ input-mask-alphanumeric | strip }}

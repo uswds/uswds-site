@@ -1,6 +1,20 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
+{% assign component = site.data.accessibility-tests[componentKey] %}
+{% assign known_issues_key = page.known_issues_key | default: page.title | slugify %}
+{% assign known_issues = site.data.issues[known_issues_key] %}
+
+{% if page.alert == true %}
+<div class="usa-alert margin-bottom-3 usa-alert--{{ page.alert-class }}">
+  <div class="usa-alert__body">
+    <h2 class="usa-alert__heading">{{ page.alert-heading }}</h2>
+    <p class="usa-alert__text">
+      {{ page.alert-content }}
+    </p>
+  </div>
+</div>
+{% endif %}
 
 {% if page.parent == null and content.size > 1 %}
 <h2 class="site-component-section-title">About the {{ componentName }} {{ page.type }}</h2>
@@ -8,9 +22,21 @@
   {{ content }}
 </div>
 {% endif %}
-
-{% include component-preview-and-code.html %}
-{% include component-guidance.html %}
+{%- if known_issues.items -%}
+  {% include known-issues-alert.html %}
+{% endif %}
+{% include component-preview-and-code.html level=include.level %}
+{% include component-guidance.html level=include.level %}
+<!-- Add accessibility test results -->
+{% if component %}
+  {% include accessibility-tests/test-results-summary.html page='main' %}
+{% endif %}
+{%- if known_issues.items -%}
+  {% include known-issues.html %}
+{% endif %}
 {% if page.component.package %}
-{% include component-package.html %}
+  {% include component-package.html level=include.level %}
+{% endif %}
+{% if page.disclaimer %}
+  {% include disclaimer.html %}
 {% endif %}

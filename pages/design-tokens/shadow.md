@@ -10,6 +10,10 @@ subnav:
   href: '#shadow-tokens'
 - text: Using shadow tokens
   href: '#using-shadow-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-shadow
 ---
 
 {% assign tokens = site.data.tokens %}

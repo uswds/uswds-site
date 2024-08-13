@@ -13,16 +13,8 @@ type: component
 category: Components
 lead: 'A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website.'
 subnav:
-  - text: Basic header
-    href: '#basic-header'
-  - text: Basic header with megamenu
-    href: '#basic-header-with-megamenu'
-  - text: Extended header
-    href: '#extended-header'
-  - text: Extended header with megamenu
-    href: '#extended-header-with-megamenu'
-  - text: Latest updates
-    href: '#changelog'
+  - text: Header accessibility tests
+    href: /components/header/accessibility-tests/
 variants:
   - variant: "`.usa-header--basic`"
     description: Display a simple header.
@@ -91,6 +83,9 @@ in_page_nav_headings: "h2"
 </ul>
 
 <h2 class="usa-heading heading-margin-alt">Header accessibility</h2>
+
+{% include accessibility-tests/a11y-note.html %}
+
 <ul class="usa-content-list">
   <li>
     <strong>Add a skip navigation link before the header.</strong> Include skip navigation links to allow those using
@@ -159,3 +154,5 @@ in_page_nav_headings: "h2"
 {% include init-note.html %}
 
 {% include child-sections.html parent='Header' %}
+
+{% include accessibility-tests/test-results-summary.html page='main' %}

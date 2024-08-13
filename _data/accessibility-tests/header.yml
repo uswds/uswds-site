@@ -124,8 +124,9 @@ test_items:
     wcag_criterion: 2.1.2
   - summary: Keyboard can bypass header and navigation.
     summary_additional: |
-      When you visit a page using the keyboard,
-      a "skip to main content" link at the top of the page, before the header navigation, will allow you to navigate past the header and navigation, into page content.
+      When you visit a page using the keyboard, 
+      you will find a “skip to main content” link at the top of the page, before the header navigation. 
+      The link allows you to navigate past the header and navigation into page content.
     test_status: conditional
     test_type: keyboard
     version_tested: 3.8.1

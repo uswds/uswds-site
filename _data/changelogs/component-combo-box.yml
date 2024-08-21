@@ -4,13 +4,13 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Removed verbose aria instructions.
-    summaryAdditional: Combobox now only reads default screenreader instructions.
+    summaryAdditional: Combo box now relies on the default instructions provided by screen readers.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 6022
     githubRepo: uswds
-    versionUswds: 3.5.0
-  - date: 2024-08-20
+    versionUswds: N.N.N
+  - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:
     affectsGuidance: true

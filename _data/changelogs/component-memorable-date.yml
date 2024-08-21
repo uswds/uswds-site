@@ -2,7 +2,7 @@ title: Memorable date
 type: component
 changelogURL:
 items:
-- date: 2024-08-21
+- date: NNNN-NN-NN
   summary: Removed numeric representation of months from `select`.
   summaryAdditional: Recent usability testing indicated that having both numbers and names to represent months was confusing to screen readers.
   isBreaking: true
@@ -10,7 +10,7 @@ items:
   affectsContent: true
   githubRepo: uswds
   githubPr: 6028
-  versionUswds: 3.6.0
+  versionUswds: N.N.N
 - date: 2023-08-23
   summary: Updated styles to allow the component to wrap to multiple lines at narrow widths.
   summaryAdditional:

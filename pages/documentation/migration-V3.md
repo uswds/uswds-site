@@ -174,6 +174,8 @@ USWDS 3.0 load paths must include a path to the `@uswds/uswds/packages` director
 
 Add this load path to your compiler settings, or update any old paths if your compiler already includes them. We have guidance for a few common compiler setups.
 
+{% include autoprefixer-note.html %}
+
 <!--Start compiler accordion -->
 <div class="usa-accordion usa-accordion--bordered">
 

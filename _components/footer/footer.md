@@ -10,18 +10,8 @@ redirect_from:
 - /footers/
 - /components/footers/
 subnav:
-- text: Big footer
-  href: '#big-footer'
-- text: Medium footer
-  href: '#medium-footer'
-- text: Slim footer
-  href: '#slim-footer'
-- text: Guidance
-  href: '#footer-guidance'
-- text: Package
-  href: '#footer-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Footer accessibility tests
+  href: /components/footer/accessibility-tests/
 tags:
   - slim
   - big

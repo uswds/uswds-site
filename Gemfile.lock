@@ -14,8 +14,12 @@ GEM
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
     ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     google-protobuf (4.27.3-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.27.3-x86_64-linux)
       bigdecimal
       rake (>= 13)
     html-proofer (4.4.3)
@@ -72,6 +76,8 @@ GEM
     mercenary (0.4.0)
     nokogiri (1.16.7-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.16.7-x86_64-linux)
+      racc (~> 1.4)
     parallel (1.26.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -82,7 +88,7 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
-    rexml (3.3.5)
+    rexml (3.3.6)
       strscan
     rouge (4.3.0)
     rspec-core (3.13.0)
@@ -93,6 +99,8 @@ GEM
     rspec-support (3.13.1)
     safe_yaml (1.0.5)
     sass-embedded (1.77.8-arm64-darwin)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86_64-linux-gnu)
       google-protobuf (~> 4.26)
     strscan (3.1.0)
     terminal-table (3.0.2)
@@ -108,6 +116,7 @@ PLATFORMS
   arm64-darwin-21
   arm64-darwin-22
   arm64-darwin-23
+  x86_64-linux
 
 DEPENDENCIES
   html-proofer (= 4.4.3)

@@ -2,6 +2,11 @@ title: Identifier
 type: component
 changelogURL:
 items:
+  - date: 2024-08-13
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2754
+    githubRepo: uswds-site
   - date: 2024-05-31
     summary: Fixed a bug that mistakenly added the English word "An" to Spanish variants in the component preview.
     summaryAdditional:

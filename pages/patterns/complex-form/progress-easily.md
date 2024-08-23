@@ -7,7 +7,7 @@ category: Patterns
 sub-category: Complete a complex form
 lead: Empower users to successfully complete complex forms by reducing cognitive load and guiding them through the process in a way that is humane and respectful.
 changelog:
-  key: pattern-complete-a-complex-form-progress-easily
+  key: pattern-complex-form-progress-easily
 ---
 
 {:.site-component-section-title}
@@ -65,7 +65,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
             <li>Don’t assume your users are using a desktop or laptop computer, in the privacy of their own homes.</li>
             <li>Don’t hide critical information — especially information that is useful or provides context — behind links that will navigate the user away from the form, even using a new window or tab. Users may find it disorienting or lose their place in the form. Consider whether using <a href="{{ site.baseurl }}/components/modal/">modals</a> for critical explanatory content that may be required to understand and complete the task is necessary, or if on-screen help text can provide the necessary information.</li>
             <li>Avoid error messaging that is vague or places blame on the user. Users in stressful situations may find terse or unclear validation messaging frustrating and a barrier to completion.</li>
-            <li>Don’t disable form inputs. Disabled states can confuse users due to low color contrast, lack of meaningful feedback for users of screen readers, and no focus capability for keyboard navigators. 
+            <li>Don’t disable form inputs. Disabled states can confuse users due to low color contrast, lack of meaningful feedback for users of screen readers, and no focus capability for keyboard navigators.
 </li>
           </ul>
         </div>

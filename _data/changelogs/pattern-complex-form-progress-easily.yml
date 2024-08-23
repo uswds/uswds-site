@@ -2,8 +2,14 @@ title: Progress easily
 type: pattern
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added guidance for error messages and disabled states to the "what to do" and "what not to do" sections.
+    affectsGuidance: true
+    githubRepo: uswds-site
+    githubPr: 2744
   - date: 2022-11-14
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site
+    githubPr: 1889
     versionUswds: 3.3.0

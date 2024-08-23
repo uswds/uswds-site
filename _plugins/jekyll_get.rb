@@ -32,7 +32,7 @@ module Jekyll_Get
       url = d['json']
       data_source = '.jekyll_get_cache'
       path = "#{data_source}/#{name}.json"
-      if not File.exists?(path)
+      if not File.exist?(path)
         FileUtils.mkpath File.dirname(path)
         print "Caching #{url} in #{path}...\n"
         githubJekyllCache = URI(get_final_url(url)).open

@@ -3,11 +3,12 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
-  summary: Removed numeric representation of months from `select`.
-  summaryAdditional: Recent usability testing indicated that having both numbers and names to represent months was confusing to screen readers.
+  summary: Removed numeric representation of months from the `select` element.
+  summaryAdditional: Recent usability testing indicated that having both numbers and names to represent months was confusing for screen reader users.
   isBreaking: true
   affectsAccessibility: true
   affectsContent: true
+  affectsMarkup: true
   githubRepo: uswds
   githubPr: 6028
   versionUswds: N.N.N

@@ -2,6 +2,15 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added readonly attribute to aria-disabled.
+    summaryAdditional: Now, the input element and calendar icon remain discoverable but disabled behaviors are replicated.
+    affectsAccessibility: true
+    affectsJavascript: true
+    affectsMarkup: true
+    githubPr: #6013
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

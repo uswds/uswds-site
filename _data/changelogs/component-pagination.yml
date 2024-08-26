@@ -4,8 +4,7 @@ changelogURL:
 items:
 - date: NNNN-NN-NN
   summary: Updated text-decoration style on pagination links so page numbers are underlined.
-  summaryAdditional: Users should confirm the pagination page numbers are underlined.
-  isBreaking: true
+  summaryAdditional: Link styles are now visually consistent with usa-link.
   affectsAccessibility: true
   affectsStyles: true
   githubPr: 5970

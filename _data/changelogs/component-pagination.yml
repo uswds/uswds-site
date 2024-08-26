@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
-  summary: Updated text-decoration style on pagination links so page numbers are underlined.
-  summaryAdditional: Link styles are now visually consistent with usa-link.
+  summary: Added text underline styles to pagination links.
+  summaryAdditional: Pagination links are now visually consistent with other USWDS text links.
   affectsAccessibility: true
   affectsStyles: true
   githubPr: 5970

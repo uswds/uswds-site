@@ -5,7 +5,6 @@ items:
 - date: NNNN-NN-NN
   summary: Removed numeric representation of months from the `select` element.
   summaryAdditional: Recent usability testing indicated that having both numbers and names to represent months was confusing for screen reader users.
-  isBreaking: true
   affectsAccessibility: true
   affectsContent: true
   affectsMarkup: true

@@ -3,12 +3,11 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added readonly attribute to aria-disabled.
-    summaryAdditional: Now, the input element and calendar icon remain discoverable but disabled behaviors are replicated.
+    summary: Enhanced `aria-disabled` behaviors to match `disabled` behaviors.
+    summaryAdditional: Now, the input element and calendar icon remain discoverable to screen readers but cannot be interacted with.
     affectsAccessibility: true
     affectsJavascript: true
-    affectsMarkup: true
-    githubPr: #6013
+    githubPr: 6013
     githubRepo: uswds
     versionUswds: N.N.N
   - date: 2024-03-13

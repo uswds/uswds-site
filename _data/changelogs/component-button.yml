@@ -5,8 +5,8 @@ items:
   - date: NNNN-NN-NN
     summary: Updated the width of unstyled buttons at narrow screen widths.
     summaryAdditional: |
-      Now, unstyled buttons will have a width of `auto` to better match USWDS link styles.
-      Users should confirm that the variant appears as expected in their projects.
+      Now, unstyled buttons receive a width of `auto` to better match USWDS link styles.
+      Users should confirm that the variant visually displays as expected in their projects.
     isBreaking: true
     affectsStyles: true
     githubPr: 5631

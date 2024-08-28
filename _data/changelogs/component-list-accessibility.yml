@@ -1,8 +1,9 @@
-title: Header accessibility tests
+title: List accessibility tests
 type: component
 items:
  - date: 2024-08-13
    summary: Added accessibility tests page.
    affectsGuidance: true
-   githubPr: 2761
+   githubPr: 2746
    githubRepo: uswds-site
+   

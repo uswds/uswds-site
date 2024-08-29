@@ -9,7 +9,6 @@ items:
     isBreaking: true
     affectsAccessibility: true
     affectsStyles: true
-    affectsMarkup: true
     githubRepo: uswds
     githubPr: 6037
     versionUswds: N.N.N

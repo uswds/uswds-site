@@ -2,6 +2,23 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: 
+    summaryAdditional: 
+    isBreaking: true
+    affectsAccessibility: true
+    affectsStyles: True
+    affectsMarkup: true
+    githubRepo: uswds
+    githubPr: 6037
+    versionUswds: N.N.N
+  - date: 
+    summary: Fixed a bug that caused long button text to overflow into its padding.
+    summaryAdditional: Now, button text breaks to multiple lines as expected and maintains vertical center alignment.
+    affectsStyles: True
+    githubPr: 5655
+    githubRepo: uswds
+    versionUswds: 3.7.1
   - date: 2024-08-13
     summary: Added accessibility tests page.
     affectsGuidance: true

@@ -10,16 +10,8 @@ permalink: /components/checkbox/
 redirect_from:
 - /form-controls/02-checkboxes/
 subnav:
-- text: Preview
-  href: '#checkbox-preview'
-- text: Code
-  href: '#checkbox-code'
-- text: Guidance
-  href: '#checkbox-guidance'
-- text: Package
-  href: '#checkbox-package'
-- text: Latest updates
-  href: '#changelog'
+- text: checkbox accessibility tests
+  href: /components/checkbox/accessibility-tests/
 tags:
   - form
   - forms

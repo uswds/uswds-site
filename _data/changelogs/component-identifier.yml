@@ -2,6 +2,13 @@ title: Identifier
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the USA.gov link for Spanish versions of the identifier.
+    summaryAdditional: The link text now reads "Visite USAGov en Español" and the `href` now points to "https://www.usa.gov/es/".
+    affectsContent: true
+    githubPr: 5892
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-08-13
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

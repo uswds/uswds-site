@@ -5,7 +5,7 @@ items:
   - date: NNNN-NN-NN
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
-    githubPr: [Related PR number]
+    githubPr: 2803
     githubRepo: uswds-site
   - date: 2024-04-26
     summary: Added indeterminate styles for checkboxes.

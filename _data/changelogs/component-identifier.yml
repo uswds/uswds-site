@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated the USA.gov link for Spanish versions of the identifier.
-    summaryAdditional: The link text now reads "Visite USAGov en Español" and the `href` now points to "https://www.usa.gov/es/".
+    summary: Updated the USA.gov link in Spanish versions of the identifier.
+    summaryAdditional: The link text now reads "Visite USAGov en Español" and the link url is now "https://www.usa.gov/es/".
     affectsContent: true
     githubPr: 5892
     githubRepo: uswds

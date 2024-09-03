@@ -2,7 +2,6 @@ title: Card
 type: component
 changelogURL:
 items:
-  items:
   - date: NNNN-NN-NN
     summary: Added variable $theme-card-font-family to typeset mixin.
     summaryAdditional: Now, if the value of $theme-card-font-family changes the value is used in the theme setting for the card component. Users should ensure their card components are still appearing as expected.

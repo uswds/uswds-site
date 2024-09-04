@@ -98,7 +98,7 @@ The following are practical actions you can take:
 - **Identify yourself.** Clearly identify your site as a federal government site.
 - **Build with modern best practices.** Review the guidance outlined in [Digital Services Playbook](https://playbook.cio.gov/).
 - **Review your content.** Review your content at least twice per year to assure information is correct and non-redundant.
-- **Use the proper government domain.** Use a [.gov ](https://home.dotgov.gov/) top-level domain and [https](https://https.cio.gov/) with up-to-date certificates.
+- **Use the proper government domain.** Use a [.gov ](https://get.gov/) top-level domain and [https](https://https.cio.gov/) with up-to-date certificates.
 - **Add the USWDS banner component.** This component shows your site is an official government website and explains the benefits of secure connections.
 - **Identify link rot.** Find and fix broken links on your website.
 - **Keep communications simple.** Ensure content is easy, personal, and timely.
@@ -115,7 +115,7 @@ The following are practical actions you can take:
 - [Digital Services Playbook](https://playbook.cio.gov/) [playbook.cio.gov]
 - [U.S. Web Design System performance guidelines](https://designsystem.digital.gov/performance/) [designsystem.digital.gov]
 - [The HTTPS-only standard](https://https.cio.gov/) [https.cio.gov]
-- [.gov domain registration](https://home.dotgov.gov/) [dotgov.gov]
+- [.gov domain registration](https://get.gov/) [get.gov]
 - [Federal plain language guidelines](https://plainlanguage.gov/guidelines/) [plainlanguage.gov]
 - [How to design effective communications](https://oes.gsa.gov/assets/abstracts/OES%20Learnings%20on%20Writing%20Better%20Communications%202018.pdf) [PDF; oes.gsa.gov]
 - [Best practices for multilingual websites](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/) [digital.gov]
@@ -157,7 +157,7 @@ The following are practical actions you can take:
 - **Learn about assistive technology.** Visit the Web Accessibility Initiative website to get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
 - **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [W3C WCAG 2.0](https://www.w3.org/TR/WCAG20/).
 - **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
-- **Design generously.** Adopt an [inclusive-design](http://inclusivedesignprinciples.org/) mentality as described on the Inclusive Design Principles website.
+- **Design generously.** Adopt an [inclusive-design](https://inclusivedesignprinciples.info/) mentality as described on the Inclusive Design Principles website.
 - **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
 - **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.
 - **Build accessible designs.** Ensure designs are accessible, pages are laid out in a logical order, and content meets color-contrast requirements.
@@ -182,7 +182,7 @@ The following are practical actions you can take:
 #### Non-government resources
 
 - [Web accessibility perspectives videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
-- [Inclusive design principles](https://inclusivedesignprinciples.org/) [inclusivedesignprinciples.org]
+- [Inclusive design principles](https://inclusivedesignprinciples.info/) [inclusivedesignprinciples.info]
 - [Accessibility fundamentals with Rob Dodson](https://www.youtube.com/watch?v=z8xUCzToff8) [youtube.com]
 - [Microsoft's inclusive design manual](https://www.microsoft.com/design/inclusive/) [microsoft.com]
 - [Inclusive components by Heydon Pickering](https://inclusive-components.design/) [inclusive-components.design]

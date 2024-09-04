@@ -3,10 +3,13 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated horizontal alignment in the alert and site alert components.
+    summary: Fixed a bug that caused `$theme-site-margins-width` to adjust the alignment inside the alert and site alert components.
+    summaryAdditional: Confirm that the components display as expected in your project.
+    isBreaking: true
     affectsStyles: true
-    githubPr: 5626
+    githubPr: 5636
     githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2023-11-09
     summary: Removed the component's top margin.
     summaryAdditional:

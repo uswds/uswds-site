@@ -7,7 +7,7 @@ items:
     affectsGuidance: true
     githubPr: 2750
     githubRepo: uswds-site
-  - date: NNNN-NN-NN
+  - date: 2024-09-04
     summary: Removed the version number from "Gulp 4" references.
     affectsGuidance: true
     githubPr: 2750

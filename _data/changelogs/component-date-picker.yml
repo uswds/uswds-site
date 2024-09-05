@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Enhanced `aria-disabled` behaviors to match `disabled` behaviors.
-    summaryAdditional: Now, the input element and calendar icon remain discoverable to screen readers but cannot be interacted with.
+    summaryAdditional: Now, the input element and calendar icon remain discoverable to screen readers but prevent the user from selecting or inputting a date.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 6013

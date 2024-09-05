@@ -7,7 +7,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Improved form group error styles to be consistent across devices.
-    summaryAdditional: Margins are now uniform across various screen sizes and no longer shifts content.
+    summaryAdditional: Margins are now uniform across various screen sizes and no longer shift content.
     affectsStyles: true
     githubPr: 5999
     githubRepo: uswds

@@ -10,7 +10,7 @@ permalink: /components/checkbox/
 redirect_from:
 - /form-controls/02-checkboxes/
 subnav:
-- text: checkbox accessibility tests
+- text: Checkbox accessibility tests
   href: /components/checkbox/accessibility-tests/
 tags:
   - form

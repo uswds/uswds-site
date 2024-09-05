@@ -10,6 +10,12 @@ items:
     githubPr: 5774
     githubRepo: uswds
     versionUswds: N.N.N
+  - date: 2024-06-07
+    summary: Added known issues section.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 2620
+    githubRepo: uswds-site
   - date: 2023-06-09
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.

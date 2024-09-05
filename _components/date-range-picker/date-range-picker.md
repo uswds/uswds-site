@@ -55,4 +55,5 @@ title: Date range picker
 type: component
 changelog:
   key: component-date-range-picker
+known_issues_key: date-picker
 ---

@@ -42,8 +42,8 @@ The following are useful questions to ask your team as you assess users' needs:
 The following are practical actions you can take:
 
 - **Start early.** Early in the project, spend time with current and prospective users to better understand their perspective and the context of the problem.
-- **Use a range of methods.** Use a range of qualitative and quantitative research methods (such as [18F Methods](https://methods.18f.gov/)) to determine people’s goals, needs, and behaviors.
-- **Use prototypes.** Use [prototypes](https://methods.18f.gov/make/prototyping/) to test your assumptions and solutions with real people, in the field if possible.
+- **Use a range of methods.** Use a range of qualitative and quantitative research methods (such as [18F Methods](https://guides.18f.gov/methods/)) to determine people’s goals, needs, and behaviors.
+- **Use prototypes.** Use [prototypes](https://guides.18f.gov/methods/make/prototyping/) to test your assumptions and solutions with real people, in the field if possible.
 - **Share your findings.** Document and share your research findings with team members, managers, and the public whenever practical.
 - **Test regularly.** As the product is being built, regularly test it with potential users to ensure it meets people’s needs.
 
@@ -52,9 +52,9 @@ The following are practical actions you can take:
 #### Government resources
 
 - [Usability testing with Steve Krug](https://digital.gov/event/2018/06/14/usability-testing-with-steve-krug/) [digital.gov]
-- [18F's human-centered design methods](https://methods.18f.gov/) [methods.18f.gov]
+- [18F's human-centered design methods](https://guides.18f.gov/methods/) [guides.18f.gov]
 - [18F's research guidelines](https://handbook.18f.gov/research-guidelines/) [handbook.18f.gov]
-- [Interview checklist](https://methods.18f.gov/interview-checklist/) [methods.18f.gov]
+- [Interview checklist](https://guides.18f.gov/ux-guide/interview-checklist/) [guides.18f.gov]
 - [Tips for capturing the best data from user interviews](https://18f.gsa.gov/2016/02/09/tips-for-capturing-the-best-data-from-user-interviews/) [18f.gsa.gov]
 - [How to address barriers to user-centered design](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/) [18f.gsa.gov]
 - [Three ways to manage research projects remotely](https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/) [18f.gsa.gov]
@@ -98,7 +98,7 @@ The following are practical actions you can take:
 - **Identify yourself.** Clearly identify your site as a federal government site.
 - **Build with modern best practices.** Review the guidance outlined in [Digital Services Playbook](https://playbook.cio.gov/).
 - **Review your content.** Review your content at least twice per year to assure information is correct and non-redundant.
-- **Use the proper government domain.** Use a [.gov ](https://home.dotgov.gov/) top-level domain and [https](https://https.cio.gov/) with up-to-date certificates.
+- **Use the proper government domain.** Use a [.gov ](https://get.gov/) top-level domain and [https](https://https.cio.gov/) with up-to-date certificates.
 - **Add the USWDS banner component.** This component shows your site is an official government website and explains the benefits of secure connections.
 - **Identify link rot.** Find and fix broken links on your website.
 - **Keep communications simple.** Ensure content is easy, personal, and timely.
@@ -115,7 +115,7 @@ The following are practical actions you can take:
 - [Digital Services Playbook](https://playbook.cio.gov/) [playbook.cio.gov]
 - [U.S. Web Design System performance guidelines](https://designsystem.digital.gov/performance/) [designsystem.digital.gov]
 - [The HTTPS-only standard](https://https.cio.gov/) [https.cio.gov]
-- [.gov domain registration](https://home.dotgov.gov/) [dotgov.gov]
+- [.gov domain registration](https://get.gov/) [get.gov]
 - [Federal plain language guidelines](https://plainlanguage.gov/guidelines/) [plainlanguage.gov]
 - [How to design effective communications](https://oes.gsa.gov/assets/abstracts/OES%20Learnings%20on%20Writing%20Better%20Communications%202018.pdf) [PDF; oes.gsa.gov]
 - [Best practices for multilingual websites](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/) [digital.gov]
@@ -157,7 +157,7 @@ The following are practical actions you can take:
 - **Learn about assistive technology.** Visit the Web Accessibility Initiative website to get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
 - **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [W3C WCAG 2.0](https://www.w3.org/TR/WCAG20/).
 - **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
-- **Design generously.** Adopt an [inclusive-design](http://inclusivedesignprinciples.org/) mentality as described on the Inclusive Design Principles website.
+- **Design generously.** Adopt an [inclusive-design](https://inclusivedesignprinciples.info/) mentality as described on the Inclusive Design Principles website.
 - **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
 - **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.
 - **Build accessible designs.** Ensure designs are accessible, pages are laid out in a logical order, and content meets color-contrast requirements.
@@ -182,7 +182,7 @@ The following are practical actions you can take:
 #### Non-government resources
 
 - [Web accessibility perspectives videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
-- [Inclusive design principles](https://inclusivedesignprinciples.org/) [inclusivedesignprinciples.org]
+- [Inclusive design principles](https://inclusivedesignprinciples.info/) [inclusivedesignprinciples.info]
 - [Accessibility fundamentals with Rob Dodson](https://www.youtube.com/watch?v=z8xUCzToff8) [youtube.com]
 - [Microsoft's inclusive design manual](https://www.microsoft.com/design/inclusive/) [microsoft.com]
 - [Inclusive components by Heydon Pickering](https://inclusive-components.design/) [inclusive-components.design]
@@ -234,7 +234,7 @@ The following are practical actions you can take:
 
 - [How design systems help us work together](https://digital.gov/event/2018/05/31/this-how-we-work-together-with-brad-frost/) [digital.gov]
 - [The U.S. Web Design System](https://designsystem.digital.gov/) [designsystem.digital.gov]
-- [The Journey Mapping method](https://methods.18f.gov/decide/journey-mapping/) [methods.18f.gov]
+- [The Journey Mapping method](https://guides.18f.gov/methods/decide/journey-mapping/) [guides.18f.gov]
 - [Embracing responsive design](https://digital.gov/2013/08/20/embracing-responsive-design/) [digital.gov]
 - [Example: USDA's design and brand guidelines](https://www.usda.gov/digital-strategy/design-and-brand) [usda.gov]
 - [Example: Centers for Medicare and Medicaid Services design system](https://design.cms.gov/) [design.cms.gov]

@@ -15,7 +15,7 @@ subnav:
   - href: /patterns/create-a-user-profile/pronouns/
   - href: /patterns/create-a-user-profile/race-and-ethnicity/
   - href: /patterns/create-a-user-profile/social-security-number/
-in_page_nav: false
+in_page_nav_headings: false
 ---
 
 ## Why this matters

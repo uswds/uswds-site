@@ -6,6 +6,7 @@ category: About
 author: Ben Judy, Natalie Kurz, and Norah Maki
 image: /img/2021-next-blog/post-1-social-share.jpg
 excerpt: USWDS Release 2.10 brings new components and updates as a result of our research into recent federal agency emergency response.
+expiration_date: 2024-04-15
 ---
 
 We recently conducted research with federal partners to better understand the challenges agencies face in dealing with emergency response situations like COVID-19, and how the design system can better support them in the future.
@@ -30,7 +31,7 @@ Taking action on what we learned from the research, we created and updated sever
 
 ## Research themes and insights
 
-We took quotes and highlights from the interviews to create data points. Using an [affinity map](https://methods.18f.gov/decide/affinity-mapping/) to group similar data points together, we assigned an overarching theme to each group and identified high-level insights that focused the challenges into more actionable solutions.
+We took quotes and highlights from the interviews to create data points. Using an [affinity map](https://guides.18f.gov/methods/decide/affinity-mapping/) to group similar data points together, we assigned an overarching theme to each group and identified high-level insights that focused the challenges into more actionable solutions.
 
 
 <div class="margin-top-4 margin-bottom-5">

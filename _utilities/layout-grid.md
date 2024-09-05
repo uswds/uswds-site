@@ -446,7 +446,7 @@ Find a full list of the available [grid settings]({{ site.baseurl }}/documentati
         </td>
         <td data-title="Accepted values" class="display-inline-flex">
           <span>
-            sm, md, lg, 0, 2px, 05, 1, 2, 3, 4, 6
+            sm, md, lg, 0, 2px, 05, 1, 2, 3, 4, 5, 6
           </span>
         </td>
       </tr>

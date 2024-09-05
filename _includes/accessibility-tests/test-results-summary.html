@@ -1,3 +1,7 @@
+{% assign component_name = page.title | remove: ' accessibility tests' | downcase %}
+{% assign componentKey = component_name | slugify %}
+{% assign data = site.data.accessibility-tests[componentKey] %}
+
 <!-- Create a list of each status type -->
 {% assign status_types = "Passed, Passed with exceptions, Conditional, Failed" | split: ", " %}
 
@@ -8,7 +12,7 @@
 {% assign conditional_icon = 'info' %}
 
 <!-- Count the number of items for each status type -->
-{% assign items = component.test_items %}
+{% assign items = data.test_items %}
 
 {% assign items_total = 0 %}
 {% assign items_pass = 0 %}
@@ -138,5 +142,5 @@
 {% if include.page == 'checklist' %}
 </div>
 {% elsif include.page == 'main' %}
-<p class="margin-top-0">Learn more on the <a href="{{ site.baseurl }}/components/{{ componentName }}/accessibility-tests/">{{ componentName }} accessibility tests page</a>.</p>
+<p class="margin-top-0">Learn more on the <a href="{{ site.baseurl }}/components/{{ componentKey }}/accessibility-tests/">{{ component_name }} accessibility tests page</a>.</p>
 {% endif %}

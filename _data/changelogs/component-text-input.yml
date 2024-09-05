@@ -5,6 +5,11 @@ type: component
 changelogURL:
 
 items:
+  - date: 2024-06-19
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2697
+    githubRepo: uswds-site
   - date: 2024-03-11
     summary: Added `textarea` support to the validation component.
     summaryAdditional:

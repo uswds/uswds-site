@@ -1,12 +1,47 @@
 videos:
+  - title: A first look at U.S. Web Design System Web Components
+    subtitle: See new Web Components in action
+    description: |
+      USWDS Product Lead Dan Williams talked about the alpha stage for Web Components and design principles supporting the work. Engineers James Mejia and Matt Henry from USWDS did a live demo with examples of working alpha Web Components and shared a behind-the-scenes look at how they’re built.
+    date: June 2024
+    id: yBCLyWO0yCo
+    event_link: https://digital.gov/event/2024/06/20/uswds-monthly-call-june-2024/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-june-2024.pptx
+      size: 3
+      pages: 33
+    questions_link: https://github.com/uswds/uswds/discussions/5977
+  - title: Creating accessible civic spaces
+    subtitle: Learn how to design usable and accessible civic spaces on the web and beyond.
+    description: |
+      Guest speaker Whitney Quesenbery joined the U.S. Web Design System team on Global Accessibility Awareness Day to discuss her work to create a more accessible voting process. She previously served as a member of the U.S. Election Assistance Commission’s Technical Guidelines Development Committee and helped draft versions 1.0 and 1.1 of the Voluntary Voting System Guidelines.
+    date: May 2024
+    id: UfufY8gStqI
+    event_link: https://digital.gov/event/2024/05/16/uswds-monthly-call-may-2024/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-may-2024.pptx
+      size: 14
+      pages: 32
+    questions_link: https://github.com/uswds/uswds/discussions/5952
+  - title: Introduction to Web Components
+    subtitle: Learn the basics about Web Components and what this technology means for USWDS
+    description: |
+     Dan Williams and James Mejia from USWDS described the basics of Web Components: what they are, how this technology works, and how Web Components can simplify how teams implement and stay up-to-date with the design system.
+    date: April 2024
+    id: GHomUbYTgwQ
+    event_link: https://digital.gov/event/2024/04/18/uswds-monthly-call-april-2024/
+    slides:
+      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-april-2024.pptx
+      size: 5.9
+      pages: 96
+    questions_link: https://github.com/uswds/uswds/discussions/5922
   - title: Building with USWDS tools
-    subtitle: Learn how to build new components that look and feel consistent with existing components.
+    subtitle: Learn how to build new components that look and feel consistent with existing components
     description: |
      Our USWDS team did a live [tutorial on customizing and extending USWDS](https://github.com/uswds/uswds-tutorial). We covered working with settings, applying tokens, handling style conflicts, and ensuring good color contrast.
     date: March 2024
     id: M2_SVDc_eCM
     event_link: https://digital.gov/event/2024/03/21/uswds-monthly-call-march-2024/
-    missing_script: true
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-march-2024.pptx
       size: 1.9
@@ -19,7 +54,6 @@ videos:
     date: February 2024
     id: cmP9XsYVwQI
     event_link: https://digital.gov/event/2024/02/15/uswds-monthly-call-february-2024/
-    missing_script: true
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/USWDS%20Monthly%20Call%20Feb%202024.pptx
       size: 5.8
@@ -41,7 +75,6 @@ videos:
     date: January 2024
     id: xP4IWCdzWmA
     event_link: https://digital.gov/event/2024/01/18/uswds-monthly-call-january-2024/
-    missing_script: true
     slides:
       link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-january-2024.pptx
       size: 7.8

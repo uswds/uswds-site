@@ -4,7 +4,7 @@ contents:
     description: Background color of the banner and its content.
     var: $theme-banner-background-color
     default: '"base-lightest"'
-    type: family
+    type: color
   - name: Font family
     description: The font family of the banner.
     var: $theme-banner-font-family

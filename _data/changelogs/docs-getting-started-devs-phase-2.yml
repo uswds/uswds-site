@@ -2,7 +2,7 @@ title: "Phase 2: Compile"
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-09-05
     summary: Added documentation for `settings.compile.browserslist` and `settings.compile.sassSourcemaps`.
     affectsGuidance: true
     githubPr: 2750

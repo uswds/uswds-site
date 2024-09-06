@@ -66,7 +66,10 @@ We’ll provide regular updates on our progress in [monthly calls](https://digit
 
 #### Citations
 
-1. get.gov data - List of federal .gov domains. (n.d.). Retrieved January 06, 2021, from <https://get.gov/about/data/>
+* footnotes will be placed here. This line is necessary
+{:footnotes }
+
+[^8]: get.gov data - List of federal .gov domains. (n.d.). Retrieved January 06, 2021, from <https://get.gov/about/data/>
 
 </div>
     </div>

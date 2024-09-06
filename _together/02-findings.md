@@ -176,21 +176,24 @@ Providing multilingual content is a huge investment, and a key way to communicat
 
 ## Citations
 
-1. They, their. (April 10, 2019) Retrieved on August 19, 2022, from <https://design.va.gov/content-style-guide/they-their>
+* footnotes will be placed here. This line is necessary
+{:footnotes}
 
-1. Personal names around the world. (August 17, 2011) Retrieved on August 19, 2022, from <https://www.w3.org/International/questions/qa-personal-names>
+[^1]: They, their. (April 10, 2019) Retrieved on August 19, 2022, from <https://design.va.gov/content-style-guide/they-their>
 
-1. Collecting sexual orientation and gender identity information: importance of the collection and use of this data. (March 8, 2022) Retrieved on August 19, 2022, from <https://snapshot2024.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html>
+[^2]: Personal names around the world. (August 17, 2011) Retrieved on August 19, 2022, from <https://www.w3.org/International/questions/qa-personal-names>
 
-1. Collecting and tabulating ethnicity and race response in the 2020 Census. (February 2020) Retrieved on August 19, 2022, from <https://www2.census.gov/about/training-workshops/2020/2020-02-19-pop-presentation.pdf>
+[^3]: Collecting sexual orientation and gender identity information: importance of the collection and use of this data. (March 8, 2022) Retrieved on August 19, 2022, from <https://snapshot2024.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html>
 
-1. Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 19, 2022, from <https://nces.ed.gov/FCSM/pdf/buda5.pdf>
+[^4]: Collecting and tabulating ethnicity and race response in the 2020 Census. (February 2020) Retrieved on August 19, 2022, from <https://www2.census.gov/about/training-workshops/2020/2020-02-19-pop-presentation.pdf>
 
-1. SAMHSA’s concept of trauma and guidance for a trauma-informed approach. (July 2014) Retrieved on August 19, 2022, from <https://ncsacw.acf.hhs.gov/userfiles/files/SAMHSA_Trauma.pdf>
+[^5]: Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 19, 2022, from <https://nces.ed.gov/FCSM/pdf/buda5.pdf>
 
-1. Trauma-informed web heuristics for communication designers. (October 12, 2021) Retrieved on August 19, 2022, from <https://dl.acm.org/doi/10.1145/3472714.3473638>
+[^6]: SAMHSA’s concept of trauma and guidance for a trauma-informed approach. (July 2014) Retrieved on August 19, 2022, from <https://ncsacw.acf.hhs.gov/userfiles/files/SAMHSA_Trauma.pdf>
 
-1. Top 10 best practices for multilingual websites. (June 21, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/>
+[^7]: Trauma-informed web heuristics for communication designers. (October 12, 2021) Retrieved on August 19, 2022, from <https://dl.acm.org/doi/10.1145/3472714.3473638>
+
+[^8]: Top 10 best practices for multilingual websites. (June 21, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/>
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
 

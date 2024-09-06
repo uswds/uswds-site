@@ -71,10 +71,13 @@ The patterns are a start, but we need your help keeping these patterns current a
 
 ## Citations
 
-1. A quick guide to inclusive design. (August 15, 2022) Retrieved on August 19, 2022, from <https://medium.com/the-u-s-digital-service/a-quick-guide-to-inclusive-design-be4931ef2c>
+* footnotes will be placed here. This line is necessary
+{:footnotes}
+
+[^1]: A quick guide to inclusive design. (August 15, 2022) Retrieved on August 19, 2022, from <https://medium.com/the-u-s-digital-service/a-quick-guide-to-inclusive-design-be4931ef2c>
 
 
-1. Communicating with and about people with disabilities. (February 1, 2022) Retrieved on August 19, 2022, from <https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html>
+[^2]: Communicating with and about people with disabilities. (February 1, 2022) Retrieved on August 19, 2022, from <https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html>
 
 ## Credits
 Illustrations created using [humaaans](https://www.humaaans.com/), a [CC0 (public domain)](https://creativecommons.org/share-your-work/public-domain/cc0/) design library.

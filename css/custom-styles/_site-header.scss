@@ -45,7 +45,6 @@ $site-secondary-nav-input-height: 38px;
       &::before {
         @include u-square($logo-size-mobile);
         content: "";
-        background-image: url("../img/uswds-logo/4c-lg-on-white.png");
         background-image: url("../img/uswds-logo/4c-lg-on-white.svg");
         background-repeat: no-repeat;
         background-size: 100% auto;
@@ -109,7 +108,6 @@ $site-secondary-nav-input-height: 38px;
 
     .usa-logo__text {
       &::before {
-        background-image: url("../img/uswds-logo/4c-lg-on-black.png");
         background-image: url("../img/uswds-logo/4c-lg-on-black.svg");
       }
     }

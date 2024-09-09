@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Enhanced `aria-disabled` behaviors to match `disabled` behaviors.
-    summaryAdditional: Now, the input element and calendar icon remain discoverable to screen readers but prevent the user from selecting or inputting a date.
+    summary: Added `aria-disabled` to the list of expected attributes. 
+    summaryAdditional: Now, the component will disable toggle when the `aria-disabled` attribute is present.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 6013

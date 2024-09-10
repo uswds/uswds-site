@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Reordered header items so that search bar appears last in mobile header.
-    summaryAdditional: Now, the header is in compliance with WCAG criterion 2.4.3 (Focus order) in mobile view. 
+    summary: Removed the CSS order property from mobile header navigation.
+    summaryAdditional: Now, the header is in compliance with WCAG criterion 2.4.3 (Focus order) in mobile view and all variants have consistent order. 
       Users that want to keep the search bar at the top of the menu will need to adjust their markup.
     isBreaking: true
     affectsAccessibility: true

@@ -3,8 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added the `$theme-card-font-family` to the card container typeset mixin.
-    summaryAdditional: Now, cards respect the `$theme-card-font-family` theme setting.
+    summary: Fixed a bug that caused the component to ignore the `$theme-card-font-family` setting.
     affectsStyles: true
     affectsSettings: true
     githubRepo: uswds

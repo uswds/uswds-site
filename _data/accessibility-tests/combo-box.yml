@@ -85,19 +85,13 @@ test_items:
     wcag_criterion: 3.2.4
   - summary: Combo box offers visual and auditory instructions.
     summary_additional: When you use the combo box component, you hear details about the purpose of the input with a screen reader and see them on the page. The instructions are specific to the form's intent (e.g., "Select a state", "Select a fruit").
-    test_status: exception
-    status_details: 
-    github_issue_number:
-    github_issue_repo:
+    test_status: pass
     test_type: screen_reader
     version_tested: 3.8.0
     wcag_criterion: 3.3.2
   - summary: Screen reader announces label, role, value, and controls for combo box. 
     summary_additional: When using a screen reader with a combo box, you hear the label of the combo box, the role and the state. For example, label = Select an option, role = combo box, value = expanded. 
-    test_status: exception
-    status_details: 
-    github_issue_number:
-    github_issue_repo:
+    test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.0
     wcag_criterion: 4.1.2

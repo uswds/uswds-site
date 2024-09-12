@@ -6,8 +6,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added a Disabled states guidance section with new guidance.
-    summaryAdditional:  We added a new section providing guidance on best practices for disabled states. 
+    summary: Added guidance discouraging most uses of disabled form inputs.
+    summaryAdditional: We also added guidance on the rare instances when disabled inputs improve usability. 
     affectsAccessibility: true
     affectsGuidance: true
     githubPr: 2776

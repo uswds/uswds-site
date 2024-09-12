@@ -11,8 +11,7 @@ items:
     affectsAccessibility: true
     affectsGuidance: true
     githubPr: 2776
-    githubRepo: uswds
-    versionUswds: 3.8.2
+    githubRepo: uswds-site
   - date: 2024-03-11
     summary: Added color contrast checks for disabled tokens.
     summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.

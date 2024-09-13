@@ -2,6 +2,13 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added Date picker usability guidance.
+    summaryAdditional: Users should always be able to enter dates manually in Date picker.
+    affectsGuidance: true
+    githubPr: 2822
+    githubRepo: uswds-site
+    versionUswds: N.N.N
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

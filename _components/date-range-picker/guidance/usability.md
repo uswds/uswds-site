@@ -1,3 +1,2 @@
 - **Describe the date format.** Provide a hint of `mm/dd/yyyy` to help users enter the proper date format if they opt not to use the date picker.
-
 - **Always allow a user to type in the date manually.** Usability testing suggests some people prefer manually typing the date rather than using the calendar picker. Whenever possible, keep the keyboard active so people can enter in the date information without having to use the picker.

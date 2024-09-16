@@ -2,11 +2,11 @@ title: Radio buttons
 type: component
 changelogURL:
 items:
- - date: NNNN-NN-NN
-   summary: Added WCAG compliance tag and accessibility test status section.
-   affectsGuidance: true
-   githubPr: 2821
-   githubRepo: uswds-site
+- date: NNNN-NN-NN
+  summary: Added WCAG compliance tag and accessibility test status section.
+  affectsGuidance: true
+  githubPr: 2821
+  githubRepo: uswds-site
 - date: 2023-09-29
   summary: Updated radio and checkbox tile styling to have lighter borders.
   summaryAdditional:

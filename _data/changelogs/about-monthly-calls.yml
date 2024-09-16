@@ -2,7 +2,7 @@ title: Monthly calls
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-09-16
     summary: Added August 2024 monthly call.
     githubPr: 2827
     githubRepo: uswds-site

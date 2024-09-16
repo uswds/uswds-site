@@ -1,4 +1,4 @@
-Unlike many USWDS components, Pagination includes behaviors we cannot build into the HTML, CSS, and JavaScript we ship with the design system. Developers will need to build these behaviors into their Pagination templates. We've outlined these behaviors below, and included them in the Nunjucks templates for Pagination in our source code.
+Unlike many USWDS components, Pagination includes behaviors we cannot build into the HTML, CSS, and JavaScript we ship with the design system. Developers will need to build these behaviors into their Pagination templates. We've outlined these behaviors below, and included them in the [Twig templates for Pagination in our source code](https://github.com/uswds/uswds/blob/develop/packages/usa-pagination/src/usa-pagination.twig).
 
 {:.usa-content-list}
 - **Set the current page item.** Use the `usa-current` class to highlight the currently active page.

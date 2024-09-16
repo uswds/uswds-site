@@ -5,6 +5,7 @@ items:
   - date: NNNN-NN-NN
     summary: Fixed a bug that caused the component to ignore the `$theme-card-font-family` setting.
     affectsStyles: true
+    isBreaking: true
     affectsSettings: true
     githubRepo: uswds
     githubPr: 5974

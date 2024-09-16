@@ -8,7 +8,6 @@ items:
   - date: NNNN-NN-NN
     summary: Added guidance discouraging most uses of disabled form inputs.
     summaryAdditional: We also added guidance on the rare instances when disabled inputs improve usability. 
-    affectsAccessibility: true
     affectsGuidance: true
     githubPr: 2776
     githubRepo: uswds-site

@@ -38,8 +38,18 @@ permalink: /components/date-picker/
 redirect_from:
 - /form-controls/05-date-picker/
 subnav:
-- text: Date picker accessibility tests
-  href: /components/date-picker/accessibility-tests/
+- text: Preview
+  href: '#date-picker-preview'
+- text: Code
+  href: '#date-picker-code'
+- text: Guidance
+  href: '#date-picker-guidance'
+- text: Package
+  href: '#date-picker-package'
+- text: Known issues
+  href: '#known-issues'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - calendar
   - form

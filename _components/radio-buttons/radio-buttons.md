@@ -10,7 +10,7 @@ redirect_from:
 - /form-controls/09-radio-buttons/
 subnav:
 - text: Radio button accessibility tests
-  href: /components/radio-button/accessibility-tests/
+  href: /components/radio-buttons/accessibility-tests/
 title: Radio buttons
 type: component
 variants:

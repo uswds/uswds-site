@@ -5,7 +5,7 @@ component:
  name: radio buttons
 title: Radio buttons accessibility tests
 category: Components
-lead: Any USWDS radio buttons component should pass these manual accessibility tests.
+lead: Any USWDS radio button should pass these manual accessibility tests.
 changelog:
  key: 'component-radio-buttons-accessibility'
 ---

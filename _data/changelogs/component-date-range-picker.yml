@@ -2,7 +2,7 @@ title: Date range picker
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-09-17
     summary: Added guidance about always allowing users to type in the date manually.
     affectsGuidance: true
     githubPr: 2822

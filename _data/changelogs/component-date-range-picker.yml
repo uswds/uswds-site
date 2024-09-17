@@ -7,7 +7,7 @@ items:
     summaryAdditional: Now, the component will disable toggle when the `aria-disabled` attribute is present.
     affectsAccessibility: true
     affectsJavascript: true
-    githubPr: 2817
+    githubPr: 6013
     githubRepo: uswds
     versionUswds: N.N.N
   - date: 2024-06-07

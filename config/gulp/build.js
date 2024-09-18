@@ -67,7 +67,7 @@ function buildUSWDSComponents() {
     /**
      * We need to: install USWDS deps and build components to HTML.
      */
-    return spawnP("npm", ["install", "--legacy-peer-deps"], sharedOpts).then(
+    return spawnP("npm", ["install"], sharedOpts).then(
       () => spawnP("npm", ["run", "build:html"], sharedOpts),
     );
   }

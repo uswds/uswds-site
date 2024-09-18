@@ -2,7 +2,7 @@ title: Checkbox
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-09-18
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 2803

@@ -7,7 +7,7 @@ executors:
   my-executor:
     resource_class: large
     docker:
-      - image: cimg/ruby:3.3.4-browsers
+      - image: cimg/ruby:3.2.5-browsers
 
 jobs:
   install_ruby_deps:

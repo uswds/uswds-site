@@ -55,6 +55,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [Digital Analytics Dashboard](https://analytics.usa.gov)
 - [Digital Service Playbook — U.S. Digital Service](https://playbook.cio.gov)
 - [Discovery Market Research Tool (GSA)](https://discovery.gsa.gov/)
+- [Export Compliance Assistance Program (ECAP)](https://nnsa.nsis.anl.gov/ecap/)
 - [EPA.gov - U.S. Environmental Protection Agency](https://www.epa.gov/)
 - [EPA Clean Water Jurisdictional Determinations](https://watersgeo.epa.gov/cwa/CWA-JDs/)
 - [Farm Credit Administration](https://www.fca.gov/)

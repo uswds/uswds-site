@@ -1,24 +1,28 @@
 ---
 permalink: /website-standards/
 layout: styleguide
-title: Website standards
+title: Website standards are now at standards.digital.gov
 category: How to use USWDS
-lead: The Design System incorporates federal standards to improve federal websites and digital services.
-in_page_nav_headings: false
+lead: |
+  Federal website standards are now at <a href="http://standards.digital.gov">standards.digital.gov</a>. Federal website standards will help agencies provide high-quality, consistent digital experiences for everyone. The standards cover common visual and technical elements and reflect user experience best practices. The new site launched September 26, 2024.
+changelog:
+  key: 'docs-web-standards'
 ---
 
-The 21st Century Integrated Digital Experience Act ([P.L. 115-336](https://www.congress.gov/bill/115th-congress/house-bill/5759/text) § 3(e)) requires “any website of an executive agency that is made available to the public after the date of enactment of this Act shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration.”
+## USWDS can help agencies comply with federal website standards
 
-Agencies should use the U.S. Web Design System (USWDS) maturity model to deliver a great digital experience:
+Agencies can more easily build accessible, mobile-friendly websites, and comply with federal website standards, by using the U.S. Web Design System.
 
-<ul>
-  <li>Integrate design principles.</li>
-  <li>Follow user experience guidance.</li>
-  <li>Use USWDS code.</li>
-</ul>
+Federal agencies are required to comply with website standards per the [21st Century Integrated Digital Experience Act (IDEA)](https://www.congress.gov/bill/115th-congress/house-bill/5759/text). Standards will align with the 21st Century IDEA, OMB’s memo on Delivering a Digital-First Public Experience [(M-23-22), and other relevant policy requirements and best practices](https://digital.gov/resources/delivering-digital-first-public-experience/).
 
-Agencies should use the maturity model to adopt USWDS incrementally, and prioritize implementation to align with the priorities identified in their modernization plans and the Act’s reports.
+## Get started with USWDS
+
+Follow the [USWDS maturity model]({{ site.base_url }}/maturity-model/) to adopt the design system incrementally and design and build better digital experiences.
+
+- Integrate design principles.
+- Follow user experience guidance.
+- Use USWDS code.
 
 First published: 1/22/2020
 
-Last revised: 1/22/2020
+Last revised: 9/26/2024

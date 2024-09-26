@@ -3523,8 +3523,8 @@ ignore:
   SNYK-JS-INFLIGHT-6095116:
     - '*':
         reason: No available upgrade or patch
-        expires: 2024-10-26T16:11:32.279Z
-        created: 2024-09-26T16:11:32.313Z
+        expires: 2024-09-21T17:53:02.616Z
+        created: 2024-08-22T17:53:02.660Z
   SNYK-JS-BRACES-6838727:
     - '*':
         reason: No available upgrade or patch

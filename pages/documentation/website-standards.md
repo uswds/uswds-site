@@ -13,7 +13,7 @@ changelog:
 
 Agencies can more easily build accessible, mobile-friendly websites, and comply with federal website standards, by using the U.S. Web Design System.
 
-Federal agencies are required to comply with website standards per the [21st Century Integrated Digital Experience Act (IDEA)](https://www.congress.gov/bill/115th-congress/house-bill/5759/text). Standards will align with the 21st Century IDEA, [OMB’s memo on Delivering a Digital-First Public Experience](https://www.whitehouse.gov/omb/management/ofcio/delivering-a-digital-first-public-experience/) (M-23-22), and other relevant policy requirements and best practices.
+Federal agencies are required to comply with website standards per the [21st Century Integrated Digital Experience Act (IDEA)](https://www.congress.gov/bill/115th-congress/house-bill/5759/text). Standards will align with the 21st Century IDEA, OMB’s memo on Delivering a Digital-First Public Experience [(M-23-22), and other relevant policy requirements and best practices](https://digital.gov/resources/delivering-digital-first-public-experience/).
 
 ## Get started with USWDS
 

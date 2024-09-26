@@ -23,6 +23,6 @@ Follow the [USWDS maturity model]({{ site.base_url }}/maturity-model/) to adopt 
 - Follow user experience guidance.
 - Use USWDS code.
 
-First published: 9/26/2024
+First published: 1/22/2020
 
 Last revised: 9/26/2024

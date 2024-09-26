@@ -5,6 +5,8 @@ title: Website standards are now at standards.digital.gov
 category: How to use USWDS
 lead: |
   Federal website standards are now at <a href="http://standards.digital.gov">standards.digital.gov</a>. Federal website standards will help agencies provide high-quality, consistent digital experiences for everyone. The standards cover common visual and technical elements and reflect user experience best practices. The new site launched September 26, 2024.
+changelog:
+  key: 'docs-web-standards'
 ---
 
 ## USWDS can help agencies comply with federal website standards

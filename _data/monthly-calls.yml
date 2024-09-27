@@ -1,4 +1,16 @@
 videos:
+  - title: A look at beta Web Components
+    subtitle: Progress toward the next version of USWDS
+    description: |
+     At the August 2024 monthly call, USWDS Experience Design Lead Anne Petersen answered community-submitted questions including an update on the submission and review process for component proposals. USWDS Product Lead Dan Williams shared updates on new and upcoming releases and demoed a preview of our new USWDS Figma Design Kit. USWDS Engineering Lead Matt Henry and USWDS contractor developer Amy Leadem also demoed early working prototypes of a few components.
+    date: August 2024
+    id:
+    event_link: https://digital.gov/event/2024/08/15/uswds-monthly-call-august-2024/
+    slides:
+     link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-august-2024.pptx
+     size: 3.6
+     pages: 48
+    questions_link: https://github.com/uswds/uswds/discussions/6060
   - title: A first look at U.S. Web Design System Web Components
     subtitle: See new Web Components in action
     description: |

@@ -19,7 +19,7 @@ The USWDS community has been working together since 2015 to make it easier to bu
 
 Join us in the `#uswds-public` channel in Slack by [filling out our form](https://18f.gov/chat). The community is open to the public. Members include content specialists, designers, engineers, and other technologists who share ideas, challenges, lessons learned, and best practices in design and design systems.
 
-<a href="https://docs.google.com/forms/d/1vcsvQ64qt5mYNyVajcwtYDRMqEOyPzsXZBGM5c4_BD8/viewform?edit_requested=true" class="usa-button site-button">Join the USWDS Community</a>
+<a href="https://18f.gov/chat" class="usa-button site-button">Join the USWDS Community</a>
 
 If you're having trouble, email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}?subject=Join%20USWDS%20Slack) with _Join the USWDS Community_ in the subject.
 

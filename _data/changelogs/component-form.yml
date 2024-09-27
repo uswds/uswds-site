@@ -5,7 +5,7 @@ title: Form
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-09-27
     summary: Added guidance discouraging most uses of disabled form inputs.
     summaryAdditional: We also added guidance on the rare instances when disabled inputs improve usability. 
     affectsGuidance: true

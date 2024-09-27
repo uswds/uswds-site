@@ -110,7 +110,8 @@ How to use USWDS:
   - href: /documentation/implementations/
   - href: /documentation/showcase/
   - href: /documentation/sample-contract-language/
-  - href: /website-standards/
+  - text: Website standards
+    href: /website-standards/
 
 Design tokens:
   - href: /design-tokens/

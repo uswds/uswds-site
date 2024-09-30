@@ -3,8 +3,11 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Fixed a bug that caused `$theme-site-margins-width` to adjust the alignment inside the alert and site alert components.
-    summaryAdditional: Confirm that the components display as expected in your project.
+    summary: |
+      Fixed a bug that caused `$theme-site-margins-width` to unexpectedly adjust the alignment inside the alert and site alert components.
+    summaryAdditional: |
+      Alignment on the alert and site alert components will likely shift from this change.
+      Confirm that your implementation of the component aligns as expected.
     isBreaking: true
     affectsStyles: true
     githubPr: 5636

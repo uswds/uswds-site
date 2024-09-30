@@ -4,6 +4,7 @@ items:
   - date: NNNN-NN-NN
     summary: Added the `autocomplete="email"` attribute to the email input element.
     summaryAdditional: This allows the component to meet all the standards outlined in [WCAG 1.3.5](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html).
+    affectsAccessibility: true
     affectsMarkup: true
     githubPr: 6002
     githubRepo: uswds

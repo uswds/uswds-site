@@ -80,6 +80,14 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.2
     wcag_criterion: 2.4.3
+  - summary: Focus indicator is clearly visible in breadcrumb.
+    summary_additional: |
+      When you use a keyboard to tab into the breadcrumb, the links have a visible underline, 
+      bold style or other clear indication that links are interactive.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.7
 # Screen reader tests
   - summary: Screen reader announces breadcrumb navigation region and items.
     summary_additional: |
@@ -113,19 +121,3 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.2
     wcag_criterion: 2.4.4
-  - summary: Focus indicator is clearly visible in breadcrumb.
-    summary_additional: |
-      When you use a keyboard to tab into the breadcrumb, the links have a visible underline, 
-      bold style or other clear indication that links are interactive.
-    test_status: pass
-    test_type: screen_reader
-    version_tested: 3.8.2
-    wcag_criterion: 2.4.7
-  - summary: Screen reader announces breadcrumb link titles and state of each link.
-    summary_additional: |
-      ink. When using a screen reader and you tab through the breadcrumb links, you hear link title and if it has 
-      been visited or not. You will also hear "current" for the link farthest to the right.
-    test_status: pass
-    test_type: screen_reader
-    version_tested: 3.8.2
-    wcag_criterion: 4.1.2

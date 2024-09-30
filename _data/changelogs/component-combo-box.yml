@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Removed verbose aria instructions.
+    summary: Removed custom screen reader instructions.
     summaryAdditional: Combo box now relies on the default instructions provided by screen readers.
     affectsAccessibility: true
     affectsJavascript: true

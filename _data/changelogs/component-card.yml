@@ -4,6 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Fixed a bug that caused the component to ignore the `$theme-card-font-family` setting.
+    summaryAdditional: Confirm that your implementation of the card component displays with the expected font family. 
     affectsStyles: true
     isBreaking: true
     affectsSettings: true

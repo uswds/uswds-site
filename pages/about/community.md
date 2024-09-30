@@ -17,9 +17,9 @@ changelog:
 ## Join the community
 The USWDS community has been working together since 2015 to make it easier to build accessible, mobile-friendly government websites.
 
-Join us in the `#uswds-public` channel in Slack by [filling out our form](https://chat.18f.gov/). The community is open to the public. Members include content specialists, designers, engineers, and other technologists who share ideas, challenges, lessons learned, and best practices in design and design systems.
+Join us in the `#uswds-public` channel in Slack by [filling out our form](https://docs.google.com/forms/d/1vcsvQ64qt5mYNyVajcwtYDRMqEOyPzsXZBGM5c4_BD8/viewform?edit_requested=true). The community is open to the public. Members include content specialists, designers, engineers, and other technologists who share ideas, challenges, lessons learned, and best practices in design and design systems.
 
-<a href="https://chat.18f.gov/" class="usa-button site-button">Join the USWDS Community</a>
+<a href="https://docs.google.com/forms/d/1vcsvQ64qt5mYNyVajcwtYDRMqEOyPzsXZBGM5c4_BD8/viewform?edit_requested=true" class="usa-button site-button">Join the USWDS Community</a>
 
 If you're having trouble, email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}?subject=Join%20USWDS%20Slack) with _Join the USWDS Community_ in the subject.
 

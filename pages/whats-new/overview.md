@@ -17,6 +17,9 @@ redirect_from:
   - /about-our-work/releases
   - /whats-new/
   - /whats-new/releases
+subnav:
+  - text: All news and updates
+    url: /whats-new/updates/
 changelog:
   key: about-whats-new
 ---
@@ -50,6 +53,8 @@ changelog:
   </li>
 </ul>
 
+## News and updates
+
 {% capture lead %}
 {% endcapture %}
 {% include lead.html text=lead %}
@@ -60,4 +65,4 @@ changelog:
 
 ---
 
-<a class="usa-button margin-top-3" href="">View all USWDS blog posts</a>
+<a class="usa-button margin-top-3" href="">View all USWDS news and updates</a>

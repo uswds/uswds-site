@@ -1,0 +1,9 @@
+title: Breadcrumb accessibility tests
+type: component
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: NNNN
+    githubRepo: uswds-site

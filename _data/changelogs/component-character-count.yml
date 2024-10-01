@@ -6,6 +6,7 @@ items:
     summary: Enhanced visual cue when `maxlength` is exceeded.
     summaryAdditional:  Now, the component uses standard USWDS error styles to visually enhance the error state.
     affectsJavascript: true
+    affectsStyles: true
     githubPr: 5908
     githubRepo: uswds
     versionUswds: N.N.N

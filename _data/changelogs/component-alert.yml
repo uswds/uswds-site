@@ -12,7 +12,7 @@ items:
     affectsStyles: true
     githubPr: 5636
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.9.0
   - date: 2024-03-27
     summary: Added a note about USWDS developing dismissible alerts.
     affectsGuidance: true

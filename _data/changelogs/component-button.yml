@@ -11,7 +11,7 @@ items:
     affectsStyles: true
     githubPr: 5631
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.9.0
   - date: 2024-03-11
     summary: Added a new setting to adjust the gap between the button's text and icon.
     summaryAdditional: Gap between elements can be adjusted using the `$theme-button-icon-gap` setting.

@@ -6,7 +6,7 @@ items:
     summary: |
       Fixed a bug that caused `$theme-site-margins-width` to unexpectedly change the alignment inside alert and site alert components.
     summaryAdditional: |
-      Alignment on the alert and site alert components will likely shift from this change.
+      Alignment of alert and site alert components will likely shift from this change.
       Confirm that your implementation of the component aligns as expected.
     isBreaking: true
     affectsStyles: true

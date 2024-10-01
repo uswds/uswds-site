@@ -19,7 +19,7 @@ redirect_from:
   - /whats-new/releases
 subnav:
   - text: All news and updates
-    url: /whats-new/updates/
+    href: /whats-new/updates/
 changelog:
   key: about-whats-new
 ---

@@ -237,3 +237,11 @@
     url: https://gcn.nasa.gov
   version:
   notes: "A Remix Stack for US Federal web sites on AWS. Includes US Web Design System, react-uswds, and pre-commit hooks for linting and type checking."
+
+- name: USWDS + Tailwind
+  distribution: HTML, CSS, JavaScript
+  url: https://github.com/IHIutch/uswds-tailwind
+  author:
+    name: Jonathan Hutchison
+    url: https://github.com/IHIutch
+  notes: "A USWDS rewrite using Tailwind, Alpine.js, and Parcel."

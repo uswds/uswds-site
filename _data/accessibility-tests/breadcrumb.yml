@@ -121,12 +121,4 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.2
     wcag_criterion: 2.4.4
-  # General tests
-  - summary: Breadcrumb text and background meet color contrast requirements. 
-    summary_additional: |
-      When you use a color contrast checker to view the breadcrumb navigation, 
-      contrast between the text and background colors is at least 4.5:1. 
-    test_status: pass
-    test_type: design
-    version_tested: 3.8.2
-    wcag_criterion: 1.4.3
+

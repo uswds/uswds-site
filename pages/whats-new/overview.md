@@ -17,36 +17,37 @@ redirect_from:
   - /about-our-work/releases
   - /whats-new/
   - /whats-new/releases
-subnav:
-  - text: Latest updates
-    href: '#changelog'
 changelog:
   key: about-whats-new
 ---
 
-## Release notes
+<div class="usa-card-group flex-row margin-top-4">
+  <li class="usa-card site-component-card grid-col-6">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Release notes</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Find summaries of each USWDS update on our <a href="https://github.com/uswds/uswds/releases">GitHub releases page</a>. Release notes explain bug fixes, new features, and other changes.</p>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card site-component-card grid-col-6">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Design System in the wild</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Interested in seeing who else is using USWDS? We maintain a list of USWDS-based sites on our <a href="{{ site.baseurl }}/documentation/showcase">showcase page</a>.</p>
+      </div>
+    </div>
+  </li>
+</div>
 
-Find summaries of each USWDS update on our [GitHub releases page](https://github.com/uswds/uswds/releases). Release notes explain bug fixes, new features, and other changes.
+{% capture lead %}
+{% endcapture %}
+{% include lead.html text=lead %}
 
-Want to learn about new USWDS releases as they are published? You can sign up to be notified of new USWDS releases by setting up [watch notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository) in the USWDS repository in GitHub.
-
-<a href="https://github.com/uswds/uswds/releases" class="usa-button site-button">Read the USWDS release notes</a>
-
-## Latest blog posts
-
-You can read more about USWDS in our [News and updates]({{ site.baseurl }}/whats-new/updates/), where we cover the
-latest development releases as well as interviews with the teams from across
-government who have successfully implemented USWDS at their agencies.
-You can read some older posts on the [18F Blog](https://18f.gsa.gov/tags/web-design-system/).
-
-<a href="{{ site.baseurl }}/whats-new/updates/" class="usa-button site-button">Read the latest blog posts</a>
-
-## Design System in the wild
-
-Interested in seeing who else is using USWDS? We
-maintain a list of USWDS-based sites on our [showcase page]({{ site.baseurl }}/documentation/showcase). Feel free to
-[open an issue](https://github.com/uswds/uswds-site/issues/new/choose) using GitHub
-or [email us](mailto:{{ site.uswds_email }}) if you’d like to add your
-project to our list.
-
-<a href="{{ site.baseurl }}/documentation/showcase" class="usa-button site-button">View our showcase list</a>
+{% for post in site.posts %}
+  {% include post.html post=post excerpt=true %}
+{% endfor %}

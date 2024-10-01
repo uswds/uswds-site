@@ -28,7 +28,10 @@ changelog:
         <h2 class="usa-card__heading font-lang-lg">Release notes</h2>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Find summaries of each USWDS update on our <a href="https://github.com/uswds/uswds/releases">GitHub releases page</a>. Release notes explain bug fixes, new features, and other changes.</p>
+        <p>Find summaries of each USWDS update on our GitHub releases page. Release notes explain bug fixes, new features, and other changes.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button" href="">Read the USWDS release notes</a>
       </div>
     </div>
   </li>
@@ -38,7 +41,10 @@ changelog:
         <h2 class="usa-card__heading font-lang-lg">Design System in the wild</h2>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Interested in seeing who else is using USWDS? We maintain a list of USWDS-based sites on our <a href="{{ site.baseurl }}/documentation/showcase">showcase page</a>.</p>
+        <p>Interested in seeing who else is using USWDS? We maintain a list of USWDS-based sites on our showcase page.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button" href="{{ site.baseurl }}/documentation/showcase">View our showcase list</a>
       </div>
     </div>
   </li>
@@ -48,6 +54,10 @@ changelog:
 {% endcapture %}
 {% include lead.html text=lead %}
 
-{% for post in site.posts %}
-  {% include post.html post=post excerpt=true %}
+{% for post in site.posts limit:5%}
+  {% include post.html post=post excerpt=true  %}
 {% endfor %}
+
+---
+
+<a class="usa-button margin-top-3" href="">View all USWDS blog posts</a>

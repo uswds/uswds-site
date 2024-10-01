@@ -62,7 +62,7 @@ contents:
 
   - name: Custom breakpoints
     description: |
-      Set additional custom mobile-first breakpoints to be output as utilities alongside the enabled system breakpoints. Values must be passed in a scss map as px.
+      Set additional custom mobile-first breakpoints to be output for the utilities. Values must be passed in with `px` values inside a Sass map.
     var: $theme-utility-breakpoints-custom
     default:
     type: map

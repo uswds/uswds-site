@@ -12,7 +12,7 @@ items:
     affectsStyles: true
     githubPr: 5636
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.9.0
   - date: 2023-11-09
     summary: Removed the component's top margin.
     summaryAdditional:

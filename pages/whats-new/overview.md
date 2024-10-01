@@ -21,28 +21,28 @@ changelog:
   key: about-whats-new
 ---
 
-<div class="usa-card-group flex-row margin-top-4">
-  <li class="usa-card site-component-card grid-col-6">
+<ul class="usa-card-group margin-top-6">
+  <li class="usa-card site-component-card desktop:grid-col-6">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Release notes</h3>
+        <h2 class="usa-card__heading font-lang-lg">Release notes</h2>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Find summaries of each USWDS update on our <a href="https://github.com/uswds/uswds/releases">GitHub releases page</a>. Release notes explain bug fixes, new features, and other changes.</p>
       </div>
     </div>
   </li>
-  <li class="usa-card site-component-card grid-col-6">
+  <li class="usa-card site-component-card desktop:grid-col-6">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Design System in the wild</h3>
+        <h2 class="usa-card__heading font-lang-lg">Design System in the wild</h2>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Interested in seeing who else is using USWDS? We maintain a list of USWDS-based sites on our <a href="{{ site.baseurl }}/documentation/showcase">showcase page</a>.</p>
       </div>
     </div>
   </li>
-</div>
+</ul>
 
 {% capture lead %}
 {% endcapture %}

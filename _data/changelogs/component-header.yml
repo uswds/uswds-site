@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Removed the CSS order property from mobile header navigation.
-    summaryAdditional: Now, the visual order of the component matches the tab order. If you would like to visually keep the search bar at the top of the menu, you will need to reorder your markup in the mobile view.
+    summaryAdditional: Now, the visual order of the component matches the tab order. This is marked as a breaking change, but you only need to change your project code if you want to visually keep the search bar at the top of the menu.
     isBreaking: true
     affectsAccessibility: true
     affectsStyles: true

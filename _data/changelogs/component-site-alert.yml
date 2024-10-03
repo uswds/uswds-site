@@ -2,6 +2,17 @@ title: Site alert
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: |
+      Fixed a bug that caused `$theme-site-margins-width` to unexpectedly adjust the alignment inside the alert and site alert components.
+    summaryAdditional: |
+      Alignment on the alert and site alert components will likely shift from this change.
+      Confirm that your implementation of the component aligns as expected.
+    isBreaking: true
+    affectsStyles: true
+    githubPr: 5636
+    githubRepo: uswds
+    versionUswds: 3.9.0
   - date: 2023-11-09
     summary: Removed the component's top margin.
     summaryAdditional:

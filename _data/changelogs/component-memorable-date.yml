@@ -2,6 +2,15 @@ title: Memorable date
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Removed numeric representation of months from the `select` element.
+  summaryAdditional: Recent usability testing indicated that having both numbers and names to represent months was confusing for screen reader users.
+  affectsAccessibility: true
+  affectsContent: true
+  affectsMarkup: true
+  githubRepo: uswds
+  githubPr: 6028
+  versionUswds: N.N.N
 - date: 2023-08-23
   summary: Updated styles to allow the component to wrap to multiple lines at narrow widths.
   summaryAdditional:

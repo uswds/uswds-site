@@ -1,6 +1,14 @@
 title: Multiple sign-in options
 type: template
 items:
+  - date: NNNN-NN-NN
+    summary: Added the `autocomplete="email"` attribute to the email input element.
+    summaryAdditional: This allows the component to meet all the standards outlined in [WCAG 1.3.5](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html).
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 6002
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2021-06-16
     summary: Added Spanish variant.
     summaryAdditional:

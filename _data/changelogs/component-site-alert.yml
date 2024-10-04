@@ -2,7 +2,7 @@ title: Site alert
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-10-04
     summary: |
       Fixed a bug that caused `$theme-site-margins-width` to unexpectedly adjust the alignment inside the alert and site alert components.
     summaryAdditional: |

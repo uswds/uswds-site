@@ -2,7 +2,7 @@ title: Button
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-10-04
     summary: Updated the width of unstyled buttons at narrow screen widths.
     summaryAdditional: |
       Now, unstyled buttons receive a width of `auto` to better match USWDS link styles.

@@ -42,6 +42,14 @@ test_items:
     version_tested: 3.7.1
     wcag_criterion: 2.1.1
 # Screen reader tests
+  - summary: Screen reader announces remaining character count.
+    summary_additional: |
+      When you use a screen reader and tab to the text field,
+      you hear accurate information about how many characters remain for the user to enter.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 1.3.1
   - summary: Screen reader announces field label and character count.
     summary_additional: |
       When you tab into the text field with a screen reader,
@@ -57,14 +65,6 @@ test_items:
     test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 3.3.1
-  - summary: Screen reader announces remaining character count.
-    summary_additional: |
-      When you use a screen reader and tab to the text field,
-      you hear accurate information about how many characters remain for the user to enter.
-    test_status: pass
-    test_type: screen_reader
-    version_tested: 3.7.1
-    wcag_criterion: 3.3.2
   - summary: Users receive feedback about character count errors.
     summary_additional: |
       After you enter too many characters, the screen reader states how many characters over the limit you've gone.

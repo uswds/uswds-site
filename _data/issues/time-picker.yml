@@ -1,0 +1,8 @@
+title: Time picker
+alert_type: info
+items:
+- date: 2024-04-30
+  summary: Screen reader users reported that they were confused by the component's instructions.
+  issue_repo: uswds
+  issue_number: 5905
+

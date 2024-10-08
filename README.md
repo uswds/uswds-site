@@ -17,7 +17,7 @@ Recommended before install:
 
 You will need to have the following installed on your machine before following the commands below:
 
-1. Ruby v3.2.5 (see `.ruby-version` or `.tool-versions`), [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
+1. Ruby v3.3.4 (see `.ruby-version` or `.tool-versions`), [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
 1. Node v20.9.0 (see `.nvmrc` or `.tool-versions`), [Installation guides](https://nodejs.org/en/download/)
 1. Bundler v2.2.0 (see `.bundler-version`) [Installation guides](https://bundler.io/guides/using_bundler_in_applications.html#getting-started---installing-bundler-and-bundle-init)
 1. Chrome v59 or higher (v60 if on Windows)

@@ -9,8 +9,16 @@ permalink: /components/radio-buttons/
 redirect_from:
 - /form-controls/09-radio-buttons/
 subnav:
-- text: Radio button accessibility tests
-  href: /components/radio-buttons/accessibility-tests/
+- text: Preview
+  href: '#radio-buttons-preview'
+- text: Code
+  href: '#radio-buttons-code'
+- text: Guidance
+  href: '#radio-buttons-guidance'
+- text: Package
+  href: '#radio-buttons-package'
+- text: Latest updates
+  href: '#changelog'
 title: Radio buttons
 type: component
 variants:

@@ -17,30 +17,6 @@
       ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.
     </li>
   </ul>
-  <h2 id="disabled-states-for-components-in-forms">Disabled states for components in forms</h2>
-   <ul class="usa-content-list">
-     <li><strong>Avoid disabled states, especially for text inputs.</strong> Disabled states have low color contrast, 
-       do not offer meaningful feedback to screen reader users, and keyboard navigators can’t focus on them. 
-       These states can also be generally confusing to users. Instead, keep form elements enabled. 
-       Offer contextual helper text, tooltips, <a href="https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html">helpful error messages</a> 
-       and inline validation to help people correct mistakes and move through the form.</li>
-     <li><p><strong>If you <i>must</i> use disabled states, follow best practices.</strong> Some disabled states can prevent errors 
-       by telling users that a system is loading or processing (for example, to prevent multiple form 
-       submissions). In specific cases, such as an unavailable date in appointment scheduling, a disabled 
-       state may be helpful to show users that an option exists but is currently unavailable.</p>
-       When using disabled states, be very clear:
-       <ul>
-         <li>Explain why an element is disabled, using helper text or tooltips </li>
-         <li>Use inline validation to minimize errors in real time</li>
-         <li>Support screen reader users and keyboard navigators by using <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-disabled">aria-disabled=true</a> instead of the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled">disabled</a> attribute
-           to indicate the presence of a disabled element</li>
-         <li>Use JavaScript to programmatically disable the element to prevent clicks</li>
-       </ul>
-      <p>For more detail, you can read 
-        USWDS’s <a href="https://github.com/uswds/uswds/wiki/Disabled-States-Research-Findings-2023">2023 
-        literature review on disabled states</a>.</p> 
-     </li>
-   </ul>
   <h2 id="identifying-required-fields">Identifying required fields</h2>
   <ul class="usa-content-list">
     <li><strong>Show whether a field is required or optional.</strong> Mark required fields as required by using a red

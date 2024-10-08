@@ -7,7 +7,7 @@ image: /img/next/og-next-findings-engage.png
 permalink: /next/findings/community/
 slug: "engage"
 
-navbar_color: "gold-50v"
+navbar_color: "next-gold-dark"
 hero_color: "next-gold-medium"
 quote_color: "next-gold-medium"
 

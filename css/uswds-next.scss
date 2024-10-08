@@ -338,14 +338,14 @@ html {
 }
 
 .next-quote__source {
-  color: color("base-dark");
+  color: color("base");
   display: block;
   font-size: size("lang", 9);
   font-weight: font-weight("bold");
 }
 
 .next-quote__source-desc {
-  color: color("base-dark");
+  color: color("base");
   display: block;
   font-size: size("lang", 5);
   margin-top: units(5);
@@ -432,7 +432,7 @@ html {
   }
 
   .next-section__subhead {
-    color: color("red-60");
+    color: color("red-50");
   }
 }
 
@@ -452,7 +452,7 @@ html {
   }
 
   .next-section__subhead {
-    color: color("gold-60v");
+    color: color("gold-50v");
   }
 }
 
@@ -462,7 +462,7 @@ html {
   }
 
   .next-section__subhead {
-    color: color("red-60");
+    color: $pink-50v;
   }
 }
 

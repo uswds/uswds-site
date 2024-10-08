@@ -2,11 +2,27 @@ title: Date picker
 type: component
 changelogURL:
 items:
-  - date: 2024-09-17
+  - date: 2024-10-08
     summary: Added guidance about always allowing users to type in the date manually.
     affectsGuidance: true
     githubPr: 2822
     githubRepo: uswds-site
+  - date: 2024-10-04
+    summary: Fixed a bug that caused `mouseover` events to prevent keyboard navigation.
+    summaryAdditional:  Now when you hover your mouse over the date picker buttons, only the hover state will be triggered.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 5774
+    githubRepo: uswds
+    versionUswds: 3.9.0
+  - date: 2024-10-04
+    summary: Added `aria-disabled` to the list of expected attributes.
+    summaryAdditional: Now, the component will disable toggle when the `aria-disabled` attribute is present.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 6013
+    githubRepo: uswds
+    versionUswds: 3.9.0
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

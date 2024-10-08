@@ -2,17 +2,6 @@ title: Alert
 type: component
 changelogURL:
 items:
-  - date: 2024-10-04
-    summary: |
-      Fixed a bug that caused `$theme-site-margins-width` to unexpectedly change the alignment inside alert and site alert components.
-    summaryAdditional: |
-      Alignment of alert and site alert components will likely shift from this change.
-      Confirm that your implementation of the component aligns as expected.
-    isBreaking: true
-    affectsStyles: true
-    githubPr: 5636
-    githubRepo: uswds
-    versionUswds: 3.9.0
   - date: 2024-03-27
     summary: Added a note about USWDS developing dismissible alerts.
     affectsGuidance: true

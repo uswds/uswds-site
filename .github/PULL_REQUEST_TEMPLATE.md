@@ -98,7 +98,6 @@ include a list of the changed dependencies and version numbers.
 
 <!--
 Before opening this PR, make sure you’ve done whichever of these applies to you:
-- [ ] Create a changelog entry for any user-facing changes. Learn more about creating changelogs in [_data/changelogs/_CHANGELOG-README.md](https://github.com/uswds/uswds-site/blob/main/_data/changelogs/_CHANGELOG-README.md).
 - [ ] Confirm that this code follows the [18F Front End Coding Style Guide](https://pages.18f.gov/frontend/) and [Accessibility Guide](https://pages.18f.gov/accessibility/checklist/).
 - [ ] Run `git pull origin [base branch]` to pull in the most recent updates from your base and check for merge conflicts. (Often, the base branch is `main`).
 - [ ] Run `npm run prettier:scss` to format any Sass updates.

@@ -65,14 +65,14 @@
     "axe-core": "^4.10.0",
     "browserify": "^17.0.0",
     "chalk": "^4.1.2",
-    "cheerio": "^1.0.0",
+    "cheerio": "^1.0.0-rc.12",
     "chrome-launcher": "^0.14.1",
     "chrome-remote-interface": "^0.33.0",
     "concurrently": "^8.2.2",
     "del": "^6.1.1",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.30.0",
-    "express": "^4.21.0",
+    "eslint-plugin-import": "^2.29.1",
+    "express": "^4.19.2",
     "fancy-log": "^2.0.0",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
@@ -85,19 +85,23 @@
     "jquery": "^3.7.1",
     "node-notifier": "^10.0.1",
     "pa11y-ci": "^2.4.2",
-    "postcss": "^8.4.47",
+    "postcss": "^8.4.40",
     "postcss-csso": "^6.0.1",
     "prettier": "^2.8.8",
-    "sass": "^1.78.0",
+    "sass": "^1.77.8",
     "simplecrawler": "^1.1.9",
-    "snyk": "^1.1293.1",
+    "snyk": "^1.1292.2",
     "stylelint": "^15.11.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
+  "overrides": {
+    "glob-parent": "6.0.2",
+    "postcss": "^8.4.40"
+  },
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "1.2.0",
-    "@uswds/uswds": "3.9.0"
+    "@uswds/uswds": "3.8.2"
   }
 }

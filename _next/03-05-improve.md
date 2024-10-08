@@ -7,7 +7,7 @@ image: /img/next/og-next-findings-improve.png
 permalink: /next/findings/improve/
 slug: "improve"
 
-navbar_color: "red-cool-50"
+navbar_color: "next-pink-dark"
 hero_color: "next-pink-medium"
 quote_color: "next-pink-medium"
 

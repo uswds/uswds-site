@@ -2,14 +2,6 @@ title: Settings
 type: utility
 changelogURL:
 items:
-  - date: 2024-10-04
-    summary: Added new `$theme-utility-breakpoints-custom` setting.
-    summaryAdditional:  Users can now set custom breakpoints which will generate utilities alongside the default system breakpoints.
-    affectsSettings: true
-    affectsStyles: true
-    githubPr: 6048
-    githubRepo: uswds
-    versionUswds: 3.9.0
   - date: 2024-03-11
     summary: Added new sidenav setting to temporarily address visual regression in new markup guidance.
     summaryAdditional:  The new setting `$theme-sidenav-reorder` allows users to temporarily reorder the sidenav with CSS. Users should follow new markup recommendation in code example to avoid accessibility issues.

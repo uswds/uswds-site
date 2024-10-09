@@ -8,16 +8,8 @@ component:
 lead: Pagination is navigation for paginated content.
 permalink: /components/pagination/
 subnav:
-- text: Preview
-  href: '#pagination-preview'
-- text: Code
-  href: '#pagination-code'
-- text: Guidance
-  href: '#pagination-guidance'
-- text: Package
-  href: '#pagination-package'
-- text: Latest updates
-  href: '#changelog'
+- text: pagination accessibility tests
+  href: /components/pagination/accessibility-tests/
 title: Pagination
 type: component
 changelog:

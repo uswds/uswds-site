@@ -2,6 +2,11 @@ title: Pagination
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Added WCAG compliance tag and accessibility test status section.
+  affectsGuidance: true
+  githubPr: [Related PR number]
+  githubRepo: uswds-site
 - date: 2024-10-04
   summary: Added text underline styles to pagination links.
   summaryAdditional: Pagination links are now visually consistent with other USWDS text links.

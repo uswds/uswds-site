@@ -2,6 +2,11 @@ title: Side navigation
 type: component
 changelogURL:
 items:
+ - date: NNNN-NN-NN
+   summary: Added WCAG compliance tag and accessibility test status section.
+   affectsGuidance: true
+   githubPr: [Related PR number]
+   githubRepo: uswds-site
 # 3.8.0 release
 - date: 2024-03-11
   summary: Added a new fallback setting for sidenavs in Documentation template.

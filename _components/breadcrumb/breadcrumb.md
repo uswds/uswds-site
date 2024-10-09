@@ -17,16 +17,8 @@ variants:
   - variant: "`.usa-breadcrumb--wrap`"
     description: Wrap the breadcrumb bar instead of truncating.
 subnav:
-- text: Preview
-  href: '#breadcrumb-preview'
-- text: Code
-  href: '#breadcrumb-code'
-- text: Guidance
-  href: '#breadcrumb-guidance'
-- text: Package
-  href: '#breadcrumb-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Breadcrumb accessibility tests
+  href: /components/breadcrumb/accessibility-tests/
 changelog:
   key: component-breadcrumb
 ---

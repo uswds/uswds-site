@@ -29,7 +29,7 @@ test_items:
   - summary: Breadcrumb links provide location within a set of pages. 
     summary_additional: |
       When navigating through different pages, 
-      the breadcrumb provides descriptive information of your location on the site.
+      the breadcrumb provides clarity on your location on the site.
     test_status: pass
     test_type: general
     version_tested: 3.8.2
@@ -65,9 +65,10 @@ test_items:
       you can interact with every link inside it.
     status_details: | 
       Breadcrumb component may not be fully interactive with a keyboard. 
-      Users may not be able to hear/interact with the current page's link. 
-      You will need to test on your own implementation. More information: <a href='https://github.com/uswds/uswds-site/issues/2818'>USWDS #2818</a>. 
-    github_issue_number: https://github.com/uswds/uswds-site/issues/2818
+      The wording for the current page in the breadcrumb list may not be focusable with a keyboard 
+      nor recognizable as the current page using a screen reader. You will need to 
+      test on your own implementation. More information: <a href='https://github.com/uswds/uswds-site/issues/2818'>USWDS #2818</a>. 
+    github_issue_number: 6054
     test_status: fail
     test_type: keyboard
     version_tested: 3.8.2

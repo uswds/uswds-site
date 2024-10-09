@@ -64,7 +64,7 @@ test_items:
       When you navigate through the breadcrumb navigation with a keyboard, 
       you can interact with every link inside it.
     status_details: | 
-      Breadcrumb component imay not be fully interactive with a keyboard. 
+      Breadcrumb component may not be fully interactive with a keyboard. 
       Users may not be able to hear/interact with the current page's link. 
       You will need to test on your own implementation. More information: <a href='https://github.com/uswds/uswds-site/issues/2818'>USWDS #2818</a>. 
     github_issue_number: https://github.com/uswds/uswds-site/issues/2818

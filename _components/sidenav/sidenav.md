@@ -7,11 +7,11 @@ component:
 lead: "Hierarchical, vertical navigation to place at the side of a page."
 permalink: /components/side-navigation/
 redirect_from:
-- /sidenav/
-- /components/sidenav/
+  - /sidenav/
+  - /components/sidenav/
 subnav:
-- text: side navigation accessibility tests
-  href: /components/side-navigation/accessibility-tests/
+  - text: side navigation accessibility tests
+    href: /components/side-navigation/accessibility-tests/
 tags:
   - sidenav
   - nav

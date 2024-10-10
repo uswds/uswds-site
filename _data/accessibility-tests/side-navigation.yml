@@ -1,7 +1,7 @@
 title: Side navigation
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Side navigation appears in the same location and order on every page of the website.
     summary_additional: When you navigate to different pages on the website, the side navigation is always in the same order and in the same place.
     test_status: conditional
@@ -9,7 +9,7 @@ test_items:
     version_tested: 3.8.2
     wcag_criterion: 3.2.3
   - summary: Side navigation clearly indicates location on the website.
-    summary_additional:  When viewing side navigation content, the links have distinct styling that give clear visual indication of where you are in the site. There are also other visual elements to further indicate where you are in relation to the navigation tree.
+    summary_additional: When viewing side navigation content, the links have distinct styling that give clear visual indication of where you are in the site. There are also other visual elements to further indicate where you are in relation to the navigation tree.
     test_status: pass
     test_type: general
     version_tested: 3.8.2
@@ -26,7 +26,7 @@ test_items:
     test_type: general
     version_tested: 3.8.2
     wcag_criterion: 1.4.1
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Keyboard can access all links in the side navigation.
     summary_additional: When you navigate through the side navigation with a keyboard, you can interact with every link inside it.
     test_status: pass
@@ -45,9 +45,9 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.2
     wcag_criterion: 2.4.7
-# Screen reader tests
+  # Screen reader tests
   - summary: Screen reader announces side navigation region and items.
-    summary_additional: When using a screen reader to access the side navigation, you hear "side navigation" or "section navigation" and the list of items in the navigation. 
+    summary_additional: When using a screen reader to access the side navigation, you hear "side navigation" or "section navigation" and the list of items in the navigation.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.2
@@ -58,7 +58,7 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.2
     wcag_criterion: 2.4.4
-  - summary: Side navigation link titles and states of links are announced. 
+  - summary: Side navigation link titles and states of links are announced.
     summary_additional: When using a screen reader and you tab through the side navigation, you hear link titles and if they have been visited or not. You will also be able to tell if a link is a parent or sub-menu link and how many links are present.
     test_status: conditional
     test_type: screen_reader

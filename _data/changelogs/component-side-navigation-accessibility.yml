@@ -1,8 +1,8 @@
 title: Side navigation accessibility tests
 type: component
 items:
- - date: NNNN-NN-NN
-   summary: Added accessibility tests page.
-   affectsGuidance: true
-   githubPr: 2864
-   githubRepo: uswds-site
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 2864
+    githubRepo: uswds-site

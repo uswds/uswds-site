@@ -5,7 +5,7 @@ component:
  name: side navigation
 title: Side navigation accessibility tests
 category: Components
-lead: Any USWDS [component name] component should pass these manual accessibility tests.
+lead: Any USWDS side navigation component should pass these manual accessibility tests.
 changelog:
  key: 'component-side-navigation-accessibility'
 ---

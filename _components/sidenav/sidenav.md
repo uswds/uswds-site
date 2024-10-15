@@ -10,7 +10,7 @@ redirect_from:
 - /sidenav/
 - /components/sidenav/
 subnav:
-- text: side navigation accessibility tests
+- text: Side navigation accessibility tests
   href: /components/side-navigation/accessibility-tests/
 tags:
   - sidenav

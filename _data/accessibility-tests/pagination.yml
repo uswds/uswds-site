@@ -64,4 +64,4 @@ test_items:
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.2
-    wcag_criterion: 2.4.8
+    wcag_criterion: 4.1.2

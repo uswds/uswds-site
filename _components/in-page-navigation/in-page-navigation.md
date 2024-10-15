@@ -15,8 +15,8 @@ redirect_from:
 - /in-page-nav/
 - /components/in-page-nav/
 subnav:
-- text: in page navigation accessibility tests
-  href: /components/in-page-navigation/accessibility-tests/
+  - text: in page navigation accessibility tests
+    href: /components/in-page-navigation/accessibility-tests/
 tags:
   - in-page
   - nav

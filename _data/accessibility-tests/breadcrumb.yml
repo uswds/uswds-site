@@ -22,7 +22,7 @@ test_items:
     summary_additional: |
       When you navigate to different pages on the website, the breadcrumb links are
       always in the same order and in the same place.
-    test_status: pass
+    test_status: conditional
     test_type: general
     version_tested: 3.8.2
     wcag_criterion: 3.2.3
@@ -30,7 +30,7 @@ test_items:
     summary_additional: |
       When navigating through different pages,
       the breadcrumb provides clarity on your location on the site.
-    test_status: pass
+    test_status: conditional
     test_type: general
     version_tested: 3.8.2
     wcag_criterion: 2.4.8
@@ -63,13 +63,7 @@ test_items:
     summary_additional: |
       When you navigate through the breadcrumb navigation with a keyboard,
       you can interact with every link inside it.
-    status_details: |
-      Breadcrumb component may not be fully interactive with a keyboard.
-      The wording for the current page in the breadcrumb list may not be focusable with a keyboard
-      nor recognizable as the current page using a screen reader. You will need to
-      test on your own implementation. More information: <a href='https://github.com/uswds/uswds-site/issues/2818'>USWDS #2818</a>.
-    github_issue_number: 6054
-    test_status: fail
+    test_status: pass
     test_type: keyboard
     version_tested: 3.8.2
     wcag_criterion: 2.1.1
@@ -109,7 +103,7 @@ test_items:
   - summary: Screen reader announces breadcrumb link titles and state of each link.
     summary_additional: |
       When using a screen reader and you tab through the breadcrumb links, you hear link title and if it has been visited or not.
-      You will also hear "current" for the link farthest to the right.
+      You will also hear "current" for the final breadcrumb item.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.2

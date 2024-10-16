@@ -40,7 +40,7 @@ test_items:
     version_tested: 3.8.2
     wcag_criterion: 2.1.2
   - summary: Focus indicator is clearly visible in side navigation.
-    summary_additional: When you use a keyboard to tab into the side navigation, the links have a visible underline, bold style or other clear indication that links are interactive.
+    summary_additional: When you use a keyboard to navigate through the side navigation, there will be a visible outline or other clear indication where the focus is.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.2

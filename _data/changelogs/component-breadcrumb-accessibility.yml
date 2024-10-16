@@ -2,7 +2,7 @@ title: Breadcrumb accessibility tests
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-10-16
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 2853

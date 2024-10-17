@@ -63,41 +63,43 @@
     </tbody>
   </table>
 
-  <p class="utility-text margin-top-4">Set whether a utility family outputs with responsive variants by setting the value of <code>$[utility_family]-settings.responsive</code> in your <a href="{{ site.baseurl }}/documentation/settings">USWDS settings configuration</a>. When modifying settings stored as a map, undefined map elements will keep their default values.</p>
+  {% if page.utilities %}
+    <p class="utility-text margin-top-4">Set whether a utility family outputs with responsive variants by setting the value of <code>$[utility_family]-settings.responsive</code> in your <a href="{{ site.baseurl }}/documentation/settings">USWDS settings configuration</a>. When modifying settings stored as a map, undefined map elements will keep their default values.</p>
 
-  <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2 margin-bottom-2 bg-white">
-    <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
-    <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
-@use "uswds-core" with (
-  $background-color-settings: (
-    responsive: true
-  )
-);
-    </pre>
-  </div>
+    <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2 margin-bottom-2 bg-white">
+      <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
+      <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+  @use "uswds-core" with (
+    $background-color-settings: (
+      responsive: true
+    )
+  );
+      </pre>
+    </div>
 
-  <table class="usa-table--borderless site-table-responsive site-table-simple">
-    <thead>
-      <tr>
-        <th scope="col" class="display-inline-flex">Utility variable</th>
-        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Default</th>
-      </tr>
-    </thead>
-    <tbody class="font-mono-2xs">
-      {% for utility in page.utilities %}
+    <table class="usa-table--borderless site-table-responsive site-table-simple">
+      <thead>
         <tr>
-          <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap display-inline-flex">
-            <span class="text-normal">
-              ${{ utility.var }}-settings.responsive
-            </span>
-          </th>
-          <td data-title="Default" class="tablet:maxw-card-lg display-inline-flex">
-            <span>
-              {% if utility.responsive %}<span class="output-true">true</span>{% else %}false{% endif %}
-            </span>
-          </td>
+          <th scope="col" class="display-inline-flex">Utility variable</th>
+          <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Default</th>
         </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+      </thead>
+      <tbody class="font-mono-2xs">
+        {% for utility in page.utilities %}
+          <tr>
+            <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap display-inline-flex">
+              <span class="text-normal">
+                ${{ utility.var }}-settings.responsive
+              </span>
+            </th>
+            <td data-title="Default" class="tablet:maxw-card-lg display-inline-flex">
+              <span>
+                {% if utility.responsive %}<span class="output-true">true</span>{% else %}false{% endif %}
+              </span>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
 </section>

@@ -1,12 +1,12 @@
 ---
 title: News and updates
 layout: post
-permalink: /about/updates/
+permalink: /whats-new/updates/
 category: About
 subnav:
   type: posts
 redirect_from:
-  - /whats-new/updates/
+  - /about/updates/
 ---
 {% capture lead %}
 From time to time we post product updates, guidance, and interviews

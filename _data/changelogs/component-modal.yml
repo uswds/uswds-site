@@ -2,6 +2,14 @@ title: Modal
 type: component
 changelogURL:
 items:
+- date: 2024-10-22
+  summary: Added focus trap guidance.
+  summaryAdditional: Updated guidance to ensure users trap focus inside the modal so that it doesn't move to the content behind it.
+  isBreaking: false
+  affectsGuidance: true
+  githubPr: 2874
+  githubRepo: uswds-site
+  versionUswds: 3.9.0
 - date: 2023-11-09
   summary: Updated JavaScript to include fallbacks and error messages when initialization cannot be completed.
   summaryAdditional: Additionally, this improved code consistency and prevented errors when trying to initialize modal twice.

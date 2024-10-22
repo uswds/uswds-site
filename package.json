@@ -97,7 +97,7 @@
   },
   "snyk": true,
   "dependencies": {
-    "@uswds/compile": "1.2.0",
+    "@uswds/compile": "github:uswds/uswds-compile#cm-POAM-oct-24",
     "@uswds/uswds": "3.9.0"
   }
 }

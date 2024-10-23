@@ -4,8 +4,8 @@ changelogURL:
 
 items:
   - date: NNNN-NN-NN
-    summary: Removed the aria-label from the wrapper of the step indicator component.
-    summaryAdditional: This resolves an automated testing error related to having an invalid attribute on a div element.
+    summary: Removed the `aria-label`from the wrapper of the step indicator component.
+    summaryAdditional: This resolves an automated testing error related to having an invalid attribute on a `div` element.
     affectsAccessibility: true
     affectsMarkup: true
     githubPr: 6146

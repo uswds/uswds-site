@@ -1,10 +1,16 @@
 title: Time picker
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
 
 items:
-  # 3.0 release
+  - date: NNNN-NN-NN
+    summary: Updated the time picker hint text to improve clarity.
+    summaryAdditional: This update allows the component to meet the success criteria in [WCAG 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html).
+    affectsAccessibility: true
+    affectsContent: true
+    githubPr: 6147
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2022-04-28
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true

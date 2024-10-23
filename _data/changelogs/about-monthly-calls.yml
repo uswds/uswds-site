@@ -2,9 +2,9 @@ title: Monthly calls
 type: documentation
 changelogURL:
 items:
- - date: 2024-10-00
-    summary: Added August 2024 monthly call video.
-    githubPr: 2846
+  - date: 2024-10-23
+    summary: Added video for August 2024 monthly call.
+    githubPr: 2873
     githubRepo: uswds-site
   - date: 2024-09-16
     summary: Added August 2024 monthly call.

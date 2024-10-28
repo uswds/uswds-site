@@ -11,16 +11,9 @@ permalink: /components/memorable-date/
 redirect_from:
 - /form-controls/04-memorable-date/
 subnav:
-- text: Preview
-  href: '#memorable-date-preview'
-- text: Code
-  href: '#memorable-date-code'
-- text: Guidance
-  href: '#memorable-date-guidance'
-- text: Package
-  href: '#memorable-date-package'
-- text: Latest updates
-  href: '#changelog'
+subnav:
+- text: Memorable date accessibility tests
+  href: /components/memorable-date/accessibility-tests/
 tags:
   - form
   - forms

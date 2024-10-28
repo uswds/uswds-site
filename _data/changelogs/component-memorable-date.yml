@@ -5,7 +5,7 @@ items:
 - date: NNNN-NN-NN
   summary: Added WCAG compliance tag and accessibility test status section.
   affectsGuidance: true
-  githubPr: [Related PR number]
+  githubPr: 2919
   githubRepo: uswds-site
 - date: 2024-10-04
   summary: Removed numeric representation of months from the `select` element.

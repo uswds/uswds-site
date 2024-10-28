@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Fixed incompatibility with Content Security Policies
-    summaryAdditional: Fixed an issue where the upload image preview is a broken image when a Content Security Policy is enabled.
+    summary: Fixed incompatibility with Content Security Policies.
+    summaryAdditional: Now, the upload image preview will correctly show when a Content Security Policy is enabled.
     affectsJavascript: true
     githubPr: 5997
     githubRepo: uswds

@@ -25,7 +25,21 @@
       {{ post.lead | default: post.excerpt }}
     </p>
 
-    <p class="post-more margin-top-2"><a href="{{ site.baseurl }}{{ post.url }}">Continue reading</a></p>
+    {% if post.link_url %}
+      {% assign link_url = post.link_url  %}
+    {% else %}
+      {% assign link_url = post.url %}
+    {% endif %}
+
+    {% if post.link_text %}
+      {% assign link_text = post.link_text %}
+    {% else %}
+      {% assign link_text = "Continue reading" %}
+    {% endif %}
+
+    <p class="post-more margin-top-2">
+      <a href="{{ link_url }}">{{ link_text }}</a>
+    </p>
   {% else %}
     {{ post.content }}
   {% endif %}

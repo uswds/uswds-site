@@ -29,7 +29,7 @@
     <rect width="608" height="168" fill="#FFF"/>
     <g transform="translate(3 3)">
       <mask id="powerful-utility-classes-long-b" fill="#fff">
-        <use xlink:href="#powerful-utility-classes-long-a"/>
+        <use href="#powerful-utility-classes-long-a"/>
       </mask>
       <rect width="128" height="164" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
       <g fill="#F5F5F0" mask="url(#powerful-utility-classes-long-b)">
@@ -38,7 +38,7 @@
       <g mask="url(#powerful-utility-classes-long-b)">
         <g transform="translate(-7.922 82)">
           <mask id="powerful-utility-classes-long-d" fill="#fff">
-            <use xlink:href="#powerful-utility-classes-long-c"/>
+            <use href="#powerful-utility-classes-long-c"/>
           </mask>
           <g mask="url(#powerful-utility-classes-long-d)">
             <polygon fill="#171717" points="0 0 180 0 180 64 0 64" transform="translate(-7.042)"/>
@@ -47,7 +47,7 @@
             <g transform="translate(-35.078 -38)">
               <g transform="translate(135.446 6.415)">
                 <mask id="powerful-utility-classes-long-f" fill="#fff">
-                  <use xlink:href="#powerful-utility-classes-long-e"/>
+                  <use href="#powerful-utility-classes-long-e"/>
                 </mask>
                 <g fill="#2E2E2E" mask="url(#powerful-utility-classes-long-f)">
                   <polygon points="0 0 74 0 74 126 0 126" transform="translate(-.897 -6.415)"/>
@@ -55,7 +55,7 @@
               </g>
               <g transform="translate(44.85)">
                 <mask id="powerful-utility-classes-long-h" fill="#fff">
-                  <use xlink:href="#powerful-utility-classes-long-g"/>
+                  <use href="#powerful-utility-classes-long-g"/>
                 </mask>
                 <g fill="#2E2E2E" mask="url(#powerful-utility-classes-long-h)">
                   <polygon points="0 0 132 0 132 71 0 71" transform="translate(-4.933)"/>
@@ -63,7 +63,7 @@
               </g>
               <g transform="translate(2.691 87.524)">
                 <mask id="powerful-utility-classes-long-j" fill="#fff">
-                  <use xlink:href="#powerful-utility-classes-long-i"/>
+                  <use href="#powerful-utility-classes-long-i"/>
                 </mask>
                 <g fill="#3D4551" mask="url(#powerful-utility-classes-long-j)">
                   <polygon points="0 0 107 0 107 126 0 126" transform="translate(-4.933 -7.332)"/>
@@ -71,7 +71,7 @@
               </g>
               <g transform="translate(0 5.957)">
                 <mask id="powerful-utility-classes-long-l" fill="#fff">
-                  <use xlink:href="#powerful-utility-classes-long-k"/>
+                  <use href="#powerful-utility-classes-long-k"/>
                 </mask>
                 <g fill="#2E2E2E" mask="url(#powerful-utility-classes-long-l)">
                   <polygon points="0 0 101 0 101 132 0 132" transform="translate(-2.242 -5.957)"/>
@@ -79,7 +79,7 @@
               </g>
               <g transform="translate(87.009 131.515)">
                 <mask id="powerful-utility-classes-long-n" fill="#fff">
-                  <use xlink:href="#powerful-utility-classes-long-m"/>
+                  <use href="#powerful-utility-classes-long-m"/>
                 </mask>
                 <g fill="#2E2E2E" mask="url(#powerful-utility-classes-long-n)">
                   <polygon points="0 0 157 0 157 115 0 115" transform="translate(-20.182 -33.91)"/>
@@ -134,7 +134,7 @@
     </g>
     <g transform="translate(479 3)">
       <mask id="powerful-utility-classes-long-p" fill="#fff">
-        <use xlink:href="#powerful-utility-classes-long-o"/>
+        <use href="#powerful-utility-classes-long-o"/>
       </mask>
       <rect width="128" height="164" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
       <g fill="#F5F5F0" mask="url(#powerful-utility-classes-long-p)">
@@ -164,9 +164,9 @@
           </g>
           <g transform="translate(0 58)">
             <mask id="powerful-utility-classes-long-s" fill="#fff">
-              <use xlink:href="#powerful-utility-classes-long-q"/>
+              <use href="#powerful-utility-classes-long-q"/>
             </mask>
-            <use fill="#000" filter="url(#powerful-utility-classes-long-r)" xlink:href="#powerful-utility-classes-long-q"/>
+            <use fill="#000" filter="url(#powerful-utility-classes-long-r)" href="#powerful-utility-classes-long-q"/>
             <g fill="#E6E6E6" mask="url(#powerful-utility-classes-long-s)">
               <polygon points="0 0 98 0 98 6 0 6" transform="translate(-1 -1)"/>
             </g>
@@ -210,9 +210,9 @@
         <g transform="translate(120 6)">
           <g transform="translate(5 1)">
             <mask id="powerful-utility-classes-long-u" fill="#fff">
-              <use xlink:href="#powerful-utility-classes-long-t"/>
+              <use href="#powerful-utility-classes-long-t"/>
             </mask>
-            <use fill="#979797" fill-rule="nonzero" xlink:href="#powerful-utility-classes-long-t"/>
+            <use fill="#979797" fill-rule="nonzero" href="#powerful-utility-classes-long-t"/>
             <g fill="#171717" mask="url(#powerful-utility-classes-long-u)">
               <polygon points="0 0 15 0 15 18 0 18" transform="translate(-7 -4)"/>
             </g>
@@ -235,7 +235,7 @@
         <g opacity=".411" transform="translate(16.749 6)">
           <g transform="translate(11.017 .506)">
             <mask id="powerful-utility-classes-long-w" fill="#fff">
-              <use xlink:href="#powerful-utility-classes-long-v"/>
+              <use href="#powerful-utility-classes-long-v"/>
             </mask>
             <g fill="#2E2E2E" mask="url(#powerful-utility-classes-long-w)">
               <polygon points="0 0 6 0 6 10 0 10" transform="translate(-.073 -.506)"/>
@@ -243,7 +243,7 @@
           </g>
           <g transform="translate(3.648)">
             <mask id="powerful-utility-classes-long-y" fill="#fff">
-              <use xlink:href="#powerful-utility-classes-long-x"/>
+              <use href="#powerful-utility-classes-long-x"/>
             </mask>
             <g fill="#2E2E2E" mask="url(#powerful-utility-classes-long-y)">
               <polygon points="0 0 11 0 11 6 0 6" transform="translate(-.401)"/>
@@ -251,7 +251,7 @@
           </g>
           <g transform="translate(.219 6.898)">
             <mask id="powerful-utility-classes-long-A" fill="#fff">
-              <use xlink:href="#powerful-utility-classes-long-z"/>
+              <use href="#powerful-utility-classes-long-z"/>
             </mask>
             <g fill="#3D4551" mask="url(#powerful-utility-classes-long-A)">
               <polygon points="0 0 9 0 9 10 0 10" transform="translate(-.401 -.578)"/>
@@ -259,7 +259,7 @@
           </g>
           <g transform="translate(0 .47)">
             <mask id="powerful-utility-classes-long-C" fill="#fff">
-              <use xlink:href="#powerful-utility-classes-long-B"/>
+              <use href="#powerful-utility-classes-long-B"/>
             </mask>
             <g fill="#2E2E2E" mask="url(#powerful-utility-classes-long-C)">
               <polygon points="0 0 8 0 8 10 0 10" transform="translate(-.182 -.47)"/>
@@ -267,7 +267,7 @@
           </g>
           <g transform="translate(7.077 10.366)">
             <mask id="powerful-utility-classes-long-E" fill="#fff">
-              <use xlink:href="#powerful-utility-classes-long-D"/>
+              <use href="#powerful-utility-classes-long-D"/>
             </mask>
             <g fill="#2E2E2E" mask="url(#powerful-utility-classes-long-E)">
               <polygon points="0 0 13 0 13 9 0 9" transform="translate(-1.642 -2.673)"/>
@@ -294,9 +294,9 @@
         <g transform="translate(218 7)">
           <g transform="translate(5 1)">
             <mask id="powerful-utility-classes-long-G" fill="#fff">
-              <use xlink:href="#powerful-utility-classes-long-F"/>
+              <use href="#powerful-utility-classes-long-F"/>
             </mask>
-            <use fill="#979797" fill-rule="nonzero" xlink:href="#powerful-utility-classes-long-F"/>
+            <use fill="#979797" fill-rule="nonzero" href="#powerful-utility-classes-long-F"/>
             <g fill="#171717" mask="url(#powerful-utility-classes-long-G)">
               <polygon points="0 0 15 0 15 18 0 18" transform="translate(-7 -4)"/>
             </g>
@@ -328,9 +328,9 @@
     <g transform="translate(145 78)">
       <g transform="translate(5 1)">
         <mask id="powerful-utility-classes-long-I" fill="#fff">
-          <use xlink:href="#powerful-utility-classes-long-H"/>
+          <use href="#powerful-utility-classes-long-H"/>
         </mask>
-        <use fill="#979797" fill-rule="nonzero" xlink:href="#powerful-utility-classes-long-H"/>
+        <use fill="#979797" fill-rule="nonzero" href="#powerful-utility-classes-long-H"/>
         <g fill="#C3512C" mask="url(#powerful-utility-classes-long-I)">
           <rect width="15" height="18" transform="translate(-7 -4)"/>
         </g>
@@ -340,9 +340,9 @@
     <g transform="translate(451 78)">
       <g transform="translate(5 1)">
         <mask id="powerful-utility-classes-long-K" fill="#fff">
-          <use xlink:href="#powerful-utility-classes-long-J"/>
+          <use href="#powerful-utility-classes-long-J"/>
         </mask>
-        <use fill="#979797" fill-rule="nonzero" xlink:href="#powerful-utility-classes-long-J"/>
+        <use fill="#979797" fill-rule="nonzero" href="#powerful-utility-classes-long-J"/>
         <g fill="#C3512C" mask="url(#powerful-utility-classes-long-K)">
           <rect width="15" height="18" transform="translate(-7 -4)"/>
         </g>

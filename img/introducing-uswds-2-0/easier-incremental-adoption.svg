@@ -21,7 +21,7 @@
   <g fill="none" fill-rule="evenodd">
     <g transform="translate(3 3)">
       <mask id="easier-incremental-adoption-b" fill="#fff">
-        <use xlink:href="#easier-incremental-adoption-a"/>
+        <use href="#easier-incremental-adoption-a"/>
       </mask>
       <rect width="146" height="238" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
       <g mask="url(#easier-incremental-adoption-b)">
@@ -58,7 +58,7 @@
       <g mask="url(#easier-incremental-adoption-b)">
         <g transform="translate(-7.922 51.054)">
           <mask id="easier-incremental-adoption-d" fill="#fff">
-            <use xlink:href="#easier-incremental-adoption-c"/>
+            <use href="#easier-incremental-adoption-c"/>
           </mask>
           <rect width="163" height="42" x="-1" fill="#E6E6E6" mask="url(#easier-incremental-adoption-d)"/>
         </g>
@@ -73,20 +73,20 @@
     </g>
     <g transform="translate(179 3)">
       <mask id="easier-incremental-adoption-f" fill="#fff">
-        <use xlink:href="#easier-incremental-adoption-e"/>
+        <use href="#easier-incremental-adoption-e"/>
       </mask>
       <rect width="146" height="238" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
       <g mask="url(#easier-incremental-adoption-f)">
         <g transform="translate(-7.922 64)">
           <mask id="easier-incremental-adoption-h" fill="#fff">
-            <use xlink:href="#easier-incremental-adoption-g"/>
+            <use href="#easier-incremental-adoption-g"/>
           </mask>
           <rect width="180" height="64" x="-7" fill="#171717" mask="url(#easier-incremental-adoption-h)"/>
           <g mask="url(#easier-incremental-adoption-h)">
             <g transform="translate(-15.078 -81.054)">
               <g transform="translate(135.446 6.415)">
                 <mask id="easier-incremental-adoption-j" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption-i"/>
+                  <use href="#easier-incremental-adoption-i"/>
                 </mask>
                 <g fill="#81AEFC" mask="url(#easier-incremental-adoption-j)">
                   <polygon points="0 0 74 0 74 126 0 126" transform="translate(-.897 -6.415)"/>
@@ -94,7 +94,7 @@
               </g>
               <g transform="translate(44.85)">
                 <mask id="easier-incremental-adoption-l" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption-k"/>
+                  <use href="#easier-incremental-adoption-k"/>
                 </mask>
                 <g fill="#3E76C2" mask="url(#easier-incremental-adoption-l)">
                   <rect width="132" height="71" transform="translate(-4.933)"/>
@@ -102,7 +102,7 @@
               </g>
               <g transform="translate(2.691 87.524)">
                 <mask id="easier-incremental-adoption-n" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption-m"/>
+                  <use href="#easier-incremental-adoption-m"/>
                 </mask>
                 <g fill="#D63E04" mask="url(#easier-incremental-adoption-n)">
                   <polygon points="0 0 107 0 107 126 0 126" transform="translate(-4.933 -7.332)"/>
@@ -110,7 +110,7 @@
               </g>
               <g transform="translate(0 5.957)">
                 <mask id="easier-incremental-adoption-p" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption-o"/>
+                  <use href="#easier-incremental-adoption-o"/>
                 </mask>
                 <g fill="#F6BD9C" mask="url(#easier-incremental-adoption-p)">
                   <polygon points="0 0 101 0 101 132 0 132" transform="translate(-2.242 -5.957)"/>
@@ -118,7 +118,7 @@
               </g>
               <g transform="translate(87.009 131.515)">
                 <mask id="easier-incremental-adoption-r" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption-q"/>
+                  <use href="#easier-incremental-adoption-q"/>
                 </mask>
                 <g fill="#2E2E2E" mask="url(#easier-incremental-adoption-r)">
                   <polygon points="0 0 157 0 157 115 0 115" transform="translate(-20.182 -33.91)"/>
@@ -149,9 +149,9 @@
             <rect width="16" height="2" fill="#E6E6E6" rx="1"/>
             <g transform="translate(0 4)">
               <mask id="easier-incremental-adoption-u" fill="#fff">
-                <use xlink:href="#easier-incremental-adoption-s"/>
+                <use href="#easier-incremental-adoption-s"/>
               </mask>
-              <use fill="#000" filter="url(#easier-incremental-adoption-t)" xlink:href="#easier-incremental-adoption-s"/>
+              <use fill="#000" filter="url(#easier-incremental-adoption-t)" href="#easier-incremental-adoption-s"/>
               <g fill="#DCDEE0" mask="url(#easier-incremental-adoption-u)">
                 <polygon points="0 0 18 0 18 4 0 4" transform="translate(-1 -1)"/>
               </g>
@@ -195,9 +195,9 @@
     <g transform="translate(157 115)">
       <g transform="translate(5 1)">
         <mask id="easier-incremental-adoption-w" fill="#fff">
-          <use xlink:href="#easier-incremental-adoption-v"/>
+          <use href="#easier-incremental-adoption-v"/>
         </mask>
-        <use fill="#979797" fill-rule="nonzero" xlink:href="#easier-incremental-adoption-v"/>
+        <use fill="#979797" fill-rule="nonzero" href="#easier-incremental-adoption-v"/>
         <g fill="#C3512C" mask="url(#easier-incremental-adoption-w)">
           <rect width="15" height="18" transform="translate(-7 -4)"/>
         </g>

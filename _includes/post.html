@@ -25,17 +25,21 @@
       {{ post.lead | default: post.excerpt }}
     </p>
 
-    {% if post.link_url %}
-      {% assign link_url = post.link_url  %}
-    {% else %}
-      {% assign link_url = post.url %}
-    {% endif %}
+    {%- capture link_url -%}
+      {%- if post.link_url -%}
+        {{ post.link_url }}
+      {%- else -%}
+        {{ site.baseurl }}{{ post.url }}
+      {%- endif -%}
+    {%- endcapture -%}
 
-    {% if post.link_text %}
-      {% assign link_text = post.link_text %}
-    {% else %}
-      {% assign link_text = "Continue reading" %}
-    {% endif %}
+    {%- capture link_text -%}
+      {%- if post.link_text -%}
+        {{ post.link_text }}
+      {%- else -%}
+        "Continue reading"
+      {%- endif -%}
+    {%- endcapture -%}
 
     <p class="post-more margin-top-2">
       <a href="{{ link_url }}">{{ link_text }}</a>

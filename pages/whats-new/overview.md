@@ -3,7 +3,7 @@ permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
 category: About
-lead: Here you can find the latest news and information about USWDS. Read our latest release notes, learn about our impact in the government, and learn how we conduct user research to continuously improve our product and process.
+lead: Here you can find the latest news and information about USWDS. Learn about product and process improvements, find out about topics we've covered in our Monthly Calls, and read about our work with partners in the government technology space
 columns:
   - title: New users
     source: New Users
@@ -20,6 +20,8 @@ redirect_from:
 subnav:
   - text: All news and updates
     href: /whats-new/updates/
+  - text: Changelogs
+    href: /whats-new/changelogs/
 changelog:
   key: about-whats-new
 ---
@@ -34,20 +36,20 @@ changelog:
         <p>Find summaries of each USWDS update on our GitHub releases page. Release notes explain bug fixes, new features, and other changes.</p>
       </div>
       <div class="usa-card__footer">
-        <a class="usa-button" href="">Read the USWDS release notes</a>
+        <a class="usa-button" href="https://github.com/uswds/uswds/releases">Read the USWDS release notes</a>
       </div>
     </div>
   </li>
   <li class="usa-card site-component-card desktop:grid-col-6">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h2 class="usa-card__heading font-lang-lg">Design System in the wild</h2>
+        <h2 class="usa-card__heading font-lang-lg">GitHub Discussions</h2>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Interested in seeing who else is using USWDS? We maintain a list of USWDS-based sites on our showcase page.</p>
+        <p>Join the conversation with our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS.</p>
       </div>
       <div class="usa-card__footer">
-        <a class="usa-button" href="{{ site.baseurl }}/documentation/showcase">View our showcase list</a>
+        <a class="usa-button" href="https://github.com/uswds/uswds/discussions">USWDS GitHub discussions</a>
       </div>
     </div>
   </li>
@@ -59,7 +61,7 @@ changelog:
 {% endcapture %}
 {% include lead.html text=lead %}
 
-{% for post in site.posts limit:5%}
+{% for post in site.posts limit:4%}
   {% include post.html post=post excerpt=true  %}
 {% endfor %}
 

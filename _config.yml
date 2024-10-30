@@ -4,11 +4,11 @@ description: USWDS makes it easier to build accessible, mobile-friendly governme
 google_analytics_ua: UA-48605964-43
 uswds_version: 3.9.0
 uswds_email: uswds@gsa.gov
-federalist_base: "https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.sites.pages.cloud.gov/preview/uswds/uswds"
-federalist_component_preview: "iframe.html?id="
-federalist_release_prefix: "release-"
+federalist_base: 'https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.sites.pages.cloud.gov/preview/uswds/uswds'
+federalist_component_preview: 'iframe.html?id='
+federalist_release_prefix: 'release-'
 touchpoints:
-  active: true
+    active: true
 github_issue_bug_url: https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Bug%2CNeeds%3A+Confirmation&projects=&template=bug_report.yaml&title=USWDS+-+Bug%3A+%5BYOUR+TITLE%5D
 github_issue_feature_url: https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Feature+Request&projects=&template=feature_request.yaml&title=USWDS+-+Feature%3A+%5BYOUR+TITLE%5D
 
@@ -22,143 +22,148 @@ encoding: utf-8
 
 markdown: kramdown
 kramdown:
-  footnote_backlink: "&#x21B5;"
+    footnote_backlink: '&#x21B5;'
 
 incremental_regeneration_fixer:
-  interdependent_files:
-    - "_components/accordion/**/*"
-    - "_components/button-group/**/*"
-    - "_templates/form-templates/**/*"
-    - "_templates/page-templates/**/*"
+    interdependent_files:
+        - '_components/accordion/**/*'
+        - '_components/button-group/**/*'
+        - '_templates/form-templates/**/*'
+        - '_templates/page-templates/**/*'
 
 jekyll_get:
-  - data: releases
-    json: "https://api.github.com/repos/uswds/uswds/releases"
-  - data: contributing
-    json: "https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md"
-    decode_content: true
-  - data: install-readme
-    json: "https://api.github.com/repos/uswds/uswds/contents/README.md?ref=develop"
-    decode_content: true
-  - data: security
-    json: "https://api.github.com/repos/uswds/uswds/contents/SECURITY.md"
-    decode_content: true
-  - data: hash
-    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-3.9.0-zip-hash.txt?ref=main"
-    decode_content: true
+    - data: releases
+      json: 'https://api.github.com/repos/uswds/uswds/releases'
+    - data: contributing
+      json: 'https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md'
+      decode_content: true
+    - data: install-readme
+      json: 'https://api.github.com/repos/uswds/uswds/contents/README.md?ref=develop'
+      decode_content: true
+    - data: security
+      json: 'https://api.github.com/repos/uswds/uswds/contents/SECURITY.md'
+      decode_content: true
+    - data: hash
+      json: 'https://api.github.com/repos/uswds/uswds/contents/security/uswds-3.9.0-zip-hash.txt?ref=main'
+      decode_content: true
 
 repos:
-  - name: USWDS
-    description: Main repository for the U.S. Web Design System package
-    url: https://github.com/uswds/uswds
-  - name: USWDS site
-    description: USWDS website
-    url: https://github.com/uswds/uswds-site
-  - name: USWDS for designers
-    description: USWDS visual design assets
-    url: https://github.com/uswds/uswds-for-designers
+    - name: USWDS
+      description: Main repository for the U.S. Web Design System package
+      url: https://github.com/uswds/uswds
+    - name: USWDS site
+      description: USWDS website
+      url: https://github.com/uswds/uswds-site
+    - name: USWDS for designers
+      description: USWDS visual design assets
+      url: https://github.com/uswds/uswds-for-designers
 
 collections:
-  components:
-    output: true
-    permalink: /:path/
-  templates:
-    output: true
-    permalink: /:path/
-  utilities:
-    output: true
-    permalink: /:path/
-  next:
-    output: true
-    permalink: /:collection/:title
-  together:
-    output: true
-    permalink: /:collection/:title
-  security_updates:
-    output: true
-    permalink: /:collection/:title
+    components:
+        output: true
+        permalink: /:path/
+    templates:
+        output: true
+        permalink: /:path/
+    utilities:
+        output: true
+        permalink: /:path/
+    next:
+        output: true
+        permalink: /:collection/:title
+    together:
+        output: true
+        permalink: /:collection/:title
+    security_updates:
+        output: true
+        permalink: /:collection/:title
 
 defaults:
-  - scope:
-      path: ""
-    values:
-      image: /img/uswds-logo/lg-black.png
-  - scope:
-      path: ""
-      type: components
-    values:
-      layout: component
-      touchpoints_survey: true
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  - scope:
-      path: ""
-      type: pages
-    values:
-      touchpoints_survey: true
-  - scope:
-      path: ""
-      type: templates
-    values:
-      touchpoints_survey: true
-  - scope:
-      path: ""
-      type: utilities
-    values:
-      touchpoints_survey: true
-  - scope:
-      path: ""
-      type: next
-    values:
-      report_title: "Report: Transforming the American digital experience"
-      layout: "next-content"
-      chapter: false
-      hero_color: "next-gray-dark"
-  - scope:
-      path: ""
-      type: together
-    values:
-      report_title: "Inclusive Design Patterns"
-      layout: "together-content"
-      chapter: false
-      hero_color: "next-gray-dark"
-  - scope:
-      path: ""
-      type: security_updates
-    values:
-      layout: styleguide
+    - scope:
+          path: ''
+      values:
+          image: /img/uswds-logo/lg-black.png
+    - scope:
+          path: ''
+          type: components
+      values:
+          layout: component
+          touchpoints_survey: true
+    - scope:
+          path: ''
+          type: posts
+      values:
+          layout: post
+    - scope:
+          path: ''
+          type: pages
+      values:
+          touchpoints_survey: true
+    - scope:
+          path: ''
+          type: templates
+      values:
+          touchpoints_survey: true
+    - scope:
+          path: ''
+          type: utilities
+      values:
+          touchpoints_survey: true
+    - scope:
+          path: ''
+          type: next
+      values:
+          report_title: 'Report: Transforming the American digital experience'
+          layout: 'next-content'
+          chapter: false
+          hero_color: 'next-gray-dark'
+    - scope:
+          path: ''
+          type: together
+      values:
+          report_title: 'Inclusive Design Patterns'
+          layout: 'together-content'
+          chapter: false
+          hero_color: 'next-gray-dark'
+    - scope:
+          path: ''
+          type: security_updates
+      values:
+          layout: styleguide
 
 plugins:
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-include-cache
-  - jekyll-seo-tag
+    - jekyll-redirect-from
+    - jekyll-sitemap
+    - jekyll-include-cache
+    - jekyll-seo-tag
+    - jekyll-feed
+
+feed:
+    path: rss.xml
+    format: 'rss'
 
 exclude:
-  - ".ruby-version"
-  - ".sass-cache"
-  - CONTRIBUTING.md
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
-  - config
-  - js
-  - vendor
-  - manifest.yml
-  - node_modules
-  - package.json
-  - gulpfile.js
-  - circle.yml
-  - css
-  - pa11y-results.json
+    - '.ruby-version'
+    - '.sass-cache'
+    - CONTRIBUTING.md
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE.md
+    - README.md
+    - config
+    - js
+    - vendor
+    - manifest.yml
+    - node_modules
+    - package.json
+    - gulpfile.js
+    - circle.yml
+    - css
+    - pa11y-results.json
 
 # Jekyll SEO tag
 twitter:
-  username: USWDS
-  card: summary_large_image
+    username: USWDS
+    card: summary_large_image
 
 env: dev

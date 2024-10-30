@@ -1,7 +1,8 @@
 ---
-title: News and updates
+title: All news and updates
 layout: post
-permalink: /about/whats-new/updates/
+permalink: /about/whats-new/all-news/
+lead: Here you can find the latest news and information about USWDS. Learn more about our product development and process, dive deeper into our Monthly Call topics, and see how we work with our partners to impact the government technology space.
 category: About
 subnav:
   type: posts

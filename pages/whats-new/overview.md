@@ -67,4 +67,4 @@ changelog:
 
 ---
 
-<a class="usa-button margin-top-2" href="">View all USWDS news and updates</a>
+<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all-news/">View all USWDS news and updates</a>

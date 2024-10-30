@@ -19,9 +19,9 @@ redirect_from:
   - /whats-new/releases
 subnav:
   - text: All news and updates
-    href: /whats-new/updates/
+    href: /about/whats-new/updates/
   - text: Changelogs
-    href: /whats-new/changelogs/
+    href: /about/whats-new/changelogs/
 changelog:
   key: about-whats-new
 ---
@@ -67,4 +67,4 @@ changelog:
 
 ---
 
-<a class="usa-button margin-top-3" href="">View all USWDS news and updates</a>
+<a class="usa-button margin-top-2" href="">View all USWDS news and updates</a>

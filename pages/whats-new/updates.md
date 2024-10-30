@@ -1,7 +1,7 @@
 ---
 title: News and updates
 layout: post
-permalink: /whats-new/updates/
+permalink: /about/whats-new/updates/
 category: About
 subnav:
   type: posts

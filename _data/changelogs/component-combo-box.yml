@@ -2,6 +2,14 @@ title: Combo box
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated combo box result filtering.
+    summaryAdditional:  Now, search results are sorted by options that start with the query, followed by options that contain the query.
+    isBreaking: false
+    affectsJavascript: true
+    githubPr: 6122
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-10-04
     summary: Removed custom screen reader instructions.
     summaryAdditional: Combo box now relies on the default instructions provided by screen readers.

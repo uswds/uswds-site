@@ -5,8 +5,6 @@ permalink: /about/whats-new/all-news/
 category: About
 subnav:
   type: posts
-redirect_from:
-  - /about/updates/
 ---
 {% capture lead %}
 Here's the full listing of all USWDS product updates, articles, case studies and more.

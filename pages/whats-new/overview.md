@@ -17,6 +17,7 @@ redirect_from:
   - /about-our-work/releases
   - /whats-new/
   - /whats-new/releases
+  - /about/updates/
 subnav:
   - text: All news and updates
     href: /about/whats-new/all-news/

@@ -1,6 +1,7 @@
 title: File input
 type: component
 changelogURL:
+items:
   - date: NNNN-NN-NN
     summary: Fixed a bug that caused file input to not properly read error messages incorrect file is uploaded. 
     summaryAdditional: Now, screen readers will consistently read out the invalid file state.

@@ -3,9 +3,10 @@ videos:
     subtitle: What we've learned from other design systems
     description: |
      At the September 2024 monthly call, UX Researcher (USWDS contractor) Jacline Contrino shared results of the team’s recent landscape analysis of Web Components–based design systems. The research focused on four core areas of current design systems and areas for development: documentation, code structure, code size and performance, and distribution.
+     
      USWDS Product Lead Dan Williams and USWDS Engineering Lead Matt Henry expanded on the research to discuss how USWDS currently fits into that landscape and how the design system is positioned for future innovations. The research findings will be foundational to developing engineering principles that will guide the team’s future decision-making about web components and the design system overall. 
     date: September 2024
-    id: 
+    id: E826mR1B6_Y
     event_link: https://digital.gov/event/2024/09/19/uswds-monthly-call-september-2024/
     slides:
      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-september-2024.pptx

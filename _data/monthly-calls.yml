@@ -1,5 +1,5 @@
 videos:
-  - title: September 2024: The landscape of Web Components
+  - title: The landscape of Web Components
     subtitle: What we've learned from other design systems
     description: |
      At the September 2024 monthly call, UX Researcher (USWDS contractor) Jacline Contrino shared results of the team’s recent landscape analysis of Web Components–based design systems. The research focused on four core areas of current design systems and areas for development: documentation, code structure, code size and performance, and distribution.

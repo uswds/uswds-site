@@ -42,10 +42,10 @@ changelog:
   <li class="usa-card site-component-card desktop:grid-col-6">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h2 class="usa-card__heading font-lang-lg">GitHub Discussions</h2>
+        <h2 class="usa-card__heading font-lang-lg">GitHub discussions</h2>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>See how our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS.</p>
+        <p>How our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS.</p>
       </div>
       <div class="usa-card__footer">
         <a class="usa-button" href="https://github.com/uswds/uswds/discussions">USWDS GitHub discussions</a>

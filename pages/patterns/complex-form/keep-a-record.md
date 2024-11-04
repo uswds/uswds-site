@@ -90,7 +90,7 @@ Provide the user with a printable record of their answers using a print style sh
 
 
 {:.usa-content-list}
-- **Test print outputs.** Test printing using a variety of printers, print-to-PDF options, and assistive output devices, using using representative browser and operating system combinations [based on your site's visitor data](https://digital.gov/guides/dap/make-data-informed-decisions/#content-start) prior to launch. Remember that mobile device users will have additional challenges printing or saving to PDF so some on-screen guidance may be necessary.
+- **Test print outputs.** Test printing using a variety of printers, print-to-PDF options, and assistive output devices, using representative browser and operating system combinations [based on your site's visitor data](https://digital.gov/guides/dap/make-data-informed-decisions/#content-start) prior to launch. Remember that mobile device users will have additional challenges printing or saving to PDF so some on-screen guidance may be necessary.
 
 #### Optimize for print
 

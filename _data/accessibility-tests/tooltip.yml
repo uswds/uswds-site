@@ -82,7 +82,7 @@ test_items:
     summary_additional: |
       When you focus on the tooltip trigger,
       the screen reader announces the tooltip content.
-    test_status: fail
+    test_status: pass
     test_type: screen_reader
     version_tested: 3.8.0
     wcag_criterion: 1.3.1

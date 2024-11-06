@@ -2,6 +2,19 @@ title: Combo box
 type: component
 changelogURL:
 items:
+  - date: 2024-10-04
+    summary: Removed custom screen reader instructions.
+    summaryAdditional: Combo box now relies on the default instructions provided by screen readers.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 6022
+    githubRepo: uswds
+    versionUswds: 3.9.0
+  - date: 2024-09-18
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2811
+    githubRepo: uswds-site
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

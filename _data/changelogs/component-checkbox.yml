@@ -2,6 +2,11 @@ title: Checkbox
 type: component
 changelogURL:
 items:
+  - date: 2024-09-18
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2803
+    githubRepo: uswds-site
   - date: 2024-04-26
     summary: Added indeterminate styles for checkboxes.
     summaryAdditional: Checkboxes will now display as indeterminate when you set `input.indeterminate = true` via JavaScript or add the `data-indeterminate` attribute. This is currently only a style addition and does not affect checkbox functionality.

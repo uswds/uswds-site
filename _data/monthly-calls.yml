@@ -1,4 +1,42 @@
 videos:
+  - title: Engineering values
+    subtitle:
+    description: |
+     The October monthly call centered on U.S. Web Design System (USWDS) product and engineering values. To frame the discussion, USWDS Experience Design Lead Anne Petersen examined how the design system’s product and design principles have evolved over the nine year history of USWDS. USWDS Product Lead Dan Williams and USWDS Engineering Lead Matt Henry then presented a set of new product and engineering values and discussed how they will guide decision-making about USWDS Web Components and the broader development of the design system.
+    date: October 2024
+    id: 
+    event_link: https://digital.gov/event/2024/10/17/uswds-monthly-call-october-2024/
+    slides:
+     link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-october-2024.pptx
+     size: 2.5
+     pages: 109
+    questions_link:
+  - title: The landscape of Web Components
+    subtitle: What we've learned from other design systems
+    description: |
+     At the September 2024 monthly call, UX Researcher (USWDS contractor) Jacline Contrino shared results of the team’s recent landscape analysis of Web Components–based design systems. The research focused on four core areas of current design systems and areas for development: documentation, code structure, code size and performance, and distribution.
+     
+     USWDS Product Lead Dan Williams and USWDS Engineering Lead Matt Henry expanded on the research to discuss how USWDS currently fits into that landscape and how the design system is positioned for future innovations. The research findings will be foundational to developing engineering principles that will guide the team’s future decision-making about USWDS Web Components and the design system overall. 
+    date: September 2024
+    id: E826mR1B6_Y
+    event_link: https://digital.gov/event/2024/09/19/uswds-monthly-call-september-2024/
+    slides:
+     link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-september-2024.pptx
+     size: 6.7
+     pages: 75
+    questions_link: https://github.com/uswds/uswds/discussions/6106
+  - title: A look at beta Web Components
+    subtitle: Progress toward the next version of USWDS
+    description: |
+     At the August 2024 monthly call, USWDS Experience Design Lead Anne Petersen answered community-submitted questions including an update on the submission and review process for component proposals. USWDS Product Lead Dan Williams shared updates on new and upcoming releases and demoed a preview of our new USWDS Figma Design Kit. USWDS Engineering Lead Matt Henry and USWDS contractor developer Amy Leadem also demoed early working prototypes of a few components.
+    date: August 2024
+    id: duomgOmMwro
+    event_link: https://digital.gov/event/2024/08/15/uswds-monthly-call-august-2024/
+    slides:
+     link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-august-2024.pptx
+     size: 3.6
+     pages: 48
+    questions_link: https://github.com/uswds/uswds/discussions/6060
   - title: A first look at U.S. Web Design System Web Components
     subtitle: See new Web Components in action
     description: |

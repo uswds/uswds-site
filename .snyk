@@ -3522,9 +3522,9 @@ ignore:
         created: 2023-10-11T19:28:02.917Z
   SNYK-JS-INFLIGHT-6095116:
     - '*':
-        reason: None Given
-        expires: 2024-11-30T19:48:24.446Z
-        created: 2024-10-31T19:48:24.479Z
+        reason: Fix requires ESM syntax in uswds-compile
+        expires: 2024-11-30T14:44:47.825Z
+        created: 2024-10-31T14:44:47.866Z
   SNYK-JS-BRACES-6838727:
     - '*':
         reason: No available upgrade or patch

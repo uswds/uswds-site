@@ -2,7 +2,7 @@ title: Modal
 type: component
 changelogURL:
 items:
-- date: 2024-10-22
+- date: 2024-11-6
   summary: Added focus trap guidance.
   summaryAdditional: Updated guidance to ensure users trap focus inside the modal so that it doesn't move to the content behind it.
   isBreaking: false

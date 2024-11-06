@@ -4,7 +4,6 @@ layout: styleguide
 type: utility
 title: Layout grid
 category: Utilities
-type: docs
 lead: Use our flexible grid system to structure website content. The grid is mobile-first, powered by flexbox, and based on a 12-column system.
 redirect_from:
   - /components/grids/
@@ -14,8 +13,6 @@ redirect_from:
 subnav:
 - text: How it works
   href: '#how-it-works'
-- text: Responsive variants
-  href: '#responsive-variants'
 - text: Auto layout columns
   href: '#auto-layout-columns'
 - text: Responsive classes
@@ -26,10 +23,15 @@ subnav:
   href: '#column-wrapping'
 - text: Gutters
   href: '#gutters'
-- text: Sass mixins
-  href: '#sass-mixins'
+- text: Theme settings
+  href: '#theme-settings'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 - text: Latest updates
   href: '#changelog'
+
 changelog:
   key: utilities-layout-grid
 ---
@@ -51,8 +53,8 @@ changelog:
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-  <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
-  <div id="code-sticky" class="usa-accordion__content">
+  <button type="button" class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
+  <div id="code-sticky" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-1 | strip }}
@@ -80,156 +82,7 @@ The following sections break the layout grid down and describe how it works.
 - **Equal-width columns:** With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `grid-col` will display as one-quarter-width columns across all sizes. Refer to the [auto-layout columns](#auto-layout-columns) section for more examples.
 - **Gutters:** Rows and columns don't have any gutters by default, but gutters can be added by including `grid-gap-sm`, `grid-gap`, or `grid-gap-lg` at the row level. Refer to [gutters](#gutters) for more info.
 - **Media queries:** Grid breakpoints are based on minimum-width media queries, meaning they apply to that specific width and all greater widths (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices but not at `mobile-lg` or any width below the tablet breakpoint). Refer to [responsive variants](#responsive-variants) for a full list.
-- **Sass mixins:** You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
-
-
-<h2 id="responsive-variants">Responsive variants</h2>
-
-<div>
-  <table class="usa-table--borderless site-table-responsive site-table-simple">
-    <caption>Default responsive sizes</caption>
-    <thead>
-      <tr>
-        <th scope="col" class="flex-2">Width</th>
-        <th scope="col" class="display-inline-flex">Size</th>
-        <th scope="col" class="flex-3">Utility class</th>
-        <th scope="col" class="display-inline-flex">Columns</th>
-        <th scope="col" class="display-inline-flex">Gutters</th>
-        <th scope="col" class="display-inline-flex">Nestable</th>
-      </tr>
-    </thead>
-    <tbody class="font-mono-2xs">
-      <tr>
-        <th scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs">
-            Smallest
-          </span>
-        </th>
-        <td data-title="Size">
-          <span>
-            ≥0px
-          </span>
-        </td>
-        <td data-title="Utility class" class="flex-3">
-          <span>
-            .grid-col
-          </span>
-        </td>
-        <td data-title="Columns">
-          <span>
-            12
-          </span>
-        </td>
-        <td data-title="Gutters">
-          <span>
-            0
-          </span>
-        </td>
-        <td data-title="Nestable">
-          <span>
-            Yes
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs">
-            Mobile large
-          </span>
-        </th>
-        <td data-title="Size">
-          <span>
-            ≥480px
-          </span>
-        </td>
-        <td data-title="Utility class" class="flex-3">
-          <span>
-            <span class="text-secondary bg-white">.mobile-lg:</span>grid-col
-          </span>
-        </td>
-        <td data-title="Columns">
-          <span>
-            12
-          </span>
-        </td>
-        <td data-title="Gutters">
-          <span>
-            0
-          </span>
-        </td>
-        <td data-title="Nestable">
-          <span>
-            Yes
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs">
-            Tablet
-          </span>
-        </th>
-        <td data-title="Size">
-          <span>
-            ≥640px
-          </span>
-        </td>
-        <td data-title="Utility class" class="flex-3">
-          <span>
-            <span class="text-secondary bg-white">.tablet:</span>grid-col
-          </span>
-        </td>
-        <td data-title="Columns">
-          <span>
-            12
-          </span>
-        </td>
-        <td data-title="Gutters">
-          <span>
-            0
-          </span>
-        </td>
-        <td data-title="Nestable">
-          <span>
-            Yes
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs">
-            Desktop
-          </span>
-        </th>
-        <td data-title="Size">
-          <span>
-            ≥1024px
-          </span>
-        </td>
-        <td data-title="Utility class" class="flex-3">
-          <span>
-            <span class="text-secondary bg-white">.desktop:</span>grid-col
-          </span>
-        </td>
-        <td data-title="Columns">
-          <span>
-            12
-          </span>
-        </td>
-        <td data-title="Gutters">
-          <span>
-            0
-          </span>
-        </td>
-        <td data-title="Nestable">
-          <span>
-            Yes
-          </span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+- **Sass mixins:** You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass utility mixins](#utility-mixins) for more semantic markup.
 
 <h2 id="auto-layout-columns">Auto layout columns</h2>
 <h3>Variable-width content</h3>
@@ -242,8 +95,8 @@ The following sections break the layout grid down and describe how it works.
 <div class="grid-container">
   <div class="grid-row">
     <div class="grid-col-auto">.grid-col-auto</div>
-    <div class="grid-col-fill">.grid-col</div>
-    <div class="grid-col-fill">.grid-col</div>
+    <div class="grid-col">.grid-col</div>
+    <div class="grid-col-fill">.grid-col-fill</div>
     <div class="grid-col-auto">.grid-col-auto</div>
   </div>
 </div>
@@ -252,8 +105,8 @@ The following sections break the layout grid down and describe how it works.
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-  <button class="usa-accordion__button" aria-controls="code-auto" aria-expanded="true">Code</button>
-  <div id="code-auto" class="usa-accordion__content">
+  <button type="button" class="usa-accordion__button" aria-controls="code-auto" aria-expanded="true">Code</button>
+  <div id="code-auto" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-auto | strip }}
@@ -298,8 +151,8 @@ The following sections break the layout grid down and describe how it works.
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-  <button class="usa-accordion__button" aria-controls="code-responsive" aria-expanded="true">Code</button>
-  <div id="code-responsive" class="usa-accordion__content">
+  <button type="button" class="usa-accordion__button" aria-controls="code-responsive" aria-expanded="true">Code</button>
+  <div id="code-responsive" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-responsive | strip }}
@@ -328,8 +181,8 @@ The following sections break the layout grid down and describe how it works.
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-  <button class="usa-accordion__button" aria-controls="code-stacked" aria-expanded="true">Code</button>
-  <div id="code-stacked" class="usa-accordion__content">
+  <button type="button" class="usa-accordion__button" aria-controls="code-stacked" aria-expanded="true">Code</button>
+  <div id="code-stacked" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-stacked | strip }}
@@ -345,28 +198,28 @@ The following sections break the layout grid down and describe how it works.
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="grid-row">
   <div class="tablet:grid-col-8">.tablet:grid-col-8</div>
-  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
 </div>
 
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
 <div class="grid-row">
-  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
-  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
-  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
 </div>
 
 <!-- Columns are always 50% wide, on mobile and desktop -->
 <div class="grid-row">
-  <div class="grid-col-6">.col-6</div>
-  <div class="grid-col-6">.col-6</div>
+  <div class="grid-col-6">.grid-col-6</div>
+  <div class="grid-col-6">.grid-col-6</div>
 </div>
 {% endcapture %}
 {{ grid-mix }}
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-  <button class="usa-accordion__button" aria-controls="code-mix" aria-expanded="true">Code</button>
-  <div id="code-mix" class="usa-accordion__content">
+  <button type="button" class="usa-accordion__button" aria-controls="code-mix" aria-expanded="true">Code</button>
+  <div id="code-mix" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-mix | strip }}
@@ -389,8 +242,8 @@ The following sections break the layout grid down and describe how it works.
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-  <button class="usa-accordion__button" aria-controls="code-offsets" aria-expanded="true">Code</button>
-  <div id="code-offsets" class="usa-accordion__content">
+  <button type="button" class="usa-accordion__button" aria-controls="code-offsets" aria-expanded="true">Code</button>
+  <div id="code-offsets" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-offsets | strip }}
@@ -415,8 +268,8 @@ The following sections break the layout grid down and describe how it works.
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-  <button class="usa-accordion__button" aria-controls="code-wrapping" aria-expanded="true">Code</button>
-  <div id="code-wrapping" class="usa-accordion__content">
+  <button type="button" class="usa-accordion__button" aria-controls="code-wrapping" aria-expanded="true">Code</button>
+  <div id="code-wrapping" class="usa-accordion__content copy-code">
 <div markdown="1">
 {% highlight html %}
 {{ grid-wrapping | strip }}
@@ -449,8 +302,8 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-  <button class="usa-accordion__button" aria-controls="code-gutters" aria-expanded="true">Code</button>
-  <div id="code-gutters" class="usa-accordion__content">
+  <button type="button" class="usa-accordion__button" aria-controls="code-gutters" aria-expanded="true">Code</button>
+  <div id="code-gutters" class="usa-accordion__content copy-code">
 
 {% highlight html %}
 {{ grid-gutters | strip }}
@@ -494,8 +347,8 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-  <button class="usa-accordion__button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
-  <div id="code-gutters-lg" class="usa-accordion__content">
+  <button type="button" class="usa-accordion__button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
+  <div id="code-gutters-lg" class="usa-accordion__content copy-code">
 
 {% highlight html %}
 {{ grid-gutters-lg | strip }}
@@ -504,116 +357,124 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
   </div>
 </div>
 
-<h2 id="sass-mixins">Sass mixins</h2>
-When generating your CSS from USWDS source files, you have the option of customizing many system defaults by modifying project theme variables. USWDS also provides grid mixins for adding grid functionality to custom semantic component CSS.
+## Theme settings
+You can redefine column gap token sizes, set the grid container max width, and update site margin by defining the relevant theme setting in your [USWDS settings configuration]({{ site.baseurl }}/documentation/settings#configuring-custom-uswds-settings).
 
-### Variables
-Variables and maps determine the number of columns, gutter width, and media-query point at which to begin floating columns. We use variables to generate the predefined grid classes documented on this page, as well as for the custom mixins noted under [Spacing settings](#spacing-settings) and [Utilities settings](#utilities-settings).
+Find a full list of the available [grid settings]({{ site.baseurl }}/documentation/settings#spacing-settings) on the settings page.
 
-#### Spacing settings
+<section id="utility-mixins" class="padding-top-4">
+  <h2 class="site-h2 margin-y-0">Utility mixins</h2>
+  {% include utilities/utility-mixin-intro.html %}
 
-{% highlight scss %}
-// Values are set as units tokens.
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Utility</th>
+        <th scope="col" class="display-inline-flex">Mixin</th>
+        <th scope="col" class="display-inline-flex">Accepted values</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td data-title="Utility" class="tablet:maxw-card-lg">
+          <span>
+            .grid-container <br />
+            .grid-container-<code>container size</code>
+          </span>
+        </td>
+        <td data-title="Example" class="display-inline-flex">
+          <span>
+            @include grid-container; <br/>
+            @include grid-container("tablet");
+          </span>
+        </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            card, card-lg, mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex">
+          <span class="text-normal">
+            .grid-row
+          </span>
+        </th>
+        <td data-title="Example" class="display-inline-flex">
+          <span>
+            @include grid-row;
+          </span>
+        </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            -
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex">
+          <span class="text-normal">
+            .grid-col <br />
+            .grid-col-<code>column count</code>
+          </span>
+        </th>
+        <td data-title="Example" class="display-inline-flex">
+          <span>
+            @include grid-col; <br/>
+            @include grid-col(6); <br/>
+            @include grid-col("auto");
+          </span>
+        </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            auto, fill, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex">
+          <span class="text-normal">
+            .grid-gap <br />
+            .grid-gap-<code>gap size</code>
+          </span>
+        </th>
+        <td data-title="Example" class="display-inline-flex">
+          <span>
+            @include grid-gap; <br />
+            @include grid-gap("lg");
+          </span>
+        </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            sm, md, lg, 0, 2px, 05, 1, 2, 3, 4, 5, 6
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg display-inline-flex">
+          <span class="text-normal">
+            .grid-offset-<code>column count</code>
+          </span>
+        </th>
+        <td data-title="Example" class="display-inline-flex">
+          <span>
+            @include grid-offset(4);
+          </span>
+        </td>
+        <td data-title="Accepted values" class="display-inline-flex">
+          <span>
+            none, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  {% include utilities/utility-mixin-using.html %}
+</section>  
 
-$theme-column-gap-sm:               2px;
-$theme-column-gap-md:               2;
-$theme-column-gap-lg:               3;
-$theme-column-gap-mobile:           2;
-$theme-column-gap-desktop:          4;
-$theme-grid-container-max-width:    'desktop';
-$theme-site-margins-breakpoint:     'desktop';
-$theme-site-margins-width:          4;
-$theme-site-margins-mobile-width:   2;
-{% endhighlight %}
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
-#### Utilities settings
+  {% include utilities/responsive-variants.html %}
 
-{% highlight scss %}
-// Turn on or off breakpoints
-$theme-utility-breakpoints: (
-  'card':              false,   // 160px
-  'card-lg':           false,   // 240px
-  'mobile':            false,   // 320px
-  'mobile-lg':         true,    // 480px
-  'tablet':            true,    // 640px
-  'tablet-lg':         false,   // 880px
-  'desktop':           true,    // 1024px
-  'desktop-lg':        false,   // 1200px
-  'widescreen':        false,   // 1400px
-);
-{% endhighlight %}
-
-### Mixins
-Mixins can be used in conjunction with grid variables to add grid functionality to semantic component Sass.
-
-{% highlight scss %}
-// Creates a wrapper for a series of rows
-// $container-size can be mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
-@include grid-container;
-@include grid-container($container-size);
-
-// Creates a wrapper for a series of columns
-@include grid-row;
-
-// Specify the width between columns
-// $gap-size can be sm, md, lg, 2px, 05, 1, 3, 4, 6
-@include grid-gap;
-@include grid-gap($gap-size);
-
-// Make the element full-width
-@include u-width(full);
-
-// Specify the number of columns the element should span
-// $columns can be auto, fill, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-@include grid-col;
-@include grid-col($columns);
-
-// Get fancy by offsetting or changing the display order
-// $offset can be none, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
-@include grid-offset($offset);
-
-// $order can be first, last, initial, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
-@include u-order($order);
-{% endhighlight %}
-
-### Example usage
-You can modify the variables to your custom values or just use the mixins with their default values. Here’s an example of using the default settings to create a two-column layout with a gap.
-
-{% highlight scss %}
-.example-container {
-  @include grid-container;
-}
-
-.example-row {
-  @include grid-row;
-
-  // Add column gaps
-  &.content-row {
-    @include grid-gap;
-  }
-}
-
-.example-content-main {
-  @include u-width(full);
-
-  @include at-media(tablet) {
-    @include grid-col(6);
-  }
-
-  @include at-media(desktop) {
-    @include grid-col(8);
-  }
-}
-
-.example-content-secondary {
-  @include u-width(full);
-
-  @include at-media(tablet) {
-    @include grid-col(6);
-  }
-
-  @include at-media(desktop) {
-    @include grid-col(4);
-  }
-}
-{% endhighlight %}
+</section>

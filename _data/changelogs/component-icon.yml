@@ -4,14 +4,9 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Removed deprecated xlink references.
-    affectsGuidance:
-    githubPr:
-    githubRepo: uswds
-  - date: NNNN-NN-NN
-    summary: Removed deprecated xlink references.
     summaryAdditional: All xlink:href references have been replaced with href.
     affectsMarkup: true
-    githubPr:
+    githubPr: 2951
     githubRepo: uswds
     versionUswds: 3.9.0
   - date: 2024-06-07

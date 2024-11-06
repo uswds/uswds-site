@@ -5,7 +5,9 @@ var task = "images";
 function copyDocImages() {
   dutil.logMessage(task, "Copying images from img/");
 
-  var stream = gulp.src("./img/**/*").pipe(gulp.dest("assets/img"));
+  var stream = gulp.src("./img/**/*", {
+    encoding: false,
+  }).pipe(gulp.dest("assets/img"));
 
   return stream;
 }

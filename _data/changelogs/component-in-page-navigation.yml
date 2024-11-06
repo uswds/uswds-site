@@ -2,6 +2,11 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
+  - date: 2024-10-16
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2863
+    githubRepo: uswds-site
   - date: 2024-03-26
     summary: Updated outdated references to `data-heading-selector` with `data-heading-elements`.
     summaryAdditional:

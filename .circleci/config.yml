@@ -1,13 +1,13 @@
 version: 2.1
 
 orbs:
-  snyk: snyk/snyk@1.1.2
+  snyk: snyk/snyk@2.2.0
 
 executors:
   my-executor:
     resource_class: large
     docker:
-      - image: cimg/ruby:3.1.2-browsers
+      - image: cimg/ruby:3.2.5-browsers
 
 jobs:
   install_ruby_deps:

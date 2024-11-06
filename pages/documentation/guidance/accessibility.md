@@ -181,7 +181,7 @@ We recommend a mix of automated, semi-automated, and manual testing in addition 
 ### Non-government accessibility resources
 
 - [Web Accessibility Perspectives Videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
-- [Inclusive design principles](https://inclusivedesignprinciples.org/) [inclusivedesignprinciples.org]
+- [Inclusive design principles](https://inclusivedesignprinciples.info/) [inclusivedesignprinciples.info]
 - [Accessibility fundamentals with Rob Dodson](https://www.youtube.com/watch?v=z8xUCzToff8) [youtube.com]
 - [Microsoft’s inclusive design manual](https://www.microsoft.com/design/inclusive/) [microsoft.com]
 - [Inclusive components by Heydon Pickering](https://inclusive-components.design/) [inclusive-components.design]
@@ -195,7 +195,7 @@ We recommend a mix of automated, semi-automated, and manual testing in addition 
 - **Learn about assistive technology.** Get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
 - **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [WCAG 2.0](https://www.w3.org/TR/WCAG20/).
 - **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
-- **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.org/) mentality.
+- **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.info/) mentality.
 - **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
 - **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.
 - **Build accessible designs.** Ensure that designs are accessible, pages are laid out in a logical order, and content meets color contrast requirements.

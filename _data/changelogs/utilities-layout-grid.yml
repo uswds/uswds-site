@@ -2,7 +2,7 @@ title: Layout grid utility
 type: utility
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-11-06
     summary: Refactored guidance page.
     summaryAdditional: Improved layout for easier scanning and consistency across other utility pages.
     affectsGuidance: true

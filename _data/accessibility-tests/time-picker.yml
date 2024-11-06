@@ -53,18 +53,18 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 3.2.1
 # Screen reader tests
-  - summary: Screen reader announces elements to match visual order on screen.
-    summary_additional: When you use a screen reader to tab into the time picker, elements are announced in the same order that they appear on the page.
-    test_status: pass
-    test_type: screen_reader
-    version_tested: 3.8.1
-    wcag_criterion: 1.3.2
   - summary: Screen reader announces all instructions.
     summary_additional: When you use a screen reader and navigate through a time picker, you hear every instruction for how to select a time and for any options available.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.2
     wcag_criterion: 1.3.1
+  - summary: Screen reader announces elements to match visual order on screen.
+    summary_additional: When you use a screen reader to tab into the time picker, elements are announced in the same order that they appear on the page.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.1
+    wcag_criterion: 1.3.2
   - summary: Screen reader announces time picker component and time selection status.
     summary_additional: When you use a screen reader with the time picker combo box, you hear the element labels, the role and the state. If there is a time already selected, you hear the selection.
     test_status: pass

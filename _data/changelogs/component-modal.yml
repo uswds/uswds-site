@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
 - date: NNNN-NN-NN
-  summary: Updated JavaScript so that the PREFIX constant is used in all instances.
-  summaryAdditional: This fixed a bug whereby the modal component could not be packaged with a custom prefix.
+  summary: Fixed a bug that prevented bundling the modal package with a custom prefix. 
+  summaryAdditional: This update removed hard-coded class names from the modal JavaScript.
   isBreaking: false
   affectsJavascript: true
   githubPr: 6026

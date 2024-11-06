@@ -2,6 +2,19 @@ title: Character count
 type: component
 changelogURL:
 items:
+  - date: 2024-10-04
+    summary: Enhanced visual cue when `maxlength` is exceeded.
+    summaryAdditional:  Now, the component uses standard USWDS error styles to visually enhance the error state.
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 5908
+    githubRepo: uswds
+    versionUswds: 3.9.0
+  - date: 2024-05-15
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2607
+    githubRepo: uswds-site
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

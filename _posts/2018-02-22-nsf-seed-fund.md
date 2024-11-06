@@ -6,6 +6,7 @@ tags:
 - design
 category: About
 excerpt: For our 11th post in the series, we talked with Scott Weber, front-end developer, who worked on America’s Seed Fund site for the National Science Foundation (NSF). The site was created for people who want to get federal grant funding for their science or technology projects.
+expiration_date: 2024-04-15
 ---
 
 The [U.S. Web Design System](https://designsystem.digital.gov/) was created by the government, for the government. They’re currently implemented on hundreds of government sites, with an audience of more than 59 million monthly users.

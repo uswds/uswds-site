@@ -10,16 +10,8 @@ permalink: /components/list/
 redirect_from:
 - /typography/03-lists/
 subnav:
-  - text: Preview
-    href: '#list-preview'
-  - text: Code
-    href: '#list-code'
-  - text: Guidance
-    href: '#list-guidance'
-  - text: Package
-    href: '#list-package'
-  - text: Latest updates
-    href: '#changelog'
+- text: List accessibility tests
+  href: /components/list/accessibility-tests/
 title: List
 type: component
 variants:

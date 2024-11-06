@@ -2,6 +2,26 @@ title: Footer
 type: component
 changelogURL:
 items:
+  - date: 2024-10-04
+    summary: Added the `autocomplete="email"` attribute to the email input element.
+    summaryAdditional: This allows the component to meet all the standards outlined in [WCAG 1.3.5](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html).
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 6002
+    githubRepo: uswds
+    versionUswds: 3.9.0
+  - date: 2024-08-13
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2760
+    githubRepo: uswds-site
+  - date: 2024-05-31
+    summary: Restored the `usa-layout-grid` dependency in the footer package and removed layout grid styles from the footer stylesheet.
+    summaryAdditional:  This update prevents visual regressions in footer and other components with layout grid utility classes in their markup.
+    affectsStyles: true
+    githubPr: 5930
+    githubRepo: uswds
+    versionUswds: 3.8.1
   - date: 2024-03-11
     summary: Fixed a bug that caused some grid utility classes to be ignored when used inside `usa-footer`.
     summaryAdditional:

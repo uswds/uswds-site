@@ -2,6 +2,22 @@ title: Header
 type: component
 changelogURL:
 items:
+  - date: 2024-10-04
+    summary: Removed the CSS order property from mobile header navigation.
+    summaryAdditional: |
+      Now, the visual order of the component matches the tab order.
+      This is marked as a breaking change, but you only need to change your project code if you want to keep the search bar at the top of the menu.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsStyles: true
+    githubRepo: uswds
+    githubPr: 6037
+    versionUswds: 3.9.0
+  - date: 2024-08-13
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 2761
+    githubRepo: uswds-site
   - date: 2023-12-08
     summary: Fixed a bug that caused long button text to overflow into its padding.
     summaryAdditional: Now, button text breaks to multiple lines as expected and maintains vertical center alignment.

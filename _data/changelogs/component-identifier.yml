@@ -8,6 +8,26 @@ items:
     affectsGuidance: true
     githubPr: 2591
     githubRepo: uswds-site
+  - date: 2024-10-04
+    summary: Updated the USA.gov link in Spanish versions of the identifier.
+    summaryAdditional: The link text now reads "Visite USAGov en Español" and the link url is now "https://www.usa.gov/es/".
+    affectsContent: true
+    githubPr: 5892
+    githubRepo: uswds
+    versionUswds: 3.9.0
+  - date: 2024-08-13
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2754
+    githubRepo: uswds-site
+  - date: 2024-05-31
+    summary: Fixed a bug that mistakenly added the English word "An" to Spanish variants in the component preview.
+    summaryAdditional:
+    affectsGuidance: true
+    affectsContent: true
+    githubPr: 5857
+    githubRepo: uswds
+    versionUswds: 3.8.1
   - date: 2023-11-09
     summary: Updated the screen reader readout in English versions of the component.
     summaryAdditional: When read out on a screen reader, the statement "An official website of [Agency name]" can sound like "UNofficial website of [Agency name]". Users should update their markup to improve the screen reader experience.

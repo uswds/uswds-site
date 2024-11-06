@@ -2,8 +2,47 @@ title: Monthly calls
 type: documentation
 changelogURL:
 items:
+  - date: 2024-11-04
+    summary: Added September and October 2024 monthly calls.
+    githubPr: 2934
+    githubRepo: uswds-site
+  - date: 2024-10-23
+    summary: Added video for August 2024 monthly call.
+    githubPr: 2873
+    githubRepo: uswds-site
+  - date: 2024-09-16
+    summary: Added August 2024 monthly call.
+    githubPr: 2827
+    githubRepo: uswds-site
+  - date: 2024-07-26
+    summary: Added June 2024 monthly call.
+    githubPr: 2747
+    githubRepo: uswds-site
+  - date: 2024-06-14
+    summary: Added May 2024 monthly call.
+    githubPr: 2708
+    githubRepo: uswds-site
+  - date: 2024-05-15
+    summary: Added April 2024 monthly call.
+    githubPr: 2671
+    githubRepo: uswds-site
+  - date: 2024-04-26
+    summary: Added March 2024 monthly call.
+    githubPr: 2631
+    githubRepo: uswds-site
+  - date: 2024-04-26
+    summary: Added February 2024 monthly call.
+    githubPr: 2576
+    githubRepo: uswds-site
+  - date: 2024-02-09
+    summary: Added January 2024 monthly call.
+    githubPr: 2465
+    githubRepo: uswds-site
+  - date: 2023-12-11
+    summary: Added November 2023 monthly call.
+    githubPr: 2393
+    githubRepo: uswds-site
   - date: 2023-11-06
     summary: Added monthly calls page.
-    affectsGuidance: true
     githubPr: 2345
     githubRepo: uswds-site

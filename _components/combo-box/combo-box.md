@@ -35,16 +35,8 @@ permalink: /components/combo-box/
 redirect_from:
   - /form-controls/03-combo-box/
 subnav:
-- text: Preview
-  href: '#combo-box-preview'
-- text: Code
-  href: '#combo-box-code'
-- text: Guidance
-  href: '#combo-box-guidance'
-- text: Package
-  href: '#combo-box-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Combo box accessibility tests
+  href: /components/combo-box/accessibility-tests/
 tags:
   - form
   - forms

@@ -23,7 +23,7 @@
 
     Example: [https://www.gsaig.gov](https://www.gsaig.gov)
 
-  - **[Performance reports](http://digital.gov/resources/required-web-content-and-links#budget-and-performance-reports):** Link to a “Budget and Performance” page that includes the agency’s strategic plan among other financial and performance documentation.
+  - **[Performance reports](http://digital.gov/resources/required-web-content-and-links#budget-and-performance-reports):** Link to a “Budget and Performance” page that includes the parent agency’s strategic plan among other financial and performance documentation.
 
     Example: [https://www.gsa.gov/reference/reports/budget-performance](https://www.gsa.gov/reference/reports/budget-performance)
 

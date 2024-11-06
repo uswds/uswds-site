@@ -2707,8 +2707,8 @@ ignore:
         expires: '2022-01-27T21:29:25.295Z'
     - '*':
         reason: No available upgrade or patch
-        expires: 2024-07-13T20:15:21.547Z
-        created: 2024-06-13T20:15:21.582Z
+        expires: 2024-09-21T17:52:30.448Z
+        created: 2024-08-22T17:52:30.489Z
   SNYK-JS-AXIOS-1579269:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -3498,8 +3498,8 @@ ignore:
   SNYK-JS-UNSETVALUE-2400660:
     - '*':
         reason: No available upgrade or patch
-        expires: 2024-07-13T20:15:18.231Z
-        created: 2024-06-13T20:15:18.259Z
+        expires: 2024-09-21T17:53:23.888Z
+        created: 2024-08-22T17:53:23.925Z
   SNYK-JS-DECODEURICOMPONENT-3149970:
     - '*':
         reason: No available upgrade or patch
@@ -3522,19 +3522,19 @@ ignore:
         created: 2023-10-11T19:28:02.917Z
   SNYK-JS-INFLIGHT-6095116:
     - '*':
-        reason: No available upgrade or patch
-        expires: 2024-07-13T20:15:24.634Z
-        created: 2024-06-13T20:15:24.673Z
+        reason: Fix requires ESM syntax in uswds-compile
+        expires: 2024-11-30T14:44:47.825Z
+        created: 2024-10-31T14:44:47.866Z
   SNYK-JS-BRACES-6838727:
     - '*':
         reason: No available upgrade or patch
-        expires: 2024-07-13T20:15:07.415Z
-        created: 2024-06-13T20:15:07.454Z
+        expires: 2024-09-21T17:52:52.884Z
+        created: 2024-08-22T17:52:52.930Z
   SNYK-JS-MICROMATCH-6838728:
     - '*':
         reason: No available upgrade or patch
-        expires: 2024-07-13T20:15:10.249Z
-        created: 2024-06-13T20:15:10.286Z
+        expires: 2024-09-21T17:53:15.173Z
+        created: 2024-08-22T17:53:15.213Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

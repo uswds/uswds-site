@@ -2,12 +2,21 @@ title: Memorable date
 type: component
 changelogURL:
 items:
-- date: NNNN-NN-NN
+- date: 2024-11-06
   summary: Added known issues section.
   summaryAdditional:
   affectsGuidance: true
   githubPr: 2716
   githubRepo: uswds-site
+- date: 2024-10-04
+  summary: Removed numeric representation of months from the `select` element.
+  summaryAdditional: Recent usability testing indicated that having both numbers and names to represent months was confusing for screen reader users.
+  affectsAccessibility: true
+  affectsContent: true
+  affectsMarkup: true
+  githubRepo: uswds
+  githubPr: 6028
+  versionUswds: 3.9.0
 - date: 2023-08-23
   summary: Updated styles to allow the component to wrap to multiple lines at narrow widths.
   summaryAdditional:

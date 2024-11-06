@@ -2,6 +2,18 @@ title: Identifier
 type: component
 changelogURL:
 items:
+  - date: 2024-10-04
+    summary: Updated the USA.gov link in Spanish versions of the identifier.
+    summaryAdditional: The link text now reads "Visite USAGov en Español" and the link url is now "https://www.usa.gov/es/".
+    affectsContent: true
+    githubPr: 5892
+    githubRepo: uswds
+    versionUswds: 3.9.0
+  - date: 2024-08-13
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2754
+    githubRepo: uswds-site
   - date: 2024-05-31
     summary: Fixed a bug that mistakenly added the English word "An" to Spanish variants in the component preview.
     summaryAdditional:

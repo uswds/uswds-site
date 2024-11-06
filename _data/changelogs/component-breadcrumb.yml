@@ -2,6 +2,11 @@ title: Breadcrumb
 type: component
 changelogURL:
 items:
+  - date: 2024-10-16
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2853
+    githubRepo: uswds-site
   - date: 2023-09-29
     summary: Fixed a bug that prevented text from wrapping to a new line in the `.usa-breadcrumb--wrap` variant.
     affectsStyles: true

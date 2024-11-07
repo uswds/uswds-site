@@ -1,16 +1,15 @@
 ---
-title: News and updates
+title: All news and updates
 layout: post
-permalink: /about/updates/
+permalink: /about/whats-new/all-news/
 category: About
 subnav:
   type: posts
-redirect_from:
-  - /whats-new/updates/
+
 ---
+
 {% capture lead %}
-From time to time we post product updates, guidance, and interviews
-we've conducted with USWDS users.
+Here's the full listing of all USWDS product updates, articles, case studies and more.
 {% endcapture %}
 {% include lead.html text=lead %}
 

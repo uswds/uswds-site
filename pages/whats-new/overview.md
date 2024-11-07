@@ -3,7 +3,7 @@ permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
 category: About
-lead: Here you can find the latest news and information about USWDS. Read our latest release notes, learn about our impact in the government, and learn how we conduct user research to continuously improve our product and process.
+lead: Here you can find the latest news and information about USWDS. Learn more about our product development and process, dive deeper into our Monthly Call topics, and see how we work with our partners to impact the government technology space.
 columns:
   - title: New users
     source: New Users
@@ -17,36 +17,53 @@ redirect_from:
   - /about-our-work/releases
   - /whats-new/
   - /whats-new/releases
+  - /about/updates/
 subnav:
-  - text: Latest updates
-    href: '#changelog'
+  - text: All news and updates
+    href: /about/whats-new/all-news/
 changelog:
   key: about-whats-new
 ---
 
-## Release notes
+<ul class="usa-card-group margin-top-6">
+  <li class="usa-card site-component-card desktop:grid-col-6">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading font-lang-lg">Release notes</h2>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Find summaries of each USWDS update on our GitHub releases page. Release notes explain bug fixes, new features, and other changes.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button" href="https://github.com/uswds/uswds/releases">Read the USWDS release notes</a>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card site-component-card desktop:grid-col-6">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading font-lang-lg">GitHub discussions</h2>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>How our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button" href="https://github.com/uswds/uswds/discussions">USWDS GitHub discussions</a>
+      </div>
+    </div>
+  </li>
+</ul>
 
-Find summaries of each USWDS update on our [GitHub releases page](https://github.com/uswds/uswds/releases). Release notes explain bug fixes, new features, and other changes.
+## News and updates
 
-Want to learn about new USWDS releases as they are published? You can sign up to be notified of new USWDS releases by setting up [watch notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository) in the USWDS repository in GitHub.
+{% capture lead %}
+{% endcapture %}
+{% include lead.html text=lead %}
 
-<a href="https://github.com/uswds/uswds/releases" class="usa-button site-button">Read the USWDS release notes</a>
+{% for post in site.posts limit:4%}
+  {% include post.html post=post excerpt=true  %}
+{% endfor %}
 
-## Latest blog posts
+---
 
-You can read more about USWDS in our [News and updates]({{ site.baseurl }}/whats-new/updates/), where we cover the
-latest development releases as well as interviews with the teams from across
-government who have successfully implemented USWDS at their agencies.
-You can read some older posts on the [18F Blog](https://18f.gsa.gov/tags/web-design-system/).
-
-<a href="{{ site.baseurl }}/whats-new/updates/" class="usa-button site-button">Read the latest blog posts</a>
-
-## Design System in the wild
-
-Interested in seeing who else is using USWDS? We
-maintain a list of USWDS-based sites on our [showcase page]({{ site.baseurl }}/documentation/showcase). Feel free to
-[open an issue](https://github.com/uswds/uswds-site/issues/new/choose) using GitHub
-or [email us](mailto:{{ site.uswds_email }}) if you’d like to add your
-project to our list.
-
-<a href="{{ site.baseurl }}/documentation/showcase" class="usa-button site-button">View our showcase list</a>
+<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all-news/">View all USWDS news and updates</a>

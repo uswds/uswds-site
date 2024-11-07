@@ -2,7 +2,7 @@ title: Identifier
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-11-07
     summary: Added clarification on parent agency.
     summaryAdditional: We added guidance to cover cases where a site has no higher-level agency.
     affectsGuidance: true

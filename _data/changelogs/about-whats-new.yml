@@ -2,6 +2,11 @@ title: What's new
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Combined "What's new" and "News and updates" pages.
+    affectsGuidance: true
+    githubPr: 2958
+    githubRepo: uswds-site
   - date: 2024-02-26
     summary: Added release notes section.
     affectsGuidance: true

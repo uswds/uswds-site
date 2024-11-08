@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated combo box result filtering.
-    summaryAdditional:  Now, search results are sorted by options that start with the query, followed by options that contain the query.
+    summary: Updated the order of combo box search results.
+    summaryAdditional:  The component now displays options that start with the query at the top of the list, followed by options that contain the query. This behavior more closely aligns with user expectations.
     isBreaking: false
     affectsJavascript: true
     githubPr: 6122

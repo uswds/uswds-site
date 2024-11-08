@@ -4,6 +4,7 @@ changelogURL:
 items:
 - date: NNNN-NN-NN
   summary: Changed display for radio buttons to inline-block so that label fits its content.
+  summaryAdditional:
   affectsStyles: true
   githubPr: 6192
   githubRepo: uswds-site

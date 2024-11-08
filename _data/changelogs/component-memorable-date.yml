@@ -2,6 +2,12 @@ title: Memorable date
 type: component
 changelogURL:
 items:
+- date: 2024-11-06
+  summary: Added known issues section.
+  summaryAdditional:
+  affectsGuidance: true
+  githubPr: 2716
+  githubRepo: uswds-site
 - date: 2024-10-04
   summary: Removed numeric representation of months from the `select` element.
   summaryAdditional: Recent usability testing indicated that having both numbers and names to represent months was confusing for screen reader users.

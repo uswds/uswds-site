@@ -1,0 +1,7 @@
+title: Memorable date
+alert_type: info
+items:
+  summary: Screen reader users experienced friction understanding formatting requirements for each input.
+  summary_additional:
+  issue_repo: uswds
+  issue_number: 5902

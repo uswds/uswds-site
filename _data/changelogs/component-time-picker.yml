@@ -11,6 +11,12 @@ items:
     githubPr: 6147
     githubRepo: uswds
     versionUswds: N.N.N
+  - date: 2024-11-07
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2921
+    githubRepo: uswds-site
+  # 3.0 release
   - date: 2022-04-28
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true

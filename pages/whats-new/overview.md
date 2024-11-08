@@ -14,9 +14,10 @@ columns:
 redirect_from:
   - /about/releases/
   - /about-our-work/
-  - /about-our-work/releases
+  - /about-our-work/releases/
   - /whats-new/
-  - /whats-new/releases
+  - /whats-new/releases/
+  - /whats-new/updates/
   - /about/updates/
 subnav:
   - text: All news and updates

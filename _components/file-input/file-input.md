@@ -10,16 +10,8 @@ redirect_from:
 - /form-controls/08-file-input/
 type: component
 subnav:
-- text: Preview
-  href: '#file-input-preview'
-- text: Code
-  href: '#file-input-code'
-- text: Guidance
-  href: '#file-input-guidance'
-- text: Package
-  href: '#file-input-package'
-- text: Latest updates
-  href: '#changelog'
+- text: file input accessibility tests
+  href: /components/file-input/accessibility-tests/
 tags:
   - document
   - upload

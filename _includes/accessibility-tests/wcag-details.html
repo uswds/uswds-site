@@ -142,6 +142,11 @@
   {% assign criterion_name = "Target size" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#target-size" %}
 {% endif %}
+{% if item.wcag_criterion == "2.5.7" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Dragging Movements" %}
+  {% assign criterion_url = "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html" %}
+{% endif %}
 {% if item.wcag_criterion == "2.4.8" %}
   {% assign criterion_level = "AAA" %}
   {% assign criterion_name = "Location" %}
@@ -206,4 +211,9 @@
   {% assign criterion_level = "A" %}
   {% assign criterion_name = "Name, role, value" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#name-role-value" %}
+{% endif %}
+{% if item.wcag_criterion == "4.1.3" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Status Message" %}
+  {% assign criterion_url = "https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/#413-status-messages-aa" %}
 {% endif %}

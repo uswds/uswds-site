@@ -13,3 +13,5 @@ gem 'rspec-core'
 gem 'rspec-expectations'
 
 gem "webrick", "~> 1.7"
+
+gem 'jekyll-feed'

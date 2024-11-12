@@ -7,7 +7,7 @@ subnav:
   type: posts
 ---
 {% capture lead %}
-Here's the full listing of all USWDS product updates, articles, case studies and more.
+Here's the full list of all USWDS product updates, articles, case studies and more.
 {% endcapture %}
 {% include lead.html text=lead %}
 

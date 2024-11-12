@@ -2,14 +2,14 @@ title: Modal
 type: component
 changelogURL:
 items:
-- date: NNNN-NN-NN
+- date: 2024-11-12
   summary: Fixed a bug that prevented bundling the modal package with a custom prefix.
   summaryAdditional: This update removed hard-coded class names from the modal JavaScript.
   isBreaking: false
   affectsJavascript: true
   githubPr: 6026
   githubRepo: uswds
-  versionUswds: N.N.N
+  versionUswds: 3.10.0
 - date: 2024-11-6
   summary: Added focus trap guidance.
   summaryAdditional: Updated guidance to ensure users trap focus inside the modal so that it doesn't move to the content behind it.

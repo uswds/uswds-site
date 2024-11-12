@@ -8,6 +8,7 @@ items:
     summaryAdditional: This resolves an error related to having an invalid attribute on a `div` element.
     affectsAccessibility: true
     affectsMarkup: true
+    affectsGuidance: true
     githubPr: 6146
     githubRepo: uswds
     versionUswds: 3.10.0

@@ -2,11 +2,6 @@ title: File input
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
-    summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
-    githubPr: [Related PR number]
-    githubRepo: uswds-site
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

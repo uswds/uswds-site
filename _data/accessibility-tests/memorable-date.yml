@@ -50,7 +50,7 @@ test_items:
     summary_additional: You can change month, day and year and perform all other functions in a memorable date element using only your keyboard.
     test_status: pass
     test_type: keyboard
-    version_tested: 3.9.0
+    version_tested: 3.8.2
     wcag_criterion: 2.1.1
   - summary: Tabbing into the memorable date doesn't trigger a change of context. 
     summary_additional: When using a keyboard to select elements in the memorable date, there is no change until you activate with enter key or spacebar.

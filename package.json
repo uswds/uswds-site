@@ -97,6 +97,6 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "1.2.0",
-    "@uswds/uswds": "github:uswds/uswds#develop"
+    "@uswds/uswds": "3.10.0"
   }
 }

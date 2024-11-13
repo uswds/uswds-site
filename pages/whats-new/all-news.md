@@ -5,7 +5,6 @@ permalink: /about/whats-new/all-news/
 category: About
 subnav:
   type: posts
-
 ---
 
 {% capture lead %}

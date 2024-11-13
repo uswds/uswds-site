@@ -57,12 +57,8 @@ changelog:
 
 ## News and updates
 
-{% capture lead %}
-{% endcapture %}
-{% include lead.html text=lead %}
-
-{% for post in site.posts limit:4%}
-  {% include post.html post=post excerpt=true  %}
+{% for post in site.posts limit:4 %}
+  {% include post.html post=post excerpt=true %}
 {% endfor %}
 
 ---

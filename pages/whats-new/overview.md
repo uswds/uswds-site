@@ -21,7 +21,7 @@ redirect_from:
   - /about/updates/
 subnav:
   - text: All news and updates
-    href: /about/whats-new/all-news/
+    href: /about/whats-new/all/
 changelog:
   key: about-whats-new
 ---
@@ -63,4 +63,4 @@ changelog:
 
 ---
 
-<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all-news/">View all USWDS news and updates</a>
+<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all USWDS news and updates</a>

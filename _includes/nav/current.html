@@ -6,6 +6,12 @@
   {% assign _current = true %}
 {% elsif page.collection and include.page.subnav.type == page.collection %}
   {% assign _current = true %}
+<!--
+  Use the type attribute to connect the sidenav with a collection.
+  This enables setting "current" for the pages inside _posts directory
+-->
+{% elsif page.collection and include.page.type == page.collection %}
+  {% assign _current = true %}
 {% elsif include.page.subnav %}
   {% for _subnav in include.page.subnav %}
     {% if _subnav.href and _subnav.href == page.permalink %}

@@ -3,8 +3,7 @@ title: All news and updates
 layout: post
 permalink: /about/whats-new/all/
 category: About
-subnav:
-  type: posts
+type: posts
 ---
 
 {% capture lead %}

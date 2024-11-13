@@ -19,6 +19,7 @@ redirect_from:
   - /whats-new/releases/
   - /whats-new/updates/
   - /about/updates/
+type: posts
 subnav:
   - text: All news and updates
     href: /about/whats-new/all/

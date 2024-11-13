@@ -2,7 +2,7 @@ title: Modal
 type: component
 changelogURL:
 items:
-- date: 2024-11-12
+- date: 2024-11-13
   summary: Fixed a bug that prevented bundling the modal package with a custom prefix.
   summaryAdditional: This update removed hard-coded class names from the modal JavaScript.
   isBreaking: false

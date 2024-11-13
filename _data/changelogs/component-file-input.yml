@@ -2,7 +2,7 @@ title: File input
 type: component
 changelogURL:
 items:
-  - date: 2024-11-12
+  - date: 2024-11-13
     summary:  Fixed a bug that caused image previews to break when a Content Security Policy is enabled.
     summaryAdditional: The component now uses event listeners in place of inline JavaScript to handle error states.
     affectsJavascript: true

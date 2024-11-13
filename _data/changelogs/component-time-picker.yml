@@ -3,7 +3,7 @@ type: component
 changelogURL:
 
 items:
-  - date: 2024-11-12
+  - date: 2024-11-13
     summary: Updated the time picker hint text to improve clarity.
     summaryAdditional: This update allows the component to meet the success criteria in [WCAG 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html).
     affectsAccessibility: true

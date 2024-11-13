@@ -2,7 +2,7 @@ title: Checkbox
 type: component
 changelogURL:
 items:
-  - date: 2024-11-12
+  - date: 2024-11-13
     summary: Removed style tags from indeterminate checkbox SVGs.
     summaryAdditional: |
       These style tags were unnecessary and caused a conflict with some automated testing tools.

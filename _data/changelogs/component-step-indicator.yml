@@ -3,7 +3,7 @@ type: component
 changelogURL:
 
 items:
-  - date: 2024-11-12
+  - date: 2024-11-13
     summary: Removed the `aria-label` from the wrapper of the step indicator component.
     summaryAdditional: This resolves an error related to having an invalid attribute on a `div` element.
     affectsAccessibility: true

@@ -7,8 +7,9 @@
 {% elsif page.collection and include.page.subnav.type == page.collection %}
   {% assign _current = true %}
 <!--
-  Use the type attribute to connect the sidenav with a collection.
-  This enables setting "current" for the pages inside _posts directory
+  Use the page's `type` data key to connect the sidenav to a collection.
+  This sets "current" for the pages inside _posts and _security-updates directories.
+  Collections are defined in config.yml, and "posts" is a default collection type in Jekyll.
 -->
 {% elsif page.collection and include.page.type == page.collection %}
   {% assign _current = true %}

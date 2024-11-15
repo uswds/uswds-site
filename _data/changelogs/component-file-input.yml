@@ -7,6 +7,13 @@ items:
     affectsGuidance: true
     githubPr: 2963
     githubRepo: uswds-site
+  - date: 2024-11-13
+    summary:  Fixed a bug that caused image previews to break when a Content Security Policy is enabled.
+    summaryAdditional: The component now uses event listeners in place of inline JavaScript to handle error states.
+    affectsJavascript: true
+    githubPr: 5997
+    githubRepo: uswds
+    versionUswds: 3.10.0
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:

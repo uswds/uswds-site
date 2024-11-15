@@ -10,7 +10,7 @@ redirect_from:
 - /form-controls/08-file-input/
 type: component
 subnav:
-- text: file input accessibility tests
+- text: File input accessibility tests
   href: /components/file-input/accessibility-tests/
 tags:
   - document

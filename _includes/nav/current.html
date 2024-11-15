@@ -11,8 +11,8 @@
   This sets "current" for the pages inside the _posts directory.
   Collections are defined in config.yml, and "posts" is a default collection type in Jekyll.
 -->
-{% elsif page.collection and include.page.type == page.collection %}
-  {% assign _current = true %}
+<!-- {% elsif page.collection and include.page.type == page.collection %}
+  {% assign _current = true %} -->
 {% elsif include.page.subnav %}
   {% for _subnav in include.page.subnav %}
     {% if _subnav.href and _subnav.href == page.permalink %}

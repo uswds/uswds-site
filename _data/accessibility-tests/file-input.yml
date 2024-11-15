@@ -49,7 +49,7 @@ test_items:
   - summary: Focus indicator is clearly visible.
     summary_additional: When you use a keyboard to focus on a file input box you will see a visible outline or other clear indication of focus.
     test_status: exception
-    status_details: Focus indicator is visible around the "Drag files" area as well as the "choose from folder" action link.
+    status_details: The focus indicator is clearly visible, but the focus indicator wraps around both the "Drag files" area and the "choose from folder" action link at the same time. To meet user expectations, these actions should be distinct focusable elements. 
     github_issue_number: 5616
     github_issue_repo: uswds
     test_type: keyboard

@@ -6,7 +6,6 @@ permalink: /about/whats-new/all/
 category: About
 type: posts
 in_page_nav_headings: false
-
 ---
 
 {% for post in site.posts %}

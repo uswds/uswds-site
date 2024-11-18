@@ -1,3 +1,9 @@
+{% comment %}
+  Container for site card group.
+  
+  Seen in "What's New" page - `/about/whats-new/`
+{% endcomment %}
+
 <ul class="usa-card-group {{ include.listClasses }}">
   {% for card in include.cards %}
     <li class="usa-card site-component-card {{ include.listItemClasses }}">

@@ -25,36 +25,22 @@ subnav:
     href: /about/whats-new/all/
 changelog:
   key: about-whats-new
+cards:
+  - heading: "Release notes"
+    body: "Find summaries of each USWDS update on our GitHub releases page. Release notes explain bug fixes, new features, and other changes."
+    linkText: "Read the USWDS release notes"
+    linkUrl: "https://github.com/uswds/uswds/releases"
+  - heading: "GitHub discussions"
+    body: "How our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS."
+    linkText: "USWDS GitHub discussion"
+    linkUrl: "https://github.com/uswds/uswds/discussions"
 ---
 
-<ul class="usa-card-group margin-top-6">
-  <li class="usa-card site-component-card desktop:grid-col-6">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h2 class="usa-card__heading font-lang-lg">Release notes</h2>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Find summaries of each USWDS update on our GitHub releases page. Release notes explain bug fixes, new features, and other changes.</p>
-      </div>
-      <div class="usa-card__footer">
-        <a class="usa-button" href="https://github.com/uswds/uswds/releases">Read the USWDS release notes</a>
-      </div>
-    </div>
-  </li>
-  <li class="usa-card site-component-card desktop:grid-col-6">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h2 class="usa-card__heading font-lang-lg">GitHub discussions</h2>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>How our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS.</p>
-      </div>
-      <div class="usa-card__footer">
-        <a class="usa-button" href="https://github.com/uswds/uswds/discussions">USWDS GitHub discussions</a>
-      </div>
-    </div>
-  </li>
-</ul>
+{% include site-card-list.html
+  cards=page.cards
+  listClasses="margin-top-6"
+  listItemClasses="desktop:grid-col-6"
+%}
 
 ## News and updates
 

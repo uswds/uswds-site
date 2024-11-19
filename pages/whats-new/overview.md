@@ -3,7 +3,7 @@ permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
 category: About
-lead: Here you can find the latest news and information about USWDS. Learn more about our product development and process, dive deeper into our Monthly Call topics, and see how we work with our partners to impact the government technology space.
+lead: Here you can find the latest news and information about USWDS. Learn more about our product development and process, dive deeper into our monthly call topics, and see how we work with our partners to impact the government technology space.
 columns:
   - title: New users
     source: New Users

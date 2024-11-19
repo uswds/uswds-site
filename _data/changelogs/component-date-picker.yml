@@ -2,7 +2,7 @@ title: Date picker
 type: component
 changelogURL:
 items:
-  - date: 2024-11-06
+  - date: 2024-11-19
     summary: Added guidance about always allowing users to type in the date manually.
     affectsGuidance: true
     githubPr: 2822

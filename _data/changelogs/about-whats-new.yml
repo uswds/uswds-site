@@ -2,7 +2,7 @@ title: What's new
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-11-20
     summary: Combined "What's new" and "News and updates" pages.
     affectsGuidance: true
     githubPr: 2958

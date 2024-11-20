@@ -77,3 +77,4 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.2
     wcag_criterion: 4.1.2
+    

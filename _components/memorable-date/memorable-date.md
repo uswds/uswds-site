@@ -11,7 +11,6 @@ permalink: /components/memorable-date/
 redirect_from:
 - /form-controls/04-memorable-date/
 subnav:
-subnav:
 - text: Memorable date accessibility tests
   href: /components/memorable-date/accessibility-tests/
 tags:

@@ -42,10 +42,11 @@ cards:
   listItemClasses="desktop:grid-col-6"
 %}
 
+{:.margin-top-2.margin-bottom-3}
 ## News and updates
 
 {% for post in site.posts limit:4 %}
-  {% include post.html post=post excerpt=true %}
+  {% include post.html post=post excerpt=true heading="h3"%}
 {% endfor %}
 
 ---

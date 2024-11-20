@@ -1,33 +1,44 @@
 {% assign post = include.post %}
-<article id="{{ post.id | default: post.title | slugify }}"{% if include.excerpt %} class="post-excerpt padding-top-2 border-top-2px margin-top-4 measure-6"{% endif %}>
+
+{%- capture excerpt_link_url -%}
+  {%- if post.excerpt_link_url -%}
+    {{ post.excerpt_link_url }}
+  {%- else -%}
+    {{ site.baseurl }}{{ post.url }}
+  {%- endif -%}
+{%- endcapture -%}
+
+<article id="{{ post.id | default: post.title | slugify }}"{% if include.excerpt %} class="post-excerpt"{% endif %}>
   <header class="post-meta">
     <p class="post-category site-subheading">
       {{ post.tags[0] }}
     </p>
 
-    <h1 class="post-title font-lang-11 tablet:font-lang-14 text-thin">
-      {% if include.excerpt %}<a href="{{ site.baseurl }}{{ post.url }}">{% endif %}
-      {{ post.title }}
+    <{{ include.heading | default:"h1" }} class="post-title">
+      {% if include.excerpt %}<a href="{{ excerpt_link_url }}">{% endif %}
+        {{ post.title }}
       {% if include.excerpt %}</a>{% endif %}
-    </h1>
+    </{{ include.heading | default:"h1" }}>
 
-    {% if post.author %}
-    <span class="post-date site-subheading">By {{ post.author }}</span>
+    {% if post.author and include.excerpt == false %}
+      <span class="post-date site-subheading">By {{ post.author }}</span>
     {% endif %}
-    <time class="post-date site-subheading" datetime="{{ post.date | date: '%FT%T' }}">
-      {{ post.date | date: '%B %-d, %Y' }}
-    </time>
+    {% if include.excerpt == false %}
+      {% include post-date.html %}
+    {% endif %}
   </header>
 
-  <div class="post-content site-prose {% if include.excerpt == true %}{% else%}measure-4 {% endif %}margin-top-4">
+  <div class="post-content site-prose">
   {% if include.excerpt == true %}
-    <p class="post-excerpt">
+    <p class="post-excerpt-body">
       {{ post.lead | default: post.excerpt }}
     </p>
-
-    <p class="post-more margin-top-2"><a href="{{ site.baseurl }}{{ post.url }}">Continue reading</a></p>
   {% else %}
     {{ post.content }}
+  {% endif %}
+
+  {% if include.excerpt %}
+   {% include post-date.html %}
   {% endif %}
   </div>
 </article>

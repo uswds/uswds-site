@@ -1,0 +1,35 @@
+{% assign post = include.post %}
+
+{%- capture excerpt_link_url -%}
+  {%- if post.excerpt_link_url -%}
+    {{ post.excerpt_link_url }}
+  {%- else -%}
+    {{ site.baseurl }}{{ post.url }}
+  {%- endif -%}
+{%- endcapture -%}
+
+<article id="{{ post.id | default: post.title | slugify }}" class="post-preview">
+  <header class="post-preview__header">
+    <p class="post-category site-subheading">
+      {{ post.tags[0] }}
+    </p>
+
+    <{{ include.heading | default:"h2" }} class="post-preview__title">
+      <a href="{{ excerpt_link_url }}">
+        {{ post.title }}
+      </a>
+    </{{ include.heading | default:"h2" }}>
+
+    {% if post.author %}
+      {% include post-author.html %}
+    {% endif %}
+  </header>
+
+  <div class="post-preview__content site-prose">
+    <p>
+      {{ post.lead | default: post.excerpt }}
+    </p>
+
+    {% include post-date.html %}
+  </div>
+</article>

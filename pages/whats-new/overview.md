@@ -46,7 +46,7 @@ cards:
 ## News and updates
 
 {% for post in site.posts limit:4 %}
-  {% include post.html post=post excerpt=true heading="h3"%}
+  {% include post-preview.html post=post heading="h3"%}
 {% endfor %}
 
 ---

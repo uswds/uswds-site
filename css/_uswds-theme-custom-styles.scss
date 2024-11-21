@@ -3194,8 +3194,13 @@ body {
   }
 }
 
-.post-content h2 {
-  line-height: lh("lang", 2);
+.post-content {
+  @include u-margin-top(4);
+  @include u-measure(4);
+
+  h2 {
+    line-height: lh("lang", 2);
+  }
 }
 
 .page-website-standards {

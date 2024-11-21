@@ -9,10 +9,10 @@ layout: component
 lead: A select for month followed by two text fields is the easiest way for users to enter most dates.
 permalink: /components/memorable-date/
 redirect_from:
-- /form-controls/04-memorable-date/
+  - /form-controls/04-memorable-date/
 subnav:
-- text: Memorable date accessibility tests
-  href: /components/memorable-date/accessibility-tests/
+  - text: Memorable date accessibility tests
+    href: /components/memorable-date/accessibility-tests/
 tags:
   - form
   - forms

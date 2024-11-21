@@ -34,6 +34,7 @@ cards:
     body: "How our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS."
     linkText: "USWDS GitHub discussion"
     linkUrl: "https://github.com/uswds/uswds/discussions"
+in_page_nav_headings: "h2"
 ---
 
 {% include site-card-list.html
@@ -42,7 +43,7 @@ cards:
   listItemClasses="desktop:grid-col-6"
 %}
 
-{:.margin-top-2.margin-bottom-3}
+{:.margin-top-2.text-normal.font-lang-md.text-gray-70}
 ## News and updates
 
 {% for post in site.posts limit:4 %}

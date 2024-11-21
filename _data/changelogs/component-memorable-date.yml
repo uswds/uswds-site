@@ -2,6 +2,11 @@ title: Memorable date
 type: component
 changelogURL:
 items:
+- date: 2024-11-19
+  summary: Added WCAG compliance tag and accessibility test status section.
+  affectsGuidance: true
+  githubPr: 2919
+  githubRepo: uswds-site
 - date: 2024-11-06
   summary: Added known issues section.
   summaryAdditional:

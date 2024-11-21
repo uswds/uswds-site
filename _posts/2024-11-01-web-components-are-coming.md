@@ -5,7 +5,6 @@ tags:
 category: About
 author: Dan O. Williams, James Mejia, Amy Leadem, Charlie Mahoney
 excerpt: Big changes are coming to the U.S. Web Design System in a Web Components-based generation. Ideal for small teams with limited development resources, this next generation of the design system promises to be a practical, usable, powerful tool for designers and developers to do their work.
-excerpt_link_text: Read more about what’s next for USWDS
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius diam sapien. In non urna neque. Morbi semper, enim et consectetur pulvinar, ex arcu faucibus sem, sed volutpat leo libero id massa. Vivamus interdum lobortis augue, ut posuere felis porttitor et. Sed feugiat sit amet lectus at ullamcorper.

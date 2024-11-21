@@ -1590,11 +1590,9 @@ iframe {
 
     a {
       color: inherit;
-      text-decoration: none;
 
       &:hover {
         color: color($site-primary);
-        text-decoration: underline;
       }
     }
   }
@@ -1604,7 +1602,7 @@ iframe {
   }
 } // .post-preview
 
-.post-date,
+.post-date
 .post-meta {
   @include u-margin-y(2);
 }

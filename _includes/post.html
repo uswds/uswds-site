@@ -9,11 +9,7 @@
     {{ post.title }}
   </h1>
 
-  {% if post.author %}
-    <span class="post-date site-subheading">By {{ post.author }}</span>
-  {% endif %}
-
-  {% include post-date.html %}
+  {% include post-meta.html %}
 </header>
 
 <div class="post-content site-prose margin-top-4">

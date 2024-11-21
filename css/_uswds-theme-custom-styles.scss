@@ -1602,12 +1602,8 @@ iframe {
   }
 } // .post-preview
 
-.post-date
-.post-meta {
-  @include u-margin-y(2);
-}
-
 .post-date.site-subheading {
+  @include u-margin-y("105");
   display: block;
   letter-spacing: normal;
   text-transform: none;

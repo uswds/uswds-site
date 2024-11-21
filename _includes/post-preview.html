@@ -20,16 +20,12 @@
       </a>
     </{{ include.heading | default:"h2" }}>
 
-    {% if post.author %}
-      {% include post-author.html %}
-    {% endif %}
+    {% include post-meta.html %}
   </header>
 
   <div class="post-preview__content site-prose">
     <p>
       {{ post.lead | default: post.excerpt }}
     </p>
-
-    {% include post-date.html %}
   </div>
 </article>

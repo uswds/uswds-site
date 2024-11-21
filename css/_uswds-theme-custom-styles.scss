@@ -1611,8 +1611,12 @@ iframe {
 
 .post-title {
   @include u-measure(1);
-  @include typeset("lang", "2xl", 3);
+  @include typeset("lang", "xl", 2);
   @include u-text("thin");
+
+  @include at-media("tablet") {
+    @include typeset("lang", "2xl", 2);
+  }
 }
 
 .post-outdated-content {

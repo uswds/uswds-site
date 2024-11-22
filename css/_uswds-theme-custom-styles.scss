@@ -1573,18 +1573,18 @@ iframe {
   @include u-margin-y(3);
   @include u-measure(6);
 
-  .post-preview__title,
-  .post-preview_content,
-  .post-preview__header,
+  &__title,
+  &__content,
+  &__header,
   .post-category {
     @include u-margin-y(2);
   }
 
-  .post-preview__header {
+  &__header {
     @include u-margin-top(3);
   }
 
-  .post-preview__title {
+  &__title {
     @include typeset("lang", "lg", 3);
     @include u-text("bold");
 
@@ -1597,7 +1597,7 @@ iframe {
     }
   }
 
-  .post-preview__content p {
+  &__content p {
     @include u-font("lang", "xs");
   }
 } // .post-preview

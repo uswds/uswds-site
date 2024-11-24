@@ -2,6 +2,18 @@ title: File input
 type: component
 changelogURL:
 items:
+  - date: 2024-11-19
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2963
+    githubRepo: uswds-site
+  - date: 2024-11-13
+    summary: Fixed a bug that caused image previews to break when a Content Security Policy is enabled.
+    summaryAdditional: The component now uses event listeners in place of inline JavaScript to handle error states.
+    affectsJavascript: true
+    githubPr: 5997
+    githubRepo: uswds
+    versionUswds: 3.10.0
   - date: 2024-03-13
     summary: Added known issues section.
     summaryAdditional:
@@ -17,7 +29,8 @@ items:
     versionUswds: 3.5.0
   - date: 2023-06-09
     summary: Improved the file input experience for voice command and screen reader users.
-    summaryAdditional: Voice command users can now interact with the component by speaking the visible instructions text.
+    summaryAdditional:
+      Voice command users can now interact with the component by speaking the visible instructions text.
       Additionally, screen reader users now have access to both the instructions text
       and the file selection status.
     affectsAccessibility: true

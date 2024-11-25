@@ -1600,9 +1600,9 @@ iframe {
   &__content p {
     @include u-font("lang", "xs");
   }
-} // .post-preview
+}
 
-.post-date.site-subheading {
+.post-meta .site-subheading {
   @include u-margin-y("105");
   display: block;
   letter-spacing: normal;

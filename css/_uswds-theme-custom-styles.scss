@@ -7,6 +7,8 @@
 @import "custom-styles/highlight";
 @import "custom-styles/copy-code-btn";
 @import "custom-styles/graphic-list";
+@import "custom-styles/posts";
+
 
 // ========================================
 // CUSTOM PROJECT SASS
@@ -1568,77 +1570,7 @@ iframe {
   margin-bottom: units(4);
 }
 
-.post-preview {
-  @include u-border-top("1px", "gray-30");
-  @include u-margin-y(3);
-  @include u-measure(6);
 
-  &__title,
-  &__content,
-  &__header,
-  .post-category {
-    @include u-margin-y(2);
-  }
-
-  &__header {
-    @include u-margin-top(3);
-  }
-
-  &__title {
-    @include typeset("lang", "lg", 3);
-    @include u-text("bold");
-
-    a {
-      color: inherit;
-
-      &:hover {
-        color: color($site-primary);
-      }
-    }
-  }
-
-  &__content p {
-    @include u-font("lang", "xs");
-  }
-}
-
-.post-meta .site-subheading {
-  @include u-margin-y("105");
-  display: block;
-  letter-spacing: normal;
-  text-transform: none;
-}
-
-.post-title {
-  @include u-measure(1);
-  @include typeset("lang", "xl", 2);
-  @include u-text("thin");
-
-  @include at-media("tablet") {
-    @include typeset("lang", "2xl", 2);
-  }
-}
-
-.post-outdated-content {
-  margin-bottom: units(4);
-  margin-top: units(-5);
-  z-index: z-index("top");
-
-  @include at-media("tablet") {
-    position: sticky;
-    top: 0;
-  }
-
-  @include at-media("desktop") {
-    margin-left: units(4);
-    margin-top: 0;
-    top: units($height-nav-secondary);
-  }
-
-  .usa-alert__body {
-    margin-left: 0;
-  }
-}
 
 // Utilities CSS --------------------- //
 
@@ -3191,15 +3123,6 @@ body {
 
   @include at-media("tablet-lg") {
     background-position: left calc(50% + #{units("card-lg")}) top units("105");
-  }
-}
-
-.post-content {
-  @include u-margin-top(4);
-  @include u-measure(4);
-
-  h2 {
-    line-height: lh("lang", 2);
   }
 }
 

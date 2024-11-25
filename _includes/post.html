@@ -1,17 +1,22 @@
+{% comment %}
+  Structure for the pages inside of _posts
+{% endcomment %}
+
 {% assign post = include.post %}
+<article>
+  <header>
+    <p class="post-category site-subheading">
+      {{ post.tags[0] }}
+    </p>
 
-<header>
-  <p class="post-category site-subheading">
-    {{ post.tags[0] }}
-  </p>
+    <h1 class="post-title">
+      {{ post.title }}
+    </h1>
 
-  <h1 class="post-title">
-    {{ post.title }}
-  </h1>
+    {% include post-meta.html %}
+  </header>
 
-  {% include post-meta.html %}
-</header>
-
-<div class="post-content site-prose">
-  {{ post.content }}
-</div>
+  <div class="post-content site-prose">
+    {{ post.content }}
+  </div>
+</article>

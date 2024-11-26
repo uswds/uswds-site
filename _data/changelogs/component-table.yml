@@ -5,8 +5,8 @@ changelogURL:
 
 items:
   - date: NNNN-NN-NN
-    summary: Updated the table component styles so that table headers get consistent styling.
-    summaryAdditional: Prior to this update styling only impacted table headers in the `<thead>` tag.
+    summary: Fixed a bug that prevented `th` elements outside of `thead` from acquiring table heading styles.
+    summaryAdditional: Now, table headings will have consistent styles anywhere in the table element.
     isBreaking: false
     affectsStyles: true
     githubPr: 5986

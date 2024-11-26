@@ -10,10 +10,10 @@
 {% comment %}
   Assign header link url
   - default: link to the post's generated page
-  - custom: link to a custom location declared in `post.custom_url`
+  - custom: link to a custom location declared in `post.preview_url`
 {% endcomment %}
 {% assign post_url = site.baseurl | append: post.url %}
-{% assign preview_url = post.custom_url | default: post_url %}
+{% assign preview_url = post.preview_url | default: post_url %}
 
 <article id="{{ post_id }}" class="post-preview">
   <header class="post-preview__header">

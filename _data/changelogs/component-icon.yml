@@ -6,7 +6,7 @@ items:
     summary: Removed deprecated xlink references.
     summaryAdditional: All xlink:href references have been replaced with href and all xlmns:xlink references have been removed.
     affectsMarkup: true
-    githubPr: 2951
+    githubPr: 2926
     githubRepo: uswds
     versionUswds: 3.9.0
   - date: 2024-06-07

@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Removed deprecated xlink references.
-    summaryAdditional: All xlink:href references have been replaced with href.
+    summaryAdditional: All xlink:href references have been replaced with href and all xlmns:xlink references have been removed.
     affectsMarkup: true
     githubPr: 2951
     githubRepo: uswds

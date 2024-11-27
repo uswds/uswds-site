@@ -2,6 +2,11 @@ title: Icon
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed deprecated xlink instances.
+    affectsGuidance: true
+    githubPr: 2926
+    githubRepo: uswds-site
   - date: 2024-06-07
     summary: Added clarity to icon guidance.
     affectsGuidance: true

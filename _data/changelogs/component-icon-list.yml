@@ -2,6 +2,11 @@ title: Icon list
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed deprecated xlink instances.
+    affectsGuidance: true
+    githubPr: 2926
+    githubRepo: uswds-site
   - date: 2023-11-20
     summary: Updated the value list for icon list variants.
     affectsGuidance: true

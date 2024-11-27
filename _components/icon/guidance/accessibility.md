@@ -3,7 +3,7 @@
   ```html
   <a href="https://twitter.com/uswds">
     <svg class="usa-icon" aria-hidden="true" role="img">
-      <use xlink:href="/assets/img/sprite.svg#arrow_forward"></use>
+      <use href="/assets/img/sprite.svg#arrow_forward"></use>
     </svg>
     USWDS' Twitter account
   </a>
@@ -15,7 +15,7 @@
   <a href="https://twitter.com/uswds">
     <svg aria-labelledby="twitter-title" role="img">
       <title id="twitter-title">USWDS' Twitter account</title>
-      <use xlink:href="/path/to/sprite.svg#twitter"></use>
+      <use href="/path/to/sprite.svg#twitter"></use>
     </svg>
   </a>
   ```

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="492" height="288" viewBox="0 0 492 288">
+<svg xmlns="http://www.w3.org/2000/svg" width="492" height="288" viewBox="0 0 492 288">
   <defs>
     <rect id="expressive-theming--alt-a" width="91.55" height="142.411" x="0" y="0" rx="2.543"/>
     <rect id="expressive-theming--alt-c" width="105.769" height="69.059" x="0" y="0"/>
@@ -91,19 +91,19 @@
       <rect width="492.079" height="288" x=".636" fill="#F0F0F0"/>
       <g opacity=".1" transform="translate(289.272 61.669)">
         <mask id="expressive-theming--alt-b" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-a"/>
+          <use href="#expressive-theming--alt-a"/>
         </mask>
         <rect width="92.821" height="143.682" x="-.636" y="-.636" stroke="#171717" stroke-width="1.272" rx="2.543"/>
         <g mask="url(#expressive-theming--alt-b)">
           <g transform="translate(-5.086 11.444)">
             <mask id="expressive-theming--alt-d" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-c"/>
+              <use href="#expressive-theming--alt-c"/>
             </mask>
             <g mask="url(#expressive-theming--alt-d)">
               <g transform="translate(-19.587 34.53)">
                 <g transform="translate(46.703 2.178)">
                   <mask id="expressive-theming--alt-f" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-e"/>
+                    <use href="#expressive-theming--alt-e"/>
                   </mask>
                   <g fill="#919191" mask="url(#expressive-theming--alt-f)">
                     <polygon points="0 0 25.803 0 25.803 43.74 0 43.74" transform="translate(-.31 -2.178)"/>
@@ -111,7 +111,7 @@
                 </g>
                 <g transform="translate(15.464)">
                   <mask id="expressive-theming--alt-h" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-g"/>
+                    <use href="#expressive-theming--alt-g"/>
                   </mask>
                   <g fill="#919191" mask="url(#expressive-theming--alt-h)">
                     <polygon points="0 0 44.658 0 44.658 24.413 0 24.413" transform="translate(-1.701)"/>
@@ -119,7 +119,7 @@
                 </g>
                 <g transform="translate(.928 29.712)">
                   <mask id="expressive-theming--alt-j" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-i"/>
+                    <use href="#expressive-theming--alt-i"/>
                   </mask>
                   <g fill="#919191" mask="url(#expressive-theming--alt-j)">
                     <polygon points="0 0 36.719 0 36.719 43.74 0 43.74" transform="translate(-1.701 -2.489)"/>
@@ -127,7 +127,7 @@
                 </g>
                 <g transform="translate(0 2.022)">
                   <mask id="expressive-theming--alt-l" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-k"/>
+                    <use href="#expressive-theming--alt-k"/>
                   </mask>
                   <g fill="#919191" mask="url(#expressive-theming--alt-l)">
                     <polygon points="0 0 34.734 0 34.734 45.775 0 45.775" transform="translate(-.773 -2.022)"/>
@@ -135,7 +135,7 @@
                 </g>
                 <g transform="translate(30.001 44.645)">
                   <mask id="expressive-theming--alt-n" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-m"/>
+                    <use href="#expressive-theming--alt-m"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#expressive-theming--alt-n)">
                     <polygon points="0 0 53.59 0 53.59 39.672 0 39.672" transform="translate(-6.959 -11.511)"/>
@@ -156,20 +156,20 @@
       </g>
       <g transform="translate(324.238 8.265)">
         <mask id="expressive-theming--alt-p" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-o"/>
+          <use href="#expressive-theming--alt-o"/>
         </mask>
         <rect width="67.391" height="96" x="-.636" y="-.636" stroke="#FFF" stroke-width="1.272" rx="2.543"/>
         <g mask="url(#expressive-theming--alt-p)">
           <g transform="translate(-20.138 41.985)">
             <mask id="expressive-theming--alt-r" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-q"/>
+              <use href="#expressive-theming--alt-q"/>
             </mask>
-            <use fill="#F0F0F0" xlink:href="#expressive-theming--alt-q"/>
+            <use fill="#F0F0F0" href="#expressive-theming--alt-q"/>
             <g mask="url(#expressive-theming--alt-r)">
               <g transform="translate(-16.1 .611)">
                 <g transform="translate(100.54 4.734)">
                   <mask id="expressive-theming--alt-t" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-s"/>
+                    <use href="#expressive-theming--alt-s"/>
                   </mask>
                   <g fill="#FFF" mask="url(#expressive-theming--alt-t)">
                     <polygon points="0 0 54.582 0 54.582 94.601 0 94.601" transform="translate(-.666 -4.734)"/>
@@ -177,7 +177,7 @@
                 </g>
                 <g transform="translate(33.292)">
                   <mask id="expressive-theming--alt-v" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-u"/>
+                    <use href="#expressive-theming--alt-u"/>
                   </mask>
                   <g fill="#FFF" mask="url(#expressive-theming--alt-v)">
                     <polygon points="0 0 97.256 0 97.256 52.895 0 52.895" transform="translate(-3.662)"/>
@@ -185,7 +185,7 @@
                 </g>
                 <g transform="translate(1.997 64.59)">
                   <mask id="expressive-theming--alt-x" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-w"/>
+                    <use href="#expressive-theming--alt-w"/>
                   </mask>
                   <g fill="#D63E04" mask="url(#expressive-theming--alt-x)">
                     <polygon points="0 0 78.4 0 78.4 94.601 0 94.601" transform="translate(-3.662 -5.41)"/>
@@ -193,7 +193,7 @@
                 </g>
                 <g transform="translate(0 4.396)">
                   <mask id="expressive-theming--alt-z" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-y"/>
+                    <use href="#expressive-theming--alt-y"/>
                   </mask>
                   <g fill="#FFF" mask="url(#expressive-theming--alt-z)">
                     <polygon points="0 0 74.431 0 74.431 98.67 0 98.67" transform="translate(-1.665 -4.396)"/>
@@ -201,7 +201,7 @@
                 </g>
                 <g transform="translate(64.586 97.055)">
                   <mask id="expressive-theming--alt-B" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-A"/>
+                    <use href="#expressive-theming--alt-A"/>
                   </mask>
                   <g fill="#FFF" mask="url(#expressive-theming--alt-B)">
                     <polygon points="0 0 116.112 0 116.112 86.464 0 86.464" transform="translate(-14.981 -25.025)"/>
@@ -221,7 +221,7 @@
       <path fill="#FFF" d="M101.721854,17.1655629 L101.721854,17.1655629 C102.424097,17.1655629 102.993377,17.7348432 102.993377,18.4370861 L102.993377,18.4370861 C102.993377,19.139329 102.424097,19.7086093 101.721854,19.7086093 L101.721854,19.7086093 C101.019611,19.7086093 100.450331,19.139329 100.450331,18.4370861 L100.450331,18.4370861 C100.450331,17.7348432 101.019611,17.1655629 101.721854,17.1655629 Z" transform="rotate(90 101.722 18.437)"/>
       <g transform="translate(324.238 171.02)">
         <mask id="expressive-theming--alt-D" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-C"/>
+          <use href="#expressive-theming--alt-C"/>
         </mask>
         <rect width="67.391" height="109.351" x="-.636" y="-.636" stroke="#FFF" stroke-width="1.272" rx="2.543"/>
         <rect width="34.967" height="1.272" x="2.543" y="99.179" fill="#FFF" mask="url(#expressive-theming--alt-D)" rx=".636"/>
@@ -257,7 +257,7 @@
       </g>
       <g opacity=".099" transform="translate(106.172 141.14)">
         <mask id="expressive-theming--alt-F" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-E"/>
+          <use href="#expressive-theming--alt-E"/>
         </mask>
         <rect width="92.821" height="92.821" x="-.636" y="-.636" stroke="#171717" stroke-width="1.272" rx="2.543"/>
         <rect width="35.603" height="3.179" x="2.543" y="16.53" fill="#ADADAD" mask="url(#expressive-theming--alt-F)" rx="1.589"/>
@@ -268,14 +268,14 @@
         <g mask="url(#expressive-theming--alt-F)">
           <g transform="translate(-5.086 32.424)">
             <mask id="expressive-theming--alt-H" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-G"/>
+              <use href="#expressive-theming--alt-G"/>
             </mask>
             <rect width="114.437" height="40.689" x="-4.45" fill="#F0F0F0" mask="url(#expressive-theming--alt-H)"/>
             <g mask="url(#expressive-theming--alt-H)">
               <g transform="translate(-97.374 -79.187)">
                 <g transform="translate(142.703 6.691)">
                   <mask id="expressive-theming--alt-J" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-I"/>
+                    <use href="#expressive-theming--alt-I"/>
                   </mask>
                   <g fill="#ADADAD" mask="url(#expressive-theming--alt-J)">
                     <polygon points="0 0 77.408 0 77.408 133.256 0 133.256" transform="translate(-.945 -6.691)"/>
@@ -283,7 +283,7 @@
                 </g>
                 <g transform="translate(47.253)">
                   <mask id="expressive-theming--alt-L" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-K"/>
+                    <use href="#expressive-theming--alt-K"/>
                   </mask>
                   <g fill="#C9C9C9" mask="url(#expressive-theming--alt-L)">
                     <polygon points="0 0 137.945 0 137.945 75.274 0 75.274" transform="translate(-5.198)"/>
@@ -291,7 +291,7 @@
                 </g>
                 <g transform="translate(2.835 91.288)">
                   <mask id="expressive-theming--alt-N" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-M"/>
+                    <use href="#expressive-theming--alt-M"/>
                   </mask>
                   <g fill="#ADADAD" mask="url(#expressive-theming--alt-N)">
                     <polygon points="0 0 111.15 0 111.15 134.273 0 134.273" transform="translate(-5.198 -7.647)"/>
@@ -299,7 +299,7 @@
                 </g>
                 <g transform="translate(0 6.213)">
                   <mask id="expressive-theming--alt-P" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-O"/>
+                    <use href="#expressive-theming--alt-O"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#expressive-theming--alt-P)">
                     <polygon points="0 0 106.188 0 106.188 139.359 0 139.359" transform="translate(-2.363 -6.213)"/>
@@ -307,7 +307,7 @@
                 </g>
                 <g transform="translate(91.67 137.171)">
                   <mask id="expressive-theming--alt-R" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-Q"/>
+                    <use href="#expressive-theming--alt-Q"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#expressive-theming--alt-R)">
                     <polygon points="0 0 164.74 0 164.74 122.066 0 122.066" transform="translate(-21.264 -35.368)"/>
@@ -320,19 +320,19 @@
       </g>
       <g opacity=".1" transform="translate(256.212 80.106)">
         <mask id="expressive-theming--alt-T" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-S"/>
+          <use href="#expressive-theming--alt-S"/>
         </mask>
         <rect width="26.702" height="52.132" x="-.636" y="-.636" stroke="#171717" stroke-width="1.272" rx="2.543"/>
         <g mask="url(#expressive-theming--alt-T)">
           <g transform="translate(-5.086 11.444)">
             <mask id="expressive-theming--alt-V" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-U"/>
+              <use href="#expressive-theming--alt-U"/>
             </mask>
             <g mask="url(#expressive-theming--alt-V)" opacity=".5">
               <g transform="translate(-16.293 -38.267)">
                 <g transform="translate(79.135 3.724)">
                   <mask id="expressive-theming--alt-X" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-W"/>
+                    <use href="#expressive-theming--alt-W"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#expressive-theming--alt-X)">
                     <polygon points="0 0 42.674 0 42.674 74.257 0 74.257" transform="translate(-.524 -3.724)"/>
@@ -340,7 +340,7 @@
                 </g>
                 <g transform="translate(26.204)">
                   <mask id="expressive-theming--alt-Z" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-Y"/>
+                    <use href="#expressive-theming--alt-Y"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#expressive-theming--alt-Z)">
                     <polygon points="0 0 76.415 0 76.415 41.706 0 41.706" transform="translate(-2.882)"/>
@@ -348,7 +348,7 @@
                 </g>
                 <g transform="translate(1.572 50.811)">
                   <mask id="expressive-theming--alt-ab" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aa"/>
+                    <use href="#expressive-theming--alt-aa"/>
                   </mask>
                   <g fill="#919191" mask="url(#expressive-theming--alt-ab)">
                     <polygon points="0 0 61.529 0 61.529 74.257 0 74.257" transform="translate(-2.882 -4.256)"/>
@@ -356,7 +356,7 @@
                 </g>
                 <g transform="translate(0 3.458)">
                   <mask id="expressive-theming--alt-ad" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-ac"/>
+                    <use href="#expressive-theming--alt-ac"/>
                   </mask>
                   <g fill="#919191" mask="url(#expressive-theming--alt-ad)">
                     <polygon points="0 0 58.552 0 58.552 77.309 0 77.309" transform="translate(-1.31 -3.458)"/>
@@ -364,7 +364,7 @@
                 </g>
                 <g transform="translate(50.835 76.35)">
                   <mask id="expressive-theming--alt-af" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-ae"/>
+                    <use href="#expressive-theming--alt-ae"/>
                   </mask>
                   <g fill="#919191" mask="url(#expressive-theming--alt-af)">
                     <polygon points="0 0 91.302 0 91.302 68.154 0 68.154" transform="translate(-11.792 -19.686)"/>
@@ -381,9 +381,9 @@
         <circle cx="15.258" cy="15.258" r="14.623" stroke="#FFF" stroke-width="1.272"/>
         <g transform="rotate(-90 13.931 4.315)">
           <mask id="expressive-theming--alt-ah" fill="#fff">
-            <use xlink:href="#expressive-theming--alt-ag"/>
+            <use href="#expressive-theming--alt-ag"/>
           </mask>
-          <use fill="#979797" fill-rule="nonzero" xlink:href="#expressive-theming--alt-ag"/>
+          <use fill="#979797" fill-rule="nonzero" href="#expressive-theming--alt-ag"/>
           <g fill="#FFF" mask="url(#expressive-theming--alt-ah)">
             <polygon points="0 0 16.871 0 16.871 19.327 0 19.327" transform="translate(-8.01 -4.132)"/>
           </g>
@@ -394,7 +394,7 @@
     <g transform="translate(13 79.555)">
       <g transform="translate(0 .445)">
         <mask id="expressive-theming--alt-aj" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-ai"/>
+          <use href="#expressive-theming--alt-ai"/>
         </mask>
         <rect width="118" height="197" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
         <g fill="#F5F5F0" mask="url(#expressive-theming--alt-aj)">
@@ -403,7 +403,7 @@
         <g mask="url(#expressive-theming--alt-aj)">
           <g transform="translate(-7.293 58.868)">
             <mask id="expressive-theming--alt-al" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-ak"/>
+              <use href="#expressive-theming--alt-ak"/>
             </mask>
             <g mask="url(#expressive-theming--alt-al)">
               <polygon fill="#171717" points="0 0 165 0 165 59 0 59" transform="translate(-6.483)"/>
@@ -412,7 +412,7 @@
               <g transform="translate(-56.23 -28.514)">
                 <g transform="translate(124.43 5.91)">
                   <mask id="expressive-theming--alt-an" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-am"/>
+                    <use href="#expressive-theming--alt-am"/>
                   </mask>
                   <g fill="#81AEFC" mask="url(#expressive-theming--alt-an)">
                     <polygon points="0 0 68 0 68 116 0 116" transform="translate(-.824 -5.91)"/>
@@ -420,7 +420,7 @@
                 </g>
                 <g transform="translate(41.202)">
                   <mask id="expressive-theming--alt-ap" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-ao"/>
+                    <use href="#expressive-theming--alt-ao"/>
                   </mask>
                   <g fill="#3E76C2" mask="url(#expressive-theming--alt-ap)">
                     <rect width="121" height="65" transform="translate(-4.532)"/>
@@ -428,7 +428,7 @@
                 </g>
                 <g transform="translate(2.472 80.625)">
                   <mask id="expressive-theming--alt-ar" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aq"/>
+                    <use href="#expressive-theming--alt-aq"/>
                   </mask>
                   <g fill="#D63E04" mask="url(#expressive-theming--alt-ar)">
                     <polygon points="0 0 98 0 98 117 0 117" transform="translate(-4.532 -6.754)"/>
@@ -436,7 +436,7 @@
                 </g>
                 <g transform="translate(0 5.488)">
                   <mask id="expressive-theming--alt-at" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-as"/>
+                    <use href="#expressive-theming--alt-as"/>
                   </mask>
                   <g fill="#F6BD9C" mask="url(#expressive-theming--alt-at)">
                     <polygon points="0 0 93 0 93 121 0 121" transform="translate(-2.06 -5.488)"/>
@@ -444,7 +444,7 @@
                 </g>
                 <g transform="translate(79.931 121.149)">
                   <mask id="expressive-theming--alt-av" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-au"/>
+                    <use href="#expressive-theming--alt-au"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#expressive-theming--alt-av)">
                     <polygon points="0 0 145 0 145 106 0 106" transform="translate(-18.54 -31.237)"/>
@@ -496,7 +496,7 @@
       </g>
       <g transform="translate(127 43.445)">
         <mask id="expressive-theming--alt-ax" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-aw"/>
+          <use href="#expressive-theming--alt-aw"/>
         </mask>
         <rect width="104" height="155" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
         <g fill="#F5F0E6" mask="url(#expressive-theming--alt-ax)">
@@ -508,7 +508,7 @@
         <g mask="url(#expressive-theming--alt-ax)">
           <g transform="translate(-7.28 70.048)">
             <mask id="expressive-theming--alt-az" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-ay"/>
+              <use href="#expressive-theming--alt-ay"/>
             </mask>
             <g mask="url(#expressive-theming--alt-az)">
               <polygon fill="#171717" points="0 0 165 0 165 59 0 59" transform="translate(-6.471 -.922)"/>
@@ -517,7 +517,7 @@
               <g transform="translate(-7.423 -6.452)">
                 <g transform="translate(44.717 2.117)">
                   <mask id="expressive-theming--alt-aB" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aA"/>
+                    <use href="#expressive-theming--alt-aA"/>
                   </mask>
                   <g fill="#8E704F" mask="url(#expressive-theming--alt-aB)">
                     <rect width="25" height="41" transform="translate(-.296 -2.117)"/>
@@ -525,7 +525,7 @@
                 </g>
                 <g transform="translate(14.807)">
                   <mask id="expressive-theming--alt-aD" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aC"/>
+                    <use href="#expressive-theming--alt-aC"/>
                   </mask>
                   <g fill="#3E76C2" mask="url(#expressive-theming--alt-aD)">
                     <rect width="44" height="23" transform="translate(-1.629)"/>
@@ -533,7 +533,7 @@
                 </g>
                 <g transform="translate(.888 28.887)">
                   <mask id="expressive-theming--alt-aF" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aE"/>
+                    <use href="#expressive-theming--alt-aE"/>
                   </mask>
                   <g fill="#DD7533" mask="url(#expressive-theming--alt-aF)">
                     <polygon points="0 0 35 0 35 42 0 42" transform="translate(-1.629 -2.42)"/>
@@ -541,7 +541,7 @@
                 </g>
                 <g transform="translate(0 1.966)">
                   <mask id="expressive-theming--alt-aH" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aG"/>
+                    <use href="#expressive-theming--alt-aG"/>
                   </mask>
                   <g fill="#FFBE2E" mask="url(#expressive-theming--alt-aH)">
                     <polygon points="0 0 33 0 33 43 0 43" transform="translate(-.74 -1.966)"/>
@@ -549,7 +549,7 @@
                 </g>
                 <g transform="translate(28.725 43.406)">
                   <mask id="expressive-theming--alt-aJ" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aI"/>
+                    <use href="#expressive-theming--alt-aI"/>
                   </mask>
                   <g fill="#E66F0E" mask="url(#expressive-theming--alt-aJ)">
                     <polygon points="0 0 52 0 52 38 0 38" transform="translate(-6.663 -11.192)"/>
@@ -599,9 +599,9 @@
         <g mask="url(#expressive-theming--alt-ax)">
           <g transform="translate(-35.838 11.06)">
             <mask id="expressive-theming--alt-aM" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-aK"/>
+              <use href="#expressive-theming--alt-aK"/>
             </mask>
-            <use fill="#000" filter="url(#expressive-theming--alt-aL)" xlink:href="#expressive-theming--alt-aK"/>
+            <use fill="#000" filter="url(#expressive-theming--alt-aL)" href="#expressive-theming--alt-aK"/>
             <g fill="#171717" mask="url(#expressive-theming--alt-aM)">
               <polygon points="0 0 190 0 190 8 0 8" transform="translate(-1 -1)"/>
             </g>
@@ -617,13 +617,13 @@
       </g>
       <g transform="translate(240 126.445)">
         <mask id="expressive-theming--alt-aO" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-aN"/>
+          <use href="#expressive-theming--alt-aN"/>
         </mask>
         <rect width="116" height="72" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
         <g mask="url(#expressive-theming--alt-aO)">
           <g transform="translate(62.588 45.132)">
             <mask id="expressive-theming--alt-aQ" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-aP"/>
+              <use href="#expressive-theming--alt-aP"/>
             </mask>
             <g mask="url(#expressive-theming--alt-aQ)">
               <polygon fill="#171717" points="0 0 75 0 75 27 0 27" transform="translate(-1.91)"/>
@@ -632,7 +632,7 @@
               <g transform="translate(-32.249 -64.474)">
                 <g transform="translate(56.382 2.686)">
                   <mask id="expressive-theming--alt-aS" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aR"/>
+                    <use href="#expressive-theming--alt-aR"/>
                   </mask>
                   <g fill="#81AEFC" mask="url(#expressive-theming--alt-aS)">
                     <polygon points="0 0 31 0 31 53 0 53" transform="translate(-.373 -2.686)"/>
@@ -640,7 +640,7 @@
                 </g>
                 <g transform="translate(18.67)">
                   <mask id="expressive-theming--alt-aU" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aT"/>
+                    <use href="#expressive-theming--alt-aT"/>
                   </mask>
                   <g fill="#3E76C2" mask="url(#expressive-theming--alt-aU)">
                     <rect width="55" height="30" transform="translate(-2.054)"/>
@@ -648,7 +648,7 @@
                 </g>
                 <g transform="translate(1.12 36.648)">
                   <mask id="expressive-theming--alt-aW" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aV"/>
+                    <use href="#expressive-theming--alt-aV"/>
                   </mask>
                   <g fill="#D63E04" mask="url(#expressive-theming--alt-aW)">
                     <polygon points="0 0 44 0 44 53 0 53" transform="translate(-2.054 -3.07)"/>
@@ -656,7 +656,7 @@
                 </g>
                 <g transform="translate(0 2.494)">
                   <mask id="expressive-theming--alt-aY" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aX"/>
+                    <use href="#expressive-theming--alt-aX"/>
                   </mask>
                   <g fill="#F6BD9C" mask="url(#expressive-theming--alt-aY)">
                     <polygon points="0 0 42 0 42 55 0 55" transform="translate(-.933 -2.494)"/>
@@ -664,7 +664,7 @@
                 </g>
                 <g transform="translate(36.219 55.068)">
                   <mask id="expressive-theming--alt-ba" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-aZ"/>
+                    <use href="#expressive-theming--alt-aZ"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#expressive-theming--alt-ba)">
                     <polygon points="0 0 66 0 66 48 0 48" transform="translate(-8.401 -14.199)"/>
@@ -705,7 +705,7 @@
       </g>
       <g transform="translate(365 83.445)">
         <mask id="expressive-theming--alt-bc" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-bb"/>
+          <use href="#expressive-theming--alt-bb"/>
         </mask>
         <rect width="60" height="114" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
         <g fill="#F0F0EC" mask="url(#expressive-theming--alt-bc)">
@@ -728,7 +728,7 @@
         <g mask="url(#expressive-theming--alt-bc)">
           <g transform="translate(-7.293 87.213)">
             <mask id="expressive-theming--alt-be" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-bd"/>
+              <use href="#expressive-theming--alt-bd"/>
             </mask>
             <g mask="url(#expressive-theming--alt-be)">
               <polygon fill="#171717" points="0 0 71 0 71 29 0 29" transform="translate(-.039)"/>
@@ -737,7 +737,7 @@
               <g transform="translate(-13.881 -74.41)">
                 <g transform="translate(124.43 5.878)">
                   <mask id="expressive-theming--alt-bg" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bf"/>
+                    <use href="#expressive-theming--alt-bf"/>
                   </mask>
                   <g fill="#81AEFC" mask="url(#expressive-theming--alt-bg)">
                     <polygon points="0 0 68 0 68 115 0 115" transform="translate(-.824 -5.878)"/>
@@ -745,7 +745,7 @@
                 </g>
                 <g transform="translate(41.202)">
                   <mask id="expressive-theming--alt-bi" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bh"/>
+                    <use href="#expressive-theming--alt-bh"/>
                   </mask>
                   <g fill="#3E76C2" mask="url(#expressive-theming--alt-bi)">
                     <rect width="121" height="65" transform="translate(-4.532)"/>
@@ -753,7 +753,7 @@
                 </g>
                 <g transform="translate(2.472 80.194)">
                   <mask id="expressive-theming--alt-bk" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bj"/>
+                    <use href="#expressive-theming--alt-bj"/>
                   </mask>
                   <g fill="#CBD17A" mask="url(#expressive-theming--alt-bk)">
                     <polygon points="0 0 98 0 98 116 0 116" transform="translate(-4.532 -6.718)"/>
@@ -761,7 +761,7 @@
                 </g>
                 <g transform="translate(0 5.458)">
                   <mask id="expressive-theming--alt-bm" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bl"/>
+                    <use href="#expressive-theming--alt-bl"/>
                   </mask>
                   <g fill="#719F2A" mask="url(#expressive-theming--alt-bm)">
                     <polygon points="0 0 93 0 93 121 0 121" transform="translate(-2.06 -5.458)"/>
@@ -769,7 +769,7 @@
                 </g>
                 <g transform="translate(79.931 120.501)">
                   <mask id="expressive-theming--alt-bo" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bn"/>
+                    <use href="#expressive-theming--alt-bn"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#expressive-theming--alt-bo)">
                     <polygon points="0 0 145 0 145 106 0 106" transform="translate(-18.54 -31.07)"/>
@@ -792,9 +792,9 @@
             <rect width="14.73" height="1.836" x="35.905" fill="#5C5C5C" rx=".918"/>
             <g transform="translate(54.317)">
               <mask id="expressive-theming--alt-br" fill="#fff">
-                <use xlink:href="#expressive-theming--alt-bp"/>
+                <use href="#expressive-theming--alt-bp"/>
               </mask>
-              <use fill="#000" filter="url(#expressive-theming--alt-bq)" xlink:href="#expressive-theming--alt-bp"/>
+              <use fill="#000" filter="url(#expressive-theming--alt-bq)" href="#expressive-theming--alt-bp"/>
               <g fill="#DCDEE0" mask="url(#expressive-theming--alt-br)">
                 <polygon points="0 0 17 0 17 4 0 4" transform="translate(-1 -1)"/>
               </g>
@@ -804,9 +804,9 @@
         <g mask="url(#expressive-theming--alt-bc)">
           <g transform="translate(-35.905 12.852)">
             <mask id="expressive-theming--alt-bu" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-bs"/>
+              <use href="#expressive-theming--alt-bs"/>
             </mask>
-            <use fill="#000" filter="url(#expressive-theming--alt-bt)" xlink:href="#expressive-theming--alt-bs"/>
+            <use fill="#000" filter="url(#expressive-theming--alt-bt)" href="#expressive-theming--alt-bs"/>
             <g fill="#171717" mask="url(#expressive-theming--alt-bu)">
               <polygon points="0 0 191 0 191 8 0 8" transform="translate(-1 -1)"/>
             </g>
@@ -815,7 +815,7 @@
       </g>
       <g transform="translate(434 126.445)">
         <mask id="expressive-theming--alt-bw" fill="#fff">
-          <use xlink:href="#expressive-theming--alt-bv"/>
+          <use href="#expressive-theming--alt-bv"/>
         </mask>
         <rect width="35" height="72" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
         <g fill="#F0F0EC" mask="url(#expressive-theming--alt-bw)">
@@ -827,7 +827,7 @@
         <g mask="url(#expressive-theming--alt-bw)">
           <g transform="translate(-6.345 45.132)">
             <mask id="expressive-theming--alt-by" fill="#fff">
-              <use xlink:href="#expressive-theming--alt-bx"/>
+              <use href="#expressive-theming--alt-bx"/>
             </mask>
             <g mask="url(#expressive-theming--alt-by)">
               <polygon fill="#171717" points="0 0 44 0 44 31 0 31" transform="translate(.845)"/>
@@ -836,7 +836,7 @@
               <g transform="translate(-.988 -9.21)">
                 <g transform="translate(31.107 1.454)">
                   <mask id="expressive-theming--alt-bA" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bz"/>
+                    <use href="#expressive-theming--alt-bz"/>
                   </mask>
                   <g fill="#9D84D2" mask="url(#expressive-theming--alt-bA)">
                     <polygon points="0 0 17 0 17 28 0 28" transform="translate(-.206 -1.454)"/>
@@ -844,7 +844,7 @@
                 </g>
                 <g transform="translate(10.3)">
                   <mask id="expressive-theming--alt-bC" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bB"/>
+                    <use href="#expressive-theming--alt-bB"/>
                   </mask>
                   <g fill="#D27A56" mask="url(#expressive-theming--alt-bC)">
                     <polygon points="0 0 30 0 30 16 0 16" transform="translate(-1.133)"/>
@@ -852,7 +852,7 @@
                 </g>
                 <g transform="translate(.618 19.833)">
                   <mask id="expressive-theming--alt-bE" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bD"/>
+                    <use href="#expressive-theming--alt-bD"/>
                   </mask>
                   <g fill="#FDB8AE" mask="url(#expressive-theming--alt-bE)">
                     <polygon points="0 0 25 0 25 29 0 29" transform="translate(-1.133 -1.661)"/>
@@ -860,7 +860,7 @@
                 </g>
                 <g transform="translate(0 1.35)">
                   <mask id="expressive-theming--alt-bG" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bF"/>
+                    <use href="#expressive-theming--alt-bF"/>
                   </mask>
                   <g fill="#4C3D69" mask="url(#expressive-theming--alt-bG)">
                     <polygon points="0 0 23 0 23 30 0 30" transform="translate(-.515 -1.35)"/>
@@ -868,7 +868,7 @@
                 </g>
                 <g transform="translate(19.983 29.801)">
                   <mask id="expressive-theming--alt-bI" fill="#fff">
-                    <use xlink:href="#expressive-theming--alt-bH"/>
+                    <use href="#expressive-theming--alt-bH"/>
                   </mask>
                   <g fill="#D5BFFF" mask="url(#expressive-theming--alt-bI)">
                     <polygon points="0 0 36 0 36 26 0 26" transform="translate(-4.635 -7.684)"/>

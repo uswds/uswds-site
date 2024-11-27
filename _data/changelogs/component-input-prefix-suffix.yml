@@ -2,6 +2,13 @@ title: Input prefix or suffix
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed deprecated xlink references.
+    summaryAdditional: All deprecated xlink:href references have been replaced with href.
+    affectsMarkup: true
+    githubPr: 6165
+    githubRepo: uswds
+    versionUswds: 3.9.0
   - date: 2023-11-20
     summary: Added documentation for `usa-input-group--success` variant.
     affectsGuidance: true

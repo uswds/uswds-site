@@ -2,6 +2,13 @@ title: Pagination
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed deprecated xlink references.
+    summaryAdditional: All deprecated xlink:href references have been replaced with href.
+    affectsMarkup: true
+    githubPr: 6165
+    githubRepo: uswds
+    versionUswds: 3.9.0
   - date: 2024-10-16
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

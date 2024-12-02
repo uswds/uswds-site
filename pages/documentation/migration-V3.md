@@ -768,7 +768,7 @@ These instructions will help you update your `@import` references to the new syn
     Note that the new `@use` statement is a list of variables, so each line ends in a comma `,` instead of a semicolon `;`.
 
     {: .site-note }
-    **Note:** the `@use "uswds-core" with ()` configuration accepts only current USWDS settings variables. If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the in the list of [USWDS settings]({{ site.baseurl }}/documentation/settings/) and try compiling again.
+    **Note:** the `@use "uswds-core" with ()` configuration accepts only current USWDS settings variables. If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the list of [USWDS settings]({{ site.baseurl }}/documentation/settings/) and try compiling again.
 
 1. **Use the new theme file in your project** If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically `styles.scss`. It usually looks something like this:
 

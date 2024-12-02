@@ -8,6 +8,21 @@ items:
   affectsMarkup: true
   githubPr: 6165
   githubRepo: uswds
+- date: 2024-11-13
+  summary: Fixed a bug that prevented bundling the modal package with a custom prefix.
+  summaryAdditional: This update removed hard-coded class names from the modal JavaScript.
+  isBreaking: false
+  affectsJavascript: true
+  githubPr: 6026
+  githubRepo: uswds
+  versionUswds: 3.10.0
+- date: 2024-11-6
+  summary: Added focus trap guidance.
+  summaryAdditional: Updated guidance to ensure users trap focus inside the modal so that it doesn't move to the content behind it.
+  isBreaking: false
+  affectsGuidance: true
+  githubPr: 2874
+  githubRepo: uswds-site
   versionUswds: 3.9.0
 - date: 2023-11-09
   summary: Updated JavaScript to include fallbacks and error messages when initialization cannot be completed.

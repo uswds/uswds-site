@@ -133,7 +133,7 @@ Provide a text entry field that supports a rich array of special characters and 
 - The importance of personal pronouns. (September 16, 2022) Retrieved on November 1, 2022 from, [https://digital.va.gov/people-excellence/the-importance-of-personal-pronouns/](https://digital.va.gov/people-excellence/the-importance-of-personal-pronouns/)
 - Inclusive forms. (n.d.) Retrieved on July 19, 2022, from <https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/>
 - Living up to our value of inclusion: Why we should use pronouns. (September 14, 2021) Retrieved on November 1, 2022 from, [https://www.fs.usda.gov/inside-fs/leadership/living-our-value-inclusion-why-we-should-use-preferred-pronouns](https://www.fs.usda.gov/inside-fs/leadership/living-our-value-inclusion-why-we-should-use-preferred-pronouns)
-- Pronoun use in email signatures. (June 29, 2020) Retrieved on November 1, 2022, from <https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/>
+- Pronoun use in email signatures. (June 29, 2020) Retrieved on November 1, 2022, from <https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures>
 - They, their. (April 10, 2019). Retrieved on July 19, 2022, from <https://design.va.gov/content-style-guide/they-their>
 
 {:.site-component-section-title}

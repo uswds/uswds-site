@@ -117,7 +117,7 @@ Place the language selector button at the top of the screen above site navigatio
 ## See pattern in use
 
 {:.usa-content-list}
-- [USA.gov (beta)](http://beta.usa.gov/)
+- [USA.gov (beta)](https://www.usa.gov/)
 
 {:.site-component-section-title}
 ## Related components, patterns, and templates

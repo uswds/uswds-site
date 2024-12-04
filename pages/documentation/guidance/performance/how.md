@@ -237,7 +237,7 @@ Tracking performance through a new, or existing, Continuous Integration (CI) ser
 
 ##### What you’ll need:
 
-- A continuous integration server or service, which is able to run your site’s build at certain points during code changes. Some example free services include [CircleCI](https://circleci.com/) or [Travis CI](https://travis-ci.org/).
+- A continuous integration server or service, which is able to run your site’s build at certain points during code changes. Some example free services include [CircleCI](https://circleci.com/) or [Travis CI](https://www.travis-ci.com/).
 - A build process that can run your website in a local, real or test environment, so that it can be visited at a localhost or staging URL
 - The ability to add new tools to be run during your continuous integration build
 

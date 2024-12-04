@@ -159,7 +159,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [USA.gov](https://usa.gov)
 - [USAID](https://www.usaid.gov/)
 - [USAJOBS](https://www.usajobs.gov/)
-- [USAJOBS Data Science Careers](https://www.usajobs.gov/careerfields/data-science)
+- [USAJOBS Data Science Careers](https://data-science.usajobs.gov/)
 - [USAspending.gov](https://www.usaspending.gov/)
 - [USDA Economic Research Service](http://www.ers.usda.gov/)
 - [USDA New Farmers](https://newfarmers.usda.gov/)

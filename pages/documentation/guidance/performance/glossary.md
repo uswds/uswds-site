@@ -209,7 +209,7 @@ The typical example of a custom metric is Twitter using a "time to first tweet."
 
 ### First meaningful paint
 
-As described on developers.google.com, [First meaningful paint](https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint) is a browser-supplied metric that measures how long it takes for the most meaningful content to be fully rendered on the site. Measurement involves watching all layout events as the page loads, filtering by events for new objects above the page fold, and then accounting for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes for the most important content on the site to be fully rendered. This was confirmed by having first meaningful paint tested against speed index for a large number of sites. This metric is closely related to speed index, as both are accurate measurements of a user’s perceived performance.
+As described on developer.chrome.com, [First meaningful paint](https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint) is a browser-supplied metric that measures how long it takes for the most meaningful content to be fully rendered on the site. Measurement involves watching all layout events as the page loads, filtering by events for new objects above the page fold, and then accounting for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes for the most important content on the site to be fully rendered. This was confirmed by having first meaningful paint tested against speed index for a large number of sites. This metric is closely related to speed index, as both are accurate measurements of a user’s perceived performance.
 
 #### Pros
 - Similar to speed index, it is a very accurate measurement of how the user perceives the performance of a site.
@@ -258,7 +258,7 @@ Time to interactive can be found in statistics in the Chrome browser.
 
 ### Input latency
 
-Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a [RUM metric](#real-time-monitoring), as it’s more accurate to gather information as real users are interacting with the site. It’s also possible to test [synthetically](#synthetic-monitoring). For more information, see [Lighthouse's input latency documentation](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid) (available via Google Tools for Web Developers page).
+Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a [RUM metric](#real-time-monitoring), as it’s more accurate to gather information as real users are interacting with the site. It’s also possible to test [synthetically](#synthetic-monitoring). For more information, see [Lighthouse's first input delay documentation](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid) (available via Google Tools for Web Developers page).
 
 #### Pros
 - It's the only metric that tests how the site responds over time as the user interacts with it.
@@ -272,7 +272,7 @@ The only known way to test input latency right now is with [Lighthouse]. This to
 
 ### Render start
 
-Render start is the time from the [first byte](#first-byte) to when the browser draws the first pixel on the screen. It is a [synthetic](#synthetic-monitoring) metric, as there’s no way to get the metric from the browser itself. It is closely related to [first paint](#first-paint), but it's more accurate because it's calculated via visual cues. It's also harder to test than first paint because it requires screen capturing. See [this WebPagetest discussion](https://forums.webpagetest.org/t/start-render-time/193) for more information.
+Render start is the time from the [first byte](#first-byte) to when the browser draws the first pixel on the screen. It is a [synthetic](#synthetic-monitoring) metric, as there’s no way to get the metric from the browser itself. It is closely related to [first paint](#first-paint), but it's more accurate because it's calculated via visual cues. It's also harder to test than first paint because it requires screen capturing. See [this WebPagetest discussion](https://forums.webpagetest.org/t/startrender-vs-first-paint/8990) for more information.
 
 Render start measures how long it takes for blocking scripts, style sheets, and other processes to complete before the browser can start rendering the page. It will point to problems in the request pipeline, such as not deferring or placing scripts at the end of the document, or requiring too many blocking CSS resources. It’s generally less useful than more complete visual metrics, such as [speed index](#speed-index) and [first paint](#first-paint).
 

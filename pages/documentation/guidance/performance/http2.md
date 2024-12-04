@@ -24,7 +24,7 @@ Multiplexing is HTTP/2’s ability to send data back and forth in parallel over 
 
 Another prominent feature of HTTP/2 is that, at least in practice, it strengthens security because browsers have only implemented HTTP/2 support for sites that are served over HTTPS. While the HTTPS handshake can add some loading time, you can reduce some of that by [configuring HTTPS](#how-to-speed-up-https). Regardless, the dramatic performance gains from using HTTP/2 will likely outweigh any additional HTTPS overhead.
 
-For more information on HTTP/2, see [Google's developer reference](https://hpbn.co/http2/).
+For more information on HTTP/2, see [High Performance Browser Networking](https://hpbn.co/http2/).
 
 ## HTTP/2 and performance
 

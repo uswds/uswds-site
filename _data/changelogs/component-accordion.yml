@@ -2,6 +2,13 @@ title: Accordion
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Hide collapsed accordion content while JavaScript is loading.
+    summaryAdditional: This prevents the appearance of flashing content during page load.
+    affectsStyles: true
+    githubPr: 5826
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-01-17
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

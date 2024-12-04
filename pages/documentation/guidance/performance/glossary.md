@@ -258,7 +258,7 @@ Time to interactive can be found in statistics in the Chrome browser.
 
 ### Input latency
 
-Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a [RUM metric](#real-time-monitoring), as it’s more accurate to gather information as real users are interacting with the site. It’s also possible to test [synthetically](#synthetic-monitoring). For more information, see [Lighthouse's first input delay documentation](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid) (available via Google Tools for Web Developers page).
+Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a [RUM metric](#real-time-monitoring), as it’s more accurate to gather information as real users are interacting with the site. It’s also possible to test [synthetically](#synthetic-monitoring). For more information, see [Lighthouse's first input delay documentation](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid) (available via Chrome for developers page).
 
 #### Pros
 - It's the only metric that tests how the site responds over time as the user interacts with it.

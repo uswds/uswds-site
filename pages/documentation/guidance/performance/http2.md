@@ -50,7 +50,7 @@ Before upgrading, you should check to see if your server already supports HTTP/2
 
 Upgrading to HTTP/2 requires that you have administrative access to either the server or CDN that hosts your website and its assets. If your site is on a CDN not directly under your control, here are instructions for enabling HTTP/2 on some of the most common CDNs:
 
-- [Cloudflare](https://developers.cloudflare.com/cache/how-to/enable-http2-to-origin/)
+- [Cloudflare](https://developers.cloudflare.com/speed/optimization/protocol/http2-to-origin/)
 - [Amazon CloudFront](https://aws.amazon.com/about-aws/whats-new/2016/09/amazon-cloudfront-now-supports-http2/)
 
 ## How to speed up HTTPS

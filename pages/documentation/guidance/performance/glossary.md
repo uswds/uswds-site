@@ -222,7 +222,7 @@ As described on developer.chrome.com, [First meaningful paint](https://developer
 First meaningful paint can be measured in one of two ways:
 
 ##### Lighthouse
-[Lighthouse], the Chrome plugin and command line testing tool described on Google for Web Developers, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) (as explained on the Google Tools for Web Developers page) with the appropriate options.
+[Lighthouse], the Chrome plugin and command line testing tool described on Chrome for developers, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developer.chrome.com/docs/lighthouse/overview/#cli) (as explained on the Chrome for developers) with the appropriate options.
 
 ##### Chrome web browser
 You can measure first meaningful paint timing for any page in the [Chrome DevTools Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool).
@@ -250,7 +250,7 @@ Time to interactive can be measure in one of two ways:
 
 ##### Lighthouse
 
-[Lighthouse], the Chrome plugin and command line testing tool, includes time to interactive as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) (as explained on the Google Tools for Web Developers page) with the appropriate options.
+[Lighthouse], the Chrome plugin and command line testing tool, includes time to interactive as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developer.chrome.com/docs/lighthouse/overview/#cli) (as explained on the Chrome for developers page) with the appropriate options.
 
 ##### Chrome web browser
 

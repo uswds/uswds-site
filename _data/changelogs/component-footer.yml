@@ -2,6 +2,14 @@ title: Footer
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: 'Removed `overflow: hidden` from `usa-footer` to allow the full focus outline to show.'
+    summaryAdditional: This fix also improves horizontal alignment in the slim footer variant.
+    affectsStyles: true
+    affectsAccessibility: true
+    githubPr: 6237
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-10-04
     summary: Added the `autocomplete="email"` attribute to the email input element.
     summaryAdditional: This allows the component to meet all the standards outlined in [WCAG 1.3.5](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html).

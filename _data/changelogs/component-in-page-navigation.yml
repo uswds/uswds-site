@@ -13,8 +13,6 @@ items:
   - date: 2024-10-16
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
     githubPr: 2863
     githubRepo: uswds-site
   - date: 2024-03-26

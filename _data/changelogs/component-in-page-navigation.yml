@@ -2,9 +2,17 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Hide in-page navigation when there are fewer than 2 headings.
+    summaryAdditional: The `data-minimum-heading-count` setting determines when the in-page navigation should be displayed or hidden if the minimum number of headings is not reached. Previously, in-page navigation was shown even when there were no headings, resulting in an empty component. This setting can be customized.
+    affectsGuidance: true
+    githubPr: 6205
+    githubRepo: uswds
   - date: 2024-10-16
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
     githubPr: 2863
     githubRepo: uswds-site
   - date: 2024-03-26

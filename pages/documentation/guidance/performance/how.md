@@ -111,12 +111,12 @@ It is possible to use two different tools to track all your metrics, but not rec
 
 Besides checking that the tool tracks most of the main metrics your team is interested in, it’s also important to consider how the tool will be run. The following scenarios show why certain tools are better based on the conditions of the site and the team:
 
-- If the site is not public and you have to login to use it, performance tools that can be run in the browser, such as [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/), make the process of testing much easier. Otherwise tools have to be configured to login to the site in an automated fashion, or have login cookies set up so the tool can access the site.
+- If the site is not public and you have to login to use it, performance tools that can be run in the browser, such as [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), make the process of testing much easier. Otherwise tools have to be configured to login to the site in an automated fashion, or have login cookies set up so the tool can access the site.
 - If your team doesn’t use the Chrome web browser, then using [Sitespeed.io](https://www.sitespeed.io/) as a tool is a great choice. It reports on most of the same metrics as Lighthouse but doesn’t require a particular browser.
 - If your team has limited ability to install the Chrome web browser, Chrome extensions, or CLI applications, then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
 
 {% capture example_tool %}
-  In the cloud.gov dashboard, we decided to use [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/). Google Chrome Lighthouse reports on most of the metrics we’re interested in and is able to run in both CLI and as a browser extension. Since the dashboard isn’t public, and you need to be logged in to use it, Lighthouse’s ability to be run in the browser makes testing the site much easier.
+  In the cloud.gov dashboard, we decided to use [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/). Google Chrome Lighthouse reports on most of the metrics we’re interested in and is able to run in both CLI and as a browser extension. Since the dashboard isn’t public, and you need to be logged in to use it, Lighthouse’s ability to be run in the browser makes testing the site much easier.
 {% endcapture %}
 {% include perf_example.html
   text=example_tool
@@ -137,7 +137,7 @@ Focusing on these three metrics provides a good overview of how well your site i
 Based on these metrics, we’ve also recommended tools that are able to track these three metrics.
 #### Default tool recommendation:
 
-[Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/): a Google Chrome library that can be run in the CLI or as a browser extension. Google Chrome Lighthouse can be run in a CLI, or developer environment. It’s relatively easy to setup, and use, and includes harder to track metrics, like [Speed index](../glossary/#speed-index). Its only downside is that it requires both the Chrome browser and the ability to install Chrome extensions. If your team is unable to install Chrome or Chrome extensions  then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
+[Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/): a Google Chrome library that can be run in the CLI or as a browser extension. Google Chrome Lighthouse can be run in a CLI, or developer environment. It’s relatively easy to setup, and use, and includes harder to track metrics, like [Speed index](../glossary/#speed-index). Its only downside is that it requires both the Chrome browser and the ability to install Chrome extensions. If your team is unable to install Chrome or Chrome extensions  then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
 
 Once you have chosen metrics and a tool to track the metrics, the next step is to define your performance goals and potential budgets, or limits, for the project.
 
@@ -151,13 +151,13 @@ The first step in setting budgets and potentially, goals, is to have an idea of 
 
 The best way to do comparisons is to run your preferred tool(s) against each chosen comparison site. To do the comparison, your team should choose three to six  comparison sites to run testing against. The tool should be run against one to three pages from each comparison site, based on how different each page is from one another.
 
-- To do this in [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/), visit one to three pages for each comparison site, run the Lighthouse extension, and export the results. Lighthouse also has a secondary tool, [lighthouse-batch](https://www.npmjs.com/package/lighthouse-batch), to run against multiple URLs to make this process faster.
+- To do this in [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), visit one to three pages for each comparison site, run the Lighthouse extension, and export the results. Lighthouse also has a secondary tool, [lighthouse-batch](https://www.npmjs.com/package/lighthouse-batch), to run against multiple URLs to make this process faster.
 - A similar process can be used for [Sitespeed.io](https://www.sitespeed.io/) by running the CLI command for each page of each comparison site. Sitespeed.io also has an option to run against multiple URLs, similar to lighthouse-batch, built into the actual tool.
 
 Once all the data is collected for each page, of each site, you’ll want to compare the data and get an idea of the max and min values for each of your chosen metrics for each site. It’s up to you how you want to do this. One way is to make a Google spreadsheet comparing each metric to each site page.
 
 {% capture example_comparison %}
-  In the cloud.gov dashboard, we used [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/) to test against four comparison sites: AWS, IBM Bluemix, Pivotal, and Azure. For each, we ran a test on the landing page and a specific app page. We saved all the results and created a spreadsheet in Google documents alongside our own Lighthouse test on cloud.gov. We also included results from our own cloud.gov dashboard.
+  In the cloud.gov dashboard, we used [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to test against four comparison sites: AWS, IBM Bluemix, Pivotal, and Azure. For each, we ran a test on the landing page and a specific app page. We saved all the results and created a spreadsheet in Google documents alongside our own Lighthouse test on cloud.gov. We also included results from our own cloud.gov dashboard.
   <img src="{{ site.baseurl }}/img/performance/example-comparisons.png" alt="cloud.gov example comparison document">
 {% endcapture %}
 {% include perf_example.html
@@ -176,7 +176,7 @@ A good idea for selecting budgets is selecting the fastest performing site for e
 - The lowest value, or minimum, is **4085**.
 - We’ll take 20% off that value for a [Speed index](../glossary/#speed-index) budget of **3268**.
 
-This value can also be compared to the recommended values from your tool. [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/) provides a target value for each metric. If the budget is far off the target, it might be a good idea to bring it closer to that target. You can also round the numbers up or down to make them easier for the team to remember.
+This value can also be compared to the recommended values from your tool. [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) provides a target value for each metric. If the budget is far off the target, it might be a good idea to bring it closer to that target. You can also round the numbers up or down to make them easier for the team to remember.
 
 Not all metrics require setting a budget. Any metrics that can’t be compared, such as [Custom timing events](../glossary/#custom-timing-events), should not have a budget. Other budgets are simply a yes or no value, such as whether the site is mobile friendly, which doesn’t require a budget. Additionally, it’s up to your team to analyze the data and set budgets for what makes sense.
 
@@ -289,7 +289,7 @@ A Content Management Solution (CMS) tracker should only be used if your site has
 Depending on how often the code of the site gets updated, the team might need two tracking solutions: one for the CMS and one for the code updates, leading to a more complicated system.
 
 {% capture example_tracking %}
-  In the cloud.gov dashboard, we decided to do CI testing because we already had a reliable CI setup and the team is primarily made up of developers, meaning CI would be where performance gets the most attention. We setup [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/) in our build process, ensuring that if a recent code change goes over budget, it would stop the build and report the problems to the developers. Additionally, we used a Github service to receive performance reports over time.
+  In the cloud.gov dashboard, we decided to do CI testing because we already had a reliable CI setup and the team is primarily made up of developers, meaning CI would be where performance gets the most attention. We setup [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) in our build process, ensuring that if a recent code change goes over budget, it would stop the build and report the problems to the developers. Additionally, we used a Github service to receive performance reports over time.
 {% endcapture %}
 {% include perf_example.html
   text=example_tracking

@@ -389,6 +389,6 @@ var numberOfElements = document.getElementsByTagName('*').length;
 [critical CSS]: https://www.smashingmagazine.com/2015/08/understanding-critical-css/
 [WebPagetest]: https://www.webpagetest.org/
 [SpeedCurve]: https://speedcurve.com/
-[Lighthouse]: https://developers.google.com/web/tools/lighthouse/
+[Lighthouse]: https://developer.chrome.com/docs/lighthouse/overview/
 [performance timing API]: https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
 [HTTP/2]: https://en.wikipedia.org/wiki/HTTP/2

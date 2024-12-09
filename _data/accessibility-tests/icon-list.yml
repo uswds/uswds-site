@@ -1,0 +1,51 @@
+title: Icon list
+component_status: pass
+test_items:
+# General tests
+  - summary: Icons used in an icon list are used the same way across the site.
+    summary_additional: When you see or tab to any icon list, icons used will always be represent the same thing in other lists on other parts of the website.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 3.2.4
+  - summary: Color alone is not used to convey information.
+    summary_additional: When you view an icon list, you never have to rely on color alone to understand the meaning of the icons being used.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.1
+  - summary: Icons meet color contrast requirements.
+    summary_additional: When you look at an icon list and use ANDI or another color contrast analyzer to look at the hex numbers, contrast between the icons and the background is at least 3:1.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.11
+  - summary: Descriptive alt text identifies icon purpose.
+    summary_additional: When you view icons in an icon list component, you can mouse over an icon to see its meaning or purpose. Decorative icons will have no alt text.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.1.1
+  - summary: Icon list content is written in plain language.
+    summary_additional: When you read the content in the icon list, the information is easy to understand. Content is written at the appropriate level for the audience.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 3.1.5
+# Zoom/screen magnification tests
+  - summary: Text and icons retain functionality when screen is magnified.
+    summary_additional: When you zoom in to 200%, icons and text are readable and retain all of their functionality.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.4
+# Screen reader tests
+  - summary: Screen reader announces icon meaning and purpose.
+    summary_additional: When you listen to icon descriptions in a list using a screen reader, you can understand their meaning. Alt text descriptions indicate purpose.
+    test_status: exception
+    status_details: Alt text for specific icons may default to "decorative" when it should indicate meaning like "yes" or "no".
+    github_issue_number: 6118
+    github_issue_repo: uswds
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.6

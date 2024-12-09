@@ -82,7 +82,7 @@ The following gives a brief overview of a handful of metrics. If you're looking 
 
 ### Onload
 
-[The `load` event](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload) (as shown in MDN Web Docs) fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links, and sub-frames have finished loading.
+[The `load` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event) (as shown in MDN Web Docs) fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links, and sub-frames have finished loading.
 
 #### Pros
 - Easy to calculate for most pages

@@ -128,7 +128,7 @@ summary_sections:
 
               <figure class="next-quote">
                 <svg class="usa-icon usa-icon--size-8 next-quote__icon" aria-hidden="true" focusable="false" role="img">
-                  <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#format_quote"></use>
+                  <use href="{{ site.baseurl }}/assets/img/sprite.svg#format_quote"></use>
                 </svg>
                 <blockquote class="next-quote__quote">
                 The more we use the design system to standardize how we build digital experiences, the more we will improve how the federal web functions.

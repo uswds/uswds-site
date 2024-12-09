@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="492" height="288" viewBox="0 0 492 288">
+<svg xmlns="http://www.w3.org/2000/svg" width="492" height="288" viewBox="0 0 492 288">
   <defs>
     <rect id="simplified-12-column-layout-grid--alt-a" width="91.55" height="142.411" x="0" y="0" rx="2.543"/>
     <rect id="simplified-12-column-layout-grid--alt-c" width="105.769" height="69.059" x="0" y="0"/>
@@ -57,19 +57,19 @@
       <rect width="492.079" height="288" x=".636" fill="#F0F0F0"/>
       <g opacity=".1" transform="translate(289.272 61.669)">
         <mask id="simplified-12-column-layout-grid--alt-b" fill="#fff">
-          <use xlink:href="#simplified-12-column-layout-grid--alt-a"/>
+          <use href="#simplified-12-column-layout-grid--alt-a"/>
         </mask>
         <rect width="92.821" height="143.682" x="-.636" y="-.636" stroke="#171717" stroke-width="1.272" rx="2.543"/>
         <g mask="url(#simplified-12-column-layout-grid--alt-b)">
           <g transform="translate(-5.086 11.444)">
             <mask id="simplified-12-column-layout-grid--alt-d" fill="#fff">
-              <use xlink:href="#simplified-12-column-layout-grid--alt-c"/>
+              <use href="#simplified-12-column-layout-grid--alt-c"/>
             </mask>
             <g mask="url(#simplified-12-column-layout-grid--alt-d)">
               <g transform="translate(-19.587 34.53)">
                 <g transform="translate(46.703 2.178)">
                   <mask id="simplified-12-column-layout-grid--alt-f" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-e"/>
+                    <use href="#simplified-12-column-layout-grid--alt-e"/>
                   </mask>
                   <g fill="#919191" mask="url(#simplified-12-column-layout-grid--alt-f)">
                     <polygon points="0 0 25.803 0 25.803 43.74 0 43.74" transform="translate(-.31 -2.178)"/>
@@ -77,7 +77,7 @@
                 </g>
                 <g transform="translate(15.464)">
                   <mask id="simplified-12-column-layout-grid--alt-h" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-g"/>
+                    <use href="#simplified-12-column-layout-grid--alt-g"/>
                   </mask>
                   <g fill="#919191" mask="url(#simplified-12-column-layout-grid--alt-h)">
                     <polygon points="0 0 44.658 0 44.658 24.413 0 24.413" transform="translate(-1.701)"/>
@@ -85,7 +85,7 @@
                 </g>
                 <g transform="translate(.928 29.712)">
                   <mask id="simplified-12-column-layout-grid--alt-j" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-i"/>
+                    <use href="#simplified-12-column-layout-grid--alt-i"/>
                   </mask>
                   <g fill="#919191" mask="url(#simplified-12-column-layout-grid--alt-j)">
                     <polygon points="0 0 36.719 0 36.719 43.74 0 43.74" transform="translate(-1.701 -2.489)"/>
@@ -93,7 +93,7 @@
                 </g>
                 <g transform="translate(0 2.022)">
                   <mask id="simplified-12-column-layout-grid--alt-l" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-k"/>
+                    <use href="#simplified-12-column-layout-grid--alt-k"/>
                   </mask>
                   <g fill="#919191" mask="url(#simplified-12-column-layout-grid--alt-l)">
                     <polygon points="0 0 34.734 0 34.734 45.775 0 45.775" transform="translate(-.773 -2.022)"/>
@@ -101,7 +101,7 @@
                 </g>
                 <g transform="translate(30.001 44.645)">
                   <mask id="simplified-12-column-layout-grid--alt-n" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-m"/>
+                    <use href="#simplified-12-column-layout-grid--alt-m"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid--alt-n)">
                     <polygon points="0 0 53.59 0 53.59 39.672 0 39.672" transform="translate(-6.959 -11.511)"/>
@@ -122,20 +122,20 @@
       </g>
       <g transform="translate(324.238 8.265)">
         <mask id="simplified-12-column-layout-grid--alt-p" fill="#fff">
-          <use xlink:href="#simplified-12-column-layout-grid--alt-o"/>
+          <use href="#simplified-12-column-layout-grid--alt-o"/>
         </mask>
         <rect width="67.391" height="96" x="-.636" y="-.636" stroke="#FFF" stroke-width="1.272" rx="2.543"/>
         <g mask="url(#simplified-12-column-layout-grid--alt-p)">
           <g transform="translate(-20.138 41.985)">
             <mask id="simplified-12-column-layout-grid--alt-r" fill="#fff">
-              <use xlink:href="#simplified-12-column-layout-grid--alt-q"/>
+              <use href="#simplified-12-column-layout-grid--alt-q"/>
             </mask>
-            <use fill="#F0F0F0" xlink:href="#simplified-12-column-layout-grid--alt-q"/>
+            <use fill="#F0F0F0" href="#simplified-12-column-layout-grid--alt-q"/>
             <g mask="url(#simplified-12-column-layout-grid--alt-r)">
               <g transform="translate(-16.1 .611)">
                 <g transform="translate(100.54 4.734)">
                   <mask id="simplified-12-column-layout-grid--alt-t" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-s"/>
+                    <use href="#simplified-12-column-layout-grid--alt-s"/>
                   </mask>
                   <g fill="#FFF" mask="url(#simplified-12-column-layout-grid--alt-t)">
                     <polygon points="0 0 54.582 0 54.582 94.601 0 94.601" transform="translate(-.666 -4.734)"/>
@@ -143,7 +143,7 @@
                 </g>
                 <g transform="translate(33.292)">
                   <mask id="simplified-12-column-layout-grid--alt-v" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-u"/>
+                    <use href="#simplified-12-column-layout-grid--alt-u"/>
                   </mask>
                   <g fill="#FFF" mask="url(#simplified-12-column-layout-grid--alt-v)">
                     <polygon points="0 0 97.256 0 97.256 52.895 0 52.895" transform="translate(-3.662)"/>
@@ -151,7 +151,7 @@
                 </g>
                 <g transform="translate(1.997 64.59)">
                   <mask id="simplified-12-column-layout-grid--alt-x" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-w"/>
+                    <use href="#simplified-12-column-layout-grid--alt-w"/>
                   </mask>
                   <g fill="#D63E04" mask="url(#simplified-12-column-layout-grid--alt-x)">
                     <polygon points="0 0 78.4 0 78.4 94.601 0 94.601" transform="translate(-3.662 -5.41)"/>
@@ -159,7 +159,7 @@
                 </g>
                 <g transform="translate(0 4.396)">
                   <mask id="simplified-12-column-layout-grid--alt-z" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-y"/>
+                    <use href="#simplified-12-column-layout-grid--alt-y"/>
                   </mask>
                   <g fill="#FFF" mask="url(#simplified-12-column-layout-grid--alt-z)">
                     <polygon points="0 0 74.431 0 74.431 98.67 0 98.67" transform="translate(-1.665 -4.396)"/>
@@ -167,7 +167,7 @@
                 </g>
                 <g transform="translate(64.586 97.055)">
                   <mask id="simplified-12-column-layout-grid--alt-B" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-A"/>
+                    <use href="#simplified-12-column-layout-grid--alt-A"/>
                   </mask>
                   <g fill="#FFF" mask="url(#simplified-12-column-layout-grid--alt-B)">
                     <polygon points="0 0 116.112 0 116.112 86.464 0 86.464" transform="translate(-14.981 -25.025)"/>
@@ -187,7 +187,7 @@
       <path fill="#FFF" d="M101.721854,17.1655629 L101.721854,17.1655629 C102.424097,17.1655629 102.993377,17.7348432 102.993377,18.4370861 L102.993377,18.4370861 C102.993377,19.139329 102.424097,19.7086093 101.721854,19.7086093 L101.721854,19.7086093 C101.019611,19.7086093 100.450331,19.139329 100.450331,18.4370861 L100.450331,18.4370861 C100.450331,17.7348432 101.019611,17.1655629 101.721854,17.1655629 Z" transform="rotate(90 101.722 18.437)"/>
       <g transform="translate(324.238 171.02)">
         <mask id="simplified-12-column-layout-grid--alt-D" fill="#fff">
-          <use xlink:href="#simplified-12-column-layout-grid--alt-C"/>
+          <use href="#simplified-12-column-layout-grid--alt-C"/>
         </mask>
         <rect width="67.391" height="109.351" x="-.636" y="-.636" stroke="#FFF" stroke-width="1.272" rx="2.543"/>
         <rect width="34.967" height="1.272" x="2.543" y="99.179" fill="#FFF" mask="url(#simplified-12-column-layout-grid--alt-D)" rx=".636"/>
@@ -223,7 +223,7 @@
       </g>
       <g opacity=".099" transform="translate(106.172 141.14)">
         <mask id="simplified-12-column-layout-grid--alt-F" fill="#fff">
-          <use xlink:href="#simplified-12-column-layout-grid--alt-E"/>
+          <use href="#simplified-12-column-layout-grid--alt-E"/>
         </mask>
         <rect width="92.821" height="92.821" x="-.636" y="-.636" stroke="#171717" stroke-width="1.272" rx="2.543"/>
         <rect width="35.603" height="3.179" x="2.543" y="16.53" fill="#ADADAD" mask="url(#simplified-12-column-layout-grid--alt-F)" rx="1.589"/>
@@ -234,14 +234,14 @@
         <g mask="url(#simplified-12-column-layout-grid--alt-F)">
           <g transform="translate(-5.086 32.424)">
             <mask id="simplified-12-column-layout-grid--alt-H" fill="#fff">
-              <use xlink:href="#simplified-12-column-layout-grid--alt-G"/>
+              <use href="#simplified-12-column-layout-grid--alt-G"/>
             </mask>
             <rect width="114.437" height="40.689" x="-4.45" fill="#F0F0F0" mask="url(#simplified-12-column-layout-grid--alt-H)"/>
             <g mask="url(#simplified-12-column-layout-grid--alt-H)">
               <g transform="translate(-97.374 -79.187)">
                 <g transform="translate(142.703 6.691)">
                   <mask id="simplified-12-column-layout-grid--alt-J" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-I"/>
+                    <use href="#simplified-12-column-layout-grid--alt-I"/>
                   </mask>
                   <g fill="#ADADAD" mask="url(#simplified-12-column-layout-grid--alt-J)">
                     <polygon points="0 0 77.408 0 77.408 133.256 0 133.256" transform="translate(-.945 -6.691)"/>
@@ -249,7 +249,7 @@
                 </g>
                 <g transform="translate(47.253)">
                   <mask id="simplified-12-column-layout-grid--alt-L" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-K"/>
+                    <use href="#simplified-12-column-layout-grid--alt-K"/>
                   </mask>
                   <g fill="#C9C9C9" mask="url(#simplified-12-column-layout-grid--alt-L)">
                     <polygon points="0 0 137.945 0 137.945 75.274 0 75.274" transform="translate(-5.198)"/>
@@ -257,7 +257,7 @@
                 </g>
                 <g transform="translate(2.835 91.288)">
                   <mask id="simplified-12-column-layout-grid--alt-N" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-M"/>
+                    <use href="#simplified-12-column-layout-grid--alt-M"/>
                   </mask>
                   <g fill="#ADADAD" mask="url(#simplified-12-column-layout-grid--alt-N)">
                     <polygon points="0 0 111.15 0 111.15 134.273 0 134.273" transform="translate(-5.198 -7.647)"/>
@@ -265,7 +265,7 @@
                 </g>
                 <g transform="translate(0 6.213)">
                   <mask id="simplified-12-column-layout-grid--alt-P" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-O"/>
+                    <use href="#simplified-12-column-layout-grid--alt-O"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid--alt-P)">
                     <polygon points="0 0 106.188 0 106.188 139.359 0 139.359" transform="translate(-2.363 -6.213)"/>
@@ -273,7 +273,7 @@
                 </g>
                 <g transform="translate(91.67 137.171)">
                   <mask id="simplified-12-column-layout-grid--alt-R" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-Q"/>
+                    <use href="#simplified-12-column-layout-grid--alt-Q"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid--alt-R)">
                     <polygon points="0 0 164.74 0 164.74 122.066 0 122.066" transform="translate(-21.264 -35.368)"/>
@@ -286,19 +286,19 @@
       </g>
       <g opacity=".1" transform="translate(256.212 80.106)">
         <mask id="simplified-12-column-layout-grid--alt-T" fill="#fff">
-          <use xlink:href="#simplified-12-column-layout-grid--alt-S"/>
+          <use href="#simplified-12-column-layout-grid--alt-S"/>
         </mask>
         <rect width="26.702" height="52.132" x="-.636" y="-.636" stroke="#171717" stroke-width="1.272" rx="2.543"/>
         <g mask="url(#simplified-12-column-layout-grid--alt-T)">
           <g transform="translate(-5.086 11.444)">
             <mask id="simplified-12-column-layout-grid--alt-V" fill="#fff">
-              <use xlink:href="#simplified-12-column-layout-grid--alt-U"/>
+              <use href="#simplified-12-column-layout-grid--alt-U"/>
             </mask>
             <g mask="url(#simplified-12-column-layout-grid--alt-V)" opacity=".5">
               <g transform="translate(-16.293 -38.267)">
                 <g transform="translate(79.135 3.724)">
                   <mask id="simplified-12-column-layout-grid--alt-X" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-W"/>
+                    <use href="#simplified-12-column-layout-grid--alt-W"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid--alt-X)">
                     <polygon points="0 0 42.674 0 42.674 74.257 0 74.257" transform="translate(-.524 -3.724)"/>
@@ -306,7 +306,7 @@
                 </g>
                 <g transform="translate(26.204)">
                   <mask id="simplified-12-column-layout-grid--alt-Z" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-Y"/>
+                    <use href="#simplified-12-column-layout-grid--alt-Y"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid--alt-Z)">
                     <polygon points="0 0 76.415 0 76.415 41.706 0 41.706" transform="translate(-2.882)"/>
@@ -314,7 +314,7 @@
                 </g>
                 <g transform="translate(1.572 50.811)">
                   <mask id="simplified-12-column-layout-grid--alt-ab" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-aa"/>
+                    <use href="#simplified-12-column-layout-grid--alt-aa"/>
                   </mask>
                   <g fill="#919191" mask="url(#simplified-12-column-layout-grid--alt-ab)">
                     <polygon points="0 0 61.529 0 61.529 74.257 0 74.257" transform="translate(-2.882 -4.256)"/>
@@ -322,7 +322,7 @@
                 </g>
                 <g transform="translate(0 3.458)">
                   <mask id="simplified-12-column-layout-grid--alt-ad" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-ac"/>
+                    <use href="#simplified-12-column-layout-grid--alt-ac"/>
                   </mask>
                   <g fill="#919191" mask="url(#simplified-12-column-layout-grid--alt-ad)">
                     <polygon points="0 0 58.552 0 58.552 77.309 0 77.309" transform="translate(-1.31 -3.458)"/>
@@ -330,7 +330,7 @@
                 </g>
                 <g transform="translate(50.835 76.35)">
                   <mask id="simplified-12-column-layout-grid--alt-af" fill="#fff">
-                    <use xlink:href="#simplified-12-column-layout-grid--alt-ae"/>
+                    <use href="#simplified-12-column-layout-grid--alt-ae"/>
                   </mask>
                   <g fill="#919191" mask="url(#simplified-12-column-layout-grid--alt-af)">
                     <polygon points="0 0 91.302 0 91.302 68.154 0 68.154" transform="translate(-11.792 -19.686)"/>
@@ -347,9 +347,9 @@
         <circle cx="15.258" cy="15.258" r="14.623" stroke="#FFF" stroke-width="1.272"/>
         <g transform="rotate(-90 13.931 4.315)">
           <mask id="simplified-12-column-layout-grid--alt-ah" fill="#fff">
-            <use xlink:href="#simplified-12-column-layout-grid--alt-ag"/>
+            <use href="#simplified-12-column-layout-grid--alt-ag"/>
           </mask>
-          <use fill="#979797" fill-rule="nonzero" xlink:href="#simplified-12-column-layout-grid--alt-ag"/>
+          <use fill="#979797" fill-rule="nonzero" href="#simplified-12-column-layout-grid--alt-ag"/>
           <g fill="#FFF" mask="url(#simplified-12-column-layout-grid--alt-ah)">
             <polygon points="0 0 16.871 0 16.871 19.327 0 19.327" transform="translate(-8.01 -4.132)"/>
           </g>
@@ -359,7 +359,7 @@
     </g>
     <g transform="translate(120 29)">
       <mask id="simplified-12-column-layout-grid--alt-aj" fill="#fff">
-        <use xlink:href="#simplified-12-column-layout-grid--alt-ai"/>
+        <use href="#simplified-12-column-layout-grid--alt-ai"/>
       </mask>
       <rect width="254" height="426.742" x="-1" y="-.234" stroke="#171717" stroke-width="2" rx="4"/>
       <g fill="#F5F5F0" mask="url(#simplified-12-column-layout-grid--alt-aj)">
@@ -368,14 +368,14 @@
       <g mask="url(#simplified-12-column-layout-grid--alt-aj)">
         <g transform="translate(188 236)">
           <mask id="simplified-12-column-layout-grid--alt-al" fill="#fff">
-            <use xlink:href="#simplified-12-column-layout-grid--alt-ak"/>
+            <use href="#simplified-12-column-layout-grid--alt-ak"/>
           </mask>
-          <use fill="#FFF" xlink:href="#simplified-12-column-layout-grid--alt-ak"/>
+          <use fill="#FFF" href="#simplified-12-column-layout-grid--alt-ak"/>
           <g mask="url(#simplified-12-column-layout-grid--alt-al)">
             <g transform="translate(-4.308 .051)">
               <g transform="translate(49.253 2.339)">
                 <mask id="simplified-12-column-layout-grid--alt-an" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-am"/>
+                  <use href="#simplified-12-column-layout-grid--alt-am"/>
                 </mask>
                 <g fill="#81AEFC" mask="url(#simplified-12-column-layout-grid--alt-an)">
                   <polygon points="0 0 27 0 27 46 0 46" transform="translate(-.326 -2.339)"/>
@@ -383,7 +383,7 @@
               </g>
               <g transform="translate(16.309)">
                 <mask id="simplified-12-column-layout-grid--alt-ap" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-ao"/>
+                  <use href="#simplified-12-column-layout-grid--alt-ao"/>
                 </mask>
                 <g fill="#3E76C2" mask="url(#simplified-12-column-layout-grid--alt-ap)">
                   <rect width="48" height="26" transform="translate(-1.794)"/>
@@ -391,7 +391,7 @@
               </g>
               <g transform="translate(.979 31.905)">
                 <mask id="simplified-12-column-layout-grid--alt-ar" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-aq"/>
+                  <use href="#simplified-12-column-layout-grid--alt-aq"/>
                 </mask>
                 <g fill="#D63E04" mask="url(#simplified-12-column-layout-grid--alt-ar)">
                   <polygon points="0 0 39 0 39 46 0 46" transform="translate(-1.794 -2.673)"/>
@@ -399,7 +399,7 @@
               </g>
               <g transform="translate(0 2.172)">
                 <mask id="simplified-12-column-layout-grid--alt-at" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-as"/>
+                  <use href="#simplified-12-column-layout-grid--alt-as"/>
                 </mask>
                 <g fill="#F6BD9C" mask="url(#simplified-12-column-layout-grid--alt-at)">
                   <polygon points="0 0 37 0 37 48 0 48" transform="translate(-.815 -2.172)"/>
@@ -407,7 +407,7 @@
               </g>
               <g transform="translate(31.64 47.941)">
                 <mask id="simplified-12-column-layout-grid--alt-av" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-au"/>
+                  <use href="#simplified-12-column-layout-grid--alt-au"/>
                 </mask>
                 <g fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid--alt-av)">
                   <polygon points="0 0 57 0 57 42 0 42" transform="translate(-7.34 -12.361)"/>
@@ -420,7 +420,7 @@
       <g mask="url(#simplified-12-column-layout-grid--alt-aj)">
         <g transform="translate(-8.258 128.799)">
           <mask id="simplified-12-column-layout-grid--alt-ax" fill="#fff">
-            <use xlink:href="#simplified-12-column-layout-grid--alt-aw"/>
+            <use href="#simplified-12-column-layout-grid--alt-aw"/>
           </mask>
           <g mask="url(#simplified-12-column-layout-grid--alt-ax)">
             <polygon fill="#E6E6E6" points="0 0 359 0 359 129 0 129" transform="translate(-22.09)"/>
@@ -429,7 +429,7 @@
             <g transform="translate(-90.206 -206.016)">
               <g transform="translate(270.893 12.83)">
                 <mask id="simplified-12-column-layout-grid--alt-az" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-ay"/>
+                  <use href="#simplified-12-column-layout-grid--alt-ay"/>
                 </mask>
                 <g fill="#81AEFC" mask="url(#simplified-12-column-layout-grid--alt-az)">
                   <polygon points="0 0 149 0 149 251 0 251" transform="translate(-1.794 -12.83)"/>
@@ -437,7 +437,7 @@
               </g>
               <g transform="translate(89.7)">
                 <mask id="simplified-12-column-layout-grid--alt-aB" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-aA"/>
+                  <use href="#simplified-12-column-layout-grid--alt-aA"/>
                 </mask>
                 <g fill="#3E76C2" mask="url(#simplified-12-column-layout-grid--alt-aB)">
                   <rect width="264" height="142" transform="translate(-9.867)"/>
@@ -445,7 +445,7 @@
               </g>
               <g transform="translate(5.382 175.047)">
                 <mask id="simplified-12-column-layout-grid--alt-aD" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-aC"/>
+                  <use href="#simplified-12-column-layout-grid--alt-aC"/>
                 </mask>
                 <g fill="#D63E04" mask="url(#simplified-12-column-layout-grid--alt-aD)">
                   <polygon points="0 0 213 0 213 253 0 253" transform="translate(-9.867 -14.664)"/>
@@ -453,7 +453,7 @@
               </g>
               <g transform="translate(0 11.914)">
                 <mask id="simplified-12-column-layout-grid--alt-aF" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-aE"/>
+                  <use href="#simplified-12-column-layout-grid--alt-aE"/>
                 </mask>
                 <g fill="#F6BD9C" mask="url(#simplified-12-column-layout-grid--alt-aF)">
                   <polygon points="0 0 203 0 203 263 0 263" transform="translate(-4.485 -11.914)"/>
@@ -461,7 +461,7 @@
               </g>
               <g transform="translate(174.017 263.03)">
                 <mask id="simplified-12-column-layout-grid--alt-aH" fill="#fff">
-                  <use xlink:href="#simplified-12-column-layout-grid--alt-aG"/>
+                  <use href="#simplified-12-column-layout-grid--alt-aG"/>
                 </mask>
                 <g fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid--alt-aH)">
                   <polygon points="0 0 315 0 315 231 0 231" transform="translate(-40.365 -67.82)"/>
@@ -501,9 +501,9 @@
       <g mask="url(#simplified-12-column-layout-grid--alt-aj)">
         <g transform="translate(-78.242 24)">
           <mask id="simplified-12-column-layout-grid--alt-aK" fill="#fff">
-            <use xlink:href="#simplified-12-column-layout-grid--alt-aI"/>
+            <use href="#simplified-12-column-layout-grid--alt-aI"/>
           </mask>
-          <use fill="#000" filter="url(#simplified-12-column-layout-grid--alt-aJ)" xlink:href="#simplified-12-column-layout-grid--alt-aI"/>
+          <use fill="#000" filter="url(#simplified-12-column-layout-grid--alt-aJ)" href="#simplified-12-column-layout-grid--alt-aI"/>
           <g fill="#171717" mask="url(#simplified-12-column-layout-grid--alt-aK)">
             <polygon points="0 0 412 0 412 14 0 14" transform="translate(-1 -1)"/>
           </g>

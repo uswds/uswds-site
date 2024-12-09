@@ -2,6 +2,12 @@ title: File input
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Replaced deprecated `xlink:href` references with `href`.
+    affectsAssets: true
+    githubPr: 6165
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-11-19
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

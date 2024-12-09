@@ -7,7 +7,7 @@ items:
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds
-    versionUswds: 3.9.0
+    versionUswds: N.N.N
   - date: 2023-11-20
     summary: Updated the value list for icon list variants.
     affectsGuidance: true

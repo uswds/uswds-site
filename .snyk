@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.25.0
+version: v1.25.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:chownr:20180731':
@@ -3523,8 +3523,8 @@ ignore:
   SNYK-JS-INFLIGHT-6095116:
     - '*':
         reason: No available upgrade or patch
-        expires: 2025-01-01T21:08:46.836Z
-        created: 2024-12-02T21:08:46.867Z
+        expires: 2025-01-08T18:16:33.491Z
+        created: 2024-12-09T18:16:33.532Z
   SNYK-JS-BRACES-6838727:
     - '*':
         reason: No available upgrade or patch
@@ -3535,6 +3535,11 @@ ignore:
         reason: No available upgrade or patch
         expires: 2024-09-21T17:53:15.173Z
         created: 2024-08-22T17:53:15.213Z
+  SNYK-JS-NANOID-8492085:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2025-01-08T18:15:22.221Z
+        created: 2024-12-09T18:15:22.260Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

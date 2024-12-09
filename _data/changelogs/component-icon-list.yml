@@ -2,6 +2,11 @@ title: Icon list
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: [Related PR number]
+    githubRepo: uswds-site
   - date: 2023-11-20
     summary: Updated the value list for icon list variants.
     affectsGuidance: true

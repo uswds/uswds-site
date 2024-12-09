@@ -5,7 +5,7 @@ items:
   - date: NNNN-NN-NN
     summary: Added documentation for `settings.compile.quietSassDeps`.
     affectsGuidance: true
-    githubPr: NNNN
+    githubPr: 3006
     githubRepo: uswds-site
   - date: 2024-09-05
     summary: Added documentation for `settings.compile.browserslist` and `settings.compile.sassSourcemaps`.

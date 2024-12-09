@@ -3,7 +3,7 @@ permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
 category: About
-lead: Here you can find the latest news and information about USWDS. Learn more about our product development and process, dive deeper into our monthly call topics, and see how we work with our partners to impact the government technology space.
+lead: Get the latest USWDS news and information here. Learn more about our product development and process, dive deeper into our monthly call topics, and see how we work with our partners to improve the government technology space.
 columns:
   - title: New users
     source: New Users
@@ -34,6 +34,7 @@ cards:
     body: "How our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS."
     linkText: "USWDS GitHub discussion"
     linkUrl: "https://github.com/uswds/uswds/discussions"
+in_page_nav_headings: "h2"
 ---
 
 {% include site-card-list.html
@@ -42,10 +43,11 @@ cards:
   listItemClasses="desktop:grid-col-6"
 %}
 
+{:.margin-top-2.text-normal.font-lang-md.text-gray-70}
 ## News and updates
 
 {% for post in site.posts limit:4 %}
-  {% include post.html post=post excerpt=true %}
+  {% include post-preview.html post=post heading="h3"%}
 {% endfor %}
 
 ---

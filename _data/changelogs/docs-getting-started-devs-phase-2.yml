@@ -1,7 +1,12 @@
 title: "Phase 2: Compile"
 type: documentation
 changelogURL:
-items:
+items:  
+  - date: NNNN-NN-NN
+    summary: Added documentation for `settings.compile.quietSassDeps`.
+    affectsGuidance: true
+    githubPr: NNNN
+    githubRepo: uswds-site
   - date: 2024-09-05
     summary: Added documentation for `settings.compile.browserslist` and `settings.compile.sassSourcemaps`.
     affectsGuidance: true

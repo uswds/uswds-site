@@ -3,12 +3,11 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Removed deprecated xlink references.
-    summaryAdditional: All deprecated xlink:href references have been replaced with href.
+    summary: Replaced deprecated `xlink:href` references with `href`.
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds
-    versionUswds: 3.9.0
+    versionUswds: N.N.N
   - date: 2024-06-07
     summary: Added clarity to icon guidance.
     affectsGuidance: true

@@ -3,8 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Removed deprecated xlink references.
-    summaryAdditional: All deprecated xlink:href references have been replaced with href.
+    summary: Replaced deprecated `xlink:href` references with `href`.
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds

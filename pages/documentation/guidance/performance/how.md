@@ -137,7 +137,7 @@ Focusing on these three metrics provides a good overview of how well your site i
 Based on these metrics, we’ve also recommended tools that are able to track these three metrics.
 #### Default tool recommendation:
 
-[Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/): a Google Chrome library that can be run in the CLI or as a browser extension. Google Chrome Lighthouse can be run in a CLI, or developer environment. It’s relatively easy to setup, and use, and includes harder to track metrics, like [Speed index](../glossary/#speed-index). Its only downside is that it requires both the Chrome browser and the ability to install Chrome extensions. If your team is unable to install Chrome or Chrome extensions  then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
+[Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/): a Google Chrome library that can be run in the CLI or as a browser extension. Google Chrome Lighthouse can be run in a CLI, or developer environment. It’s relatively easy to set up, and use, and includes harder to track metrics, like [Speed index](../glossary/#speed-index). Its only downside is that it requires both the Chrome browser and the ability to install Chrome extensions. If your team is unable to install Chrome or Chrome extensions  then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
 
 Once you have chosen metrics and a tool to track the metrics, the next step is to define your performance goals and potential budgets, or limits, for the project.
 
@@ -221,7 +221,7 @@ If your metrics have a large gap between the budget and goal, it might be wise t
 
 ## Adding site tracking
 
-Once you’ve determined the metrics to track, the tools to use, and what your performance budgets and goals are, it’s time to setup the systems to do the actual tracking of your metrics. How and when to track is up to your team and workflow. It’s a good idea to have a discussion with the team about the how, when, and what of performance.
+Once you’ve determined the metrics to track, the tools to use, and what your performance budgets and goals are, it’s time to set up the systems to do the actual tracking of your metrics. How and when to track is up to your team and workflow. It’s a good idea to have a discussion with the team about the how, when, and what of performance.
 
 - How do people want to hear about performance?
 - Through what channels do they want to be notified?
@@ -289,7 +289,7 @@ A Content Management Solution (CMS) tracker should only be used if your site has
 Depending on how often the code of the site gets updated, the team might need two tracking solutions: one for the CMS and one for the code updates, leading to a more complicated system.
 
 {% capture example_tracking %}
-  In the cloud.gov dashboard, we decided to do CI testing because we already had a reliable CI setup and the team is primarily made up of developers, meaning CI would be where performance gets the most attention. We setup [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) in our build process, ensuring that if a recent code change goes over budget, it would stop the build and report the problems to the developers. Additionally, we used a Github service to receive performance reports over time.
+  In the cloud.gov dashboard, we decided to do CI testing because we already had a reliable CI setup and the team is primarily made up of developers, meaning CI would be where performance gets the most attention. We set up [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) in our build process, ensuring that if a recent code change goes over budget, it would stop the build and report the problems to the developers. Additionally, we used a Github service to receive performance reports over time.
 {% endcapture %}
 {% include perf_example.html
   text=example_tracking

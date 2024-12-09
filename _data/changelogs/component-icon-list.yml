@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Removed deprecated xlink instances.
+    summary: Removed deprecated `xlink` references from code samples.
     affectsGuidance: true
     githubPr: 2926
     githubRepo: uswds-site

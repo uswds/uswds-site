@@ -3,10 +3,10 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-   summary: Added WCAG compliance tag and accessibility test status section.
-   affectsGuidance: true
-   githubPr: 3009
-   githubRepo: uswds-site
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 3009
+    githubRepo: uswds-site
   - date: 2024-05-31
     summary: Improved styles for nested button groups.
     summaryAdditional: Now, nested button groups should match the height of their parents.

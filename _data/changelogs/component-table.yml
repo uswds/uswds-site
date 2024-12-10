@@ -5,8 +5,8 @@ changelogURL:
 
 items:
   - date: NNNN-NN-NN
-    summary: Fixed a bug that prevented `th` elements outside of `thead` from acquiring table heading styles.
-    summaryAdditional: Now, table headings will have consistent styles anywhere in the table element.
+    summary: Updated table header styles to be consistent across all table elements.
+    summaryAdditional: Now, all `thead th`, `tbody th`, and `tfoot th` cells will have the same visual styles. Teams should confirm that their tables display as expected.
     isBreaking: false
     affectsStyles: true
     githubPr: 5986

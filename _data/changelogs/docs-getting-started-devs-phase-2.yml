@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:  
   - date: NNNN-NN-NN
-    summary: Added documentation for `settings.compile.quietSassDeps`.
+    summary: Added documentation for `settings.compile.sassDeprecationWarnings`.
     affectsGuidance: true
     githubPr: 3006
     githubRepo: uswds-site

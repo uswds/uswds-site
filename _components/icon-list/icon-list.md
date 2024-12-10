@@ -8,16 +8,8 @@ component:
 lead: An icon list reinforces the meaning and visibility of individual list items with a leading icon.
 permalink: /components/icon-list/
 subnav:
-- text: Preview
-  href: '#icon-list-preview'
-- text: Code
-  href: '#icon-list-code'
-- text: Guidance
-  href: '#icon-list-guidance'
-- text: Package
-  href: '#icon-list-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Icon list accessibility tests
+  href: /components/icon-list/accessibility-tests/
 title: Icon list
 type: component
 variants:

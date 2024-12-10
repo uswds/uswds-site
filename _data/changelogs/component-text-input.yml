@@ -1,10 +1,15 @@
 # Add page title. eg: Accessibility, Banner
 title: Text input
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-
 items:
+  - date: NNNN-NN-NN
+    summary: Moved `.usa-input--[width]` classes out of the `usa-form` package.
+    summaryAdditional: These classes are now generated in the `usa-input` package and can be used without the `.usa-form` parent element.
+    affectsStyles: true
+    githubPr: 6232
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-06-19
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

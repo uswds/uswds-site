@@ -3,11 +3,11 @@ component_status: pass
 test_items:
 # General tests
   - summary: Headings are structured in a logical order.
-    summary_additional: When you interact with a process list, you understand headings move in a logical order. For example, headings move from h2 to h3.
+    summary_additional: When you interact with a process list, you understand headings move in a logical order. For example, headings move from `h2` to `h3`.
     test_status: conditional
     test_type: general
-    version_tested: 1.3.1
-    wcag_criterion: 3.10.0
+    version_tested: 3.10.0
+    wcag_criterion: 1.3.1
   - summary: All headings are clear and descriptive.
     summary_additional: When you view the process list, the headings are clear and concise.
     test_status: conditional
@@ -39,3 +39,4 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.2
     wcag_criterion: 1.3.2
+    

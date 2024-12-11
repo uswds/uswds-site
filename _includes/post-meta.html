@@ -1,0 +1,15 @@
+{% comment %}
+  Date and author info for posts.
+
+  Used in _posts and post previews on `/about/whats-new/`
+{% endcomment %}
+
+<div class="post-meta">
+  {% if post.author %}
+    <span class="site-subheading">By {{ post.author }}</span>
+  {% endif %}
+
+  <time class="site-subheading" datetime="{{ post.date | date: '%FT%T' }}">
+    {{ post.date | date: '%B %-d, %Y' }}
+  </time>
+</div>

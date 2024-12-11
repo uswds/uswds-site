@@ -6,7 +6,7 @@ items:
     summary: Fixed a bug that prevented screen readers from announcing the invalid file type error message.
     affectsAccessibility: true
     affectsJavascript: true
-    githubPr: 6169
+    githubPr: 6168
     githubRepo: uswds
     versionUswds: N.N.N
   - date: 2024-03-13

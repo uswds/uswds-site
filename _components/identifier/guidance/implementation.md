@@ -3,11 +3,11 @@
 - **Use an SVG logo if possible.** Ensure the logo is high resolution. We recommend using the SVG version of any logo if you have one. Otherwise, use an image that's at least 120 pixels tall.
 - **Use logos intended for dark backgrounds if possible.** The identifier has a dark background. If your agency has a version of its logo intended for dark backgrounds, use that version.
 - **Update the required links to point to the proper URLs.** The identifier includes links required of any federal website, and these links are specific to a department, agency, or website. We've linked each section below to the guidance on Digital.gov to provide further context.
-  - **[About [Official parent agency acronym]](https://digital.gov/resources/required-web-content-and-links/#about-page):** Update the link text to include the department of agency's official acronym. Link to the "About" page of your parent agency's principal website. If your site includes multiple parents, include only the organization highest in the hierarchy in this link.
+  - **[About [Official parent agency acronym]](https://digital.gov/resources/required-web-content-and-links/#about-page):** Update the link text to include the parent agency's official acronym. Link to the "About" page of your parent agency's principal website. If your site includes multiple parents, include only the organization highest in the hierarchy in this link.
 
     Example: [https://www.gsa.gov/about-us](https://www.gsa.gov/about-us)
 
-  - **[Accessibility statement](https://digital.gov/resources/required-web-content-and-links/#accessibility-statement):** Link to your website or service's [accessibility statement](https://www.section508.gov/manage/laws-and-policies/website-accessibility-statement/), or to your agency's accessibility statement if your website or service does not have its own.
+  - **[Accessibility statement](https://digital.gov/resources/required-web-content-and-links/#accessibility-statement):** Link to your website or service's [accessibility statement](https://www.section508.gov/manage/laws-and-policies/website-accessibility-statement/), or to your parent agency's accessibility statement if your website or service does not have its own.
 
     Example: [https://www.dhs.gov/accessibility](https://www.dhs.gov/accessibility)
 
@@ -23,7 +23,7 @@
 
     Example: [https://www.gsaig.gov](https://www.gsaig.gov)
 
-  - **[Performance reports](http://digital.gov/resources/required-web-content-and-links#budget-and-performance-reports):** Link to a “Budget and Performance” page that includes the agency’s strategic plan among other financial and performance documentation.
+  - **[Performance reports](http://digital.gov/resources/required-web-content-and-links#budget-and-performance-reports):** Link to a “Budget and Performance” page that includes the parent agency’s strategic plan among other financial and performance documentation.
 
     Example: [https://www.gsa.gov/reference/reports/budget-performance](https://www.gsa.gov/reference/reports/budget-performance)
 

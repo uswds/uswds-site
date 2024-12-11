@@ -80,7 +80,7 @@ The patterns are a start, but we need your help keeping these patterns current a
 [^2]: Communicating with and about people with disabilities. (February 1, 2022) Retrieved on August 19, 2022, from <https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html>
 
 ## Credits
-Illustrations created using [humaaans](https://www.humaaans.com/), a [CC0 (public domain)](https://creativecommons.org/share-your-work/public-domain/cc0/) design library.
+Illustrations created using [humaaans](https://www.humaaans.com/), a [CC0 (public domain)](https://creativecommons.org/public-domain/cc0/) design library.
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
 

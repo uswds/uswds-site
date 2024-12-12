@@ -40,7 +40,7 @@ test_items:
     version_tested: 3.8.2
     wcag_criterion: 1.4.4
 # Screen reader tests
-  - summary: Screen reader announces icon meaning and purpose.
+  - summary: Screen reader announces icon meaning and purpose when needed.
     summary_additional: When you listen to icon descriptions in a list using a screen reader, you can understand their meaning. Alt text descriptions indicate purpose.
     test_status: conditional
     test_type: screen_reader

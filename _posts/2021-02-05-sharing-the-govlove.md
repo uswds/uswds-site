@@ -14,7 +14,7 @@ In this digital age, it’s simpler than ever to share the #GovLove virtually on
 
 The more you adopt the design system, the easier it is to deliver the right content to the right people at the right time.
 
-Support USWDS and send the designer or developer you care about some #GovLove with these themed ONGs for this fun February season.
+Support USWDS and send the designer or developer you care about some #GovLove with these themed PNGs for this fun February season.
 
 ## My love for you expands every day. [Accordion]({{ site.baseurl }}/components/accordion/) to me, you’re the best!
 ![A three item accordion component with the first item open saying Accordion to me, you're the best]({{ site.baseurl }}/img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_1.png)

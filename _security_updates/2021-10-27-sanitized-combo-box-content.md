@@ -2,7 +2,9 @@
 title: Sanitized Combo Box content
 excerpt: "As of USWDS 2.12.1, the design system automatically sanitizes content passed into the Combo Box."
 category: About
-permalink: /security_updates/santized-combo-box-content/
+permalink: /security_updates/sanitized-combo-box-content/
+redirect_from:
+- /security_updates/santized-combo-box-content/
 tags:
 - security
 ---

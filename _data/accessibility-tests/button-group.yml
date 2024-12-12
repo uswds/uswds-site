@@ -58,8 +58,8 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 2.4.7
-  - summary: The focus indicator has proper size, perimeter, contrast and space between buttons.
-    summary_additional: When you use a keyboard and view the focus indicator on a button in a group, you can tell it is at least the area of 2 CSS pixel unfocused and has 3:1 contrast between focused and unfocused button states.
+  - summary: Focus indicators have proper size, perimeter, and contrast.
+    summary_additional: When you use a keyboard to tab into a button group, the focus indicator has proper size, perimeter and contrast.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.1
@@ -78,7 +78,7 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 1.3.2
   - summary: Screen reader announces labels and state of each element.
-    summary_additional: When you use a screen reader and tab through a button group, you hear the role "button" or "link" and that it is part of a group. You will also hear whether the button or link has been visited or not.
+    summary_additional: When you use a screen reader and tab through a button group, you hear the element "button" or "link" and that it is part of a group. You will also hear if a link has been visited or not.
     test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.1

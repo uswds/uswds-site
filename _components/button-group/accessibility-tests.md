@@ -9,3 +9,4 @@ lead: Any USWDS button group component should pass these manual accessibility te
 changelog:
  key: 'component-button-group-accessibility'
 ---
+{% include accessibility-tests/test-results-summary.html page='main' %}

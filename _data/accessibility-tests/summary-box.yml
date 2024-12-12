@@ -1,0 +1,61 @@
+title: Summary Box
+component_status: 
+test_items:
+# General tests
+  - summary: Summary box headings are in the correct heading structure of the page.
+    summary_additional: When you navigate to a summary box, you can see (and hear with a screen reader) that headings follow proper heading structure within the page.
+    test_status: Conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.1
+  - summary: Summary box background and text meet contrast requirements.
+    summary_additional: When you use a color contrast checker to view the summary box, the text and background within it have at least a 4.5:1 contrast.
+    test_status: Pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.3
+  - summary: Links provide direct location description.
+    summary_additional: When you read the text of any link in the summary box, you can understand where the link will take you.
+    test_status: Conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.4
+  - summary: All headings are clear and descriptive.
+    summary_additional: When you view the summary box, the headings are clear and concise.
+    test_status: Conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.6
+  - summary: Summary box content is written in plain language. 
+    summary_additional: When you read the content in the summary box, the information is easy to understand. Content is written at the appropriate level for the audience.
+    test_status: Conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 3.1.5
+# Zoom/screen magnification tests
+  - summary: Summary box content is visible and functional when screen is magnified.
+    summary_additional: When you zoom in to 200% in a summary box, text is still readable, legible, and properly sized.
+    test_status: Pass
+    test_type: zoom
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.4
+# Keyboard navigation tests
+  - summary: Keyboard actions can access all summary box functionality.
+    summary_additional: You can engage with any links provided in a summary box and perform all other functions in the component using only your keyboard.
+    test_status: Conditional
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.1.1
+# Screen reader tests
+  - summary: Screen reader announces summary box region.
+    summary_additional: When using a screen reader to access the summary box, you hear ""summary box"" (or region in JAWS).
+    test_status: Pass
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.1
+  - summary: Headings and labels are descriptive and clear.
+    summary_additional: When you navigate into a summary box using a screen reader, you hear heading text and any nested labels that are descriptive of the content in the summary box.
+    test_status: Conditional
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.6

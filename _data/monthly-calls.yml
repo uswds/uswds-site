@@ -9,7 +9,7 @@ videos:
      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-november-2024.pptx
      size: 5
      pages: 109
-    questions_link: 
+    questions_link: https://github.com/uswds/uswds/discussions/6252
   - title: Engineering values
     subtitle:
     description: |

@@ -17,7 +17,7 @@ tags:
   - footer
   - required
   - links
-  - indentifier
+  - identifier
   - logo
 changelog:
   key: component-identifier

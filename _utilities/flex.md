@@ -691,7 +691,7 @@ utilities:
       {% for value in page.values.order reversed %}
         <div class="grid-col-auto order-{{ value.token }}">
           <div class="padding-x-1 padding-y-1 border border-secondary-light margin-y-1px display-flex flex-column flex-align-start">
-            <span class="font-lang-3xs text-red-warm-50v margin-bottom-2">intital: {{ forloop.index }}</span>
+            <span class="font-lang-3xs text-red-warm-50v margin-bottom-2">initial: {{ forloop.index }}</span>
             <span class="utility-class">.order-{{ value.token }}</span>
           </div>
         </div>

@@ -59,7 +59,7 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 1.3.2
   - summary: Keyboard navigates through all elements in identifier.
-    summary_additional: When you navigate through the identifer with a keyboard, you can interact with every element inside the identifier.
+    summary_additional: When you navigate through the identifier with a keyboard, you can interact with every element inside the identifier.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.1
@@ -96,7 +96,7 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 1.1.1
   - summary: Screen reader announces identifier region.
-    summary_additional: When using a screen reader, you will hear "Region identifier" or "Agency identifer" when you reach the identifier region on the page.
+    summary_additional: When using a screen reader, you will hear "Region identifier" or "Agency identifier" when you reach the identifier region on the page.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.1

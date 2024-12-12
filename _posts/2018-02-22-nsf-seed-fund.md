@@ -15,7 +15,7 @@ For our 11th post in the series, we talked with Scott Weber, front-end developer
 
 **USWDS:** How did you hear about the U.S. Web Design System (USWDS)?
 
-**Scott Weber:** I’d been following the USWDS before starting work on the NSF project. So, when I was getting ready to build the site, which we knew was going to be on [Federalist](https://federalist.18f.gov/), using Github, the USWDS gave us a starting point for things we would have otherwise needed to develop from scratch, such as the grid, footer, navigation, etc. The USWDS gave us a place to start and saved us from having to reinvent the wheel.
+**Scott Weber:** I’d been following the USWDS before starting work on the NSF project. So, when I was getting ready to build the site, which we knew was going to be on [Federalist](https://federalist.18f.gov/), using GitHub, the USWDS gave us a starting point for things we would have otherwise needed to develop from scratch, such as the grid, footer, navigation, etc. The USWDS gave us a place to start and saved us from having to reinvent the wheel.
 
 **USWDS:** What does it mean for a developer to not have to start from scratch?
 

@@ -2527,7 +2527,7 @@ $theme-table-column-gap: 4;
 }
 
 // because any accordion__content inside of a bordered accordion get's
-// borders, we need to overide for this nested component preview.
+// borders, we need to override for this nested component preview.
 .site-component-preview
   .usa-accordion:not(.usa-accordion--bordered)
   .usa-accordion__content {

@@ -503,7 +503,7 @@ Use the `u-font-size()` mixin to set the font size only. The mixin requires both
 
 Use the `u-font-family()` mixin to set the font family only. The mixin requires a  family token in the form `@include u-font-family([family])`.
 
-_Use `u-font()` instead of using both `u-font-family()` and `u-font-size()` on a single selector, but avoid using it unneccessarily to avoid duplicate code._
+_Use `u-font()` instead of using both `u-font-family()` and `u-font-size()` on a single selector, but avoid using it unnecessarily to avoid duplicate code._
 
 
 {:.maxw-mobile-lg}

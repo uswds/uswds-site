@@ -19,3 +19,5 @@ changelog:
 ---
 
 {% include child-sections.html parent='Button group' %}
+
+{% include accessibility-tests/test-results-summary.html page='main' %}

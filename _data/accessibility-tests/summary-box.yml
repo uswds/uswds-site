@@ -53,9 +53,3 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.2
     wcag_criterion: 1.3.1
-  - summary: Headings and labels are descriptive and clear.
-    summary_additional: When you navigate into a summary box using a screen reader, you hear heading text and any nested labels that are descriptive of the content in the summary box.
-    test_status: conditional
-    test_type: screen_reader
-    version_tested: 3.8.2
-    wcag_criterion: 2.4.6

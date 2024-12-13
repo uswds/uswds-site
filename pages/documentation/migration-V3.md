@@ -884,7 +884,7 @@ Using individual component packages instead of the `uswds` bundle package can re
 
     Each package is smart enough to include any dependent package it needs to display properly.
 
-4. Many projects will need to use the utilities package (`uswds-utilities`) and the global package (`uswds-global`). If your site uses utilities, be sure to include the utilites package. The global package includes normalize. If you compile your styles and see improper spacing around many elements (like around the perimeter of the page), be sure to include `uswds-global`.
+4. Many projects will need to use the utilities package (`uswds-utilities`) and the global package (`uswds-global`). If your site uses utilities, be sure to include the utilities package. The global package includes normalize. If you compile your styles and see improper spacing around many elements (like around the perimeter of the page), be sure to include `uswds-global`.
 
 5. **Remove your reference to the uswds bundle package.** Once all of your project's component packages are loaded, you can safely remove the `uswds` package reference from your entry point.
 ```diff

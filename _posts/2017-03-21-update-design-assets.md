@@ -13,8 +13,8 @@ The design assets for the U.S. Web Design Standards have always been a great too
 Based on this experience, the team took a look at how frequently these design assets are downloaded and which formats are more likely to be used by digital service teams across the federal government. Here are a few of the highlights:
 
 * Adobe Illustrator Format - This has been downloaded over 2,000 times over the last year. Illustrator is also the most likely format to be used by digital service teams as the presence of Mac laptops in the federal government is estimated to only be 4%-5%.
-* Sketch Format - The Sketch sticker sheets have been downloaded over a 1,000 times, and while Sketch is a Mac only application, this is a signifiant level of use to justify continued support.
-* Omnigraffle - In the last year, the Omnigraffle format has only been dowloaded 335 times. Given the low number of downloads and the fact that Omnigraffle is another Mac only application, the team has decided to retire this sticker sheet.
+* Sketch Format - The Sketch sticker sheets have been downloaded over a 1,000 times, and while Sketch is a Mac only application, this is a significant level of use to justify continued support.
+* Omnigraffle - In the last year, the Omnigraffle format has only been downloaded 335 times. Given the low number of downloads and the fact that Omnigraffle is another Mac only application, the team has decided to retire this sticker sheet.
 
 ![Sticker Sheet Downloads]({{ site.baseurl }}/img/updates/Sticker_Sheet_Downloads.png)
 

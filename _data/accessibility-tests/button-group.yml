@@ -3,7 +3,7 @@ component_status: pass
 test_items:
 # General tests
   - summary: Color is not the only method used to convey button meaning.
-    summary_additional: When you view a buttons in a group, you can see and read text, and do not have to rely on color alone for meaning.
+    summary_additional: When you view buttons in a group, you can see and read text, and do not have to rely on color alone for meaning.
     test_status: pass
     test_type: general
     version_tested: 3.8.1
@@ -15,7 +15,7 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 1.4.3
   - summary: The width of each button is at least 44 px.
-    summary_additional: When you select "inspect element" to review the button's size, you can see the total width of the button is at least 44 pixels wide.
+    summary_additional: When you select "inspect element" to review a button's size, you can see the total width of the button is at least 44 pixels wide.
     test_status: conditional
     test_type: general
     version_tested: 3.8.1

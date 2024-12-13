@@ -5,7 +5,7 @@ component:
  name: Summary box
 title: Summary box accessibility tests
 category: Components
-lead: Any USWDS Summary box component should pass these manual accessibility tests.
+lead: Any USWDS summary box component should pass these manual accessibility tests.
 changelog:
  key: 'component-summary-box-accessibility'
 ---

@@ -1,4 +1,16 @@
 videos:
+  - title: The next generation of the design system
+    subtitle: The new, modular USWDS we'll deliver in 2025
+    description: |
+     At the November monthly call, we laid out our vision for the direction of the design system. USWDS Product Lead Dan Williams shared exciting news about the beta for our new [USWDS Figma design kit](https://www.figma.com/community/file/1440921849343185329/uswds-design-kit-beta). USWDS Experience Design Lead Anne Petersen and USWDS Engineering Lead Matt Henry joined Dan to explain the design system’s shift toward modularity, and the relationship between the existing codebase (which we'll rename USWDS Core) and the Web Components–based version (which we're calling USWDS Elements), as well as with design tokens, utilities, and new design kit.
+    date: November 2024
+    id: 
+    event_link: https://digital.gov/event/2024/11/21/uswds-monthly-call-november-2024/
+    slides:
+     link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-november-2024.pptx
+     size: 5
+     pages: 108
+    questions_link: https://github.com/uswds/uswds/discussions/6252
   - title: Engineering values
     subtitle:
     description: |

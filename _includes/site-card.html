@@ -1,0 +1,20 @@
+{% comment %}
+  Single card element for `site-card-list`.
+  
+  Variables:
+    - heading: String heading for a single card.
+    - body: String body that gets placed in a paragraph tag.
+    - linkUrl: String for the link url.
+    - linkText: String link label.
+{% endcomment %}
+<div class="usa-card__container">
+  <header class="usa-card__header">
+    <h2 class="usa-card__heading font-lang-lg">{{ include.heading }}</h2>
+  </header>
+  <div class="usa-card__body font-lang-sm">
+    <p>{{ include.body }}</p>
+  </div>
+  <div class="usa-card__footer">
+    <a class="usa-button" href="{{ include.linkUrl }}">{{ include.linkText }}</a>
+  </div>
+</div>

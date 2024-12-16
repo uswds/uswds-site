@@ -87,9 +87,9 @@
     "postcss": "^8.4.49",
     "postcss-csso": "^6.0.1",
     "prettier": "^2.8.8",
-    "sass": "^1.81.0",
+    "sass": "^1.83.0",
     "simplecrawler": "^1.1.9",
-    "snyk": "^1.1294.0",
+    "snyk": "^1.1294.3",
     "stylelint": "^15.11.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"

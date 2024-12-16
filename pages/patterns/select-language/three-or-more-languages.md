@@ -123,7 +123,6 @@ Place the language selector menu at the top of the screen above site navigation,
 ## See pattern in use
 
 {:.usa-content-list}
-- [U.S. Department of Education](https://www.ed.gov/notices/english-la)
 - [Vote.gov](https://www.vote.gov)
 
 {:.site-component-section-title}

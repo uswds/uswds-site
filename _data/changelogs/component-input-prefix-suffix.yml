@@ -7,6 +7,9 @@ items:
     summaryAdditional: These classes are now generated in the `usa-input-prefix-suffix` package and can be used without the `.usa-form` parent element.
     affectsStyles: true
     githubPr: 6232
+    summary: Replaced deprecated `xlink:href` references with `href`.
+    affectsMarkup: true
+    githubPr: 6165
     githubRepo: uswds
     versionUswds: N.N.N
   - date: 2023-11-20

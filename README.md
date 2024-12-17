@@ -2,7 +2,7 @@
 
 This repo includes code and documentation for the U.S. Web Design System website. For information on the USWDS components and codebase, please visit our [uswds](https://github.com/uswds/uswds) Github repo.
 
-Note that this README includes steps to pull the latest version of USWDS into your local instance of the documentation.
+Note that this README includes steps to pull the latest version of USWDS into your local instance of the documentation. Mandy is testing.
 
 ## Running locally
 

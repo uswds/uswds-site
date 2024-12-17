@@ -7,7 +7,7 @@ items:
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.11.0
   - date: 2024-06-07
     summary: Added clarity to icon guidance.
     affectsGuidance: true

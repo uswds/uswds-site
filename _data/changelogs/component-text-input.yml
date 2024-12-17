@@ -9,7 +9,7 @@ items:
     affectsStyles: true
     githubPr: 6232
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.11.0
   - date: 2024-06-19
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

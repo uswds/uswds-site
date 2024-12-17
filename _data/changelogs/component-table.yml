@@ -11,7 +11,7 @@ items:
     affectsStyles: true
     githubPr: 5986
     githubRepo: uswds
-    versionUswds: N.N.N
+    versionUswds: 3.11.0
   - date: 2024-03-20
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

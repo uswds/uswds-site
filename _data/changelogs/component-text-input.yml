@@ -3,7 +3,7 @@ title: Text input
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-12-18
     summary: Moved `.usa-input--[width]` classes out of the `usa-form` package.
     summaryAdditional: These classes are now generated in the `usa-input` package and can be used without the `.usa-form` parent element.
     affectsStyles: true

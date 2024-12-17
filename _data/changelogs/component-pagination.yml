@@ -2,7 +2,7 @@ title: Pagination
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-12-18
     summary: Replaced deprecated `xlink:href` references with `href`.
     affectsMarkup: true
     githubPr: 6165

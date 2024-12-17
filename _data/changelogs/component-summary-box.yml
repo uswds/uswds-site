@@ -5,7 +5,7 @@ changelogURL:
 # Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
 
 items:
-  - date: 2024-12-13
+  - date: 2024-12-17
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 3016

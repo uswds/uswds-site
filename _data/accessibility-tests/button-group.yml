@@ -1,7 +1,7 @@
 title: Button group
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Color is not the only method used to convey button meaning.
     summary_additional: When you view buttons in a group, you can see and read text, and do not have to rely on color alone for meaning.
     test_status: pass
@@ -26,14 +26,14 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 3.2.2
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Using zoom does not obstruct the button group.
     summary_additional: When you zoom to 400%, you can see the button group and scroll up and down. It does not overlap with other content and there is no loss of information on the page.
     test_status: pass
     test_type: zoom
     version_tested: 3.8.1
     wcag_criterion: 1.4.10
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Keyboard actions can access all button group functionality.
     summary_additional: You can navigate back and forth between buttons in the button group and perform all other functions using only your keyboard.
     test_status: pass
@@ -64,7 +64,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 2.4.13
-# Screen reader tests
+  # Screen reader tests
   - summary: Screen reader announces buttons in group.
     summary_additional: When you use a screen reader to navigate into a button group, the button labels you hear match the visual labels on the screen.
     test_status: pass

@@ -16,7 +16,7 @@ items:
     versionUswds: 3.8.1
   - date: 2024-03-11
     summary: Improved the appearance of button groups when text wraps to multiple lines.
-    summaryAdditional:  Now, every button in the group will be the same height.
+    summaryAdditional: Now, every button in the group will be the same height.
     isBreaking: false
     affectsAccessibility:
     affectsAssets:

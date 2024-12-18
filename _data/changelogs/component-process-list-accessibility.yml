@@ -1,9 +1,8 @@
 title: Process list accessibility tests
 type: component
 items:
- - date: NNNN-NN-NN
-   summary: Added accessibility tests page.
-   affectsGuidance: true
-   githubPr: 3007
-   githubRepo: uswds-site
-   
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 3007
+    githubRepo: uswds-site

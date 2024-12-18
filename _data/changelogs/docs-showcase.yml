@@ -2,7 +2,7 @@ title: Showcase
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-12-18
     summary: Removed broken link to VA Caseflow.
     affectsGuidance: true
     githubPr: 3031

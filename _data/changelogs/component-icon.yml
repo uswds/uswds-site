@@ -2,7 +2,7 @@ title: Icon
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2024-12-18
     summary: Removed deprecated `xlink` references from code samples.
     affectsGuidance: true
     githubPr: 2926

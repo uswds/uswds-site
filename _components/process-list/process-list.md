@@ -9,16 +9,8 @@ lead: A process list displays the steps or stages of important instructions or p
 title: Process list
 type: component
 subnav:
-- text: Preview
-  href: '#process-list-preview'
-- text: Code
-  href: '#process-list-code'
-- text: Guidance
-  href: '#process-list-guidance'
-- text: Package
-  href: '#process-list-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Process list accessibility tests
+  href: /components/process-list/accessibility-tests/
 tags:
   - steps
   - step by step

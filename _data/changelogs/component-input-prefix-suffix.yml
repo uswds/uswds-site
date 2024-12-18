@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2024-12-18
-    summary: Moved `.usa-input-group--[width]` classes out of the `usa-form` package.
-    summaryAdditional: These classes are now generated in the `usa-input-prefix-suffix` package and can be used without the `.usa-form` parent element.
+    summary: Moved `.usa-input-group--[width]` classes into the `usa-input-prefix-suffix` package from `usa-form`.
+    summaryAdditional: These classes can now be used without the `usa-form` package and `.usa-form` parent element.
     affectsStyles: true
     githubPr: 6232
     githubRepo: uswds

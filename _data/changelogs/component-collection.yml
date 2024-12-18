@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2024-12-18
-    summary: Replaced deprecated `xlink:href` references with `href`.
+    summary: Replaced deprecated `xlink:href` references with `href` in icons.
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds

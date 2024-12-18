@@ -11,16 +11,8 @@ redirect_from:
 - /collection/
 - /components/collections/
 subnav:
-- text: Preview
-  href: '#collection-preview'
-- text: Code
-  href: '#collection-code'
-- text: Guidance
-  href: '#collection-guidance'
-- text: Package
-  href: '#collection-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Collection accessibility tests
+  href: /components/collection/accessibility-tests/
 title: Collection
 type: component
 variants:

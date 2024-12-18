@@ -2,6 +2,12 @@ title: Collection
 type: component
 changelogURL:
 items:
+  - date: 2024-12-18
+    summary: Replaced deprecated `xlink:href` references with `href` in icons.
+    affectsMarkup: true
+    githubPr: 6165
+    githubRepo: uswds
+    versionUswds: 3.11.0
   - date: 2022-04-28
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true

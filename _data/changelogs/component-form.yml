@@ -5,6 +5,13 @@ title: Form
 type: component
 changelogURL:
 items:
+  - date: 2024-12-18
+    summary: Moved `.usa-input--[width]` and `.usa-input-group--[width]` classes out of the `usa-form` package.
+    summaryAdditional: These classes are now generated in the `usa-input` and `usa-input-prefix-suffix` packages and can be used without the `.usa-form` parent element.
+    affectsStyles: true
+    githubPr: 6232
+    githubRepo: uswds
+    versionUswds: 3.11.0
   - date: 2024-10-04
     summary: Added guidance discouraging most uses of disabled form inputs.
     summaryAdditional: We also added guidance on the rare instances when disabled inputs improve usability.

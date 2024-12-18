@@ -6,6 +6,7 @@ items:
     summary: Removed deprecated `xlink` references from code samples.
     affectsGuidance: true
     githubPr: 2926
+    githubRepo: uswds-site
   - date: 2024-12-13
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

@@ -3,6 +3,12 @@ type: component
 changelogURL:
 items:
   - date: 2024-12-18
+    summary: Replaced deprecated `xlink:href` references with `href` in icons.
+    affectsMarkup: true
+    githubPr: 6165
+    githubRepo: uswds
+    versionUswds: 3.11.0
+  - date: 2024-12-18
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 3010

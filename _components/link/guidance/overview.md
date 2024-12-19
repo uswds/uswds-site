@@ -7,7 +7,7 @@
       <ul class="usa-icon-list usa-icon-list--success margin-top-2">
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Clearly identify external links
@@ -15,7 +15,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Notify users about non-federal external links
@@ -23,7 +23,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Use unique, meaningful link text
@@ -31,7 +31,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Simplify link placement in body text
@@ -39,7 +39,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Link directly to the most relevant page
@@ -47,7 +47,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Indicate nonpublic links that require authentication
@@ -55,7 +55,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             If you use an external link indicator, use it consistently for all text links
@@ -63,7 +63,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Add <code>rel="noreferrer"</code> to external links
@@ -71,7 +71,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Provide text context for external links
@@ -79,7 +79,7 @@
         </li>
          <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Add a non-endorsement statement
@@ -87,7 +87,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Indicate file type and size for links to non-HTML content
@@ -95,7 +95,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Identify jump links in body text
@@ -103,7 +103,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Write out email and phone links
@@ -111,7 +111,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Encode email and phone links
@@ -119,7 +119,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Check with your IT security department regarding email link best practices
@@ -132,7 +132,7 @@
       <ul class="usa-icon-list usa-icon-list--error margin-top-2">
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Don’t rely only on color to distinguish links
@@ -140,7 +140,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Don’t block external links with disruptive notifications
@@ -148,7 +148,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Don’t use generic link text like “read more” or “link”
@@ -156,7 +156,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Don’t use the same link text for different URLs on the same page

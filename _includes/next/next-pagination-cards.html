@@ -30,13 +30,13 @@
         <a class="usa-button text-no-wrap" rel="{{ include.direction }}" href="{{ site.baseurl }}{{ include.preview.url }}" title="{{ include.preview.title }}">
           {% if include.direction =='prev' %}
             <svg class="usa-icon usa-icon--size-1 text-top margin-right-1" aria-hidden="true" role="img">
-              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_back"></use>
+              <use href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_back"></use>
             </svg>
             Read previous page
           {% else %}
             Read next page
             <svg class="usa-icon usa-icon--size-1 text-top margin-left-1" aria-hidden="true" role="img">
-              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_forward"></use>
+              <use href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_forward"></use>
             </svg>
           {% endif %}
       

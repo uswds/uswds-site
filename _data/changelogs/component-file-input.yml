@@ -2,6 +2,19 @@ title: File input
 type: component
 changelogURL:
 items:
+  - date: 2024-12-18
+    summary: Fixed a bug that prevented screen readers from announcing the invalid file type error message.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 6168
+    githubRepo: uswds
+    versionUswds: 3.11.0
+  - date: 2024-12-18
+    summary: Replaced deprecated `xlink:href` references with `href`.
+    affectsAssets: true
+    githubPr: 6165
+    githubRepo: uswds
+    versionUswds: 3.11.0
   - date: 2024-11-19
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

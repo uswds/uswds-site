@@ -2,7 +2,7 @@ title: Button group
 type: component
 changelogURL:
 items:
-  - date: 2024-12-18
+  - date: 2024-12-19
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 3009

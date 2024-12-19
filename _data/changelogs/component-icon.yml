@@ -3,6 +3,11 @@ type: component
 changelogURL:
 items:
   - date: 2024-12-18
+    summary: Removed deprecated `xlink` references from code samples.
+    affectsGuidance: true
+    githubPr: 2926
+    githubRepo: uswds-site
+  - date: 2024-12-18
     summary: Replaced deprecated `xlink:href` references with `href`.
     affectsMarkup: true
     githubPr: 6165

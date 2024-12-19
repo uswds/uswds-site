@@ -34,7 +34,7 @@ As people working in the federal space we all need to advocate for inclusive exp
 * Own your responsibility to ensure that the research we conduct is as inclusive and representative as possible.
 * Engage with non-profits and community groups to identify, recruit, and fairly compensate diverse users.
 * Consider who benefits and who may be harmed with each design.
-* Ask yourself who is invited and who is absent from the discussion.
+* Ask yourself who is invited and who is absent from the discussion. 
 * Identify who is best positioned to help us understand how to make our solutions better.
 
 The patterns are a start, but we need your help keeping these patterns current as design practices and DEIA norms evolve. We encourage you to continue to share your knowledge and expertise.
@@ -77,14 +77,14 @@ The patterns are a start, but we need your help keeping these patterns current a
 [^1]: A quick guide to inclusive design. (August 15, 2022) Retrieved on August 19, 2022, from <https://medium.com/the-u-s-digital-service/a-quick-guide-to-inclusive-design-be4931ef2c>
 
 
-[^2]: Communicating with and about people with disabilities. (February 1, 2022) Retrieved on August 19, 2022, from <https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html>
+[^2]: Communicating with and about people with disabilities. (February 1, 2022) Retrieved on August 19, 2022, from <https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html>
 
 ## Credits
 Illustrations created using [humaaans](https://www.humaaans.com/), a [CC0 (public domain)](https://creativecommons.org/public-domain/cc0/) design library.
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
 
-</div>
+</div> 
   </div>
 </section>
 

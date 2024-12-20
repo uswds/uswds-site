@@ -2,6 +2,22 @@ title: Icon list
 type: component
 changelogURL:
 items:
+  - date: 2024-12-18
+    summary: Removed deprecated `xlink` references from code samples.
+    affectsGuidance: true
+    githubPr: 2926
+    githubRepo: uswds-site
+  - date: 2024-12-18
+    summary: Replaced deprecated `xlink:href` references with `href`.
+    affectsMarkup: true
+    githubPr: 6165
+    githubRepo: uswds
+    versionUswds: 3.11.0
+  - date: 2024-12-13
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 3008
+    githubRepo: uswds-site
   - date: 2023-11-20
     summary: Updated the value list for icon list variants.
     affectsGuidance: true

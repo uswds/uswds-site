@@ -2,75 +2,94 @@ title: Pagination
 type: component
 changelogURL:
 items:
-- date: 2023-08-23
-  summary: Updated styles to respect the value of `$theme-pagination-background-color`.
-  summaryAdditional: Users should confirm that pagination colors display as expected.
-  isBreaking: true
-  affectsStyles: true
-  githubPr: 5358
-  githubRepo: uswds
-  versionUswds: 3.6.0
-- date: 2023-08-23
-  summary: Updated the ellipsis color to meet color contrast requirements.
-  summaryAdditional:
-  affectsAccessibility: true
-  affectsStyles: true
-  githubPr: 5358
-  githubRepo: uswds
-  versionUswds: 3.6.0
-- date: 2023-06-09
-  summary: Improved legibility in forced colors mode.
-  summaryAdditional: Adds a consistent border in forced colors mode.
-  affectsAccessibility: true
-  affectsStyles: true
-  githubPr: 5147
-  githubRepo: uswds
-  versionUswds: 3.5.0
-- date: 2023-06-09
-  summary: Improved accessible markup of overflow ellipses.
-  summaryAdditional: We replaced the `role="presentation"` with `aria-label="ellipsis indicating non-visible pages"` for `usa-pagination__overflow` items to better conform to WCAG 2.0 and 2.1.
-  affectsMarkup: true
-  affectsAccessibility: true
-  githubPr: 5197
-  githubRepo: uswds
-  versionUswds: 3.5.0
-- date: 2022-04-28
-  summary: Updated to Sass module syntax and new package structure.
-  isBreaking: true
-  affectsAssets: true
-  affectsJavascript: true
-  affectsStyles: true
-  githubPr: 4656
-  githubRepo: uswds
-  versionUswds: 3.0.0
-- date: 2022-04-11
-  summary: Added support for forced colors mode.
-  summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
-  isBreaking: false
-  affectsAccessibility: true
-  affectsAssets: false
-  affectsGuidance: false
-  affectsJavascript: false
-  affectsMarkup: false
-  affectsStyles: true
-  githubPr: 4610
-  githubRepo: uswds
-  versionUswds: 2.13.3
-- date: 2021-06-16
-  summary: Added pagination documentation.
-  affectsGuidance: true
-  githubPr: 1218
-  githubRepo: uswds-site
-- date: 2021-06-16
-  summary: Added pagination component.
-  summaryAdditional: Pagination is navigation for paginated content.
-  isBreaking: false
-  affectsAccessibility: false
-  affectsAssets: true
-  affectsGuidance: true
-  affectsJavascript: true
-  affectsMarkup: true
-  affectsStyles: true
-  githubPr: 4175
-  githubRepo: uswds
-  versionUswds: 2.12.0
+  - date: 2024-12-18
+    summary: Replaced deprecated `xlink:href` references with `href`.
+    affectsMarkup: true
+    githubPr: 6165
+    githubRepo: uswds
+    versionUswds: 3.11.0
+  - date: 2024-10-16
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 2865
+    githubRepo: uswds-site
+  - date: 2024-10-04
+    summary: Added text underline styles to pagination links.
+    summaryAdditional: Pagination links are now visually consistent with other USWDS text links.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5970
+    githubRepo: uswds
+    versionUswds: 3.9.0
+  - date: 2023-08-23
+    summary: Updated styles to respect the value of `$theme-pagination-background-color`.
+    summaryAdditional: Users should confirm that pagination colors display as expected.
+    isBreaking: true
+    affectsStyles: true
+    githubPr: 5358
+    githubRepo: uswds
+    versionUswds: 3.6.0
+  - date: 2023-08-23
+    summary: Updated the ellipsis color to meet color contrast requirements.
+    summaryAdditional:
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5358
+    githubRepo: uswds
+    versionUswds: 3.6.0
+  - date: 2023-06-09
+    summary: Improved legibility in forced colors mode.
+    summaryAdditional: Adds a consistent border in forced colors mode.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 5147
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2023-06-09
+    summary: Improved accessible markup of overflow ellipses.
+    summaryAdditional: We replaced the `role="presentation"` with `aria-label="ellipsis indicating non-visible pages"` for `usa-pagination__overflow` items to better conform to WCAG 2.0 and 2.1.
+    affectsMarkup: true
+    affectsAccessibility: true
+    githubPr: 5197
+    githubRepo: uswds
+    versionUswds: 3.5.0
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2022-04-11
+    summary: Added support for forced colors mode.
+    summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
+    isBreaking: false
+    affectsAccessibility: true
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: false
+    affectsMarkup: false
+    affectsStyles: true
+    githubPr: 4610
+    githubRepo: uswds
+    versionUswds: 2.13.3
+  - date: 2021-06-16
+    summary: Added pagination documentation.
+    affectsGuidance: true
+    githubPr: 1218
+    githubRepo: uswds-site
+  - date: 2021-06-16
+    summary: Added pagination component.
+    summaryAdditional: Pagination is navigation for paginated content.
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4175
+    githubRepo: uswds
+    versionUswds: 2.12.0

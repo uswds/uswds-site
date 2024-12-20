@@ -8,7 +8,7 @@
   <a href="https://twitter.com/uswds">
     <svg aria-labelledby="twitter-title" role="img">
       <title id="twitter-title">The USWDS Twitter account</title>
-      <use xlink:href="/path/to/sprite.svg#twitter"></use>
+      <use href="/path/to/sprite.svg#twitter"></use>
     </svg>
   </a>
   ```

@@ -52,7 +52,7 @@ Throughout our documentation and guidance, we’ll use the terms "color," "color
 </div>
 
 ## Color and accessibility
-Color is a powerful tool with an unreliable impact — its effects are neither consistent nor predictable across a population. [Per NIH, color insensitivity impacts approximately 0.5% of adult women and 8% of adult men](https://nei.nih.gov/health/color_blindness/facts_about) (4.5% of the total population). Color insensitivity can make it difficult to distinguish hues (red–green color blindness is the most common form), and some rare conditions prevent the perception of hue altogether. Commonplace vision problems like nearsightedness and astigmatism (among others) also affect how well folks perceive color and contrast.
+Color is a powerful tool with an unreliable impact — its effects are neither consistent nor predictable across a population. Per NIH, color insensitivity impacts [approximately 0.5% of adult women](https://pmc.ncbi.nlm.nih.gov/articles/PMC3328350/) and [8% of adult men](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness) (4.5% of the total population). Color insensitivity can make it difficult to distinguish hues (red–green color blindness is the most common form), and some rare conditions prevent the perception of hue altogether. Commonplace vision problems like nearsightedness and astigmatism (among others) also affect how well folks perceive color and contrast.
 
 Accessibility is not a special case. In the second quarter of 2018, [sites using USWDS topped 1.4 billion pageviews]({{ site.baseurl }}/about/whats-new/). 4.5% of 1.4 billion is around 60 million pageviews — when it comes to accessibility, thinking broadly and inclusively isn’t just a good idea, it’s our mission and responsibility.
 
@@ -179,7 +179,7 @@ The following image shows our vivid System tokens wheel.
 
 If we use color intentionally, consistently, and sensitively, it can make a big difference in the way people understand and connect with our pages, our products and services, and our message. Color is an important component of visual and emotional cognition, and that’s precisely what makes it difficult to use well — what’s strong and confident to one person can be jarring or alarming to another.
 
-**Start in black and white.** Start with your core message and use type scale and hierarchy to test and refine its effectiveness. Then, introduce color to support that message. Color can overwhelm interpretation, and since [approximately 4.5% of the population](https://nei.nih.gov/health/color_blindness/facts_about) has some kind of color insensitivity, it’s important to convey your message without relying on color.
+**Start in black and white.** Start with your core message and use type scale and hierarchy to test and refine its effectiveness. Then, introduce color to support that message. Color can overwhelm interpretation, and since approximately 4.5% of the population has some kind of color insensitivity, it’s important to convey your message without relying on color.
 
 **Put the practical before the emotional.** Because color can do so much, it's helpful to keep focused. Limit the complexity of color by concentrating on functional requirements (like status states or directions) first. Then, use color as progressive enhancement to reinforce or balance the emotional needs of the content. Even so, bear in mind that the effects of color are often personal and cultural as much as, or more so than, physiological. Understand that using color to optimize for tone necessarily excludes some users in subtle and not-so-subtle ways.
 
@@ -187,7 +187,7 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 
 **Ask visual designers.** Your group or agency may have visual designers either on staff or available as contractors. They can be an invaluable resource for building palettes or getting feedback on existing ones. USWDS benefits from the collective experience of visual designers across agencies to build our System palette and provide a range of prebuilt project theme palettes. If you have visual design resources, use them.
 
-**Don’t use color exclusively to convey meaning.** Even Section 508 conformant contrast doesn’t ensure that colors are distinguishable for a significant percentage of your audience. [Approximately 0.5% of adult women and 8% of adult men](https://nei.nih.gov/health/color_blindness/facts_about) have some kind of color insensitivity, especially between red and green. Color should only be used as progressive enhancement — if color is the only signal, that signal won’t get through as intended to everyone.
+**Don’t use color exclusively to convey meaning.** Even Section 508 conformant contrast doesn’t ensure that colors are distinguishable for a significant percentage of your audience. [Approximately 0.5% of adult women and 8% of adult men](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness) have some kind of color insensitivity, especially between red and green. Color should only be used as progressive enhancement — if color is the only signal, that signal won’t get through as intended to everyone.
 
 ## Further reading
 - Accessibility: Color and contrast

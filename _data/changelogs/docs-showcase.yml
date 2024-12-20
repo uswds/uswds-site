@@ -6,6 +6,10 @@ items:
     summary: Added Export Compliance Assistance Program (ECAP) to the showcase page.
     affectsGuidance: true
     githubPr: 2839
+  - date: 2024-12-18
+    summary: Removed broken link to VA Caseflow.
+    affectsGuidance: true
+    githubPr: 3031
     githubRepo: uswds-site
   - date: 2024-04-26
     summary: Remove broken links that have no alternate for redirects.

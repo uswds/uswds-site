@@ -2,6 +2,22 @@ title: Combo box
 type: component
 changelogURL:
 items:
+  - date: 2024-11-13
+    summary: Updated the order of combo box search results.
+    summaryAdditional:  The component now displays options that start with the query at the top of the list, followed by options that contain the query. This behavior more closely aligns with user expectations.
+    isBreaking: false
+    affectsJavascript: true
+    githubPr: 6122
+    githubRepo: uswds
+    versionUswds: 3.10.0
+  - date: 2024-10-04
+    summary: Removed custom screen reader instructions.
+    summaryAdditional: Combo box now relies on the default instructions provided by screen readers.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 6022
+    githubRepo: uswds
+    versionUswds: 3.9.0
   - date: 2024-09-18
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

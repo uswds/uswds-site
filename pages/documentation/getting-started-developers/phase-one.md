@@ -25,7 +25,7 @@ Installing the Design System with Node and npm not only allows you to install al
 ## Step 1: Install Node and npm
 Open your Terminal application and a Terminal window. Check to see if you have the [most recent version of Node](https://github.com/uswds/uswds/blob/develop/.nvmrc) installed with `node -v`.
 
-If you don’t have Node, install it from [Node.js](https://nodejs.org/en/download/).
+If you don’t have Node, install it from [Node.js](https://nodejs.org/en/download).
 
 ## Step 2: Initialize your project in Node
 Once you have Node and npm installed, go to the root of your project directory in Terminal. The root is the topmost directory associated with your project, the directory that includes all your project files and directories. In Terminal, the root will read as follows:

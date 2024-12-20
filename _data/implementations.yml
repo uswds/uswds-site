@@ -160,6 +160,7 @@
 - name: uswds-sf-lightning-community
   distribution: Salesforce Lightning
   url: https://github.com/GSA/uswds-sf-lightning-community
+  status: archived
   author:
     name: GSA IT (Mark Vogelgesang)
     url: https://github.com/GSA/

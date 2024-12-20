@@ -7,7 +7,7 @@ category: Patterns
 sub-category: Complete a complex form
 lead: Help users understand the purpose of a form and the time commitment needed to complete it, feel confident they have what they need, and trust that the information they provide will be safeguarded and used responsibly.
 changelog:
-  key: pattern-complete-a-complex-form-establish-trust
+  key: pattern-complex-form-establish-trust
 ---
 
 {:.site-component-section-title}
@@ -40,7 +40,7 @@ Provide clear information on why it is necessary to complete the form, what info
           <ul>
             <li>Do provide information on why information is being collected and how it is being used. </li>
             <li>Do use <a href="https://www.plainlanguage.gov/">plain language</a>.</li>
-            <li>Do use people-first language. Emphasize <a href="https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html">people’s abilities, not their limitations</a>, and choose words that emphasize the need for accessibility, not the disability. For example, use accessible parking, not handicapped parking.</li>
+            <li>Do use people-first language. Emphasize <a href="https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html">people’s abilities, not their limitations</a>, and choose words that emphasize the need for accessibility, not the disability. For example, use accessible parking, not handicapped parking.</li>
             <li>Do use <a href="https://content-guide.18f.gov/our-style/inclusive-language/">inclusive language</a>. Choose gender neutral words when possible. Avoid using <em>citizen</em>, unless you are specifically addressing that audience. Choose words that include the broadest appropriate group.</li>
             <li>Do <a href="{{ site.baseurl }}/components/icon-list/">provide a list</a> of what information your user will need to successfully complete the form.</li>
             <li>Do provide an approximate amount of time it will take the user to complete the form.</li>
@@ -122,7 +122,7 @@ Provide clear information on why it is necessary to complete the form, what info
 
 - Build trust with these UX guidelines (March 16, 2019) Retrieved on July 19, 2022, from <https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014>.
 - Building trust with users through open communication and feedback, (June 13, 2019) Retrieved on July 19, 2022, from <https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/>.
-- Communicating with and about people with disabilities. (February 1, 2022) Retrieved on July 28, 2022, from <https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html>.
+- Communicating with and about people with disabilities. (February 1, 2022) Retrieved on July 28, 2022, from <https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html>.
 - Design principles, (n.d.) Retrieved on July 21, 2022 from [https://designsystem.digital.gov/design-principles/.]({{ site.baseurl }}/design-principles/)
 - Inclusive design. (n.d.) Retrieved on August 24, 2022, from <https://content-guide.18f.gov/our-style/inclusive-language/>.
 - Trauma-informed computing: towards safer technology experiences for all. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475.](https://doi.org/10.1145/3491102.3517475)

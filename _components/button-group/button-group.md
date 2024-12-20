@@ -10,12 +10,8 @@ permalink: /components/button-group/
 redirect_from:
   - /components/button-groups/
 subnav:
-- text: Default button group
-  href: '#default-button-group'
-- text: Segmented button group
-  href: '#segmented-button-group'
-- text: Latest updates
-  href: '#changelog'
+- text: Button group accessibility tests
+  href: /components/button-group/accessibility-tests/
 title: Button group
 type: component
 changelog:
@@ -23,3 +19,5 @@ changelog:
 ---
 
 {% include child-sections.html parent='Button group' %}
+
+{% include accessibility-tests/test-results-summary.html page='main' %}

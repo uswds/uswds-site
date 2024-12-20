@@ -1,4 +1,4 @@
-{% assign component_name = page.title | downcase %}
+{% assign component_name = page.parent | default: page.title | downcase %}
 
 <div class="usa-alert usa-alert--info usa-alert--no-icon measure-5 margin-bottom-2">
   <div class="usa-alert__body">

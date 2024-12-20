@@ -4,6 +4,14 @@ type: component
 changelogURL:
 
 items:
+  - date: 2024-12-18
+    summary: Updated table header styles to be consistent across all table elements.
+    summaryAdditional: Now, all `thead th`, `tbody th`, and `tfoot th` cells will have the same visual styles. Teams should confirm that their tables display as expected.
+    isBreaking: false
+    affectsStyles: true
+    githubPr: 5986
+    githubRepo: uswds
+    versionUswds: 3.11.0
   - date: 2024-03-20
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

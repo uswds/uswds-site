@@ -2,6 +2,10 @@ title: Showcase
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added Export Compliance Assistance Program (ECAP) to the showcase page.
+    affectsGuidance: true
+    githubPr: 2839
   - date: 2024-12-18
     summary: Removed broken link to VA Caseflow.
     affectsGuidance: true

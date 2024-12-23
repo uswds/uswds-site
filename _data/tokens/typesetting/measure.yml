@@ -15,6 +15,6 @@
   usage: 'a long, slower reading line'
 - token: 6
   value: 88ex
-  usage: 'an extra-long line sometimes useful for short text (less than 1 paragaph) or captions'
+  usage: 'an extra-long line sometimes useful for short text (less than 1 paragraph) or captions'
 - token: none
   value: none

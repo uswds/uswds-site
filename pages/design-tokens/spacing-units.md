@@ -28,7 +28,7 @@ changelog:
   | concat: tokens.negative.small
   | concat: tokens.negative.medium %}
 
-Any spacing value in utilities or component CSS should use the following spacing unit tokens, based on multiples of 8px. The documentation below displays a target value in pixels, but the final output for tokens above `2px` and below `-2px` is the eqivalent value in `rem`, which will vary depending on your project settings.
+Any spacing value in utilities or component CSS should use the following spacing unit tokens, based on multiples of 8px. The documentation below displays a target value in pixels, but the final output for tokens above `2px` and below `-2px` is the equivalent value in `rem`, which will vary depending on your project settings.
 
 {:.bg-gold-20v.padding-2.radius-md}
 **Note:** Some units tokens come in two flavors: a **numeric token** (like `0.5` or `-2`) and a **string token** (like `'05'` or `'neg-2'`). _Utility classes use unquoted string tokens exclusively when they exist_ (like `.margin-x-neg-2`). Mixins and functions usually accept either, and we will note any exceptions.

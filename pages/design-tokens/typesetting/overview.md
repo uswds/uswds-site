@@ -47,7 +47,7 @@ Each [supported typeface]({{ site.baseurl }}/design-tokens/typesetting/font-fami
 
 <div class="site-table-wrapper maxw-tablet">
   <div class="site-table-note">
-    For <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) we see the following normalized ouput:
+    For <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) we see the following normalized output:
   </div>
 
   <table class="usa-table--borderless site-table-responsive">
@@ -97,7 +97,7 @@ Since we use normalization on font sizing, we must also normalize line height to
 
 <div class="site-table-wrapper">
   <div class="site-table-note">
-    For <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) and <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a> token <code>3</code> ({{ target_line_height }} / {{ target_line_height | times: target_font_size }}px) we see the following normalized ouput:
+    For <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) and <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a> token <code>3</code> ({{ target_line_height }} / {{ target_line_height | times: target_font_size }}px) we see the following normalized output:
   </div>
 
   <table class="usa-table--borderless site-table-responsive">

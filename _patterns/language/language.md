@@ -1,5 +1,5 @@
 ---
-title: Select their perferred language
+title: Select their preferred language
 permalink: /patterns/select-language/
 redirect_from:
   - /select-language/

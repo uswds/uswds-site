@@ -2,6 +2,19 @@ title: Input prefix or suffix
 type: component
 changelogURL:
 items:
+  - date: 2024-12-18
+    summary: Moved `.usa-input-group--[width]` classes into the `usa-input-prefix-suffix` package from `usa-form`.
+    summaryAdditional: These classes can now be used without the `usa-form` package and `.usa-form` parent element.
+    affectsStyles: true
+    githubPr: 6232
+    githubRepo: uswds
+    versionUswds: 3.11.0
+  - date: 2024-12-18
+    summary: Replaced deprecated `xlink:href` references with `href`.
+    affectsMarkup: true
+    githubPr: 6165
+    githubRepo: uswds
+    versionUswds: 3.11.0
   - date: 2023-11-20
     summary: Added documentation for `usa-input-group--success` variant.
     affectsGuidance: true

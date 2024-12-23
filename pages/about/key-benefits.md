@@ -94,7 +94,7 @@ We are as committed as you are to public service, and we reflect this in our pro
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon text-blue">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+          <use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">
@@ -104,7 +104,7 @@ We are as committed as you are to public service, and we reflect this in our pro
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon text-blue">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+          <use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">

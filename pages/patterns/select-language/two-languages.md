@@ -66,7 +66,7 @@ Place the language selector button at the top right of the screen above site nav
         <div class="do-dont__content">
           <ul>
             <li>Do not create a dead end for users by taking them to a page with little or no meaningful content.</li>
-            <li>Strongly consider using a globe icon on the language selection button. Other icons may represent different concepts to different cultures.</li>
+            <li>Strongly consider using anything other than a globe icon on the language selection button. Other icons may represent different concepts to different cultures.</li>
             <li>Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. The country code <code>ES</code> may not be universally understood to indicate Spanish.</li>
             <li>Avoid auto-redirecting language based on detecting location or browser settings. This can be confusing and disorienting.</li>
             <li>Do not combine this element with other navigation items.</li>

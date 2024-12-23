@@ -27,7 +27,7 @@ When content is available in only two languages, see the [Select from two langua
 
 ### What's the solution?
 
-Place the language selector menu at the top of the screen above site navigation, allowing site visitors to use a dropdown menu to select their language of choice. Place the language selector on the top right for left-to-right languages and on the top left for right-to-left languages if possible.
+Place the language selector menu at the top right of the screen above site navigation allowing site visitors to use a dropdown menu to select their language of choice. 
 
 {:.site-component-section-title}
 ## Guidance
@@ -42,11 +42,13 @@ Place the language selector menu at the top of the screen above site navigation,
         </h3>
         <div class="do-dont__content">
           <ul>
-            <li>Place the language menu button in the upper corner of the screen for consistency. If possible, flip the arrangement of the header for right-to-left languages. The language button should be positioned at the top right of the page for left-to-right languages and on the top left for right-to-left languages.</li>
+            <li>Place the language menu button in the upper right corner of the screen for consistency.</li>
             <li>Make the language access button a single, independent element.</li>
             <li>Include the language dropdown in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
             <li>Take users to an equivalent page that includes the same or similar content.</li>
             <li>Label the dropdown menu <code>Languages</code>.</li>
+            <li>Consider adding an icon such as a globe to increase visibility of language selector</li>
+            <li>Include a dropdown indicator</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Do order the languages alphabetically by the common, native language name. For example:<br/>
             <span lang="ar" xml:lang="ar">العربية</span> (Arabic)<br/>
@@ -71,7 +73,7 @@ Place the language selector menu at the top of the screen above site navigation,
         <div class="do-dont__content">
             <ul>
               <li>Do not create a dead end for users by taking them to a page with little or no meaningful content.</li>
-              <li>Strongly consider whether including icons or graphics on the language selection button offers communication value, as these may represent different concepts to different cultures.</li>
+              <li>Strongly consider using anything other than a globe icon on the language selection button. Other icons may represent different concepts to different cultures.</li>
               <li>Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. The country code <code>ES</code> may not be universally understood to indicate Spanish.</li>
               <li>Avoid auto-redirecting language based on detecting location or browser settings. This can be confusing and disorienting.</li>
               <li>Do not combine this element with other navigation items.</li>
@@ -109,8 +111,7 @@ Place the language selector menu at the top of the screen above site navigation,
 ### Usability guidance
 
 {:.usa-content-list}
-- Consider including a **prominent in-page notice or link** in addition to the link in the header, in order to increase visibility for the user.
-- **Ensure there’s enough color contrast** between the button, the text inside the button, and the site background to ensure readability.
+- **Ensure there’s enough color contrast** between the button, text, and icon inside the button, and the site background to ensure readability.
 
 ### Accessibility
 

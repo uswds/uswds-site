@@ -1,7 +1,12 @@
 title: "Phase 2: Compile"
 type: documentation
 changelogURL:
-items:
+items:  
+  - date: 2024-12-18
+    summary: Added documentation for `settings.compile.sassDeprecationWarnings`.
+    affectsGuidance: true
+    githubPr: 3006
+    githubRepo: uswds-site
   - date: 2024-09-05
     summary: Added documentation for `settings.compile.browserslist` and `settings.compile.sassSourcemaps`.
     affectsGuidance: true

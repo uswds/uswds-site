@@ -160,6 +160,3 @@ workflows:
       - test_a11y_mobile:
           requires:
             - build
-      - lint-and-format-workflow:
-          jobs:
-            - lint-and-format

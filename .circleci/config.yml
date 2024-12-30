@@ -97,6 +97,22 @@ jobs:
           command: npm run proof
       - snyk/scan:
           organization: uswds
+  lint_and_format:
+    executor: my-executor
+    parallelism: 2
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run: 
+          name: lint
+          command: npm run lint
+      - run: 
+          name: format
+          command: npm run prettier:md
+      - run: 
+          name: check
+          command: npm run format-check
   test_a11y_desktop:
     executor: my-executor
     parallelism: 2
@@ -144,3 +160,6 @@ workflows:
       - test_a11y_mobile:
           requires:
             - build
+      - lint-and-format-workflow:
+          jobs:
+            - lint-and-format

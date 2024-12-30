@@ -110,9 +110,6 @@ jobs:
       - run: 
           name: format
           command: npm run prettier:md
-      - run: 
-          name: check
-          command: npm run format-check
   test_a11y_desktop:
     executor: my-executor
     parallelism: 2

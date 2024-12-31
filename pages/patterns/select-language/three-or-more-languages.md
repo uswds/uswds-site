@@ -51,7 +51,7 @@ Place the language selector menu at the top right of the screen above site navig
             <li>Include a dropdown indicator</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Do order the languages alphabetically by the common, native language name. For example:<br/>
-            <span lang="ar" xml:lang="ar">العربية</span> (Arabic)<br/>
+            <span lang="ar" xml:lang="ar">عربي</span> (Arabic)<br/>
             <span lang="zh" xml:lang="zh">简体字</span> (Chinese - Simplified)<br/>
             <span lang="en" xml:lang="en">English</span><br/>
             <span lang="es" xml:lang="es">Español</span> (Spanish)<br/>

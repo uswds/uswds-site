@@ -42,7 +42,7 @@ The pattern allows users to select their language preferences for both written a
             <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Do include American Sign Language (ASL) in spoken preferences if you are committed to supporting in-person communications, such as in a health care setting.</li>
             <li>Do order the languages alphabetically by the common, native language name. For example:<br/>
-            <span lang="ar" xml:lang="ar">العربية</span> (Arabic)<br/>
+            <span lang="ar" xml:lang="ar">عربي</span> (Arabic)<br/>
             <span lang="zh" xml:lang="zh">简体字</span> (Chinese - Simplified)<br/>
             <span lang="en" xml:lang="en">English</span><br/>
             <span lang="es" xml:lang="es">Español</span> (Spanish)<br/>

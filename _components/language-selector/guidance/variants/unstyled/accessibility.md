@@ -1,4 +1,4 @@
-- **There should be enough color contrast between the text of the link and the background to ensure readability.**
+- **There should be enough contrast between the button and the page background, as well as the button background and any button text or icons, to ensure readability.**
 - **Provide a visual element that shows when the text is a link.** For example, permanently underline text or when hovering.
 - **The language of each page should be identified using the HTML lang attribute (`<html lang="en">`, for example).** Please see [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57.html).
 - **All logically related items/links must be presented as an HTML unordered list.** Please see [H48: Using ol, ul and dl for lists or groups of links](https://www.w3.org/WAI/WCAG21/Techniques/html/H48.html).

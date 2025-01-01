@@ -10,7 +10,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.11.0
   - date: 2025-01-02
-    summary: Updated guidance for `Two languages` and `Three or more languages`. Updated label for `Arabic` language.
+    summary: Updated guidance for `Two languages` and `Three or more languages.` Updated label for `Arabic` language.
     summaryAdditional: Language selector has leading globe icon and dropdown indicator to reflect `10x-improving-language-access` user research. Arabic language label updated to reflect contemporary usage.
     affectsGuidance: true
     githubPr: TBD

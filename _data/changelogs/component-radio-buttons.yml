@@ -2,6 +2,13 @@ title: Radio buttons
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Changed display for radio buttons to inline-block so that label fits its content.
+  summaryAdditional:
+  affectsStyles: true
+  githubPr: 6192
+  githubRepo: uswds-site
+  versionUswds: N.N.N
 - date: 2024-09-18
   summary: Added WCAG compliance tag and accessibility test status section.
   affectsGuidance: true

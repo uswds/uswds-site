@@ -9,7 +9,6 @@
 @import "custom-styles/graphic-list";
 @import "custom-styles/posts";
 
-
 // ========================================
 // CUSTOM PROJECT SASS
 // ----------------------------------------
@@ -1425,21 +1424,6 @@ code[class*="language-plaintext"] {
   }
 }
 
-.link-download {
-  display: table;
-
-  &::before {
-    @include u-square(1.5);
-    background: url("#{$image-path}/icon-download.png") no-repeat 0 0;
-    background: url("#{$image-path}/icon-download.svg") no-repeat 0 0;
-    background-size: 100%;
-    content: "";
-    display: inline-block;
-    margin-bottom: 0;
-    margin-right: units(1.5);
-  }
-}
-
 .link-download-subtext {
   margin-left: units(3);
 }
@@ -1569,8 +1553,6 @@ hr {
 iframe {
   margin-bottom: units(4);
 }
-
-
 
 // Utilities CSS --------------------- //
 

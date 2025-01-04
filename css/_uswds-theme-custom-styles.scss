@@ -109,6 +109,7 @@ abbr[title="required"] {
 
 .site-banner {
   $site-banner-font-family: "lang";
+  $site-banner-icon-color: "blue-40v";
   @include typeset($site-banner-font-family);
   @include at-media("tablet") {
     font-size: font-size($site-banner-font-family, "3xs");
@@ -125,6 +126,12 @@ abbr[title="required"] {
     line-height: line-height($site-banner-font-family, 2);
     &:hover {
       color: color("white");
+      &::after {
+        background-color: color($site-banner-icon-color);
+      }
+    }
+    &::after {
+      background-color: color($site-banner-icon-color);
     }
   }
 

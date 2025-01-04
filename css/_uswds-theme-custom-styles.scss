@@ -110,6 +110,7 @@ abbr[title="required"] {
 .site-banner {
   $site-banner-font-family: "lang";
   $site-banner-icon-color: "blue-40v";
+  $site-banner-action-color: "gray-20";
   @include typeset($site-banner-font-family);
   @include at-media("tablet") {
     font-size: font-size($site-banner-font-family, "3xs");
@@ -121,7 +122,7 @@ abbr[title="required"] {
   }
 
   .usa-banner__button {
-    color: color("base-light");
+    color: color($site-banner-action-color);
     font-size: font-size($site-banner-font-family, 1);
     line-height: line-height($site-banner-font-family, 2);
     &:hover {
@@ -151,7 +152,7 @@ abbr[title="required"] {
   }
 
   .usa-banner__header-action {
-    color: color("gray-30");
+    color: color($site-banner-action-color);
     line-height: line-height($site-banner-font-family, 2);
   }
 

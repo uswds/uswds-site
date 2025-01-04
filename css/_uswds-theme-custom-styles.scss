@@ -1430,6 +1430,25 @@ code[class*="language-plaintext"] {
 
 .link__group-download {
   .link-download {
+    @include u-measure(5);
+    align-items: center;
+    background-color: color("blue-warm-5");
+    border-radius: radius("md");
+    display: flex;
+    padding: units(2);
+  }
+
+  .usa-icon {
+    height: units(3);
+    margin-right: units(1);
+    width: units(3);
+  }
+}
+
+.link__group-download {
+  @include u-margin-y(2);
+
+  .link-download {
     margin-bottom: units(1);
   }
 }

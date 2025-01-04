@@ -119,7 +119,6 @@ DEPENDENCIES
   liquid-c
   rspec-core
   rspec-expectations
-  webrick (~> 1.7)
 
 BUNDLED WITH
    2.5.7

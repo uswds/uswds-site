@@ -14,16 +14,15 @@ As a complement to this visual style guidance, we strongly recommend you use [18
 
 ## USWDS for designers
 
-<div class="site-note"><strong>Note:</strong> USWDS 3 design assets are only currently available in Sketch, Adobe XD, and Figma formats.</div>
+<div class="site-note"><strong>Note:</strong> USWDS 3 design assets are maintained in Figma and Sketch formats. We've provided an offical USWDS design kit for Figma since November 2024. We've stopped maintaining our Adobe XD assets.</div>
 
-The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
-
-USWDS components and tokens are available as an Adobe XD components file and as a Sketch library and project file. Download the assets and all associated fonts and images from the link below. Find more complete installation instructions at [our USWDS for designers GitHub repo](https://www.github.com/uswds/uswds-for-designers):
+USWDS components and tokens are available in their application-specific project file formats. Download the assets and all associated fonts and images from the links below. Find more complete installation instructions at [our USWDS for designers GitHub repo](https://www.github.com/uswds/uswds-for-designers):
 
 {% include download-buttons-design.html %}
 
-Alternatively, you can view the design assets on [Figma](https://figma.com/community/file/836611771720754351). Heads up! These Figma assets are not affiliated with or endorsed by the USWDS team. We have not tested them, so use them at your own discretion.
+For some users, it can be easier to install the [USWDS design kit for Figma](https://figma.com/community/file/836611771720754351) directly from the Figma community instead of downloading the file from our GitHub repo.
 
+The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
 ### Retired design files
 USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:{{ site.uswds_email }}).

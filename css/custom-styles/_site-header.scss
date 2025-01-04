@@ -13,7 +13,9 @@ $site-secondary-nav-input-height: 38px;
 // See https://github.com/uswds/uswds/issues/4851
 .site-header__navbar,
 .site-nav__inner {
-  max-width: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: units("widescreen");
 }
 
 //

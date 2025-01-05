@@ -6,6 +6,10 @@
 // Shared styles
 // ==========================================================================
 
+@use "uswds-core" as *;
+@use "../settings/variables" as *;
+@use "../mixins" as *;
+
 $site-navbar-height: 10;
 $site-secondary-nav-input-height: 38px;
 $site-inner-nav-height: 6;
@@ -41,7 +45,7 @@ $site-inner-nav-height: 6;
     }
 
     a {
-      color: color($site-ink);
+      color: color("ink");
     }
 
     &__text {

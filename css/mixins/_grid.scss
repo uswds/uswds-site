@@ -31,6 +31,6 @@
 }
 
 @mixin usa-grid-col {
-  @include grid-cols("auto", 6);
   width: 100%;
+  @include grid-cols("auto", 6);
 }

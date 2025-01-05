@@ -1,14 +1,5 @@
-// Imports
-@import "./settings/variables";
-@import "./settings/uswds-theme-general";
-@import "./settings/uswds-theme-typography";
-@import "./settings/uswds-theme-spacing";
-@import "./settings/uswds-theme-color";
-@import "./settings/uswds-theme-utilities";
-
-// Tools
-// -------------------------------------
-@import "uswds/packages/uswds-core";
+@forward "settings/uswds-site-theme";
+@use "uswds-core" as *;
 
 $indigo-cool-80: #292d42;
 

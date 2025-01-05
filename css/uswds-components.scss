@@ -1,9 +1,2 @@
-@import "./settings/variables";
-@import "./settings/uswds-theme-general";
-@import "./settings/uswds-theme-typography";
-@import "./settings/uswds-theme-spacing";
-@import "./settings/uswds-theme-color";
-@import "./settings/uswds-theme-utilities";
-@import "./settings/uswds-theme-components";
-
-@import "uswds/packages/uswds";
+@forward "settings/uswds-site-theme";
+@forward "uswds/packages/uswds";

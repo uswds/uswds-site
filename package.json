@@ -46,7 +46,7 @@
     "serve": "npm run build:all-assets && bundle exec jekyll serve --drafts --future --incremental --livereload --host=localhost",
     "serve:package": "npm run build:uswds && npm run serve",
     "serve:local": "export LIBRARY_BASE_URL=\"http://localhost:3000\" && npm run serve",
-    "start": "concurrently 'bundle exec jekyll serve --drafts --future --livereload --incremental --host=localhost' 'npx gulp watch'",
+    "start": "concurrently 'bundle exec jekyll serve --drafts --future --incremental --host=localhost' 'npx gulp watch'",
     "test": "npx snyk test && npm run test:core",
     "test:detached": "npm run start-detached && npm run test:core",
     "test:core": "bundle exec rspec && npm run lint && npm run proof && npm run pa11y-ci:sitemap && npm run pa11y-ci:sitemap-mobile",

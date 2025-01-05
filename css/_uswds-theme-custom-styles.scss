@@ -2459,6 +2459,10 @@ $theme-table-column-gap: 4;
 .site-accordion-code,
 .site-accordion {
   @include typeset("lang");
+
+  .usa-accordion__heading {
+    @include typeset("lang", $theme-body-font-size, 1);
+  }
 }
 
 %site-text-intro {

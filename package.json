@@ -40,6 +40,7 @@
     "crawl": "node config/crawl.js",
     "federalist": "npx gulp build",
     "lint": "npx gulp lintJS lintSass && npm run prettier:scss",
+    "prestart": "npx gulp build",
     "proof": "bundle exec htmlproofer --enforce-https=false --allow-missing-href=true --only_4xx --ignore-status-codes 403,429 --swap-urls 'https\\://designsystem.digital.gov/:/' --ignore-files '/whats-new/updates/(2017|2018|2019|2020|2021)/,/documentation/code-guidelines/' ./_site",
     "proof:all": "bundle exec htmlproofer --enforce-https=false --allow-missing-href=true --ignore-status-codes 0 --swap-urls 'https\\://designsystem.digital.gov/:/' --ignore-files '/whats-new/updates/(2017|2018|2019|2020|2021)/,/documentation/code-guidelines/' ./_site",
     "serve": "npm run build:all-assets && bundle exec jekyll serve --drafts --future --incremental --host=localhost",

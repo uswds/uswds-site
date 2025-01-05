@@ -3569,7 +3569,7 @@ $do-dont-top-bar-width: 1;
   @include u-margin-right("05");
 
   &--pass {
-    color: color("green-cool-50");
+    color: color("green-cool-50v");
   }
 
   &--exception {
@@ -3592,7 +3592,7 @@ $do-dont-top-bar-width: 1;
   @include u-padding-y(1);
 
   &--pass {
-    background-color: color("green-cool-50");
+    background-color: color("green-cool-50v");
   }
 
   &--fail {

@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "../settings/variables" as *;
+
 @mixin grid-cols($default, $split: null, $full: null) {
   @if $default {
     @include grid-col($default);

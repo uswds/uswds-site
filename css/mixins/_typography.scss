@@ -1,3 +1,5 @@
+@use "uswds-core" as *;
+
 @mixin font-lead-alt {
   font-size: font-size("lang", "xs");
   font-weight: font-weight("normal");

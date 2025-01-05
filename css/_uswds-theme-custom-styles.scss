@@ -3755,3 +3755,13 @@ $deprecated-phase-color: color("red-warm-60v");
     text-align: left;
   }
 }
+
+.usa-alert.site-alert {
+  .usa-alert__body {
+    @include typeset("lang");
+  }
+
+  .usa-alert__heading {
+    @include typeset("lang", "lg", 1);
+  }
+}

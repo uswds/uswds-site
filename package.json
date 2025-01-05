@@ -97,7 +97,7 @@
   },
   "snyk": true,
   "dependencies": {
-    "@uswds/compile": "1.2.1",
+    "@uswds/compile": "github:uswds/uswds-compile#dw-gulp-sass-update",
     "@uswds/uswds": "3.11.0"
   }
 }

@@ -232,6 +232,10 @@ $site-inner-nav-height: 6;
       background-color: color("primary-vivid");
     }
   }
+
+  @include at-media($theme-header-min-width) {
+    right: units(3);
+  }
 }
 
 .site-search {

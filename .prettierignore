@@ -18,5 +18,4 @@ Gemfile.lock
 .gitkeep
 *.csv
 *.html
-*.md
 *.min.js

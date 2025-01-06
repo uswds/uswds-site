@@ -1,3 +1,4 @@
+@use "variables" as *;
 @use "uswds-core" with (
   $theme-show-notifications: false,
   $theme-layout-grid-use-important: true,
@@ -13,6 +14,7 @@
   $theme-header-max-width: "widescreen",
   $theme-identifier-font-family: "lang",
   $theme-identifier-max-width: "widescreen",
+  $theme-in-page-nav-background-color: $site-background-color,
   $theme-in-page-nav-top: 6,
   $theme-in-page-nav-margin-left: 0,
   $theme-grid-container-max-width: "widescreen",

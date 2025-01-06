@@ -4,7 +4,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Enabled tooltip on non-button elements.
+    summary: Enabled tooltip functionality on non-button elements.
     summaryAdditional:
     affectsJavascript: true
     githubPr: 6035

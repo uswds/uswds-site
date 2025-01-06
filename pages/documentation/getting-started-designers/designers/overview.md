@@ -14,7 +14,7 @@ As a complement to this visual style guidance, we strongly recommend you use [18
 
 ## USWDS for designers
 
-<div class="site-note"><strong>Note:</strong> USWDS 3 design assets are maintained in Figma and Sketch formats. We've provided an offical USWDS design kit for Figma since November 2024. We've stopped maintaining our Adobe XD assets.</div>
+<div class="site-note"><strong>Note:</strong> USWDS 3 design assets are maintained in Figma and Sketch formats. We've provided an official USWDS design kit for Figma since November 2024. We've stopped maintaining our Adobe XD assets.</div>
 
 USWDS components and tokens are available in their application-specific project file formats. Download the assets and all associated fonts and images from the links below. Find more complete installation instructions at [our USWDS for designers GitHub repo](https://www.github.com/uswds/uswds-for-designers):
 

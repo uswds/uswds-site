@@ -143,6 +143,7 @@ jobs:
 workflows:
   circle-uswds-site:
     jobs:
+      - lint_and_format
       - install_ruby_deps
       - install_node_deps
       - build:
@@ -152,7 +153,6 @@ workflows:
       - test_build:
           requires:
             - build
-      - lint_and_format
       - test_a11y_desktop:
           requires:
             - build

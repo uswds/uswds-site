@@ -22,6 +22,7 @@ $site-inner-nav-height: 6;
 
 .site-nav__inner {
   min-height: units($site-inner-nav-height);
+  padding-left: units(2);
 }
 
 //
@@ -132,7 +133,6 @@ $site-inner-nav-height: 6;
   background-color: color("white");
   border-bottom: units($site-border-width) solid
     color($site-base-transparent-light);
-  padding-left: units(2);
 
   @include at-media("desktop") {
     float: none;

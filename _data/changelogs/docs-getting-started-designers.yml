@@ -1,0 +1,14 @@
+title: Getting started for designers
+type: documentation
+changelogURL:
+items:
+  - date: 2025-01-08
+    summary: Added information about USWDS design kit for Figma.
+    summaryAdditional: Added download link and direct link to file hosted on Figma community. Removed links to third-party Figma kits.
+    githubPr: 13041
+    githubRepo: uswds-site
+  - date: 2025-01-08
+    summary: Updated information about USWDS design kit for Adobe XD.
+    summaryAdditional: Noted that we have stopped maintaining these assets since XD is no longer supported by Adobe.
+    githubPr: 13041
+    githubRepo: uswds-site

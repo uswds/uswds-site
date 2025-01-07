@@ -100,7 +100,6 @@ jobs:
   lint_and_format:
     executor: my-executor
     parallelism: 2
-    name: Lint and format
     steps:
       - checkout
       - attach_workspace:
@@ -143,7 +142,8 @@ jobs:
 workflows:
   circle-uswds-site:
     jobs:
-      - lint_and_format
+      - lint_and_format:
+          name: Lint and format
       - install_ruby_deps
       - install_node_deps
       - build:

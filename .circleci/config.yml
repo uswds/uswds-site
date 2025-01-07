@@ -100,14 +100,15 @@ jobs:
   lint_and_format:
     executor: my-executor
     parallelism: 2
+    name: Lint and format
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run: 
+      - run:
           name: lint
           command: npm run lint
-      - run: 
+      - run:
           name: format
           command: npm run prettier:md
   test_a11y_desktop:
@@ -151,6 +152,7 @@ workflows:
       - test_build:
           requires:
             - build
+      - lint_and_format
       - test_a11y_desktop:
           requires:
             - build

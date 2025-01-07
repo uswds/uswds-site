@@ -43,12 +43,12 @@ The USWDS team uses the information from these new component discussions to crea
 Have an idea for something other than a new component? We want to hear about it. Here are the steps to submit a feature request or enhancement.
 If you want to see other contributions before submitting your own, check out [some good first issues](https://github.com/uswds/uswds/issues?q=is%3Aissue+label%3A%22Good+First+Issue%22) from other community members.
 
-1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue%20label%3A%22Good%20First%20Issue%22).
+1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22).
     If your idea has already been suggested, upvote that feature request with a thumbs up emoji.
     Comment on the issue to let us know why you need it and share supporting information. Comments and upvotes help us prioritize feature requests.
 
     If you want to find other feature requests open for upvoting, check out our [“Voting open” feature requests](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Voting+Open+%F0%9F%91%8D%22+sort%3Areactions-%2B1-desc) (sorted by those with the most upvotes).
-1. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue%20label%3A%22Good%20First%20Issue%22), submit a [feature request](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Feature+Request&projects=&template=feature_request.yaml&title=USWDS+-+Feature%3A+%5BYOUR+TITLE%5D).
+1. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit a [feature request](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Feature+Request&projects=&template=feature_request.yaml&title=USWDS+-+Feature%3A+%5BYOUR+TITLE%5D).
     A USWDS core team member may reach out to you if we need clarification.
 1. You may attach a pull request to your issue, but it isn’t required.
 

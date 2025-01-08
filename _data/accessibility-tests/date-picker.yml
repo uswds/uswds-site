@@ -53,7 +53,7 @@ test_items:
     summary_additional: |
       When you use a keyboard, you can navigate in and out of all the date picker elements using only the keyboard
       (e.g., date entry fields, calendar buttons, date picker calendar).
-    test_status:
+    test_status: pass
     test_type: keyboard
     version_tested: 3.7.1
     wcag_criterion: 2.1.1

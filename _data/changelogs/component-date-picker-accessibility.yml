@@ -1,0 +1,9 @@
+title: Date picker accessibility tests
+type: component
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 3051
+    githubRepo: uswds-site

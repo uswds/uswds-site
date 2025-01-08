@@ -22,7 +22,10 @@ $site-inner-nav-height: 6;
 
 .site-nav__inner {
   min-height: units($site-inner-nav-height);
-  padding-left: units(2);
+
+  @include at-media("desktop") {
+    padding-left: units(2);
+  }
 }
 
 //

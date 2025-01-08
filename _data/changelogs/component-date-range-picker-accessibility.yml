@@ -1,0 +1,9 @@
+title: Date range picker accessibility tests
+type: component
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 3052
+    githubRepo: uswds-site

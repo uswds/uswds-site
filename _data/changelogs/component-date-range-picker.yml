@@ -2,6 +2,11 @@ title: Date range picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 3052
+    githubRepo: uswds-site
   - date: 2024-11-19
     summary: Added guidance about always allowing users to type in the date manually.
     affectsGuidance: true

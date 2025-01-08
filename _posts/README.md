@@ -1,10 +1,10 @@
-# Adding content to the "What's new" section
+# Adding content to the "Updates" section
 
-Our [What's new page](https://designsystem.digital.gov/about/whats-new/) is powered by [Jekyll posts](https://jekyllrb.com/docs/posts/). See below for instructions for [creating new posts](#creating-a-new-post) and following [post conventions](#post-conventions).
+Our [What's new page](https://designsystem.digital.gov/about/whats-new/) is powered by [Jekyll posts](https://jekyllrb.com/docs/posts/). See below for instructions for [creating new posts](#creating-a-new-post), [customizing the post's metadata](#customizing-post-metadata), and following [post conventions](#post-conventions).
 
 ## Creating a new post
 
-To create a new post via the GitHub UI, [add a new file](https://github.com/uswds/uswds-site/new/main/_posts?filename=YYYY-MM-DD-post-title.md) to this directory (`_posts`) with a filename in the form:
+To create a new post via the GitHub UI, create a new branch then add a new file to this directory (`_posts`) with a filename in the form:
 
 ```
 YYYY-MM-DD-title.md
@@ -17,13 +17,14 @@ where:
 - `DD` is the 2-digit day of the month, also with a leading zero
 - `title` is the so-called "slug" used in the post URL, and should be all lowercase with no spaces (e.g. `my-post-title`)
 
-See the [Jekyll documentation](https://jekyllrb.com/docs/posts/#creating-post-files) for more info.
+See the [Jekyll documentation about creating posts](https://jekyllrb.com/docs/posts/#creating-post-files) for more info.
 
 Next, in the file's contents, copy and paste the following:
 
 ```
 ---
 title: My update title
+expiration-date: NNNN-NN-NN
 ---
 
 This is my introductory paragraph.
@@ -33,24 +34,40 @@ This is my introductory paragraph.
 And this is another paragraph.
 ```
 
+## Customizing post metadata
+
+You can customize the post's metadata by defining the following in the file's [front matter](https://jekyllrb.com/docs/front-matter/):
+
+| Key | Description | Required |
+|--------|--------|--------|
+| title | The title of the post | Yes |
+| author | The author(s) that will be added to the byline. This value should be written as a text string | No |
+| category | Cell | Cell |
+| tags | The first tag will appear above the post title | Yes |
+| excerpt | The summary of the post that will be included in the preview post in the what's new feed | Yes |
+| lead | The first paragraph of your post displayed in large ("lead") text. When present, the lead will be used as the "excerpt" in the post preview. | No |
+| preview_url | The alternate url that the post preview will link to instead of the generated post. When this kay is present, there is no need to add content outside of the post's front matter | No |
+| expiration_date | The date when this post will receive the "This content is outdated" alert. This is typically set 2 years from the publication date. | No | 
+
+Here is a sample front matter customization:
+
+```md
+---
+title: My update title
+author: Suzy Q, Jane Doe, and Joe Schmoe
+tags: discussion
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas sed felis eget sodales.
+preview_url: https://github.com/uswds/uswds/discussions/
+---
+```
+ 
 ## Post conventions
 
 In general, the following conventions should be followed in your posts:
 
 1. Prefer Markdown files (`.md`) to HTML (`.html`), and remember: You can always embed HTML in Markdown, but not the other way around.
 
-1. To have the first paragraph of your post displayed in large ("lead") text, move it to the front matter like so:
-
-    ```md
-    ---
-    title: My update title
-    lead: This is my lead paragraph.
-    ---
-    ```
-
-    The lead will be treated as the [excerpt] in update listings.
-
-1. When linking to other pages on the site, **always** prefix URIs with the Jekyll base URL:
+1. When linking to other pages on the site, **always** prefix URIs with the Jekyll base URL (`{{ site.baseurl }}`):
 
     ```md
     ## Good
@@ -58,4 +75,3 @@ In general, the following conventions should be followed in your posts:
 
     ## Bad
     Check out [what's new](/whats-new/)!
-    ```

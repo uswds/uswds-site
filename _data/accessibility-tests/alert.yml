@@ -35,7 +35,7 @@ test_items:
       When you use a screen reader and navigate to a non-decorative icon inside an alert,
       you hear an appropriate description of the icon.
       If the icon is purely decorative, you should not hear a description.
-    test_status: exception
+    test_status: conditional
     test_type: screen_reader
     version_tested: 3.9.0
     wcag_criterion: 1.1.1

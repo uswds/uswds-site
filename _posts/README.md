@@ -23,8 +23,8 @@ Next, in the file's contents, copy and paste the following:
 
 ```
 ---
-title: My update title
-expiration-date: NNNN-NN-NN
+title: My post title
+category: About
 ---
 
 This is my introductory paragraph.
@@ -41,21 +41,24 @@ You can customize the post's metadata by defining the following in the file's [f
 | Key | Description | Required |
 |--------|--------|--------|
 | title | The title of the post | Yes |
-| author | The author(s) that will be added to the byline. This value should be written as a text string | No |
-| category | Cell | Cell |
-| tags | The first tag will appear above the post title | Yes |
-| excerpt | The summary of the post that will be included in the preview post in the what's new feed | Yes |
+| category | The site category that ties the post to the side navigation. The value for this should always be "About" | Yes|
+| author | The author(s) listed in the byline | No |
+| tags | The tag that describes the category of the post. Multiply tags can be added. The first tag will appear above the post title. | Yes |
+| excerpt | The post summary that will be included in the post preview | Yes |
 | lead | The first paragraph of your post displayed in large ("lead") text. When present, the lead will be used as the "excerpt" in the post preview. | No |
-| preview_url | The alternate url that the post preview will link to instead of the generated post. When this kay is present, there is no need to add content outside of the post's front matter | No |
+| preview_url | The alternate url that will be added to the link in the post preview header. When this key is present, there is no need to add content outside of the post's front matter. | No |
 | expiration_date | The date when this post will receive the "This content is outdated" alert. This is typically set 2 years from the publication date. | No | 
 
 Here is a sample front matter customization:
 
 ```md
 ---
-title: My update title
+title: Lorem ipsum dolor
+category: About
 author: Suzy Q, Jane Doe, and Joe Schmoe
-tags: discussion
+tags:
+- discussion
+- news
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas sed felis eget sodales.
 preview_url: https://github.com/uswds/uswds/discussions/
 ---

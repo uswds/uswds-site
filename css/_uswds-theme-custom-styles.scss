@@ -2740,7 +2740,7 @@ $theme-table-column-gap: 4;
 
 .site-button {
   @include typeset("lang", null, 1);
-  font-weight: fw("normal");
+  // font-weight: fw("normal");
 }
 
 .site-table,

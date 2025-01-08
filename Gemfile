@@ -11,5 +11,3 @@ gem 'jekyll-seo-tag'
 
 gem 'rspec-core'
 gem 'rspec-expectations'
-
-gem "webrick", "~> 1.7"

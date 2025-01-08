@@ -2,6 +2,11 @@ title: Alert
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 3048
+    githubRepo: uswds-site
   - date: 2024-10-04
     summary: |
       Fixed a bug that caused `$theme-site-margins-width` to unexpectedly change the alignment inside alert and site alert components.

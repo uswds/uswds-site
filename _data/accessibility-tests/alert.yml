@@ -17,7 +17,7 @@ test_items:
     wcag_criterion: 1.4.3
   - summary: All headings are clear and descriptive.
     summary_additional: When you view the alert, the heading is clear and concise.
-    test_status: passs
+    test_status: pass
     test_type: general
     version_tested: 3.8.2
     wcag_criterion: 2.4.6

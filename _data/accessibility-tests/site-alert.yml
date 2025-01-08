@@ -43,7 +43,7 @@ test_items:
     summary_additional: |
       When you use a screen reader and reach the site alert,
       the content in the alert follows the visual location on the page and is not announced out of order.
-      Note: By default the site alert should be the first thing heard and coded with `role="alert" or `aria-live="assertive"`.
+      Note: By default the site alert should be the first thing heard and coded with `role="alert"` or `aria-live="assertive"`.
     test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.1

@@ -3768,12 +3768,12 @@ $deprecated-phase-color: color("red-warm-60v");
 }
 
 @include override-prose {
-  .site-icon-list {
+  .usa-icon-list.site-icon-list {
     @include typeset("lang", $theme-body-font-size);
   }
 }
 
-.site-icon-list {
+.usa-icon-list.site-icon-list {
   .usa-icon-list__content {
     @include u-font("lang", "sm");
     @include u-line-height("lang", 5);
@@ -3786,5 +3786,17 @@ $deprecated-phase-color: color("red-warm-60v");
       @include u-font("lang", $theme-body-font-size);
       @include u-measure(5);
     }
+  }
+}
+
+@include override-prose {
+  .usa-collection.site-collection {
+    @include typeset("lang", "sm", 3);
+  }
+}
+
+.usa-collection.site-collection {
+  .usa-collection__heading {
+    @include typeset("lang", "md", 3);
   }
 }

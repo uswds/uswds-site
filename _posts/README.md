@@ -1,4 +1,4 @@
-# Adding content to the "Updates" section
+# Adding content to the "What's new" section
 
 Our [What's new page](https://designsystem.digital.gov/about/whats-new/) is powered by [Jekyll posts](https://jekyllrb.com/docs/posts/). See below for instructions for [creating new posts](#creating-a-new-post) and following [post conventions](#post-conventions).
 

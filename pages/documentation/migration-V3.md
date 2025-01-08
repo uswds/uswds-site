@@ -177,7 +177,7 @@ Add this load path to your compiler settings, or update any old paths if your co
 {% include autoprefixer-note.html %}
 
 <!--Start compiler accordion -->
-<div class="usa-accordion usa-accordion--bordered">
+<div class="usa-accordion site-accordion usa-accordion--bordered">
 
 <!-- Start USWDS Gulp section -->
 <h4 class="usa-accordion__heading">
@@ -345,7 +345,7 @@ Since USWDS 3.0 is based on USWDS 2.13.3, any markup or settings migration comes
 
 Follow the instructions in each section that applies to either your USWDS version or your settings version. Changes specific to markup have a <span class="usa-tag bg-accent-cool-darker">Markup</span> tag. Changes specific to settings have a <span class="usa-tag bg-accent-warm-darker">Settings</span> tag.
 
-<div class="usa-accordion usa-accordion--bordered">
+<div class="usa-accordion site-accordion usa-accordion--bordered">
 
 <!-- Start All section -->
 <h4 class="usa-accordion__heading">

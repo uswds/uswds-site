@@ -6,6 +6,9 @@ category: How to use USWDS
 lead: USWDS offers a flexible yet coherent visual style you can apply to any government website. Our visual style offers a clean, modern aesthetic that meets high standards of usability and accessibility while promoting credibility and trust.
 redirect_from:
   - /documentation/designers/
+changelog:
+  key: docs-getting-started-designers
+
 ---
 
 See the [design tokens]({{ site.baseurl }}/design-tokens/) section for more on USWDS system styles and palettes.
@@ -20,9 +23,9 @@ USWDS components and tokens are available in their application-specific project 
 
 {% include download-buttons-design.html %}
 
-For some users, it can be easier to install the [USWDS design kit for Figma](https://figma.com/community/file/836611771720754351) directly from the Figma community instead of downloading the file from our GitHub repo.
+For some users, it can be easier to [install the USWDS design kit for Figma directly from the Figma community](https://www.figma.com/community/file/1440921849343185329/uswds-design-kit-beta) instead of downloading the file from our GitHub repo.
 
-The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
+Here on the USWDS documentation site, you’ll find HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on the website (like padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
 ### Retired design files
 USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:{{ site.uswds_email }}).

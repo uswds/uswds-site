@@ -2728,7 +2728,7 @@ $theme-table-column-gap: 4;
 
 .site-button {
   @include typeset("lang", null, 1);
-  font-weight: fw("normal");
+  // font-weight: fw("normal");
 }
 
 .site-table,
@@ -3752,5 +3752,39 @@ $deprecated-phase-color: color("red-warm-60v");
 
   .usa-alert__heading {
     @include typeset("lang", "lg", 1);
+  }
+}
+
+@include override-prose {
+  .usa-icon-list.site-icon-list {
+    @include typeset("lang", $theme-body-font-size);
+  }
+}
+
+.usa-icon-list.site-icon-list {
+  .usa-icon-list__content {
+    @include u-font("lang", "sm");
+    @include u-line-height("lang", 5);
+  }
+
+  .usa-icon-list__content {
+    > p,
+    > ul,
+    > ol {
+      @include u-font("lang", $theme-body-font-size);
+      @include u-measure(5);
+    }
+  }
+}
+
+@include override-prose {
+  .usa-collection.site-collection {
+    @include typeset("lang", "sm", 3);
+  }
+}
+
+.usa-collection.site-collection {
+  .usa-collection__heading {
+    @include typeset("lang", "md", 3);
   }
 }

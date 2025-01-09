@@ -34,7 +34,7 @@ $theme-alert-padding-x: 2.5;
 //$theme-banner-background-color: "ink" !default;
 //$theme-banner-font-family: "lang" !default;
 //$theme-banner-link-color: default !default;
-//$theme-banner-max-width: "none" !default;
+$theme-banner-max-width: "widescreen";
 
 // Button
 $theme-button-font-family: "ui";
@@ -68,7 +68,7 @@ $theme-input-state-border-width: 0.5;
 // Header
 $theme-header-font-family: "ui";
 $theme-header-logo-text-width: 50%;
-// $theme-header-max-width: "full"; - https://github.com/uswds/uswds/issues/4851
+$theme-header-max-width: "widescreen";
 // $theme-header-min-width: 'full';
 
 // Hero

@@ -36,7 +36,7 @@ The following are useful questions to ask your team as you assess users' needs:
 - Which people will have the most difficulty with the product or service?
 - Which research methods have been used, and which methods do you plan to use?
 - What are the key findings?
-- How and where were are your findings being documented?
+- How and where are your findings being documented?
 
 ### Practical actions
 The following are practical actions you can take:
@@ -53,12 +53,11 @@ The following are practical actions you can take:
 
 - [Usability testing with Steve Krug](https://digital.gov/event/2018/06/14/usability-testing-with-steve-krug/) [digital.gov]
 - [18F's human-centered design methods](https://guides.18f.gov/methods/) [guides.18f.gov]
-- [18F's research guidelines](https://handbook.18f.gov/research-guidelines/) [handbook.18f.gov]
+- [Doing research at TTS](https://handbook.18f.gov/research-guidelines/) [handbook.18f.gov]
 - [Interview checklist](https://guides.18f.gov/ux-guide/interview-checklist/) [guides.18f.gov]
-- [Tips for capturing the best data from user interviews](https://18f.gsa.gov/2016/02/09/tips-for-capturing-the-best-data-from-user-interviews/) [18f.gsa.gov]
+- [18F guide for user interviews](https://guides.18f.gov/methods/discover/stakeholder-and-user-interviews/) [guides.18f.gov/]
 - [How to address barriers to user-centered design](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/) [18f.gsa.gov]
 - [Three ways to manage research projects remotely](https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/) [18f.gsa.gov]
-- [Driving innovation with design education by the Lab at OPM](https://www.youtube.com/watch?v=DGDCd2ELpok) [youtube.com]
 - [The Foundations of Agile, Part I](https://digital.gov/event/2019/11/04/foundations-agile-i/) [digital.gov]
 - [The Foundations of Agile, Part II](https://digital.gov/event/2019/11/05/foundations-agile-ii/) [digital.gov]
 
@@ -112,12 +111,10 @@ The following are practical actions you can take:
 
 #### Government resources
 
-- [Digital Services Playbook](https://playbook.cio.gov/) [playbook.cio.gov]
 - [U.S. Web Design System performance guidelines](https://designsystem.digital.gov/performance/) [designsystem.digital.gov]
 - [The HTTPS-only standard](https://https.cio.gov/) [https.cio.gov]
 - [.gov domain registration](https://get.gov/) [get.gov]
 - [Federal plain language guidelines](https://plainlanguage.gov/guidelines/) [plainlanguage.gov]
-- [How to design effective communications](https://oes.gsa.gov/assets/abstracts/OES%20Learnings%20on%20Writing%20Better%20Communications%202018.pdf) [PDF; oes.gsa.gov]
 - [Best practices for multilingual websites](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/) [digital.gov]
 
 #### Non-government resources
@@ -125,7 +122,6 @@ The following are practical actions you can take:
 - [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) [nngroup.com]
 - [A link is a promise](https://www.nngroup.com/articles/link-promise/) [nngroup.com]
 - [Preventing user errors](https://www.nngroup.com/articles/slips/) [nngroup.com]
-- [How AirBNB designs for trust](https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust) [TED.com]
 - [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
@@ -155,28 +151,23 @@ The following are practical actions you can take:
 - **Humanize accessibility.** Seek out examples of the real-life impact of accessible products and services. Try to make accessibility less abstract and more personal.
 - **Use agency resources.** Reach out to [your agency's accessibility team](https://www.section508.gov/tools/coordinator-listing), and build a relationship with them.
 - **Learn about assistive technology.** Visit the Web Accessibility Initiative website to get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
-- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [W3C WCAG 2.0](https://www.w3.org/TR/WCAG20/).
-- **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
+- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/ict/) and [W3C WCAG 2.1](https://www.w3.org/TR/WCAG21/).
+- **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://digital.gov/guides/accessibility-for-teams/), and the [18F Accessibility Guide](https://guides.18f.gov/accessibility/).
 - **Design generously.** Adopt an [inclusive-design](https://inclusivedesignprinciples.info/) mentality as described on the Inclusive Design Principles website.
 - **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
-- **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.
+- **Write accessible content.** Ensure content is written in plain language and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.
 - **Build accessible designs.** Ensure designs are accessible, pages are laid out in a logical order, and content meets color-contrast requirements.
 - **Test broadly.** Test with a broad range of users and abilities throughout the design and development process, including manual accessibility testing against the [Trusted Tester and ICT Testing Baseline](https://www.section508.gov/test/trusted-tester).
 - **Be responsive.** Remediate accessibility issues when you discover them.
-- **Contract for accessibility.** Use the [Accessibility Requirements Tool](https://www.section508.gov/buy/accessibility-requirements-tool) (ART) to incorporate accessibility requirements into your contracts.
+- **Contract for accessibility.** Use the [Accessibility Requirements Tool](https://www.section508.gov/art/#/) (ART) to incorporate accessibility requirements into your contracts.
 
 ### Further reading
 
 #### Government resources
 
-- [The Section 508 accessibility program](https://www.section508.gov/) [section508.gov]
-- [Accessibility for Teams guide](https://accessibility.digital.gov/) [accessibility.digital.gov]
-- [Find your Section 508 Coordinator](https://www.section508.gov/tools/coordinator-listing) [section508.gov]
-- [Section 508 ICT Testing Baseline](https://section508coordinators.github.io/ICTTestingBaseline/) [section508coordinators.github.com ]
+- [The Section 508 accessibility program](https://www.section508.gov/about-us/) [section508.gov]
+- [Section 508 ICT Testing Baseline](https://ictbaseline.access-board.gov/web-baselines/) [access-board.gov]
 - [Learn about writing in plain language](https://www.plainlanguage.gov/) [plainlanguage.gov]
-- [Plain language resources](https://www.plainlanguage.gov/resources/) [plainlanguage.gov]
-- [18F's accessibility guide](https://accessibility.18f.gov/) [accessibility.18f.gov]
-- [Accessibility Requirements Tool (ART) for contracting](https://www.section508.gov/buy/accessibility-requirements-tool) [section508.gov]
 - [Understanding universal design](https://www.section508.gov/blog/Universal-Design-What-is-it) [section508.gov]
 
 #### Non-government resources
@@ -184,7 +175,7 @@ The following are practical actions you can take:
 - [Web accessibility perspectives videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
 - [Inclusive design principles](https://inclusivedesignprinciples.info/) [inclusivedesignprinciples.info]
 - [Accessibility fundamentals with Rob Dodson](https://www.youtube.com/watch?v=z8xUCzToff8) [youtube.com]
-- [Microsoft's inclusive design manual](https://www.microsoft.com/design/inclusive/) [microsoft.com]
+- [Microsoft's inclusive design manual](https://inclusive.microsoft.design/) [microsoft.com]
 - [Inclusive components by Heydon Pickering](https://inclusive-components.design/) [inclusive-components.design]
 - [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
 
@@ -220,7 +211,7 @@ The following are practical actions you can take:
 - **Identify as a government site.** Clearly and consistently identify as a government site on every page.
 - **Use a style guide.** Use a simple and flexible style guide for content and style throughout a product or service. Know if existing guides already exist in your agency before developing something new.
 - **Connect related services with a similar style.** Use the style guide consistently for related digital services.
-- **Support a wide range of devices and platforms.** Support a wide range of devices for a [mobile-friendly experience](https://digital.gov/resources/mobile/principles/).
+- **Support a wide range of devices and platforms.** Support a wide range of devices for a [mobile-friendly experience](https://digital.gov/guides/mobile-principles/).
 - **Test on real devices.** Test your site on the actual mobile devices as often as possible.
 - **Move or remove content with care.** Provide proper notice and forwarding when content is moved or removed.
 - **Clarify multi-step processes.** Give users clear information about where they are in each step of a process.
@@ -235,20 +226,14 @@ The following are practical actions you can take:
 - [How design systems help us work together](https://digital.gov/event/2018/05/31/this-how-we-work-together-with-brad-frost/) [digital.gov]
 - [The U.S. Web Design System](https://designsystem.digital.gov/) [designsystem.digital.gov]
 - [The Journey Mapping method](https://guides.18f.gov/methods/decide/journey-mapping/) [guides.18f.gov]
-- [Embracing responsive design](https://digital.gov/2013/08/20/embracing-responsive-design/) [digital.gov]
 - [Example: USDA's design and brand guidelines](https://www.usda.gov/digital-strategy/design-and-brand) [usda.gov]
 - [Example: Centers for Medicare and Medicaid Services design system](https://design.cms.gov/) [design.cms.gov]
-- [Federal Front Door research findings](https://labs.usa.gov/) [labs.usa.gov]
-- [Sharing Quality Services Cross-Agency Performance goal](https://trumpadministration.archives.performance.gov/CAP/sharing-quality-services/) [performance.gov]
-- [Eight Principles of Mobile-Friendliness](https://digital.gov/resources/mobile/principles/) [digital.gov]
 
 #### Non-government resources
 
 - [Journey mapping 101](https://www.nngroup.com/articles/journey-mapping-101/)[nngroup.com]
-- [Service design 101](https://www.nngroup.com/articles/service-design-101/) [nngroup.com]
-- [Service blueprints: definition](https://www.nngroup.com/articles/service-blueprints-definition/) [nngroup.com]
+- [Service design 101](https://www.nngroup.com/articles/service-design-study-guide/) [nngroup.com]
 - [Using a service ecosystem to quickly grasp complexity](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity) [service-design-network.org]
-- [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) [nngroup.com]
 - [Atomic design](http://atomicdesign.bradfrost.com/table-of-contents/) [atomicdesign.bradfrost.com]
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
@@ -294,19 +279,15 @@ The following are practical actions you can take:
 
 #### Government resources
 
-- [Guide to the Digital Analytics Program (DAP)](https://digital.gov/services/dap/) [digital.gov]
-- [Getting started with Search.gov [youtube.com]](https://www.youtube.com/watch?v=p-y9T23ziEg) [search.gov]
+- [Getting started with Search.gov](https://search.gov/get-started/) [search.gov]
 - [Office of Evaluation Sciences](https://oes.gsa.gov/) [oes.gsa.gov]
 - [Delivering Excellent, Equitable, and Secure Federal Services and Customer Experience](https://www.performance.gov/pma/cx/) [performance.gov]
-- [Tips for Starting Your Customer Experience Journey](https://www.performance.gov/cx/blog/tips-for-starting-your-customer-experience-journey/) [performance.gov]
 - [OMB Circular A-11 Section 280: Managing Customer Experience and Improving Service Delivery](https://www.performance.gov/cx/assets/files/a11_2021-FY22.pdf) [performance.gov]
 - [USDA's guidance on conducting a regular customer experience (or A-11) survey](https://www.usda.gov/digital-strategy/research/plays#research2) [usda.gov]
-- [Customer Experience Maturity Self-Assessment](https://www.performance.gov/cx/assets/files/CXMaturitySelfAssessment.pdf) [performance.gov]
-- [Customer Experience Action Plan Template](https://www.performance.gov/cx/assets/files/CXActionPlanTemplate.pptx) [performance.gov]
+- [Customer Experience Maturity Self-Assessment](https://coe.gsa.gov/2022/06/30/cx-update-20.html) [Centers of Excellence (CoE) at GSA.gov]
 - [Customer Experience Toolkit](https://digital.gov/resources/customer-experience-toolkit/) [digital.gov]
 - [Top tasks with Gerry McGovern [youtube.com]](https://www.youtube.com/watch?v=5llJ98UkXYI) [digital.gov]
 
 #### Non-government resources
 
-- [Google Design: Stop Talking, Start Listening](https://medium.com/google-design/stop-talking-start-listening-7a555ec8ebb1) [medium.com]
 - [Design is Listening: listening as design strategy](https://www.youtube.com/watch?v=6_mHCOAAEI8) [youtube.com]

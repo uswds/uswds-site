@@ -30,15 +30,6 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 1.4.10
 # Screen reader tests
-  - summary: Icons or graphics provide a text alternative for screen readers when needed.
-    summary_additional: |
-      When you use a screen reader and navigate to a non-decorative icon inside a site alert,
-      you hear an appropriate description of the icon.
-      If the icon is purely decorative, you should not hear a description.
-    test_status: conditional
-    test_type: screen_reader
-    version_tested: 3.9.0
-    wcag_criterion: 1.1.1
   - summary: Screen reader announces the site alert in logical order.
     summary_additional: |
       When you use a screen reader and reach the site alert,

@@ -13,7 +13,7 @@ test_items:
   - summary: Content doesn't change before submission.
     summary_additional: |
       When you enter a date into the date range picker,
-      the date stays the same and content doesn't change unless you take another action (e.g., you hit the submit button)
+      the date stays the same and content doesn't change unless you take another action (e.g., you hit the submit button).
     test_status: conditional
     test_type: general
     version_tested: 3.7.1

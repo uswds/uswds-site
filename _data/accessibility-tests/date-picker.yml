@@ -12,8 +12,8 @@ test_items:
     wcag_criterion: 2.5.8
   - summary: Content doesn’t change before submission.
     summary_additional: |
-      When you enter a date into the date picker,
-      the date stays the same and content doesn't change unless you take another action (e.g., you hit the submit button)
+      When you enter a date into the date picker, the date stays the same
+      and content doesn't change unless you take another action (e.g., you hit the submit button).
     test_status: conditional
     test_type: general
     version_tested: 3.8.2

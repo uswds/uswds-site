@@ -9,6 +9,7 @@ permalink: /together/whats-next/
 slug: whats-next
 hero_title: What’s next
 hero_subtitle: Toward pattern-driven development for the design system.
+excerpt: ""
 
 chapter: true
 

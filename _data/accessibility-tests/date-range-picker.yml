@@ -28,7 +28,13 @@ test_items:
   - summary: Text instructions for the date range picker are clear.
     summary_additional: |
       When you view the date range picker, you find clear, simple instructions in text for what type of date format is expected.
-    test_status: pass
+    test_status: exception
+    status_details: |
+      The helper text relates to what format is expected of the date,
+      but there are not visible instructions for how to use the calendar button.
+      To meet user needs, you will need to add instructions for each element in the date picker.
+    github_issue_number: 6241
+    github_issue_repo: uswds
     test_type: general
     version_tested: 3.7.1
     wcag_criterion: 3.3.2

@@ -75,7 +75,7 @@ test_items:
     wcag_criterion: 4.1.2
   - summary: Status alerts are announced by screen readers.
     summary_additional: |
-      When triggered, assertive alert's (ie. emergency status) content and status message is announced to screen reader users.
+      When triggered, assertive alert (i.e., warning status) content and status message is announced to screen reader users.
     test_status: conditional
     test_type: screen_reader
     version_tested: 3.8.2

@@ -2,6 +2,13 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed a bug that prevented in-page navigation from scrolling to nested headings.
+    summaryAdditional: The in-page navigation can now smooth scroll to headings within components like card and summary box.
+    affectsJavascript: true
+    githubRepo: uswds
+    githubPr: 5878
+    versionUswds: N.N.N
   - date: 2024-10-16
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

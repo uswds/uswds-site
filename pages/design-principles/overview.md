@@ -54,6 +54,7 @@ The following are practical actions you can take:
 - [Usability testing with Steve Krug](https://digital.gov/event/2018/06/14/usability-testing-with-steve-krug/) [digital.gov]
 - [18F's human-centered design methods](https://guides.18f.gov/methods/) [guides.18f.gov]
 - [Doing research at TTS](https://handbook.18f.gov/research-guidelines/) [handbook.18f.gov]
+- [18F User Experience Guide — Research](https://guides.18f.gov/ux-guide/research/) [guides.18f.gov]
 - [Interview checklist](https://guides.18f.gov/ux-guide/interview-checklist/) [guides.18f.gov]
 - [18F guide for user interviews](https://guides.18f.gov/methods/discover/stakeholder-and-user-interviews/) [guides.18f.gov/]
 - [How to address barriers to user-centered design](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/) [18f.gsa.gov]
@@ -111,7 +112,6 @@ The following are practical actions you can take:
 
 #### Government resources
 
-- [U.S. Web Design System performance guidelines](https://designsystem.digital.gov/performance/) [designsystem.digital.gov]
 - [The HTTPS-only standard](https://https.cio.gov/) [https.cio.gov]
 - [.gov domain registration](https://get.gov/) [get.gov]
 - [Federal plain language guidelines](https://plainlanguage.gov/guidelines/) [plainlanguage.gov]
@@ -177,7 +177,6 @@ The following are practical actions you can take:
 - [Accessibility fundamentals with Rob Dodson](https://www.youtube.com/watch?v=z8xUCzToff8) [youtube.com]
 - [Microsoft's inclusive design manual](https://inclusive.microsoft.design/) [microsoft.com]
 - [Inclusive components by Heydon Pickering](https://inclusive-components.design/) [inclusive-components.design]
-- [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
 
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
@@ -282,7 +281,7 @@ The following are practical actions you can take:
 - [Getting started with Search.gov](https://search.gov/get-started/) [search.gov]
 - [Office of Evaluation Sciences](https://oes.gsa.gov/) [oes.gsa.gov]
 - [Delivering Excellent, Equitable, and Secure Federal Services and Customer Experience](https://www.performance.gov/pma/cx/) [performance.gov]
-- [OMB Circular A-11 Section 280: Managing Customer Experience and Improving Service Delivery](https://www.performance.gov/cx/assets/files/a11_2021-FY22.pdf) [performance.gov]
+- [OMB Circular A-11 Section 280: Managing Customer Experience and Improving Service Delivery](https://www.whitehouse.gov/wp-content/uploads/2018/06/s280.pdf)(PDF) [performance.gov]
 - [USDA's guidance on conducting a regular customer experience (or A-11) survey](https://www.usda.gov/digital-strategy/research/plays#research2) [usda.gov]
 - [Customer Experience Maturity Self-Assessment](https://coe.gsa.gov/2022/06/30/cx-update-20.html) [Centers of Excellence (CoE) at GSA.gov]
 - [Customer Experience Toolkit](https://digital.gov/resources/customer-experience-toolkit/) [digital.gov]

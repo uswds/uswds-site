@@ -2,6 +2,13 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Replaced uses of `receptor/once` with the native `once` option from `addEventListener`.
+    summaryAdditional: This update reduces the component's reliance on the `receptor` dependency.
+    affectsJavascript: true
+    githubRepo: uswds
+    githubPr: 6172
+    versionUswds: N.N.N
   - date: 2024-10-16
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

@@ -1,5 +1,5 @@
 ---
-title: Accessibility focus - An “autocompletely” useful WCAG technique!
+title: 'Accessibility focus: An “autocompletely” useful WCAG technique!'
 category: Accessibility
 tags: 
  - Accessibility

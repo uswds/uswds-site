@@ -17,6 +17,8 @@ subnav:
     href: "#promote-continuity"
   - text: Listen
     href: "#listen"
+  - text: Latest updates
+    href: '#changelog'
 ---
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

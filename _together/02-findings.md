@@ -10,6 +10,7 @@ slug: findings
 hero_title: Findings
 hero_subtitle: Teams are thinking about how to create digital experiences that embrace all users and are effective, accessible, and respectful.
 chapter: true
+excerpt: ""
 
 summary_sections:
   - heading: Current state

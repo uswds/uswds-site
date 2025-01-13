@@ -1,5 +1,5 @@
 ---
-title: Accessibility focus - Going beyond visual design for inclusive user experiences
+title: "Accessibility focus: Going beyond visual design for inclusive user experiences"
 category: Accessibility
 tags: 
  - Accessibility

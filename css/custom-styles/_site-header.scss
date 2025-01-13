@@ -8,12 +8,24 @@
 
 $site-navbar-height: 10;
 $site-secondary-nav-input-height: 38px;
+$site-inner-nav-height: 6;
 
 // Remove max-width from header containers
 // See https://github.com/uswds/uswds/issues/4851
 .site-header__navbar,
 .site-nav__inner {
-  max-width: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: units("widescreen");
+  position: relative;
+}
+
+.site-nav__inner {
+  min-height: units($site-inner-nav-height);
+
+  @include at-media("desktop") {
+    padding-left: units(2);
+  }
 }
 
 //
@@ -124,7 +136,6 @@ $site-secondary-nav-input-height: 38px;
   background-color: color("white");
   border-bottom: units($site-border-width) solid
     color($site-base-transparent-light);
-  padding-left: units(2);
 
   @include at-media("desktop") {
     float: none;
@@ -211,7 +222,7 @@ $site-secondary-nav-input-height: 38px;
     flex-direction: row;
     height: units($site-navbar-height);
     margin-top: 0;
-    bottom: px-to-rem(46px);
+    bottom: units($site-inner-nav-height);
   }
 
   .usa-button {
@@ -223,6 +234,10 @@ $site-secondary-nav-input-height: 38px;
     &:hover {
       background-color: color("primary-vivid");
     }
+  }
+
+  @include at-media($theme-header-min-width) {
+    right: units(3);
   }
 }
 

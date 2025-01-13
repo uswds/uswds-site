@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Replaced `receptor/once` with `addEventListener`'s `once` option.
-    summaryAdditional: This update reduces the component's reliance on the `receptor` dependency by using native JavaScript options instead.
+    summary: Replaced `receptor/once` with the native `once` option from `addEventListener`.
+    summaryAdditional: This update reduces the component's reliance on the `receptor` dependency.
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 6172

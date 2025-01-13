@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2025-01-XX
-    summary: Added December 2024 monthly call summary and November monthly call video.
+    summary: Added December 2024 monthly call. Added November monthly call video.
     githubPr: 3044
     githubRepo: uswds-site
   - date: 2024-12-13

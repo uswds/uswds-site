@@ -2,7 +2,7 @@ title: Site alert accessibility tests
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2025-01-14
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 3049

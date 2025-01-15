@@ -25,8 +25,8 @@
       {% unless preview_url == "none" %}
         <a href="{{ preview_url }}">
       {% endunless %}
-        {{ post.title }}
-      {% unless post.no_link %}
+          {{ post.title }}
+      {% unless preview_url == "none" %}
         </a>
       {% endunless %}
       </{{ include.heading | default:"h2" }}>

@@ -22,10 +22,14 @@
     </p>
 
     <{{ include.heading | default:"h2" }} class="post-preview__title">
-      <a href="{{ preview_url }}">
+      {% unless preview_url == "none" %}
+        <a href="{{ preview_url }}">
+      {% endunless %}
         {{ post.title }}
-      </a>
-    </{{ include.heading | default:"h2" }}>
+      {% unless post.no_link %}
+        </a>
+      {% endunless %}
+      </{{ include.heading | default:"h2" }}>
 
     {% include post-meta.html %}
   </header>

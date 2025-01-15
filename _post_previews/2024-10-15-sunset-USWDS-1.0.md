@@ -1,6 +1,5 @@
 ---
 title: Sunsetting the USWDS 1.0 documentation site
-post_preview: true
 category: Product updates
 tags:
  - Product updates

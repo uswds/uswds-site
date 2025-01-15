@@ -49,7 +49,6 @@ in_page_nav_headings: "h2"
   listItemClasses="desktop:grid-col-6"
 %}
 
-
 {:.margin-top-2.text-normal.font-lang-md.text-gray-70}
 ## News and updates
 

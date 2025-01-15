@@ -10,6 +10,6 @@ in_page_nav_headings: false
 
 {% assign all_posts = site.posts | concat: site.post_previews | sort: "date" | reverse %}
 
-{% for post in all_posts %}
-  {% include post-preview.html post=post %}
+{% for preview in all_posts %}
+  {% include post-preview.html %}
 {% endfor %}

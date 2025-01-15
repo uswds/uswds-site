@@ -79,7 +79,6 @@ collections:
     permalink: /:collection/:title
   post_previews:
     output: false
-    permalink: /about/:collection/:title
 
 defaults:
   - scope:

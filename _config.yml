@@ -79,7 +79,7 @@ collections:
     permalink: /:collection/:title
   post_previews:
     output: false
-    permalink: /:collection/:title
+    permalink: /about/:collection/:title
 
 defaults:
   - scope:
@@ -131,11 +131,6 @@ defaults:
   - scope:
       path: ""
       type: security_updates
-    values:
-      layout: styleguide
-  - scope:
-      path: ""
-      type: whats-new
     values:
       layout: styleguide
 

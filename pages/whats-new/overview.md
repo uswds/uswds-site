@@ -37,11 +37,7 @@ cards:
 in_page_nav_headings: "h2"
 ---
 
-{% for collection in site.collections %}
-  {% assign all_posts = site.posts | concat: site.post_previews %}
-{% endfor %}
-
-{% assign all_posts = all_posts | sort: "date" | reverse %}
+{% assign all_posts = site.posts | concat: site.post_previews | sort: "date" | reverse %}
 
 {% include site-card-list.html
   cards=page.cards

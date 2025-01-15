@@ -8,11 +8,7 @@ type: posts
 in_page_nav_headings: false
 ---
 
-{% for collection in site.collections %}
-  {% assign all_posts = site.posts | concat: site.post_previews %}
-{% endfor %}
-
-{% assign all_posts = all_posts | sort: "date" | reverse %}
+{% assign all_posts = site.posts | concat: site.post_previews | sort: "date" | reverse %}
 
 {% for post in all_posts %}
   {% include post-preview.html post=post %}

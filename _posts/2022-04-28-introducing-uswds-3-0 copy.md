@@ -1,5 +1,6 @@
 ---
 title: Introducing USWDS 3.0
+post_preview: true
 tags:
 - updates
 category: About

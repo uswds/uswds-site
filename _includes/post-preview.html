@@ -8,8 +8,8 @@
 
 {% comment %}
   Assign header link url
-  - default: link to the post's generated page
-  - custom: link to a custom location declared in `url`
+  - posts: link to the post's generated page
+  - post_previews: link to a custom location declared in `preview_url`
 {% endcomment %}
 {% assign post_url = site.baseurl | append: post.url %}
 {% assign preview_url = post.preview_url | default: post_url %}

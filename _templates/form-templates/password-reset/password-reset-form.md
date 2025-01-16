@@ -18,4 +18,6 @@ subnav:
     href: '#password-reset-form-guidance'
   - text: Package
     href: '#password-reset-form-package'
+changelog:
+  key: template-password-reset
 ---

@@ -37,7 +37,7 @@ cards:
 in_page_nav_headings: "h2"
 ---
 
-{% assign all_posts = site.posts | concat: site.post_previews | sort: "date" | reverse %}
+{% assign all_posts = site.posts | concat: site.posts_short | sort: "date" | reverse %}
 
 {% include site-card-list.html
   cards=page.cards

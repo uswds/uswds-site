@@ -77,7 +77,7 @@ collections:
   security_updates:
     output: true
     permalink: /:collection/:title
-  post_previews:
+  posts_short:
     output: false
 
 defaults:

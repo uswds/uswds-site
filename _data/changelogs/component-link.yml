@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated the url for OMB M-23-22 link.
+    summary: Updated the url for the "OMB M-23-22" link.
     affectsGuidance: true
     githubPr: 3068
     githubRepo: uswds-site

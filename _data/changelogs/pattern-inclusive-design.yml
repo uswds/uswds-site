@@ -1,0 +1,9 @@
+title: Inclusive design
+type: documentation
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Updated the url for the "Priority 2 Executive Order" link.
+    affectsGuidance: true
+    githubPr: 3068
+    githubRepo: uswds-site

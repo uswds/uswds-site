@@ -3,9 +3,9 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated url for M-23-22 link.
+    summary: Updated the url for OMB M-23-22 link.
     affectsGuidance: true
-    githubPr:
+    githubPr: 3068
     githubRepo: uswds-site
   - date: 2024-01-17
     summary: Added WCAG compliance tag and accessibility test status section.

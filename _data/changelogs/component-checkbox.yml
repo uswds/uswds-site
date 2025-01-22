@@ -9,6 +9,14 @@ items:
     githubPr: 6192
     githubRepo: uswds
     versionUswds: N.N.N
+  - date: 2024-11-13
+    summary: Removed style tags from indeterminate checkbox SVGs.
+    summaryAdditional: |
+      These style tags were unnecessary and caused a conflict with some automated testing tools.
+    affectsAssets: true
+    githubPr: 6162
+    githubRepo: uswds
+    versionUswds: 3.10.0
   - date: 2024-09-18
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

@@ -7,6 +7,7 @@
 @import "custom-styles/highlight";
 @import "custom-styles/copy-code-btn";
 @import "custom-styles/graphic-list";
+@import "custom-styles/posts";
 
 // ========================================
 // CUSTOM PROJECT SASS
@@ -60,6 +61,9 @@ $site-measure: 5;
 // ----------------------------------------
 .default-container {
   @include u-bg($site-background-color);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: units("widescreen");
 }
 
 html,
@@ -104,31 +108,59 @@ abbr[title="required"] {
 }
 
 .site-banner {
-  background-color: color("gray-90");
+  $site-banner-font-family: "lang";
+  $site-banner-icon-color: "blue-40v";
+  $site-banner-action-color: "gray-20";
+  @include typeset($site-banner-font-family);
+  @include at-media("tablet") {
+    font-size: font-size($site-banner-font-family, "3xs");
+  }
+  background-color: color("ink");
 
-  .usa-banner__inner {
-    max-width: 100%;
+  .usa-accordion {
+    @include typeset($site-banner-font-family);
+  }
+
+  .usa-banner__button {
+    color: color($site-banner-action-color);
+    font-size: font-size($site-banner-font-family, 1);
+    line-height: line-height($site-banner-font-family, 2);
+    &:hover {
+      color: color("white");
+      &::after {
+        background-color: color($site-banner-icon-color);
+      }
+    }
+    &::after {
+      background-color: color($site-banner-icon-color);
+    }
   }
 
   .usa-banner__content {
     color: color("white");
-    margin-left: 0;
+    font-size: font-size($site-banner-font-family, 4);
   }
 
-  .usa-banner__button {
-    color: color("base-light");
+  .usa-banner__header {
+    font-size: font-size($site-banner-font-family, 1);
+  }
 
-    &:hover {
-      color: color("white");
+  .usa-banner__header--expanded {
+    @include at-media("tablet") {
+      font-size: font-size($site-banner-font-family, 1);
     }
   }
 
-  .usa-banner__header-text {
-    color: color("white");
+  .usa-banner__header-action {
+    color: color($site-banner-action-color);
+    line-height: line-height($site-banner-font-family, 2);
   }
 
-  .usa-banner__header-action {
-    color: color("gray-30");
+  .usa-banner__header-text {
+    @include u-margin-y(0);
+    color: color("white");
+    font-size: font-size($site-banner-font-family, 1);
+    line-height: line-height($site-banner-font-family, 2);
   }
 }
 
@@ -427,6 +459,7 @@ abbr[title="required"] {
   letter-spacing: letter-spacing(1);
   margin-bottom: units(1);
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 .cta {
@@ -1423,26 +1456,30 @@ code[class*="language-plaintext"] {
   }
 }
 
-.link-download {
-  display: table;
-
-  &::before {
-    @include u-square(1.5);
-    background: url("#{$image-path}/icon-download.png") no-repeat 0 0;
-    background: url("#{$image-path}/icon-download.svg") no-repeat 0 0;
-    background-size: 100%;
-    content: "";
-    display: inline-block;
-    margin-bottom: 0;
-    margin-right: units(1.5);
-  }
-}
-
 .link-download-subtext {
   margin-left: units(3);
 }
 
 .link__group-download {
+  .link-download {
+    @include u-measure(5);
+    align-items: center;
+    background-color: color("blue-warm-5");
+    border-radius: radius("md");
+    display: flex;
+    padding: units(2);
+  }
+
+  .usa-icon {
+    height: units(3);
+    margin-right: units(1);
+    width: units(3);
+  }
+}
+
+.link__group-download {
+  @include u-margin-y(2);
+
   .link-download {
     margin-bottom: units(1);
   }
@@ -1566,70 +1603,6 @@ hr {
 
 iframe {
   margin-bottom: units(4);
-}
-
-.post-excerpt {
-  margin-top: units(5);
-
-  .post-title {
-    margin-top: 0;
-    margin-bottom: 0;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-
-      &:hover {
-        color: color($site-primary);
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .post-category {
-    margin-top: 0;
-  }
-
-  .post-category + .post-title {
-    margin-top: 0;
-  }
-
-  .post-content p {
-    margin-bottom: 0;
-    margin-top: units(0.5);
-  }
-} // .post-excerpt
-
-.post-date {
-  display: block;
-  letter-spacing: normal;
-  text-transform: none;
-}
-
-.post-title {
-  @include typeset-h2;
-  @include u-measure(1);
-}
-
-.post-outdated-content {
-  margin-bottom: units(4);
-  margin-top: units(-5);
-  z-index: z-index("top");
-
-  @include at-media("tablet") {
-    position: sticky;
-    top: 0;
-  }
-
-  @include at-media("desktop") {
-    margin-left: units(4);
-    margin-top: 0;
-    top: units($height-nav-secondary);
-  }
-
-  .usa-alert__body {
-    margin-left: 0;
-  }
 }
 
 // Utilities CSS --------------------- //
@@ -2487,6 +2460,10 @@ $theme-table-column-gap: 4;
 .site-accordion-code,
 .site-accordion {
   @include typeset("lang");
+
+  & > .usa-accordion__heading {
+    @include typeset("lang", $theme-body-font-size, 1);
+  }
 }
 
 %site-text-intro {
@@ -2757,341 +2734,13 @@ $theme-table-column-gap: 4;
   }
 }
 
-.site-banner {
-  $banner-context: "Banner";
-  $site-banner-background-color: "ink";
-  $site-banner-icon-color: "blue-40v";
-  $site-banner-font-family: "lang";
-  $site-banner-max-width: "none";
-  $site-banner-link-color: "base-light";
-  $banner-guidance-measure: 3;
-
-  $banner-icon-colors: get-link-tokens-from-bg(
-    $site-banner-background-color,
-    $site-banner-icon-color,
-    $context: $banner-context
-  );
-
-  $banner-icon-color: nth($banner-icon-colors, 1);
-  $banner-icon-hover: nth($banner-icon-colors, 2);
-  $banner-icon-chevron: (
-    "name": "expand_more",
-    "svg-height": 40,
-    "svg-width": 40,
-    "height": 2,
-    "color": $banner-icon-color,
-    "color-variant": "white",
-    "color-hover": $banner-icon-hover,
-  );
-  $banner-icon-chevron-up: map-merge(
-    $banner-icon-chevron,
-    (
-      "name": "expand_less",
-    )
-  );
-  $banner-icon-close: (
-    "name": "close",
-    "svg-height": 40,
-    "svg-width": 40,
-    "height": 3,
-    "color": "blue-60v",
-    "color-variant": "white",
-    "container-height": $size-touch-target,
-    "container-width": $size-touch-target,
-  );
-
-  @include typeset($site-banner-font-family);
-  @include border-box-sizing;
-  background-color: color($site-banner-background-color);
-
-  @include at-media("tablet") {
-    font-size: font-size($site-banner-font-family, "3xs");
-    padding-bottom: units(0);
-  }
-
-  .usa-accordion {
-    @include typeset($site-banner-font-family);
-  }
-
-  .usa-banner__header,
-  .usa-banner__content {
-    @include set-text-from-bg(
-      $site-banner-background-color,
-      $context: $banner-context
-    );
-  }
-
-  .usa-banner__content {
-    @include grid-container($site-banner-max-width);
-    @include add-responsive-site-margins;
-    background-color: color("transparent");
-    font-size: font-size($site-banner-font-family, 4);
-    overflow: hidden;
-    padding-bottom: units(2);
-    padding-left: units($theme-site-margins-mobile-width - 1);
-    padding-top: units(0.5);
-    width: 100%;
-
-    @include at-media("tablet") {
-      @include u-padding-y(3);
-    }
-
-    p {
-      &:first-child {
-        margin: 0;
-      }
-    }
-  }
-
-  .usa-banner__guidance {
-    @include u-display("flex");
-    @include u-flex("align-start");
-    @include u-measure($banner-guidance-measure);
-    padding-top: units(2);
-
-    @include at-media("tablet") {
-      padding-top: units(0);
-    }
-  }
-
-  .usa-banner__lock-image {
-    $lock-h: 64; // unitless height of svg
-    $lock-w: 52; // unitless width of svg
-    $lock-aspect: math.div($lock-w, $lock-h);
-    $icon-height: 1.5ex; // height of the lock icon; use ex for resilience
-
-    height: $icon-height;
-    width: $icon-height * $lock-aspect;
-    path {
-      fill: currentColor;
-    }
-  }
-
-  .usa-banner__inner {
-    @include add-responsive-site-margins;
-    @include grid-container($site-banner-max-width);
-    @include grid-row;
-    @include u-flex("align-start");
-    padding-right: units(0);
-
-    @include at-media("tablet") {
-      @include u-flex("align-center");
-    }
-  }
-
-  .usa-banner__header {
-    @include u-padding-y(1);
-    font-size: font-size($site-banner-font-family, 1);
-    font-weight: font-weight("normal");
-    min-height: units($size-touch-target);
-    position: relative;
-
-    @include at-media("tablet") {
-      @include u-padding-y(0.5);
-      min-height: 0;
-    }
-  }
-
-  .usa-banner__header-text {
-    @include u-margin-y(0);
-    font-size: font-size($site-banner-font-family, 1);
-    line-height: line-height($site-banner-font-family, 2);
-  }
-
-  .usa-banner__header-action {
-    @include place-icon(
-      $banner-icon-chevron,
-      "after",
-      0,
-      middle,
-      $site-banner-background-color
-    );
-    @include set-link-from-bg(
-      $site-banner-background-color,
-      $site-banner-link-color,
-      $context: $banner-context
-    );
-
-    line-height: line-height($site-banner-font-family, 2);
-    margin-bottom: units(0);
-    margin-top: units(2px);
-    text-decoration: underline;
-
-    .usa-banner__header--expanded & {
-      display: none;
-    }
-
-    @include at-media("tablet") {
-      display: none;
-    }
-  }
-
-  .usa-banner__header-flag {
-    @include u-float("left");
-    margin-right: units(1);
-    width: units(2);
-
-    @include at-media("tablet") {
-      margin-right: units(1);
-      padding-top: units(0);
-    }
-  }
-
-  .usa-banner__header--expanded {
-    padding-right: units($size-touch-target + 1);
-
-    @include at-media("tablet") {
-      background-color: transparent;
-      display: block;
-      font-size: font-size($site-banner-font-family, 1);
-      font-weight: font-weight("normal");
-      min-height: units(0);
-      padding-right: units(0);
-    }
-
-    .usa-banner__inner {
-      margin-left: units(0);
-
-      @include at-media("tablet") {
-        margin-left: units(auto);
-      }
-    }
-
-    .usa-banner__header-action {
-      display: none;
-    }
-  }
-
-  .usa-banner__button {
-    @include button-unstyled;
-    @include u-pin("left");
-    @include u-pin("y");
-    @include u-text("primary", underline, baseline);
-    @include set-link-from-bg(
-      $site-banner-background-color,
-      $site-banner-link-color,
-      $context: $banner-context
-    );
-    display: block;
-    font-size: font-size($site-banner-font-family, 1);
-    height: auto;
-    line-height: line-height($site-banner-font-family, 2);
-    padding-top: units(0);
-    padding-left: units(0);
-    text-decoration: none;
-    width: auto;
-
-    @include at-media-max("tablet") {
-      width: 100%;
-    }
-
-    @include at-media("tablet") {
-      @include place-icon(
-        $banner-icon-chevron,
-        "after",
-        "2px",
-        middle,
-        $site-banner-background-color
-      );
-      @include set-link-from-bg(
-        $site-banner-background-color,
-        $site-banner-link-color,
-        $context: $banner-context
-      );
-      @include u-pin("none");
-      display: inline;
-      margin-left: units(1);
-      position: relative;
-
-      &:after {
-        position: absolute;
-      }
-
-      &:hover {
-        // Underline added to inner text instead.
-        text-decoration: none;
-      }
-    }
-
-    &[aria-expanded="false"] {
-      background-image: none;
-    }
-
-    &[aria-expanded="true"] {
-      background-image: none;
-
-      @include at-media-max("tablet") {
-        @include place-icon(
-          $banner-icon-close,
-          "after",
-          0,
-          middle,
-          "base-lighter"
-        );
-
-        &:before {
-          @include u-pin("y");
-          @include u-pin("right");
-          background-color: color("base-lighter");
-          content: "";
-          display: block;
-          height: units($size-touch-target);
-          width: units($size-touch-target);
-        }
-        &:after {
-          @include u-pin("y");
-          @include u-pin("right");
-        }
-      }
-
-      @include at-media("tablet") {
-        @include place-icon(
-          $banner-icon-chevron-up,
-          "after",
-          "2px",
-          middle,
-          $site-banner-background-color
-        );
-        height: auto;
-        padding: units(0);
-        position: relative;
-
-        &:after {
-          position: absolute;
-        }
-      }
-    }
-  }
-
-  .usa-banner__button-text {
-    @include add-sr-only;
-    text-decoration: underline;
-
-    @include at-media("tablet") {
-      @include add-no-sr-only;
-      display: inline;
-    }
-  }
-
-  .usa-banner__icon {
-    width: units(5);
-  }
-
-  // [uswds-init.js] Offscreen content while js is loading
-  .usa-js-loading {
-    .usa-banner__content {
-      @include add-sr-only;
-    }
-  }
-}
-
 .usa-content-list {
   max-width: measure($site-measure);
 }
 
 .site-button {
   @include typeset("lang", null, 1);
-  font-weight: fw("normal");
+  // font-weight: fw("normal");
 }
 
 .site-table,
@@ -3184,10 +2833,6 @@ body {
   @include at-media("tablet-lg") {
     background-position: left calc(50% + #{units("card-lg")}) top units("105");
   }
-}
-
-.post-content h2 {
-  line-height: lh("lang", 2);
 }
 
 .page-website-standards {
@@ -3929,7 +3574,7 @@ $do-dont-top-bar-width: 1;
   @include u-margin-right("05");
 
   &--pass {
-    color: color("green-cool-50");
+    color: color("green-cool-50v");
   }
 
   &--exception {
@@ -3952,7 +3597,7 @@ $do-dont-top-bar-width: 1;
   @include u-padding-y(1);
 
   &--pass {
-    background-color: color("green-cool-50");
+    background-color: color("green-cool-50v");
   }
 
   &--fail {
@@ -4109,5 +3754,49 @@ $deprecated-phase-color: color("red-warm-60v");
     @include u-maxw(15);
     @include u-padding-left(0);
     text-align: left;
+  }
+}
+
+.usa-alert.site-alert {
+  .usa-alert__body {
+    @include typeset("lang");
+  }
+
+  .usa-alert__heading {
+    @include typeset("lang", "lg", 1);
+  }
+}
+
+@include override-prose {
+  .usa-icon-list.site-icon-list {
+    @include typeset("lang", $theme-body-font-size);
+  }
+}
+
+.usa-icon-list.site-icon-list {
+  .usa-icon-list__content {
+    @include u-font("lang", "sm");
+    @include u-line-height("lang", 5);
+  }
+
+  .usa-icon-list__content {
+    > p,
+    > ul,
+    > ol {
+      @include u-font("lang", $theme-body-font-size);
+      @include u-measure(5);
+    }
+  }
+}
+
+@include override-prose {
+  .usa-collection.site-collection {
+    @include typeset("lang", "sm", 3);
+  }
+}
+
+.usa-collection.site-collection {
+  .usa-collection__heading {
+    @include typeset("lang", "md", 3);
   }
 }

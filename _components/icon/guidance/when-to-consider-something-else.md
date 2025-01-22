@@ -1,4 +1,4 @@
-{% capture visibility_icon %}<svg class="usa-icon bottom-neg-2px" aria-hidden="true" focusable="false" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#visibility"></use></svg>{% endcapture %}
+{% capture visibility_icon %}<svg class="usa-icon bottom-neg-2px" aria-hidden="true" focusable="false" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#visibility"></use></svg>{% endcapture %}
 
 {:.usa-content-list }
 - **Meaning is ambiguous.** Use icons only in a common or conventional way. Icon utility hinges on people quickly recognizing what each icon means. If you suspect that an icon’s intent isn’t perfectly clear, consider removing it or adding accompanying text.

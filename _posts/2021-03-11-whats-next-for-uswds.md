@@ -43,7 +43,7 @@ Today we’re releasing a new and exciting report and strategy that outlines [wh
       <a class="usa-button text-no-wrap" href="{{ site.baseurl }}/next/" title="Transforming the American digital experience">
         Read the report
         <svg class="usa-icon usa-icon--size-1 text-top margin-left-1" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_forward"></use>
+          <use href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_forward"></use>
         </svg>
       </a>
       </div>
@@ -65,7 +65,7 @@ Though agencies start with different goals and capabilities, we discovered they 
 
 
 
-<ul class="usa-icon-list usa-icon-list--size-lg margin-top-5 margin-bottom-4">
+<ul class="usa-icon-list site-icon-list usa-icon-list--size-lg margin-top-5 margin-bottom-4">
   <li class="usa-icon-list__item margin-bottom-2">
     <div class="usa-icon-list__icon text-ink">
       <svg class="usa-icon" aria-hidden="true" role="img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">

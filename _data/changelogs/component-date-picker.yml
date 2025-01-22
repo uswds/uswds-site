@@ -2,6 +2,16 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: 2025-01-14
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 3051
+    githubRepo: uswds-site
+  - date: 2024-11-19
+    summary: Added guidance about always allowing users to type in the date manually.
+    affectsGuidance: true
+    githubPr: 2822
+    githubRepo: uswds-site
   - date: 2024-10-04
     summary: Fixed a bug that caused `mouseover` events to prevent keyboard navigation.
     summaryAdditional:  Now when you hover your mouse over the date picker buttons, only the hover state will be triggered.

@@ -1,16 +1,40 @@
 videos:
+  - title: USWDS and Federal Website Standards
+    subtitle: Answering questions about the new federal website standards
+    description: |
+      At the December monthly call, Renata Phillippi, Acting Program Manager for the Federal Website Standards team, joined us to talk about the [federal website standards](https://standards.digital.gov/), their origin, the research backing them, what standards are coming next, as well as the relationship between the standards and USWDS.
+    date: December 2024
+    id: Aa0gqEcK2G4
+    event_link: https://digital.gov/event/2024/12/19/uswds-monthly-call-december-2024/
+    slides:
+     link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-december-2024.pptx
+     size: 2.5
+     pages: 39
+    questions_link: 
+  - title: The next generation of the design system
+    subtitle: The new, modular USWDS we'll deliver in 2025
+    description: |
+     At the November monthly call, we laid out our vision for the direction of the design system. USWDS Product Lead Dan Williams shared exciting news about the beta for our new [USWDS Figma design kit](https://www.figma.com/community/file/1440921849343185329/uswds-design-kit-beta). USWDS Experience Design Lead Anne Petersen and USWDS Engineering Lead Matt Henry joined Dan to explain the design system’s shift toward modularity, and the relationship between the existing codebase (which we'll rename USWDS Core) and the Web Components–based version (which we're calling USWDS Elements), as well as with design tokens, utilities, and new design kit.
+    date: November 2024
+    id: kFLPOKKEKRE
+    event_link: https://digital.gov/event/2024/11/21/uswds-monthly-call-november-2024/
+    slides:
+     link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-november-2024.pptx
+     size: 5
+     pages: 108
+    questions_link: https://github.com/uswds/uswds/discussions/6252
   - title: Engineering values
     subtitle:
     description: |
      The October monthly call centered on U.S. Web Design System (USWDS) product and engineering values. To frame the discussion, USWDS Experience Design Lead Anne Petersen examined how the design system’s product and design principles have evolved over the nine year history of USWDS. USWDS Product Lead Dan Williams and USWDS Engineering Lead Matt Henry then presented a set of new product and engineering values and discussed how they will guide decision-making about USWDS Web Components and the broader development of the design system.
     date: October 2024
-    id: 
+    id: H8XUPJxiUEc
     event_link: https://digital.gov/event/2024/10/17/uswds-monthly-call-october-2024/
     slides:
      link: https://s3.amazonaws.com/digitalgov/static/uswds-monthly-call-october-2024.pptx
      size: 2.5
      pages: 109
-    questions_link:
+    questions_link: https://github.com/uswds/uswds/discussions/6207
   - title: The landscape of Web Components
     subtitle: What we've learned from other design systems
     description: |

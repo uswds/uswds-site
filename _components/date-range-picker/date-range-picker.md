@@ -35,16 +35,8 @@ permalink: /components/date-range-picker/
 redirect_from:
 - /form-controls/06-date-range-picker/
 subnav:
-- text: Preview
-  href: '#date-range-picker-preview'
-- text: Code
-  href: '#date-range-picker-code'
-- text: Guidance
-  href: '#date-range-picker-guidance'
-- text: Package
-  href: '#date-range-picker-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Date range picker accessibility tests
+  href: /components/date-range-picker/accessibility-tests/
 tags:
   - calendar
   - form

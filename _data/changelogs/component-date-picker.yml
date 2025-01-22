@@ -2,6 +2,13 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added translations for calendar labels.
+    summaryAdditional: The calendar will now automatically build translated labels based on the document's `lang` attribute.
+    affectsJavascript: true
+    githubPr: 5679
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2025-01-14
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

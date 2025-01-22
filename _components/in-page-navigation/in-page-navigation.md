@@ -44,7 +44,7 @@ implementation:
       description: Percentage of the scrolling section that must be in the observed area before the current section is triggered. Use a value between 0 and 1.
       default: "1"
     - property: "`data-minimum-heading-count`"
-      description: The minimum number of headings that determines when the in-page navigation should be displayed or hidden.
+      description: The minimum number of headings needed in the content region for the component to build on the page. If the content region does not meet this minimum heading count, the component will not initialize. 
       default: '`2`'
 title: In-page navigation
 type: component

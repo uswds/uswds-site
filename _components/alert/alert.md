@@ -12,16 +12,8 @@ redirect_from:
   - /alerts/
   - /components/alerts/
 subnav:
-  - text: Preview
-    href: '#alert-preview'
-  - text: Code
-    href: '#alert-code'
-  - text: Guidance
-    href: '#alert-guidance'
-  - text: Package
-    href: '#alert-package'
-  - text: Latest updates
-    href: '#changelog'
+  - text: Alert accessibility tests
+    href: /components/alert/accessibility-tests/
 title: Alert
 variants:
   - variant: "`.usa-alert--emergency`"

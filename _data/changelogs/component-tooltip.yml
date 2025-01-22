@@ -3,6 +3,13 @@ title: Tooltip
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Enabled tooltip functionality on non-button elements.
+    summaryAdditional:
+    affectsJavascript: true
+    githubPr: 6035
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-06-07
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

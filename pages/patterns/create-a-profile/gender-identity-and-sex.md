@@ -257,7 +257,7 @@ Know what information you need and ask for it with specificity. If you are colle
 - Recommendations on the best practices for the collection of
 sexual orientation and gender identity data on federal statistical surveys. (January 2023) Retrieved on January 27, 2023, from <https://web.archive.org/web/20250118020808/https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf>
 - Social Security implements self-attestation of sex marker in Social Security Number records. (October 19, 2022) Retrieved on October 24, 2022, from <https://www.ssa.gov/news/press/releases/2022/#10-2022-3>
-- X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from <https://2021-2025.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/>
+- X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from `https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/` [This link is no longer active. [Archived copy on state.gov](https://2021-2025.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)]
 
 {:.site-component-section-title}
 ## Disclaimer

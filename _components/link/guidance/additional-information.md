@@ -1,2 +1,2 @@
-- [OMB M-23-22: Delivering a Digital-First Public Experience](https://bidenwhitehouse.archives.gov/omb/management/ofcio/delivering-a-digital-first-public-experience/)
+- OMB M-23-22: Delivering a Digital-First Public Experience, retrieved from `https://www.whitehouse.gov/omb/management/ofcio/delivering-a-digital-first-public-experience/`. [This link is no longer active. [Archived copy of OMB M-23-22](https://bidenwhitehouse.archives.gov/omb/management/ofcio/delivering-a-digital-first-public-experience/)]
 - [OMB M-10-23: Guidance for Agency Use of Third-Party Websites and Applications [PDF, 9 pages]](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/memoranda_2010/m10-23.pdf)

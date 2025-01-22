@@ -2,7 +2,7 @@ title: Link
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2025-01-22
     summary: Updated the url for the "OMB M-23-22" link.
     affectsGuidance: true
     githubPr: 3068

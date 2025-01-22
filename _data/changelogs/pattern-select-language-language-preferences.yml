@@ -2,7 +2,7 @@ title: Language preferences
 type: pattern
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2025-01-22
     summary: Updated the url for the "OMB memorandum m-17-06" link.
     affectsGuidance: true
     githubPr: 3068

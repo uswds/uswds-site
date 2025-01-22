@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added translations for calendar labels.
+    summary: Enabled native JavaScript translation for calendar labels.
     summaryAdditional: The calendar now uses the `Date.toLocaleString` API to automatically build translated labels based on the document's `lang` attribute.
     affectsJavascript: true
     githubPr: 5679

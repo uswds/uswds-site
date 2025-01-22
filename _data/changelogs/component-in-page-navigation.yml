@@ -6,6 +6,7 @@ items:
     summary: Added the `data-minimum-heading-count` property.
     summaryAdditional: This property hides the component when the content region does not contain the designated minimum number of headings. By default, this property hides the in-page navigation component when there are fewer than two headings in the content region. Teams should customize the value of this property based on their content needs. 
     affectsStyles: true
+    affectsJavascript: true
     githubPr: 6205
     githubRepo: uswds
     versionUswds: N.N.N

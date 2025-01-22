@@ -2,6 +2,13 @@ title: Checkbox
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the width of the label's target area to match the width of the content.
+    summaryAdditional: Previously, the interactive area extended the full width of the container.
+    affectsStyles: true
+    githubPr: 6192
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-11-13
     summary: Removed style tags from indeterminate checkbox SVGs.
     summaryAdditional: |

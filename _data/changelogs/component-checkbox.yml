@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated checkbox styles so that the target area now matches the width of the content.
+    summary: Updated the width of the label's target area to match the width of the content.
     summaryAdditional: Previously, the interactive area extended the full width of the container.
     affectsStyles: true
     githubPr: 6192

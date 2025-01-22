@@ -3,11 +3,10 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Hide in-page navigation when there are fewer than 2 headings.
-    summaryAdditional: The `data-minimum-heading-count` setting determines when the in-page navigation should be displayed or hidden if the minimum number of headings is not reached. Previously, in-page navigation was shown even when there were no headings, resulting in an empty component. This setting can be customized.
-    affectsGuidance: true
+    summary: Added the `data-minimum-heading-count` setting, which hides the component when the content region does not contain the minimum number of headings.
+    summaryAdditional: By default, this setting hides the in-page navigation component when there are fewer than two headings in the content region. Teams should customize the value of this setting based on their content needs. 
     affectsJavascript: true
-    affectsMarkup: true
+    affectsSettings: true
     githubPr: 6205
     githubRepo: uswds
     versionUswds: N.N.N

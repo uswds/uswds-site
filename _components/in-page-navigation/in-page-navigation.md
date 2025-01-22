@@ -43,6 +43,9 @@ implementation:
     - property: "`data-threshold`"
       description: Percentage of the scrolling section that must be in the observed area before the current section is triggered. Use a value between 0 and 1.
       default: "1"
+    - property: "`data-minimum-heading-count`"
+      description: The minimum number of headings that determines when the in-page navigation should be displayed or hidden.
+      default: '`2`'
 title: In-page navigation
 type: component
 changelog:

@@ -7,6 +7,8 @@ layout: styleguide
 category: Patterns
 lead: USWDS patterns are practical guidelines and best practices for common user interactions
 in_page_nav_headings: false
+changelog:
+  key: patterns
 ---
 
 ## Help users to...

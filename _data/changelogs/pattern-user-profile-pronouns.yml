@@ -3,7 +3,7 @@ type: pattern
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Updated the url for the "Importance of personal pronouns" link.
+    summary: Replaced the url for the "Importance of personal pronouns" link with an archived copy.
     affectsGuidance: true
     githubRepo: uswds-site
     githubPr: 3079

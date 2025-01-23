@@ -2,9 +2,15 @@ title: Pronouns
 type: pattern
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the url for the "Importance of personal pronouns" link.
+    affectsGuidance: true
+    githubRepo: uswds-site
+    githubPr: 3079
   - date: 2024-03-11
     summary: Replaced dead hyperlink with archived copy.
     summaryAdditional: Replaced reference to `practicemakesprogress.org` with plain text and a link to the archived page on archive.org.
+    affectsGuidance: true
     githubRepo: uswds-site
     githubPr: 2478
   - date: 2022-11-14

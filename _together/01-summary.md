@@ -8,7 +8,7 @@ image: /img/together/og-together-report.png
 permalink: /together/
 slug: together
 hero_title: Inclusive design patterns
-hero_subtitle: Working together to reduce barriers to participation through every interaction. 
+hero_subtitle: Working together to reduce barriers to participation through every interaction.
 chapter: true
 
 summary_sections:
@@ -73,9 +73,9 @@ bullet_list_accessibility:
           {{ item.description | markdownify }}
 {% if forloop.index == 1 %}
 <div class=" measure-4">
-  {% include together/together-quote.html quote="The Federal Government must deliver a simple, seamless, and secure customer experience, on par with or more effective than leading consumer experiences. Irrespective of people’s age, location, digital savvy, disability, education, or English proficiency, the American people deserve a Government that understands who they are, what they need, and how best to deliver for them. Every interaction between the Government and the public is an opportunity to deliver the services people expect and deserve." source="President’s Management Agenda Priority 2 Executive Order" source-link="https://www.performance.gov/pma/cx/" hide-icon="true"%}
+  {% include together/together-quote.html quote="The Federal Government must deliver a simple, seamless, and secure customer experience, on par with or more effective than leading consumer experiences. Irrespective of people’s age, location, digital savvy, disability, education, or English proficiency, the American people deserve a Government that understands who they are, what they need, and how best to deliver for them. Every interaction between the Government and the public is an opportunity to deliver the services people expect and deserve." source="President’s Management Agenda Priority 2 Executive Order" source-link="https://bidenadministration.archives.performance.gov/pma/cx/" hide-icon="true"%}
   <p>
-    USWDS's Inclusive Design Patterns project was created in support of the Biden-Harris Administration’s President’s Management Agenda <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> (Delivering Excellent, Equitable, and Secure Federal Services), <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> (Improving Access to Services for Persons with Limited English Proficiency), <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> (Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government), and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> (Advancing Racial Equity and Underserved Communities through the Federal Government) as well as <a href="https://www.section508.gov/">Section 508</a> and the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century Integrated Digital Experience Act</a>.
+    USWDS's Inclusive Design Patterns project was created in support of the Biden-Harris Administration’s President’s Management Agenda <a href="https://bidenadministration.archives.performance.gov/pma/cx/">Priority 2 Executive Order</a> (Delivering Excellent, Equitable, and Secure Federal Services), <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> (Improving Access to Services for Persons with Limited English Proficiency), <a href="https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> (Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government), and <a href="https://bidenadministration.archives.performance.gov/equity/">Executive Order 13985</a> (Advancing Racial Equity and Underserved Communities through the Federal Government) as well as <a href="https://www.section508.gov/">Section 508</a> and the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century Integrated Digital Experience Act</a>.
   </p>
   <p>
     The pattern guidance we're publishing is designed to help remove barriers to online transactions and interactions, helping the public access government services and programs. As we spoke with digital teams across the federal space we learned that regardless of program or mission, teams are actively wrestling with these issues: how to create effective, inclusive, and equitable digital experiences. Some teams were further along. We were fortunate to learn from these colleagues and to have their perspectives inform our work. Other teams were in the early stages and were looking for additional guidance from a resource like USWDS.
@@ -101,7 +101,7 @@ With help from digital leaders across the federal space, we've developed pattern
     <div class="desktop:padding-x-10 tablet:padding-4">
       <h3 class="text-indigo-10 margin-top-3">The word &quot;pattern&quot;</h3>
       <p class="text-white">
-        The word <em>Pattern</em> — in this usage — was coined by the architect Christopher Alexander in the 1970s to describe patterns of behavior and approach: "a problem which occurs over and over again in our environment, and then [...] the core of the solution to that problem [described] in such a way that you can use this solution a million times over, without ever doing it the same way twice." For instance, what are the kinds of things that people do again and again in their homes (or <em>expect</em> again and again <em>from</em> their homes) and how might homes be built to support these needs? For Alexander, these needs go beyond the prosaic needs of shelter and sanitation to include psychological, physiological, and emotional needs. What can a home do to make you <em>feel at home?</em> 
+        The word <em>Pattern</em> — in this usage — was coined by the architect Christopher Alexander in the 1970s to describe patterns of behavior and approach: "a problem which occurs over and over again in our environment, and then [...] the core of the solution to that problem [described] in such a way that you can use this solution a million times over, without ever doing it the same way twice." For instance, what are the kinds of things that people do again and again in their homes (or <em>expect</em> again and again <em>from</em> their homes) and how might homes be built to support these needs? For Alexander, these needs go beyond the prosaic needs of shelter and sanitation to include psychological, physiological, and emotional needs. What can a home do to make you <em>feel at home?</em>
       </p>
       <p class="text-white" markdown="1">
         In an important way, Alexander reintroduced human-centered design into the design practice of architecture, and the concepts he and his peers developed are just as relevant and practical to any designed experience.[^2]
@@ -141,12 +141,12 @@ With help from digital leaders across the federal space, we've developed pattern
 
     {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility in design ensures that all people can equally access, use, and understand digital experiences." border="green" %}
   </div>
-</div>            
+</div>
 
 <div class=" measure-4">
   <h3>A commitment to the practice of inclusivity</h3>
   <p>
-    While we may never reach the aspirational goal of a totally inclusive experience, the <em>process</em> of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. 
+    While we may never reach the aspirational goal of a totally inclusive experience, the <em>process</em> of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process.
   </p>
 
   <p>
@@ -154,36 +154,36 @@ With help from digital leaders across the federal space, we've developed pattern
   </p>
 </div>
 
-{% include together/together-deia-section.html  
-  heading="Diversity" 
+{% include together/together-deia-section.html
+  heading="Diversity"
   sub-heading="Ensuring a wide array of people, perspectives, and needs are represented"
   bullets=page.bullet_list_diversity
   example="Images and copy show a full diversity of identity in American society, such as ages, ethnicities, genders, socio-economic groups, and more."
-  color="primary" 
+  color="primary"
 %}
 
-{% include together/together-deia-section.html  
-  heading="Equity" 
-  sub-heading="Addressing the unique barriers people face, creating fairer outcomes" 
+{% include together/together-deia-section.html
+  heading="Equity"
+  sub-heading="Addressing the unique barriers people face, creating fairer outcomes"
   bullets=page.bullet_list_equity
   example="Digital experiences support the unhoused, including the permanently unhoused, and those temporarily displaced due to disasters."
-  color="red" 
+  color="red"
 %}
 
-{% include together/together-deia-section.html  
-  heading="Inclusivity" 
+{% include together/together-deia-section.html
+  heading="Inclusivity"
   sub-heading="Cultivating a sense of belonging and ensuring an equal experience"
-  bullets=page.bullet_list_inclusivity 
+  bullets=page.bullet_list_inclusivity
   example="Historically marginalized groups are included on design teams and people from these groups provide feedback throughout the design cycle."
-  color="gold" 
+  color="gold"
 %}
 
-{% include together/together-deia-section.html  
-  heading="Accessibility" 
+{% include together/together-deia-section.html
+  heading="Accessibility"
   sub-heading="Supporting the ability of all people to equally access, understand and effectively engage in digital experiences"
   bullets=page.bullet_list_accessibility
   example="Whether a user is accessing services using a sip-and-puff or a screen reader, or on a pre-paid mobile phone, the user can successfully complete the necessary tasks with equal effort."
-  color="green" 
+  color="green"
 %}
 
 <p class="measure-4">
@@ -192,7 +192,7 @@ With help from digital leaders across the federal space, we've developed pattern
 
 
 {% elsif forloop.index == 4 %}
-  
+
 <h3>Our primary focus was to learn:</h3>
 <div class="grid-row tablet:margin-x-neg-205">
   <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
@@ -214,7 +214,7 @@ With help from digital leaders across the federal space, we've developed pattern
 </p>
 
 <p class="measure-4">
-  The research resulted in the release of 3 <a href="{{ site.baseurl }}/patterns/">pattern families</a> consisting of 17 individual patterns, along with new and updated <a href="{{ site.baseurl }}/components/overview/">components</a> and <a href="{{ site.baseurl }}/templates/">page templates</a>. 
+  The research resulted in the release of 3 <a href="{{ site.baseurl }}/patterns/">pattern families</a> consisting of 17 individual patterns, along with new and updated <a href="{{ site.baseurl }}/components/overview/">components</a> and <a href="{{ site.baseurl }}/templates/">page templates</a>.
 </p>
 
 <h3>Our objective was to:</h3>
@@ -235,7 +235,7 @@ With help from digital leaders across the federal space, we've developed pattern
 
 <p class="measure-4">
   Along the way we solicited feedback from a wide range of experts in the federal space, including digital teams, policymakers, and subject matter experts. Their input was integral to our work.
-</p>        
+</p>
 
 {% endif %}
 

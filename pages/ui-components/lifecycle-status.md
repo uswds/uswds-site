@@ -10,7 +10,6 @@ subnav:
     href: '#changelog'
 changelog:
   key: docs-component-status
-in_page_nav_headings: false
 ---
 
 {% assign component_status_items = site.data.lifecycle-status.components %}

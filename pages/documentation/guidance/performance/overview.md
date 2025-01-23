@@ -11,7 +11,6 @@ subnav:
   - href: /performance/glossary/
   - href: /performance/http2/
   - href: /performance/research/
-in_page_nav_headings: false
 ---
 
 USWDS team embarked on a 3-month research effort to better understand

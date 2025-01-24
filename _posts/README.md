@@ -21,9 +21,10 @@ where:
 - `DD` is the 2-digit day of the month, also with a leading zero
 - `title` is the so-called "slug" used in the post URL, and should be all lowercase with no spaces (e.g. `my-post-title`)
 
-This date will:
+The YYYY-MM-DD date in the file name will:
+
 - Display as the "date" in the post
-- Will sort the post in reverse chronological order (newest items first) in the news feed.
+- Sort the post in reverse chronological order (newest items first) in the news feed.
 
 See the [Jekyll documentation about creating posts](https://jekyllrb.com/docs/posts/#creating-post-files) for more info.
 

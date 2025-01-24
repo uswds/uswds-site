@@ -44,11 +44,20 @@ in_page_nav_headings: "h2"
 %}
 
 {:.margin-top-2.text-normal.font-lang-md.text-gray-70}
+
 ## News and updates
 
-{% for post in site.posts limit:4 %}
-  {% include post-preview.html post=post heading="h3"%}
+{% assign changelogs = site.data.changelogs %}
+{% assign changelogsItems = "" | split: "," %}
+
+{% for file in changelogs %}
+  {% assign items = file[1].items %}
+  {% assign changelogItems = changelogItems | concat: items %}
 {% endfor %}
+
+{% assign changelogItems = changelogItems | sort: 'date' | reverse %}
+
+{% include changelog-table-simple.html %}
 
 ---
 

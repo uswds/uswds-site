@@ -21,9 +21,10 @@ where:
 - `DD` is the 2-digit day of the month, also with a leading zero
 - `title` is the so-called "slug" used in the post URL, and should be all lowercase with no spaces (e.g. `my-post-title`)
 
-The YYYY-MM-DD date in the file name will:
-- Display as the "date" in the post
-- Sort the post in reverse chronological order (newest items first) in the news feed.
+>[!note]
+> The YYYY-MM-DD date set in the file name will:
+> - Display as the "date" in the post
+> - Sort the post in reverse chronological order (newest items first) in the news feed.
 
 Next, in the file's contents, copy and paste the following:
 

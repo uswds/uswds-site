@@ -55,7 +55,7 @@ in_page_nav_headings: "h2"
   {% assign changelogItems = changelogItems | concat: items %}
 {% endfor %}
 
-{% assign changelogItems = changelogItems | sort: 'date' | reverse %}
+{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,150 %}
 
 {% include consolidated-changelog-table.html %}
 

@@ -12,16 +12,8 @@ type: component
 title: Site alert
 lead: A site alert communicates urgent sitewide information.
 subnav:
-- text: Preview
-  href: '#site-alert-preview'
-- text: Code
-  href: '#site-alert-code'
-- text: Guidance
-  href: '#site-alert-guidance'
-- text: Package
-  href: '#site-alert-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Site alert accessibility tests
+  href: /components/site-alert/accessibility-tests/
 tags:
   - warning
   - bar

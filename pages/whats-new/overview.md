@@ -43,9 +43,11 @@ in_page_nav_headings: "h2"
   listItemClasses="desktop:grid-col-6"
 %}
 
-{:.margin-top-2.text-normal.font-lang-md.text-gray-70}
 
-## News and updates
+{: .site-component-section-title #changelog }
+## Latest changes to USWDS
+
+Meaningful code and guidance updates across the design system are listed in the following table:
 
 {% assign changelogs = site.data.changelogs %}
 {% assign changelogsItems = "" | split: "," %}
@@ -56,6 +58,7 @@ in_page_nav_headings: "h2"
 {% endfor %}
 
 {% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,150 %}
+
 
 {% include consolidated-changelog-table.html %}
 

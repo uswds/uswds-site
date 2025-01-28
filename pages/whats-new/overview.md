@@ -57,7 +57,7 @@ in_page_nav_headings: "h2"
 
 {% assign changelogItems = changelogItems | sort: 'date' | reverse %}
 
-{% include changelog-table-simple.html %}
+{% include consolidated-changelog-table.html %}
 
 ---
 

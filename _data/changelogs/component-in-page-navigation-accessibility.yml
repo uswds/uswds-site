@@ -2,6 +2,7 @@ title: In-page navigation accessibility tests
 type: component
 items:
   - date: 2024-10-16
+    page: In-page navigation accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 2863

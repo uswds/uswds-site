@@ -3,6 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2025-01-14
+    page: Date picker accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 3051

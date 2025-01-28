@@ -2,6 +2,7 @@ title: Pagination accessibility tests
 type: component
 items:
   - date: 2024-10-16
+    page: Pagination accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 2865

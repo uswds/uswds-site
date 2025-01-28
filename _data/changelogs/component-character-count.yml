@@ -3,36 +3,42 @@ type: component
 changelogURL:
 items:
   - date: 2024-10-04
+    page: Character count
     summary: Enhanced visual cue when `maxlength` is exceeded.
-    summaryAdditional:  Now, the component uses standard USWDS error styles to visually enhance the error state.
+    summaryAdditional: Now, the component uses standard USWDS error styles to visually enhance the error state.
     affectsJavascript: true
     affectsStyles: true
     githubPr: 5908
     githubRepo: uswds
     versionUswds: 3.9.0
   - date: 2024-05-15
+    page: Character count
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 2607
     githubRepo: uswds-site
   - date: 2024-03-13
+    page: Character count
     summary: Added known issues section.
     summaryAdditional:
     affectsGuidance: true
     githubPr: 2402
     githubRepo: uswds-site
   - date: 2023-11-20
+    page: Character count
     summary: Removed note about adding `aria-live` to the markup.
     summaryAdditional: The `aria-live` attribute is now added dynamically.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
   - date: 2023-11-20
+    page: Character count
     summary: Added detail to the instructions for adding defaults for non-JavaScript environments.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
   - date: 2022-10-19
+    page: Character count
     summary: Improved screen reader experience.
     summaryAdditional: The character counter now includes a brief pause after input before announcing how many characters remain. Announcing the input no longer prevents the character counter from reading.
     affectsAccessibility: true
@@ -43,6 +49,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-04-28
+    page: Character count
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true

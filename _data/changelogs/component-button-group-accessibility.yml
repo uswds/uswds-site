@@ -2,6 +2,7 @@ title: Button group accessibility tests
 type: component
 items:
   - date: 2024-12-19
+    page: Button group accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 3009

@@ -2,6 +2,7 @@ title: Process list accessibility tests
 type: component
 items:
   - date: 2024-12-18
+    page: Process list accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 3007

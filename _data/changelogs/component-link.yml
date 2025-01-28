@@ -3,26 +3,31 @@ type: component
 changelogURL:
 items:
   - date: 2025-01-22
+    page: Link
     summary: Updated the url for the "OMB M-23-22" link.
     affectsGuidance: true
     githubPr: 3068
     githubRepo: uswds-site
   - date: 2024-01-17
+    page: Link
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 2138
     githubRepo: uswds-site
   - date: 2023-11-20
+    page: Link
     summary: Added `uswds-fonts` and `usa-icon` to list of dependencies.
     affectsGuidance: true
     githubPr: 2162
     githubRepo: uswds-site
   - date: 2023-11-20
+    page: Link
     summary: Updated code examples for encoding email and phone links.
     affectsGuidance: true
     githubPr: 2162
     githubRepo: uswds-site
   - date: 2023-06-09
+    page: Link
     summary: Labeled external links for screen readers.
     summaryAdditional: Adds a label for screen readers that identifies external links and if they open in a new tab.
     affectsAccessibility: true
@@ -31,12 +36,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-03-09
+    page: Link
     summary: External link icons and link text now wrap as expected.
     affectsStyles: true
     githubPr: 5046
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2022-04-28
+    page: Link
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -46,6 +53,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-01-20
+    page: Link
     summary: Fixed external link icon display bug in Safari.
     summaryAdditional: Fixed a bug that resulted in colored bars on the top and bottom of external link icons in Safari.
     isBreaking: false
@@ -59,11 +67,13 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.1
   - date: 2021-10-01
+    page: Link
     summary: Updated component definition and use case.
     affectsGuidance: true
     githubPr: 1275
     githubRepo: uswds-site
   - date: 2021-11-01
+    page: Link
     summary: Fixed external link icon color.
     summaryAdditional: Resolved an issue with visited links where the icon color may not match the color of the link.
     isBreaking: false
@@ -77,11 +87,13 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.2
   - date: 2021-09-16
+    page: Link
     summary: Added a link to the external link indicator research findings.
     affectsGuidance: true
     githubPr: 1261
     githubRepo: uswds-site
   - date: 2021-08-18
+    page: Link
     summary: Improved external link icon display.
     summaryAdditional: Made external link icon bigger and better aligned with the link text.
     isBreaking: false
@@ -95,21 +107,25 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.1
   - date: 2021-07-30
+    page: Link
     summary: Updated external link guidance and added a summary of external link indicator research findings.
     affectsGuidance: true
     githubPr: 1249
     githubRepo: uswds-site
   - date: 2021-06-16
+    page: Link
     summary: Updated accessibility and usability guidance for external links.
     affectsGuidance: true
     githubPr: 1225
     githubRepo: uswds-site
   - date: 2021-03-18
+    page: Link
     summary: Added documentation for the `usa-link--external` variant.
     affectsGuidance: true
     githubPr: 1186
     githubRepo: uswds-site
   - date: 2021-03-17
+    page: Link
     summary: Updated and improved guidance around links.
     affectsGuidance: true
     githubPr: 1180

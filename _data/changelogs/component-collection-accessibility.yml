@@ -3,6 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2024-12-18
+    page: Collection accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 3010

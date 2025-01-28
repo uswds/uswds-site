@@ -3,6 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2025-01-22
+    page: Inclusive design
     summary: Updated the urls for the "Priority 2 Executive Order" and "Executive Order 13985" links.
     affectsGuidance: true
     githubPr: 3068

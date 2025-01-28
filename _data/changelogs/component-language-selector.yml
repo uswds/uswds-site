@@ -3,12 +3,14 @@ type: component
 changelogURL:
 items:
   - date: 2023-11-20
+    page: Language selector
     summary: Removed the note about using links styled as buttons in the two languages variant.
     summaryAdditional:
     affectsGuidance: true
     githubPr: 2162
     githubRepo: uswds-site
   - date: 2022-11-14
+    page: Language selector
     summary: Component released.
     affectsGuidance: true
     githubRepo: uswds

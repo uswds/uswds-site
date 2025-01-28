@@ -1,8 +1,9 @@
 title: Prose accessibility tests
 type: component
 items:
-- date: 2024-04-18
-  summary: Added accessibility tests page.
-  affectsGuidance: true
-  githubPr: 2613
-  githubRepo: uswds-site
+  - date: 2024-04-18
+    page: Prose accessibility tests
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 2613
+    githubRepo: uswds-site

@@ -2,6 +2,7 @@ title: Text input accessibility tests
 type: component
 items:
   - date: 2024-06-19
+    page: Text input accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 2697

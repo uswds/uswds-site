@@ -2,6 +2,7 @@ title: Summary box accessibility tests
 type: component
 items:
   - date: 2024-12-17
+    page: Summary box accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 3016

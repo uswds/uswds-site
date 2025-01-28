@@ -3,6 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2024-03-20
+    page: Icon accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 2518

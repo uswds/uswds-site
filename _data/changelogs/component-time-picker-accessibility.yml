@@ -1,8 +1,9 @@
 title: Time picker accessibility tests
 type: component
 items:
- - date: 2024-11-07
-   summary: Added accessibility tests page.
-   affectsGuidance: true
-   githubPr: 2921
-   githubRepo: uswds-site
+  - date: 2024-11-07
+    page: Time picker accessibility tests
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 2921
+    githubRepo: uswds-site

@@ -3,6 +3,7 @@ type: pattern
 changelogURL:
 items:
   - date: 2025-01-22
+    page: "Pattern: Gender identity and sex"
     summary: Updated the urls for broken links.
     summaryAdditional: |
       Replaced the urls for "Executive Order 14075",
@@ -12,62 +13,70 @@ items:
     githubPr: 3068
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: "Pattern: Gender identity and sex"
     summary: Added new White House report.
     summaryAdditional: Added new White House report on collection of Sexual Orientation and Gender Identity (SOGI) information for statistical purposes.
     affectsGuidance: true
     githubPr: 1994
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: "Pattern: Gender identity and sex"
     summary: Added information on how some states collect sex data.
     summaryAdditional: Added information and a reference link for how some states collect sex data on birth certificates and other legal documents.
     affectsGuidance: true
     githubPr: 1994
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: "Pattern: Gender identity and sex"
     summary: Added more detail supporting specific use cases for collecting sex data.
     summaryAdditional: Added more detail about the most common use cases — matching an original birth certificate ("Sex listed at birth") or matching current legal documents ("Legal sex").
     affectsGuidance: true
     githubPr: 1994
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: "Pattern: Gender identity and sex"
     summary: Added Sex pattern safety and transparency guidance.
     summaryAdditional: Added additional guidance to promote using tested translations on multilingual forms, and providing helper text to explain data usage and sharing.
     affectsGuidance: true
     githubPr: 1994
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: "Pattern: Gender identity and sex"
     summary: Updated usage of "gender identity" and "sex" to be more consistent throughout.
     affectsGuidance: true
     githubPr: 1994
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: "Pattern: Gender identity and sex"
     summary: Updated usage for "sex listed at birth."
     summaryAdditional: Updated our use of "sex listed at birth" to refer to original birth certificate information specifically.
     affectsGuidance: true
     githubPr: 1994
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: "Pattern: Gender identity and sex"
     summary: Updated description of documented pattern use cases.
     summaryAdditional: Updated our background section to focus on documented use cases for collecting gender identity and sex data.
     affectsGuidance: true
     githubPr: 1994
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: "Pattern: Gender identity and sex"
     summary: Updated information on Form DS-11.
     summaryAdditional: Added more detail about how the Department of State collects gender information on Form DS-11 and displays this information on passports.
     affectsGuidance: true
     githubPr: 1994
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: "Pattern: Gender identity and sex"
     summary: Updated Sex pattern preview.
     summaryAdditional: Show the most common use cases of matching documents — either an original birth certificate ("Sex listed at birth") or current legal documents ("Legal sex") — and include explanation of why and how the data is used in the hint text.
     affectsGuidance: true
     githubPr: 1994
     githubRepo: uswds-site
   - date: 2022-11-14
+    page: "Pattern: Gender identity and sex"
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site
     versionUswds: 3.3.0
-
-

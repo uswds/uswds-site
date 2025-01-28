@@ -3,24 +3,28 @@ type: component
 changelogURL:
 items:
   - date: 2025-01-14
+    page: Date range picker
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 3052
     githubRepo: uswds-site
   - date: 2024-11-19
+    page: Date range picker
     summary: Added guidance about always allowing users to type in the date manually.
     affectsGuidance: true
     githubPr: 2822
     githubRepo: uswds-site
   - date: 2024-10-04
+    page: Date range picker
     summary: Fixed a bug that caused `mouseover` events to prevent keyboard navigation.
-    summaryAdditional:  Now when you hover your mouse over the date picker buttons, only the hover state will be triggered.
+    summaryAdditional: Now when you hover your mouse over the date picker buttons, only the hover state will be triggered.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 5774
     githubRepo: uswds
     versionUswds: 3.9.0
   - date: 2024-10-04
+    page: Date range picker
     summary: Added `aria-disabled` to the list of expected attributes.
     summaryAdditional: Now, the component will disable toggle when the `aria-disabled` attribute is present.
     affectsAccessibility: true
@@ -29,12 +33,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.9.0
   - date: 2024-06-07
+    page: Date range picker
     summary: Added known issues section.
     summaryAdditional:
     affectsGuidance: true
     githubPr: 2620
     githubRepo: uswds-site
   - date: 2023-06-09
+    page: Date range picker
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
     affectsAccessibility: true
@@ -43,6 +49,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
+    page: Date range picker
     summary: Improved consistency of disabled styles in forced colors mode.
     summaryAdditional:
     affectsAccessibility: true
@@ -51,6 +58,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2022-08-05
+    page: Date range picker
     summary: Styled aria-disabled to match disabled.
     summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
     affectsAccessibility: true
@@ -59,6 +67,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-06-17
+    page: Date range picker
     summary: Improved date picker display at very narrow widths.
     summaryAdditional: We improved the display of the date picker at very narrow widths so there are no UX inconsistencies when the date picker is in a form at less than 320px width. This assures that date picker conforms to WCAG 2.1.
     affectsAccessibility: true
@@ -67,23 +76,27 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-06-17
+    page: Date range picker
     summary: Updated the documentation for initialization properties.
     summaryAdditional: Changed the initialization element from `select` to `input`.
     affectsGuidance: true
     githubPr: 1605
     githubRepo: uswds-site
   - date: 2022-06-17
+    page: Date range picker
     summary: Updated the documentation for properties.
     summaryAdditional: Changed the element from `.usa-date-picker` to `.usa-date-range-picker`.
     affectsGuidance: true
     githubPr: 1605
     githubRepo: uswds-site
   - date: 2022-04-28
+    page: Date range picker
     summary: Updated package name to `usa-date-range-picker`.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-04-28
+    page: Date range picker
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -93,11 +106,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-13
+    page: Date range picker
     summary: Updated package name to `form-controls`.
     affectsGuidance: true
     githubPr: 1497
     githubRepo: uswds-site
   - date: 2022-04-11
+    page: Date range picker
     summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
@@ -106,6 +121,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-01-20
+    page: Date range picker
     summary: Fixed date picker input bug in Safari.
     summaryAdditional: We fixed a bug where date picker selections would not propagate into the input field in Safari.
     affectsJavascript: true
@@ -113,6 +129,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.1
   - date: 2021-12-14
+    page: Date range picker
     summary: Improved screen reader experience.
     summaryAdditional: Now screen readers can better describe the label and description of a date picker `input`.
     affectsAccessibility: true
@@ -121,6 +138,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.0
   - date: 2021-11-01
+    page: Date range picker
     summary: Added automatic sanitizing.
     summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like combo box, tooltip, file input, and date picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
     affectsJavascript: true
@@ -128,6 +146,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.2
   - date: 2021-08-18
+    page: Date range picker
     summary: Improved performance of date picker and combo box JavaScript.
     summaryAdditional:
     affectsJavascript: true

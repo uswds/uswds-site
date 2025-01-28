@@ -50,7 +50,7 @@ You can customize the post's metadata by defining the following in the file's [f
 | author | The author(s) listed in the byline | No |
 | tags | The tag that describes the category of the post. Multiple tags can be added, but only the first tag will appear above the post title. | Yes |
 | excerpt | The post summary that will be included in the post preview | Yes |
-| preview_url | The url that will be added post preview header link. Add a value of "none" when you want the header to not have a link. | No |
+| preview_url | The url that will be added post preview header link. Add a value of "none" when you want the header to not have a link. | Yes |
 
 Here is a sample implementation of a short post:
 

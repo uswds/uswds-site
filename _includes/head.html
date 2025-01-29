@@ -68,17 +68,10 @@
     {% if page.layout == 'next' or page.layout == 'next-content' %}
       <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-next.css">
     {% endif %}
-    {% if page.layout == 'together' or page.layout == 'together-content' %}
-      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-together.css">
-    {% endif %}
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-utilities.css">
 {% else %}
   {% if page.layout == 'next' or page.layout == 'next-content' %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles-next.css">
-  {% elsif page.layout == 'together' or page.layout == 'together-content' %}
-    <!-- TODO: Add prod css -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-together.css">
   {% else %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
   {% endif %}

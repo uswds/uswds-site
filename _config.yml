@@ -71,9 +71,6 @@ collections:
   next:
     output: true
     permalink: /:collection/:title
-  together:
-    output: true
-    permalink: /:collection/:title
   security_updates:
     output: true
     permalink: /:collection/:title
@@ -115,14 +112,6 @@ defaults:
     values:
       report_title: "Report: Transforming the American digital experience"
       layout: "next-content"
-      chapter: false
-      hero_color: "next-gray-dark"
-  - scope:
-      path: ""
-      type: together
-    values:
-      report_title: "Inclusive Design Patterns"
-      layout: "together-content"
       chapter: false
       hero_color: "next-gray-dark"
   - scope:

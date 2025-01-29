@@ -39,7 +39,7 @@
     "clean": "npx gulp cleanAssets",
     "crawl": "node config/crawl.js",
     "federalist": "npx gulp build",
-    "lint": "npx gulp lintJS lintSass && npm run prettier:scss",
+    "lint": "npx gulp lintJS lintSass && npm run prettier",
     "prestart": "npx gulp build",
     "proof": "bundle exec htmlproofer --enforce-https=false --allow-missing-href=true --only_4xx --ignore-status-codes 403,429 --swap-urls 'https\\://designsystem.digital.gov/:/' --ignore-files '/whats-new/updates/(2017|2018|2019|2020|2021)/,/documentation/code-guidelines/' ./_site",
     "proof:all": "bundle exec htmlproofer --enforce-https=false --allow-missing-href=true --ignore-status-codes 0 --swap-urls 'https\\://designsystem.digital.gov/:/' --ignore-files '/whats-new/updates/(2017|2018|2019|2020|2021)/,/documentation/code-guidelines/' ./_site",
@@ -60,7 +60,8 @@
     "pa11y-ci:sitemap-json": "pa11y-ci --json > pa11y-results.json --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next|together/'",
     "prettier:scss": "npx prettier --write './css/**/*.scss'",
     "prettier:md": "npx prettier --write './**/*.md'",
-    "prettier": "npm run prettier:md && npm run prettier:scss"
+    "prettier": "npm run prettier:md && npm run prettier:scss",
+    "prettier:check": "npx prettier -c ./packages/**/*.{scss,md}"
   },
   "devDependencies": {
     "@18f/identity-stylelint-config": "^2.0.0",

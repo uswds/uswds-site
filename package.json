@@ -61,7 +61,7 @@
     "prettier:scss": "npx prettier --write './css/**/*.scss'",
     "prettier:md": "npx prettier --write './**/*.md'",
     "prettier": "npm run prettier:md && npm run prettier:scss",
-    "prettier:check": "npx prettier -c ./packages/**/*.{scss,md}"
+    "prettier:check": "npx prettier -c ./**/*.{scss,md}"
   },
   "devDependencies": {
     "@18f/identity-stylelint-config": "^2.0.0",

@@ -16,6 +16,8 @@ subnav:
   - href: /patterns/create-a-user-profile/race-and-ethnicity/
   - href: /patterns/create-a-user-profile/social-security-number/
 in_page_nav_headings: false
+changelog:
+  key: patterns-user-profile
 ---
 
 ## Why this matters

@@ -13,7 +13,9 @@ changelog:
 ---
 
 {:.site-component-section-title}
-## About these patterns
+## About this pattern
+
+Content update TK
 
 ### Background
 
@@ -32,121 +34,24 @@ sexual orientation and gender identity data on federal statistical surveys](http
 
 This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex`. For specific use cases, a more specific label may be correct, like `Sex listed at birth` or `Legal sex`. This language, in particular, should be evaluated for your specific program needs.
 
-### What problems do these patterns solve?
+### What problems does this pattern solve?
+
+Content update TK
 
 Gender and sex are often used synonymously. Many users struggle to provide gender identity information that best represents them. An overwhelming number of choices for gender identity can be as alienating as too limited a set of provided options.
-
-{:.site-component-name#gender-identity-section}
-## Gender identity
-
-### When to use this pattern
-
-Follow this pattern when you are collecting gender identity for your service or program. Only ask for gender identity if you need it. Sometimes it’s more prudent to skip collecting this information altogether.
-
-### What's the solution?
-
-Present the user with the tools to accurately depict their gender identity.
-
-{:.site-component-section-title}
-### Guidance
-
-<div class="grid-row grid-gap-3">
-  <div class="tablet:grid-col">
-    <div class="do-dont">
-      <div class="do-dont__do">
-        <h4 class="do-dont__heading">
-          {% include icon.html icon="check_circle" %}
-          What to do
-        </h4>
-        <div class="do-dont__content">
-          <ul>
-            <li>Do collect gender identity data when you are collecting other general demographic information like race, ethnicity, or disability status.</li>
-            <li>Do support long text fields for gender identity. The language behind gender identity is constantly evolving.</li>
-            <li>Do include a "prefer not to answer" option.</li>
-            <li>Do consider safety implications of the information provided. Regional and state laws are highly variable and may not adequately protect individuals from disclosure.</li>
-            <li>Do provide helper text that explains why you are asking for this data and who it will be shared with.</li>
-            <li>Do be transparent about what you are asking for (for example, gender identity or sex).</li>
-            <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
-            <li>Do use clear hint text to help users understand what type of information should be provided.</li>
-            <li>When collecting both gender identity and sex, gender identity should precede sex.</li>
-            <li>Use tested translations for labels and hint text when delivering multilingual surveys or forms.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="tablet:grid-col">
-    <div class="do-dont">
-      <div class="do-dont__dont">
-        <h4 class="do-dont__heading">
-          {% include icon.html icon="cancel" %}
-          What not to do
-        </h4>
-        <div class="do-dont__content">
-          <ul>
-            <li>Do not assume gender identity based on sex.</li>
-            <li>Do not use <code>other</code> as a gender option. Instead use an open-ended text field.</li>
-            <li>Do not limit the user's choice of gender identity. Not everyone will fit into a specific classification determined by the form designer.</li>
-            <li>Do not combine gender identity and sex into a single question.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
-  <h4 id="pattern-preview-gender" class="usa-accordion__heading site-accordion-heading">
-    <button type="button" class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true">
-      Pattern preview
-    </button>
-  </h4>
-  <div id="accordion-preview-02" class="usa-accordion__content">
-    {% include patterns/gender-identity.html %}
-  </div>
-</div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <h4 id="pattern-code-gender" class="usa-accordion__heading site-accordion-heading">
-    <button type="button" class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false">
-      Pattern code
-    </button>
-  </h4>
-  <div id="accordion-code-02" class="usa-accordion__content highlight-code copy-code">
-    <div class="usa-sr-only">
-      {% highlight text%}{% include patterns/gender-identity.html %}{% endhighlight %}
-    </div>
-    {% highlight html%}{% include patterns/gender-identity.html %}{% endhighlight %}
-  </div>
-</div>
-
-#### Considerations
-
-{:.usa-content-list}
-- **Confirm you need this information.** As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and safety.
-- **Avoid using a controlled vocabulary.** If you don’t need to enforce a controlled vocabulary of gender identity options, strongly consider letting the user self-identify using a single text field.
-
-#### Usability guidance
-
-{:.usa-content-list}
-- **Provide clear hint text.** Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, man, woman, non-binary." Do allow users to opt out with a "Prefer not to answer" option.
-- This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#usability-guidance-checkbox).
-
-#### Accessibility
-
-{:.usa-content-list}
-- **Follow input guidance.** These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/).
-- **These custom checkboxes are accessible.** The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
-- **Use a semantic tag.** The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
-- **Customization.** As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 {:.site-component-name}
 ## Sex
 
 ### When to use this pattern
 
+Content update TK
+
 Services collect sex information to match documents for identity proofing purposes, on certain statistical surveys, and to provide biological information in a clinical context. Only ask for this information if you need it. Even for identity proofing, sex data is not always needed. Asking for gender identity instead of sex is generally more important for ensuring respectful communication.
 
 ### What's the solution?
+
+Content update TK
 
 Know what information you need and ask for it with specificity. If you are collecting sex information to match documents for identity proofing, be clear about whether you need the sex marker listed on an original birth certificate (“Sex listed at birth”) or the sex marker listed on any qualifying legal document (“Legal sex”).
 

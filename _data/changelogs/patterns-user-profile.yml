@@ -1,0 +1,9 @@
+title: User profile
+type: pattern
+changelogURL:
+items:
+  - date: 2022-1-31
+    summary: Summary TK.
+    summaryAdditional: Additional summary TK.
+    githubRepo: uswds-site
+    githubPr: TK

@@ -142,11 +142,12 @@ Know what information you need and ask for it with specificity. If you are colle
 
 {:.usa-content-list}
 - [Checkbox]({{ site.baseurl }}/components/checkbox/) component
-- [Radio buttons]({{ site.baseurl }}/components/radio-buttons/) component
-- [Text input]({{ site.baseurl }}/components/text-input/) component
 
 {:.site-component-section-title}
 ## References
+
+- Initial Guidance Regarding President Trump's Executive Order Defending Women (January 29, 2025) Retrieved on January 30, 2025 from <https://chcoc.gov/content/initial-guidance-regarding-president-trump%E2%80%99s-executive-order-defending-women.> [Archive of initial guidance](https://web.archive.org/web/20250129235334/https://chcoc.gov/content/initial-guidance-regarding-president-trump%E2%80%99s-executive-order-defending-women).
+- Defending Women from Gender Ideology Extremism And Restoring Biological Truth To The Federal Government (January 20, 2025) Retrieved on January 30, 2025 from <https://www.whitehouse.gov/presidential-actions/2025/01/defending-women-from-gender-ideology-extremism-and-restoring-biological-truth-to-the-federal-government/> [Archive of Defending Women EO](https://web.archive.org/web/20250130171225/https://www.whitehouse.gov/presidential-actions/2025/01/defending-women-from-gender-ideology-extremism-and-restoring-biological-truth-to-the-federal-government/)
 
 - Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on July 20, 2022, from <https://snapshot2024.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html>
 - Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Current Measures of Sexual Orientation and Gender Identity in Federal Surveys - 2016a. (August 2016) Retrieved on October 31, 2022, from <https://www.fcsm.gov/assets/files/docs/current_measures_20160812.pdf>

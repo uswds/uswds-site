@@ -276,7 +276,6 @@ The following are practical actions you can take:
 
 - [Getting started with Search.gov](https://search.gov/get-started/) [search.gov]
 - [Office of Evaluation Sciences](https://oes.gsa.gov/) [oes.gsa.gov]
-- [OMB Circular A-11 Section 280: Managing Customer Experience and Improving Service Delivery](https://www.whitehouse.gov/wp-content/uploads/2018/06/s280.pdf)(PDF) [performance.gov]
 - [USDA's guidance on conducting a regular customer experience (or A-11) survey](https://www.usda.gov/digital-strategy/research/plays#research2) [usda.gov]
 - [Customer Experience Maturity Self-Assessment](https://coe.gsa.gov/2022/06/30/cx-update-20.html) [Centers of Excellence (CoE) at GSA]
 - [Customer Experience Toolkit](https://digital.gov/resources/customer-experience-toolkit/) [digital.gov]

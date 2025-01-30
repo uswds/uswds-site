@@ -8,6 +8,11 @@ sub-category: Create a user profile
 lead: This pattern helps users to provide gender identity and sex information in an accurate and respectful manner. Gender identity and sex are often integral to an individual’s sense of self, and several federal agencies and working groups are striving to define a meaningful, inclusive way to collect gender identity and sex information when it is needed.
 changelog:
   key: pattern-user-profile-gender-identity-and-sex
+alert: true
+alert-class: warning
+alert-heading: "This pattern is affected by a recent change in law, policy, or regulation"
+alert-content: "The Gender Identity and Sex pattern is affected by the executive order [Defending Women from Gender Ideology Extremism and
+Restoring Biological Truth to the Federal Government](https://www.whitehouse.gov/presidential-actions/2025/01/defending-women-from-gender-ideology-extremism-and-restoring-biological-truth-to-the-federal-government/), signed on January 20, 2025. Expect changes to this pattern in the near future as we adapt to these new requirements."
 ---
 
 {:.site-component-section-title}

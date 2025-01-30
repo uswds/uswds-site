@@ -2,7 +2,7 @@ title: Pronouns
 type: pattern
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2025-01-30
     summary: Added an archive.org link to the "The importance of personal pronouns" reference link.
     summaryAdditional:
     githubPr: 3088

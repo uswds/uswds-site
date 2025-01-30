@@ -17,24 +17,7 @@ changelog:
 
 Content update TK
 
-### Background
-
-Services collect gender identity information to let individuals tell us who they are: how they should be identified and how they wish to interact with the world. Gendered experiences are complex and vary widely. Gender is a social construct and gender identity can be an integral expression of a person's sense of self.
-
-Services collect sex information to match documents for identity proofing purposes, on certain statistical surveys, and to provide biological information in a clinical context. “Sex listed at birth” or “sex assigned at birth” is what it says on a person's original birth certificate. “Legal sex” is what it says on any qualifying legal document. “Non-binary” is typically used when referring to gender identity, but many states now allow terms like `non-binary`, `X`, or `unspecified` on birth certificates.
-
-While the sex listed on a person's birth certificate or driver's license is often used as part of validating their identity, gender identity is generally more important for ensuring respectful and inclusive policies, interactions, and communication.
-
-Historically, the federal government has asked people to choose between male and female. Recently, agencies and programs have been moving toward providing more options, reflecting the fact that a person's gender identity may not reflect the sex they were assigned at birth, and that sex is not always unambiguously male or female.
-
-As one example, in April 2022, the U.S. Department of State updated [Form DS-11](https://eforms.state.gov/Forms/ds11.pdf) and began allowing people to self-attest and specify `M` (male), `F` (female), or `X` on their passports. The Department of State defines `X` as “Unspecified or another gender identity” on Form DS-11. The form collects this information as `Gender` but it is displayed on a passport as `Sex`. More recently, [Executive Order 14075](https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2022/06/15/executive-order-on-advancing-equality-for-lesbian-gay-bisexual-transgender-queer-and-intersex-individuals/) Advancing Equality for Lesbian, Gay, Bisexual, Transgender, Queer, and Intersex Individuals makes specific calls for improved, responsible collection of sexual orientation and gender identity information.
-
-The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way CDC's [HIV Nexus Clinician Resources](https://snapshot2024.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) articulates the importance of asking two separate questions to ensure healthcare providers can provide patient-centered, high quality care: `current gender identity`, and `sex listed at birth`. A multi-question approach is also advocated for in [Recommendations on the best practices for the collection of
-sexual orientation and gender identity data on federal statistical surveys](https://web.archive.org/web/20250118020808/https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf) released in January 2023.
-
-This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex`. For specific use cases, a more specific label may be correct, like `Sex listed at birth` or `Legal sex`. This language, in particular, should be evaluated for your specific program needs.
-
-### What problems does this pattern solve?
+### What problem does this pattern solve?
 
 Content update TK
 

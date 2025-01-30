@@ -7,7 +7,7 @@ items:
     summaryAdditional: This pattern is affected by a recent change in law, policy, or regulation. Expect changes to this pattern in the near future as we adapt to these new requirements.
     affectsGuidance: true
     githubRepo: uswds-site
-    githubPr: TK
+    githubPr: 3090
   - date: 2025-01-22
     summary: Updated the urls for broken links.
     summaryAdditional: |

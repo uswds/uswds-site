@@ -3,8 +3,13 @@ type: documentation
 changelogURL:
 items:
   - date: 2025-01-NN
-    summary: Updated resources and links throughout page. 
-    summaryAdditional: 
+    summary: Updated resources and links throughout page.
+    summaryAdditional:
     affectsGuidance: true
     githubPr: 3053
+    githubRepo: uswds-site
+  - date: 2025-01-22
+    summary: Updated the url for the "Delivering Excellent, Equitable, and Secure Federal Services and Customer Experience" link.
+    affectsGuidance: true
+    githubPr: 3068
     githubRepo: uswds-site

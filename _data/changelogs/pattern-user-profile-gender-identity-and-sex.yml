@@ -2,6 +2,27 @@ title: Gender identity and sex
 type: pattern
 changelogURL:
 items:
+  - date: 2025-01-31
+    summary: Update summary.
+    summaryAdditional: |
+      Summary additional TK.
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
+  - date: 2025-01-31
+    summary: Update summary.
+    summaryAdditional: |
+      Summary additional TK.
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
+  - date: 2025-01-31
+    summary: Update summary.
+    summaryAdditional: |
+      Summary additional TK.
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
   - date: 2025-01-22
     summary: Updated the urls for broken links.
     summaryAdditional: |
@@ -69,5 +90,3 @@ items:
     affectsGuidance: true
     githubRepo: uswds-site
     versionUswds: 3.3.0
-
-

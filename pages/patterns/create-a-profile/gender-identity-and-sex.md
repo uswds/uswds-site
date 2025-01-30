@@ -1,13 +1,15 @@
 ---
-title: Gender identity and sex
-story: Help a user select their gender identity and sex
-permalink: /patterns/create-a-user-profile/gender-identity-and-sex/
+title: Sex
+story: Help a user select their sex
+permalink: /patterns/create-a-user-profile/sex/
+redirect_from:
+  - /patterns/create-a-user-profile/gender-identity-and-sex/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
-lead: This pattern helps users to provide gender identity and sex information in an accurate and respectful manner. Gender identity and sex are often integral to an individual’s sense of self, and several federal agencies and working groups are striving to define a meaningful, inclusive way to collect gender identity and sex information when it is needed.
+lead: This pattern helps users to provide sex information.
 changelog:
-  key: pattern-user-profile-gender-identity-and-sex
+  key: pattern-user-profile-sex
 ---
 
 {:.site-component-section-title}

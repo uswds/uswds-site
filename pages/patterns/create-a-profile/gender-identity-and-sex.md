@@ -10,7 +10,7 @@ changelog:
   key: pattern-user-profile-gender-identity-and-sex
 alert: true
 alert-class: warning
-alert-heading: "This pattern is affected by a recent change in law, policy, or regulation"
+alert-heading: "This pattern is affected by a recent change in law, policy, or regulation."
 alert-content: "The Gender Identity and Sex pattern is affected by the executive order [Defending Women from Gender Ideology Extremism and
 Restoring Biological Truth to the Federal Government](https://www.whitehouse.gov/presidential-actions/2025/01/defending-women-from-gender-ideology-extremism-and-restoring-biological-truth-to-the-federal-government/), signed on January 20, 2025. Expect changes to this pattern in the near future as we adapt to these new requirements."
 ---

@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2025-01-NN
-    summary: Updated resources and links throughout page.
+    summary: Updated resources, copy and links throughout page.
     summaryAdditional:
     affectsGuidance: true
     githubPr: 3053

@@ -2,6 +2,11 @@ title: Pronouns
 type: pattern
 changelogURL:
 items:
+  - date: 2025-01-30
+    summary: Added an archive.org link to the "The importance of personal pronouns" reference link.
+    summaryAdditional:
+    githubPr: 3088
+    githubRepo: uswds-site
   - date: 2025-01-23
     summary: De-linked dead hyperlink in references.
     summaryAdditional: De-linked pronouns reference link.

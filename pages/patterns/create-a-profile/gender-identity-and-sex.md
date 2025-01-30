@@ -144,7 +144,6 @@ Know what information you need and ask for it with specificity. If you are colle
 - [Checkbox]({{ site.baseurl }}/components/checkbox/) component
 - [Radio buttons]({{ site.baseurl }}/components/radio-buttons/) component
 - [Text input]({{ site.baseurl }}/components/text-input/) component
-- [Pronouns]({{ site.baseurl }}/patterns/create-a-user-profile/pronouns/) pattern
 
 {:.site-component-section-title}
 ## References

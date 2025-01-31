@@ -1746,6 +1746,11 @@ strong {
   @include u-bg("error");
 }
 
+.output-addition {
+  @extend %output-true;
+  @include u-bg("success");
+}
+
 .output-warning {
   @extend %output-true;
   @include u-bg("warning");

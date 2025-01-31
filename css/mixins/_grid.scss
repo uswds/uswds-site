@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "../settings/variables" as *;
+
 @mixin grid-cols($default, $split: null, $full: null) {
   @if $default {
     @include grid-col($default);
@@ -28,6 +31,6 @@
 }
 
 @mixin usa-grid-col {
-  @include grid-cols("auto", 6);
   width: 100%;
+  @include grid-cols("auto", 6);
 }

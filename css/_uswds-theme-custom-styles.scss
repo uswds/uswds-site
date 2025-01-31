@@ -1748,7 +1748,8 @@ strong {
 
 .output-addition {
   @extend %output-true;
-  @include u-bg("success");
+  @include u-bg("success-light");
+  @include u-text("ink");
 }
 
 .output-warning {

@@ -3,11 +3,13 @@ type: documentation
 changelogURL:
 items:
   - date: 2024-06-07
+    page: Migrating to 3.0
     summary: Added note about Autoprefixer to Sass compilation section.
     affectsGuidance: true
     githubPr: 2319
     githubRepo: uswds-site
   - date: 2022-07-17
+    page: Migrating to 3.0
     summary: Added note about error handling for `@use "uswds-core" with ()`.
     summaryAdditional:
     isBreaking:
@@ -21,6 +23,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-08-29
+    page: Migrating to 3.0
     summary: Added instructions for users migrating from USWDS 1.x.
     summaryAdditional:
     isBreaking:
@@ -34,6 +37,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-05-04
+    page: Migrating to 3.0
     summary: Added clarity to migration page.
     summaryAdditional:
     isBreaking:
@@ -47,6 +51,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-04-28
+    page: Migrating to 3.0
     summary: Added "Migrating to USWDS 3.0" guide.
     summaryAdditional:
     isBreaking:

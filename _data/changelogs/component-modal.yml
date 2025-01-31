@@ -3,12 +3,14 @@ type: component
 changelogURL:
 items:
   - date: 2024-12-18
+    page: Modal
     summary: Replaced deprecated `xlink:href` references with `href`.
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds
     versionUswds: 3.11.0
   - date: 2024-11-13
+    page: Modal
     summary: Fixed a bug that prevented bundling the modal package with a custom prefix.
     summaryAdditional: This update removed hard-coded class names from the modal JavaScript.
     isBreaking: false
@@ -17,6 +19,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.10.0
   - date: 2024-11-6
+    page: Modal
     summary: Added focus trap guidance.
     summaryAdditional: Updated guidance to ensure users trap focus inside the modal so that it doesn't move to the content behind it.
     isBreaking: false
@@ -25,6 +28,7 @@ items:
     githubRepo: uswds-site
     versionUswds: 3.9.0
   - date: 2023-11-09
+    page: Modal
     summary: Updated JavaScript to include fallbacks and error messages when initialization cannot be completed.
     summaryAdditional: Additionally, this improved code consistency and prevented errors when trying to initialize modal twice.
     isBreaking: false
@@ -33,6 +37,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.0
   - date: 2023-09-29
+    page: Modal
     summary: Updated how the modal JavaScript resets body padding and improved body padding detection.
     summaryAdditional: Now the component will rely on the CSS to reset body padding rather than injecting an inline style with JavaScript.
     affectsJavascript: true
@@ -41,6 +46,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.6.1
   - date: 2023-03-09
+    page: Modal
     summary: Fixed the display of interactive form elements (like Date Picker) in modal windows.
     summaryAdditional: Now any element in a modal should work as expected.
     isBreaking: false
@@ -49,6 +55,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2022-08-05
+    page: Modal
     summary: Styled aria-disabled to match disabled.
     summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
     isBreaking: false
@@ -62,6 +69,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-08-05
+    page: Modal
     summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
     affectsJavascript: true
@@ -70,6 +78,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-04-28
+    page: Modal
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAccessibility: true
@@ -82,16 +91,19 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-06-16
+    page: Modal
     summary: Added guidance for handling external links.
     affectsGuidance: true
     githubPr: 1225
     githubRepo: uswds-site
   - date: 2021-03-17
+    page: Modal
     summary: Added modal documentation.
     affectsGuidance: true
     githubPr: 1180
     githubRepo: uswds-site
   - date: 2021-03-17
+    page: Modal
     summary: Added modal component.
     summaryAdditional: A modal disables page content and focuses the user’s attention on a single task or message.
     isBreaking: false

@@ -4,11 +4,13 @@ type: component
 changelogURL:
 items:
   - date: 2024-06-07
+    page: Tooltip
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2646
     githubRepo: uswds-site
   - date: 2024-05-31
+    page: Tooltip
     summary: Updated component behavior to close active tooltips when the `escape` key is pressed.
     summaryAdditional: This allows the component to meet the "dismissible" standard outlined in [WCAG 1.4.13](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus).
     affectsAccessibility: true
@@ -17,6 +19,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.1
   - date: 2024-05-31
+    page: Tooltip
     summary: Updated component behavior to allow users to hover over tooltip content.
     summaryAdditional: This allows the component to meet the "hoverable" standard outlined in [WCAG 1.4.13](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus).
     affectsAccessibility: true
@@ -26,6 +29,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.1
   - date: 2023-09-29
+    page: Tooltip
     summary: "Restored the `opacity: 0` style rule to the tooltip's initial state."
     summaryAdditional: This prevents the component from flickering if its position needs to be recalculated.
     affectsStyles: true
@@ -33,6 +37,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.6.1
   - date: 2023-06-09
+    page: Tooltip
     summary: Fixed a bug that removed default positioning.
     summaryAdditional: If the `data-position` attribute is not specified, the tooltip position will now default to "top".
     affectsJavascript: true
@@ -41,6 +46,7 @@ items:
     versionUswds: 3.5.0
   # 3.2.0 release
   - date: 2022-10-19
+    page: Tooltip
     summary: Updated tooltip to allow for dynamic initialization.
     summaryAdditional: Tooltip initializes on first interaction and checks if component has been initialized before toggling. If it hasn't initialized properly it will call a setup attributes function.
     affectsAccessibility: false
@@ -54,6 +60,7 @@ items:
     versionUswds: 3.2.0
   # 3.0 release
   - date: 2022-04-28
+    page: Tooltip
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -64,6 +71,7 @@ items:
     versionUswds: 3.0.0
   # 2.12.2
   - date: 2021-11-01
+    page: Tooltip
     summary: Added automatic sanitizing.
     summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like combo box, tooltip, file input, and date picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
     affectsJavascript: true
@@ -72,6 +80,7 @@ items:
     versionUswds: 2.12.2
   # 2.11.0
   - date: 2021-03-17
+    page: Tooltip
     summary: Fixed tooltip positioning.
     summaryAdditional: We fixed an issue that prevented some longer tooltips in some positions to display incorrectly.
     affectsJavascript: true

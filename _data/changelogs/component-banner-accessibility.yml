@@ -5,7 +5,7 @@ items:
   - date: 2024-06-07
     page: Banner accessibility tests
     summary: Added accessibility tests page.
-    summaryAdditional:
     affectsGuidance: true
+    isAddition: true
     githubPr: 2687
     githubRepo: uswds-site

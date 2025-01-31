@@ -6,5 +6,6 @@ items:
     page: Date range picker accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 3052
     githubRepo: uswds-site

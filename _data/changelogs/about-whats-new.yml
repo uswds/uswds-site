@@ -5,12 +5,12 @@ items:
   - date: 2024-11-20
     page: "What's new"
     summary: Combined "What's new" and "News and updates" pages.
-    affectsGuidance: true
+    affectsContent: true
     githubPr: 2958
     githubRepo: uswds-site
   - date: 2024-02-26
     page: "What's new"
     summary: Added release notes section.
-    affectsGuidance: true
+    affectsContent: true
     githubPr: 2318
     githubRepo: uswds-site

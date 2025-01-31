@@ -14,7 +14,7 @@ items:
   - date: 2024-05-15
     page: Character count
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsContent: true
     githubPr: 2607
     githubRepo: uswds-site
   - date: 2024-03-13

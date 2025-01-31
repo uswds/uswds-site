@@ -13,6 +13,7 @@ items:
     page: Language selector
     summary: Component released.
     affectsGuidance: true
+    isAddition: true
     githubRepo: uswds
     githubPr: 4937
     versionUswds: 3.3.0

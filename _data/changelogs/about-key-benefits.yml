@@ -5,6 +5,7 @@ items:
   - date: 2021-04-14
     page: Key benefits
     summary: Added key benefits page.
+    isAddition: true
     summaryAdditional:
     isBreaking:
     affectsAccessibility:

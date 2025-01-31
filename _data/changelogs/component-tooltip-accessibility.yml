@@ -6,5 +6,6 @@ items:
     page: Tooltip accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 2646
     githubRepo: uswds-site

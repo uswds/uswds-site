@@ -5,13 +5,13 @@ items:
   - date: 2024-01-17
     page: Accordion
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsContent: true
     githubPr: 2138
     githubRepo: uswds-site
   - date: 2023-11-20
     page: Accordion
     summary: Added `usa-icon` to the dependency list and removed `usa-list`.
-    affectsGuidance: true
+    affectsCOntent: true
     githubPr: 2149
     githubRepo: uswds-site
   - date: 2023-06-09

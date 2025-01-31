@@ -6,5 +6,6 @@ items:
     page: Typography accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 2540
     githubRepo: uswds-site

@@ -5,5 +5,6 @@ items:
     page: Process list accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 3007
     githubRepo: uswds-site

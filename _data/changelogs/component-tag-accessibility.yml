@@ -6,5 +6,6 @@ items:
     page: Tag accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 2645
     githubRepo: uswds-site

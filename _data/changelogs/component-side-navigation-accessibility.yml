@@ -5,5 +5,6 @@ items:
     page: Side navigation accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 2864
     githubRepo: uswds-site

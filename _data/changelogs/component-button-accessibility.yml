@@ -6,5 +6,6 @@ items:
     page: Button accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 2138
     githubRepo: uswds-site

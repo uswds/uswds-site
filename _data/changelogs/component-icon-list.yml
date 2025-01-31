@@ -18,7 +18,7 @@ items:
   - date: 2024-12-13
     page: Icon list
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsContent: true
     githubPr: 3008
     githubRepo: uswds-site
   - date: 2023-11-20

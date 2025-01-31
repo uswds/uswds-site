@@ -5,7 +5,7 @@ items:
   - date: 2024-10-16
     page: Side navigation
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsContent: true
+    affectsPageContent: true
     githubPr: 2864
     githubRepo: uswds-site
   # 3.8.0 release
@@ -16,7 +16,7 @@ items:
     isBreaking: false
     affectsAccessibility: true
     affectsAssets:
-    affectsContent:
+    affectsPageContent:
     affectsGuidance:
     affectsJavascript:
     affectsMarkup:

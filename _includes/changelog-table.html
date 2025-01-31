@@ -53,7 +53,7 @@
             <li><span class="output-neutral">Assets</span></li>
           {% endif %}
           {% if item.affectsContent %}
-            <li><span class="output-neutral">Content</span></li>
+            <li><span class="output-warning">Content</span></li>
           {% endif %}
           {% if item.affectsGuidance %}
             <li><span class="output-warning">Guidance</span></li>
@@ -63,6 +63,9 @@
           {% endif %}
           {% if item.affectsMarkup %}
             <li><span class="output-warning">Markup</span></li>
+          {% endif %}
+          {% if item.affectsPageContent %}
+            <li><span class="output-neutral">Page content</span></li>
           {% endif %}
           {% if item.affectsStyles %}
             <li><span class="output-neutral">Styles</span></li>

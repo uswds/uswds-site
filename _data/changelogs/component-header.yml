@@ -17,7 +17,7 @@ items:
   - date: 2024-08-13
     page: Header
     summary: Added accessibility tests page.
-    affectsContent: true
+    affectsPageContent: true
     githubPr: 2761
     githubRepo: uswds-site
   - date: 2023-12-08

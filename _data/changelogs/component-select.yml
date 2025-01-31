@@ -5,7 +5,7 @@ items:
   - date: 2024-06-19
     page: Select
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsContent: true
+    affectsPageContent: true
     githubPr: 2702
     githubRepo: uswds-site
   - date: 2023-08-23

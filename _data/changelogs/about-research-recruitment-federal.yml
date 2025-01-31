@@ -5,7 +5,7 @@ items:
   - date: 2024-02-24
     page: Recruitment for Federal
     summary: Page created.
-    affectsContent: true
+    affectsPageContent: true
     isAddition: true
     githubPr: 2504
     githubRepo: uswds-site

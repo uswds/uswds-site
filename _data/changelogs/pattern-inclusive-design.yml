@@ -7,7 +7,7 @@ items:
     summary: Removed inclusive design page.
     summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Ending Radical And Wasteful Government DEI Programs And Preferencing\".
     isRemoval: true
-    affectsContent: true
+    affectsPageContent: true
     githubPr: 3078
     githubRepo: uswds-site
   - date: 2025-01-22

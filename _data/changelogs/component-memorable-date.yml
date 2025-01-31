@@ -5,7 +5,7 @@ items:
   - date: 2024-11-19
     page: Memorable date
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsContent: true
+    affectsPageContent: true
     githubPr: 2919
     githubRepo: uswds-site
   - date: 2024-11-06
@@ -20,7 +20,7 @@ items:
     summary: Removed numeric representation of months from the `select` element.
     summaryAdditional: Recent usability testing indicated that having both numbers and names to represent months was confusing for screen reader users.
     affectsAccessibility: true
-    affectsContent: true
+    affectsPageContent: true
     affectsMarkup: true
     githubRepo: uswds
     githubPr: 6028

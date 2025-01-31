@@ -6,7 +6,7 @@ items:
   - date: 2024-06-07
     page: Tooltip
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsContent: true
+    affectsPageContent: true
     githubPr: 2646
     githubRepo: uswds-site
   - date: 2024-05-31

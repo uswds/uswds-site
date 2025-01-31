@@ -6,7 +6,7 @@ items:
     page: Research
     summary: Removed Together report link.
     summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Ending Radical And Wasteful Government DEI Programs And Preferencing\".
-    affectsContent: true
+    affectsPageContent: true
     affectsLinks: true
     githubRepo: uswds-site
     githubPr: 3078
@@ -20,7 +20,7 @@ items:
   - date: 2023-11-15
     page: Research
     summary: Replaced page content.
-    affectsContent: true
+    affectsPageContent: true
     githubPr: 2355
     githubRepo: uswds-site
   - date: 2023-07-14

@@ -44,7 +44,7 @@ in_page_nav_headings: "h2"
 %}
 
 
-{: .site-component-section-title #changelog }
+{: .site-component-section-title #latest-changes }
 ## Latest changes to USWDS
 
 Meaningful code and guidance updates across the design system are listed in the following table:

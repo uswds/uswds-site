@@ -14,7 +14,6 @@ subnav:
   href: '#changelog'
 changelog:
   key: about-roadmap
-in_page_nav_headings: false
 ---
 
 Our product roadmap communicates what we've recently done and what we've got planned for the next 4-8 months. We've moved our roadmap planning board to GitHub so we can keep it more up-to-date.

@@ -19,6 +19,20 @@ layout: default
       data-threshold="1"></aside>
     <main id="main-content" class="main-content">
       <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
+
+        {% if page.alert == true %}
+        <section aria-label="Content change alert">
+          <div class="usa-alert site-alert margin-bottom-3 usa-alert--{{ page.alert-class }}">
+            <div class="usa-alert__body">
+              <p class="usa-alert__heading line-height-sans-3"><strong>{{ page.alert-heading }}</strong></p>
+              <p class="usa-alert__text">
+                {{ page.alert-content | markdownify | replace: "<p>", "" | replace: "</p>", ""}}
+              </p>
+            </div>
+          </div>  
+        </section>
+        {% endif %}
+
         <header>
           {% if page.category != null %}
             {% unless page.path contains 'overview' and page.permalink != '/design-tokens/color/overview/' %}

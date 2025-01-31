@@ -10,14 +10,18 @@
 | summary              | Short description of change                                | no       | string     | N/A                                                         | yes       |
 | summaryAdditional    | Additional description                                     | yes      | string     | N/A                                                         | yes       |
 | isBreaking           | Breaking change                                            | no       | boolean    | true, false                                                 | yes       |
+| isAddition           | Added page                                                 | no       | boolean    | true, false                                                 | yes       |
+| isDeletion           | Deleted page                                               | no       | boolean    | true, false                                                 | yes       |
 | affectsAccessibility | Change affects accessibility                               | yes      | boolean    | true, false                                                 | yes       |
 | affectsMarkup        | Change affects component markup                            | yes      | boolean    | true, false                                                 | yes       |
 | affectsJavascript    | Change affects component JS                                | yes      | boolean    | true, false                                                 | yes       |
 | affectsStyles        | Change affects component styles, appearance, or settings   | yes      | boolean    | true, false                                                 | yes       |
 | affectsContent       | Change affects content in the component itself             | yes      | boolean    | true, false                                                 | yes       |
+| affectsPage Content  | Change affects page content                                | yes      | boolean    | true, false                                                 | yes       |
 | affectsGuidance      | Change affects component guidance                          | yes      | boolean    | true, false                                                 | yes       |
 | affectsAssets        | Change affects assets related to a component, like images  | yes      | boolean    | true, false                                                 | yes       |
 | affectsSettings      | Change affects settings                                    | yes      | boolean    | true, false                                                 | yes       |
+| affectsSettings      | Change affects links                                       | yes      | boolean    | true, false                                                 | yes       |
 | githubPr             | Pull request number                                        | no       | number     | N/A                                                         | yes       |
 | githubRepo           | Pull request repo name                                     | no       | string     | uswds, uswds-site                                           | yes       |
 | versionUswds         | USWDS Version Number                                       | no       | number     | N/A                                                         | yes       |
@@ -51,12 +55,16 @@ items:
     summary:
     summaryAdditional:
     isBreaking:
+    isAddition:
+    isDeletion:
     affectsAccessibility:
     affectsAssets:
     affectsGuidance:
     affectsJavascript:
+    affectsLinks:
     affectsMarkup:
     affectsStyles:
+    affectsPageContent:
     githubPr:
     githubRepo:
     versionUswds:

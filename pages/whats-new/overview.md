@@ -62,6 +62,4 @@ Meaningful code and guidance updates across the design system are listed in the 
 
 {% include consolidated-changelog-table.html %}
 
----
-
-<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all USWDS news and updates</a>
+<!-- <a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all USWDS news and updates</a> -->

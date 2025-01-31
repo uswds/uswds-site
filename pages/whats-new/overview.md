@@ -37,6 +37,8 @@ cards:
 in_page_nav_headings: "h2"
 ---
 
+{% assign all_posts = site.posts | concat: site.posts_short | sort: "date" | reverse %}
+
 {% include site-card-list.html
   cards=page.cards
   listClasses="margin-top-6"
@@ -46,8 +48,8 @@ in_page_nav_headings: "h2"
 {:.margin-top-2.text-normal.font-lang-md.text-gray-70}
 ## News and updates
 
-{% for post in site.posts limit:4 %}
-  {% include post-preview.html post=post heading="h3"%}
+{% for post in all_posts limit: 4 %}
+  {% include post-preview.html heading="h3"%}
 {% endfor %}
 
 ---

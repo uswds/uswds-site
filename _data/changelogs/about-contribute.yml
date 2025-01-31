@@ -12,7 +12,7 @@ items:
     page: Contribute
     summary: Added contribute page.
     summaryAdditional:
-    isBreaking:
+    isAddition: true
     affectsAccessibility:
     affectsAssets:
     affectsGuidance: true

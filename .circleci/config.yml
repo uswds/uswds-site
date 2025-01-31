@@ -70,6 +70,9 @@ jobs:
           name: Build site assets
           command: npm run build:all-assets
       - run:
+          name: Check formatting
+          command: npm run prettier:check
+      - run:
           name: Build static site
           command: |
             bundle config set --local path '~/project/vendor/bundle'

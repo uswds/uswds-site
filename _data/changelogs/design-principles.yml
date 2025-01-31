@@ -5,6 +5,6 @@ items:
   - date: 2025-01-22
     page: Design principles
     summary: Updated the url for the "Delivering Excellent, Equitable, and Secure Federal Services and Customer Experience" link.
-    affectsGuidance: true
+    affectsLinks: true
     githubPr: 3068
     githubRepo: uswds-site

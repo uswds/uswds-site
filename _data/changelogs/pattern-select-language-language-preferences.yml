@@ -5,7 +5,7 @@ items:
   - date: 2025-01-22
     page: "Pattern: Language preferences"
     summary: Updated the url for the "OMB memorandum m-17-06" link.
-    affectsGuidance: true
+    affectsLinks: true
     githubPr: 3068
     githubRepo: uswds-site
   - date: 2022-11-14

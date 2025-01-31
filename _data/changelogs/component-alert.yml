@@ -5,7 +5,7 @@ items:
   - date: 2025-01-14
     page: Alert
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsContent: true
     githubPr: 3048
     githubRepo: uswds-site
   - date: 2024-10-04
@@ -23,7 +23,7 @@ items:
   - date: 2024-03-27
     page: Alert
     summary: Added a note about USWDS developing dismissible alerts.
-    affectsGuidance: true
+    affectsContent: true
     githubPr: 2563
     githubRepo: uswds-site
   - date: 2023-11-20

@@ -5,13 +5,13 @@ items:
   - date: 2025-01-22
     page: Link
     summary: Updated the url for the "OMB M-23-22" link.
-    affectsGuidance: true
+    affectsLinks: true
     githubPr: 3068
     githubRepo: uswds-site
   - date: 2024-01-17
     page: Link
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsContent: true
     githubPr: 2138
     githubRepo: uswds-site
   - date: 2023-11-20

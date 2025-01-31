@@ -2,9 +2,8 @@ title: Showcase
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2025-01-31
     summary: Added Export Compliance Assistance Program (ECAP) to the showcase page.
-    affectsGuidance: true
     githubPr: 2839
     githubRepo: uswds-site
   - date: 2024-12-18

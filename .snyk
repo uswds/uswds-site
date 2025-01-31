@@ -3523,8 +3523,8 @@ ignore:
   SNYK-JS-INFLIGHT-6095116:
     - '*':
         reason: No available upgrade or patch
-        expires: 2025-01-08T18:16:33.491Z
-        created: 2024-12-09T18:16:33.532Z
+        expires: 2025-02-21T15:55:39.095Z
+        created: 2025-01-22T15:55:39.133Z
   SNYK-JS-BRACES-6838727:
     - '*':
         reason: No available upgrade or patch
@@ -3540,6 +3540,11 @@ ignore:
         reason: No available upgrade or patch
         expires: 2025-01-08T18:15:22.221Z
         created: 2024-12-09T18:15:22.260Z
+  SNYK-JS-UNDICI-8641354:
+    - '*':
+        reason: No available upgrade or patch
+        expires: 2025-02-21T15:55:42.507Z
+        created: 2025-01-22T15:55:42.548Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

@@ -2,6 +2,21 @@ title: Gender identity and sex
 type: pattern
 changelogURL:
 items:
+  - date: 2025-01-30
+    summary: Added content alert.
+    summaryAdditional: This pattern is affected by a recent change in law, policy, or regulation. Expect changes to this pattern in the near future as we adapt to these new requirements.
+    affectsGuidance: true
+    githubRepo: uswds-site
+    githubPr: 3090
+  - date: 2025-01-22
+    summary: Updated the urls for broken links.
+    summaryAdditional: |
+      Replaced the urls for "Executive Order 14075",
+      "Recommendations on the best practices for the collection of sexual orientation and gender identity data on federal statistical surveys",
+      and "X gender marker available on U.S. Passports starting April 11" links.
+    affectsGuidance: true
+    githubPr: 3068
+    githubRepo: uswds-site
   - date: 2023-03-09
     summary: Added new White House report.
     summaryAdditional: Added new White House report on collection of Sexual Orientation and Gender Identity (SOGI) information for statistical purposes.
@@ -25,7 +40,7 @@ items:
     summaryAdditional: Added additional guidance to promote using tested translations on multilingual forms, and providing helper text to explain data usage and sharing.
     affectsGuidance: true
     githubPr: 1994
-    githubRepo: uswds-site    
+    githubRepo: uswds-site
   - date: 2023-03-09
     summary: Updated usage of "gender identity" and "sex" to be more consistent throughout.
     affectsGuidance: true
@@ -60,5 +75,3 @@ items:
     affectsGuidance: true
     githubRepo: uswds-site
     versionUswds: 3.3.0
-
-

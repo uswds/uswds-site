@@ -90,7 +90,7 @@ We are as committed as you are to public service, and we reflect this in our pro
     We know that making the case for USWDS is important and sometimes difficult. Here are a few tips!
   </p>
 
-  <ul class="usa-icon-list usa-icon-list--size-lg margin-top-3">
+  <ul class="usa-icon-list site-icon-list usa-icon-list--size-lg margin-top-3">
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon text-blue">
         <svg class="usa-icon" aria-hidden="true" role="img">

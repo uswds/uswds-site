@@ -8,6 +8,11 @@ sub-category: Create a user profile
 lead: This pattern helps users to provide gender identity and sex information in an accurate and respectful manner. Gender identity and sex are often integral to an individual’s sense of self, and several federal agencies and working groups are striving to define a meaningful, inclusive way to collect gender identity and sex information when it is needed.
 changelog:
   key: pattern-user-profile-gender-identity-and-sex
+alert: true
+alert-class: warning
+alert-heading: "This pattern is affected by a recent change in law, policy, or regulation."
+alert-content: "The Gender Identity and Sex pattern is affected by the executive order [Defending Women from Gender Ideology Extremism and
+Restoring Biological Truth to the Federal Government](https://www.whitehouse.gov/presidential-actions/2025/01/defending-women-from-gender-ideology-extremism-and-restoring-biological-truth-to-the-federal-government/), signed on January 20, 2025. Expect changes to this pattern in the near future as we adapt to these new requirements."
 ---
 
 {:.site-component-section-title}
@@ -23,10 +28,10 @@ While the sex listed on a person's birth certificate or driver's license is ofte
 
 Historically, the federal government has asked people to choose between male and female. Recently, agencies and programs have been moving toward providing more options, reflecting the fact that a person's gender identity may not reflect the sex they were assigned at birth, and that sex is not always unambiguously male or female.
 
-As one example, in April 2022, the U.S. Department of State updated [Form DS-11](https://eforms.state.gov/Forms/ds11.pdf) and began allowing people to self-attest and specify `M` (male), `F` (female), or `X` on their passports. The Department of State defines `X` as “Unspecified or another gender identity” on Form DS-11. The form collects this information as `Gender` but it is displayed on a passport as `Sex`. More recently, [Executive Order 14075](https://www.whitehouse.gov/briefing-room/presidential-actions/2022/06/15/executive-order-on-advancing-equality-for-lesbian-gay-bisexual-transgender-queer-and-intersex-individuals/) Advancing Equality for Lesbian, Gay, Bisexual, Transgender, Queer, and Intersex Individuals makes specific calls for improved, responsible collection of sexual orientation and gender identity information.
+As one example, in April 2022, the U.S. Department of State updated [Form DS-11](https://eforms.state.gov/Forms/ds11.pdf) and began allowing people to self-attest and specify `M` (male), `F` (female), or `X` on their passports. The Department of State defines `X` as “Unspecified or another gender identity” on Form DS-11. The form collects this information as `Gender` but it is displayed on a passport as `Sex`. More recently, [Executive Order 14075](https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2022/06/15/executive-order-on-advancing-equality-for-lesbian-gay-bisexual-transgender-queer-and-intersex-individuals/) Advancing Equality for Lesbian, Gay, Bisexual, Transgender, Queer, and Intersex Individuals makes specific calls for improved, responsible collection of sexual orientation and gender identity information.
 
 The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way CDC's [HIV Nexus Clinician Resources](https://snapshot2024.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) articulates the importance of asking two separate questions to ensure healthcare providers can provide patient-centered, high quality care: `current gender identity`, and `sex listed at birth`. A multi-question approach is also advocated for in [Recommendations on the best practices for the collection of
-sexual orientation and gender identity data on federal statistical surveys](https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf) released in January 2023.
+sexual orientation and gender identity data on federal statistical surveys](https://web.archive.org/web/20250118020808/https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf) released in January 2023.
 
 This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex`. For specific use cases, a more specific label may be correct, like `Sex listed at birth` or `Legal sex`. This language, in particular, should be evaluated for your specific program needs.
 
@@ -255,9 +260,9 @@ Know what information you need and ask for it with specificity. If you are colle
 - Nonbinary airline passenger tickets. (June 22, 2022) Retrieved on July 15, 2022, from <https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html>
 - Patient centered care for transgender people: recommended practices for health care settings. (n.d.) Retrieved on November 4, 2022, from <https://snapshot2024.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/affirmative-care.html>
 - Recommendations on the best practices for the collection of
-sexual orientation and gender identity data on federal statistical surveys. (January 2023) Retrieved on January 27, 2023, from <https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf>
+sexual orientation and gender identity data on federal statistical surveys. (January 2023) Retrieved on January 27, 2023, from `https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf` [This link is no longer active. [Archived copy on whitehouse.gov](https://web.archive.org/web/20250118020808/https://www.whitehouse.gov/wp-content/uploads/2023/01/SOGI-Best-Practices.pdf)]
 - Social Security implements self-attestation of sex marker in Social Security Number records. (October 19, 2022) Retrieved on October 24, 2022, from <https://www.ssa.gov/news/press/releases/2022/#10-2022-3>
-- X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from <https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/>
+- X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from `https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/` [This link is no longer active. [Archived copy on state.gov](https://2021-2025.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)]
 
 {:.site-component-section-title}
 ## Disclaimer

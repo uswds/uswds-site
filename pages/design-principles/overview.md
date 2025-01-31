@@ -58,7 +58,7 @@ The following are practical actions you can take:
 - [Doing research at TTS](https://handbook.tts.gsa.gov/18f/how-18f-works/research-guidelines/) [handbook.18f.gov]
 - [18F User Experience Guide — Research](https://guides.18f.gov/ux-guide/research/) [guides.18f.gov]
 - [Interview checklist](https://guides.18f.gov/ux-guide/interview-checklist/) [guides.18f.gov]
-- [18F guide for user interviews](https://guides.18f.gov/methods/discover/stakeholder-and-user-interviews/) [guides.18f.gov/]
+- [18F guide for user interviews](https://guides.18f.gov/methods/discover/stakeholder-and-user-interviews/) [guides.18f.gov]
 - [How to address barriers to user-centered design](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/) [18f.gsa.gov]
 - [Three ways to manage research projects remotely](https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/) [18f.gsa.gov]
 - [The Foundations of Agile, Part I](https://digital.gov/event/2019/11/04/foundations-agile-i/) [digital.gov]

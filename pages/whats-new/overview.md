@@ -23,6 +23,8 @@ type: posts
 subnav:
   - text: All news and updates
     href: /about/whats-new/all/
+  - text: Changelogs
+    href: /about/whats-new/changelogs/
 changelog:
   key: about-whats-new
 product_cards:
@@ -125,3 +127,18 @@ in_page_nav_headings: "h2"
 
 {:.margin-top-2.text-normal.font-lang-md.text-gray-70}
 ## Changelogs
+
+{% assign changelogs = site.data.changelogs %}
+{% assign changelogsItems = "" | split: "," %}
+
+{% for file in changelogs %}
+  {% assign items = file[1].items %}
+  {% assign changelogItems = changelogItems | concat: items %}
+{% endfor %}
+
+{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,10 %}
+
+
+{% include changelog-table.html %}
+
+<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all changelogs</a>

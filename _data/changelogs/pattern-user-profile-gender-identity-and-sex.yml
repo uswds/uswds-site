@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Replaced dead hyperlinks with archived copy.
-    summaryAdditional: Replaced reference to FCSM finding reports with plain text and a link to the archived page on archive.org.
+    summaryAdditional: Replaced references to fcsm.gov with plain text and a link to the archived page on archive.org.
     affectsLinks: true
     githubRepo: uswds-site
     githubPr: 3092

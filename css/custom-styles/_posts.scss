@@ -30,6 +30,14 @@
   &__content p {
     @include u-font("lang", "xs");
   }
+
+  &:first-of-type {
+    margin-top:0;
+  }
+
+  &:last-of-type {
+    @include u-border-bottom("1px", "gray-30");
+  }
 }
 
 .post-meta .site-subheading {

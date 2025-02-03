@@ -23,6 +23,8 @@ type: posts
 subnav:
   - text: All news and updates
     href: /about/whats-new/all/
+  - text: Changelogs
+    href: /about/whats-new/changelogs/
 changelog:
   key: about-whats-new
 cards:
@@ -36,12 +38,21 @@ cards:
     linkUrl: "https://github.com/uswds/uswds/discussions"
 in_page_nav_headings: "h2"
 ---
+{% assign all_posts = site.posts | concat: site.posts_short | sort: "date" | reverse %}
 
 {% include site-card-list.html
   cards=page.cards
   listClasses="margin-top-6"
   listItemClasses="desktop:grid-col-6"
 %}
+
+{:.margin-top-2.text-normal.font-lang-md.text-gray-70}
+## News feed
+{% for post in all_posts limit: 3 %}
+  {% include post-preview.html heading="h3"%}
+{% endfor %}
+
+<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all USWDS news</a>
 
 
 {: .site-component-section-title #latest-changes }
@@ -57,9 +68,9 @@ Meaningful code, guidance, and content updates across the design system are list
   {% assign changelogItems = changelogItems | concat: items %}
 {% endfor %}
 
-{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,150 %}
+{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,10 %}
 
 
 {% include consolidated-changelog-table.html %}
 
-<!-- <a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all USWDS news and updates</a> -->
+<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/changelogs/">View all changelogs</a>

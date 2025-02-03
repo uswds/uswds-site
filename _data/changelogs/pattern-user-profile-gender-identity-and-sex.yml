@@ -4,9 +4,10 @@ changelogURL:
 items:
   - date: NNNN-NN-NN
     summary: Replaced dead hyperlinks with archived copy.
-    summaryAdditional: Replaced reference to FCSM finding reports with plain text and a link to the archived page on archive.org. 
+    summaryAdditional: Replaced reference to FCSM finding reports with plain text and a link to the archived page on archive.org.
+    affectsLinks: true
     githubRepo: uswds-site
-    githubPr: NNNN
+    githubPr: 3092
   - date: 2025-01-30
     summary: Added content alert.
     summaryAdditional: This pattern is affected by a recent change in law, policy, or regulation. Expect changes to this pattern in the near future as we adapt to these new requirements.

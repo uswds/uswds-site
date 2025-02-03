@@ -74,6 +74,9 @@ collections:
   security_updates:
     output: true
     permalink: /:collection/:title
+  # Allows short posts without generating a full page.
+  posts_short:
+    output: false
 
 defaults:
   - scope:

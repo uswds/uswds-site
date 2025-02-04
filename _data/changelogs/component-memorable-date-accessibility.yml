@@ -1,9 +1,10 @@
 title: Memorable date accessibility tests
 type: component
 items:
- - date: 2024-11-19
-   summary: Added accessibility tests page.
-   affectsGuidance: true
-   githubPr: 2919
-   githubRepo: uswds-site
-   
+  - date: 2024-11-19
+    page: Memorable date accessibility tests
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    isAddition: true
+    githubPr: 2919
+    githubRepo: uswds-site

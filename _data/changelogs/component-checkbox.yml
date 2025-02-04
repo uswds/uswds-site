@@ -3,6 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2024-11-13
+    page: Checkbox
     summary: Removed style tags from indeterminate checkbox SVGs.
     summaryAdditional: |
       These style tags were unnecessary and caused a conflict with some automated testing tools.
@@ -11,11 +12,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.10.0
   - date: 2024-09-18
+    page: Checkbox
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2803
     githubRepo: uswds-site
   - date: 2024-04-26
+    page: Checkbox
     summary: Added indeterminate styles for checkboxes.
     summaryAdditional: Checkboxes will now display as indeterminate when you set `input.indeterminate = true` via JavaScript or add the `data-indeterminate` attribute. This is currently only a style addition and does not affect checkbox functionality.
     affectsAssets: true
@@ -24,12 +27,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.0
   - date: 2023-11-20
+    page: Checkbox
     summary: Added `usa-input-list` to the list of dependencies.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
     versionUswds:
   - date: 2023-09-29
+    page: Checkbox
     summary: Updated radio and checkbox tiles to have lighter borders, reducing visual noise.
     summaryAdditional:
     affectsAccessibility: true
@@ -38,6 +43,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.6.1
   - date: 2023-06-09
+    page: Checkbox
     summary: Improved legibility in forced colors mode.
     summaryAdditional: Adds a consistent border in forced colors mode.
     affectsAccessibility: true
@@ -46,6 +52,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
+    page: Checkbox
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
     affectsAccessibility: true
@@ -54,6 +61,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
+    page: Checkbox
     summary: Improved consistency of disabled styles in forced colors mode.
     summaryAdditional:
     affectsAccessibility: true
@@ -62,6 +70,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2022-08-05
+    page: Checkbox
     summary: Styled aria-disabled to match disabled.
     summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
     affectsAccessibility: true
@@ -70,6 +79,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-04-28
+    page: Checkbox
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -79,6 +89,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
+    page: Checkbox
     summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
@@ -87,6 +98,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2021-08-18
+    page: Checkbox
     summary: Improved whitespace sensitivity of radio and checkbox tiles.
     summaryAdditional: Now radio and checkbox tiles will display consistently whether or not there's extra whitespace in the markup.
     affectsStyles: true
@@ -94,6 +106,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.1
   - date: 2021-08-18
+    page: Checkbox
     summary: Improved class order sensitivity for checkbox and radio.
     summaryAdditional: Now checkbox and radio components display properly regardless of the order of the class and modifier names.
     affectsStyles: true
@@ -101,6 +114,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.1
   - date: 2021-06-16
+    page: Checkbox
     summary: Updated checkbox and radio buttons to include automatic accessible color.
     summaryAdditional: Now checkbox and radio buttons will display in the proper accessible color, and adapt to the text, link, and background colors you set in your projects's settings.
     affectsAccessibility: true
@@ -109,6 +123,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.0
   - date: 2021-03-17
+    page: Checkbox
     summary: Fixed character display in checkboxes and radio buttons.
     summaryAdditional: Allowed checkboxes and radio buttons to display properly regardless of character encoding.
     affectsJavascript: true

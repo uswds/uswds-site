@@ -2,19 +2,29 @@ title: Race and ethnicity
 type: pattern
 changelogURL:
 items:
+  - date: 2025-01-30
+    page: "Pattern: Race and ethnicity"
+    summary: Replaced dead hyperlink with archived copy.
+    summaryAdditional: Replaced "Latinx identity in design, tech, and government" link with plain text and a link to the archived page on archive.org.
+    affectsLinks: true
+    githubPr: 3088
+    githubRepo: uswds-site
   - date: 2022-11-16
+    page: "Pattern: Race and ethnicity"
     summary: Updated preview to remove ethnicity from race question.
     summaryAdditional: We removed `Hispanic, Latinx, or Spanish` from the Race question so we don't combine race and ethnicity in the same question, per current OMB requirements. Updated references to this preview.
     affectsGuidance: true
     githubPr: 1906
     githubRepo: uswds-site
   - date: 2022-11-16
+    page: "Pattern: Race and ethnicity"
     summary: Updated guidance to clarify race and ethnicity question format and requirements.
     summaryAdditional: Added link to guidance on asking for race and ethnicity as a two-part question as currently required by OMB. Removed suggested link to working group considering a combined question. Removed list of combined race and ethnicity categories tested in the 2020 Census to prevent confusion.
     affectsGuidance: true
     githubPr: 1906
     githubRepo: uswds-site
   - date: 2022-11-14
+    page: "Pattern: Race and ethnicity"
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

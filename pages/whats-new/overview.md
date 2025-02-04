@@ -139,6 +139,6 @@ in_page_nav_headings: "h2"
 {% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,10 %}
 
 
-{% include changelog-table.html %}
+{% include consolidated-changelog-table.html %}
 
 <a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all changelogs</a>

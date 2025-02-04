@@ -1,8 +1,9 @@
-title: Resources
+title: "Getting started for developers: Resources"
 type: documentation
 changelogURL:
 items:
   - date: 2022-02-17
+    page: "Getting started for developers: Resources"
     summary: Added resources page.
     summaryAdditional:
     isBreaking:

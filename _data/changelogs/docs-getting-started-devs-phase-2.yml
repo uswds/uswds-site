@@ -1,38 +1,45 @@
-title: "Phase 2: Compile"
+title: "Getting started for developers: Phase 2"
 type: documentation
 changelogURL:
-items:  
+items:
   - date: 2024-12-18
+    page: "Getting started for developers: Phase 2"
     summary: Added documentation for `settings.compile.sassDeprecationWarnings`.
     affectsGuidance: true
     githubPr: 3006
     githubRepo: uswds-site
   - date: 2024-09-05
+    page: "Getting started for developers: Phase 2"
     summary: Added documentation for `settings.compile.browserslist` and `settings.compile.sassSourcemaps`.
     affectsGuidance: true
     githubPr: 2750
     githubRepo: uswds-site
   - date: 2024-09-05
+    page: "Getting started for developers: Phase 2"
     summary: Removed the version number from "Gulp 4" references.
     affectsGuidance: true
     githubPr: 2750
     githubRepo: uswds-site
   - date: 2024-04-26
+    page: "Getting started for developers: Phase 2"
     summary: Replaced outdated references to `paths.dist.sass` with `paths.dist.theme`.
     affectsGuidance: true
     githubPr: 2401
     githubRepo: uswds-site
   - date: 2024-04-26
+    page: "Getting started for developers: Phase 2"
     summary: Added documentation for `paths.src.projectIcons` and `sprite.projectIconsOnly`.
     affectsGuidance: true
     githubPr: 2401
     githubRepo: uswds-site
   - date: 2023-07-28
+    page: "Getting started for developers: Phase 2"
     summary: Added clarity to the instructions for custom compilers.
     affectsGuidance: true
     githubPr: 2123
     githubRepo: uswds-site
   - date: 2023-05-11
+    page: "Getting started for developers: Phase 2"
     summary: Replaced references to `copySetup` with `copyTheme`.
     summaryAdditional:
     isBreaking:
@@ -45,6 +52,7 @@ items:
     githubPr: 2071
     githubRepo: uswds-site
   - date: 2022-10-11
+    page: "Getting started for developers: Phase 2"
     summary: Restructured content to add clarity.
     summaryAdditional:
     isBreaking:
@@ -57,6 +65,7 @@ items:
     githubPr: 1766
     githubRepo: uswds-site
   - date: 2022-08-16
+    page: "Getting started for developers: Phase 2"
     summary: Fixed typo by replacing `_index.html` with `_index.scss`.
     summaryAdditional:
     isBreaking:
@@ -69,6 +78,7 @@ items:
     githubPr: 1740
     githubRepo: uswds-site
   - date: 2022-06-17
+    page: "Getting started for developers: Phase 2"
     summary: Added warning and success note for `gulp init`.
     summaryAdditional:
     isBreaking:
@@ -81,6 +91,7 @@ items:
     githubPr: 1667
     githubRepo: uswds-site
   - date: 2022-06-03
+    page: "Getting started for developers: Phase 2"
     summary: Updated the example compile settings with values that do not generate warnings.
     summaryAdditional:
     isBreaking:
@@ -93,6 +104,7 @@ items:
     githubPr: 1597
     githubRepo: uswds-site
   - date: 2022-04-28
+    page: "Getting started for developers: Phase 2"
     summary: Updated documentation to use Sass module syntax and updated settings table.
     summaryAdditional:
     isBreaking:
@@ -105,6 +117,7 @@ items:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-03-10
+    page: "Getting started for developers: Phase 2"
     summary: |
       Replaced the outdated text: `paths.dist.sass` with updated: `paths.dist.theme`.
     summaryAdditional:
@@ -118,6 +131,7 @@ items:
     githubPr: 1473
     githubRepo: uswds-site
   - date: 2022-03-10
+    page: "Getting started for developers: Phase 2"
     summary: |
       Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
     summaryAdditional:
@@ -131,6 +145,7 @@ items:
     githubPr: 1424
     githubRepo: uswds-site
   - date: 2021-12-14
+    page: "Getting started for developers: Phase 2"
     summary: Added clarity to guidance.
     summaryAdditional:
     isBreaking:
@@ -143,6 +158,7 @@ items:
     githubPr: 1370
     githubRepo: uswds-site
   - date: 2021-12-06
+    page: "Getting started for developers: Phase 2"
     summary: Added "Getting started for developers" guide.
     summaryAdditional:
     isBreaking:

@@ -3806,3 +3806,16 @@ $deprecated-phase-color: color("red-warm-60v");
     @include typeset("lang", "md", 3);
   }
 }
+
+.site-product-grid
+  .usa-button {
+    @include u-font('lang', 'xs')
+  }
+
+  .usa-card__container {
+    border:none;
+    border-radius:0;
+    border-top: units(1) solid color("blue-80v");
+  }
+
+}

@@ -27,6 +27,10 @@ subnav:
     href: /about/whats-new/changelogs/
 changelog:
   key: about-whats-new
+jump_links:
+  - Latest releases
+  - Latest news
+  - Changelogs
 product_cards:
   - heading: "USWDS"
     body: |
@@ -56,11 +60,21 @@ follow_cards:
 in_page_nav_headings: "h2"
 ---
 {% assign all_posts = site.posts | concat: site.posts_short | sort: "date" | reverse %}
-{% assign product_update_posts = all_posts | where_exp: "post", "post.tags contains 'Product updates'"  %}
-{% assign discussion_posts = all_posts | where_exp: "post", "post.tags contains 'Discussion'"  %}
+<!-- {% assign product_update_posts = all_posts | where_exp: "post", "post.tags contains 'Product updates'"  %}
+{% assign discussion_posts = all_posts | where_exp: "post", "post.tags contains 'Discussion'"  %} -->
+
+<!-- grab data from the most recent  monthly call -->
 {% assign monthly_call = site.data.monthly-calls.videos[0]  %}
 
-<div class="site-product-grid margin-y-6">
+{:.margin-top-4.text-normal.font-lang-md.text-gray-70}
+## On this page
+{% include jump-links.html
+  headingLevel="h2"
+  headingText="On this page"
+  listClasses="margin-bottom-4 margin-top-1"
+%}
+
+<div class="site-product-grid margin-bottom-6">
   <h2 class="text-normal font-lang-md margin-top-0">Latest releases</h2>
   {% include site-card-list.html
     cards=page.product_cards

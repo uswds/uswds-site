@@ -29,16 +29,19 @@ changelog:
   key: about-whats-new
 product_cards:
   - heading: "USWDS"
+    image: "/assets/img/next/triangles.svg"
     body: |
       The U.S. Web Design System helps the federal government build fast, accessible, mobile-friendly websites.
     linkText: "USWDS 3.12.0"
     linkUrl: "https://github.com/uswds/uswds/releases"
   - heading: "USWDS Compile"
+    image: "/assets/img/next/plus.svg"
     body: |
       Simple Gulp 5 functions for copying USWDS static assets and transforming USWDS Sass into browser-readable CSS.
     linkText: "USWDS Compile 1.2.1"
     linkUrl: "https://github.com/uswds/uswds-compile/releases/tag/v1.2.1"
   - heading: "USWDS Figma design kit"
+    image: "/assets/img/next/check.svg"
     body: "An official United States Web Design System (USWDS) design kit from the USWDS team."
     linkText: "USWDS Figma Beta 0.3"
     linkUrl: "https://github.com/uswds/uswds-for-designers/releases/tag/v3.0.0"
@@ -73,19 +76,25 @@ in_page_nav_headings: "h2"
   .site-product-grid .usa-button--outline {
     color: #1b1b1b
   }
-  /* .site-product-grid .usa-card__container {
+
+  .site-product-grid .usa-card__container {
     border:none;
     border-top:.5rem solid!important;
     border-radius:0;
-  } */
+  }
 
-  /* .site-product-grid .usa-card__container {
-    border-color: #f0f0ec !important;
-    background: white
-  } */
+  .site-product-grid .usa-card__header,
+  .site-product-grid .usa-card__footer,
+  .site-product-grid .usa-card__body {
+    padding-left: 1rem;
+  }
 
-  /* .site-product-grid li:nth-of-type(1) .usa-card__container {
+  .site-product-grid li:nth-of-type(1) .usa-card__container {
     border-color: #e5a000 !important;
+  }
+
+  .site-product-grid li:nth-of-type(1) .usa-button {
+    background: #e5a000 ;
   }
 
   .site-product-grid li:nth-of-type(1) .usa-button--outline {
@@ -96,6 +105,10 @@ in_page_nav_headings: "h2"
     border-color: #e52207 !important;
   }
 
+  .site-product-grid li:nth-of-type(2) .usa-button {
+    background: #e52207;
+  }
+
   .site-product-grid li:nth-of-type(2) .usa-button--outline {
     box-shadow: inset 0 0 0 2px #e52207;
   }
@@ -104,14 +117,17 @@ in_page_nav_headings: "h2"
     border-color: #008480 !important;
   }
 
+  .site-product-grid li:nth-of-type(3) .usa-button {
+    background: #008480;
+  }
+
   .site-product-grid li:nth-of-type(3) .usa-button--outline {
     box-shadow: inset 0 0 0 2px #008480;
-  } */
+  }
 
-  /* .site-product-grid .usa-card__header,
-  .site-product-grid .usa-card__footer,
-  .site-product-grid .usa-card__body {
-    padding-left: 1rem;
+  /* .site-product-grid .usa-card__container {
+    border-color: #f0f0ec !important;
+    background: white
   } */
 </style>
 
@@ -120,10 +136,11 @@ in_page_nav_headings: "h2"
   {% include site-card-list.html
     cards=page.product_cards
     listItemClasses="desktop:grid-col-4 margin-bottom-0"
-    headerClasses="font-lang-md padding-x-0"
-    bodyClasses="font-body-xs usa-card__body--exdent"
-    containerClasses=""
-    mediaClasses="usa-card__media--exdent"
+    headerClasses="font-lang-md padding-x-0 padding-bottom-0"
+    bodyClasses="font-body-xs usa-card__body--exdent padding-top-0"
+    containerClasses="bg-gray-5"
+    mediaClasses="usa-card__media--exdent display-flex flex-justify-center"
+    imageClasses="width-15 margin-top-2"
     buttonClasses=""
   %}
 </div>
@@ -176,7 +193,7 @@ in_page_nav_headings: "h2"
   {% assign changelogItems = changelogItems | concat: items %}
 {% endfor %}
 
-{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,8 %}
+{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,15 %}
 
 {% include consolidated-changelog-table.html %}
 

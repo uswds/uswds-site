@@ -10,9 +10,9 @@
 <div class="usa-card__container {{ include.containerClasses }}">
   <header class="usa-card__header">
     {% if include.subHeading %}
-      <h3 class="site-subheading">{{ include.subHeading }}</h3>
+      <p class="site-subheading">{{ include.subHeading }}</p>
     {% endif %}
-    <h2 class="usa-card__heading {{ include.headerClasses | default: "font-lang-lg" }}">{{ include.heading }}</h2>
+    <h3 class="usa-card__heading {{ include.headerClasses | default: "font-lang-lg" }}">{{ include.heading }}</h3>
   </header>
   {% if include.image %}
   <div class="usa-card__media {{ include.mediaClasses }}">
@@ -28,6 +28,6 @@
     <p>{{ include.body }}</p>
   </div>
   <div class="usa-card__footer">
-    <a class="usa-button site-button" href="{{ include.linkUrl }}">{{ include.linkText }}</a>
+    <a class="usa-button site-button {{ include.buttonClasses }}" href="{{ include.linkUrl }}">{{ include.linkText }}</a>
   </div>
 </div>

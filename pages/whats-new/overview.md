@@ -33,16 +33,19 @@ jump_links:
   - Changelogs
 product_cards:
   - heading: "USWDS"
+    subheading: Design system
     body: |
       The U.S. Web Design System helps the federal government build fast, accessible, mobile-friendly websites.
     linkText: "USWDS 3.12.0"
     linkUrl: "https://github.com/uswds/uswds/releases"
   - heading: "USWDS Compile"
+    subheading: Sass compilation
     body: |
       Simple Gulp 5 functions for copying USWDS static assets and transforming USWDS Sass into browser-readable CSS.
     linkText: "USWDS Compile 1.2.1"
     linkUrl: "https://github.com/uswds/uswds-compile/releases/tag/v1.2.1"
-  - heading: "USWDS Figma design kit"
+  - heading: "USWDS Figma"
+    subheading: Design kit
     body: "An official United States Web Design System (USWDS) design kit from the USWDS team."
     linkText: "USWDS Figma Beta 0.3"
     linkUrl: "https://github.com/uswds/uswds-for-designers/releases/tag/v3.0.0"
@@ -79,7 +82,7 @@ in_page_nav_headings: "h2"
   {% include site-card-list.html
     cards=page.product_cards
     listItemClasses="desktop:grid-col-4 margin-bottom-0"
-    headerClasses="font-lang-md padding-x-0"
+    headerClasses="font-lang-lg padding-x-0 margin-top-105"
     bodyClasses="font-body-xs usa-card__body--exdent"
     containerClasses="bg-gray-5"
     mediaClasses="usa-card__media--exdent display-flex flex-justify-center"
@@ -97,18 +100,18 @@ in_page_nav_headings: "h2"
 </div>
 
 <div class="usa-card usa-card--flag usa-card--media-right measure-6 margin-y-6">
-  <div class="usa-card__container padding-y-3 padding-x-2 margin-x-0">
+  <div class="usa-card__container padding-y-3 padding-x-2 margin-x-0 bg-blue-80v text-gray-warm-5 border-0">
     <div class="usa-card__header grid-col-7">
-      <h3 class="site-subheading">Latest monthly call</h3>
+      <h3 class="site-subheading text-gray-warm-10">Latest monthly call</h3>
       <h4 class="usa-card__heading font-lang-lg">{{ monthly_call.date }}: {{ monthly_call.title }}</h4>
     </div>
-    <div class="usa-card__media usa-card__media--exdent grid-col-5 bg-gray-60">
+    <div class="usa-card__media grid-col-5 bg-gray-60">
     </div>
     <div class="usa-card__body grid-col-7">
       <p>{{ monthly_call.subtitle }}</p>
     </div>
     <div class="usa-card__footer grid-col-7">
-      <a href="{{ site.baseurl }}/about/monthly-calls" class="usa-button">See the latest USWDS monthly calls</a>
+      <a href="{{ site.baseurl }}/about/monthly-calls" class="usa-button bg-gold-30v text-blue-80v">See the latest USWDS monthly calls</a>
     </div>
   </div>
 </div>

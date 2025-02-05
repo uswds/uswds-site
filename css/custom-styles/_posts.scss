@@ -1,7 +1,7 @@
 .post-preview {
   @include u-border-top("1px", "gray-30");
-  @include u-margin-y(3);
   @include u-measure(6);
+  @include u-padding-y("05");
 
   &__title,
   &__content,

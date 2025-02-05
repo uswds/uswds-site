@@ -39,7 +39,7 @@ product_cards:
     linkText: "USWDS 3.12.0"
     linkUrl: "https://github.com/uswds/uswds/releases"
   - heading: "USWDS Compile"
-    subheading: Sass compilation
+    subheading: Compilation tool
     body: |
       Simple Gulp 5 functions for copying USWDS static assets and transforming USWDS Sass into browser-readable CSS.
     linkText: "USWDS Compile 1.2.1"
@@ -99,10 +99,10 @@ in_page_nav_headings: "h2"
 {% endfor %}
 </div>
 
-<div class="usa-card usa-card--flag usa-card--media-right measure-6 margin-y-6">
+<div class="usa-card usa-card--flag usa-card--media-right measure-6 margin-y-4">
   <div class="usa-card__container padding-y-3 padding-x-2 margin-x-0 bg-blue-80v text-gray-warm-5 border-0">
     <div class="usa-card__header grid-col-7">
-      <h3 class="site-subheading text-gray-warm-10">Latest monthly call</h3>
+      <h3 class="site-subheading text-gray-warm-10">Monthly call</h3>
       <h4 class="usa-card__heading font-lang-lg">{{ monthly_call.date }}: {{ monthly_call.title }}</h4>
     </div>
     <div class="usa-card__media grid-col-5 bg-gray-60">
@@ -111,22 +111,28 @@ in_page_nav_headings: "h2"
       <p>{{ monthly_call.subtitle }}</p>
     </div>
     <div class="usa-card__footer grid-col-7">
-      <a href="{{ site.baseurl }}/about/monthly-calls" class="usa-button bg-gold-30v text-blue-80v">See the latest USWDS monthly calls</a>
+      <a href="{{ site.baseurl }}/about/monthly-calls" class="usa-button bg-gold-20v text-blue-80v">See the latest USWDS monthly calls</a>
     </div>
   </div>
 </div>
 
-{% for post in all_posts offset:2 limit:2 %}
+{% for post in all_posts offset:2 limit:3 %}
   {% include post-preview.html heading="h3"%}
 {% endfor %}
 
 <a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">See all USWDS news and updates</a>
 
-{% include site-card-list.html
-  cards=page.follow_cards
-  listClasses="margin-y-6 measure-6"
-  listItemClasses="desktop:grid-col-6 margin-bottom-0"
-%}
+{:.margin-top-6.text-normal.font-lang-md.text-gray-70}
+## Lorem ipsum
+
+<div class="site-product-grid">
+  {% include site-card-list.html
+    cards=page.follow_cards
+    listClasses="margin-bottom-6 measure-6"
+    listItemClasses="desktop:grid-col-6 margin-bottom-0"
+    containerClasses="bg-gray-5"
+  %}
+</div>
 
 {:.margin-top-0.text-normal.font-lang-md.text-gray-70}
 ## Changelogs

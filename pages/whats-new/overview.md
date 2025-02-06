@@ -94,7 +94,7 @@ in_page_nav_headings: "h2"
 {:.margin-y-2.text-normal.font-lang-md.text-gray-70}
 ## Latest news
 <div>
-{% for post in all_posts limit:2 %}
+{% for post in all_posts limit:3 %}
   {% include post-preview.html heading="h3"%}
 {% endfor %}
 </div>

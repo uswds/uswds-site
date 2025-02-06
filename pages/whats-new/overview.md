@@ -21,16 +21,17 @@ redirect_from:
   - /about/updates/
 type: posts
 subnav:
-  - text: All news and updates
+  - text: All news and events
     href: /about/whats-new/all/
-  - text: Changelogs
+  - text: Changelog
     href: /about/whats-new/changelogs/
 changelog:
   key: about-whats-new
 jump_links:
   - Latest releases
-  - Latest news
-  - Changelogs
+  - Latest news and events
+  - Connect with USWDS
+  - Changelog
 product_cards:
   - heading: "USWDS"
     subheading: Design system
@@ -92,7 +93,7 @@ in_page_nav_headings: "h2"
 </div>
 
 {:.margin-y-2.text-normal.font-lang-md.text-gray-70}
-## Latest news
+## Latest news and events
 <div>
 {% for post in all_posts limit:3 %}
   {% include post-preview.html heading="h3"%}
@@ -123,7 +124,7 @@ in_page_nav_headings: "h2"
 <a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">See all USWDS news and updates</a>
 
 {:.margin-top-6.text-normal.font-lang-md.text-gray-70}
-## Lorem ipsum
+## Connect with USWDS
 
 <div class="site-product-grid">
   {% include site-card-list.html
@@ -135,7 +136,7 @@ in_page_nav_headings: "h2"
 </div>
 
 {:.margin-top-0.text-normal.font-lang-md.text-gray-70}
-## Changelogs
+## Changelog
 
 {% assign changelogs = site.data.changelogs %}
 {% assign changelogsItems = "" | split: "," %}
@@ -149,4 +150,4 @@ in_page_nav_headings: "h2"
 
 {% include consolidated-changelog-table.html %}
 
-<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all changelogs</a>
+<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all changelog entries</a>

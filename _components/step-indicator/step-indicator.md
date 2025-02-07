@@ -18,16 +18,8 @@ variants:
   - variant: "`.usa-step-indicator--center`"
     description: Center counters and labels in each step.
 subnav:
-- text: Preview
-  href: '#step-indicator-preview'
-- text: Code
-  href: '#step-indicator-code'
-- text: Guidance
-  href: '#step-indicator-guidance'
-- text: Package
-  href: '#step-indicator-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Step indicator accessibility tests
+  href: /components/[component-slug]/accessibility-tests/
 tags:
   - stepper
   - step by step

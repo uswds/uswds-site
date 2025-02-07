@@ -3,6 +3,11 @@ type: component
 changelogURL:
 
 items:
+  - date: NNNN-NN-NN
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: [Related PR number]
+    githubRepo: uswds-site
   - date: 2024-11-13
     summary: Removed the `aria-label` from the wrapper of the step indicator component.
     summaryAdditional: This resolves an error related to having an invalid attribute on a `div` element.

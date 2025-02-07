@@ -2,6 +2,7 @@
   @include u-border-top("1px", "gray-30");
   @include u-measure(6);
   @include u-padding-y("05");
+  margin-top: 0;
 
   &__title,
   &__content,

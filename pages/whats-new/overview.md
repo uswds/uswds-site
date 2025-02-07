@@ -82,7 +82,7 @@ in_page_nav_headings: "h2"
   <h2 class="text-normal font-lang-md margin-top-0">Latest releases</h2>
   {% include site-card-list.html
     cards=page.product_cards
-    listItemClasses="desktop:grid-col-4 margin-bottom-0"
+    listItemClasses="desktop-lg:grid-col-4 margin-bottom-0"
     headerClasses="font-lang-lg padding-x-0 margin-top-105"
     bodyClasses="font-body-xs usa-card__body--exdent"
     containerClasses="bg-gray-5"
@@ -96,7 +96,7 @@ in_page_nav_headings: "h2"
 ## Latest news and events
 <div>
 {% for post in all_posts limit:3 %}
-  {% include post-preview.html heading="h3"%}
+  {% include post-preview.html heading="h3" meta=true %}
 {% endfor %}
 </div>
 
@@ -118,12 +118,12 @@ in_page_nav_headings: "h2"
   }
 </style>
 <div class="usa-card usa-card--flag usa-card--media-right measure-6 margin-y-4">
-  <div class="usa-card__container padding-y-3 padding-x-2 margin-x-0 bg-blue-warm-80v text-gray-warm-5 border-0">
+  <div class="usa-card__container tablet:padding-1 desktop-lg:padding-y-3 desktop-lg:padding-x-2 margin-x-0 bg-blue-warm-80v text-gray-warm-5 border-0">
     <div class="usa-card__header tablet:grid-col-7">
       <h3 class="site-subheading text-gray-warm-10">Monthly call</h3>
       <h4 class="usa-card__heading font-lang-lg">{{ monthly_call.date }}: {{ monthly_call.title }}</h4>
     </div>
-    <div class="usa-card__media tablet:grid-col-5 padding-3 tablet:padding-6 display-flex flex-justify-center">
+    <div class="usa-card__media tablet:grid-col-5 padding-3 desktop-lg:padding-6 display-flex flex-justify-center">
       <div class="usa-card__img maxw-card-lg">
         <img  src="{{ site.baseurl }}/img/uswds-logo/4c-lg-on-black.svg">
       </div>
@@ -138,7 +138,7 @@ in_page_nav_headings: "h2"
 </div>
 
 {% for post in all_posts offset:2 limit:3 %}
-  {% include post-preview.html heading="h3"%}
+  {% include post-preview.html heading="h3" meta=true %}
 {% endfor %}
 
 <a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">See all USWDS news and updates</a>

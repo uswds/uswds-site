@@ -25,6 +25,10 @@
         </a>
       {% endunless %}
     </{{ include.heading | default:"h2" }}>
+
+    {% if include.meta %}
+      {% include post-meta.html %}
+    {% endif %}
   </header>
 
   <div class="post-preview__content site-prose">

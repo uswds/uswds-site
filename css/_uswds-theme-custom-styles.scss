@@ -3811,7 +3811,7 @@ $deprecated-phase-color: color("red-warm-60v");
   }
 }
 
-.site-product-grid
+.site-product-grid {
   .usa-button {
     @include u-font('lang', 'xs')
   }
@@ -3821,3 +3821,10 @@ $deprecated-phase-color: color("red-warm-60v");
     border-radius:0;
     border-top: units(1) solid color("blue-80v");
   }
+
+  // .usa-card__header,
+  // .usa-card__body,
+  // .usa-card__footer {
+  //   @include u-padding-x(2);
+  // }
+}

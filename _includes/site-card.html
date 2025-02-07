@@ -10,7 +10,7 @@
 <div class="usa-card__container {{ include.containerClasses }}">
   <header class="usa-card__header">
     {% if include.subHeading %}
-      <p class="site-subheading">{{ include.subHeading }}</p>
+      <p class="site-subheading {{ include.subheadingClasses }}">{{ include.subHeading }}</p>
     {% endif %}
     <h3 class="usa-card__heading {{ include.headerClasses | default: "font-lang-lg" }}">{{ include.heading }}</h3>
   </header>

@@ -100,18 +100,38 @@ in_page_nav_headings: "h2"
 {% endfor %}
 </div>
 
+<style>
+  .usa-card__media {
+    background: url("{{ site.baseurl }}/img/monthly_call_bg.png");
+    background-size:15rem;
+    background-position-x: bottom;
+    background-position-y: center;
+    background-repeat: none;
+  }
+  .usa-card__img {
+    background-color: initial;
+    background-position: center;
+  }
+  .usa-card__img img {
+    object-fit: initial;
+
+  }
+</style>
 <div class="usa-card usa-card--flag usa-card--media-right measure-6 margin-y-4">
-  <div class="usa-card__container padding-y-3 padding-x-2 margin-x-0 bg-blue-80v text-gray-warm-5 border-0">
-    <div class="usa-card__header grid-col-7">
+  <div class="usa-card__container padding-y-3 padding-x-2 margin-x-0 bg-blue-warm-80v text-gray-warm-5 border-0">
+    <div class="usa-card__header tablet:grid-col-7">
       <h3 class="site-subheading text-gray-warm-10">Monthly call</h3>
       <h4 class="usa-card__heading font-lang-lg">{{ monthly_call.date }}: {{ monthly_call.title }}</h4>
     </div>
-    <div class="usa-card__media grid-col-5 bg-gray-60">
+    <div class="usa-card__media tablet:grid-col-5 padding-3 tablet:padding-6 display-flex flex-justify-center">
+      <div class="usa-card__img maxw-card-lg">
+        <img  src="{{ site.baseurl }}/img/uswds-logo/4c-lg-on-black.svg">
+      </div>
     </div>
-    <div class="usa-card__body grid-col-7">
+    <div class="usa-card__body tablet:grid-col-7">
       <p>{{ monthly_call.subtitle }}</p>
     </div>
-    <div class="usa-card__footer grid-col-7">
+    <div class="usa-card__footer tablet:grid-col-7">
       <a href="{{ site.baseurl }}/about/monthly-calls" class="usa-button bg-gold-20v text-blue-80v">See the latest USWDS monthly calls</a>
     </div>
   </div>

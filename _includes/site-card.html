@@ -7,10 +7,11 @@
     - linkUrl: String for the link url.
     - linkText: String link label.
 {% endcomment %}
+
 <div class="usa-card__container {{ include.containerClasses }}">
   <header class="usa-card__header">
-    {% if include.subHeading %}
-      <p class="site-subheading {{ include.subheadingClasses }}">{{ include.subHeading }}</p>
+    {% if include.subheading %}
+      <p class="site-subheading {{ include.subheadingClasses }}">{{ include.subheading }}</p>
     {% endif %}
     <h3 class="usa-card__heading {{ include.headerClasses | default: "font-lang-lg" }}">{{ include.heading }}</h3>
   </header>
@@ -28,6 +29,6 @@
     <p>{{ include.body }}</p>
   </div>
   <div class="usa-card__footer">
-    <a class="usa-button site-button {{ include.buttonClasses }}" href="{{ include.linkUrl }}">{{ include.linkText }}</a>
+    <a class="usa-button site-button {{ include.linkClasses }}" href="{{ include.linkUrl }}">{{ include.linkText }}</a>
   </div>
 </div>

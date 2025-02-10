@@ -5,7 +5,7 @@ component:
  name: step indicator
 title: Step indicator accessibility tests
 category: Components
-lead: Any USWDS [component name] component should pass these manual accessibility tests.
+lead: Any USWDS step indicator component should pass these manual accessibility tests.
 changelog:
  key: 'component-step-indicator-accessibility'
 ---

@@ -19,7 +19,7 @@ variants:
     description: Center counters and labels in each step.
 subnav:
 - text: Step indicator accessibility tests
-  href: /components/[component-slug]/accessibility-tests/
+  href: /components/step-indicator/accessibility-tests/
 tags:
   - stepper
   - step by step

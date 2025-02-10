@@ -14,12 +14,6 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 1.4.3
-  - summary: Step indicator steps are visible at 400%.
-    summary_additional: When you zoom in at 400%, step indicator steps are still visible. Content does not overlap.
-    test_status: pass
-    test_type: general
-    version_tested: 3.8.1
-    wcag_criterion: 1.4.10
   - summary: Step indicator bars meet color contrast requirements.
     summary_additional: When you use a color contrast checker to view the step indicator bars, contrast between the bars and background colors is at least 3:1.
     test_status: pass
@@ -38,6 +32,13 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 3.2.3
+  # Zoom/screen magnification tests
+  - summary: Step indicator steps are visible at 400%.
+    summary_additional: When you zoom in at 400%, step indicator steps are still visible. Content does not overlap.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.8.1
+    wcag_criterion: 1.4.10
   # Screen reader tests
   - summary: Screen reader announces steps in indicator.
     summary_additional: When you use a screen reader, you hear the current value of the step indicator.

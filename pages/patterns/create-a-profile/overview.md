@@ -12,7 +12,6 @@ subnav:
   - href: /patterns/create-a-user-profile/sex/
   - href: /patterns/create-a-user-profile/name/
   - href: /patterns/create-a-user-profile/phone-number/
-  - href: /patterns/create-a-user-profile/pronouns/
   - href: /patterns/create-a-user-profile/race-and-ethnicity/
   - href: /patterns/create-a-user-profile/social-security-number/
 in_page_nav_headings: false
@@ -131,21 +130,6 @@ User profiles are central to a person’s identity. A user profile may be integr
     </div>
   </div>
   <div
-  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit pronouns pattern"
-  data-meta="Visit pronouns pattern">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-user-profile/pronouns/">Share their <strong>pronouns</strong></a></h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Help users to provide their pronouns to ensure they are addressed in the manner they prefer.</p>
-      </div>
-    </div>
-  </div>
-   <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"

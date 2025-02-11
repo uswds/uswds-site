@@ -1,6 +1,6 @@
 ---
 title: Sex
-story: Help a user select their sex
+story: Help users select their sex
 permalink: /patterns/create-a-user-profile/sex/
 redirect_from:
   - /patterns/create-a-user-profile/gender-identity-and-sex/

@@ -1,8 +1,8 @@
 ---
-title: Changelogs
+title: USWDS Changelog
 layout: styleguide
 lead: Meaningful code, guidance, and content updates across the design system
-permalink: /about/whats-new/changelogs/
+permalink: /about/whats-new/changelog/
 category: About
 type: posts
 in_page_nav_headings: false
@@ -18,6 +18,6 @@ in_page_nav_headings: false
 
 {% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,150 %}
 
-<div class="width-desktop">
+<div class="maxw-desktop margin-top-6">
   {% include consolidated-changelog-table.html %}
 </div>

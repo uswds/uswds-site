@@ -3,7 +3,8 @@ permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
 category: About
-lead: Get the latest USWDS news and information here. Learn more about our product development and process, dive deeper into our monthly call topics, and see how we work with our partners to improve the government technology space.
+lead: |
+  Get the latest USWDS news and information here. Learn more about our product development and process, dive deeper into our monthly call topics, and see how we work with our partners to improve the government technology space.
 columns:
   - title: New users
     source: New Users
@@ -24,9 +25,7 @@ subnav:
   - text: All news and events
     href: /about/whats-new/all/
   - text: Changelog
-    href: /about/whats-new/changelogs/
-changelog:
-  key: about-whats-new
+    href: /about/whats-new/changelog/
 jump_links:
   - Latest releases
   - Latest news and events
@@ -42,7 +41,7 @@ connect_cards:
     subheading: Community discussions
     body: "How our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS."
     linkText: "USWDS GitHub discussions"
-    linkUrl: "https://github.com/uswds"
+    linkUrl: "https://github.com/uswds/uswds/discussions"
 in_page_nav_headings: "h2"
 ---
 <!-- Combine posts and short posts into a single feed -->
@@ -136,11 +135,11 @@ in_page_nav_headings: "h2"
 %}
 </div>
 
-{% for post in all_posts offset:2 limit:3 %}
-  {% include post-preview.html heading="h3" meta=true %}
+{% for post in all_posts offset:3 limit:3 %}
+  {% include post-preview.html heading="h3" meta=false %}
 {% endfor %}
 
-<a class="usa-button margin-top-2"
+<a class="usa-button margin-top-105"
   href="{{ site.baseurl }}/about/whats-new/all/">
   See all USWDS news and updates
 </a>
@@ -162,4 +161,4 @@ in_page_nav_headings: "h2"
 
 {% include consolidated-changelog-table.html %}
 
-<a class="usa-button" href="{{ site.baseurl }}/about/whats-new/all/">View all changelog entries</a>
+<a class="usa-button" href="{{ site.baseurl }}/about/whats-new/changelog/">View all changelog entries</a>

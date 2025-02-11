@@ -99,7 +99,7 @@ Understand why you are collecting this information. When asking for sex informat
 
 {:.usa-content-list}
 - **Confirm you need this information.** As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and safety.
-- **Make sure the data you collect match what's required by your system.** Be aware that for identity proofing, especially when integrating state information, there may be data that differs from the Federal requirements.
+- **Make sure the data you collect match what's required by your system.** Be aware that for identity proofing, especially when integrating state information, there may be data that differs from the federal requirements.
 
 #### Accessibility
 

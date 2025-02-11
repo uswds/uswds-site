@@ -8,7 +8,7 @@ items:
     affectsGuidance: true
     isBresaking: true
     githubRepo: uswds-site
-    githubPr:
+    githubPr: 3099
   - date: 2025-01-30
     summary: Added content alert.
     summaryAdditional: This pattern is affected by a recent change in law, policy, or regulation. Expect changes to this pattern in the near future as we adapt to these new requirements.

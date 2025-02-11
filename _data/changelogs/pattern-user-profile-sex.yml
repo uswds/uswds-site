@@ -7,7 +7,7 @@ items:
     summaryAdditional: |
       Updated references to refer only to guidance related to the January 20, 2025 Executive Order, \"Defending Women from Gender Ideology Extremism And Restoring Biological Truth To The Federal Government\".
     affectsGuidance: true
-    githubPr:
+    githubPr: 3099
     githubRepo: uswds-site
   - date: 2025-02-11
     summary: Updated sex pattern to include only options for \"Male\" and \"Female\".
@@ -15,7 +15,7 @@ items:
       Updated content related to the January 20, 2025 Executive Order, \"Defending Women from Gender Ideology Extremism And Restoring Biological Truth To The Federal Government\".
     affectsGuidance: true
     isBreaking: true
-    githubPr:
+    githubPr: 3099
     githubRepo: uswds-site
   - date: 2025-02-11
     summary: Removed gender identity pattern.
@@ -23,7 +23,7 @@ items:
       Removed content related to the January 20, 2025 Executive Order, \"Defending Women from Gender Ideology Extremism And Restoring Biological Truth To The Federal Government\".
     affectsGuidance: true
     isBreaking: true
-    githubPr:
+    githubPr: 3099
     githubRepo: uswds-site
   - date: 2025-02-10
     summary: Replaced dead hyperlinks with archived copy.

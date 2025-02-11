@@ -11,9 +11,9 @@
 <div class="usa-card__container {{ include.containerClasses }}">
   <header class="usa-card__header">
     {% if include.subheading %}
-      <p class="site-subheading {{ include.subheadingClasses }}">{{ include.subheading }}</p>
+      <{{ include.subheadingLevel | default:"h2" }} class="site-subheading {{ include.subheadingClasses }}">{{ include.subheading }}</{{ include.subheadingLevel | default:"h2" }}>
     {% endif %}
-    <h3 class="usa-card__heading {{ include.headerClasses | default: "font-lang-lg" }}">{{ include.heading }}</h3>
+    <{{ include.headingLevel | default:"h3" }} class="usa-card__heading {{ include.headerClasses | default: 'font-lang-lg' }}">{{ include.heading }}</{{ include.headingLevel | default:"h3" }}>
   </header>
   {% if include.image %}
   <div class="usa-card__media {{ include.mediaClasses }}">

@@ -1,0 +1,8 @@
+title: Card accessibility tests
+type: component
+items:
+ - date: NNNN-NN-NN
+   summary: Added accessibility tests page.
+   affectsGuidance: true
+   githubPr: [Related PR number]
+   githubRepo: uswds-site

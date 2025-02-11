@@ -123,7 +123,7 @@ in_page_nav_headings: "h2"
 ## Latest news and events
 <div>
 {% for post in all_posts limit:3 %}
-  {% include post-preview.html heading="h3" meta=true %}
+  {% include post-preview.html heading="h3" date=false %}
 {% endfor %}
 </div>
 

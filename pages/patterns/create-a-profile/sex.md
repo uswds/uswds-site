@@ -27,7 +27,7 @@ Follow this pattern when you need to ask for a user's sex as a part of your serv
 
 ### What's the solution?
 
-Understand why you are collecting this information. When asking for sex information, include only "Male" and "Female" as options. Understand that some state documents may have differing options. 
+Understand why you are collecting this information. When asking for sex information, include only "Male" and "Female" as options. 
 
 {:.site-component-section-title}
 ### Guidance
@@ -45,7 +45,7 @@ Understand why you are collecting this information. When asking for sex informat
             <li>Do determine if you need to collect sex data.</li>
             <li>Do understand that collecting sex information for identity proofing purposes may be complicated by state identity document approaches.</li>
             <li>Do provide helper text that explains why you are asking for this data and who it will be shared with.</li>
-            <li>Do provide a controlled vocabulary when collecting sex data (`Male` and `Female`)</li>
+            <li>Do provide a controlled vocabulary when collecting sex data (<code>Male</code> and <code>Female</code>)</li>
             <li>Do use fieldset and legend to group related radio buttons together, and clear labels and attributes on these form elements.</li>
           </ul>
         </div>
@@ -63,7 +63,7 @@ Understand why you are collecting this information. When asking for sex informat
           <ul>
             <li>Do not use the word "gender" when you are asking for sex data.</li>
             <li>Do not include “prefer not to answer.” If you are considering adding this option, then consider whether the question is needed at all.</li>
-            <li>Do not include `X` as an option when collecting sex data.</li>
+            <li>Do not include <code>X</code> as an option when collecting sex data.</li>
           </ul>
         </div>
       </div>

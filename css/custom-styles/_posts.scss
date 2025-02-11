@@ -1,7 +1,7 @@
 .site-prose {
   .whats-new {
     &__heading {
-      @include u-margin-top(0);
+      @include u-margin-top(6);
       @include u-text("normal");
       @include u-font("lang","md");
       @include u-text("gray-70");
@@ -9,10 +9,8 @@
     }
 
     &__card-group {
-      @include u-margin-bottom(6);
-
       .usa-card {
-        @include at-media("desktop") {
+        @include at-media("desktop-lg") {
           @include u-margin-bottom(0);
         }
       }

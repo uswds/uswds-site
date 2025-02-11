@@ -2,27 +2,39 @@ title: Sex
 type: pattern
 changelogURL:
 items:
-  - date: 2025-01-31
+  - date: 2025-02-11
     summary: Update summary.
     summaryAdditional: |
       Summary additional TK.
     affectsGuidance: true
     githubPr:
     githubRepo: uswds-site
-  - date: 2025-01-31
+  - date: 2025-02-11
     summary: Update summary.
     summaryAdditional: |
       Summary additional TK.
     affectsGuidance: true
     githubPr:
     githubRepo: uswds-site
-  - date: 2025-01-31
+  - date: 2025-02-11
     summary: Update summary.
     summaryAdditional: |
       Summary additional TK.
     affectsGuidance: true
     githubPr:
     githubRepo: uswds-site
+  - date: 2025-02-10
+    summary: Replaced dead hyperlinks with archived copy.
+    summaryAdditional: Replaced references to fcsm.gov with plain text and a link to the archived page on archive.org.
+    affectsLinks: true
+    githubRepo: uswds-site
+    githubPr: 3092
+  - date: 2025-01-30
+    summary: Added content alert.
+    summaryAdditional: This pattern is affected by a recent change in law, policy, or regulation. Expect changes to this pattern in the near future as we adapt to these new requirements.
+    affectsGuidance: true
+    githubRepo: uswds-site
+    githubPr: 3090
   - date: 2025-01-22
     summary: Updated the urls for broken links.
     summaryAdditional: |

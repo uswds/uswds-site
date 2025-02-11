@@ -2,6 +2,11 @@ title: Race and ethnicity
 type: pattern
 changelogURL:
 items:
+  - date: 2025-01-30
+    summary: Replaced dead hyperlink with archived copy.
+    summaryAdditional: Replaced "Latinx identity in design, tech, and government" link with plain text and a link to the archived page on archive.org.
+    githubPr: 3088
+    githubRepo: uswds-site
   - date: 2022-11-16
     summary: Updated preview to remove ethnicity from race question.
     summaryAdditional: We removed `Hispanic, Latinx, or Spanish` from the Race question so we don't combine race and ethnicity in the same question, per current OMB requirements. Updated references to this preview.

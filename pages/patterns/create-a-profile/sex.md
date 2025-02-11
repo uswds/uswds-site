@@ -111,7 +111,7 @@ Understand why you are collecting this information. When asking for sex informat
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
-- [Checkbox]({{ site.baseurl }}/components/checkbox/) component
+- [Radio buttons]({{ site.baseurl }}/components/radio-buttons/) component
 
 {:.site-component-section-title}
 ## References

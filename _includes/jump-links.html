@@ -13,12 +13,12 @@
 <ul class="site-checklist-jump-links {{ include.listClasses }}">
   {% for link in page.jump_links %}
     <li class="{{ include.listItemClasses }}">
-      <a href="#{{ link | downcase | slugify }}">
+      <a href="#{{ link.href | default: link.text | downcase | slugify }}">
         <span>
           <svg class="usa-icon" aria-hidden="true" role="img">
             <use href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_downward"></use>
         </svg>
-        {{ link }}
+        {{ link.text }}
         </span>
       </a>
     </li>

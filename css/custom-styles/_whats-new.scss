@@ -1,109 +1,103 @@
 .site-prose {
-  .whats-new {
-    &__heading {
-      @include u-margin-top(6);
-      @include u-text("normal");
-      @include u-font("lang","md");
-      @include u-text("gray-70");
-      scroll-margin-top: 3.5rem;
-    }
+  .whats-new__heading {
+    @include u-margin-top(6);
+    @include u-text("normal");
+    @include u-font("lang","md");
+    @include u-text("gray-70");
+    scroll-margin-top: 3.5rem;
+  }
 
-    &__card-group {
-      .usa-card {
-        @include at-media("desktop-lg") {
-          @include u-margin-bottom(0);
-        }
-      }
-
-      .usa-button {
-        @include u-font('lang', 'xs')
-      }
-
-      .usa-card__container {
-        border: none;
-        border-radius: 0;
-        border-top: units(1) solid color("blue-80v");
+  .whats-new__card-group {
+    .usa-card {
+      @include at-media("desktop-lg") {
+        @include u-margin-bottom(0);
       }
     }
 
-    &-card--mc {
-      @include u-margin-y(4);
-      @include u-measure(6);
+    .usa-button {
+      @include u-font('lang', 'xs')
+    }
 
-      .usa-card__container {
-        @include u-bg("blue-warm-80v");
-        @include u-border(0);
-        @include u-margin-x(0);
-        @include u-text("gray-warm-5");
+    .usa-card__container {
+      border: none;
+      border-radius: 0;
+      border-top: units(1) solid color("blue-80v");
+    }
+  }
 
-        @include at-media("tablet") {
-          @include u-padding(1);
-        }
+  .whats-new-card--monthly-call {
+    @include u-margin-y(6);
+    @include u-measure(6);
 
-        @include at-media("desktop-lg") {
-          @include u-padding-x(2);
-          @include u-padding-y(3);
-        }
+    .usa-card__container {
+      @include u-bg("blue-warm-80v");
+      @include u-border(0);
+      @include u-margin-x(0);
+      @include u-text("gray-warm-5");
+
+      @include at-media("desktop-lg") {
+        @include u-padding-x(2);
+        @include u-padding-y(3);
+      }
+    }
+
+    .site-subheading {
+      color: color("gray-warm-10");
+    }
+
+    .usa-card__heading {
+      line-height: unset;
+    }
+
+    .usa-card__body,
+    .usa-card__header,
+    .usa-card__footer {
+      @include at-media("tablet") {
+        width: 100%;
       }
 
-      .site-subheading {
-        color: color("gray-warm-10");
+      @include at-media("desktop-lg") {
+        @include grid-col(7);
+      }
+    }
+
+    .usa-card__media {
+      @include u-padding(4);
+      background-image: url("../img/monthly_call_bg.png");
+      background-position-y: center;
+      background-size: 15rem;
+      display:flex;
+      justify-content: center;
+
+      @include at-media("tablet") {
+        position: relative;
+        width: 100%;
       }
 
-      .usa-card__heading {
-        line-height: unset;
+      @include at-media("desktop-lg") {
+        @include grid-col(5);
+        @include u-padding(6);
+        position: absolute;
       }
+    }
 
-      .usa-card__body,
-      .usa-card__header,
-      .usa-card__footer {
-        @include at-media("tablet") {
-          width: 100%;
-        }
+    .usa-card__img {
+      background-color: initial;
+      max-width: 10rem;
 
-        @include at-media("desktop-lg") {
-          @include grid-col(7);
-        }
+      @include at-media("desktop-lg") {
+        max-width: 15rem;
       }
+    }
 
-      .usa-card__media {
-        @include u-padding(4);
-        background-image: url("../img/monthly_call_bg.png");
-        background-position-y: center;
-        background-size: 15rem;
-        display:flex;
-        justify-content: center;
+    .usa-card__img img {
+      object-fit: initial;
+    }
 
-        @include at-media("tablet") {
-          position: relative;
-          width: 100%;
-        }
-
-        @include at-media("desktop-lg") {
-          @include grid-col(5);
-          @include u-padding(6);
-          position: absolute;
-        }
-      }
-
-      .usa-card__img {
-        background-color: initial;
-        max-width: 10rem;
-
-        @include at-media("desktop-lg") {
-          max-width: 15rem;
-        }
-      }
-
-      .usa-card__img img {
-        object-fit: initial;
-      }
-
-      .usa-button {
-        @include u-bg("gold-20v");
-        @include u-margin-top(1);
-        @include u-text("blue-80v");
-      }
+    .usa-button {
+      @include u-bg("gold-30v");
+      @include u-margin-top(1);
+      @include u-text("blue-80v");
     }
   }
 

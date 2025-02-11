@@ -4,7 +4,7 @@ layout: styleguide
 title: What’s new
 category: About
 lead: |
-  Get the latest USWDS news and information here. Learn more about our product development and process, dive deeper into our monthly call topics, and see how we work with our partners to improve the government technology space.
+  Stay up to date on the latest U.S. Web Design System (USWDS) product launches, learn how to use the design system, and dive deeper into our monthly call topics.
 columns:
   - title: New users
     source: New Users
@@ -27,19 +27,19 @@ subnav:
   - text: Changelog
     href: /about/whats-new/changelog/
 jump_links:
-  - Latest releases
-  - Latest news and events
-  - Connect with USWDS
-  - Changelog
+  - text: Latest releases
+  - text: Latest news and events
+  - text:  Connect with USWDS
+  - text: Changelog
 connect_cards:
   - heading: "Stay up to date in your inbox"
     subheading: Newsletter
-    body: "Get news, updates, and resources from the U.S. Web Design System, and learn about the USWDS community."
+    body: "Get the latest news, product updates, and resources from USWDS."
     linkText: "Sign up for our newsletter"
     linkUrl: "https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS"
   - heading: "GitHub discussions"
     subheading: Community discussions
-    body: "How our growing community of government engineers, content specialists, and designers participate and contribute to improving USWDS."
+    body: "Join our growing community of USWDS users and contribute to design system improvements."
     linkText: "USWDS GitHub discussions"
     linkUrl: "https://github.com/uswds/uswds/discussions"
 in_page_nav_headings: "h2"
@@ -90,27 +90,30 @@ in_page_nav_headings: "h2"
       {% include site-card.html
         subheading="Design system"
         heading="USWDS"
-        body="The U.S. Web Design System helps the federal government build fast, accessible, mobile-friendly websites."
+        body="The official U.S. design system, enabling the government to build fast, accessible, mobile-friendly websites."
         linkText=uswds_link_text
         linkUrl="https://github.com/uswds/uswds/releases"
+        subheadingLevel="h3"
       %}
     </li>
     <li class="{{ product_grid_list_classes }}">
       {% include site-card.html
         subheading="Compilation tool"
         heading="USWDS Compile"
-        body="Simple Gulp 5 functions for copying USWDS static assets and transforming USWDS Sass into browser-readable CSS."
+        body="A tool that makes it easy to customize and compile USWDS Sass into browser-readable CSS."
         linkText=uswds_compile_link_text
         linkUrl="https://github.com/uswds/uswds-compile/releases"
+        subheadingLevel="h3"
       %}
     </li>
     <li class="{{ product_grid_list_classes }}">
       {% include site-card.html
         subheading="Design kit"
         heading="USWDS Figma"
-        body="An official United States Web Design System (USWDS) design kit from the USWDS team."
+        body="The official USWDS design kit."
         linkText=uswds_figma_link_text
         linkUrl="https://www.figma.com/community/file/1440921849343185329"
+        subheadingLevel="h3"
       %}
     </li>
   </ul>
@@ -124,7 +127,12 @@ in_page_nav_headings: "h2"
 {% endfor %}
 </div>
 
-<div class="usa-card usa-card--flag usa-card--media-right whats-new-card--mc">
+<a class="usa-button margin-top-105"
+  href="{{ site.baseurl }}/about/whats-new/all/">
+  See all USWDS news and updates
+</a>
+
+<div class="usa-card usa-card--flag usa-card--media-right whats-new-card--monthly-call">
 {% include site-card.html
   subheading="Monthly call"
   heading=monthly_call_heading
@@ -135,15 +143,6 @@ in_page_nav_headings: "h2"
 %}
 </div>
 
-{% for post in all_posts offset:3 limit:3 %}
-  {% include post-preview.html heading="h3" meta=false %}
-{% endfor %}
-
-<a class="usa-button margin-top-105"
-  href="{{ site.baseurl }}/about/whats-new/all/">
-  See all USWDS news and updates
-</a>
-
 {:.whats-new__heading}
 ## Connect with USWDS
 
@@ -153,6 +152,7 @@ in_page_nav_headings: "h2"
     listClasses="measure-6"
     listItemClasses="desktop-lg:grid-col-6"
     containerClasses="bg-gray-4"
+    subheadingLevel="h4"
   %}
 </div>
 

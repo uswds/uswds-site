@@ -16,7 +16,7 @@
 
     .usa-button,
     .usa-card__body p {
-      @include u-font('lang', 'xs')
+      @include typeset('lang', 'xs', 3)
     }
 
     .usa-card__container {

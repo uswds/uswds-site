@@ -83,7 +83,7 @@ in_page_nav_headings: "h2"
 
 {% include jump-links.html %}
 
-<div class="bg-gray-5 padding-3 margin-top-4">
+<div class="bg-gray-5 padding-y-3 padding-x-2 margin-top-4">
   <h2 class="whats-new__heading margin-top-0">Latest releases</h2>
   <ul class="usa-card-group whats-new__card-group">
     <li class="{{ product_grid_list_classes }}">
@@ -109,8 +109,8 @@ in_page_nav_headings: "h2"
     <li class="{{ product_grid_list_classes }}">
       {% include site-card.html
         subheading="Design kit"
-        heading="USWDS Figma"
-        body="The official USWDS design kit."
+        heading="USWDS for designers"
+        body="The official USWDS design kits in Sketch and Figma."
         linkText=uswds_figma_link_text
         linkUrl="https://www.figma.com/community/file/1440921849343185329"
         subheadingLevel="h3"
@@ -146,10 +146,10 @@ in_page_nav_headings: "h2"
 {:.whats-new__heading}
 ## Connect with USWDS
 
-<div class="whats-new__card-group">
+<div class="measure-6">
   {% include site-card-list.html
     cards=page.connect_cards
-    listClasses="measure-6"
+    listClasses="whats-new__card-group"
     listItemClasses="desktop-lg:grid-col-6"
     containerClasses="bg-gray-4"
     subheadingLevel="h4"

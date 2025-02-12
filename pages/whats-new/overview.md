@@ -55,7 +55,7 @@ in_page_nav_headings: "h2"
 {% assign product_grid_list_classes = "usa-card site-component-card desktop-lg:grid-col-4" %}
 {% capture uswds_link_text %} USWDS {{ site.uswds_version }}{%- endcapture %}
 {% capture uswds_compile_link_text %} USWDS Compile {{ site.uswds_compile_version }}{%- endcapture %}
-{% capture uswds_design_kit_link_text %} USWDS for Designers {{ site.uswds_for_designers_version }}{%- endcapture %}
+{% capture uswds_figma_link_text %} USWDS Figma {{ site.uswds_figma_version }}{%- endcapture %}
 
 <!--
   Set monthly call card variables

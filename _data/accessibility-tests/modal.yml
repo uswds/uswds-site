@@ -20,8 +20,8 @@ test_items:
     wcag_criterion: 1.4.3
   - summary: Close icon meets color contrast requirements.
     summary_additional: |
-      When you use a color contrast analyzer to look at the 'close' icon,
-      the color of the 'x' to close the modal against the background color
+      When you use a color contrast analyzer to look at the "close" icon,
+      the color of the "x" to close the modal against the background color
       has a contrast of at least 3:1.
     test_status: pass
     test_type: general
@@ -67,6 +67,14 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.2
     wcag_criterion: 2.1.2
+  - summary: Focus returns to the expected element after the modal is closed.
+    summary_additional: |
+      When you use a keyboard to close a modal,
+      focus returns to the element that triggered the modal.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.3
   - summary: Focus follows a logical order inside the modal.
     summary_additional: |
       When you tab inside a modal with your keyboard,
@@ -100,7 +108,7 @@ test_items:
     test_status: pass
     test_type: screen_reader
     version_tested: 3.8.2
-    wcag_criterion: 1.3.1
+    wcag_criterion: 1.3.2
   - summary: Screen reader announces modal headings.
     summary_additional: |
       When you use a screen reader to access a modal,

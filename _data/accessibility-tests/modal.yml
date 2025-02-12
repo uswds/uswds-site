@@ -46,7 +46,7 @@ test_items:
   - summary: Active modals can be dismissed without using the mouse.
     summary_additional: |
       When a modal is open, you can close it by pressing the escape key
-      or by tabbing to the close button and activating it with "space" or "enter.
+      or by tabbing to the close button and activating it with "space" or "enter".
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.2

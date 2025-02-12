@@ -28,8 +28,8 @@ subnav:
     href: /about/whats-new/changelog/
 jump_links:
   - text: Latest releases
-  - text: Latest news and events
-  - text:  Connect with USWDS
+  - text: News and events
+  - text: Connect with USWDS
   - text: Changelog
 connect_cards:
   - heading: "Stay up to date in your inbox"
@@ -55,7 +55,7 @@ in_page_nav_headings: "h2"
 {% assign product_grid_list_classes = "usa-card site-component-card desktop-lg:grid-col-4" %}
 {% capture uswds_link_text %} USWDS {{ site.uswds_version }}{%- endcapture %}
 {% capture uswds_compile_link_text %} USWDS Compile {{ site.uswds_compile_version }}{%- endcapture %}
-{% capture uswds_figma_link_text %} USWDS Figma {{ site.uswds_figma_version }}{%- endcapture %}
+{% capture uswds_design_kit_link_text %} USWDS for Designers {{ site.uswds_for_designers_version }}{%- endcapture %}
 
 <!--
   Set monthly call card variables
@@ -120,7 +120,7 @@ in_page_nav_headings: "h2"
 </div>
 
 {:.whats-new__heading}
-## Latest news and events
+## News and events
 <div>
 {% for post in all_posts limit:3 %}
   {% include post-preview.html heading="h3" date=false %}
@@ -129,7 +129,7 @@ in_page_nav_headings: "h2"
 
 <a class="usa-button margin-top-105"
   href="{{ site.baseurl }}/about/whats-new/all/">
-  See all USWDS news and updates
+  See all USWDS news and events
 </a>
 
 <div class="usa-card usa-card--flag usa-card--media-right whats-new-card--monthly-call">

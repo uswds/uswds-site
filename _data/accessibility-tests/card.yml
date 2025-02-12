@@ -77,7 +77,7 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.1
     wcag_criterion: 1.3.1
-  - summary: Card contents is announced in the same order it appears on the page.
+  - summary: Card content is announced in the same order it appears on the page.
     summary_additional: When you navigate through card content with a screen reader, the announced content matches the visual presentation.
     test_status: pass
     test_type: screen_reader

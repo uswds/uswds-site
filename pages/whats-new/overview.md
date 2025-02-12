@@ -83,7 +83,7 @@ in_page_nav_headings: "h2"
 
 {% include jump-links.html %}
 
-<div class="bg-gray-5 padding-y-3 padding-x-2 margin-top-4">
+<div class="bg-gray-5 padding-3 margin-top-4">
   <h2 class="whats-new__heading margin-top-0">Latest releases</h2>
   <ul class="usa-card-group whats-new__card-group">
     <li class="{{ product_grid_list_classes }}">

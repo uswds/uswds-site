@@ -94,7 +94,7 @@ test_items:
     wcag_criterion: 2.4.7
   - summary: Focused content is always visible.
     summary_additional: |
-      When you use a keyboard to navigate the modal,
+      When you use a keyboard to navigate through a modal,
       the focused element is always at least partially visible.
     test_status: pass
     test_type: keyboard
@@ -103,7 +103,7 @@ test_items:
 # Screen reader tests
   - summary: Screen reader announces modal headings.
     summary_additional: |
-      When you use a screen reader to access a modal,
+      When you use a screen reader and navigate through a modal,
       the modal heading level is announced to indicate the purpose of the modal.
     test_status: pass
     test_type: screen_reader

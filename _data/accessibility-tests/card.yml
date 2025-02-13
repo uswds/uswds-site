@@ -110,7 +110,7 @@ test_items:
       When you use a screen reader and tab through the card's interactive elements,
       you hear each element's role announced.
       If there are links, you will hear if the link has been visited or not.
-    test_status: conditional
+    test_status: pass
     test_type: screen_reader
     version_tested: 3.8.2
     wcag_criterion: 4.1.2

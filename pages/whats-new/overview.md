@@ -79,7 +79,7 @@ in_page_nav_headings: "h2"
 {% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,15 %}
 
 {:.whats-new__heading.margin-top-4}
-## On this page
+### On this page
 
 {% include jump-links.html %}
 
@@ -160,7 +160,7 @@ in_page_nav_headings: "h2"
 {:.whats-new__heading}
 ## Changelog
 
-Meaningful code, guidance, and content updates across the design system.
+Latest code, guidance, and content updates across the design system.
 
 <div class="margin-top-2">
   {% include consolidated-changelog-table.html %}

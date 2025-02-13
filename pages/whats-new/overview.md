@@ -160,7 +160,7 @@ in_page_nav_headings: "h2"
 {:.whats-new__heading}
 ## Changelog
 
-Meaningful code and guidance updates are listed in the following table:
+Meaningful code, guidance, and content updates across the design system are listed in the following table:
 
 <div class="margin-top-2">
   {% include consolidated-changelog-table.html %}

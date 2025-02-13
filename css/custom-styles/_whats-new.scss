@@ -31,7 +31,7 @@
     @include u-measure(6);
 
     .usa-card__container {
-      @include u-bg("blue-warm-80v");
+      @include u-bg("blue-warm-70v");
       @include u-border(0);
       @include u-margin-x(0);
       @include u-text("gray-warm-5");
@@ -96,9 +96,9 @@
     }
 
     .usa-button {
-      @include u-bg("gold-30v");
+      @include u-bg("gold-20v");
       @include u-margin-top(1);
-      @include u-text("blue-80v");
+      @include u-text("blue-warm-90v");
     }
   }
 

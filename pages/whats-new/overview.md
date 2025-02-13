@@ -55,7 +55,7 @@ in_page_nav_headings: "h2"
 {% assign product_grid_list_classes = "usa-card site-component-card desktop-lg:grid-col-4" %}
 {% capture uswds_link_text %} USWDS {{ site.uswds_version }}{%- endcapture %}
 {% capture uswds_compile_link_text %} USWDS Compile {{ site.uswds_compile_version }}{%- endcapture %}
-{% capture uswds_figma_link_text %} USWDS Figma {{ site.uswds_figma_version }}{%- endcapture %}
+{% capture uswds_design_kit_link_text %} USWDS design kit {{ site.uswds_design_kit_version }}{%- endcapture %}
 
 <!--
   Set monthly call card variables
@@ -93,7 +93,8 @@ in_page_nav_headings: "h2"
         body="The official U.S. design system, enabling the government to build fast, accessible, mobile-friendly websites."
         linkText=uswds_link_text
         linkUrl="https://github.com/uswds/uswds/releases"
-        subheadingLevel="h3"
+        subheadingLevel="span"
+        linkClasses="padding-x-105"
       %}
     </li>
     <li class="{{ product_grid_list_classes }}">
@@ -103,17 +104,19 @@ in_page_nav_headings: "h2"
         body="A tool that makes it easy to customize and compile USWDS Sass into browser-readable CSS."
         linkText=uswds_compile_link_text
         linkUrl="https://github.com/uswds/uswds-compile/releases"
-        subheadingLevel="h3"
+        subheadingLevel="span"
+        linkClasses="padding-x-105"
       %}
     </li>
     <li class="{{ product_grid_list_classes }}">
       {% include site-card.html
-        subheading="Design kit"
+        subheading="Design assets"
         heading="USWDS for designers"
         body="The official USWDS design kits in Sketch and Figma."
-        linkText=uswds_figma_link_text
-        linkUrl="https://www.figma.com/community/file/1440921849343185329"
-        subheadingLevel="h3"
+        linkText=uswds_design_kit_link_text
+        linkUrl="https://www.design_kit.com/community/file/1440921849343185329"
+        subheadingLevel="span"
+        linkClasses="padding-x-105"
       %}
     </li>
   </ul>
@@ -121,13 +124,11 @@ in_page_nav_headings: "h2"
 
 {:.whats-new__heading}
 ## News and events
-<div>
 {% for post in all_posts limit:3 %}
   {% include post-preview.html heading="h3" date=false %}
 {% endfor %}
-</div>
 
-<a class="usa-button margin-top-105"
+<a class="usa-button usa-button--outline margin-top-105"
   href="{{ site.baseurl }}/about/whats-new/all/">
   See all USWDS news and events
 </a>
@@ -152,13 +153,17 @@ in_page_nav_headings: "h2"
     listClasses="whats-new__card-group"
     listItemClasses="desktop-lg:grid-col-6"
     containerClasses="bg-gray-4"
-    subheadingLevel="h4"
+    subheadingLevel="span"
   %}
 </div>
 
 {:.whats-new__heading}
 ## Changelog
 
-{% include consolidated-changelog-table.html %}
+Meaningful code and guidance updates are listed in the following table:
+
+<div class="margin-top-2">
+  {% include consolidated-changelog-table.html %}
+</div>
 
 <a class="usa-button" href="{{ site.baseurl }}/about/whats-new/changelog/">View all changelog entries</a>

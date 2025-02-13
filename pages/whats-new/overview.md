@@ -24,7 +24,7 @@ type: posts
 subnav:
   - text: All news and events
     href: /about/whats-new/all/
-  - text: Changelog
+  - text: USWDS changelog
     href: /about/whats-new/changelog/
 jump_links:
   - text: Latest releases

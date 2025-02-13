@@ -21,7 +21,7 @@ test_items:
     version_tested: 3.8.1
     wcag_criterion: 1.4.11
   - summary: All headings are clear and descriptive.
-    summary_additional: When you view the step indicator, headings stating current step are clear and concise.
+    summary_additional: When you view the step indicator, headings that state the current step are clear and concise.
     test_status: pass
     test_type: general
     version_tested: 3.8.1

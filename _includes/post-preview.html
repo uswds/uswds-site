@@ -16,7 +16,7 @@
 
 <article id="{{ post_id }}" class="post-preview">
   <header class="post-preview__header">
-    <{{ include.heading | default:"h2" }} class="post-preview__title">
+    <{{ include.heading | default:"h2" }} class="post-preview__title {{ include.headingClasses }}">
       {% unless preview_url == "none" %}
         <a href="{{ preview_url }}">
       {% endunless %}

@@ -12,6 +12,6 @@ in_page_nav_headings: false
 
 <div class="margin-top-6">
   {% for post in all_posts %}
-    {% include post-preview.html date=true %}
+    {% include post-preview.html date=true headingClasses="font-lang-lg" %}
   {% endfor %}
 </div>

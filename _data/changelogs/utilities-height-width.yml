@@ -1,8 +1,9 @@
-title: Height and width utility
+title: Height and width utilities
 type: utility
 changelogURL:
 items:
   - date: 2022-08-05
+    page: Height and width utilities utilities
     summary: Updated `add-aspect` utility to use CSS `aspect-ratio`.
     summaryAdditional:
     isBreaking:
@@ -16,6 +17,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2021-10-20
+    page: Height and width utilities utilities
     summary: Added the `responsive` tag to the width utility.
     summaryAdditional: This update clarified that width utilities ship with responsive styles by default.
     isBreaking:

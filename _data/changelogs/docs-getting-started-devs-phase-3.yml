@@ -1,8 +1,9 @@
-title: "Phase 3: Customize"
+title: "Getting started for developers: Phase 3"
 type: documentation
 changelogURL:
 items:
   - date: 2022-06-17
+    page: "Getting started for developers: Phase 3"
     summary: |
       Replaced the outdated text: `_theme-settings.scss` with updated: `_uswds-theme.scss`.
     summaryAdditional:
@@ -16,6 +17,7 @@ items:
     githubPr: 1667
     githubRepo: uswds-site
   - date: 2022-04-28
+    page: "Getting started for developers: Phase 3"
     summary: Updated theming instructions.
     summaryAdditional:
     isBreaking:
@@ -28,6 +30,7 @@ items:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-03-10
+    page: "Getting started for developers: Phase 3"
     summary: |
       Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
     summaryAdditional:
@@ -41,6 +44,7 @@ items:
     githubPr: 1424
     githubRepo: uswds-site
   - date: 2022-02-17
+    page: "Getting started for developers: Phase 3"
     summary: Moved resources documentation to its own page.
     summaryAdditional:
     isBreaking:
@@ -53,6 +57,7 @@ items:
     githubPr: 1422
     githubRepo: uswds-site
   - date: 2021-12-14
+    page: "Getting started for developers: Phase 3"
     summary: Added guidance for `uswds-gulp`.
     summaryAdditional:
     isBreaking:
@@ -65,6 +70,7 @@ items:
     githubPr: 1370
     githubRepo: uswds-site
   - date: 2021-12-06
+    page: "Getting started for developers: Phase 3"
     summary: Added "Getting started for developers" guide.
     summaryAdditional:
     isBreaking:

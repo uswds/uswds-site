@@ -4,13 +4,12 @@
   - `/about/whats-new/all`
 {% endcomment %}
 
-{% assign post = include.post %}
 {% assign post_id = post.title | default: post.id | slugify %}
 
 {% comment %}
   Assign header link url
-  - default: link to the post's generated page
-  - custom: link to a custom location declared in `post.preview_url`
+  - posts: link to the post's generated page
+  - posts_short: link to a custom location declared in `preview_url`
 {% endcomment %}
 {% assign post_url = site.baseurl | append: post.url %}
 {% assign preview_url = post.preview_url | default: post_url %}
@@ -22,9 +21,13 @@
     </p>
 
     <{{ include.heading | default:"h2" }} class="post-preview__title">
-      <a href="{{ preview_url }}">
-        {{ post.title }}
-      </a>
+      {% unless preview_url == "none" %}
+        <a href="{{ preview_url }}">
+      {% endunless %}
+          {{ post.title }}
+      {% unless preview_url == "none" %}
+        </a>
+      {% endunless %}
     </{{ include.heading | default:"h2" }}>
 
     {% include post-meta.html %}
@@ -32,7 +35,7 @@
 
   <div class="post-preview__content site-prose">
     <p>
-      {{ post.lead | default: post.excerpt }}
+      {{ post.lead | default: post.excerpt | markdownify }}
     </p>
   </div>
 </article>

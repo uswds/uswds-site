@@ -3,6 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2023-07-11
+    page: Implementations
     summary: Added entry for "Comet".
     summaryAdditional:
     isBreaking:
@@ -15,6 +16,7 @@ items:
     githubPr: 2152
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: Implementations
     summary: Added entry for "sam.gov" implementations.
     summaryAdditional:
     isBreaking:
@@ -27,6 +29,7 @@ items:
     githubPr: 1714
     githubRepo: uswds-site
   - date: 2022-10-11
+    page: Implementations
     summary: Added entry for "ngx-uswds".
     summaryAdditional:
     isBreaking:
@@ -40,6 +43,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-07-06
+    page: Implementations
     summary: Added entry for "USWDS Components".
     summaryAdditional:
     isBreaking:
@@ -53,6 +57,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-10-04
+    page: Implementations
     summary: Added entry for "USWDS Drupal base theme".
     summaryAdditional:
     isBreaking:
@@ -66,6 +71,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-07-27
+    page: Implementations
     summary: Added entry for "USWDS CKEditor Integration" and "USWDS Paragraph Components".
     summaryAdditional:
     isBreaking:
@@ -79,6 +85,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-07-27
+    page: Implementations
     summary: Added column for implementation status.
     summaryAdditional:
     isBreaking:
@@ -92,6 +99,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-05-19
+    page: Implementations
     summary: Removed entry for "us_web_design_standards gem".
     summaryAdditional:
     isBreaking:
@@ -105,6 +113,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2020-09-11
+    page: Implementations
     summary: Added entry for "uswds-sf-lightning-community".
     summaryAdditional:
     isBreaking:
@@ -118,6 +127,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2020-08-12
+    page: Implementations
     summary: Added entry for "tailwindcss-uswds".
     summaryAdditional:
     isBreaking:
@@ -131,6 +141,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2020-07-28
+    page: Implementations
     summary: Added entry for "react-uswds".
     summaryAdditional:
     isBreaking:

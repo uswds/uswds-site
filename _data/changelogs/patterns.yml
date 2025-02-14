@@ -3,7 +3,10 @@ type: pattern
 changelogURL:
 items:
   - date: 2025-01-23
+    page: "Patterns overview"
     summary: Removed report link and introduction.
     summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Ending Radical And Wasteful Government DEI Programs And Preferencing\".
+    affectsPageContent: true
+    affectsLinks: true
     githubRepo: uswds-site
     githubPr: 3078

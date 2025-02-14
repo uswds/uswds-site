@@ -3,6 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-10-20
+    page: Community
     summary: Updated community conduct section.
     summaryAdditional:
     isBreaking:
@@ -16,6 +17,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-08-29
+    page: Community
     summary: Removed Ammie Farraj Feijoo from the community managers section.
     summaryAdditional:
     isBreaking:

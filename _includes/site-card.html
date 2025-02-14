@@ -1,20 +1,34 @@
 {% comment %}
   Single card element for `site-card-list`.
-  
+
   Variables:
     - heading: String heading for a single card.
     - body: String body that gets placed in a paragraph tag.
     - linkUrl: String for the link url.
     - linkText: String link label.
 {% endcomment %}
-<div class="usa-card__container">
+
+<div class="usa-card__container {{ include.containerClasses }}">
   <header class="usa-card__header">
-    <h2 class="usa-card__heading font-lang-lg">{{ include.heading }}</h2>
+    {% if include.subheading %}
+      <{{ include.subheadingLevel | default:"h2" }} class="site-subheading {{ include.subheadingClasses }}">{{ include.subheading }}</{{ include.subheadingLevel | default:"h2" }}>
+    {% endif %}
+    <{{ include.headingLevel | default:"h3" }} class="usa-card__heading {{ include.headerClasses | default: 'font-lang-lg' }}">{{ include.heading }}</{{ include.headingLevel | default:"h3" }}>
   </header>
-  <div class="usa-card__body font-lang-sm">
+  {% if include.image %}
+  <div class="usa-card__media {{ include.mediaClasses }}">
+    <div class="usa-card__img {{ include.imageClasses }}">
+      <img
+        src="{{ include.image }}"
+        alt="{{ include.imageAlt }}"
+      />
+    </div>
+  </div>
+  {% endif %}
+  <div class="usa-card__body {{ include.bodyClasses | default: "font-lang-sm" }}">
     <p>{{ include.body }}</p>
   </div>
   <div class="usa-card__footer">
-    <a class="usa-button site-button" href="{{ include.linkUrl }}">{{ include.linkText }}</a>
+    <a class="usa-button site-button {{ include.linkClasses }}" href="{{ include.linkUrl }}">{{ include.linkText }}</a>
   </div>
 </div>

@@ -1,0 +1,194 @@
+.site-prose {
+  .whats-new__heading {
+    @include u-margin-top(6);
+    @include u-text("normal");
+    @include u-font("lang","md");
+    @include u-text("gray-70");
+    scroll-margin-top: 3.5rem;
+  }
+
+  .whats-new__card-group {
+    .usa-card {
+      @include at-media("desktop-lg") {
+        @include u-margin-bottom(0);
+      }
+    }
+
+    .usa-button,
+    .usa-card__body p {
+      @include typeset('lang', 'xs', 3)
+    }
+
+    .usa-card__container {
+      border: none;
+      border-radius: 0;
+      border-top: units(1) solid color("blue-80v");
+    }
+  }
+
+  .whats-new-card--monthly-call {
+    @include u-margin-y(6);
+    @include u-measure(6);
+
+    .usa-card__container {
+      @include u-bg("blue-warm-70v");
+      @include u-border(0);
+      @include u-margin-x(0);
+      @include u-text("gray-warm-5");
+
+      @include at-media("desktop-lg") {
+        @include u-padding-x(2);
+        @include u-padding-y(3);
+      }
+    }
+
+    .site-subheading {
+      color: color("gray-warm-10");
+    }
+
+    .usa-card__heading {
+      line-height: unset;
+    }
+
+    .usa-card__body,
+    .usa-card__header,
+    .usa-card__footer {
+      @include at-media("tablet") {
+        width: 100%;
+      }
+
+      @include at-media("desktop-lg") {
+        @include grid-col(7);
+      }
+    }
+
+    .usa-card__media {
+      @include u-padding(4);
+      background-image: url("../img/monthly_call_bg.png");
+      background-position-y: center;
+      background-size: 15rem;
+      display:flex;
+      justify-content: center;
+
+      @include at-media("tablet") {
+        position: relative;
+        width: 100%;
+      }
+
+      @include at-media("desktop-lg") {
+        @include grid-col(5);
+        @include u-padding(6);
+        position: absolute;
+      }
+    }
+
+    .usa-card__img {
+      background-color: initial;
+      max-width: 10rem;
+
+      @include at-media("desktop-lg") {
+        max-width: 15rem;
+      }
+    }
+
+    .usa-card__img img {
+      object-fit: initial;
+    }
+
+    .usa-button {
+      @include u-bg("gold-30v");
+      @include u-margin-top(1);
+      @include u-text("blue-warm-90");
+    }
+  }
+
+  .post-preview {
+    @include u-border-top("1px", "gray-30");
+    @include u-measure(6);
+    @include u-padding-y(1);
+    margin-top: 0;
+
+    &__title,
+    &__content p,
+    &__header,
+    .post-category {
+      @include u-margin-y("105");
+    }
+
+    &__header {
+      @include u-margin-top(2);
+    }
+
+    &__title {
+      @include u-text("bold");
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: color($site-primary);
+        }
+      }
+    }
+
+    &__content p {
+      @include u-font("lang", "xs");
+    }
+
+    &:first-of-type {
+      margin-top: units(2);
+    }
+
+    &:last-of-type {
+      @include u-border-bottom("1px", "gray-30");
+    }
+  }
+
+  .post-meta .site-subheading {
+    @include u-margin-y(1);
+    display: block;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+
+  .post-title {
+    @include u-measure(1);
+    @include typeset("lang", "xl", 2);
+    @include u-text("thin");
+
+    @include at-media("tablet") {
+      @include typeset("lang", "2xl", 2);
+    }
+  }
+
+  .post-content {
+    @include u-margin-top(4);
+    @include u-measure(4);
+
+    h2 {
+      line-height: lh("lang", 2);
+    }
+  }
+
+  .post-outdated-content {
+    margin-bottom: units(4);
+    margin-top: units(-5);
+    z-index: z-index("top");
+
+    @include at-media("tablet") {
+      position: sticky;
+      top: 0;
+    }
+
+    @include at-media("desktop") {
+      margin-left: units(4);
+      margin-top: 0;
+      top: units($height-nav-secondary);
+    }
+
+    .usa-alert__body {
+      margin-left: 0;
+    }
+  }
+}

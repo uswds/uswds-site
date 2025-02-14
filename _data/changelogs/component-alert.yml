@@ -3,11 +3,13 @@ type: component
 changelogURL:
 items:
   - date: 2025-01-14
+    page: Alert
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 3048
     githubRepo: uswds-site
   - date: 2024-10-04
+    page: Alert
     summary: |
       Fixed a bug that caused `$theme-site-margins-width` to unexpectedly change the alignment inside alert and site alert components.
     summaryAdditional: |
@@ -19,22 +21,26 @@ items:
     githubRepo: uswds
     versionUswds: 3.9.0
   - date: 2024-03-27
+    page: Alert
     summary: Added a note about USWDS developing dismissible alerts.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2563
     githubRepo: uswds-site
   - date: 2023-11-20
+    page: Alert
     summary: Added documentation for the `usa-alert--emergency` variant.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
   - date: 2023-06-09
+    page: Alert
     summary: Removed redundant and invalid height declaration.
     affectsStyles: true
     githubPr: 5187
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-03-09
+    page: Alert
     summary: Updated padding settings to accept any valid spacing token.
     summaryAdditional:
     affectsStyles: true
@@ -42,6 +48,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2022-10-19
+    page: Alert
     summary: Updated the alignment of alert content to visually match banner content.
     summaryAdditional: The site alert component was also updated.
     affectsStyles: true
@@ -49,12 +56,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-09-26
+    page: Alert
     summary: Updated instructions for using the ARIA `role` attribute.
     affectsAccessibility: true
     affectsGuidance: true
     githubPr: 1770
     githubRepo: uswds-site
   - date: 2022-04-28
+    page: Alert
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -64,6 +73,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-03-17
+    page: Alert
     summary: Restored missing white icons.
     summaryAdditional: Restored `error--white`, `info--white`, and `warning--white` icons.
     affectsAssets: true
@@ -71,6 +81,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-17
+    page: Alert
     summary: Provided better support for color icons that adapt to theme settings.
     summaryAdditional: Now the color of the alert icon will update automatically to adapt to the alert background, or to the color of the alert text.
     affectsAccessibility:
@@ -80,6 +91,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.0
   - date: 2021-03-17
+    page: Alert
     summary: Added the `$theme-alert-padding-y` setting.
     summaryAdditional:
     affectsAccessibility:

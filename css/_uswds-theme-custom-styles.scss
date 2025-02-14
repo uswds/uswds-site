@@ -7,7 +7,7 @@
 @import "custom-styles/highlight";
 @import "custom-styles/copy-code-btn";
 @import "custom-styles/graphic-list";
-@import "custom-styles/posts";
+@import "custom-styles/whats-new";
 
 // ========================================
 // CUSTOM PROJECT SASS
@@ -1746,6 +1746,12 @@ strong {
   @include u-bg("error");
 }
 
+.output-addition {
+  @extend %output-true;
+  @include u-bg("success-light");
+  @include u-text("ink");
+}
+
 .output-warning {
   @extend %output-true;
   @include u-bg("warning");
@@ -3386,17 +3392,21 @@ $do-dont-top-bar-width: 1;
   }
 
   a {
-    @include u-display("flex");
-    @include u-flex("align-center");
     @include u-margin-right(2);
     @include u-padding-y("05");
     @include u-text("primary-dark");
     @include u-text("bold");
     @include u-text("no-underline");
+    display: inline-block;
 
     &:visited {
       color: color("primary-dark");
     }
+  }
+
+  span {
+    @include u-display("flex");
+    @include u-flex("align-center");
   }
 
   .usa-icon {

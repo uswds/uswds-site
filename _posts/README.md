@@ -50,7 +50,7 @@ The [What's new page](https://designsystem.digital.gov/about/whats-new/) feed is
     1. Item two
     1. Item three
     ```
-    The content inside the triple-dashed lines (`---`) is the post's [front matter](https://jekyllrb.com/docs/front-matter/). You will need to customize the the front matter to define the post's title, author, and more. See the table in the [customizing post metadata](#customizing-post-metadata) section to see the available customization options. 
+    The content inside the triple-dashed lines (`---`) is the post's [front matter](https://jekyllrb.com/docs/front-matter/). You will need to customize the the front matter to define the post's title, author, and more. See the table and code example in the [customizing post metadata](#customizing-post-metadata) section to see the available customization options. 
    
    Everything below the triple-dashed lines is the content that will appear in the generated post page. Whenever possible, write post content in [Markdown](https://www.markdownguide.org/basic-syntax/). However, HTML is also supported. See the [post conventions](#post-conventions) section below for additional guidance.
 

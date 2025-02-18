@@ -2,7 +2,7 @@
   .whats-new__heading {
     @include u-margin-top(6);
     @include u-text("normal");
-    @include u-font("lang","md");
+    @include u-font("lang", "md");
     @include u-text("gray-70");
     scroll-margin-top: 3.5rem;
   }
@@ -16,7 +16,7 @@
 
     .usa-button,
     .usa-card__body p {
-      @include typeset('lang', 'xs', 3)
+      @include typeset("lang", "xs", 3);
     }
 
     .usa-card__container {
@@ -67,7 +67,7 @@
       background-image: url("../img/monthly_call_bg.png");
       background-position-y: center;
       background-size: 15rem;
-      display:flex;
+      display: flex;
       justify-content: center;
 
       @include at-media("tablet") {
@@ -150,7 +150,6 @@
     letter-spacing: normal;
     text-transform: none;
   }
-
 
   .post-title {
     @include u-measure(1);

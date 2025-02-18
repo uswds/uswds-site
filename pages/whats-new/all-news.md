@@ -1,5 +1,5 @@
 ---
-title: All news and updates
+title: All news and events
 layout: styleguide
 lead: The full listing of all USWDS product updates, articles, case studies and more.
 permalink: /about/whats-new/all/

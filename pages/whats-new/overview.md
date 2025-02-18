@@ -71,7 +71,7 @@ On this page
 
 <div class="bg-gray-5 padding-3 margin-top-4">
   <h2 class="whats-new__heading margin-top-0" id="latest-releases">Latest releases</h2>
-  <ul class="usa-card-group whats-new__card-group">
+  <ul class="usa-card-group whats-new-card-group">
     <li class="{{ product_grid_list_classes }}">
       {% include site-card.html
         subheading="Design system"
@@ -111,7 +111,7 @@ On this page
 {:.whats-new__heading}
 ## News and events
 {% for post in all_posts limit:3 %}
-  {% include post-preview.html heading="h3" date=false %}
+  {% include post-preview.html heading="h3" %}
 {% endfor %}
 
 <a class="usa-button usa-button--outline margin-top-105"
@@ -120,14 +120,14 @@ On this page
 </a>
 
 <div class="usa-card usa-card--flag usa-card--media-right whats-new-card--monthly-call">
-{% include site-card.html
-  subheading="Monthly call"
-  heading=monthly_call_heading
-  body=monthly_call.subtitle
-  image=monthly_call_image
-  linkText="See the latest USWDS monthly calls"
-  linkUrl=monthly_call_url
-%}
+  {% include site-card.html
+    subheading="Monthly call"
+    heading=monthly_call_heading
+    body=monthly_call.subtitle
+    image=monthly_call_image
+    linkText="See the latest USWDS monthly calls"
+    linkUrl=monthly_call_url
+  %}
 </div>
 
 {:.whats-new__heading}
@@ -136,7 +136,7 @@ On this page
 <div class="measure-6">
   {% include site-card-list.html
     cards=page.connect_cards
-    listClasses="whats-new__card-group"
+    listClasses="whats-new-card-group"
     listItemClasses="desktop-lg:grid-col-6"
     containerClasses="bg-gray-4"
     subheadingLevel="span"

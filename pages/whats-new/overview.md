@@ -64,19 +64,8 @@ in_page_nav_headings: "h2"
 {% capture monthly_call_image %} {{site.baseurl }}/img/uswds-logo/4c-lg-on-black.svg {%- endcapture %}
 {% capture monthly_call_url %} {{ site.baseurl }}/about/monthly-calls {%- endcapture %}
 
-<!-- Set consolidated changelog data -->
-{% assign changelogs = site.data.changelogs %}
-{% assign changelogsItems = "" | split: "," %}
-
-{% for file in changelogs %}
-  {% assign items = file[1].items %}
-  {% assign changelogItems = changelogItems | concat: items %}
-{% endfor %}
-
-{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,15 %}
-
 {:.whats-new__heading.margin-top-4}
-### On this page
+On this page
 
 {% include jump-links.html %}
 

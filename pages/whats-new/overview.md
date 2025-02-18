@@ -5,13 +5,6 @@ title: What’s new
 category: About
 lead: |
   Stay up to date on the latest U.S. Web Design System (USWDS) product launches, learn how to use the design system, and dive deeper into our monthly call topics.
-columns:
-  - title: New users
-    source: New Users
-  - title: Total users
-    source: Users
-  - title: Page views
-    source: Pageviews
 redirect_from:
   - /about/releases/
   - /about-our-work/
@@ -79,7 +72,7 @@ On this page
         body="The official U.S. design system, enabling the government to build fast, accessible, mobile-friendly websites."
         linkText=uswds_link_text
         linkUrl="https://github.com/uswds/uswds/releases"
-        subheadingLevel="span"
+        subheadingElement="span"
         linkClasses="padding-x-105"
       %}
     </li>
@@ -90,7 +83,7 @@ On this page
         body="A tool that makes it easy to customize and compile USWDS Sass into browser-readable CSS."
         linkText=uswds_compile_link_text
         linkUrl="https://github.com/uswds/uswds-compile/releases"
-        subheadingLevel="span"
+        subheadingElement="span"
         linkClasses="padding-x-105"
       %}
     </li>
@@ -101,7 +94,7 @@ On this page
         body="The official USWDS design kits in Sketch and Figma."
         linkText=uswds_design_kit_link_text
         linkUrl="https://www.design_kit.com/community/file/1440921849343185329"
-        subheadingLevel="span"
+        subheadingElement="span"
         linkClasses="padding-x-105"
       %}
     </li>
@@ -139,6 +132,6 @@ On this page
     listClasses="whats-new-card-group"
     listItemClasses="desktop-lg:grid-col-6"
     containerClasses="bg-gray-4"
-    subheadingLevel="span"
+    subheadingElement="span"
   %}
 </div>

@@ -8,22 +8,17 @@
   {% for card in include.cards %}
     <li class="usa-card site-component-card {{ include.listItemClasses }}">
       {% include site-card.html
+        containerClasses=include.containerClasses
         heading=card.heading
+        headingElement=include.headingElement
+        subheading=card.subheading
+        subheadingElement=include.subheadingElement
         image=card.image
         imageAlt=card.imageAlt
         body=card.body
         linkUrl=card.linkUrl
         linkText=card.linkText
-        subheading=card.subheading
-        containerClasses=include.containerClasses
-        bodyClasses=include.bodyClasses
-        headerClasses=include.headerClasses
-        subheadingClasses=include.subheadingClasses
-        mediaClasses=include.mediaClasses
-        imageClasses=include.imageClasses
         linkClasses=include.linkClasses
-        headingLevel=include.headingLevel
-        subheadingLevel=include.subheadingLevel
       %}
     </li>
   {%  endfor %}

@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Added the Aria-describedby value to combobox.
+    summary: Added the aria-describedby value to combobox.
     summaryAdditional:  Screen readers can take advantage of aria-describedby value included in combobox.
     isBreaking: false
     affectsJavascript: false

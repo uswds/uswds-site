@@ -11,7 +11,7 @@
   }
 </style>
 
-<ul class="site-checklist-jump-links {{ include.listClasses }}">
+<ul class="site-checklist-jump-links">
   {% for link in page.jump_links %}
     <li class="{{ include.listItemClasses }}">
       <a href="#{{ link.href | default: link.text | downcase | slugify }}">

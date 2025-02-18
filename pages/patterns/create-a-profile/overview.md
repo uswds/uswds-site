@@ -9,13 +9,14 @@ subnav:
   - href: /patterns/create-a-user-profile/contact-preferences/
   - href: /patterns/create-a-user-profile/date-of-birth/
   - href: /patterns/create-a-user-profile/email-address/
-  - href: /patterns/create-a-user-profile/gender-identity-and-sex/
+  - href: /patterns/create-a-user-profile/sex/
   - href: /patterns/create-a-user-profile/name/
   - href: /patterns/create-a-user-profile/phone-number/
-  - href: /patterns/create-a-user-profile/pronouns/
   - href: /patterns/create-a-user-profile/race-and-ethnicity/
   - href: /patterns/create-a-user-profile/social-security-number/
 in_page_nav_headings: false
+changelog:
+  key: patterns-user-profile
 ---
 
 ## Why this matters
@@ -91,10 +92,10 @@ User profiles are central to a person’s identity. A user profile may be integr
   data-meta="Visit gender identity and sex pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-user-profile/gender-identity-and-sex/">Select their <strong>gender identity and sex</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-user-profile/sex/">Select their <strong>sex</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to select their gender identity and sex.</p>
+        <p>Help users select their sex.</p>
       </div>
     </div>
   </div>
@@ -129,21 +130,6 @@ User profiles are central to a person’s identity. A user profile may be integr
     </div>
   </div>
   <div
-  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit pronouns pattern"
-  data-meta="Visit pronouns pattern">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-user-profile/pronouns/">Share their <strong>pronouns</strong></a></h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Help users to provide their pronouns to ensure they are addressed in the manner they prefer.</p>
-      </div>
-    </div>
-  </div>
-   <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"

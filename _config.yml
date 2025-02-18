@@ -1,7 +1,6 @@
 # Site settings
 title: U.S. Web Design System (USWDS)
 description: USWDS makes it easier to build accessible, mobile-friendly government websites.
-google_analytics_ua: UA-48605964-43
 uswds_version: 3.11.0
 uswds_compile_version: 1.2.1
 uswds_design_kit_version: 3.0

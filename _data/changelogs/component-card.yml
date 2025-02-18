@@ -2,6 +2,11 @@ title: Card
 type: component
 changelogURL:
 items:
+  - date: 2025-02-14
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 3101
+    githubRepo: uswds-site
   - date: 2024-10-04
     summary: Fixed a bug that caused the component to ignore the `$theme-card-font-family` setting.
     summaryAdditional: Confirm that your implementation of the card component displays with the expected font family.

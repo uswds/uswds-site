@@ -23,8 +23,8 @@ type: posts
 subnav:
   - text: All news and updates
     href: /about/whats-new/all/
-changelog:
-  key: about-whats-new
+  - text: USWDS changelog
+    href: /about/whats-new/changelog/
 cards:
   - heading: "Release notes"
     body: "Find summaries of each USWDS update on our GitHub releases page. Release notes explain bug fixes, new features, and other changes."
@@ -37,18 +37,7 @@ cards:
 in_page_nav_headings: "h2"
 ---
 
-{% include site-card-list.html
-  cards=page.cards
-  listClasses="margin-top-6"
-  listItemClasses="desktop:grid-col-6"
-%}
-
-
-{: .site-component-section-title #latest-changes }
-## Latest changes to USWDS
-
-Meaningful code, guidance, and content updates across the design system are listed in the following table:
-
+<!-- Set consolidated changelog data -->
 {% assign changelogs = site.data.changelogs %}
 {% assign changelogsItems = "" | split: "," %}
 
@@ -57,9 +46,15 @@ Meaningful code, guidance, and content updates across the design system are list
   {% assign changelogItems = changelogItems | concat: items %}
 {% endfor %}
 
-{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,150 %}
+{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,15 %}
 
+{:.whats-new__heading}
+## Changelog
 
-{% include consolidated-changelog-table.html %}
+Latest code, guidance, and content updates across the design system.
 
-<!-- <a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all USWDS news and updates</a> -->
+<div class="margin-top-2">
+  {% include consolidated-changelog-table.html %}
+</div>
+
+<a class="usa-button" href="{{ site.baseurl }}/about/whats-new/changelog/">View all changelog entries</a>

@@ -7,7 +7,7 @@ lead: How USWDS components mature from discussions and proposals to stable produ
 type: docs
 subnav:
   - text: Latest updates
-    href: '#changelog'
+    href: "#changelog"
 changelog:
   key: docs-component-lifecycle
 ---
@@ -82,5 +82,7 @@ There are opportunities for community contribution at each stage of the componen
 
         </div>
       </li>
-  {% endfor %}
+
+{% endfor %}
+
 </ol>

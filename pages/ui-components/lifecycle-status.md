@@ -7,7 +7,7 @@ lead: Current lifecycle information for every component we're tracking in the de
 type: docs
 subnav:
   - text: Latest updates
-    href: '#changelog'
+    href: "#changelog"
 changelog:
   key: docs-component-status
 in_page_nav_headings: false
@@ -173,7 +173,7 @@ Don’t see the component you are looking for? [Start a discussion about it](htt
         {% endif %}
       </tr>
     {% endfor %}
+
   </tbody>
 </table>
 <!-- End desktop-only status table -->
-

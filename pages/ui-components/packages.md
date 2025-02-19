@@ -7,20 +7,21 @@ lead: USWDS component packages allow you to import only the components your proj
 type: docs
 subnav:
   - text: Introducing packages
-    href: '#introducing-packages'
+    href: "#introducing-packages"
   - text: Included packages
-    href: '#included-packages'
+    href: "#included-packages"
   - text: What's in a package
-    href: '#whats-in-a-package'
+    href: "#whats-in-a-package"
   - text: Package Sass requirements
-    href: '#package-sass-requirements-load-paths'
+    href: "#package-sass-requirements-load-paths"
   - text: Latest updates
-    href: '#changelog'
+    href: "#changelog"
 changelog:
   key: docs-packages
 ---
 
 ## Introducing packages
+
 Few USWDS projects need to use the entire design system. Include only the code your project needs with USWDS packages.
 
 **Packages** are discrete units of functionality. Most USWDS packages are components (like [`usa-search`]({{ site.baseurl }}/components/search), [`usa-banner`]({{ site.baseurl }}/components/banner), or [`usa-accordion`]({{ site.baseurl }}/components/accordion)), but packages can also include items like fonts (`uswds-fonts`), bundles of components (`uswds-form-controls`), or simply USWDS mixins, functions, and tokens (`uswds-core`).
@@ -32,6 +33,7 @@ Instead of including everything the design system offers by using the `uswds` pa
 ```
 
 You can include only the code you need, with something like:
+
 ```sass
 @forward "usa-accordion";
 @forward "usa-button";
@@ -46,6 +48,7 @@ Using packages helps reduce unused code, reduces the size of the final compiled 
 With packages and Sass module syntax in USWDS 3.0, you can be confident that packages that share code dependencies will only include those dependencies once in a project.
 
 ### The uswds-core package
+
 The `uswds-core` package is a new package in USWDS 3.0. `uswds-core` is the engine of the design system, and includes all the functions, mixins, placeholders, tokens, and fonts necessary to write USWDS Sass.
 
 Any custom Sass you write needs to `@use "uswds-core"` at the top of the file to load the USWDS design language. We suggest using `@use "uswds-core" as *` to add USWDS to the global namespace. For example:
@@ -113,6 +116,7 @@ The `/[package]/_index.scss` file is the Sass entry point for the package styles
 ```
 
 ### Importing package source only
+
 Developers can save some compile time by bypassing the package Sass entry point, and forwarding straight to the package source. Only `usa-` prefixed packages have their own source files available to this technique.
 
 Using this technique speeds up compiles, but requires that developers forward any package dependency manually. For instance, let's imagine a project with the following packages in its Sass entry point:
@@ -144,19 +148,19 @@ Using only package source would result in the following:
 If you suffer from slow compiles, it may be worth experimenting with source forwarding.
 
 ## Package Sass requirements: Load paths
+
 Using USWDS 3.0 and packages requires compiling your Sass with load paths. Load paths tell your Sass compiler where to look for USWDS packages. Any compiler needs to include a load path to the `@uswds/uswds/packages` directory:
 
 ```js
-"./node_modules/@uswds/uswds/packages"
+"./node_modules/@uswds/uswds/packages";
 ```
 
 In a gulpfile, use `includePaths` in your `sass()` function.
+
 ```js
-  sass({
-    includePaths: [
-      "./node_modules/@uswds/uswds/packages",
-    ],
-  })
+sass({
+  includePaths: ["./node_modules/@uswds/uswds/packages"],
+});
 ```
 
 In webpack, include `includePaths` within the sassOptions of your Sass loader:
@@ -173,4 +177,3 @@ options: {
 ```
 
 Using [`uswds-compile`](https://github.com/uswds/uswds-compile) sets load paths automatically and can be a good way to build a reliable compile workflow into your project.
-

@@ -148,6 +148,7 @@ workflows:
           requires:
             - install_ruby_deps
             - install_node_deps
+            - Linting and formatting
       - test_build:
           requires:
             - build

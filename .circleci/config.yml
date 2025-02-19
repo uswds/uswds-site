@@ -50,6 +50,19 @@ jobs:
           root: ~/project
           paths:
             - "node_modules"
+  lint_and_format:
+    executor: my-executor
+    parallelism: 2
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: lint
+          command: npm run lint
+      - run:
+          name: format
+          command: npm run prettier:md
   build:
     executor: my-executor
     steps:
@@ -66,9 +79,6 @@ jobs:
       - run:
           name: Build site assets
           command: npm run build:all-assets
-      - run:
-          name: Check formatting
-          command: npm run prettier:check
       - run:
           name: Build static site
           command: |
@@ -131,6 +141,10 @@ workflows:
     jobs:
       - install_ruby_deps
       - install_node_deps
+      - lint_and_format:
+          name: Linting and formatting
+          requires:
+            - install_node_deps
       - build:
           requires:
             - install_ruby_deps

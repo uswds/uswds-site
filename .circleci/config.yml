@@ -52,7 +52,6 @@ jobs:
             - "node_modules"
   lint_and_format:
     executor: my-executor
-    parallelism: 2
     steps:
       - checkout
       - attach_workspace:
@@ -149,6 +148,7 @@ workflows:
           requires:
             - install_ruby_deps
             - install_node_deps
+            - lint_and_format
       - test_build:
           requires:
             - build

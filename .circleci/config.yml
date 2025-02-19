@@ -141,7 +141,6 @@ workflows:
       - install_ruby_deps
       - install_node_deps
       - lint_and_format:
-          name: Linting and formatting
           requires:
             - install_node_deps
       - build:

@@ -3,8 +3,8 @@ title: Introducing Fractal and Federalist
 author: Shawn Allen
 layout: post
 tags:
-- engineering
-- testing
+  - engineering
+  - testing
 excerpt: >
   We've added two powerful, new tools to our development workflow.
 image: /img/updates/fractal_v1.0.0.png
@@ -34,26 +34,26 @@ formats it understands, and it will generate a web site automatically.
 
 ### Why Fractal?
 
-* **It's [open source]**, so we didn't have to pay for it (which can be
+- **It's [open source]**, so we didn't have to pay for it (which can be
   time-consuming and difficult to authorize in government), and we can easily
   modify it to suit our needs.
 
-* **It's easy to use.** Fractal supports some of the same, user-friendly file
+- **It's easy to use.** Fractal supports some of the same, user-friendly file
   formats as Jekyll, such as [Markdown] and [YAML] (both described on Wikipedia); and it comes with a handy
   development server that reloads the site automatically whenever you change a
   file.
 
-* It generates **standalone HTML previews of each component**, which we can use
+- It generates **standalone HTML previews of each component**, which we can use
   for [accessibility][accessibility testing] (see W3C), [cross-browser] (see Smashing Magazine), [performance]({{
   site.baseurl }}/performance/), and [visual regression] testing.
 
-* **It uses or supports many of the technologies we use already** (or intend to
+- **It uses or supports many of the technologies we use already** (or intend to
   use in the future), such as [Node.js][] (the JavaScript environment in which
   we write, build, and publish our code) and [Nunjucks] templates --- which are
   compatible with a number of other template languages, including [Jinja2] for
   Python and [Twig], the PHP templating engine [used by Drupal][Drupal twig].
 
-* Fractal offers a **[customizable theme engine]**, so we can make it look and
+- Fractal offers a **[customizable theme engine]**, so we can make it look and
   feel like the Standards.
 
 ### Thinking in components
@@ -95,7 +95,6 @@ window.
 **But wait, there's more!** Fractal is an invaluable tool for those of us
 developing the Standards on our own computers, but what if we put it... _on the
 cloud?_ That's where Federalist comes in.
-
 
 ## Federalist
 
@@ -185,7 +184,6 @@ If you have a suggestion, see something amiss, or just want to say hi, feel
 free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 [email our mailing list](mailto:uswebdesignstandards@gsa.gov), or join our
 [public Slack channel](https://chat.18f.gov/) via Google Form.
-
 
 [1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre
 [Drupal twig]: https://www.drupal.org/docs/8/theming/twig

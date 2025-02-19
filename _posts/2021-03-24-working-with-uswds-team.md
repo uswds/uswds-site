@@ -1,7 +1,7 @@
 ---
 title: Working with the U.S. Web Design System team
 tags:
-- updates
+  - updates
 category: About
 author: Jona Decker
 image: /img/2021-next-blog/post-3-social-share.jpg

@@ -1,7 +1,7 @@
 ---
 title: "What’s next for the U.S. Web Design System"
 tags:
-- updates
+  - updates
 category: About
 author: Arden Klemmer, Natalie Kurz, Norah Maki, and Kim Schulke
 image: /img/2021-next-blog/post-2-social-share.jpg
@@ -10,7 +10,6 @@ expiration_date: 2024-04-15
 ---
 
 Today we’re releasing a new and exciting report and strategy that outlines [what’s next for the U.S. Web Design System (USWDS)]({{ site.baseurl }}/next/) and our community.
-
 
 <style type="text/css" scoped>
 
@@ -60,10 +59,7 @@ Their insights and observations also brought into focus a set of near-term oppor
 >
 > — From a digital modernization thought-leader during interviews
 
-
 Though agencies start with different goals and capabilities, we discovered they follow a common journey with similar needs when it comes to adopting and using the design system.
-
-
 
 <ul class="usa-icon-list site-icon-list usa-icon-list--size-lg margin-top-5 margin-bottom-4">
   <li class="usa-icon-list__item margin-bottom-2">

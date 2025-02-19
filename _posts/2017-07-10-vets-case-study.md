@@ -1,12 +1,13 @@
 ---
 title: How the Vets.gov team uses the U.S. Web Design Standards
 tags:
-- case study
-- web design standards
-- design
+  - case study
+  - web design standards
+  - design
 category: About
 expiration_date: 2024-04-15
 ---
+
 The U.S. Web Design Standards are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this fifth post in our series, we met with the team at [Vets.gov](https://vets.gov) to talk about their use of the Standards.
 
 **USWDS:** How did you hear about the U.S. Web Design Standards?
@@ -33,7 +34,7 @@ The Standards allow you to concentrate on the things you need to do - and allow 
 
 The Standards have also been extensively tested with users to optimize for the best user experience, which makes our work easier in leveraging what they’ve discovered. One example of this is when we were building forms early on, we knew the Standards had an indicator for a ‘required field’, but we went with the asterisk as the indicator, which the agency was already using on its forms. But, when we did user testing, several testers were confused by the asterisk. So we moved back to the Standards’ indicator. It showed the benefit of the research the Standards team had done and that all the design decisions had been tested with users beforehand. We can feel confident that those decisions were the best decisions to make.
 
-**USWDS:** Is there anything the Standards  team could do to help you in your  efforts?
+**USWDS:** Is there anything the Standards team could do to help you in your efforts?
 
 **Vets.gov team**: No, we’ve found the team to be really responsive when we’ve added a PR (pull request) or issue in GitHub, which has been really helpful. So, it’s just on us to put the PR, or changes, in when we find things that need changing.
 

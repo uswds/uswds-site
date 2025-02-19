@@ -9,5 +9,5 @@ in_page_nav_headings: false
 ---
 
 {% for post in site.posts %}
-  {% include post-preview.html post=post %}
+{% include post-preview.html post=post %}
 {% endfor %}

@@ -1,9 +1,9 @@
 ---
 title: "WordPress Theme ‘Benjamin’ created using USWDS"
 tags:
-- case study
-- web design system
-- design
+  - case study
+  - web design system
+  - design
 category: About
 excerpt:
 expiration_date: 2024-04-15
@@ -19,7 +19,7 @@ Jennings is a full stack WordPress developer, who worked on the former GSA Sites
 
 **USWDS:** Tell us about the Benjamin theme (and great name, by the way).
 
-**Kyle Jennings:**  Benjamin is a flexible WordPress theme built using the U.S. Web Design System. It allows users to change the layout of content of about 10 different templates, and change basic color schemes to meet their specific tastes. It also has a companion plugin, called Franklin, which allows people to inject components as short codes, digital search support, and video headers. I built it in the hopes of growing WordPress usage in the federal sector and presented it at the 2017 DC WordCamp conference.
+**Kyle Jennings:** Benjamin is a flexible WordPress theme built using the U.S. Web Design System. It allows users to change the layout of content of about 10 different templates, and change basic color schemes to meet their specific tastes. It also has a companion plugin, called Franklin, which allows people to inject components as short codes, digital search support, and video headers. I built it in the hopes of growing WordPress usage in the federal sector and presented it at the 2017 DC WordCamp conference.
 
 It is very dynamic and people can add as many components to a page as they want.
 
@@ -27,7 +27,7 @@ It is very dynamic and people can add as many components to a page as they want.
 
 **Kyle Jennings:** It’s difficult to know for sure, because GitHub doesn’t give you that information, but I’ve had a couple of people favoring it on GitHub and pinging me for features. I’ve also heard from a few people at GSA who are getting ready to use the theme.
 
-It received lots of  positive feedback from people at the IRS and State Department, after presenting it at the 2017 DC WordCamp,.
+It received lots of positive feedback from people at the IRS and State Department, after presenting it at the 2017 DC WordCamp,.
 
 **USWDS:** Did you run into any issues with the Web Design System when creating your theme?
 

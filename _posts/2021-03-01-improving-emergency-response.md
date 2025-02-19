@@ -1,7 +1,7 @@
 ---
 title: Improving how the design system supports emergency response efforts
 tags:
-- updates
+  - updates
 category: About
 author: Ben Judy, Natalie Kurz, and Norah Maki
 image: /img/2021-next-blog/post-1-social-share.jpg
@@ -12,6 +12,7 @@ expiration_date: 2024-04-15
 We recently conducted research with federal partners to better understand the challenges agencies face in dealing with emergency response situations like COVID-19, and how the design system can better support them in the future.
 
 {:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base-dark}
+
 > “We keep telling agencies to do all this stuff and fix your websites. But there’s never any money for it. Particularly in the digital age of COVID-19, how can anything be more important than the presence of your website?”
 >
 > — From a thought-leader during interviews
@@ -26,13 +27,11 @@ Our primary research goals were to:
 
 - **Develop new USWDS components** to support agency emergency response efforts
 
-
 Taking action on what we learned from the research, we created and updated several design system components and templates to address the common needs agencies faced. These updates are included in [Release 2.10.0](https://github.com/uswds/uswds/releases/tag/v2.10.0) and you can learn more about them in our [December 2020 monthly call](https://www.youtube.com/watch?v=OhtiTfKAIRw&feature=emb_logo) (available on YouTube).
 
 ## Research themes and insights
 
 We took quotes and highlights from the interviews to create data points. Using an [affinity map](https://guides.18f.gov/methods/decide/affinity-mapping/) to group similar data points together, we assigned an overarching theme to each group and identified high-level insights that focused the challenges into more actionable solutions.
-
 
 <div class="margin-top-4 margin-bottom-5">
   <img src="{{ site.baseurl }}/img/2021-next-blog/insights-themes-data-points.jpg" alt="Synthesis process: We captured data and first-hand accounts from interviews, then grouped these by theme to uncover insights and opportunities." class="width-full maxw-full">
@@ -42,6 +41,7 @@ We took quotes and highlights from the interviews to create data points. Using a
 We discovered **five common agency needs** about how the design system can better support emergency response within federal agencies. Using these insights as a starting point for solutions, we ideated and identified new components and templates to add to the design system, as well as ways to improve some existing components.
 
 ### 1 - Focus on the user perspective
+
 The public needs to be able to easily understand and act on information published on agency websites, especially during an emergency. Many agencies struggle to put the focus on the right information for customer needs when they have a lot of important and valuable information to get across.
 
 #### Supporting themes:
@@ -62,9 +62,11 @@ The public needs to be able to easily understand and act on information publishe
 **[Summary box component]({{ site.baseurl }}/components/summary-box)** (new): A summary box highlights key information from a longer page or displays next steps.
 
 ### 2 - Prioritize information
+
 Communications can get chaotic when making frequent updates or coordinating several emergencies at once. Though many agencies use alert banners, they’re often inconsistent or try to convey too much information at once.
 
 {:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base-dark}
+
 > “People can get alert banner happy during a response. At one point we had two banners with three or four links. This is important and new and urgent, but it can be a lot.”
 >
 > — From a manager during interviews
@@ -91,6 +93,7 @@ Communications can get chaotic when making frequent updates or coordinating seve
 Agency websites must gather information from multiple channels, and it can be challenging to determine how to incorporate and organize related news, press releases, and articles without it getting lost or becoming overwhelming.
 
 {:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base-dark}
+
 > “How can we present news in a way that is not clunky? We’ve tried to slim it down but it's become a challenge. We have all these different partners and need a UI to support that—where the news is coming from, what type of news is it? That was a design challenge for us and is still a gap we have.”
 >
 > — From a manager during interviews
@@ -112,7 +115,8 @@ Agency websites must gather information from multiple channels, and it can be ch
 Standardizing common features that are used in an emergency helps to lessen the burden of implementation and reduces friction by establishing consistency across agencies.
 
 **Supporting theme:**
--   Templatizing makes components easier to use and faster to implement
+
+- Templatizing makes components easier to use and faster to implement
 
 **Component created:**
 
@@ -123,12 +127,14 @@ Standardizing common features that are used in an emergency helps to lessen the 
 Mobile devices often become a primary source of connection in an emergency. Agencies need a better way of meeting customer needs by helping them more easily complete actions and digest complex information quickly from a smaller screen
 
 {:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base-dark}
+
 > “One big surprise we found during the COVID response was that even providers and first responders are using our website more on mobile than on desktop.”
 >
 > — From a designer during interviews
 
 **Supporting theme:**
--   Need to think more holistically about digital experience
+
+- Need to think more holistically about digital experience
 
 #### Components created:
 

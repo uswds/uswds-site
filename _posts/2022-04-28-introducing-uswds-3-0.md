@@ -1,7 +1,7 @@
 ---
 title: Introducing USWDS 3.0
 tags:
-- updates
+  - updates
 category: About
 author: Dan O. Williams, James Mejia, Amy Leadem, Bonnie Cameron, Charlie Mahoney
 image: /img/introducing-uswds-3/introducing-uswds-3.jpg
@@ -14,7 +14,7 @@ excerpt: USWDS 3.0 is an important major design system update that's easy to app
 
 USWDS 3.0 is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS. Where USWDS 2.0 introduced a new design language and changed the way we built our components from the ground up, USWDS 3.0 adds important incremental improvements without fundamentally changing how the design system works.
 
-For most USWDS 2 projects, migrating to USWDS 3.0 should only require changing  a few lines of project code. We've developed this new version to be a simple, straightforward migration. We want teams to start using USWDS 3.0, and we'll be there to help you do it.
+For most USWDS 2 projects, migrating to USWDS 3.0 should only require changing a few lines of project code. We've developed this new version to be a simple, straightforward migration. We want teams to start using USWDS 3.0, and we'll be there to help you do it.
 
 For migration assistance, start with our [USWDS 3.0 Migration Guide]({{ site.baseurl }}/documentation/migration) →
 
@@ -26,6 +26,7 @@ If you aren't a member of the USWDS Public Slack, [sign up here](https://chat.18
 Starting in USWDS 3.0, we're publishing our npm package to an `@uswds` organization scope. So now, when installing USWDS, use `npm install @uswds/uswds --save`.
 
 ## What's new in USWDS 3.0?
+
 USWDS 3.0 takes a modular, component-centered approach to the design system. We've rebuilt our codebase with a component focus so teams can more effectively integrate the design system incrementally and use only the USWDS components needed in their projects.
 
 ### Update to modern Sass syntax

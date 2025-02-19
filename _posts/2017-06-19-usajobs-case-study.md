@@ -1,12 +1,13 @@
 ---
 title: How the USAJOBS team uses the U.S. Web Design Standards
 tags:
-- case study
-- web design standards
-- design
+  - case study
+  - web design standards
+  - design
 category: About
 expiration_date: 2024-04-15
 ---
+
 The U.S. Web Design Standards team continues to sit down with various agencies who are using the Standards. In this fourth post in our series, we met with the team at the [Lab@OPM](https://lab.opm.gov/) and learned how they used the Standards to refresh [USAJOBS](https://www.usajobs.gov/).
 
 **USWDS:** How did your team find out about the Web Design Standards?
@@ -46,7 +47,6 @@ At one point it wasn’t clear how to contribute back to the project. The barrie
 Also, start small. If you can only adopt the typeface or color palette, go for it. Do you really need a special typeface? If not, try it out. See if it helps your design discussions move forward and move a bit faster.
 
 Apply the Standards, see if people like them better. Do a usability test. Pick the next thing and move on to that.
-
 
 ---
 

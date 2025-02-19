@@ -1,9 +1,9 @@
 ---
 title: How the National Science Foundation started its Seed Fund site with USWDS
 tags:
-- case study
-- web design system
-- design
+  - case study
+  - web design system
+  - design
 category: About
 excerpt: For our 11th post in the series, we talked with Scott Weber, front-end developer, who worked on America’s Seed Fund site for the National Science Foundation (NSF). The site was created for people who want to get federal grant funding for their science or technology projects.
 expiration_date: 2024-04-15
@@ -33,7 +33,7 @@ Overall the USWDS shortened the amount of time it took to implement the site, fo
 
 **USWDS:** What specific components did you use?
 
-**Scott Weber:**  We used the header (and modified it quite a bit), footer, grid system, and accordion components.
+**Scott Weber:** We used the header (and modified it quite a bit), footer, grid system, and accordion components.
 
 **USWDS:** Is there anything the USWDS team could do, to help you in your efforts?
 

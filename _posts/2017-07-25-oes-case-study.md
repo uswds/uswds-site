@@ -1,17 +1,18 @@
 ---
 title: A search for efficiency led the Evaluation Sciences team to the U.S. Web Design Standards
 tags:
-- case study
-- web design standards
-- design
+  - case study
+  - web design standards
+  - design
 category: About
 expiration_date: 2024-04-15
 ---
-The [U.S. Web Design Standards](https://designsystem.digital.gov/) are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this seventh  post in our series, we sat down with Maureen Earley, program management specialist with the Office of Evaluation Sciences (OES), an office within the General Services Administration, to talk about her team’s use of the Standards on [oes.gsa.gov](https://oes.gsa.gov). The OES brings diverse scientific experts onto their team for year-long rotations, where they work with federal agencies to implement and rigorously test changes made to government programs to evaluate whether or not they increase the ability of agencies to achieve their missions with greater success and efficiency.
+
+The [U.S. Web Design Standards](https://designsystem.digital.gov/) are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this seventh post in our series, we sat down with Maureen Earley, program management specialist with the Office of Evaluation Sciences (OES), an office within the General Services Administration, to talk about her team’s use of the Standards on [oes.gsa.gov](https://oes.gsa.gov). The OES brings diverse scientific experts onto their team for year-long rotations, where they work with federal agencies to implement and rigorously test changes made to government programs to evaluate whether or not they increase the ability of agencies to achieve their missions with greater success and efficiency.
 
 **USWDS:** How did you hear about the U.S. Web Design Standards?
 
-**Maureen Earley:**  Members of our team  worked with the 18F Federal Front Door team that was involved in creating the Standards. The Office of Evaluation Sciences is a champion of the Standards because we’re committed to making government easier for people to interact with. We also wanted to make sure our own website was an ambassador of the Standards and all that they stand for.
+**Maureen Earley:** Members of our team worked with the 18F Federal Front Door team that was involved in creating the Standards. The Office of Evaluation Sciences is a champion of the Standards because we’re committed to making government easier for people to interact with. We also wanted to make sure our own website was an ambassador of the Standards and all that they stand for.
 
 **USWDS:** Why did you decide to use the Standards?
 
@@ -31,7 +32,7 @@ When we talk with other offices within government who want to redesign their sit
 
 **USWDS:** Is there anything the Standards team could do to help you in your efforts?
 
-**Maureen Earley:** I was unaware of the public Slack channel, but I want to join because of my personal interest in design.  Creating buy-in for the Standards within the government community is really important.
+**Maureen Earley:** I was unaware of the public Slack channel, but I want to join because of my personal interest in design. Creating buy-in for the Standards within the government community is really important.
 
 **USWDS:** Advice for other agencies?
 

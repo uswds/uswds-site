@@ -1,12 +1,13 @@
 ---
 title: How the FEC.gov team uses the Web Design Standards
 tags:
-- case study
-- web design standards
-- design
+  - case study
+  - web design standards
+  - design
 category: About
 expiration_date: 2024-04-15
 ---
+
 The U.S. Web Design Standards are currently being used on hundreds of government
 sites, with an audience of more than 59 million monthly users. In this eighth
 post in our series, we met with Jennifer Thibault, visual designer and

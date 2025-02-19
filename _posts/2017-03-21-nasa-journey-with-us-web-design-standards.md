@@ -1,15 +1,16 @@
 ---
 title: "NASA’s journey with the Standards"
 authors:
-- julia
+  - julia
 tags:
-- case study
-- design
-- nasa
+  - case study
+  - design
+  - nasa
 excerpt: "The U.S. Web Design Standards are currently implemented on hundreds of government sites, with an audience of more than 26 million monthly users, and they’ve  been recommended by the Office of Management and Budget for all government agencies. We chatted with Brandon Ruffridge, Senior Software Developer at NASA’s Glenn Research Center, to talk about his team’s use of the U.S. Web Design Standards."
 category: About
 expiration_date: 2024-04-15
 ---
+
 [The U.S. Web Design Standards](https://designsystem.digital.gov/) were created by the government, for the government. They’re currently implemented on hundreds of government sites, with an audience of more than 26 million monthly users. They’ve also been recommended by the [Office of Management and Budget](https://policy.cio.gov/web-policy/look/) for all government agencies to ensure a consistent look and feel of their public-facing digital services. Over the coming months, the team will be doing a series of blog posts to share information about the how different agencies are using the Standards. We chatted with Brandon Ruffridge, Senior Software Developer at NASA’s Glenn Research Center, to talk about his team’s use of the U.S. Web Design Standards.
 
 **USWDS:** What motivated you to use the U.S. Web Design Standards?

@@ -93,7 +93,7 @@ On this page
         heading="USWDS for designers"
         body="The official USWDS design kits in Sketch and Figma."
         linkText=uswds_design_kit_link_text
-        linkUrl="https://www.design_kit.com/community/file/1440921849343185329"
+        linkUrl="https://www.figma.com/community/file/1440921849343185329"
         subheadingElement="span"
         linkClasses="padding-x-105"
       %}

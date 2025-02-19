@@ -5,7 +5,7 @@ items:
   - date: 2025-02-14
     page: Card
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 3101
     githubRepo: uswds-site
   - date: 2024-10-04

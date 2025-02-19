@@ -39,7 +39,6 @@ in_page_nav_headings: "h2"
 
 <!-- Set consolidated changelog data -->
 {% assign changelogs = site.data.changelogs %}
-{% assign changelogsItems = "" | split: "," %}
 
 {% for file in changelogs %}
   {% assign items = file[1].items %}

@@ -9,7 +9,6 @@ in_page_nav_headings: false
 ---
 
 {% assign changelogs = site.data.changelogs %}
-{% assign changelogsItems = "" | split: "," %}
 
 {% for file in changelogs %}
   {% assign items = file[1].items %}

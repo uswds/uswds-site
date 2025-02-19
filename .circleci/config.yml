@@ -24,9 +24,6 @@ jobs:
             gem install bundler
             bundle config set --local path 'vendor/bundle'
             bundle install --jobs=4 --retry=3
-      - run:
-          name: Install scss_lint
-          command: gem install scss_lint
       - save_cache:
           key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:

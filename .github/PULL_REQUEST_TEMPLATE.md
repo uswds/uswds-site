@@ -27,6 +27,7 @@ eg: "USWDS-Site - Settings: Add theme settings"
 # Summary
 
 _Provide a one or two sentence summary of the update that can be used in the changelog._
+
 <!--
 A successful summary is written in the past tense and includes:
 **A benefit statement.** A description of the update.
@@ -36,6 +37,7 @@ See [USWDS release notes](https://github.com/uswds/uswds/releases) for examples.
 ## Related issue
 
 Closes #_[issue_no]_
+
 <!--
 Every pull request should resolve an open issue.
 If no open issue exists, you can open one here:
@@ -45,11 +47,13 @@ https://github.com/uswds/uswds-site/issues/new/choose.
 ## Preview link
 
 Preview link:
+
 <!-- If available, provide a link to a demo of the solution in action. -->
 
 ## Problem statement
 
 _Summarize the problem this PR solves in a clear and concise statement._
+
 <!--
 A successful problem statement conveys:
 1. The desired state,
@@ -61,6 +65,7 @@ A successful problem statement conveys:
 ## Solution
 
 _Provide a summary of the solution this PR offers._
+
 <!--
 It can be helpful if we understand:
 1. What the solution is,
@@ -76,6 +81,7 @@ _For complex PRs, create a list of the significant updates made._
 ## Testing and review
 
 _Share recommended methods for reviewing this change._
+
 <!--
 1. Describe the tests that you ran to verify your changes,
 2. Provide instructions to reproduce these tests, and

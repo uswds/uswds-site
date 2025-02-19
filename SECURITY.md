@@ -8,11 +8,12 @@ Software developed by the U.S. General Services Administration (GSA)
 is subject to the [GSA Vulnerability Disclosure Policy](https://gsa.gov/vulnerability-disclosure-policy).
 
 Please consult our policy for:
-* How to submit a report if you believe you have discovered a vulnerability.
-* GSA's coordinated disclosure policy.
-* Information on how you may conduct security research on GSA developed
+
+- How to submit a report if you believe you have discovered a vulnerability.
+- GSA's coordinated disclosure policy.
+- Information on how you may conduct security research on GSA developed
   software and systems.
-* Important legal and policy guidelines.
+- Important legal and policy guidelines.
 
 ## Supported Versions
 

@@ -21,12 +21,12 @@ You will need to have the following installed on your machine before following t
 1. Node (see [.nvmrc](https://github.com/uswds/uswds-site/blob/main/.nvmrc) or [.tool-versions](https://github.com/uswds/uswds-site/blob/main/.tool-versions) for version number), [Installation guides](https://nodejs.org/en/download)
 1. Bundler (see [.bundler-version](https://github.com/uswds/uswds-site/blob/main/.bundler-version) for version number), [Installation guides](https://bundler.io/guides/using_bundler_in_applications.html#getting-started---installing-bundler-and-bundle-init)
 1. Chrome v59 or higher (v60 if on Windows)
-1. Python v2.7* (For node-gyp dependency)
+1. Python v2.7\* (For node-gyp dependency)
 
 #### ⚠️ Potential issues and workarounds
+
 - If you're running into node-gyp issues on `npm install` you'll need to install python v2.7, which is the recommended version as of `node-gyp@3.8.0`. Once installed you can reference it via `npm config set python /usr/bin/python2.7` or wherever you have installed. You can find that with `whereis python` command.
 - Ubuntu 20.04 users might run into: `bundler: failed to load command: jekyll (/usr/share/rvm/gems/ruby-3.0.2/bin/jekyll)`. Install ffi with the following flag to work around it `gem install ffi -- --disable-system-libffi`.
-
 
 ### Building the documentation with gulp
 
@@ -72,9 +72,9 @@ Sometimes you will want to use the latest version of the `uswds` repo. Follow th
 1. Run `npm link` in the _root level_ of the `uswds` directory on your local machine.
 1. Run `npm link uswds` in the _root level_ of the `uswds-site` directory on your local machine.
 1. Run `npm start` in the `uswds` directory, and make a note of the `Local URL` that is being served.
-2. In another terminal window, set the `LIBRARY_BASE_URL` env var to the running instance of `uswds`. In your terminal window in the `uswds-site` directory, enter `export LIBRARY_BASE_URL="http://127.0.0.1:6006"` (or the `Local URL` noted above).
-3. In the `uswds-site` window, run `npm run serve` in the `uswds-site` directory to start the Jekyll server.
-4. Run `npm run watch` in the `uswds-site` directory to have changes to that repo automatically built and compiled. Note: `uswds-site` will _not_ automatically rebuild when there are changes in `uswds`, you'll need to trigger a site rebuild manually to reflect changes in the `uswds` repo.
+1. In another terminal window, set the `LIBRARY_BASE_URL` env var to the running instance of `uswds`. In your terminal window in the `uswds-site` directory, enter `export LIBRARY_BASE_URL="http://127.0.0.1:6006"` (or the `Local URL` noted above).
+1. In the `uswds-site` window, run `npm run serve` in the `uswds-site` directory to start the Jekyll server.
+1. Run `npm run watch` in the `uswds-site` directory to have changes to that repo automatically built and compiled. Note: `uswds-site` will _not_ automatically rebuild when there are changes in `uswds`, you'll need to trigger a site rebuild manually to reflect changes in the `uswds` repo.
 
 You are now linked and using the local version of USWDS. To unlink this version, type `npm unlink uswds` from the _root level_ of the `uswds` directory.
 

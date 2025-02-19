@@ -17,11 +17,11 @@
 | affectsJavascript    | Change affects component JS                                | yes      | boolean    | true, false                                                 | yes       |
 | affectsStyles        | Change affects component styles, appearance, or settings   | yes      | boolean    | true, false                                                 | yes       |
 | affectsContent       | Change affects content in the component itself             | yes      | boolean    | true, false                                                 | yes       |
-| affectsPage Content  | Change affects page content                                | yes      | boolean    | true, false                                                 | yes       |
+| affectsPageContent   | Change affects page content                                | yes      | boolean    | true, false                                                 | yes       |
 | affectsGuidance      | Change affects component guidance                          | yes      | boolean    | true, false                                                 | yes       |
 | affectsAssets        | Change affects assets related to a component, like images  | yes      | boolean    | true, false                                                 | yes       |
 | affectsSettings      | Change affects settings                                    | yes      | boolean    | true, false                                                 | yes       |
-| affectsSettings      | Change affects links                                       | yes      | boolean    | true, false                                                 | yes       |
+| affectsLinks         | Change affects links                                       | yes      | boolean    | true, false                                                 | yes       |
 | githubPr             | Pull request number                                        | no       | number     | N/A                                                         | yes       |
 | githubRepo           | Pull request repo name                                     | no       | string     | uswds, uswds-site                                           | yes       |
 | versionUswds         | USWDS Version Number                                       | no       | number     | N/A                                                         | yes       |

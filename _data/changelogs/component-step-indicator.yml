@@ -3,6 +3,11 @@ type: component
 changelogURL:
 
 items:
+  - date: 2025-02-14
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 3098
+    githubRepo: uswds-site
   - date: 2024-11-13
     page: Step indicator
     summary: Removed the `aria-label` from the wrapper of the step indicator component.

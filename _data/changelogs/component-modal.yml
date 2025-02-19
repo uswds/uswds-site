@@ -2,6 +2,11 @@ title: Modal
 type: component
 changelogURL:
 items:
+  - date: 2025-02-14
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsGuidance: true
+    githubPr: 3103
+    githubRepo: uswds-site
   - date: 2024-12-18
     page: Modal
     summary: Replaced deprecated `xlink:href` references with `href`.

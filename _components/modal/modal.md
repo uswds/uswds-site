@@ -8,16 +8,8 @@ component:
 lead: A modal disables page content and focuses the user's attention on a single task or message.
 permalink: /components/modal/
 subnav:
-- text: Preview
-  href: '#modal-preview'
-- text: Code
-  href: '#modal-code'
-- text: Guidance
-  href: '#modal-guidance'
-- text: Package
-  href: '#modal-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Modal accessibility tests
+  href: /components/modal/accessibility-tests/
 title: Modal
 type: component
 variants:

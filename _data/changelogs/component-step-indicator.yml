@@ -4,6 +4,7 @@ changelogURL:
 
 items:
   - date: 2025-02-14
+    page: Step indicator
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true
     githubPr: 3098

@@ -1,7 +1,8 @@
 title: Modal accessibility tests
 type: component
 items:
- - date: 2025-02-14
+ - date:
+   page: Modal accessibility tests
    summary: Added accessibility tests page.
    affectsGuidance: true
    githubPr: 3103

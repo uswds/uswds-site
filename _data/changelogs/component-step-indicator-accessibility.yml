@@ -2,6 +2,7 @@ title: Step indicator accessibility tests
 type: component
 items:
   - date: 2025-02-14
+    page: Step indicator accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 3098

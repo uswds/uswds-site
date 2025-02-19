@@ -3,6 +3,7 @@ type: pattern
 changelogURL:
 items:
   - date: 2025-02-11
+    page: "Pattern: Pronouns"
     summary: Removed pronouns pattern.
     summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Defending Women from Gender Ideology Extremism And Restoring Biological Truth To The Federal Government\".
     affectsGuidance: true

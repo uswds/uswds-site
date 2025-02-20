@@ -1,7 +1,7 @@
 title: Identifier
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Color alone is not used to convey information.
     summary_additional: When viewing the identifier, you never have to rely on color alone to understand information.
     test_status: pass
@@ -38,7 +38,7 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 3.2.4
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Text can be resized without loss of information.
     summary_additional: When you zoom in to 200%, text remains readable and visible within the identifier.
     test_status: pass
@@ -51,7 +51,7 @@ test_items:
     test_type: zoom
     version_tested: 3.8.1
     wcag_criterion: 1.4.10
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Keyboard navigates through links in logical order.
     summary_additional: When tabbing through the identifier, you can access the links in a logical reading order.
     test_status: pass
@@ -88,7 +88,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 3.2.1
-# Screen reader tests
+  # Screen reader tests
   - summary: Screen reader announces descriptive text for logos.
     summary_additional: When you use a screen reader on an identifier, the screen reader announces descriptive text for logos present in the identifier.
     test_status: conditional

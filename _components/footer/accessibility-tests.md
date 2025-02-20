@@ -7,5 +7,5 @@ title: Footer accessibility tests
 category: Components
 lead: Any USWDS footer component should pass these manual accessibility tests.
 changelog:
-  key: 'component-footer-accessibility'
+  key: "component-footer-accessibility"
 ---

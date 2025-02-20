@@ -7,5 +7,5 @@ title: Collection accessibility tests
 category: Components
 lead: Any USWDS collection component should pass these manual accessibility tests.
 changelog:
-  key: 'component-collection-accessibility'
+  key: "component-collection-accessibility"
 ---

@@ -7,5 +7,5 @@ title: Icon accessibility tests
 category: Components
 lead: Any USWDS icon should pass these manual accessibility tests.
 changelog:
-  key: 'component-icon-accessibility'
+  key: "component-icon-accessibility"
 ---

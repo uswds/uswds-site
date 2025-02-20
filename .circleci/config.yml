@@ -143,6 +143,9 @@ workflows:
     jobs:
       - install_ruby_deps
       - install_node_deps
+      - lint_and_format:
+          requires:
+            - install_node_deps
       - build:
           requires:
             - install_ruby_deps

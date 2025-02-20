@@ -61,7 +61,7 @@ jobs:
           command: npm run lint
       - run:
           name: format
-          command: npm run prettier:md
+          command: npm run prettier
   build:
     executor: my-executor
     steps:

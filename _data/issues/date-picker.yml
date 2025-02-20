@@ -3,8 +3,8 @@
 title: Date picker
 alert_type: info
 items:
-- date: 2023-09-29
-  summary: Users had trouble correctly typing dates in the input field.
-  summary_additional:
-  issue_repo: uswds
-  issue_number: 5534
+  - date: 2023-09-29
+    summary: Users had trouble correctly typing dates in the input field.
+    summary_additional:
+    issue_repo: uswds
+    issue_number: 5534

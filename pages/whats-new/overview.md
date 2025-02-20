@@ -72,7 +72,6 @@ On this page
         body="The official U.S. design system, enabling the government to build fast, accessible, mobile-friendly websites."
         linkText=uswds_link_text
         linkUrl="https://github.com/uswds/uswds/releases"
-        subheadingElement="span"
         linkClasses="padding-x-105"
       %}
     </li>
@@ -83,7 +82,6 @@ On this page
         body="A tool that makes it easy to customize and compile USWDS Sass into browser-readable CSS."
         linkText=uswds_compile_link_text
         linkUrl="https://github.com/uswds/uswds-compile/releases"
-        subheadingElement="span"
         linkClasses="padding-x-105"
       %}
     </li>
@@ -94,7 +92,6 @@ On this page
         body="The official USWDS design kits in Sketch and Figma."
         linkText=uswds_design_kit_link_text
         linkUrl="https://github.com/uswds/uswds-for-designers/releases"
-        subheadingElement="span"
         linkClasses="padding-x-105"
       %}
     </li>
@@ -115,6 +112,7 @@ On this page
 <div class="usa-card usa-card--flag usa-card--media-right whats-new-card--monthly-call">
   {% include site-card.html
     subheading="Monthly call"
+    subheadingElement="h2"
     heading=monthly_call_heading
     body=monthly_call.subtitle
     image=monthly_call_image
@@ -132,6 +130,5 @@ On this page
     listClasses="whats-new-card-group"
     listItemClasses="desktop-lg:grid-col-6"
     containerClasses="bg-gray-4"
-    subheadingElement="span"
   %}
 </div>

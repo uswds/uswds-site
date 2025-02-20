@@ -17,7 +17,7 @@
 <div class="usa-card__container {{ include.containerClasses }}">
   <header class="usa-card__header">
     {% if include.subheading %}
-      <{{ include.subheadingElement | default:"h2" }} class="site-subheading">{{ include.subheading }}</{{ include.subheadingElement | default:"h2" }}>
+      <{{ include.subheadingElement | default:"span" }} class="site-subheading">{{ include.subheading }}</{{ include.subheadingElement | default:"span" }}>
     {% endif %}
     <{{ include.headingElement | default:"h3" }} class="usa-card__heading font-lang-lg">{{ include.heading }}</{{ include.headingElement | default:"h3" }}>
   </header>

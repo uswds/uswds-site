@@ -1,94 +1,94 @@
 positive:
   smaller:
-    - token: '1px'
+    - token: "1px"
       value: 1px
-    - token: '2px'
+    - token: "2px"
       value: 2px
   small:
-    - token: '05'
+    - token: "05"
       value: 4px
       conversion: 0.5
-    - token: '1'
+    - token: "1"
       value: 8px
-    - token: '105'
+    - token: "105"
       value: 12px
-    - token: '2'
+    - token: "2"
       value: 16px
-    - token: '205'
+    - token: "205"
       value: 20px
-    - token: '3'
+    - token: "3"
       value: 24px
   medium:
-    - token: '4'
+    - token: "4"
       value: 32px
-    - token: '5'
+    - token: "5"
       value: 40px
-    - token: '6'
+    - token: "6"
       value: 48px
-    - token: '7'
+    - token: "7"
       value: 56px
-    - token: '8'
+    - token: "8"
       value: 64px
-    - token: '9'
+    - token: "9"
       value: 72px
-    - token: '10'
+    - token: "10"
       value: 80px
-    - token: '15'
+    - token: "15"
       value: 120px
   large:
-    - token: 'card'
+    - token: "card"
       value: 160px
-    - token: 'card-lg'
+    - token: "card-lg"
       value: 240px
-    - token: 'mobile'
+    - token: "mobile"
       value: 320px
   larger:
-    - token: 'mobile-lg'
+    - token: "mobile-lg"
       value: 480px
-    - token: 'tablet'
+    - token: "tablet"
       value: 640px
-    - token: 'tablet-lg'
+    - token: "tablet-lg"
       value: 880px
   largest:
-    - token: 'desktop'
+    - token: "desktop"
       value: 1024px
-    - token: 'desktop-lg'
+    - token: "desktop-lg"
       value: 1200px
-    - token: 'widescreen'
+    - token: "widescreen"
       value: 1400px
 negative:
   smaller:
-    - token: 'neg-1px'
+    - token: "neg-1px"
       value: -1px
-    - token: 'neg-2px'
+    - token: "neg-2px"
       value: -2px
   small:
-    - token: 'neg-05'
+    - token: "neg-05"
       value: -4px
-    - token: 'neg-1'
+    - token: "neg-1"
       value: -8px
-    - token: 'neg-105'
+    - token: "neg-105"
       value: -12px
-    - token: 'neg-2'
+    - token: "neg-2"
       value: -16px
-    - token: 'neg-205'
+    - token: "neg-205"
       value: -20px
-    - token: 'neg-3'
+    - token: "neg-3"
       value: -24px
   medium:
-    - token: 'neg-4'
+    - token: "neg-4"
       value: -32px
-    - token: 'neg-5'
+    - token: "neg-5"
       value: -40px
-    - token: 'neg-6'
+    - token: "neg-6"
       value: -48px
-    - token: 'neg-7'
+    - token: "neg-7"
       value: -56px
-    - token: 'neg-8'
+    - token: "neg-8"
       value: -64px
-    - token: 'neg-9'
+    - token: "neg-9"
       value: -72px
-    - token: 'neg-10'
+    - token: "neg-10"
       value: -80px
-    - token: 'neg-15'
+    - token: "neg-15"
       value: -120px

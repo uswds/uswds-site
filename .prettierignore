@@ -19,4 +19,5 @@ Gemfile.lock
 *.csv
 *.html
 *.md
+!/**/accessibility-tests.md
 *.min.js

@@ -53,6 +53,18 @@ jobs:
           root: ~/project
           paths:
             - "node_modules"
+  lint_and_format:
+    executor: my-executor
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: lint
+          command: npm run lint
+      - run:
+          name: format
+          command: npm run prettier
   build:
     executor: my-executor
     steps:

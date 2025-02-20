@@ -20,3 +20,4 @@ Gemfile.lock
 *.html
 *.min.js
 vendor/bundle/
+_next/

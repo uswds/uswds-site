@@ -16,11 +16,13 @@
 
 <article id="{{ post_id }}" class="post-preview">
   <header class="post-preview__header">
-    <p class="post-category site-subheading">
-      {{ post.tags[0] }}
-    </p>
+    {% if include.category %}
+      <p class="post-category site-subheading">
+        {{ post.tags[0] }}
+      </p>
+    {% endif %}
 
-    <{{ include.heading | default:"h2" }} class="post-preview__title">
+    <{{ include.heading | default:"h2" }} class="post-preview__title{% if include.headingClasses %} {{ include.headingClasses }}{% endif %}">
       {% unless preview_url == "none" %}
         <a href="{{ preview_url }}">
       {% endunless %}
@@ -30,12 +32,12 @@
       {% endunless %}
     </{{ include.heading | default:"h2" }}>
 
-    {% include post-meta.html %}
+    {% if include.date %}
+      {% include post-meta.html %}
+    {% endif %}
   </header>
 
   <div class="post-preview__content site-prose">
-    <p>
-      {{ post.lead | default: post.excerpt | markdownify }}
-    </p>
+    <p>{{ post.lead | default: post.excerpt | markdownify }}</p>
   </div>
 </article>

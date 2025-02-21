@@ -1,5 +1,5 @@
 ---
-title: All news and updates
+title: All news and events
 layout: styleguide
 lead: The full listing of all USWDS product updates, articles, case studies and more.
 permalink: /about/whats-new/all/
@@ -10,6 +10,12 @@ in_page_nav_headings: false
 
 {% assign all_posts = site.posts | concat: site.posts_short | sort: "date" | reverse %}
 
-{% for post in all_posts %}
-  {% include post-preview.html %}
-{% endfor %}
+<div class="margin-top-6">
+  {% for post in all_posts %}
+    {% include post-preview.html
+      category=true
+      date=true
+      headingClasses="font-lang-lg"
+    %}
+  {% endfor %}
+</div>

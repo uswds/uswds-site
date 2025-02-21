@@ -1,20 +1,40 @@
 {% comment %}
   Single card element for `site-card-list`.
-  
+
   Variables:
-    - heading: String heading for a single card.
-    - body: String body that gets placed in a paragraph tag.
-    - linkUrl: String for the link url.
-    - linkText: String link label.
+    - heading: (required) String heading for a single card.
+    - headingElement: (optional) The heading HTML element type.
+    - subheading: (optional) String subheading for a single card.
+    - subheadingElement: (optional) The subheading HTML element type.
+    - body: (required) String body that gets placed in a paragraph tag.
+    - image: (optional) The card image.
+    - imageAlt: (optional) The alt tag for the image.
+    - linkUrl: (required) String for the link url.
+    - linkText: (required) String link label.
+    - linkClasses: (optional) Classes for the link element.
 {% endcomment %}
-<div class="usa-card__container">
+
+<div class="usa-card__container {{ include.containerClasses }}">
   <header class="usa-card__header">
-    <h2 class="usa-card__heading font-lang-lg">{{ include.heading }}</h2>
+    {% if include.subheading %}
+      <{{ include.subheadingElement | default:"span" }} class="site-subheading">{{ include.subheading }}</{{ include.subheadingElement | default:"span" }}>
+    {% endif %}
+    <{{ include.headingElement | default:"h3" }} class="usa-card__heading font-lang-lg">{{ include.heading }}</{{ include.headingElement | default:"h3" }}>
   </header>
+  {% if include.image %}
+  <div class="usa-card__media">
+    <div class="usa-card__img">
+      <img
+        src="{{ include.image }}"
+        alt="{{ include.imageAlt }}"
+      />
+    </div>
+  </div>
+  {% endif %}
   <div class="usa-card__body font-lang-sm">
     <p>{{ include.body }}</p>
   </div>
   <div class="usa-card__footer">
-    <a class="usa-button site-button" href="{{ include.linkUrl }}">{{ include.linkText }}</a>
+    <a class="usa-button site-button {{ include.linkClasses }}" href="{{ include.linkUrl }}">{{ include.linkText }}</a>
   </div>
 </div>

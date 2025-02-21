@@ -1,6 +1,6 @@
 {% comment %}
   Container for site card group.
-  
+
   Seen in "What's New" page - `/about/whats-new/`
 {% endcomment %}
 
@@ -8,10 +8,17 @@
   {% for card in include.cards %}
     <li class="usa-card site-component-card {{ include.listItemClasses }}">
       {% include site-card.html
+        containerClasses=include.containerClasses
         heading=card.heading
+        headingElement=include.headingElement
+        subheading=card.subheading
+        subheadingElement=include.subheadingElement
+        image=card.image
+        imageAlt=card.imageAlt
         body=card.body
         linkUrl=card.linkUrl
         linkText=card.linkText
+        linkClasses=include.linkClasses
       %}
     </li>
   {%  endfor %}

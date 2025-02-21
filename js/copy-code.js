@@ -45,8 +45,8 @@ const createCopyButton = () => {
 };
 
 /**
- * Creates a screen reader only div element for success text
- *
+ * Creates a screen reader only div element for success text 
+ * 
  * @return {HTMLDivElement} - A div for screen reader text
  */
 const createSRStatus = () => {
@@ -68,6 +68,7 @@ const copyOnClick = (event) => {
   const btnWrapper = copyBtn.closest(COPY_WRAPPER);
   const labelVisual = copyBtn.querySelector("[aria-hidden]");
   const labelSR = btnWrapper.querySelector(SR_STATUS_MESSAGE);
+
 
   // Set success state
   copyBtn.classList.add(COPY_BUTTON_SUCCESS_CLASS);

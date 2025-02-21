@@ -31,7 +31,7 @@ function build() {
     .pipe(
       rename({
         basename: "styleguide",
-      })
+      }),
     )
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("assets/js"));

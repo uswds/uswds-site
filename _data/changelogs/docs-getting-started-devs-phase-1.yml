@@ -1,8 +1,9 @@
-title: "Phase 1: Install"
+title: "Getting started for developers: Phase 1"
 type: documentation
 changelogURL:
 items:
   - date: 2022-04-28
+    page: "Getting started for developers: Phase 1"
     summary: Updated `uswds` package references to `@uswds/uswds`.
     summaryAdditional:
     isBreaking:
@@ -15,6 +16,7 @@ items:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2021-12-06
+    page: "Getting started for developers: Phase 1"
     summary: Added "Getting started for developers" guide.
     summaryAdditional:
     isBreaking:

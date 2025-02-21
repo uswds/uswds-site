@@ -3,11 +3,13 @@ type: pattern
 changelogURL:
 items:
   - date: 2024-04-11
+    page: "Pattern: Selected content"
     summary: Fixed broken component preview links.
     affectsGuidance: true
     githubPr: 2566
     githubRepo: uswds-site
   - date: 2022-11-14
+    page: "Pattern: Selected content"
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

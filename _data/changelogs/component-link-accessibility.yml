@@ -3,8 +3,9 @@ type: component
 changelogURL:
 items:
   - date: 2024-01-17
+    page: Link accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 2138
     githubRepo: uswds-site
-    

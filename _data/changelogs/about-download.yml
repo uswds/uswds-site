@@ -3,6 +3,8 @@ type: documentation
 changelogURL:
 items:
   - date: 2024-05-15
+    page: Download
     summary: Added note about incorrect package dates in downloadable USWDS package.
+    affectsPageContent: true
     githubPr: 2621
     githubRepo: uswds-site

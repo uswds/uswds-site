@@ -3,7 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2024-12-18
-    summary: 'Removed `overflow: hidden` from `usa-footer` to allow the full focus outline to show.'
+    page: Footer
+    summary: "Removed `overflow: hidden` from `usa-footer` to allow the full focus outline to show."
     summaryAdditional: This fix also improves horizontal alignment in the slim footer variant.
     affectsStyles: true
     affectsAccessibility: true
@@ -11,6 +12,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.11.0
   - date: 2024-10-04
+    page: Footer
     summary: Added the `autocomplete="email"` attribute to the email input element.
     summaryAdditional: This allows the component to meet all the standards outlined in [WCAG 1.3.5](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html).
     affectsAccessibility: true
@@ -19,18 +21,21 @@ items:
     githubRepo: uswds
     versionUswds: 3.9.0
   - date: 2024-08-13
+    page: Footer
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2760
     githubRepo: uswds-site
   - date: 2024-05-31
+    page: Footer
     summary: Restored the `usa-layout-grid` dependency in the footer package and removed layout grid styles from the footer stylesheet.
-    summaryAdditional:  This update prevents visual regressions in footer and other components with layout grid utility classes in their markup.
+    summaryAdditional: This update prevents visual regressions in footer and other components with layout grid utility classes in their markup.
     affectsStyles: true
     githubPr: 5930
     githubRepo: uswds
     versionUswds: 3.8.1
   - date: 2024-03-11
+    page: Footer
     summary: Fixed a bug that caused some grid utility classes to be ignored when used inside `usa-footer`.
     summaryAdditional:
     affectsStyles: true
@@ -38,6 +43,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.0
   - date: 2023-12-08
+    page: Footer
     summary: Removed the `usa-layout-grid` dependency.
     summaryAdditional: This update reduces the footer package size. If you notice changes in your layout after making this update, add the `usa-layout-grid` package to your [Sass entry point](https://designsystem.digital.gov/documentation/migration/#using-component-packages).
     affectsStyles: true
@@ -45,6 +51,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.1
   - date: 2023-12-08
+    page: Footer
     summary: Adjusted the right alignment of footer elements.
     summaryAdditional: Footer content should now align with other page elements.
     affectsStyles: true
@@ -52,6 +59,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.1
   - date: 2023-11-09
+    page: Footer
     summary: Restored underlines to footer links in the default state.
     summaryAdditional: Now, footer links meet WCAG 2.0 AA requirements.
     affectsAccessibility: true
@@ -60,6 +68,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.0
   - date: 2023-03-09
+    page: Footer
     summary: Footer now accepts any heading level for primary link headers.
     summaryAdditional: Use any heading level for `.usa-footer__primary-link` without it reverting to an `h4` when the JavaScript rebuilds the element for mobile.
     affectsAccessibility: true
@@ -69,11 +78,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2022-08-29
+    page: Footer
     summary: Added documentation for `$theme-footer-max-width`.
     affectsGuidance: true
     githubPr: 1719
     githubRepo: uswds-site
   - date: 2022-08-05
+    page: Footer
     summary: Added unmodified social media icons.
     summaryAdditional: We now provide simpler social media icons, and removed any decoration not in the original icon. This means that the new icons are not in an enclosing circle unless the original icon is enclosed in a circle.
     isBreaking: true
@@ -82,6 +93,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-04-28
+    page: Footer
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -91,6 +103,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
+    page: Footer
     summary: Added more accessible disclosure buttons to the big footer variant.
     summaryAdditional: Now the big footer variant uses more accessible disclosure buttons for showing and hiding submenus at mobile widths.
     affectsAccessibility: true
@@ -100,6 +113,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-04-11
+    page: Footer
     summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
@@ -108,6 +122,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-03-07
+    page: Footer
     summary: Fixed expanded display in the big footer variant.
     summaryAdditional: Fixes an issue where the big footer variant does not show the proper expanded display at exactly 480px.
     affectsJavascript: true
@@ -116,6 +131,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.2
   - date: 2021-12-14
+    page: Footer
     summary: Improved resilience of icon-only functionality.
     summaryAdditional: We updated a couple components that use icon-only buttons so that they provide a text equivalent if the image path is broken and does not load.
     isBreaking: true
@@ -126,6 +142,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.0
   - date: 2021-03-17
+    page: Footer
     summary: Updated and improved guidance for footer.
     affectsGuidance: true
     githubPr: 1180

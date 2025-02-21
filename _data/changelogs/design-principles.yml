@@ -2,6 +2,12 @@ title: Design principles
 type: documentation
 changelogURL:
 items:
+  - date: 2025-02-21
+    summary: Updated resources, copy and links throughout page.
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 3053
+    githubRepo: uswds-site
   - date: 2025-01-22
     summary: Updated the url for the "Delivering Excellent, Equitable, and Secure Federal Services and Customer Experience" link.
     affectsGuidance: true

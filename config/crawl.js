@@ -8,9 +8,7 @@ const runServer = require("./static-server");
 // These pages incorporate content from other files in other repos, so
 // they should be considered "second class" by the link checker, and
 // only emit warnings on 404s rather than errors.
-const WARNING_PAGES = [
-  "/documentation/code-guidelines/"
-];
+const WARNING_PAGES = ["/documentation/code-guidelines/"];
 const WARNING = chalk.yellow("Warning");
 const ERROR = chalk.red("Error");
 

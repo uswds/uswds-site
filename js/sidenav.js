@@ -16,7 +16,7 @@ $(".sidenav").on("keydown", "a", function (e) {
 
 $(".sidenav").on("click", "a", function (e) {
   // long url splitting
-  var hashLocation = $(this).attr("href").split("#")[ 1 ];
+  var hashLocation = $(this).attr("href").split("#")[1];
   var scrollTopPos = calculateAnchorPosition(hashLocation);
 
   //if anchor doesn't exist on the page, or calc fails

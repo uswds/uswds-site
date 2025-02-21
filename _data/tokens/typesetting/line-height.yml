@@ -1,18 +1,18 @@
 - token: 1
   value: 1
-  usage: 'buttons, navigation, and text not meant to break over a line'
+  usage: "buttons, navigation, and text not meant to break over a line"
 - token: 2
   value: 1.15
-  usage: 'headings, introductory (lead or dek) text, no more than 1-2 sentences'
+  usage: "headings, introductory (lead or dek) text, no more than 1-2 sentences"
 - token: 3
   value: 1.35
-  usage: 'short text (under 1 paragraph), captions, text with a very short or very long measure'
+  usage: "short text (under 1 paragraph), captions, text with a very short or very long measure"
 - token: 4
   value: 1.5
-  usage: 'short (1-2 paragraphs) of running text, especially with a short measure'
+  usage: "short (1-2 paragraphs) of running text, especially with a short measure"
 - token: 5
   value: 1.62
-  usage: 'a good choice for most reading text, especially text meant for extended reading'
+  usage: "a good choice for most reading text, especially text meant for extended reading"
 - token: 6
   value: 1.75
-  usage: 'shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes'
+  usage: "shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes"

@@ -7,5 +7,5 @@ title: Identifier accessibility tests
 category: Components
 lead: Any USWDS identifier component should pass these manual accessibility tests.
 changelog:
-  key: 'component-identifier-accessibility'
+  key: "component-identifier-accessibility"
 ---

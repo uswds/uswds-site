@@ -14,7 +14,7 @@ items:
     githubRepo: uswds-site
   - date: 2024-10-04
     summary: Fixed a bug that caused `mouseover` events to prevent keyboard navigation.
-    summaryAdditional:  Now when you hover your mouse over the date picker buttons, only the hover state will be triggered.
+    summaryAdditional: Now when you hover your mouse over the date picker buttons, only the hover state will be triggered.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 5774

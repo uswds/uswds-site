@@ -1,7 +1,7 @@
 title: Time picker
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Time picker display is consistent in mobile views.
     summary_additional: When you view the time picker component on mobile devices and tablets, it displays in both portrait and landscape orientation with no loss of functionality.
     test_status: pass
@@ -20,9 +20,9 @@ test_items:
     test_type: general
     version_tested: 3.8.2
     wcag_criterion: 3.3.2
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Time picker elements are visible and functional when screen is magnified.
-    summary_additional:  When you zoom in to 200%, the time picker is still readable, legible and properly sized.
+    summary_additional: When you zoom in to 200%, the time picker is still readable, legible and properly sized.
     test_status: pass
     test_type: zoom
     version_tested: 3.8.1
@@ -33,7 +33,7 @@ test_items:
     test_type: zoom
     version_tested: 3.8.1
     wcag_criterion: 1.4.10
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Keyboard can operate the time picker.
     summary_additional: When you navigate through the time picker with a keyboard, you can interact with every element inside it.
     test_status: pass
@@ -52,7 +52,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 3.2.1
-# Screen reader tests
+  # Screen reader tests
   - summary: Screen reader announces all instructions.
     summary_additional: When you use a screen reader and navigate through a time picker, you hear every instruction for how to select a time and for any options available.
     test_status: pass

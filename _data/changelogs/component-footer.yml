@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2024-12-18
-    summary: 'Removed `overflow: hidden` from `usa-footer` to allow the full focus outline to show.'
+    summary: "Removed `overflow: hidden` from `usa-footer` to allow the full focus outline to show."
     summaryAdditional: This fix also improves horizontal alignment in the slim footer variant.
     affectsStyles: true
     affectsAccessibility: true
@@ -25,7 +25,7 @@ items:
     githubRepo: uswds-site
   - date: 2024-05-31
     summary: Restored the `usa-layout-grid` dependency in the footer package and removed layout grid styles from the footer stylesheet.
-    summaryAdditional:  This update prevents visual regressions in footer and other components with layout grid utility classes in their markup.
+    summaryAdditional: This update prevents visual regressions in footer and other components with layout grid utility classes in their markup.
     affectsStyles: true
     githubPr: 5930
     githubRepo: uswds

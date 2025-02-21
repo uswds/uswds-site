@@ -2,23 +2,23 @@ mixins:
   - v1: All Bourbon functions and mixins
     v2: deprecated
     deprecated: true
-  - v1: '@include media()'
-    v2: '@include at-media'
+  - v1: "@include media()"
+    v2: "@include at-media"
     token: spacing-units
-  - v1: '@include focus'
+  - v1: "@include focus"
     v2: deprecated
     deprecated: true
-  - v1: '@include font-smoothing'
-    v2: '@mixin add-knockout-font-smoothing'
-  - v1: '@include allow-layout-classes'
+  - v1: "@include font-smoothing"
+    v2: "@mixin add-knockout-font-smoothing"
+  - v1: "@include allow-layout-classes"
     v2: deprecated
     deprecated: true
-  - v1: '@include display-icon()'
+  - v1: "@include display-icon()"
     v2: now uses tokens for spacing units
-  - v1: '@include usa-sidenav-list'
-    v2: '@include nav-list'
-  - v1: '@include usa-sidenav-sublist'
-    v2: '@include nav-sublist'
+  - v1: "@include usa-sidenav-list"
+    v2: "@include nav-list"
+  - v1: "@include usa-sidenav-sublist"
+    v2: "@include nav-sublist"
 
 layout-grid:
   - v1: .usa-grid
@@ -71,1228 +71,1228 @@ layout-grid:
     v2: .grid-offset-11
 
 typography:
-  - v1: 'a'
-    v2: '.usa-link'
-  - v1: 'p'
-    v2: '.usa-paragraph'
-  - v1: 'h1'
-    v2: '.usa-prose > h1'
-  - v1: 'h2'
-    v2: '.usa-prose > h2'
-  - v1: 'h3'
-    v2: '.usa-prose > h3'
-  - v1: 'h4'
-    v2: '.usa-prose > h4'
-  - v1: 'h5'
-    v2: '.usa-prose > h6'
-  - v1: 'h6'
-    v2: '.usa-prose > h6'
-  - v1: 'ol'
-    v2: 'ol.usa-list'
-  - v1: 'ul'
-    v2: 'ul.usa-list'
-  - v1: '.usa-background-dark'
-    v2: '.usa-dark-background'
-  - v1: '.usa-content'
-    v2: '.usa-content'
-  - v1: '.usa-content-list'
-    v2: '.usa-content-list'
-  - v1: '.usa-display'
-    v2: '.usa-display'
-  - v1: '.usa-external_link'
-    v2: '.usa-external-link'
-  - v1: '.usa-external_link-alt'
-    v2: '.usa-external-link-alt'
-  - v1: '.usa-font-lead'
-    v2: '.usa-intro'
-  - v1: '.usa-heading-alt'
-    v2: 'deprecated: use utilities'
+  - v1: "a"
+    v2: ".usa-link"
+  - v1: "p"
+    v2: ".usa-paragraph"
+  - v1: "h1"
+    v2: ".usa-prose > h1"
+  - v1: "h2"
+    v2: ".usa-prose > h2"
+  - v1: "h3"
+    v2: ".usa-prose > h3"
+  - v1: "h4"
+    v2: ".usa-prose > h4"
+  - v1: "h5"
+    v2: ".usa-prose > h6"
+  - v1: "h6"
+    v2: ".usa-prose > h6"
+  - v1: "ol"
+    v2: "ol.usa-list"
+  - v1: "ul"
+    v2: "ul.usa-list"
+  - v1: ".usa-background-dark"
+    v2: ".usa-dark-background"
+  - v1: ".usa-content"
+    v2: ".usa-content"
+  - v1: ".usa-content-list"
+    v2: ".usa-content-list"
+  - v1: ".usa-display"
+    v2: ".usa-display"
+  - v1: ".usa-external_link"
+    v2: ".usa-external-link"
+  - v1: ".usa-external_link-alt"
+    v2: ".usa-external-link-alt"
+  - v1: ".usa-font-lead"
+    v2: ".usa-intro"
+  - v1: ".usa-heading-alt"
+    v2: "deprecated: use utilities"
     deprecated: true
-  - v1: '.usa-sans'
-    v2: 'deprecated: use utilities'
+  - v1: ".usa-sans"
+    v2: "deprecated: use utilities"
     deprecated: true
-  - v1: '.usa-serif'
-    v2: 'deprecated: use utilities'
+  - v1: ".usa-serif"
+    v2: "deprecated: use utilities"
     deprecated: true
-  - v1: '.usa-text-small'
-    v2: 'deprecated: use utilities'
+  - v1: ".usa-text-small"
+    v2: "deprecated: use utilities"
     deprecated: true
 
 button:
-  - v1: '.usa-button'
-    v2: '.usa-button'
-  - v1: '.usa-button-active'
-    v2: '.usa-button--active'
-  - v1: '.usa-button-big'
-    v2: '.usa-button--big'
-  - v1: '.usa-button-disabled'
-    v2: '.usa-button--disabled'
-  - v1: '.usa-button-gray'
-    v2: '.usa-button--base'
-  - v1: '.usa-button-hover'
-    v2: '.usa-button--hover'
-  - v1: '.usa-button-primary'
-    v2: '.usa-button'
-  - v1: '.usa-button-primary-alt'
-    v2: '.usa-button--accent-cool'
-  - v1: '.usa-button-secondary'
-    v2: '.usa-button--outline'
-  - v1: '.usa-button-secondary-disabled'
-    v2: '.usa-button--outline.usa-button--disabled'
-  - v1: '.usa-button-secondary-inverse'
-    v2: '.usa-button--outline.usa-button--inverse'
-  - v1: '.usa-button-secondary-inverse-disabled'
-    v2: '.usa-button--outline.usa-button--inverse.usa-button--disabled'
-  - v1: '.usa-button-red'
-    v2: '.usa-button--secondary'
-  - v1: '.usa-button-unstyled'
-    v2: '.usa-button--unstyled'
-  - v1: '.usa-focus'
-    v2: '.usa-focus'
+  - v1: ".usa-button"
+    v2: ".usa-button"
+  - v1: ".usa-button-active"
+    v2: ".usa-button--active"
+  - v1: ".usa-button-big"
+    v2: ".usa-button--big"
+  - v1: ".usa-button-disabled"
+    v2: ".usa-button--disabled"
+  - v1: ".usa-button-gray"
+    v2: ".usa-button--base"
+  - v1: ".usa-button-hover"
+    v2: ".usa-button--hover"
+  - v1: ".usa-button-primary"
+    v2: ".usa-button"
+  - v1: ".usa-button-primary-alt"
+    v2: ".usa-button--accent-cool"
+  - v1: ".usa-button-secondary"
+    v2: ".usa-button--outline"
+  - v1: ".usa-button-secondary-disabled"
+    v2: ".usa-button--outline.usa-button--disabled"
+  - v1: ".usa-button-secondary-inverse"
+    v2: ".usa-button--outline.usa-button--inverse"
+  - v1: ".usa-button-secondary-inverse-disabled"
+    v2: ".usa-button--outline.usa-button--inverse.usa-button--disabled"
+  - v1: ".usa-button-red"
+    v2: ".usa-button--secondary"
+  - v1: ".usa-button-unstyled"
+    v2: ".usa-button--unstyled"
+  - v1: ".usa-focus"
+    v2: ".usa-focus"
 
 embed:
-  - v1: '.usa-embed-container'
-    v2: '.usa-embed-container'
+  - v1: ".usa-embed-container"
+    v2: ".usa-embed-container"
 
 figure:
-  - v1: 'media-link'
-    v2: '.usa-media-link'
+  - v1: "media-link"
+    v2: ".usa-media-link"
 
 inputs:
-  - v1: '[type=checkbox]'
-    v2: '.usa-checkbox__input'
-  - v1: '[type=checkbox] + label'
-    v2: '.usa-checkbox__label'
-  - v1: '[type=radio]'
-    v2: '.usa-radio__input'
-  - v1: '[type=radio] label'
-    v2: '.usa-radio__label'
-  - v1: '[type=range]'
-    v2: '.usa-range'
-  - v1: 'fieldset'
-    v2: '.usa-fieldset'
-  - v1: 'input'
-    v2: '.usa-input'
-  - v1: 'label'
-    v2: '.usa-label'
-  - v1: 'legend'
-    v2: '.usa-legend'
-  - v1: 'select'
-    v2: '.usa-select'
-  - v1: 'textarea'
-    v2: '.usa-textarea'
-  - v1: '.usa-date-of-birth'
-    v2: '.usa-memorable-date'
-  - v1: '.usa-fieldset-inputs'
-    v2: 'deprecated: see new checkbox and radio markup'
+  - v1: "[type=checkbox]"
+    v2: ".usa-checkbox__input"
+  - v1: "[type=checkbox] + label"
+    v2: ".usa-checkbox__label"
+  - v1: "[type=radio]"
+    v2: ".usa-radio__input"
+  - v1: "[type=radio] label"
+    v2: ".usa-radio__label"
+  - v1: "[type=range]"
+    v2: ".usa-range"
+  - v1: "fieldset"
+    v2: ".usa-fieldset"
+  - v1: "input"
+    v2: ".usa-input"
+  - v1: "label"
+    v2: ".usa-label"
+  - v1: "legend"
+    v2: ".usa-legend"
+  - v1: "select"
+    v2: ".usa-select"
+  - v1: "textarea"
+    v2: ".usa-textarea"
+  - v1: ".usa-date-of-birth"
+    v2: ".usa-memorable-date"
+  - v1: ".usa-fieldset-inputs"
+    v2: "deprecated: see new checkbox and radio markup"
     deprecated: true
-  - v1: '.usa-form-group'
-    v2: '.usa-form-group'
-  - v1: '.usa-form-group-day'
-    v2: '.usa-form-group--day'
-  - v1: '.usa-form-group-month'
-    v2: '.usa-form-group--month'
-  - v1: '.usa-form-group-year'
-    v2: '.usa-form-group--year'
-  - v1: '.usa-form-hint'
-    v2: '.usa-hint'
-  - v1: '.usa-input-error'
-    v2: '.usa-form-group--error'
-  - v1: '.usa-input-inline'
-    v2: '.usa-input--inline'
-  - v1: '.usa-input-medium'
-    v2: '.usa-input--medium'
-  - v1: '.usa-input-error'
-    v2: '.usa-input--error'
-  - v1: '.usa-input-error-label'
-    v2: '.usa-label--error'
-  - v1: '.usa-input-error-message'
-    v2: '.usa-error-message'
-  - v1: '.usa-input-inline-error'
-    v2: '.usa-input--error'
-  - v1: '.usa-input-label-helper'
-    v2: '.usa-hint'
-  - v1: '.usa-input-label-required'
-    v2: '.usa-label--required'
-  - v1: '.usa-input-optional'
-    v2: 'deprecated: use .usa-hint for option text in a .usa-label'
+  - v1: ".usa-form-group"
+    v2: ".usa-form-group"
+  - v1: ".usa-form-group-day"
+    v2: ".usa-form-group--day"
+  - v1: ".usa-form-group-month"
+    v2: ".usa-form-group--month"
+  - v1: ".usa-form-group-year"
+    v2: ".usa-form-group--year"
+  - v1: ".usa-form-hint"
+    v2: ".usa-hint"
+  - v1: ".usa-input-error"
+    v2: ".usa-form-group--error"
+  - v1: ".usa-input-inline"
+    v2: ".usa-input--inline"
+  - v1: ".usa-input-medium"
+    v2: ".usa-input--medium"
+  - v1: ".usa-input-error"
+    v2: ".usa-input--error"
+  - v1: ".usa-input-error-label"
+    v2: ".usa-label--error"
+  - v1: ".usa-input-error-message"
+    v2: ".usa-error-message"
+  - v1: ".usa-input-inline-error"
+    v2: ".usa-input--error"
+  - v1: ".usa-input-label-helper"
+    v2: ".usa-hint"
+  - v1: ".usa-input-label-required"
+    v2: ".usa-label--required"
+  - v1: ".usa-input-optional"
+    v2: "deprecated: use .usa-hint for option text in a .usa-label"
     deprecated: true
-  - v1: '.usa-input-required'
-    v2: 'deprecated: no longer recommended'
+  - v1: ".usa-input-required"
+    v2: "deprecated: no longer recommended"
     deprecated: true
-  - v1: '.usa-input-success'
-    v2: '.usa-input--success'
-  - v1: '.usa-input-tiny'
-    v2: '.usa-input--small'
-  - v1: '.usa-unstyled-list (for checkboxes)'
-    v2: 'div.usa-checkbox'
-  - v1: '.usa-unstyled-list (for radio buttons)'
-    v2: 'div.usa-radio'
+  - v1: ".usa-input-success"
+    v2: ".usa-input--success"
+  - v1: ".usa-input-tiny"
+    v2: ".usa-input--small"
+  - v1: ".usa-unstyled-list (for checkboxes)"
+    v2: "div.usa-checkbox"
+  - v1: ".usa-unstyled-list (for radio buttons)"
+    v2: "div.usa-radio"
 
 list:
-  - v1: 'li'
-    v2: '.usa-list li'
-  - v1: 'ol'
-    v2: 'ol.usa-list'
-  - v1: 'ul'
-    v2: 'ul.usa-list'
-  - v1: '.usa-unstyled-list'
-    v2: '.usa-list--unstyled'
+  - v1: "li"
+    v2: ".usa-list li"
+  - v1: "ol"
+    v2: "ol.usa-list"
+  - v1: "ul"
+    v2: "ul.usa-list"
+  - v1: ".usa-unstyled-list"
+    v2: ".usa-list--unstyled"
 
 table:
-  - v1: 'caption'
-    v2: '.usa-table caption'
-  - v1: 'thead'
-    v2: '.usa-table thead'
-  - v1: 'th'
-    v2: '.usa-table th'
-  - v1: 'td'
-    v2: '.usa-table td'
-  - v1: 'table'
-    v2: '.usa-table'
-  - v1: '.usa-table-borderless'
-    v2: '.usa-table--borderless'
+  - v1: "caption"
+    v2: ".usa-table caption"
+  - v1: "thead"
+    v2: ".usa-table thead"
+  - v1: "th"
+    v2: ".usa-table th"
+  - v1: "td"
+    v2: ".usa-table td"
+  - v1: "table"
+    v2: ".usa-table"
+  - v1: ".usa-table-borderless"
+    v2: ".usa-table--borderless"
 
 tag:
-  - v1: '.usa-label'
-    v2: '.usa-tag'
-  - v1: '.usa-label-big'
-    v2: '.usa-tag--big'
+  - v1: ".usa-label"
+    v2: ".usa-tag"
+  - v1: ".usa-label-big"
+    v2: ".usa-tag--big"
 
 accordion:
-  - v1: '.usa-accordion'
-    v2: '.usa-accordion'
-  - v1: '.usa-accordion-bordered'
-    v2: '.usa-accordion--bordered'
-  - v1: '.usa-accordion-button'
-    v2: '.usa-accordion__button'
-  - v1: '.usa-accordion-content'
-    v2: '.usa-accordion__content'
-  - v1: '—'
-    v2: '.usa-accordion__heading'
+  - v1: ".usa-accordion"
+    v2: ".usa-accordion"
+  - v1: ".usa-accordion-bordered"
+    v2: ".usa-accordion--bordered"
+  - v1: ".usa-accordion-button"
+    v2: ".usa-accordion__button"
+  - v1: ".usa-accordion-content"
+    v2: ".usa-accordion__content"
+  - v1: "—"
+    v2: ".usa-accordion__heading"
 
 alert:
-  - v1: '.usa-alert'
-    v2: '.usa-alert'
-  - v1: '.usa-alert-error'
-    v2: '.usa-alert--error'
-  - v1: '.usa-alert-no_icon'
-    v2: '.usa-alert--no-icon'
-  - v1: '.usa-alert-slim'
-    v2: '.usa-alert--slim'
-  - v1: '.usa-alert-success'
-    v2: '.usa-alert--success'
-  - v1: '.usa-alert-warning'
-    v2: '.usa-alert--warning'
-  - v1: '.usa-alert-body'
-    v2: '.usa-alert__body'
-  - v1: '.usa-alert-heading'
-    v2: '.usa-alert__heading'
-  - v1: '.usa-alert-icon'
-    v2: '.usa-alert__icon'
-  - v1: '.usa-alert-info'
-    v2: '.usa-alert--info'
-  - v1: '.usa-alert-paragraph'
-    v2: '.usa-alert__paragraph'
-  - v1: '.usa-alert-text'
-    v2: '.usa-alert__text'
+  - v1: ".usa-alert"
+    v2: ".usa-alert"
+  - v1: ".usa-alert-error"
+    v2: ".usa-alert--error"
+  - v1: ".usa-alert-no_icon"
+    v2: ".usa-alert--no-icon"
+  - v1: ".usa-alert-slim"
+    v2: ".usa-alert--slim"
+  - v1: ".usa-alert-success"
+    v2: ".usa-alert--success"
+  - v1: ".usa-alert-warning"
+    v2: ".usa-alert--warning"
+  - v1: ".usa-alert-body"
+    v2: ".usa-alert__body"
+  - v1: ".usa-alert-heading"
+    v2: ".usa-alert__heading"
+  - v1: ".usa-alert-icon"
+    v2: ".usa-alert__icon"
+  - v1: ".usa-alert-info"
+    v2: ".usa-alert--info"
+  - v1: ".usa-alert-paragraph"
+    v2: ".usa-alert__paragraph"
+  - v1: ".usa-alert-text"
+    v2: ".usa-alert__text"
 
 banner:
-  - v1: '.usa-banner'
-    v2: '.usa-banner'
-  - v1: '.usa-banner-button'
-    v2: '.usa-banner__button'
-  - v1: '.usa-banner-button-text'
-    v2: '.usa-banner__button-text'
-  - v1: '.usa-banner-content'
-    v2: '.usa-banner__content'
-  - v1: '.usa-banner-guidance-gov'
-    v2: '.usa-banner__guidance'
-  - v1: '.usa-banner-guidance-ssl'
-    v2: '.usa-banner__guidance'
-  - v1: '.usa-banner-header'
-    v2: '.usa-banner__header'
-  - v1: '.usa-banner-header-expanded'
-    v2: '.usa-banner__header--expanded'
-  - v1: '.usa-banner-icon'
-    v2: '.usa-banner__icon'
-  - v1: '.usa-banner-inner'
-    v2: '.usa-banner__inner'
-  - v1: '—'
-    v2: '.usa-banner__header-action'
-  - v1: '—'
-    v2: '.usa-banner__header-close-text'
-  - v1: '—'
-    v2: '.usa-banner__header-flag'
-  - v1: '—'
-    v2: '.usa-banner__header-text'
+  - v1: ".usa-banner"
+    v2: ".usa-banner"
+  - v1: ".usa-banner-button"
+    v2: ".usa-banner__button"
+  - v1: ".usa-banner-button-text"
+    v2: ".usa-banner__button-text"
+  - v1: ".usa-banner-content"
+    v2: ".usa-banner__content"
+  - v1: ".usa-banner-guidance-gov"
+    v2: ".usa-banner__guidance"
+  - v1: ".usa-banner-guidance-ssl"
+    v2: ".usa-banner__guidance"
+  - v1: ".usa-banner-header"
+    v2: ".usa-banner__header"
+  - v1: ".usa-banner-header-expanded"
+    v2: ".usa-banner__header--expanded"
+  - v1: ".usa-banner-icon"
+    v2: ".usa-banner__icon"
+  - v1: ".usa-banner-inner"
+    v2: ".usa-banner__inner"
+  - v1: "—"
+    v2: ".usa-banner__header-action"
+  - v1: "—"
+    v2: ".usa-banner__header-close-text"
+  - v1: "—"
+    v2: ".usa-banner__header-flag"
+  - v1: "—"
+    v2: ".usa-banner__header-text"
 
 checklist:
-  - v1: '.usa-checklist'
-    v2: '.usa-checklist'
-  - v1: '.usa-checklist li'
-    v2: '.usa-checklist__item'
-  - v1: '.usa-checklist-checked'
-    v2: '.usa-checklist__item--checked'
+  - v1: ".usa-checklist"
+    v2: ".usa-checklist"
+  - v1: ".usa-checklist li"
+    v2: ".usa-checklist__item"
+  - v1: ".usa-checklist-checked"
+    v2: ".usa-checklist__item--checked"
 
 footer:
-  - v1: 'address'
-    v2: '.usa-footer__address'
-  - v1: '.usa-footer'
-    v2: '.usa-footer'
-  - v1: '.usa-footer-big'
-    v2: '.usa-footer--big'
-  - v1: '.usa-footer-big'
-    v2: '.usa-footer--big'
-  - v1: '.usa-footer-big-secondary-section'
-    v2: '.usa-footer__secondary-section'
-  - v1: '.usa-footer-big-logo-heading'
-    v2: '.usa-footer__logo-heading'
-  - v1: '.usa-footer-big-logo-img'
-    v2: '.usa-footer__logo-img'
-  - v1: '.usa-footer-contact-heading'
-    v2: '.usa-footer__contact-heading'
-  - v1: '.usa-footer-contact-links'
-    v2: '.usa-footer__contact-links'
-  - v1: '.usa-footer-contact_info'
-    v2: '.usa-footer__contact-info'
-  - v1: '.usa-footer-logo'
-    v2: '.usa-footer__logo'
-  - v1: '.usa-footer-logo-heading'
-    v2: '.usa-footer__logo-heading'
-  - v1: '.usa-footer-logo-img'
-    v2: '.usa-footer__logo-img'
-  - v1: '.usa-footer-medium'
-    v2: '.usa-footer'
-  - v1: '.usa-footer-nav'
-    v2: '.usa-footer__nav'
-  - v1: '.usa-footer-slim'
-    v2: '.usa-footer--slim'
-  - v1: '.usa-footer-slim-logo-heading'
-    v2: '.usa-footer__logo-heading'
-  - v1: '.usa-footer-slim-logo-img'
-    v2: '.usa-footer__logo-img'
-  - v1: '.usa-footer-primary-content'
-    v2: '.usa-footer__primary-content'
-  - v1: '.usa-footer-primary-content (collapsible)'
-    v2: '.usa-footer__primary-content--collapsible'
-  - v1: '.usa-footer-primary-link'
-    v2: '.usa-footer__primary-link'
-  - v1: '.usa-footer-primary-section'
-    v2: '.usa-footer__primary-section'
-  - v1: '.usa-footer-return-to-top'
-    v2: '.usa-footer__return-to-top'
-  - v1: '.usa-footer-secondary-link'
-    v2: '.usa-footer__secondary-link'
-  - v1: '.usa-footer-secondary_section'
-    v2: '.usa-footer__secondary-section'
-  - v1: '.usa-footer-topic'
-    v2: 'deprecated'
+  - v1: "address"
+    v2: ".usa-footer__address"
+  - v1: ".usa-footer"
+    v2: ".usa-footer"
+  - v1: ".usa-footer-big"
+    v2: ".usa-footer--big"
+  - v1: ".usa-footer-big"
+    v2: ".usa-footer--big"
+  - v1: ".usa-footer-big-secondary-section"
+    v2: ".usa-footer__secondary-section"
+  - v1: ".usa-footer-big-logo-heading"
+    v2: ".usa-footer__logo-heading"
+  - v1: ".usa-footer-big-logo-img"
+    v2: ".usa-footer__logo-img"
+  - v1: ".usa-footer-contact-heading"
+    v2: ".usa-footer__contact-heading"
+  - v1: ".usa-footer-contact-links"
+    v2: ".usa-footer__contact-links"
+  - v1: ".usa-footer-contact_info"
+    v2: ".usa-footer__contact-info"
+  - v1: ".usa-footer-logo"
+    v2: ".usa-footer__logo"
+  - v1: ".usa-footer-logo-heading"
+    v2: ".usa-footer__logo-heading"
+  - v1: ".usa-footer-logo-img"
+    v2: ".usa-footer__logo-img"
+  - v1: ".usa-footer-medium"
+    v2: ".usa-footer"
+  - v1: ".usa-footer-nav"
+    v2: ".usa-footer__nav"
+  - v1: ".usa-footer-slim"
+    v2: ".usa-footer--slim"
+  - v1: ".usa-footer-slim-logo-heading"
+    v2: ".usa-footer__logo-heading"
+  - v1: ".usa-footer-slim-logo-img"
+    v2: ".usa-footer__logo-img"
+  - v1: ".usa-footer-primary-content"
+    v2: ".usa-footer__primary-content"
+  - v1: ".usa-footer-primary-content (collapsible)"
+    v2: ".usa-footer__primary-content--collapsible"
+  - v1: ".usa-footer-primary-link"
+    v2: ".usa-footer__primary-link"
+  - v1: ".usa-footer-primary-section"
+    v2: ".usa-footer__primary-section"
+  - v1: ".usa-footer-return-to-top"
+    v2: ".usa-footer__return-to-top"
+  - v1: ".usa-footer-secondary-link"
+    v2: ".usa-footer__secondary-link"
+  - v1: ".usa-footer-secondary_section"
+    v2: ".usa-footer__secondary-section"
+  - v1: ".usa-footer-topic"
+    v2: "deprecated"
     deprecated: true
-  - v1: '.usa-link-facebook'
-    v2: '.usa-social-link--facebook'
-  - v1: '.usa-link-rss'
-    v2: '.usa-social-link--rss'
-  - v1: '.usa-link-twitter'
-    v2: '.usa-social-link--twitter'
-  - v1: '.usa-link-youtube'
-    v2: '.usa-social-link--youtube'
-  - v1: '.usa-sign_up-block'
-    v2: '.usa-sign-up'
-  - v1: '.usa-sign_up-header'
-    v2: '.usa-sign-up__heading'
-  - v1: '.usa-social-links'
-    v2: '.usa-footer__social-links'
-  - v1: '.usa-social_link'
-    v2: '.usa-social-link'
+  - v1: ".usa-link-facebook"
+    v2: ".usa-social-link--facebook"
+  - v1: ".usa-link-rss"
+    v2: ".usa-social-link--rss"
+  - v1: ".usa-link-twitter"
+    v2: ".usa-social-link--twitter"
+  - v1: ".usa-link-youtube"
+    v2: ".usa-social-link--youtube"
+  - v1: ".usa-sign_up-block"
+    v2: ".usa-sign-up"
+  - v1: ".usa-sign_up-header"
+    v2: ".usa-sign-up__heading"
+  - v1: ".usa-social-links"
+    v2: ".usa-footer__social-links"
+  - v1: ".usa-social_link"
+    v2: ".usa-social-link"
 
 form:
-  - v1: '.usa-additional_text'
-    v2: 'deprecated: not used'
+  - v1: ".usa-additional_text"
+    v2: "deprecated: not used"
     deprecated: true
-  - v1: '.usa-checklist'
-    v2: '.usa-checklist'
-  - v1: '.usa-checklist li'
-    v2: '.usa-checklist__item'
-  - v1: '.usa-checklist-checked'
-    v2: '.usa-checklist__item--checked'
-  - v1: '.usa-form'
-    v2: '.usa-form'
-  - v1: '.usa-form-large'
-    v2: '.usa-form--large'
-  - v1: '.usa-form-note'
-    v2: '.usa-form__note'
-  - v1: '.usa-input-medium'
-    v2: '.usa-input--medium'
-  - v1: '.usa-input-tiny'
-    v2: '.usa-input--small'
-  - v1: '.usa-input-grid'
-    v2: 'deprecated: use grid utilities'
+  - v1: ".usa-checklist"
+    v2: ".usa-checklist"
+  - v1: ".usa-checklist li"
+    v2: ".usa-checklist__item"
+  - v1: ".usa-checklist-checked"
+    v2: ".usa-checklist__item--checked"
+  - v1: ".usa-form"
+    v2: ".usa-form"
+  - v1: ".usa-form-large"
+    v2: ".usa-form--large"
+  - v1: ".usa-form-note"
+    v2: ".usa-form__note"
+  - v1: ".usa-input-medium"
+    v2: ".usa-input--medium"
+  - v1: ".usa-input-tiny"
+    v2: ".usa-input--small"
+  - v1: ".usa-input-grid"
+    v2: "deprecated: use grid utilities"
     deprecated: true
-  - v1: '.usa-input-grid-small'
-    v2: 'deprecated: use grid utilities'
+  - v1: ".usa-input-grid-small"
+    v2: "deprecated: use grid utilities"
     deprecated: true
-  - v1: '.usa-input-grid-medium'
-    v2: 'deprecated: use grid utilities'
+  - v1: ".usa-input-grid-medium"
+    v2: "deprecated: use grid utilities"
     deprecated: true
-  - v1: '.usa-input-grid-large'
-    v2: 'deprecated: use grid utilities'
+  - v1: ".usa-input-grid-large"
+    v2: "deprecated: use grid utilities"
     deprecated: true
 
 graphic-list:
-  - v1: '.usa-graphic_list'
-    v2: '.usa-graphic-list'
-  - v1: '.usa-graphic_list h3'
-    v2: '.usa-graphic-list__heading'
-  - v1: '.usa-graphic_list-row'
-    v2: '.usa-graphic-list__row'
+  - v1: ".usa-graphic_list"
+    v2: ".usa-graphic-list"
+  - v1: ".usa-graphic_list h3"
+    v2: ".usa-graphic-list__heading"
+  - v1: ".usa-graphic_list-row"
+    v2: ".usa-graphic-list__row"
 
 header:
-  - v1: '.usa-header'
-    v2: '.usa-header'
-  - v1: '.usa-logo'
-    v2: '.usa-logo'
-  - v1: '.usa-logo-text'
-    v2: '.usa-logo__text'
-  - v1: '.usa-menu-btn'
-    v2: '.usa-menu-btn'
-  - v1: '.usa-overlay'
-    v2: '.usa-overlay'
-  - v1: '.usa-overlay.is-visible'
-    v2: '.usa-overlay.is-visible'
-  - v1: '.usa-header-basic'
-    v2: '.usa-header--basic'
-  - v1: '.usa-navbar'
-    v2: '.usa-navbar'
-  - v1: '.usa-header-extended'
-    v2: '.usa-header--extended'
-  - v1: '.usa-current'
-    v2: '.usa-current'
+  - v1: ".usa-header"
+    v2: ".usa-header"
+  - v1: ".usa-logo"
+    v2: ".usa-logo"
+  - v1: ".usa-logo-text"
+    v2: ".usa-logo__text"
+  - v1: ".usa-menu-btn"
+    v2: ".usa-menu-btn"
+  - v1: ".usa-overlay"
+    v2: ".usa-overlay"
+  - v1: ".usa-overlay.is-visible"
+    v2: ".usa-overlay.is-visible"
+  - v1: ".usa-header-basic"
+    v2: ".usa-header--basic"
+  - v1: ".usa-navbar"
+    v2: ".usa-navbar"
+  - v1: ".usa-header-extended"
+    v2: ".usa-header--extended"
+  - v1: ".usa-current"
+    v2: ".usa-current"
 
 hero:
-  - v1: '.usa-hero'
-    v2: '.usa-hero'
-  - v1: '.usa-hero h2'
-    v2: '.usa-hero__heading'
-  - v1: '.usa-hero-callout'
-    v2: '.usa-hero__callout'
-  - v1: '.usa-hero-callout-alt'
-    v2: '.usa-hero__callout-alt'
-  - v1: '.usa-hero-link'
-    v2: 'deprecated: use utilities'
+  - v1: ".usa-hero"
+    v2: ".usa-hero"
+  - v1: ".usa-hero h2"
+    v2: ".usa-hero__heading"
+  - v1: ".usa-hero-callout"
+    v2: ".usa-hero__callout"
+  - v1: ".usa-hero-callout-alt"
+    v2: ".usa-hero__callout-alt"
+  - v1: ".usa-hero-link"
+    v2: "deprecated: use utilities"
     deprecated: true
 
 layout:
-  - v1: '.usa-layout-docs-main_content'
-    v2: '.usa-layout-docs__main'
-  - v1: '.usa-layout-docs-sidenav'
-    v2: '.usa-layout-docs__sidenav'
-  - v1: '.usa-layout-docs'
-    v2: '.usa-layout-docs'
+  - v1: ".usa-layout-docs-main_content"
+    v2: ".usa-layout-docs__main"
+  - v1: ".usa-layout-docs-sidenav"
+    v2: ".usa-layout-docs__sidenav"
+  - v1: ".usa-layout-docs"
+    v2: ".usa-layout-docs"
 
 media-block:
-  - v1: '.usa-media_block'
-    v2: '.usa-media-block'
-  - v1: '.usa-media_block-body'
-    v2: '.usa-media-block__body'
-  - v1: '.usa-media_block-img'
-    v2: '.usa-media-block__img'
+  - v1: ".usa-media_block"
+    v2: ".usa-media-block"
+  - v1: ".usa-media_block-body"
+    v2: ".usa-media-block__body"
+  - v1: ".usa-media_block-img"
+    v2: ".usa-media-block__img"
 
 navigation:
-  - v1: '.usa-accordion-button'
-    v2: '.usa-accordion__button'
-  - v1: '.usa-current'
-    v2: '.usa-current'
-  - v1: '.usa-header-basic-megamenu'
-    v2: '.usa-header--megamenu'
-  - v1: '.usa-header-extended'
-    v2: '.usa-header--extended'
-  - v1: '.usa-header-search-button'
-    v2: 'deprecated: not used'
+  - v1: ".usa-accordion-button"
+    v2: ".usa-accordion__button"
+  - v1: ".usa-current"
+    v2: ".usa-current"
+  - v1: ".usa-header-basic-megamenu"
+    v2: ".usa-header--megamenu"
+  - v1: ".usa-header-extended"
+    v2: ".usa-header--extended"
+  - v1: ".usa-header-search-button"
+    v2: "deprecated: not used"
     deprecated: true
-  - v1: '.usa-megamenu'
-    v2: '.usa-megamenu'
-  - v1: '.usa-megamenu-col'
-    v2: 'deprecated: use utilities'
+  - v1: ".usa-megamenu"
+    v2: ".usa-megamenu"
+  - v1: ".usa-megamenu-col"
+    v2: "deprecated: use utilities"
     deprecated: true
-  - v1: '.usa-mobile_nav-active'
-    v2: '.usa-mobile-nav--active'
-  - v1: '.usa-nav'
-    v2: '.usa-nav'
-  - v1: '.usa-nav-close'
-    v2: '.usa-nav__close'
-  - v1: '.usa-nav-container'
-    v2: '.usa-nav-container'
-  - v1: '.usa-nav-inner'
-    v2: '.usa-nav__inner'
-  - v1: '.usa-nav-link'
-    v2: '.usa-nav__link'
-  - v1: '.usa-nav-primary'
-    v2: '.usa-nav__primary'
-  - v1: '.usa-nav-primary li'
-    v2: '.usa-nav__primary-item'
-  - v1: '.usa-nav-secondary'
-    v2: '.usa-nav__secondary'
-  - v1: '.usa-nav-secondary li'
-    v2: '.usa-nav__secondary-item'
-  - v1: '.usa-nav-secondary-links'
-    v2: '.usa-nav__secondary-links'
-  - v1: '.usa-nav-submenu'
-    v2: '.usa-nav__submenu'
-  - v1: '.usa-nav-submenu li'
-    v2: '.usa-nav__submenu-item'
-  - v1: '.usa-nav-submenu ul'
-    v2: '.usa-nav__submenu-list'
-  - v1: '.usa-navbar'
-    v2: '.usa-navbar'
-  - v1: '.usa-search'
-    v2: '.usa-search'
+  - v1: ".usa-mobile_nav-active"
+    v2: ".usa-mobile-nav--active"
+  - v1: ".usa-nav"
+    v2: ".usa-nav"
+  - v1: ".usa-nav-close"
+    v2: ".usa-nav__close"
+  - v1: ".usa-nav-container"
+    v2: ".usa-nav-container"
+  - v1: ".usa-nav-inner"
+    v2: ".usa-nav__inner"
+  - v1: ".usa-nav-link"
+    v2: ".usa-nav__link"
+  - v1: ".usa-nav-primary"
+    v2: ".usa-nav__primary"
+  - v1: ".usa-nav-primary li"
+    v2: ".usa-nav__primary-item"
+  - v1: ".usa-nav-secondary"
+    v2: ".usa-nav__secondary"
+  - v1: ".usa-nav-secondary li"
+    v2: ".usa-nav__secondary-item"
+  - v1: ".usa-nav-secondary-links"
+    v2: ".usa-nav__secondary-links"
+  - v1: ".usa-nav-submenu"
+    v2: ".usa-nav__submenu"
+  - v1: ".usa-nav-submenu li"
+    v2: ".usa-nav__submenu-item"
+  - v1: ".usa-nav-submenu ul"
+    v2: ".usa-nav__submenu-list"
+  - v1: ".usa-navbar"
+    v2: ".usa-navbar"
+  - v1: ".usa-search"
+    v2: ".usa-search"
 
 search:
-  - v1: '.usa-search'
-    v2: '.usa-search'
-  - v1: '.usa-search-big'
-    v2: '.usa-search--big'
-  - v1: '.usa-search-input'
-    v2: '.usa-search__input'
-  - v1: '.usa-search-small'
-    v2: '.usa-search--small'
-  - v1: '.usa-search-submit'
-    v2: '.usa-search__submit'
-  - v1: '.usa-search-submit-text'
-    v2: '.usa-search__submit-text'
+  - v1: ".usa-search"
+    v2: ".usa-search"
+  - v1: ".usa-search-big"
+    v2: ".usa-search--big"
+  - v1: ".usa-search-input"
+    v2: ".usa-search__input"
+  - v1: ".usa-search-small"
+    v2: ".usa-search--small"
+  - v1: ".usa-search-submit"
+    v2: ".usa-search__submit"
+  - v1: ".usa-search-submit-text"
+    v2: ".usa-search__submit-text"
 
 section:
-  - v1: '.usa-section-dark'
-    v2: '.usa-section--dark'
-  - v1: '.usa-section-light'
-    v2: '.usa-section--light'
+  - v1: ".usa-section-dark"
+    v2: ".usa-section--dark"
+  - v1: ".usa-section-light"
+    v2: ".usa-section--light"
 
 sidenav:
-  - v1: '.usa-layout-docs-sidenav'
-    v2: '.usa-layout-docs__sidenav'
-  - v1: '.usa-sidenav-list'
-    v2: '.usa-sidenav'
-  - v1: '.usa-sidenav-sub_list'
-    v2: '.usa-sidenav__sublist'
-  - v1: '.usa-sidenav li'
-    v2: '.usa-sidenav__item'
+  - v1: ".usa-layout-docs-sidenav"
+    v2: ".usa-layout-docs__sidenav"
+  - v1: ".usa-sidenav-list"
+    v2: ".usa-sidenav"
+  - v1: ".usa-sidenav-sub_list"
+    v2: ".usa-sidenav__sublist"
+  - v1: ".usa-sidenav li"
+    v2: ".usa-sidenav__item"
 
 skipnav:
-  - v1: '.usa-skipnav'
-    v2: '.usa-skipnav'
+  - v1: ".usa-skipnav"
+    v2: ".usa-skipnav"
 
 variables:
-  - v1: '$em-base'
-    v1_value: '10px'
-    v2: '$theme-root-font-size'
-    v2_value: '16px'
-    kind: 'px'
-    location: 'typography'
-    notes: 'only applies when `$theme-respect-user-font-size` is set to `false`'
-  - v1: '$base-font-size'
-    v1_value: '1.7rem'
-    v2: '$theme-body-font-size'
-    v2_value: 'sm'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$em-base"
+    v1_value: "10px"
+    v2: "$theme-root-font-size"
+    v2_value: "16px"
+    kind: "px"
+    location: "typography"
+    notes: "only applies when `$theme-respect-user-font-size` is set to `false`"
+  - v1: "$base-font-size"
+    v1_value: "1.7rem"
+    v2: "$theme-body-font-size"
+    v2_value: "sm"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$small-font-size'
-    v1_value: '1.4rem'
-    v2: '$theme-small-font-size'
-    v2_value: '2xs'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$small-font-size"
+    v1_value: "1.4rem"
+    v2: "$theme-small-font-size"
+    v2_value: "2xs"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$lead-font-size'
-    v1_value: '2rem'
-    v2: '$theme-lead-font-size'
-    v2_value: 'lg'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$lead-font-size"
+    v1_value: "2rem"
+    v2: "$theme-lead-font-size"
+    v2_value: "lg"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$title-font-size'
-    v1_value: '5.2rem'
-    v2: '$theme-display-font-size'
-    v2_value: '3xl'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$title-font-size"
+    v1_value: "5.2rem"
+    v2: "$theme-display-font-size"
+    v2_value: "3xl"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$h1-font-size'
-    v1_value: '4rem'
-    v2: '$theme-h1-font-size'
-    v2_value: '2xl'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$h1-font-size"
+    v1_value: "4rem"
+    v2: "$theme-h1-font-size"
+    v2_value: "2xl"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$h2-font-size'
-    v1_value: '3rem'
-    v2: '$theme-h2-font-size'
-    v2_value: 'xl'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$h2-font-size"
+    v1_value: "3rem"
+    v2: "$theme-h2-font-size"
+    v2_value: "xl"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$h3-font-size'
-    v1_value: '2rem'
-    v2: '$theme-h3-font-size'
-    v2_value: 'lg'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$h3-font-size"
+    v1_value: "2rem"
+    v2: "$theme-h3-font-size"
+    v2_value: "lg"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$h4-font-size'
-    v1_value: '1.7rem'
-    v2: '$theme-h4-font-size'
-    v2_value: 'sm'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$h4-font-size"
+    v1_value: "1.7rem"
+    v2: "$theme-h4-font-size"
+    v2_value: "sm"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$h5-font-size'
-    v1_value: '1.5rem'
-    v2: '$theme-h5-font-size'
-    v2_value: 'xs'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$h5-font-size"
+    v1_value: "1.5rem"
+    v2: "$theme-h5-font-size"
+    v2_value: "xs"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$h6-font-size'
-    v1_value: '1.3rem'
-    v2: '$theme-h6-font-size'
-    v2_value: '3xs'
-    kind: 'size'
-    location: 'typography'
+  - v1: "$h6-font-size"
+    v1_value: "1.3rem"
+    v2: "$theme-h6-font-size"
+    v2_value: "3xs"
+    kind: "size"
+    location: "typography"
     notes:
-  - v1: '$base-line-height'
-    v1_value: '1.5'
-    v2: '$theme-body-line-height'
-    v2_value: '5'
-    kind: 'line-height'
-    location: 'typography'
+  - v1: "$base-line-height"
+    v1_value: "1.5"
+    v2: "$theme-body-line-height"
+    v2_value: "5"
+    kind: "line-height"
+    location: "typography"
     notes:
-  - v1: '$heading-line-height'
-    v1_value: '1.3'
-    v2: '$theme-heading-line-height'
-    v2_value: '2'
-    kind: 'line-height'
-    location: 'typography'
+  - v1: "$heading-line-height"
+    v1_value: "1.3"
+    v2: "$theme-heading-line-height"
+    v2_value: "2"
+    kind: "line-height"
+    location: "typography"
     notes:
-  - v1: '$lead-line-height'
-    v1_value: '1.7'
-    v2: '$theme-lead-line-height'
-    v2_value: '6'
-    kind: 'line-height'
-    location: 'typography'
+  - v1: "$lead-line-height"
+    v1_value: "1.7"
+    v2: "$theme-lead-line-height"
+    v2_value: "6"
+    kind: "line-height"
+    location: "typography"
     notes:
-  - v1: '$font-sans'
-    v1_value: 'Source Sans Pro, $helvetica'
-    v2: '$theme-font-type-sans'
-    v2_value: 'source-sans-pro'
-    kind: 'family'
-    location: 'typography'
+  - v1: "$font-sans"
+    v1_value: "Source Sans Pro, $helvetica"
+    v2: "$theme-font-type-sans"
+    v2_value: "source-sans-pro"
+    kind: "family"
+    location: "typography"
     notes:
-  - v1: '$font-serif'
-    v1_value: 'Merriweather, $georgia'
-    v2: '$theme-font-type-serif'
-    v2_value: 'merriweather'
-    kind: 'family'
-    location: 'typography'
+  - v1: "$font-serif"
+    v1_value: "Merriweather, $georgia"
+    v2: "$theme-font-type-serif"
+    v2_value: "merriweather"
+    kind: "family"
+    location: "typography"
     notes:
-  - v1: '$font-normal'
-    v1_value: '400'
-    v2: '$theme-font-weight-normal'
-    v2_value: '400'
-    kind: 'weight'
-    location: 'typography'
+  - v1: "$font-normal"
+    v1_value: "400"
+    v2: "$theme-font-weight-normal"
+    v2_value: "400"
+    kind: "weight"
+    location: "typography"
     notes:
-  - v1: '$font-bold'
-    v1_value: '700'
-    v2: '$theme-font-weight-bold'
-    v2_value: '700'
-    kind: 'weight'
-    location: 'typography'
+  - v1: "$font-bold"
+    v1_value: "700"
+    v2: "$theme-font-weight-bold"
+    v2_value: "700"
+    kind: "weight"
+    location: "typography"
     notes:
-  - v1: '$color-blue'
-    v1_value: '#0071bc'
-    v2: 'n/a'
-    v2_value: 'blue-60v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-blue-darker'
-    v1_value: '#205493'
-    v2: 'n/a'
-    v2_value: 'blue-warm-70v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-blue-darkest'
-    v1_value: '#112e51'
-    v2: 'n/a'
-    v2_value: 'blue-warm-80v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-aqua'
-    v1_value: '#02bfe7'
-    v2: 'n/a'
-    v2_value: 'cyan-30v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-aqua-dark'
-    v1_value: '#00a6d2'
-    v2: 'n/a'
-    v2_value: 'cyan-40v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-aqua-darkest'
-    v1_value: '#046b99'
-    v2: 'n/a'
-    v2_value: 'blue-cool-60v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-aqua-light'
-    v1_value: '#9bdaf1'
-    v2: 'n/a'
-    v2_value: 'blue-cool-20v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-aqua-lightest'
-    v1_value: '#e1f3f8'
-    v2: 'n/a'
-    v2_value: 'blue-cool-5v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-red'
-    v1_value: '#e31c3d'
-    v2: 'n/a'
-    v2_value: 'red-cool-50v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-red-dark'
-    v1_value: '#cd2026'
-    v2: 'n/a'
-    v2_value: 'red-60v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-red-darkest'
-    v1_value: '#981b1e'
-    v2: 'n/a'
-    v2_value: 'red-70v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-red-light'
-    v1_value: '#e59393'
-    v2: 'n/a'
-    v2_value: 'red-30'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-red-lightest'
-    v1_value: '#f9dede'
-    v2: 'n/a'
-    v2_value: 'red-cool-10v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-white'
-    v1_value: '#ffffff'
-    v2: 'n/a'
-    v2_value: 'white'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-black'
-    v1_value: '#000000'
-    v2: 'n/a'
-    v2_value: 'black'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-black-light'
-    v1_value: '#212121'
-    v2: 'n/a'
-    v2_value: 'gray-90'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gray-dark'
-    v1_value: '#323a45'
-    v2: 'n/a'
-    v2_value: 'gray-cool-70'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gray'
-    v1_value: '#5b616b'
-    v2: 'n/a'
-    v2_value: 'gray-cool-60'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gray-medium'
-    v1_value: '#757575'
-    v2: 'n/a'
-    v2_value: 'gray-50'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gray-light'
-    v1_value: '#aeb0b5'
-    v2: 'n/a'
-    v2_value: 'gray-cool-30'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gray-lighter'
-    v1_value: '#d6d7d9'
-    v2: 'n/a'
-    v2_value: 'gray-cool-10'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gray-lightest'
-    v1_value: '#f1f1f1'
-    v2: 'n/a'
-    v2_value: 'gray-cool-5'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gray-warm-dark'
-    v1_value: '#494440'
-    v2: 'n/a'
-    v2_value: 'gray-warm-70'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gray-warm-light'
-    v1_value: '#e4e2e0'
-    v2: 'n/a'
-    v2_value: 'gray-warm-10'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gray-cool-light'
-    v1_value: '#dce4ef'
-    v2: 'n/a'
-    v2_value: 'blue-warm-10'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gold'
-    v1_value: '#fdb81e'
-    v2: 'n/a'
-    v2_value: 'gold-20v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gold-light'
-    v1_value: '#f9c642'
-    v2: 'n/a'
-    v2_value: 'yellow-20v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gold-lighter'
-    v1_value: '#fad980'
-    v2: 'n/a'
-    v2_value: 'gold-10v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-gold-lightest'
-    v1_value: '#fff1d2'
-    v2: 'n/a'
-    v2_value: 'gold-5v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-green'
-    v1_value: '#2e8540'
-    v2: 'n/a'
-    v2_value: 'green-cool-50v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-green-light'
-    v1_value: '#4aa564'
-    v2: 'n/a'
-    v2_value: 'green-cool-40'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-green-lighter'
-    v1_value: '#94bfa2'
-    v2: 'n/a'
-    v2_value: 'green-cool-20'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-green-lightest'
-    v1_value: '#e7f4e4'
-    v2: 'n/a'
-    v2_value: 'green-cool-5'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-cool-blue'
-    v1_value: '#205493'
-    v2: 'n/a'
-    v2_value: 'blue-warm-60'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-cool-blue-light'
-    v1_value: '#4773aa'
-    v2: 'n/a'
-    v2_value: 'blue-warm-50'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-cool-blue-lighter'
-    v1_value: '#8ba6ca'
-    v2: 'n/a'
-    v2_value: 'blue-warm-30'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-cool-blue-lightest'
-    v1_value: '#dce4ef'
-    v2: 'n/a'
-    v2_value: 'blue-warm-10'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-purple'
-    v1_value: '#4c2c92'
-    v2: 'n/a'
-    v2_value: 'violet-70v'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$color-primary'
-    v1_value: '$color-blue'
-    v2: '$theme-color-primary'
-    v2_value: 'blue-60v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-blue"
+    v1_value: "#0071bc"
+    v2: "n/a"
+    v2_value: "blue-60v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-blue-darker"
+    v1_value: "#205493"
+    v2: "n/a"
+    v2_value: "blue-warm-70v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-blue-darkest"
+    v1_value: "#112e51"
+    v2: "n/a"
+    v2_value: "blue-warm-80v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-aqua"
+    v1_value: "#02bfe7"
+    v2: "n/a"
+    v2_value: "cyan-30v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-aqua-dark"
+    v1_value: "#00a6d2"
+    v2: "n/a"
+    v2_value: "cyan-40v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-aqua-darkest"
+    v1_value: "#046b99"
+    v2: "n/a"
+    v2_value: "blue-cool-60v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-aqua-light"
+    v1_value: "#9bdaf1"
+    v2: "n/a"
+    v2_value: "blue-cool-20v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-aqua-lightest"
+    v1_value: "#e1f3f8"
+    v2: "n/a"
+    v2_value: "blue-cool-5v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-red"
+    v1_value: "#e31c3d"
+    v2: "n/a"
+    v2_value: "red-cool-50v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-red-dark"
+    v1_value: "#cd2026"
+    v2: "n/a"
+    v2_value: "red-60v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-red-darkest"
+    v1_value: "#981b1e"
+    v2: "n/a"
+    v2_value: "red-70v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-red-light"
+    v1_value: "#e59393"
+    v2: "n/a"
+    v2_value: "red-30"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-red-lightest"
+    v1_value: "#f9dede"
+    v2: "n/a"
+    v2_value: "red-cool-10v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-white"
+    v1_value: "#ffffff"
+    v2: "n/a"
+    v2_value: "white"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-black"
+    v1_value: "#000000"
+    v2: "n/a"
+    v2_value: "black"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-black-light"
+    v1_value: "#212121"
+    v2: "n/a"
+    v2_value: "gray-90"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gray-dark"
+    v1_value: "#323a45"
+    v2: "n/a"
+    v2_value: "gray-cool-70"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gray"
+    v1_value: "#5b616b"
+    v2: "n/a"
+    v2_value: "gray-cool-60"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gray-medium"
+    v1_value: "#757575"
+    v2: "n/a"
+    v2_value: "gray-50"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gray-light"
+    v1_value: "#aeb0b5"
+    v2: "n/a"
+    v2_value: "gray-cool-30"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gray-lighter"
+    v1_value: "#d6d7d9"
+    v2: "n/a"
+    v2_value: "gray-cool-10"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gray-lightest"
+    v1_value: "#f1f1f1"
+    v2: "n/a"
+    v2_value: "gray-cool-5"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gray-warm-dark"
+    v1_value: "#494440"
+    v2: "n/a"
+    v2_value: "gray-warm-70"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gray-warm-light"
+    v1_value: "#e4e2e0"
+    v2: "n/a"
+    v2_value: "gray-warm-10"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gray-cool-light"
+    v1_value: "#dce4ef"
+    v2: "n/a"
+    v2_value: "blue-warm-10"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gold"
+    v1_value: "#fdb81e"
+    v2: "n/a"
+    v2_value: "gold-20v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gold-light"
+    v1_value: "#f9c642"
+    v2: "n/a"
+    v2_value: "yellow-20v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gold-lighter"
+    v1_value: "#fad980"
+    v2: "n/a"
+    v2_value: "gold-10v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-gold-lightest"
+    v1_value: "#fff1d2"
+    v2: "n/a"
+    v2_value: "gold-5v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-green"
+    v1_value: "#2e8540"
+    v2: "n/a"
+    v2_value: "green-cool-50v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-green-light"
+    v1_value: "#4aa564"
+    v2: "n/a"
+    v2_value: "green-cool-40"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-green-lighter"
+    v1_value: "#94bfa2"
+    v2: "n/a"
+    v2_value: "green-cool-20"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-green-lightest"
+    v1_value: "#e7f4e4"
+    v2: "n/a"
+    v2_value: "green-cool-5"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-cool-blue"
+    v1_value: "#205493"
+    v2: "n/a"
+    v2_value: "blue-warm-60"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-cool-blue-light"
+    v1_value: "#4773aa"
+    v2: "n/a"
+    v2_value: "blue-warm-50"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-cool-blue-lighter"
+    v1_value: "#8ba6ca"
+    v2: "n/a"
+    v2_value: "blue-warm-30"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-cool-blue-lightest"
+    v1_value: "#dce4ef"
+    v2: "n/a"
+    v2_value: "blue-warm-10"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-purple"
+    v1_value: "#4c2c92"
+    v2: "n/a"
+    v2_value: "violet-70v"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$color-primary"
+    v1_value: "$color-blue"
+    v2: "$theme-color-primary"
+    v2_value: "blue-60v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-primary-darker'
-    v1_value: '$color-blue-darker'
-    v2: '$theme-color-primary-dark'
-    v2_value: 'blue-warm-70v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-primary-darker"
+    v1_value: "$color-blue-darker"
+    v2: "$theme-color-primary-dark"
+    v2_value: "blue-warm-70v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-primary-darkest'
-    v1_value: '$color-blue-darkest'
-    v2: '$theme-color-primary-darker'
-    v2_value: 'blue-warm-80v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-primary-darkest"
+    v1_value: "$color-blue-darkest"
+    v2: "$theme-color-primary-darker"
+    v2_value: "blue-warm-80v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-primary-alt'
-    v1_value: '$color-aqua'
-    v2: '$theme-color-accent-cool'
-    v2_value: 'cyan-30v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-primary-alt"
+    v1_value: "$color-aqua"
+    v2: "$theme-color-accent-cool"
+    v2_value: "cyan-30v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-primary-alt-dark'
-    v1_value: '$color-aqua-dark'
-    v2: '$theme-color-accent-cool-dark'
-    v2_value: 'blue-cool-40v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-primary-alt-dark"
+    v1_value: "$color-aqua-dark"
+    v2: "$theme-color-accent-cool-dark"
+    v2_value: "blue-cool-40v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-primary-alt-darkest'
-    v1_value: '$color-aqua-darkest'
-    v2: '$theme-color-accent-cool-darker'
-    v2_value: 'blue-cool-60v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-primary-alt-darkest"
+    v1_value: "$color-aqua-darkest"
+    v2: "$theme-color-accent-cool-darker"
+    v2_value: "blue-cool-60v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-primary-alt-light'
-    v1_value: '$color-aqua-light'
-    v2: '$theme-color-accent-cool-light'
-    v2_value: 'blue-cool-20v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-primary-alt-light"
+    v1_value: "$color-aqua-light"
+    v2: "$theme-color-accent-cool-light"
+    v2_value: "blue-cool-20v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-primary-alt-lightest'
-    v1_value: '$color-aqua-lightest'
-    v2: '$theme-color-accent-cool-lighter'
-    v2_value: 'blue-cool-5v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-primary-alt-lightest"
+    v1_value: "$color-aqua-lightest"
+    v2: "$theme-color-accent-cool-lighter"
+    v2_value: "blue-cool-5v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-secondary'
-    v1_value: '$color-red'
-    v2: '$theme-color-secondary-vivid'
-    v2_value: 'red-cool-50v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-secondary"
+    v1_value: "$color-red"
+    v2: "$theme-color-secondary-vivid"
+    v2_value: "red-cool-50v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-secondary-dark'
-    v1_value: '$color-red-dark'
-    v2: '$theme-color-secondary-dark'
-    v2_value: 'red-60v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-secondary-dark"
+    v1_value: "$color-red-dark"
+    v2: "$theme-color-secondary-dark"
+    v2_value: "red-60v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-secondary-darkest'
-    v1_value: '$color-red-darkest'
-    v2: '$theme-color-secondary-darker'
-    v2_value: 'red-70v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-secondary-darkest"
+    v1_value: "$color-red-darkest"
+    v2: "$theme-color-secondary-darker"
+    v2_value: "red-70v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-secondary-light'
-    v1_value: '$color-red-light'
-    v2: '$theme-color-secondary-light'
-    v2_value: 'red-30'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-secondary-light"
+    v1_value: "$color-red-light"
+    v2: "$theme-color-secondary-light"
+    v2_value: "red-30"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-secondary-lightest'
-    v1_value: '$color-red-lightest'
-    v2: '$theme-color-secondary-lighter'
-    v2_value: 'red-cool-10v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-secondary-lightest"
+    v1_value: "$color-red-lightest"
+    v2: "$theme-color-secondary-lighter"
+    v2_value: "red-cool-10v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-base'
-    v1_value: '$color-black-light'
-    v2: '$theme-color-base-darkest'
-    v2_value: 'black-90'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-base"
+    v1_value: "$color-black-light"
+    v2: "$theme-color-base-darkest"
+    v2_value: "black-90"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-focus'
-    v1_value: '$color-gray-light'
-    v2: '$theme-focus-color'
-    v2_value: 'blue-40v'
-    kind: 'color'
-    location: 'general'
+  - v1: "$color-focus"
+    v1_value: "$color-gray-light"
+    v2: "$theme-focus-color"
+    v2_value: "blue-40v"
+    kind: "color"
+    location: "general"
     notes:
-  - v1: '$color-visited'
-    v1_value: '$color-purple'
-    v2: '$theme-link-visited-color'
-    v2_value: 'violet-70v'
-    kind: 'color'
-    location: 'color'
+  - v1: "$color-visited"
+    v1_value: "$color-purple"
+    v2: "$theme-link-visited-color"
+    v2_value: "violet-70v"
+    kind: "color"
+    location: "color"
     notes:
-  - v1: '$color-shadow'
-    v1_value: 'rgba(#000, 0.3)'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use shadow tokens'
-  - v1: '$color-transparent'
-    v1_value: 'rgba(#000, 0)'
-    v2: 'n/a'
-    v2_value: 'transparent'
-    kind: '—'
-    notes: 'use color token'
-  - v1: '$small-screen'
-    v1_value: '481px'
-    v2: 'n/a'
-    v2_value: 'mobile-lg'
-    kind: '—'
-    notes: 'use width token'
-  - v1: '$medium-screen'
-    v1_value: '600px'
-    v2: 'n/a'
-    v2_value: 'tablet'
-    kind: '—'
-    notes: 'use width token'
-  - v1: '$large-screen'
-    v1_value: '1201px'
-    v2: 'n/a'
-    v2_value: 'desktop-lg'
-    kind: '—'
-    notes: 'use width token'
-  - v1: '$grid-columns-small'
-    v1_value: '1'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use layout grid'
-  - v1: '$grid-columns-medium'
-    v1_value: '6'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use layout grid'
-  - v1: '$grid-columns-large'
-    v1_value: '12'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use layout grid'
-  - v1: '$small'
-    v1_value: 'new-breakpoint(min-width $small-screen $grid-columns-small)'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use `at-media()` mixin and width tokens'
-  - v1: '$medium'
-    v1_value: 'new-breakpoint(min-width $medium-screen $grid-columns-medium)'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use `at-media()` mixin and width tokens'
-  - v1: '$large'
-    v1_value: 'new-breakpoint(min-width $large-screen $grid-columns-large)'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use `at-media()` mixin and width tokens'
-  - v1: '$asset-path'
-    v1_value: '../'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use `$theme-font-path` and `$theme-image-path`'
-  - v1: '$font-path'
-    v1_value: '#{$asset-path}fonts'
-    v2: '$theme-font-path'
-    v2_value: '../fonts'
-    kind: 'path'
-    location: 'typography'
-    notes: 'relative to the compiled css'
-  - v1: '$image-path'
-    v1_value: '#{$asset-path}img'
-    v2: '$theme-image-path'
-    v2_value: '../img'
-    kind: 'path'
-    location: 'general'
-    notes: 'relative to the compiled css'
-  - v1: '$asset-pipeline'
-    v1_value: 'FALSE'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'this functionality is not implemented in v2'
-  - v1: '$text-max-width'
-    v1_value: '66ch'
-    v2: '$theme-text-measure'
-    v2_value: '4'
-    kind: 'measure'
-    location: 'typography'
+  - v1: "$color-shadow"
+    v1_value: "rgba(#000, 0.3)"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use shadow tokens"
+  - v1: "$color-transparent"
+    v1_value: "rgba(#000, 0)"
+    v2: "n/a"
+    v2_value: "transparent"
+    kind: "—"
+    notes: "use color token"
+  - v1: "$small-screen"
+    v1_value: "481px"
+    v2: "n/a"
+    v2_value: "mobile-lg"
+    kind: "—"
+    notes: "use width token"
+  - v1: "$medium-screen"
+    v1_value: "600px"
+    v2: "n/a"
+    v2_value: "tablet"
+    kind: "—"
+    notes: "use width token"
+  - v1: "$large-screen"
+    v1_value: "1201px"
+    v2: "n/a"
+    v2_value: "desktop-lg"
+    kind: "—"
+    notes: "use width token"
+  - v1: "$grid-columns-small"
+    v1_value: "1"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use layout grid"
+  - v1: "$grid-columns-medium"
+    v1_value: "6"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use layout grid"
+  - v1: "$grid-columns-large"
+    v1_value: "12"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use layout grid"
+  - v1: "$small"
+    v1_value: "new-breakpoint(min-width $small-screen $grid-columns-small)"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use `at-media()` mixin and width tokens"
+  - v1: "$medium"
+    v1_value: "new-breakpoint(min-width $medium-screen $grid-columns-medium)"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use `at-media()` mixin and width tokens"
+  - v1: "$large"
+    v1_value: "new-breakpoint(min-width $large-screen $grid-columns-large)"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use `at-media()` mixin and width tokens"
+  - v1: "$asset-path"
+    v1_value: "../"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use `$theme-font-path` and `$theme-image-path`"
+  - v1: "$font-path"
+    v1_value: "#{$asset-path}fonts"
+    v2: "$theme-font-path"
+    v2_value: "../fonts"
+    kind: "path"
+    location: "typography"
+    notes: "relative to the compiled css"
+  - v1: "$image-path"
+    v1_value: "#{$asset-path}img"
+    v2: "$theme-image-path"
+    v2_value: "../img"
+    kind: "path"
+    location: "general"
+    notes: "relative to the compiled css"
+  - v1: "$asset-pipeline"
+    v1_value: "FALSE"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "this functionality is not implemented in v2"
+  - v1: "$text-max-width"
+    v1_value: "66ch"
+    v2: "$theme-text-measure"
+    v2_value: "4"
+    kind: "measure"
+    location: "typography"
     notes:
-  - v1: '$lead-max-width'
-    v1_value: '77rem'
-    v2: '$theme-lead-measure'
-    v2_value: '6'
-    kind: 'measure'
-    location: 'typography'
+  - v1: "$lead-max-width"
+    v1_value: "77rem"
+    v2: "$theme-lead-measure"
+    v2_value: "6"
+    kind: "measure"
+    location: "typography"
     notes:
-  - v1: '$site-max-width'
-    v1_value: '1040px'
-    v2: '$theme-grid-container-max-width'
-    v2_value: 'desktop'
-    kind: 'units'
-    location: 'spacing'
+  - v1: "$site-max-width"
+    v1_value: "1040px"
+    v2: "$theme-grid-container-max-width"
+    v2_value: "desktop"
+    kind: "units"
+    location: "spacing"
     notes:
-  - v1: '$site-margins'
-    v1_value: '3rem'
-    v2: '$theme-site-margins-width'
-    v2_value: '4'
-    kind: 'units'
-    location: 'spacing'
+  - v1: "$site-margins"
+    v1_value: "3rem"
+    v2: "$theme-site-margins-width"
+    v2_value: "4"
+    kind: "units"
+    location: "spacing"
     notes:
-  - v1: '$site-margins-mobile'
-    v1_value: '1.5rem'
-    v2: '$theme-site-margins-mobile-width'
-    v2_value: '2'
-    kind: 'units'
-    location: 'spacing'
+  - v1: "$site-margins-mobile"
+    v1_value: "1.5rem"
+    v2: "$theme-site-margins-mobile-width"
+    v2_value: "2"
+    kind: "units"
+    location: "spacing"
     notes:
-  - v1: '$article-max-width'
-    v1_value: '600px'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
+  - v1: "$article-max-width"
+    v1_value: "600px"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
     notes:
-  - v1: '$input-max-width'
-    v1_value: '46rem'
-    v2: '$theme-input-max-width'
-    v2_value: 'mobile-lg'
-    kind: 'units'
-    location: 'component'
+  - v1: "$input-max-width"
+    v1_value: "46rem"
+    v2: "$theme-input-max-width"
+    v2_value: "mobile-lg"
+    kind: "units"
+    location: "component"
     notes:
-  - v1: '$label-border-radius'
-    v1_value: '2px'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'not used in v2 — currently `sm`'
-  - v1: '$checkbox-border-radius'
-    v1_value: '2px'
-    v2: '$theme-checkbox-border-radius'
-    v2_value: 'sm'
-    kind: 'border-radius|units'
-    location: 'component'
+  - v1: "$label-border-radius"
+    v1_value: "2px"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "not used in v2 — currently `sm`"
+  - v1: "$checkbox-border-radius"
+    v1_value: "2px"
+    v2: "$theme-checkbox-border-radius"
+    v2_value: "sm"
+    kind: "border-radius|units"
+    location: "component"
     notes:
-  - v1: '$border-radius'
-    v1_value: '3px'
-    v2: '$theme-border-radius-md'
-    v2_value: '0.5'
-    kind: 'units'
-    location: 'spacing'
-    notes: 'use alongside `$theme-border-radius-sm` and `$theme-border-radius-lg`. sets value of `sm`, `md`, and `lg` border-radius theme tokens'
-  - v1: '$button-border-radius'
-    v1_value: '5px'
-    v2: '$theme-button-border-radius'
-    v2_value: 'md'
-    kind: 'border-radius|units'
-    location: 'component'
+  - v1: "$border-radius"
+    v1_value: "3px"
+    v2: "$theme-border-radius-md"
+    v2_value: "0.5"
+    kind: "units"
+    location: "spacing"
+    notes: "use alongside `$theme-border-radius-sm` and `$theme-border-radius-lg`. sets value of `sm`, `md`, and `lg` border-radius theme tokens"
+  - v1: "$button-border-radius"
+    v1_value: "5px"
+    v2: "$theme-button-border-radius"
+    v2_value: "md"
+    kind: "border-radius|units"
+    location: "component"
     notes:
-  - v1: '$box-shadow'
-    v1_value: '0 0 2px $color-shadow'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use shadow tokens'
-  - v1: '$focus-outline'
-    v1_value: '2px dotted $color-gray-light'
-    v2: '$theme-focus-width'
-    v2_value: '0.5'
-    kind: 'units'
-    location: 'general'
+  - v1: "$box-shadow"
+    v1_value: "0 0 2px $color-shadow"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use shadow tokens"
+  - v1: "$focus-outline"
+    v1_value: "2px dotted $color-gray-light"
+    v2: "$theme-focus-width"
+    v2_value: "0.5"
+    kind: "units"
+    location: "general"
     notes:
-  - v1: '$focus-spacing'
-    v1_value: '3px'
-    v2: '$theme-focus-offset'
-    v2_value: '0'
-    kind: 'units'
-    location: 'general'
+  - v1: "$focus-spacing"
+    v1_value: "3px"
+    v2: "$theme-focus-offset"
+    v2_value: "0"
+    kind: "units"
+    location: "general"
     notes:
-  - v1: '$nav-width'
-    v1_value: '951px'
-    v2: '$theme-header-max-width'
-    v2_value: 'desktop'
-    kind: 'units'
-    location: 'component'
-    notes: 'The maximum width of header and nav.'
-  - v1: '$nav-width'
-    v1_value: '951px'
-    v2: '$theme-header-min-width'
-    v2_value: 'desktop'
-    kind: 'units'
-    location: 'component'
-    notes: 'The minimum width of the header and nav. In practice, this is the breakpoint at which the mobile nav becomes the desktop nav. Used in media queries.'
-  - v1: '$sidenav-current-border-width'
-    v1_value: '0.4rem'
-    v2: '$theme-sidenav-current-border-width'
-    v2_value: '0.5'
-    kind: 'units'
-    location: 'component'
+  - v1: "$nav-width"
+    v1_value: "951px"
+    v2: "$theme-header-max-width"
+    v2_value: "desktop"
+    kind: "units"
+    location: "component"
+    notes: "The maximum width of header and nav."
+  - v1: "$nav-width"
+    v1_value: "951px"
+    v2: "$theme-header-min-width"
+    v2_value: "desktop"
+    kind: "units"
+    location: "component"
+    notes: "The minimum width of the header and nav. In practice, this is the breakpoint at which the mobile nav becomes the desktop nav. Used in media queries."
+  - v1: "$sidenav-current-border-width"
+    v1_value: "0.4rem"
+    v2: "$theme-sidenav-current-border-width"
+    v2_value: "0.5"
+    kind: "units"
+    location: "component"
     notes:
-  - v1: '$hit-area'
-    v1_value: '4.4rem'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'no longer a user-settable variable (now `$size-touch-target`)'
-  - v1: '$spacing-x-small'
-    v1_value: '0.5rem'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use spacing tokens'
-  - v1: '$spacing-small'
-    v1_value: '1rem'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use spacing tokens'
-  - v1: '$spacing-md-small'
-    v1_value: '1.5rem'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use spacing tokens'
-  - v1: '$spacing-medium'
-    v1_value: '2rem'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use spacing tokens'
-  - v1: '$spacing-large'
-    v1_value: '3rem'
-    v2: 'n/a'
-    v2_value: '—'
-    kind: '—'
-    notes: 'use spacing tokens'
+  - v1: "$hit-area"
+    v1_value: "4.4rem"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "no longer a user-settable variable (now `$size-touch-target`)"
+  - v1: "$spacing-x-small"
+    v1_value: "0.5rem"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use spacing tokens"
+  - v1: "$spacing-small"
+    v1_value: "1rem"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use spacing tokens"
+  - v1: "$spacing-md-small"
+    v1_value: "1.5rem"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use spacing tokens"
+  - v1: "$spacing-medium"
+    v1_value: "2rem"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use spacing tokens"
+  - v1: "$spacing-large"
+    v1_value: "3rem"
+    v2: "n/a"
+    v2_value: "—"
+    kind: "—"
+    notes: "use spacing tokens"
 
 units:
   - v1: 1px

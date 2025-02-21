@@ -7,7 +7,7 @@ contents:
     description: Checkbox border radius for rounded corners.
   - name: Background color
     var: $theme-input-background-color
-    default: 'default'
+    default: "default"
     type: color
     description: "Background color for radio and checkbox inputs."
   - name: Tile border radius
@@ -20,4 +20,3 @@ contents:
     default: '"2px"'
     type: units
     description: "Tile border thickness"
-

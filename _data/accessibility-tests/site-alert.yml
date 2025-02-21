@@ -1,7 +1,7 @@
 title: Site alert
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Color alone is not used to convey meaning.
     summary_additional: When viewing a site alert, you never have to rely on color alone to determine part of its meaning.
     test_status: pass
@@ -29,7 +29,7 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 3.2.4
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Site alert remains visible and functional when screen is magnified.
     summary_additional: |
       When you zoom to 400%, you can still read content in the alert and surrounding area easily.
@@ -37,7 +37,7 @@ test_items:
     test_type: zoom
     version_tested: 3.8.1
     wcag_criterion: 1.4.10
-# Screen reader tests
+  # Screen reader tests
   - summary: Screen reader announces the site alert in logical order.
     summary_additional: |
       When you use a screen reader and reach the site alert,

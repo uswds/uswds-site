@@ -3,12 +3,12 @@ type: token
 changelogURL:
 items:
   - date: 2023-08-23
-    summary: Updated `0` token values to include units when needed.  
-    summaryAdditional: Now, `units(0)` can be used in `calc()` functions. 
+    summary: Updated `0` token values to include units when needed.
+    summaryAdditional: Now, `units(0)` can be used in `calc()` functions.
     isBreaking:
     affectsAccessibility:
     affectsAssets:
-    affectsGuidance: 
+    affectsGuidance:
     affectsJavascript:
     affectsMarkup:
     affectsStyles: true

@@ -1,7 +1,7 @@
 title: List
 component_status: pass
 test_items:
-# Zoom/screen magnification items
+  # Zoom/screen magnification items
   - summary: Text retains functionality when screen is magnified.
     summary_additional: |
       When you zoom into 200%,
@@ -10,7 +10,7 @@ test_items:
     test_type: zoom
     version_tested: 3.8.0
     wcag_criterion: 1.4.4
-# Screen reader items
+  # Screen reader items
   - summary: Screen reader announces list.
     summary_additional: |
       When you listen to a list with a screen reader,

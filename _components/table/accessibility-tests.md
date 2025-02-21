@@ -7,5 +7,5 @@ title: Table accessibility tests
 category: Components
 lead: Any USWDS table should pass these manual accessibility tests.
 changelog:
-  key: 'component-table-accessibility'
+  key: "component-table-accessibility"
 ---

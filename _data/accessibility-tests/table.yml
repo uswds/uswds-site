@@ -1,7 +1,7 @@
 title: Table
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Color is not the only method used to convey meaning in a table.
     summary_additional: |
       When viewing the table,
@@ -18,7 +18,7 @@ test_items:
     test_type: general
     version_tested: 3.7.1
     wcag_criterion: 1.4.3
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Table content is visible and functional when screen is magnified.
     summary_additional: |
       When you zoom to 200%,
@@ -27,7 +27,7 @@ test_items:
     test_type: zoom
     version_tested: 3.7.1
     wcag_criterion: 1.4.10
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Table elements can be navigated by keyboard without special cues.
     summary_additional: |
       When using a keyboard to navigate a table,
@@ -57,7 +57,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.7.1
     wcag_criterion: 2.4.7
-# Screen reader tests
+  # Screen reader tests
   - summary: Table cells are read one at a time and provide context for each cell.
     summary_additional: |
       When using a screen reader to navigate a table,

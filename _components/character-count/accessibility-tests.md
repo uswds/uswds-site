@@ -7,5 +7,5 @@ title: Character count accessibility tests
 category: Components
 lead: Any USWDS character count component should pass these manual accessibility tests.
 changelog:
-  key: 'component-character-count-accessibility'
+  key: "component-character-count-accessibility"
 ---

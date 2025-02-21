@@ -1,7 +1,7 @@
 title: Search
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Search component matches device orientation.
     summary_additional: |
       On mobile devices and tablets, the search component should work in both portrait and landscape orientation with no loss of functionality.
@@ -15,7 +15,7 @@ test_items:
     test_type: general
     version_tested: 3.8.0
     wcag_criterion: 1.4.1
-  - summary: Search button background and text meet color contrast requirements. 
+  - summary: Search button background and text meet color contrast requirements.
     summary_additional: |
       When you use ANDI color contrast analyzer on the search button text, the contrast between background and lettering is at least 4.5:1.
     test_status: pass
@@ -91,7 +91,7 @@ test_items:
     test_type: general
     version_tested: 3.8.0
     wcag_criterion: 3.3.2
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Using zoom does not obstruct the text field or search button.
     summary_additional: |
       When you zoom to 200%, you can see the text field and button. They do not overlap with other content, and no scrolling is needed.
@@ -99,13 +99,13 @@ test_items:
     test_type: zoom
     version_tested: 3.8.0
     wcag_criterion: 1.4.10
-# Keyboard navigation tests
-  - summary: A mouse is not required to perform actions in the search component. 
+  # Keyboard navigation tests
+  - summary: A mouse is not required to perform actions in the search component.
     summary_additional: |
       When you use a keyboard to tab into the search component, you can type, delete, select and deselect the search 
       button, and perform the search.
     test_status: exception
-    status_details: | 
+    status_details: |
       Some browsers show an "x" that lets users delete text in the search field. This is not a result of USWDS; it is built-in browser behavior. 
       Keyboard tabbing will not focus on the "x," but users can use the backspace key to delete text from the search field.
     github_issue_number: 5834
@@ -134,8 +134,8 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.0
     wcag_criterion: 2.4.13
-# Screen reader tests
-  - summary: Screen reader announces elements to match visual order on screen. 
+  # Screen reader tests
+  - summary: Screen reader announces elements to match visual order on screen.
     summary_additional: |
       When using a screen reader, the search field and button are announced in the same order that they appear on the page.
     test_status: conditional

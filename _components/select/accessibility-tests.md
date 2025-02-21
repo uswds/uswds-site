@@ -7,5 +7,5 @@ title: Select accessibility tests
 category: Components
 lead: Any USWDS select component should pass these manual accessibility tests.
 changelog:
-  key: 'component-select-accessibility'
+  key: "component-select-accessibility"
 ---

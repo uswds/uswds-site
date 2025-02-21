@@ -1,20 +1,20 @@
 - token: 1
   value: 44ex
-  usage: 'shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes'
+  usage: "shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes"
 - token: 2
   value: 60ex
-  usage: 'a snappy reading line for quick-reading text'
+  usage: "a snappy reading line for quick-reading text"
 - token: 3
   value: 64ex
-  usage: 'an all-purpose reading line for most longform text'
+  usage: "an all-purpose reading line for most longform text"
 - token: 4
   value: 68ex
-  usage: 'a longer line for longform text, particularly in larger sizes'
+  usage: "a longer line for longform text, particularly in larger sizes"
 - token: 5
   value: 72ex
-  usage: 'a long, slower reading line'
+  usage: "a long, slower reading line"
 - token: 6
   value: 88ex
-  usage: 'an extra-long line sometimes useful for short text (less than 1 paragaph) or captions'
+  usage: "an extra-long line sometimes useful for short text (less than 1 paragraph) or captions"
 - token: none
   value: none

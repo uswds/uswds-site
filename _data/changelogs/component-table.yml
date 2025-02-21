@@ -35,7 +35,7 @@ items:
     versionUswds: 3.8.0
   - date: 2024-03-11
     summary: Simplified the structure of the scrollable table component example.
-    summaryAdditional:  Empty headers in the complex table example were causing accessibility issues.
+    summaryAdditional: Empty headers in the complex table example were causing accessibility issues.
     isBreaking: false
     affectsContent: true
     githubPr: 5783

@@ -1,7 +1,7 @@
 title: Icon
 component_status: pass
 test_items:
-# General items
+  # General items
   - summary: Color is not the only method used to convey icon information.
     summary_additional: |
       When you view an icon paired with text,
@@ -27,8 +27,8 @@ test_items:
     test_type: general
     version_tested:
     wcag_criterion: 3.2.4
-# Zoom/screen magnification items
-# Keyboard navigation items
+  # Zoom/screen magnification items
+  # Keyboard navigation items
   - summary: Focus indicators are clearly visible on interactive icons.
     summary_additional: |
       When you use a keyboard to tab into an interactive icon,
@@ -37,7 +37,7 @@ test_items:
     test_type: keyboard
     version_tested:
     wcag_criterion: 2.4.7
-# Screen reader items
+  # Screen reader items
   - summary: Icons provide a text alternative for screen readers when needed.
     summary_additional: |
       When you use a screen reader and navigate to a non-decorative icon,

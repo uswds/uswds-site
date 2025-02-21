@@ -1,8 +1,8 @@
 title: Checkbox
 type: component
 items:
- - date: 2024-09-18
-   summary: Added accessibility tests page.
-   affectsGuidance: true
-   githubPr: 2803
-   githubRepo: uswds-site
+  - date: 2024-09-18
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 2803
+    githubRepo: uswds-site

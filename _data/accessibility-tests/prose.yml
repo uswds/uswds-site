@@ -1,28 +1,28 @@
 title: Prose
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Content is written in plain language.
     summary_additional: Content is easy to understand. It is written at the appropriate [grade level](https://www.w3.org/TR/WCAG21/#reading-level). Complex words are defined by a glossary or other method.
     test_status: conditional
     test_type: general
     version_tested: 3.7.1
     wcag_criterion: 3.1.5
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Text retains functionality when screen is magnified.
     summary_additional: When you zoom in to 200%, text and tables with text retain all of their functionality.
     test_status: pass
     test_type: zoom
     version_tested: 3.7.1
     wcag_criterion: 1.4.4
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Users can navigate between sections using only a keyboard.
-    summary_additional: You can navigate easily among headings, text sections, and links, even without a mouse. 
+    summary_additional: You can navigate easily among headings, text sections, and links, even without a mouse.
     test_status: pass
     test_type: keyboard
     version_tested: 3.7.1
     wcag_criterion: 2.1.1
-# Screen reader tests
+  # Screen reader tests
   - summary: Heading levels are logical.
     summary_additional: All header tags contain appropriate heading text that describes the content nested below it. Headings are nested appropriately. For example, there is only one `h1` per page, and no heading levels get skipped (e.g., no `h4`s nested directly under `h2`s without an `h3` between them).
     test_status: conditional

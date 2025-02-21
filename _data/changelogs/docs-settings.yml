@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: 2024-10-04
     summary: Added new `$theme-utility-breakpoints-custom` setting.
-    summaryAdditional:  Users can now set custom breakpoints which will generate utilities alongside the default system breakpoints.
+    summaryAdditional: Users can now set custom breakpoints which will generate utilities alongside the default system breakpoints.
     affectsSettings: true
     affectsStyles: true
     githubPr: 6048
@@ -12,7 +12,7 @@ items:
     versionUswds: 3.9.0
   - date: 2024-03-11
     summary: Added new sidenav setting to temporarily address visual regression in new markup guidance.
-    summaryAdditional:  The new setting `$theme-sidenav-reorder` allows users to temporarily reorder the sidenav with CSS. Users should follow new markup recommendation in code example to avoid accessibility issues.
+    summaryAdditional: The new setting `$theme-sidenav-reorder` allows users to temporarily reorder the sidenav with CSS. Users should follow new markup recommendation in code example to avoid accessibility issues.
     isBreaking: false
     affectsAccessibility: true
     affectsAssets:
@@ -35,7 +35,7 @@ items:
     versionUswds: 3.8.0
   - date: 2024-03-11
     summary: Added color contrast checks for disabled tokens.
-    summaryAdditional:  On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.
+    summaryAdditional: On compilation, USWDS will test disabled element color contrast and provide a fallback color if minimum contrast is not met. If the fallback does not meet minimum requirements, USWDS will provide a warning in the terminal.
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 5455

@@ -1,8 +1,8 @@
 title: Modal accessibility tests
 type: component
 items:
- - date: 2025-02-14
-   summary: Added accessibility tests page.
-   affectsGuidance: true
-   githubPr: 3103
-   githubRepo: uswds-site
+  - date: 2025-02-14
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 3103
+    githubRepo: uswds-site

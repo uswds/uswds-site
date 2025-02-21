@@ -1,7 +1,7 @@
 title: Memorable date
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Memorable date display is consistent on mobile devices.
     summary_additional: When you view the memorable date component on mobile devices and tablets, it displays in both portrait and landscape orientation with no loss of functionality.
     test_status: pass
@@ -32,14 +32,14 @@ test_items:
     test_type: general
     version_tested: 3.8.2
     wcag_criterion: 2.5.8
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Using zoom does not obstruct memorable date elements.
     summary_additional: When you zoom in to 400%, the content is still visible on the page. There is also no need for horizontal scrolling.
     test_status: pass
     test_type: zoom
     version_tested: 3.8.2
     wcag_criterion: 1.4.10
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Keyboard actions can access all memorable date functionality.
     summary_additional: You can change month, day and year and perform all other functions in a memorable date element using only your keyboard.
     test_status: pass
@@ -53,18 +53,18 @@ test_items:
     version_tested: 3.8.2
     wcag_criterion: 2.1.2
   - summary: Focus indicator is clearly visible around memorable date elements.
-    summary_additional: When tabbing through the memorable date, a visible indicator shows where the user is. 
+    summary_additional: When tabbing through the memorable date, a visible indicator shows where the user is.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.2
     wcag_criterion: 2.4.7
-  - summary: Tabbing into the memorable date doesn't trigger a change of context. 
+  - summary: Tabbing into the memorable date doesn't trigger a change of context.
     summary_additional: When using a keyboard to select elements in the memorable date, there is no change until you activate the component with the enter key or spacebar.
     test_status: pass
     test_type: keyboard
     version_tested: 3.8.2
     wcag_criterion: 3.2.1
-# Screen reader tests
+  # Screen reader tests
   - summary: Screen reader announces example text, label or supportive text.
     summary_additional: When interacting with the memorable date with a screen reader, you hear the field labels, text related to the field, and whether or not the field is required.
     test_status: pass
@@ -77,4 +77,3 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.2
     wcag_criterion: 4.1.2
-    

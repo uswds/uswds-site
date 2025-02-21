@@ -1,7 +1,7 @@
 title: Header
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Header content is consistent in mobile views.
     summary_additional: |
       When you view the page on a mobile device,
@@ -79,7 +79,7 @@ test_items:
     test_type: general
     version_tested: 3.8.1
     wcag_criterion: 1.4.13
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Header links are visible and functional when screen is magnified.
     summary_additional: |
       When you zoom in to 200%,
@@ -97,7 +97,7 @@ test_items:
     test_type: zoom
     version_tested: 3.8.1
     wcag_criterion: 1.4.10
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Keyboard can access all elements in the header.
     summary_additional: |
       When you navigate through the header with a keyboard,
@@ -166,7 +166,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.1
     wcag_criterion: 2.4.13
-# Screen reader tests
+  # Screen reader tests
   - summary: Screen reader announces header as a navigation landmark.
     summary_additional: |
       When you use a screen reader and access the header,

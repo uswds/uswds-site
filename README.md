@@ -56,6 +56,8 @@ Here are a few other utility commands you may find useful:
 
 - `npm run lint`: Runs `eslint` and `sass-lint` against JavaScript and Sass files.
 
+- `npm run prettier`: Runs prettier against SCSS, accessibility tests markdown, and YML in `_data`.
+
 - `npm test`: Runs all tests and linters.
 
 - `npm run watch`: Runs a series of commands that watches for any changes in both USWDS node module and the root level asset folders in this repo.

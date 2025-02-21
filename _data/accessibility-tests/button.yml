@@ -1,7 +1,7 @@
 title: Button
 component_status: pass
 test_items:
-# General items
+  # General items
   - summary: Button text conveys its meaning.
     summary_additional: |
       When you view the button on a page and determine the button's purpose,
@@ -26,7 +26,7 @@ test_items:
     test_type: general
     version_tested: 3.7.1
     wcag_criterion: 2.5.5
-# Zoom/screen magnification items
+  # Zoom/screen magnification items
   - summary: Buttons are visible and functional when screen is magnified.
     summary_additional: |
       When you zoom the screen to 200%,
@@ -37,7 +37,7 @@ test_items:
     test_type: zoom
     version_tested: 3.7.1
     wcag_criterion: 1.4.10
-# Keyboard navigation items
+  # Keyboard navigation items
   - summary: Buttons do not trap focus.
     summary_additional: |
       When you use a keyboard to tab into a button and click `tab` again,
@@ -61,7 +61,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.7.1
     wcag_criterion: 2.4.13
-# Screen reader items
+  # Screen reader items
   - summary: Screen reader announces buttons in the same order that they appear on the page.
     summary_additional: |
       When you use a screen reader and navigate from button to button on a page (using the `B` shortcut key or `tab` key),
@@ -79,4 +79,3 @@ test_items:
     test_type: screen_reader
     version_tested: 3.7.1
     wcag_criterion: 4.1.2
-

@@ -7,5 +7,5 @@ title: In-page navigation accessibility tests
 category: Components
 lead: Any USWDS in-page navigation component should pass these manual accessibility tests.
 changelog:
-  key: 'component-in-page-navigation-accessibility'
+  key: "component-in-page-navigation-accessibility"
 ---

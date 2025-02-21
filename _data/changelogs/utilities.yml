@@ -7,9 +7,7 @@ items:
     summary: Fixed example in settings.
     summaryAdditional: Added missing comma to color example in `$output-these-utilities`.
     isBreaking: false
-    affectsContent:
     affectsGuidance: true
-    affectsSettings:
     githubPr: 2731
     githubRepo: uswds-site
     versionUswds:

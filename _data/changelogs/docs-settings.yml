@@ -17,7 +17,6 @@ items:
     summaryAdditional: The new setting `$theme-sidenav-reorder` allows users to temporarily reorder the sidenav with CSS. Users should follow new markup recommendation in code example to avoid accessibility issues.
     isBreaking: false
     affectsAccessibility: true
-    affectsContent:
     affectsSettings: true
     affectsStyles: true
     githubPr: 5809

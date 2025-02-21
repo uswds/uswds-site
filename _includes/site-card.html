@@ -2,16 +2,16 @@
   Single card element for `site-card-list`.
 
   Variables:
-    - heading: String heading for a single card.
-    - headingElement: The heading HTML element type.
-    - subheading: String subheading for a single card.
-    - subheadingElement: The subheading HTML element type.
-    - body: String body that gets placed in a paragraph tag.
-    - image: The card image.
-    - imageAlt: The alt tag for the image.
-    - linkUrl: String for the link url.
-    - linkText: String link label.
-    - linkClasses: Classes for the link element.
+    - heading: (required) String heading for a single card.
+    - headingElement: (optional) The heading HTML element type.
+    - subheading: (optional) String subheading for a single card.
+    - subheadingElement: (optional) The subheading HTML element type.
+    - body: (required) String body that gets placed in a paragraph tag.
+    - image: (optional) The card image.
+    - imageAlt: (optional) The alt tag for the image.
+    - linkUrl: (required) String for the link url.
+    - linkText: (required) String link label.
+    - linkClasses: (optional) Classes for the link element.
 {% endcomment %}
 
 <div class="usa-card__container {{ include.containerClasses }}">

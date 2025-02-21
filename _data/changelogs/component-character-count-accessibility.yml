@@ -1,8 +1,8 @@
-title: Character count accessibility tests
+title: &title "Character count accessibility tests"
 type: component
 items:
   - date: 2024-05-15
-    page: Character count accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

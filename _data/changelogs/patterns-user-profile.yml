@@ -1,14 +1,16 @@
-title: User profile
+title: &title "Pattern: User profile"
 type: pattern
 changelogURL:
 items:
   - date: 2022-02-11
+    page: *title
     summary: Removed Pronouns pattern.
     summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Defending Women from Gender Ideology Extremism And Restoring Biological Truth To The Federal Government\".
     isBreaking: yes
     githubRepo: uswds-site
     githubPr: 3099
   - date: 2022-02-11
+    page: *title
     summary: Updated link to Sex pattern.
     summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Defending Women from Gender Ideology Extremism And Restoring Biological Truth To The Federal Government\".
     isBreaking: yes

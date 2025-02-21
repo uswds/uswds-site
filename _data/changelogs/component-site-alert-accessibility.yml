@@ -1,9 +1,9 @@
-title: Site alert accessibility tests
+title: &title "Site alert accessibility tests"
 type: component
 changelogURL:
 items:
   - date: 2025-01-14
-    page: Site alert accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

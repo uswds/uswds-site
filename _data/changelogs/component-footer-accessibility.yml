@@ -1,8 +1,8 @@
-title: Footer accessibility tests
+title: &title "Footer accessibility tests"
 type: component
 items:
   - date: 2024-10-04
-    page: Footer accessibility tests
+    page: *title
     summary: Updated the status of the WCAG 1.3.5 test to "pass".
     summaryAdditional: The reported issue was fixed in the USWDS 3.9.0 release.
     affectsPageContent: true
@@ -10,7 +10,7 @@ items:
     githubRepo: uswds-site
     versionUswds: 3.9.0
   - date: 2024-08-13
-    page: Footer accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

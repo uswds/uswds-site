@@ -1,15 +1,15 @@
-title: Search
+title: &title "Search"
 type: component
 changelogURL:
 items:
   - date: 2024-06-19
-    page: Search
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 2694
     githubRepo: uswds-site
   - date: 2023-06-09
-    page: Search
+    page: *title
     summary: Improved legibility in forced colors mode.
     summaryAdditional: Adds a consistent border in forced colors mode.
     affectsAccessibility: true
@@ -18,7 +18,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2022-04-28
-    page: Search
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -28,7 +28,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-12-14
-    page: Search
+    page: *title
     summary: Improved resilience of icon-only functionality.
     summaryAdditional: Updated to add a text equivalent if the image path is broken and does not load.
     isBreaking: true

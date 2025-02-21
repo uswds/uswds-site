@@ -1,15 +1,15 @@
-title: Progress easily
+title: &title "Pattern: Progress easily"
 type: pattern
 changelogURL:
 items:
   - date: 2024-10-15
-    page: "Pattern: Progress easily"
+    page: *title
     summary: Added guidance for error messages and disabled states to the "what to do" and "what not to do" sections.
     affectsGuidance: true
     githubRepo: uswds-site
     githubPr: 2744
   - date: 2022-11-14
-    page: "Pattern: Progress easily"
+    page: *title
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

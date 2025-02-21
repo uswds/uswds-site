@@ -1,9 +1,9 @@
-title: Validation
+title: &title "Validation"
 type: component
 changelogURL:
 items:
   - date: 2024-05-31
-    page: Validation
+    page: *title
     summary: Fixed a bug which caused non-interactive checklist items to receive focus on tab.
     summaryAdditional: Now, only the interactive input will receive focus.
     isBreaking: false
@@ -13,14 +13,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.1
   - date: 2024-03-13
-    page: Validation
+    page: *title
     summary: Added known issues section.
-    summaryAdditional:
     affectsGuidance: true
     githubPr: 2402
     githubRepo: uswds-site
   - date: 2024-03-11
-    page: Validation
+    page: *title
     summary: Added `textarea` support to the validation component.
     isBreaking: false
     affectsAccessibility: false
@@ -30,22 +29,15 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.0
   - date: 2022-12-21
-    page: Validation
+    page: *title
     summary: Clarified implementation guidance and removed the `#` from the example `data-validation-element` value.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1851
     githubRepo: uswds-site
     versionUswds:
   # 3.2.0 release
   - date: 2022-10-19
-    page: Validation
+    page: *title
     summary: Improved status updates about the completion of validation requirements for users of assistive technologies.
     summaryAdditional: Component JavaScript generates the appropriate elements and ARIA attributes that help improve the experience of receiving status updates.
     isBreaking: false
@@ -59,14 +51,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-04-28
-    page: Validation
+    page: *title
     summary: Updated package name to `usa-validation`.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site
   # 3.0 release
   - date: 2022-04-28
-    page: Validation
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -76,7 +68,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-06-07
-    page: Validation
+    page: *title
     summary: Updated package name to `validation`.
     affectsGuidance: true
     githubPr: 1219

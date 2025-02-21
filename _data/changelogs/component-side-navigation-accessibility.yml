@@ -1,8 +1,8 @@
-title: Side navigation accessibility tests
+title: &title "Side navigation accessibility tests"
 type: component
 items:
   - date: 2024-10-16
-    page: Side navigation accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

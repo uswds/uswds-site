@@ -1,81 +1,81 @@
-title: Monthly calls
+title: &title "Monthly calls"
 type: documentation
 changelogURL:
 items:
   - date: 2025-01-13
-    page: Monthly Calls
+    page: *title
     summary: Added December 2024 monthly call. Added November monthly call video.
     affectsPageContent: true
     githubPr: 3044
     githubRepo: uswds-site
   - date: 2024-12-13
-    page: Monthly Calls
+    page: *title
     summary: Added November 2024 monthly call.
     affectsPageContent: true
     githubPr: 3015
     githubRepo: uswds-site
   - date: 2024-11-04
-    page: Monthly Calls
+    page: *title
     summary: Added September and October 2024 monthly calls.
     affectsPageContent: true
     githubPr: 2934
     githubRepo: uswds-site
   - date: 2024-10-23
-    page: Monthly Calls
+    page: *title
     summary: Added video for August 2024 monthly call.
     affectsPageContent: true
     githubPr: 2873
     githubRepo: uswds-site
   - date: 2024-09-16
-    page: Monthly Calls
+    page: *title
     summary: Added August 2024 monthly call.
     affectsPageContent: true
     githubPr: 2827
     githubRepo: uswds-site
   - date: 2024-07-26
-    page: Monthly Calls
+    page: *title
     summary: Added June 2024 monthly call.
     affectsPageContent: true
     githubPr: 2747
     githubRepo: uswds-site
   - date: 2024-06-14
-    page: Monthly Calls
+    page: *title
     summary: Added May 2024 monthly call.
     affectsPageContent: true
     githubPr: 2708
     githubRepo: uswds-site
   - date: 2024-05-15
-    page: Monthly Calls
+    page: *title
     summary: Added April 2024 monthly call.
     affectsPageContent: true
     githubPr: 2671
     githubRepo: uswds-site
   - date: 2024-04-26
-    page: Monthly Calls
+    page: *title
     summary: Added March 2024 monthly call.
     affectsPageContent: true
     githubPr: 2631
     githubRepo: uswds-site
   - date: 2024-04-26
-    page: Monthly Calls
+    page: *title
     summary: Added February 2024 monthly call.
     affectsPageContent: true
     githubPr: 2576
     githubRepo: uswds-site
   - date: 2024-02-09
-    page: Monthly Calls
+    page: *title
     summary: Added January 2024 monthly call.
     affectsPageContent: true
     githubPr: 2465
     githubRepo: uswds-site
   - date: 2023-12-11
-    page: Monthly Calls
+    page: *title
     summary: Added November 2023 monthly call.
     affectsPageContent: true
     githubPr: 2393
     githubRepo: uswds-site
   - date: 2023-11-06
-    page: Monthly Calls
+    page: *title
     summary: Added monthly calls page.
     assAddition: true
     affectsPageContent: true

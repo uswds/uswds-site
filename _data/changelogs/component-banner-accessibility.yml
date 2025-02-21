@@ -1,9 +1,9 @@
-title: Banner accessibility tests
+title: &title "Banner accessibility tests"
 type: component
 changelogURL:
 items:
   - date: 2024-06-07
-    page: Banner accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

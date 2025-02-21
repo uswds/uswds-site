@@ -1,9 +1,9 @@
-title: Select accessibility tests
+title: &title "Select accessibility tests"
 type: component
 changelogURL:
 items:
   - date: 2024-06-19
-    page: Select accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

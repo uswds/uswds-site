@@ -1,8 +1,8 @@
-title: Search accessibility tests
+title: &title "Search accessibility tests"
 type: component
 items:
   - date: 2024-06-19
-    page: Search accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

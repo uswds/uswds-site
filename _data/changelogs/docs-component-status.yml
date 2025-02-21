@@ -1,9 +1,9 @@
-title: Component status
+title: &title "Component status"
 type: documentation
 changelogURL:
 items:
   - date: 2024-02-15
-    page: Component status
+    page: *title
     summary: Added component status page.
     affectsGuidance: true
     githubPr: 2491

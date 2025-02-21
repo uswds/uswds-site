@@ -1,9 +1,9 @@
-title: Input prefix or suffix
+title: &title "Input prefix or suffix"
 type: component
 changelogURL:
 items:
   - date: 2024-12-18
-    page: Input prefix or suffix
+    page: *title
     summary: Moved `.usa-input-group--[width]` classes into the `usa-input-prefix-suffix` package from `usa-form`.
     summaryAdditional: These classes can now be used without the `usa-form` package and `.usa-form` parent element.
     affectsStyles: true
@@ -11,20 +11,20 @@ items:
     githubRepo: uswds
     versionUswds: 3.11.0
   - date: 2024-12-18
-    page: Input prefix or suffix
+    page: *title
     summary: Replaced deprecated `xlink:href` references with `href`.
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds
     versionUswds: 3.11.0
   - date: 2023-11-20
-    page: Input prefix or suffix
+    page: *title
     summary: Added documentation for `usa-input-group--success` variant.
     affectsGuidance: true
     githubPr: 2162
     githubRepo: uswds-site
   - date: 2023-06-09
-    page: Input prefix or suffix
+    page: *title
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
     affectsAccessibility: true
@@ -33,22 +33,21 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
-    page: Input prefix or suffix
+    page: *title
     summary: Improved consistency of disabled styles in forced colors mode.
-    summaryAdditional:
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 5295
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2022-04-28
-    page: Input prefix or suffix
+    page: *title
     summary: Updated package name to `usa-input-prefix-suffix`.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-04-28
-    page: Input prefix or suffix
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -58,25 +57,25 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-13
-    page: Input prefix or suffix
+    page: *title
     summary: Updated package name to `form-controls`.
     affectsGuidance: true
     githubPr: 1497
     githubRepo: uswds-site
   - date: 2021-03-18
-    page: Input prefix or suffix
+    page: *title
     summary: Clarified that the input cannot include units.
     affectsGuidance: true
     githubPr: 1186
     githubRepo: uswds-site
   - date: 2021-03-17
-    page: Input prefix or suffix
+    page: *title
     summary: Added input prefix or suffix documentation.
     affectsGuidance: true
     githubPr: 1180
     githubRepo: uswds-site
   - date: 2021-03-17
-    page: Input prefix or suffix
+    page: *title
     summary: Added input prefix or suffix component.
     summaryAdditional: Use input prefixes and suffixes to show symbols or abbreviations that help users enter the right type of information in a form’s text input.
     affectsGuidance: true

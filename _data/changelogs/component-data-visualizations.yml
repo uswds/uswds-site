@@ -1,15 +1,15 @@
-title: Data visualizations
+title: &title "Data visualizations"
 type: component
 changelogURL:
 items:
   - date: 2022-10-31
-    page: Data visualizations
+    page: *title
     summary: Fixed invalid value for `aria-describedby` in the bar chart example.
     affectsGuidance: true
     githubPr: 1861
     githubRepo: uswds-site
   - date: 2022-04-28
-    page: Data visualizations
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true

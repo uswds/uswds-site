@@ -1,15 +1,15 @@
-title: Prose
+title: &title "Prose"
 type: component
 changelogURL:
 items:
   - date: 2024-05-15
-    page: Prose
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 2613
     githubRepo: uswds-site
   - date: 2023-06-09
-    page: Prose
+    page: *title
     summary: Added `$theme-heading-margin-top` and `$theme-paragraph-margin-top` system variables.
     affectsStyles: true
     affectsSettings: true
@@ -17,7 +17,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
-    page: Prose
+    page: *title
     summary: Removed `usa-prose-` mixins and placeholders from Sass.
     summaryAdditional: Users should instead use `typeset-` mixins in their place. This is a breaking change only if your project Sass uses `usa-prose-` mixins and placeholders. It does not affect the look of any `usa-prose`–styled element.
     isBreaking: true
@@ -27,7 +27,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2022-04-28
-    page: Prose
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true

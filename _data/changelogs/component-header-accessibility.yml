@@ -1,8 +1,8 @@
-title: Header accessibility tests
+title: &title "Header accessibility tests"
 type: component
 items:
   - date: 2024-08-13
-    page: Header accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

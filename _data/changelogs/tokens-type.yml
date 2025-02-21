@@ -1,9 +1,9 @@
-title: Type tokens
+title: &title "Type tokens"
 type: token
 changelogURL:
 items:
   - date: 2024-05-15
-    page: Type tokens
+    page: *title
     summary: Updated the value for `$theme-font-role-ui` in the settings configuration example.
     affectsGuidance: true
     githubPr: 2379

@@ -1,15 +1,15 @@
-title: Banner
+title: &title "Banner"
 type: component
 changelogURL:
 items:
   - date: 2024-06-07
-    page: Banner
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 2687
     githubRepo: uswds-site
   - date: 2023-11-30
-    page: Banner
+    page: *title
     summary: Fixed a bug causing component code example ID's and relevant aria attributes to display incorrectly.
     summaryAdditional: Now, example ID's match what's found in the USWDS repo and are more succinct.
     isBreaking: true
@@ -17,20 +17,20 @@ items:
     githubPr: 2312
     githubRepo: uswds-site
   - date: 2023-11-20
-    page: Banner
+    page: *title
     summary: Updated the text in the `aria-label` documentation to match the component markup.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
   - date: 2023-11-20
-    page: Banner
+    page: *title
     summary: Removed `usa-layout-grid` from the list of dependencies.
     affectsGuidance: true
     githubPr: 2149
     githubRepo: uswds-site
     versionUswds:
   - date: 2023-11-09
-    page: Banner
+    page: *title
     summary: Updated the banner component so that it initializes without requiring import of the `usa-accordion` package.
     isBreaking: false
     affectsJavascript: true
@@ -38,23 +38,21 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.0
   - date: 2023-11-09
-    page: Banner
+    page: *title
     summary: Optimized the `us_flag_small.png` icon and added a vector `us_flag.svg`icon.
-    summaryAdditional:
     affectsAssets: true
     githubPr: 5542
     githubRepo: uswds
     versionUswds: 3.7.0
   - date: 2023-09-29
-    page: Banner
+    page: *title
     summary: Improved horizontal alignment in `icon-dot-gov.svg`.
-    summaryAdditional:
     affectsAssets: true
     githubPr: 5370
     githubRepo: uswds
     versionUswds: 3.6.1
   - date: 2023-03-09
-    page: Banner
+    page: *title
     summary: Improved display of focus outline on mobile.
     summaryAdditional: Now the focus outline is visible all around the banner on mobile devices.
     affectsStyles: true
@@ -62,15 +60,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2023-03-09
-    page: Banner
+    page: *title
     summary: Updated padding settings to accept any valid spacing token.
-    summaryAdditional:
     affectsStyles: true
     githubPr: 5076
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2023-03-09
-    page: Banner
+    page: *title
     summary: Removed grid dependency from Banner.
     summaryAdditional: Banner no longer needs the `usa-layout-grid` package resulting in a much smaller package size.
     affectsStyles: true
@@ -78,7 +75,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2022-10-09
-    page: Banner
+    page: *title
     summary: Updated the aria-label in English versions of banner.
     summaryAdditional: When read out on a screen reader, the statement "An official website of the United States government" can sound like "Unofficial website of the United States government". To minimize confusion, we updated the component's `aria-label` to instead read "Official website of the United States government".
     affectsAccessibility: true
@@ -87,7 +84,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-10-09
-    page: Banner
+    page: *title
     summary: Added aria-hidden attribute to the flag icon.
     summaryAdditional: The flag icon in the banner component is purely decorative and we can safely remove it from the screen reader readout.
     affectsAccessibility: true
@@ -96,7 +93,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-10-09
-    page: Banner
+    page: *title
     summary: Simplified ARIA label in the lock SVG.
     summaryAdditional: We simplified the way we're using `aria-labelledby` in the lock SVG to streamline screen reader vocalization.
     affectsAccessibility: true
@@ -105,7 +102,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-08-05
-    page: Banner
+    page: *title
     summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
     isBreaking: true
@@ -115,7 +112,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-06-17
-    page: Banner
+    page: *title
     summary: Updated uswds-init.js to better suppress flashing content.
     summaryAdditional: We updated the `uswds-init` script's event listener to target `window` from `document`. This assures that the page's JavaScript is fully loaded before we remove the `loadingClass` that suppresses the open banner. The banner should no longer flash open.
     affectsAssets: true
@@ -124,14 +121,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-06-17
-    page: Banner
+    page: *title
     summary: Updated flag icon to be high resolution.
     affectsAssets: true
     githubPr: 4792
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-04-28
-    page: Banner
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -141,7 +138,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    page: Banner
+    page: *title
     summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
@@ -150,13 +147,13 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2021-03-02
-    page: Banner
+    page: *title
     summary: Updated guidance to identify banner as a core component.
     affectsGuidance: true
     githubPr: 1136
     githubRepo: uswds-site
   - date: 2020-12-17
-    page: Banner
+    page: *title
     summary: Introduced uswds-init.js to prevent banner flash.
     summaryAdditional: When added to the `head` of your document, this script prevents the banner from flashing its content on page load and shifting content.
     affectsAssets: true
@@ -165,7 +162,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.10.0
   - date: 2020-12-17
-    page: Banner
+    page: *title
     summary: Improved the accessibility of decorative images in the banner.
     summaryAdditional: We modified the banner to properly mark up SVG files used as decorative images. Now all decorative images are hidden from screen readers, and all SVGs are more resilient to browser bugs. See the banner page for the complete, correct markup, and see the pull request for more context on the changes.
     affectsAccessibility: true
@@ -174,7 +171,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.10.0
   - date: 2020-07-09
-    page: Banner
+    page: *title
     summary: Updated banner copy.
     summaryAdditional: Updated the expanded text in the banner to emphasize that trustworthiness is a combination of an official TLD and a secure HTTPS connection.
     affectsContent: true
@@ -182,7 +179,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.8.0
   - date: 2020-07-09
-    page: Banner
+    page: *title
     summary: Added Spanish versions.
     summaryAdditional: Included approved Spanish versions of the banner text.
     affectsContent: true
@@ -190,7 +187,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.8.0
   - date: 2020-07-09
-    page: Banner
+    page: *title
     summary: Updated banner settings.
     summaryAdditional: Allowed users to change background color, link color, and link reverse colors. This update requires the use of Autoprefixer.
     isBreaking: true
@@ -199,7 +196,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.8.0
   - date: 2020-06-17
-    page: Banner
+    page: *title
     summary: Added `role="img"` to SVGs.
     affectsAccessibility: true
     affectsAssets: true
@@ -207,7 +204,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.7.1
   - date: 2020-05-11
-    page: Banner
+    page: *title
     summary: Improved display of the "Here's how you know" link in the gov banner.
     summaryAdditional: Now there's no distracting change to the length of the underline on hover.
     affectsStyles: true

@@ -1,44 +1,23 @@
-title: Getting started for developers
+title: &title "Getting started for developers"
 type: documentation
 changelogURL:
 items:
   - date: 2022-04-28
-    page: Getting started for developers
+    page: *title
     summary: Added note that USWDS no longer supports Internet Explorer 11.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-01-27
-    page: Getting started for developers
+    page: *title
     summary: Moved "Before getting started" content to "How to use USWDS" page.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1411
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-12-06
-    page: Getting started for developers
+    page: *title
     summary: Added "Getting started for developers" guide.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1362
     githubRepo: uswds-site

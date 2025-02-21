@@ -1,9 +1,9 @@
-title: Collection accessibility tests
+title: &title "Collection accessibility tests"
 type: component
 changelogURL:
 items:
   - date: 2024-12-18
-    page: Collection accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

@@ -1,9 +1,9 @@
-title: Recruitment for Federal
+title: &title "Recruitment for Federal"
 type: documentation
 changelogURL:
 items:
   - date: 2024-02-24
-    page: Recruitment for Federal
+    page: *title
     summary: Page created.
     affectsPageContent: true
     isAddition: true

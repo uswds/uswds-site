@@ -1,9 +1,9 @@
-title: Range slider
+title: &title "Range slider"
 type: component
 changelogURL:
 items:
   - date: 2023-11-09
-    page: Range slider
+    page: *title
     summary: Added optional data attributes to customize text for screen readers.
     summaryAdditional: The `data-text-unit` attribute provides additional context to screen reader users, and `data-text-preposition` allows for proper preposition translations on non-English pages.
     isBreaking: false
@@ -15,7 +15,7 @@ items:
     githubRepo: USWDS
     versionUswds: 3.7.0
   - date: 2023-11-09
-    page: Range slider
+    page: *title
     summary: Removed redundant ARIA attributes to improve the screen reader experience.
     summaryAdditional: To incorporate these changes, update your range component markup.
     affectsAccessibility: true
@@ -24,7 +24,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.0
   - date: 2023-06-09
-    page: Range slider
+    page: *title
     summary: Improved legibility in forced colors mode.
     summaryAdditional: Adds a consistent border in forced colors mode.
     affectsAccessibility: true
@@ -33,7 +33,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2022-04-28
-    page: Range slider
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -43,7 +43,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    page: Range slider
+    page: *title
     summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     isBreaking: false
@@ -57,7 +57,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2021-08-18
-    page: Range slider
+    page: *title
     summary: Added appropriate ARIA attributes to the `input` element.
     isBreaking: false
     affectsAccessibility: true

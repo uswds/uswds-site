@@ -1,34 +1,34 @@
-title: Icon
+title: &title "Icon"
 type: component
 changelogURL:
 items:
   - date: 2024-12-18
-    page: Icon
+    page: *title
     summary: Removed deprecated `xlink` references from code samples.
     affectsGuidance: true
     githubPr: 2926
     githubRepo: uswds-site
   - date: 2024-12-18
-    page: Icon
+    page: *title
     summary: Replaced deprecated `xlink:href` references with `href`.
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds
     versionUswds: 3.11.0
   - date: 2024-06-07
-    page: Icon
+    page: *title
     summary: Added clarity to icon guidance.
     affectsGuidance: true
     githubPr: 2643
     githubRepo: uswds-site
   - date: 2024-03-20
-    page: Icon
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 2518
     githubRepo: uswds-site
   - date: 2023-11-09
-    page: Icon
+    page: *title
     summary: Added the X social media icon.
     summaryAdditional: We also preserved the legacy Twitter icon to allow teams to make the decision on when to update their social media information.
     affectsAssets: true
@@ -36,20 +36,20 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.0
   - date: 2023-10-20
-    page: Icon
+    page: *title
     summary: Added note about icon color contrast.
     affectsGuidance: true
     githubPr: 2258
     githubRepo: uswds-site
   - date: 2023-09-29
-    page: Icon
+    page: *title
     summary: Added social media icon disclaimer.
     summaryAdditional: This disclaimer explains that social media icons are subject to separate terms and conditions, and that our inclusion of these icons does not constitute an endorsement of these services.
     affectsGuidance: true
     githubPr: 2292
     githubRepo: uswds-site
   - date: 2022-10-19
-    page: Icon
+    page: *title
     summary: Updated our SVG sprite compiler to fix potential incompatibility with ARM-based Macs.
     summaryAdditional: This should resolve potential dependency incompatibilities on computers with ARM processors.
     affectsJavascript: true
@@ -57,7 +57,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-08-05
-    page: Icon
+    page: *title
     summary: Added LinkedIn icon.
     summaryAdditional: We now have a LinkedIn icon included in our default icon sprite as `linkedin`.
     affectsAssets: true
@@ -65,7 +65,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-08-05
-    page: Icon
+    page: *title
     summary: Added unmodified social media icons.
     summaryAdditional: We now provide simpler social media icons, and removed any decoration not in the original icon. This means that the new icons are not in an enclosing circle unless the original icon is enclosed in a circle.
     isBreaking: true
@@ -74,29 +74,28 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-06-17
-    page: Icon
+    page: *title
     summary: Updated `us_flag_small` to be high resolution.
     affectsAssets: true
     githubPr: 4792
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-06-17
-    page: Icon
+    page: *title
     summary: Added `fax` to the default set.
-    summaryAdditional:
     affectsAssets: true
     githubPr: 4797
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-06-17
-    page: Icon
+    page: *title
     summary: Added `remove_circle` to the default set.
     affectsAssets: true
     githubPr: 4791
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-06-17
-    page: Icon
+    page: *title
     summary: Navigate_far icons now accept custom color.
     summaryAdditional: We fixed the `navigate_far_before` and `navigate_far_next` icons to allow a `customColor` fill.
     affectsAssets: true
@@ -105,7 +104,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-04-28
-    page: Icon
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -115,13 +114,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-03-10
-    page: Icon
+    page: *title
     summary: Replaced `uswds-gulp` with `uswds-compile`.
     affectsGuidance: true
     githubPr: 1424
     githubRepo: uswds-site
   - date: 2022-03-07
-    page: Icon
+    page: *title
     summary: Fixed GitHub icon to prevent CSP flag.
     summaryAdditional: Resolves an error which can occur when using the USWDS icon component SVG sprite in combination with a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content Security Policy (CSP)</a>, where the presence of an inline style tag within the GitHub icon can violate most common CSPs which do not include the unsafe-inline style-src directive.
     affectsAssets: true
@@ -129,7 +128,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.2
   - date: 2021-12-14
-    page: Icon
+    page: *title
     summary: Improved resilience of icon-only functionality.
     summaryAdditional: We updated a couple components that use icon-only buttons so that they provide a text equivalent if the image path is broken and does not load.
     isBreaking: true
@@ -140,7 +139,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.0
   - date: 2021-04-28
-    page: Icon
+    page: *title
     summary: Fixed the size of some of our icons.
     summaryAdditional: The view box on some or our icons was 20px instead of 24px. We updated these icons to use the proper view box. This may result in small changes to the display of icons, but will result in a more consistent placement and appearance across all icons in our icon set.
     isBreaking: true
@@ -149,7 +148,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.2
   - date: 2021-04-28
-    page: Icon
+    page: *title
     summary: Swapped thumb icons in our sprite for consistency.
     summaryAdditional: We replaced `thumb_down_off_alt` with `thumb_down_off` in our icon sprite for consistency with its `thumb_up` pair.
     affectsAssets: true
@@ -157,7 +156,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.2
   - date: 2021-04-28
-    page: Icon
+    page: *title
     summary: Removed duplicate eye icon.
     summaryAdditional: Removes `remove_red_eye` icon from `usa-icons` and sprite. Use `visibility` instead.
     isBreaking: true
@@ -166,13 +165,13 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.2
   - date: 2021-03-17
-    page: Icon
+    page: *title
     summary: Updated and improved guidance for icons.
     affectsGuidance: true
     githubPr: 1180
     githubRepo: uswds-site
   - date: 2021-03-17
-    page: Icon
+    page: *title
     summary: Restored missing white icons.
     summaryAdditional: Restored `add--white`, `check_circle--white`, `error--white`, `expand_more--white`, `info--white`, `remove--white`, and `warning--white` icons.
     affectsAssets: true
@@ -180,7 +179,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-17
-    page: Icon
+    page: *title
     summary: Provided better support for color icons that adapt to theme settings.
     summaryAdditional: Now the color of the alert icon will update automatically to adapt to the alert background, or to the color of the alert text.
     affectsAssets: true
@@ -189,9 +188,8 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.0
   - date: 2021-03-02
-    page: Icon
+    page: *title
     summary: Introduced white `add`, `remove`, and `expand_more` icons.
-    summaryAdditional:
     isBreaking: false
     affectsAssets: true
     githubPr: 4061

@@ -1,8 +1,8 @@
-title: Button group accessibility tests
+title: &title "Button group accessibility tests"
 type: component
 items:
   - date: 2024-12-19
-    page: Button group accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

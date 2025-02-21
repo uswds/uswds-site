@@ -1,16 +1,16 @@
-title: Keep a record
+title: &title "Pattern: Keep a record"
 type: pattern
 changelogURL:
 items:
   - date: 2024-11-05
-    page: "Pattern: Keep a record"
+    page: *title
     summary: Usability guidance content updated.
     affectsGuidance: true
     githubRepo: uswds-site
     githubPr: 2939
     versionUswds: 3.9.0
   - date: 2022-11-14
-    page: "Pattern: Keep a record"
+    page: *title
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

@@ -1,9 +1,9 @@
-title: Breadcrumb accessibility tests
+title: &title "Breadcrumb accessibility tests"
 type: component
 changelogURL:
 items:
   - date: 2024-10-16
-    page: Breadcrumb accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

@@ -1,15 +1,15 @@
-title: Button group
+title: &title "Button group"
 type: component
 changelogURL:
 items:
   - date: 2024-12-19
-    page: Button group
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 3009
     githubRepo: uswds-site
   - date: 2024-05-31
-    page: Button group
+    page: *title
     summary: Improved styles for nested button groups.
     summaryAdditional: Now, nested button groups should match the height of their parents.
     affectsStyles: true
@@ -17,15 +17,11 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.1
   - date: 2024-03-11
-    page: Button group
+    page: *title
     summary: Improved the appearance of button groups when text wraps to multiple lines.
     summaryAdditional: Now, every button in the group will be the same height.
     isBreaking: false
-    affectsAccessibility:
-    affectsAssets:
     affectsPageContent:
-    affectsGuidance:
-    affectsJavascript:
     affectsMarkup: false
     affectsSettings: false
     affectsStyles: true
@@ -33,7 +29,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.0
   - date: 2022-08-05
-    page: Button group
+    page: *title
     summary: Styled aria-disabled to match disabled.
     summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
     affectsAccessibility: true
@@ -42,7 +38,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-08-05
-    page: Button group
+    page: *title
     summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
     isBreaking: true
@@ -52,21 +48,20 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-08-05
-    page: Button group
+    page: *title
     summary: Updated the alignment of unstyled buttons in a button group.
-    summaryAdditional:
     affectsStyles: true
     githubPr: 4812
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-04-28
-    page: Button group
+    page: *title
     summary: Updated package name to `usa-button-group`.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-04-28
-    page: Button group
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true

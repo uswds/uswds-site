@@ -1,8 +1,8 @@
-title: Text input accessibility tests
+title: &title "Text input accessibility tests"
 type: component
 items:
   - date: 2024-06-19
-    page: Text input accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

@@ -1,9 +1,9 @@
-title: Design principles
+title: &title "Design principles"
 type: documentation
 changelogURL:
 items:
   - date: 2025-01-22
-    page: Design principles
+    page: *title
     summary: Updated the url for the "Delivering Excellent, Equitable, and Secure Federal Services and Customer Experience" link.
     affectsLinks: true
     githubPr: 3068

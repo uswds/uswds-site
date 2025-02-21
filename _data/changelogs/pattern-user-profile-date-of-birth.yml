@@ -1,9 +1,9 @@
-title: Date of birth
+title: &title "Pattern: Date of birth"
 type: pattern
 changelogURL:
 items:
   - date: 2022-11-14
-    page: "Pattern: Date of birth"
+    page: *title
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

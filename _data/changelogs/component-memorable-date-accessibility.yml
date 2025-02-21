@@ -1,8 +1,8 @@
-title: Memorable date accessibility tests
+title: &title "Memorable date accessibility tests"
 type: component
 items:
   - date: 2024-11-19
-    page: Memorable date accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

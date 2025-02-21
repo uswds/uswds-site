@@ -1,8 +1,8 @@
-title: Icon list accessibility tests
+title: &title "Icon list accessibility tests"
 type: component
 items:
   - date: 2024-12-13
-    page: Icon list accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

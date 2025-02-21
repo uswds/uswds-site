@@ -1,9 +1,9 @@
-title: Combo box
+title: &title "Combo box"
 type: component
 changelogURL:
 items:
   - date: 2024-11-13
-    page: Combo box
+    page: *title
     summary: Updated the order of combo box search results.
     summaryAdditional: The component now displays options that start with the query at the top of the list, followed by options that contain the query. This behavior more closely aligns with user expectations.
     isBreaking: false
@@ -12,7 +12,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.10.0
   - date: 2024-10-04
-    page: Combo box
+    page: *title
     summary: Removed custom screen reader instructions.
     summaryAdditional: Combo box now relies on the default instructions provided by screen readers.
     affectsAccessibility: true
@@ -21,20 +21,19 @@ items:
     githubRepo: uswds
     versionUswds: 3.9.0
   - date: 2024-09-18
-    page: Combo box
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 2811
     githubRepo: uswds-site
   - date: 2024-03-13
-    page: Combo box
+    page: *title
     summary: Added known issues section.
-    summaryAdditional:
     affectsGuidance: true
     githubPr: 2402
     githubRepo: uswds-site
   - date: 2023-06-09
-    page: Combo box
+    page: *title
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
     affectsAccessibility: true
@@ -43,16 +42,15 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
-    page: Combo box
+    page: *title
     summary: Improved consistency of disabled styles in forced colors mode.
-    summaryAdditional:
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 5295
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
-    page: Combo box
+    page: *title
     summary: Improved consistency of keyboard actions.
     summaryAdditional: Users can now to use `Tab` to escape the combo box selection without making a choice, and `Space` to select the current highlighted option when within the dropdown menu.
     affectsAccessibility: true
@@ -61,20 +59,20 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2022-11-14
-    page: Combo box
+    page: *title
     summary: Added note on usability issues with assistive technology.
     summaryAdditional: Testing with people using assistive technology revealed usability concerns that require additional investigation. Until addressed, consider using a Select component instead of a Combo box.
     affectsGuidance: true
     githubPr: 1898
     githubRepo: uswds-site
   - date: 2022-04-28
-    page: Combo box
+    page: *title
     summary: Updated package name to `usa-combo-box`.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-04-28
-    page: Combo box
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -84,13 +82,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-13
-    page: Combo box
+    page: *title
     summary: Updated package name to `form-controls`.
     affectsGuidance: true
     githubPr: 1497
     githubRepo: uswds-site
   - date: 2022-04-11
-    page: Combo box
+    page: *title
     summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
@@ -99,7 +97,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-03-07
-    page: Combo box
+    page: *title
     summary: Added proper `aria-controls` to combo box.
     summaryAdditional: Now the combo box input gets the expected `aria-controls` property when it's initialized.
     affectsAccessibility: true
@@ -108,7 +106,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.2
   - date: 2021-11-01
-    page: Combo box
+    page: *title
     summary: Added automatic sanitizing.
     summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like combo box, tooltip, file input, and date picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
     affectsJavascript: true
@@ -116,17 +114,15 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.2
   - date: 2021-08-18
-    page: Combo box
+    page: *title
     summary: Improved performance of date picker and combo box JavaScript.
-    summaryAdditional:
     affectsJavascript: true
     githubPr: 4256
     githubRepo: uswds
     versionUswds: 2.12.1
   - date: 2021-08-18
-    page: Combo box
+    page: *title
     summary: Improved how combo box parses and displays `option` text.
-    summaryAdditional:
     affectsJavascript: true
     githubPr: 4256
     githubRepo: uswds

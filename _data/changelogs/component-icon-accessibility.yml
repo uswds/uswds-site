@@ -1,9 +1,9 @@
-title: Icon accessibility tests
+title: &title "Icon accessibility tests"
 type: component
 changelogURL:
 items:
   - date: 2024-03-20
-    page: Icon accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

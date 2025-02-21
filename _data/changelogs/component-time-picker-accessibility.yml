@@ -1,8 +1,8 @@
-title: Time picker accessibility tests
+title: &title "Time picker accessibility tests"
 type: component
 items:
   - date: 2024-11-07
-    page: Time picker accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

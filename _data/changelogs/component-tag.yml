@@ -1,15 +1,15 @@
-title: Tag
+title: &title "Tag"
 type: component
 changelogURL:
 items:
   - date: 2024-05-15
-    page: Tag
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 2645
     githubRepo: uswds-site
   - date: 2022-04-28
-    page: Tag
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true

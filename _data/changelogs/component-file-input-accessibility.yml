@@ -1,8 +1,8 @@
-title: File input accessibility tests
+title: &title "File input accessibility tests"
 type: component
 items:
   - date: 2024-11-19
-    page: File input accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

@@ -1,30 +1,16 @@
-title: "Getting started for developers: Phase 1"
+title: &title "Getting started for developers: Phase 1"
 type: documentation
 changelogURL:
 items:
   - date: 2022-04-28
-    page: "Getting started for developers: Phase 1"
+    page: *title
     summary: Updated `uswds` package references to `@uswds/uswds`.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2021-12-06
-    page: "Getting started for developers: Phase 1"
+    page: *title
     summary: Added "Getting started for developers" guide.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1362
     githubRepo: uswds-site

@@ -1,22 +1,22 @@
-title: Breadcrumb
+title: &title "Breadcrumb"
 type: component
 changelogURL:
 items:
   - date: 2024-10-16
-    page: Breadcrumb
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 2853
     githubRepo: uswds-site
   - date: 2023-09-29
-    page: Breadcrumb
+    page: *title
     summary: Fixed a bug that prevented text from wrapping to a new line in the `.usa-breadcrumb--wrap` variant.
     affectsStyles: true
     githubPr: 5497
     githubRepo: uswds
     versionUswds: 3.6.1
   - date: 2022-04-28
-    page: Breadcrumb
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -26,7 +26,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-08-18
-    page: Breadcrumb
+    page: *title
     summary: Updated breadcrumb to work with a broader range of focus widths.
     summaryAdditional: Now the breadcrumb component isn't affected by custom focus widths.
     affectsAccessibility: true

@@ -1,9 +1,9 @@
-title: Link accessibility tests
+title: &title "Link accessibility tests"
 type: component
 changelogURL:
 items:
   - date: 2024-01-17
-    page: Link accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

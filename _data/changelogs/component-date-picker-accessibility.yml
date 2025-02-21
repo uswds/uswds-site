@@ -1,9 +1,9 @@
-title: Date picker accessibility tests
+title: &title "Date picker accessibility tests"
 type: component
 changelogURL:
 items:
   - date: 2025-01-14
-    page: Date picker accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     isAddition: true
     affectsGuidance: true

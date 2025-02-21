@@ -1,9 +1,9 @@
-title: Address
+title: &title "Pattern: Address"
 type: pattern
 changelogURL:
 items:
   - date: 2022-11-14
-    page: "Pattern: Address"
+    page: *title
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

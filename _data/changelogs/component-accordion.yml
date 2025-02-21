@@ -1,21 +1,21 @@
-title: Accordion
+title: &title "Accordion"
 type: component
 changelogURL:
 items:
   - date: 2024-01-17
-    page: Accordion
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 2138
     githubRepo: uswds-site
   - date: 2023-11-20
-    page: Accordion
+    page: *title
     summary: Added `usa-icon` to the dependency list and removed `usa-list`.
     affectsPageContent: true
     githubPr: 2149
     githubRepo: uswds-site
   - date: 2023-06-09
-    page: Accordion
+    page: *title
     summary: Added two new settings to customize accordion background colors.
     summaryAdditional: You can now customize accordion button and content background colors with `$theme-accordion-button-background-color` and `$theme-accordion-background-color`.
     isBreaking: false
@@ -27,7 +27,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
-    page: Accordion
+    page: *title
     summary: Adjusted forced colors mode styles to ensure visibility and increase consistency.
     summaryAdditional: Forced colors mode styles will now override the background color and display the button outline. The open/close icons now dynamically adjust to `ButtonText` colors.
     affectsStyles: true
@@ -36,7 +36,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2022-08-05
-    page: Accordion
+    page: *title
     summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
     isBreaking: true
@@ -46,14 +46,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-08-01
-    page: Accordion
+    page: *title
     summary: Updated documentation to reference the correct multi-select attribute.
     summaryAdditional: The attribute was updated from `aria-multiselectable="true"` to `data-allow-multiple`.
     affectsGuidance: true
     githubPr: 1718
     githubRepo: uswds-site
   - date: 2022-04-28
-    page: Accordion
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -63,7 +63,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-03-17
-    page: Accordion
+    page: *title
     summary: Restored missing white icons.
     summaryAdditional: Restored `add--white` and `remove--white` icons.
     affectsAssets: true
@@ -71,9 +71,8 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-02
-    page: Accordion
+    page: *title
     summary: Introduced white `add`, `remove`, and `expand_more` icons.
-    summaryAdditional:
     isBreaking: false
     affectsAssets: true
     githubPr: 4061

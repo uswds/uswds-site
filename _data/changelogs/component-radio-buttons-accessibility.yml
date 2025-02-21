@@ -1,8 +1,8 @@
-title: Radio button accessibility tests
+title: &title "Radio button accessibility tests"
 type: component
 items:
   - date: 2024-09-18
-    page: Radio button accessibility tests
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
     isAddition: true

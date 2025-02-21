@@ -1,84 +1,42 @@
-title: "Getting started for developers: Phase 3"
+title: &title "Getting started for developers: Phase 3"
 type: documentation
 changelogURL:
 items:
   - date: 2022-06-17
-    page: "Getting started for developers: Phase 3"
+    page: *title
     summary: |
       Replaced the outdated text: `_theme-settings.scss` with updated: `_uswds-theme.scss`.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1667
     githubRepo: uswds-site
   - date: 2022-04-28
-    page: "Getting started for developers: Phase 3"
+    page: *title
     summary: Updated theming instructions.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-03-10
-    page: "Getting started for developers: Phase 3"
+    page: *title
     summary: |
       Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1424
     githubRepo: uswds-site
   - date: 2022-02-17
-    page: "Getting started for developers: Phase 3"
+    page: *title
     summary: Moved resources documentation to its own page.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1422
     githubRepo: uswds-site
   - date: 2021-12-14
-    page: "Getting started for developers: Phase 3"
+    page: *title
     summary: Added guidance for `uswds-gulp`.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1370
     githubRepo: uswds-site
   - date: 2021-12-06
-    page: "Getting started for developers: Phase 3"
+    page: *title
     summary: Added "Getting started for developers" guide.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1362
     githubRepo: uswds-site

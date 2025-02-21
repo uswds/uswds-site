@@ -1,9 +1,9 @@
-title: Security
+title: &title "Security"
 type: documentation
 changelogURL:
 items:
   - date: 2021-11-05
-    page: Security
+    page: *title
     summary: Added security updates section.
     affectsPageContent: true
     isAddition: true

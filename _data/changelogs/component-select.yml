@@ -1,15 +1,15 @@
-title: Select
+title: &title "Select"
 type: component
 changelogURL:
 items:
   - date: 2024-06-19
-    page: Select
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsPageContent: true
     githubPr: 2702
     githubRepo: uswds-site
   - date: 2023-08-23
-    page: Select
+    page: *title
     summary: Added ellipses to overflow text in the multiple select variant.
     summaryAdditional: This provides a clear indication to users that there is text that extends beyond the select width.
     isBreaking: false
@@ -22,7 +22,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.6.0
   - date: 2023-06-09
-    page: Select
+    page: *title
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
     affectsAccessibility: true
@@ -31,16 +31,15 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
-    page: Select
+    page: *title
     summary: Improved consistency of disabled styles in forced colors mode.
-    summaryAdditional:
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 5295
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2022-08-05
-    page: Select
+    page: *title
     summary: Improved styling for select when the `multiple` attribute is present.
     summaryAdditional: According to the HTML5 standard, a select element whose `multiple` attribute is present is "expected to render as an inline-block box whose height is the height necessary to contain as many rows for items as given by the element's display size, or four rows if the [size] attribute is absent." Our select now conforms to this guidance.
     isBreaking: false
@@ -54,7 +53,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-04-28
-    page: Select
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -64,7 +63,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-28
-    page: Select
+    page: *title
     summary: Renamed component from "dropdown" to "select".
     affectsGuidance: true
     githubPr: 1538

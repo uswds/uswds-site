@@ -61,11 +61,11 @@
     "prettier:scss": "npx prettier --check './css/**/*.scss'",
     "prettier:js": "npx prettier --check './**/*.js'",
     "prettier:md": "npx prettier --check './**/accessibility-tests.md'",
-    "prettier:yml": "npx prettier --check './_data/**/*.yml'",
+    "prettier:yml": "npx prettier --check './**/*.yml'",
     "prettier:fix:scss": "npx prettier --write './css/**/*.scss'",
     "prettier:fix:js": "npx prettier --write './**/*.js'",
     "prettier:fix:md": "npx prettier --write './**/accessibility-tests.md'",
-    "prettier:fix:yml": "npx prettier --write './_data/**/*.yml'",
+    "prettier:fix:yml": "npx prettier --write './**/*.yml'",
     "prettier:fix": "concurrently 'npm run prettier:fix:scss' 'npm run prettier:fix:md' 'npm run prettier:fix:yml'",
     "prettier": "concurrently --maxProcesses 1 'npm run prettier:scss' 'npm run prettier:md' 'npm run prettier:yml'"
   },

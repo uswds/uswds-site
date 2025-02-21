@@ -43,9 +43,9 @@ in_page_nav_headings: "h2"
   - Set card strings
 -->
 {% assign product_grid_list_classes = "usa-card site-component-card desktop-lg:grid-col-4" %}
-{% capture uswds_link_text %} USWDS {{ site.uswds_version }}{%- endcapture %}
-{% capture uswds_compile_link_text %} USWDS Compile {{ site.uswds_compile_version }}{%- endcapture %}
-{% capture uswds_design_kit_link_text %} USWDS design kit {{ site.uswds_design_kit_version }}{%- endcapture %}
+{% assign uswds_link_text = 'USWDS ' | append: site.uswds_version %}
+{% assign uswds_compile_link_text = 'USWDS Compile ' | append: site.uswds_compile_version %}
+{% assign uswds_design_kit_link_text = 'USWDS design kit ' | append: site.uswds_design_kit_version %}
 
 <!--
   Set monthly call card variables
@@ -53,9 +53,9 @@ in_page_nav_headings: "h2"
   - Set card strings
 -->
 {% assign monthly_call = site.data.monthly-calls.videos[0]  %}
-{% capture monthly_call_heading %} {{ monthly_call.date }}: {{monthly_call.title}} {%- endcapture %}
-{% capture monthly_call_image %} {{site.baseurl }}/img/uswds-logo/4c-lg-on-black.svg {%- endcapture %}
-{% capture monthly_call_url %} {{ site.baseurl }}/about/monthly-calls {%- endcapture %}
+{% assign monthly_call_heading =  monthly_call.date | append: ': ' | append: monthly_call.title %}
+{% assign monthly_call_image = site.baseurl | append: '/img/uswds-logo/4c-lg-on-black.svg' %}
+{% assign monthly_call_url = site.baseurl | append: '/about/monthly-calls' %}
 
 {:.whats-new__heading.margin-top-4}
 On this page

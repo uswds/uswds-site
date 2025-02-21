@@ -22,7 +22,7 @@
       </p>
     {% endif %}
 
-    <{{ include.heading | default:"h2" }} class="post-preview__title {{ include.headingClasses }}">
+    <{{ include.heading | default:"h2" }} class="post-preview__title{% if include.headingClasses %} {{ include.headingClasses }}{% endif %}">
       {% unless preview_url == "none" %}
         <a href="{{ preview_url }}">
       {% endunless %}

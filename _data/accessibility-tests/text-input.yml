@@ -31,7 +31,7 @@ test_items:
     version_tested: 3.8.0
     wcag_criterion: 1.4.4
 # Keyboard navigation tests
-  - summary: Text field is accesible via keyboard navigation.
+  - summary: Text field is accessible via keyboard navigation.
     summary_additional: Using only a keyboard, you can navigate to the text field, type in it, and navigate away from it.
     test_status: pass
     test_type: keyboard

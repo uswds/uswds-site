@@ -75,7 +75,7 @@ const copyOnClick = (event) => {
   labelVisual.textContent = "Copied!";
 
   // In order for consistent SR readouts, the text string must change
-  // Without changing, the SR will not consitently read the text on click
+  // Without changing, the SR will not consistently read the text on click
   if (labelSR.textContent == SR_SUCCESS_MESSAGE) {
     labelSR.textContent = SR_SUCCESS_MESSAGE_ALT;
   } else {

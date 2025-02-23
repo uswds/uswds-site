@@ -289,7 +289,7 @@ A Content Management Solution (CMS) tracker should only be used if your site has
 Depending on how often the code of the site gets updated, the team might need two tracking solutions: one for the CMS and one for the code updates, leading to a more complicated system.
 
 {% capture example_tracking %}
-  In the cloud.gov dashboard, we decided to do CI testing because we already had a reliable CI setup and the team is primarily made up of developers, meaning CI would be where performance gets the most attention. We set up [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) in our build process, ensuring that if a recent code change goes over budget, it would stop the build and report the problems to the developers. Additionally, we used a Github service to receive performance reports over time.
+  In the cloud.gov dashboard, we decided to do CI testing because we already had a reliable CI setup and the team is primarily made up of developers, meaning CI would be where performance gets the most attention. We set up [Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) in our build process, ensuring that if a recent code change goes over budget, it would stop the build and report the problems to the developers. Additionally, we used a GitHub service to receive performance reports over time.
 {% endcapture %}
 {% include perf_example.html
   text=example_tracking

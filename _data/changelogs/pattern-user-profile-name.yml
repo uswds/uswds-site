@@ -3,6 +3,7 @@ type: pattern
 changelogURL:
 items:
   - date: 2022-11-14
+    page: "Pattern: Name"
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

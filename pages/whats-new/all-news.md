@@ -8,6 +8,10 @@ type: posts
 in_page_nav_headings: false
 ---
 
-{% for post in site.posts %}
-  {% include post-preview.html post=post %}
-{% endfor %}
+{% assign all_posts = site.posts | concat: site.posts_short | sort: "date" | reverse %}
+
+<div class="margin-top-6">
+  {% for post in all_posts %}
+    {% include post-preview.html date=true headingClasses="font-lang-lg" %}
+  {% endfor %}
+</div>

@@ -9,6 +9,7 @@ items:
     githubPr: 3098
     githubRepo: uswds-site
   - date: 2024-11-13
+    page: Step indicator
     summary: Removed the `aria-label` from the wrapper of the step indicator component.
     summaryAdditional: This resolves an error related to having an invalid attribute on a `div` element.
     affectsAccessibility: true
@@ -18,6 +19,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.10.0
   - date: 2023-03-09
+    page: Step indicator
     summary: Improved contrast on pending items.
     summaryAdditional: Graphical elements related to pending items now meet accessibility standards for contrast ratio.
     isBreaking: false
@@ -27,6 +29,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2022-04-28
+    page: Step indicator
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAccessibility: true

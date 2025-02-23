@@ -4,6 +4,7 @@ type: component
 changelogURL:
 items:
   - date: 2024-12-18
+    page: Text input
     summary: Moved `.usa-input--[width]` classes into the `usa-input` package from `usa-form`.
     summaryAdditional: These classes can now be used without the `usa-form` package and `.usa-form` parent element.
     affectsStyles: true
@@ -11,11 +12,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.11.0
   - date: 2024-06-19
+    page: Text input
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2697
     githubRepo: uswds-site
   - date: 2024-03-11
+    page: Text input
     summary: Added `textarea` support to the validation component.
     summaryAdditional:
     isBreaking: false
@@ -26,11 +29,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.0
   - date: 2023-11-16
+    page: Text input
     summary: Updated the listed values for `.usa-input--[width]`.
     affectsGuidance: true
     githubPr: 2291
     githubRepo: uswds-site
   - date: 2023-06-09
+    page: Text input
     summary: Improved consistency and visibility of disabled styles.
     summaryAdditional: Form elements with the `disabled` or `aria-disabled` attribute now get consistent styling and have proper color contrast.
     affectsAccessibility: true
@@ -39,6 +44,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
+    page: Text input
     summary: Improved consistency of disabled styles in forced colors mode.
     summaryAdditional:
     affectsAccessibility: true
@@ -48,6 +54,7 @@ items:
     versionUswds: 3.5.0
   # 3.0.2 release
   - date: 2022-06-17
+    page: Text input
     summary: Improved form group error display.
     summaryAdditional: Form group margins are the same whether or not the form group is in an error state.
     isBreaking: false
@@ -61,12 +68,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-04-28
+    page: Text input
     summary: Updated package name to `usa-input`.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site
   # 3.0 release
   - date: 2022-04-28
+    page: Text input
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -76,11 +85,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-13
+    page: Text input
     summary: Updated package name to `form-controls`.
     affectsGuidance: true
     githubPr: 1497
     githubRepo: uswds-site
   - date: 2021-03-17
+    page: Text input
     summary: Updated and improved guidance for text input.
     affectsGuidance: true
     githubPr: 1180

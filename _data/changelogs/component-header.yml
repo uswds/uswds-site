@@ -3,6 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2024-10-04
+    page: Header
     summary: Removed the CSS order property from mobile header navigation.
     summaryAdditional: |
       Now, the visual order of the component matches the tab order.
@@ -14,11 +15,13 @@ items:
     githubPr: 6037
     versionUswds: 3.9.0
   - date: 2024-08-13
+    page: Header
     summary: Added accessibility tests page.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2761
     githubRepo: uswds-site
   - date: 2023-12-08
+    page: Header
     summary: Fixed a bug that caused long button text to overflow into its padding.
     summaryAdditional: Now, button text breaks to multiple lines as expected and maintains vertical center alignment.
     affectsStyles: True
@@ -26,6 +29,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.1
   - date: 2023-12-08
+    page: Header
     summary: Improved the vertical alignment of the expand icon.
     summaryAdditional: The icon will now maintain vertical alignment when menu button text breaks to multiple lines.
     affectsStyles: true
@@ -33,12 +37,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.1
   - date: 2023-12-08
+    page: Header
     summary: Fixed a bug that prevented `$theme-max-header-width` from accepting a value of "none".
     affectsStyles: true
     githubPr: 5624
     githubRepo: uswds
     versionUswds: 3.7.1
   - date: 2023-12-08
+    page: Header
     summary: Fixed the horizontal alignment of header submenu elements.
     summaryAdditional: Now, `usa-nav__submenu` elements should align with other header elements.
     isBreaking: false
@@ -47,12 +53,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.1
   - date: 2023-11-20
+    page: Header
     summary: Removed the role, banner component, and HTTPS sections.
     summaryAdditional:
     affectsGuidance: true
     githubPr: 2162
     githubRepo: uswds-site
   - date: 2023-09-29
+    page: Header
     summary: Fixed a Safari-only bug that caused the mobile menu to unexpectedly close at a narrow range of window widths.
     summaryAdditional:
     affectsJavascript: true
@@ -61,11 +69,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.6.1
   - date: 2023-07-14
+    page: Header
     summary: Added header variants table to guidance page.
     affectsGuidance: true
     githubPr: 2139
     githubRepo: uswds-site
   - date: 2023-06-09
+    page: Header
     summary: Fixed a bug that caused inaccurate megamenu template markup in the documentation.
     summaryAdditional: The markup in megamenu code examples now accurately includes the `usa-megamenu` class.
     isBreaking: false
@@ -75,6 +85,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
+    page: Header
     summary: Removed the `id` attribute from the `usa-logo` element.
     summaryAdditional:
     isBreaking: false
@@ -83,6 +94,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-03-13
+    page: Header
     summary: Extended headers now respect the value passed to `$theme-header-logo-text-width`.
     summaryAdditional:
       For extended headers, the default setting value is narrower than
@@ -93,6 +105,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.1
   - date: 2023-03-09
+    page: Header
     summary: Secondary nav is now read properly on screen readers.
     summaryAdditional: The separator between nav elements is no longer read on screen readers.
     isBreaking: false
@@ -102,6 +115,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2023-03-09
+    page: Header
     summary: Allow full-page width for header.
     summaryAdditional: You can now set a value of `"none"` for any `max-width` setting, including `$theme-header-max-width`.
     isBreaking: false
@@ -110,6 +124,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2022-08-05
+    page: Header
     summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
     isBreaking: true
@@ -119,6 +134,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-08-05
+    page: Header
     summary: Fixed mobile menu appearance for different CSS layouts.
     summaryAdditional: The menu now appears properly on layouts using flex or CSS grid.
     affectsStyles: true
@@ -126,6 +142,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-06-17
+    page: Header
     summary: Improved target area for header dropdown links.
     summaryAdditional: Links in dropdown menus are now formatted as block elements to provide a larger selectable surface.
     affectsStyles: true
@@ -133,6 +150,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-06-17
+    page: Header
     summary: Updated megamenu to always stay within the viewport.
     summaryAdditional: We improved the styling of the header megamenu so it resizes properly when trying to capture screenshots.
     affectsStyles: true
@@ -140,11 +158,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-04-28
+    page: Header
     summary: Updated package name to `usa-header`.
     affectsGuidance: true
     githubPr: 1538
     githubRepo: uswds-site
   - date: 2022-04-28
+    page: Header
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -154,6 +174,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
+    page: Header
     summary: Added support for forced colors mode.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
@@ -162,6 +183,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2021-12-14
+    page: Header
     summary: Updated mobile navigation to make background content inert.
     summaryAdditional: When the mobile navigation is active, all other non-nav content is hidden. This prevents accidentally leaving the focus of the active mobile menu.
     affectsAccessibility: true
@@ -170,6 +192,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.0
   - date: 2021-12-14
+    page: Header
     summary: Improved resilience of icon-only functionality in search.
     summaryAdditional: Updated search to add a text equivalent if the image path is broken and does not load.
     isBreaking: true
@@ -183,6 +206,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.0
   - date: 2021-08-18
+    page: Header
     summary: Updated header dropdown menus to close with escape or focus out.
     summaryAdditional: Now `esc` or focusing out will close dropdown menus in the header.
     affectsAccessibility: true
@@ -191,6 +215,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.1
   - date: 2021-03-17
+    page: Header
     summary: Restored missing white icons.
     summaryAdditional: Restored `add--white`, `check_circle--white`, `error--white`, `expand_more--white`, `info--white`, `remove--white`, and `warning--white` icons.
     affectsAssets: true
@@ -198,6 +223,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-02
+    page: Header
     summary: Introduced white `add`, `remove`, and `expand_more` icons.
     summaryAdditional:
     isBreaking: false

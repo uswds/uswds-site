@@ -16,9 +16,8 @@ items:
     versionUswds: 3.9.0
   - date: 2024-08-13
     page: *title
-    summary: Added accessibility tests page.
-    affectsGuidance: true
-    isAddition: true
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsPageContent: true
     githubPr: 2761
     githubRepo: uswds-site
   - date: 2023-12-08

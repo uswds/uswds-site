@@ -11,7 +11,7 @@
 | summaryAdditional    | Additional description                                     | yes      | string     | N/A                                                         | yes       |
 | isBreaking           | Breaking change                                            | no       | boolean    | true, false                                                 | yes       |
 | isAddition           | Added page                                                 | no       | boolean    | true, false                                                 | yes       |
-| isDeletion           | Deleted page                                               | no       | boolean    | true, false                                                 | yes       |
+| isRemoval            | Deleted page                                               | no       | boolean    | true, false                                                 | yes       |
 | affectsAccessibility | Change affects accessibility                               | yes      | boolean    | true, false                                                 | yes       |
 | affectsMarkup        | Change affects component markup                            | yes      | boolean    | true, false                                                 | yes       |
 | affectsJavascript    | Change affects component JS                                | yes      | boolean    | true, false                                                 | yes       |

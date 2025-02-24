@@ -56,7 +56,7 @@ items:
     summaryAdditional:
     isBreaking:
     isAddition:
-    isDeletion:
+    isRemoval:
     affectsAccessibility:
     affectsAssets:
     affectsGuidance:

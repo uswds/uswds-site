@@ -5,7 +5,10 @@
 {% assign col3Title = 'Page' %}
 {% assign col3Classes = 'tablet:grid-col' %}
 {% assign col4Title = 'Affects' %}
-{% assign col4Classes = 'tablet:grid-col-2' %}
+{% capture col4Classes %}
+  tablet:grid-col-2
+  {% if include.hideTagsTablet %} site-changelog--hide-tablet{% endif %}
+{% endcapture %}
 {% assign col5Title = 'Description' %}
 {% assign col5Classes = 'tablet:grid-col-5' %}
 
@@ -87,6 +90,9 @@
       <td data-title="{{ col5Title }}" class="{{ col5Classes }}">
         {% if item.summary %}
         <p class="measure-6">
+          {% if include.hideTagsTablet and item.isBreaking %}
+            <span class="output-false site-changelog--show-tablet">Breaking</span>
+          {% endif %}
           <strong>
             {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}
           </strong>

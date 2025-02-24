@@ -53,7 +53,7 @@ in_page_nav_headings: "h2"
 Latest code, guidance, and content updates across the design system.
 
 <div class="margin-top-2">
-  {% include consolidated-changelog-table.html %}
+  {% include consolidated-changelog-table.html hideTagsTablet=true %}
 </div>
 
 <a class="usa-button" href="{{ site.baseurl }}/about/whats-new/changelog/">View all changelog entries</a>

@@ -1,19 +1,21 @@
-title: In-page navigation
+title: &title "In-page navigation"
 type: component
 changelogURL:
 items:
   - date: 2024-10-16
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2863
     githubRepo: uswds-site
   - date: 2024-03-26
+    page: *title
     summary: Updated outdated references to `data-heading-selector` with `data-heading-elements`.
-    summaryAdditional:
     affectsGuidance: true
     githubRepo: uswds-site
     githubPr: 2560
   - date: 2024-03-11
+    page: *title
     summary: Added the optional `data-heading-selector` attribute.
     summaryAdditional: This attribute allows users to list the heading levels that should be included in the component link list.
     affectsJavascript: true
@@ -22,46 +24,44 @@ items:
     githubPr: 5444
     versionUswds: 3.8.0
   - date: 2023-08-23
+    page: *title
     summary: Updated JavaScript to exclude headers that have a style of `display:none` or `visibility:hidden` from the component link list.
-    summaryAdditional:
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 5393
     versionUswds: 3.6.0
   - date: 2023-08-23
+    page: *title
     summary: Added the option to designate a custom main content region with the `data-main-content-selector` attribute.
     affectsJavascript: true
     githubRepo: uswds
     githubPr: 5387
     versionUswds: 3.6.0
   - date: 2023-06-09
+    page: *title
     summary: Fixed a bug that prevented links that start with a number from scrolling when clicked.
-    summaryAdditional:
     affectsJavascript: true
     githubPr: 5200
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-03-27
+    page: *title
     summary: Updated the documentation to clarify the component's recommended display location.
-    summaryAdditional:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubRepo: uswds-site
     githubPr: 2033
     versionUswds:
   - date: 2023-03-13
+    page: *title
     summary: URL in address bar is updated when navigating component.
     summaryAdditional: Users can now see the proper anchor link in the address bar when navigating from the in-page navigation.
-    affectsGuidance:
     affectsJavascript: true
-    affectsMarkup:
     affectsStyles: true
     githubRepo: uswds
     githubPr: 5170
     versionUswds: 3.4.1
   - date: 2022-11-14
+    page: *title
     summary: Component released.
     affectsGuidance: true
     affectsJavascript: true

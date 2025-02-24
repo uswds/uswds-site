@@ -1,8 +1,9 @@
-title: Website standards
+title: &title "Website standards"
 type: documentation
 changelogURL:
 items:
   - date: 2024-09-26
+    page: *title
     summary: Updated content to reflect move to standards.digital.gov.
     affectsGuidance: true
     githubPr: 2843

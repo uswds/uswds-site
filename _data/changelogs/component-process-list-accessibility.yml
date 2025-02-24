@@ -1,8 +1,10 @@
-title: Process list accessibility tests
+title: &title "Process list accessibility tests"
 type: component
 items:
   - date: 2024-12-18
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 3007
     githubRepo: uswds-site

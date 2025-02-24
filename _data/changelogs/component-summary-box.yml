@@ -1,17 +1,16 @@
-title: Summary box
+title: &title "Summary box"
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-
 items:
   - date: 2024-12-17
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 3016
     githubRepo: uswds-site
   # 3.0 release
   - date: 2022-04-28
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -22,6 +21,7 @@ items:
     versionUswds: 3.0.0
   # 2.11.2 release
   - date: 2021-04-28
+    page: *title
     summary: Added missing summary box Sass package.
     summaryAdditional: Now you can add a summary box package to your project with `packages/usa-summary-box`.
     isBreaking: false

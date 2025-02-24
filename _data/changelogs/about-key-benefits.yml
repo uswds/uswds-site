@@ -1,17 +1,11 @@
-title: Key benefits
+title: &title "Key benefits"
 type: documentation
 changelogURL:
 items:
   - date: 2021-04-14
+    page: *title
     summary: Added key benefits page.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
-    affectsGuidance:
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
+    isAddition: true
     githubPr: 1207
     githubRepo: uswds-site
     versionUswds:

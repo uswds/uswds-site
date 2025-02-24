@@ -1,145 +1,79 @@
-title: Implementations
+title: &title "Implementations"
 type: documentation
 changelogURL:
 items:
   - date: 2023-07-11
+    page: *title
     summary: Added entry for "Comet".
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 2152
     githubRepo: uswds-site
   - date: 2023-03-09
+    page: *title
     summary: Added entry for "sam.gov" implementations.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1714
     githubRepo: uswds-site
   - date: 2022-10-11
+    page: *title
     summary: Added entry for "ngx-uswds".
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1715
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-07-06
+    page: *title
     summary: Added entry for "USWDS Components".
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1508
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-10-04
+    page: *title
     summary: Added entry for "USWDS Drupal base theme".
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1263
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-07-27
+    page: *title
     summary: Added entry for "USWDS CKEditor Integration" and "USWDS Paragraph Components".
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1233
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-07-27
+    page: *title
     summary: Added column for implementation status.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1233
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-05-19
+    page: *title
     summary: Removed entry for "us_web_design_standards gem".
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1227
     githubRepo: uswds-site
     versionUswds:
   - date: 2020-09-11
+    page: *title
     summary: Added entry for "uswds-sf-lightning-community".
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1040
     githubRepo: uswds-site
     versionUswds:
   - date: 2020-08-12
+    page: *title
     summary: Added entry for "tailwindcss-uswds".
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1024
     githubRepo: uswds-site
     versionUswds:
   - date: 2020-07-28
+    page: *title
     summary: Added entry for "react-uswds".
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1003
     githubRepo: uswds-site
     versionUswds:

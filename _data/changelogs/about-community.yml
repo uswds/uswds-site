@@ -1,30 +1,18 @@
-title: Community
+title: &title "Community"
 type: documentation
 changelogURL:
 items:
   - date: 2022-10-20
+    page: *title
     summary: Updated community conduct section.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1849
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-08-29
+    page: *title
     summary: Removed Ammie Farraj Feijoo from the community managers section.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1750
     githubRepo: uswds-site
     versionUswds:

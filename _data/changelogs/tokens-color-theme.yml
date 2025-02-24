@@ -1,19 +1,21 @@
-title: Theme color tokens
+title: &title "Theme color tokens"
 type: token
 changelogURL:
 items:
   - date: 2024-05-15
+    page: *title
     summary: Updated guidance for configuring color settings.
     affectsGuidance: true
     githubPr: 2377
     githubRepo: uswds-site
   - date: 2024-05-15
+    page: *title
     summary: Updated the documented value of the `secondary-lighter` token.
-    summaryAdditional:
     affectsGuidance: true
     githubPr: 2377
     githubRepo: uswds-site
   - date: 2024-05-15
+    page: *title
     summary: Removed emergency color examples.
     summaryAdditional: These colors are instead documented on the state color page.
     affectsGuidance: true

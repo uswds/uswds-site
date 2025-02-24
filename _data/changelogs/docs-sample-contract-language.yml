@@ -1,8 +1,9 @@
-title: Sample contract language
+title: &title "Sample contract language"
 type: documentation
 changelogURL:
 items:
   - date: 2024-04-09
+    page: *title
     summary: Updated Federal Web Council representative link.
     affectsGuidance: true
     githubPr: 2604

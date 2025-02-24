@@ -1,23 +1,26 @@
-title: List
+title: &title List
 type: component
 changelogURL:
 items:
-- date: 2024-08-13
-  summary: Added WCAG compliance tag and accessibility test status section.
-  affectsGuidance: true
-  githubPr: 2746
-  githubRepo: uswds-site
-- date: 2023-11-20
-  summary: Added documentation for `usa-list--unstyled` variant.
-  affectsGuidance: true
-  githubPr: 2162
-  githubRepo: uswds-site
-- date: 2022-04-28
-  summary: Updated to Sass module syntax and new package structure.
-  isBreaking: true
-  affectsAssets: true
-  affectsJavascript: true
-  affectsStyles: true
-  githubPr: 4656
-  githubRepo: uswds
-  versionUswds: 3.0.0
+  - date: 2024-08-13
+    page: *title
+    summary: Added WCAG compliance tag and accessibility test status section.
+    affectsPageContent: true
+    githubPr: 2746
+    githubRepo: uswds-site
+  - date: 2023-11-20
+    page: *title
+    summary: Added documentation for `usa-list--unstyled` variant.
+    affectsGuidance: true
+    githubPr: 2162
+    githubRepo: uswds-site
+  - date: 2022-04-28
+    page: *title
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAssets: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0

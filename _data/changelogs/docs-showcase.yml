@@ -1,13 +1,15 @@
-title: Showcase
+title: &title "Showcase"
 type: documentation
 changelogURL:
 items:
   - date: 2024-12-18
+    page: *title
     summary: Removed broken link to VA Caseflow.
     affectsGuidance: true
     githubPr: 3031
     githubRepo: uswds-site
   - date: 2024-04-26
+    page: *title
     summary: Remove broken links that have no alternate for redirects.
     summaryAdditional: Correct misspelling that Siteimprove noted.
     affectsGuidance: true

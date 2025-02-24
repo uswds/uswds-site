@@ -1,29 +1,34 @@
-title: Icon list
+title: &title "Icon list"
 type: component
 changelogURL:
 items:
   - date: 2024-12-18
+    page: *title
     summary: Removed deprecated `xlink` references from code samples.
     affectsGuidance: true
     githubPr: 2926
     githubRepo: uswds-site
   - date: 2024-12-18
+    page: *title
     summary: Replaced deprecated `xlink:href` references with `href`.
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds
     versionUswds: 3.11.0
   - date: 2024-12-13
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 3008
     githubRepo: uswds-site
   - date: 2023-11-20
+    page: *title
     summary: Updated the value list for icon list variants.
     affectsGuidance: true
     githubPr: 2162
     githubRepo: uswds-site
   - date: 2022-04-28
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -33,11 +38,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-03-17
+    page: *title
     summary: Added icon list documentation.
     affectsGuidance: true
     githubPr: 1180
     githubRepo: uswds-site
   - date: 2021-03-17
+    page: *title
     summary: Added the icon list component.
     summaryAdditional: An icon list reinforces the meaning and visibility of individual list items with a leading icon.
     affectsGuidance: true

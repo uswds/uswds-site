@@ -1,8 +1,9 @@
-title: Measure tokens
+title: &title "Measure tokens"
 type: token
 changelogURL:
 items:
   - date: 2024-05-15
+    page: *title
     summary: Updated the setting code example in "Using measure tokens" section.
     affectsGuidance: true
     githubPr: 2379

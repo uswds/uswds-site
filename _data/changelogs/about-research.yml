@@ -1,24 +1,31 @@
-title: Research
+title: &title "Research"
 type: documentation
 changelogURL:
 items:
   - date: 2025-01-23
+    page: *title
     summary: Removed Together report link.
     summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Ending Radical And Wasteful Government DEI Programs And Preferencing\".
+    affectsPageContent: true
+    affectsLinks: true
     githubRepo: uswds-site
     githubPr: 3078
   - date: 2024-03-18
+    page: *title
     summary: Added link to the Recruitment for Feds page
     affectsGuidance: true
+    affectsLinks: true
     githubPr: 2527
     githubRepo: uswds-site
   - date: 2023-11-15
+    page: *title
     summary: Replaced page content.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2355
     githubRepo: uswds-site
   - date: 2023-07-14
+    page: *title
     summary: Removed broken link.
-    affectsGuidance: true
+    affectsLinks: true
     githubPr: 2185
     githubRepo: uswds-site

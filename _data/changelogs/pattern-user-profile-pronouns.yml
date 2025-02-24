@@ -1,36 +1,44 @@
-title: Pronouns
+title: &title "Pattern: Pronouns"
 type: pattern
 changelogURL:
 items:
   - date: 2025-02-11
+    page: *title
     summary: Removed pronouns pattern.
     summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Defending Women from Gender Ideology Extremism And Restoring Biological Truth To The Federal Government\".
     affectsGuidance: true
-    isBresaking: true
+    isBreaking: true
     githubRepo: uswds-site
     githubPr: 3099
   - date: 2025-01-30
+    page: *title
     summary: Added content alert.
     summaryAdditional: This pattern is affected by a recent change in law, policy, or regulation. Expect changes to this pattern in the near future as we adapt to these new requirements.
     affectsGuidance: true
     githubRepo: uswds-site
     githubPr: 3090
   - date: 2025-01-30
+    page: *title
     summary: Added an archive.org link to the "The importance of personal pronouns" reference link.
-    summaryAdditional:
+    affectsLinks: true
     githubPr: 3088
     githubRepo: uswds-site
   - date: 2025-01-23
+    page: *title
     summary: De-linked dead hyperlink in references.
     summaryAdditional: De-linked pronouns reference link.
+    affectsLinks: true
     githubRepo: uswds-site
     githubPr: 3078
   - date: 2024-03-11
+    page: *title
     summary: Replaced dead hyperlink with archived copy.
     summaryAdditional: Replaced reference to `practicemakesprogress.org` with plain text and a link to the archived page on archive.org.
+    affectsLinks: true
     githubRepo: uswds-site
     githubPr: 2478
   - date: 2022-11-14
+    page: *title
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

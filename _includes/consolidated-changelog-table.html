@@ -2,12 +2,15 @@
 {% assign col1Classes = 'tablet:grid-col' %}
 {% assign col2Title = 'USWDS version' %}
 {% assign col2Classes = 'tablet:grid-col tablet:padding-left-0' %}
-{% assign col3Title = 'Affects' %}
+{% assign col3Title = 'Page' %}
 {% assign col3Classes = 'tablet:grid-col' %}
-{% assign col4Title = 'Breaking' %}
-{% assign col4Classes = 'tablet:grid-col site-changelog--hide-tablet' %}
+{% assign col4Title = 'Affects' %}
+{% capture col4Classes %}
+  tablet:grid-col-2
+  {% if include.hideTagsTablet %} site-changelog--hide-tablet{% endif %}
+{% endcapture %}
 {% assign col5Title = 'Description' %}
-{% assign col5Classes = 'tablet:grid-col-6' %}
+{% assign col5Classes = 'tablet:grid-col-5' %}
 
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
@@ -39,7 +42,13 @@
         {% endif %}
       </td>
       <td data-title="{{ col3Title }}" class="{{ col3Classes }}">
+          {{ item.page }}
+      </td>
+      <td data-title="{{ col4Title }}" class="{{ col4Classes }}">
         <ul class="add-list-reset">
+          {% if item.isBreaking %}
+            <li><span class="output-false">Breaking</span></li>
+          {% endif %}
           {% if item.isRemoval %}
             <li><span class="output-false">Removed page</span></li>
           {% endif %}
@@ -61,32 +70,28 @@
           {% if item.affectsJavascript %}
             <li><span class="output-neutral">JavaScript</span></li>
           {% endif %}
+          {% if item.affectsLinks %}
+            <li><span class="output-neutral">Links</span></li>
+          {% endif %}
           {% if item.affectsMarkup %}
             <li><span class="output-warning">Markup</span></li>
           {% endif %}
           {% if item.affectsPageContent %}
             <li><span class="output-neutral">Page content</span></li>
           {% endif %}
-          {% if item.affectsStyles %}
-            <li><span class="output-neutral">Styles</span></li>
-          {% endif %}
           {% if item.affectsSettings %}
             <li><span class="output-neutral">Settings</span></li>
           {% endif %}
+          {% if item.affectsStyles %}
+            <li><span class="output-neutral">Styles</span></li>
+          {% endif %}
         </ul>
-      </td>
-      <td data-title="{{ col4Title }}" class="{{ col4Classes }}">
-        {% if item.isBreaking %}
-          <span class="output-false">Breaking</span>
-        {% else %}
-          No
-        {% endif %}
       </td>
       <td data-title="{{ col5Title }}" class="{{ col5Classes }}">
         {% if item.summary %}
         <p class="measure-6">
-          {% if item.isBreaking %}
-            <span class="site-changelog--show-tablet output-false">Breaking</span>
+          {% if include.hideTagsTablet and item.isBreaking %}
+            <span class="output-false site-changelog--show-tablet">Breaking</span>
           {% endif %}
           <strong>
             {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}

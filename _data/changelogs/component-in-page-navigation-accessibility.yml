@@ -1,8 +1,10 @@
-title: In-page navigation accessibility tests
+title: &title "In-page navigation accessibility tests"
 type: component
 items:
   - date: 2024-10-16
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 2863
     githubRepo: uswds-site

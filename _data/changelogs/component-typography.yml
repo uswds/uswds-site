@@ -1,15 +1,15 @@
-title: Typography
+title: &title "Typography"
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-
 items:
   - date: 2024-03-20
+    page: *title
     summary: Added WCAG compliance tag.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2540
     githubRepo: uswds-site
   - date: 2023-06-09
+    page: *title
     summary: Stopped using font smoothing.
     summaryAdditional: No longer use font smoothing for dark backgrounds and disabled buttons.
     affectsStyles: true
@@ -17,20 +17,17 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-03-09
+    page: *title
     summary: Use only `woff2` in our `@font-face` declarations.
     summaryAdditional: Since modern browsers only need the `woff2` font format, we now only output `woff2` fonts in our `@font-face` rules. If you need `woff` and `ttf` for IE11 compatibility, set `$theme-font-browser-compatibility` to `true` in settings.
-    affectsAccessibility:
-    affectsAssets:
     affectsSettings: true
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 5108
     githubRepo: uswds
     versionUswds: 3.4.0
   # 3.0 release
   - date: 2022-04-28
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true

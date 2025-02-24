@@ -1,17 +1,12 @@
-title: Security
+title: &title "Security"
 type: documentation
 changelogURL:
 items:
   - date: 2021-11-05
+    page: *title
     summary: Added security updates section.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
-    affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
+    affectsPageContent: true
+    isAddition: true
     githubPr: 1304
     githubRepo: uswds-site
     versionUswds:

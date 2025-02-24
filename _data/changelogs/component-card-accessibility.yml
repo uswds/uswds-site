@@ -1,8 +1,10 @@
-title: Card accessibility tests
+title: &title "Card accessibility tests"
 type: component
 items:
  - date: 2025-02-14
+   page: *title
    summary: Added accessibility tests page.
+   isAddition: true
    affectsGuidance: true
    githubPr: 3101
    githubRepo: uswds-site

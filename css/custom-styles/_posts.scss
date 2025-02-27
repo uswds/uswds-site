@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "../settings/variables" as *;
+
 .post-preview {
   @include u-border-top("1px", "gray-30");
   @include u-margin-y(3);

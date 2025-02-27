@@ -1,7 +1,7 @@
 title: Accordion
 component_status: pass
 test_items:
-# Zoom/screen magnification items
+  # Zoom/screen magnification items
   - summary: No need to scroll horizontally when screen is magnified.
     summary_additional: |
       When you zoom to 200%,
@@ -42,7 +42,7 @@ test_items:
     test_type: zoom
     version_tested: 3.5.0
     wcag_criterion: 1.4.4
-# Keyboard navigation items
+  # Keyboard navigation items
   - summary: Interactive elements work after tabbing.
     summary_additional: |
       When you use the `tab` key to navigate into an open accordion panel,
@@ -124,7 +124,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.5.0
     wcag_criterion: 2.4.7
-# Screen reader items
+  # Screen reader items
   - summary: Focus moves in a logical order when using a screen reader.
     summary_additional: |
       When you use a screen reader and navigate between accordion panels,

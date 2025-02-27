@@ -32,9 +32,9 @@
   number: -2px
 - token: neg-1px
   number: -1px
-- token: '05'
+- token: "05"
   number: 0.5
-- token: '105'
+- token: "105"
   number: 1.5
-- token: '205'
+- token: "205"
   number: 2.5

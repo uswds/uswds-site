@@ -1,50 +1,50 @@
 font:
   - token: georgia
     name: Georgia
-    stack: 'georgia'
+    stack: "georgia"
     normal: 346
   - token: helvetica
     name: Helvetica
-    stack: 'helvetica'
+    stack: "helvetica"
     normal: 357
   - token: merriweather
     name: Merriweather
     stack-name: Merriweather Web
-    stack: 'georgia'
+    stack: "georgia"
     normal: 371
   - token: open-sans
     name: Open Sans
     stack-name: Open Sans
-    stack: 'system'
+    stack: "system"
     normal: 357
   - token: public-sans
     name: Public Sans
     stack-name: Public Sans Web
-    stack: 'system'
+    stack: "system"
     normal: 362
   - token: roboto-mono
     name: Roboto Mono
     stack-name: Roboto Mono Web
-    stack: 'mono'
+    stack: "mono"
     normal: 380
   - token: source-sans-pro
     name: Source Sans Pro
     stack-name: Source Sans Pro
-    stack: 'helvetica'
+    stack: "helvetica"
     normal: 340
   - token: system
     name: System fonts
-    stack: 'system'
+    stack: "system"
     normal: 362
   - token: tahoma
     name: Tahoma
     stack-name: Tahoma
-    stack: 'system'
+    stack: "system"
     normal: 363
   - token: verdana
     name: Verdana
     stack-name: Verdana
-    stack: 'system'
+    stack: "system"
     normal: 364
 type:
   - token: cond
@@ -54,19 +54,19 @@ type:
   - token: lang
     default: false
   - token: mono
-    default: 'roboto-mono'
+    default: "roboto-mono"
   - token: sans
-    default: 'source-sans-pro'
+    default: "source-sans-pro"
   - token: serif
-    default: 'merriweather'
+    default: "merriweather"
 role:
   - token: alt
-    default: 'serif'
+    default: "serif"
   - token: body
-    default: 'sans'
+    default: "sans"
   - token: code
-    default: 'mono'
+    default: "mono"
   - token: heading
-    default: 'serif'
+    default: "serif"
   - token: ui
-    default: 'sans'
+    default: "sans"

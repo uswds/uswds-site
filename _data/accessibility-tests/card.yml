@@ -1,7 +1,7 @@
 title: Card
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Color is not the only method used to convey meaning.
     summary_additional: |
       When you view the elements in a card,
@@ -39,7 +39,7 @@ test_items:
     test_type: general
     version_tested: 3.8.2
     wcag_criterion: 2.5.8
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Using zoom does not obstruct the card elements.
     summary_additional: |
       When you zoom in at 400%, you can see the card content and scroll up and down.
@@ -48,7 +48,7 @@ test_items:
     test_type: zoom
     version_tested: 3.8.2
     wcag_criterion: 1.4.10
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Content is accessible through keyboard alone.
     summary_additional: |
       When you use only a keyboard, all links and buttons in the card are accessible.
@@ -80,7 +80,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.2
     wcag_criterion: 2.4.7
-# Screen reader tests
+  # Screen reader tests
   - summary: Screen reader announces groups of cards as an unordered list.
     summary_additional: |
       When you use a screen reader to navigate through a card component,

@@ -1,7 +1,7 @@
 title: Character count
 component_status: pass
 test_items:
-# General tests
+  # General tests
   - summary: Visible instructions explain the field's input requirements.
     summary_additional: |
       The text field has a visible label above it to indicate its purpose.
@@ -17,7 +17,7 @@ test_items:
     test_type: general
     version_tested: 3.7.1
     wcag_criterion: 3.3.2
-# Zoom/screen magnification tests
+  # Zoom/screen magnification tests
   - summary: Content remains visible and functional when screen is magnified.
     summary_additional: |
       When you zoom in to 200%,
@@ -34,14 +34,14 @@ test_items:
     test_type: zoom
     version_tested: 3.7.1
     wcag_criterion: 1.4.12
-# Keyboard navigation tests
+  # Keyboard navigation tests
   - summary: Field can be accessed with keyboard navigation.
     summary_additional: Using only a keyboard, you are able to tab into and out of the test input field associated with the character count.
     test_status: pass
     test_type: keyboard
     version_tested: 3.7.1
     wcag_criterion: 2.1.1
-# Screen reader tests
+  # Screen reader tests
   - summary: Screen reader announces remaining character count.
     summary_additional: |
       When you use a screen reader and tab to the text field,

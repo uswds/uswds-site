@@ -7,5 +7,5 @@ title: Button accessibility tests
 category: Components
 lead: Any USWDS button should pass these manual accessibility tests.
 changelog:
-  key: 'component-button-accessibility'
+  key: "component-button-accessibility"
 ---

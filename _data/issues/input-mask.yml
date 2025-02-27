@@ -1,8 +1,8 @@
 title: Input mask
 alert_type: info
 items:
-- date: 2023-09-29
-  summary: Recovering from an error is difficult due to lack of feedback.
-  summary_additional:
-  issue_repo: uswds
-  issue_number: 5481
+  - date: 2023-09-29
+    summary: Recovering from an error is difficult due to lack of feedback.
+    summary_additional:
+    issue_repo: uswds
+    issue_number: 5481

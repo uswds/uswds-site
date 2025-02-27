@@ -2,7 +2,7 @@ name: Radio buttons
 contents:
   - name: Background color
     var: $theme-input-background-color
-    default: 'default'
+    default: "default"
     type: color
     description: "Background color for radio and checkbox inputs."
   - name: Tile border radius

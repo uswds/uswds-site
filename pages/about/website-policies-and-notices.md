@@ -108,7 +108,7 @@ We use open-source software and free or low cost, commercial application program
 
 2.  Software source code previously released under an open source license and then modified by GSA staff is considered a "joint work." It is partially copyrighted, partially public domain, and as a whole is protected by the copyrights of the non-government authors and must be released according to the terms of the original open-source license.
 
-3.  All source code as defined above may be shared with the general public via a highly visible, easily accessible online source code community (such as Github or npm) that facilitates the code's reuse. Source code won't be released if any of the following conditions are met:
+3.  All source code as defined above may be shared with the general public via a highly visible, easily accessible online source code community (such as GitHub or npm) that facilitates the code's reuse. Source code won't be released if any of the following conditions are met:
 
 1.  The USWDS core team determines that the code is too crude to merit distribution or provide value to the broader community.
 
@@ -136,7 +136,7 @@ We link to websites created and maintained by other public and/or private organi
 
 ### Social media and collaboration sites
 
-We manage a presence on social media and collaboration sites such as [Github](http://github.com/uswds), [npm](https://www.npmjs.com/package/uswds), and [Twitter](https://twitter.com/uswds) to share government information, and engage with our audience. We do not collect any personally identifiable information through those sites, and we do not use personal information made available by the third-party sites.
+We manage a presence on social media and collaboration sites such as [GitHub](http://github.com/uswds), [npm](https://www.npmjs.com/package/uswds), and [Twitter](https://twitter.com/uswds) to share government information, and engage with our audience. We do not collect any personally identifiable information through those sites, and we do not use personal information made available by the third-party sites.
 
 ### If you send us personal information
 

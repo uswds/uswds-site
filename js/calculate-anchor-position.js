@@ -17,7 +17,7 @@ var calculateAnchorPosition = function (hash) {
   //start with the height of the sticky nav
   topOffset = $(".site-nav.sticky").first().outerHeight();
 
-  //subtract the diffence in padding between nav top and anchor
+  //subtract the difference in padding between nav top and anchor
   topOffset = topOffset - (anchorPadding - navPadding);
 
   //anchor should now align with first item inside nav

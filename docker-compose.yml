@@ -1,0 +1,11 @@
+services:
+  jekyll:
+    image: uswds-site:latest
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/_site
+    ports:
+      - "4000:4000"
+    command: bundle exec jekyll serve --host 0.0.0.0 --watch

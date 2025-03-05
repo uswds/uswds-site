@@ -1,13 +1,9 @@
+@forward "custom-styles";
+
 @use "sass:math";
-
-@import "mixins";
-
-@import "custom-styles/site-header";
-@import "custom-styles/card-policy";
-@import "custom-styles/highlight";
-@import "custom-styles/copy-code-btn";
-@import "custom-styles/graphic-list";
-@import "custom-styles/posts";
+@use "mixins" as *;
+@use "uswds-core" as *;
+@use "settings/variables" as *;
 
 // ========================================
 // CUSTOM PROJECT SASS
@@ -19,13 +15,6 @@
 // 2. Site layout
 // 3. Custom page styles
 // ----------------------------------------
-
-// TODO: move to uswds once finished
-$theme-site-cols-split: "tablet";
-$theme-site-cols-show: "desktop";
-$theme-grid-gap-default: "md";
-
-$site-measure: 5;
 
 .usa-grid-container {
   @include usa-grid-container;
@@ -112,10 +101,10 @@ abbr[title="required"] {
   $site-banner-icon-color: "blue-40v";
   $site-banner-action-color: "gray-20";
   @include typeset($site-banner-font-family);
+  background-color: color("ink");
   @include at-media("tablet") {
     font-size: font-size($site-banner-font-family, "3xs");
   }
-  background-color: color("ink");
 
   .usa-accordion {
     @include typeset($site-banner-font-family);
@@ -316,10 +305,10 @@ abbr[title="required"] {
 // Styleguide Content -------- //
 
 .styleguide-content {
-  @include add-responsive-site-margins;
   margin-bottom: units(6);
   max-width: units($theme-grid-container-max-width);
   position: relative;
+  @include add-responsive-site-margins;
 
   header {
     > h1 {
@@ -453,7 +442,6 @@ abbr[title="required"] {
 }
 
 .site-subheading {
-  @include typeset-h6;
   @include u-font("lang", "3xs");
   color: color("black-transparent-60");
   letter-spacing: letter-spacing(1);
@@ -1865,8 +1853,8 @@ li {
 
 .utility-name {
   &.usa-grid-col {
-    @include grid-cols(null, "fill");
     max-width: 100%;
+    @include grid-cols(null, "fill");
   }
 }
 

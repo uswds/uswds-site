@@ -8,4 +8,5 @@ services:
       - /usr/src/app/_site
     ports:
       - "4000:4000"
-    command: bundle exec jekyll serve --host 0.0.0.0 --watch
+    command: >
+      sh -c "bundle exec jekyll serve --drafts --future --livereload --incremental --host 0.0.0.0 && npx gulp watch"

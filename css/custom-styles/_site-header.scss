@@ -6,6 +6,10 @@
 // Shared styles
 // ==========================================================================
 
+@use "uswds-core" as *;
+@use "../settings/variables" as *;
+@use "../mixins" as *;
+
 $site-navbar-height: 10;
 $site-secondary-nav-input-height: 38px;
 $site-inner-nav-height: 6;
@@ -45,7 +49,7 @@ $site-inner-nav-height: 6;
     }
 
     a {
-      color: color($site-ink);
+      color: color("ink");
     }
 
     &__text {
@@ -198,15 +202,15 @@ $site-inner-nav-height: 6;
     }
 
     &:hover {
-      @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
       color: color($site-primary-vivid);
+      @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
     }
   }
 
   .usa-current {
-    @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
     color: color($site-ink);
     font-weight: fw("bold");
+    @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
 
     &:hover {
       color: color($site-ink);

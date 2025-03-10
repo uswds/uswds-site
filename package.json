@@ -107,6 +107,9 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "1.2.1",
-    "@uswds/uswds": "3.11.0"
+    "@uswds/uswds": "3.12.0"
+  },
+  "optionalDependencies": {
+    "sass-embedded-linux-x64": "^1.85.1"
   }
 }

@@ -36,7 +36,7 @@ test_items:
     wcag_criterion: 3.2.1
 # Screen reader tests
   - summary: Screen reader announces field purpose.
-    summary_additional: When using a screen reader to access access the input mask field, you hear the field label, text related to the field, and whether or not the field is required.
+    summary_additional: When using a screen reader to access the input mask field, you hear the field label, text related to the field, and whether or not the field is required.
     test_status: pass
     test_type: screen_reader
     version_tested: 3.11.0
@@ -45,7 +45,7 @@ test_items:
     summary_additional: When you type into the input mask and make a mistake, you receive clear instructions about how to fix your mistake. This feedback should be shown on the page and announced through screen readers.
     test_status: fail
     test_type: screen_reader
-    status_details: The input mask does not announce invalid data entry. And correction suggestions aren't provided.
+    status_details: The input mask does not announce invalid data entry and correction suggestions aren't provided.
     github_issue_number: 5481
     github_issue_repo: uswds
     version_tested: 3.11.0
@@ -62,7 +62,7 @@ test_items:
     summary_additional: When you access an input mask with a screen reader, the instructions, example, and hint text are announced. You can also hear if the field is required.
     test_status: exception
     test_type: screen_reader
-    status_details: Instructions and examples are next to the input mask field; but it is not clear to users that there are invalid character combinations.
+    status_details: Instructions and examples are next to the input mask field but it is not clear to users that there are invalid character combinations.
     github_issue_number: 6428
     version_tested: 3.11.0
     wcag_criterion: 3.3.2

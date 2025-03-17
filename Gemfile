@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '>= 4.3.1'
-gem 'json', '>= 2.3.0'
+gem 'json', '>= 2.10.2'
 gem 'jekyll-redirect-from', '>= 0.15.0'
 gem 'jekyll-sitemap', '>= 1.4.0'
 gem 'jekyll-include-cache'

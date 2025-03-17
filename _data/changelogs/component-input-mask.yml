@@ -2,6 +2,14 @@ title: Input mask
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Improve invalid character feedback with error message. 
+    summaryAdditional: Add error messages (customizable via data attributes) to give proper user feedback when an invalid character is not added to the input value.
+    affectsJavascript: true
+    affectsAccessibility: true
+    githubPr: 6203
+    githubRepo: uswds
+    versionUswds: N.N.N
   - date: 2024-05-31
     summary: Fixed a bug that caused input mask to break when it is not a direct child of a form.
     summaryAdditional: Nested input masks will now initialize and work properly.

@@ -47,7 +47,7 @@ test_items:
     test_type: screen_reader
     status_details: The input mask does not announce invalid data entry. And correction suggestions aren't provided.
     github_issue_number: 5481
-    github_issue_repo: uswds-site
+    github_issue_repo: uswds
     version_tested: 3.11.0
     wcag_criterion: 3.3.3
   - summary: Screen readers announce the field's purpose.

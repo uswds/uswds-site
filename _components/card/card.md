@@ -14,16 +14,8 @@ redirect_from:
 layout: component
 lead: Cards contain content and actions about a single subject.
 subnav:
-- text: Preview
-  href: '#card-preview'
-- text: Code
-  href: '#card-code'
-- text: Guidance
-  href: '#card-guidance'
-- text: Package
-  href: '#card-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Card accessibility tests
+  href: /components/card/accessibility-tests/
 type: component
 variants:
   - variant: "`.usa-card--flag`"

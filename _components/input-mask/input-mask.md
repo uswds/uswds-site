@@ -11,16 +11,8 @@ title: Input mask
 type: component
 lead: An input mask is a string expression that constrains input to support valid input values.
 subnav:
-- text: Preview
-  href: '#input-mask-preview'
-- text: Code
-  href: '#input-mask-code'
-- text: Guidance
-  href: '#input-mask-guidance'
-- text: Package
-  href: '#input-mask-package'
-- text: Latest updates
-  href: '#changelog'
+  - text: Input mask accessibility tests
+    href: /components/input-mask/accessibility-tests/
 tags:
   - input
   - form

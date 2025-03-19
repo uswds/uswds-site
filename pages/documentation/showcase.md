@@ -49,7 +49,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [Department of Commerce](https://commerce.gov/)
 - [Department of Homeland Security](https://www.dhs.gov/)
 - [Dietary Guidelines - USDA](https://www.dietaryguidelines.gov/)
-- [Dietary Supplement Label Database](https://dsld.od.nih.gov/)
 - [Digital Acquisition Accelerator](https://pages.18f.gov/digitalaccelerator/)
 - [Digital Analytics Dashboard](https://analytics.usa.gov)
 - [Digital Service Playbook — U.S. Digital Service](https://playbook.cio.gov)

@@ -1,0 +1,86 @@
+title: Language selector
+component_status: pass
+test_items:
+# General tests
+  - summary: Assistive technology can identify the languages used in the language selector.
+    summary_additional: When you view the input mask, the headings and hint text are clear and concise.
+    test_status: pass
+    test_type: general
+    version_tested: 3.11.0
+    wcag_criterion: 3.1.2
+  - summary: Color alone is not used to convey information.
+    summary_additional: When viewing the language selector, you do not have to rely on color alone to understand information.
+    test_status: pass
+    test_type: general
+    version_tested: 3.11.0
+    wcag_criterion: 1.4.1
+  - summary: Language selector meets color contrast requirements.
+    summary_additional: When you view the language selector on a page and use ANDI or color contrast analyzer to look at the hex colors, contrast between the button background and text is at least 4.5:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.11.0
+    wcag_criterion: 1.4.3
+  - summary: The purpose of the language selector is clear.
+    summary_additional: The button (toggle) or the link in the language dropdown for the language selector clearly indicates that the language of the page will change upon selection.  The language selector may not pass all elements of this test.
+    test_status: exception
+    test_type: general
+    version_tested: 3.11.0
+    wcag_criterion: 2.4.6
+# Zoom/screen magnification tests
+  - summary: Using zoom does not obstruct the language selector.
+    summary_additional: When you zoom to 400%, you can see the language selector button and (if applicable) dropdown options. It does not overlap with other content and no scrolling is needed to see the dropdown has opened.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.11.0
+    wcag_criterion: 1.4.10
+# Keyboard navigation tests
+  - summary: Content doesn't change until the user takes an action to change it.
+    summary_additional: When using a screen reader to navigate to the language selector, if you don't take a prompted action, the content stays the same. The language selector may not pass all elements of this test.
+    test_status: exception
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 3.2.2
+  - summary: All features of the language selector are keyboard operable.
+    summary_additional: When using a keyboard, you are able to tab into the language selector, arrow down to select an option, and hit enter to select.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 2.1.1
+  - summary: Language selector does not trap keyboard focus.
+    summary_additional: When you select elements in the language selector dropdown list with a keyboard, you can easily move in and out to get to other content.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 2.1.2
+  - summary: Focus indicators are clearly visible.
+    summary_additional: When you use a keyboard to tab into the language selector, the button and dropdown list has a visible outline or other clear indication of focus.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 2.4.7
+# Screen reader tests
+  - summary: Assistive technology can identify the languages used in the language selector.
+    summary_additional: When using a screen reader to access the language selector, the screen reader is able to determine which language is being announced (example: Español, Arabic). The language is also declared in the code. For example "span lang="ar" xml:lang="ar""
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.11.0
+    wcag_criterion: 3.1.2
+  - summary: Screen reader announces elements to match visual order on screen. 
+    summary_additional: When you use a screen reader to tab into the language selector, elements are announced in the same order that they appear on the page.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.11.0
+    wcag_criterion: 1.3.2
+  - summary: Screen reader announces label, role, and value for the language selector.
+    summary_additional: When using a screen reader with a language selector, you hear the label of the button, the role and the state. For example, the label is announced as “Languages”, the value is announced as "collapsed” or "expanded". When tabbing into the language options the number of options in the list is verbalized. For example "List, with eight items".
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.11.0
+    wcag_criterion: 4.1.2
+  - summary: Screen reader announces text, label or supportive text.
+    summary_additional: When interacting with the language selector with a screen reader, you hear the button label and link names for each language. 
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.11.0
+    wcag_criterion: 1.3.1
+ 

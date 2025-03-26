@@ -60,7 +60,8 @@ test_items:
     wcag_criterion: 2.4.7
 # Screen reader tests
   - summary: Assistive technology can identify the languages used in the language selector.
-    summary_additional: When using a screen reader to access the language selector, the screen reader is able to determine which language is being announced (example: Español, Arabic). The language is also declared in the code. For example "span lang="ar" xml:lang="ar""
+    summary_additional: >
+      When using a screen reader to access the language selector, the screen reader is able to determine which language is being announced (example: Español, Arabic). The language is also declared in the code. For example "span lang="ar" xml:lang="ar""
     test_status: pass
     test_type: screen_reader
     version_tested: 3.11.0

@@ -30,4 +30,4 @@ changelog:
 ---
 
 {:.site-note}
-**Note:** We've recently discovered major usability and accessibility issues with this component. Due to these issues, which we found in our ongoing testing and research, we won't include or support this component beyond USWDS v3.12.0. [Follow this process in GitHub](https://github.com/uswds/uswds/issues/6155) to deprecate this component on your site or application.
+**Note:** We've recently discovered major usability and accessibility issues with this component. Due to these issues, which we found in our ongoing testing and research, we won't include or support this component beyond USWDS v3.12.0. [Follow this process in GitHub](https://github.com/uswds/uswds/issues/6155) to remove this component from your site or application.

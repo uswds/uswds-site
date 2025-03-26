@@ -2,7 +2,7 @@ title: Language selector accessibility tests
 type: component
 changelogURL:
 items:
-  - date: 2025-03-25
+  - date: 2025-03-26
     summary: Added accessibility tests page.
     affectsGuidance: true
     githubPr: 3150

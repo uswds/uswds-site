@@ -30,4 +30,4 @@ changelog:
 ---
 
 {:.site-note}
-**Note:** Testing and research have revealed major usability and accessibility issues with this component. It is slated for removal in future versions and will no longer be supported past v3.12.0. [Follow the process in GitHub](https://github.com/uswds/uswds/issues/6155) on this page.
+**Note:** USWDS testing and research recently uncovered major usability and accessibility issues with this component. Due to these issues, we're slating it for removal from future versions, and won't be supporting it after USWDS v3.12.0. To learn more about how we made this decision, you can [read more about this testing and research](https://github.com/uswds/uswds/issues/5750) and [follow the steps we took](https://github.com/uswds/uswds/issues/6155).

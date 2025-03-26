@@ -1,5 +1,5 @@
 ---
-permalink: /components/input-mask/language-selector/
+permalink: /components/language-selector/accessibility-tests/
 layout: accessibility-test
 component:
   name: language selector

@@ -35,7 +35,7 @@ test_items:
     wcag_criterion: 1.4.10
 # Keyboard navigation tests
   - summary: Content doesn't change until the user takes an action to change it.
-    summary_additional: When using a screen reader to navigate to the language selector, if you don't take a prompted action, the content stays the same. The language selector may not pass all elements of this test.
+    summary_additional: When using a screen reader to navigate to the language selector, if you don't take a prompted action, the content stays the same.
     test_status: exception
     test_type: keyboard
     version_tested: 3.11.0

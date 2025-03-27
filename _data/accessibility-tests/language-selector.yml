@@ -33,6 +33,31 @@ test_items:
     test_type: zoom
     version_tested: 3.11.0
     wcag_criterion: 1.4.10
+# Keyboard navigation tests
+  - summary: Content doesn't change until the user takes an action to change it.
+    summary_additional: When using a screen reader to navigate to the language selector, if you don't take a prompted action, the content stays the same. Users may not expect the language of the page to change.
+    test_status: exception
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 3.2.2
+  - summary: All features of the language selector are keyboard operable.
+    summary_additional: When using a keyboard, you are able to tab into the language selector, arrow down to select an option, and hit enter to select.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 2.1.1
+  - summary: Language selector does not trap keyboard focus.
+    summary_additional: When you select elements in the language selector dropdown list with a keyboard, you can easily move in and out to get to other content.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 2.1.2
+  - summary: Focus indicators are clearly visible.
+    summary_additional: When you use a keyboard to tab into the language selector, the button and dropdown list have a visible outline or other clear indication of focus.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 2.4.7
 # Screen reader tests
   - summary: Assistive technology can identify the languages used in the language selector.
     summary_additional: >
@@ -59,28 +84,3 @@ test_items:
     test_type: screen_reader
     version_tested: 3.11.0
     wcag_criterion: 1.3.1
-# Keyboard navigation tests
-  - summary: Content doesn't change until the user takes an action to change it.
-    summary_additional: When using a screen reader to navigate to the language selector, if you don't take a prompted action, the content stays the same. Users may not expect the language of the page to change.
-    test_status: exception
-    test_type: keyboard
-    version_tested: 3.11.0
-    wcag_criterion: 3.2.2
-  - summary: All features of the language selector are keyboard operable.
-    summary_additional: When using a keyboard, you are able to tab into the language selector, arrow down to select an option, and hit enter to select.
-    test_status: pass
-    test_type: keyboard
-    version_tested: 3.11.0
-    wcag_criterion: 2.1.1
-  - summary: Language selector does not trap keyboard focus.
-    summary_additional: When you select elements in the language selector dropdown list with a keyboard, you can easily move in and out to get to other content.
-    test_status: pass
-    test_type: keyboard
-    version_tested: 3.11.0
-    wcag_criterion: 2.1.2
-  - summary: Focus indicators are clearly visible.
-    summary_additional: When you use a keyboard to tab into the language selector, the button and dropdown list have a visible outline or other clear indication of focus.
-    test_status: pass
-    test_type: keyboard
-    version_tested: 3.11.0
-    wcag_criterion: 2.4.7

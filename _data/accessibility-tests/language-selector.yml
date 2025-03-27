@@ -21,7 +21,7 @@ test_items:
     version_tested: 3.11.0
     wcag_criterion: 1.4.3
   - summary: The purpose of the language selector is clear.
-    summary_additional: The button (toggle) or the link in the language dropdown for the language selector clearly indicates that the language of the page will change upon selection.  The language selector may not pass all elements of this test.
+    summary_additional: The button (toggle) or the link in the language dropdown for the language selector clearly indicates that the language of the page will change upon selection. The language selector may not pass all elements of this test. The language selector may be confusing to some users.
     test_status: exception
     test_type: general
     version_tested: 3.11.0

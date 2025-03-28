@@ -64,7 +64,7 @@ test_items:
     version_tested: 3.11.0
     wcag_criterion: 1.3.2
   - summary: Screen reader announces label, role, and value for the language selector.
-    summary_additional: When using a screen reader with a language selector, you hear the label of the button, the role and the state. For example, the label is announced as “Languages”, the value is announced as "collapsed” or "expanded". When tabbing into the language options the number of options in the list is verbalized. For example "List, with eight items".
+    summary_additional: When using a screen reader with a language selector, you hear the label of the button, the role and the state. For example, the label is announced as “Languages”, the value is announced as "collapsed” or "expanded". When tabbing into the language options the number of options in the list is verbalized. For example, "List, with eight items".
     test_status: pass
     test_type: screen_reader
     version_tested: 3.11.0

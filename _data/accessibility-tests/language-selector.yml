@@ -18,6 +18,8 @@ test_items:
     summary_additional: The button (toggle) or the link in the language dropdown for the language selector clearly indicates that the language of the page will change upon selection. The language selector may be confusing to some users.
     test_status: exception
     test_type: general
+    github_issue_number: 6075
+    git_issue_repo: uswds
     version_tested: 3.11.0
     wcag_criterion: 2.4.6
 # Zoom/screen magnification tests
@@ -32,6 +34,8 @@ test_items:
     summary_additional: When using a screen reader to navigate to the language selector, if you don't take a prompted action, the content stays the same. Users may not expect the language of the page to change.
     test_status: exception
     test_type: keyboard
+    github_issue_number: 6075
+    git_issue_repo: uswdsç
     version_tested: 3.11.0
     wcag_criterion: 3.2.2
   - summary: All features of the language selector are keyboard operable.
@@ -77,4 +81,4 @@ test_items:
     test_status: pass
     test_type: screen_reader
     version_tested: 3.11.0
-    wcag_criterion: 3.2.1
+    wcag_criterion: 3.1.2

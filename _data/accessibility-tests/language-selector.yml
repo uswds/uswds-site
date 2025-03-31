@@ -15,7 +15,7 @@ test_items:
     version_tested: 3.11.0
     wcag_criterion: 1.4.3
   - summary: The purpose of the language selector is clear.
-    summary_additional: The button (toggle) or the link in the language dropdown for the language selector clearly indicates that the language of the page will change upon selection. The language selector may be confusing to some users.
+    summary_additional: The button (toggle) or the link in the language dropdown for the language selector clearly indicates that the language of the page will change upon selection.
     test_status: exception
     test_type: general
     status_details: The language selector may be confusing to some users. 
@@ -32,7 +32,7 @@ test_items:
     wcag_criterion: 1.4.10
 # Keyboard navigation tests
   - summary: Content doesn't change until the user takes an action to change it.
-    summary_additional: When using a screen reader to navigate to the language selector, if you don't take a prompted action, the content stays the same. Users may not expect the language of the page to change.
+    summary_additional: When using a screen reader to navigate to the language selector, if you don't take a prompted action, the content stays the same.
     test_status: exception
     test_type: keyboard
     status_details: Users may not expect the language of the page to change.

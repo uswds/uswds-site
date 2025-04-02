@@ -162,6 +162,11 @@
   {% assign criterion_name = "Target Size (WCAG 2.2)" %}
   {% assign criterion_url = "https://www.w3.org/TR/WCAG22/#target-size-minimum" %}
 {% endif %}
+{% if item.wcag_criterion == "3.1.2" %}
+  {% assign criterion_level = "AA" %}
+  {% assign criterion_name = "Language of Parts" %}
+  {% assign criterion_url = "https://www.w3.org/TR/WCAG21/#language-of-parts" %}
+{% endif %}
 {% if item.wcag_criterion == "3.1.5" %}
   {% assign criterion_level = "AAA" %}
   {% assign criterion_name = "Reading level" %}

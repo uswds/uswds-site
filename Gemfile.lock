@@ -63,7 +63,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.10.1)
+    json (2.10.2)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
@@ -120,7 +120,7 @@ DEPENDENCIES
   jekyll-redirect-from (>= 0.15.0)
   jekyll-seo-tag
   jekyll-sitemap (>= 1.4.0)
-  json (>= 2.3.0)
+  json (>= 2.10.2)
   liquid-c
   rspec-core
   rspec-expectations

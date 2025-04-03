@@ -10,6 +10,10 @@ subnav:
   href: '#opacity-tokens'
 - text: Using opacity tokens
   href: '#using-opacity-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-opacity
 ---
 
 {% assign tokens = site.data.tokens %}
@@ -102,21 +106,6 @@ Your context and coding style determine how you access USWDS opacity tokens in c
         <td data-title="Example">
           <span>
             @include u-opacity(<code>10</code>)<br/>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Context">
-          <span class="font-lang-3">setting</span>
-        </th>
-        <td data-title="Description">
-          <span>
-            <a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>
-          </span>
-        </td>
-        <td data-title="Example">
-          <span>
-            $theme-hover-opacity: <code>50</code>
           </span>
         </td>
       </tr>

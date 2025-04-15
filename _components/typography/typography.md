@@ -28,7 +28,6 @@ changelog:
 <h2 id="typesetting-with-uswds">Typesetting with USWDS</h2>
 <p>Typesetting controls the readability of a text with the size, style, and spacing of its type. It’s a function of microtypography (how text is styled within a text block) and macrotypography (how content elements are arranged on the page). The more readable a text is the more easily users can understand its content. Text with poor readability turns off readers and can make it challenging for them to stay focused.</p>
 <p>The U.S. Web Design System controls typesetting values with a token system. You can learn more about typesetting tokens in the <a href="{{ site.baseurl }}/design-tokens/typesetting/overview/">Typesetting tokens</a> section and the <a href="{{ site.baseurl }}/utilities/">Utilities</a> section.</p>
-<p><a href="https://accessibility.digital.gov/visual-design/typography/"> Accessibility for Teams</a> also provides good guidance around typesetting.</p>
 
 ### Font size
 

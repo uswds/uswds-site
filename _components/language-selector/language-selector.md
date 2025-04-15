@@ -28,14 +28,8 @@ variants:
   - variant: "`.usa-button--unstyled`"
     description: A button that looks like a link.
 subnav:
-  - text: Two languages
-    href: '#language-selector-with-two-languages'
-  - text: Three or more
-    href: '#language-selector-with-three-or-more-languages'
-  - text: Unstyled example
-    href: '#language-selector-unstyled'
-  - text: Latest updates
-    href: '#changelog'
+  - text: Language selector accessibility tests
+    href: /components/language-selector/accessibility-tests/
 title: Language selector
 type: component
 changelog:

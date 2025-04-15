@@ -12,8 +12,13 @@
     "Amy Cole <amy.cole@gsa.gov>",
     "Atul Varma <atul.varma@gsa.gov>",
     "Anne Petersen <anne.petersen@gsa.gov>",
+    "Bonnie Cameron <bonnie.cameron@gsa.gov>",
+    "Carolyn Pollack <carolyn.pollack@gsa.gov>",
+    "Catherine Fine <catherine.fine@gsa.gov>",
+    "Clarissa Perkins <clarissa.perkins@gsa.gov>",
     "Brian Hurst <brian.hurst@gsa.gov>",
     "Erica Deahl <erica.deahl@gsa.gov>",
+    "Jacline Contrino <jacline.contrino@gsa.gov>",
     "Jeremia Kimelman <jeremia.kimelman@gsa.gov>",
     "John Donmoyer <john.donmoyer@gsa.gov>",
     "Julia Solórzano <julia.solorzano@gsa.gov>",
@@ -23,6 +28,7 @@
     "Maya Benari <maya.ben-ari@gsa.gov>",
     "Roger Steve Ruiz <roger.ruiz@gsa.gov>",
     "Ryan Thurwell <ryan.thurwell@gsa.gov>",
+    "<Sarah Schroeder <sarah.schroeder@gsa.gov>",
     "Shawn Allen <shawn.allen@gsa.gov>",
     "Will Sullivan <william.sullivan@gsa.gov>",
     "Yoz Grahame <jeremy.grahame@gsa.gov>"
@@ -83,7 +89,7 @@
     "gulp-eslint": "^6.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
-    "gulp-sourcemaps": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.7.1",
     "node-notifier": "^10.0.1",
@@ -100,7 +106,10 @@
   },
   "snyk": true,
   "dependencies": {
-    "@uswds/compile": "1.2.1",
-    "@uswds/uswds": "3.11.0"
+    "@uswds/compile": "1.2.2",
+    "@uswds/uswds": "3.12.0"
+  },
+  "optionalDependencies": {
+    "sass-embedded-linux-x64": "^1.85.1"
   }
 }

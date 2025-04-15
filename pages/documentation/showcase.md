@@ -145,7 +145,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [U.S. Department of the Treasury](https://home.treasury.gov/)
 - [U.S. Department of Veterans Affairs](https://va.gov)
 - [U.S. Digital Service](https://www.usds.gov/)
-- [U.S. Emerging Citizen Technology Atlas](https://emerging.digital.gov/)
 - [U.S. Federal Labor Relations Authority](https://www.flra.gov/)
 - [U.S. Indicators For The Sustainable Development Goals](https://sdg.data.gov/)
 - [Unified Shared Services Management](https://www.ussm.gov/)

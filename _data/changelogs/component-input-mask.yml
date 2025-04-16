@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2025-04-NN
-    summary: Rephrasing compliance tag to reflect industry standard: "failed," not "does not pass."
+    summary: Rephrasing compliance tag to reflect industry standard: "failed," rather than "does not pass."
     affectsGuidance: true
     githubPr: 3155
     githubRepo: uswds-site

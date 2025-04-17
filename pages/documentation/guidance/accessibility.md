@@ -168,7 +168,7 @@ We recommend a mix of automated, semi-automated, and manual testing in addition 
 ### Government accessibility resources
 
 - [The Section 508 accessibility program](https://www.section508.gov/) [section508.gov]
-- [Accessibility for Teams guide](https://digital.gov/guides/accessibility-for-teams/) [https://digital.gov/guides/accessibility-for-teams/]
+- [Accessibility for Teams guide](https://digital.gov/guides/accessibility-for-teams/) [digital.gov]
 - [Find your Section 508 Coordinator](https://www.section508.gov/tools/coordinator-listing) [section508.gov]
 - [Section 508 ICT Testing Baseline](https://section508coordinators.github.io/ICTTestingBaseline/) [section508coordinators.github.com ]
 - [Learn about writing in plain language](https://www.plainlanguage.gov/) [plainlanguage.gov]

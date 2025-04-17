@@ -23,7 +23,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [18F Brand](https://brand.18f.gov/)
 - [18F Before you ship](https://before-you-ship.18f.gov/)
 - [18F Front End Guide](https://frontend.18f.gov/)
-- [Accessibility for Teams](https://accessibility.digital.gov/)
+- [Accessibility for Teams](https://digital.gov/guides/accessibility-for-teams/)
 - [Advanced Distributed Learning (ADL) Initiative](https://adlnet.gov)
 - [Agricultural Marketing Service - USDA](https://www.ams.usda.gov/)
 - [Scientific Discoveries - Agricultural Research Service - USDA](https://scientificdiscoveries.ars.usda.gov/)

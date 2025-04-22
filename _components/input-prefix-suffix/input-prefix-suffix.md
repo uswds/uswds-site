@@ -8,16 +8,8 @@ component:
 lead: Use input prefixes and suffixes to show symbols or abbreviations that help users enter the right type of information in a form’s text input.
 permalink: /components/input-prefix-suffix/
 subnav:
-- text: Preview
-  href: '#input-prefix-suffix-preview'
-- text: Code
-  href: '#input-prefix-suffix-code'
-- text: Guidance
-  href: '#input-prefix-suffix-guidance'
-- text: Package
-  href: '#input-prefix-suffix-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Input prefix or suffix accessibility tests
+  href: /components/input-prefix-or-suffix/accessibility-tests/
 tags:
   - input
   - form controls

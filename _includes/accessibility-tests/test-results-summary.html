@@ -2,11 +2,6 @@
 {% assign componentKey = component_name | slugify %}
 {% assign data = site.data.accessibility-tests[componentKey] %}
 
-<!--
-component key: {{ componentKey }}
-component name: {{ component_name }}
--->
-
 <!-- Create a list of each status type -->
 {% assign status_types = "Passed, Passed with exceptions, Conditional, Failed" | split: ", " %}
 

@@ -1,4 +1,73 @@
 title: Range slider
-status: pass
+component_status: pass
 test_items:
-  
+# General tests
+  - summary: Range slider provides multiple ways to indicate value.  
+    summary_additional: When operating the range slider, there are visible indicators of value in numbers or words that reflect the position of the slider button.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.3
+  - summary: Range slider display is consistent on mobile devices.
+    summary_additional: When you view the range slider component on mobile devices and tablets, it displays in both portrait and landscape orientation with no loss of functionality.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.4
+  - summary: Range slider elements have proper contrast.
+    summary_additional: When you use a color contrast analyzer, the contrast between the outline of the range slider button and slider bar is at least 3:1 from their respective surrounding backgrounds.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.11
+  - summary: Touch target size for all clickable elements meets height and width requirements.
+    summary_additional: The size and spacing of the touch target are at least 24 pixels wide and 24 pixels tall.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 2.5.8
+  - summary: Users can find information about how to operate the range slider.  
+    summary_additional: Clear, readable information about how to operate the range slider appears above the component. 
+    test_status: conditional
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 3.3.2
+# Zoom/screen magnification tests
+  - summary: Using zoom does not obstruct the range slider. 
+    summary_additional: When you zoom to 400%, you can see and use all elements of the range slider and. It does not overlap with other content and no scrolling is needed to operate it.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.10
+# Keyboard navigation tests
+  - summary: Keyboard actions can access all range slider functionality. 
+    summary_additional: You can use only a keyboard to operate the range slider to increase or decrease the value or type a value into the text field (if available). 
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.1.1
+  - summary: Range slider does not trap keyboard focus.
+    summary_additional: When you navigate through the range slider with a keyboard, you can easily move into and out to get to other content.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.1.2
+  - summary: Focus indicator is clearly visible around range slider elements.
+    summary_additional: When using the range slider, a visible indicator indicates the button touch target.
+    test_status: conditional
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.7
+# Screen reader tests
+  - summary: Screen readers announce the range slider component and its function in the form or page. 
+    summary_additional: When using a screen reader, you hear if the range slider is a required element and what purpose or function the range slider has within the form.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.1
+  - summary: Screen readers announce the value and limit of the range slider.  
+    summary_additional: When you interact with a range slider with a screen reader, you hear the slider label, the total amount available in the range, and the current value (Example: "50 out of 100").
+    test_status: conditional
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 4.1.2

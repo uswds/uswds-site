@@ -1,8 +1,8 @@
 title: Input prefix or suffix accessibility tests
 type: component
 items:
- - date: NNNN-NN-NN
-   summary: Added accessibility tests page.
-   affectsGuidance: true
-   githubPr: [Related PR number]
-   githubRepo: uswds-site
+  - date: 2025-04-24
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 3156
+    githubRepo: uswds-site

@@ -9,7 +9,7 @@ lead: Use input prefixes and suffixes to show symbols or abbreviations that help
 permalink: /components/input-prefix-suffix/
 subnav:
 - text: Input prefix or suffix accessibility tests
-  href: /components/input-prefix-or-suffix/accessibility-tests/
+  href: /components/input-prefix-suffix/accessibility-tests/
 tags:
   - input
   - form controls

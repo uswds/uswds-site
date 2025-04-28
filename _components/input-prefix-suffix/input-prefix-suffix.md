@@ -17,7 +17,7 @@ tags:
   - masking
   - image
   - icon
-title: Input prefix or suffix
+title: Input prefix/suffix
 type: component
 variants:
   - variant: "`.usa-input-group--error`"

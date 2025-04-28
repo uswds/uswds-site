@@ -58,9 +58,9 @@ If something isn’t working the way it’s supposed to, here’s how you can le
 Our list of <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue%20label%3A%22Good%20First%20Issue%22" data-proofer-ignore>good first issues from the community</a> might help if you’re new to GitHub.
 
 1. Check our [current bugs backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Bug%22+) to see if your bug has already been reported.
-2. If your bug has already been reported, leave a comment in the original issue and provide any additional context.
-3. Document the steps we can take to reproduce the bug. If you can, take screen shots to capture specific details about the bug.
-4. Submit a [bug report](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Bug%2CNeeds%3A+Confirmation&projects=&template=bug_report.yaml&title=USWDS+-+Bug%3A+%5BYOUR+TITLE%5D).
+1. If your bug has already been reported, leave a comment in the original issue and provide any additional context.
+1. Document the steps we can take to reproduce the bug. If you can, take screen shots to capture specific details about the bug.
+1. Submit a [bug report](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Bug%2CNeeds%3A+Confirmation&projects=&template=bug_report.yaml&title=USWDS+-+Bug%3A+%5BYOUR+TITLE%5D).
   A USWDS core team member may reach out to you if we need clarification or help testing solutions. Be sure to check in on your issue to answer any questions we may have about it.
 
 ## Submit a pull request

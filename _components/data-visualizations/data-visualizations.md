@@ -81,7 +81,7 @@ changelog:
   </ul>
   <h4>References</h4>
   <ul class="usa-content-list">
-    <li><a href="https://accessibility.digital.gov/visual-design/data-visualizations/">Accessibility for Teams</a>&nbsp; [digital.gov]</li>
+    <li><a href="https://digital.gov/guides/accessibility-for-teams/visual-design#data-visualizations">Accessibility for Teams</a>&nbsp; [digital.gov]</li>
     <li><a href="https://www.section508.gov/test">508 testing</a>&nbsp; [section508.gov]</li>
     <li><a href="https://www.matuzo.at/blog/testing-with-tab/">Accessibility testing with tab key</a>&nbsp; [matuzo.at]</li>
     <li><a href="https://www.access-board.gov/">United States Access Board</a>&nbsp; [access-board.gov]</li>

@@ -168,7 +168,7 @@ We recommend a mix of automated, semi-automated, and manual testing in addition 
 ### Government accessibility resources
 
 - [The Section 508 accessibility program](https://www.section508.gov/) [section508.gov]
-- [Accessibility for Teams guide](https://accessibility.digital.gov/) [accessibility.digital.gov]
+- [Accessibility for Teams guide](https://digital.gov/guides/accessibility-for-teams/) [digital.gov]
 - [Find your Section 508 Coordinator](https://www.section508.gov/tools/coordinator-listing) [section508.gov]
 - [Section 508 ICT Testing Baseline](https://section508coordinators.github.io/ICTTestingBaseline/) [section508coordinators.github.com ]
 - [Learn about writing in plain language](https://www.plainlanguage.gov/) [plainlanguage.gov]
@@ -194,7 +194,7 @@ We recommend a mix of automated, semi-automated, and manual testing in addition 
 - **Use agency resources.** Reach out to [your agency’s accessibility team](https://www.section508.gov/tools/coordinator-listing) and build a relationship with them.
 - **Learn about assistive technology.** Get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
 - **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [WCAG 2.0](https://www.w3.org/TR/WCAG20/).
-- **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
+- **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://digital.gov/guides/accessibility-for-teams), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
 - **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.info/) mentality.
 - **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
 - **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.

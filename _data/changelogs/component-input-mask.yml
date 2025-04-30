@@ -2,6 +2,11 @@ title: Input mask
 type: component
 changelogURL:
 items:
+  - date: 2025-04-30
+    summary: 'Rephrasing compliance tag to reflect industry standard: "failed," rather than "does not pass."'
+    affectsGuidance: true
+    githubPr: 3155
+    githubRepo: uswds-site
   - date: 2025-03-14
     summary: Added accessibility tests page.
     affectsGuidance: true

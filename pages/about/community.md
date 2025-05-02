@@ -17,9 +17,9 @@ changelog:
 ## Join the community
 The USWDS community has been working together since 2015 to make it easier to build accessible, mobile-friendly government websites.
 
-Join us in the `#uswds-public` channel in Slack by [filling out our form](https://18f.gov/chat). The community is open to the public. Members include content specialists, designers, engineers, and other technologists who share ideas, challenges, lessons learned, and best practices in design and design systems.
+Join us in the `#uswds-public` channel in Slack by [filling out our form](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform). The community is open to the public. Members include content specialists, designers, engineers, and other technologists who share ideas, challenges, lessons learned, and best practices in design and design systems.
 
-<a href="https://18f.gov/chat" class="usa-button site-button">Join the USWDS Community</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform" class="usa-button site-button">Join the USWDS Community</a>
 
 If you're having trouble, email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}?subject=Join%20USWDS%20Slack) with _Join the USWDS Community_ in the subject.
 
@@ -37,9 +37,9 @@ By voluntarily participating in this community, you are agreeing to abide by the
 ## Community Managers
 
 <div class="usa-media-block flex-align-center">
-  <img class="circle-5 usa-media-block__img" src="https://github.com/thisisdano.png?size=40" alt="">
+  <img class="circle-5 usa-media-block__img" src="https://github.com/annepetersen.png?size=40" alt="">
   <div class="usa-media-block__body">
-      <a href="https://digital.gov/authors/dan-williams/">Dan Williams</a>
-    <p class="margin-top-0">GSA | Portland, OR</p>
+      <a href="https://digital.gov/authors/anne-petersen/">Anne Petersen</a>
+    <p class="margin-top-0">U.S. General Services Administration</p>
   </div>
 </div>

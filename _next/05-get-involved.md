@@ -28,7 +28,7 @@ chapter: true
 
 - Use the conversation starters throughout this report to prompt discussions with your managers and team members
 
-- Join the [USWDS community](https://chat.18f.gov/) and get involved
+- Join the [USWDS community](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform) and get involved
 
 ### Thought-leaders can:
 

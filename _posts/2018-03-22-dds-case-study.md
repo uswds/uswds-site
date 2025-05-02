@@ -35,7 +35,7 @@ As we were looking to see how we could most easily integrate USWDS, I found an e
 
 **USWDS:** Is there anything USWDS team could do to help you in your efforts?
 
-**Garber:** Nothing springs to mind: the documentation is great, Fractal is coming along, and being in the [#uswds-public Slack channel](https://chat.18f.gov/) is fantastic. I don’t participate a ton in there, but it’s nice to see the conversation. If I do have a quick question, it’s a great alternative to filing a GitHub issue and I appreciate it.
+**Garber:** Nothing springs to mind: the documentation is great, Fractal is coming along, and being in the [#uswds-public Slack channel](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform) is fantastic. I don’t participate a ton in there, but it’s nice to see the conversation. If I do have a quick question, it’s a great alternative to filing a GitHub issue and I appreciate it.
 
 I’m pretty happy with the level of engagement from USWDS team. They have been pretty responsive answering questions. The conversation so far has been very welcoming and helpful. It’s great seeing so many people who are actually involved in building USWDS, also responding to questions.
 

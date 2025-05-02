@@ -4,7 +4,7 @@ changelogURL:
 items:
   - date: 2025-05-02
     summary: Replacing all references to chat.18f.gov. 
-    summaryAdditional: 18f.gov has been abruptly decommissioned, preventing people from accessing this form. Now linking directly instead.
+    summaryAdditional: 18f.gov was decommissioned, preventing people from accessing this form. Now linking directly instead.
     isBreaking:
     affectsAccessibility:
     affectsAssets:

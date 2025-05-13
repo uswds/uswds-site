@@ -31,10 +31,10 @@ There are several ways to contribute to USWDS. Participating in the community is
   <a href="https://github.com/uswds/uswds" class="usa-button usa-button--outline">USWDS on GitHub</a>
 </p>
 
-## Community Conduct
+## Community conduct
 By voluntarily participating in this community, you are agreeing to abide by the  [Digital.gov Community Guidelines](https://digital.gov/communities/community-guidelines/) and the [TTS Code of Conduct](https://handbook.tts.gsa.gov/code-of-conduct/). Respect your peers, use plain language, be patient, practice constructive criticism, and stay organized.
 
-## Community Managers
+## Community manager
 
 <div class="usa-media-block flex-align-center">
   <img class="circle-5 usa-media-block__img" src="https://github.com/annepetersen.png?size=40" alt="">

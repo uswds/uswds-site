@@ -1,0 +1,1 @@
+- Use the web component variant of the banner anywhere you would use the default banner. The web component variant may be easier to add to your site, but it is also less customizable than the default banner.

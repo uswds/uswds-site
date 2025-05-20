@@ -1,0 +1,1 @@
+If you need more customizability than the web component variant of the banner offers.

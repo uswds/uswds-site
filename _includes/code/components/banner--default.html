@@ -29,24 +29,3 @@
   | strip
   | replace: 'banner-lock-title', 'banner-lock-title-dot-mil-spanish'
   | replace: 'banner-lock-description', 'banner-lock-description-dot-mil-spanish' }}
-
-
-<h3 class="site-preview-heading">Web Component Variant</h3>
-<!-- The script tag should go in the head of your page, if possible -->
-<script src="/assets/uswds/components/usa-banner.js.mjs" type="module"></script>
-<usa-banner></usa-banner>
-
-<h3 class="site-preview-heading">Web Component Variant (Spanish)</h3>
-<!-- The script tag should go in the head of your page, if possible -->
-<script src="/assets/uswds/components/usa-banner.js.mjs" type="module"></script>
-<usa-banner lang="es"></usa-banner>
-
-<h3 class="site-preview-heading">Web Component Variant (.mil domain, customized)</h3>
-<!-- The script tag should go in the head of your page, if possible -->
-<script src="/assets/uswds/components/usa-banner.js.mjs" type="module"></script>
-<usa-banner 
-  tld="mil"
-  style="--theme-banner-background-color: #e1f3f8;"
-  >
-  <div slot="domain-text">A <strong>.mil</strong> website belongs to an official U.S. Department of Defense organization.</div>
-</usa-banner>

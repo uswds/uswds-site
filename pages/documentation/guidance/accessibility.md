@@ -25,9 +25,9 @@ changelog:
   key: 'docs-accessibility'
 in_page_nav_headings: "h2"
 ---
-The U.S. Web Design System is built on a foundation of accessibility. That foundation was created with and for our colleagues who develop digital services for all Americans.
+The U.S. Web Design System is built on a foundation of accessibility. Our foundation was created with and for our colleagues who develop digital services for all Americans.
 
-While we strive for excellence, we realize nothing can or will ever be 100% accessible. Therefore, we will continuously be adapting and revisiting this accessibility strategy and seeking community input to improve our processes.
+While we strive for excellence, we realize nothing can or will ever be 100% accessible. Therefore, we'll continuously be adapting and revisiting this accessibility strategy and seeking community input to continue improving.
 
 ## We follow the four principles of accessibility
 
@@ -38,7 +38,7 @@ While we strive for excellence, we realize nothing can or will ever be 100% acce
 
 These four principles are the foundation of [Section 508 of the Rehabilitation Act of 1973](https://www.access-board.gov/ict/) requirements, amended in 1998 to require federal agencies to make their electronic and information technology accessible to people with disabilities. In 2018, Section 508 incorporated the Web Content Accessibility Guidelines (WCAG) 2.0 Level AA success criteria.
 
-Even though 2.0 Level AA is the baseline of conformance for legal compliance, USWDS seeks to achieve the higher standard of WCAG 2.1 AA (which also meets legal requirements). In October, 2023 [WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/) was released. WCAG 2.2 is not required for legal compliance right now, but our team strives to conform to as many of the latest success criteria as possible.
+Even though 2.0 Level AA is the baseline of conformance for legal compliance, USWDS works to achieve the higher standard of WCAG 2.1 AA, which also meets legal requirements, to better serve everyone. In October, 2023 [WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/) was released. WCAG 2.2 is not required for legal compliance right now, but we strive to achieve as many of the latest success criteria as we can, and intend to incrementally work toward AAA compliance. To demonstrate how well U.S. Web Design System components meet these requirements, we've used the [Voluntary Product Accessibility Template (VPAT®) 2.5](https://www.itic.org/policy/accessibility/vpat) (revised in November 2023) to create an accessibility conformance report (ACR) in two versions for reference: USWDS accessibility conformance report (ACR) in PDF format; USWDS accessibility conformance report (ACR) in .docx format.
 
 ## We test our work. You need to test yours.
 

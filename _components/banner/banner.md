@@ -17,7 +17,7 @@ title: Banner
 type: component
 variants:
   - variant: "`<usa-banner>`"
-    description: 'An HTML Web Component version of Banner. Easier to implement and update but potentially harder to customize. <a href="#banner-web-component">See above</a> for details.'
+    description: 'An HTML Web Component version of Banner. Easier to implement and update but potentially harder to customize. <a href="#banner-web-component" data-proofer-ignore>See above</a> for details.'
 changelog:
   key: component-banner
 regenerate: true

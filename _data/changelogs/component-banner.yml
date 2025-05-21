@@ -2,6 +2,11 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: 2025-05-23
+    summary: Added a new web component variant of the banner.
+    affectsGuidance: true
+    githubPr: 6460
+    githubRepo: uswds
   - date: 2024-06-07
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

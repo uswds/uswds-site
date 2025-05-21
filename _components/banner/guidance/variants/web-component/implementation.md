@@ -228,3 +228,7 @@
       </tr>
     </tbody>
   </table>
+
+
+  {:.site-note}
+  **Note:** As this is the first Web Component shipping in USWDS, we are still working on the best way to document its usage. We want to hear from users about challenges with adding this component to your projects. Please let us know what works, what doesn't, and what additional documentation might be helpful in this [discussion thread](https://github.com/uswds/uswds/discussions/6477).

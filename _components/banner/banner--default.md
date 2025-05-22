@@ -6,7 +6,7 @@ component:
   package: usa-banner
 guidancePath: guidance/variants/default
 layout: component
-lead: This is the default version of the banner. Any version of USWDS before 3.13.0 contains this version.
+lead: This is the default banner. USWDS 3.0.0 through 3.12.0 only provide this version.
 order: 01
 parent: Banner
 permalink: /components/banner/default/

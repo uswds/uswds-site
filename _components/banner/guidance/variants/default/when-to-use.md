@@ -1,1 +1,1 @@
-- **To identify as an official government site.** Most government sites should use the banner.
+- **To identify as an official government site.** Most government sites should use the banner, though non-federal government sites will need to change the text to be more accurate.

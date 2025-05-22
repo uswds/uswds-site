@@ -23,16 +23,8 @@ implementation:
       description: 'Changes the preposition between current value and max value in screen reader readouts. For example, adding a value with the Spanish translation "de" enables a readout "like 20 de 100". When adding a range slider to a non-English page, be sure to update the preposition as necessary.'
       default: 'of'
 subnav:
-- text: Preview
-  href: '#range-slider-preview'
-- text: Code
-  href: '#range-slider-code'
-- text: Guidance
-  href: '#range-slider-guidance'
-- text: Package
-  href: '#range-slider-package'
-- text: Latest updates
-  href: '#changelog'
+- text: Range slider accessibility tests
+  href: /components/range-slider/accessibility-tests/
 tags:
   - form
   - forms

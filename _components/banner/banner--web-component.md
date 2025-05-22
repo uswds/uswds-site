@@ -5,7 +5,7 @@ component:
   status: ready
 guidancePath: guidance/variants/web-component
 layout: component
-lead: A banner variant that may be easier for some teams to implement.
+lead: A banner variant that may be easier for some teams to implement and keep up to date.
 order: 2
 parent: Banner
 permalink: /components/banner/web-component/

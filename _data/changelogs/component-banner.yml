@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2025-05-23
-    summary: Added a new web component variant of the banner.
+    summary: Added a new HTML Web Component-based variant of the banner.
     affectsGuidance: true
     githubPr: 6460
     githubRepo: uswds

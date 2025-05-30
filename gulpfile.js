@@ -28,6 +28,7 @@ exports.init = uswds.init;
 exports.compile = uswds.compile;
 exports.compileIcons = uswds.compileIcons;
 exports.copyFonts = uswds.copyFonts;
+exports.copyWebComponents = uswds.copyWebComponents;
 exports.copyAssets = uswds.copyAssets;
 exports.compileSass = uswds.compileSass;
 exports.watchSass = uswds.watch;
@@ -55,6 +56,7 @@ exports.build = gulp.series(
   build.cleanAssets,
   build.buildUSWDSComponents,
   uswds.copyAssets,
+  uswds.copyWebComponents,
   uswds.compile,
   this.js,
   this.copyDocImages,

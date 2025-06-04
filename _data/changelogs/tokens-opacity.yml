@@ -1,0 +1,9 @@
+title: Opacity tokens
+type: token
+changelogURL:
+items:
+  - date: NNNN-NN-NN
+    summary: Removed the outdated setting example from "Using opacity tokens".
+    affectsGuidance: true
+    githubPr: 2386
+    githubRepo: uswds-site

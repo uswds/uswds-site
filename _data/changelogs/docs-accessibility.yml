@@ -2,6 +2,12 @@ title: Accessibility
 type: documentation
 changelogURL:
 items:
+  - date: 2025-06-02
+    summary: Published our new USWDS component Accessibility Conformance Report (ACR) / Voluntary Product Accessibility Template (VPAT).
+    summaryAdditional:
+    affectsGuidance: true
+    githubPr: 3162
+    githubRepo: uswds-site
   - date: 2024-03-29
     summary: Updated all page content.
     summaryAdditional:

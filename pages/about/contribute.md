@@ -41,7 +41,7 @@ The USWDS team uses the information from these new component discussions to crea
 ## Propose a feature request or enhancement
 
 Have an idea for something other than a new component? We want to hear about it. Here are the steps to submit a feature request or enhancement.
-If you want to see other contributions before submitting your own, check out [some good first issues](https://github.com/uswds/uswds/issues?q=is%3Aissue%20label%3A%22Good%20First%20Issue%22) from other community members.
+If you want to see other contributions before submitting your own, check out <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue%20label%3A%22Good%20First%20Issue%22" data-proofer-ignore>some good first issues</a> from other community members.
 
 1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22).
     If your idea has already been suggested, upvote that feature request with a thumbs up emoji.
@@ -55,7 +55,7 @@ If you want to see other contributions before submitting your own, check out [so
 ## Report bugs
 
 If something isn’t working the way it’s supposed to, here’s how you can let us know.
-Our list of [good first issues from the community](https://github.com/uswds/uswds/issues?q=is%3Aissue%20label%3A%22Good%20First%20Issue%22) might help if you’re new to GitHub.
+Our list of <a href="https://github.com/uswds/uswds/issues?q=is%3Aissue%20label%3A%22Good%20First%20Issue%22" data-proofer-ignore>good first issues from the community</a> might help if you’re new to GitHub.
 
 1. Check our [current bugs backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Bug%22+) to see if your bug has already been reported.
 1. If your bug has already been reported, leave a comment in the original issue and provide any additional context.

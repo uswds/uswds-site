@@ -25,7 +25,9 @@
 {%- if known_issues.items -%}
   {% include known-issues-alert.html %}
 {% endif %}
-{% include component-preview-and-code.html level=include.level %}
+{% unless page.component.about == false %}
+  {% include component-preview-and-code.html level=include.level %}
+{% endunless %}
 {% include component-guidance.html level=include.level %}
 <!-- Add accessibility test results -->
 {% if component %}

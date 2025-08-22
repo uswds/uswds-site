@@ -15,8 +15,12 @@ GEM
     ethon (0.16.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
+    ffi (1.17.1-aarch64-linux-gnu)
     ffi (1.17.1-arm64-darwin)
     forwardable-extended (2.6.0)
+    google-protobuf (4.29.3-aarch64-linux)
+      bigdecimal
+      rake (>= 13)
     google-protobuf (4.29.3-arm64-darwin)
       bigdecimal
       rake (>= 13)
@@ -75,6 +79,8 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    nokogiri (1.18.2-aarch64-linux-gnu)
+      racc (~> 1.4)
     nokogiri (1.18.2-arm64-darwin)
       racc (~> 1.4)
     parallel (1.26.3)
@@ -96,6 +102,8 @@ GEM
       rspec-support (~> 3.13.0)
     rspec-support (3.13.2)
     safe_yaml (1.0.5)
+    sass-embedded (1.83.4-aarch64-linux-gnu)
+      google-protobuf (~> 4.29)
     sass-embedded (1.83.4-arm64-darwin)
       google-protobuf (~> 4.29)
     terminal-table (3.0.2)
@@ -108,6 +116,7 @@ GEM
     zeitwerk (2.7.1)
 
 PLATFORMS
+  aarch64-linux
   arm64-darwin-21
   arm64-darwin-22
   arm64-darwin-23

@@ -2,6 +2,11 @@ title: Input prefix or suffix
 type: component
 changelogURL:
 items:
+  - date: 2025-04-24
+    summary: Added accessibility test results page.
+    affectsGuidance: true
+    githubPr: 3156
+    githubRepo: uswds-site
   - date: 2024-12-18
     summary: Moved `.usa-input-group--[width]` classes into the `usa-input-prefix-suffix` package from `usa-form`.
     summaryAdditional: These classes can now be used without the `usa-form` package and `.usa-form` parent element.

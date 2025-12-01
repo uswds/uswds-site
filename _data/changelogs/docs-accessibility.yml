@@ -3,7 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2025-06-02
-    summary: Published our new USWDS component Accessibility Conformance Report (ACR) / Voluntary Product Accessibility Template (VPAT).
+    summary: Published our new USWDS component Accessibility Conformance Report (ACR) / Voluntary Product Accessibility Template (VPAT®).
     summaryAdditional:
     affectsGuidance: true
     githubPr: 3162

@@ -33,6 +33,31 @@
   {% endif %}
 {% endfor %}
 
+{% assign number_equivalent = 'zero,one,two,three,four,five,six,seven,eight,nine' | split: ',' %}
+{% assign items_total_spelled = items_total %}
+
+{% if items_total == "0" %}
+  {% capture items_total_spelled %}{{ number_equivalent[0] }}{% endcapture %}
+{% elsif items_total == "1" %}
+  {% capture items_total_spelled %}{{ number_equivalent[1] }}{% endcapture %}
+{% elsif items_total == "2" %}
+  {% capture items_total_spelled %}{{ number_equivalent[2] }}{% endcapture %}
+{% elsif items_total == "3" %}
+  {% capture items_total_spelled %}{{ number_equivalent[3] }}{% endcapture %}
+{% elsif items_total == "4" %}
+  {% capture items_total_spelled %}{{ number_equivalent[4] }}{% endcapture %}
+{% elsif items_total == "5" %}
+  {% capture items_total_spelled %}{{ number_equivalent[5] }}{% endcapture %}
+{% elsif items_total == "6" %}
+  {% capture items_total_spelled %}{{ number_equivalent[6] }}{% endcapture %}
+{% elsif items_total == "7" %}
+  {% capture items_total_spelled %}{{ number_equivalent[7] }}{% endcapture %}
+{% elsif items_total == "8" %}
+  {% capture items_total_spelled %}{{ number_equivalent[8] }}{% endcapture %}
+{% elsif items_total == "9" %}
+  {% capture items_total_spelled %}{{ number_equivalent[9] }}{% endcapture %}
+{% endif %}
+
 {% if include.page == 'checklist' %}
 <div class="site-checklist-test-summary">
   <h2 class="margin-bottom-0">{{ component_name | capitalize }} accessibility status</h2>
@@ -40,7 +65,7 @@
   <h2 class="site-component-section-title">Accessibility test status</h2>
 {% endif %}
 
-  <p class="margin-top-1 margin-bottom-0">The USWDS team did {{ items_total }} tests based on WCAG 2.1 AA success criteria.</p>
+  <p class="margin-top-1 margin-bottom-0">The USWDS team did {{ items_total_spelled }} tests based on WCAG 2.1 AA success criteria.</p>
 
   <!-- Add test summary for desktop widths -->
   <table class="usa-table site-checklist-test-summary__table">

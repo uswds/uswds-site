@@ -87,7 +87,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [Medicaid](https://www.medicaid.gov/)
 - [MyMedicare](https://www.mymedicare.gov/)
 - [NASA General Coordinates Network (GCN)](https://gcn.nasa.gov)
-- [NASA Glenn Research Center](https://www1.grc.nasa.gov)
+- [NASA Beginner's Guide to Aeronautics](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/)
 - [NASA Human Computer Interaction Group](https://hci.arc.nasa.gov)
 - [National Agricultural Statistics Service - USDA](https://release.nass.usda.gov/)
 - [National Archives and Records Administration](https://archives.gov)

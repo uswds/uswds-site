@@ -1,56 +1,32 @@
-title: Spacing tokens
+title: &title "Spacing tokens"
 type: token
 changelogURL:
 items:
   - date: 2023-08-23
-    summary: Updated `0` token values to include units when needed.  
-    summaryAdditional: Now, `units(0)` can be used in `calc()` functions. 
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
-    affectsGuidance: 
-    affectsJavascript:
-    affectsMarkup:
+    page: *title
+    summary: Updated `0` token values to include units when needed.
+    summaryAdditional: Now, `units(0)` can be used in `calc()` functions.
     affectsStyles: true
     githubPr: 5325
     githubRepo: uswds
     versionUswds: 3.6.0
   - date: 2023-02-24
+    page: *title
     summary: Corrected alternate token name for token `05`.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1949
     githubRepo: uswds-site
-    versionUswds:
   - date: 2022-03-11
+    page: *title
     summary: Reverted value of `tablet-lg` to `880px`.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1474
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-02-24
+    page: *title
     summary: Updated value of `tablet-lg` from `880px` to `800px`.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1455
     githubRepo: uswds-site
     versionUswds:

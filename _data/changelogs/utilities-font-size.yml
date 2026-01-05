@@ -1,10 +1,10 @@
-title: Font size and family
+title: &title "Font size and family utilities"
 type: utility
 changelogURL:
 items:
   - date: 2023-08-23
+    page: *title
     summary: Fixed a bug that caused `font-[family]-[size]` utility classes to not generate font-family rules.
-    summaryAdditional:
     affectsStyles: true
     githubPr: 5388
     githubRepo: uswds

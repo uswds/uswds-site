@@ -1,8 +1,9 @@
-title: Component lifecycle
+title: &title "Component lifecycle"
 type: documentation
 changelogURL:
 items:
   - date: 2024-02-15
+    page: *title
     summary: Added component lifecycle page.
     affectsGuidance: true
     githubPr: 2491

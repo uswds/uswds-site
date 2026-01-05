@@ -1,9 +1,17 @@
-title: Inclusive design
+title: &title Inclusive design
 type: documentation
 changelogURL:
 items:
+  - date: 2025-01-23
+    page: *title
+    summary: Removed inclusive design page.
+    summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Ending Radical And Wasteful Government DEI Programs And Preferencing\".
+    isRemoval: true
+    githubPr: 3078
+    githubRepo: uswds-site
   - date: 2025-01-22
+    page: *title
     summary: Updated the urls for the "Priority 2 Executive Order" and "Executive Order 13985" links.
-    affectsGuidance: true
+    affectsLinks: true
     githubPr: 3068
     githubRepo: uswds-site

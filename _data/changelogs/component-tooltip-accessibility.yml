@@ -1,9 +1,11 @@
-title: Tooltip accessibility tests
+title: &title "Tooltip accessibility tests"
 type: component
 changelogURL:
 items:
   - date: 2024-06-07
+    page: *title
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 2646
     githubRepo: uswds-site

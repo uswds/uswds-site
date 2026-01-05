@@ -1,19 +1,22 @@
-title: Collection
+title: &title "Collection"
 type: component
 changelogURL:
 items:
   - date: 2024-12-18
+    page: *title
     summary: Replaced deprecated `xlink:href` references with `href` in icons.
     affectsMarkup: true
     githubPr: 6165
     githubRepo: uswds
     versionUswds: 3.11.0
   - date: 2024-12-18
+    page: *title
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 3010
     githubRepo: uswds-site
   - date: 2022-04-28
+    page: *title
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -23,6 +26,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-11-01
+    page: *title
     summary: Removed extraneous href from collection calendar.
     summaryAdditional: The `usa-collection__calendar-date` should not include an `href`, so we removed it.
     affectsMarkup: true

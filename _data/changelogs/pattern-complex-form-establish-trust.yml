@@ -1,8 +1,9 @@
-title: Establish trust
+title: &title "Pattern: Establish trust"
 type: pattern
 changelogURL:
 items:
   - date: 2022-11-14
+    page: *title
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

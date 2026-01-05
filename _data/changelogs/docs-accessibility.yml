@@ -1,23 +1,17 @@
-title: Accessibility
+title: &title "Accessibility"
 type: documentation
 changelogURL:
 items:
   - date: 2024-03-29
+    page: *title
     summary: Updated all page content.
-    summaryAdditional:
     affectsGuidance: true
     githubPr: 2561
     githubRepo: uswds-site
   - date: 2021-05-20
+    page: *title
     summary: Added new accessibility guidance and resources.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1230
     githubRepo: uswds-site
     versionUswds:

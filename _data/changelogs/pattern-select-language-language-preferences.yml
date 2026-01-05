@@ -1,13 +1,15 @@
-title: Language preferences
+title: &title "Pattern: Language preferences"
 type: pattern
 changelogURL:
 items:
   - date: 2025-01-22
+    page: *title
     summary: Updated the url for the "OMB memorandum m-17-06" link.
-    affectsGuidance: true
+    affectsLinks: true
     githubPr: 3068
     githubRepo: uswds-site
   - date: 2022-11-14
+    page: *title
     summary: Pattern published.
     affectsGuidance: true
     githubRepo: uswds-site

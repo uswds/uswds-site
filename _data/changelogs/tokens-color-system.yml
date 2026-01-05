@@ -1,8 +1,9 @@
-title: System color tokens
+title: &title "System color tokens"
 type: token
 changelogURL:
 items:
   - date: 2024-05-15
+    page: *title
     summary: Updated the token references in the "Using color tokens" code examples.
     affectsGuidance: true
     githubPr: 2377

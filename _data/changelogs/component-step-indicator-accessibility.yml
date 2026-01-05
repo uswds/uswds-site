@@ -1,8 +1,10 @@
-title: Step indicator accessibility tests
+title: &title "Step indicator accessibility tests"
 type: component
 items:
   - date: 2025-02-14
+    page: *title
     summary: Added accessibility tests page.
+    isAddition: true
     affectsGuidance: true
     githubPr: 3098
     githubRepo: uswds-site

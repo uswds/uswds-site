@@ -1,28 +1,16 @@
-title: Color tokens
+title: &title "Color tokens"
 type: token
 changelogURL:
 items:
   - date: 2022-06-03
+    page: *title
     summary: Updated the minimum luminance for color grade 40.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1631
     githubRepo: uswds-site
   - date: 2021-12-29
+    page: *title
     summary: Added tools section.
-    summaryAdditional:
-    isBreaking:
-    affectsAccessibility:
-    affectsAssets:
     affectsGuidance: true
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
     githubPr: 1276
     githubRepo: uswds-site

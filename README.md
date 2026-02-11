@@ -1,4 +1,5 @@
 # U.S. Web Design System (USWDS) Documentation Website  
+[![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/uswds/uswds-site)
 
 Welcome! This repository contains the code for the **U.S. Web Design System (USWDS) documentation website**. If you're looking for the main USWDS components and codebase, head over to our [USWDS repository](https://github.com/uswds/uswds).  
 

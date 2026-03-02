@@ -2,7 +2,7 @@
 {% assign component_name = page.component.name | default: page.title | downcase %}
 {% assign component_key = component_name | slugify %}
 {% assign component = site.data.accessibility-tests[component_key] %}
-{% assign status_label =  "Did not pass WCAG 2.1 AA" %}
+{% assign status_label =  "Failed WCAG 2.1 AA" %}
 {% if component.component_status == "pass" %}
   {% assign status_label =  "Passed WCAG 2.1 AA" %}
 {% endif %}

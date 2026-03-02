@@ -1,1 +1,0 @@
-- **To identify as an official government site.** Most government sites should use the banner.

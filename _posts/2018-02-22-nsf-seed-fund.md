@@ -45,4 +45,4 @@ Overall the USWDS shortened the amount of time it took to implement the site, fo
 
 ---
 
-We’re looking to learn more [from agencies that have used USWDS]({{ site.baseurl }}/documentation/showcase/); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/) via Google Forms!
+We’re looking to learn more [from agencies that have used USWDS]({{ site.baseurl }}/documentation/showcase/); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}). You can also chat with the team in the [public Slack channel for USWDS](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform) via Google Forms!

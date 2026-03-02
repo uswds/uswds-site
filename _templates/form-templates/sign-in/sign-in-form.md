@@ -18,4 +18,6 @@ subnav:
     href: '#sign-in-form-guidance'
   - text: Package
     href: '#sign-in-form-package'
+changelog:
+  key: template-sign-in-form
 ---

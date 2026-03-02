@@ -25,9 +25,9 @@ changelog:
   key: 'docs-accessibility'
 in_page_nav_headings: "h2"
 ---
-The U.S. Web Design System is built on a foundation of accessibility. That foundation was created with and for our colleagues who develop digital services for all Americans.
+The U.S. Web Design System is built on a foundation of accessibility. Our foundation was created with and for our colleagues who develop digital services for all Americans.
 
-While we strive for excellence, we realize nothing can or will ever be 100% accessible. Therefore, we will continuously be adapting and revisiting this accessibility strategy and seeking community input to improve our processes.
+While we strive for excellence, we realize nothing can or will ever be 100% accessible. Therefore, we'll continuously be adapting and revisiting this accessibility strategy and seeking community input to continue improving.
 
 ## We follow the four principles of accessibility
 
@@ -38,7 +38,9 @@ While we strive for excellence, we realize nothing can or will ever be 100% acce
 
 These four principles are the foundation of [Section 508 of the Rehabilitation Act of 1973](https://www.access-board.gov/ict/) requirements, amended in 1998 to require federal agencies to make their electronic and information technology accessible to people with disabilities. In 2018, Section 508 incorporated the Web Content Accessibility Guidelines (WCAG) 2.0 Level AA success criteria.
 
-Even though 2.0 Level AA is the baseline of conformance for legal compliance, USWDS seeks to achieve the higher standard of WCAG 2.1 AA (which also meets legal requirements). In October, 2023 [WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/) was released. WCAG 2.2 is not required for legal compliance right now, but our team strives to conform to as many of the latest success criteria as possible.
+Even though 2.0 Level AA is the baseline of conformance for legal compliance, USWDS works to achieve the higher standard of WCAG 2.1 AA, which also meets legal requirements, to better serve everyone. In October, 2023 [WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/) was released. WCAG 2.2 is not required for legal compliance right now, but we strive to achieve as many of the latest success criteria as we can, and intend to incrementally work toward AAA compliance. 
+
+To demonstrate how U.S. Web Design System components meet these requirements, we've used the [Voluntary Product Accessibility Template (VPAT®) 2.5](https://www.itic.org/policy/accessibility/vpat) (revised in November 2023) to create an accessibility conformance report (ACR): [USWDS accessibility conformance report (ACR) in .docx format](https://designsystem.digital.gov/files/USWDS_v3.114_2025-05-30.ACR.docx). For this report, we assessed 44 components of USWDS 3.11.0 in March 2025 and published the report in May 2025.
 
 ## We test our work. You need to test yours.
 
@@ -168,7 +170,7 @@ We recommend a mix of automated, semi-automated, and manual testing in addition 
 ### Government accessibility resources
 
 - [The Section 508 accessibility program](https://www.section508.gov/) [section508.gov]
-- [Accessibility for Teams guide](https://accessibility.digital.gov/) [accessibility.digital.gov]
+- [Accessibility for Teams guide](https://digital.gov/guides/accessibility-for-teams/) [digital.gov]
 - [Find your Section 508 Coordinator](https://www.section508.gov/tools/coordinator-listing) [section508.gov]
 - [Section 508 ICT Testing Baseline](https://section508coordinators.github.io/ICTTestingBaseline/) [section508coordinators.github.com ]
 - [Learn about writing in plain language](https://www.plainlanguage.gov/) [plainlanguage.gov]
@@ -194,7 +196,7 @@ We recommend a mix of automated, semi-automated, and manual testing in addition 
 - **Use agency resources.** Reach out to [your agency’s accessibility team](https://www.section508.gov/tools/coordinator-listing) and build a relationship with them.
 - **Learn about assistive technology.** Get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
 - **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [WCAG 2.0](https://www.w3.org/TR/WCAG20/).
-- **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
+- **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://digital.gov/guides/accessibility-for-teams), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
 - **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.info/) mentality.
 - **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
 - **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.

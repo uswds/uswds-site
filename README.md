@@ -1,139 +1,196 @@
-# U.S. Web Design System documentation
+# U.S. Web Design System (USWDS) Documentation Website  
 
-This repo includes code and documentation for the U.S. Web Design System website. For information on the USWDS components and codebase, please visit our [uswds](https://github.com/uswds/uswds) Github repo.
+Welcome! This repository contains the code for the **U.S. Web Design System (USWDS) documentation website**. If you're looking for the main USWDS components and codebase, head over to our [USWDS repository](https://github.com/uswds/uswds).  
 
-Note that this README includes steps to pull the latest version of USWDS into your local instance of the documentation.
+---
 
-## Running locally
+## Running the Website Locally  
 
-The U.S. Web Design System documentation is built using Jekyll for the file framework, gulp for task management, and the node module for USWDS.
+This site is built using:  
+- [Jekyll](https://jekyllrb.com/), a static site generator
+- [Gulp.js](https://gulpjs.com/), for task automation  
+- [USWDS npm package, stable version](https://www.npmjs.com/package/uswds)  
 
-### Before you start
+Follow the steps below to set up the site on your local machine.  
 
-Recommended before install:
+### Prerequisites  
 
-1. Ruby Version Manager - RVM [Installation guides](https://rvm.io/rvm/install)
-1. Node Version Manager - NVM [Installation guides](https://github.com/nvm-sh/nvm#installing-and-updating)
+Before getting started, make sure you have the following installed:  
 
-You will need to have the following installed on your machine before following the commands below:
+1. **Git** – [Installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)  
+2. **Ruby** – Version specified in [.ruby-version](https://github.com/uswds/uswds-site/blob/main/.ruby-version) or [.tool-versions](https://github.com/uswds/uswds-site/blob/main/.tool-versions)  
+   - [Installation guide](https://www.ruby-lang.org/en/documentation/installation/)  
+3. **Node.js** – Version specified in [.nvmrc](https://github.com/uswds/uswds-site/blob/main/.nvmrc) or [.tool-versions](https://github.com/uswds/uswds-site/blob/main/.tool-versions)  
+   - [Installation guide](https://nodejs.org/en/download)  
+4. **Bundler** – Version specified in [.bundler-version](https://github.com/uswds/uswds-site/blob/main/.bundler-version)  
+   - [Installation guide](https://bundler.io/guides/using_bundler_in_applications.html#getting-started---installing-bundler-and-bundle-init)   
 
-1. Ruby (see [.ruby-version](https://github.com/uswds/uswds-site/blob/main/.ruby-version) or [.tool-versions](https://github.com/uswds/uswds-site/blob/main/.tool-versions) for version number), [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
-1. Node (see [.nvmrc](https://github.com/uswds/uswds-site/blob/main/.nvmrc) or [.tool-versions](https://github.com/uswds/uswds-site/blob/main/.tool-versions) for version number), [Installation guides](https://nodejs.org/en/download)
-1. Bundler (see [.bundler-version](https://github.com/uswds/uswds-site/blob/main/.bundler-version) for version number), [Installation guides](https://bundler.io/guides/using_bundler_in_applications.html#getting-started---installing-bundler-and-bundle-init)
-1. Chrome v59 or higher (v60 if on Windows)
-1. Python v2.7* (For node-gyp dependency)
-
-#### ⚠️ Potential issues and workarounds
-- If you're running into node-gyp issues on `npm install` you'll need to install python v2.7, which is the recommended version as of `node-gyp@3.8.0`. Once installed you can reference it via `npm config set python /usr/bin/python2.7` or wherever you have installed. You can find that with `whereis python` command.
-- Ubuntu 20.04 users might run into: `bundler: failed to load command: jekyll (/usr/share/rvm/gems/ruby-3.0.2/bin/jekyll)`. Install ffi with the following flag to work around it `gem install ffi -- --disable-system-libffi`.
-
-
-### Building the documentation with gulp
-
-Some parts of the documentation are built using [gulp](http://gulpjs.com/).
-
-To work on the site, switch to your local copy of the repository in terminal then run the following commands to install project dependencies:
-
+#### ⚠️ Ubuntu 20.04 Users  
+If you encounter this error:  
 ```sh
-npm install
-```
-
+bundler: failed to load command: jekyll (/usr/share/rvm/gems/ruby-3.0.2/bin/jekyll)
+```  
+Fix it by running:  
 ```sh
-bundle install
-```
+gem install ffi -- --disable-system-libffi
+```  
 
-Now that all of your dependencies are installed, you can run your local server by running the following command:
+---
 
+## Installation  
+
+1. **Clone the repository:**  
+   ```sh
+   git clone git@github.com:uswds/uswds-site.git
+   ```  
+
+2. **Navigate into the project folder:**  
+   ```sh
+   cd uswds-site
+   ```  
+
+3. **Install dependencies:**  
+   ```sh
+   npm install
+   bundle install
+   ```  
+
+4. **Start the local server:**  
+   ```sh
+   npm start
+   ```  
+
+5. **View the site in your browser:**  
+   Open [http://127.0.0.1:4000](http://127.0.0.1:4000) to see the site running locally.  
+
+---
+
+## Useful Commands  
+
+Here are some additional commands you may find helpful:  
+
+- **`npm run clean`** – Removes copied dependency assets.  
+- **`npm run lint`** – Runs `eslint` and `sass-lint` to check for coding issues.  
+- **`npm test`** – Runs all tests and linters.  
+- **`npm run watch`** – Watches for changes and automatically rebuilds the site.  
+- **`npm start -- --incremental`** or **`npm run serve`** – Runs the site with incremental regeneration to speed up build times.  
+
+---
+
+## Using the Development Version of USWDS  
+
+If you need to work with the latest development version of USWDS, follow these steps:  
+
+1. **Clone the `uswds` repository:**  
+   ```sh
+   git clone https://github.com/uswds/uswds.git
+   ```  
+2. **Navigate to the `uswds` directory and install dependencies:**  
+   ```sh
+   cd uswds
+   npm install
+   ```  
+3. **Build USWDS:**  
+   ```sh
+   npm run build
+   ```  
+4. **Link USWDS to your local setup:**  
+   ```sh
+   npm link
+   ```  
+5. **Go back to `uswds-site` and link it to the local USWDS version:**  
+   ```sh
+   cd ../uswds-site
+   npm link uswds
+   ```  
+6. **Start the `uswds` development server:**  
+   ```sh
+   npm start
+   ```  
+7. **Set the `LIBRARY_BASE_URL` environment variable:**  
+   ```sh
+   export LIBRARY_BASE_URL="http://127.0.0.1:6006"
+   ```  
+8. **Start the USWDS documentation site:**  
+   ```sh
+   npm run serve
+   npm run watch
+   ```  
+
+📝 **Note:** Changes to USWDS won’t automatically rebuild the site—you’ll need to manually trigger a rebuild.  
+
+To unlink the development version, run:  
 ```sh
-npm start
-```
+npm unlink uswds
+```  
 
-Go to `127.0.0.1:4000` in your browser — you should be viewing a local instance of [designsystem.digital.gov](https://designsystem.digital.gov).
+---
 
-Here are a few other utility commands you may find useful:
+## Components  
 
-- `npm run clean`: Cleans out copied-over dependency assets.
+This site displays USWDS components using pre-built HTML templates from the `html-templates` directory. These templates are integrated using a custom `library_component` Jekyll tag.  
 
-- `npm run lint`: Runs `eslint` and `sass-lint` against JavaScript and Sass files.
+---
 
-- `npm test`: Runs all tests and linters.
+## Deployment & Previews  
 
-- `npm run watch`: Runs a series of commands that watches for any changes in both USWDS node module and the root level asset folders in this repo.
+The site is deployed using [cloud.gov Pages](https://cloud.gov/pages/).  
+- Changes pushed to the `main` branch will automatically update the live site.  
+- Public previews are generated for each branch pushed to GitHub.  
 
-- `npm start -- --incremental` or `npm run serve`: Runs your local server with incremental regeneration enabled to greatly improve build time. Use instead of `npm start`.
+⚠️ **If a new section fails to build on Pages**, try clearing the cache:  
+```sh
+bundle update
+```  
 
-### Using the latest version of the `uswds` package
+---
 
-Sometimes you will want to use the latest version of the `uswds` repo. Follow these steps to do so:
+## Updating the USWDS Version  
 
-1. Clone the latest version of the [`uswds` repo](https://github.com/uswds/uswds/tree/develop).
-1. Run `npm install` to install the dependencies required for the package in the `uswds` directory.
-1. Run `npm run build` to create the built version of USWDS in the `uswds` directory.
-1. Run `npm link` in the _root level_ of the `uswds` directory on your local machine.
-1. Run `npm link uswds` in the _root level_ of the `uswds-site` directory on your local machine.
-1. Run `npm start` in the `uswds` directory, and make a note of the `Local URL` that is being served.
-2. In another terminal window, set the `LIBRARY_BASE_URL` env var to the running instance of `uswds`. In your terminal window in the `uswds-site` directory, enter `export LIBRARY_BASE_URL="http://127.0.0.1:6006"` (or the `Local URL` noted above).
-3. In the `uswds-site` window, run `npm run serve` in the `uswds-site` directory to start the Jekyll server.
-4. Run `npm run watch` in the `uswds-site` directory to have changes to that repo automatically built and compiled. Note: `uswds-site` will _not_ automatically rebuild when there are changes in `uswds`, you'll need to trigger a site rebuild manually to reflect changes in the `uswds` repo.
+USWDS code base is included as a Git dependency in `package.json`. To update it:  
 
-You are now linked and using the local version of USWDS. To unlink this version, type `npm unlink uswds` from the _root level_ of the `uswds` directory.
+- **To install a specific commit:**  
+  ```sh
+  npm install --save "uswds/uswds#commit-hash"
+  ```  
+- **To install a specific version tag:**  
+  ```sh
+  npm install --save "uswds/uswds#v1.3.1"
+  ```  
 
-### Components
+The version number is automatically detected and displayed on the site. Always use an official version tag for `main` branch commits to avoid confusion.  
 
-This documentation site showcases USWDS components by pulling in pre-built HTML from the USWDS `html-templates` directory. This HTML is pulled in via a custom `library_component` Jekyll tag, which takes the full name of the component as a parameter.
+---
 
-### Deployment and previews
+## Adding Content to the "Updates" Section  
 
-This site is deployed on [cloud.gov Pages](https://cloud.gov/pages/), which automatically builds the public site whenever commits are pushed to `main`. Pages also builds public previews for each branch pushed to GitHub.
+To add an update, see the instructions in the [`_posts` directory](_posts/#readme).  
 
-⚠️ When generating new sections, sometimes they fail to build on Pages. You can clear the cache by running a simple `bundle update`, which will trigger a fresh build.
+---
 
-### Updating the USWDS version
+## Dynamic Content  
 
-To update the version of USWDS being used, change the version that
-`package.json` specifies in its `dependencies` section.
+Some content on this site is dynamically fetched from GitHub. To avoid API rate limits, you may want to:  
 
-We currently pull USWDS via git rather than npm, as it allows us to
-use any tag or commit during development. To install a specific commit,
-you can use e.g.:
+1. **Create a GitHub access token:** [Guide](https://github.com/blog/1509-personal-api-tokens)  
+2. **Set the token in your environment:**  
+   ```sh
+   export GITHUB_ACCESS_TOKEN="your-token-here"
+   ```  
 
-```
-npm install --save "uswds/uswds#fb49e4f"
-```
-
-Alternatively, to use a specific version tag, use e.g.:
-
-```
-npm install --save "uswds/uswds#v1.3.1"
-```
-
-This version number or commit hash is automatically parsed when the site
-is built and used for display on the site (see `_plugins/uswds_version.rb`
-for details). Therefore, be sure to use an actual version tag on all
-`main` branch commits--otherwise a commit hash will show up as the
-version on the production site, which would be confusing.
-
-### Adding content to the "Updates" section
-
-See the [`_posts` directory](_posts/#readme) for instructions on adding updates.
-
-### Dynamic content
-
-Some of the content on the documentation site is dynamically fetched from
-GitHub. If you want to ensure that its API won't rate-limit you, you
-may want to
-[create an access token](https://github.com/blog/1509-personal-api-tokens)
-and assign it to your `GITHUB_ACCESS_TOKEN` environment variable.
-
-The dynamic content is stored in the `.jekyll_get_cache` directory and
-won't be re-fetched once it's cached there. However, this means that your
-data can get stale over time, so if you want to ensure that your site
-is using the very latest data, you'll want to clear the cache by running:
-
-```
+If you notice outdated data, clear the cache with:  
+```sh
 rm -rf .jekyll_get_cache
-```
+```  
 
-## Contributing
+---
 
-Please read through our [contributing guidelines](CONTRIBUTING.md). These guidelines are directions for opening issues and submitting pull requests, and they also detail the coding and design standards we follow.
+## Contributing  
+
+We welcome contributions! Please review our [contributing guidelines](CONTRIBUTING.md) before opening an issue or submitting a pull request. These guidelines cover our coding standards and best practices.  
+
+---
+
+### 🎉 Thanks for Supporting USWDS!  
+
+We appreciate your contributions to making digital services better and more accessible for everyone. 🚀 

@@ -1,5 +1,0 @@
-- **Use the provided text without customization.** The banner is most effective as an identifier and a learning tool when its message is consistent across government sites. With only a few exceptions (described in our [Implementation guidance](#using-the-banner-component)), sites should use the TLD-appropriate text provided, unaltered. Use the Spanish version of the banner for Spanish-language websites.
-- **Use the version appropriate to your website’s TLD.** If your project uses a `.mil` top-level domain, use the `.mil` banner text.
-- **Show the banner on every page.** Use the banner at the top of every page of a site. It can be confusing or misleading if it appears on some pages and not others.
-- **Avoid distraction.** The banner should appear on every page of your site. Choose background colors that fit with your site theme, and avoid color combinations that draw excessive attention to the banner.
-- **Keep the text up to date.** Use the most current version of the banner.

@@ -42,7 +42,7 @@
     > GSA published a report, [Transforming the American Digital Experience [PDF, 18 pages]](https://designsystem.digital.gov/files/next/Transforming-the-American-digital-experience.pdf)
 
     **Example 2:**
-    > Download the [Revised 508 Standards Applicability Checklist [DOCX, 2 pages]](https://assets.section508.gov/files/508-standards-applicability-checklist.docx)
+    > Download the [Revised 508 Standards Applicability Checklist [DOCX, 2 pages]](https://assets.section508.gov/assets/files/508-standards-applicability-checklist.docx)
 
     **Example 3:**
     > Download the [USWDS 2.11.2 Design Kit for Sketch [ZIP, 13.3 MB]](https://github.com/uswds/uswds-for-designers/releases/download/v2.4.0/uswds-for-designers-v2.4.0.zip)

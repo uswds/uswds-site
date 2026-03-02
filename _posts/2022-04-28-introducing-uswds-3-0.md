@@ -20,7 +20,7 @@ For migration assistance, start with our [USWDS 3.0 Migration Guide]({{ site.bas
 
 If you have any questions or feedback let us know at the [USWDS Public Slack](https://gsa-tts.slack.com/archives/uswds-public), [GitHub Discussions](https://github.com/uswds/uswds/discussions), or [uswds@gsa.gov](mailto:uswds@gsa.gov).
 
-If you aren't a member of the USWDS Public Slack, [sign up here](https://chat.18f.gov/) by "Joining a TTS Chat Room" — then select "U.S. Web Design System" as your chat topic.
+If you aren't a member of the USWDS Public Slack, [sign up here](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform) by "Joining a TTS Chat Room" — then select "U.S. Web Design System" as your chat topic.
 
 {:.site-note}
 Starting in USWDS 3.0, we're publishing our npm package to an `@uswds` organization scope. So now, when installing USWDS, use `npm install @uswds/uswds --save`.

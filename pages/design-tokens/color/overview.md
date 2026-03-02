@@ -191,7 +191,7 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 
 ## Further reading
 - Accessibility: Color and contrast
-  [https://accessibility.digital.gov/visual-design/color-and-contrast](https://accessibility.digital.gov/visual-design/color-and-contrast){:.display-block}
+  [https://digital.gov/guides/accessibility-for-teams/visual-design#color-and-contrast](https://digital.gov/guides/accessibility-for-teams/visual-design#color-and-contrast){:.display-block}
 - Color and readability
   [https://www.w3.org/WAI/RD/2012/text-customization/r11](https://www.w3.org/WAI/RD/2012/text-customization/r11){:.display-block}
 - Improving accessibility for colorblind users

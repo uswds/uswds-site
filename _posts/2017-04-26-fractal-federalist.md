@@ -184,7 +184,7 @@ our components, variants, page templates, and related documentation.
 If you have a suggestion, see something amiss, or just want to say hi, feel
 free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 [email our mailing list](mailto:uswebdesignstandards@gsa.gov), or join our
-[public Slack channel](https://chat.18f.gov/) via Google Form.
+[public Slack channel](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform) via Google Form.
 
 
 [1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre

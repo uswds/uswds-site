@@ -110,6 +110,6 @@
     "@uswds/uswds": "3.13.0"
   },
   "optionalDependencies": {
-    "sass-embedded-linux-x64": "^1.85.1"
+    "sass-embedded-linux-x64": "^1.97.3"
   }
 }

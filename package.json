@@ -111,8 +111,5 @@
   },
   "optionalDependencies": {
     "sass-embedded-linux-x64": "^1.85.1"
-  },
-  "overrides": {
-    "undici": "^6.24.0"
   }
 }

@@ -4,6 +4,7 @@ changelogURL:
 
 items:
   - date: 2024-11-13
+    page: Time picker
     summary: Updated the time picker hint text to improve clarity.
     summaryAdditional: This update allows the component to meet the success criteria in [WCAG 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html).
     affectsAccessibility: true
@@ -12,12 +13,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.10.0
   - date: 2024-11-07
+    page: Time picker
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2921
     githubRepo: uswds-site
   # 3.0 release
   - date: 2022-04-28
+    page: Time picker
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAccessibility: true
@@ -28,12 +31,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
+    page: Time picker
     summary: Added documentation for the `value` property.
     affectsGuidance: true
     githubPr: 1516
     githubRepo: uswds-site
   # 2.13.3
   - date: 2022-04-11
+    page: Time picker
     summary: Allow default `value` in time picker.
     summaryAdditional: The input `value` is now used on initialization if set.
     isBreaking: false

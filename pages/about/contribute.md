@@ -21,6 +21,9 @@ Before submitting a contribution, [create a GitHub account](https://github.com/j
 If you’ve got questions, [reach out to us](mailto:{{ site.uswds_email }}).
 We’ll help you through the process, even if you don’t have a technical background in web development.
 
+{:.site-note}
+**Note:** For security reasons, all commits made to USWDS must have a verified signature. Set up verified commits in your account by following [GitHub's commit signature verification guide](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#gpg-commit-signature-verification).
+
 ## Suggest a new component
 
 Anyone can suggest a new U.S. Web Design System (USWDS) component.

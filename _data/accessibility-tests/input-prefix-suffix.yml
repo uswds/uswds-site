@@ -1,0 +1,79 @@
+title: Input prefix suffix
+component_status: pass
+test_items:
+# General tests
+  - summary: Display is consistent in mobile views.
+    summary_additional: When you view the input prefix-suffix component on mobile devices, it displays in both portrait and landscape orientation with no loss of functionality.
+    test_status: pass
+    test_type: general
+    version_tested: 3.11.0
+    wcag_criterion: 1.3.4
+  - summary: Color alone is not used to convey information.
+    summary_additional: When viewing an input prefix-suffix, you do not have to rely on color alone to understand part of its meaning.
+    test_status: pass
+    test_type: general
+    version_tested: 3.11.0
+    wcag_criterion: 1.4.1
+  - summary: Input prefix suffix meets color contrast requirements.
+    summary_additional: When you view the input prefix suffix on a page and use ANDI or color contrast analyzer to look at the hex colors, contrast between the button background and text is at least 4.5:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.11.0
+    wcag_criterion: 1.4.3
+  - summary: Input prefix-suffix elements have proper contrast.
+    summary_additional: When you use a color contrast analyzer, the contrast between the outline of the text field, text inputs, and icons are at least 3:1 from their respective surrounding backgrounds.
+    test_status: pass
+    test_type: general
+    version_tested: 3.11.0
+    wcag_criterion: 1.4.11
+  - summary: Labels or instructions are provided.
+    summary_additional: Clear, concise instructions on the type and format of required data is visible above the input prefix-suffix.
+    test_status: pass
+    test_type: general
+    version_tested: 3.11.0
+    wcag_criterion: 3.3.2
+# Zoom/screen magnification tests
+  - summary: Content remains visible and functional when screen is magnified.
+    summary_additional: When you zoom in to 200%, text stays in position inside the text field, and the input prefix-suffix icon or text retains its position inside the field.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.11.0
+    wcag_criterion: 1.4.4
+# Keyboard navigation tests
+  - summary: Field can be accessed with keyboard navigation.
+    summary_additional: Using only a keyboard, you're able to tab into and out of the text input field associated with the input prefix-suffix.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 2.1.1
+  - summary: Input prefix-suffix does not trap keyboard focus.
+    summary_additional: When you access the text input area with a keyboard, you can easily move in and out to get to other content.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 2.1.2
+  - summary: Focus indicators are clearly visible.
+    summary_additional: When you use a keyboard to navigate through the input prefix-suffix, there will be a visible outline or other clear indication around each element where the focus is.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.11.0
+    wcag_criterion: 2.4.7
+# Screen reader tests
+  - summary: Images are hidden from screen readers.  
+    summary_additional: When using a screen reader, you hear no indication nor description of an icon.
+    test_status: conditional
+    test_type: screen_reader
+    version_tested: 3.11.0
+    wcag_criterion: 1.1.1
+  - summary: Screen reader announces text, label or supportive text.
+    summary_additional: When interacting with the input prefix-suffix with a screen reader, you hear the field labels, text related to the field, and whether or not the field is required. 
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.11.0
+    wcag_criterion: 1.3.1
+  - summary: Each icon has a consistent meaning across pages. 
+    summary_additional: When you use a screen reader or view a input prefix-suffix icon, the icon’s meaning is the same across all pages.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.11.0
+    wcag_criterion: 3.2.4

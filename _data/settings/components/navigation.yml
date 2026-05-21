@@ -5,7 +5,7 @@ contents:
     var: $theme-navigation-font-family
     default: '"ui"'
     type: family
-  - name: Megamenu columns
+  - name: Megamenu column count
     description: Number of columns in the megamenu.
     var: $theme-megamenu-columns
     default: 3

@@ -2,6 +2,7 @@
 title: Automatic sanitizing for all JavaScript components
 excerpt: "As of USWDS 2.12.2, the design system automatically sanitizes content in all components we compose with JavaScript."
 category: About
+permalink: /security_updates/automatic-sanitizing-for-all-javascript-components/
 tags:
 - security
 ---
@@ -9,7 +10,7 @@ tags:
 The design system now automatically sanitizes content in all components we compose with JavaScript. This means that components like Combo Box, Tooltip, File Input, and Date Picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
 
 ## When we made this change
-Fixed in [USWDS 2.12.2]({{ site.baseurl }}/about/releases/#version-uswds-2122).
+Fixed in [USWDS 2.12.2](https://github.com/uswds/uswds/releases/tag/v2.12.2).
 
 ## Who should update
 Consider updating if you use any of the following components/versions:

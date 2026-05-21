@@ -1,0 +1,45 @@
+{% assign col1Title = 'Date' %}
+{% assign col1Classes = 'tablet:grid-col-3 desktop:grid-col-2' %}
+{% assign col2Title = 'Description' %}
+
+<table class="usa-table--borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col" class="{{ col1Classes }}">
+        {{ col1Title }}
+      </th>
+      <th scope="col" class="{{ col2Classes }}">
+        {{ col2Title }}
+      </th>
+    </tr>
+  </thead>
+  <tbody class="font-lang-3xs">
+    {% for item in changelogItems %}
+    <tr>
+      <td data-title="{{ col1Title }}" class="{{ col1Classes }}">
+        {% if item.date %}
+          <span class="font-mono-3xs">{{ item.date }}</span>
+        {% endif %}
+      </td>
+      <td data-title="{{ col2Title }}" class="{{ col2Classes }}">
+        {% if item.summary %}
+          <p class="measure-6">
+            <strong>
+              {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+            </strong>
+            {% if item.summaryAdditional %}
+              {{ item.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
+            {% endif %}
+            {% if item.githubPr %}
+              More information:
+              <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">
+                {{ item.githubRepo }}#{{ item.githubPr }}
+              </a>
+            {% endif %}
+          </p>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

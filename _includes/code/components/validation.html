@@ -1,3 +1,7 @@
+<h3 class="site-preview-heading">Default</h3>
 {% capture validation %}
   {% library_component usa-validation %}
-{% endcapture %}{{ validation | strip }}
+{% endcapture %}{{ validation
+  | strip
+  | replace: 'h3', 'h4'
+}}

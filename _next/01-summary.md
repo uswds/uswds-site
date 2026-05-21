@@ -3,8 +3,7 @@ layout: next
 title: Transforming the American digital experience
 nav_title: Summary
 description: "Access to digital services isn’t a luxury. It’s critical. Let’s transform the way we design and deliver digital government with and for the people."
-meta:
-  og:image: /img/next/og-next-report.png
+image: /img/next/og-next-report.png
 
 permalink: /next/
 slug: summary
@@ -129,7 +128,7 @@ summary_sections:
 
               <figure class="next-quote">
                 <svg class="usa-icon usa-icon--size-8 next-quote__icon" aria-hidden="true" focusable="false" role="img">
-                  <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#format_quote"></use>
+                  <use href="{{ site.baseurl }}/assets/img/sprite.svg#format_quote"></use>
                 </svg>
                 <blockquote class="next-quote__quote">
                 The more we use the design system to standardize how we build digital experiences, the more we will improve how the federal web functions.

@@ -29,8 +29,12 @@ subnav:
     href: '#create-account-code'
   - text: Guidance
     href: '#create-account-guidance'
+  - text: Latest updates
+    href: '#changelog'
 title: Create account
 type: template
+changelog:
+  key: template-create-account
 ---
 
 Site users will be more likely to create an account if it’s easy and they understand the benefits. Keep the account creation process simple with a single “create account” button and limited distractions (like other calls-to-action). Succinctly outline the benefits of setting up an account, emphasizing what they can do and how it can help them.

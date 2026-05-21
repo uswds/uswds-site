@@ -3,26 +3,24 @@
     <h3 class="site-preview-heading margin-top-0">Default</h3>
     {% capture collection--default %}
       {% library_component usa-collection %}
-    {% endcapture %}{{ collection--default | strip }}
+    {% endcapture %}{{ collection--default | strip | replace:"h3", "h4" }}
   </div>
   <div class="tablet:grid-col-6">
     <h3 class="site-preview-heading tablet:margin-top-0">Media thumbnail</h3>
     {% capture collection--media %}
       {% library_component usa-collection--media %}
-    {% endcapture %}{{ collection--media | strip }}
+    {% endcapture %}{{ collection--media | strip | replace:"h3", "h4" }}
   </div>
   <div class="tablet:grid-col-6">
     <h3 class="site-preview-heading">Calendar display</h3>
     {% capture collection--fancy-date %}
       {% library_component usa-collection--fancy-date %}
-    {% endcapture %}{{ collection--fancy-date | strip }}
+    {% endcapture %}{{ collection--fancy-date | strip | replace:"h3", "h4" }}
   </div>
   <div class="tablet:grid-col-6">
     <h3 class="site-preview-heading">Headings only</h3>
     {% capture collection--only-headers %}
       {% library_component usa-collection--only-headers %}
-    {% endcapture %}{{ collection--only-headers | strip }}
+    {% endcapture %}{{ collection--only-headers | strip | replace:"h3", "h4" }}
   </div>
 </div>
-
-

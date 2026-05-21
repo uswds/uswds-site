@@ -1,2 +1,2 @@
-- **Use proper labels and attributes.** Each file input should have a `<label>`. Associate the two by matching the `<label>`’s for attribute to the `<input>`’s `id` attribute.
+- **Use proper labels and attributes.** Each file input should have a `label` element. Associate the label to your input by defining the value of the label’s `for` attribute with the input’s `id`.
 - **Use as a progressive enhancement.** The file input component should be a progressive enhancement of `<input type="file" />`. If the component doesn't initialize, it should still work and appear like a standard `file` input.

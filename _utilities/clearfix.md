@@ -38,7 +38,7 @@ utilities:
         <span class="float-right bg-secondary-light padding-2">.float-right</span>
       </div>
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
-        <button class="usa-accordion__button" aria-controls="code-clearfix" aria-expanded="true">Code</button>
+        <button type="button" class="usa-accordion__button" aria-controls="code-clearfix" aria-expanded="true">Code</button>
         <div id="code-clearfix" class="usa-accordion__content margin-bottom-1">
 <div markdown="1">
 {% highlight html linenos %}

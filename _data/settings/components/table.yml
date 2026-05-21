@@ -1,8 +1,58 @@
 name: Tables
 contents:
+  - name: Background color
+    description: Defines the table background color. A value of `default` uses the body background color.
+    var: $theme-table-background-color
+    default: 'default'
+    type: color
   - name: Border color
     description: Defines a border color for table cells. A value of `default` uses either the default text or reverse text color depending on the site background color.
     var: $theme-table-border-color
+    default: '"ink"'
+    type: color
+  - name: Header background color
+    description: Defines a background color for header cells.
+    var: $theme-table-header-background-color
+    default: '"base-lighter"'
+    type: color
+  - name: Header text color
+    description: Defines a text color for header cells. A value of `default` uses either the default text or reverse text color depending on the header background color.
+    var: $theme-table-header-text-color
+    default: "default"
+    type: color
+  - name: Sorted column background color
+    description: Defines a background color for the cells of the sorted column.
+    var: $theme-table-sorted-background-color
+    default: '"accent-cool-lighter"'
+    type: color
+  - name: Sorted column header background color
+    description: Defines a background color for the sorted column header.
+    var: $theme-table-sorted-header-background-color
+    default: '"accent-cool-light"'
+    type: color
+  - name: Sorted column icon color
+    description: Defines a fill color for the activated sort button in a sortable column header. A value of `default` uses either the default text or reverse text color depending on the sorted column header background color.
+    var: $theme-table-sorted-icon-color
+    default: "default"
+    type: color
+  - name: Sorted column stripe background color
+    description: Defines a background color for the alternating horizontal stripes applied to cells of the sorted column.
+    var: $theme-table-sorted-stripe-background-color
+    default: '"blue-cool-10v"'
+    type: color
+  - name: Sticky header top offset
+    description: Defines the top offset for sticky headers. This setting value must include the CSS unit type, for example `10px` or `2rem`.
+    var: $theme-table-sticky-top-offset
+    default: '-1px'
+    type: CSS length
+  - name: Stripe background color
+    description: Defines a background color for alternating horizontal stripes in the striped table variant.
+    var: $theme-table-stripe-background-color
+    default: '"base-lightest"'
+    type: color
+  - name: Stripe text color
+    description: Defines a text color for alternating horizontal stripes in the striped table variant. A value of `default` uses either the default text or reverse text color depending on the stripe background color.
+    var: $theme-table-stripe-text-color
     default: "default"
     type: color
   - name: Text color
@@ -10,47 +60,7 @@ contents:
     var: $theme-table-text-color
     default: "default"
     type: color
-  - name: Header Background Color
-    description: Defines a background color for header cells.
-    var: $theme-table-header-background-color
-    default: '"base-lighter"'
-    type: color
-  - name: Header Text Color
-    description: Defines a text color for header cells. A value of `default` uses either the default text or reverse text color depending on the header background color.
-    var: $theme-table-header-text-color
-    default: "default"
-    type: color
-  - name: Stripe Background Color
-    description: Defines a background color for alternating horizontal stripes in the striped table variant.
-    var: $theme-table-stripe-background-color
-    default: '"base-lightest"'
-    type: color
-  - name: Stripe Text Color
-    description: Defines a text color for alternating horizontal stripes in the striped table variant. A value of `default` uses either the default text or reverse text color depending on the stripe background color.
-    var: $theme-table-stripe-text-color
-    default: "default"
-    type: color
-  - name: Sorted Column Header Background Color
-    description: Defines a background color for the sorted column header.
-    var: $theme-table-sorted-header-background-color
-    default: '"accent-cool-light"'
-    type: color
-  - name: Sorted Column Background Color
-    description: Defines a background color for the cells of the sorted column.
-    var: $theme-table-sorted-background-color
-    default: '"accent-cool-lighter"'
-    type: color
-  - name: Sorted Column Stripe Background Color
-    description: Defines a background color for the alternating horizontal stripes applied to cells of the sorted column
-    var: $theme-table-sorted-stripe-background-color
-    default: '"blue-cool-10v"'
-    type: color
-  - name: Sorted Column Icon Color
-    description: Defines a fill color for the activated sort button in a sortable column header. A value of `default` uses either the default text or reverse text color depending on the sorted column header background color.
-    var: $theme-table-sorted-icon-color
-    default: "default"
-    type: color
-  - name: Unsorted Column Icon Color
+  - name: Unsorted column icon color
     description: Defines a fill color for the unactivated sort button in a sortable column header.
     var: $theme-table-unsorted-icon-color
     default: '"base"'

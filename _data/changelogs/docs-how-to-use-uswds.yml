@@ -1,0 +1,17 @@
+title: How to use USWDS
+type: documentation
+changelogURL:
+items:
+  - date: 2022-01-27
+    summary: Brought in "Before getting started" content from "Getting started for developers".
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1411
+    githubRepo: uswds-site
+    versionUswds:

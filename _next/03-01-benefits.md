@@ -2,8 +2,7 @@
 title: Understand the value and&nbsp;benefits
 subhead: Agency teams want to...
 description: "Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services."
-meta:
-  og:image: /img/next/og-next-findings-understand.png
+image: /img/next/og-next-findings-understand.png
 
 permalink: /next/findings/benefits/
 slug: "understand"
@@ -15,7 +14,7 @@ quote_color: "next-red-medium"
 chapter: false
 parent: Findings
 
-conversation_starters: 
+conversation_starters:
   - |-
     **How might we** communicate the value of the design system more effectively to new customers?
   - |-

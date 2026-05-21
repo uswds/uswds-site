@@ -9,12 +9,8 @@ permalink: /components/tooltip/
 title: Tooltip
 type: component
 subnav:
-- text: Preview
-  href: '#tooltip-preview'
-- text: Code
-  href: '#tooltip-code'
-- text: Guidance
-  href: '#tooltip-guidance'
-- text: Package
-  href: '#tooltip-package'
+- text: Tooltip accessibility tests
+  href: /components/tooltip/accessibility-tests/
+changelog:
+  key: component-tooltip
 ---

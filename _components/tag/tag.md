@@ -12,20 +12,15 @@ title: Tag
 category: Components
 lead: A tag draws attention to new or categorized content elements.
 subnav:
-- text: Preview
-  href: '#tag-preview'
-- text: Code
-  href: '#tag-code'
-- text: Guidance
-  href: '#tag-guidance'
-- text: Package
-  href: '#tag-package'
+- text: Tag accessibility tests
+  href: /components/tag/accessibility-tests/
 tags:
   - label
   - lable
   - info
 variants:
-  - variant: "`usa-tag--big`"
+  - variant: "`.usa-tag--big`"
     description: A tag with increased padding and font size.
+changelog:
+  key: component-tag
 ---
-

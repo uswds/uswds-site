@@ -5,7 +5,7 @@
 - token: neg-1
   value: -0.01em
 - token: auto
-  value: auto
+  value: initial
 - token: 1
   value: 0.025em
 - token: 2

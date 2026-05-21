@@ -1,4 +1,4 @@
-- **Use affordances.** A hidden tooltip is unusable. Use tooltips only on elements that appear interactive, like buttons or links.
+- **Make tooltips discoverable.** A hidden tooltip is unusable. Use tooltips only on elements that appear interactive, like buttons or links.
 - **Avoid collisions.** Be careful not introduce conflicting hover or focus events.
 - **Use consistently.** If using tooltips in one context, use in all similar contexts.
 - **Don’t block content.** Use the `data-position` attribute to prevent the tooltip from covering other page elements.

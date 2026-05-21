@@ -1,0 +1,82 @@
+title: Button
+component_status: pass
+test_items:
+# General items
+  - summary: Button text conveys its meaning.
+    summary_additional: |
+      When you view the button on a page and determine the button's purpose,
+      the text (not color alone) conveys the button's meaning.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.7.1
+    wcag_criterion: 1.4.1
+  - summary: Buttons meet color contrast requirements.
+    summary_additional: |
+      When you view the button on a page and use ANDI or color contrast analyzer to look at the hex colors,
+      contrast between the button background and text is at least 4.5:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.7.1
+    wcag_criterion: 1.4.3
+  - summary: Buttons are at least 44 pixels wide.
+    summary_additional: |
+      When you right click on the button and select "inspect element" to review the button's computed value,
+      the width of the button is at least 44 px.
+    test_status: pass
+    test_type: general
+    version_tested: 3.7.1
+    wcag_criterion: 2.5.5
+# Zoom/screen magnification items
+  - summary: Buttons are visible and functional when screen is magnified.
+    summary_additional: |
+      When you zoom the screen to 200%,
+      you can scroll through buttons with no loss of information.
+    test_status: exception
+    status_details: |
+      The button is visible and functional, but the focus indicator overlaps with nearby buttons.
+    test_type: zoom
+    version_tested: 3.7.1
+    wcag_criterion: 1.4.10
+# Keyboard navigation items
+  - summary: Buttons do not trap focus.
+    summary_additional: |
+      When you use a keyboard to tab into a button and click `tab` again,
+      you don't get stuck in the button.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.1.2
+  - summary: Focus indicators are clearly visible.
+    summary_additional: |
+      When you use a keyboard to tab into a button,
+      the button has a visible outline or other clear indication of focus.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.4.7
+  - summary: Focus indicators have proper size, perimeter, and contrast.
+    summary_additional: |
+      When you use a keyboard to tab into a button, the focus indicator has proper size, perimeter and contrast.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.4.13
+# Screen reader items
+  - summary: Screen reader announces buttons in the same order that they appear on the page.
+    summary_additional: |
+      When you use a screen reader and navigate from button to button on a page (using the `B` shortcut key or `tab` key),
+      you hear the buttons announced in the same order that they appear on the page.
+    test_status: conditional
+    status_details: This can only be tested in the context of your page.
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 1.3.2
+  - summary: Screen reader announces the button role.
+    summary_additional: |
+      When you use a screen reader and navigate from button to button on a page (using the `B` shortcut key or `tab` key),
+      you hear the role "button".
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 4.1.2
+

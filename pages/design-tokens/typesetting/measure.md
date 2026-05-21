@@ -10,6 +10,10 @@ subnav:
   href: '#measure-tokens'
 - text: Using measure tokens
   href: '#using-measure-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-type-measure
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}
@@ -117,7 +121,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
         </td>
         <td data-title="Example">
           <span>
-            $theme-body-measure: <code>4</code>
+            $theme-text-measure: <code>5</code>
           </span>
         </td>
       </tr>

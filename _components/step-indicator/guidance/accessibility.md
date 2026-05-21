@@ -1,5 +1,4 @@
 - **Use semantic heading levels.** Though our default code uses an `<h4>`, use the correct heading level in your own implementation.
-- **Use aria-label="progress".** Placing this `aria-label` on the element with the class `usa-step-indicator` helps provide important context to screen readers.
 - **Use visually hidden text on labels.** Use visually hidden text make the completion status of each step explicit.
 - **Indicate the current step.** When using labeled segments, use `aria-current="true"` on the list item representing the current step.
 - **Hide unlabeled segments.** There is no content inside the segments when labels aren't used, so it is safe to add `aria-hidden="true"` to the element with the class name `usa-step-indicator__segments`.

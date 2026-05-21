@@ -1,0 +1,9 @@
+title: Collection accessibility tests
+type: component
+changelogURL:
+items:
+  - date: 2024-12-18
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 3010
+    githubRepo: uswds-site

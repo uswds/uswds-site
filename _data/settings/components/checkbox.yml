@@ -5,11 +5,11 @@ contents:
     default: '"sm"'
     type: units
     description: Checkbox border radius for rounded corners.
-  - name: Selected background color
-    var: $theme-input-tile-background-color-selected
-    default: '"accent-cool-lighter"'
+  - name: Background color
+    var: $theme-input-background-color
+    default: 'default'
     type: color
-    description: Tile background color when selected.
+    description: "Background color for radio and checkbox inputs."
   - name: Tile border radius
     var: $theme-input-tile-border-radius
     default: '"md"'
@@ -20,13 +20,4 @@ contents:
     default: '"2px"'
     type: units
     description: "Tile border thickness"
-  - name: Tile border color
-    var: $theme-input-tile-border-color
-    default: '"base-lighter"'
-    type: color
-    description: Tile border color.
-  - name: Tile border color selected
-    var: $theme-input-tile-border-color-selected
-    default: '"accent-cool-light"'
-    type: color
-    description: Tile border color when selected.
+

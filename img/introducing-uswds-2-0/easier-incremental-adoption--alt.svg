@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="492" height="288" viewBox="0 0 492 288">
+<svg xmlns="http://www.w3.org/2000/svg" width="492" height="288" viewBox="0 0 492 288">
   <defs>
     <rect id="easier-incremental-adoption--alt-a" width="91.55" height="142.411" x="0" y="0" rx="2.543"/>
     <rect id="easier-incremental-adoption--alt-c" width="105.769" height="69.059" x="0" y="0"/>
@@ -65,19 +65,19 @@
       <rect width="492.079" height="288" x=".636" fill="#F0F0F0"/>
       <g opacity=".1" transform="translate(289.272 61.669)">
         <mask id="easier-incremental-adoption--alt-b" fill="#fff">
-          <use xlink:href="#easier-incremental-adoption--alt-a"/>
+          <use href="#easier-incremental-adoption--alt-a"/>
         </mask>
         <rect width="92.821" height="143.682" x="-.636" y="-.636" stroke="#171717" stroke-width="1.272" rx="2.543"/>
         <g mask="url(#easier-incremental-adoption--alt-b)">
           <g transform="translate(-5.086 11.444)">
             <mask id="easier-incremental-adoption--alt-d" fill="#fff">
-              <use xlink:href="#easier-incremental-adoption--alt-c"/>
+              <use href="#easier-incremental-adoption--alt-c"/>
             </mask>
             <g mask="url(#easier-incremental-adoption--alt-d)">
               <g transform="translate(-19.587 34.53)">
                 <g transform="translate(46.703 2.178)">
                   <mask id="easier-incremental-adoption--alt-f" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-e"/>
+                    <use href="#easier-incremental-adoption--alt-e"/>
                   </mask>
                   <g fill="#919191" mask="url(#easier-incremental-adoption--alt-f)">
                     <polygon points="0 0 25.803 0 25.803 43.74 0 43.74" transform="translate(-.31 -2.178)"/>
@@ -85,7 +85,7 @@
                 </g>
                 <g transform="translate(15.464)">
                   <mask id="easier-incremental-adoption--alt-h" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-g"/>
+                    <use href="#easier-incremental-adoption--alt-g"/>
                   </mask>
                   <g fill="#919191" mask="url(#easier-incremental-adoption--alt-h)">
                     <polygon points="0 0 44.658 0 44.658 24.413 0 24.413" transform="translate(-1.701)"/>
@@ -93,7 +93,7 @@
                 </g>
                 <g transform="translate(.928 29.712)">
                   <mask id="easier-incremental-adoption--alt-j" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-i"/>
+                    <use href="#easier-incremental-adoption--alt-i"/>
                   </mask>
                   <g fill="#919191" mask="url(#easier-incremental-adoption--alt-j)">
                     <polygon points="0 0 36.719 0 36.719 43.74 0 43.74" transform="translate(-1.701 -2.489)"/>
@@ -101,7 +101,7 @@
                 </g>
                 <g transform="translate(0 2.022)">
                   <mask id="easier-incremental-adoption--alt-l" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-k"/>
+                    <use href="#easier-incremental-adoption--alt-k"/>
                   </mask>
                   <g fill="#919191" mask="url(#easier-incremental-adoption--alt-l)">
                     <polygon points="0 0 34.734 0 34.734 45.775 0 45.775" transform="translate(-.773 -2.022)"/>
@@ -109,7 +109,7 @@
                 </g>
                 <g transform="translate(30.001 44.645)">
                   <mask id="easier-incremental-adoption--alt-n" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-m"/>
+                    <use href="#easier-incremental-adoption--alt-m"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#easier-incremental-adoption--alt-n)">
                     <polygon points="0 0 53.59 0 53.59 39.672 0 39.672" transform="translate(-6.959 -11.511)"/>
@@ -130,20 +130,20 @@
       </g>
       <g transform="translate(324.238 8.265)">
         <mask id="easier-incremental-adoption--alt-p" fill="#fff">
-          <use xlink:href="#easier-incremental-adoption--alt-o"/>
+          <use href="#easier-incremental-adoption--alt-o"/>
         </mask>
         <rect width="67.391" height="96" x="-.636" y="-.636" stroke="#FFF" stroke-width="1.272" rx="2.543"/>
         <g mask="url(#easier-incremental-adoption--alt-p)">
           <g transform="translate(-20.138 41.985)">
             <mask id="easier-incremental-adoption--alt-r" fill="#fff">
-              <use xlink:href="#easier-incremental-adoption--alt-q"/>
+              <use href="#easier-incremental-adoption--alt-q"/>
             </mask>
-            <use fill="#F0F0F0" xlink:href="#easier-incremental-adoption--alt-q"/>
+            <use fill="#F0F0F0" href="#easier-incremental-adoption--alt-q"/>
             <g mask="url(#easier-incremental-adoption--alt-r)">
               <g transform="translate(-16.1 .611)">
                 <g transform="translate(100.54 4.734)">
                   <mask id="easier-incremental-adoption--alt-t" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-s"/>
+                    <use href="#easier-incremental-adoption--alt-s"/>
                   </mask>
                   <g fill="#FFF" mask="url(#easier-incremental-adoption--alt-t)">
                     <polygon points="0 0 54.582 0 54.582 94.601 0 94.601" transform="translate(-.666 -4.734)"/>
@@ -151,7 +151,7 @@
                 </g>
                 <g transform="translate(33.292)">
                   <mask id="easier-incremental-adoption--alt-v" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-u"/>
+                    <use href="#easier-incremental-adoption--alt-u"/>
                   </mask>
                   <g fill="#FFF" mask="url(#easier-incremental-adoption--alt-v)">
                     <polygon points="0 0 97.256 0 97.256 52.895 0 52.895" transform="translate(-3.662)"/>
@@ -159,7 +159,7 @@
                 </g>
                 <g transform="translate(1.997 64.59)">
                   <mask id="easier-incremental-adoption--alt-x" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-w"/>
+                    <use href="#easier-incremental-adoption--alt-w"/>
                   </mask>
                   <g fill="#D63E04" mask="url(#easier-incremental-adoption--alt-x)">
                     <polygon points="0 0 78.4 0 78.4 94.601 0 94.601" transform="translate(-3.662 -5.41)"/>
@@ -167,7 +167,7 @@
                 </g>
                 <g transform="translate(0 4.396)">
                   <mask id="easier-incremental-adoption--alt-z" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-y"/>
+                    <use href="#easier-incremental-adoption--alt-y"/>
                   </mask>
                   <g fill="#FFF" mask="url(#easier-incremental-adoption--alt-z)">
                     <polygon points="0 0 74.431 0 74.431 98.67 0 98.67" transform="translate(-1.665 -4.396)"/>
@@ -175,7 +175,7 @@
                 </g>
                 <g transform="translate(64.586 97.055)">
                   <mask id="easier-incremental-adoption--alt-B" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-A"/>
+                    <use href="#easier-incremental-adoption--alt-A"/>
                   </mask>
                   <g fill="#FFF" mask="url(#easier-incremental-adoption--alt-B)">
                     <polygon points="0 0 116.112 0 116.112 86.464 0 86.464" transform="translate(-14.981 -25.025)"/>
@@ -195,7 +195,7 @@
       <path fill="#FFF" d="M101.721854,17.1655629 L101.721854,17.1655629 C102.424097,17.1655629 102.993377,17.7348432 102.993377,18.4370861 L102.993377,18.4370861 C102.993377,19.139329 102.424097,19.7086093 101.721854,19.7086093 L101.721854,19.7086093 C101.019611,19.7086093 100.450331,19.139329 100.450331,18.4370861 L100.450331,18.4370861 C100.450331,17.7348432 101.019611,17.1655629 101.721854,17.1655629 Z" transform="rotate(90 101.722 18.437)"/>
       <g transform="translate(324.238 171.02)">
         <mask id="easier-incremental-adoption--alt-D" fill="#fff">
-          <use xlink:href="#easier-incremental-adoption--alt-C"/>
+          <use href="#easier-incremental-adoption--alt-C"/>
         </mask>
         <rect width="67.391" height="109.351" x="-.636" y="-.636" stroke="#FFF" stroke-width="1.272" rx="2.543"/>
         <rect width="34.967" height="1.272" x="2.543" y="99.179" fill="#FFF" mask="url(#easier-incremental-adoption--alt-D)" rx=".636"/>
@@ -231,7 +231,7 @@
       </g>
       <g opacity=".099" transform="translate(106.172 141.14)">
         <mask id="easier-incremental-adoption--alt-F" fill="#fff">
-          <use xlink:href="#easier-incremental-adoption--alt-E"/>
+          <use href="#easier-incremental-adoption--alt-E"/>
         </mask>
         <rect width="92.821" height="92.821" x="-.636" y="-.636" stroke="#171717" stroke-width="1.272" rx="2.543"/>
         <rect width="35.603" height="3.179" x="2.543" y="16.53" fill="#ADADAD" mask="url(#easier-incremental-adoption--alt-F)" rx="1.589"/>
@@ -242,14 +242,14 @@
         <g mask="url(#easier-incremental-adoption--alt-F)">
           <g transform="translate(-5.086 32.424)">
             <mask id="easier-incremental-adoption--alt-H" fill="#fff">
-              <use xlink:href="#easier-incremental-adoption--alt-G"/>
+              <use href="#easier-incremental-adoption--alt-G"/>
             </mask>
             <rect width="114.437" height="40.689" x="-4.45" fill="#F0F0F0" mask="url(#easier-incremental-adoption--alt-H)"/>
             <g mask="url(#easier-incremental-adoption--alt-H)">
               <g transform="translate(-97.374 -79.187)">
                 <g transform="translate(142.703 6.691)">
                   <mask id="easier-incremental-adoption--alt-J" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-I"/>
+                    <use href="#easier-incremental-adoption--alt-I"/>
                   </mask>
                   <g fill="#ADADAD" mask="url(#easier-incremental-adoption--alt-J)">
                     <polygon points="0 0 77.408 0 77.408 133.256 0 133.256" transform="translate(-.945 -6.691)"/>
@@ -257,7 +257,7 @@
                 </g>
                 <g transform="translate(47.253)">
                   <mask id="easier-incremental-adoption--alt-L" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-K"/>
+                    <use href="#easier-incremental-adoption--alt-K"/>
                   </mask>
                   <g fill="#C9C9C9" mask="url(#easier-incremental-adoption--alt-L)">
                     <polygon points="0 0 137.945 0 137.945 75.274 0 75.274" transform="translate(-5.198)"/>
@@ -265,7 +265,7 @@
                 </g>
                 <g transform="translate(2.835 91.288)">
                   <mask id="easier-incremental-adoption--alt-N" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-M"/>
+                    <use href="#easier-incremental-adoption--alt-M"/>
                   </mask>
                   <g fill="#ADADAD" mask="url(#easier-incremental-adoption--alt-N)">
                     <polygon points="0 0 111.15 0 111.15 134.273 0 134.273" transform="translate(-5.198 -7.647)"/>
@@ -273,7 +273,7 @@
                 </g>
                 <g transform="translate(0 6.213)">
                   <mask id="easier-incremental-adoption--alt-P" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-O"/>
+                    <use href="#easier-incremental-adoption--alt-O"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#easier-incremental-adoption--alt-P)">
                     <polygon points="0 0 106.188 0 106.188 139.359 0 139.359" transform="translate(-2.363 -6.213)"/>
@@ -281,7 +281,7 @@
                 </g>
                 <g transform="translate(91.67 137.171)">
                   <mask id="easier-incremental-adoption--alt-R" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-Q"/>
+                    <use href="#easier-incremental-adoption--alt-Q"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#easier-incremental-adoption--alt-R)">
                     <polygon points="0 0 164.74 0 164.74 122.066 0 122.066" transform="translate(-21.264 -35.368)"/>
@@ -294,19 +294,19 @@
       </g>
       <g opacity=".1" transform="translate(256.212 80.106)">
         <mask id="easier-incremental-adoption--alt-T" fill="#fff">
-          <use xlink:href="#easier-incremental-adoption--alt-S"/>
+          <use href="#easier-incremental-adoption--alt-S"/>
         </mask>
         <rect width="26.702" height="52.132" x="-.636" y="-.636" stroke="#171717" stroke-width="1.272" rx="2.543"/>
         <g mask="url(#easier-incremental-adoption--alt-T)">
           <g transform="translate(-5.086 11.444)">
             <mask id="easier-incremental-adoption--alt-V" fill="#fff">
-              <use xlink:href="#easier-incremental-adoption--alt-U"/>
+              <use href="#easier-incremental-adoption--alt-U"/>
             </mask>
             <g mask="url(#easier-incremental-adoption--alt-V)" opacity=".5">
               <g transform="translate(-16.293 -38.267)">
                 <g transform="translate(79.135 3.724)">
                   <mask id="easier-incremental-adoption--alt-X" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-W"/>
+                    <use href="#easier-incremental-adoption--alt-W"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#easier-incremental-adoption--alt-X)">
                     <polygon points="0 0 42.674 0 42.674 74.257 0 74.257" transform="translate(-.524 -3.724)"/>
@@ -314,7 +314,7 @@
                 </g>
                 <g transform="translate(26.204)">
                   <mask id="easier-incremental-adoption--alt-Z" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-Y"/>
+                    <use href="#easier-incremental-adoption--alt-Y"/>
                   </mask>
                   <g fill="#2E2E2E" mask="url(#easier-incremental-adoption--alt-Z)">
                     <polygon points="0 0 76.415 0 76.415 41.706 0 41.706" transform="translate(-2.882)"/>
@@ -322,7 +322,7 @@
                 </g>
                 <g transform="translate(1.572 50.811)">
                   <mask id="easier-incremental-adoption--alt-ab" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-aa"/>
+                    <use href="#easier-incremental-adoption--alt-aa"/>
                   </mask>
                   <g fill="#919191" mask="url(#easier-incremental-adoption--alt-ab)">
                     <polygon points="0 0 61.529 0 61.529 74.257 0 74.257" transform="translate(-2.882 -4.256)"/>
@@ -330,7 +330,7 @@
                 </g>
                 <g transform="translate(0 3.458)">
                   <mask id="easier-incremental-adoption--alt-ad" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-ac"/>
+                    <use href="#easier-incremental-adoption--alt-ac"/>
                   </mask>
                   <g fill="#919191" mask="url(#easier-incremental-adoption--alt-ad)">
                     <polygon points="0 0 58.552 0 58.552 77.309 0 77.309" transform="translate(-1.31 -3.458)"/>
@@ -338,7 +338,7 @@
                 </g>
                 <g transform="translate(50.835 76.35)">
                   <mask id="easier-incremental-adoption--alt-af" fill="#fff">
-                    <use xlink:href="#easier-incremental-adoption--alt-ae"/>
+                    <use href="#easier-incremental-adoption--alt-ae"/>
                   </mask>
                   <g fill="#919191" mask="url(#easier-incremental-adoption--alt-af)">
                     <polygon points="0 0 91.302 0 91.302 68.154 0 68.154" transform="translate(-11.792 -19.686)"/>
@@ -355,9 +355,9 @@
         <circle cx="15.258" cy="15.258" r="14.623" stroke="#FFF" stroke-width="1.272"/>
         <g transform="rotate(-90 13.931 4.315)">
           <mask id="easier-incremental-adoption--alt-ah" fill="#fff">
-            <use xlink:href="#easier-incremental-adoption--alt-ag"/>
+            <use href="#easier-incremental-adoption--alt-ag"/>
           </mask>
-          <use fill="#979797" fill-rule="nonzero" xlink:href="#easier-incremental-adoption--alt-ag"/>
+          <use fill="#979797" fill-rule="nonzero" href="#easier-incremental-adoption--alt-ag"/>
           <g fill="#FFF" mask="url(#easier-incremental-adoption--alt-ah)">
             <polygon points="0 0 16.871 0 16.871 19.327 0 19.327" transform="translate(-8.01 -4.132)"/>
           </g>
@@ -367,7 +367,7 @@
     </g>
     <g transform="translate(86 26)">
       <mask id="easier-incremental-adoption--alt-aj" fill="#fff">
-        <use xlink:href="#easier-incremental-adoption--alt-ai"/>
+        <use href="#easier-incremental-adoption--alt-ai"/>
       </mask>
       <rect width="146" height="238" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
       <g mask="url(#easier-incremental-adoption--alt-aj)">
@@ -404,7 +404,7 @@
       <g mask="url(#easier-incremental-adoption--alt-aj)">
         <g transform="translate(-7.922 51.054)">
           <mask id="easier-incremental-adoption--alt-al" fill="#fff">
-            <use xlink:href="#easier-incremental-adoption--alt-ak"/>
+            <use href="#easier-incremental-adoption--alt-ak"/>
           </mask>
           <rect width="163" height="42" x="-1" fill="#E6E6E6" mask="url(#easier-incremental-adoption--alt-al)"/>
         </g>
@@ -419,20 +419,20 @@
     </g>
     <g transform="translate(262 26)">
       <mask id="easier-incremental-adoption--alt-an" fill="#fff">
-        <use xlink:href="#easier-incremental-adoption--alt-am"/>
+        <use href="#easier-incremental-adoption--alt-am"/>
       </mask>
       <rect width="146" height="238" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
       <g mask="url(#easier-incremental-adoption--alt-an)">
         <g transform="translate(-7.922 64)">
           <mask id="easier-incremental-adoption--alt-ap" fill="#fff">
-            <use xlink:href="#easier-incremental-adoption--alt-ao"/>
+            <use href="#easier-incremental-adoption--alt-ao"/>
           </mask>
           <rect width="180" height="64" x="-7" fill="#171717" mask="url(#easier-incremental-adoption--alt-ap)"/>
           <g mask="url(#easier-incremental-adoption--alt-ap)">
             <g transform="translate(-15.078 -81.054)">
               <g transform="translate(135.446 6.415)">
                 <mask id="easier-incremental-adoption--alt-ar" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption--alt-aq"/>
+                  <use href="#easier-incremental-adoption--alt-aq"/>
                 </mask>
                 <g fill="#81AEFC" mask="url(#easier-incremental-adoption--alt-ar)">
                   <polygon points="0 0 74 0 74 126 0 126" transform="translate(-.897 -6.415)"/>
@@ -440,7 +440,7 @@
               </g>
               <g transform="translate(44.85)">
                 <mask id="easier-incremental-adoption--alt-at" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption--alt-as"/>
+                  <use href="#easier-incremental-adoption--alt-as"/>
                 </mask>
                 <g fill="#3E76C2" mask="url(#easier-incremental-adoption--alt-at)">
                   <rect width="132" height="71" transform="translate(-4.933)"/>
@@ -448,7 +448,7 @@
               </g>
               <g transform="translate(2.691 87.524)">
                 <mask id="easier-incremental-adoption--alt-av" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption--alt-au"/>
+                  <use href="#easier-incremental-adoption--alt-au"/>
                 </mask>
                 <g fill="#D63E04" mask="url(#easier-incremental-adoption--alt-av)">
                   <polygon points="0 0 107 0 107 126 0 126" transform="translate(-4.933 -7.332)"/>
@@ -456,7 +456,7 @@
               </g>
               <g transform="translate(0 5.957)">
                 <mask id="easier-incremental-adoption--alt-ax" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption--alt-aw"/>
+                  <use href="#easier-incremental-adoption--alt-aw"/>
                 </mask>
                 <g fill="#F6BD9C" mask="url(#easier-incremental-adoption--alt-ax)">
                   <polygon points="0 0 101 0 101 132 0 132" transform="translate(-2.242 -5.957)"/>
@@ -464,7 +464,7 @@
               </g>
               <g transform="translate(87.009 131.515)">
                 <mask id="easier-incremental-adoption--alt-az" fill="#fff">
-                  <use xlink:href="#easier-incremental-adoption--alt-ay"/>
+                  <use href="#easier-incremental-adoption--alt-ay"/>
                 </mask>
                 <g fill="#2E2E2E" mask="url(#easier-incremental-adoption--alt-az)">
                   <polygon points="0 0 157 0 157 115 0 115" transform="translate(-20.182 -33.91)"/>
@@ -493,9 +493,9 @@
           <rect width="115" height="4" y="12" fill="#E6E6E6" rx="2"/>
           <g transform="translate(0 20)">
             <mask id="easier-incremental-adoption--alt-aC" fill="#fff">
-              <use xlink:href="#easier-incremental-adoption--alt-aA"/>
+              <use href="#easier-incremental-adoption--alt-aA"/>
             </mask>
-            <use fill="#000" filter="url(#easier-incremental-adoption--alt-aB)" xlink:href="#easier-incremental-adoption--alt-aA"/>
+            <use fill="#000" filter="url(#easier-incremental-adoption--alt-aB)" href="#easier-incremental-adoption--alt-aA"/>
             <g fill="#DCDEE0" mask="url(#easier-incremental-adoption--alt-aC)">
               <polygon points="0 0 117 0 117 6 0 6" transform="translate(-1 -1)"/>
             </g>
@@ -504,18 +504,18 @@
             <rect width="16" height="2" fill="#E6E6E6" rx="1"/>
             <g transform="translate(0 4)">
               <mask id="easier-incremental-adoption--alt-aF" fill="#fff">
-                <use xlink:href="#easier-incremental-adoption--alt-aD"/>
+                <use href="#easier-incremental-adoption--alt-aD"/>
               </mask>
-              <use fill="#000" filter="url(#easier-incremental-adoption--alt-aE)" xlink:href="#easier-incremental-adoption--alt-aD"/>
+              <use fill="#000" filter="url(#easier-incremental-adoption--alt-aE)" href="#easier-incremental-adoption--alt-aD"/>
               <g fill="#DCDEE0" mask="url(#easier-incremental-adoption--alt-aF)">
                 <polygon points="0 0 18 0 18 4 0 4" transform="translate(-1 -1)"/>
               </g>
             </g>
             <g transform="translate(0 8)">
               <mask id="easier-incremental-adoption--alt-aI" fill="#fff">
-                <use xlink:href="#easier-incremental-adoption--alt-aG"/>
+                <use href="#easier-incremental-adoption--alt-aG"/>
               </mask>
-              <use fill="#000" filter="url(#easier-incremental-adoption--alt-aH)" xlink:href="#easier-incremental-adoption--alt-aG"/>
+              <use fill="#000" filter="url(#easier-incremental-adoption--alt-aH)" href="#easier-incremental-adoption--alt-aG"/>
               <g fill="#DCDEE0" mask="url(#easier-incremental-adoption--alt-aI)">
                 <polygon points="0 0 18 0 18 4 0 4" transform="translate(-1 -1)"/>
               </g>
@@ -559,9 +559,9 @@
     <g transform="translate(240 138)">
       <g transform="translate(5 1)">
         <mask id="easier-incremental-adoption--alt-aK" fill="#fff">
-          <use xlink:href="#easier-incremental-adoption--alt-aJ"/>
+          <use href="#easier-incremental-adoption--alt-aJ"/>
         </mask>
-        <use fill="#979797" fill-rule="nonzero" xlink:href="#easier-incremental-adoption--alt-aJ"/>
+        <use fill="#979797" fill-rule="nonzero" href="#easier-incremental-adoption--alt-aJ"/>
         <g fill="#C3512C" mask="url(#easier-incremental-adoption--alt-aK)">
           <rect width="15" height="18" transform="translate(-7 -4)"/>
         </g>

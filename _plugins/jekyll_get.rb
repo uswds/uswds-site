@@ -32,15 +32,17 @@ module Jekyll_Get
       url = d['json']
       data_source = '.jekyll_get_cache'
       path = "#{data_source}/#{name}.json"
-      if not File.exists?(path)
+      if not File.exist?(path)
         FileUtils.mkpath File.dirname(path)
         print "Caching #{url} in #{path}...\n"
-        data = JSON.load(URI.open(get_final_url(url)))
-        URI.open(path, 'wb') do |file|
+        githubJekyllCache = URI(get_final_url(url)).open
+        data = JSON.load(githubJekyllCache)
+        File.open(path, 'wb') do |file|
           file << JSON.pretty_generate(data)
         end
       end
-      site.data[name] = JSON.load(URI.open(path))
+      cacheJSON = File.open(path)
+      site.data[name] = JSON.load(cacheJSON)
       if d['decode_content']
         decode_content site.data[name]
       end

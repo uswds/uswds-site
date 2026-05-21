@@ -9,6 +9,7 @@ redirect_from:
   - /components/colors/
   - /design-tokens/color/
   - /colors/
+  - /color/
 subnav:
   - text: Introduction
     href: '#introduction'
@@ -22,6 +23,10 @@ subnav:
     href: '#further-reading'
   - text: Tools
     href: '#tools'
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: tokens-color
 ---
 
 ## Introduction
@@ -38,7 +43,7 @@ USWDS organizes its color tokens into [theme tokens]({{ site.baseurl }}/design-t
 
 Throughout our documentation and guidance, we’ll use the terms "color," "color family," and "grade" — but what do we mean when we use them?
 
-**Color** is any specific swatch in our System token palettes, like `red-50`, `primary-base`, or `indigo-warm-60v`.
+**Color** is any specific swatch in our [system color token palette]({{ site.baseurl }}/design-tokens/color/system-tokens/), like `red-50`, `green-cool-10`, or `indigo-warm-60v`.
 
 **Color family** is a group of colors that all have the same hue on a color wheel (refer to [USWDS color wheels](#uswds-color-wheels)). Each contains a number of individual colors, distinguished from each other by the brightness or saturation. A System token's color family typically has a conventional color name, like `red` or `blue-warm`, and a theme token's color family has a role-based name, like `primary`.
 
@@ -47,7 +52,7 @@ Throughout our documentation and guidance, we’ll use the terms "color," "color
 </div>
 
 ## Color and accessibility
-Color is a powerful tool with an unreliable impact — its effects are neither consistent nor predictable across a population. [Per NIH, color insensitivity impacts approximately 0.5% of adult women and 8% of adult men](https://nei.nih.gov/health/color_blindness/facts_about) (4.5% of the total population). Color insensitivity can make it difficult to distinguish hues (red–green color blindness is the most common form), and some rare conditions prevent the perception of hue altogether. Commonplace vision problems like nearsightedness and astigmatism (among others) also affect how well folks perceive color and contrast.
+Color is a powerful tool with an unreliable impact — its effects are neither consistent nor predictable across a population. Per NIH, color insensitivity impacts [approximately 0.5% of adult women](https://pmc.ncbi.nlm.nih.gov/articles/PMC3328350/) and [8% of adult men](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness) (4.5% of the total population). Color insensitivity can make it difficult to distinguish hues (red–green color blindness is the most common form), and some rare conditions prevent the perception of hue altogether. Commonplace vision problems like nearsightedness and astigmatism (among others) also affect how well folks perceive color and contrast.
 
 Accessibility is not a special case. In the second quarter of 2018, [sites using USWDS topped 1.4 billion pageviews]({{ site.baseurl }}/about/whats-new/). 4.5% of 1.4 billion is around 60 million pageviews — when it comes to accessibility, thinking broadly and inclusively isn’t just a good idea, it’s our mission and responsibility.
 
@@ -55,7 +60,7 @@ Accessibility is not a special case. In the second quarter of 2018, [sites using
 
 ### Accessible color pairings
 
-USWDS helps teams choose accessible colors with a color-grade system. The following figure represents the `gray` color family in grades 5–90 (grade 0 is `white`):
+USWDS helps teams choose accessible colors with a color-grade system. The following figure represents the `gray` color family in grades 5–90:
 
 {% capture gray-grade %}
 <div class="padding-2 bg-white radius-md measure-3">
@@ -125,7 +130,7 @@ Magic numbers work because each grade conforms to a specific range of values for
 | `10` | `0.750` | `0.820`
 | `20` | `0.500` | `0.650`
 | `30` | `0.350` | `0.450`
-| `40` | `0.250` | `0.300`
+| `40` | `0.225` | `0.300`
 | `50` | `0.175` | `0.183`
 | `60` | `0.100` | `0.125`
 | `70` | `0.050` | `0.070`
@@ -174,7 +179,7 @@ The following image shows our vivid System tokens wheel.
 
 If we use color intentionally, consistently, and sensitively, it can make a big difference in the way people understand and connect with our pages, our products and services, and our message. Color is an important component of visual and emotional cognition, and that’s precisely what makes it difficult to use well — what’s strong and confident to one person can be jarring or alarming to another.
 
-**Start in black and white.** Start with your core message and use type scale and hierarchy to test and refine its effectiveness. Then, introduce color to support that message. Color can overwhelm interpretation, and since [approximately 4.5% of the population](https://nei.nih.gov/health/color_blindness/facts_about) has some kind of color insensitivity, it’s important to convey your message without relying on color.
+**Start in black and white.** Start with your core message and use type scale and hierarchy to test and refine its effectiveness. Then, introduce color to support that message. Color can overwhelm interpretation, and since approximately 4.5% of the population has some kind of color insensitivity, it’s important to convey your message without relying on color.
 
 **Put the practical before the emotional.** Because color can do so much, it's helpful to keep focused. Limit the complexity of color by concentrating on functional requirements (like status states or directions) first. Then, use color as progressive enhancement to reinforce or balance the emotional needs of the content. Even so, bear in mind that the effects of color are often personal and cultural as much as, or more so than, physiological. Understand that using color to optimize for tone necessarily excludes some users in subtle and not-so-subtle ways.
 
@@ -182,11 +187,11 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 
 **Ask visual designers.** Your group or agency may have visual designers either on staff or available as contractors. They can be an invaluable resource for building palettes or getting feedback on existing ones. USWDS benefits from the collective experience of visual designers across agencies to build our System palette and provide a range of prebuilt project theme palettes. If you have visual design resources, use them.
 
-**Don’t use color exclusively to convey meaning.** Even Section 508 conformant contrast doesn’t ensure that colors are distinguishable for a significant percentage of your audience. [Approximately 0.5% of adult women and 8% of adult men](https://nei.nih.gov/health/color_blindness/facts_about) have some kind of color insensitivity, especially between red and green. Color should only be used as progressive enhancement — if color is the only signal, that signal won’t get through as intended to everyone.
+**Don’t use color exclusively to convey meaning.** Even Section 508 conformant contrast doesn’t ensure that colors are distinguishable for a significant percentage of your audience. [Approximately 0.5% of adult women and 8% of adult men](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness) have some kind of color insensitivity, especially between red and green. Color should only be used as progressive enhancement — if color is the only signal, that signal won’t get through as intended to everyone.
 
 ## Further reading
 - Accessibility: Color and contrast
-  [https://accessibility.digital.gov/visual-design/color-and-contrast](https://accessibility.digital.gov/visual-design/color-and-contrast){:.display-block}
+  [https://digital.gov/guides/accessibility-for-teams/visual-design#color-and-contrast](https://digital.gov/guides/accessibility-for-teams/visual-design#color-and-contrast){:.display-block}
 - Color and readability
   [https://www.w3.org/WAI/RD/2012/text-customization/r11](https://www.w3.org/WAI/RD/2012/text-customization/r11){:.display-block}
 - Improving accessibility for colorblind users
@@ -198,7 +203,7 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 - W3C: Contrast levels for readability
   [https://www.w3.org/WAI/test-evaluate/preliminary/#contrast](https://www.w3.org/WAI/test-evaluate/preliminary/#contrast){:.display-block}
 - W3C: Gap analysis of the state of accessibility for people with learning disabilities and cognitive disabilities
-  [https://w3c.github.io/wcag/coga/gap-analysis.html](https://w3c.github.io/wcag/coga/gap-analysis.html){:.display-block}
+  [https://www.w3.org/TR/coga-gap-analysis/](https://www.w3.org/TR/coga-gap-analysis/){:.display-block}
 - W3C: Low vision needs
   [https://www.w3.org/TR/low-vision-needs/](https://www.w3.org/TR/low-vision-needs/){:.display-block}
 

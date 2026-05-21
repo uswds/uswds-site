@@ -5,6 +5,7 @@ tags:
 - web design standards
 - design
 category: About
+expiration_date: 2024-04-15
 ---
 The U.S. Web Design Standards are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this ninth post in our series, we met with the team at USA.gov to talk about their use of the Standards. [USA.gov](https://USA.gov), and its Spanish counterpart [GobiernoUSA.gov](https://GobiernoUSA.gov), are the official guides for government information.
 
@@ -69,4 +70,4 @@ From an accessibility standpoint, we created an issue log and gave it to the Sta
 
 ---
 
-We’re looking to learn more [from agencies that have used the Standards](/getting-started/showcase/); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov). You can also chat with the team in the new [public Slack channel for the Standards](https://chat.18f.gov/)!
+We’re looking to learn more [from agencies that have used the Standards](/getting-started/showcase/); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov). You can also chat with the team in the new [public Slack channel for the Standards](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform)!

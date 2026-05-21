@@ -1,0 +1,4 @@
+- **In-page navigation.** (2014) Retrieved on August 15, 2022, from [https://www.w3.org/WAI/tutorials/page-structure/in-page-navigation/](https://www.w3.org/WAI/tutorials/page-structure/in-page-navigation/)
+- **Intersection Observer.** (July 6, 2022) Retrieved on August 15, 2022, from [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
+- **Intersection Observer API.** (July 23, 2022) Retrieved on August 15, 2022, from [https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+- **IntersectionObserverEntry Interface.** (June 1, 2022) Retrieved on August 15, 2022, from [https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry)

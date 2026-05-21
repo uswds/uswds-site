@@ -10,12 +10,12 @@ contents:
     type: boolean
   - name: Utilities uselist
     usage: |
-      Include a list of all utility modules to output. Ex: `("align-tems", "border", "margin", "padding")`. `default` includes all utilities.
+      Include a list of all utility modules to output. Ex: `("align-items", "border", "margin", "padding")`. `default` includes all utilities.
     var: $output-these-utilities
     default: "default"
     type: list
     description: |
-      Include a list of all utility modules to output. Ex: `("align-tems", "border", "margin", "padding")`. `default` includes all utilities.
+      Include a list of all utility modules to output. Ex: `("align-items", "border", "margin", "padding")`. `default` includes all utilities.
   - name: Utility breakpoints
     description: |
       Set which mobile-first breakpoints are output for the utilities.
@@ -59,6 +59,13 @@ contents:
         description:
         value: "false"
         type: boolean
+
+  - name: Custom breakpoints
+    description: |
+      Set additional custom mobile-first breakpoints to be output for the utilities. Values must be passed in with `px` values inside a Sass map.
+    var: $theme-utility-breakpoints-custom
+    default:
+    type: map
 
   - name: Global color palettes
     description: |
@@ -108,8 +115,8 @@ contents:
   - name: "Utility manual values"
     description: |
       Utilities output with the tokens and values set in the manual values map.
-    var: $[utility-module]-palettes
-    default: '"palette-[utility-module]-manual-values"'
+    var: $[utility-module]-manual-values
+    default:
     type: map
     map:
       - key: "[token name]"

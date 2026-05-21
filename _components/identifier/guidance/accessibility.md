@@ -1,3 +1,3 @@
 - **Use proper landmarks for each identifier section.** Each identifier section should be either a `section` or a `nav`, and include an appropriate `aria-label` property.
-- **Add an `alt` attribute to each logo image.** Use `[Agency shortname] logo` as the alt text for each logo image you add..
+- **Add an `alt` attribute to each logo image.** Use `[Agency shortname] logo` as the alt text for each logo image you add.
 - **Use `image` role for any SVG images.** Use `role="img"` with any SVG logo image.

@@ -1,3 +1,3 @@
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls]({{ site.baseurl }}/components/form).
 - **Use fieldset and legend.** Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
-- **Use proper labels and attributes.** Each radio button should have a `<label>`. Associate the two by matching the `<label>`’s for attribute to the `<input>`’s `id` attribute.
+- **Use proper labels and attributes.** Each radio button should have a `<label>`. Associate the two by matching the `<label>`’s `for` attribute to the `<input>`’s `id` attribute.

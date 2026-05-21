@@ -3,8 +3,7 @@ title: Looking ahead
 subhead: What’s next
 nav_title: What’s next
 description: "In our short-term vision, agency teams will have what they need to more easily adopt and effectively use the design system."
-meta:
-  og:image: /img/next/og-next-vision.png
+image: /img/next/og-next-vision.png
 
 permalink: /next/looking-ahead/
 slug: "whats-next"
@@ -70,7 +69,7 @@ We’ll provide regular updates on our progress in [monthly calls](https://digit
 * footnotes will be placed here. This line is necessary
 {:footnotes }
 
-[^8]: Dotgov Data - List of federal .gov domains. (n.d.). Retrieved January 06, 2021, from <https://home.dotgov.gov/data/>
+[^8]: get.gov data - List of federal .gov domains. (n.d.). Retrieved January 06, 2021, from <https://get.gov/about/data/>
 
 </div>
     </div>

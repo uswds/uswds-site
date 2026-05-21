@@ -1,0 +1,18 @@
+{% comment %}
+  Container for site card group.
+  
+  Seen in "What's New" page - `/about/whats-new/`
+{% endcomment %}
+
+<ul class="usa-card-group {{ include.listClasses }}">
+  {% for card in include.cards %}
+    <li class="usa-card site-component-card {{ include.listItemClasses }}">
+      {% include site-card.html
+        heading=card.heading
+        body=card.body
+        linkUrl=card.linkUrl
+        linkText=card.linkText
+      %}
+    </li>
+  {%  endfor %}
+</ul>

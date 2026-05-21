@@ -82,7 +82,7 @@ The following gives a brief overview of a handful of metrics. If you're looking 
 
 ### Onload
 
-[The `load` event](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload) (as shown in MDN Web Docs) fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links, and sub-frames have finished loading.
+[The `load` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event) (as shown in MDN Web Docs) fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links, and sub-frames have finished loading.
 
 #### Pros
 - Easy to calculate for most pages
@@ -209,7 +209,7 @@ The typical example of a custom metric is Twitter using a "time to first tweet."
 
 ### First meaningful paint
 
-As described on developers.google.com, [First meaningful paint](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint) is a browser-supplied metric that measures how long it takes for the most meaningful content to be fully rendered on the site. Measurement involves watching all layout events as the page loads, filtering by events for new objects above the page fold, and then accounting for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes for the most important content on the site to be fully rendered. This was confirmed by having first meaningful paint tested against speed index for a large number of sites. This metric is closely related to speed index, as both are accurate measurements of a user’s perceived performance.
+As described on developer.chrome.com, [First meaningful paint](https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint) is a browser-supplied metric that measures how long it takes for the most meaningful content to be fully rendered on the site. Measurement involves watching all layout events as the page loads, filtering by events for new objects above the page fold, and then accounting for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes for the most important content on the site to be fully rendered. This was confirmed by having first meaningful paint tested against speed index for a large number of sites. This metric is closely related to speed index, as both are accurate measurements of a user’s perceived performance.
 
 #### Pros
 - Similar to speed index, it is a very accurate measurement of how the user perceives the performance of a site.
@@ -222,7 +222,7 @@ As described on developers.google.com, [First meaningful paint](https://develope
 First meaningful paint can be measured in one of two ways:
 
 ##### Lighthouse
-[Lighthouse], the Chrome plugin and command line testing tool described on Google for Web Developers, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) (as explained on the Google Tools for Web Developers page) with the appropriate options.
+[Lighthouse], the Chrome plugin and command line testing tool described on Chrome for developers, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developer.chrome.com/docs/lighthouse/overview/#cli) (as explained on the Chrome for developers) with the appropriate options.
 
 ##### Chrome web browser
 You can measure first meaningful paint timing for any page in the [Chrome DevTools Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool).
@@ -250,7 +250,7 @@ Time to interactive can be measure in one of two ways:
 
 ##### Lighthouse
 
-[Lighthouse], the Chrome plugin and command line testing tool, includes time to interactive as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) (as explained on the Google Tools for Web Developers page) with the appropriate options.
+[Lighthouse], the Chrome plugin and command line testing tool, includes time to interactive as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developer.chrome.com/docs/lighthouse/overview/#cli) (as explained on the Chrome for developers page) with the appropriate options.
 
 ##### Chrome web browser
 
@@ -258,7 +258,7 @@ Time to interactive can be found in statistics in the Chrome browser.
 
 ### Input latency
 
-Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a [RUM metric](#real-time-monitoring), as it’s more accurate to gather information as real users are interacting with the site. It’s also possible to test [synthetically](#synthetic-monitoring). For more information, see [Lighthouse's input latency documentation](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency) (available via Google Tools for Web Developers page).
+Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a [RUM metric](#real-time-monitoring), as it’s more accurate to gather information as real users are interacting with the site. It’s also possible to test [synthetically](#synthetic-monitoring). For more information, see [Lighthouse's first input delay documentation](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid) (available via Chrome for developers page).
 
 #### Pros
 - It's the only metric that tests how the site responds over time as the user interacts with it.
@@ -272,7 +272,7 @@ The only known way to test input latency right now is with [Lighthouse]. This to
 
 ### Render start
 
-Render start is the time from the [first byte](#first-byte) to when the browser draws the first pixel on the screen. It is a [synthetic](#synthetic-monitoring) metric, as there’s no way to get the metric from the browser itself. It is closely related to [first paint](#first-paint), but it's more accurate because it's calculated via visual cues. It's also harder to test than first paint because it requires screen capturing. See [this WebPagetest discussion](https://www.webpagetest.org/forums/showthread.php?tid=13265) for more information.
+Render start is the time from the [first byte](#first-byte) to when the browser draws the first pixel on the screen. It is a [synthetic](#synthetic-monitoring) metric, as there’s no way to get the metric from the browser itself. It is closely related to [first paint](#first-paint), but it's more accurate because it's calculated via visual cues. It's also harder to test than first paint because it requires screen capturing. See [this WebPagetest discussion](https://forums.webpagetest.org/t/startrender-vs-first-paint/8990) for more information.
 
 Render start measures how long it takes for blocking scripts, style sheets, and other processes to complete before the browser can start rendering the page. It will point to problems in the request pipeline, such as not deferring or placing scripts at the end of the document, or requiring too many blocking CSS resources. It’s generally less useful than more complete visual metrics, such as [speed index](#speed-index) and [first paint](#first-paint).
 
@@ -302,7 +302,7 @@ The main reason to use first paint over the more accurate [render start](#render
 
 #### How to measure
 
-First paint can be accessed via the [performance timing API] on MDN Web Docs in supported browsers, such as recent versions of Chrome, Firefox, and Internet Explorer. In Internet Explorer it can be accessed via `performance.timing.msFirstPaint` ([more info from Microsoft](https://msdn.microsoft.com/en-us/library/ff974719(v=vs.85).aspx)). In Chrome it can be accessed via `window.chrome.loadTimes().firstPaintTime` ([more info from Chrome, via GitHub](https://gist.github.com/acdha/a1fd7e91f8cd5c1f6916)). It’s also available in most testing tools.
+First paint can be accessed via the [performance timing API] on MDN Web Docs in supported browsers, such as recent versions of Chrome, Firefox, and Internet Explorer. In Internet Explorer it can be accessed via `performance.timing.msFirstPaint` ([more info from Microsoft](https://learn.microsoft.com/en-us/previous-versions/ff974719(v=vs.85))). In Chrome it can be accessed via `window.chrome.loadTimes().firstPaintTime` ([more info from Chrome, via GitHub](https://gist.github.com/acdha/a1fd7e91f8cd5c1f6916)). It’s also available in most testing tools.
 
 ### First byte
 
@@ -389,6 +389,6 @@ var numberOfElements = document.getElementsByTagName('*').length;
 [critical CSS]: https://www.smashingmagazine.com/2015/08/understanding-critical-css/
 [WebPagetest]: https://www.webpagetest.org/
 [SpeedCurve]: https://speedcurve.com/
-[Lighthouse]: https://developers.google.com/web/tools/lighthouse/
+[Lighthouse]: https://developer.chrome.com/docs/lighthouse/overview/
 [performance timing API]: https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
 [HTTP/2]: https://en.wikipedia.org/wiki/HTTP/2

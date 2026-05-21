@@ -1,0 +1,1 @@
+- **Wait to validate.** Only show error validation messages or stylings after a user has interacted with a particular field.

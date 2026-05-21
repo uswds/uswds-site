@@ -61,6 +61,22 @@ display:
     value: units(-2.5)
   - class: .bottom-neg-3
     value: units(-3)
+  - class: .bottom-neg-4
+    value: units(-4)
+  - class: .bottom-neg-5
+    value: units(-5)
+  - class: .bottom-neg-6
+    value: units(-6)
+  - class: .bottom-neg-7
+    value: units(-7)
+  - class: .bottom-neg-8
+    value: units(-8)
+  - class: .bottom-neg-9
+    value: units(-9)
+  - class: .bottom-neg-10
+    value: units(-10)
+  - class: .bottom-neg-15
+    value: units(-15)
   - class: .bottom-auto
     value: auto
   - class: .bottom-full
@@ -99,6 +115,22 @@ display:
     value: units(-2.5)
   - class: .left-neg-3
     value: units(-3)
+  - class: .left-neg-4
+    value: units(-4)
+  - class: .left-neg-5
+    value: units(-5)
+  - class: .left-neg-6
+    value: units(-6)
+  - class: .left-neg-7
+    value: units(-7)
+  - class: .left-neg-8
+    value: units(-8)
+  - class: .left-neg-9
+    value: units(-9)
+  - class: .left-neg-10
+    value: units(-10)
+  - class: .left-neg-15
+    value: units(-15)
   - class: .left-auto
     value: auto
   - class: .left-full
@@ -137,6 +169,22 @@ display:
     value: units(-2.5)
   - class: .right-neg-3
     value: units(-3)
+  - class: .right-neg-4
+    value: units(-4)
+  - class: .right-neg-5
+    value: units(-5)
+  - class: .right-neg-6
+    value: units(-6)
+  - class: .right-neg-7
+    value: units(-7)
+  - class: .right-neg-8
+    value: units(-8)
+  - class: .right-neg-9
+    value: units(-9)
+  - class: .right-neg-10
+    value: units(-10)
+  - class: .right-neg-15
+    value: units(-15)
   - class: .right-auto
     value: auto
   - class: .right-full
@@ -175,6 +223,22 @@ display:
     value: units(-2.5)
   - class: .top-neg-3
     value: units(-3)
+  - class: .top-neg-4
+    value: units(-4)
+  - class: .top-neg-5
+    value: units(-5)
+  - class: .top-neg-6
+    value: units(-6)
+  - class: .top-neg-7
+    value: units(-7)
+  - class: .top-neg-8
+    value: units(-8)
+  - class: .top-neg-9
+    value: units(-9)
+  - class: .top-neg-10
+    value: units(-10)
+  - class: .top-neg-15
+    value: units(-15)
   - class: .top-auto
     value: auto
   - class: .top-full

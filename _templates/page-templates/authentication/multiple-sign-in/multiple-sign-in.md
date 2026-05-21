@@ -27,8 +27,12 @@ subnav:
     href: '#multiple-sign-in-options-code'
   - text: Guidance
     href: '#multiple-sign-in-options-guidance'
+  - text: Latest updates
+    href: '#changelog'
 title: Multiple sign-in options
 type: template
+changelog:
+  key: template-multiple-sign-in
 ---
 If you have multiple sign-in options, use this template to guide users to access their account through a prioritized option.
 

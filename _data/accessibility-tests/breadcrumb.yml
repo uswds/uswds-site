@@ -1,0 +1,118 @@
+title: Breadcrumb
+component_status: pass
+test_items:
+  # General tests
+  - summary: Breadcrumb text and background meet color contrast requirements.
+    summary_additional: |
+      When you use a color contrast checker to view the breadcrumb navigation,
+      contrast between the text and background colors is at least 4.5:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.3
+  - summary: Breadcrumb separators (arrows) meet color contrast requirements.
+    summary_additional: |
+      When you use a color contrast checker to view the breadcrumb navigation,
+      contrast between the separators (arrows) and background colors is at least 3:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.11
+  - summary: Breadcrumb links appear in the same location and order on every page of the website.
+    summary_additional: |
+      When you navigate to different pages on the website, the breadcrumb links are
+      always in the same order and in the same place.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 3.2.3
+  - summary: Breadcrumb links provide location within a set of pages.
+    summary_additional: |
+      When navigating through different pages,
+      the breadcrumb provides clarity on your location on the site.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.8
+  - summary: Color is not the only method used to convey the breadcrumb link states.
+    summary_additional: |
+      When navigating through the breadcrumb links, you can read text to understand what page you are on.
+      There may also be underlining missing to indicate you are on the current page.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.1
+  # Zoom/screen magnification tests
+  - summary: Breadcrumb text and links are visible and functional when screen is magnified.
+    summary_additional: |
+      When you zoom in to 200%, breadcrumb link text is still readable and legible and properly sized.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.4
+  - summary: Breadcrumb text and links can wrap when magnified more than 200%.
+    summary_additional: |
+      When you zoom in to 400%, longer breadcrumb link text may wrap,
+      but is still readable and legible and properly sized.
+    test_status: conditional
+    test_type: zoom
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.10
+  # Keyboard navigation tests
+  - summary: Keyboard can access all links in the breadcrumb.
+    summary_additional: |
+      When you navigate through the breadcrumb navigation with a keyboard,
+      you can interact with every link inside it.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.1.1
+  - summary: Focus follows logical content order.
+    summary_additional: |
+      When you tab through the breadcrumb with a keyboard, the focus on the links stays in logical
+      order in relation to the other links in the breadcrumb.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.3
+  - summary: Focus indicator is clearly visible in breadcrumb.
+    summary_additional: |
+      When you use a keyboard to tab into the breadcrumb, the links have a visible underline,
+      bold style or other clear indication that links are interactive.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.7
+  # Screen reader tests
+  - summary: Screen reader announces breadcrumb navigation region and items.
+    summary_additional: |
+      When using a screen reader to access the breadcrumb navigation,
+      you hear "breadcrumb navigation" and the list of items in the navigation.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.1
+  - summary: Screen reader announces breadcrumb navigation in hierarchical order.
+    summary_additional: |
+      When you use a screen reader and reach the breadcrumb navigation,
+      items will be announced in the order that reflects order of the pages on the site.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.2
+  - summary: Screen reader announces breadcrumb link titles and state of each link.
+    summary_additional: |
+      When using a screen reader and you tab through the breadcrumb links, you hear link title and if it has been visited or not.
+      You will also hear "current" for the final breadcrumb item.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 4.1.2
+  - summary: Screen reader provides direct description of links.
+    summary_additional: |
+      When you navigate to the breadcrumb with a screen reader,
+      link titles are read aloud, and match the text seen on screen.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.4

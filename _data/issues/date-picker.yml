@@ -1,0 +1,10 @@
+# These issues are also pulled into date range picker page.
+# See: `known_issues_key` in date-range-picker.md.
+title: Date picker
+alert_type: info
+items:
+- date: 2023-09-29
+  summary: Users had trouble correctly typing dates in the input field.
+  summary_additional:
+  issue_repo: uswds
+  issue_number: 5534

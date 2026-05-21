@@ -1,0 +1,44 @@
+title: Margin and padding utilities
+type: utility
+changelogURL:
+items:
+  - date: 2021-12-21
+    summary: Added documentation for values `10`, `15`, and `margin-neg-4` through `margin-neg-15`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1940
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2021-12-21
+    summary: Fixed the example display for "Padding on all sides".
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1940
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2021-06-16
+    summary: Added `margin-neg-4` through `margin-neg-15` to the default set.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4212
+    githubRepo: uswds
+    versionUswds: 2.12.0
+

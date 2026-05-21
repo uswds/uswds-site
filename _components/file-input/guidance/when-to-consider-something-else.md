@@ -1,3 +1,3 @@
 - **Documents are optional.** Avoid asking users to provide documents if you don't require them.
-- **Asynchronous upload.** The file input component doesn't support asynchronous uploading. Files are POSTed only on form submission.
+- **Asynchronous upload.** The file input component doesn't support asynchronous uploading. Files will `POST` only on form submission.
 - **Asking for large files.** Be mindful that some users might have limited connectivity or data plans.

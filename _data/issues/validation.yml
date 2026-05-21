@@ -1,0 +1,13 @@
+title: Validation
+alert_type: info
+items:
+- date: 2023-11-28
+  summary: Screen reader and screen magnification users did not notice when the validation status changed.
+  summary_additional:
+  issue_repo: uswds
+  issue_number: 5642
+- date: 2023-10-25
+  summary: Some users are confused about the purpose of the validation component.
+  summary_additional: The component does not match user expectations of how their information should be validated in a form input.
+  issue_repo: uswds
+  issue_number: 5750

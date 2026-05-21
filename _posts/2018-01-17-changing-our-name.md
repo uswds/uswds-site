@@ -3,6 +3,7 @@ title: "Changing our name to the U.S. Web Design System"
 tags: updates
 category: About
 excerpt: "After listening to a lot of thoughtful feedback and discussion from a wide range of voices in the government web community, we’ve decided to change our name to the U.S. Web Design System."
+expiration_date: 2024-04-15
 ---
 
 After listening to a lot of [thoughtful feedback and discussion](https://github.com/uswds/uswds/issues/2240) (through GitHub and other channels) from a wide range of voices in the government web community, **we’ve decided to change our name to the U.S. Web Design System**. (You don’t need to update any code for this, it’s simply an announcement.)

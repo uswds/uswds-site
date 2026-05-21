@@ -1,0 +1,22 @@
+{% comment %}
+  Displays a single graphic list item.
+
+  This partial is a child of component-graphic-list.
+
+  @param {string} icon - Icon name from usa icons.
+  @param {string} heading
+  @param {string} body
+{% endcomment %}
+
+<div class="usa-media-block {{ graphic_list_columns | default: "tablet:grid-col-6" }}">
+  <div class="usa-media-block__img">
+    {% include icon.html icon=include.icon %}
+  </div>
+  <div class="usa-media-block__body">
+    <!-- @TODO: Make heading configurable for A11Y. -->
+    <h3 class="usa-graphic-list__heading">{{ include.heading }}</h3>
+    <p>
+      {{ include.body }}
+    </p>
+  </div>
+</div>

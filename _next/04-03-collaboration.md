@@ -2,8 +2,7 @@
 title: Better leverage related efforts within TTS and the broader government digital services community
 subhead: Opportunity 03
 description: "The design system is part of an ecosystem. There’s opportunity for more collaboration to help agencies benefit from the shared services available to them."
-meta:
-  og:image: /img/next/og-next-opportunities.png
+image: /img/next/og-next-opportunities.png
 
 permalink: /next/looking-ahead/collaboration/
 slug: "opportunity"
@@ -47,11 +46,11 @@ collaboration_opportunities:
     needs: [ understand, know ]
     description: |-
       Continue to expand the design system’s usage to more enterprise-level applications or other government systems, such as apps for common, high-impact federal services like benefits
-  # - name: 
+  # - name:
   #   needs: []
   #   description: |-
   #     text
-  # - name: 
+  # - name:
   #   needs: []
   #   description: |-
   #     text

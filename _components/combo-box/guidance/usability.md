@@ -1,4 +1,4 @@
-- **Use option strings familiar to users.** The combo box filters by matching strings. Include option text that includes familiar strings or spellings (i.e., if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
+- **Use option strings familiar to users.** The combo box filters by matching strings. Include option text that includes familiar strings or spellings (for example, if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
 - **Make sure to test.** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.
 - **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another
 - **Use a good default.** When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`.

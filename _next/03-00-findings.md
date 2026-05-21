@@ -3,8 +3,7 @@ title: Findings
 subhead: "10,000-foot view: systemic challenges to improving digital services"
 nav_title: Findings
 description: "Agencies follow a common journey with similar needs when it comes to successfully adopting, using, and maintaining the design system."
-meta:
-  og:image: /img/next/og-next-report.png
+image: /img/next/og-next-report.png
 
 permalink: /next/findings/
 slug: "findings"

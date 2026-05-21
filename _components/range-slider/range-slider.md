@@ -14,6 +14,14 @@ type: component
 maturity: alpha
 id_custom: range
 lead: A range slider allows users to choose an approximate number from a range.
+implementation:
+  initProps:
+    - property: '`data-text-unit`'
+      description: 'Adds a unit to screen reader callouts. The unit will be read after the current value. For example, adding a value of "stars" enables a readout like "3.5 stars of 5."'
+      default: '_Undefined by default_'
+    - property: '`data-text-preposition`'
+      description: 'Changes the preposition between current value and max value in screen reader readouts. For example, adding a value with the Spanish translation "de" enables a readout "like 20 de 100". When adding a range slider to a non-English page, be sure to update the preposition as necessary.'
+      default: 'of'
 subnav:
 - text: Preview
   href: '#range-slider-preview'
@@ -23,6 +31,8 @@ subnav:
   href: '#range-slider-guidance'
 - text: Package
   href: '#range-slider-package'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - form
   - forms
@@ -30,4 +40,6 @@ tags:
   - input
   - drag
   - volume
+changelog:
+  key: component-range-slider
 ---

@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-var $ = require('jquery');
+var $ = require("jquery");
 
-var calculateAnchorPosition = require('./calculate-anchor-position');
+var calculateAnchorPosition = require("./calculate-anchor-position");
 var timeout;
 
 /**
@@ -13,7 +13,7 @@ var timeout;
  */
 function scrollToTopForHash () {
   var hash = window.location.hash.substr(1);
-  var scrollTopPos = (hash ? calculateAnchorPosition(hash) : 0);
+  var scrollTopPos = hash ? calculateAnchorPosition(hash) : 0;
 
   if (scrollTopPos > 0) {
     clearTimeout(timeout);
@@ -29,4 +29,3 @@ $(function () {
   // check every XXX milliseconds
   setTimeout(scrollToTopForHash, 150);
 });
-

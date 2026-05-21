@@ -1,0 +1,85 @@
+title: Button group
+component_status: pass
+test_items:
+  # General tests
+  - summary: Color is not the only method used to convey button meaning.
+    summary_additional: When you view buttons in a group, you can see and read text, and do not have to rely on color alone for meaning.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 1.4.1
+  - summary: Button group content meets color contrast requirements.
+    summary_additional: When you use ANDI color contrast analyzer on a button in a group, the contrast between the text and background color is at least 4:5:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 1.4.3
+  - summary: The width of each button is at least 44 px.
+    summary_additional: When you select "inspect element" to review a button's size, you can see the total width of the button is at least 44 pixels wide.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 2.5.5
+  - summary: Content and buttons don't change until the user takes an action.
+    summary_additional: When navigating into a button group, the content stays the same on initial interaction. Nothing else happens until you take action to interact.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 3.2.2
+  # Zoom/screen magnification tests
+  - summary: Using zoom does not obstruct the button group.
+    summary_additional: When you zoom to 400%, you can see the button group and scroll up and down. It does not overlap with other content and there is no loss of information on the page.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.8.1
+    wcag_criterion: 1.4.10
+  # Keyboard navigation tests
+  - summary: Keyboard actions can access all button group functionality.
+    summary_additional: You can navigate back and forth between buttons in the button group and perform all other functions using only your keyboard.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.1
+    wcag_criterion: 2.1.1
+  - summary: Button group does not trap keyboard focus.
+    summary_additional: When you use your keyboard to tab back and forth in a button group, you can easily move in and out to get to other content.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.1
+    wcag_criterion: 2.1.2
+  - summary: Button focus follows logical content order.
+    summary_additional: When you tab through the button group with a keyboard, the focus stays in order of the content as intended.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.1
+    wcag_criterion: 2.4.3
+  - summary: Focus indicator is clearly visible on button group.
+    summary_additional: When you use a keyboard to tab into the buttons in a group, the selected button has a visible outline or other clear indication of focus.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.1
+    wcag_criterion: 2.4.7
+  - summary: Focus indicators have proper size, perimeter, and contrast.
+    summary_additional: When you use a keyboard to tab into a button group, the focus indicator has proper size, perimeter and contrast.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.1
+    wcag_criterion: 2.4.13
+  # Screen reader tests
+  - summary: Screen reader announces buttons in group.
+    summary_additional: When you use a screen reader to navigate into a button group, the button labels you hear match the visual labels on the screen.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.1
+    wcag_criterion: 1.3.1
+  - summary: Buttons are announced in the same order that they appear on the page.
+    summary_additional: When you navigate to the first button in a group using a screen reader and tab back and forth between buttons, the announced button labels match the visual presentation.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.1
+    wcag_criterion: 1.3.2
+  - summary: Screen reader announces labels and state of each element.
+    summary_additional: When you use a screen reader and tab through a button group, you hear the element "button" or "link" and that it is part of a group. You will also hear if a link has been visited or not.
+    test_status: conditional
+    test_type: screen_reader
+    version_tested: 3.8.1
+    wcag_criterion: 4.1.2

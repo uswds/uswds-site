@@ -10,3 +10,8 @@ contents:
     var: $theme-sidenav-font-family
     default: '"ui"'
     type: family
+  - name: Reorder sidenav
+    description: Reorder Documentation template sidenav with CSS. Favor code example in Documentation template instead.
+    var: $theme-sidenav-reorder
+    default: false
+    type: boolean

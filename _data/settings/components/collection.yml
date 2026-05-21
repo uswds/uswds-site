@@ -9,4 +9,7 @@ contents:
     description: Family, size, and line height of the heading.
     var: $theme-collection-header-typeset
     default: '"ui", "md", 3'
-    type: family
+    type:
+      - family
+      - size
+      - line-height

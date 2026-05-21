@@ -1,0 +1,4 @@
+- **The language button uses the `.usa-button` class** and can be customized using the many available [button variants]({{ site.baseurl }}/components/button/#component-variants-button).
+- **For the in-header example**, the language button uses the `usa-button--small` variant to match the size of the search button.
+- **The language selector dropdown utilizes the [accordion component]({{ site.baseurl }}/components/accordion/)** which is also a dependency in the [header component]({{ site.baseurl }}/components/header/) and is used by the navigation dropdowns in all example headers.
+- **Customize the language button as needed for your implementation.**

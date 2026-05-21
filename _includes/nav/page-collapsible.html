@@ -1,6 +1,6 @@
 {% assign _current = include.page.category | eq: page.category %}
 {% assign _id = include.page.title | slugify | prepend: 'nav-' %}
-<button class="usa-accordion__button usa-nav__link" aria-controls="{{ _id }}"
+<button type="button" class="usa-accordion__button usa-nav__link" aria-controls="{{ _id }}"
   {% if _current %}
   class="usa-current"
   aria-expanded="true"

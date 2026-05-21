@@ -4,14 +4,20 @@
     <h3 class="site-preview-heading border-top-1px border-base-light padding-top-1 margin-top-0">Default</h3>
     {% capture icon-list %}
       {% library_component usa-icon-list %}
-    {% endcapture %}{{ icon-list | strip }}
+    {% endcapture %}{{ icon-list
+      | strip
+      | replace: 'h3', 'h4'
+    }}
   </div>
   <div class="tablet:grid-col">
     <h3 class="site-preview-heading border-top-1px border-base-light padding-top-1 tablet:margin-top-0">Simple content</h3>
     <p class="margin-bottom-2">Benefits of joining Global Entry program:</p>
     {% capture icon-list--simple %}
       {% library_component usa-icon-list~simple-content %}
-    {% endcapture %}{{ icon-list--simple | strip }}
+    {% endcapture %}{{ icon-list--simple
+      | strip
+      | replace: 'h3', 'h4'
+    }}
   </div>
 </div>
 <div class="grid-row grid-gap">
@@ -19,14 +25,20 @@
     <h3 class="site-preview-heading border-top-1px border-base-light padding-top-1">Rich content</h3>
     {% capture icon-list--rich %}
     {% library_component usa-icon-list~rich-content %}
-    {% endcapture %}{{ icon-list--rich | strip }}
+    {% endcapture %}{{ icon-list--rich
+      | strip
+      | replace: 'h3', 'h4'
+    }}
   </div>
   <div class="tablet:grid-col">
     <h3 class="site-preview-heading border-top-1px border-base-light padding-top-1">Custom size with rich content</h3>
     <p class="margin-bottom-2">Here are a few easy ways you can help reduce energy use and costs while spending more time at home.</p>
     {% capture icon-list--custom-size-rich %}
     {% library_component usa-icon-list~custom-size-rich %}
-    {% endcapture %}{{ icon-list--custom-size-rich | strip }}
+    {% endcapture %}{{ icon-list--custom-size-rich
+      | strip
+      | replace: 'h3', 'h4'
+    }}
   </div>
 </div>
 <div class="grid-row grid-gap">
@@ -34,7 +46,10 @@
     <h3 class="site-preview-heading border-top-1px border-base-light padding-top-1">Custom size</h3>
     {% capture icon-list--custom-size %}
     {% library_component usa-icon-list~custom-size %}
-    {% endcapture %}{{ icon-list--custom-size | strip }}
+    {% endcapture %}{{ icon-list--custom-size
+      | strip
+      | replace: 'h3', 'h4'
+    }}
   </div>
 </div>
 

@@ -38,8 +38,11 @@ contents:
   - name: Header typeset
     description: Family, size, and line height of the heading.
     var: $theme-card-header-typeset
-    default: "'heading', 'lg', 2"
-    type: family
+    default: '"heading", "lg", 2'
+    type:
+      - family
+      - size
+      - line-height
   - name: Margin bottom
     description: Bottom margin for card.
     var: $theme-card-margin-bottom

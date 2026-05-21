@@ -13,6 +13,10 @@ subnav:
   - href: /templates/form-templates/name-form/
   - href: /templates/form-templates/password-reset-form/
   - href: /templates/form-templates/sign-in-form/
+  - text: Latest updates
+    href: /templates/form-templates/#changelog
+changelog:
+  key: component-form
 ---
 
-{% include accessibility.html %}
+{% include forms-guidance.html %}

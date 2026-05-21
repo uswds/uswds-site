@@ -1,0 +1,24 @@
+title: Become part of the community
+description: |-
+  USWDS is an active open source community of government engineers, content specialists, and designers. Our contributors both in and out of government support dozens of agencies and nearly 200 sites.
+callouts:
+  - icon: help
+    tagline: Have an idea or an issue?
+    link_text: Reach out in GitHub
+    link_href: https://github.com/uswds/uswds/issues/new/choose
+  - icon: people
+    tagline: Engage with the community
+    link_text: Find a channel that works for you
+    link_href: https://designsystem.digital.gov/about/community/
+  - icon: mail
+    tagline: Subscribe to our newsletter
+    link_text: Sign up for USWDS updates
+    link_href: https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS
+  - icon: support
+    tagline: Get support
+    link_text: Email the USWDS team
+    link_href: mailto:uswds@gsa.gov
+complimentary:
+  label: Looking for USWDS v1 documentation?
+  link_text: Visit v1.designsystem.digital.gov
+  link_href: https://v1.designsystem.digital.gov

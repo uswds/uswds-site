@@ -11,16 +11,13 @@ redirect_from:
   - /accordions/
   - /components/accordions/
 subnav:
-- text: Preview
-  href: '#accordion-preview'
-- text: Code
-  href: '#accordion-code'
-- text: Guidance
-  href: '#accordion-guidance'
-- text: Package
-  href: '#accordion-package'
+- text: Accordion accessibility tests
+  href: /components/accordion/accessibility-tests/
 title: Accordion
+type: component
 variants:
   - variant: "`.usa-accordion--bordered`"
     description: Display a border around accordion content.
+changelog:
+  key: component-accordion
 ---

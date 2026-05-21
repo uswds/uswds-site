@@ -14,6 +14,10 @@ subnav:
     href: "#continue-learning"
   - text: "Contribute to the codebase"
     href: "#contribute-to-the-codebase"
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: docs-getting-started-devs-resources
 ---
 
 ## Need installation help?

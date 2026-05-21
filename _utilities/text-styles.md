@@ -28,7 +28,10 @@ subnav:
   href: '#utility-mixins'
 - text: Advanced settings
   href: '#advanced-settings'
-
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: utilities-text-styles
 utilities:
 - base:         text
   var:          font-style
@@ -122,7 +125,7 @@ utilities:
   </div>
 </div>
 
-<section class="utilities-section">
+<section id="utilities-section" class="utilities-section">
 
   {% include utilities/utilities-section-title-bar.html %}
 

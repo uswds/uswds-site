@@ -17,4 +17,4 @@ variants:
     description: Display a group of buttons in a row as a single element.
 ---
 
-{% include component.html %}
+{% include component.html level="h3" %}

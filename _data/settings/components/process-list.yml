@@ -14,7 +14,7 @@ contents:
     description: Size of the border around the counter circle.
     var: $theme-process-list-counter-border-width
     default: 0.5
-    type: size
+    type: units
   - name: Counter font family
     description: Font family of the counter text.
     var: $theme-process-list-counter-font-family
@@ -29,7 +29,7 @@ contents:
     description: Color of gap between counter and connector. This should the the same as the background color behind the component.
     var: $theme-process-list-counter-gap-color
     default: '"white"'
-    type: units
+    type: color
   - name: Counter gap width
     description: Size of gap between counter and connector.
     var: $theme-process-list-counter-gap-width
@@ -39,7 +39,7 @@ contents:
     description: Size of the counter circle.
     var: $theme-process-list-counter-size
     default: 5
-    type: size
+    type: units
   - name: Counter text color
     description: Color of the number text inside the counter circle.
     var: $theme-process-list-counter-text-color
@@ -54,8 +54,8 @@ contents:
     description: Width of the connector line between counter circles.
     var: $theme-process-list-connector-width
     default: 1
-    type: size
-  - name: Font family of content
+    type: units
+  - name: Content font family
     description: Font family of the content text.
     var: $theme-process-list-font-family
     default: '"ui"'
@@ -70,7 +70,7 @@ contents:
     var: $theme-process-list-heading-color
     default: '"ink"'
     type: color
-  - name: Font family of heading
+  - name: Heading font family
     description: Font family of the heading text.
     var: $theme-process-list-heading-font-family
     default: '"ui"'

@@ -1,3 +1,3 @@
 - **Add component classes.** The structure should include a base element with the class `usa-character-count`. Inside of that base element there should be an input element (input or textarea) with the class `usa-character-count__field` and an message element (span or div) with the class `usa-character-count__message`.
 - **Add a `maxlength` attribute to the input element.** This will be used as the limit referenced in the message and for validation.
-- **Account for no-JavaScript environments.** Add a default message in the message element that refers to the character limit. This will appear in instances when JavaScript does not load.
+- **Provide a backup message for environments without JavaScript.** In your markup, add a default message in the `usa-character-count__message` element that refers to the character limit. This will appear in instances when JavaScript does not load.

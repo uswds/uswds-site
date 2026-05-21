@@ -1,0 +1,49 @@
+<form class="usa-form usa-form--large">
+  <fieldset class="usa-fieldset">
+    <legend class="usa-legend">Sex</legend>
+    <span class="usa-hint" id="slabHint">Please select your sex from the follwing options. <a href="#sex-data-transparency-statement" aria-controls="sex-data-transparency-statement" data-open-modal>Why do we ask for sex information?</a></span>
+    <div class="usa-radio">
+      <input class="usa-radio__input" id="input-male" type="radio" name="sex" value="male" />
+      <label class="usa-radio__label" for="input-male">Male</label>
+    </div>
+    <div class="usa-radio">
+      <input class="usa-radio__input" id="input-female" type="radio" name="sex" value="female" />
+      <label class="usa-radio__label" for="input-female">Female</label>
+    </div>
+  </fieldset>
+</form>
+
+<div
+class="usa-modal"
+id="sex-data-transparency-statement"
+aria-labelledby="sex-data-transparency-statement-heading"
+aria-describedby="sex-data-transparency-statement-description"
+>
+  <div class="usa-modal__content">
+    <div class="usa-modal__main">
+      <h4 class="usa-modal__heading" id="sex-data-transparency-statement-heading">
+        Why do we ask for [type] information?
+      </h4>
+      <div class="usa-prose">
+        <p id="sex-data-transparency-statement-description">
+          Include a description of why your service collects [type] information and how this data will be shared.
+        </p>
+      </div>
+      <div class="usa-modal__footer">
+        <button type="button" class="usa-button" data-close-modal>
+          Return to the form
+        </button>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="usa-button usa-modal__close"
+      aria-label="Close this window"
+      data-close-modal
+    >
+      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+        <use href="{{ site.baseurl }}/assets/img/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+</div>

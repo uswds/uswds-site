@@ -36,17 +36,13 @@ implementation:
       parameters: .usa-time-picker
       description: The time picker component will be disabled / read-only.
 subnav:
-- text: Preview
-  href: '#time-picker-preview'
-- text: Code
-  href: '#time-picker-code'
-- text: Guidance
-  href: '#time-picker-guidance'
-- text: Package
-  href: '#time-picker-package'
+- text: Time picker accessibility tests
+  href: /components/time-picker/accessibility-tests/
 tags:
   - input
   - box
   - form controls
   - schedule
+changelog:
+  key: component-time-picker
 ---

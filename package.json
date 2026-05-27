@@ -94,7 +94,7 @@
     "jquery": "^3.7.1",
     "node-notifier": "^10.0.1",
     "pa11y-ci": "^2.4.2",
-    "postcss": "^8.5.2",
+    "postcss": "^8.5.15",
     "postcss-csso": "^6.0.1",
     "prettier": "^2.8.8",
     "sass": "^1.84.0",
@@ -110,6 +110,9 @@
     "@uswds/uswds": "3.13.0"
   },
   "optionalDependencies": {
-    "sass-embedded-linux-x64": "^1.85.1"
+    "sass-embedded-linux-x64": "^1.99.0"
+  },
+  "overrides": {
+    "postcss": "$postcss"
   }
 }

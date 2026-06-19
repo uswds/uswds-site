@@ -4,14 +4,13 @@ layout: styleguide
 title: Security
 category: About
 lead: Developing and using USWDS with security in mind
-subnav:
-  type: security_updates
+type: security_updates
 redirect_from:
 - /security/
 - /about/security-information/
 subnav:
 - text: Latest updates
-  href: '#changelog'
+  href: '/about/security/#changelog'
 changelog:
   key: about-security
 ---

@@ -4,8 +4,6 @@
   {% assign _current = true %}
 {% elsif include.primary and include.page.category == page.category %}
   {% assign _current = true %}
-{% elsif page.collection and include.page.subnav.type == page.collection %}
-  {% assign _current = true %}
 {% comment %}
   Use the page's `type` data key to connect the sidenav to a collection.
   This sets "current" for the pages inside the _posts directory.

@@ -107,7 +107,7 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
-    rexml (3.4.0)
+    rexml (3.4.2)
     rouge (4.5.1)
     rspec-core (3.13.3)
       rspec-support (~> 3.13.0)

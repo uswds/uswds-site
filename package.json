@@ -93,7 +93,7 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.7.1",
     "node-notifier": "^10.0.1",
-    "pa11y-ci": "^2.4.2",
+    "pa11y-ci": "^4.1.1",
     "postcss": "^8.5.15",
     "postcss-csso": "^6.0.1",
     "prettier": "^2.8.8",

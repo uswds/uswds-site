@@ -77,7 +77,7 @@ components:
   url: https://designsystem.digital.gov/components/form/
 - name: Glossary
   status_major: proposal
-  status_minor: Discussion started
+  status_minor: Proposal in progress
   url: https://github.com/uswds/uswds/discussions/5771
 - name: Header
   status_major: released
@@ -171,6 +171,10 @@ components:
   status_major: proposal
   status_minor: Discussion started
   url: https://github.com/uswds/uswds/discussions/5769
+- name: Social info/follow
+  status_major: proposal
+  status_minor: Discussion started
+  url: https://github.com/uswds/uswds/discussions/6047
 - name: Spinner
   status_major: proposal
   status_minor: Discussion started

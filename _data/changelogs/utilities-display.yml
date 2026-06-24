@@ -1,8 +1,9 @@
-title: Display utility
+title: Display utilities
 type: utility
 changelogURL:
 items:
   - date: 2023-12-08
+    page: Display utilities
     summary: Fixed a bug that prevented the CSS from generating `.left-full`, `.right-full`, and `.top-full` utility classes.
     summaryAdditional:
     isBreaking:
@@ -11,6 +12,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.1
   - date: 2022-06-08
+    page: Display utilities
     summary: Updated demonstration of `display:none`.
     summaryAdditional:
     isBreaking:

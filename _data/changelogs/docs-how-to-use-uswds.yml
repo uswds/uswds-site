@@ -3,6 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-01-27
+    page: "How to use USWDS"
     summary: Brought in "Before getting started" content from "Getting started for developers".
     summaryAdditional:
     isBreaking:

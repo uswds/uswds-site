@@ -3,6 +3,7 @@ type: token
 changelogURL:
 items:
   - date: 2021-05-25
+    page: Shadow tokens
     summary: Replaced entry for token `0` with token `none`.
     summaryAdditional:
     isBreaking:

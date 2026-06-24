@@ -3,6 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-04-28
+    page: Packages
     summary: Updated instructions for using packages with USWDS 3.0.
     summaryAdditional: Added Sass module syntax, updated package list, and updated load paths.
     isBreaking:

@@ -3,6 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2022-03-10
+    page: Maturity model
     summary: |
       Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.
     summaryAdditional:

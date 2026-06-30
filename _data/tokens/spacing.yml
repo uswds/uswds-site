@@ -1,5 +1,7 @@
 positive:
   smaller:
+    - token: '0'
+      value: 0
     - token: '1px'
       value: 1px
     - token: '2px'

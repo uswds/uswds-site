@@ -108,21 +108,6 @@ Your context and coding style determine how you access USWDS shadow tokens in co
       </tr>
       <tr>
         <th scope="row" data-title="Context">
-          <span class="font-lang-3">setting</span>
-        </th>
-        <td data-title="Description">
-          <span>
-            <a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>
-          </span>
-        </td>
-        <td data-title="Example">
-          <span>
-            $theme-subnav-shadow: <code>2</code>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Context">
           <span class="font-lang-3">
             utility
           </span>

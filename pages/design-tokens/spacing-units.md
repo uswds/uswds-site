@@ -180,7 +180,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
         <td data-title="Example">
           <span>
-            $theme-site-margin-mobile: <code>2</code>
+            $theme-site-margins-mobile-width: <code>2</code>
           </span>
         </td>
       </tr>

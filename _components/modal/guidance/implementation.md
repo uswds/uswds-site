@@ -1,4 +1,4 @@
-- **Use unique ids.** Each `.usa-modal` must have a unique id so that openers can associate them with their `aria-controls` attribute.
+- **Use unique ids.** Each `.usa-modal` must have a unique `id` so that openers can associate them with their `aria-controls` attribute.
 
 - **Openers.** A single modal can have multiple openers. Each opener requires `data-open-modal` and `aria-controls=”[modal_id]”` attributes. Openers can be coded as either `<button>` or `<a>` elements. Using `<a>` helps link to modals in the event JavaScript fails.
 

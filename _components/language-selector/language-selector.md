@@ -43,3 +43,5 @@ For more specific guidance about language selection design patterns, see the <a 
 - <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Find selected content in other languages</a>
 
 {% include child-sections.html parent='Language selector' %}
+
+{% include accessibility-tests/test-results-summary.html page='main' %}

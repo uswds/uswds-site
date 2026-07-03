@@ -25,7 +25,7 @@
 
   - **[Performance reports](http://digital.gov/resources/required-web-content-and-links#budget-and-performance-reports):** Link to a “Budget and Performance” page that includes the parent agency’s strategic plan among other financial and performance documentation.
 
-    Example: [https://www.gsa.gov/reference/reports/budget-performance](https://www.gsa.gov/reference/reports/budget-performance)
+    Example: [https://www.gsa.gov/about-gsa/newsroom/budget-and-performance](https://www.gsa.gov/about-gsa/newsroom/budget-and-performance)
 
   - **[Privacy policy](https://digital.gov/resources/required-web-content-and-links/#privacy-policy):** Link to the "Privacy" page most specific to your website. For example, if both your product website and your parent agency's principal website have privacy pages, link to your product website's privacy page here.
 

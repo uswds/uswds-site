@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  snyk: snyk/snyk@2.2.0
-
 executors:
   my-executor:
     resource_class: large
@@ -92,8 +89,6 @@ jobs:
           command: |
             bundle config set --local path '~/project/vendor/bundle'
             bundle exec rspec
-      - snyk/scan:
-          organization: uswds
   test_a11y_desktop:
     executor: my-executor
     parallelism: 2

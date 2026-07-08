@@ -1,6 +1,7 @@
 - **Simple tables can have up to two rows of headers.** Each header cell should have `scope="col"` or `scope="row"`.
 - **Complex tables have more than two levels of headers.** Each header should have a unique `id` and each data cell should have a `headers` attribute with each related header cell’s `id` listed.
-- **Add title and attribution in a caption.** When adding a title, attribution, or a last-updated date to a table, include it in the `<caption>` tag inside of the `<table>` element.
+- **Use a caption to describe the purpose of the table.** When adding a title, attribution, or a last-updated date to a table, include it in the `<caption>` tag inside of the `<table>` element. Keep the caption wording short.
+- **Ensure sighted users are able to identify the caption as the title of the table.** Make the caption style larger than the body style of the table text. Don’t match an existing heading level or other style (such as an H2 or H3). Caption styles should be noticeable yet distinct.
 - **Add an `aria-live` region to the page when enabling row sorting.** An `aria-live` region immediately following the `<table>` element automatically announces when the sort state changes for visitors using screen readers, but it must be added to the HTML document before load:
 `<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>`
 - **Don’t add `aria-label` attributes to sortable column headers.** Enabling row sorting automatically adds `aria-label` attributes to the sortable column headers and their toggle sort buttons via JavaScript. These labels are updated to reflect each column’s current sort state (ascending, descending, or unsorted) whenever sort changes.

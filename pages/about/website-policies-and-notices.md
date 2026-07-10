@@ -110,13 +110,13 @@ We use open-source software and free or low cost, commercial application program
 
 3.  All source code as defined above may be shared with the general public via a highly visible, easily accessible online source code community (such as Github or npm) that facilitates the code's reuse. Source code won't be released if any of the following conditions are met:
 
-1.  The USWDS core team determines that the code is too crude to merit distribution or provide value to the broader community.
+    -   The USWDS core team determines that the code is too crude to merit distribution or provide value to the broader community.
 
-2.  The government doesn't have the rights to reproduce and release the item. The government has public release rights when the software is developed by government personnel, when the government receives an unlimited license  in software developed by a contractor at the government's expense, or when the government modifies existing OSS.
+    -   The government doesn't have the rights to reproduce and release the item. The government has public release rights when the software is developed by government personnel, when the government receives an unlimited license  in software developed by a contractor at the government's expense, or when the government modifies existing OSS.
 
-3.  The public release of the item is restricted by other law or regulation, such as the Export Administration Regulations or the International Traffic in Arms Regulation.
+    -   The public release of the item is restricted by other law or regulation, such as the Export Administration Regulations or the International Traffic in Arms Regulation.
 
-4.  GSA cybersecurity staff determines that the public release of such code would pose an unacceptable risk to GSA's operational security.
+    -   GSA cybersecurity staff determines that the public release of such code would pose an unacceptable risk to GSA's operational security.
 
 ## Privacy and security policies
 

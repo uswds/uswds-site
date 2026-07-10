@@ -12,6 +12,9 @@ redirect_from:
 subnav:
 - text: Checkbox accessibility tests
   href: /components/checkbox/accessibility-tests/
+variants:
+  - variant: "`.usa-checkbox__input--tile`"
+    description: Input tiles provide a larger interaction area and neatly group the label with the form control for readability. They’re useful in application forms and questionnaires, but may not be recommended when they create clutter on the page.
 tags:
   - form
   - forms

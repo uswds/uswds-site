@@ -175,10 +175,6 @@ components:
   status_major: proposal
   status_minor: Discussion started
   url: https://github.com/uswds/uswds/discussions/5768
-- name: Toast
-  status_major: proposal
-  status_minor: Discussion started
-  url: https://github.com/uswds/uswds/discussions/5770
 - name: Step indicator
   status_major: released
   status_minor: stable

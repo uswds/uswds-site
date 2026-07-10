@@ -15,6 +15,7 @@ changelog:
 {% assign component_status_items = site.data.lifecycle-status.components %}
 
 {% assign check_icon_classes = 'text-gray-60' %}
+{% assign converting_pattern_classes = "lifecycle-bg--convert" %}
 {% assign phase_complete_classes = 'bg-gray-5' %}
 {% assign proposal_classes = "lifecycle-bg--proposal" %}
 {% assign accepted_classes = "lifecycle-bg--accepted" %}
@@ -50,6 +51,7 @@ Don’t see the component you are looking for? [Start a discussion about it](htt
         {% assign status_classes = rejected_classes %}
       {% elsif item.status_minor == "accepted" %}
         {% assign status_classes = accepted_classes %}
+      {% elsif item.status_minor == "converting to pattern" %} 
       {% else %}
         {% assign status_classes = proposal_classes %}
     {% endif %}
@@ -101,6 +103,7 @@ Don’t see the component you are looking for? [Start a discussion about it](htt
           {% assign status_classes = rejected_classes %}
         {% elsif item.status_minor == "accepted" %}
           {% assign status_classes = accepted_classes %}
+        {% elsif item.status_minor == "converting to pattern" %}
         {% else %}
           {% assign status_classes = proposal_classes %}
       {% endif %}

@@ -2,7 +2,9 @@ title: Summary box accessibility tests
 type: component
 items:
   - date: 2024-12-17
+    page: Summary box accessibility tests
     summary: Added accessibility tests page.
     affectsGuidance: true
+    isAddition: true
     githubPr: 3016
     githubRepo: uswds-site

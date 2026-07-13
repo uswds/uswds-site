@@ -1,8 +1,9 @@
-title: Display utility
+title: Text utilities
 type: utility
 changelogURL:
 items:
   - date: 2021-05-25
+    page: Text utilities utilities
     summary: Corrected the value of `.text-ls-1` to `0.025em` from `0.05em`.
     summaryAdditional:
     isBreaking:

@@ -3,12 +3,14 @@ type: component
 changelogURL:
 items:
   - date: 2024-11-07
+    page: Identifier
     summary: Added clarification on parent agency.
     summaryAdditional: We added guidance to cover cases where a site has no higher-level agency.
     affectsGuidance: true
     githubPr: 2591
     githubRepo: uswds-site
   - date: 2024-10-04
+    page: Identifier
     summary: Updated the USA.gov link in Spanish versions of the identifier.
     summaryAdditional: The link text now reads "Visite USAGov en Español" and the link url is now "https://www.usa.gov/es/".
     affectsContent: true
@@ -16,11 +18,13 @@ items:
     githubRepo: uswds
     versionUswds: 3.9.0
   - date: 2024-08-13
+    page: Identifier
     summary: Added WCAG compliance tag and accessibility test status section.
-    affectsGuidance: true
+    affectsPageContent: true
     githubPr: 2754
     githubRepo: uswds-site
   - date: 2024-05-31
+    page: Identifier
     summary: Fixed a bug that mistakenly added the English word "An" to Spanish variants in the component preview.
     summaryAdditional:
     affectsGuidance: true
@@ -29,6 +33,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.8.1
   - date: 2023-11-09
+    page: Identifier
     summary: Updated the screen reader readout in English versions of the component.
     summaryAdditional: When read out on a screen reader, the statement "An official website of [Agency name]" can sound like "UNofficial website of [Agency name]". Users should update their markup to improve the screen reader experience.
     affectsAccessibility: true
@@ -37,6 +42,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.7.0
   - date: 2023-06-09
+    page: Identifier
     summary: Updated Accessibility statement link text.
     summaryAdditional: Updated the identifier to use the text "Accessibility statement" (EN) / "Declaración de accesibilidad" (ES) for the required link to an accessibility statement.
     isBreaking: true
@@ -45,6 +51,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
+    page: Identifier
     summary: Updated Accessibility statement link guidance.
     summaryAdditional: Updated and clarified the identifier guidance for accessibility statements. We also improved the  accessibility statement example links.
     affectsGuidance: true
@@ -52,6 +59,7 @@ items:
     githubRepo: uswds-site
     versionUswds: 3.5.0
   - date: 2022-10-19
+    page: Identifier
     summary: Used valid element for identity's aria-label.
     summaryAdditional: We updated the identity section of the identifier to use a `section` instead of a `div` so its `aria-label` will apply to a valid element.
     isBreaking: true
@@ -61,6 +69,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-04-28
+    page: Identifier
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true
     affectsAssets: true
@@ -70,6 +79,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-03-17
+    page: Identifier
     summary: Added identifier guidance and documentation.
     affectsGuidance: true
     githubPr: 1180

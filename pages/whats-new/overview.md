@@ -43,13 +43,23 @@ in_page_nav_headings: "h2"
   listItemClasses="desktop:grid-col-6"
 %}
 
-{:.margin-top-2.text-normal.font-lang-md.text-gray-70}
-## News and updates
 
-{% for post in site.posts limit:4 %}
-  {% include post-preview.html post=post heading="h3"%}
+{: .site-component-section-title #latest-changes }
+## Latest changes to USWDS
+
+Meaningful code, guidance, and content updates across the design system are listed in the following table:
+
+{% assign changelogs = site.data.changelogs %}
+{% assign changelogsItems = "" | split: "," %}
+
+{% for file in changelogs %}
+  {% assign items = file[1].items %}
+  {% assign changelogItems = changelogItems | concat: items %}
 {% endfor %}
 
----
+{% assign changelogItems = changelogItems | sort: 'date' | reverse | slice: 0,150 %}
 
-<a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all USWDS news and updates</a>
+
+{% include consolidated-changelog-table.html %}
+
+<!-- <a class="usa-button margin-top-2" href="{{ site.baseurl }}/about/whats-new/all/">View all USWDS news and updates</a> -->

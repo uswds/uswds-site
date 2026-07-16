@@ -2,6 +2,11 @@ title: Alert
 type: component
 changelogURL:
 items:
+  - date: 2026-07-16
+    summary: Added guidance on using semantic heading levels in the alert heading.
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
   - date: 2025-01-14
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

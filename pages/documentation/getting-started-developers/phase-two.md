@@ -202,6 +202,9 @@ Setting | Default values - Version 2.x | Default values - Version 3.0 | Descript
 
 </div>
 
+{: .site-note }
+**Note:** When you reference these settings in your `gulpfile.js`, add a prefix that matches the `const` variable you declared in [Step 3](#step-3-import-the-uswds-compile-package). For example, because this guide imports `@uswds/compile` into a constant named `uswds`, the code samples on this page reference a setting like `paths.dist.css` as `uswds.paths.dist.css`.
+
 **paths.src:** The `paths.src` settings tell Gulp where to _find_ USWDS source files. The default values point to directories in the `uswds` node module that you installed during [Phase 1 of this guide]({{ site.baseurl }}/documentation/getting-started/developers/phase-one-install/).
 
 Note that the `paths.src` defaults are different for USWDS 2 and USWDS 3. `uswds-compile` chooses which set of defaults to use based on the USWDS version  defined in `settings.version` in [step 4](#step-4-set-uswds-version).

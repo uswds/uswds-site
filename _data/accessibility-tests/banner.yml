@@ -83,6 +83,16 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.0
     wcag_criterion: 2.4.7
+  - summary: In the web component variant, keyboard focus moves into and out of the shadow DOM.
+    summary_additional: |
+      When you navigate to the web component variant with a keyboard,
+      you can use `tab` to reach the "Here's how you know" button inside the component's shadow DOM,
+      use `enter` and `spacebar` to open and close the banner,
+      and use `tab` to move out of the banner without getting stuck.
+    test_status: conditional
+    status_details: Browser and assistive technology combinations can handle shadow DOM content differently.
+    test_type: keyboard
+    wcag_criterion: 2.1.1
 # Screen reader tests
   - summary: Screen reader announces button.
     summary_additional: |
@@ -119,3 +129,29 @@ test_items:
     test_type: screen_reader
     version_tested: 3.8.0
     wcag_criterion: 1.1.1
+  - summary: In the web component variant, screen readers announce banner content inside the shadow DOM.
+    summary_additional: |
+      When you use a screen reader with the web component variant,
+      the shadow DOM doesn't change what you hear.
+      The screen reader still announces the banner's "Official website of the United States government" label,
+      the "Here's how you know" button with its collapsed and expanded states,
+      and the banner content once you expand it.
+    test_status: conditional
+    status_details: Browser and assistive technology combinations can handle shadow DOM content differently.
+    test_type: screen_reader
+    wcag_criterion: 4.1.2
+  - summary: In the web component variant, screen readers announce customized slot content.
+    summary_additional: |
+      When you customize the banner text with slots (for example, `banner-action`,
+      which also sets the button text), a screen reader announces your custom content
+      in place of the default text.
+    test_status: conditional
+    test_type: screen_reader
+    wcag_criterion: 4.1.2
+  - summary: In the web component variant, screen readers read the banner in the correct language.
+    summary_additional: |
+      When you set `lang="es"` on the web component variant,
+      a screen reader reads the banner text in Spanish.
+    test_status: conditional
+    test_type: screen_reader
+    wcag_criterion: 3.1.2

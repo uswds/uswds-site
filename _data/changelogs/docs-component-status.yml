@@ -4,14 +4,10 @@ changelogURL:
 items:
   - date: 2026-07-07
     summary: Changed Input mask to "use with caution."
+    affectsAccessibility: true
     affectsGuidance: true
     githubPr: 3232
     githubRepo: uswds-site
-
-title: Component status
-type: documentation
-changelogURL:
-items:
   - date: 2024-02-15
     summary: Added component status page.
     affectsGuidance: true

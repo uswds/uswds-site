@@ -2,6 +2,16 @@ title: Range slider
 type: component
 changelogURL:
 items:
+- date: NNNN-NN-NN
+  summary: Added a current visible value to the range slider.
+  summaryAdditional: Now, non screen reader users are presented with the range slider's visible value. 
+  isBreaking: false
+  affectsAccessibility: true
+  affectsJavascript: true
+  affectsMarkup: true
+  githubPr: 6302
+  githubRepo: USWDS
+  versionUswds: 3.11.0
 - date: 2023-11-09
   summary: Added optional data attributes to customize text for screen readers.
   summaryAdditional: The `data-text-unit` attribute provides additional context to screen reader users, and `data-text-preposition` allows for proper preposition translations on non-English pages.

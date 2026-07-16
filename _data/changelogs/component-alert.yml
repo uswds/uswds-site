@@ -5,7 +5,7 @@ items:
   - date: 2026-07-16
     summary: Added guidance on using semantic heading levels in the alert heading.
     affectsGuidance: true
-    githubPr:
+    githubPr: 3246
     githubRepo: uswds-site
   - date: 2025-01-14
     summary: Added WCAG compliance tag and accessibility test status section.

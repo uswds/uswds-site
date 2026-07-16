@@ -170,7 +170,7 @@ Once you've noted the version of USWDS you're currently using, you can update to
 {:.border-top-2px.border-base-lighter.padding-top-1}
 USWDS 3.0 requires the use of [Sass Load Paths](https://sass-lang.com/documentation/at-rules/use#load-paths) to compile properly.
 
-USWDS 3.0 load paths must include a path to the `@uswds/uswds/packages` directory, typically by updating an `IncludePaths` setting to include `node_modules/@uswds/uswds/packages`.
+USWDS 3.0 load paths must include a path to the `@uswds/uswds/packages` directory, typically by updating a `loadPaths` setting to include `node_modules/@uswds/uswds/packages`. (This setting is called `includePaths` in the legacy Sass API.)
 
 Add this load path to your compiler settings, or update any old paths if your compiler already includes them. We have guidance for a few common compiler setups.
 
@@ -221,7 +221,7 @@ or
 + const USWDS = "./node_modules/@uswds/uswds";
       {%- endhighlight %}
     </li>
-    <li><p>Search for references to <code>${uswds}</code> in the <code>includePaths</code> and <code>gulp.src()</code> found in your project’s gulp files. These paths tell the Sass compiler where to look for USWDS source files.</p>
+    <li><p>Search for references to <code>${uswds}</code> in the <code>includePaths</code> and <code>gulp.src()</code> found in your project’s gulp files. These paths tell the Sass compiler where to look for USWDS source files. The latest versions of <code>gulp-sass</code> use the modern Sass API, which renames <code>includePaths</code> to <code>loadPaths</code>.</p>
       <p>Some of our file directories have moved in USWDS 3.0, and it is necessary to point gulp to the correct location inside the <code>@uswds/uswds</code> package. Below are snippets from the standard USWDS Gulp references and their necessary updates. If your code uses <code>USWDS</code> instead of <code>uswds</code>, just keep the case you have.</p>
       {% highlight diff -%}
 // location of theme files:
@@ -241,7 +241,8 @@ or
 + gulp.src(`${uswds}/dist/js/**/**`)
 ...
 // Sass's load paths:
-includePaths: [
+- includePaths: [
++ loadPaths: [
   PROJECT_SASS_SRC,
 - `${uswds}/scss`,
 + `${uswds}`,
@@ -284,12 +285,12 @@ const uswds = require("@uswds/compile");
   </button>
 </h4>
 <div id="m-a8" class="usa-accordion__content site-prose" markdown="1">
-1. Search for references to USWDS in the `includePaths` and `src()` found in your project’s gulp files. These paths tell the Sass compiler where to look for USWDS source files. The `includePaths` section may look like the following:
+1. Search for references to USWDS in the `loadPaths` (called `includePaths` in the legacy Sass API) and `src()` found in your project’s gulp files. These paths tell the Sass compiler where to look for USWDS source files. The `loadPaths` section may look like the following:
 
     ```
     .pipe(
       sass({
-        includePaths: [
+        loadPaths: [
           PROJECT_SASS_SRC,
           `${USWDS}`,
           `${USWDS}/uswds/packages`,
@@ -298,7 +299,7 @@ const uswds = require("@uswds/compile");
     )
     ```
 
-1. Make sure `includePaths` includes `node_modules/@uswds/uswds/packages` in its array.
+1. Make sure `loadPaths` includes `node_modules/@uswds/uswds/packages` in its array.
 1. Update any `src()` references to point to the correct `node_modules/@uswds/uswds` location. Some of the file directories have moved in USWDS 3.0, so confirm that you are accounting for these new locations in your paths.
     - **Fonts:** `@uswds/uswds/dist/fonts`
     - **Images:** `@uswds/uswds/dist/img`
@@ -316,14 +317,14 @@ const uswds = require("@uswds/compile");
   </button>
 </h4>
 <div id="m-a9" class="usa-accordion__content site-prose" markdown="1">
-  In webpack, include `includePaths` within the `sassOptions` of your Sass loader:
+  In webpack, include `loadPaths` within the `sassOptions` of your Sass loader:
 
   ```js
   loader: "sass-loader",
   options: {
     sourceMap: true,
     sassOptions: {
-      includePaths: [
+      loadPaths: [
         "./node_modules/@uswds",
         "./node_modules/@uswds/uswds/packages",
       ],

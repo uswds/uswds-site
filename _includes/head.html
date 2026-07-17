@@ -79,6 +79,35 @@
 
 <!-- USWDS INIT
 ================================================== -->
+<script>
+  /**
+   * This script block contains the contents of the uswds-init.js script.
+   * It's inlined because it's necessary for the first paint of the banner,
+   * and we want to avoid a round-trip to the server.
+   */
+  (function uswdsInit() {
+    "use strict";
+
+    const loadingClass = "usa-js-loading";
+    let fallback;
+
+    document.documentElement.classList.add(loadingClass);
+    function revertClass() {
+      document.documentElement.classList.remove(loadingClass);
+    }
+
+    fallback = setTimeout(revertClass, 8000);
+
+    function verifyLoaded() {
+      if (window.uswdsPresent) {
+        clearTimeout(fallback);
+        revertClass();
+        window.removeEventListener("load", verifyLoaded, true);
+      }
+    }
+
+    window.addEventListener("load", verifyLoaded, true);
+  })();
+</script>
 <script src="{{ site.baseurl }}/assets/uswds/components/usa-banner.js.mjs" type="module"></script>
 <link rel="preload" href="{{ site.baseurl }}/assets/js/vendor/uswds.min.js" as="script">
-<script src="{{ site.baseurl }}/assets/js/vendor/" type="text/javascript"></script>

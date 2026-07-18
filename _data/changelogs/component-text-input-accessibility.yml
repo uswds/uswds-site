@@ -1,6 +1,10 @@
 title: Text input accessibility tests
 type: component
 items:
+  - date: 2026-07-18
+    summary: Recategorized the screen reader labels and instructions test from WCAG 3.3.2 to WCAG 1.3.1 and added a general test for visible labels or instructions under WCAG 3.3.2.
+    affectsGuidance: true
+    githubRepo: uswds-site
   - date: 2024-06-19
     summary: Added accessibility tests page.
     affectsGuidance: true

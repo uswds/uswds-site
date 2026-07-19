@@ -11,7 +11,7 @@ redirect_from:
 in_page_nav_headings: false
 ---
 
-{% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" %}
+{% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" | sort_natural: "title" %}
 
 <div class="bg-base-lighter padding-2 radius-md">
   <h2 class="font-lang-lg margin-top-0 margin-bottom-0">Find a USWDS component</h2>

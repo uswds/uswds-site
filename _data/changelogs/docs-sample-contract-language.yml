@@ -5,6 +5,7 @@ items:
   - date: 2026-07-18
     summary: Added guidance on including a quality assessment surveillance plan (QASP).
     affectsGuidance: true
+    githubPr: 3261
     githubRepo: uswds-site
   - date: 2024-04-09
     summary: Updated Federal Web Council representative link.

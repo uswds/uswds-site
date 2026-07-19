@@ -2,6 +2,19 @@ title: Font size and family
 type: utility
 changelogURL:
 items:
+  - date: 2026-07-18
+    summary: Added a note directing readers to the font size tokens page to find the actual size of each font size token.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 3262
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2023-08-23
     summary: Fixed a bug that caused `font-[family]-[size]` utility classes to not generate font-family rules.
     summaryAdditional:

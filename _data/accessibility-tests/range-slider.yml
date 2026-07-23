@@ -34,11 +34,8 @@ test_items:
     wcag_criterion: 2.5.8
   - summary: Users can see information about how to operate the range slider.
     summary_additional: Clear, readable information about how to operate the range slider appears above the component.
-    test_status: conditional
+    test_status: pass
     test_type: general
-    status_details: The range slider component may not pass all elements of this test. Teams may need to add visible instructions for how to operate the range slider in their implementation.
-    github_issue_number: 6443
-    github_issue_repo: uswds
     version_tested: 3.13.0
     wcag_criterion: 3.3.2
 # Zoom/screen magnification tests
@@ -63,11 +60,8 @@ test_items:
     wcag_criterion: 2.1.2
   - summary: Focus indicator is clearly visible around range slider elements.
     summary_additional: When using the range slider, a visible indicator indicates the button touch target.
-    test_status: exception
+    test_status: pass
     test_type: keyboard
-    status_details: The slider button does not receive focus. The entire component does. Focus indicator on the button may also be too small.
-    github_issue_number: 6117
-    github_issue_repo: uswds
     version_tested: 3.13.0
     wcag_criterion: 2.4.7
 # Screen reader tests

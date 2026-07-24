@@ -2,6 +2,12 @@ title: Banner accessibility tests
 type: component
 changelogURL:
 items:
+  - date: 2026-07-16
+    summary: Added web component variant tests.
+    summaryAdditional: New conditional tests cover keyboard and screen reader behavior for the web component variant's shadow DOM, custom slot content, and language support.
+    affectsGuidance: true
+    githubPr: 3248
+    githubRepo: uswds-site
   - date: 2024-06-07
     summary: Added accessibility tests page.
     summaryAdditional:

@@ -230,6 +230,9 @@ For the evaluation scenario, you can use it as an “all or nothing” factor (m
 
 Provide as many user scenarios as needed to describe your requirements. A user scenario is a method for telling a story about a user’s interaction with your product, service, or website, focusing on the what, how, and why. Check out the [user scenarios](https://guides.18f.gov/methods/decide/user-scenarios/) card in 18F Methods for more information on how to write scenarios.
 
+## Include a surveillance plan to assess quality
+Per the best practice to “require demos, not memos,” incorporate a quality assessment surveillance plan (QASP) into your solicitation. See the [sample QASP](https://guides.18f.org/derisking-government-tech/resources/quality-indicators/) in 18F's [De-risking Guide](https://guides.18f.org/derisking-government-tech/) for more details on deliverables, performance standards, acceptable quality levels, and methods of assessment to include in the plan.
+
 ## Accessibility requirements
 Accessibility is not only the law, it’s also fundamental to a great digital experience. To ensure your technology is usable by all, regardless of ability, address accessibility and other requirements up-front in all your IT-related contracts and purchases.
 

@@ -1,8 +1,10 @@
 title: Icon list accessibility tests
 type: component
 items:
- - date: 2024-12-13
-   summary: Added accessibility tests page.
-   affectsGuidance: true
-   githubPr: 3008
-   githubRepo: uswds-site
+  - date: 2024-12-13
+    page: Icon list accessibility tests
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    isAddition: true
+    githubPr: 3008
+    githubRepo: uswds-site

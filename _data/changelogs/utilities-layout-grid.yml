@@ -1,8 +1,9 @@
-title: Layout grid utility
+title: Layout grid utilities
 type: utility
 changelogURL:
 items:
   - date: 2024-11-06
+    page: Layout grid utilities
     summary: Refactored guidance page.
     summaryAdditional: Improved layout for easier scanning and consistency across other utility pages.
     affectsGuidance: true
@@ -10,6 +11,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-03-11
+    page: Layout grid utilities
     summary: Updated value of `tablet-lg` from `800px` to `880px`.
     summaryAdditional:
     isBreaking:
@@ -23,6 +25,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-12-02
+    page: Layout grid utilities
     summary: Updated value of `desktop` from `1040px` to `1024px`.
     summaryAdditional:
     isBreaking:

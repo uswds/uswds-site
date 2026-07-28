@@ -3,14 +3,16 @@ type: documentation
 changelogURL:
 items:
   - date: 2024-02-15
+    page: Contribute
     summary: Added USWDS component proposal information.
     affectsGuidance: true
     githubPr: 2491
     githubRepo: uswds-site
   - date: 2022-06-16
+    page: Contribute
     summary: Added contribute page.
     summaryAdditional:
-    isBreaking:
+    isAddition: true
     affectsAccessibility:
     affectsAssets:
     affectsGuidance: true

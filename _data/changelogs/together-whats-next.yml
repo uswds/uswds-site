@@ -1,0 +1,11 @@
+title: Together
+type: pattern
+changelogURL:
+items:
+  - date: 2025-01-23
+    page: "Together: What's Next"
+    summary: Removed report.
+    summaryAdditional: Removed content related to the January 20, 2025 Executive Order, \"Ending Radical And Wasteful Government DEI Programs And Preferencing\".
+    isRemoval: true
+    githubRepo: uswds-site
+    githubPr: 3078

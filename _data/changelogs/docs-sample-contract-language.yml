@@ -3,6 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2024-04-09
+    page: Sample contract language
     summary: Updated Federal Web Council representative link.
     affectsGuidance: true
     githubPr: 2604

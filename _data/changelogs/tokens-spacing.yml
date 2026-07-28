@@ -3,12 +3,13 @@ type: token
 changelogURL:
 items:
   - date: 2023-08-23
-    summary: Updated `0` token values to include units when needed.  
-    summaryAdditional: Now, `units(0)` can be used in `calc()` functions. 
+    page: Spacing tokens
+    summary: Updated `0` token values to include units when needed.
+    summaryAdditional: Now, `units(0)` can be used in `calc()` functions.
     isBreaking:
     affectsAccessibility:
     affectsAssets:
-    affectsGuidance: 
+    affectsGuidance:
     affectsJavascript:
     affectsMarkup:
     affectsStyles: true
@@ -16,6 +17,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.6.0
   - date: 2023-02-24
+    page: Spacing tokens
     summary: Corrected alternate token name for token `05`.
     summaryAdditional:
     isBreaking:
@@ -29,6 +31,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-03-11
+    page: Spacing tokens
     summary: Reverted value of `tablet-lg` to `880px`.
     summaryAdditional:
     isBreaking:
@@ -42,6 +45,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-02-24
+    page: Spacing tokens
     summary: Updated value of `tablet-lg` from `880px` to `800px`.
     summaryAdditional:
     isBreaking:

@@ -3,7 +3,9 @@ type: documentation
 changelogURL:
 items:
   - date: 2024-02-24
+    page: Recruitment for Federal
     summary: Page created.
-    affectsGuidance: true
+    affectsPageContent: true
+    isAddition: true
     githubPr: 2504
     githubRepo: uswds-site

@@ -3,6 +3,7 @@ type: documentation
 changelogURL:
 items:
   - date: 2024-09-26
+    page: Website standards
     summary: Updated content to reflect move to standards.digital.gov.
     affectsGuidance: true
     githubPr: 2843

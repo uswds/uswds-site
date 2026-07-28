@@ -3,6 +3,7 @@ type: token
 changelogURL:
 items:
   - date: 2024-05-15
+    page: System color tokens
     summary: Updated the token references in the "Using color tokens" code examples.
     affectsGuidance: true
     githubPr: 2377

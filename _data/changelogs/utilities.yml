@@ -3,6 +3,7 @@ type: utility
 changelogURL:
 items:
   - date: 2024-06-26
+    page: Utilities
     summary: Fixed example in settings.
     summaryAdditional: Added missing comma to color example in `$output-these-utilities`.
     isBreaking: false
@@ -18,6 +19,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2023-06-09
+    page: Utilities
     summary: Removed unused utility builder comments from compiled CSS.
     summaryAdditional: This update significantly reduces the compiled file size.
     affectsStyles: true
@@ -25,6 +27,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-06-09
+    page: Utilities
     summary: Updated sass map instructions to reflect new pattern.
     summaryAdditional: Users are now instructed to define only the variable they wish to change instead of having to define the entire map.
     isBreaking: true
@@ -38,6 +41,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.5.0
   - date: 2023-03-09
+    page: Utilities
     summary: Outline utility and mixin now accept the 05 token.
     summaryAdditional: Now, the `.outline-05` utility class and the `u-outline('05')` mixin should work as expected.
     isBreaking:
@@ -51,6 +55,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.4.0
   - date: 2022-05-04
+    page: Utilities
     summary: Added `margin-horizontal` and `margin-vertical` utility modules.
     summaryAdditional:
     isBreaking:
@@ -64,6 +69,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-04-28
+    page: Utilities
     summary: |
       Replaced the outdated text: `$output-all-utilities` with updated: `$output-these-utilities`.
     summaryAdditional:
@@ -78,6 +84,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-28
+    page: Utilities
     summary: Added documentation for using the `uswds-utilities` package, customizing utilities settings, and understanding utility modules.
     summaryAdditional:
     isBreaking:
@@ -91,6 +98,7 @@ items:
     githubRepo: uswds-site
     versionUswds:
   - date: 2021-06-16
+    page: Utilities
     summary: Added state color tokens to default utilities.
     summaryAdditional:
     isBreaking:

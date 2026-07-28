@@ -9,6 +9,7 @@ items:
     githubPr: 3232
     githubRepo: uswds-site
   - date: 2024-02-15
+    page: Component status
     summary: Added component status page.
     affectsGuidance: true
     githubPr: 2491

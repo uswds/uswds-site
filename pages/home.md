@@ -7,7 +7,7 @@ layout: landing
 title: "USWDS: The United States Web Design System"
 class: home
 hero:
-  callout: A design system for the federal government
+  callout: The design system for the federal government
   content: Design and build fast, accessible, mobile-friendly government websites backed by user research.
 touchpoints_survey: false
 graphic_list:

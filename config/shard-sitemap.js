@@ -1,22 +1,16 @@
 // test_a11y_desktop/test_a11y_mobile in .circleci/config.yml already run with
 // parallelism: 2, but before this script existed both containers ran the
 // exact same full sitemap through pa11y-ci — parallelism was configured but
-// did nothing for wall-clock time, just doubled compute. This script gives
+// actually scans of all URLs in duplicate. This script gives
 // each container a distinct slice of the sitemap so the parallelism is real.
 const fs = require("fs");
 const path = require("path");
 const http = require("http");
 const https = require("https");
 
-// cheerio/express aren't devDependencies here (removed in a prior dependency
-// cleanup), so this intentionally sticks to Node built-ins rather than
-// reintroducing an XML/HTTP library for a one-off script.
-
 // Same exclusion pa11y-ci:sitemap/-mobile already pass via
 // `--sitemap-exclude '/*.pdf|next/'`, kept in sync so sharded runs exclude
-// the same URLs as the unsharded ones. Built via `new RegExp(string)` rather
-// than a `/.../ ` literal because a literal can't start with `/*` (nothing
-// for the `*` to repeat) — the string form is just ordinary characters.
+// the same URLs as the unsharded ones.
 const EXCLUDE_PATTERN = new RegExp("/*.pdf|next/");
 
 function parseArgs(argv) {
@@ -52,10 +46,7 @@ function fetchText(url) {
 // on the same origin as the sitemap itself before it's allowed anywhere near
 // the shard config that gets written to disk and fed to pa11y-ci. Jekyll's
 // sitemap emits root-relative paths (e.g. "/components/button/"), so each
-// entry is resolved against sitemapUrl as a base — this also normalizes them
-// to the absolute URLs pa11y-ci needs to actually navigate to. This also
-// guards against a malformed/compromised sitemap pointing pa11y-ci at
-// arbitrary external hosts.
+// entry is resolved against sitemapUrl as a base.
 function extractUrls(sitemapXml, sitemapUrl) {
   const allowedOrigin = new URL(sitemapUrl).origin;
   const urls = [];
@@ -102,8 +93,6 @@ async function main() {
   }
 
   // CircleCI sets these automatically from a job's `parallelism:` value.
-  // Defaulting to 0/1 means running this script outside CircleCI (or with
-  // parallelism removed) still produces the full, unsharded URL list.
   const index = parseInt(process.env.CIRCLE_NODE_INDEX || "0", 10);
   const total = parseInt(process.env.CIRCLE_NODE_TOTAL || "1", 10);
 

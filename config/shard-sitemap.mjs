@@ -3,10 +3,10 @@
 // exact same full sitemap through pa11y-ci — parallelism was configured but
 // actually scans of all URLs in duplicate. This script gives
 // each container a distinct slice of the sitemap so the parallelism is real.
-const fs = require("fs");
-const path = require("path");
-const http = require("http");
-const https = require("https");
+import fs from "node:fs";
+import path from "node:path";
+import http from "node:http";
+import https from "node:https";
 
 // Same exclusion pa11y-ci:sitemap/-mobile already pass via
 // `--sitemap-exclude '/*.pdf|next/'`, kept in sync so sharded runs exclude

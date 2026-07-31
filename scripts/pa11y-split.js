@@ -16,7 +16,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 
 const SITEMAP_PATH = path.join(__dirname, '../_site/sitemap.xml');
 const EXCLUDE_PATTERNS = ['/*.pdf', 'next/'];
@@ -45,7 +45,12 @@ function extractUrlsFromSitemap(sitemapPath) {
 
 function shouldExcludeUrl(url, patterns) {
   return patterns.some(pattern => {
-    const regex = pattern.replace(/\*/g, '.*').replace(/\//g, '\\/');
+    // Escape regex metacharacters (including backslashes) in each literal
+    // segment, then join with `.*` so `*` in the pattern acts as a wildcard.
+    const regex = pattern
+      .split('*')
+      .map(segment => segment.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+      .join('.*');
     return new RegExp(regex).test(url);
   });
 }
@@ -76,34 +81,38 @@ function runPa11yCi(urls, configFile) {
     return;
   }
 
-  const nodeIndex = process.env.CIRCLE_NODE_INDEX || '0';
-  const nodeTotal = process.env.CIRCLE_NODE_TOTAL || '1';
+  const nodeIndex = parseInt(process.env.CIRCLE_NODE_INDEX, 10) || 0;
+  const nodeTotal = parseInt(process.env.CIRCLE_NODE_TOTAL, 10) || 1;
 
   console.log(`Node ${nodeIndex}/${nodeTotal}: Scanning ${urls.length} URLs`);
   console.log(`First URL: ${urls[0]}`);
   console.log(`Last URL: ${urls[urls.length - 1]}`);
 
-  // Create a temporary URLs file for pa11y-ci
-  const tempUrlsFile = path.join(__dirname, `../pa11y-urls-${nodeIndex}.json`);
-  const pa11yConfig = {
-    urls: urls
-  };
+  // pa11y-ci's `--json` flag is a boolean output-format switch, not a way to
+  // point it at a file of URLs - any value after it gets parsed as a
+  // positional URL/glob argument. To hand it this node's URL subset, merge
+  // them into the `urls` array of a config file instead (which pa11y-ci does
+  // support), layered on top of the base config's `defaults`.
+  const baseConfig = configFile ?
+    JSON.parse(fs.readFileSync(configFile, 'utf-8')) :
+    {};
+  const nodeConfig = Object.assign({}, baseConfig, { urls });
+  const tempConfigFile = path.join(__dirname, `../pa11y-config-${nodeIndex}.json`);
 
-  fs.writeFileSync(tempUrlsFile, JSON.stringify(pa11yConfig, null, 2));
+  fs.writeFileSync(tempConfigFile, JSON.stringify(nodeConfig, null, 2));
 
   try {
-    const configArg = configFile ? `--config ${configFile}` : '';
-    const command = `npx pa11y-ci ${configArg} --json ${tempUrlsFile}`;
+    const args = ['pa11y-ci', '--config', tempConfigFile, '--json'];
 
-    console.log(`Running: ${command}`);
-    execSync(command, {
+    console.log(`Running: npx ${args.join(' ')}`);
+    execFileSync('npx', args, {
       stdio: 'inherit',
       cwd: path.join(__dirname, '..')
     });
   } finally {
     // Clean up temp file
-    if (fs.existsSync(tempUrlsFile)) {
-      fs.unlinkSync(tempUrlsFile);
+    if (fs.existsSync(tempConfigFile)) {
+      fs.unlinkSync(tempConfigFile);
     }
   }
 }

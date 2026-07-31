@@ -63,6 +63,21 @@ jobs:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}
             - gem-cache
+      # _plugins/jekyll_get.rb hits the GitHub API for release/README/security
+      # content on every jekyll build, but only re-fetches a URL if its
+      # .jekyll_get_cache/<name>.json is missing. That dir is gitignored and
+      # was never persisted here, so it refetched from GitHub on every single
+      # build. Cache it, but rotate weekly (not indefinitely) since this data
+      # — release lists especially — does change over time. The date-into-a-
+      # file-then-checksum trick is because restore_cache/save_cache keys
+      # only support checksum/branch/env templating, no direct date function.
+      - run:
+          name: Compute weekly cache bucket
+          command: date +%Y-%U > /tmp/cache-week
+      - restore_cache:
+          keys:
+            - jekyll-get-cache-v1-{{ checksum "/tmp/cache-week" }}
+            - jekyll-get-cache-v1-
       - run:
           name: Build site assets
           command: npm run build:all-assets
@@ -71,15 +86,22 @@ jobs:
           command: |
             bundle config set --local path '~/project/vendor/bundle'
             bundle exec jekyll build
+      - save_cache:
+          key: jekyll-get-cache-v1-{{ checksum "/tmp/cache-week" }}
+          paths:
+            - .jekyll_get_cache
       - persist_to_workspace:
           root: ~/project
           paths:
             - "_site"
             - "assets"
             - "node_modules"
+  # No parallelism here on purpose: this job used to have parallelism: 2,
+  # but nothing split the rspec suite between the two containers, so both
+  # ran the identical full suite (2 spec files) for zero wall-clock benefit,
+  # just doubled compute. Removed rather than left as dead configuration.
   test_build:
     executor: my-executor
-    parallelism: 2
     steps:
       - checkout
       - attach_workspace:
@@ -100,9 +122,21 @@ jobs:
           name: Link bundler
           command: |
             bundle config set --local path '~/project/vendor/bundle'
+      # --skip-initial-build: `_site`/`assets` are already built and attached
+      # from the `build` job's workspace, so this just serves them. Without
+      # this flag, `jekyll serve` rebuilds from source on startup — which
+      # each of the 2 parallel containers here would do redundantly, plus
+      # re-trigger jekyll_get's GitHub fetches every time.
+      # The curl loop waits for --detach's background server to actually be
+      # ready before pa11y-ci starts hitting it.
+      # pa11y-ci:shard (not pa11y-ci:sitemap) is what makes parallelism: 2
+      # above actually cut wall-clock time — see config/shard-sitemap.js.
       - run:
           name: Run pa11y-ci desktop
-          command: npm run start-detached && npm run pa11y-ci:sitemap
+          command: |
+            bundle exec jekyll serve --detach --host=localhost --skip-initial-build
+            until curl -sf http://localhost:4000/sitemap.xml -o /dev/null; do sleep 1; done
+            npm run pa11y-ci:shard
   test_a11y_mobile:
     executor: my-executor
     parallelism: 2
@@ -114,9 +148,16 @@ jobs:
           name: Link bundler
           command: |
             bundle config set --local path '~/project/vendor/bundle'
+      # Same reasoning as test_a11y_desktop's "Run pa11y-ci desktop" step:
+      # --skip-initial-build avoids a redundant rebuild + jekyll_get refetch,
+      # the curl loop waits out --detach's startup race, and pa11y-ci:shard
+      # is what makes this job's parallelism: 2 actually save wall-clock time.
       - run:
           name: Run pa11y-ci mobile
-          command: npm run start-detached && npm run pa11y-ci:sitemap-mobile
+          command: |
+            bundle exec jekyll serve --detach --host=localhost --skip-initial-build
+            until curl -sf http://localhost:4000/sitemap.xml -o /dev/null; do sleep 1; done
+            npm run pa11y-ci:shard-mobile
 
 workflows:
   circle-uswds-site:

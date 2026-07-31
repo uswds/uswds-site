@@ -91,32 +91,40 @@ jobs:
             bundle exec rspec
   test_a11y_desktop:
     executor: my-executor
-    parallelism: 2
+    parallelism: 4
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
       - run:
-          name: Link bundler
-          command: |
-            bundle config set --local path '~/project/vendor/bundle'
+          name: Start static server
+          command: npx serve _site -l 4000
+          background: true
       - run:
-          name: Run pa11y-ci desktop
-          command: npm run start-detached && npm run pa11y-ci:sitemap
+          name: Wait for server
+          command: |
+            timeout 30 bash -c 'until curl -s http://localhost:4000 > /dev/null; do sleep 1; done'
+      - run:
+          name: Run pa11y-ci desktop (split across nodes)
+          command: node scripts/pa11y-split.js .pa11yci
   test_a11y_mobile:
     executor: my-executor
-    parallelism: 2
+    parallelism: 4
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
       - run:
-          name: Link bundler
-          command: |
-            bundle config set --local path '~/project/vendor/bundle'
+          name: Start static server
+          command: npx serve _site -l 4000
+          background: true
       - run:
-          name: Run pa11y-ci mobile
-          command: npm run start-detached && npm run pa11y-ci:sitemap-mobile
+          name: Wait for server
+          command: |
+            timeout 30 bash -c 'until curl -s http://localhost:4000 > /dev/null; do sleep 1; done'
+      - run:
+          name: Run pa11y-ci mobile (split across nodes)
+          command: node scripts/pa11y-split.js .pa11yci--mobile
 
 workflows:
   circle-uswds-site:

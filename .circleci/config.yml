@@ -91,7 +91,7 @@ jobs:
             bundle exec rspec
   test_a11y_desktop:
     executor: my-executor
-    parallelism: 4
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:
@@ -109,7 +109,7 @@ jobs:
           command: node scripts/pa11y-split.js .pa11yci
   test_a11y_mobile:
     executor: my-executor
-    parallelism: 4
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:

@@ -47,12 +47,37 @@ function fetchText(url) {
   });
 }
 
-function extractUrls(sitemapXml) {
+// The sitemap is fetched over the network, so its <loc> entries are
+// untrusted input: validate each one resolves to a well-formed http(s) URL
+// on the same origin as the sitemap itself before it's allowed anywhere near
+// the shard config that gets written to disk and fed to pa11y-ci. Jekyll's
+// sitemap emits root-relative paths (e.g. "/components/button/"), so each
+// entry is resolved against sitemapUrl as a base — this also normalizes them
+// to the absolute URLs pa11y-ci needs to actually navigate to. This also
+// guards against a malformed/compromised sitemap pointing pa11y-ci at
+// arbitrary external hosts.
+function extractUrls(sitemapXml, sitemapUrl) {
+  const allowedOrigin = new URL(sitemapUrl).origin;
   const urls = [];
   const locRegex = /<loc>(.*?)<\/loc>/g;
   let match;
   while ((match = locRegex.exec(sitemapXml)) !== null) {
-    urls.push(match[1]);
+    const raw = match[1].trim();
+    let parsed;
+    try {
+      parsed = new URL(raw, sitemapUrl);
+    } catch {
+      console.warn(`Skipping malformed sitemap URL: ${raw}`);
+      continue;
+    }
+    if (
+      (parsed.protocol !== "http:" && parsed.protocol !== "https:") ||
+      parsed.origin !== allowedOrigin
+    ) {
+      console.warn(`Skipping out-of-origin sitemap URL: ${raw}`);
+      continue;
+    }
+    urls.push(parsed.href);
   }
   return urls;
 }
@@ -83,7 +108,7 @@ async function main() {
   const total = parseInt(process.env.CIRCLE_NODE_TOTAL || "1", 10);
 
   const sitemapXml = await fetchText(sitemapUrl);
-  const allUrls = extractUrls(sitemapXml).filter(
+  const allUrls = extractUrls(sitemapXml, sitemapUrl).filter(
     (url) => !EXCLUDE_PATTERN.test(url)
   );
   const shard = shardUrls(allUrls, index, total);

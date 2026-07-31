@@ -11,9 +11,14 @@ jobs:
     executor: my-executor
     steps:
       - checkout
+      # Fallback keys allow partial cache hits when the lock file changes.
+      # Bump v1- to invalidate all caches.
       - restore_cache:
+          name: Restore gem cache
           keys:
-            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+            - v1-gem-cache-{{ arch }}-{{ .Branch }}-
+            - v1-gem-cache-{{ arch }}-
       - run:
           name: Install ruby dependencies
           command: |
@@ -24,8 +29,13 @@ jobs:
       - run:
           name: Install scss_lint
           command: gem install scss_lint
+      # Drop stale gems left by a partial cache restore.
+      - run:
+          name: Clean stale gems
+          command: bundle clean --force
       - save_cache:
-          key: gem-cache-{{ checksum "Gemfile.lock" }}
+          name: Save gem cache
+          key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - persist_to_workspace:
@@ -36,16 +46,22 @@ jobs:
     executor: my-executor
     steps:
       - checkout
+      # Fallback keys allow partial cache hits when the lock file changes.
       - restore_cache:
+          name: Restore npm cache
           keys:
-            - npm-cache-{{ checksum "package-lock.json" }}
+            - v1-node-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - v1-node-{{ .Branch }}-
+            - v1-node-
       - run:
           name: Install node dependencies
           command: npm ci
+      # Cache npm's download store, not node_modules; npm ci rebuilds node_modules from it.
       - save_cache:
-          key: npm-cache-{{ checksum "package-lock.json" }}
+          name: Save npm cache
+          key: v1-node-{{ .Branch }}-{{ checksum "package-lock.json" }}
           paths:
-            - node_modules
+            - ~/.npm
       - persist_to_workspace:
           root: ~/project
           paths:
@@ -54,15 +70,9 @@ jobs:
     executor: my-executor
     steps:
       - checkout
+      # Deps come from the workspace; no cache restore needed here.
       - attach_workspace:
           at: ~/project
-      - restore_cache:
-          keys:
-            - npm-cache-{{ checksum "package-lock.json" }}
-      - restore_cache:
-          keys:
-            - gem-cache-{{ checksum "Gemfile.lock" }}
-            - gem-cache
       - run:
           name: Build site assets
           command: npm run build:all-assets

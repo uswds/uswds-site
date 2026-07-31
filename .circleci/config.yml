@@ -56,13 +56,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - restore_cache:
-          keys:
-            - npm-cache-{{ checksum "package-lock.json" }}
-      - restore_cache:
-          keys:
-            - gem-cache-{{ checksum "Gemfile.lock" }}
-            - gem-cache
       - run:
           name: Build site assets
           command: npm run build:all-assets
@@ -76,7 +69,6 @@ jobs:
           paths:
             - "_site"
             - "assets"
-            - "node_modules"
   test_build:
     executor: my-executor
     parallelism: 2

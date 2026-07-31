@@ -20,6 +20,7 @@ const { execFileSync } = require('child_process');
 
 const SITEMAP_PATH = path.join(__dirname, '../_site/sitemap.xml');
 const EXCLUDE_PATTERNS = ['/*.pdf', 'next/'];
+const BASE_URL = process.env.PA11Y_BASE_URL || 'http://localhost:4000';
 
 function parseArgs() {
   const configFile = process.argv[2];
@@ -41,6 +42,18 @@ function extractUrlsFromSitemap(sitemapPath) {
   }
 
   return urlMatches.map(match => match.replace(/<\/?loc>/g, ''));
+}
+
+function normalizeUrls(urls, baseUrl) {
+  // <loc> entries may be relative paths (no `url:` set in _config.yml) or
+  // absolute URLs pointing at a different host (e.g. production). Either
+  // way, pa11y-ci's `urls` config option does no host resolution of its
+  // own (unlike its `--sitemap` CLI flag with --sitemap-find/--sitemap-replace),
+  // so without this it falls back to treating paths as local files.
+  return urls.map(loc => {
+    const parsed = new URL(loc, baseUrl);
+    return new URL(parsed.pathname + parsed.search + parsed.hash, baseUrl).toString();
+  });
 }
 
 function shouldExcludeUrl(url, patterns) {
@@ -124,8 +137,11 @@ function main() {
   const allUrls = extractUrlsFromSitemap(SITEMAP_PATH);
   console.log(`Total URLs in sitemap: ${allUrls.length}`);
 
+  console.log(`Normalizing URLs against ${BASE_URL}...`);
+  const normalizedUrls = normalizeUrls(allUrls, BASE_URL);
+
   console.log('Filtering URLs...');
-  const filteredUrls = filterUrls(allUrls, EXCLUDE_PATTERNS);
+  const filteredUrls = filterUrls(normalizedUrls, EXCLUDE_PATTERNS);
   console.log(`URLs after filtering: ${filteredUrls.length}`);
 
   console.log('Splitting URLs for parallel execution...');

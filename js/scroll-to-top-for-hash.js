@@ -17,13 +17,13 @@ function scrollToTopForHash () {
     clearTimeout(timeout);
     // setTimeout ensures proper ordering of events
     // and makes this happens after the browser's default jump
-    timeout = setTimeout(function () {
+    timeout = setTimeout(() => {
       window.scrollTo(0, scrollTopPos);
     }, 1);
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   // check every XXX milliseconds
   setTimeout(scrollToTopForHash, 150);
 });

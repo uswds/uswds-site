@@ -68,7 +68,7 @@ function handleClick(e) {
 
 // Initialize event listeners on all sidenav elements
 const sidenavs = document.querySelectorAll(".sidenav");
-sidenavs.forEach(function (sidenav) {
+sidenavs.forEach((sidenav) => {
   sidenav.addEventListener("keydown", handleKeydown);
   sidenav.addEventListener("click", handleClick);
 });

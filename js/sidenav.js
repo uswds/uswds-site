@@ -1,23 +1,36 @@
 "use strict";
 
-var $ = require("jquery");
-var calculateAnchorPosition = require("./calculate-anchor-position");
+const calculateAnchorPosition = require("./calculate-anchor-position");
 
-/* Firefox needs html, others need body */
-var root = $("body, html");
+// Track which links were activated via Enter keypress (for focus management)
+const keypressedLinks = new WeakSet();
 
-// capture that the enter key was used to "click"
-$(".sidenav").on("keydown", "a", function (e) {
-  var ENTER = 13;
-  if (e.which === ENTER) {
-    $(this).data("keypress", true);
+// Determine scroll behavior based on user's motion preference
+function getScrollBehavior() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ? "auto"
+    : "smooth";
+}
+
+// Handle keydown to track Enter key usage
+function handleKeydown(e) {
+  const link = e.target.closest("a");
+  if (!link) return;
+
+  const ENTER = 13;
+  if (e.which === ENTER || e.keyCode === ENTER) {
+    keypressedLinks.add(link);
   }
-});
+}
 
-$(".sidenav").on("click", "a", function (e) {
+// Handle click on sidenav links
+function handleClick(e) {
+  const link = e.target.closest("a");
+  if (!link) return;
+
   // long url splitting
-  var hashLocation = $(this).attr("href").split("#")[ 1 ];
-  var scrollTopPos = calculateAnchorPosition(hashLocation);
+  const hashLocation = link.getAttribute("href").split("#")[ 1 ];
+  const scrollTopPos = calculateAnchorPosition(hashLocation);
 
   //if anchor doesn't exist on the page, or calc fails
   //then exit gracefully
@@ -27,33 +40,35 @@ $(".sidenav").on("click", "a", function (e) {
 
   e.preventDefault();
 
-  root.animate(
-    {
-      scrollTop: scrollTopPos,
-    },
-    {
-      duration: 200,
-      start: function () {
-        var newHash = "#" + hashLocation;
+  const newHash = "#" + hashLocation;
 
-        // using pushState is easiest way to prevent double jumps
-        if (history && history.pushState && window.location.hash !== newHash) {
-          history.pushState(null, null, newHash);
-        } else if (window.location.hash !== newHash) {
-          window.location.hash = newHash;
-        }
-      },
-      done: function () {
-        // if keyboard was used, update keyboard focus to section
-        var link = $(e.target);
-        var section = $("#" + hashLocation);
+  // using pushState is easiest way to prevent double jumps
+  if (history && history.pushState && window.location.hash !== newHash) {
+    history.pushState(null, null, newHash);
+  } else if (window.location.hash !== newHash) {
+    window.location.hash = newHash;
+  }
 
-        if (link.data("keypress") === true) {
-          link.removeData("keypress");
-          section.attr("tabindex", "-1");
-          section.focus();
-        }
-      },
+  // Perform the scroll
+  window.scrollTo({
+    top: scrollTopPos,
+    behavior: getScrollBehavior(),
+  });
+
+  // if keyboard was used, update keyboard focus to section
+  if (keypressedLinks.has(link)) {
+    keypressedLinks.delete(link);
+    const section = document.getElementById(hashLocation);
+    if (section) {
+      section.setAttribute("tabindex", "-1");
+      section.focus({ preventScroll: true });
     }
-  );
+  }
+}
+
+// Initialize event listeners on all sidenav elements
+const sidenavs = document.querySelectorAll(".sidenav");
+sidenavs.forEach((sidenav) => {
+  sidenav.addEventListener("keydown", handleKeydown);
+  sidenav.addEventListener("click", handleClick);
 });

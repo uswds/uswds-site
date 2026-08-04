@@ -14,7 +14,7 @@ We envision empowered agency digital teams who share solutions and use effective
 
 {:.margin-top-4}
 ## Websites with two languages
-USWDS is a design system for the federal government. We make it easier to build accessible, mobile-friendly government websites.
+USWDS is the design system for the federal government. We make it easier to build accessible, mobile-friendly government websites.
 
 {:.margin-top-2}
 ### When to use this pattern

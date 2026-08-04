@@ -4,6 +4,13 @@ type: component
 changelogURL:
 
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed table header borders collapsing when using screen-reader-only captions.
+    summaryAdditional: Adjusted border-collapse behavior when a .usa-sr-only caption uses position absolute (Bootstrap-style visually-hidden pattern).
+    affectsStyles: true
+    githubPr: 6633
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2024-12-18
     summary: Updated table header styles to be consistent across all table elements.
     summaryAdditional: Now, all `thead th`, `tbody th`, and `tfoot th` cells will have the same visual styles. Teams should confirm that their tables display as expected.

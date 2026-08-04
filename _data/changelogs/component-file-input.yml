@@ -2,6 +2,31 @@ title: File input
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Changed error border to use the error-dark token for correct semantic color.
+    summaryAdditional: The file input error border now uses the error-dark token instead of secondary-dark, ensuring custom themes apply the correct semantic error color.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 6669
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: NNNN-NN-NN
+    summary: Hid drag-and-drop language on mobile devices with coarse pointers.
+    summaryAdditional: File input now shows "Choose from folder" instead of drag-and-drop instructions on mobile devices. This is a potentially breaking change as the visible text and default aria-label change on mobile.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsJavascript: true
+    affectsContent: true
+    githubPr: 6660
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: NNNN-NN-NN
+    summary: Fixed initialization issues when dynamically adding file inputs to the page.
+    summaryAdditional: The component now uses a data-enhanced guard to prevent re-initialization errors.
+    affectsJavascript: true
+    githubPr: 6664
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2024-12-18
     summary: Fixed a bug that prevented screen readers from announcing the invalid file type error message.
     affectsAccessibility: true

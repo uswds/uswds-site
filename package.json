@@ -90,7 +90,6 @@
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
-    "jquery": "^3.7.1",
     "node-notifier": "^10.0.1",
     "pa11y-ci": "^2.4.2",
     "postcss": "^8.5.15",

@@ -2,6 +2,14 @@ title: Modal
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed screen readers announcing modal content twice.
+    summaryAdditional: The modal now controls initial focus (first footer button), disables focus-trap auto-focus, and sets aria-modal on the wrapper to prevent duplicate announcements, especially in NVDA.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 6703
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2025-02-14
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

@@ -20,7 +20,7 @@ items:
     versionUswds: 3.14.0
   - date: NNNN-NN-NN
     summary: Migrated Sass if() syntax to official CSS if() function.
-    summaryAdditional: Mechanically migrated all Sass if($cond, $a, $b) calls to the new if(sass($cond): $a; else: $b) syntax across packages/, clearing ~90 deprecation warnings. Also upgraded Prettier to 3.9.6 for native CSS if() formatting support.
+    summaryAdditional: "Mechanically migrated all Sass if($cond, $a, $b) calls to the new if(sass($cond): $a; else: $b) syntax across packages/, clearing ~90 deprecation warnings. Also upgraded Prettier to 3.9.6 for native CSS if() formatting support."
     affectsStyles: true
     affectsSettings: true
     affectsAssets: true

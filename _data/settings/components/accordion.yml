@@ -15,3 +15,8 @@ contents:
     var: $theme-accordion-font-family
     default: '"body"'
     type: family
+  - name: Icon position
+    description: Position of the expand/collapse icon on accordion buttons. Allowed values are `"right"` (default) or `"left"`. Per-accordion modifiers (`usa-accordion--icon-left`, `usa-accordion--icon-right`) override this setting.
+    var: $theme-accordion-icon-position
+    default: '"right"'
+    type: string

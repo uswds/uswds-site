@@ -1,0 +1,3 @@
+- **Include a label.** Make sure each form control includes a `label` with a `for` attribute related to the `id` of the `input` element it labels. 
+- **Use helpful hint text.** Make sure any hint text helps users understand what they need to input.
+- **Customization.** As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/components/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).

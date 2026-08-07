@@ -16,6 +16,8 @@ subnav:
   href: '#line-charts'
 - text: Bar charts
   href: '#bar-charts'
+- text: Latest updates
+  href: '#changelog'
 tags:
   - dataviz
   - infographics
@@ -24,6 +26,8 @@ tags:
   - graphs
   - line
   - bar
+changelog:
+  key: component-data-visualizations
 ---
 <div class="site-note"><strong>Note:</strong> The data visualizations components are guidance-only and do not include any <code>Component Code</code>. The examples of specific visualizations included with our guidance are intended to be a demonstration of one way to implement our guidance with a focus on accessibility and assistive tooling.</div>
 <section class="site-component-section site-component-usage">
@@ -37,7 +41,7 @@ tags:
   </ul>
   <h4>References</h4>
   <ul class="usa-content-list">
-    <li><a href="https://medium.com/nightingale/how-to-choose-the-colors-for-your-data-visualizations-50b2557fa335">Choosing Colors</a>&nbsp; [medium.com]</li>
+    <li><a href="https://nightingaledvs.com/how-to-choose-colors-for-your-data-visualizations/">Choosing Colors</a>&nbsp; [nightingaledvs.com]</li>
     <li><a href="https://venngage.com/blog/color-blind-friendly-palette/">Color Contrast and Color Blindness</a>&nbsp; [venngage.com]</li>
   </ul>
   <h3>Lossless representation</h3>
@@ -77,7 +81,7 @@ tags:
   </ul>
   <h4>References</h4>
   <ul class="usa-content-list">
-    <li><a href="https://accessibility.digital.gov/visual-design/data-visualizations/">Accessibility for Teams</a>&nbsp; [digital.gov]</li>
+    <li><a href="https://digital.gov/guides/accessibility-for-teams/visual-design#data-visualizations">Accessibility for Teams</a>&nbsp; [digital.gov]</li>
     <li><a href="https://www.section508.gov/test">508 testing</a>&nbsp; [section508.gov]</li>
     <li><a href="https://www.matuzo.at/blog/testing-with-tab/">Accessibility testing with tab key</a>&nbsp; [matuzo.at]</li>
     <li><a href="https://www.access-board.gov/">United States Access Board</a>&nbsp; [access-board.gov]</li>
@@ -105,7 +109,7 @@ tags:
 
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="LineChart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="LineChart" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
  viewBox="0 0 1020.29 660.46" style="enable-background:new 0 0 1020.29 660.46;" xml:space="preserve" aria-hidden="true">
 <style type="text/css">
 .line-st0{fill:none;stroke:#71767a;stroke-miterlimit:10;}
@@ -321,7 +325,7 @@ tags:
     <?xml version="1.0" encoding="utf-8"?>
     <?xml version="1.0" encoding="utf-8"?>
     <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
       viewBox="0 0 952 601" style="enable-background:new 0 0 952 601;" xml:space="preserve" aria-hidden="true">
     <style type="text/css">
       .st0{fill:#1B1B1B;}
@@ -405,7 +409,7 @@ tags:
       </g>
     </g>
     </svg>
-    <table class="usa-sr-only" aria-describedby="source">
+    <table class="usa-sr-only" aria-describedby="source_bar">
       <caption>Top 5 most visited Nation Parks</caption>
       <thead>
         <tr>

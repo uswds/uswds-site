@@ -1,0 +1,43 @@
+.copy-code {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  // Overrides .usa-accordion__content "overflow: auto", which prevents sticky positioning
+  overflow: initial;
+
+  // Override display flex on collapsed accordion
+  &[hidden] {
+    display: none;
+  }
+
+  &__wrapper {
+    display: none;
+
+    @include at-media("tablet") {
+      display: block;
+      margin-left: units(2);
+    }
+  }
+
+  &__button {
+    @include u-font("sans", "3xs");
+    @include u-padding-x(0.5);
+    margin-right: 0;
+    min-width: units(10);
+    position: sticky;
+    top: units(1);
+
+    &--success,
+    &--success:hover {
+      background-color: color("success-dark");
+      box-shadow: none;
+      color: color("white");
+    }
+
+    @include at-media("desktop") {
+      // Offset for nav
+      top: units(8);
+    }
+  }
+}

@@ -52,7 +52,7 @@ utilities:
   </div>
 </div>
 
-<section class="utilities-section">
+<section id="utilities-section" class="utilities-section">
 
 {% include utilities/utilities-section-title-bar.html %}
 
@@ -75,7 +75,7 @@ utilities:
             | times: 1 %}
 
           <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-default-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-default-{{ color.token }}{% if grade < 50 %} bg-gray-90{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {% assign system = system-colors | where: 'token', color.default %}
@@ -107,7 +107,7 @@ utilities:
             {% endif %}
           {% endif %}
           <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {{ color.value }}
@@ -138,7 +138,7 @@ utilities:
             {% endif %}
           {% endif %}
           <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {{ value }}
@@ -299,7 +299,7 @@ $background-color-palettes: (
     </div>
 
     <h4 class="font-lang-2xs margin-top-4 margin-bottom-0">Global color palettes</h4>
-    <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in <code>_uswds-theme-utilities.scss</code> will output in the background color, text color, border color, and text decoration color utilities.</p>
+    <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in your your <a href="{{ site.baseurl }}/documentation/settings" class="">USWDS settings configuration</a> will output in the background color, text color, border color, and text decoration color utilities.</p>
 
     {% include utilities/color-palettes.html %}
 

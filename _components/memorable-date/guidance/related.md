@@ -1,0 +1,3 @@
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/date-of-birth/">Date of Birth</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/phone-number/">Phone Number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/social-security-number/">Social Security Number</a> pattern

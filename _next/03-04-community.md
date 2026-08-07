@@ -2,20 +2,19 @@
 title: Feel engaged with the community
 subhead: Agency teams want to...
 description: "It’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it."
-meta:
-  og:image: /img/next/og-next-findings-engage.png
+image: /img/next/og-next-findings-engage.png
 
 permalink: /next/findings/community/
 slug: "engage"
 
-navbar_color: "next-gold-dark"
+navbar_color: "gold-50v"
 hero_color: "next-gold-medium"
 quote_color: "next-gold-medium"
 
 chapter: false
 parent: Findings
 
-conversation_starters: 
+conversation_starters:
   - |-
     **How might we** shift the culture around the design system to be more inclusive?
   - |-

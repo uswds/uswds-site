@@ -16,7 +16,7 @@ module Jekyll
       url = "#{@base_url}/html-templates/#{@name}"
 
       begin
-        open(url).read
+        URI(url).open.read
       rescue => e
         print "library_component: error fetching #{url}: #{e}\n"
         throw e
@@ -35,7 +35,7 @@ module Jekyll
           html = get_from_server
         elsif File.exist?(@fs_path)
           puts " + packaged uswds component: #{@name}"
-          html = open(@fs_path).read
+          html = File.open(@fs_path).read
         else
           raise (
             "Unable to find the library component #{@name}! " +

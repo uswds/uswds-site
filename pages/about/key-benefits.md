@@ -7,18 +7,15 @@ redirect_from:
 layout: styleguide
 category: About
 lead: Using the U.S. Web Design System makes it easier to build accessible, mobile-friendly government websites. Here's why USWDS works for government teams.
+subnav:
+  - text: Latest updates
+    href: '#changelog'
+changelog:
+  key: about-key-benefits
 ---
 The U.S. Web Design System (USWDS) is a toolkit of principles, guidance, and code that makes it easier to build accessible, mobile-friendly government websites. We use human-centered design to support human-centered design teams.
 
-There are many ways to build a website or service. We designed USWDS to deliver unique benefits to government teams:
-
-- [Compliance from the start](#compliance-from-the-start)
-- [Proven design solutions that users expect](#proven-design-solutions-that-users-expect)
-- [Team alignment and common goals](#team-alignment-and-common-goals)
-- [Mission focus](#mission-focus)
-- [A cross-functional design system community](#a-cross-functional-design-system-community)
-- [Effective stewardship of public resources](#effective-stewardship-of-public-resources)
-
+There are many ways to build a website or service. We designed USWDS to deliver unique benefits to government teams.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
@@ -93,11 +90,11 @@ We are as committed as you are to public service, and we reflect this in our pro
     We know that making the case for USWDS is important and sometimes difficult. Here are a few tips!
   </p>
 
-  <ul class="usa-icon-list usa-icon-list--size-lg margin-top-3">
+  <ul class="usa-icon-list site-icon-list usa-icon-list--size-lg margin-top-3">
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon text-blue">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+          <use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">
@@ -107,7 +104,7 @@ We are as committed as you are to public service, and we reflect this in our pro
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon text-blue">
         <svg class="usa-icon" aria-hidden="true" role="img">
-          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+          <use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
         </svg>
       </div>
       <div class="usa-icon-list__content">

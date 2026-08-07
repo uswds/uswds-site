@@ -1,0 +1,17 @@
+title: Shadow tokens
+type: token
+changelogURL:
+items:
+  - date: 2021-05-25
+    summary: Replaced entry for token `0` with token `none`.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1215
+    githubRepo: uswds-site
+    versionUswds:

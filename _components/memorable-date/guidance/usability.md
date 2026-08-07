@@ -1,2 +1,2 @@
-- **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
-- **Avoid select elements.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text boxes.
+- **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order
+- **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.

@@ -9,14 +9,10 @@ permalink: /components/select/
 redirect_from:
   - /form-controls/07-dropdown/
 subnav:
-- text: Preview
-  href: '#select-preview'
-- text: Code
-  href: '#select-code'
-- text: Guidance
-  href: '#select-guidance'
-- text: Package
-  href: '#select-package'
+- text: Select accessibility tests
+  href: /components/select/accessibility-tests/
 title: Select
 type: component
+changelog:
+  key: component-select
 ---

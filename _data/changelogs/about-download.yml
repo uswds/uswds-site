@@ -1,0 +1,8 @@
+title: Download
+type: documentation
+changelogURL:
+items:
+  - date: 2024-05-15
+    summary: Added note about incorrect package dates in downloadable USWDS package.
+    githubPr: 2621
+    githubRepo: uswds-site

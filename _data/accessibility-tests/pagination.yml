@@ -1,0 +1,67 @@
+title: Pagination
+component_status: pass
+test_items:
+  # General tests
+  - summary: Color is not the only method used to convey pagination link states.
+    summary_additional: When navigating through the pagination links, you can read the numbers to understand what page you are on. There may also be underlining missing to indicate you are on the current page.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.1
+  - summary: Numbers and background in in pagination links meet color contrast requirements.
+    summary_additional: When you use a color contrast checker to view the pagination, contrast between the number color and background color is at least 4.5:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.3
+  - summary: Pagination clearly indicates location on the website.
+    summary_additional: When viewing the paginated content, the numbers have distinct styling that give clear visual indication of where you are in the site and how to navigate back and forth.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.8
+  - summary: When in use, pagination links appear in the same location on every page of the website.
+    summary_additional: When you navigate to different pages on the website, the pagination is always in the same place, when it is present.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 3.2.3
+  # Zoom/screen magnification tests
+  - summary: Pagination content is visible and functional when screen is magnified.
+    summary_additional: When you zoom in to 200%, paginated content is legible and properly sized.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.8.2
+    wcag_criterion: 1.4.4
+  # Keyboard navigation tests
+  - summary: A mouse is not required to perform actions in the paginated content.
+    summary_additional: When you navigate into the paginated links, you can use your keyboard to access the links.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.1.1
+  - summary: Pagination does not trap keyboard focus.
+    summary_additional: When you navigate through pagination links with a keyboard, you can easily move into and out to get to other content.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.1.2
+  - summary: Focus indicator is clearly visible.
+    summary_additional: When you use a keyboard to navigate through the paginated content, there will be a visible outline or other clear indication around each number where the the focus is.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.7
+  # Screen reader tests
+  - summary: Screen reader announces paginated links in logical order.
+    summary_additional: When you use a screen reader and reach paginated links, they will be announced in the order they appear visually and will follow numerical order.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.2
+  - summary: Screen reader announces role values.
+    summary_additional: When you use a screen reader and access a link in the pagination, you hear the value of the role. For example, "ten", "current".
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 4.1.2

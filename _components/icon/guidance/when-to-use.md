@@ -1,3 +1,3 @@
-- **To draw attention to actions.** Icons are helpful when combined with text to inform users about performing an action. The icon should directly relate to the text it accompanies.
-- **To help readers find key information.** Use icons as scannable, easy-to-understand visual indicators for key information like a phone number or email address.
-- **To enhance an actionable target.** Icons make great touch or click targets. Use an icon for common actions like opening a menu or sharing an article.
+- **Draw attention to actions.** Icons, when paired with text, grab attention and show  actions to take. Make sure each icon directly relates to any text it accompanies.
+- **Help readers find key information.** Use icons as scannable, easy-to-understand visual cues for key information, like a phone number or email address.
+- **Enhance an actionable target.** Icons make great touch or click targets. Use an icon for common actions, like opening a menu or sharing an article.

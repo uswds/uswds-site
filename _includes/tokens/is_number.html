@@ -1,3 +1,7 @@
+<!--
+  Check if the token type is numeric and assign is_number accordingly.
+  is_number determines if the token is displayed with quotes.
+-->
 {% assign is_number = false %}
 {% assign this_token = item.token %}
 {% assign divided = this_token | divided_by: 1%}
@@ -10,6 +14,7 @@
 {% if this_token == 0 or this_token == '0' %}
   {% assign is_number = true %}
 {% endif %}
+<!-- These tokens should be treated as strings -->
 {% if this_token == '05' %}
   {% assign is_number = false %}
 {% endif %}
@@ -20,10 +25,19 @@
   {% assign is_number = false %}
 {% endif %}
 
-{% assign converted = false %}
-{% assign conversion =
-  site.data.tokens.conversion
-  | where: 'token', item.token %}
-{% if conversion[0].number %}
-  {% assign converted = conversion[0].number %}
+<!--
+  Find the equivalent number value for non-numeric tokens.
+  First, check if the token is a number.
+-->
+{% if is_number %}
+  {% assign converted = false %}
+{% else %}
+  {% assign converted = false %}
+<!-- If not a number, assign its equivalent number value -->
+  {% assign conversion =
+    site.data.tokens.conversion
+    | where: 'token', item.token %}
+  {% if conversion[0].number %}
+    {% assign converted = conversion[0].number %}
+  {% endif %}
 {% endif %}

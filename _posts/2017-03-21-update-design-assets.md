@@ -6,6 +6,7 @@ tags:
 - design
 excerpt: "The team recently worked on the design assets to ensure that the latest components are present in the provided sticker sheets. These sticker sheets are meant to provide design teams with the assets they need to create wireframes or high-fidelity compositions quickly and effectively. The biggest change is the team's decision to retire the Omnigraffle sticker sheet."
 category: About
+expiration_date: 2024-04-15
 ---
 The design assets for the U.S. Web Design Standards have always been a great tool for designers to quickly get a wireframe, vision, or high-fidelity compositions created. As the Standards continue to evolve and mature, these assets need to be re-evaluated and updated. The team recently did this and discovered that it takes way longer than originally thought to keep three formats of design assets maintained and up to date.
 

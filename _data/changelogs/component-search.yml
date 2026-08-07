@@ -1,0 +1,39 @@
+title: Search
+type: component
+changelogURL:
+items:
+- date: 2024-06-19
+  summary: Added WCAG compliance tag and accessibility test status section.
+  affectsGuidance: true
+  githubPr: 2694
+  githubRepo: uswds-site
+- date: 2023-06-09
+  summary: Improved legibility in forced colors mode.
+  summaryAdditional: Adds a consistent border in forced colors mode.
+  affectsAccessibility: true
+  affectsStyles: true
+  githubPr: 5147
+  githubRepo: uswds
+  versionUswds: 3.5.0
+- date: 2022-04-28
+  summary: Updated to Sass module syntax and new package structure.
+  isBreaking: true
+  affectsAssets: true
+  affectsJavascript: true
+  affectsStyles: true
+  githubPr: 4656
+  githubRepo: uswds
+  versionUswds: 3.0.0
+- date: 2021-12-14
+  summary:  Improved resilience of icon-only functionality.
+  summaryAdditional: Updated to add a text equivalent if the image path is broken and does not load.
+  isBreaking: true
+  affectsAccessibility: true
+  affectsAssets: false
+  affectsGuidance: false
+  affectsJavascript: false
+  affectsMarkup: true
+  affectsStyles: true
+  githubPr: 4274
+  githubRepo: uswds
+  versionUswds: 2.13.0

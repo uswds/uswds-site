@@ -10,6 +10,10 @@ subnav:
   href: '#letterspacing-tokens'
 - text: Using letterspacing tokens
   href: '#using-letterspacing-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-type-letterspacing
 ---
 
 {% assign conversion = site.data.tokens.conversion %}
@@ -106,21 +110,6 @@ Your context and coding style determine how you access USWDS letterspacing token
         <td data-title="Example">
           <span>
             @include u-text(<code>'ls-neg-2'</code>)
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Context">
-          <span class="font-lang-3">setting</span>
-        </th>
-        <td data-title="Description">
-          <span>
-            <a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
-          </span>
-        </td>
-        <td data-title="Example">
-          <span>
-            $theme-heading-letterspacing: <code>-2</code>
           </span>
         </td>
       </tr>

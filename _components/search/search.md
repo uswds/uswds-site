@@ -10,14 +10,8 @@ redirect_from:
 - /search-bar/
 - /components/search-bar/
 subnav:
-- text: Preview
-  href: '#search-preview'
-- text: Code
-  href: '#search-code'
-- text: Guidance
-  href: '#search-guidance'
-- text: Package
-  href: '#search-package'
+- text: Search accessibility tests
+  href: /components/search/accessibility-tests/
 title: Search
 type: component
 tags:
@@ -32,5 +26,6 @@ variants:
     description: Search component with increased padding and font-size.
   - variant: "`.usa-search--small`"
     description: A compact variation of the search. Uses a magnifying glass icon for the submit button.
+changelog:
+  key: component-search
 ---
-

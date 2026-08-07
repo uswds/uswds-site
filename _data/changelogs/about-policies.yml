@@ -1,0 +1,22 @@
+title: Website policies
+type: documentation
+changelogURL:
+items:
+  - date: 2023-12-01
+    summary: Removed open government link.
+    affectsGuidance: true
+    githubPr: 2384
+    githubRepo: uswds-site
+  - date: 2021-10-19
+    summary: Added policies page.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1289
+    githubRepo: uswds-site
+    versionUswds:

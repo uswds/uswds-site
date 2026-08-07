@@ -1,33 +1,22 @@
+{% comment %}
+  Structure for the pages inside of _posts
+{% endcomment %}
+
 {% assign post = include.post %}
-<article id="{{ post.id | default: post.title | slugify }}"{% if include.excerpt %} class="post-excerpt padding-top-2 border-top-2px margin-top-4 measure-6"{% endif %}>
-  <header class="post-meta">
+<article>
+  <header>
     <p class="post-category site-subheading">
       {{ post.tags[0] }}
     </p>
 
-    <h1 class="post-title font-lang-11 tablet:font-lang-14 text-thin">
-      {% if include.excerpt %}<a href="{{ site.baseurl }}{{ post.url }}">{% endif %}
+    <h1 class="post-title">
       {{ post.title }}
-      {% if include.excerpt %}</a>{% endif %}
     </h1>
 
-    {% if post.author %}
-    <span class="post-date site-subheading">By {{ post.author }}</span>
-    {% endif %}
-    <time class="post-date site-subheading" datetime="{{ post.date | date: '%FT%T' }}">
-      {{ post.date | date: '%B %-d, %Y' }}
-    </time>
+    {% include post-meta.html %}
   </header>
 
-  <div class="post-content site-prose {% if include.excerpt == true %}{% else%}measure-4 {% endif %}margin-top-4">
-  {% if include.excerpt == true %}
-    <p class="post-excerpt">
-      {{ post.lead | default: post.excerpt }}
-    </p>
-
-    <p class="post-more margin-top-2"><a href="{{ site.baseurl }}{{ post.url }}">Continue reading</a></p>
-  {% else %}
+  <div class="post-content site-prose">
     {{ post.content }}
-  {% endif %}
   </div>
 </article>

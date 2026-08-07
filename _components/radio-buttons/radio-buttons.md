@@ -9,14 +9,8 @@ permalink: /components/radio-buttons/
 redirect_from:
 - /form-controls/09-radio-buttons/
 subnav:
-- text: Preview
-  href: '#radio-buttons-preview'
-- text: Code
-  href: '#radio-buttons-code'
-- text: Guidance
-  href: '#radio-buttons-guidance'
-- text: Package
-  href: '#radio-buttons-package'
+- text: Radio button accessibility tests
+  href: /components/radio-buttons/accessibility-tests/
 title: Radio buttons
 type: component
 variants:
@@ -29,6 +23,8 @@ tags:
   - input
   - checkbox
   - selector
+changelog:
+  key: component-radio-buttons
 ---
 
 Radio buttons are a common way to allow users to make a single selection from a list of options. Since only one radio button can be selected at a time (within the same group), each available choice must be its own item and label. In contrast, [checkboxes]({{ site.baseurl }}/components/checkbox) may show a single label, with the checked/unchecked status of the item meaning opposite things. For example, a checkbox could have a single input/label and legend that says "I have read the terms and conditions." Radio buttons would need two inputs/labels for the same legend, "No" and "Yes".

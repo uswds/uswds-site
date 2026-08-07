@@ -1,0 +1,35 @@
+title: Typesetting tokens
+type: token
+changelogURL:
+items:
+  - date: 2024-05-15
+    summary: Updated settings configuration code example.
+    affectsGuidance: true
+    githubPr: 2379
+    githubRepo: uswds-site
+  - date: 2022-01-18
+    summary: Added instructions for adding custom fonts to USWDS.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance: true
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
+    githubPr: 1905
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2021-03-17
+    summary: Added default font stacks.
+    summaryAdditional:
+    isBreaking:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles: true
+    githubPr: 4084
+    githubRepo: uswds
+    versionUswds: 2.11.0

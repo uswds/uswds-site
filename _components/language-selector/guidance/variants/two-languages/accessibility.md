@@ -1,0 +1,2 @@
+- **There should be enough color contrast between the button, the text inside the button, and the background to ensure readability.**
+- **The language of each page should be identified using the HTML lang attribute** (`<html lang="en">`, for example). Please see [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57.html).

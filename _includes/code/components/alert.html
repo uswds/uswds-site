@@ -8,13 +8,17 @@
   {% library_component usa-alert~warning %}
 {% endcapture %}{{ alert-warning | strip }}
 
+{% capture alert-success %}
+  {% library_component usa-alert~success %}
+{% endcapture %}{{ alert-success | strip }}
+
 {% capture alert-error %}
   {% library_component usa-alert~error %}
 {% endcapture %}{{ alert-error | strip }}
 
-{% capture alert-success %}
-  {% library_component usa-alert~success %}
-{% endcapture %}{{ alert-success | strip }}
+{% capture alert-emergency %}
+  {% library_component usa-alert~emergency %}
+{% endcapture %}{{ alert-emergency | strip }}
 
 <h3 class="site-preview-heading">Slim alert</h3>
 

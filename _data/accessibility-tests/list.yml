@@ -1,0 +1,46 @@
+title: List
+component_status: pass
+test_items:
+# Zoom/screen magnification items
+  - summary: Text retains functionality when screen is magnified.
+    summary_additional: |
+      When you zoom into 200%,
+      you can still see all list content.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.8.0
+    wcag_criterion: 1.4.4
+# Screen reader items
+  - summary: Screen reader announces list.
+    summary_additional: |
+      When you listen to a list with a screen reader,
+      the screen reader announces that it is a list and tells you how many items are in the list.
+      For example, "List; four items."
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.0
+    wcag_criterion: 1.3.1
+  - summary: Screen reader announces list items in the correct order.
+    summary_additional: |
+      When you listen to a list with a screen reader,
+      the screen reader announces list items in the same order that they appear on the screen (e.g., top to bottom for English pages).
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.0
+    wcag_criterion: 1.3.1
+  - summary: Screen reader correctly reads unordered lists.
+    summary_additional: |
+      When you listen to an unordered list with a screen reader,
+      you hear "bullet item name" or "bullet" before each list item.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.0
+    wcag_criterion: 1.3.1
+  - summary: Screen reader correctly reads ordered lists.
+    summary_additional: |
+      When you listen to an ordered list with a screen reader,
+      you hear the number announced before each list item (e.g., "Two; list item text").
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.0
+    wcag_criterion: 1.3.1

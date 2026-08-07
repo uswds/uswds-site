@@ -1,0 +1,8 @@
+title: Button group accessibility tests
+type: component
+items:
+  - date: 2024-12-19
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 3009
+    githubRepo: uswds-site

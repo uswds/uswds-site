@@ -11,20 +11,16 @@ redirect_from:
 title: Identifier
 type: component
 subnav:
-- text: Preview
-  href: '#identifier-preview'
-- text: Code
-  href: '#identifier-code'
-- text: Guidance
-  href: '#identifier-guidance'
-- text: Package
-  href: '#identifier-package'
+- text: Identifier accessibility tests
+  href: /components/identifier/accessibility-tests/
 tags:
   - footer
   - required
   - links
   - indentifier
   - logo
+changelog:
+  key: component-identifier
 ---
 
 {:.site-note}

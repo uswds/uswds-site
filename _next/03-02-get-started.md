@@ -2,8 +2,7 @@
 title: Know how to get started
 subhead: Agency teams want to...
 description: "No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run."
-meta:
-  og:image: /img/next/og-next-findings-know.png
+image: /img/next/og-next-findings-know.png
 
 permalink: /next/findings/get-started/
 slug: "know"
@@ -15,7 +14,7 @@ quote_color: "next-blue-medium"
 chapter: false
 parent: Findings
 
-conversation_starters: 
+conversation_starters:
   - |-
     **How might we** tailor the website to be more approachable for different audiences, including non-technical skill sets?
   - |-

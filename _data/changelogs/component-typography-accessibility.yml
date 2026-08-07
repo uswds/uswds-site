@@ -1,0 +1,9 @@
+title: Typography accessibility tests
+type: component
+changelogURL:
+items:
+  - date: 2024-03-20
+    summary: Added accessibility tests page.
+    affectsGuidance: true
+    githubPr: 2540
+    githubRepo: uswds-site

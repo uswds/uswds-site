@@ -1,0 +1,136 @@
+title: Date picker
+component_status: pass
+test_items:
+# General tests
+  - summary: Touch target size for all clickable elements meets height and width requirements.
+    summary_additional: |
+      When you select any date picker element to inspect and review component code,
+      you can see the total width of the touch target is at least 24 pixels wide and 24 pixels tall.
+    test_status: pass
+    test_type: general
+    version_tested: 3.7.1
+    wcag_criterion: 2.5.8
+  - summary: Content doesn’t change before submission.
+    summary_additional: |
+      When you enter a date into the date picker, the date stays the same
+      and content doesn't change unless you take another action (e.g., you hit the submit button).
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.2
+    wcag_criterion: 3.2.2
+  - summary: Errors are clearly identified.
+    summary_additional: |
+      If you type in a date range in an incorrect format, the error is identified and described to you in the text.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.7.1
+    wcag_criterion: 3.3.1
+  - summary: Text instructions for the date picker are clear.
+    summary_additional: |
+      When you view the date picker, you find clear, simple instructions in text for what type of date format is expected.
+    test_status: exception
+    status_details: |
+      The helper text relates to what format is expected of the date,
+      but there are not visible instructions for how to use the calendar button.
+      To meet user needs, you will need to add instructions for each element in the date picker.
+    github_issue_number: 6241
+    github_issue_repo: uswds
+    test_type: general
+    version_tested: 3.7.1
+    wcag_criterion: 3.3.2
+# Zoom/screen magnification tests
+  - summary: Date picker elements are visible and functional when screen is magnified.
+    summary_additional: |
+      When you zoom in to 200%, you can use the date picker components with no loss of information.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.7.1
+    wcag_criterion: 1.4.4
+  - summary: Using zoom does not obstruct the date picker.
+    summary_additional: |
+      When you zoom to 400%, you can see the date picker and options.
+      It does not overlap with other content and no scrolling is needed.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.7.1
+    wcag_criterion: 1.4.10
+# Keyboard navigation tests
+  - summary: Date picker elements are accessible using only keyboard.
+    summary_additional: |
+      When you use a keyboard, you can navigate in and out of all the date picker elements using only the keyboard
+      (e.g., date entry fields, calendar buttons, date picker calendar).
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.1.1
+  - summary: Date picker does not trap keyboard focus.
+    summary_additional: |
+      When you tab through the date picker with a keyboard,
+      you can easily move in and out of the elements to get to other content.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.1.2
+  - summary: Focus follows logical content order.
+    summary_additional: |
+      When you tab through a date picker with a keyboard,
+      focus on the input field and calendar button stays in logical order in relation to the other content.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.4.3
+  - summary: Focus indicator is clearly visible.
+    summary_additional: |
+      When you use a keyboard to focus on the date picker entry field, button, and/or inside the calendar,
+      you see a visible outline or other clear indication of focus for interactive elements.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.7.1
+    wcag_criterion: 2.4.7
+  - summary: Focus indicators have proper size, perimeter, and contrast.
+    summary_additional: |
+      When you use a keyboard to tab into a date picker, the focus indicator has proper size, perimeter and contrast.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 2.4.13
+  - summary: Tabbing into the date picker doesn't trigger a change of context.
+    summary_additional: |
+      When using a keyboard to select elements in the date picker,
+      there is no change until you activate the component with the enter key or spacebar.
+    test_status: pass
+    test_type: keyboard
+    version_tested: 3.8.2
+    wcag_criterion: 3.2.1
+# Screen reader tests
+  - summary: Screen reader announces date picker elements.
+    summary_additional: |
+      When you use a screen reader and navigate through a date picker,
+      you hear you can edit the text input and open the calendar button.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.2
+    wcag_criterion: 1.3.1
+  - summary: Screen reader announces elements to match visual order on screen.
+    summary_additional: |
+      When you use a screen reader to tab into the date picker,
+      elements are announced in the same order that they appear on the page.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 1.3.2
+  - summary: Screen reader announces date picker fields and their purpose.
+    summary_additional: |
+       When you navigate to the date entry field, you hear that the input expects the day, month and year.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 1.3.5
+  - summary: Screen reader announces date picker component and date selection status.
+    summary_additional: |
+      When you use a screen reader with the date picker calendar, you hear the element labels,
+      the role and the state. If there is a date already selected, you hear the selection.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.7.1
+    wcag_criterion: 4.1.2

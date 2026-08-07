@@ -1,0 +1,17 @@
+name: Tooltip
+contents:
+  - name: Background color
+    description: Background color of tooltip.
+    var: $theme-tooltip-background-color
+    default: '"ink"'
+    type: color
+  - name: Text color
+    description: Text color of tooltip.
+    var: $theme-tooltip-font-color
+    default: '"base-lightest"'
+    type: color
+  - name: Font size
+    description: Font size of tooltip.
+    var: $theme-tooltip-font-size
+    default: '"xs"'
+    type: size

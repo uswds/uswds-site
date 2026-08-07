@@ -10,14 +10,11 @@ permalink: /components/checkbox/
 redirect_from:
 - /form-controls/02-checkboxes/
 subnav:
-- text: Preview
-  href: '#checkbox-preview'
-- text: Code
-  href: '#checkbox-code'
-- text: Guidance
-  href: '#checkbox-guidance'
-- text: Package
-  href: '#checkbox-package'
+- text: Checkbox accessibility tests
+  href: /components/checkbox/accessibility-tests/
+variants:
+  - variant: "`.usa-checkbox__input--tile`"
+    description: Input tiles provide a larger interaction area and neatly group the label with the form control for readability. They’re useful in application forms and questionnaires, but may not be recommended when they create clutter on the page.
 tags:
   - form
   - forms
@@ -26,6 +23,8 @@ tags:
   - validation
 title: Checkbox
 type: component
+changelog:
+  key: component-checkbox
 ---
 
 Checkboxes are an easily understandable way to indicate that users can select one or more answers to a question or items from a list. They’re always followed by a label or instructions that clearly indicate what checking the box represents.

@@ -1,0 +1,8 @@
+title: File input
+alert_type: info
+items:
+- date: 2023-10-23
+  summary: Screen reader users found it confusing to have both "Drag file here" and "Choose from folder" actions described in a single button.
+  summary_additional:
+  issue_repo: uswds
+  issue_number: 5616

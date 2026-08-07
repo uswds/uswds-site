@@ -93,7 +93,13 @@
   defaultSize: 8.7
 - name: "margin"
   base: "margin-"
-  defaultSize: 47.9
+  defaultSize: 4.35
+- name: "margin-horizontal"
+  base: "margin-"
+  defaultSize: 21.75
+- name: "margin-vertical"
+  base: "margin-"
+  defaultSize: 21.75
 - name: "max-height"
   base: "maxh-"
   defaultSize: .65

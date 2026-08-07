@@ -11,15 +11,10 @@ redirect_from:
   - /accordions/
   - /components/accordions/
 subnav:
-- text: Preview
-  href: '#accordion-preview'
-- text: Code
-  href: '#accordion-code'
-- text: Guidance
-  href: '#accordion-guidance'
-- text: Package
-  href: '#accordion-package'
+- text: Accordion accessibility tests
+  href: /components/accordion/accessibility-tests/
 title: Accordion
+type: component
 variants:
   - variant: "`.usa-accordion--bordered`"
     description: Display a border around accordion content.
@@ -27,4 +22,6 @@ variants:
     description: Force the expand/collapse icon to the start side (left in LTR, right in RTL).
   - variant: "`.usa-accordion--icon-end`"
     description: Force the expand/collapse icon to the end side (right in LTR, left in RTL). Matches previous default behavior.
+changelog:
+  key: component-accordion
 ---

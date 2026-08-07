@@ -1,0 +1,10 @@
+{% assign componentName = page.component.name
+  | default: page.title
+  | downcase %}
+{% assign componentKey = componentName | slugify %}
+{% assign settingsKey = componentKey %}
+{% assign package = site.data.packages
+  | where: "name", page.component.package
+  | first %}
+<h2 id="{{ componentKey }}-disclaimer" class="site-component-section-title">Disclaimer</h2>
+{{ page.disclaimer | markdownify }}

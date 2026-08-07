@@ -1,2 +1,1 @@
 - **Associate the character count message to the input.** Use `aria-describedby` on the input to allow the message to be announced to those using screen readers.
-- **Use the `aria-live` attribute on character count message.** Use `aria-live="polite"` so that updates to character count message are also announced when using a screen reader.

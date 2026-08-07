@@ -2,20 +2,19 @@
 title: Be able to iteratively improve their digital services
 subhead: Agency teams want to...
 description: "Adopting a design system is an ongoing process. Making iterative improvements and upgrades over time requires continued resources and support."
-meta:
-  og:image: /img/next/og-next-findings-improve.png
+image: /img/next/og-next-findings-improve.png
 
 permalink: /next/findings/improve/
 slug: "improve"
 
-navbar_color: "next-pink-dark"
+navbar_color: "red-cool-50"
 hero_color: "next-pink-medium"
 quote_color: "next-pink-medium"
 
 chapter: false
 parent: Findings
 
-conversation_starters: 
+conversation_starters:
   - |-
     **How might we** support a shared understanding of governance and maintenance?
   - |-

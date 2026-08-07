@@ -46,7 +46,7 @@ subnav:
       </div>
       <div class="bg-gray-70 border border-ink radius-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-100 position-relative z-index-3">
         <code class="bg-white">100</code>
-        <span class="utility-value">400</span>
+        <span class="utility-value">100</span>
       </div>
       <div class="bg-gray-90 border border-ink radius-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-0 position-relative z-index-3">
         <code class="bg-white">0</code>

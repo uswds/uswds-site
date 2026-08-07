@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="279" height="281" viewBox="0 0 279 281">
+<svg xmlns="http://www.w3.org/2000/svg" width="279" height="281" viewBox="0 0 279 281">
   <defs>
     <path id="practical-design-tokens-a" d="M79.6604084,14.4790087 C96.2445725,18.1314327 108.653134,32.9149907 108.653134,50.5967236 L108.653134,51.545727 L14.9866392,51.545727 L14.9866392,50.5967236 C14.9866392,32.9147203 27.3955803,18.1309806 43.9801257,14.4788411 C44.4852574,16.9764811 45.7664451,19.3398998 47.8036043,21.1780307 L60.4434802,32.5830043 C61.2254506,33.2885771 62.4143227,33.2885771 63.1962931,32.5830043 L75.836169,21.1780307 C76.0529973,20.9823863 76.2628049,20.7790986 76.4651945,20.5685524 C78.1490245,18.8168619 79.2123048,16.6963947 79.6604054,14.479008 Z"/>
     <path id="practical-design-tokens-c" d="M7.36829202,3.76680313 C7.36829202,5.84715105 9.84246454,7.53360626 12.894511,7.53360626 L12.894511,7.53360626 C15.9465575,7.53360626 18.42073,5.84715105 18.42073,3.76680313"/>
@@ -92,14 +92,14 @@
       </g>
       <g transform="translate(0 81.137)">
         <mask id="practical-design-tokens-b" fill="#fff">
-          <use xlink:href="#practical-design-tokens-a"/>
+          <use href="#practical-design-tokens-a"/>
         </mask>
         <path stroke="#2D2E2F" stroke-width="2.055" d="M79.8813635,13.4757417 C97.1680409,17.2828842 109.680444,32.6663974 109.680444,50.5967236 L109.680444,52.573037 L13.9593292,52.573037 L13.9593292,50.5967236 C13.9593292,32.6661037 26.4721374,17.2824109 43.7591919,13.4755695 L44.7798719,13.2508021 L44.9870492,14.2751973 C45.4629408,16.6282588 46.6703106,18.7717719 48.4918075,20.4153105 L61.1316834,31.8202842 C61.5226687,32.1730705 62.1171047,32.1730705 62.5080899,31.8202842 L75.1479658,20.4153105 C75.3467251,20.2359698 75.5390487,20.0496228 75.7245725,19.8566221 C77.2323689,18.2880596 78.2320581,16.3607432 78.6534539,14.2755183 L78.8605111,13.2509136 L79.8813635,13.4757417 Z"/>
         <rect width="123.64" height="51.546" fill="#FFF" mask="url(#practical-design-tokens-b)"/>
       </g>
       <g transform="translate(35.593 37.738)">
         <path fill="#2D2E2F" d="M19.0519299,7.03483984 C19.0519299,10.6610589 22.0373737,13.6006904 25.7201053,13.6006904 L25.7201053,13.6006904 C29.402837,13.6006904 32.3882808,10.6610589 32.3882808,7.03483984" transform="translate(.937 24.53)"/>
-        <use fill="#000" fill-opacity=".08" transform="translate(13.113 18.869)" xlink:href="#practical-design-tokens-c"/>
+        <use fill="#000" fill-opacity=".08" transform="translate(13.113 18.869)" href="#practical-design-tokens-c"/>
         <g fill="#2D2E2F" transform="translate(0 3.774)">
           <ellipse cx="13.816" cy="10.318" rx="2.763" ry="2.814"/>
           <ellipse cx="37.762" cy="10.318" rx="2.763" ry="2.814"/>
@@ -110,16 +110,16 @@
         </g>
       </g>
       <mask id="practical-design-tokens-e" fill="#fff">
-        <use xlink:href="#practical-design-tokens-d"/>
+        <use href="#practical-design-tokens-d"/>
       </mask>
       <g mask="url(#practical-design-tokens-e)">
         <g transform="translate(-.468)">
           <path fill="#000" fill-opacity=".08" d="M32.3532597,35.8848681 C38.4167432,20.3074105 44.8257201,12.5186817 51.5801905,12.5186817 C51.8326991,12.5186817 65.2901004,12.406632 74.101599,12.3488953 C83.7816012,16.7553798 90.4520161,26.0397454 90.4520161,36.7803004 L90.4520161,43.7890864 L51.5801905,43.7890864 L50.2655329,32.8749791 L48.4473894,43.7890864 L32.3377674,43.7890864 L32.3377674,36.7803004 C32.3377674,36.4806625 32.3429589,36.1821579 32.3532624,35.884861 L32.3532597,35.8848681 Z"/>
           <g transform="translate(18.747 8.946)">
             <mask id="practical-design-tokens-g" fill="#fff">
-              <use xlink:href="#practical-design-tokens-f"/>
+              <use href="#practical-design-tokens-f"/>
             </mask>
-            <use fill="#E6E6E6" xlink:href="#practical-design-tokens-f"/>
+            <use fill="#E6E6E6" href="#practical-design-tokens-f"/>
             <g fill="#2D2E2F" mask="url(#practical-design-tokens-g)">
               <rect width="125.793" height="133.668" transform="translate(-18.747 -8.946)"/>
             </g>
@@ -138,7 +138,7 @@
       </g>
       <g transform="translate(0 80.028)">
         <mask id="practical-design-tokens-i" fill="#fff">
-          <use xlink:href="#practical-design-tokens-h"/>
+          <use href="#practical-design-tokens-h"/>
         </mask>
         <path stroke="#2D2E2F" stroke-width="1.875" d="M89.0362272,15.3520313 C101.472265,20.8586504 109.6875,33.2129554 109.6875,47.0820948 L109.6875,51.5084135 L14.0625,51.5084135 L14.0625,47.0820948 C14.0625,33.2129554 22.2777348,20.8586504 34.7137728,15.3520313 C35.0935,9.79600373 39.5698873,7.98434526 48.7485742,7.97038571 L49.6875,7.96895773 L49.6875,12.6201923 C49.6875,19.3511627 55.1440296,24.8076923 61.875,24.8076923 C68.6059704,24.8076923 74.0625,19.3511627 74.0625,12.6201923 L74.0625,7.96895773 L75.0014258,7.97038571 C84.1801127,7.98434526 88.6565,9.79600373 89.0362272,15.3520313 Z"/>
         <rect width="123.75" height="50.571" fill="#FFF" mask="url(#practical-design-tokens-i)"/>
@@ -147,7 +147,7 @@
       </g>
       <g transform="translate(35.625 37.222)">
         <path fill="#2D2E2F" d="M18.75,6.69642857 C18.75,10.1482083 21.6881313,12.9464286 25.3125,12.9464286 L25.3125,12.9464286 C28.9368687,12.9464286 31.875,10.1482083 31.875,6.69642857" transform="translate(.938 24.194)"/>
-        <use fill="#000" fill-opacity=".08" transform="translate(13.125 18.611)" xlink:href="#practical-design-tokens-j"/>
+        <use fill="#000" fill-opacity=".08" transform="translate(13.125 18.611)" href="#practical-design-tokens-j"/>
         <g fill="#2D2E2F" transform="translate(0 3.722)">
           <ellipse cx="14.063" cy="9.821" rx="2.813" ry="2.679"/>
           <ellipse cx="38.438" cy="9.821" rx="2.813" ry="2.679"/>
@@ -158,24 +158,24 @@
         </g>
       </g>
       <mask id="practical-design-tokens-l" fill="#fff">
-        <use xlink:href="#practical-design-tokens-k"/>
+        <use href="#practical-design-tokens-k"/>
       </mask>
       <g mask="url(#practical-design-tokens-l)">
         <g transform="translate(-.469)">
           <g transform="translate(22.969 33.492)">
             <mask id="practical-design-tokens-n" fill="#fff">
-              <use xlink:href="#practical-design-tokens-m"/>
+              <use href="#practical-design-tokens-m"/>
             </mask>
-            <use fill="#252E32" xlink:href="#practical-design-tokens-m"/>
+            <use fill="#252E32" href="#practical-design-tokens-m"/>
             <g fill="#2D2E2F" mask="url(#practical-design-tokens-n)">
               <rect width="79" height="71.763"/>
             </g>
           </g>
           <g transform="translate(35.156 15.816)">
             <mask id="practical-design-tokens-p" fill="#fff">
-              <use xlink:href="#practical-design-tokens-o"/>
+              <use href="#practical-design-tokens-o"/>
             </mask>
-            <use fill="#28354B" xlink:href="#practical-design-tokens-o"/>
+            <use fill="#28354B" href="#practical-design-tokens-o"/>
             <g fill="#2D2E2F" mask="url(#practical-design-tokens-p)">
               <rect width="124" height="131.396" transform="translate(-34.688 -15.816)"/>
             </g>
@@ -194,7 +194,7 @@
       </g>
       <g transform="translate(0 80.07)">
         <mask id="practical-design-tokens-r" fill="#fff">
-          <use xlink:href="#practical-design-tokens-q"/>
+          <use href="#practical-design-tokens-q"/>
         </mask>
         <path stroke="#2D2E2F" stroke-width="1.876" d="M85.4314308,14.0080658 C99.7855983,18.5071885 109.745047,31.8539733 109.745047,47.1308251 L109.745047,51.5354373 L14.0698779,51.5354373 L14.0698779,47.1308251 C14.0698779,31.6560399 24.2876416,18.1785446 38.9035273,13.8495655 L40.4768032,13.3835877 L40.0800667,14.9757348 C39.9368649,15.5504191 39.864654,16.1321317 39.864654,16.7190634 C39.864654,23.5552716 49.7703169,29.3412005 62.1419607,29.3412005 C74.5136044,29.3412005 84.4192673,23.5552716 84.4192673,16.7190634 C84.4192673,16.1786732 84.3580554,15.6427292 84.2365896,15.1126158 L83.8714684,13.5191163 L85.4314308,14.0080658 Z"/>
         <rect width="123.815" height="50.597" fill="#FFF" mask="url(#practical-design-tokens-r)"/>
@@ -202,7 +202,7 @@
       <path fill="#2D2E2F" fill-opacity=".304" d="M14.3043758,46.2295988 C13.9158469,46.2295988 13.600882,45.9191333 13.600882,45.5361548 C13.600882,45.1531762 13.9158469,44.8427108 14.3043758,44.8427108 C14.6929048,44.8427108 15.0078697,45.1531762 15.0078697,45.5361548 C15.0078697,45.9191333 14.6929048,46.2295988 14.3043758,46.2295988 Z M17.1183514,43.4558228 C16.7298225,43.4558228 16.4148575,43.1453574 16.4148575,42.7623789 C16.4148575,42.3794003 16.7298225,42.0689349 17.1183514,42.0689349 C17.5068804,42.0689349 17.8218453,42.3794003 17.8218453,42.7623789 C17.8218453,43.1453574 17.5068804,43.4558228 17.1183514,43.4558228 Z M10.0834125,44.8427108 C9.69488353,44.8427108 9.37991859,44.5322454 9.37991859,44.1492668 C9.37991859,43.7662883 9.69488353,43.4558228 10.0834125,43.4558228 C10.4719414,43.4558228 10.7869064,43.7662883 10.7869064,44.1492668 C10.7869064,44.5322454 10.4719414,44.8427108 10.0834125,44.8427108 Z M12.8973881,42.5312309 C12.5088591,42.5312309 12.1938942,42.2207654 12.1938942,41.8377869 C12.1938942,41.4548083 12.5088591,41.1443429 12.8973881,41.1443429 C13.285917,41.1443429 13.600882,41.4548083 13.600882,41.8377869 C13.600882,42.2207654 13.285917,42.5312309 12.8973881,42.5312309 Z M36.3471845,42.5312309 C35.9586556,42.5312309 35.6436906,42.2207654 35.6436906,41.8377869 C35.6436906,41.4548083 35.9586556,41.1443429 36.3471845,41.1443429 C36.7357135,41.1443429 37.0506784,41.4548083 37.0506784,41.8377869 C37.0506784,42.2207654 36.7357135,42.5312309 36.3471845,42.5312309 Z M34.9401967,45.7673028 C34.5516678,45.7673028 34.2367028,45.4568373 34.2367028,45.0738588 C34.2367028,44.6908803 34.5516678,44.3804148 34.9401967,44.3804148 C35.3287257,44.3804148 35.6436906,44.6908803 35.6436906,45.0738588 C35.6436906,45.4568373 35.3287257,45.7673028 34.9401967,45.7673028 Z M38.6921642,44.8427108 C38.3036352,44.8427108 37.9886703,44.5322454 37.9886703,44.1492668 C37.9886703,43.7662883 38.3036352,43.4558228 38.6921642,43.4558228 C39.0806931,43.4558228 39.3956581,43.7662883 39.3956581,44.1492668 C39.3956581,44.5322454 39.0806931,44.8427108 38.6921642,44.8427108 Z M41.5061398,42.0689349 C41.1176108,42.0689349 40.8026459,41.7584694 40.8026459,41.3754909 C40.8026459,40.9925124 41.1176108,40.6820469 41.5061398,40.6820469 C41.8946687,40.6820469 42.2096336,40.9925124 42.2096336,41.3754909 C42.2096336,41.7584694 41.8946687,42.0689349 41.5061398,42.0689349 Z" transform="translate(36.113 16.759)"/>
       <g transform="translate(35.644 37.242)">
         <path fill="#2D2E2F" d="M18.7598372,6.69994185 C18.7598372,10.1535325 21.69951,12.9532209 25.3257802,12.9532209 L25.3257802,12.9532209 C28.9520504,12.9532209 31.8917232,10.1535325 31.8917232,6.69994185" transform="translate(.938 24.207)"/>
-        <use fill="#000" fill-opacity=".24" transform="translate(13.132 18.62)" xlink:href="#practical-design-tokens-s"/>
+        <use fill="#000" fill-opacity=".24" transform="translate(13.132 18.62)" href="#practical-design-tokens-s"/>
         <g fill="#2D2E2F" transform="translate(0 3.724)">
           <ellipse cx="14.07" cy="9.827" rx="2.814" ry="2.68"/>
           <ellipse cx="38.458" cy="9.827" rx="2.814" ry="2.68"/>
@@ -213,14 +213,14 @@
         </g>
       </g>
       <mask id="practical-design-tokens-u" fill="#fff">
-        <use xlink:href="#practical-design-tokens-t"/>
+        <use href="#practical-design-tokens-t"/>
       </mask>
       <g mask="url(#practical-design-tokens-u)">
         <g transform="translate(-.469)">
           <mask id="practical-design-tokens-w" fill="#fff">
-            <use xlink:href="#practical-design-tokens-v"/>
+            <use href="#practical-design-tokens-v"/>
           </mask>
-          <use fill="#28354B" xlink:href="#practical-design-tokens-v"/>
+          <use fill="#28354B" href="#practical-design-tokens-v"/>
           <g mask="url(#practical-design-tokens-w)">
             <rect width="124.065" height="131.465" fill="#2D2E2F" transform="translate(.469)"/>
           </g>
@@ -230,24 +230,24 @@
     <rect width="40" height="40" x="30" y="2" fill="#D63E04"/>
     <g transform="translate(114 4)">
       <mask id="practical-design-tokens-z" fill="#fff">
-        <use xlink:href="#practical-design-tokens-x"/>
+        <use href="#practical-design-tokens-x"/>
       </mask>
-      <use fill="#000" filter="url(#practical-design-tokens-y)" xlink:href="#practical-design-tokens-x"/>
+      <use fill="#000" filter="url(#practical-design-tokens-y)" href="#practical-design-tokens-x"/>
       <g fill="#D63E04" mask="url(#practical-design-tokens-z)">
         <polygon points="0 0 57 0 57 28 0 28"/>
       </g>
       <g transform="translate(0 34)">
         <mask id="practical-design-tokens-C" fill="#fff">
-          <use xlink:href="#practical-design-tokens-A"/>
+          <use href="#practical-design-tokens-A"/>
         </mask>
-        <use fill="#000" filter="url(#practical-design-tokens-B)" xlink:href="#practical-design-tokens-A"/>
+        <use fill="#000" filter="url(#practical-design-tokens-B)" href="#practical-design-tokens-A"/>
         <g fill="#FFF" mask="url(#practical-design-tokens-C)">
           <polygon points="0 0 57 0 57 28 0 28"/>
         </g>
         <g mask="url(#practical-design-tokens-C)">
           <g transform="translate(-1 -1)">
             <mask id="practical-design-tokens-E" fill="#fff">
-              <use xlink:href="#practical-design-tokens-D"/>
+              <use href="#practical-design-tokens-D"/>
             </mask>
             <g mask="url(#practical-design-tokens-E)">
               <polygon fill="#2672DE" points="0 0 59 0 59 32 0 32" transform="translate(-1 -2)"/>
@@ -270,9 +270,9 @@
     <g transform="rotate(-90 138.5 6.5)">
       <g transform="translate(5 1)">
         <mask id="practical-design-tokens-G" fill="#fff">
-          <use xlink:href="#practical-design-tokens-F"/>
+          <use href="#practical-design-tokens-F"/>
         </mask>
-        <use fill="#979797" fill-rule="nonzero" xlink:href="#practical-design-tokens-F"/>
+        <use fill="#979797" fill-rule="nonzero" href="#practical-design-tokens-F"/>
         <g fill="#C3512C" mask="url(#practical-design-tokens-G)">
           <rect width="15" height="18" transform="translate(-7 -4)"/>
         </g>
@@ -282,9 +282,9 @@
     <g transform="rotate(-90 95 50)">
       <g transform="translate(5 1)">
         <mask id="practical-design-tokens-I" fill="#fff">
-          <use xlink:href="#practical-design-tokens-H"/>
+          <use href="#practical-design-tokens-H"/>
         </mask>
-        <use fill="#979797" fill-rule="nonzero" xlink:href="#practical-design-tokens-H"/>
+        <use fill="#979797" fill-rule="nonzero" href="#practical-design-tokens-H"/>
         <g fill="#C3512C" mask="url(#practical-design-tokens-I)">
           <rect width="15" height="18" transform="translate(-7 -4)"/>
         </g>
@@ -294,9 +294,9 @@
     <g transform="rotate(-90 184 -39)">
       <g transform="translate(5 1)">
         <mask id="practical-design-tokens-K" fill="#fff">
-          <use xlink:href="#practical-design-tokens-J"/>
+          <use href="#practical-design-tokens-J"/>
         </mask>
-        <use fill="#979797" fill-rule="nonzero" xlink:href="#practical-design-tokens-J"/>
+        <use fill="#979797" fill-rule="nonzero" href="#practical-design-tokens-J"/>
         <g fill="#C3512C" mask="url(#practical-design-tokens-K)">
           <rect width="15" height="18" transform="translate(-7 -4)"/>
         </g>
@@ -305,33 +305,33 @@
     </g>
     <g transform="translate(201 4)">
       <mask id="practical-design-tokens-M" fill="#fff">
-        <use xlink:href="#practical-design-tokens-L"/>
+        <use href="#practical-design-tokens-L"/>
       </mask>
       <rect width="57" height="112" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
       <rect width="30" height="8" x="4" y="6" fill="#171717" mask="url(#practical-design-tokens-M)"/>
       <g mask="url(#practical-design-tokens-M)">
         <g transform="translate(4 54)">
           <mask id="practical-design-tokens-P" fill="#fff">
-            <use xlink:href="#practical-design-tokens-N"/>
+            <use href="#practical-design-tokens-N"/>
           </mask>
-          <use fill="#000" filter="url(#practical-design-tokens-O)" xlink:href="#practical-design-tokens-N"/>
+          <use fill="#000" filter="url(#practical-design-tokens-O)" href="#practical-design-tokens-N"/>
           <g fill="#E6E6E6" mask="url(#practical-design-tokens-P)">
             <polygon points="0 0 46 0 46 4 0 4" transform="translate(-1 -1)"/>
           </g>
           <g transform="translate(0 3)">
             <mask id="practical-design-tokens-S" fill="#fff">
-              <use xlink:href="#practical-design-tokens-Q"/>
+              <use href="#practical-design-tokens-Q"/>
             </mask>
-            <use fill="#000" filter="url(#practical-design-tokens-R)" xlink:href="#practical-design-tokens-Q"/>
+            <use fill="#000" filter="url(#practical-design-tokens-R)" href="#practical-design-tokens-Q"/>
             <g fill="#E6E6E6" mask="url(#practical-design-tokens-S)">
               <polygon points="0 0 49 0 49 4 0 4" transform="translate(-1 -1)"/>
             </g>
           </g>
           <g transform="translate(0 6)">
             <mask id="practical-design-tokens-V" fill="#fff">
-              <use xlink:href="#practical-design-tokens-T"/>
+              <use href="#practical-design-tokens-T"/>
             </mask>
-            <use fill="#000" filter="url(#practical-design-tokens-U)" xlink:href="#practical-design-tokens-T"/>
+            <use fill="#000" filter="url(#practical-design-tokens-U)" href="#practical-design-tokens-T"/>
             <g fill="#E6E6E6" mask="url(#practical-design-tokens-V)">
               <polygon points="0 0 23 0 23 4 0 4" transform="translate(-1 -1)"/>
             </g>
@@ -355,44 +355,44 @@
       <g mask="url(#practical-design-tokens-M)">
         <g transform="translate(4 111)">
           <mask id="practical-design-tokens-Y" fill="#fff">
-            <use xlink:href="#practical-design-tokens-W"/>
+            <use href="#practical-design-tokens-W"/>
           </mask>
-          <use fill="#000" filter="url(#practical-design-tokens-X)" xlink:href="#practical-design-tokens-W"/>
+          <use fill="#000" filter="url(#practical-design-tokens-X)" href="#practical-design-tokens-W"/>
           <g fill="#171717" mask="url(#practical-design-tokens-Y)">
             <polygon points="0 0 38 0 38 4 0 4" transform="translate(-1 -1)"/>
           </g>
           <g transform="translate(0 6)">
             <mask id="practical-design-tokens-ab" fill="#fff">
-              <use xlink:href="#practical-design-tokens-Z"/>
+              <use href="#practical-design-tokens-Z"/>
             </mask>
-            <use fill="#000" filter="url(#practical-design-tokens-aa)" xlink:href="#practical-design-tokens-Z"/>
+            <use fill="#000" filter="url(#practical-design-tokens-aa)" href="#practical-design-tokens-Z"/>
             <g fill="#171717" mask="url(#practical-design-tokens-ab)">
               <polygon points="0 0 43 0 43 4 0 4" transform="translate(-1 -1)"/>
             </g>
           </g>
           <g transform="translate(0 3)">
             <mask id="practical-design-tokens-ae" fill="#fff">
-              <use xlink:href="#practical-design-tokens-ac"/>
+              <use href="#practical-design-tokens-ac"/>
             </mask>
-            <use fill="#000" filter="url(#practical-design-tokens-ad)" xlink:href="#practical-design-tokens-ac"/>
+            <use fill="#000" filter="url(#practical-design-tokens-ad)" href="#practical-design-tokens-ac"/>
             <g fill="#171717" mask="url(#practical-design-tokens-ae)">
               <polygon points="0 0 47 0 47 4 0 4" transform="translate(-1 -1)"/>
             </g>
           </g>
           <g transform="translate(0 9)">
             <mask id="practical-design-tokens-ah" fill="#fff">
-              <use xlink:href="#practical-design-tokens-af"/>
+              <use href="#practical-design-tokens-af"/>
             </mask>
-            <use fill="#000" filter="url(#practical-design-tokens-ag)" xlink:href="#practical-design-tokens-af"/>
+            <use fill="#000" filter="url(#practical-design-tokens-ag)" href="#practical-design-tokens-af"/>
             <g fill="#171717" mask="url(#practical-design-tokens-ah)">
               <polygon points="0 0 46 0 46 4 0 4" transform="translate(-1 -1)"/>
             </g>
           </g>
           <g transform="translate(0 12)">
             <mask id="practical-design-tokens-ak" fill="#fff">
-              <use xlink:href="#practical-design-tokens-ai"/>
+              <use href="#practical-design-tokens-ai"/>
             </mask>
-            <use fill="#000" filter="url(#practical-design-tokens-aj)" xlink:href="#practical-design-tokens-ai"/>
+            <use fill="#000" filter="url(#practical-design-tokens-aj)" href="#practical-design-tokens-ai"/>
             <g fill="#171717" mask="url(#practical-design-tokens-ak)">
               <polygon points="0 0 44 0 44 4 0 4" transform="translate(-1 -1)"/>
             </g>

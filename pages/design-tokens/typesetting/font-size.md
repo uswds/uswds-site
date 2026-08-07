@@ -20,7 +20,7 @@ subnav:
 Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.text-ink.text-bold} section for more about font size normalization and how USWDS uses tokens for typesetting. The documentation below displays a value in pixels, rather than the actual final output, which will be normalized depending on the typeface and output in `rem` customized to your project settings.
 
 ## Theme tokens
-The following chart shows the USWDS default settings for the nine theme size tokens. Customize the output to your project needs in `$uswds-theme-typography.scss` by setting the variables listed below. If your project requires more than nine sizes, use [system size tokens](#system-tokens) as needed.
+The following chart shows the USWDS default settings for the nine theme size tokens. Customize the output to your project needs in [USWDS settings configuration]({{ site.baseurl }}/documentation/settings)  by setting the variables listed in the default settings chart. If your project requires more than nine sizes, use [system size tokens](#system-tokens) as needed.
 
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">

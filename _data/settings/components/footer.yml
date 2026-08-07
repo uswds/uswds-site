@@ -5,3 +5,8 @@ contents:
     var: $theme-footer-font-family
     default: '"body"'
     type: family
+  - name: Max width
+    description: Maximum width of footer container.
+    var: $theme-footer-max-width
+    default: '"desktop"'
+    type: units

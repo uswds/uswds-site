@@ -1,0 +1,60 @@
+title: step indicator
+component_status: pass
+test_items:
+  # General tests
+  - summary: Color is not the only method used to convey information.
+    summary_additional: When you view the steps of the step indicator, heading text helps you understand what step you are on.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 1.4.1
+  - summary: Step indicator text and background meet color contrast requirements.
+    summary_additional: When you use a color contrast checker, contrast between the text and background is at least 4.5:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 1.4.3
+  - summary: Step indicator bars meet color contrast requirements.
+    summary_additional: When you use a color contrast checker to view the step indicator bars, contrast between the bars and background colors is at least 3:1.
+    test_status: pass
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 1.4.11
+  - summary: All headings are clear and descriptive.
+    summary_additional: When you view the step indicator, headings that state the current step are clear and concise.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 2.4.6
+  - summary: Step indicator appears in the same location across pages.
+    summary_additional: When you navigate to different pages of a form, the step indicator is in the same place on each page.
+    test_status: conditional
+    test_type: general
+    version_tested: 3.8.1
+    wcag_criterion: 3.2.3
+  # Zoom/screen magnification tests
+  - summary: Step indicator steps are visible at 400%.
+    summary_additional: When you zoom in at 400%, step indicator steps are still visible. Content does not overlap.
+    test_status: pass
+    test_type: zoom
+    version_tested: 3.8.1
+    wcag_criterion: 1.4.10
+  # Screen reader tests
+  - summary: Screen reader announces steps in indicator.
+    summary_additional: When you use a screen reader, you hear the current value of the step indicator.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.1
+    wcag_criterion: 1.3.1
+  - summary: Screen reader announces steps in the same order they appear on the page.
+    summary_additional: When you navigate through the step indicator with a screen reader and arrow keys, each announced step matches the visual label.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.1
+    wcag_criterion: 1.3.2
+  - summary: Screen reader announces step indicator list and status.
+    summary_additional: When you navigate through the step indicator list with a screen reader and arrow keys, you hear how many list items are within the indicator. If you navigate to an incomplete step, you will hear an incomplete status.
+    test_status: pass
+    test_type: screen_reader
+    version_tested: 3.8.1
+    wcag_criterion: 4.1.2

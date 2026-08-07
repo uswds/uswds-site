@@ -1,0 +1,8 @@
+title: Radio button accessibility tests
+type: component
+items:
+ - date: 2024-09-18
+   summary: Added accessibility tests page.
+   affectsGuidance: true
+   githubPr: 2821
+   githubRepo: uswds-site

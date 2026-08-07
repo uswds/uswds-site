@@ -1,8 +1,8 @@
-{% capture check_circle %}<svg class="usa-icon bottom-neg-2px" aria-hidden="true" focusable="false" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>{% endcapture %}
+{% capture check_circle %}<svg class="usa-icon bottom-neg-2px" aria-hidden="true" focusable="false" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>{% endcapture %}
 
-{% capture cancel %}<svg class="usa-icon bottom-neg-2px" aria-hidden="true" focusable="false" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>{% endcapture %}
+{% capture cancel %}<svg class="usa-icon bottom-neg-2px" aria-hidden="true" focusable="false" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>{% endcapture %}
 
-{% capture check_box_outline_blank %}<svg class="usa-icon bottom-neg-2px" aria-hidden="true" focusable="false" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_box_outline_blank"></use></svg>{% endcapture %}
+{% capture check_box_outline_blank %}<svg class="usa-icon bottom-neg-2px" aria-hidden="true" focusable="false" role="img"><use href="{{ site.baseurl }}/assets/img/sprite.svg#check_box_outline_blank"></use></svg>{% endcapture %}
 
 {:.usa-content-list }
 - **Do-and-don't lists.** Icon lists help reinforce the message of a list item using a visual cue as a progressive enhancement. This can be effective in a list, or pair of lists, that describe actions users should do or not do. A pair of icons with clear and opposite meaning, like `check_circle` ({{ check_circle }}) and `cancel` ({{ cancel }}), create an effective do-and-don't list.

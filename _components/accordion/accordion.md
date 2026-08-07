@@ -23,8 +23,8 @@ title: Accordion
 variants:
   - variant: "`.usa-accordion--bordered`"
     description: Display a border around accordion content.
-  - variant: "`.usa-accordion--icon-left`"
-    description: Display the expand/collapse icon on the left.
-  - variant: "`.usa-accordion--icon-right`"
-    description: Display the expand/collapse icon on the right. Use when the theme default is `"left"`.
+  - variant: "`.usa-accordion--icon-start`"
+    description: Force the expand/collapse icon to the start side (left in LTR, right in RTL).
+  - variant: "`.usa-accordion--icon-end`"
+    description: Force the expand/collapse icon to the end side (right in LTR, left in RTL). Matches previous default behavior.
 ---

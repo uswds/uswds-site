@@ -115,7 +115,7 @@ If your project is currently using USWDS and you would like to see it included i
 - [PIV Usage Guidelines](https://www.idmanagement.gov/university/piv/)
 - [Plainlanguage.gov](https://plainlanguage.gov/)
 - [The Privacy and Civil Liberties Oversight Board](https://www.pclob.gov/)
-- [PubMed Labs - National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/labs/pubmed/)
+- [PubMed - U.S. National Library of Medicine](https://pubmed.ncbi.nlm.nih.gov/)
 - [SAM Web Design Standards](https://github.com/GSA/sam-design-system-site)
 - [SBA Brand Guide](https://www.sba.gov)
 - [SBA Certify - U.S. Small Business Administration](https://certify.sba.gov/)

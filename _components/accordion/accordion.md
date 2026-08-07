@@ -19,9 +19,9 @@ variants:
   - variant: "`.usa-accordion--bordered`"
     description: Display a border around accordion content.
   - variant: "`.usa-accordion--icon-start`"
-    description: Force the expand/collapse icon to the start side (left in LTR, right in RTL).
+    description: Default. Force the expand/collapse icon to the start side.
   - variant: "`.usa-accordion--icon-end`"
-    description: Force the expand/collapse icon to the end side (right in LTR, left in RTL). Matches previous default behavior.
+    description: Force the expand/collapse icon to the end side. Use to match the previous default.
 changelog:
   key: component-accordion
 ---

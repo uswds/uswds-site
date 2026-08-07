@@ -26,7 +26,7 @@ contents:
     default: '"body"'
     type: family
   - name: Icon position
-    description: Logical side of the expand/collapse icon on accordion buttons. Allowed values are `"start"` (default) or `"end"`. Uses logical sides so placement works in LTR and RTL. Per-accordion modifiers (`usa-accordion--icon-start`, `usa-accordion--icon-end`) override this setting.
+    description: Logical side of the expand/collapse icon on accordion buttons. Allowed values are `"start"` (default) or `"end"`. The default changed from `"end"` in earlier versions. Per-accordion modifiers (`usa-accordion--icon-start`, `usa-accordion--icon-end`) override this setting.
     var: $theme-accordion-icon-position
     default: '"start"'
     type: string

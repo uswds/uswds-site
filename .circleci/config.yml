@@ -81,6 +81,14 @@ jobs:
           command: |
             bundle config set --local path '~/project/vendor/bundle'
             bundle exec jekyll build
+      # Bundle the built site into a single downloadable artifact for
+      # inspection. Find the tarball on the build job's Artifacts tab.
+      - run:
+          name: Archive built site
+          command: tar -czf /tmp/site.tar.gz -C ~/project _site
+      - store_artifacts:
+          path: /tmp/site.tar.gz
+          destination: site.tar.gz
       - persist_to_workspace:
           root: ~/project
           paths:
@@ -110,9 +118,11 @@ jobs:
           command: |
             bundle config set --local path '~/project/vendor/bundle'
       # --skip-initial-build: `_site`/`assets` are already built and attached
-      # from the `build` job's workspace, so this just serves them. Without
-      # this flag, `jekyll serve` rebuilds from source on startup — which
-      # each of the 2 parallel containers here would do redundantly.
+      # from the `build` job's workspace, so this just serves them. The build
+      # job uses the same _config.yml (no --drafts/--future/--incremental
+      # divergence), so the served site matches a fresh build. Without this
+      # flag, each of the 2 parallel containers here would redundantly rebuild
+      # the whole site on startup.
       # The curl loop waits for --detach's background server to actually be
       # ready before pa11y-ci starts hitting it.
       # pa11y-ci:shard (not pa11y-ci:sitemap) is what makes parallelism: 2

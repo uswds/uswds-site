@@ -13,6 +13,14 @@ import https from "node:https";
 // the same URLs as the unsharded ones.
 const EXCLUDE_PATTERN = new RegExp("/*.pdf|next/");
 
+// Per-URL timeouts for pages that exceed the 120s default under CI load.
+// pa11y-ci accepts { url, timeout, ... } objects, which merge over defaults.
+// /components/icon/ embeds ~243 icon buttons + full sprite references (~1.4MB),
+// which causes axe audits to exceed 120s at concurrency:4 on shared CI runners.
+const PER_URL_OVERRIDES = {
+  "/components/icon/": { timeout: 240000 },
+};
+
 function parseArgs(argv) {
   const args = {};
   for (let i = 0; i < argv.length; i += 2) {
@@ -82,6 +90,17 @@ function shardUrls(urls, index, total) {
   return urls.filter((_, i) => i % total === index);
 }
 
+// Wrap URLs that have per-URL overrides (timeout, etc.) into objects for
+// pa11y-ci's URL queue. Everything else stays a plain string.
+function applyPerUrlOverrides(url) {
+  const parsed = new URL(url);
+  const override = PER_URL_OVERRIDES[parsed.pathname];
+  if (override) {
+    return { url, ...override };
+  }
+  return url;
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const sitemapUrl = args.sitemap || "http://localhost:4000/sitemap.xml";
@@ -100,7 +119,7 @@ async function main() {
   const allUrls = extractUrls(sitemapXml, sitemapUrl).filter(
     (url) => !EXCLUDE_PATTERN.test(url)
   );
-  const shard = shardUrls(allUrls, index, total);
+  const shard = shardUrls(allUrls, index, total).map(applyPerUrlOverrides);
 
   const baseConfig = JSON.parse(
     fs.readFileSync(path.resolve(baseConfigPath), "utf8")

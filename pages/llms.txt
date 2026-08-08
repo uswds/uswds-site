@@ -70,7 +70,7 @@ When writing code for a project that uses USWDS:
 Every released component, with its usage, accessibility, and implementation guidance. Each page also links to that component's accessibility tests.
 
 - [Components overview]({{ site_url }}/components/overview/): Search and browse all released components.
-{% for component in uswdsComponents %}- [{{ component.title }}]({{ site_url }}{{ component.permalink }}): {{ component.lead | strip_newlines }}
+{% for component in uswdsComponents %}- [{{ component.title }}]({{ site_url }}{{ component.permalink }}): {{ component.lead | normalize_whitespace }}
 {% endfor %}
 ## Utilities
 

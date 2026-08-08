@@ -5,6 +5,7 @@
     "concurrency": 10,
     "standard": "WCAG2AA",
     "chromeLaunchConfig": {
+      "executablePath": "/usr/bin/google-chrome-stable",
       "args": ["--no-sandbox"]
     },
     "runners": ["axe"]

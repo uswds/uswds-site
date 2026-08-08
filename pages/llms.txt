@@ -1,0 +1,120 @@
+---
+permalink: /llms.txt
+---
+{%- comment -%}
+  An index for AI coding agents and documentation tools, following the llms.txt
+  convention at https://llmstxt.org/: an H1, a blockquote summary, then H2 link
+  lists. `## Optional` is the convention's reserved heading for links that can
+  be skipped when an agent is short on context.
+
+  The component list is built from the same query as the components overview
+  page (pages/ui-components/overview.md) and the utility list from the utilities
+  collection, so both stay accurate as pages are added or removed. The file's
+  structure and its curated links are checked by spec/llms_txt_spec.rb.
+
+  The loop tags below sit at the start and end of their list lines on purpose:
+  moving them onto their own lines puts a blank line between every entry.
+{%- endcomment -%}
+{%- assign site_url = "https://designsystem.digital.gov" -%}
+{%- assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" | sort_natural: "title" -%}
+{%- assign utilityPages = site.utilities | sort_natural: "title" -%}
+# U.S. Web Design System (USWDS)
+
+> USWDS is the design system for the U.S. federal government. It provides accessible, mobile-first HTML components, CSS utility classes, and design tokens, along with the design guidance and user research behind them. It is maintained by the Technology Transformation Services at the U.S. General Services Administration, and it helps agencies meet federal website standards. This file indexes the authoritative documentation at designsystem.digital.gov.
+
+The current USWDS release is {{ site.uswds_version }}.
+
+When writing code for a project that uses USWDS:
+
+- Use the markup and class names published on the component's page. USWDS components carry keyboard behavior and accessibility semantics that hand-written markup does not reproduce.
+- Reach for design tokens and utility classes before raw CSS values, so a project stays on the system's type scale, spacing units, and color palettes.
+- Customize through Sass settings rather than by overriding compiled CSS.
+- Do not introduce a React, Vue, or Angular wrapper unless the project already uses one. USWDS ships framework-independent HTML, CSS, and JavaScript; community implementations exist but are not maintained by the USWDS team.
+- Using USWDS does not by itself make a site Section 508 compliant. Follow the accessibility guidance below, and run the accessibility tests published at `/components/{component}/accessibility-tests/` against the finished implementation.
+
+## Start here
+
+- [How to use USWDS]({{ site_url }}/how-to-use-uswds/): What the design system provides and how a team adopts it.
+- [Getting started for developers]({{ site_url }}/documentation/getting-started-for-developers/): The three phases of adopting USWDS in a project.
+- [Phase one: install]({{ site_url }}/documentation/getting-started/developers/phase-one-install/): Add USWDS to a project.
+- [Phase two: compile]({{ site_url }}/documentation/getting-started/developers/phase-two-compile/): Compile USWDS Sass and assets.
+- [Phase three: customize]({{ site_url }}/documentation/getting-started/developers/phase-three-customize/): Theme the design system for a project.
+- [Developer documentation]({{ site_url }}/documentation/developers/): Installation, and how to use USWDS CSS and JavaScript.
+- [Settings]({{ site_url }}/documentation/settings/): The Sass settings variables that tell USWDS how to build.
+- [Packages]({{ site_url }}/components/packages/): Import only the components a project needs.
+- [Getting started for designers]({{ site_url }}/documentation/getting-started-for-designers/): Design assets and how to use them.
+- [Migrating to USWDS 3.0]({{ site_url }}/documentation/migration/): Moving a USWDS 2 project to Sass modules and unbundled packages.
+- [Component lifecycle status]({{ site_url }}/components/status/): Which components are released, in development, or deprecated.
+
+## Accessibility and standards
+
+- [Accessibility]({{ site_url }}/documentation/accessibility/): How USWDS supports accessible design and what a project still has to verify.
+- [Federal website standards]({{ site_url }}/website-standards/): How USWDS helps agencies comply with the 21st Century IDEA and related policy.
+- [Design principles]({{ site_url }}/design-principles/): The principles behind the system's guidance.
+- [Performance guidance]({{ site_url }}/performance/): Making government sites fast for everyone.
+
+## Design tokens
+
+- [Design tokens overview]({{ site_url }}/design-tokens/): The rules and vocabulary behind the system's visual design.
+- [Color]({{ site_url }}/design-tokens/color/): System, theme, and state color tokens.
+- [Typesetting]({{ site_url }}/design-tokens/typesetting/): Font family, size, weight, line height, measure, and letterspacing tokens.
+- [Spacing units]({{ site_url }}/design-tokens/spacing-units/): The spacing scale used across components and utilities.
+- [Shadow]({{ site_url }}/design-tokens/shadow/): Elevation tokens.
+- [Opacity]({{ site_url }}/design-tokens/opacity/): Opacity tokens.
+- [Order]({{ site_url }}/design-tokens/order/): Flex and grid order tokens.
+- [Flex]({{ site_url }}/design-tokens/flex/): Flex tokens.
+- [Z-index]({{ site_url }}/design-tokens/z-index/): Stacking order tokens.
+
+## Components
+
+Every released component, with its usage, accessibility, and implementation guidance. Each page also links to that component's accessibility tests.
+
+- [Components overview]({{ site_url }}/components/overview/): Search and browse all released components.
+{% for component in uswdsComponents %}- [{{ component.title }}]({{ site_url }}{{ component.permalink }}): {{ component.lead | strip_newlines }}
+{% endfor %}
+## Utilities
+
+Single-purpose CSS classes for building and adjusting layouts without writing new CSS.
+
+- [Utilities overview]({{ site_url }}/utilities/): How utility classes are named and how to use them.
+{% for utility in utilityPages %}{% unless utility.permalink == "/utilities/" %}- [{{ utility.title }}]({{ site_url }}{{ utility.permalink }})
+{% endunless %}{% endfor %}
+## Page templates
+
+- [Templates]({{ site_url }}/templates/): Full-page starting points assembled from USWDS components.
+- [Form templates]({{ site_url }}/templates/form-templates/): Name, address, sign-in, and password reset forms.
+- [Authentication pages]({{ site_url }}/templates/authentication-pages/): Sign-in, create-account, and multiple sign-in option pages.
+- [Landing page]({{ site_url }}/templates/landing-page/): A marketing or introductory page template.
+- [Documentation page]({{ site_url }}/templates/documentation-page/): A documentation page template with side navigation.
+- [404 page]({{ site_url }}/templates/404-page/): A page-not-found template.
+
+## Patterns
+
+- [Patterns overview]({{ site_url }}/patterns/): Reusable solutions to common user tasks.
+- [Introduction to patterns]({{ site_url }}/patterns/intro/): How patterns differ from components.
+- [Create a user profile]({{ site_url }}/patterns/create-a-user-profile/): Asking for name, address, date of birth, and other personal information.
+- [Complete a complex form]({{ site_url }}/patterns/complete-a-complex-form/): Long or multi-step forms.
+- [Select a language]({{ site_url }}/patterns/select-a-language/): Offering content in more than one language.
+
+## Code and design assets
+
+- [Download USWDS]({{ site_url }}/download/): Compiled files and the design system package.
+- [USWDS source code](https://github.com/uswds/uswds): The `@uswds/uswds` package repository.
+- [USWDS design assets](https://github.com/uswds/uswds-for-designers): Figma and Sketch source files.
+- [USWDS Figma design kit](https://www.figma.com/community/file/1440921849343185329/uswds-design-kit-beta): The design kit in the Figma community.
+- [Implementations]({{ site_url }}/documentation/implementations/): Community-built CMS and framework wrappers, which the USWDS team does not maintain.
+
+## Optional
+
+- [What's new]({{ site_url }}/about/whats-new/): Release notes and announcements.
+- [USWDS releases](https://github.com/uswds/uswds/releases): Version history and changelogs.
+- [AGENTS.md](https://github.com/uswds/uswds/blob/develop/AGENTS.md): Instructions for agents contributing to USWDS itself, not for projects that use it.
+- [About USWDS]({{ site_url }}/about/): The team and the project.
+- [Key benefits]({{ site_url }}/about/key-benefits/): Why agencies adopt the design system.
+- [Maturity model]({{ site_url }}/maturity-model/): Adopting USWDS incrementally.
+- [Sample contract language]({{ site_url }}/documentation/sample-contract-language/): Language for procurement documents.
+- [Community]({{ site_url }}/about/community/): How to reach the USWDS community.
+- [Contribute]({{ site_url }}/about/contribute/): How to propose changes to the design system.
+- [Monthly calls]({{ site_url }}/about/monthly-calls/): Recordings and notes from community calls.
+- [Product roadmap]({{ site_url }}/about/product-roadmap/): What the team is working on next.
+- [Documentation site source](https://github.com/uswds/uswds-site): The repository behind designsystem.digital.gov.

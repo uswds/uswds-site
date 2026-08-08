@@ -1,4 +1,5 @@
 - **Don’t visually hide alert messages and then make them visible when they are needed.** Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
+- **Use semantic headings.** While our examples use an `<h4>` in the alert heading, use the appropriate heading level based on your page’s structure. As long as your heading uses the class name `usa-alert__heading`, the font size will always remain the same size as our example, whether it is an `<h1>` or an `<h6>`.
 - **Use the proper ARIA role.** The ARIA `role` attribute can notify assistive technologies of time-sensitive and important messages. To elevate the importance of the alert, choose the appropriate `role` from the [ARIA roles table](#alert-aria-roles) and add it to the `.usa-alert` element.
 
 {% assign col1Title = 'Attribute' %}

@@ -95,7 +95,6 @@
     "postcss": "^8.5.23",
     "postcss-csso": "^6.0.1",
     "prettier": "^2.8.8",
-    "serve": "^14.2.6",
     "snyk": "^1.1295.3",
     "stylelint": "^15.11.0",
     "vinyl-buffer": "^1.0.1",

@@ -113,18 +113,24 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      # `_site`/`assets` are already built and attached from the `build` job's
-      # workspace, so we just need a static file server — no Jekyll (or Ruby)
-      # required here. `serve` is a pinned node dependency (see package.json)
-      # restored via the attached node_modules workspace.
-      # The curl loop waits for the backgrounded server to actually be ready
-      # before pa11y-ci starts hitting it.
+      - run:
+          name: Link bundler
+          command: |
+            bundle config set --local path '~/project/vendor/bundle'
+      # --skip-initial-build: `_site`/`assets` are already built and attached
+      # from the `build` job's workspace, so this just serves them. The build
+      # job uses the same _config.yml (no --drafts/--future/--incremental
+      # divergence), so the served site matches a fresh build. Without this
+      # flag, each of the 2 parallel containers here would redundantly rebuild
+      # the whole site on startup.
+      # The curl loop waits for --detach's background server to actually be
+      # ready before pa11y-ci starts hitting it.
       # pa11y-ci:shard (not pa11y-ci:sitemap) is what makes parallelism: 2
       # above actually cut time to completion when using a sharded sitemap.
       - run:
           name: Run pa11y-ci desktop
           command: |
-            npx serve _site -l 4000 &
+            bundle exec jekyll serve --detach --host=localhost --skip-initial-build
             until curl -sf http://localhost:4000/sitemap.xml -o /dev/null; do sleep 1; done
             npm run pa11y-ci:shard
   test_a11y_mobile:
@@ -134,11 +140,15 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      - run:
+          name: Link bundler
+          command: |
+            bundle config set --local path '~/project/vendor/bundle'
       # Same reasoning as test_a11y_desktop's "Run pa11y-ci desktop" step.
       - run:
           name: Run pa11y-ci mobile
           command: |
-            npx serve _site -l 4000 &
+            bundle exec jekyll serve --detach --host=localhost --skip-initial-build
             until curl -sf http://localhost:4000/sitemap.xml -o /dev/null; do sleep 1; done
             npm run pa11y-ci:shard-mobile
 

@@ -2,6 +2,13 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated web component JSDoc to use the standard @element tag.
+    summaryAdditional: Changed the JSDoc decorator from @tagname to @element for the usa-banner web component. This is a documentation-only change with no functional impact.
+    affectsJavascript: true
+    githubPr: 6739
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2025-05-23
     summary: Added a new HTML Web Component-based variant of the banner.
     affectsGuidance: true

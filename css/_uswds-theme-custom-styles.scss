@@ -1053,13 +1053,13 @@ code[class*="language-"] {
   .token.char,
   .token.builtin,
   .token.inserted {
-    color: color("secondary");
+    color: color("secondary-dark");
   }
 
   .token.atrule,
   .token.attr-value,
   .token.keyword {
-    color: color("green-cool-50");
+    color: color("green-cool-60");
   }
 
   .token.punctuation {

@@ -15,7 +15,9 @@ component:
   dependencies:
 variants:
   - variant: "`.usa-breadcrumb--wrap`"
-    description: Wrap the breadcrumb bar instead of truncating.
+    description: Wrap the breadcrumb bar instead of truncating. This is now the default behavior; the class has no effect.
+  - variant: "`.usa-breadcrumb--truncate`"
+    description: Truncate the breadcrumb bar to a single line with ellipsis.
 subnav:
   - text: Breadcrumb accessibility tests
     href: /components/breadcrumb/accessibility-tests/

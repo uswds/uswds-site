@@ -1,7 +1,7 @@
 {
   "defaults": {
     "userAgent": "pa11y",
-    "timeout": 60000,
+    "timeout": 30000,
     "concurrency": 4,
     "standard": "WCAG2AA",
     "chromeLaunchConfig": {

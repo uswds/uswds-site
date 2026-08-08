@@ -59,6 +59,8 @@ utilities:
     %}
     <section class="utility-examples">
 
+      <p class="utility-note"><strong>Note:</strong> Font size and family utilities are built from USWDS font size tokens. To see the actual size each font size token outputs in each typeface, visit the <strong><a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/">font size tokens</a></strong> page.</p>
+
       <h4 class="utility-examples-title margin-bottom-2">Type-based size and family utilities</h4>
 
       <p class="utility-note"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project settings. Use valid system tokens following the guidance in the <strong><a href="{{ site.baseurl }}/design-tokens/typesetting/">Typesetting</a></strong> section of USWDS <a href="{{ site.baseurl }}/design-tokens/">design tokens</a> documentation.</p>

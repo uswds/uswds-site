@@ -150,22 +150,22 @@ Using USWDS 3.0 and packages requires compiling your Sass with load paths. Load 
 "./node_modules/@uswds/uswds/packages"
 ```
 
-In a gulpfile, use `includePaths` in your `sass()` function.
+In a gulpfile, use `loadPaths` in your `sass()` function.
 ```js
   sass({
-    includePaths: [
+    loadPaths: [
       "./node_modules/@uswds/uswds/packages",
     ],
   })
 ```
 
-In webpack, include `includePaths` within the sassOptions of your Sass loader:
+In webpack, include `loadPaths` within the sassOptions of your Sass loader:
 
 ```js
 loader: "sass-loader",
 options: {
   sassOptions: {
-    includePaths: [
+    loadPaths: [
       "./node_modules/@uswds/uswds/packages",
     ],
   },

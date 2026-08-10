@@ -103,7 +103,7 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "1.3.2",
-    "@uswds/uswds": "github:uswds/uswds#102096bba3f629f73cf1c444c10ba958b17e9643"
+    "@uswds/uswds": "github:uswds/uswds#d3828a31d48eed611e1cbd5348b2e3b77b980fee"
   },
   "overrides": {
     "postcss": "$postcss"

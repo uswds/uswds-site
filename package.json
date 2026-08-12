@@ -106,6 +106,6 @@
     "@uswds/uswds": "github:uswds/uswds#develop"
   },
   "overrides": {
-    "postcss": "$postcss"
+    "postcss": "^8.5.23"
   }
 }

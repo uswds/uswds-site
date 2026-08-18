@@ -3,13 +3,11 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Changed the default expand/collapse icon position to the start side of the accordion button.
-    summaryAdditional: |
-      The expand/collapse icon now defaults to the start side (the side where reading begins) to improve discoverability for users at high magnification or zoom levels. The plus and minus icons are unchanged; only placement moved. Restore the previous end-side default with `$theme-accordion-icon-position: "end"` or add `usa-accordion--icon-end` to individual accordions. Per-accordion modifiers `usa-accordion--icon-start` and `usa-accordion--icon-end` are also available. Styles use logical start and end sides so placement follows the document reading direction. Banner and header accordions are unchanged.
-    isBreaking: true
-    affectsStyles: true
-    affectsSettings: true
+    summary: Updated default accordion icon placement for improved accessibility and usability.
+    summaryAdditional: The old icon alignment is available as opt-in by using the `$theme-accordion-icon-position` setting (`"start"` or `"end"`) or `usa-accordion--icon-start` or `usa-accordion--icon-end`.
     affectsAccessibility: true
+    affectsGuidance: true
+    affectsStyles: true
     githubPr: 6789
     githubRepo: uswds
     versionUswds: 3.14.0

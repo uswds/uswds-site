@@ -2,6 +2,12 @@ title: Alert
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added recommendations to start the alert's text with the alert type, along with additional clarity on titles and alert type usage.
+    affectsAccessibility: true
+    affectsGuidance: true
+    githubPr: 3288
+    githubRepo: uswds-site
   - date: 2025-01-14
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

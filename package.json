@@ -105,6 +105,9 @@
     "@uswds/compile": "1.3.2",
     "@uswds/uswds": "github:uswds/uswds#dc239985d5e6114ec86e1ce7e62d18009490e8d0"
   },
+  "optionalDependencies": {
+    "sass-embedded-linux-x64": "1.98.0"
+  },
   "overrides": {
     "postcss": "^8.5.23"
   }

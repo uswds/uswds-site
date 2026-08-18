@@ -3,6 +3,20 @@ title: Text input
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Fixed input elements overflowing their containers in environments with reset box-sizing.
+    summaryAdditional: Added box-sizing border-box to the shared %block-input-styles mixin so padding stays inside the declared width in host environments that reset box sizing to content-box.
+    affectsStyles: true
+    githubPr: 6736
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: NNNN-NN-NN
+    summary: Fixed console errors when using native datalist elements with USWDS text inputs.
+    summaryAdditional: Reordered a null check in validate-input.js and added a guard in behavior.js to prevent errors when datalist selection events are fired.
+    affectsJavascript: true
+    githubPr: 6594
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2024-12-18
     summary: Moved `.usa-input--[width]` classes into the `usa-input` package from `usa-form`.
     summaryAdditional: These classes can now be used without the `usa-form` package and `.usa-form` parent element.

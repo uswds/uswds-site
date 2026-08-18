@@ -3,6 +3,20 @@ type: component
 changelogURL:
 
 items:
+  - date: NNNN-NN-NN
+    summary: Added missing combo box dependency to SCSS import.
+    summaryAdditional: The time picker now correctly forwards usa-combo-box styles when imported directly. This has no effect on the compiled CSS.
+    affectsStyles: true
+    githubPr: 6634
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: NNNN-NN-NN
+    summary: Fixed initialization issues when dynamically adding time pickers to the page.
+    summaryAdditional: The component now uses a data-enhanced guard to prevent re-initialization errors.
+    affectsJavascript: true
+    githubPr: 6664
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2024-11-13
     summary: Updated the time picker hint text to improve clarity.
     summaryAdditional: This update allows the component to meet the success criteria in [WCAG 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html).

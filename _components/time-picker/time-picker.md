@@ -3,7 +3,7 @@ category: Components
 component:
   status: ready
   package: usa-time-picker
-  dependencies:
+  dependencies: usa-combo-box
 permalink: /components/time-picker/
 redirect_from:
 - /form-controls/12-time-picker/

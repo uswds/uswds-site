@@ -103,7 +103,7 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "1.3.2",
-    "@uswds/uswds": "github:uswds/uswds#develop"
+    "@uswds/uswds": "3.14.0"
   },
   "optionalDependencies": {
     "sass-embedded-linux-x64": "1.98.0"

@@ -4,7 +4,7 @@ changelogURL:
 items:
 - date: NNNN-NN-NN
   summary: Fixed select elements overflowing their containers in environments with reset box-sizing.
-  summaryAdditional: Added explicit box-sizing border-box to .usa-select so padding stays inside the declared width in host environments that reset box sizing to content-box.
+  summaryAdditional: Added box-sizing border-box to the shared %block-input-styles mixin so padding stays inside the declared width in host environments that reset box sizing to content-box.
   affectsStyles: true
   githubPr: 6736
   githubRepo: uswds

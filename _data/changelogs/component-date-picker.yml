@@ -2,6 +2,21 @@ title: Date picker
 type: component
 changelogURL:
 items:
+  - date: 2026-08-18
+    summary: Added aria-current="date" to today's date button in the calendar.
+    summaryAdditional: Assistive technologies can now identify the current date, meeting WCAG 1.3.1 success criteria.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 6593
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: 2026-08-18
+    summary: Fixed initialization issues when dynamically adding date pickers to the page.
+    summaryAdditional: The component now uses a data-enhanced guard to prevent re-initialization errors.
+    affectsJavascript: true
+    githubPr: 6664
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2025-03-07 
     summary: Enabled native JavaScript translation for calendar labels.
     summaryAdditional: The calendar now uses the `Date.toLocaleString` API to automatically build translated labels based on the document's `lang` attribute.

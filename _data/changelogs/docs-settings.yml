@@ -2,6 +2,47 @@ title: Settings
 type: utility
 changelogURL:
 items:
+  - date: 2026-08-18
+    summary: Fixed Sass deprecation warnings for global built-in functions.
+    summaryAdditional: Replaced deprecated global functions (length(), unquote(), unit()) with their namespaced module equivalents (list.length(), string.unquote(), math.unit()). This removes deprecation warnings when building.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 6746
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: 2026-08-18
+    summary: Fixed Sass deprecation warnings for map functions.
+    summaryAdditional: Replaced deprecated map-merge and map-has-key with sass:map module functions, removing 23 build warnings.
+    affectsStyles: true
+    affectsSettings: true
+    githubPr: 6519
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: 2026-08-18
+    summary: Migrated Sass if() syntax to official CSS if() function.
+    summaryAdditional: "Mechanically migrated all Sass if($cond, $a, $b) calls to the new if(sass($cond): $a; else: $b) syntax across packages/, clearing ~90 deprecation warnings. Also upgraded Prettier to 3.9.6 for native CSS if() formatting support."
+    affectsStyles: true
+    affectsSettings: true
+    affectsAssets: true
+    githubPr: 6770
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: 2026-08-18
+    summary: Fixed base-ink theme color assignment.
+    summaryAdditional: Corrected the base-ink theme-color assignment to reference the correct variable, so custom base-ink overrides now take effect.
+    affectsSettings: true
+    affectsStyles: true
+    githubPr: 6651
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: 2026-08-18
+    summary: Removed the Receptor dependency.
+    summaryAdditional: Reimplemented Receptor functionality in first-party code. Lit is now the only non-dev runtime dependency (needed only for the web-component Banner). This is potentially breaking in niche internal-API edge cases.
+    isBreaking: true
+    affectsJavascript: true
+    githubPr: 6489
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2024-10-04
     summary: Added new `$theme-utility-breakpoints-custom` setting.
     summaryAdditional:  Users can now set custom breakpoints which will generate utilities alongside the default system breakpoints.

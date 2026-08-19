@@ -2,6 +2,15 @@ title: Accordion
 type: component
 changelogURL:
 items:
+  - date: 2026-08-18
+    summary: Updated default accordion icon placement for improved accessibility and usability.
+    summaryAdditional: The old icon alignment is available as opt-in by using the `$theme-accordion-icon-position` setting (`"start"` or `"end"`) or `usa-accordion--icon-start` or `usa-accordion--icon-end`.
+    affectsAccessibility: true
+    affectsGuidance: true
+    affectsStyles: true
+    githubPr: 6789
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2024-01-17
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

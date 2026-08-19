@@ -6,6 +6,26 @@ executors:
     docker:
       - image: cimg/ruby:3.2.5-browsers
 
+commands:
+  install_node:
+    description: >
+      cimg/ruby bundles a fixed, older Node version with no ESM require()
+      support. Install nvm and switch to the Node version in .nvmrc so
+      npm/npx steps (including @uswds/uswds's own build script) work.
+    steps:
+      - run:
+          name: Install Node via nvm (from .nvmrc)
+          command: |
+            set +e
+            wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            NODE_VERSION="$(cat .nvmrc)"
+            nvm install "$NODE_VERSION"
+            nvm alias default "$NODE_VERSION"
+            echo 'export NVM_DIR="$HOME/.nvm"' >> "$BASH_ENV"
+            echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> "$BASH_ENV"
+
 jobs:
   install_ruby_deps:
     executor: my-executor
@@ -46,6 +66,7 @@ jobs:
     executor: my-executor
     steps:
       - checkout
+      - install_node
       # Fallback keys allow partial cache hits when the lock file changes.
       - restore_cache:
           name: Restore npm cache
@@ -73,6 +94,7 @@ jobs:
       # Deps come from the workspace; no cache restore needed here.
       - attach_workspace:
           at: ~/project
+      - install_node
       - run:
           name: Build site assets
           command: npm run build:all-assets
@@ -105,6 +127,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      - install_node
       - run:
           name: Link bundler
           command: |
@@ -130,6 +153,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      - install_node
       - run:
           name: Link bundler
           command: |

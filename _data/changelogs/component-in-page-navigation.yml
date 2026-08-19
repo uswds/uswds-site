@@ -2,6 +2,14 @@ title: In-page navigation
 type: component
 changelogURL:
 items:
+  - date: 2026-08-18
+    summary: Standardized initialization guard to use data-enhanced attribute.
+    summaryAdditional: Changed from data-created to data-enhanced for the initialization guard and adjusted aria-label handling. This is an internal change with no visible behavior change.
+    affectsJavascript: true
+    affectsAccessibility: true
+    githubPr: 6688
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2025-03-07
     summary: Fixed a bug that prevented in-page navigation from scrolling to nested headings.
     summaryAdditional: The in-page navigation can now smooth scroll to headings within components like card and summary box.

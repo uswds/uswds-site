@@ -9,14 +9,19 @@ import http from "node:http";
 import https from "node:https";
 
 // Same exclusion pa11y-ci:sitemap/-mobile already pass via
-// `--sitemap-exclude '/*.pdf|next/|components/icon/$'`, kept in sync so sharded
-// runs exclude the same URLs as the unsharded ones.
+// `--sitemap-exclude '\.pdf$|(^|/)next/|components/icon/$'`, kept in sync so
+// sharded runs exclude the same URLs as the unsharded ones.
 //
-// `components/icon/$` excludes only the exact /components/icon/ page, which
-// renders all 243 icons and reliably exceeds pa11y's 120s timeout in CI (a
-// runner/perf limit, not an a11y defect). The `$` anchor keeps sub-pages like
-// /components/icon/accessibility-tests/ (and /components/icon-list/) in scope.
-const EXCLUDE_PATTERN = new RegExp("/*.pdf|next/|components/icon/$");
+// - `\.pdf$` matches a literal ".pdf" file extension at the end of the URL
+//   (not "/pdf..." mid-path).
+// - `(?:^|\/)next\/` matches the `next/` directory at a path boundary
+//   (not "next" mid-word, e.g. "getnext/").
+// - `components/icon/$` excludes only the exact /components/icon/ page, which
+//   renders all 243 icons and reliably exceeds pa11y's 120s timeout in CI (a
+//   runner/perf limit, not an a11y defect). The `$` anchor keeps sub-pages
+//   like /components/icon/accessibility-tests/ (and /components/icon-list/)
+//   in scope.
+const EXCLUDE_PATTERN = /(?:\.pdf$|(?:^|\/)next\/|components\/icon\/$)/;
 
 function parseArgs(argv) {
   const args = {};

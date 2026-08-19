@@ -12,15 +12,7 @@ import https from "node:https";
 // `--sitemap-exclude '\.pdf$|(^|/)next/|components/icon/$'`, kept in sync so
 // sharded runs exclude the same URLs as the unsharded ones.
 //
-// - `\.pdf$` matches a literal ".pdf" file extension at the end of the URL
-//   (not "/pdf..." mid-path).
-// - `(?:^|\/)next\/` matches the `next/` directory at a path boundary
-//   (not "next" mid-word, e.g. "getnext/").
-// - `components/icon/$` excludes only the exact /components/icon/ page, which
-//   renders all 243 icons and reliably exceeds pa11y's 120s timeout in CI (a
-//   runner/perf limit, not an a11y defect). The `$` anchor keeps sub-pages
-//   like /components/icon/accessibility-tests/ (and /components/icon-list/)
-//   in scope.
+// components/icon/$ excludes the icon page (renders ~243 icons, exceeds pa11y's 120s timeout — a perf limit, not an a11y defect).
 const EXCLUDE_PATTERN = /(?:\.pdf$|(?:^|\/)next\/|components\/icon\/$)/;
 
 function parseArgs(argv) {

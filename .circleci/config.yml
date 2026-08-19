@@ -165,6 +165,29 @@ jobs:
             bundle exec jekyll serve --detach --host=localhost --skip-initial-build
             until curl -sf http://localhost:4000/sitemap.xml -o /dev/null; do sleep 1; done
             npm run pa11y-ci:shard-mobile
+  # /components/icon/ is excluded from the sharded desktop/mobile crawls above
+  # (it renders all ~243 icons and exceeds pa11y's default 120s timeout). This
+  # dedicated job scans that one URL on its own with a longer timeout and
+  # concurrency: 1 (see .pa11yci--icon) so the page still gets full a11y
+  # coverage without blowing the main jobs' time budget. Not parallelized —
+  # it's a single URL.
+  test_a11y_icon:
+    executor: my-executor
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - install_node
+      - run:
+          name: Link bundler
+          command: |
+            bundle config set --local path '~/project/vendor/bundle'
+      - run:
+          name: Run pa11y-ci icon page
+          command: |
+            bundle exec jekyll serve --detach --host=localhost --skip-initial-build
+            until curl -sf http://localhost:4000/sitemap.xml -o /dev/null; do sleep 1; done
+            npm run pa11y-ci:icon
 
 workflows:
   circle-uswds-site:
@@ -182,5 +205,8 @@ workflows:
           requires:
             - build
       - test_a11y_mobile:
+          requires:
+            - build
+      - test_a11y_icon:
           requires:
             - build

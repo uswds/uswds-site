@@ -2,14 +2,14 @@ title: Range slider
 type: component
 changelogURL:
 items:
-- date: NNNN-NN-NN
+- date: 2026-08-18
   summary: Fixed range slider elements overflowing their containers in environments with reset box-sizing.
   summaryAdditional: Added box-sizing border-box to the shared %block-input-styles mixin so padding stays inside the declared width in host environments that reset box sizing to content-box.
   affectsStyles: true
   githubPr: 6736
   githubRepo: uswds
   versionUswds: 3.14.0
-- date: NNNN-NN-NN
+- date: 2026-08-18
   summary: Added visible hint with operating instructions for sighted users.
   summaryAdditional: A usa-hint element ("Move the slider to change the value") is now linked via aria-describedby so both sighted users and screen reader users receive instructions.
   affectsAccessibility: true
@@ -17,7 +17,7 @@ items:
   githubPr: 6673
   githubRepo: uswds
   versionUswds: 3.14.0
-- date: NNNN-NN-NN
+- date: 2026-08-18
   summary: Improved border visibility for low-vision users.
   summaryAdditional: Changed the track and thumb border to 2px thickness and darker #646464 color for better contrast and visibility.
   affectsAccessibility: true
@@ -25,7 +25,7 @@ items:
   githubPr: 6659
   githubRepo: uswds
   versionUswds: 3.14.0
-- date: NNNN-NN-NN
+- date: 2026-08-18
   summary: Fixed initialization issues when dynamically adding range sliders to the page.
   summaryAdditional: The component now uses a data-enhanced guard to prevent re-initialization errors.
   affectsJavascript: true

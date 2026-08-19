@@ -2,7 +2,7 @@ title: Date picker
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Added aria-current="date" to today's date button in the calendar.
     summaryAdditional: Assistive technologies can now identify the current date, meeting WCAG 1.3.1 success criteria.
     affectsAccessibility: true
@@ -10,7 +10,7 @@ items:
     githubPr: 6593
     githubRepo: uswds
     versionUswds: 3.14.0
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Fixed initialization issues when dynamically adding date pickers to the page.
     summaryAdditional: The component now uses a data-enhanced guard to prevent re-initialization errors.
     affectsJavascript: true

@@ -2,7 +2,7 @@ title: Character count
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Deferred setting aria-live attribute to prevent iOS VoiceOver announcements on page load.
     summaryAdditional: The component now waits 100ms before setting aria-live="polite" on the status message element, preventing iOS VoiceOver from announcing character counts when the page loads.
     affectsAccessibility: true
@@ -10,14 +10,14 @@ items:
     githubPr: 6595
     githubRepo: uswds
     versionUswds: 3.14.0
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Fixed the label selector query.
     summaryAdditional: Corrected the component's internal label selector logic.
     affectsJavascript: true
     githubPr: 6385
     githubRepo: uswds
     versionUswds: 3.14.0
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Fixed initialization issues when dynamically adding character count components to the page.
     summaryAdditional: The component now uses a data-enhanced guard to prevent re-initialization errors.
     affectsJavascript: true

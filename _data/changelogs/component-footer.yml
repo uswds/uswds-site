@@ -2,7 +2,7 @@ title: Footer
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Restricted data-tag attribute to heading elements for security.
     summaryAdditional: The footer now only allows heading elements (h1-h6) for the data-tag attribute and falls back to h4 for other values, preventing unsafe DOM element creation. This may affect projects that set data-tag to non-heading elements.
     isBreaking: true

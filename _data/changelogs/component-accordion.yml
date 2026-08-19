@@ -2,7 +2,7 @@ title: Accordion
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Updated default accordion icon placement for improved accessibility and usability.
     summaryAdditional: The old icon alignment is available as opt-in by using the `$theme-accordion-icon-position` setting (`"start"` or `"end"`) or `usa-accordion--icon-start` or `usa-accordion--icon-end`.
     affectsAccessibility: true

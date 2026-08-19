@@ -3,14 +3,14 @@ type: component
 changelogURL:
 
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Added missing combo box dependency to SCSS import.
     summaryAdditional: The time picker now correctly forwards usa-combo-box styles when imported directly. This has no effect on the compiled CSS.
     affectsStyles: true
     githubPr: 6634
     githubRepo: uswds
     versionUswds: 3.14.0
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Fixed initialization issues when dynamically adding time pickers to the page.
     summaryAdditional: The component now uses a data-enhanced guard to prevent re-initialization errors.
     affectsJavascript: true

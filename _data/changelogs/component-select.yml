@@ -2,7 +2,7 @@ title: Select
 type: component
 changelogURL:
 items:
-- date: NNNN-NN-NN
+- date: 2026-08-18
   summary: Fixed select elements overflowing their containers in environments with reset box-sizing.
   summaryAdditional: Added box-sizing border-box to the shared %block-input-styles mixin so padding stays inside the declared width in host environments that reset box sizing to content-box.
   affectsStyles: true

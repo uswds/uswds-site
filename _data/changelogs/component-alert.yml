@@ -2,7 +2,7 @@ title: Alert
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Added recommendations to start the alert's text with the alert type, along with additional clarity on titles and alert type usage.
     affectsAccessibility: true
     affectsGuidance: true

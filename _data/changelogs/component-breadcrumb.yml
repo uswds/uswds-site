@@ -2,7 +2,7 @@ title: Breadcrumb
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-08-18
     summary: Breadcrumbs now wrap by default instead of truncating with ellipsis.
     summaryAdditional: The old single-line behavior is available as an opt-in `.usa-breadcrumb--truncate` variant. The `.usa-breadcrumb--wrap` class remains for backward compatibility but has no effect. This change may increase the height of breadcrumb components. To restore the previous behavior, add the `.usa-breadcrumb--truncate` class.
     isBreaking: true

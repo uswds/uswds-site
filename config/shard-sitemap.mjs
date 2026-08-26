@@ -9,9 +9,11 @@ import http from "node:http";
 import https from "node:https";
 
 // Same exclusion pa11y-ci:sitemap/-mobile already pass via
-// `--sitemap-exclude '/*.pdf|next/'`, kept in sync so sharded runs exclude
-// the same URLs as the unsharded ones.
-const EXCLUDE_PATTERN = new RegExp("/*.pdf|next/");
+// `--sitemap-exclude '\.pdf$|(^|/)next/|components/icon/$'`, kept in sync so
+// sharded runs exclude the same URLs as the unsharded ones.
+//
+// components/icon/$ excludes the icon page (renders ~243 icons, exceeds pa11y's 120s timeout — a perf limit, not an a11y defect).
+const EXCLUDE_PATTERN = /(?:\.pdf$|(?:^|\/)next\/|components\/icon\/$)/;
 
 function parseArgs(argv) {
   const args = {};

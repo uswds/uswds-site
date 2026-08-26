@@ -2,6 +2,22 @@ title: Modal
 type: component
 changelogURL:
 items:
+  - date: 2026-08-18
+    summary: Fixed page content staying hidden from screen readers after closing a modal.
+    summaryAdditional: If the element that opened the modal was no longer in the document when the modal closed, page content kept aria-hidden and stayed invisible to assistive technology until reload. Closing now always restores page content, independent of whether the opener still exists.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 6786
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: 2026-08-18
+    summary: Fixed screen readers announcing modal content twice.
+    summaryAdditional: The modal now controls initial focus (first footer button), disables focus-trap auto-focus, and sets aria-modal on the wrapper to prevent duplicate announcements, especially in NVDA.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 6703
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2025-02-14
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

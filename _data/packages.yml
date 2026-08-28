@@ -363,6 +363,7 @@
     - "usa-label"
     - "usa-hint"
     - "usa-input"
+    - "usa-combo-box"
 - name: "usa-tooltip"
   fullSize: 7
   sourceSize: 1

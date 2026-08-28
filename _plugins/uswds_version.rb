@@ -22,8 +22,9 @@ module USWDSVersion
 
     def generate(site)
       package = JSON.load(File.read('package.json'))
-      version = make_version_nice(package['devDependencies']['uswds'])
-      site.data['uswds_version'] = version
+      raw_version = package.dig('dependencies', '@uswds/uswds')
+      return unless raw_version  # nil-guard: don't crash if key is renamed/missing
+      site.data['uswds_version'] = make_version_nice(raw_version)
     end
   end
 end

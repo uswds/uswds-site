@@ -2,6 +2,14 @@ title: Memorable date
 type: component
 changelogURL:
 items:
+- date: 2026-08-18
+  summary: Improved screen reader hints for the memorable date fields.
+  summaryAdditional: Each field (month, day, year) now has its own hint wired with aria-describedby, so screen readers announce only the guidance for the focused field instead of the full instruction block. A visible group hint remains for sighted users. Authors who copied the old shared mdHint markup should update to per-field hints.
+  affectsAccessibility: true
+  affectsMarkup: true
+  githubPr: 6725
+  githubRepo: uswds
+  versionUswds: 3.14.0
 - date: 2024-11-19
   summary: Added WCAG compliance tag and accessibility test status section.
   affectsGuidance: true

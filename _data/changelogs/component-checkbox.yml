@@ -2,6 +2,13 @@ title: Checkbox
 type: component
 changelogURL:
 items:
+  - date: 2026-07-07
+    summary: Added missing tile variant description to checkbox.
+    summaryAdditional: The class usa-checkbox__input--tile is now represented.
+    affectsGuidance: true
+    githubPr: 3216
+    githubRepo: uswds-site
+    versionUswds: 3.13.0
   - date: 2025-03-07
     summary: Updated the width of the label's target area to match the width of the content.
     summaryAdditional: Previously, the interactive area extended the full width of the container.

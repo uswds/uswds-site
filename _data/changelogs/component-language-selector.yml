@@ -2,6 +2,13 @@ title: Language selector
 type: component
 changelogURL:
 items:
+  - date: 2026-08-18
+    summary: Fixed an error when the Escape key was pressed to close the language selector.
+    summaryAdditional: Removed a stale function call that caused the component to throw an error. The component now uses the standard dropdown close path.
+    affectsJavascript: true
+    githubPr: 6713
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2025-03-26
     summary: Added accessibility tests page.
     affectsGuidance: true

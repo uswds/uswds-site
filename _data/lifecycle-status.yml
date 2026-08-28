@@ -101,7 +101,7 @@ components:
   url: https://designsystem.digital.gov/components/in-page-navigation/
 - name: Input mask
   status_major: released
-  status_minor: stable
+  status_minor: use with caution
   url: https://designsystem.digital.gov/components/input-mask/
 - name: Input prefix or suffix
   status_major: released

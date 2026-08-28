@@ -4,6 +4,20 @@ type: component
 changelogURL:
 
 items:
+  - date: 2026-08-18
+    summary: Restored row header border in borderless tables.
+    summaryAdditional: Row-scoped body header cells (tbody th[scope="row"]) now keep their top border in borderless tables, preventing row headers from appearing visually disconnected.
+    affectsStyles: true
+    githubPr: 6661
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: 2026-08-18
+    summary: Fixed table header borders collapsing when using screen-reader-only captions.
+    summaryAdditional: Adjusted border-collapse behavior when a .usa-sr-only caption uses position absolute (Bootstrap-style visually-hidden pattern).
+    affectsStyles: true
+    githubPr: 6633
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2024-12-18
     summary: Updated table header styles to be consistent across all table elements.
     summaryAdditional: Now, all `thead th`, `tbody th`, and `tfoot th` cells will have the same visual styles. Teams should confirm that their tables display as expected.

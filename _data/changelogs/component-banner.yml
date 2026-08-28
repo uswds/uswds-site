@@ -2,6 +2,20 @@ title: Banner
 type: component
 changelogURL:
 items:
+  - date: 2026-08-18
+    summary: Fixed banner toggle lookup to respect the component root.
+    summaryAdditional: The toggle now resolves aria-controls from the control's root node instead of always using document, so banner toggles work correctly when initialized inside a shadow root via banner.on(root).
+    affectsJavascript: true
+    githubPr: 6714
+    githubRepo: uswds
+    versionUswds: 3.14.0
+  - date: 2026-08-18
+    summary: Updated web component JSDoc to use the standard @element tag.
+    summaryAdditional: Changed the JSDoc decorator from @tagname to @element for the usa-banner web component. This is a documentation-only change with no functional impact.
+    affectsJavascript: true
+    githubPr: 6739
+    githubRepo: uswds
+    versionUswds: 3.14.0
   - date: 2025-05-23
     summary: Added a new HTML Web Component-based variant of the banner.
     affectsGuidance: true

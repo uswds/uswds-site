@@ -395,7 +395,7 @@ You'll need to update any instances of the small search button on your site. We'
 ###### Old code
 
 ```html
-<button type="button" class="usa-button" type="submit">
+<button class="usa-button" type="submit">
   <span class="usa-sr-only">Search</span>
 <button>
 ```
@@ -404,7 +404,7 @@ You'll need to update any instances of the small search button on your site. We'
 ###### New code
 
 ```html
-<button type="button" class="usa-button" type="submit">
+<button class="usa-button" type="submit">
   <img
     src="{% raw %}{{ uswds image path }}{% endraw %}/usa-icons-bg/search--white.svg"
     class="usa-search__submit-icon"

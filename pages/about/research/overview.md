@@ -68,10 +68,12 @@ Other more ad hoc research helps us answer specific questions or solve certain p
 Explore some of our past research work:
 
 {:.usa-list}
-- [Usability testing](https://github.com/uswds/uswds/wiki/Usability-research-findings-for-Q3-2023) (August and September 2023): Testing components with visually impaired participants. We also discussed this research at the [October 2023 USWDS monthly call](https://youtu.be/_uNXQpu6Dwg?feature=shared).
+- ["Zebra" component usability testing](https://github.com/uswds/uswds/wiki/%E2%80%9CZebra-batch%E2%80%9D-component-usability-research-findings-Q1-2024) (spring 2024): Testing another batch of components with participants with various disabilities.
+- ["Buffalo" component usability testing](https://github.com/uswds/uswds/wiki/Usability-research-findings-for-Q3-2023) (summer 2023): Testing components with visually impaired participants. We also discussed this research at the [October 2023 USWDS monthly call](https://youtu.be/_uNXQpu6Dwg?feature=shared).
 - [Usability testing day checklist](https://github.com/uswds/uswds/wiki/Usability-testing-day-checklist): Steps to follow on the day of testing. This checklist also prepares researchers to account for assistive technology like screen readers.
-- [Top Tasks](https://digital.gov/event/2023/04/20/uswds-monthly-call-april-2023/) (March 2023): Finding out what matters most to USWDS users.
-- [Transforming the American digital experience]({{ site.baseurl }}/next/) (March 2021): Supporting emergency response efforts related to the COVID-19 and identifying strategies for advancing the design system through agency collaboration.
+- [Disabled states literature review](https://github.com/uswds/uswds/wiki/Disabled-States-Research-Findings-2023) (summer 2023): Finding out whether disabled states should be used and how.
+- [Top Tasks](https://digital.gov/event/2023/04/20/uswds-monthly-call-april-2023/) (spring 2023): Finding out what matters most to USWDS users.
+- [Transforming the American digital experience]({{ site.baseurl }}/next/) (spring 2021): Supporting emergency response efforts related to the COVID-19 and identifying strategies for advancing the design system through agency collaboration.
 
 ## How to participate in research
 

@@ -2,6 +2,16 @@ title: How to use USWDS
 type: documentation
 changelogURL:
 items:
+  - date: 2026-08-03
+    summary: Updated the Designers card to reference Figma and Sketch.
+    summaryAdditional: Added Figma to the mention of Sketch to reflect the [Getting started for designers page](https://designsystem.digital.gov/documentation/getting-started-for-designers/#uswds-for-designers-2).
+    githubPr: 3257
+    githubRepo: uswds-site
+  - date: 2026-08-03
+    summary: Updated the Designers card to remove Adobe XD.
+    summaryAdditional: Removed Adobe XD since XD is no longer supported by Adobe, and therefore USWDS no longer maintains the kit for it.
+    githubPr: 3257
+    githubRepo: uswds-site  
   - date: 2022-01-27
     summary: Brought in "Before getting started" content from "Getting started for developers".
     summaryAdditional:

@@ -150,9 +150,9 @@ When you click on a link below, you will leave our site and go to a non-governme
 
 ### Free commercial downloads
 
-Some documents on this website are in Portable Document Format (PDF). PDFs allow you to view publications in their original format regardless of what type of computer, browser, or operating system you use to access the Internet. To view, navigate, and print PDF documents, you'll need the free PDF reader software. Visit [GSA.gov's list of accessibility aids](https://www.gsa.gov/website-information/accessibility-aids) to find links to PDF reader software.
+Some documents on this website are in Portable Document Format (PDF). PDFs allow you to view publications in their original format regardless of what type of computer, browser, or operating system you use to access the Internet. To view, navigate, and print PDF documents, you'll need the free PDF reader software. Visit [GSA.gov's list of accessibility aids](https://www.gsa.gov/website-information/accessibility-statement) to find links to PDF reader software.
 
-Some content on this website may require use of other third-party plug-ins to view. Visit [GSA.gov's list of accessibility aids](https://www.gsa.gov/website-information/accessibility-aids) to find links to these plug-ins and aids.
+Some content on this website may require use of other third-party plug-ins to view. Visit [GSA.gov's list of accessibility aids](https://www.gsa.gov/website-information/accessibility-statement) to find links to these plug-ins and aids.
 
 ### Operating systems and browsers
 
@@ -178,10 +178,10 @@ Federal agencies are required to provide the following links to agency-level inf
 
 -   [Orders and directives](https://www.gsa.gov/directives-library)
 
--   [Plain language](https://www.gsa.gov/governmentwide-initiatives/plain-language)
+-   [Plain language](https://digital.gov/guides/plain-language)
 
 -   [Privacy policy and program](https://www.gsa.gov/privacy)
 
--   [Small business events and contacts](https://www.gsa.gov/small-business/small-business-resources/osdbu-events)
+-   [Small business events and contacts](https://www.gsa.gov/small-business)
 
 Reviewed/Updated: October 2021

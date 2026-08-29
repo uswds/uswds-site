@@ -98,7 +98,7 @@ chapter: true
 
 To improve USWDS as a product, we’ll begin refining and implementing the next steps outlined in this report, incorporating additional research and input from the USWDS community as we go. Agencies interested in participating in this process — or simply in learning more about the design system — can join us in our [public Slack channel (#uswds-public)]({{ site.baseurl }}/about/community/), for [our monthly calls](https://digital.gov/events/), and in the [digital.gov communities of practice](https://digital.gov/communities/).
 
-We also look forward to collaborating with our digital services colleagues in [TTS](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) and beyond to explore new ways of providing shared value for government and articulate a more defined path toward our [North Star vision]( {{ site.baseurl }}/next/looking-ahead/vision/) of empowered digital teams and trusted experiences.
+We also look forward to collaborating with our digital services colleagues in [TTS](https://tts.gsa.gov/) and beyond to explore new ways of providing shared value for government and articulate a more defined path toward our [North Star vision]( {{ site.baseurl }}/next/looking-ahead/vision/) of empowered digital teams and trusted experiences.
 
 We thank everyone who shared their time, feedback, and ideas throughout this research effort and invite you — our collaborators and colleagues — to join us in further exploring these big-picture questions by joining our community and attending our events.
 

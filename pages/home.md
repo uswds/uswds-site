@@ -68,7 +68,7 @@ graphic_list:
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/webp/home/showcase/nasa.webp" alt="" width="960" height="540">
-        <a href="https://www1.grc.nasa.gov/">NASA Glenn Research Center</a>
+        <a href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/">NASA Beginner's Guide to Aeronautics</a>
       </div>
     </div>
   </div>

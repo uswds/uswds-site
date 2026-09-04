@@ -10,6 +10,10 @@ subnav:
   href: '#z-index-tokens'
 - text: Using z-index tokens
   href: '#using-z-index-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-zindex
 ---
 
 ## Z-index tokens
@@ -104,21 +108,6 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         <td data-title="Example">
           <span>
             @include u-z(<code>'bottom'</code>)<br/>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Context">
-          <span class="font-lang-3">setting</span>
-        </th>
-        <td data-title="Description">
-          <span>
-            <a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
-          </span>
-        </td>
-        <td data-title="Example">
-          <span>
-            $theme-subnav-z-index: <code>'top'</code>
           </span>
         </td>
       </tr>

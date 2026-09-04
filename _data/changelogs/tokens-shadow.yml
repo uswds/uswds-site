@@ -2,6 +2,11 @@ title: Shadow tokens
 type: token
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Removed the outdated setting example from "Using shadow tokens".
+    affectsGuidance: true
+    githubPr: 2386
+    githubRepo: uswds-site
   - date: 2021-05-25
     summary: Replaced entry for token `0` with token `none`.
     summaryAdditional:

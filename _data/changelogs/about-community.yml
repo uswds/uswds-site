@@ -7,7 +7,7 @@ items:
     summaryAdditional: Removed Slack signup instructions.
     isBreaking: false
     affectsGuidance: true
-    githubPr:
+    githubPr: 3301
     githubRepo: uswds-site
     versionUswds:
   - date: 2025-05-02

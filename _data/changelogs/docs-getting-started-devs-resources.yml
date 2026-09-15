@@ -7,7 +7,7 @@ items:
     summaryAdditional: Removed the invitation to join monthly calls.
     isBreaking: false
     affectsGuidance: true
-    githubPr:
+    githubPr: 3301
     githubRepo: uswds-site
     versionUswds:
   - date: 2022-02-17

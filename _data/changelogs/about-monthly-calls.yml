@@ -7,7 +7,7 @@ items:
     summaryAdditional: Replaced upcoming-call registration with a link to USWDS GitHub Discussions.
     isBreaking: false
     affectsGuidance: true
-    githubPr:
+    githubPr: 3301
     githubRepo: uswds-site
     versionUswds:
   - date: 2025-01-13

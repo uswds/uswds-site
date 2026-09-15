@@ -2,6 +2,14 @@ title: Resources
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated community participation guidance to link to USWDS GitHub Discussions.
+    summaryAdditional: Removed the invitation to join monthly calls.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2022-02-17
     summary: Added resources page.
     summaryAdditional:

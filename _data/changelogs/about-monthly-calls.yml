@@ -1,7 +1,15 @@
-title: Monthly calls
+title: Monthly call archive
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the monthly calls page to present past recordings as an archive.
+    summaryAdditional: Replaced upcoming-call registration with a link to USWDS GitHub Discussions.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2025-01-13
     summary: Added December 2024 monthly call. Added November monthly call video.
     githubPr: 3044

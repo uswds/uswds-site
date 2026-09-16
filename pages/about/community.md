@@ -17,12 +17,9 @@ changelog:
 ## Join the community
 The USWDS community has been working together since 2015 to make it easier to build accessible, mobile-friendly government websites.
 
-Join us in the `#uswds-public` channel in Slack by [filling out our form](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform). The community is open to the public. Members include content specialists, designers, engineers, and other technologists who share ideas, challenges, lessons learned, and best practices in design and design systems.
+Join us in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions). The community is open to the public. Members include content specialists, designers, engineers, and other technologists who share ideas, challenges, lessons learned, and best practices in design and design systems.
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform" class="usa-button site-button">Join the USWDS Community</a>
-
-If you're having trouble, email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}?subject=Join%20USWDS%20Slack) with _Join the USWDS Community_ in the subject.
-
+<a href="https://github.com/uswds/uswds/discussions" class="usa-button site-button">Join USWDS GitHub Discussions</a>
 
 ## Contribute to USWDS
 There are several ways to contribute to USWDS. Participating in the community is one way to contribute. See [our contributing guidelines](https://github.com/uswds/uswds/blob/develop/CONTRIBUTING.md) for more about how to contribute back to our codebase. Also, please note that every submission we receive goes through a full design and code review.
@@ -33,13 +30,3 @@ There are several ways to contribute to USWDS. Participating in the community is
 
 ## Community conduct
 By voluntarily participating in this community, you are agreeing to abide by the  [Digital.gov Community Guidelines](https://digital.gov/communities/community-guidelines/) and the [TTS Code of Conduct](https://handbook.tts.gsa.gov/code-of-conduct/). Respect your peers, use plain language, be patient, practice constructive criticism, and stay organized.
-
-## Community manager
-
-<div class="usa-media-block flex-align-center">
-  <img class="circle-5 usa-media-block__img" src="https://github.com/annepetersen.png?size=40" alt="">
-  <div class="usa-media-block__body">
-      <a href="https://digital.gov/authors/anne-petersen/">Anne Petersen</a>
-    <p class="margin-top-0">U.S. General Services Administration</p>
-  </div>
-</div>

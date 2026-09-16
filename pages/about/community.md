@@ -30,13 +30,3 @@ There are several ways to contribute to USWDS. Participating in the community is
 
 ## Community conduct
 By voluntarily participating in this community, you are agreeing to abide by the  [Digital.gov Community Guidelines](https://digital.gov/communities/community-guidelines/) and the [TTS Code of Conduct](https://handbook.tts.gsa.gov/code-of-conduct/). Respect your peers, use plain language, be patient, practice constructive criticism, and stay organized.
-
-## Community manager
-
-<div class="usa-media-block flex-align-center">
-  <img class="circle-5 usa-media-block__img" src="https://github.com/annepetersen.png?size=40" alt="">
-  <div class="usa-media-block__body">
-      <a href="https://digital.gov/authors/anne-petersen/">Anne Petersen</a>
-    <p class="margin-top-0">U.S. General Services Administration</p>
-  </div>
-</div>

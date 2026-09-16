@@ -2,14 +2,14 @@ title: Community
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-09-16
     summary: Removed outdated community manager information.
     isBreaking: false
     affectsGuidance: true
     githubPr: 3301
     githubRepo: uswds-site
     versionUswds:
-  - date: NNNN-NN-NN
+  - date: 2026-09-16
     summary: Updated community links to point directly to USWDS GitHub Discussions.
     summaryAdditional: Removed Slack signup instructions.
     isBreaking: false

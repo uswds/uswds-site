@@ -29,7 +29,7 @@ You can also email us directly at [{{ site.uswds_email }}](mailto:{{ site.uswds_
 USWDS is supported by an active, open-source community of engineers, content specialists, and designers.
 
 ### Continue learning
-We regularly update USWDS. To stay informed of changes, tips, and tricks, join us for our monthly calls and/or [subscribe to Wave](https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS), our newsletter.
+We regularly update USWDS. To stay informed of changes, tips, and tricks, join us in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions) or [subscribe to Wave](https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS), our newsletter.
 
 ### Contribute to the codebase
 For complete instructions on how to contribute code, please read [CONTRIBUTING.md](https://github.com/uswds/uswds/blob/develop/CONTRIBUTING.md). These instructions also include guidance on how to set up your own copy of the design system style guide website for development.

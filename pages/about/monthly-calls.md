@@ -1,12 +1,12 @@
 ---
-title: Monthly calls
+title: Monthly call archive
 permalink: /about/monthly-calls/
 redirect_from:
 - /documentation/video-tutorials/
 - /about/monthly-call/
 layout: styleguide
 category: About
-lead: At USWDS monthly calls, we share important updates and tips about how to use the design system.
+lead: Explore recordings and resources from past USWDS monthly calls for updates and tips about how to use the design system.
 subnav:
 - text: Latest updates
   href: '#changelog'
@@ -15,7 +15,9 @@ changelog:
 
 ---
 
-Register for [upcoming calls on Digital.gov](https://digital.gov/events/). All USWDS videos are available on [our YouTube page](https://www.youtube.com/playlist?list=PLd9b-GuOJ3nGqDYCNsCMHCQ9MdD5jfB01).
+Join the community in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions) to ask questions, share ideas, and learn from others using the design system.
+
+Browse past monthly calls below. All USWDS videos are available on [our YouTube page](https://www.youtube.com/playlist?list=PLd9b-GuOJ3nGqDYCNsCMHCQ9MdD5jfB01).
 
 {% for video in site.data.monthly-calls.videos %}
 

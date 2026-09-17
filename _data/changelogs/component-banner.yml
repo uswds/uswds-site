@@ -2,7 +2,7 @@ title: Banner
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-09-16
     summary: Updated web component support guidance to point to GitHub Discussions.
     isBreaking: false
     affectsGuidance: true

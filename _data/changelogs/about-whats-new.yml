@@ -2,7 +2,7 @@ title: What's new
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-09-16
     summary: Clarified that monthly call recordings are an archive.
     summaryAdditional: Added links to current community participation above historical posts and the research report.
     isBreaking: false

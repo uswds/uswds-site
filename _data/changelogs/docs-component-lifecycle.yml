@@ -2,7 +2,7 @@ title: Component lifecycle
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-09-16
     summary: Updated links to the current GitHub Discussions proposals category.
     isBreaking: false
     affectsGuidance: true

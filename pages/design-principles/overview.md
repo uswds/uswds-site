@@ -228,7 +228,7 @@ The following are practical actions you can take:
 
 - [Journey mapping 101](https://www.nngroup.com/articles/journey-mapping-101/) [nngroup.com]
 - [Service design 101](https://www.nngroup.com/articles/service-design-study-guide/) [nngroup.com]
-- [Using a service ecosystem to quickly grasp complexity](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity) [service-design-network.org]
+- [Using a service ecosystem to quickly grasp complexity](https://www.kolmiot.com/post/using-a-service-ecosystem-to-quickly-grasp-complexity) [kolmiot.com]
 - [Atomic design](http://atomicdesign.bradfrost.com/table-of-contents/) [atomicdesign.bradfrost.com]
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}

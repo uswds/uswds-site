@@ -133,7 +133,6 @@ If your project is currently using USWDS and you would like to see it included i
 - [U.S. Agency for Global Media](https://www.usagm.gov/)
 - [U.S. Agency for International Development (USAID)](https://www.usaid.gov/)
 - [U.S. Army Medical Center of Excellence (MEDCoE)](https://medcoe.army.mil)
-- [U.S. Data Federation](http://federation.data.gov/)
 - [U.S. Department of Agriculture (USDA)](https://www.usda.gov/)
 - [U.S. Department of Justice - Civil Rights Division](https://civilrights.justice.gov/)
 - [U.S. Department of Labor](https://www.dol.gov/)

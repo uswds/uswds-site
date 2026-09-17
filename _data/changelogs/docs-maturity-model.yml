@@ -2,6 +2,12 @@ title: Maturity model
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated community participation guidance to point to GitHub Discussions.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
   - date: 2022-03-10
     summary: |
       Replaced the outdated text: `uswds-gulp` with updated: `uswds-compile`.

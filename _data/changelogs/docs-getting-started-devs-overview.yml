@@ -2,6 +2,12 @@ title: Getting started for developers
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated community participation guidance to point to GitHub Discussions.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
   - date: 2022-04-28
     summary: Added note that USWDS no longer supports Internet Explorer 11.
     summaryAdditional:

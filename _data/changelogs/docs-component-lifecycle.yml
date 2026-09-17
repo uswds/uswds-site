@@ -2,6 +2,12 @@ title: Component lifecycle
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated links to the current GitHub Discussions proposals category.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
   - date: 2024-02-15
     summary: Added component lifecycle page.
     affectsGuidance: true

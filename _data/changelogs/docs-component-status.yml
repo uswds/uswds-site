@@ -2,6 +2,12 @@ title: Component status
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated links to the current GitHub Discussions proposals category.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
   - date: 2026-07-07
     summary: Changed Input mask to "use with caution."
     affectsAccessibility: true

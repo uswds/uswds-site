@@ -2,6 +2,12 @@ title: Key benefits
 type: documentation
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated community participation guidance to point to GitHub Discussions.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr:
+    githubRepo: uswds-site
   - date: 2021-04-14
     summary: Added key benefits page.
     summaryAdditional:

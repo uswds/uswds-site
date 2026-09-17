@@ -66,7 +66,7 @@ Get off the redesign treadmill. When the design system improves, so does your pr
 ## A cross-functional design system community
 **Break down silos and grow your skills alongside web professionals across government.**
 
-As more and more agencies adopt and adapt the design system, the community of content managers, designers, and developers that use it grows. We chat, ask questions, and share solutions in a public Slack open to design system users (sign up to [join the USWDS community]({{ site.baseurl }}/about/community/)) and also through [our GitHub organization [github.com]](https://github.com/uswds). Your contributions to the community — which can range from simple questions to new components — help colleagues with their own questions and implementations.
+As more and more agencies adopt and adapt the design system, the community of content managers, designers, and developers that use it grows. We chat, ask questions, and share solutions in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions), which is open to the public. Your contributions to the community — which can range from simple questions to new components — help colleagues with their own questions and implementations.
 
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}

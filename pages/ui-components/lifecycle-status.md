@@ -31,9 +31,9 @@ changelog:
 This table includes lifecycle information for every component we're tracking in the design system, including those in the proposal phase.
 For a complete description of each of the component lifecycle phases, see our [Component lifecycle phases]({{ site.baseurl}}/components/lifecycle) page.
 
-We update this page regularly, but check out our [component proposal discussion board](https://github.com/uswds/uswds/discussions/categories/component-proposals) for the most up-to-date list of components in the proposal phase.
+We update this page regularly, but check out our [component proposal discussion board](https://github.com/uswds/uswds/discussions/categories/proposals) for the most up-to-date list of components in the proposal phase.
 
-Don’t see the component you are looking for? [Start a discussion about it](https://github.com/uswds/uswds/discussions/new?category=component-proposals).
+Don’t see the component you are looking for? [Start a discussion about it](https://github.com/uswds/uswds/discussions/new?category=proposals).
 
 <!-- Start mobile-only status table -->
 <table class="lifecycle-table tablet:display-none">

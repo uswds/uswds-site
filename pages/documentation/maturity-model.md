@@ -175,9 +175,8 @@ understanding and adopting the design principles and individual components.
 
 
 This is a work in progress, and we want your input.
-- Share your feedback and collaborate with the [USWDS community](https://digital.gov/communities/uswds/)
-on the [#uswds-public](https://app.slack.com/client/T025AQGAN/C3F14AHSQ){:target="_blank" rel="noopener"} Slack channel.
-- If you can't access slack, email us your feedback directly at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }})
+- Share your feedback and collaborate with the community in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions).
+- You can also email your feedback directly to [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
 
 If you’re new to the maturity model, listen to [USWDS January Monthly Call](https://digital.gov/event/2020/01/16/uswds-january-monthly-call/)
 on the using the USWDS maturity model.

@@ -16,3 +16,9 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
+  - date: NNNN-NN-NN
+    summary: Removed inaccurate implementation guidance.
+    affectsGuidance: true
+    githubPr: 3214
+    githubRepo: uswds-site
+    versionUswds: 3.13.0

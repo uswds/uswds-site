@@ -2,6 +2,13 @@ title: Date of birth
 type: pattern
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Updated the pattern to give each date field its own hint.
+    summaryAdditional: Each field is described only by its own screen reader-only hint, and the hint above the fields is hidden from screen readers so it is not repeated for every field. Month options use month names without leading numbers. This matches the memorable date component.
+    affectsAccessibility: true
+    affectsContent: true
+    affectsMarkup: true
+    githubRepo: uswds-site
   - date: 2022-11-14
     summary: Pattern published.
     affectsGuidance: true

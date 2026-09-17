@@ -7,6 +7,7 @@ author: Dan O. Williams, Maya Benari
 image: /img/introducing-uswds-2-0/feature-image.jpg
 excerpt: Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.
 expiration_date: 2024-04-15
+community_channels_updated: 2026-09-17
 ---
 
 <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
@@ -189,7 +190,7 @@ USWDS 2.0 is built to grow and designed to adapt. It exists to help teams build 
 - Prepared to grow and adapt to user needs and industry best practices
 
 {:.margin-top-6}
-Like any true 2.0, this is a living product. We’ll continue to test our decisions and assumptions with real-world feedback as it develops and evolves. We encourage you to explore USWDS 2.0, contribute your own code and ideas, and leave feedback on [GitHub](https://github.com/uswds/uswds/issues), [email](mailto:{{ site.uswds_email }}), or our [Slack channel](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform) (sign-up via Google Forms). And join our new mailing list by sending an email to [uswds-subscribe-request@listserv.gsa.gov](mailto:uswds-subscribe-request@listserv.gsa.gov). We’ll use your input to continuously improve the system with ongoing regular releases. We’re listening.
+Like any true 2.0, this is a living product. We’ll continue to test our decisions and assumptions with real-world feedback as it develops and evolves. We encourage you to explore USWDS 2.0, contribute your own code and ideas, and leave feedback in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions) or by [email](mailto:{{ site.uswds_email }}). For current news, [sign up for USWDS updates](https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS). We’ll use your input to continuously improve the system with ongoing regular releases. We’re listening.
 
 ---
 

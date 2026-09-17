@@ -6,6 +6,7 @@ tags:
 - design
 category: About
 expiration_date: 2024-04-15
+community_channels_updated: 2026-09-17
 ---
 The U.S. Web Design Standards team continues to sit down with various agencies who are using the Standards. In this sixth post in our series, we talked to Olivier Kamanda, project manager for [code.gov](https://code.gov) to learn how that team adopted the Standards. [Code.gov](https://code.gov) is a new platform designed to be the home for federal source code--a platform for improving the quality of government software. It launched in November 2016.
 
@@ -32,4 +33,4 @@ The U.S. Web Design Standards team continues to sit down with various agencies w
 
 ---
 
-We’re looking to learn more [from agencies that have used the Standards](/getting-started/showcase/); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov). You can also chat with the team in the new [public Slack channel for the Standards](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform)!
+We’re looking to learn more [from agencies that have used the Standards](/getting-started/showcase/). Share your experience, ask questions, and connect with other teams in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions), or email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).

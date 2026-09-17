@@ -6,6 +6,7 @@ tags:
 - design
 category: About
 expiration_date: 2024-04-15
+community_channels_updated: 2026-09-17
 ---
 The [U.S. Web Design Standards](https://designsystem.digital.gov/) are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this seventh  post in our series, we sat down with Maureen Earley, program management specialist with the Office of Evaluation Sciences (OES), an office within the General Services Administration, to talk about her team’s use of the Standards on [oes.gsa.gov](https://oes.gsa.gov). The OES brings diverse scientific experts onto their team for year-long rotations, where they work with federal agencies to implement and rigorously test changes made to government programs to evaluate whether or not they increase the ability of agencies to achieve their missions with greater success and efficiency.
 
@@ -39,4 +40,4 @@ When we talk with other offices within government who want to redesign their sit
 
 ---
 
-We’re looking to learn more [from agencies that have used the Standards](/getting-started/showcase/); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov). You can also chat with the team in the new [public Slack channel for the Standards](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform)!
+We’re looking to learn more [from agencies that have used the Standards](/getting-started/showcase/). Share your experience, ask questions, and connect with other teams in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions), or email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).

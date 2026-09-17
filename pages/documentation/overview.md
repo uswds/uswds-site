@@ -30,7 +30,7 @@ changelog:
       <h3 class="font-lang-lg margin-0">
         <a href="{{ site.baseurl }}/documentation/getting-started-for-designers/" class="text-no-underline text-primary hover:text-underline block-link">Designers</a>
       </h3>
-      <p class="margin-top-1">Create wireframes and prototypes in Sketch or Adobe XD.</p>
+      <p class="margin-top-1">Create wireframes and prototypes in Figma or Sketch.</p>
     </div>
   </div>
   <div class="tablet:grid-col margin-top-2 tablet:margin-top-0 display-flex flex-align-stretch">

@@ -24,15 +24,15 @@ We’ll help you through the process, even if you don’t have a technical backg
 ## Suggest a new component
 
 Anyone can suggest a new U.S. Web Design System (USWDS) component.
-If you have a new component idea, get a conversation started with a [GitHub discussion](https://github.com/uswds/uswds/discussions/categories/component-proposals).
+If you have a new component idea, get a conversation started with a [GitHub discussion](https://github.com/uswds/uswds/discussions/categories/proposals).
 The USWDS team uses the information from these new component discussions to create formal component proposals.
 
 1. First, review the component proposals category in GitHub discussions to see if anyone has already suggested the component.
   If the component has been suggested, you can share ideas and add information or context to the discussion, or just express your interest.
-1. If a discussion doesn’t exist, [create a new component discussion](https://github.com/uswds/uswds/discussions/new?category=component-proposals).
+1. If a discussion doesn’t exist, [create a new component discussion](https://github.com/uswds/uswds/discussions/new?category=proposals).
   This discussion is the place to discuss the merits of the new component, in collaboration with the community and the USWDS team.
   What makes a good case for a USWDS component? We've outlined the criteria in our [USWDS proposal template](https://github.com/uswds/uswds-proposals/blob/main/proposals/_proposal-template.md).
-1. Use the [uswds-public Slack channel](https://gsa-tts.slack.com/archives/C3F14AHSQ) or reach out to peers to get feedback and support.
+1. Share the proposal discussion with peers and ask for feedback in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions).
 1. If the discussion tends toward support for including the component in the design system, the USWDS core team collects this information to create a formal component proposal.
 1. The USWDS team will share the proposal on the discussion thread.
   When it's complete, there'll be a  45-day comment period where the community has an opportunity to provide feedback on the proposal.
@@ -82,7 +82,7 @@ If the pull request is accepted, we will schedule the issue and merge the pull r
 
 ## Want to contribute something else?
 If you’d like to contribute something else that doesn’t fall into any of the above, we’d still love to hear about it.
-Just [create an issue](https://github.com/uswds/uswds/issues/new/choose) or [create a discussion](https://github.com/uswds/uswds/discussions/new?category=component-proposals), and we can talk about it.
+Just [create an issue](https://github.com/uswds/uswds/issues/new/choose) or [create a discussion](https://github.com/uswds/uswds/discussions/new?category=proposals), and we can talk about it.
 
 ## How we prioritize bug reports and feature requests
 If you’ve submitted a bug or feature request, we’ll triage it based on the following considerations:

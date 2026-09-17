@@ -1,12 +1,18 @@
 # Contributing to U.S. Web Design System Documentation
 
-We’re so glad you’re thinking about contributing to a Technology Transformation Services (TTS) open source project! If you’re unsure about anything, just ask — or submit your issue or pull request anyway. The worst that can happen is we’ll politely ask you to change something. We appreciate all friendly contributions.
+We’re so glad you’re thinking about contributing to a Technology Transformation Services (TTS) open source project! If you’re unsure where to start, [ask in Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a). The worst that can happen is we’ll politely ask you to change something. We appreciate all friendly contributions.
 
 TTS is committed to building a safe, welcoming, harassment-free culture for everyone. We expect everyone on the TTS team and everyone within TTS spaces, including contributors to our projects, to follow the [TTS Code of Conduct](https://github.com/18F/code-of-conduct/blob/main/code-of-conduct.md).
 
 We encourage you to read this project’s CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), [README](README.md) and its [Workflow](https://github.com/uswds/uswds/wiki/Workflow) process.
 
-If you have any questions or want to read more, check out the [18F Open Source Policy GitHub repository]( https://github.com/18f/open-source-policy), or [send us an email](mailto:18f@gsa.gov).
+For questions about contributing to USWDS, ask in [Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a) or [email the USWDS team](mailto:uswds@gsa.gov). For background on open source practices, see the [18F Open Source Policy](https://github.com/18f/open-source-policy).
+
+## Choose the right place
+
+Use this repository's [Issues](https://github.com/uswds/uswds-site/issues/new/choose) for documentation corrections, website bugs, and concrete website enhancements. Report bugs in the USWDS library in [uswds/uswds](https://github.com/uswds/uswds/issues/new/choose).
+
+Ask setup, usage, and contribution questions in [Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a). Explore early suggestions in [Ideas](https://github.com/uswds/uswds/discussions/new?category=ideas), and new components or patterns in [Proposals](https://github.com/uswds/uswds/discussions/new?category=proposals). See the [USWDS contribution routing guide](https://github.com/uswds/uswds/blob/develop/CONTRIBUTING.md#choose-the-right-place) for more detail.
 
 ## Issues and labels
 
@@ -48,7 +54,7 @@ Also, here are some definitions around the labels we use to help us organize our
 * **Bug:** Error, failure, or flaw in the product.
 * **Enhancement:** Modification of product to enhance performance or correct faults for items that already exist.
 * **Maintenance:** Fixing product defects.
-* **Question:** An inquiry asking for more information.
+* **Question:** A support inquiry to route to Discussions Q&A. Keep actionable defects and enhancements in Issues.
 * **New:** A completely new, discrete unit added to the package.
 
 ## Pull requests
@@ -62,7 +68,7 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Once you’re ready to submit a pull request, fill out the `PULL REQUEST TEMPLATE` provided.
 1. Submit your pull request against the `main` branch.
 
-Have questions or need help with setup? Open an issue here [https://github.com/uswds/uswds-site/issues](https://github.com/uswds/uswds-site/issues).
+Have questions or need help with setup? [Ask in Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a).
 
 ## Coding guidelines
 

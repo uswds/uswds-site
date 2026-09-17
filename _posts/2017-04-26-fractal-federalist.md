@@ -12,6 +12,7 @@ preview_baseurl: https://federalist.fr.cloud.gov/preview/18f/web-design-standard
 github_baseurl: https://github.com/uswds/uswds
 category: About
 expiration_date: 2024-04-15
+community_channels_updated: 2026-09-17
 ---
 
 <p class="site-text-intro">
@@ -181,10 +182,7 @@ share test cases for each of our components. We've also got more work to do on
 fully porting our old component templates over to Fractal and better organizing
 our components, variants, page templates, and related documentation.
 
-If you have a suggestion, see something amiss, or just want to say hi, feel
-free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
-[email our mailing list](mailto:uswebdesignstandards@gsa.gov), or join our
-[public Slack channel](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform) via Google Form.
+If you have a suggestion, see something amiss, or want to connect with other teams, join [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions) or [email the USWDS team](mailto:{{ site.uswds_email }}).
 
 
 [1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre

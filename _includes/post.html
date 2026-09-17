@@ -17,6 +17,11 @@
   </header>
 
   <div class="post-content site-prose">
+    {% if post.community_channels_updated %}
+      <p><strong>Community update ({{ post.community_channels_updated | date: "%B %-d, %Y" }}):</strong> Community participation links in this post now point to <a href="https://github.com/uswds/uswds/discussions">USWDS GitHub Discussions</a>. The original publication date and historical account are preserved.</p>
+    {% elsif post.content contains "Slack" or post.content contains "slack.com" or post.content contains "chat.18f.gov" %}
+      <p><strong>Community update:</strong> For current questions and community participation, use <a href="https://github.com/uswds/uswds/discussions">USWDS GitHub Discussions</a>. Community channels described in this post reflect what was available when it was published.</p>
+    {% endif %}
     {{ post.content }}
   </div>
 </article>

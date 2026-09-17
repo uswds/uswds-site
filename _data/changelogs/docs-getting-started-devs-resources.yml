@@ -2,6 +2,22 @@ title: Resources
 type: documentation
 changelogURL:
 items:
+  - date: 2026-09-17
+    summary: Routed installation and usage questions to Discussions Q&A.
+    summaryAdditional: Clarified where to report bugs, request enhancements, and propose new components.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr: 3308
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2026-09-16
+    summary: Updated community participation guidance to link to USWDS GitHub Discussions.
+    summaryAdditional: Removed the invitation to join monthly calls.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr: 3301
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2022-02-17
     summary: Added resources page.
     summaryAdditional:

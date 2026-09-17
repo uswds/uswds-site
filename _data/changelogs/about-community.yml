@@ -2,6 +2,29 @@ title: Community
 type: documentation
 changelogURL:
 items:
+  - date: 2026-09-17
+    summary: Added guidance for choosing between Issues and Discussions.
+    summaryAdditional: Linked questions, accessibility guidance, ideas, proposals, and actionable work to their destinations.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr: 3308
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2026-09-16
+    summary: Removed outdated community manager information.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr: 3301
+    githubRepo: uswds-site
+    versionUswds:
+  - date: 2026-09-16
+    summary: Updated community links to point directly to USWDS GitHub Discussions.
+    summaryAdditional: Removed Slack signup instructions.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr: 3301
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2025-05-02
     summary: Replacing all references to chat.18f.gov. 
     summaryAdditional: 18f.gov was decommissioned, preventing people from accessing this form. Now linking directly instead.

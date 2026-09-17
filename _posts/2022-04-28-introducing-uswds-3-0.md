@@ -6,6 +6,7 @@ category: About
 author: Dan O. Williams, James Mejia, Amy Leadem, Bonnie Cameron, Charlie Mahoney
 image: /img/introducing-uswds-3/introducing-uswds-3.jpg
 excerpt: USWDS 3.0 is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+community_channels_updated: 2026-09-17
 ---
 
 <img src="{{ site.baseurl }}/img/introducing-uswds-3/introducing-uswds-3.jpg" alt="A colorful grid of geometric shapes reads 3.0" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
@@ -18,9 +19,7 @@ For most USWDS 2 projects, migrating to USWDS 3.0 should only require changing  
 
 For migration assistance, start with our [USWDS 3.0 Migration Guide]({{ site.baseurl }}/documentation/migration) →
 
-If you have any questions or feedback let us know at the [USWDS Public Slack](https://gsa-tts.slack.com/archives/uswds-public), [GitHub Discussions](https://github.com/uswds/uswds/discussions), or [uswds@gsa.gov](mailto:uswds@gsa.gov).
-
-If you aren't a member of the USWDS Public Slack, [sign up here](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform) by "Joining a TTS Chat Room" — then select "U.S. Web Design System" as your chat topic.
+For current questions and feedback, use [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions) or email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
 
 {:.site-note}
 Starting in USWDS 3.0, we're publishing our npm package to an `@uswds` organization scope. So now, when installing USWDS, use `npm install @uswds/uswds --save`.

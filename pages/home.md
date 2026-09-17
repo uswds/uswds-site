@@ -77,7 +77,7 @@ graphic_list:
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/webp/home/showcase/pubmed.webp" alt="" width="960" height="540">
-        <a class="font-lang-md" href="https://www.ncbi.nlm.nih.gov/labs/pubmed/">PubMed Labs | U.S. National Library of Medicine</a>
+        <a class="font-lang-md" href="https://pubmed.ncbi.nlm.nih.gov/">PubMed | U.S. National Library of Medicine</a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="" width="960" height="540">

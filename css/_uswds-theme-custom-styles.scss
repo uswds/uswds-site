@@ -952,6 +952,14 @@ pre {
   // TODO: add more black-transparent values (1-5)
   background-color: rgba(0, 0, 0, 0.05);
   font-weight: fw("normal");
+  // Let long unbroken tokens (paths, package names) wrap instead of spilling
+  // past their container. On small screens a spill makes the surrounding
+  // accordion content scroll sideways, which axe reports as a scrollable
+  // region without keyboard access (scrollable-region-focusable).
+  // `word-wrap: break-word` is the fallback for browsers without `anywhere`
+  // support, including the Chromium that pa11y-ci runs.
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 pre {

@@ -12,5 +12,14 @@
         "width": 375,
         "height": 667
     }
-  }
+  },
+  "urls": [
+    {
+      "url": "http://localhost:4000/documentation/migration/",
+      "actions": [
+        "click element button[aria-controls=\"m-a6\"]",
+        "wait for element #m-a6 to be visible"
+      ]
+    }
+  ]
 }

@@ -102,15 +102,18 @@ async function main() {
   const allUrls = extractUrls(sitemapXml, sitemapUrl).filter(
     (url) => !EXCLUDE_PATTERN.test(url)
   );
-  const shard = shardUrls(allUrls, index, total);
-
   const baseConfig = JSON.parse(
     fs.readFileSync(path.resolve(baseConfigPath), "utf8")
   );
 
-  // Only `defaults` carries over from the base .pa11yci/.pa11yci--mobile —
-  // `urls` here is this shard's slice, not whatever (if anything) was in
-  // the base config.
+  // `defaults` carries over from the base .pa11yci/.pa11yci--mobile. Any
+  // `urls` entries in the base config are pages that need setup actions
+  // before scanning (for example, opening an accordion), so they join the
+  // sitemap pool and each still runs exactly once across the shards.
+  const baseUrls = Array.isArray(baseConfig.urls) ? baseConfig.urls : [];
+  const pool = [...allUrls, ...baseUrls];
+  const shard = shardUrls(pool, index, total);
+
   const shardConfig = {
     defaults: baseConfig.defaults,
     urls: shard,
@@ -119,7 +122,7 @@ async function main() {
   fs.writeFileSync(outPath, JSON.stringify(shardConfig, null, 2));
 
   console.log(
-    `Shard ${index + 1}/${total}: ${shard.length}/${allUrls.length} URLs ` +
+    `Shard ${index + 1}/${total}: ${shard.length}/${pool.length} URLs ` +
       `(from ${sitemapUrl}) written to ${outPath}`
   );
 }

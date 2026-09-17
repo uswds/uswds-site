@@ -181,11 +181,11 @@ Add this load path to your compiler settings, or update any old paths if your co
 
 <!-- Start USWDS Gulp section -->
 <h4 class="usa-accordion__heading">
-  <button type="button" class="usa-accordion__button" id="m-a6-heading" aria-controls="m-a6">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a6">
     If you're using USWDS Gulp
   </button>
 </h4>
-<div id="m-a6" class="usa-accordion__content site-prose" tabindex="0" role="region" aria-labelledby="m-a6-heading">
+<div id="m-a6" class="usa-accordion__content site-prose">
   <ol>
     <li>How do you know you're using USWDS Gulp? Search for a line like <code>const uswds = require("./node_modules/uswds-gulp/config/uswds");</code> or <code>const uswds = "node_modules/uswds/dist"</code> in your gulp setup. This indicates that you're using the gulp setup we distributed as USWDS Gulp.</li>
     <li><p>Update your versions of the <code>sass</code> and <code>gulp-sass</code> packages if you're using them. If you use the <code>sass</code> package, run the following command in the terminal:</p>

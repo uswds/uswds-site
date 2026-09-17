@@ -2,13 +2,6 @@ title: Migrating to 3.0
 type: documentation
 changelogURL:
 items:
-  - date: 2026-09-17
-    summary: Made the USWDS Gulp migration instructions keyboard accessible when they overflow on small screens.
-    isBreaking: false
-    affectsAccessibility: true
-    githubPr: 3308
-    githubRepo: uswds-site
-    versionUswds:
   - date: 2024-06-07
     summary: Added note about Autoprefixer to Sass compilation section.
     affectsGuidance: true

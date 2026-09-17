@@ -40,12 +40,12 @@ If you would like to learn more about how we work, check out the [Workflow](http
 
 Choose the place that matches your contribution:
 
-- [Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a): Ask about implementation or the contribution process.
-- [Issues](https://github.com/uswds/uswds/issues/new/choose): Report bugs or request concrete enhancements to existing functionality.
-- [Ideas](https://github.com/uswds/uswds/discussions/new?category=ideas): Explore early suggestions and tradeoffs.
-- [Proposals](https://github.com/uswds/uswds/discussions/new?category=proposals): Propose new components or patterns.
-- [Documentation website issues](https://github.com/uswds/uswds-site/issues/new/choose): Report incorrect documentation, broken links, or problems with designsystem.digital.gov.
-- [Security policy](https://github.com/uswds/uswds/security/policy): Follow the reporting instructions for potential vulnerabilities.
+- [Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a) — Ask about implementation or the contribution process.
+- [Issues](https://github.com/uswds/uswds/issues/new/choose) — Report bugs or request concrete enhancements to existing functionality.
+- [Ideas](https://github.com/uswds/uswds/discussions/new?category=ideas) — Explore early suggestions and tradeoffs.
+- [Proposals](https://github.com/uswds/uswds/discussions/new?category=proposals) — Propose new components or patterns.
+- [Documentation website issues](https://github.com/uswds/uswds-site/issues/new/choose) — Report incorrect documentation, broken links, or problems with designsystem.digital.gov.
+- [Security policy](https://github.com/uswds/uswds/security/policy) — Follow the reporting instructions for potential vulnerabilities.
 
 If a question was filed as an issue, a maintainer can help move the conversation. You do not need to re-file it. If a discussion identifies implementation work, we can create a linked issue.
 

@@ -6,7 +6,7 @@ items:
     summary: Updated links to the current GitHub Discussions proposals category.
     isBreaking: false
     affectsGuidance: true
-    githubPr:
+    githubPr: 3303
     githubRepo: uswds-site
   - date: 2024-02-15
     summary: Added component lifecycle page.

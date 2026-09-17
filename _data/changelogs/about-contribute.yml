@@ -6,7 +6,7 @@ items:
     summary: Updated community participation guidance to point to GitHub Discussions.
     isBreaking: false
     affectsGuidance: true
-    githubPr:
+    githubPr: 3303
     githubRepo: uswds-site
   - date: 2024-02-15
     summary: Added USWDS component proposal information.

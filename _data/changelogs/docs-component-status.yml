@@ -6,7 +6,7 @@ items:
     summary: Updated links to the current GitHub Discussions proposals category.
     isBreaking: false
     affectsGuidance: true
-    githubPr:
+    githubPr: 3303
     githubRepo: uswds-site
   - date: 2026-07-07
     summary: Changed Input mask to "use with caution."

@@ -21,6 +21,16 @@ Join us in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions
 
 <a href="https://github.com/uswds/uswds/discussions" class="usa-button site-button">Join USWDS GitHub Discussions</a>
 
+## Find the right conversation
+
+- **Questions and implementation help:** Ask in [Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a), or [Accessibility discussions](https://github.com/uswds/uswds/discussions/new?category=accessibility) for accessibility guidance.
+- **Early ideas:** Explore suggestions and tradeoffs in [Ideas](https://github.com/uswds/uswds/discussions/new?category=ideas).
+- **New components and patterns:** Start a [Proposal](https://github.com/uswds/uswds/discussions/new?category=proposals).
+- **Bugs and concrete enhancements:** Use [USWDS Issues](https://github.com/uswds/uswds/issues/new/choose) to describe the problem and the behavior you expect. Accessibility defects belong here too.
+- **Documentation website problems:** Report incorrect documentation or website behavior in [uswds-site Issues](https://github.com/uswds/uswds-site/issues/new/choose).
+
+Search existing conversations before starting a new one. If you are unsure whether you need implementation help or found a bug, start in Q&A. A maintainer can help route the conversation and create a linked issue when there is work to track.
+
 ## Contribute to USWDS
 There are several ways to contribute to USWDS. Participating in the community is one way to contribute. See [our contributing guidelines](https://github.com/uswds/uswds/blob/develop/CONTRIBUTING.md) for more about how to contribute back to our codebase. Also, please note that every submission we receive goes through a full design and code review.
 

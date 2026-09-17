@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question or get help
+    url: https://github.com/uswds/uswds/discussions/new?category=q-a
+    about: Ask about setup, customization, or using USWDS in Discussions Q&A.
+  - name: Report a USWDS library bug or enhancement
+    url: https://github.com/uswds/uswds/issues/new/choose
+    about: Use the library repository for component, Sass, and JavaScript work.
+  - name: Propose a new component or pattern
+    url: https://github.com/uswds/uswds/discussions/new?category=proposals
+    about: Develop a component or pattern proposal with the community.
+  - name: Explore an idea
+    url: https://github.com/uswds/uswds/discussions/new?category=ideas
+    about: Discuss early suggestions before defining implementation work.

@@ -2,7 +2,7 @@ title: Resources
 type: documentation
 changelogURL:
 items:
-  - date: NNNN-NN-NN
+  - date: 2026-09-17
     summary: Routed installation and usage questions to Discussions Q&A.
     summaryAdditional: Clarified where to report bugs, request enhancements, and propose new components.
     isBreaking: false

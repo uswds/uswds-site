@@ -324,7 +324,6 @@ const uswds = require("@uswds/compile");
     sourceMap: true,
     sassOptions: {
       includePaths: [
-        "./node_modules/@uswds",
         "./node_modules/@uswds/uswds/packages",
       ],
     },

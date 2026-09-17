@@ -10,7 +10,7 @@ redirect_from:
 - /about/security-information/
 subnav:
 - text: Latest updates
-  href: '/about/security/#changelog'
+  href: '#changelog'
 changelog:
   key: about-security
 ---

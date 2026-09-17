@@ -2,6 +2,14 @@ title: Community
 type: documentation
 changelogURL:
 items:
+  - date: 2026-09-17
+    summary: Added guidance for choosing between Issues and Discussions.
+    summaryAdditional: Linked questions, accessibility guidance, ideas, proposals, and actionable work to their destinations.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr: 3308
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2026-09-16
     summary: Removed outdated community manager information.
     isBreaking: false

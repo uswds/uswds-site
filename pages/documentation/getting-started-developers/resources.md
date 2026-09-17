@@ -21,7 +21,9 @@ changelog:
 ---
 
 ## Need installation help?
-Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to [open an issue](https://github.com/uswds/uswds/issues) in GitHub.
+For installation, configuration, customization, or usage questions, [ask in Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a). Include what you tried and your USWDS version when relevant. If you are unsure whether something is a bug, start in Q&A.
+
+For a reproducible problem in USWDS, including an accessibility defect, [file a bug report](https://github.com/uswds/uswds/issues/new?template=bug_report.yaml). You do not need to know the cause or have a fix to report it.
 
 You can also email us directly at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
 
@@ -36,9 +38,15 @@ For complete instructions on how to contribute code, please read [CONTRIBUTING.m
 
 If you would like to learn more about how we work, check out the [Workflow](https://github.com/uswds/uswds/wiki/Workflow) and [Issue label Glossary](https://github.com/uswds/uswds/wiki/Issue-label-glossary) pages on our wiki.
 
-If you have questions or concerns about our contributing workflow, feel free to [open an issue](https://github.com/uswds/uswds/issues), such as the following in GitHub:
-- Bug report — Report a bug and help USWDS improve.
-- Feature request — Suggest a new idea for the design system.
-- Report a security vulnerability — Report potential security issues. Review our [security policy](https://github.com/uswds/uswds/security/policy) for more details.
+Choose the place that matches your contribution:
+
+- [Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a) — Ask about implementation or the contribution process.
+- [Issues](https://github.com/uswds/uswds/issues/new/choose) — Report bugs or request concrete enhancements to existing functionality.
+- [Ideas](https://github.com/uswds/uswds/discussions/new?category=ideas) — Explore early suggestions and tradeoffs.
+- [Proposals](https://github.com/uswds/uswds/discussions/new?category=proposals) — Propose new components or patterns.
+- [Documentation website issues](https://github.com/uswds/uswds-site/issues/new/choose) — Report incorrect documentation, broken links, or problems with designsystem.digital.gov.
+- [Security policy](https://github.com/uswds/uswds/security/policy) — Follow the reporting instructions for potential vulnerabilities.
+
+If a question was filed as an issue, a maintainer can help move the conversation. You do not need to re-file it. If a discussion identifies implementation work, we can create a linked issue.
 
 You can also email us directly at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).

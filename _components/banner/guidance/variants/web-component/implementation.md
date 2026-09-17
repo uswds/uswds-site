@@ -1,7 +1,7 @@
 - Some `.gov` websites don't represent the federal level of the U.S. government. These sites should adapt the **An official website of the United States government** and **Official websites use .gov** sections to use more accurate language specific to the site.
 - Some `.mil` websites don't belong to an official U.S. Department of Defense organization. These sites should adapt the **Official websites use .mil** section to use more technically accurate language: “A **.mil** website operates under the approval of the U.S. Department of Defense.”
 - The banner should directly follow the `skipnav` component.
-- We realize this documentation won’t cover all use cases, build environments, or tooling. If you have questions, you can ask USWDS community members in our [GitHub discussions](https://github.com/uswds/uswds/discussions) or <a href="https://designsystem.digital.gov/about/community/#join-the-community-2" data-proofer-ignore>Slack channel</a>, or contact us directly at [uswds@gsa.gov](mailto:uswds@gsa.gov). We’ll be expanding this documentation in the future and your questions and feedback will help us understand what you need to get started with this variant and its implementation.
+- We realize this documentation won’t cover all use cases, build environments, or tooling. If you have questions, you can ask USWDS community members in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions), or contact us directly at [uswds@gsa.gov](mailto:uswds@gsa.gov). We’ll be expanding this documentation in the future and your questions and feedback will help us understand what you need to get started with this variant and its implementation.
 
 
 <h4>Web Component Settings</h4>

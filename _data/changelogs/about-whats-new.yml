@@ -2,6 +2,13 @@ title: What's new
 type: documentation
 changelogURL:
 items:
+  - date: 2026-09-16
+    summary: Clarified that monthly call recordings are an archive.
+    summaryAdditional: Added links to current community participation above historical posts and the research report.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr: 3303
+    githubRepo: uswds-site
   - date: 2024-11-20
     summary: Combined "What's new" and "News and updates" pages.
     affectsGuidance: true

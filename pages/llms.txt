@@ -115,6 +115,7 @@ Single-purpose CSS classes for building and adjusting layouts without writing ne
 - [Sample contract language]({{ site_url }}/documentation/sample-contract-language/): Language for procurement documents.
 - [Community]({{ site_url }}/about/community/): How to reach the USWDS community.
 - [Contribute]({{ site_url }}/about/contribute/): How to propose changes to the design system.
-- [Monthly calls]({{ site_url }}/about/monthly-calls/): Recordings and notes from community calls.
+- [GitHub Discussions](https://github.com/uswds/uswds/discussions): Ask questions, share ideas, and connect with the community.
+- [Monthly call archive]({{ site_url }}/about/monthly-calls/): Recordings and resources from past community calls.
 - [Product roadmap]({{ site_url }}/about/product-roadmap/): What the team is working on next.
 - [Documentation site source](https://github.com/uswds/uswds-site): The repository behind designsystem.digital.gov.

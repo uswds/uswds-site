@@ -20,7 +20,7 @@ changelog:
 
 Getting started for developers will lead you, step by step, through the process of installing and compiling the U.S. Web Design System and customizing your project using components and design tokens. If you prefer a hands-on demonstration of this process, please check out [our interactive tutorial](https://github.com/uswds/uswds-tutorial), which will take you through the same steps using a pre-made example website.
 
-As always, we're here for you if you have any questions. Please get in touch via GitHub, Slack, or email!
+As always, we're here for you if you have any questions. Ask in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions) or email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
 
 
 ## What you need

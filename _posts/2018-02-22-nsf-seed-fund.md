@@ -7,6 +7,7 @@ tags:
 category: About
 excerpt: For our 11th post in the series, we talked with Scott Weber, front-end developer, who worked on America’s Seed Fund site for the National Science Foundation (NSF). The site was created for people who want to get federal grant funding for their science or technology projects.
 expiration_date: 2024-04-15
+community_channels_updated: 2026-09-17
 ---
 
 The [U.S. Web Design System](https://designsystem.digital.gov/) was created by the government, for the government. They’re currently implemented on hundreds of government sites, with an audience of more than 59 million monthly users.
@@ -45,4 +46,4 @@ Overall the USWDS shortened the amount of time it took to implement the site, fo
 
 ---
 
-We’re looking to learn more [from agencies that have used USWDS]({{ site.baseurl }}/documentation/showcase/); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}). You can also chat with the team in the [public Slack channel for USWDS](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform) via Google Forms!
+We’re looking to learn more [from agencies that have used USWDS]({{ site.baseurl }}/documentation/showcase/). Share your experience, ask questions, and connect with other teams in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions), or email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).

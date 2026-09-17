@@ -4,6 +4,7 @@ tags: updates
 category: About
 excerpt: "2017 was a big year for the U.S. Web Design Standards. Here’s a look at where we’re headed in 2018."
 expiration_date: 2024-04-15
+community_channels_updated: 2026-09-17
 ---
 
 This was a big year for the U.S. Web Design Standards. In March, we released version 1.0 — the culmination of nearly two years of work researching, designing, building, testing, and iterating. Today our design system is used by over [100 websites and services]({{ site.baseurl }}/documentation/showcase/), reaching tens of millions of users. And our project continues to demonstrate the potential of open source software. Over the lifetime of the project, our community of nearly 400 contributors and commenters from across government and beyond closed over 1000 issues and merged over 1000 pull requests on GitHub, generating over 8000 comments in the process. We’re going strong, excited for the future, and ready to do more.
@@ -25,4 +26,4 @@ We’re listening to your feedback and we’re evolving. In 2018 we intend to mo
 
 As always, accessibility, research, rock-solid markup, and trustworthy guidance are at the center of what we do — as well as a commitment to remaining completely free and open-source.
 
-We learn when we listen. Feedback matters. The grit sharpens the blade. So let’s keep talking. Is there anything we’re missing? How can we help you build high-quality websites for the American public? Let us know by sending us an [email](mailto:uswebdesignstandards@gsa.gov), joining our [Slack community](https://docs.google.com/forms/d/e/1FAIpQLSfFoLTRV00g1iIEZv404wJ0BRwNc6CPKbyXMCeXLjDKDv9g4Q/viewform), or commenting on the [Vision GitHub issue](https://github.com/uswds/uswds/issues/2233). Onward!
+We learn when we listen. Feedback matters. The grit sharpens the blade. So let’s keep talking. Is there anything we’re missing? How can we help you build high-quality websites for the American public? Let us know in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions) or by [email](mailto:{{ site.uswds_email }}). Onward!

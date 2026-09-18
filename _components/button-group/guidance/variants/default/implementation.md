@@ -1,4 +1,4 @@
-- Buttons inside of a button group follow the same guidelines as the [button component]({{ site.baseurl }}/components/button).
+- Controls inside a button group follow the guidance for their action: see the [button component]({{ site.baseurl }}/components/button/) and [link component]({{ site.baseurl }}/components/link/). Button styling does not change a control's underlying role.
 - Button groups support any style and size.
 - Because the button group uses `flexbox`, there are several ways to modify how the default button group is displayed.
   - The default button group will display as a column on smaller screen sizes. To override this behavior and display buttons in a row for all screen sizes, use the [flex-row]({{ site.baseurl }}/utilities/flex/#utility-flex-direction) utility.

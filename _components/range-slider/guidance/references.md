@@ -1,2 +1,3 @@
 - [Slider Design: Rules of Thumb](https://www.nngroup.com/articles/gui-slider-controls/) [Nielsen Norman Group]
-- [Four Dangerous Navigation Approaches that Can Increase Cognitive Strain](http://www.nngroup.com/articles/navigation-cognitive-strain/) [Nielsen Norman Group; See example #4]
+- [Range state (`type=range`)](https://html.spec.whatwg.org/multipage/input.html#range-state-(type=range)) [HTML Living Standard]
+- [Slider pattern](https://www.w3.org/WAI/ARIA/apg/patterns/slider/) [WAI-ARIA Authoring Practices Guide; includes keyboard interaction and assistive technology considerations]

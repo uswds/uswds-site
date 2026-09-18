@@ -2,6 +2,12 @@ title: Input mask
 type: component
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Clarified accepted-character instructions, hint associations, and validation feedback.
+    isBreaking: false
+    affectsGuidance: true
+    githubPr: null
+    githubRepo: uswds-site
   - date: 2025-04-30
     summary: 'Rephrasing compliance tag to reflect industry standard: "failed," rather than "does not pass."'
     affectsGuidance: true

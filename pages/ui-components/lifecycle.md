@@ -17,14 +17,6 @@ USWDS adds new components, refines existing ones, and retires those that have be
 
 There are opportunities for community contribution at each stage of the component lifecycle. We hope you’ll get involved.
 
-## Community and core team roles
-
-Anyone can start a [proposal discussion](https://github.com/uswds/uswds/discussions/5764) for a new component or pattern. You can share an early idea even if you do not yet have all the answers. During the discussion stage, the proposer and community build the case: the user need, examples from real services, expected behavior, usability findings, accessibility considerations, and people who can contribute.
-
-The core team may ask questions or share feedback during discussion. That participation does not mean the idea is approved, assigned, or scheduled. A complete discussion gives the team evidence to consider a formal proposal; it does not guarantee a place on the roadmap or a response by a particular date.
-
-The transition to **Proposal in progress** happens when the core team begins drafting a formal proposal. The core team then coordinates the formal comment period and evaluation described below. Until that transition, keep gathering evidence and collaborating in the original discussion so everyone can follow the work.
-
 {% assign lifecycle_phases = site.data.lifecycle-phases.phases %}
 
 <ol class="usa-process-list lifecycle-process margin-top-4">

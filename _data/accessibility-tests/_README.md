@@ -1,7 +1,5 @@
 # Creating accessibility test checklists
 
-Use the proposed [common criteria reference](../../docs/accessibility/common-criteria.md) and [importable criteria sheet](../../docs/accessibility/common-criteria.csv) when drafting reusable test wording. Adapt each check to the component and record actual test evidence before setting a result.
-
 ## Available data keys
 
 | Key                 | Description                              | Optional | Value type | Standard values                        | Displayed |

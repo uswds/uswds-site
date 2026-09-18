@@ -18,6 +18,14 @@ items:
     githubPr: 6703
     githubRepo: uswds
     versionUswds: 3.14.0
+  - date: 2025-05-23
+    summary: Disabled the nonessential modal transition when reduced motion is requested.
+    summaryAdditional: The transition utility respects the operating system's reduced-motion preference.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 6268
+    githubRepo: uswds
+    versionUswds: 3.13.0
   - date: 2025-02-14
     summary: Added WCAG compliance tag and accessibility test status section.
     affectsGuidance: true

@@ -3,6 +3,14 @@ title: Tooltip
 type: component
 changelogURL:
 items:
+  - date: 2025-05-23
+    summary: Disabled the nonessential tooltip transition when reduced motion is requested.
+    summaryAdditional: The transition utility respects the operating system's reduced-motion preference.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 6268
+    githubRepo: uswds
+    versionUswds: 3.13.0
   - date: 2025-03-07
     summary: Enabled tooltip functionality on non-button elements.
     summaryAdditional:

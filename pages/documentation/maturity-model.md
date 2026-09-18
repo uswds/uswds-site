@@ -156,23 +156,15 @@ Government websites include components that aren’t included in USWDS yet. Use 
 - Check that required CSS, JavaScript, fonts, images, and web component files load from the paths your project uses.
 - Check source styles for the design tokens you intend to use. Review customizations and document differences from USWDS defaults.
 - Test each component's behavior with keyboard navigation, screen readers, and zoom using its accessibility test checklist. Test how components work together in complete tasks.
-- Record findings and follow-up work in the [maturity assessment worksheet]({{ site.baseurl }}/maturity-model/assessment/).
 
 The presence of `usa-` classes or a USWDS stylesheet can help identify an implementation. It does not establish that the implementation is usable or accessible. Maturity describes your team's adoption and improvement process, not a certification of your website. Consult [Website standards]({{ site.baseurl }}/website-standards/) for resources on federal website requirements.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-3}
 
 ## Maturity assessment resources
-Our maturity assessment resources are meant to help you assess and understand
-your as-is state, what you’re doing well, and how you can better use USWDS to
-improve the public’s experience of your websites and digital services.
 
-### Use the maturity assessment worksheet
+The draft 2020 Maturity Model Assessment Worksheet is no longer recommended for current assessments. Its copied component checklists do not reflect current guidance.
 
-Use the [HTML maturity assessment worksheet]({{ site.baseurl }}/maturity-model/assessment/) to review your team's principles, guidance, and code. Copy its prompts into a document or issue tracker, record evidence, and choose the next improvements to make. The worksheet links to current guidance instead of copying component checklists that can become outdated.
+Use the [design principles]({{ site.baseurl }}/design-principles/) and the current usability, accessibility, and implementation guidance for each [component]({{ site.baseurl }}/components/). For installation and customization instructions, use [Getting started for developers]({{ site.baseurl }}/documentation/getting-started-for-developers/).
 
-The HTML worksheet replaces the draft PDF as the recommended assessment resource. Historical PDF files remain at their existing URLs for reference; they do not reflect current component guidance.
-
-### Share what you learn
-
-Share questions and improvements in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions), or email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}). Include the part of the assessment you used and the change that would make it more useful for your team.
+Share questions and findings in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions).

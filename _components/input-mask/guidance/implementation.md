@@ -14,7 +14,7 @@ inputmode="numeric"
 Input mask examples include an alphanumeric version which can be customized to meet your needs. To implement an alphanumeric input mask, you will need to add the attribute `data-charset` to the input tag. Similar to the `pattern` attribute, include a number sign `#` for each number and an `A` for each required letter. We recommend changing inputmode to `text` so the full keyboard is available to your user.
 
 {:.usa-content-list }
-If your input mask calls for a pattern such as _1A2 B3C_, you would implement that by adding the following attributes and character formatting to your input element:
+If your input mask calls for a pattern such as _A1B 2C3_, you would implement that by adding the following attributes and character formatting to your input element:
 
 {:.usa-content-list }
 ```

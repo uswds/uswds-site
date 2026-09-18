@@ -99,7 +99,7 @@ You can stay up to date on the status of your contributions through [GitHub emai
 
 ## Code of Conduct
 USWDS is committed to building a safe, welcoming, harassment-free culture for everyone.
-USWDS is a part of the Technology Transformation Services (TTS) within the General Services Administration (GSA) and we expect everyone to follow the GSA TTS Code of Conduct.
+By contributing to this repository, you agree to adhere to the [GSA Social Media Policy](https://www.gsa.gov/directives-library/gsa-social-media-policy-2) (Section 10 Engagement). We expect all contributors, both internal and external, to engage respectfully and professionally in all project-related public communications.
 
 We encourage you to read the [LICENSE](https://github.com/uswds/uswds/blob/develop/LICENSE.md) and the [LICENSE’s README](https://github.com/uswds/uswds/blob/develop/README.md).
 If you want to read more about our open source policy or have questions, check out the [18F Open Source Policy GitHub repository](https://github.com/18f/open-source-policy) or [send us an email](mailto:{{ site.uswds_email }}).

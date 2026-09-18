@@ -29,7 +29,7 @@ changelog:
       <ul>
         <li><a href="https://github.com/uswds/uswds/issues/new/choose">Report a bug or documentation problem</a>, including the version you use and steps to reproduce the problem.</li>
         <li><a href="https://github.com/uswds/uswds/discussions">Share research, guidance, and implementation questions</a> in GitHub Discussions.</li>
-        <li><a href="https://github.com/uswds/uswds/discussions/5764">Propose a new component or pattern</a> and work with the community to describe the need, examples, and accessibility considerations.</li>
+        <li><a href="https://github.com/uswds/uswds/discussions/5764">Propose a new component or pattern</a>.</li>
       </ul>
       </div>
     </div>
@@ -87,9 +87,7 @@ changelog:
 
 **USWDS UX guidance helps assure that components do what users expect them to do, based on UX best practices and research.** Every website is built of common functional units: components like [buttons]({{ site.baseurl }}/components/button), [forms]({{ site.baseurl }}/components/form), and [navigation]({{ site.baseurl }}/components/side-navigation). USWDS provides user experience (UX) guidance for components and patterns. You should follow the UX guidance even if you don’t use USWDS code.
 
-<span id="what-to-do"></span>
-
-### How to apply UX guidance
+### What to do
 
 #### 1: Inventory your site components.
 
@@ -105,26 +103,20 @@ changelog:
 
 - Update any site components that fall outside [USWDS guidance]({{ site.baseurl }}/components/).
 
-<span id="how-to-check"></span>
+### How to check
 
-### How to assess UX guidance
-
-- Compare each component with its current usability and accessibility guidance, including when to use a different approach.
-- Test complete tasks with people who use your service, including people with disabilities. Record the problems they encounter and the improvements you make.
-- Use the component accessibility test checklists to guide manual checks in your implementation. Automated checks can supplement these checks.
+- Use the current usability and accessibility guidance for each [component]({{ site.baseurl }}/components/) to check your implementation.
 - Review [line length guidance]({{ site.baseurl }}/components/typography/#measure-line-length) and your agency's design and style guidelines.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-3}
 
 ## Level 3: **Use USWDS code**{:.text-light}
 
-**Use USWDS code as a foundation for accessible, mobile-friendly experiences across government sites.** Test the code in the context of your content, customizations, and user tasks. USWDS includes design tokens and components. USWDS design tokens are common and consistent elements of color, spacing, and typography that government websites share. USWDS components are pre-built elements that make up government websites. For example, the USWDS banner component is an easy way to show your site is an official government website and explain the benefits of secure connections.
+**Use USWDS code to provide accessible, mobile-friendly experience across government sites.** The code is comprised of two parts, design tokens and components. USWDS design tokens are common and consistent elements of color, spacing, and typography that government websites share. USWDS components are pre-built, defaults elements that make up government websites. For example, the USWDS banner component is an easy way to show your site is an official government website and explain the benefits of secure connections.
 
 Government websites include components that aren’t included in USWDS yet. Use USWDS design tokens to build new components, and contribute any new components you develop and research you collect back to USWDS.
 
-<span id="what-to-do-1"></span>
-
-### How to integrate USWDS code
+### What to do
 
 #### 1: Add USWDS code and adjust settings.
 
@@ -137,7 +129,6 @@ Government websites include components that aren’t included in USWDS yet. Use 
 
 - Use [design tokens]({{ site.baseurl }}/design-tokens/) for consistent colors, spacing, and typography.
 - Use the Sass functions and mixins documented with each token, or [utilities]({{ site.baseurl }}/utilities/) where appropriate. For example, see [font-family tokens]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens).
-- Review existing styles and replace values with suitable USWDS tokens incrementally. Record custom values your project still needs and why.
 
 #### 3: Replace existing components with USWDS components.
 
@@ -148,16 +139,9 @@ Government websites include components that aren’t included in USWDS yet. Use 
 
 - Contribute new research, guidance, components, and issues back into the system.
 
-<span id="how-to-check-1"></span>
+### How to check
 
-### How to assess your implementation
-
-- Record the USWDS version your project uses and compare your markup, assets, and settings with that version's documentation.
-- Check that required CSS, JavaScript, fonts, images, and web component files load from the paths your project uses.
-- Check source styles for the design tokens you intend to use. Review customizations and document differences from USWDS defaults.
-- Test each component's behavior with keyboard navigation, screen readers, and zoom using its accessibility test checklist. Test how components work together in complete tasks.
-
-The presence of `usa-` classes or a USWDS stylesheet can help identify an implementation. It does not establish that the implementation is usable or accessible. Maturity describes your team's adoption and improvement process, not a certification of your website. Consult [Website standards]({{ site.baseurl }}/website-standards/) for resources on federal website requirements.
+The presence of `usa-` classes or a USWDS stylesheet can help identify an implementation. It does not establish that the implementation is usable or accessible. Use the current [component guidance]({{ site.baseurl }}/components/) to check your implementation in context.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-3}
 

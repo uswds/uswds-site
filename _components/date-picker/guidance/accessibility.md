@@ -6,3 +6,5 @@
   - Months by using <kbd>page up</kbd> (<kbd>fn + up arrow</kbd>) and <kbd>page down</kbd> (<kbd>fn + down arrow</kbd>)
   - Years by using <kbd>shift + page up</kbd> (<kbd>shift + fn + up arrow</kbd>) and <kbd>shift + page down</kbd> (<kbd>shift + fn + down arrow</kbd>)
   - <kbd>Home</kbd> (<kbd>fn + left arrow</kbd>) and <kbd>End</kbd> (<kbd>fn + right arrow</kbd>) keys navigate to the beginning and end of a week
+- **Explain unavailable dates and controls.** Use date restrictions when only some dates are unavailable. Disable the entire picker only when users cannot enter any date, and explain how to make it available.
+- **Choose the appropriate disabled state.** Native disabled date-picker controls are removed from the tab order. An initialized picker with `aria-disabled="true"` keeps its visible input and calendar button focusable; USWDS makes the input read-only and prevents the calendar button from opening the calendar.

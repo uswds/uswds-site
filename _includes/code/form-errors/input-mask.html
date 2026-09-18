@@ -1,0 +1,29 @@
+<h3 class="site-preview-heading">Error with hint</h3>
+<div class="padding-x-205">
+  <div class="usa-form-group usa-form-group--error">
+    <form class="usa-form">
+      <label class="usa-label usa-label--error" for="error-example-alphanumeric"
+        >Alphanumeric</label
+      >
+      <div class="usa-hint" id="error-example-alphanumericHint">
+        Enter a letter, a number, a letter, a number, a letter, and a number.
+        For example, A1B 2C3.
+      </div>
+      <span class="usa-error-message" id="error-example-alphanumericError"
+        >Enter a value in the required format.</span
+      >
+      <input
+        id="error-example-alphanumeric"
+        type="text"
+        inputmode="text"
+        name="error-example-alphanumeric"
+        placeholder="___ ___"
+        pattern="\w\d\w \d\w\d"
+        class="usa-input usa-masked usa-input--error"
+        aria-describedby="error-example-alphanumericHint error-example-alphanumericError"
+        aria-invalid="true"
+        data-charset="A#A #A#"
+      />
+    </form>
+  </div>
+</div>

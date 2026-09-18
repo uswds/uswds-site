@@ -18,3 +18,4 @@
   cols="flex-1, flex-1, flex-2"
   section="additional component procedures"
 %}
+- **Set the disabled state before initialization.** Add `disabled` or `aria-disabled="true"` to the input inside `.usa-date-picker`. After initialization, use `disable`, `ariaDisable`, or `enable` on the `.usa-date-picker` element to update both the visible input and calendar button. When switching from native disabled to `aria-disabled`, call `enable` before `ariaDisable`. The component retains a separate input for the submitted value, so disabling the visible controls does not by itself remove that value from form submission.

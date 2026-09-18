@@ -1,2 +1,4 @@
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls]({{ site.baseurl }}/components/form).
 - **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
+- **Explain unavailable dates and controls.** Use date restrictions when only some dates are unavailable. If a start or end date cannot be entered, explain why and how to make it available.
+- **Choose the appropriate disabled state for each date picker.** Native disabled controls are removed from the tab order. An initialized date picker with `aria-disabled="true"` keeps its visible input and calendar button focusable; USWDS makes the input read-only and prevents the calendar button from opening the calendar.

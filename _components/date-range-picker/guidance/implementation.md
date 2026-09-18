@@ -18,3 +18,4 @@
   cols="flex-1, flex-1, flex-2"
   section="additional component procedures"
 %}
+- **Apply disabled states to the individual date pickers.** Before initialization, put `disabled` or `aria-disabled="true"` on each date input that should be unavailable. After initialization, use the [date picker procedures]({{ site.baseurl }}/components/date-picker/#using-the-date-picker-component) on each `.usa-date-picker` element. When switching a picker from native disabled to `aria-disabled`, call `enable` before `ariaDisable`. Setting an attribute on the `.usa-date-range-picker` wrapper does not disable its controls. Each picker retains a separate input for its submitted value, so disabling the visible controls does not by itself remove those values from form submission.

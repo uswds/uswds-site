@@ -1,3 +1,5 @@
 {% capture character-count %}
   {% library_component usa-character-count %}
 {% endcapture %}{{ character-count | strip }}
+
+{% include code/form-errors/character-count.html %}

@@ -1,0 +1,64 @@
+<h3 class="site-preview-heading">Error (prefix)</h3>
+<div class="padding-x-205">
+  <div class="usa-form-group usa-form-group--error">
+    <form class="usa-form">
+      <label
+        class="usa-label usa-label--error"
+        for="error-example-example-input-prefix"
+        >Credit card number</label
+      >
+      <span
+        class="usa-error-message"
+        id="error-example-example-input-prefix-message"
+        >Enter a valid credit card number.</span
+      >
+      <div class="usa-input-group usa-input-group--error">
+        <div class="usa-input-prefix" aria-hidden="true">
+          <svg aria-hidden="true" role="img" class="usa-icon">
+            <use
+              href="{{ site.baseurl }}/assets/img/sprite.svg#credit_card"
+            ></use>
+          </svg>
+        </div>
+        <input
+          type="text"
+          id="error-example-example-input-prefix"
+          aria-describedby="error-example-example-input-prefix-message"
+          aria-invalid="true"
+          class="usa-input"
+          pattern="[0-9]*"
+          inputmode="numeric"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+<h3 class="site-preview-heading">Error (suffix)</h3>
+<div class="padding-x-205">
+  <div class="usa-form-group usa-form-group--error">
+    <form class="usa-form">
+      <label
+        class="usa-label usa-label--error"
+        for="error-example-example-input-suffix"
+        >Weight, in pounds</label
+      >
+      <span
+        class="usa-error-message"
+        id="error-example-example-input-suffix-message"
+        >Enter a weight in pounds.</span
+      >
+      <div class="usa-input-group usa-input-group--error usa-input-group--sm">
+        <input
+          type="text"
+          id="error-example-example-input-suffix"
+          aria-describedby="error-example-example-input-suffix-message"
+          aria-invalid="true"
+          class="usa-input"
+          pattern="[0-9]*"
+          inputmode="numeric"
+        />
+        <div class="usa-input-suffix" aria-hidden="true">lbs.</div>
+      </div>
+    </form>
+  </div>
+</div>

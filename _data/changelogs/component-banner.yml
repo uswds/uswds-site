@@ -6,7 +6,7 @@ items:
     summary: Removed the browser padlock reference from the documentation site banner.
     isBreaking: false
     affectsContent: true
-    githubPr: null
+    githubPr: 3312
     githubRepo: uswds-site
   - date: 2026-09-16
     summary: Updated web component support guidance to point to GitHub Discussions.

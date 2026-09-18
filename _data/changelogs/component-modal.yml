@@ -6,7 +6,7 @@ items:
     summary: Added a worked example for testing modal focus, naming, and background isolation in an application.
     isBreaking: false
     affectsGuidance: true
-    githubPr: null
+    githubPr: 3312
     githubRepo: uswds-site
   - date: 2026-08-18
     summary: Fixed page content staying hidden from screen readers after closing a modal.

@@ -6,7 +6,7 @@ items:
     summary: Added focus-management guidance for pagination that updates content without a page reload.
     isBreaking: false
     affectsGuidance: true
-    githubPr: null
+    githubPr: 3312
     githubRepo: uswds-site
   - date: 2024-12-18
     summary: Replaced deprecated `xlink:href` references with `href`.

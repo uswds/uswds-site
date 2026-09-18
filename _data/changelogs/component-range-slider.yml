@@ -6,7 +6,7 @@ items:
   summary: Added range endpoint markup and explained the generated value display.
   isBreaking: false
   affectsGuidance: true
-  githubPr: null
+  githubPr: 3312
   githubRepo: uswds-site
 - date: 2026-08-18
   summary: Fixed range slider elements overflowing their containers in environments with reset box-sizing.

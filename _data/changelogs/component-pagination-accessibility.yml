@@ -5,7 +5,7 @@ items:
     summary: Added conditional checks for focus and content context after pagination updates.
     isBreaking: false
     affectsGuidance: true
-    githubPr: null
+    githubPr: 3312
     githubRepo: uswds-site
   - date: 2024-10-16
     summary: Added accessibility tests page.

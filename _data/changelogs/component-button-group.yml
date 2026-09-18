@@ -6,7 +6,7 @@ items:
     summary: Clarified when grouped actions should use links or buttons.
     isBreaking: false
     affectsGuidance: true
-    githubPr: null
+    githubPr: 3312
     githubRepo: uswds-site
   - date: 2024-12-19
     summary: Added WCAG compliance tag and accessibility test status section.

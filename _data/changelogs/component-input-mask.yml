@@ -6,7 +6,7 @@ items:
     summary: Clarified accepted-character instructions, hint associations, and validation feedback.
     isBreaking: false
     affectsGuidance: true
-    githubPr: null
+    githubPr: 3312
     githubRepo: uswds-site
   - date: 2025-04-30
     summary: 'Rephrasing compliance tag to reflect industry standard: "failed," rather than "does not pass."'

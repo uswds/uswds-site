@@ -6,7 +6,7 @@ items:
     summary: Added guidance for explaining how to type or select an option.
     isBreaking: false
     affectsGuidance: true
-    githubPr: null
+    githubPr: 3312
     githubRepo: uswds-site
   - date: 2026-08-18
     summary: Fixed combo box input elements overflowing their containers in environments with reset box-sizing.

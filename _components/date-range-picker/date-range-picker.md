@@ -11,7 +11,10 @@ implementation:
       description: The date picker component will be required in terms of native form validation.
     - property: "`disabled`"
       element: input
-      description: The date picker component will be disabled/readonly. You can re-enable by executing the enable procedure on the component.
+      description: Disables the visible input and calendar button for this date picker. Both are removed from the tab order. Use the enable procedure to re-enable the component.
+    - property: '`aria-disabled="true"`'
+      element: input
+      description: Keeps this date picker’s visible input and calendar button focusable while making the input read-only and preventing its calendar from opening.
     - property: "`data-default-value`"
       element: .usa-date-picker
       description: The date picker input will set this value if it is a valid date. The date should be in the format `YYYY-MM-DD`.
@@ -28,7 +31,10 @@ implementation:
       description: The date picker component will be enabled.
     - procedure: "`disable`"
       parameters: .usa-date-picker element
-      description: The date picker component will be disabled / read-only.
+      description: Disables this date picker’s visible input and calendar button.
+    - procedure: "`ariaDisable`"
+      parameters: .usa-date-picker element
+      description: Makes this date picker’s visible input read-only and prevents its calendar from opening while keeping both controls focusable.
 layout: component
 lead: A date range picker helps users select a range between two dates.
 permalink: /components/date-range-picker/

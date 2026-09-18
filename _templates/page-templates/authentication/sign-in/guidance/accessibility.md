@@ -1,0 +1,2 @@
+
+- **Handle disabled controls consistently.** Follow the [button disabled-state guidance]({{ site.baseurl }}/components/button/#accessibility-button) and [text input disabled-state guidance]({{ site.baseurl }}/components/text-input/#accessibility-text-input). Keep the explanation available to keyboard and screen reader users. `aria-disabled` alone does not prevent button activation or text editing.

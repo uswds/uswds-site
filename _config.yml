@@ -130,6 +130,7 @@ exclude:
   - ".ruby-version"
   - ".sass-cache"
   - CONTRIBUTING.md
+  - docs
   - Gemfile
   - Gemfile.lock
   - LICENSE.md

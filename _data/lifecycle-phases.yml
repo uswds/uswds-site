@@ -7,14 +7,15 @@ phases:
     subphases:
       - name: Discussion started
         description: |
-          A component idea has been submitted to the discussion board.
+          A component idea has been submitted to the discussion board. The proposer and community gather the evidence described in the proposal process overview.
         starts_when: |
           Anyone starts a discussion about a potential new component.
         ends_when: |
-          The USWDS core team begins drafting a proposal for the component.
+          The USWDS core team begins drafting a formal proposal after considering the discussion and available priorities and capacity.
         contribute_by:
           - Opening a <a href="https://github.com/uswds/uswds/discussions/new?category=proposals">new component discussion</a>.
-          - Sharing ideas, opinions, and reactions in existing discussions
+          - Sharing examples, research, usability findings, and accessibility considerations in existing discussions
+          - Helping answer the proposal questions and identifying people who can contribute
         find_more: |
           Find all <a href="https://github.com/uswds/uswds/discussions/categories/proposals?discussions_q=is%3Aopen+category%3A%22Proposals%22+">active component discussions</a> at the USWDS component proposal discussion board.
       - name: Proposal in progress

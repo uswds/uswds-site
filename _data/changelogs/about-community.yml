@@ -3,6 +3,11 @@ type: documentation
 changelogURL:
 items:
   - date: 2026-09-17
+    summary: Replaced retired TTS Code of Conduct references with the current GSA Social Media Policy statement.
+    affectsGuidance: true
+    githubPr: 3309
+    githubRepo: uswds-site
+  - date: 2026-09-17
     summary: Added guidance for choosing between Issues and Discussions.
     summaryAdditional: Linked questions, accessibility guidance, ideas, proposals, and actionable work to their destinations.
     isBreaking: false

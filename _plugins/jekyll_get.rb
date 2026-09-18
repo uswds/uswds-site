@@ -1,6 +1,7 @@
 require 'json'
 require 'open-uri'
 require 'base64'
+require 'fileutils'
 
 module Jekyll_Get
   class Generator < Jekyll::Generator
@@ -17,14 +18,13 @@ module Jekyll_Get
       end
     end
 
-    def get_final_url(url)
-      if url.start_with? "https://api.github.com/"
-        access_token = ENV['GITHUB_ACCESS_TOKEN']
-        if access_token
-          return "#{url}?access_token=#{access_token}"
-        end
-      end
-      url
+    def request_headers(url)
+      uri = URI(url)
+      access_token = ENV['GITHUB_ACCESS_TOKEN']
+      return {} unless uri.scheme == 'https' && uri.host == 'api.github.com'
+      return {} if access_token.nil? || access_token.empty?
+
+      { 'Authorization' => "Bearer #{access_token}" }
     end
 
     def load_json(site, d)
@@ -35,14 +35,12 @@ module Jekyll_Get
       if not File.exist?(path)
         FileUtils.mkpath File.dirname(path)
         print "Caching #{url} in #{path}...\n"
-        githubJekyllCache = URI(get_final_url(url)).open
-        data = JSON.load(githubJekyllCache)
+        data = URI.open(url, request_headers(url)) { |response| JSON.parse(response.read) }
         File.open(path, 'wb') do |file|
           file << JSON.pretty_generate(data)
         end
       end
-      cacheJSON = File.open(path)
-      site.data[name] = JSON.load(cacheJSON)
+      site.data[name] = JSON.parse(File.read(path))
       if d['decode_content']
         decode_content site.data[name]
       end
@@ -61,8 +59,9 @@ module Jekyll_Get
         begin
           load_json(site, d)
         rescue => e
-          print "jekyll_get: error fetching #{url}: #{e}\n"
-          next
+          raise Jekyll::Errors::FatalException,
+            "jekyll_get: could not load required '#{d['data']}' data from #{url} (#{e.class}). " \
+            "Check GitHub API access and the matching .jekyll_get_cache file before rebuilding."
         end
       end
     end

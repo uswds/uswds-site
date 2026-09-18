@@ -138,10 +138,19 @@ The site is deployed using [cloud.gov Pages](https://cloud.gov/pages/).
 - Changes pushed to the `main` branch will automatically update the live site.  
 - Public previews are generated for each branch pushed to GitHub.  
 
-⚠️ **If a new section fails to build on Pages**, try clearing the cache:  
-```sh
-bundle update
-```  
+### GitHub content during builds
+
+The site loads release metadata and repository documents through the GitHub API.
+Builds can use a `GITHUB_ACCESS_TOKEN` environment variable to authenticate these
+requests. Configure it through the build service's secret settings; do not commit
+it or put it in a URL. The token is sent in an authorization header only to the
+HTTPS GitHub API host.
+
+Successful responses are stored in `.jekyll_get_cache`. An existing cache is
+reused until its corresponding JSON file is removed. If a request fails or cached
+JSON cannot be read, the build stops rather than publishing pages with missing
+content. Check the named data source, API access, and the matching cache file,
+then rebuild. Remove only the affected cache file when refreshing that source.
 
 ---
 

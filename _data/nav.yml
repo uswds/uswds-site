@@ -40,7 +40,6 @@ Components:
   - href: /components/checkbox/
   - href: /components/collection/
   - href: /components/combo-box/
-  - href: /components/data-visualizations/
   - href: /components/date-picker/
   - href: /components/date-range-picker/
   - href: /components/file-input/
@@ -90,6 +89,8 @@ Patterns:
     href: /patterns/complete-a-complex-form/
   - text: Select a language
     href: /patterns/select-a-language/
+  - text: Visualize data
+    href: /patterns/visualize-data/
 
 How to use USWDS:
   - href: /how-to-use-uswds/

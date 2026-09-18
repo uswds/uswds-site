@@ -59,5 +59,20 @@ changelog:
       </div>
     </div>
   </li>
+  <li
+  class="usa-card site-component-card grid-col-6 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Data visualizations"
+  data-meta="Data visualizations">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/visualize-data/">Visualize data</a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Help users understand patterns and relationships in a data set.</p>
+      </div>
+    </div>
+  </li>
 </div>
 

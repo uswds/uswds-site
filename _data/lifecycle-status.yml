@@ -47,10 +47,6 @@ components:
   status_major: released
   status_minor: stable
   url: https://designsystem.digital.gov/components/combo-box/
-- name: Data visualizations
-  status_major: released
-  status_minor: stable
-  url: https://designsystem.digital.gov/components/data-visualizations/
 - name: Date picker
   status_major: released
   status_minor: stable

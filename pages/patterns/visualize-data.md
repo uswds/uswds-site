@@ -1,14 +1,11 @@
 ---
-component:
-  status: ready
-  package:
-  dependencies:
-permalink: /components/data-visualizations/
+permalink: /patterns/visualize-data/
+redirect_from:
+  - /components/data-visualizations/
 layout: styleguide
-type: component
-title: Data visualizations
-category: Components
-lead: Data visualizations help communicate patterns and relationships in a data set.
+title: Visualize data
+category: Patterns
+lead: Help users understand patterns and relationships in a data set.
 subnav:
 - text: General guidance
   href: '#general-guidance'
@@ -29,7 +26,7 @@ tags:
 changelog:
   key: component-data-visualizations
 ---
-<div class="site-note"><strong>Note:</strong> The data visualizations components are guidance-only and do not include any <code>Component Code</code>. The examples of specific visualizations included with our guidance are intended to be a demonstration of one way to implement our guidance with a focus on accessibility and assistive tooling.</div>
+<div class="site-note"><strong>About this pattern:</strong> Use this guidance to choose and present data visualizations that communicate a clear message. USWDS does not provide a chart component or charting library. The examples demonstrate ways to apply the guidance, including accessible alternatives for people using assistive technology.</div>
 <section class="site-component-section site-component-usage">
   <h2 id="general-guidance" class="site-component-name">General guidance</h2>
   <p>Usability and accessibility are complementary goals for data visualizations.</p>

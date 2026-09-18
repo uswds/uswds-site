@@ -25,11 +25,11 @@ changelog:
       <div class="padding-top-2">
       <h2 class="font-lang-lg margin-top-0 line-height-sans-2">You don’t need to adopt the design system all at once.</h2>
       <p>Adopt the design system incrementally through the levels of the USWDS maturity model. Your project can progress both through higher levels of maturity and with more comprehensive maturity at each level. Most importantly, using the design system is about integrating the <a href="{{ site.baseurl }}/design-principles">USWDS Design Principles</a>, common goals that align teams across government and serve as an evaluative lens for design and implementation decisions.</p>
-      <p>As you adopt and adapt the design system, be sure to contribute back to the system. Use the <a href="https://github.com/uswds/uswds">USWDS GitHub page</a> to:</p>
+      <p>As you adopt and adapt the design system, share what you learn with the USWDS community:</p>
       <ul>
-        <li>Report problems or bugs</li>
-        <li>Contribute new research or guidance</li>
-        <li>Propose new components</li>
+        <li><a href="https://github.com/uswds/uswds/issues/new/choose">Report a bug or documentation problem</a>, including the version you use and steps to reproduce the problem.</li>
+        <li><a href="https://github.com/uswds/uswds/discussions">Share research, guidance, and implementation questions</a> in GitHub Discussions.</li>
+        <li><a href="https://github.com/uswds/uswds/discussions/5764">Propose a new component or pattern</a> and work with the community to describe the need, examples, and accessibility considerations.</li>
       </ul>
       </div>
     </div>
@@ -85,9 +85,11 @@ changelog:
 
 ## Level 2: **Follow user experience guidance**{:.text-light}
 
-**USWDS UX guidance helps assure that components do what users expect them to do, based on UX best practices and research.** Every website is built of common functional units: components like [buttons]({{ site.baseurl }}/components/button), [forms]({{ site.baseurl }}/components/form-controls), and [navigation]({{ site.baseurl }}/components/sidenav). For every website component in USWDS, we provide user experience (UX) guidance as well as code. You should follow the UX guidance even if you don’t use USWDS code.
+**USWDS UX guidance helps assure that components do what users expect them to do, based on UX best practices and research.** Every website is built of common functional units: components like [buttons]({{ site.baseurl }}/components/button), [forms]({{ site.baseurl }}/components/form), and [navigation]({{ site.baseurl }}/components/side-navigation). USWDS provides user experience (UX) guidance for components and patterns. You should follow the UX guidance even if you don’t use USWDS code.
 
-### What to do
+<span id="what-to-do"></span>
+
+### How to apply UX guidance
 
 #### 1: Inventory your site components.
 
@@ -103,36 +105,39 @@ changelog:
 
 - Update any site components that fall outside [USWDS guidance]({{ site.baseurl }}/components/).
 
-### How to check
+<span id="how-to-check"></span>
 
-- [Google Lighthouse UX audit](https://developers.google.com/web/tools/lighthouse)
-- Check [maximum line lengths](https://designsystem.digital.gov/components/typography/#measure-line-length) are no longer than 90 characters
-- Check that sites adhere to agency-specific design and style guidelines
+### How to assess UX guidance
+
+- Compare each component with its current usability and accessibility guidance, including when to use a different approach.
+- Test complete tasks with people who use your service, including people with disabilities. Record the problems they encounter and the improvements you make.
+- Use the component accessibility test checklists to guide manual checks in your implementation. Automated checks can supplement these checks.
+- Review [line length guidance]({{ site.baseurl }}/components/typography/#measure-line-length) and your agency's design and style guidelines.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-3}
 
 ## Level 3: **Use USWDS code**{:.text-light}
 
-**Use USWDS code to provide accessible, mobile-friendly experience across government sites.** The code is comprised of two parts, design tokens and components. USWDS design tokens are common and consistent elements of color, spacing, and typography that government websites share. USWDS components are pre-built, defaults elements that make up government websites. For example, the USWDS banner component is an easy way to show your site is an official government website and explain the benefits of secure connections.
+**Use USWDS code as a foundation for accessible, mobile-friendly experiences across government sites.** Test the code in the context of your content, customizations, and user tasks. USWDS includes design tokens and components. USWDS design tokens are common and consistent elements of color, spacing, and typography that government websites share. USWDS components are pre-built elements that make up government websites. For example, the USWDS banner component is an easy way to show your site is an official government website and explain the benefits of secure connections.
 
 Government websites include components that aren’t included in USWDS yet. Use USWDS design tokens to build new components, and contribute any new components you develop and research you collect back to USWDS.
 
-### What to do
+<span id="what-to-do-1"></span>
+
+### How to integrate USWDS code
 
 #### 1: Add USWDS code and adjust settings.
 
-- Add USWDS to your project [with npm]({{ site.baseurl }}/documentation/developers/#install-using-node-and-npm) or by [downloading the source from Github]({{ site.baseurl }}/documentation/developers/#install-the-package-directly-from-github).
-- Compile the Sass source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) or by using [uswds-compile](https://github.com/uswds/uswds-compile) available via GitHub.
-- Compile the Javascript source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#js-customization) or [download a precompiled version]({{ site.baseurl }}/documentation/developers/#install-the-package-directly-from-github).
-- Add USWDS Javascript to your page templates.
-- Add USWDS CSS to your page templates.
+- Follow [Phase 1: Install USWDS]({{ site.baseurl }}/documentation/getting-started/developers/phase-one-install/) to add the package to your project.
+- Follow [Phase 2: Compile USWDS]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/) to copy assets and compile your project's Sass.
+- Include the generated CSS in your page templates. Include the JavaScript required by the components you use, following their implementation guidance. A precompiled JavaScript bundle is available; compiling JavaScript yourself is not required for every project.
+- Follow [Phase 3: Customize USWDS]({{ site.baseurl }}/documentation/getting-started/developers/phase-three-customize/) to adjust settings and styles.
 
-#### 2: Use USWDS design tokens in all stylesheets.
+#### 2: Use USWDS design tokens in your stylesheets.
 
-- Install USWDS source Sass files using [the instructions]({{ site.baseurl }}/documentation/developers/#install-the-package-directly-from-github) on the USWDS website.
-- Include USWDS Sass before including existing project source files. See [Sass an theme settings]({{ site.baseurl }}/documentation/developers/#sass-and-theme-settings).
-- Convert existing values to tokenized values. Use [the conversion tables]({{ site.baseurl }}/documentation/migration-v2/#integrating-tokens) to convert existing values to USWDS tokens.
-- Use USWDS [tokens]({{ site.baseurl }}/design-tokens/), functions (see [font-family functions]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example), and utility mixins (see [font-family utility mixins]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example) in existing component code.
+- Use [design tokens]({{ site.baseurl }}/design-tokens/) for consistent colors, spacing, and typography.
+- Use the Sass functions and mixins documented with each token, or [utilities]({{ site.baseurl }}/utilities/) where appropriate. For example, see [font-family tokens]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens).
+- Review existing styles and replace values with suitable USWDS tokens incrementally. Record custom values your project still needs and why.
 
 #### 3: Replace existing components with USWDS components.
 
@@ -143,18 +148,17 @@ Government websites include components that aren’t included in USWDS yet. Use 
 
 - Contribute new research, guidance, components, and issues back into the system.
 
-### How to check
+<span id="how-to-check-1"></span>
 
-- Presence of banner markup
-- Presence of current banner text
-- Presence of `usa-` prefixed classes
-- Presence of specific `usa-` prefixed classes for common components (banner, header, footer, button, search, inputs)
-- Presence of USWDS stylesheet
-- Presence of USWDS color tokens
-- Presence of current USWDS version in stylesheets
-- Presence of tokens in source Sass
-- Presence of rem units for margin and padding in compiled CSS
+### How to assess your implementation
 
+- Record the USWDS version your project uses and compare your markup, assets, and settings with that version's documentation.
+- Check that required CSS, JavaScript, fonts, images, and web component files load from the paths your project uses.
+- Check source styles for the design tokens you intend to use. Review customizations and document differences from USWDS defaults.
+- Test each component's behavior with keyboard navigation, screen readers, and zoom using its accessibility test checklist. Test how components work together in complete tasks.
+- Record findings and follow-up work in the [maturity assessment worksheet]({{ site.baseurl }}/maturity-model/assessment/).
+
+The presence of `usa-` classes or a USWDS stylesheet can help identify an implementation. It does not establish that the implementation is usable or accessible. Maturity describes your team's adoption and improvement process, not a certification of your website. Consult [Website standards]({{ site.baseurl }}/website-standards/) for resources on federal website requirements.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-3}
 
@@ -163,20 +167,12 @@ Our maturity assessment resources are meant to help you assess and understand
 your as-is state, what you’re doing well, and how you can better use USWDS to
 improve the public’s experience of your websites and digital services.
 
-### Maturity Assessment Worksheet
-We’re introducing the draft [Maturity Model Assessment Worksheet]({{ site.baseurl }}/files/uswds-maturity-assessment-worksheet_v0.3.pdf) (PDF, 723 KB, 26 pages).
-It’s meant to help you assess and understand your as-is state, what you’re
-doing well, and how you can better use USWDS to improve the public’s experience
-of your websites and digital services.
+### Use the maturity assessment worksheet
 
-### Checklists to track your progress
-Use the checklists in the worksheet to help track your team’s progress in
-understanding and adopting the design principles and individual components.
+Use the [HTML maturity assessment worksheet]({{ site.baseurl }}/maturity-model/assessment/) to review your team's principles, guidance, and code. Copy its prompts into a document or issue tracker, record evidence, and choose the next improvements to make. The worksheet links to current guidance instead of copying component checklists that can become outdated.
 
+The HTML worksheet replaces the draft PDF as the recommended assessment resource. Historical PDF files remain at their existing URLs for reference; they do not reflect current component guidance.
 
-This is a work in progress, and we want your input.
-- Share your feedback and collaborate with the community in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions).
-- You can also email your feedback directly to [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
+### Share what you learn
 
-If you’re new to the maturity model, listen to [USWDS January Monthly Call](https://digital.gov/event/2020/01/16/uswds-january-monthly-call/)
-on the using the USWDS maturity model.
+Share questions and improvements in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions), or email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}). Include the part of the assessment you used and the change that would make it more useful for your team.

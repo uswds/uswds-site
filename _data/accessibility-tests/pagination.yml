@@ -52,17 +52,7 @@ test_items:
     test_type: keyboard
     version_tested: 3.8.2
     wcag_criterion: 2.4.7
-  - summary: Focus remains predictable after selecting a page.
-    summary_additional: When a pagination link updates content without reloading the page, focus moves to a meaningful location in the updated content, such as its heading or main content area. Focus does not disappear when the selected link is replaced. You can continue through the updated content in a logical order with the keyboard. Test this behavior in your own implementation.
-    test_status: conditional
-    test_type: keyboard
-    wcag_criterion: 2.4.3
   # Screen reader tests
-  - summary: Users can identify the updated page content.
-    summary_additional: When you select a pagination link with a screen reader, you can identify the resulting page and begin reading its content. For content updated without a page reload, verify that the focus destination provides useful context and that the current page is updated in the pagination. Test this behavior with your site's content and supported screen readers.
-    test_status: conditional
-    test_type: screen_reader
-    wcag_criterion: 2.4.3
   - summary: Screen reader announces paginated links in logical order.
     summary_additional: When you use a screen reader and reach paginated links, they will be announced in the order they appear visually and will follow numerical order.
     test_status: pass

@@ -2,12 +2,6 @@ title: Range slider
 type: component
 changelogURL:
 items:
-- date: NNNN-NN-NN
-  summary: Added range endpoint markup and explained the generated value display.
-  isBreaking: false
-  affectsGuidance: true
-  githubPr: 3312
-  githubRepo: uswds-site
 - date: 2026-08-18
   summary: Fixed range slider elements overflowing their containers in environments with reset box-sizing.
   summaryAdditional: Added box-sizing border-box to the shared %block-input-styles mixin so padding stays inside the declared width in host environments that reset box sizing to content-box.

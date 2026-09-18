@@ -1,12 +1,6 @@
 title: Pagination accessibility tests
 type: component
 items:
-  - date: NNNN-NN-NN
-    summary: Added conditional checks for focus and content context after pagination updates.
-    isBreaking: false
-    affectsGuidance: true
-    githubPr: 3312
-    githubRepo: uswds-site
   - date: 2024-10-16
     summary: Added accessibility tests page.
     affectsGuidance: true

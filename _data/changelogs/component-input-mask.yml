@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: NNNN-NN-NN
-    summary: Clarified accepted-character instructions, hint associations, and validation feedback.
+    summary: Clarified accepted-character instructions and corrected the alphanumeric format example.
     isBreaking: false
     affectsGuidance: true
     githubPr: 3312

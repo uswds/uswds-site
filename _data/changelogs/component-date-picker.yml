@@ -2,12 +2,6 @@ title: Date picker
 type: component
 changelogURL:
 items:
-  - date: NNNN-NN-NN
-    summary: Clarified that hint text should describe the date format and both ways to choose a date.
-    isBreaking: false
-    affectsGuidance: true
-    githubPr: 3312
-    githubRepo: uswds-site
   - date: 2026-08-18
     summary: Added aria-current="date" to today's date button in the calendar.
     summaryAdditional: Assistive technologies can now identify the current date, meeting WCAG 1.3.1 success criteria.

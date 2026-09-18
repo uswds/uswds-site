@@ -125,7 +125,7 @@ Government websites include components that aren’t included in USWDS yet. Use 
 - Include the generated CSS in your page templates. Include the JavaScript required by the components you use, following their implementation guidance. A precompiled JavaScript bundle is available; compiling JavaScript yourself is not required for every project.
 - Follow [Phase 3: Customize USWDS]({{ site.baseurl }}/documentation/getting-started/developers/phase-three-customize/) to adjust settings and styles.
 
-#### 2: Use USWDS design tokens in your stylesheets.
+#### <span id="use-uswds-design-tokens-in-all-stylesheets"></span><span id="2-use-uswds-design-tokens-in-all-stylesheets"></span>2: Use USWDS design tokens in your stylesheets.
 
 - Use [design tokens]({{ site.baseurl }}/design-tokens/) for consistent colors, spacing, and typography.
 - Use the Sass functions and mixins documented with each token, or [utilities]({{ site.baseurl }}/utilities/) where appropriate. For example, see [font-family tokens]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens).
@@ -147,8 +147,10 @@ The presence of `usa-` classes or a USWDS stylesheet can help identify an implem
 
 ## Maturity assessment resources
 
+{: #maturity-assessment-worksheet}
 The draft 2020 Maturity Model Assessment Worksheet is no longer recommended for current assessments. Its copied component checklists do not reflect current guidance.
 
+{: #checklists-to-track-your-progress}
 Use the [design principles]({{ site.baseurl }}/design-principles/) and the current usability, accessibility, and implementation guidance for each [component]({{ site.baseurl }}/components/). For installation and customization instructions, use [Getting started for developers]({{ site.baseurl }}/documentation/getting-started-for-developers/).
 
 Share questions and findings in [USWDS GitHub Discussions](https://github.com/uswds/uswds/discussions).

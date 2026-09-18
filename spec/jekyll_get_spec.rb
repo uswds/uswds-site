@@ -19,16 +19,21 @@ RSpec.describe Jekyll_Get::Generator do
   end
 
   def with_response(body = '[]', error: nil)
-    original_open = URI.method(:open)
+    original_open = URI::HTTP.instance_method(:open)
+    originally_defined = URI::HTTP.instance_methods(false).include?(:open)
     requests = []
-    URI.define_singleton_method(:open) do |url, headers, &block|
-      requests << [url, headers]
+    URI::HTTP.define_method(:open) do |headers, &block|
+      requests << [to_s, headers]
       raise error if error
       block.call(StringIO.new(body))
     end
     yield requests
   ensure
-    URI.define_singleton_method(:open, original_open)
+    if originally_defined
+      URI::HTTP.define_method(:open, original_open)
+    else
+      URI::HTTP.remove_method(:open)
+    end
   end
 
   it 'authenticates GitHub requests without changing existing query parameters' do

@@ -35,7 +35,7 @@ module Jekyll_Get
       if not File.exist?(path)
         FileUtils.mkpath File.dirname(path)
         print "Caching #{url} in #{path}...\n"
-        data = URI.open(url, request_headers(url)) { |response| JSON.parse(response.read) }
+        data = URI(url).open(request_headers(url)) { |response| JSON.parse(response.read) }
         File.open(path, 'wb') do |file|
           file << JSON.pretty_generate(data)
         end

@@ -4,8 +4,6 @@ We’re so glad you’re thinking about contributing to a Technology Transformat
 
 By contributing to this repository, you agree to adhere to the [GSA Social Media Policy](https://www.gsa.gov/directives-library/gsa-social-media-policy-2) (Section 10 Engagement). We expect all contributors, both internal and external, to engage respectfully and professionally in all project-related public communications.
 
-Any posts or comments that the admin determine are not productive will be removed, and users who make multiple such posts or comments will be banned.
-
 We encourage you to read this project’s CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), [README](README.md) and its [Workflow](https://github.com/uswds/uswds/wiki/Workflow) process.
 
 For questions about contributing to USWDS, ask in [Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a) or [email the USWDS team](mailto:uswds@gsa.gov). For background on open source practices, see the [18F Open Source Policy](https://github.com/18f/open-source-policy).

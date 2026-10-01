@@ -10,6 +10,10 @@ subnav:
   href: '#order-tokens'
 - text: Using order tokens
   href: '#using-order-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-order
 ---
 
 {% assign tokens = site.data.tokens %}
@@ -134,23 +138,6 @@ Your context and coding style determine how you access USWDS order tokens in cod
         <td data-title="Example">
           <span>
             @include u-order(<code>'last'</code>)<br/>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" data-title="Context text-normal">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </th>
-        <td data-title="Description">
-          <span>
-            <a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
-          </span>
-        </td>
-        <td data-title="Example">
-          <span>
-            $theme-nav-item-order: <code>'last'</code>
           </span>
         </td>
       </tr>

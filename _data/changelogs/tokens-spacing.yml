@@ -2,13 +2,19 @@ title: Spacing tokens
 type: token
 changelogURL:
 items:
+  - date: NNNN-NN-NN
+    summary: Added documentation for the `0` spacing token.
+    summaryAdditional: Also replaced the outdated reference to `$theme-site-margin-mobile` with `$theme-site-margins-mobile-width`.
+    affectsGuidance: true
+    githubPr: 2386
+    githubRepo: uswds-site
   - date: 2023-08-23
-    summary: Updated `0` token values to include units when needed.  
-    summaryAdditional: Now, `units(0)` can be used in `calc()` functions. 
+    summary: Updated `0` token values to include units when needed.
+    summaryAdditional: Now, `units(0)` can be used in `calc()` functions.
     isBreaking:
     affectsAccessibility:
     affectsAssets:
-    affectsGuidance: 
+    affectsGuidance:
     affectsJavascript:
     affectsMarkup:
     affectsStyles: true

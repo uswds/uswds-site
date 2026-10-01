@@ -10,6 +10,10 @@ subnav:
   href: '#flex-tokens'
 - text: Using flex tokens
   href: '#using-flex-tokens'
+- text: Latest updates
+  href: '#changelog'
+changelog:
+  key: tokens-flex
 ---
 
 {% assign tokens = site.data.tokens %}
@@ -126,7 +130,7 @@ Your context and coding style determine how you access USWDS flex tokens in code
         </td>
         <td data-title="Example">
           <span>
-            $theme-nav-column-flex: <code>4</code>
+            $theme-megamenu-columns: <code>4</code>
           </span>
         </td>
       </tr>

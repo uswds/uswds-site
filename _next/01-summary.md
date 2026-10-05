@@ -74,7 +74,7 @@ summary_sections:
 </section>
 
 <!-- maybe componentize this -- NOTE: it is different from the one on next-content layout -->
-<nav class="next-internal-nav usa-dark-background" aria-label="Next report internal navigation">
+<nav class="next-internal-nav usa-dark-background" aria-label="Next report internal">
   <div class="grid-container">
     <ul id="internal-nav" class="next-internal-nav__list">
       {% for item in site.next %}

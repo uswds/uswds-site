@@ -1,3 +1,3 @@
 - **Include a label.** Make sure each form control includes a `label` with a `for` attribute related to the `id` of the `input` element it labels. 
-- **Use helpful hint text.** Make sure any hint text helps users understand what they need to input.
+- **Describe the accepted characters and format.** State the number and order of letters or digits, then give an example. For a U.S. telephone number, explain that the field takes 10 digits including the area code, without a country code. For the alphanumeric example, describe the sequence as a letter, a number, a letter, a number, a letter, and a number, such as `A1B 2C3`. An example alone may not make these restrictions clear.
 - **Customization.** As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/components/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).

@@ -111,7 +111,7 @@
     {{ related | markdownify }}
   {% endif %}
   {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
-    <{{ heading_level_secondary}}  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading site-component-usage__header--secondary">
+    <{{ heading_level_secondary}}  id="using-the-{{ componentKey }}{% if page.type %}-{{ page.type }}{% endif %}" class="usa-heading site-component-usage__header--secondary">
       Using the {{ page.title | downcase }} {{ page.type }}
     </{{ heading_level_secondary}}>
     {{ implementation | markdownify }}
